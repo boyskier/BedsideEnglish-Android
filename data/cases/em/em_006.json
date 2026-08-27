@@ -1,0 +1,187 @@
+{
+  "id": "em_006",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mrs. Foster",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "high fever 40.1C, severe agitation, tachycardia 145 bpm, delirium, and profuse vomiting in Graves patient (Thyroid Storm)",
+  "hpi_details": "45F with history of Graves disease brought by family due to rapid deterioration over 24 hours. Yesterday developed severe sore throat and fever, followed today by extreme restlessness, confusion, shaking, and vomiting four times. Patient is delirious, screaming intermittently, drenched in sweat, and breathing rapidly.",
+  "ideas": "delirious, severely agitated, and unable to provide coherent history",
+  "concerns": "family terrified she is having a brain infection or heart collapse",
+  "expectations": "wants emergency intensive care and thyroid stabilization",
+  "pmh": "Graves Disease (stopped taking Methimazole 1 month ago because she felt fine)",
+  "medications": "None currently",
+  "social_hx": "Retail manager, non-smoker",
+  "investigation_events": [
+    {
+      "id": "thyroid_function_tests",
+      "title": "Emergency thyroid function tests",
+      "order_terms": [
+        "thyroid function tests",
+        "thyroid function panel",
+        "thyroid labs",
+        "tsh",
+        "free t4",
+        "free t3"
+      ],
+      "availability_message": "The emergency thyroid function tests are now available.",
+      "results": [
+        {
+          "id": "tsh",
+          "test": "TSH",
+          "value": "<0.01",
+          "unit": "µIU/mL",
+          "reference_range": "0.4-4.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "free_t4",
+          "test": "Free T4",
+          "value": ">5.0",
+          "unit": "ng/dL",
+          "reference_range": "0.8-1.8",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "free_t3",
+          "test": "Free T3",
+          "value": "18.2",
+          "unit": "pg/mL",
+          "reference_range": "2.0-4.4",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Thyroid Storm evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Thyroid Storm is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT emergency multidisciplinary ICU protocol utilizing precise STEPWISE pharmacological blockade: Step 1 (Block peripheral sympathetic overdrive): administer IV Propranolol 1-2 mg slow push (or oral 60-80 mg q4h) which also inhibits T4 to T3 conversion, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever 40.1C, severe agitation, tachycardia 145 bpm, delirium, and profuse vomiting in Graves patient (Thyroid Storm)",
+      "Key HPI features: 45F with history of Graves disease brought by family due to rapid deterioration over 24 hours. Yesterday developed severe sore throat and fever, followed today by extreme restlessness, confusion, shaking, and vomiting four times. Patient is delirious, screaming intermittently, drenched in sweat, and breathing rapidly.",
+      "Objective/Exam findings: Vitals: HR 148 (sinus tachycardia with occasional PVCs), BP 156/68 (wide pulse pressure), Temp 40.2C (104.4F), RR 26, SpO2 96%. Patient is delirious, severely agitated, diaphoretic, and exhibits fine hand tremors and lid lag/exophthalmos. Thyroid gland is diffusely enlarged (goiter) with a loud audible continuous bruit. Burch-Wartofsky Point Scale score: 75 (score >=45 is highly diagnostic of Thyroid Storm). STAT Labs: TSH <0.01 uIU/mL, Free T4 >5.0 ng/dL (off the scale), Free T3 markedly elevated. Electrolytes show mild hypokalemia and dehydration.",
+      "Relevant background/PMH: Graves Disease (stopped taking Methimazole 1 month ago because she felt fine)",
+      "Current medications: None currently"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Thyroid Storm.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Sepsis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Extreme agitation with high fever in a known Graves' disease patient — treat as thyroid storm immediately."
+    ],
+    "management_principles": [
+      "STAT emergency multidisciplinary ICU protocol utilizing precise STEPWISE pharmacological blockade: Step 1 (Block peripheral sympathetic overdrive): administer IV Propranolol 1-2 mg slow push (or oral 60-80 mg q4h) which also inhibits T4 to T3 conversion",
+      "Step 2 (Block new thyroid hormone synthesis): administer Propylthiouracil (PTU) 500 mg PO/NG loading dose, then 250 mg q4h (preferred over Methimazole in acute storm due to extra inhibition of T4-to-T3 conversion)",
+      "Step 3 (Block thyroid hormone release - CRITICAL TIMING MANDATE): administer Iodine (Lugol solution or SSKI 5 drops PO q6h) EXACTLY 1 TO 2 HOURS AFTER PTU administration (giving iodine before PTU provides substrate for new hormone synthesis via Jod-Basedow phenomenon, worsening the storm)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45F with history of Graves disease presenting with rapid deterioration over 24 hours: high fever, extreme restlessness, confusion, tremor, and profuse vomiting following a preceding sore throat/fever and one month off Methimazole, classic for Thyroid Storm.",
+    "objective": "Vitals: HR 148 (sinus tachycardia with occasional PVCs), BP 156/68 (wide pulse pressure), Temp 40.2C (104.4F), RR 26, SpO2 96%. Patient is delirious, severely agitated, diaphoretic, and exhibits fine hand tremors and lid lag/exophthalmos. Thyroid gland is diffusely enlarged (goiter) with a loud audible continuous bruit. Burch-Wartofsky Point Scale score: 75 (score >=45 is highly diagnostic of Thyroid Storm). STAT Labs: TSH <0.01 uIU/mL, Free T4 >5.0 ng/dL (off the scale), Free T3 markedly elevated. Electrolytes show mild hypokalemia and dehydration.",
+    "assessment": "Acute Thyrotoxic Crisis (Thyroid Storm) precipitated by acute infection and anti-thyroid drug cessation.",
+    "plan": "STAT emergency multidisciplinary ICU protocol utilizing precise STEPWISE pharmacological blockade: Step 1 (Block peripheral sympathetic overdrive): administer IV Propranolol 1-2 mg slow push (or oral 60-80 mg q4h) which also inhibits T4 to T3 conversion. Step 2 (Block new thyroid hormone synthesis): administer Propylthiouracil (PTU) 500 mg PO/NG loading dose, then 250 mg q4h (preferred over Methimazole in acute storm due to extra inhibition of T4-to-T3 conversion). Step 3 (Block thyroid hormone release - CRITICAL TIMING MANDATE): administer Iodine (Lugol solution or SSKI 5 drops PO q6h) EXACTLY 1 TO 2 HOURS AFTER PTU administration (giving iodine before PTU provides substrate for new hormone synthesis via Jod-Basedow phenomenon, worsening the storm). Step 4 (Block peripheral T4-to-T3 conversion and treat adrenal insufficiency): administer IV Hydrocortisone 100 mg q8h. Provide aggressive cooling blankets, antipyretics (strictly avoid Aspirin which displaces T4 from binding proteins), and empiric antibiotics for underlying infection."
+  },
+  "learning_objectives": [
+    "Calculate and apply the Burch-Wartofsky Point Scale incorporating thermoregulatory dysfunction, central nervous system effects, GI/hepatic dysfunction, and cardiovascular tachycardia/heart failure to diagnose Thyroid Storm",
+    "Execute the strict 4-step pharmacological cascade for Thyroid Storm: 1. Propranolol (beta-blockade), 2. PTU/Methimazole (synthesis blockade), 3. Iodine solutions (release blockade via Wolff-Chaikoff effect), 4. Hydrocortisone (conversion blockade and adrenal support)",
+    "Understand the strict neuroendocrine sequencing rule that Thionamides (PTU/Methimazole) MUST be administered at least 1 hour prior to Iodine administration to prevent substrate-driven exacerbation (Jod-Basedow effect)",
+    "Explain why Aspirin is contraindicated as an antipyretic in thyrotoxicosis due to competitive displacement of thyroxine from thyroid-binding globulin (TBG)"
+  ],
+  "teaching": {
+    "diagnosis": "Thyroid Storm",
+    "one_liner": "A life-threatening exacerbation of hyperthyroidism — often precipitated by infection or stopping anti-thyroid medication — causing high fever, extreme agitation, tachycardia, and delirium; treated with a precise drug sequence (beta-blocker, then PTU, then iodine).",
+    "differentials": [
+      "Sepsis",
+      "Serotonin syndrome",
+      "Neuroleptic malignant syndrome"
+    ],
+    "red_flags": [
+      "Extreme agitation with high fever in a known Graves' disease patient — treat as thyroid storm immediately"
+    ],
+    "must_ask": [
+      {
+        "objective": "Known Graves' disease and medication adherence",
+        "say": "You have Graves disease — have you been taking your thyroid medication?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "Graves",
+          "methimazole",
+          "stopped"
+        ]
+      },
+      {
+        "objective": "Precipitating illness",
+        "say": "Did you have any infection or fever before this got worse?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "infection",
+          "sore throat"
+        ]
+      },
+      {
+        "objective": "Heart symptoms",
+        "say": "Has your heart been racing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tachycardia",
+          "racing"
+        ]
+      },
+      {
+        "objective": "Mental status",
+        "say": "How confused or agitated has she been?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confusion",
+          "agitation"
+        ]
+      },
+      {
+        "objective": "GI symptoms",
+        "say": "How many times has she vomited?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

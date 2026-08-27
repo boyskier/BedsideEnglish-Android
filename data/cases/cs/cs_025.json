@@ -1,0 +1,131 @@
+{
+  "id": "cs_025",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lim",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "incidental finding of a 5.2 cm ascending thoracic aortic aneurysm on CT scan",
+  "hpi_details": "65M presents for cardiothoracic surgery consultation after a chest CT scan ordered for chronic cough revealed a 5.2 cm aneurysm in the ascending aorta. Denies chest pain, back pain, or hoarseness.",
+  "ideas": "worried about aneurysm rupture and sudden death",
+  "concerns": "anxious about needing open heart surgery",
+  "expectations": "wants surgery timing explanation",
+  "pmh": "Hypertension, Hyperlipidemia",
+  "medications": "Losartan 50mg daily, Atorvastatin 20mg daily",
+  "social_hx": "Retired, non-smoker",
+  "available_results": [
+    {
+      "id": "ct_ascending_aortic_aneurysm",
+      "test": "CT angiography of the thoracic aorta",
+      "value": "Ascending aortic aneurysm measuring 5.2 cm at maximum diameter; no dissection or rupture",
+      "unit": "",
+      "reference_range": "Ascending aorta <4.0 cm",
+      "flag": "abnormal",
+      "collected_at": "Before today's encounter"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ascending Thoracic Aortic Aneurysm evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ascending Thoracic Aortic Aneurysm is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Elective surgical repair is generally indicated at ≥5.5 cm (or ≥5.0 cm with bicuspid valve, connective tissue disease, or rapid growth), while smaller aneurysms are managed with blood pressure control and serial imaging.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental finding of a 5.2 cm ascending thoracic aortic aneurysm on CT scan",
+      "Key HPI features: 65M presents for cardiothoracic surgery consultation after a chest CT scan ordered for chronic cough revealed a 5.2 cm aneurysm in the ascending aorta. Denies chest pain, back pain, or hoarseness.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Ascending Thoracic Aortic Aneurysm.",
+      "Relevant background/PMH: Hypertension, Hyperlipidemia",
+      "Current medications: Losartan 50mg daily, Atorvastatin 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ascending Thoracic Aortic Aneurysm.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bicuspid aortic valve-associated aneurysm without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New chest or back pain — could indicate impending rupture or dissection."
+    ],
+    "management_principles": [
+      "Screen for bicuspid aortic valve and connective tissue disease features, and ask about family history of aneurysm or sudden death",
+      "Review CT measurements",
+      "Control blood pressure, generally to below 130/80 mmHg when tolerated, and reduce other cardiovascular risk factors"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Ascending Thoracic Aortic Aneurysm. incidental finding of a 5.2 cm ascending thoracic aortic aneurysm on CT scan. 65M presents for cardiothoracic surgery consultation after a chest CT scan ordered for chronic cough revealed a 5.2 cm aneurysm in the ascending aorta. Denies chest pain, back pain, or hoarseness.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Ascending Thoracic Aortic Aneurysm.",
+    "assessment": "Incidental 5.2 cm ascending thoracic aortic aneurysm, currently asymptomatic and below the typical surgical threshold.",
+    "plan": "Review CT measurements and screen for bicuspid valve/connective tissue disease. Control blood pressure, generally to below 130/80 mmHg when tolerated, and reduce other cardiovascular risk factors. Discuss surgical indications (threshold typically >=5.5 cm unless high-risk features/growth rate) and schedule serial imaging."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Ascending Thoracic Aortic Aneurysm.",
+    "Formulate prioritized differential diagnosis for incidental finding of a 5.2 cm ascending thoracic aortic aneurysm on CT scan",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies for Ascending Thoracic Aortic Aneurysm."
+  ],
+  "teaching": {
+    "diagnosis": "Ascending Thoracic Aortic Aneurysm",
+    "one_liner": "An enlarged, weakened section of the ascending aorta found incidentally on imaging, managed with strict blood pressure control and monitored for growth, with surgery typically considered around 5.5cm.",
+    "differentials": [
+      "Bicuspid aortic valve-associated aneurysm",
+      "Marfan or connective tissue disorder-associated aneurysm"
+    ],
+    "red_flags": [
+      "New chest or back pain — could indicate impending rupture or dissection"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "Was this found by chance on a scan for something else?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Symptoms",
+        "say": "Have you had any chest pain, back pain, or hoarseness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Blood pressure control",
+        "say": "How well controlled is your blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have aortic aneurysms or sudden deaths?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Concerns about surgery",
+        "say": "What worries you about potentially needing open heart surgery?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,135 @@
+{
+  "id": "allergy_018",
+  "system": "allergy_immunology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Baby Oliver",
+  "age": 0.8,
+  "gender": "male",
+  "chief_complaint": "recurrent ear infections and severe pneumonias since turning 6 months old",
+  "hpi_details": "10-month-old male presenting with his fourth episode of Streptococcus pneumoniae pneumonia and chronic otitis media. The mother notes he was completely healthy until about 6 months of age, at which point he started getting sick constantly. He has two healthy older sisters, but a maternal uncle died of severe pneumonia in infancy.",
+  "ideas": "mother thinks his immune system is just immature",
+  "concerns": "worried he will end up like her brother who passed away",
+  "expectations": "wants strong antibiotics and tests for his immune system",
+  "pmh": "Recurrent otitis media, recurrent pneumonia",
+  "medications": "Amoxicillin-Clavulanate (currently taking)",
+  "social_hx": "Lives with parents and sisters",
+  "investigation_events": [{
+    "id": "immunoglobulins_and_b_cells", "title": "Quantitative immunoglobulins and B-cell count",
+    "order_terms": ["quantitative immunoglobulins", "immunoglobulin levels", "igg level", "b cell count", "cd19", "flow cytometry"],
+    "availability_message": "The immunoglobulin levels and B-cell count are now available.",
+    "results": [
+      {"id": "serum_igg", "test": "IgG", "value": "85", "unit": "mg/dL", "reference_range": "300-1,000 (age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "serum_iga", "test": "IgA", "value": "<5", "unit": "mg/dL", "reference_range": "10-50 (age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "serum_igm", "test": "IgM", "value": "8", "unit": "mg/dL", "reference_range": "20-100 (age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "cd19_b_cells", "test": "CD19+ B cells", "value": "<1% (4 cells/uL)", "reference_range": "11-45% (600-3,000 cells/uL, age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "X-linked Agammaglobulinemia (XLA)",
+    "core_concepts": [
+      "XLA is caused by a BTK gene mutation leading to failure of B-cell maturation, very low or absent circulating B cells, and markedly reduced immunoglobulins (IgG, IgA, IgM, IgE).",
+      "Infants are protected by maternal IgG for the first ~6 months, leading to a classic presentation of recurrent encapsulated bacterial infections starting between 6-9 months of age.",
+      "Mainly affects males (X-linked).",
+      "Treatment involves lifelong Intravenous/Subcutaneous Immunoglobulin (IVIG/SCIG) replacement."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent ear infections and severe pneumonias since turning 6 months old",
+      "Key HPI features: Male infant, asymptomatic first 6 months, then recurrent sinopulmonary bacterial infections. Maternal family history of early male infant death.",
+      "Objective/Exam findings: Absent or very small tonsils and lymph nodes.",
+      "Relevant background/PMH: Recurrent sinopulmonary infections",
+      "Current medications: Antibiotics"
+    ],
+    "common_misconceptions": [
+      "Confusing XLA with SCID; XLA patients have normal T-cell function and combat viral/fungal infections normally (except enteroviruses).",
+      "Assuming recurrent ear infections in a baby are always just normal daycare exposures."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize the X-linked inheritance pattern and offer genetic counseling and carrier testing to at-risk relatives.",
+      "Administering live polio vaccine (though rare now) which can cause vaccine-associated paralytic poliomyelitis in XLA."
+    ],
+    "management_principles": [
+      "Aggressive antibiotic therapy for acute infections.",
+      "Initiate lifelong IVIG or SCIG replacement therapy.",
+      "Avoid live enteroviral vaccines (especially oral polio vaccine); obtain immunology guidance for vaccination planning."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "MedlinePlus Genetics: X-Linked Agammaglobulinemia",
+        "url": "https://medlineplus.gov/genetics/condition/x-linked-agammaglobulinemia/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "10-month-old male presenting with 4th pneumonia. Healthy until 6 months of age. Maternal uncle died of pneumonia in infancy.",
+    "objective": "Fever 39.0C. Diminished breath sounds right lower lobe. Absent tonsils and cervical lymph nodes on exam.",
+    "assessment": "X-linked Agammaglobulinemia (XLA) highly suspected.",
+    "plan": "1. Treat acute pneumonia with IV Ceftriaxone. 2. Quantitative immunoglobulins (IgG, IgA, IgM, IgE) and flow cytometry for B-cell count (CD19+). 3. Refer to Pediatric Immunology for lifelong IVIG therapy initiation and genetic testing for BTK mutation."
+  },
+  "learning_objectives": [
+    "Identify the classic 6-month onset window for XLA due to waning maternal IgG",
+    "Recognize the X-linked inheritance pattern (maternal male relatives affected)",
+    "Understand that B-cells and immunoglobulins are completely absent, requiring IVIG"
+  ],
+  "teaching": {
+    "diagnosis": "X-linked Agammaglobulinemia (XLA)",
+    "one_liner": "A genetic defect in males preventing B-cell development, leading to severe bacterial infections that start at 6 months when maternal antibodies fade.",
+    "differentials": [
+      "Transient hypogammaglobulinemia of infancy",
+      "Common Variable Immunodeficiency (usually presents later in life)",
+      "Severe Combined Immunodeficiency (SCID)"
+    ],
+    "red_flags": [
+      "Recurrent pneumonias requiring IV antibiotics",
+      "Family history of infant male deaths from infection"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pinpoint the onset of susceptibility",
+        "say": "Was he completely healthy for the first few months of his life?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "first",
+          "months",
+          "healthy",
+          "birth",
+          "six"
+        ]
+      },
+      {
+        "objective": "Determine family history indicating X-linked trait",
+        "say": "Are there any males on the mother's side of the family who had severe infections or died young?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "mother",
+          "uncle",
+          "brother",
+          "males",
+          "died"
+        ]
+      },
+      {
+        "objective": "Identify the type of infections",
+        "say": "What kind of infections does he mostly get? Are they mainly ear, sinus, and lung infections?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ear",
+          "sinus",
+          "lung",
+          "pneumonia"
+        ]
+      }
+    ]
+  }
+}

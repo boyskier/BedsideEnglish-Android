@@ -1,0 +1,128 @@
+{
+  "id": "endo_011",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lopez",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "severe muscle weakness and resistant hypertension",
+  "hpi_details": "45M with resistant hypertension on 3 meds presenting with hypokalemic cramps, weakness, and polyuria. High PAC/PRA ratio.",
+  "ideas": "thinks this is related to primary hyperaldosteronism conn syndrome",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine, lisinopril, hydrochlorothiazide",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id":"potassium","test":"Serum potassium","value":"2.9","unit":"mEq/L","reference_range":"3.5-5.0","flag":"critical","specimen":"Blood"},
+    {"id":"bicarbonate","test":"Serum bicarbonate","value":"29","unit":"mEq/L","reference_range":"22-29","flag":"normal","specimen":"Blood"},
+    {"id":"aldosterone","test":"Plasma aldosterone concentration","value":"28","unit":"ng/dL","reference_range":"Position and sodium dependent","flag":"high","specimen":"Blood"},
+    {"id":"renin","test":"Plasma renin activity","value":"0.4","unit":"ng/mL/h","reference_range":"Position and sodium dependent","flag":"low","specimen":"Blood"},
+    {"id":"arr","test":"Aldosterone-to-renin ratio","value":"70","reference_range":"<20-30","flag":"high","specimen":"Blood"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Primary Hyperaldosteronism (Conn's Syndrome) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Hyperaldosteronism (Conn's Syndrome) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirmatory testing (saline infusion or captopril challenge) followed by adrenal CT and adrenal vein sampling to guide surgical versus medical therapy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe muscle weakness and resistant hypertension",
+      "Key HPI features: 45M with resistant hypertension on 3 meds presenting with hypokalemic cramps, weakness, and polyuria. High PAC/PRA ratio.",
+      "Objective/Exam findings: Vitals: BP 168/102, HR 78. Neurological exam shows reduced lower-extremity strength consistent with hypokalemia. Bloods: K+ 2.9 mEq/L, HCO3 29 mEq/L (metabolic alkalosis), elevated Plasma Aldosterone Concentration with suppressed Plasma Renin Activity and an aldosterone-to-renin ratio (ARR) > 30.",
+      "Relevant background/PMH: Hypertension",
+      "Current medications: Amlodipine, lisinopril, hydrochlorothiazide"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Hyperaldosteronism (Conn's Syndrome).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Renal artery stenosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe muscle weakness."
+    ],
+    "management_principles": [
+      "Correct hypokalemia with oral potassium chloride and hold potassium-wasting diuretics",
+      "Confirm the diagnosis with a saline infusion or captopril challenge test, then obtain adrenal CT and consider adrenal vein sampling to differentiate unilateral adenoma from bilateral hyperplasia",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Primary Aldosteronism",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45M with resistant hypertension on 3 antihypertensive agents presenting with hypokalemic muscle cramps, weakness, and polyuria.",
+    "objective": "Vitals: BP 168/102, HR 78. Neurological exam shows reduced lower-extremity strength consistent with hypokalemia. Bloods: K+ 2.9 mEq/L, HCO3 29 mEq/L (metabolic alkalosis), elevated Plasma Aldosterone Concentration with suppressed Plasma Renin Activity and an aldosterone-to-renin ratio (ARR) > 30.",
+    "assessment": "Primary Hyperaldosteronism (Conn's Syndrome), likely aldosterone-producing adenoma or bilateral adrenal hyperplasia.",
+    "plan": "Correct hypokalemia with oral potassium chloride and hold potassium-wasting diuretics. Confirm the diagnosis with a saline infusion or captopril challenge test. Obtain adrenal CT and consider adrenal vein sampling to differentiate unilateral adenoma from bilateral hyperplasia before choosing between adrenalectomy and mineralocorticoid receptor antagonist therapy."
+  },
+  "learning_objectives": [
+    "Recognize resistant hypertension with hypokalemia as a clinical clue for primary aldosteronism",
+    "Calculate and interpret the plasma aldosterone-to-renin ratio (ARR) as a screening test",
+    "Differentiate unilateral adenoma from bilateral adrenal hyperplasia using adrenal vein sampling",
+    "Discuss medical (mineralocorticoid receptor antagonist) versus surgical (adrenalectomy) management options"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Hyperaldosteronism (Conn's Syndrome)",
+    "one_liner": "Excess aldosterone causes resistant hypertension with hypokalemia, confirmed by an elevated aldosterone-to-renin ratio.",
+    "differentials": [
+      "Renal artery stenosis",
+      "Diuretic-induced hypokalemia"
+    ],
+    "red_flags": [
+      "Severe muscle weakness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Blood pressure control",
+        "say": "How many medications are you on, and is your blood pressure still high?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Muscle symptoms",
+        "say": "Any cramps or weakness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Urination",
+        "say": "Are you urinating more than usual?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does high blood pressure run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,130 @@
+{
+  "id": "id_019",
+  "system": "infectious_disease",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Patel",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "chronic diarrhea, severe weight loss, and oral thrush",
+  "hpi_details": "35M presents with a 2-month history of non-bloody watery diarrhea, extreme fatigue, and a 20-pound weight loss. He also complains that his mouth hurts and he has thick white patches on his tongue and inner cheeks.",
+  "ideas": "thinks he has a bad stomach bug",
+  "concerns": "terrified about his rapid weight loss",
+  "expectations": "wants a cure for his diarrhea",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "History of IV drug use, multiple sexual partners",
+  "clinical_knowledge": {
+    "topic": "Advanced HIV Infection (AIDS)",
+    "core_concepts": [
+      "Oral candidiasis (thrush) in a young, otherwise healthy adult without recent antibiotics is a major red flag for severe immunosuppression (HIV).",
+      "Chronic diarrhea and wasting are AIDS-defining conditions."
+    ],
+    "diagnostic_clues": [
+      "Oral thrush",
+      "Chronic diarrhea",
+      "Weight loss"
+    ],
+    "common_misconceptions": [
+      "Treating the thrush without investigating the underlying cause of immunosuppression."
+    ],
+    "dangerous_errors": [
+      "Failing to offer HIV testing in patients presenting with opportunistic infections."
+    ],
+    "management_principles": [
+      "HIV screening (4th gen Ag/Ab test), CD4 count, viral load, treat opportunistic infections, initiate ART when appropriate."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "35M with chronic diarrhea, significant weight loss, and painful white oral plaques.",
+    "objective": "Cachectic. Oropharynx shows thick white removable plaques on erythematous bases (Candidiasis).",
+    "assessment": "Suspected advanced HIV infection (AIDS) with oral candidiasis and HIV enteropathy/wasting.",
+    "plan": "Offer and perform HIV 1/2 Ag/Ab screening. Start oral Fluconazole for thrush. Order stool studies for opportunistic pathogens (Cryptosporidium, MAC). Infectious disease consult."
+  },
+  "learning_objectives": [
+    "Recognize oral thrush in an adult as a potential indicator of HIV infection."
+  ],
+  "teaching": {
+    "diagnosis": "Advanced HIV (AIDS) with Opportunistic Infections",
+    "one_liner": "Young adult with severe weight loss, chronic diarrhea, and oral candidiasis highly suspicious for advanced HIV.",
+    "differentials": [
+      "Inflammatory Bowel Disease",
+      "Hyperthyroidism"
+    ],
+    "red_flags": [
+      "Opportunistic infections"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diarrhea characteristics",
+        "say": "How long have you had the diarrhea, and is there any blood in it?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "diarrhea",
+          "watery",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost, and over what period of time?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight loss",
+          "pounds"
+        ]
+      },
+      {
+        "objective": "Oral symptoms",
+        "say": "Have you noticed white patches in your mouth, or pain when swallowing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "thrush",
+          "white patches",
+          "mouth pain"
+        ]
+      },
+      {
+        "objective": "HIV risk factors",
+        "say": "Have you ever been tested for HIV, and do you have any risk factors like unprotected sex or IV drug use?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "HIV test",
+          "risk factors",
+          "unprotected sex"
+        ]
+      },
+      {
+        "objective": "Other opportunistic symptoms",
+        "say": "Have you had a cough, shortness of breath, or vision changes?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "cough",
+          "shortness of breath",
+          "vision"
+        ]
+      }
+    ]
+  }
+}

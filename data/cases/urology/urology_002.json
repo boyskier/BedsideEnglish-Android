@@ -1,0 +1,170 @@
+{
+  "id": "urology_002",
+  "system": "urology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Baker",
+  "age": 54,
+  "gender": "female",
+  "chief_complaint": "severe left flank pain, high fever, shaking chills, and cloudy urine due to 8 mm obstructing ureteral stone",
+  "hpi_details": "54F with history of kidney stones presents with 24 hours of severe, colicky left flank pain radiating to the groin accompanied by shaking rigors, high fever, nausea, and dysuria. Complains that her pain medication is no longer working and she feels dizzy and weak when standing.",
+  "ideas": "thinks her kidney stone has completely blocked her kidney causing a severe backup infection",
+  "concerns": "terrified of septic shock and kidney failure after her sister needed ICU care for a kidney infection",
+  "expectations": "wants immediate IV antibiotics, pain medication, and emergency drainage of her blocked kidney",
+  "pmh": "Nephrolithiasis (prior calcium oxalate stones), Type 2 Diabetes Mellitus",
+  "medications": "Metformin 1000mg BID",
+  "social_hx": "High school teacher, non-smoker",
+  "available_results": [
+    {"id": "infected_stone_wbc", "test": "White blood cell count", "value": "19.5", "unit": "×10^9/L", "reference_range": "4.0-11.0", "flag": "high", "specimen": "Blood", "collected_at": "At emergency assessment"},
+    {"id": "infected_stone_bands", "test": "Band neutrophils", "value": "14", "unit": "%", "reference_range": "0-5", "flag": "high", "specimen": "Blood", "collected_at": "At emergency assessment"},
+    {"id": "infected_stone_creatinine", "test": "Creatinine", "value": "2.1", "unit": "mg/dL", "reference_range": "0.6-1.1", "flag": "high", "specimen": "Blood", "collected_at": "At emergency assessment", "note": "Baseline 0.9 mg/dL"},
+    {"id": "infected_stone_lactate", "test": "Lactate", "value": "4.3", "unit": "mmol/L", "reference_range": "0.5-2.0", "flag": "high", "specimen": "Blood", "collected_at": "At emergency assessment"},
+    {"id": "infected_stone_urinalysis", "test": "Urinalysis with microscopy", "value": ">100 WBC/HPF; nitrite positive; leukocyte esterase positive; many bacteria; blood 3+", "flag": "abnormal", "specimen": "Urine", "collected_at": "At emergency assessment"},
+    {"id": "infected_stone_ct", "test": "Noncontrast CT abdomen and pelvis", "value": "8 mm obstructing left proximal ureteral calculus with severe hydronephrosis and perinephric fat stranding", "flag": "abnormal", "collected_at": "At emergency assessment"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Ureteral Calculus (Renal Colic) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ureteral Calculus (Renal Colic) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT urological surgical emergency: immediate decompression of the collecting system is mandatory to prevent fatal urosepsis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe left flank pain, high fever, shaking chills, and cloudy urine due to 8 mm obstructing ureteral stone",
+      "Key HPI features: 54F with history of kidney stones presents with 24 hours of severe, colicky left flank pain radiating to the groin accompanied by shaking rigors, high fever, nausea, and dysuria. Complains that her pain medication is no longer working and she feels dizzy and weak when standing.",
+      "Objective/Exam findings: Vitals: HR 124, BP 92/56, RR 24, Temp 39.4C. Exquisite left costovertebral angle (CVA) tenderness. Labs: WBC 19,500 /uL with 14% band forms, Serum Creatinine elevated at 2.1 mg/dL (baseline 0.9). Urinalysis shows 4+ pyuria (>100 WBC/HPF), positive nitrite, positive leukocyte esterase, and many bacteria with 3+ hematuria. Non-contrast low-dose CT of abdomen and pelvis confirms an 8 mm obstructing radiopaque calculus in the left proximal ureter with severe left hydronephrosis and perinephric fat stranding.",
+      "Relevant background/PMH: Nephrolithiasis (prior calcium oxalate stones), Type 2 Diabetes Mellitus",
+      "Current medications: Metformin 1000mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ureteral Calculus (Renal Colic).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute pyelonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Infected obstructed stone (fever, chills, urosepsis)."
+    ],
+    "management_principles": [
+      "This is septic shock from an infected obstructed system: begin sepsis resuscitation, obtain blood and urine cultures when this does not delay treatment, give renal-adjusted broad-spectrum IV antibiotics promptly, and arrange ICU-level monitoring.",
+      "STAT urological surgical emergency: immediate decompression of the collecting system is mandatory to prevent fatal urosepsis",
+      "Transfer to operating room for emergency placement of a retrograde double-J ureteral stent OR percutaneous nephrostomy (PCN) tube drainage under fluoroscopic/ultrasound guidance",
+      "DO NOT attempt definitive stone fragmentation (ureteroscopy/lithotripsy) during acute sepsis"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "54F diabetic presenting with obstructing ureteral calculus complicated by acute pyelonephritis and urosepsis.",
+    "objective": "Vitals: HR 124, BP 92/56, RR 24, Temp 39.4C. Exquisite left costovertebral angle (CVA) tenderness. Labs: WBC 19,500 /uL with 14% band forms, Serum Creatinine elevated at 2.1 mg/dL (baseline 0.9). Urinalysis shows 4+ pyuria (>100 WBC/HPF), positive nitrite, positive leukocyte esterase, and many bacteria with 3+ hematuria. Non-contrast low-dose CT of abdomen and pelvis confirms an 8 mm obstructing radiopaque calculus in the left proximal ureter with severe left hydronephrosis and perinephric fat stranding.",
+    "assessment": "Obstructing Left Proximal Ureteral Calculus complicated by Acute Pyelonephritis and Urosepsis (Obstructive Uropathy with Infection).",
+    "plan": "Treat as septic shock: begin IV crystalloid resuscitation, obtain blood and urine cultures if this does not delay therapy, give prompt renal-adjusted broad-spectrum IV antibiotics, monitor urine output and arrange ICU-level care as indicated. Urgently decompress the collecting system with a retrograde double-J ureteral stent or percutaneous nephrostomy; do not attempt definitive stone fragmentation during acute sepsis. Hold metformin during this acute kidney injury and reassess renal function."
+  },
+  "learning_objectives": [
+    "Recognize the absolute urological emergency of an obstructed, infected renal collecting system (obstructing stone plus pyelonephritis/sepsis)",
+    "Understand why immediate minimally invasive drainage (ureteral stent or percutaneous nephrostomy) MUST precede any definitive stone removal procedures during sepsis",
+    "Interpret urinalysis, CT non-contrast KUB findings, and inflammatory markers in obstructive uropathy",
+    "Outline sepsis resuscitation protocols combined with broad-spectrum antimicrobial selection for complicated urinary tract infections"
+  ],
+  "teaching": {
+    "diagnosis": "Infected Obstructing Ureteral Stone (Urosepsis)",
+    "one_liner": "Acute obstruction of the ureter by a kidney stone, producing severe colicky flank pain radiating to the groin with hematuria.",
+    "differentials": [
+      "Acute pyelonephritis",
+      "Acute appendicitis",
+      "Ruptured abdominal aortic aneurysm"
+    ],
+    "red_flags": [
+      "Infected obstructed stone (fever, chills, urosepsis)",
+      "Anuria in solitary kidney"
+    ],
+    "must_ask": [
+      {
+        "objective": "Colicky flank pain character and radiation",
+        "say": "Does the excruciating flank pain come in severe waves and shoot down into your groin or labia?",
+        "domains": [
+          "location",
+          "radiation",
+          "character"
+        ],
+        "keywords": [
+          "flank",
+          "waves",
+          "groin",
+          "shoot",
+          "radiate"
+        ]
+      },
+      {
+        "objective": "Gross or microscopic hematuria",
+        "say": "Have you noticed pink, red, or tea-colored urine when you go to the bathroom?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pink",
+          "red",
+          "urine",
+          "hematuria",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Associated severe nausea and retching",
+        "say": "Do you feel extremely nauseous or vomit when the pain peaks?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nauseous",
+          "vomit",
+          "nausea",
+          "retching",
+          "peaks"
+        ]
+      },
+      {
+        "objective": "Personal or family kidney stone history",
+        "say": "Have you or anyone in your family passed a kidney stone in the past?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "stone",
+          "kidney",
+          "passed",
+          "stones",
+          "calculus"
+        ]
+      },
+      {
+        "objective": "Complicated infection screening",
+        "say": "Do you have high fever, shaking chills, or confusion right now?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "shaking",
+          "fevers",
+          "urosepsis"
+        ]
+      }
+    ]
+  }
+}

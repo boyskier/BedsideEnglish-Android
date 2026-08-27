@@ -1,0 +1,142 @@
+{
+  "id": "opht_032",
+  "system": "opht",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. White",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "sudden wavy distortion of lines (metamorphopsia)",
+  "hpi_details": "A 72-year-old female presents with new-onset wavy distortion of lines (metamorphopsia), which began suddenly and has persisted. She denies generalized systemic symptoms.",
+  "ideas": "thinks it might be related to wet_amd",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "urgent_macular_oct",
+    "title": "Urgent macular optical coherence tomography",
+    "order_terms": ["OCT", "optical coherence tomography", "macular OCT", "macular scan"],
+    "availability_message": "The urgent macular OCT result is now available. Retina assessment should proceed promptly.",
+    "results": [{"id": "macular_oct", "test": "Macular OCT", "value": "Subretinal fluid and pigment epithelial detachment with hyperreflective neovascular material beneath the fovea", "flag": "abnormal", "note": "Consistent with active neovascular age-related macular degeneration."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Wet (neovascular) age-related macular degeneration evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Wet (neovascular) age-related macular degeneration is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Suspected wet AMD requires urgent retina assessment, with intravitreal anti-VEGF treatment considered after diagnostic confirmation and individualized to disease severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden wavy distortion of lines (metamorphopsia)",
+      "Key HPI features: A 72-year-old female presents with new-onset wavy distortion of lines (metamorphopsia), which began suddenly and has persisted.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Wet AMD.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Wet (neovascular) age-related macular degeneration.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Dry AMD without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as new or rapidly progressive metamorphopsia, which requires urgent retina assessment."
+    ],
+    "management_principles": [
+      "Arrange urgent retina assessment; anti-VEGF treatment is considered after confirmation of neovascular AMD",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden wavy distortion of lines (metamorphopsia). HPI: wet AMD.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Wet AMD.",
+    "assessment": "Condition highly suspicious for Wet AMD.",
+    "plan": "Arrange urgent retina assessment for OCT and evaluation for neovascular AMD; intravitreal anti-VEGF treatment may be indicated after confirmation. Advise immediate emergency assessment for a curtain-like field loss, new flashes/floaters, or profound sudden vision loss. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Wet AMD",
+    "Select appropriate diagnostic workup for Wet AMD",
+    "Implement evidence-based management: urgent retina assessment and, if confirmed, intravitreal anti-VEGF treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Wet (neovascular) age-related macular degeneration",
+    "one_liner": "Patient with sudden wavy distortion of lines (metamorphopsia) concerning for wet AMD.",
+    "differentials": [
+      "Dry AMD",
+      "Central serous chorioretinopathy",
+      "Macular edema from other cause"
+    ],
+    "red_flags": [
+      "New or rapidly progressive metamorphopsia requires urgent retina assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the onset of distortion",
+        "say": "When did the wavy lines first appear—suddenly or over several days?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sudden metamorphopsia"
+        ]
+      },
+      {
+        "objective": "Ask about central scotoma",
+        "say": "Is there a blind or dark spot in your central vision?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "central scotoma"
+        ]
+      },
+      {
+        "objective": "Ask about known AMD history",
+        "say": "Have you been diagnosed with macular degeneration before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "known AMD"
+        ]
+      },
+      {
+        "objective": "Assess urgency of symptom progression",
+        "say": "Has this gotten noticeably worse in just the past few days?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "rapid progression"
+        ]
+      },
+      {
+        "objective": "Explain urgent anti-VEGF injection referral",
+        "say": "This needs urgent assessment by a retina specialist; if wet macular degeneration is confirmed, injection treatment may help preserve vision.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urgent referral",
+          "anti-VEGF"
+        ]
+      }
+    ]
+  }
+}

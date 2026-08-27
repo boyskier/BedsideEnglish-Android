@@ -1,0 +1,145 @@
+{
+  "id": "ns_002",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 52,
+  "gender": "female",
+  "chief_complaint": "thunderclap headache described as worst headache of life accompanied by neck stiffness and photophobia",
+  "hpi_details": "52F suddenly experienced an explosive, excruciating 'thunderclap' headache while straining during bowel movement 3 hours ago. Describes it as 'being struck in the back of the head with a baseball bat' and rates pain 10/10. Accompanied by two episodes of projectile vomiting, severe photophobia, nuchal rigidity, and transient confusion.",
+  "ideas": "thinks an artery burst inside her brain causing massive bleeding",
+  "concerns": "terrified of dying or suffering a stroke like her mother who died of brain aneurysm",
+  "expectations": "wants immediate CT scan and surgical intervention to seal the bleeding",
+  "pmh": "Hypertension, 30 pack-year smoking history",
+  "medications": "Lisinopril 20mg daily (intermittent compliance)",
+  "social_hx": "Retail supervisor, active smoker",
+  "investigation_events": [{
+    "id": "stat_aneurysmal_sah_imaging",
+    "title": "Emergency CT and cerebral angiography",
+    "order_terms": ["CT head", "CT brain", "non-contrast CT", "CT angiography", "CTA"],
+    "availability_message": "Emergency CT and CT angiography results are now available. Neurocritical care and aneurysm-securing consultation should proceed immediately.",
+    "results": [
+      {"id": "ct_head", "test": "Non-contrast CT head", "value": "Acute subarachnoid blood fills the basal cisterns and bilateral Sylvian fissures (modified Fisher grade 3)", "flag": "critical"},
+      {"id": "cta_head", "test": "CT angiography of the head", "value": "7 mm anterior communicating artery saccular aneurysm with an irregular bleb", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Aneurysmal Subarachnoid Hemorrhage evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Aneurysmal Subarachnoid Hemorrhage is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to Neuro-ICU, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: thunderclap headache described as worst headache of life accompanied by neck stiffness and photophobia",
+      "Key HPI features: 52F suddenly experienced an explosive, excruciating 'thunderclap' headache while straining during bowel movement 3 hours ago. Describes it as 'being struck in the back of the head with a baseball bat' and rates pain 10/10. Accompanied by two episodes of projectile vomiting, severe photophobia, nuchal rigidity, and transient confusion.",
+      "Objective/Exam findings: Vitals: HR 94, BP 185/104, Temp 37.1C. GCS 14 (E3 V5 M6 - lethargic but oriented). Marked nuchal rigidity with positive Kernig and Brudzinski signs. Cranial nerves intact. Non-contrast head CT reveals hyperdense blood filling the basal cisterns, Circle of Willis, and bilateral Sylvian fissures (Modified Fisher Grade 3). CT angiography (CTA) of head confirms a 7 mm anterior communicating artery (ACom) saccular aneurysm with irregular bleb.",
+      "Relevant background/PMH: Hypertension, 30 pack-year smoking history",
+      "Current medications: Lisinopril 20mg daily (intermittent compliance)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Aneurysmal Subarachnoid Hemorrhage.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Thunderclap migraine without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or declining consciousness — signals a more severe bleed or rebleeding risk."
+    ],
+    "management_principles": [
+      "Admit to Neuro-ICU",
+      "Maintain strict blood pressure control (Systolic BP < 140 mmHg) using continuous IV Nicardipine or Labetalol infusion until aneurysm securing",
+      "Start oral Nimodipine 60 mg q4h for 21 days to prevent delayed cerebral vasospasm"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 AHA/ASA Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage",
+        "url": "https://www.ahajournals.org/doi/10.1161/STR.0000000000000436"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "52F presenting with abrupt-onset thunderclap headache, meningismus, and photophobia classic for aneurysmal subarachnoid hemorrhage.",
+    "objective": "Vitals: HR 94, BP 185/104, Temp 37.1C. GCS 14 (E3 V5 M6 - lethargic but oriented). Marked nuchal rigidity with positive Kernig and Brudzinski signs. Cranial nerves intact. Non-contrast head CT reveals hyperdense blood filling the basal cisterns, Circle of Willis, and bilateral Sylvian fissures (Modified Fisher Grade 3). CT angiography (CTA) of head confirms a 7 mm anterior communicating artery (ACom) saccular aneurysm with irregular bleb.",
+    "assessment": "Aneurysmal Subarachnoid Hemorrhage (aSAH) secondary to ruptured Anterior Communicating Artery (ACom) aneurysm (Hunt and Hess Grade II).",
+    "plan": "Admit to Neuro-ICU. Maintain strict blood pressure control (Systolic BP < 140 mmHg) using continuous IV Nicardipine or Labetalol infusion until aneurysm securing. Start oral Nimodipine 60 mg q4h for 21 days to prevent delayed cerebral vasospasm. Consult neurosurgery and interventional neuroradiology for urgent endovascular coiling vs surgical clipping within 24 hours. Place external ventricular drain (EVD) if acute hydrocephalus develops."
+  },
+  "learning_objectives": [
+    "Identify clinical hallmarks of aneurysmal subarachnoid hemorrhage (thunderclap headache, meningeal irritation signs)",
+    "Interpret CT findings of subarachnoid blood and understand indications for lumbar puncture (xanthochromia) if CT is negative",
+    "Explain the critical rationale and dosing schedule for enteral Nimodipine in preventing delayed cerebral vasospasm",
+    "Compare endovascular coiling vs microsurgical clipping strategies for securing intracranial aneurysms"
+  ],
+  "teaching": {
+    "diagnosis": "Aneurysmal Subarachnoid Hemorrhage",
+    "one_liner": "A ruptured brain aneurysm bleeds into the space around the brain, causing an instantaneous 'thunderclap' headache often triggered by straining — a neurosurgical emergency needing the aneurysm secured (coiling or clipping) within 24 hours.",
+    "differentials": [
+      "Thunderclap migraine",
+      "Reversible cerebral vasoconstriction syndrome",
+      "Cerebral venous sinus thrombosis"
+    ],
+    "red_flags": [
+      "Confusion or declining consciousness — signals a more severe bleed or rebleeding risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and trigger",
+        "say": "What were you doing when the headache started, and how quickly did it become unbearable?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "straining",
+          "bowel movement",
+          "instant"
+        ]
+      },
+      {
+        "objective": "Severity and character",
+        "say": "Is this the worst headache of your life?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "worst headache",
+          "10/10"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any vomiting, neck stiffness, or sensitivity to light?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Did anyone in your family have a brain aneurysm or die of a brain bleed?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "mother",
+          "aneurysm"
+        ]
+      },
+      {
+        "objective": "Smoking and blood pressure",
+        "say": "Do you smoke, and how is your blood pressure controlled?",
+        "domains": [
+          "smoking",
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

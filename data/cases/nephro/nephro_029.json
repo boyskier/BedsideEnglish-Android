@@ -1,0 +1,129 @@
+{
+  "id": "nephro_029",
+  "system": "nephrology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "recurrent gross hematuria following upper respiratory infection",
+  "hpi_details": "A 29-year-old male presents with a third episode of gross, cola-colored hematuria in the past year, this time appearing within a day of developing a sore throat and nasal congestion. The hematuria resolves on its own after a few days between episodes, and he otherwise feels well, denying joint pain, rash, or abdominal pain.",
+  "ideas": "thinks it might be related to iga_nephropathy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_urinalysis",
+      "title": "Urinalysis with microscopy",
+      "order_terms": ["urinalysis", "urine microscopy", "urine test"],
+      "availability_message": "The urinalysis and microscopy results are now available. Additional protein quantification and specialist testing remain follow-up investigations.",
+      "results": [
+        {"id": "urinalysis", "test": "Urinalysis with microscopy", "value": "2+ blood, trace protein, and a few red blood cell casts", "flag": "abnormal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "IgA Nephropathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of IgA Nephropathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management centers on confirming the diagnosis and optimizing supportive care with blood pressure and proteinuria control (ACEi/ARB); routine corticosteroids are reserved for selected high-risk patients after optimized supportive therapy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent gross hematuria following upper respiratory infection",
+      "Key HPI features: A 29-year-old male presents with a third episode of gross, cola-colored hematuria in the past year, this time appearing within a day of developing a sore throat and nasal congestion. The hematuria resolves on its own after a few days between episodes, and he otherwise feels well, denying joint pain, rash, or abdominal pain.",
+      "Objective/Exam findings: Vitals: BP 128/82, HR 74, afebrile. Mild pharyngeal erythema consistent with recent URI. No rash, no joint swelling, no peripheral edema. Urinalysis: 2+ blood, few RBC casts, trace protein. Serum creatinine and complement levels normal.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out IgA Nephropathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Post-streptococcal glomerulonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rising creatinine or heavy proteinuria."
+    ],
+    "management_principles": [
+      "Optimize supportive care with an ACE inhibitor or ARB for blood pressure and proteinuria control, and monitor protein excretion",
+      "Consult nephrology; consider corticosteroids only in selected high-risk patients after optimized supportive therapy, not routinely",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "29M presents with a third episode of gross, cola-colored hematuria in the past year, this time appearing within a day of developing a sore throat and nasal congestion. The hematuria resolves on its own after a few days between episodes. Denies joint pain, rash, or abdominal pain.",
+    "objective": "Vitals: BP 128/82, HR 74, afebrile. Mild pharyngeal erythema consistent with recent URI. No rash, no joint swelling, no peripheral edema. Urinalysis: 2+ blood, few RBC casts, trace protein. Serum creatinine and complement levels normal.",
+    "assessment": "Recurrent synpharyngitic gross hematuria with RBC casts and normal complement levels, classic for IgA nephropathy.",
+    "plan": "Confirm diagnosis and risk-stratify with urinalysis, kidney function, quantified proteinuria, and nephrology assessment; biopsy is often needed when the diagnosis or prognosis is uncertain. Optimize supportive therapy with blood-pressure/proteinuria control. Do not use systemic corticosteroids routinely; consider them only in selected high-risk patients after optimized supportive care and specialist review."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of IgA Nephropathy",
+    "Select appropriate diagnostic workup for IgA Nephropathy",
+    "Implement evidence-based management plan: ACEi/ARB, monitor protein excretion, steroid trial if severe"
+  ],
+  "teaching": {
+    "diagnosis": "IgA Nephropathy",
+    "one_liner": "IgA immune complex deposition in the glomerular mesangium causes recurrent visible blood in the urine, classically within a day or two of an upper respiratory infection.",
+    "differentials": [
+      "Post-streptococcal glomerulonephritis",
+      "Thin basement membrane disease"
+    ],
+    "red_flags": [
+      "Rising creatinine or heavy proteinuria"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to infection",
+        "say": "Does the blood appear within a day or two of a cold?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Recurrence",
+        "say": "How many times has this happened?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Between-episode health",
+        "say": "Do you feel normal between episodes?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does kidney disease run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Blood pressure",
+        "say": "Do you have high blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

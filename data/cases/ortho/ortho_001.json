@@ -1,0 +1,150 @@
+{
+  "id": "ortho_001",
+  "system": "orthopedics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 28,
+  "gender": "male",
+  "chief_complaint": "excruciating calf pain and numbness 6 hours after tibial fracture reduction",
+  "hpi_details": "28M status post closed reduction and casting of right tibial shaft fracture sustained in skiing accident. Presents with severe, relentless lower leg pain out of proportion to injury, unmitigated by opioid analgesics. Reports tense swelling, tingling in toes, and severe pain with passive toe stretch.",
+  "ideas": "thinks his cast is applied too tightly and needs immediate loosening",
+  "concerns": "worried about losing sensation or circulation to his foot",
+  "expectations": "wants immediate pain relief and cast removal",
+  "pmh": "Right closed midshaft tibia fracture treated with plaster cast 6 hours ago",
+  "medications": "Oxycodone 10mg q4h PRN (ineffective)",
+  "social_hx": "Ski instructor, non-smoker",
+  "investigation_events": [{
+    "id": "stat_compartment_pressure",
+    "title": "Emergency compartment-pressure measurement",
+    "order_terms": ["compartment pressure", "needle manometer", "intracompartmental pressure"],
+    "availability_message": "The compartment-pressure result is now available. Cast removal and emergent fasciotomy must not be delayed when the clinical diagnosis is clear.",
+    "results": [{"id": "anterior_compartment_pressure", "test": "Right anterior compartment pressure", "value": "58", "unit": "mmHg", "reference_range": "<10", "flag": "critical", "note": "With a diastolic blood pressure of 85 mmHg, the delta pressure is 27 mmHg."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute compartment syndrome of the right lower leg evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute compartment syndrome of the right lower leg is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Immediate emergent surgical four-compartment double-incision fasciotomy of right lower leg, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating calf pain and numbness 6 hours after tibial fracture reduction",
+      "Key HPI features: 28M status post closed reduction and casting of right tibial shaft fracture sustained in skiing accident. Presents with severe, relentless lower leg pain out of proportion to injury, unmitigated by opioid analgesics. Reports tense swelling, tingling in toes, and severe pain with passive toe stretch.",
+      "Objective/Exam findings: Vitals: HR 110, BP 138/85. Right anterior leg compartment exquisitely tender, tense, and wooden on palpation post-bivalving of cast. Pain severe on passive flexion/extension of great toe. Dorsal and plantar sensation diminished. Dorsalis pedis pulse present (late sign if absent). Compartment pressure measured via needle manometer is 58 mmHg (diastolic minus compartment pressure delta 27 mmHg).",
+      "Relevant background/PMH: Right closed midshaft tibia fracture treated with plaster cast 6 hours ago",
+      "Current medications: Oxycodone 10mg q4h PRN (ineffective)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute compartment syndrome of the right lower leg.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cast too tight (simple) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion to injury."
+    ],
+    "management_principles": [
+      "Immediate emergent surgical four-compartment double-incision fasciotomy of right lower leg",
+      "Remove all external constressive dressings/cast completely",
+      "Place limb at heart level (do NOT elevate above heart level to maintain arterial perfusion gradient)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: excruciating calf pain and numbness 6 hours after tibial fracture reduction\n\n28M status post closed reduction and casting of right tibial shaft fracture sustained in skiing accident. Presents with severe, relentless lower leg pain out of proportion to injury, unmitigated by opioid analgesics. Reports tense swelling, tingling in toes, and severe pain with passive toe stretch.",
+    "objective": "Vitals: HR 110, BP 138/85. Right anterior leg compartment exquisitely tender, tense, and wooden on palpation post-bivalving of cast. Pain severe on passive flexion/extension of great toe. Dorsal and plantar sensation diminished. Dorsalis pedis pulse present (late sign if absent). Compartment pressure measured via needle manometer is 58 mmHg (diastolic minus compartment pressure delta 27 mmHg).",
+    "assessment": "Acute Anterior/Lateral Compartment Syndrome of the Right Lower Leg secondary to tibial fracture and casting.",
+    "plan": "Immediately remove all constrictive dressings and the cast, keep the limb at heart level (do not elevate it above heart level), obtain urgent orthopedic surgical consultation, and proceed to emergent four-compartment fasciotomy when clinical findings support compartment syndrome. Keep NPO and provide IV fluids while preparing for surgery."
+  },
+  "learning_objectives": [
+    "Recognize early clinical signs of acute limb compartment syndrome (the 6 Ps, especially pain out of proportion and on passive stretch)",
+    "Understand the diagnostic utility and thresholds of intracompartmental pressure monitoring (delta pressure < 30 mmHg)",
+    "Explain why limb elevation above heart level is contraindicated in compartment syndrome",
+    "Outline the emergent surgical management (four-compartment fasciotomy)"
+  ],
+  "teaching": {
+    "diagnosis": "Acute compartment syndrome of the right lower leg",
+    "one_liner": "28M with severe unrelenting calf pain out of proportion, tense swelling, and pain on passive toe stretch 6 hours after tibial fracture casting.",
+    "differentials": [
+      "Cast too tight (simple)",
+      "Deep vein thrombosis",
+      "Nerve injury from fracture",
+      "Infection"
+    ],
+    "red_flags": [
+      "Pain out of proportion to injury",
+      "Pain on passive stretch",
+      "Paresthesia",
+      "Poor response to opioids"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the pain relative to the injury",
+        "say": "Is this pain much worse than you'd expect, and does pain medicine help at all?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pain out of proportion",
+          "opioid unresponsive"
+        ]
+      },
+      {
+        "objective": "Test pain on passive stretch",
+        "say": "I'm going to gently stretch your toes — tell me if this causes severe pain.",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pain on passive stretch"
+        ]
+      },
+      {
+        "objective": "Screen for paresthesia",
+        "say": "Do you have any tingling or numbness in your toes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "paresthesia",
+          "numbness"
+        ]
+      },
+      {
+        "objective": "Assess the tightness and swelling sensation",
+        "say": "Does your leg feel tense or swollen under the cast?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tense swelling"
+        ]
+      },
+      {
+        "objective": "Explain the emergency nature of the situation",
+        "say": "This may be a surgical emergency. We need to remove the cast completely and have the orthopedic team assess you immediately.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "emergent fasciotomy",
+          "remove cast"
+        ]
+      }
+    ]
+  }
+}

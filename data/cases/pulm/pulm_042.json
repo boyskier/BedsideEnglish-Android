@@ -1,0 +1,157 @@
+{
+  "id": "pulm_042",
+  "system": "pulm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Baby Lewis",
+  "age": 1,
+  "gender": "male",
+  "chief_complaint": "wheezing, runny nose, and tachypnea in infant",
+  "hpi_details": "A 1-year-old male is brought to the clinic with wheezing, rhinorrhea, and tachypnea. His parent reports that symptoms began recently and have gradually worsened.",
+  "ideas": "thinks it might be related to bronchiolitis",
+  "concerns": "parent is worried about breathing difficulty and dehydration",
+  "expectations": "parent wants an evaluation and guidance on supportive care",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Lives with parents; no tobacco-smoke exposure reported",
+  "clinical_knowledge": {
+    "topic": "Pediatric Bronchiolitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pediatric Bronchiolitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Pediatric Bronchiolitis: Supportive care, hydration, nasal suctioning, avoid albuterol, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: wheezing, runny nose, and tachypnea in infant",
+      "Key HPI features: A 1-year-old male is brought to the clinic with wheezing, rhinorrhea, and tachypnea. His parent reports that symptoms began recently and have gradually worsened.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pediatric Bronchiolitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that wheeze in an infant should be managed as asthma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Using bronchodilators, corticosteroids, or antibiotics routinely in uncomplicated bronchiolitis."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as apnea, cyanosis, severe respiratory distress, or poor feeding."
+    ],
+    "management_principles": [
+      "Assess oxygenation, work of breathing, hydration, and risk factors such as prematurity or cardiopulmonary disease.",
+      "Provide clinician-directed supportive care; bronchodilators, corticosteroids, and antibiotics are not routine for uncomplicated bronchiolitis.",
+      "Send the child for emergency evaluation for apnea, cyanosis, severe work of breathing, exhaustion, poor feeding, or signs of dehydration."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics: Clinical Practice Guideline for Bronchiolitis",
+        "url": "https://publications.aap.org/pediatrics/article/134/5/e1474/33183/Clinical-Practice-Guideline-The-Diagnosis"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: wheezing, rhinorrhea, and tachypnea in an infant\n\nA 1-year-old male is brought to the clinic with wheezing, rhinorrhea, and tachypnea. His parent reports that symptoms began recently and have gradually worsened.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pediatric Bronchiolitis.",
+    "assessment": "Condition highly suspicious for Pediatric Bronchiolitis.",
+    "plan": "Assess oxygenation, work of breathing, hydration, and risk factors. Provide clinician-directed supportive care; bronchodilators, corticosteroids, and antibiotics are not routine for uncomplicated bronchiolitis. Send the child for emergency evaluation for apnea, cyanosis, severe work of breathing, exhaustion, poor feeding, or dehydration."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pediatric Bronchiolitis",
+    "Select appropriate diagnostic workup for Pediatric Bronchiolitis",
+    "Describe severity assessment, supportive care, and emergency safety-netting for pediatric bronchiolitis"
+  ],
+  "teaching": {
+    "diagnosis": "Pediatric Bronchiolitis",
+    "one_liner": "A viral lower respiratory tract infection in infants causing rhinorrhea, cough, wheeze, tachypnea, and increased work of breathing.",
+    "differentials": [
+      "Pneumonia",
+      "Foreign body aspiration",
+      "Early childhood asthma"
+    ],
+    "red_flags": [
+      "Apnea or cyanosis",
+      "Severe respiratory distress or poor feeding with dehydration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Feeding and hydration",
+        "say": "How much is your baby feeding, and how many wet diapers have they had today?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "feeding",
+          "wet diapers",
+          "drinking",
+          "dehydration",
+          "urine"
+        ]
+      },
+      {
+        "objective": "Breathing difficulty and apnea",
+        "say": "Have you noticed pauses in breathing, blue lips, chest retractions, or nasal flaring?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "apnea",
+          "blue",
+          "retractions",
+          "flaring",
+          "breathing"
+        ]
+      },
+      {
+        "objective": "Symptom onset and progression",
+        "say": "When did the runny nose and cough begin, and has the breathing become faster or more difficult?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "started",
+          "runny nose",
+          "cough",
+          "faster",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Prematurity and cardiopulmonary risk factors",
+        "say": "Was your baby born prematurely or do they have heart, lung, or immune problems?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "premature",
+          "heart",
+          "lung",
+          "immune",
+          "medical problems"
+        ]
+      },
+      {
+        "objective": "Sick contacts and smoke exposure",
+        "say": "Has your baby been around anyone with a cold, or exposed to cigarette smoke?",
+        "domains": [
+          "living_work",
+          "smoking"
+        ],
+        "keywords": [
+          "cold",
+          "sick contact",
+          "smoke",
+          "cigarette",
+          "exposure"
+        ]
+      }
+    ]
+  }
+}

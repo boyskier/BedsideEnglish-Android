@@ -1,0 +1,126 @@
+{
+  "id": "allergy_020",
+  "system": "allergy_immunology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Baby Ethan",
+  "age": 1,
+  "gender": "male",
+  "chief_complaint": "bloody diarrhea, severe eczema, and recurrent ear infections",
+  "hpi_details": "12-month-old male presenting with petechiae, bloody diarrhea, and severe intractable eczema covering his face and flexural areas. He has had multiple episodes of otitis media and a recent admission for pneumonia. Initial lab work at an outside hospital showed a very low platelet count and small platelet size.",
+  "ideas": "parents think his skin condition is causing his infections",
+  "concerns": "worried about the bleeding in his stool",
+  "expectations": "wants a strong cream for the eczema and answers about the bleeding",
+  "pmh": "Severe eczema, recurrent otitis media",
+  "medications": "Hydrocortisone cream",
+  "social_hx": "Lives with parents",
+  "available_results": [
+    {"id": "platelet_count", "test": "Platelet count", "value": "25", "unit": "x10^3/uL", "reference_range": "150-450", "flag": "critical", "specimen": "Blood", "collected_at": "Outside hospital"},
+    {"id": "mean_platelet_volume", "test": "Mean platelet volume", "value": "5.5", "unit": "fL", "reference_range": "7.5-11.5", "flag": "low", "specimen": "Blood", "collected_at": "Outside hospital"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Wiskott-Aldrich Syndrome (WAS)",
+    "core_concepts": [
+      "Wiskott-Aldrich Syndrome is an X-linked recessive disorder characterized by the classic triad: Microthrombocytopenia, Eczema, and Recurrent infections.",
+      "The defect involves the WAS protein, affecting actin cytoskeleton reorganization in white blood cells and platelets.",
+      "Patients have a high risk of developing autoimmune diseases and malignancies (especially lymphoma).",
+      "Definitive treatment requires Hematopoietic Stem Cell Transplantation (HSCT)."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bloody diarrhea, severe eczema, and recurrent ear infections",
+      "Key HPI features: Male infant with classic triad of bleeding/petechiae (due to thrombocytopenia), severe eczema, and recurrent pyogenic infections.",
+      "Objective/Exam findings: Petechiae, purpura, severe atopic dermatitis. CBC shows low platelets with uniquely SMALL mean platelet volume (MPV).",
+      "Relevant background/PMH: Recurrent infections",
+      "Current medications: Steroid creams"
+    ],
+    "common_misconceptions": [
+      "Misdiagnosing the bleeding as Immune Thrombocytopenic Purpura (ITP); ITP typically has normal or large platelets, whereas WAS has small platelets."
+    ],
+    "dangerous_errors": [
+      "Performing unnecessary splenectomy for presumed ITP without ruling out WAS.",
+      "Failing to screen for associated malignancies as the child grows."
+    ],
+    "management_principles": [
+      "Supportive care with IVIG, prophylactic antibiotics, and aggressive eczema management.",
+      "Transfuse platelets for severe bleeding.",
+      "Refer to Pediatric Immunology/Oncology for HSCT."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "MedlinePlus Genetics: Wiskott-Aldrich Syndrome",
+        "url": "https://medlineplus.gov/genetics/condition/wiskott-aldrich-syndrome/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "12-month-old male presenting with the triad of bloody diarrhea (petechial bleeding), severe eczema, and recurrent sinopulmonary infections.",
+    "objective": "Petechiae on extremities. Excoriated erythematous plaques on face/flexures. CBC: Platelets 25k, MPV 5.5 fL (very small).",
+    "assessment": "Wiskott-Aldrich Syndrome (WAS).",
+    "plan": "1. Admit for evaluation and management of thrombocytopenic bleeding. 2. Platelet transfusion if active severe hemorrhage. 3. Initiate IVIG and prophylactic antibiotics. 4. Topical corticosteroids for eczema. 5. Consult Pediatric Immunology for HSCT planning."
+  },
+  "learning_objectives": [
+    "Recognize the classic WATER triad: Wiskott-Aldrich, Thrombocytopenia (micro), Eczema, Recurrent infections",
+    "Differentiate WAS thrombocytopenia (small platelets) from ITP (large platelets)",
+    "Understand the definitive treatment is stem cell transplant"
+  ],
+  "teaching": {
+    "diagnosis": "Wiskott-Aldrich Syndrome (WAS)",
+    "one_liner": "An X-linked immunodeficiency featuring a triad of small-platelet bleeding, severe eczema, and recurrent infections.",
+    "differentials": [
+      "Immune Thrombocytopenic Purpura (ITP)",
+      "Severe Atopic Dermatitis with secondary infections",
+      "Hyper-IgE Syndrome (eczema and infections, but normal platelets)"
+    ],
+    "red_flags": [
+      "Unexplained bleeding or petechiae in an infant with eczema",
+      "Very low Mean Platelet Volume (MPV) on CBC"
+    ],
+    "must_ask": [
+      {
+        "objective": "Identify bleeding tendency",
+        "say": "Have you noticed any tiny red or purple spots on his skin, or unexplained bruising?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "spots",
+          "bruising",
+          "petechiae",
+          "red",
+          "purple"
+        ]
+      },
+      {
+        "objective": "Confirm severity of eczema",
+        "say": "Has his skin rash been difficult to control with regular creams?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "rash",
+          "eczema",
+          "creams",
+          "control"
+        ]
+      },
+      {
+        "objective": "Assess recurrent infection pattern",
+        "say": "Does he get sick with fevers or ear infections more often than other babies his age?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ear",
+          "infections",
+          "fever",
+          "sick",
+          "often"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "case_presentation_cap_rounds",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Case presentation",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "case_presentation",
+  "patient_name": "Ward round presentation — new admission with community-acquired pneumonia",
+  "chief_complaint": "Present an overnight admission to the attending on morning ward rounds in a structured, prioritized format",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Morning ward round: newly admitted community-acquired pneumonia",
+    "task": "Case presentation",
+    "urgency": "routine",
+    "patient": "Mr. Daniel Ochieng, 58-year-old man, admitted overnight with community-acquired pneumonia",
+    "location": "Medical ward, morning ward round; the attending has just arrived at the bedside with the team",
+    "situation": "You admitted him overnight and must present the case to the attending for the first time, prioritized and under about three minutes.",
+    "background": [
+      "Three days of fever, productive cough, and pleuritic right-sided chest pain; no recent travel or sick contacts.",
+      "Type 2 diabetes on metformin; non-smoker; no prior pneumonia or hospitalizations."
+    ],
+    "current_status": [
+      "On admission: temperature 38.6C, HR 108, RR 24, BP 118/76, SpO2 91% on room air.",
+      "Chest X-ray shows right lower lobe consolidation; white cell count 15.2, CRP elevated; blood cultures pending."
+    ],
+    "key_data": [
+      "CURB-65 score calculated at admission was 1 (based on respiratory rate), supporting ward-level care with close monitoring.",
+      "Started on empiric antibiotics and 2 L nasal cannula oxygen overnight; saturation improved to 95%."
+    ],
+    "treatments": [
+      "IV empiric antibiotics per local community-acquired pneumonia protocol, supplemental oxygen, and antipyretics; blood cultures and sputum culture sent."
+    ],
+    "your_request": "Present the case to the attending in a clear, prioritized structure: one-liner, history, exam and investigation findings, assessment with a brief differential, and your proposed plan.",
+    "must_include": [
+      "A concise one-liner with age, sex, and presenting problem.",
+      "Relevant history in chronological order, including comorbidities.",
+      "Key exam and investigation findings, including vital signs and the chest X-ray result.",
+      "A clear assessment naming community-acquired pneumonia first, with at least one alternative considered and ruled less likely.",
+      "A logical plan: antibiotics, oxygen, monitoring, and what you are watching for."
+    ]
+  },
+  "kickoff_text": "Morning — this is the new admission overnight, right? Go ahead, give me the presentation.",
+  "persona_override": "You are Dr. Whitfield, the attending physician on morning ward rounds, listening to the learner present Mr. Ochieng, a 58-year-old man admitted overnight with community-acquired pneumonia (fever, productive cough, pleuritic chest pain, right lower lobe consolidation, CURB-65 of 1, hypoxic to 91% on admission now improved on 2L oxygen). If the learner gives a clear one-liner, presents findings in a logical order, states the diagnosis with at least one differential considered, and gives a coherent plan, listen attentively and then ask one focused follow-up question, such as 'What would make you escalate his oxygen or reconsider the diagnosis?' If the presentation is disorganized, rambles through the history before giving a one-liner, or jumps straight to a diagnosis without exam or investigation findings, interrupt politely but firmly: 'Let's start again — give me the one-liner first.' Reward a presentation that stays under about three minutes without you having to ask the learner to shorten it. Stay brisk and time-pressured, as attendings on a busy ward round often are, but not unkind.",
+  "learning_objectives": [
+    "open with a concise one-liner including age, sex, and presenting problem",
+    "present history, exam, and investigation findings in a logical, prioritized order",
+    "state a clear assessment with the primary diagnosis named first and at least one differential considered",
+    "present a structured management plan tied to the assessment",
+    "deliver the presentation fluently and within about three minutes without prompting"
+  ],
+  "suggested_questions": [
+    "This is Mr. Ochieng, a 58-year-old man admitted overnight with community-acquired pneumonia.",
+    "He had three days of fever and productive cough with pleuritic chest pain, was hypoxic to 91% on admission, and his chest X-ray showed right lower lobe consolidation.",
+    "My assessment is community-acquired pneumonia, CURB-65 of 1, appropriate for ward-level care; I've started empiric antibiotics and oxygen, and I'm watching his oxygen requirement and fever trend."
+  ],
+  "clinical_knowledge": {
+    "topic": "Structured ward-round case presentation for a newly admitted patient with community-acquired pneumonia",
+    "review_status": "grounded in standard ward-round presentation structure (one-liner, HPI, exam, investigations, assessment, plan) and IDSA/ATS community-acquired pneumonia principles; local antibiotic protocols apply",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "A ward-round presentation should open with a one-liner that orients the listener before any detail is given.",
+      "Findings should be presented in the order history, exam, investigations, then assessment and plan, not as an unsorted list of facts.",
+      "The assessment should name a leading diagnosis first and briefly note why a plausible alternative is less likely, not just list findings."
+    ],
+    "diagnostic_clues": [
+      "Fever, productive cough, pleuritic chest pain, focal consolidation on chest X-ray, and elevated inflammatory markers together support community-acquired pneumonia.",
+      "A CURB-65 score helps justify the level of care (ward versus intensive monitoring) as part of the assessment."
+    ],
+    "common_misconceptions": [
+      "A longer, more detailed presentation is always a better presentation.",
+      "Stating the diagnosis is sufficient without mentioning why a reasonable alternative was considered and set aside."
+    ],
+    "dangerous_errors": [
+      "Omitting a hypoxic or clinically significant vital sign from the presentation, so the team underestimates severity.",
+      "Presenting a plan without linking it to a stated assessment, so the reasoning is not auditable by the team."
+    ],
+    "management_principles": [
+      "Use a consistent structure — one-liner, history, exam, investigations, assessment, plan — for every ward-round presentation.",
+      "Match the level of care and monitoring plan explicitly to a severity assessment such as CURB-65."
+    ],
+    "boundaries_and_exceptions": [
+      "Exact antibiotic choice, dosing, and escalation criteria depend on local community-acquired pneumonia protocols and antimicrobial stewardship guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "ATS/IDSA Community-Acquired Pneumonia in Adults Guidelines",
+        "url": "https://www.thoracic.org/statements/resources/mtpi/idsaats-cap.pdf"
+      },
+      {
+        "title": "AHRQ TeamSTEPPS Communication Tools",
+        "url": "https://www.ahrq.gov/teamstepps-program/resources/modules/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "id_014",
+  "system": "infectious_disease",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Kelly",
+  "age": 65,
+  "gender": "female",
+  "chief_complaint": "fever, back pain, and leg weakness",
+  "hpi_details": "65F presents with 3 weeks of worsening mid-back pain, low-grade fevers, and new-onset weakness and numbness in her bilateral lower extremities. She has a history of poorly controlled diabetes.",
+  "ideas": "thinks she pulled a muscle",
+  "concerns": "terrified she might become paralyzed",
+  "expectations": "wants an MRI",
+  "pmh": "Type 2 Diabetes",
+  "medications": "Metformin",
+  "social_hx": "Retired",
+  "investigation_events": [
+    {
+      "id": "stat_spine_mri",
+      "title": "STAT contrast-enhanced spine MRI",
+      "order_terms": [
+        "spine mri",
+        "thoracic spine mri",
+        "lumbar spine mri",
+        "mri thoracic spine",
+        "mri lumbar spine",
+        "mri with contrast"
+      ],
+      "availability_message": "The STAT spine MRI is now available; blood cultures, empiric antibiotics, and neurosurgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "thoracic_epidural_abscess",
+          "test": "Contrast-enhanced thoracic and lumbar spine MRI",
+          "value": "Posterior epidural rim-enhancing collection from T7 through T10 causing severe thecal-sac compression and cord edema",
+          "flag": "critical",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Spinal Epidural Abscess",
+    "core_concepts": [
+      "Triad of fever, spinal pain, and neurologic deficits."
+    ],
+    "diagnostic_clues": [
+      "Back pain + fever + neurologic deficits"
+    ],
+    "common_misconceptions": [
+      "Treating only as musculoskeletal back pain because fever might be mild."
+    ],
+    "dangerous_errors": [
+      "Discharging patients with new neuro deficits without an urgent MRI."
+    ],
+    "management_principles": [
+      "STAT full-spine MRI with contrast, blood cultures, empiric antibiotics, emergent neurosurgical consult."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "65F with worsening back pain, fever, and new leg weakness.",
+    "objective": "Point tenderness over thoracic spine. 4/5 strength in bilateral lower extremities. Decreased sensation below umbilicus.",
+    "assessment": "Suspected Spinal Epidural Abscess.",
+    "plan": "STAT MRI thoracic/lumbar spine with contrast. Neurosurgery consult. Blood cultures, then IV Vancomycin and Ceftriaxone."
+  },
+  "learning_objectives": [
+    "Identify the triad of spinal epidural abscess and order urgent MRI."
+  ],
+  "teaching": {
+    "diagnosis": "Spinal Epidural Abscess",
+    "one_liner": "Fever, localized back pain, and progressive neurologic deficits (leg weakness) necessitating urgent MRI.",
+    "differentials": [
+      "Vertebral osteomyelitis",
+      "Metastatic spinal cord compression"
+    ],
+    "red_flags": [
+      "New neurologic deficits",
+      "Bowel/bladder dysfunction"
+    ],
+    "must_ask": [
+      {
+        "objective": "Back pain character",
+        "say": "Where exactly is the back pain, and is it constant or does it come and go?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "mid-back",
+          "constant"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fevers over the past few weeks?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "low-grade"
+        ]
+      },
+      {
+        "objective": "Neurologic symptoms",
+        "say": "Have you noticed any weakness or numbness in your legs?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "weakness",
+          "numbness",
+          "legs"
+        ]
+      },
+      {
+        "objective": "Bowel/bladder function",
+        "say": "Have you had any trouble controlling your bladder or bowels?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "bladder",
+          "bowel",
+          "incontinence"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you have diabetes, or any recent infections, injections, or IV drug use?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "infection",
+          "injection",
+          "IV drug use"
+        ]
+      }
+    ]
+  }
+}

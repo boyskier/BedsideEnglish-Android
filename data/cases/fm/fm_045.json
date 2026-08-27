@@ -1,0 +1,122 @@
+{
+  "id": "fm_045",
+  "system": "fm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Scott",
+  "age": 77,
+  "gender": "male",
+  "chief_complaint": "difficulty sleeping for 6 months, using OTC sleep aids",
+  "hpi_details": "A 77-year-old male presents to the clinic with difficulty sleeping for 6 months, using otc sleep aids. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to insomnia_cbt_fm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Chronic Insomnia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Insomnia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes referral for CBT-I (stimulus control, sleep restriction) with sleep logs as first-line treatment; in an older adult, chronic use of anticholinergic OTC sleep aids (e.g., diphenhydramine) should be identified and tapered given fall and delirium risk, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: difficulty sleeping for 6 months, using OTC sleep aids",
+      "Key HPI features: A 77-year-old male presents to the clinic with difficulty sleeping for 6 months, using otc sleep aids. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Normal vital signs, no daytime hypersomnolence observed, no focal neurological findings.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Insomnia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Depression-related insomnia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Loud snoring, witnessed apneas, or excessive daytime sleepiness — suggests obstructive sleep apnea requiring a sleep study."
+    ],
+    "management_principles": [
+      "Refer for CBT-I (stimulus control, sleep restriction) with sleep logs as first-line treatment; identify and taper chronic OTC antihistamine sleep aid use given fall/delirium risk in an older adult",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of difficulty sleeping for 6 months, using OTC sleep aids. HPI: Six months of difficulty falling and staying asleep, using OTC sleep aids nightly with limited relief, no witnessed apneas or loud snoring reported.",
+    "objective": "Normal vital signs, no daytime hypersomnolence observed, no focal neurological findings.",
+    "assessment": "Chronic insomnia disorder; screen for obstructive sleep apnea, depression, and restless legs syndrome as contributing causes before attributing to primary insomnia.",
+    "plan": "Refer for CBT-I (stimulus control, sleep restriction) with sleep logs as first-line treatment. Identify and counsel on tapering chronic OTC antihistamine sleep aid use given fall and anticholinergic risk in an older adult. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Chronic Insomnia CBT",
+    "Select appropriate diagnostic workup for Chronic Insomnia CBT",
+    "Implement evidence-based management plan: CBT-I referral (stimulus control, sleep restriction), sleep logs"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Insomnia",
+    "one_liner": "Six months of sleep difficulty despite OTC sleep aids, best treated with CBT-I (cognitive behavioral therapy for insomnia) rather than long-term sedatives.",
+    "differentials": [
+      "Depression-related insomnia",
+      "Sleep apnea",
+      "Anxiety disorder"
+    ],
+    "red_flags": [
+      "Loud snoring, witnessed apneas, or excessive daytime sleepiness — suggests obstructive sleep apnea requiring a sleep study",
+      "Suicidal ideation or significant depressive symptoms — needs psychiatric evaluation",
+      "Restless, uncomfortable leg sensations relieved by movement — suggests restless legs syndrome, a different treatable cause of insomnia",
+      "Chronic nightly use of anticholinergic OTC sleep aids (e.g., diphenhydramine) in an older adult — raises fall, confusion, and delirium risk and should be tapered"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sleep pattern",
+        "say": "How long does it take you to fall asleep, and do you wake up during the night?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many months has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Current sleep aids",
+        "say": "What over-the-counter sleep aids have you tried?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Sleep hygiene",
+        "say": "What does your bedtime routine and bedroom environment look like?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Mood and stress",
+        "say": "How has your mood or stress level been?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

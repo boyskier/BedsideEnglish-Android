@@ -1,0 +1,130 @@
+{
+  "id": "nephro_039",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Anderson",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "resistant hypertension and flash pulmonary edema",
+  "hpi_details": "A 59-year-old male presents to the clinic with resistant hypertension and flash pulmonary edema. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "wonders if a blocked blood vessel to his kidney could be causing his blood pressure problems",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine, lisinopril, hydrochlorothiazide",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_flash_pulmonary_edema_workup",
+      "title": "Emergency renal function and renovascular assessment",
+      "order_terms": ["creatinine", "renal function", "potassium", "electrolytes", "renal duplex", "renal artery ultrasound"],
+      "availability_message": "Urgent renal function and renal duplex results are now available. Stabilization of flash pulmonary edema must not be delayed while awaiting imaging.",
+      "results": [
+        {"id": "creatinine", "test": "Serum creatinine", "value": "1.6", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "high", "note": "Baseline was 1.0 mg/dL before lisinopril."},
+        {"id": "renal_duplex", "test": "Renal artery duplex ultrasound", "value": "Hemodynamically significant right renal artery stenosis with elevated peak systolic velocity and a smaller right kidney", "flag": "abnormal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Renal Artery Stenosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Renal Artery Stenosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes optimized medical therapy (an ACE inhibitor or ARB with close creatinine and potassium monitoring) and reserving renal artery revascularization for selected high-risk presentations such as recurrent flash pulmonary edema, rather than routine stenting, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: resistant hypertension and flash pulmonary edema",
+      "Key HPI features: A 59-year-old male presents to the clinic with resistant hypertension and flash pulmonary edema. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 178/104 on three antihypertensive agents (amlodipine, lisinopril, hydrochlorothiazide). Abdominal bruit auscultated in the epigastrium radiating to the flank; diminished bilateral pedal pulses. Labs: Serum creatinine rose from 1.0 to 1.6 mg/dL after starting lisinopril, potassium 5.0 mEq/L. Renal duplex ultrasound: elevated right renal artery peak systolic velocity with asymmetric kidney size (right kidney smaller), consistent with significant atherosclerotic renal artery stenosis.",
+      "Relevant background/PMH: Hypertension"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Renal Artery Stenosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Primary hypertension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recurrent flash pulmonary edema — a classic clue."
+    ],
+    "management_principles": [
+      "Optimize medical therapy for blood pressure and atherosclerotic risk (continue ACE inhibitor/ARB with close creatinine and potassium monitoring, plus a statin and antiplatelet therapy)",
+      "Confirm clinically significant stenosis with renal duplex ultrasound or CT/MR angiography, and correlate with the episode of flash pulmonary edema",
+      "Reserve renal artery revascularization (stenting) for selected high-risk presentations (recurrent flash pulmonary edema, refractory hypertension despite optimal medical therapy) after specialist review, rather than routine stenting"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: resistant hypertension and flash pulmonary edema\n\nA 59-year-old male presents to the clinic with resistant hypertension and flash pulmonary edema. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: BP 178/104 on three antihypertensive agents (amlodipine, lisinopril, hydrochlorothiazide). Abdominal bruit auscultated in the epigastrium radiating to the flank; diminished bilateral pedal pulses. Labs: Serum creatinine rose from 1.0 to 1.6 mg/dL after starting lisinopril, potassium 5.0 mEq/L. Renal duplex ultrasound: elevated right renal artery peak systolic velocity with asymmetric kidney size (right kidney smaller), consistent with significant atherosclerotic renal artery stenosis.",
+    "assessment": "Renal artery stenosis (likely atherosclerotic given age and vascular risk factors) presenting with resistant hypertension and flash pulmonary edema, supported by a rise in creatinine after ACE inhibitor initiation and an abdominal bruit.",
+    "plan": "Optimize medical therapy for blood pressure and atherosclerotic risk, including an ACE inhibitor or ARB with creatinine and potassium monitoring when appropriate. Confirm clinically significant stenosis with appropriate imaging. Do not routinely stent atherosclerotic renal artery stenosis; consider revascularization with specialist input for selected high-risk presentations such as recurrent flash pulmonary edema."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Renal Artery Stenosis",
+    "Select appropriate diagnostic workup for Renal Artery Stenosis",
+    "Implement evidence-based management plan: ACEi/ARB with monitoring of creatinine, renal artery stenting"
+  ],
+  "teaching": {
+    "diagnosis": "Renal Artery Stenosis",
+    "one_liner": "Narrowing of the renal artery, from atherosclerosis or fibromuscular dysplasia, causes resistant hypertension and recurrent flash pulmonary edema.",
+    "differentials": [
+      "Primary hypertension",
+      "Heart failure alone"
+    ],
+    "red_flags": [
+      "Recurrent flash pulmonary edema — a classic clue"
+    ],
+    "must_ask": [
+      {
+        "objective": "Blood pressure control history",
+        "say": "How difficult has your blood pressure been to control?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Pulmonary edema episodes",
+        "say": "Have you had sudden episodes of severe breathlessness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Vascular disease elsewhere",
+        "say": "Do you have blocked arteries anywhere else, like your legs or heart?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Medication response",
+        "say": "Did your kidney function or blood pressure change after starting an ACE inhibitor?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "Do you smoke?",
+        "domains": [
+          "smoking"
+        ]
+      }
+    ]
+  }
+}

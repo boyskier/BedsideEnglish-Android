@@ -1,0 +1,179 @@
+{
+  "id": "em_020",
+  "system": "emergency medicine",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Wright",
+  "age": 34,
+  "gender": "male",
+  "chief_complaint": "core body temperature 41.2C, profound delirium/coma, and hot dry skin in marathon runner collapsing across finish line on hot humid day",
+  "hpi_details": "34M runner presenting with core temp 41.2C, encephalopathy, and rhabdomyolysis requiring immediate rapid evaporative cooling (ice water immersion or cold mist fan spraying) target core temp <38.9C along with aggressive IV crystalloid hydration.",
+  "ideas": "thinks this is related to heat stroke exertional hyperthermia",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "heat_injury_labs",
+      "title": "Heat-injury complication labs",
+      "order_terms": [
+        "creatine kinase",
+        "ck level",
+        "rhabdomyolysis labs",
+        "renal function",
+        "kidney function",
+        "electrolytes"
+      ],
+      "availability_message": "The heat-injury complication labs are now available. Active cooling was not delayed for testing.",
+      "results": [
+        {
+          "id": "creatine_kinase",
+          "test": "Creatine kinase",
+          "value": "8,600",
+          "unit": "U/L",
+          "reference_range": "30-200",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "creatinine",
+          "test": "Creatinine",
+          "value": "1.7",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "potassium",
+          "test": "Potassium",
+          "value": "5.5",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Heat Stroke (exertional) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Heat Stroke (exertional) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Heat Stroke Exertional Hyperthermia, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: core body temperature 41.2C, profound delirium/coma, and hot dry skin in marathon runner collapsing across finish line on hot humid day",
+      "Key HPI features: 34M runner presenting with core temp 41.2C, encephalopathy, and rhabdomyolysis requiring immediate rapid evaporative cooling (ice water immersion or cold mist fan spraying) target core temp <38.9C along with aggressive IV crystalloid hydration.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Heat Stroke Exertional Hyperthermia.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Heat Stroke (exertional).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Heat exhaustion (less severe, normal mental status) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Altered mental status with very high temperature — this combination defines heat stroke and demands immediate cooling."
+    ],
+    "management_principles": [
+      "Begin immediate rapid external cooling, preferably cold-water immersion for exertional heat stroke, and stop cooling at a core temperature of about 38.9°C while supporting airway, circulation, and complications",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Heat Stroke Exertional Hyperthermia: core body temperature 41.2C, profound delirium/coma, and hot dry skin in marathon runner collapsing across finish line on hot humid day. 34M runner presenting with core temp 41.2C, encephalopathy, and rhabdomyolysis requiring immediate rapid evaporative cooling (ice water immersion or cold mist fan spraying) target core temp <38.9C along with aggressive IV crystalloid hydration.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Heat Stroke Exertional Hyperthermia.",
+    "assessment": "Clinical presentation highly suggestive of Heat Stroke Exertional Hyperthermia.",
+    "plan": "Begin immediate rapid cooling, preferably cold-water immersion for exertional heat stroke, without delaying for tests; monitor core temperature continuously and stop cooling at about 38.9°C. Support airway and circulation, give IV crystalloid guided by perfusion and urine output, and monitor/treat rhabdomyolysis, electrolyte abnormalities, renal injury, liver injury, and coagulopathy. Antipyretics do not treat heat stroke. Admit for critical-care level monitoring."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Heat Stroke Exertional Hyperthermia",
+    "Formulate prioritized differential diagnosis for core body temperature 41.2C, profound delirium/coma, and hot dry skin in marathon runner collapsing across finish line on hot humid day",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Heat Stroke (exertional)",
+    "one_liner": "Extreme exertion in heat overwhelms the body's cooling mechanisms, causing core temperature above 40°C with altered mental status — a true emergency needing rapid cooling (ice water immersion) as the single most important intervention.",
+    "differentials": [
+      "Heat exhaustion (less severe, normal mental status)",
+      "Sepsis",
+      "Serotonin syndrome"
+    ],
+    "red_flags": [
+      "Altered mental status with very high temperature — this combination defines heat stroke and demands immediate cooling"
+    ],
+    "must_ask": [
+      {
+        "objective": "Activity and environmental conditions",
+        "say": "What were you doing, and how hot and humid was it?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "marathon",
+          "hot",
+          "humid"
+        ]
+      },
+      {
+        "objective": "Mental status",
+        "say": "How alert is he — is he confused or unresponsive?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "coma"
+        ]
+      },
+      {
+        "objective": "Hydration during activity",
+        "say": "How much fluid was he drinking during the race?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Skin condition",
+        "say": "Is his skin hot and dry, or still sweating?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Collapse details",
+        "say": "When did he collapse, and how long has he been like this?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

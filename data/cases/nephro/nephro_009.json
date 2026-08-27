@@ -1,0 +1,160 @@
+{
+  "id": "nephro_009",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. King",
+  "age": 69,
+  "gender": "male",
+  "chief_complaint": "profound muscle weakness and slow irregular pulse on heart check",
+  "hpi_details": "69M with CKD Stage 4 and heart failure on ACEi/spironolactone presenting with HR 44 bpm, K+ 7.4 mEq/L, and peaked T-waves/widened QRS on ECG.",
+  "ideas": "thinks this is related to life-threatening hyperkalemia cardiotoxicity",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Chronic kidney disease stage 4, heart failure",
+  "medications": "ACE inhibitor, spironolactone",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "potassium",
+      "test": "Serum potassium",
+      "value": "7.4",
+      "unit": "mEq/L",
+      "reference_range": "3.5-5.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "3.8",
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3",
+      "flag": "critical",
+      "specimen": "Blood",
+      "note": "Baseline 2.5 mg/dL"
+    },
+    {
+      "id": "ecg",
+      "test": "12-lead ECG",
+      "value": "Peaked T waves, widened QRS complexes, and absent P waves",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Life-Threatening Hyperkalemia with Cardiotoxicity evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Life-Threatening Hyperkalemia with Cardiotoxicity is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate IV calcium gluconate to stabilize the cardiac membrane, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profound muscle weakness and slow irregular pulse on heart check",
+      "Key HPI features: 69M with CKD Stage 4 and heart failure on ACEi/spironolactone presenting with HR 44 bpm, K+ 7.4 mEq/L, and peaked T-waves/widened QRS on ECG.",
+      "Objective/Exam findings: Vitals: BP 102/60, HR 44 and irregular, RR 18. Profound generalized weakness with diminished deep tendon reflexes. ECG: peaked T waves, widened QRS complex, absent P waves. Bloods: K+ 7.4 mEq/L, Creatinine 3.8 mg/dL (baseline 2.5), BUN 62 mg/dL, HCO3 18 mEq/L.",
+      "Relevant background/PMH: Chronic kidney disease stage 4, heart failure"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Life-Threatening Hyperkalemia with Cardiotoxicity.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Complete heart block from another cause without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Slow heart rate with muscle weakness — this is a cardiac emergency needing immediate calcium and potassium-lowering treatment."
+    ],
+    "management_principles": [
+      "Immediate IV calcium gluconate to stabilize the cardiac membrane",
+      "Shift potassium intracellularly with IV regular insulin plus dextrose and nebulized albuterol",
+      "Remove potassium from the body via IV loop diuretic if urine output is preserved, or emergent hemodialysis given CKD stage 4 and severe/refractory hyperkalemia",
+      "Hold ACE inhibitor and spironolactone immediately; continuous cardiac monitoring"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "69M with CKD Stage 4 and heart failure on an ACE inhibitor and spironolactone presents with sudden profound generalized muscle weakness and a slow, irregular pulse noted on home heart-rate check.",
+    "objective": "Vitals: BP 102/60, HR 44 and irregular, RR 18. Profound generalized weakness with diminished deep tendon reflexes. ECG: peaked T waves, widened QRS complex, absent P waves. Bloods: K+ 7.4 mEq/L, Creatinine 3.8 mg/dL (baseline 2.5), BUN 62 mg/dL, HCO3 18 mEq/L.",
+    "assessment": "Life-threatening hyperkalemia with cardiotoxicity (ECG changes and symptomatic bradycardia) in a patient with CKD Stage 4 on ACE inhibitor and spironolactone.",
+    "plan": "Immediate IV calcium gluconate to stabilize the cardiac membrane. Shift potassium intracellularly with IV regular insulin plus dextrose and nebulized albuterol. Remove potassium from the body via IV loop diuretic if urine output is preserved, or emergent hemodialysis given CKD stage 4 and severe/refractory hyperkalemia. Hold ACE inhibitor and spironolactone immediately; continuous cardiac monitoring."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Life-Threatening Hyperkalemia Cardiotoxicity",
+    "Formulate prioritized differential diagnosis for profound muscle weakness and slow irregular pulse on heart check",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Life-Threatening Hyperkalemia with Cardiotoxicity",
+    "one_liner": "Severely elevated potassium — often from CKD combined with ACE inhibitors or potassium-sparing diuretics — disrupts cardiac electrical conduction, causing bradycardia, ECG changes, and risk of fatal arrhythmia.",
+    "differentials": [
+      "Complete heart block from another cause",
+      "Digoxin toxicity",
+      "Beta-blocker overdose"
+    ],
+    "red_flags": [
+      "Slow heart rate with muscle weakness — this is a cardiac emergency needing immediate calcium and potassium-lowering treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Muscle weakness onset",
+        "say": "How suddenly did the muscle weakness come on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Do you feel your heart beating unusually slowly, or any palpitations?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "slow heart rate",
+          "palpitations"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking any medications for your heart, kidneys, or blood pressure?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ACE inhibitor",
+          "spironolactone"
+        ]
+      },
+      {
+        "objective": "Kidney disease history",
+        "say": "Do you have chronic kidney disease?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Dietary potassium intake",
+        "say": "Have you been eating a lot of potassium-rich foods, like bananas or salt substitutes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "banana",
+          "salt substitute"
+        ]
+      }
+    ]
+  }
+}

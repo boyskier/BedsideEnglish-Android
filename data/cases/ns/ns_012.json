@@ -1,0 +1,133 @@
+{
+  "id": "ns_012",
+  "system": "neurosurgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rivera",
+  "age": 61,
+  "gender": "male",
+  "chief_complaint": "sudden dense left hemiplegia, slurred speech, and severe hypertension during emotional argument",
+  "hpi_details": "61M poorly controlled hypertensive presenting with sudden left hemiplegia, gaze preference toward right, and 4 cm acute putaminal hematoma on head CT.",
+  "ideas": "thinks this is related to spontaneous intracerebral hemorrhage basal ganglia",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{
+    "id": "ct_head",
+    "test": "Non-contrast CT head",
+    "value": "4.0 cm acute right putaminal intraparenchymal hematoma with surrounding edema and mild local mass effect",
+    "flag": "critical"
+  }],
+  "clinical_knowledge": {
+    "topic": "Spontaneous Intracerebral Hemorrhage (Basal Ganglia) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Spontaneous Intracerebral Hemorrhage (Basal Ganglia) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management includes neurocritical monitoring, careful blood-pressure control, evaluation for anticoagulant reversal, and neurosurgical assessment, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden dense left hemiplegia, slurred speech, and severe hypertension during emotional argument",
+      "Key HPI features: 61M poorly controlled hypertensive presenting with sudden left hemiplegia, gaze preference toward right, and 4 cm acute putaminal hematoma on head CT.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Spontaneous Intracerebral Hemorrhage Basal Ganglia.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Spontaneous Intracerebral Hemorrhage (Basal Ganglia).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ischemic stroke without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Declining consciousness — signals the hematoma is expanding or causing increased pressure."
+    ],
+    "management_principles": [
+      "Admit to a stroke unit or neurocritical-care setting; protect the airway as needed and perform frequent neurologic checks.",
+      "For a presenting systolic blood pressure of 150–220 mm Hg, lower it smoothly toward approximately 140 mm Hg while avoiding hypotension; individualize targets for more severe hypertension.",
+      "Check coagulation studies and medication history; rapidly reverse any relevant anticoagulant-associated coagulopathy.",
+      "Obtain repeat CT for neurologic deterioration or per local protocol, and seek neurosurgical input for hydrocephalus, mass effect, or selected decompression indications."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Spontaneous Intracerebral Hemorrhage Basal Ganglia: sudden dense left hemiplegia, slurred speech, and severe hypertension during emotional argument. 61M poorly controlled hypertensive presenting with sudden left hemiplegia, gaze preference toward right, and 4 cm acute putaminal hematoma on head CT.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Spontaneous Intracerebral Hemorrhage Basal Ganglia.",
+    "assessment": "Clinical presentation highly suggestive of Spontaneous Intracerebral Hemorrhage Basal Ganglia.",
+    "plan": "Admit to a stroke unit or neurocritical-care setting; protect the airway as needed and perform frequent neurologic checks. For a presenting systolic blood pressure of 150–220 mm Hg, lower it smoothly toward approximately 140 mm Hg while avoiding hypotension; individualize targets for more severe hypertension. Check coagulation studies and medication history; rapidly reverse any relevant anticoagulant-associated coagulopathy. Obtain repeat CT for neurologic deterioration or per local protocol, and seek neurosurgical input for hydrocephalus, mass effect, or selected decompression indications."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Spontaneous Intracerebral Hemorrhage Basal Ganglia",
+    "Formulate prioritized differential diagnosis for sudden dense left hemiplegia, slurred speech, and severe hypertension during emotional argument",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Spontaneous Intracerebral Hemorrhage (Basal Ganglia)",
+    "one_liner": "Poorly controlled high blood pressure causes a small brain artery to rupture, bleeding directly into the brain tissue and causing sudden dense weakness on one side — distinct from ischemic stroke, which is caused by a blockage rather than a bleed.",
+    "differentials": [
+      "Ischemic stroke",
+      "Hemorrhagic transformation of an ischemic stroke",
+      "Cerebral amyloid angiopathy (in older patients)"
+    ],
+    "red_flags": [
+      "Declining consciousness — signals the hematoma is expanding or causing increased pressure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset context",
+        "say": "What were you doing right before this started — was there any stress or straining?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "argument",
+          "emotional"
+        ]
+      },
+      {
+        "objective": "Weakness pattern",
+        "say": "Which side is weak, and how severe is it?",
+        "domains": [
+          "character",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Speech",
+        "say": "Is your speech slurred?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "How controlled has your blood pressure been?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Headache",
+        "say": "Do you have a headache with this?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

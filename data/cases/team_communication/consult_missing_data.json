@@ -1,0 +1,49 @@
+{
+  "id": "consult_missing_data",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Consult / referral",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "consult_referral",
+  "patient_name": "Renal consult — information not yet available",
+  "chief_complaint": "Handle missing information honestly and agree on what to obtain before callback",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Renal consult: AKI with incomplete data",
+    "task": "Consult / referral",
+    "urgency": "urgent",
+    "patient": "Mr. Henry Cole, 73-year-old man",
+    "location": "Inpatient ward",
+    "situation": "Acute kidney injury with hyperkalemia; some decision-critical information is not available yet.",
+    "background": ["Baseline creatinine 1.1 mg/dL; current creatinine 3.2 mg/dL."],
+    "current_status": ["Potassium is 5.7 mmol/L."],
+    "key_data": ["Six-hour urine output has not been charted.", "Bladder scan has not been performed."],
+    "treatments": ["Obtain urine output, bladder scan, ECG changes, and relevant nephrotoxin history; do not guess."],
+    "your_request": "Report the known data honestly, agree immediate safety steps, and arrange a clear callback time.",
+    "must_include": ["Creatinine change and potassium.", "Exactly what is unavailable.", "What you will obtain, callback timing, and escalation trigger."]
+  },
+  "kickoff_text": "Renal registrar. Give me the current creatinine, urine output, potassium, and baseline renal function.",
+  "persona_override": "You are Dr. Ahmed, a renal registrar receiving a referral for acute kidney injury. The patient is Mr. Henry Cole, 73. Current creatinine is 3.2 mg/dL, up from a baseline of 1.1. Potassium is 5.7 mmol/L. Urine output for the last six hours has not been charted, and a bladder scan has not yet been done. The learner should not invent those missing facts. Reward an honest statement that the data are unavailable, a plan to obtain them immediately, and a clear callback time. Ask about ECG changes and nephrotoxins. Agree to review after immediate hyperkalemia safety steps and the missing information are obtained, unless the learner reports instability.",
+  "learning_objectives": [
+    "report known renal function and potassium accurately",
+    "state clearly which requested facts are not yet available",
+    "propose immediate actions to obtain missing information",
+    "agree on a callback time and escalation trigger"
+  ],
+  "suggested_questions": [
+    "I don't have a reliable six-hour urine output yet; I'm checking it now rather than guessing.",
+    "The bladder scan has not been done. I will arrange it immediately.",
+    "I will call you back within fifteen minutes with the ECG, urine output, and bladder scan."
+  ],
+  "clinical_knowledge": {
+    "topic": "Renal consult for acute kidney injury with hyperkalemia and incomplete initial data",
+    "core_concepts": ["Missing information should be named explicitly rather than estimated or invented.", "AKI communication should include baseline and current renal function, urine output, potassium, relevant exposures, and immediate safety findings."],
+    "diagnostic_clues": ["Creatinine has risen markedly from baseline.", "Hyperkalemia is present while urine output and obstruction assessment remain incomplete."],
+    "common_misconceptions": ["A referral must be delayed until every fact is available.", "Guessing an unmeasured urine output is safer than admitting it is unknown."],
+    "dangerous_errors": ["Inventing unavailable observations or failing to communicate hyperkalemia.", "Ending without an immediate data-gathering plan, callback time, or escalation trigger."],
+    "management_principles": ["Communicate known severity and urgent risks first, then identify the missing decision-critical data.", "Use check-back to agree on immediate actions, callback timing, and responsibility."],
+    "boundaries_and_exceptions": ["Hyperkalemia treatment, renal replacement therapy, imaging, and fluid decisions depend on ECG, symptoms, cause, trajectory, and local protocols."],
+    "source_refs": [{"title": "AHRQ TeamSTEPPS Check-Back", "url": "https://www.ahrq.gov/teamstepps-program/resources/modules/index.html"}, {"title": "KDIGO Acute Kidney Injury Guideline Suite", "url": "https://kdigo.org/guidelines/acute-kidney-injury/"}]
+  }
+}

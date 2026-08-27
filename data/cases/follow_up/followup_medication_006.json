@@ -1,0 +1,245 @@
+{
+  "id": "followup_medication_006",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "medication",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Frank Kowalski",
+  "age": 59,
+  "gender": "male",
+  "visit_title": "Gout allopurinol dose titration",
+  "follow_up_reason": "Four-week review after starting allopurinol for gout",
+  "clinician_brief": {
+    "prior_note": "Initiated Allopurinol 100mg daily 4 weeks ago after recurrent gout flares in 1st MTP joint. Baseline serum uric acid was 8.8 mg/dL. Colchicine 0.6mg daily was prescribed for flare prophylaxis.",
+    "active_problems": [
+      "Recurrent gouty arthritis",
+      "Hypertension",
+      "Stage 2 CKD (eGFR 65 mL/min)"
+    ],
+    "current_medications": [
+      "Allopurinol 100 mg once daily",
+      "Colchicine 0.6 mg once daily (prophylaxis)",
+      "Losartan 50 mg once daily"
+    ],
+    "previous_plan": [
+      "Start allopurinol 100mg daily",
+      "Take daily colchicine flare prophylaxis",
+      "Check repeat serum uric acid at 4 weeks",
+      "Target serum uric acid < 6.0 mg/dL",
+      "Report skin rash immediately"
+    ],
+    "results_and_observations": [
+      "New Serum Uric Acid: 7.1 mg/dL (decreased from 8.8)",
+      "eGFR 64 mL/min (stable)",
+      "LFTs normal"
+    ],
+    "today_tasks": [
+      "Review serum uric acid response (7.1 mg/dL -> target <6.0 mg/dL)",
+      "Screen for severe cutaneous adverse reactions (SCAR / skin rash)",
+      "Assess recent gout flare frequency and prophylactic colchicine use",
+      "Discuss allopurinol dose titration to 200mg daily",
+      "Reinforce hydration and dietary purine moderation"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Had one mild toe twinge 2 weeks ago, which settled quickly with colchicine.",
+    "adherence": "Takes allopurinol and colchicine every morning with breakfast.",
+    "treatment_response": "Uric acid dropped to 7.1 mg/dL. No major red hot swollen joints.",
+    "side_effects": "No skin rash, itching, fever, or stomach distress.",
+    "new_symptoms_and_red_flags": "No skin peeling, mouth ulcers, jaundice, or severe abdominal pain.",
+    "agenda": "Wants to know if he needs to increase the allopurinol dose since uric acid is not yet under 6.0.",
+    "concern": "Worried that taking allopurinol during a flare will make the pain worse.",
+    "preference": "Wants to keep uric acid low so he can enjoy walking without fear of flares."
+  },
+  "clinical_knowledge": {
+    "topic": "Titrating allopurinol toward a treat-to-target serum urate below 6.0 mg/dL in a patient with stage 2 CKD, and correcting the belief that starting urate-lowering therapy during a flare worsens pain",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Gout management follows a treat-to-target strategy: allopurinol is titrated upward every few weeks until serum urate is reliably below 6.0 mg/dL (sometimes below 5.0 mg/dL for tophaceous or frequent-flare disease), not stopped once flares become less frequent.",
+      "Frank's uric acid fell from 8.8 to 7.1 mg/dL on allopurinol 100 mg daily — a real response, but still above target, which is the expected pattern at a starting dose and the reason for stepwise up-titration rather than a sign the drug isn't working.",
+      "Flare prophylaxis (low-dose colchicine here) is continued for several months after starting or increasing a urate-lowering drug, because dropping serum urate can transiently mobilize crystals and paradoxically trigger flares during the titration period — this is a known phenomenon, not a treatment failure.",
+      "Allopurinol is renally cleared, so dose increases in a patient with stage 2 CKD (eGFR 64-65) should be made cautiously with monitoring, though the current eGFR is not a contraindication to titration."
+    ],
+    "diagnostic_clues": [
+      "A drop in serum uric acid from 8.8 to 7.1 mg/dL confirms allopurinol is being absorbed and is biologically active, but remains above the <6.0 mg/dL treat-to-target goal, indicating the dose needs to go up rather than stay the same.",
+      "One mild toe twinge that settled quickly with colchicine over the past 4 weeks is consistent with expected mobilization flares during early urate-lowering therapy, not treatment failure or an allergic reaction.",
+      "A clear, non-rashed skin exam with no itching, fever, or systemic symptoms argues against the severe cutaneous adverse reaction (SCAR/DRESS) that is the main serious risk of allopurinol, especially important to screen for explicitly given how rare but dangerous it is.",
+      "Stable eGFR (64, essentially unchanged from baseline 65) and normal LFTs confirm current dosing is being tolerated without early evidence of drug-related organ toxicity."
+    ],
+    "common_misconceptions": [
+      "Frank's specific worry that starting or increasing allopurinol during a flare will 'make the pain worse' — in fact allopurinol itself does not worsen an acute flare, but changing urate levels around a flare can trigger new flares, which is precisely why prophylactic colchicine is continued through titration rather than avoiding allopurinol.",
+      "Assuming that because a flare occurred while on allopurinol, the medication has failed, when transient flares during the first months of urate-lowering therapy are expected and do not mean the drug should be stopped.",
+      "Believing symptom control (fewer flares) alone is the treatment goal, rather than understanding that the actual target is a specific serum urate number, because sustained hypouricemia — not just fewer flares — is what dissolves urate crystal deposits over time.",
+      "Thinking a single-step dose increase will immediately bring urate under 6.0 mg/dL, when gout titration is typically gradual and may require several dose adjustments and rechecks."
+    ],
+    "dangerous_errors": [
+      "Stopping colchicine prophylaxis as soon as flares become infrequent, which removes protection during the very titration period when new flares are most likely to occur.",
+      "Increasing the allopurinol dose without re-checking renal function, given his stage 2 CKD, since accumulating drug or metabolite in reduced renal clearance raises toxicity risk.",
+      "Failing to explicitly re-warn about skin rash as an emergency symptom at every dose change, since allopurinol hypersensitivity syndrome risk is not eliminated by prior tolerance and can occur at any point, including after a dose increase.",
+      "Treating an uncomplicated mild toe twinge on colchicine prophylaxis as a reason to abandon the allopurinol titration plan rather than reassuring him that this is an expected part of treatment."
+    ],
+    "management_principles": [
+      "Increase allopurinol to 200 mg daily now that 100 mg produced a partial but insufficient response, aiming for serum urate <6.0 mg/dL.",
+      "Continue colchicine 0.6 mg daily as flare prophylaxis through the titration period rather than stopping it prematurely.",
+      "Recheck serum uric acid and renal function in about 4 weeks to confirm the new dose is both effective and safely tolerated given his CKD.",
+      "Reinforce hydration and moderate dietary purine intake as adjuncts, while being clear these lifestyle measures support but do not replace medication titration to target."
+    ],
+    "boundaries_and_exceptions": [
+      "If his eGFR declines further, allopurinol dosing and titration pace would need to be adjusted according to renal-dose guidance, and a lower maintenance dose may be the safe ceiling.",
+      "If serum urate remains above target despite reasonable up-titration, or if he cannot tolerate allopurinol, guideline-directed second-line agents (e.g., febuxostat, with its own cardiovascular caveats) would be considered.",
+      "Any rash, fever, or mucosal symptoms should prompt immediate discontinuation and urgent evaluation for allopurinol hypersensitivity syndrome, overriding the routine titration plan."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Guideline for the Management of Gout",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the visit agenda for gout urate-lowering therapy",
+    "Review serum uric acid response against the target of <6.0 mg/dL",
+    "Screen thoroughly for skin rash or severe hypersensitivity warnings",
+    "Assess flare prophylaxis adherence and recent flare frequency",
+    "Discuss dose titration (stepping up Allopurinol to 200mg daily)",
+    "Address flare timing misconceptions in plain English",
+    "Agree on dietary guidance, hydration, and next lab test timeline"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the visit agenda for gout urate-lowering therapy",
+      "category": "Agenda",
+      "question": "Since starting allopurinol four weeks ago, what would you most like to review today?"
+    },
+    {
+      "objective": "Review serum uric acid response against the target of <6.0 mg/dL",
+      "category": "Results",
+      "question": "Your uric acid dropped from 8.8 to 7.1 - would you like to discuss reaching our target below 6.0?"
+    },
+    {
+      "objective": "Screen thoroughly for skin rash or severe hypersensitivity warnings",
+      "category": "Safety",
+      "question": "Have you noticed any skin rash, itching, peeling, or fever since starting allopurinol?"
+    },
+    {
+      "objective": "Assess flare prophylaxis adherence and recent flare frequency",
+      "category": "Interval change",
+      "question": "How many gout flares or toe twinges have you had, and are you taking the daily colchicine?"
+    },
+    {
+      "objective": "Discuss dose titration (stepping up Allopurinol to 200mg daily)",
+      "category": "Treatment plan",
+      "question": "To get your uric acid safely under 6.0, can we discuss increasing your daily dose to 200 mg?"
+    },
+    {
+      "objective": "Address flare timing misconceptions in plain English",
+      "category": "Concerns",
+      "question": "What questions do you have about continuing allopurinol even if a mild gout flare occurs?"
+    },
+    {
+      "objective": "Agree on dietary guidance, hydration, and next lab test timeline",
+      "category": "Shared plan",
+      "question": "Shall we recheck your blood test in four weeks and continue drinking plenty of water?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the visit agenda for gout urate-lowering therapy",
+      "keywords": [
+        "allopurinol",
+        "gout",
+        "four weeks",
+        "agenda",
+        "today",
+        "uric acid"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review serum uric acid response against the target of <6.0 mg/dL",
+      "keywords": [
+        "uric acid",
+        "7.1",
+        "target",
+        "under 6",
+        "below 6",
+        "results"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen thoroughly for skin rash or severe hypersensitivity warnings",
+      "keywords": [
+        "rash",
+        "skin",
+        "itching",
+        "peeling",
+        "hypersensitivity",
+        "fever",
+        "side effects"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess flare prophylaxis adherence and recent flare frequency",
+      "keywords": [
+        "colchicine",
+        "flares",
+        "toe",
+        "twinges",
+        "joint pain",
+        "prophylaxis"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Discuss dose titration (stepping up Allopurinol to 200mg daily)",
+      "keywords": [
+        "increase",
+        "200 mg",
+        "step up",
+        "titrate",
+        "dose",
+        "allopurinol"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address flare timing misconceptions in plain English",
+      "keywords": [
+        "continue allopurinol",
+        "worse",
+        "flare pain",
+        "worry",
+        "worried",
+        "explain"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on dietary guidance, hydration, and next lab test timeline",
+      "keywords": [
+        "water",
+        "hydration",
+        "four weeks",
+        "recheck",
+        "agree",
+        "plan"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "59M with gout returns at 4 weeks on allopurinol 100mg and colchicine 0.6mg. One minor toe twinge resolved. No rash or itch. Asks about dose increase to meet target.",
+    "objective": "Serum uric acid 7.1 mg/dL (down from 8.8). eGFR 64 mL/min. Skin clear without rash.",
+    "assessment": "Partial urate-lowering response to Allopurinol 100mg; safe tolerance without rash; requires titration to reach target <6.0 mg/dL.",
+    "plan": "Increase Allopurinol to 200mg daily, continue Colchicine 0.6mg daily for flare prophylaxis, re-emphasize reporting rash immediately, recheck uric acid and eGFR in 4 weeks."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Gout allopurinol dose titration",
+    "one_liner": "Clinical scenario for evaluation and management of Gout allopurinol dose titration."
+  }
+}

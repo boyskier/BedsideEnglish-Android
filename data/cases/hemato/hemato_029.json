@@ -1,0 +1,150 @@
+{
+  "id": "hemato_029",
+  "system": "hemato",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lopez",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "normocytic anemia in patient with rheumatoid arthritis",
+  "hpi_details": "A 29-year-old male presents to the clinic with normocytic anemia in patient with rheumatoid arthritis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to anemia of chronic disease",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Rheumatoid arthritis",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "10.4",
+      "unit": "g/dL",
+      "reference_range": "13.5-17.5",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "mcv",
+      "test": "Mean corpuscular volume",
+      "value": "87",
+      "unit": "fL",
+      "reference_range": "80-100",
+      "flag": "normal",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Anemia of Chronic Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Anemia of Chronic Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Anemia of Chronic Disease: Treat underlying inflammatory disease, consider ESA if indicated, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: normocytic anemia in patient with rheumatoid arthritis",
+      "Key HPI features: A 29-year-old male presents to the clinic with normocytic anemia in patient with rheumatoid arthritis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Anemia of Chronic Disease.",
+      "Relevant background/PMH: Rheumatoid arthritis"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Anemia of Chronic Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Iron deficiency anemia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: signs of active bleeding or a rapidly falling hemoglobin, which require urgent workup rather than being attributed to anemia of chronic disease alone."
+    ],
+    "management_principles": [
+      "Treat the underlying inflammatory disease and evaluate for coexisting iron deficiency, renal disease, or other causes of anemia; erythropoiesis-stimulating agents are not routine for rheumatoid-arthritis-associated anemia",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: normocytic anemia in patient with rheumatoid arthritis\n\nA 29-year-old male presents to the clinic with normocytic anemia in patient with rheumatoid arthritis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Anemia of Chronic Disease.",
+    "assessment": "Condition highly suspicious for Anemia of Chronic Disease.",
+    "plan": "Treat the underlying inflammatory disease and evaluate for coexisting iron deficiency, renal disease, or other causes of anemia. Erythropoiesis-stimulating agents are not routine for rheumatoid-arthritis-associated anemia and should be reserved for specific indications such as selected CKD or chemotherapy-associated anemia with appropriate risk assessment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Anemia of Chronic Disease",
+    "Select appropriate diagnostic workup for Anemia of Chronic Disease",
+    "Implement evidence-based management plan: Treat underlying inflammatory disease, consider ESA if indicated"
+  ],
+  "teaching": {
+    "diagnosis": "Anemia of Chronic Disease",
+    "one_liner": "Ongoing inflammation (from a condition like rheumatoid arthritis) traps iron inside storage cells and blunts red cell production, causing a mild-to-moderate normocytic anemia.",
+    "differentials": [
+      "Iron deficiency anemia",
+      "Anemia from disease-modifying drug side effects",
+      "Renal anemia"
+    ],
+    "red_flags": [
+      "Hemoglobin low enough to cause symptomatic anemia (chest pain, dyspnea, hemodynamic instability)",
+      "Signs of active bleeding (melena, hematochezia, hematemesis)",
+      "Rapidly falling hemoglobin — suggests hemolysis or bleeding rather than anemia of chronic disease",
+      "Microcytic anemia with a low ferritin — suggests coexisting true iron deficiency warranting GI workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "Underlying inflammatory disease",
+        "say": "How is your rheumatoid arthritis being managed, and how active is it right now?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "rheumatoid arthritis",
+          "inflammation"
+        ]
+      },
+      {
+        "objective": "Fatigue severity",
+        "say": "How is the fatigue affecting your daily life?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Iron intake vs. loss",
+        "say": "Have you noticed any bleeding, or is your diet iron-rich?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bleeding",
+          "diet"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you felt this way?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Other chronic conditions",
+        "say": "Do you have any other ongoing medical conditions?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

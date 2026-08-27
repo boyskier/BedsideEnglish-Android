@@ -1,0 +1,129 @@
+{
+  "id": "gs_014",
+  "system": "general_surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Baker",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "right upper quadrant pain after eating fatty foods",
+  "hpi_details": "50F presents with recurrent right upper quadrant pain radiating to the right shoulder, starting 1 hour after eating a hamburger. Pain lasts 2-3 hours. Denies fever or jaundice.",
+  "ideas": "thinks she has gallstones",
+  "concerns": "worried about pain returning",
+  "expectations": "wants ultrasound",
+  "pmh": "Obesity",
+  "medications": "None",
+  "social_hx": "Non-smoker",
+  "clinical_knowledge": {
+    "topic": "Biliary Colic",
+    "core_concepts": [
+      "Pain is due to transient gallstone obstruction of the cystic duct."
+    ],
+    "diagnostic_clues": [
+      "RUQ pain after fatty meals",
+      "No fever"
+    ],
+    "common_misconceptions": [
+      "Confusing with cholecystitis (which has fever/constant pain)."
+    ],
+    "dangerous_errors": [
+      "Missing cholangitis if jaundice is present."
+    ],
+    "management_principles": [
+      "Elective cholecystectomy, diet modification."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "50F with episodic postprandial RUQ pain.",
+    "objective": "Afebrile. Mild RUQ tenderness, negative Murphy sign.",
+    "assessment": "Biliary colic.",
+    "plan": "RUQ ultrasound, general surgery referral."
+  },
+  "learning_objectives": [
+    "Differentiate biliary colic from acute cholecystitis."
+  ],
+  "teaching": {
+    "diagnosis": "Biliary Colic",
+    "one_liner": "Episodic right upper quadrant pain after fatty meals, typical of symptomatic cholelithiasis without acute inflammation.",
+    "differentials": [
+      "Acute cholecystitis",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "Fever",
+      "Jaundice"
+    ],
+    "must_ask": [
+      {
+        "objective": "Relationship to fatty food",
+        "say": "Does the pain come on after eating fatty or greasy food?",
+        "domains": [
+          "triggers"
+        ],
+        "keywords": [
+          "fatty",
+          "greasy",
+          "meal"
+        ]
+      },
+      {
+        "objective": "Radiation",
+        "say": "Does the pain spread anywhere, like to your right shoulder or back?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder",
+          "back",
+          "radiate"
+        ]
+      },
+      {
+        "objective": "Duration and resolution",
+        "say": "How long does each episode of pain last, and does it go away completely afterward?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "hours",
+          "resolve",
+          "goes away"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fever or chills with these episodes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills"
+        ]
+      },
+      {
+        "objective": "Jaundice",
+        "say": "Have you noticed yellowing of your skin or eyes, or dark urine?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "jaundice",
+          "yellow",
+          "dark urine"
+        ]
+      }
+    ]
+  }
+}

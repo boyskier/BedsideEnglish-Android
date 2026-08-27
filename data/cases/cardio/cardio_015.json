@@ -1,0 +1,167 @@
+{
+  "id": "cardio_015",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Holloway",
+  "age": 25,
+  "gender": "female",
+  "chief_complaint": "racing heart, dizziness when standing up, and extreme brain fog for 8 months",
+  "hpi_details": "8-month history of debilitating lightheadedness, rapid pounding heart rate, and near-syncope that occurs almost exclusively upon standing or sitting upright from a recumbent position. Symptoms improve significantly within minutes of lying down. Accompanied by chronic severe fatigue, poor concentration ('brain fog'), and purple discoloration of her lower legs when standing (acrocyanosis). Symptoms began 4 weeks after a documented bout of infectious mononucleosis (glandular fever). Denies true loss of consciousness.",
+  "ideas": "thinks her nervous system has lost the ability to control her blood vessels since getting glandular fever",
+  "concerns": "frustrated because previous doctors dismissed her symptoms as anxiety or physical deconditioning",
+  "expectations": "wants a tilt-table test or specialized autonomic testing and practical medication to lower her standing pulse",
+  "pmh": "infectious mononucleosis 9 months ago, joint hypermobility syndrome (Ehlers-Danlos hypermobile type traits), irritable bowel syndrome",
+  "medications": "propranolol 10mg PRN with limited benefit",
+  "social_hx": "postgraduate psychology student currently on leave of absence due to fatigue, non-smoker",
+  "investigation_events": [{"id": "active_stand_test", "title": "10-minute active stand test", "order_terms": ["active stand test", "standing test", "orthostatic vitals", "postural vitals", "tilt table test"], "availability_message": "The 10-minute active stand test results are now available.", "results": [
+    {"id": "stand_test_supine", "test": "Supine heart rate and blood pressure", "value": "HR 68 bpm; BP 116/72 mmHg", "flag": "normal", "collected_at": "After 5 minutes supine"},
+    {"id": "stand_test_3_min", "test": "Standing heart rate and blood pressure", "value": "HR 104 bpm; BP 114/74 mmHg", "flag": "abnormal", "collected_at": "3 minutes standing"},
+    {"id": "stand_test_10_min", "test": "Standing heart rate and blood pressure", "value": "HR 112 bpm; BP 114/74 mmHg", "flag": "abnormal", "collected_at": "10 minutes standing", "note": "Sustained heart-rate rise of 44 bpm without orthostatic hypotension"}
+  ]}],
+  "clinical_knowledge": {
+    "topic": "Postural Orthostatic Tachycardia Syndrome (POTS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Postural Orthostatic Tachycardia Syndrome (POTS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes validating the patient's symptoms as a recognized autonomic disorder and starting with non-pharmacological measures, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: racing heart, dizziness when standing up, and extreme brain fog for 8 months",
+      "Key HPI features: 8-month history of debilitating lightheadedness, rapid pounding heart rate, and near-syncope that occurs almost exclusively upon standing or sitting upright from a recumbent position. Symptoms improve significantly within minutes of lying down. Accompanied by chronic severe fatigue, poor concentration ('brain fog'), and purple discoloration of her lower legs when standing (acrocyanosis). Symptoms began 4 weeks after a documented bout of infectious mononucleosis (glandular fever). Denies true loss of consciousness.",
+      "Objective/Exam findings: Perform a 10-minute Active Stand Test (or head-up tilt-table test): measure baseline recumbent HR and BP after 5 mins supine, then check HR and BP at 1, 3, 5, and 10 minutes of active standing. Adult diagnostic criteria include a sustained heart-rate increase of >=30 bpm within 10 minutes of standing in the absence of orthostatic hypotension; an absolute HR >=120 bpm may occur but is not required. Bloods: FBC, ferritin, thyroid function, morning cortisol, autoimmune panel. Baseline ECG and 24-hour Holter monitor.",
+      "Relevant background/PMH: infectious mononucleosis 9 months ago, joint hypermobility syndrome (Ehlers-Danlos hypermobile type traits), irritable bowel syndrome",
+      "Current medications: propranolol 10mg PRN with limited benefit"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Postural Orthostatic Tachycardia Syndrome (POTS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Orthostatic hypotension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope with injury, or symptoms present while lying flat."
+    ],
+    "management_principles": [
+      "Validate patient's symptoms as a recognized autonomic disorder",
+      "Non-pharmacological management first: increased oral fluid intake and sodium supplementation individualized to comorbidities and contraindications"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2015 Heart Rhythm Society Expert Consensus Statement on the Diagnosis and Treatment of Postural Tachycardia Syndrome, Inappropriate Sinus Tachycardia, and Vasovagal Syncope",
+        "url": "https://www.hrsonline.org/guidance/clinical-resources/2015-heart-rhythm-society-expert-consensus-statement-diagnosis-treatment-postural-tachycardia-syndrome"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "25F with joint hypermobility presents with 8-month postural tachycardia, orthostatic presyncope, dependent leg acrocyanosis, and cognitive fatigue triggered post-viral infection.",
+    "objective": "Perform a 10-minute Active Stand Test (or head-up tilt-table test): measure baseline recumbent HR and BP after 5 mins supine, then check HR and BP at 1, 3, 5, and 10 minutes of active standing. Adult diagnostic criteria include a sustained heart-rate increase of >=30 bpm within 10 minutes of standing in the absence of orthostatic hypotension; an absolute HR >=120 bpm may occur but is not required. Bloods: FBC, ferritin, thyroid function, morning cortisol, autoimmune panel. Baseline ECG and 24-hour Holter monitor.",
+    "assessment": "Postural Orthostatic Tachycardia Syndrome (POTS) post-viral onset. DDx: orthostatic hypotension, inappropriate sinus tachycardia (IST), chronic fatigue syndrome / ME, adrenal insufficiency, phaeochromocytoma, anxiety disorder.",
+    "plan": "Validate patient's symptoms as a recognized autonomic disorder. Start non-pharmacological management with increased oral fluids and sodium individualized to comorbidities and contraindications. Compression garments (waist-high 30-40 mmHg compression stockings/abdominal binders). Structured recumbent exercise conditioning protocol (rowing, recumbent cycling, swimming) avoiding upright exertion initially. Pharmacological treatment if refractory should be individualized by a clinician; options may include low-dose beta-blocker, ivabradine, midodrine, or fludrocortisone. Cardiology/autonomic specialist referral."
+  },
+  "learning_objectives": [
+    "Apply diagnostic criteria for Postural Orthostatic Tachycardia Syndrome: sustained HR rise >=30 bpm on standing without orthostatic hypotension",
+    "Recognise the clinical overlap between autonomic dysregulation, post-viral syndromes, and joint hypermobility (Ehlers-Danlos)",
+    "Formulate comprehensive non-pharmacological volume expansion strategies (3L fluid + 8-10g sodium + waist-high compression)",
+    "Validate patient experiences of autonomic chronic illness empathetically while structuring a graded recumbent rehabilitation plan"
+  ],
+  "teaching": {
+    "diagnosis": "Postural Orthostatic Tachycardia Syndrome (POTS)",
+    "one_liner": "On standing, the heart races without the blood pressure dropping — often after a viral illness, and disabling out of proportion to the findings.",
+    "differentials": [
+      "Orthostatic hypotension",
+      "Anaemia",
+      "Anxiety disorder"
+    ],
+    "red_flags": [
+      "Syncope with injury, or symptoms present while lying flat"
+    ],
+    "must_ask": [
+      {
+        "objective": "Relation to standing",
+        "say": "Does it happen specifically when you stand up, and settle when you lie down?",
+        "domains": [
+          "aggravating",
+          "relieving"
+        ],
+        "keywords": [
+          "stand",
+          "standing",
+          "lie",
+          "down",
+          "sit",
+          "upright"
+        ]
+      },
+      {
+        "objective": "Time to onset after standing",
+        "say": "How long after standing do the symptoms start?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "seconds",
+          "minutes",
+          "straight",
+          "away",
+          "standing"
+        ]
+      },
+      {
+        "objective": "Preceding viral illness",
+        "say": "Did this all start after an infection or a period of being unwell?",
+        "domains": [
+          "pmh",
+          "onset_duration"
+        ],
+        "keywords": [
+          "infection",
+          "virus",
+          "covid",
+          "flu",
+          "unwell"
+        ]
+      },
+      {
+        "objective": "Fatigue and brain fog",
+        "say": "How is your energy and concentration on a normal day?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tired",
+          "fatigue",
+          "energy",
+          "concentrate",
+          "fog"
+        ]
+      },
+      {
+        "objective": "Fluid and salt intake",
+        "say": "How much do you drink in a day, and do you add salt to your food?",
+        "keywords": [
+          "drink",
+          "water",
+          "fluid",
+          "salt"
+        ]
+      },
+      {
+        "objective": "Impact on daily life",
+        "say": "What has this stopped you doing?",
+        "domains": [
+          "living_work",
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

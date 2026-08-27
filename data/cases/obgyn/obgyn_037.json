@@ -1,0 +1,137 @@
+{
+  "id": "obgyn_037",
+  "system": "obgyn",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "abnormal PAP smear showing HSIL in young female",
+  "hpi_details": "28-year-old female presents to the clinic to discuss her recent routine Pap smear results, which returned showing High-Grade Squamous Intraepithelial Lesion (HSIL). She is asymptomatic and has never had an abnormal Pap smear before.",
+  "ideas": "is concerned about an abnormal Pap smear",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id": "cervical_cytology", "test": "Cervical cytology (Pap smear)", "value": "High-grade squamous intraepithelial lesion (HSIL)", "flag": "abnormal", "collected_at": "Before today's encounter"}],
+  "clinical_knowledge": {
+    "topic": "Cervical dysplasia (HSIL) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cervical dysplasia (HSIL) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Cervical Dysplasia: Colposcopy with cervical biopsy, LEEP procedure if high-grade, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: abnormal PAP smear showing HSIL in young female",
+      "Key HPI features: 28-year-old female is asymptomatic and presents to discuss a routine Pap smear showing HSIL; she has no prior abnormal Pap results.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Cervical Dysplasia.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cervical dysplasia (HSIL).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cervicitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: HSIL carries risk of progression to invasive cancer if untreated."
+    ],
+    "management_principles": [
+      "Plan for Cervical Dysplasia: Colposcopy with cervical biopsy, LEEP procedure if high-grade",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "28F presenting to review an abnormal Pap smear indicating HSIL.",
+    "objective": "Vitals normal. Abdominal and pelvic exams are grossly normal. Previous Pap smears (last one 3 years ago) were normal.",
+    "assessment": "Cervical Dysplasia: High-Grade Squamous Intraepithelial Lesion (HSIL).",
+    "plan": "Schedule a Colposcopy with directed cervical biopsies and endocervical curettage (ECC) immediately, as HSIL carries a high risk of underlying cervical intraepithelial neoplasia (CIN 2/3) or invasive cancer. Counsel patient on the importance of follow-up and smoking cessation."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Cervical Dysplasia",
+    "Select appropriate diagnostic workup for Cervical Dysplasia",
+    "Implement evidence-based management plan: Colposcopy with cervical biopsy, LEEP procedure if high-grade"
+  ],
+  "teaching": {
+    "diagnosis": "Cervical dysplasia (HSIL)",
+    "one_liner": "Young female with an abnormal Pap smear showing high-grade squamous intraepithelial lesion (HSIL).",
+    "differentials": [
+      "Cervicitis",
+      "Low-grade dysplasia (LSIL)",
+      "Invasive cervical carcinoma"
+    ],
+    "red_flags": [
+      "HSIL carries risk of progression to invasive cancer if untreated"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ask about HPV vaccination and screening history",
+        "say": "Have you received the HPV vaccine, and when was your last Pap smear?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "HPV vaccine",
+          "Pap smear history"
+        ]
+      },
+      {
+        "objective": "Screen for symptoms",
+        "say": "Have you had any abnormal bleeding or discharge?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "abnormal bleeding"
+        ]
+      },
+      {
+        "objective": "Ask about smoking status",
+        "say": "Do you smoke, since this can affect how your body clears HPV?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Explain the colposcopy and biopsy plan",
+        "say": "We need to do a colposcopy with a biopsy to look closely at the abnormal cells.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "colposcopy",
+          "cervical biopsy"
+        ]
+      },
+      {
+        "objective": "Discuss LEEP if high-grade confirmed",
+        "say": "If the biopsy confirms high-grade changes, we may recommend a LEEP procedure to remove the abnormal tissue.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "LEEP"
+        ]
+      }
+    ]
+  }
+}

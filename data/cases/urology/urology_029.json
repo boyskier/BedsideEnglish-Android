@@ -1,0 +1,157 @@
+{
+  "id": "urology_029",
+  "system": "urology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Moore",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating testicular pain, high-riding testis",
+  "hpi_details": "A 29-year-old male presents with sudden-onset excruciating testicular pain that began 3 hours ago, with a high-riding testis noted on exam.",
+  "ideas": "thinks it might be related to testicular_torsion",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Testicular Torsion evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Testicular Torsion is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes proceeding directly to emergent surgical exploration for a classic presentation without delaying for imaging, since testicular salvage is time-critical, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating testicular pain, high-riding testis",
+      "Key HPI features: A 29-year-old male presents with sudden-onset excruciating testicular pain that began 3 hours ago, with a high-riding testis noted on exam.",
+      "Objective/Exam findings: Afebrile, possible mild tachycardia from pain. Affected testis is high-riding, horizontally oriented, and exquisitely tender to palpation. Absent cremasteric reflex on the affected side. Negative Prehn sign. No inguinal hernia on exam.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Testicular Torsion.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute epididymitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Absent cremasteric reflex."
+    ],
+    "management_principles": [
+      "For a classic clinical presentation (sudden severe pain, high-riding testis, absent cremasteric reflex), proceed directly to emergent surgical exploration without delaying for Doppler ultrasound; testicular salvage is time-critical",
+      "Reserve Doppler ultrasound for equivocal presentations only, and never let imaging delay definitive surgical treatment when clinical suspicion is high",
+      "Obtain immediate urologic consultation for emergent surgical detorsion and bilateral orchiopexy",
+      "Perform orchiectomy if the testis is found non-viable at exploration."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 29-year-old male presents with sudden-onset excruciating testicular pain that began 3 hours ago, with a high-riding testis noted on exam.",
+    "objective": "Afebrile, possible mild tachycardia from pain. Affected testis is high-riding, horizontally oriented, and exquisitely tender to palpation. Absent cremasteric reflex on the affected side. Negative Prehn sign. No inguinal hernia on exam.",
+    "assessment": "Classic presentation of acute testicular torsion (sudden severe pain, high-riding testis, absent cremasteric reflex); this is a surgical emergency.",
+    "plan": "This is a surgical emergency: with a classic clinical presentation, proceed directly to emergent surgical exploration and detorsion without delaying for imaging, since testicular salvage is time-critical (ideally within 6 hours of symptom onset). Obtain immediate urologic consultation. Reserve Doppler ultrasound only for equivocal presentations, and never let imaging delay definitive surgical treatment. At surgery, perform detorsion and bilateral orchiopexy, with orchiectomy if the testis is non-viable."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Testicular Torsion",
+    "Select appropriate diagnostic workup for Acute Testicular Torsion",
+    "Implement evidence-based management: proceed to emergent surgical exploration for classic presentations without delaying for imaging, reserving Doppler ultrasound for equivocal cases"
+  ],
+  "teaching": {
+    "diagnosis": "Testicular Torsion",
+    "one_liner": "Surgical emergency caused by twisting of the spermatic cord, producing acute testicular ischemia.",
+    "differentials": [
+      "Acute epididymitis",
+      "Torsion of testicular appendage",
+      "Inguinal hernia strangulation"
+    ],
+    "red_flags": [
+      "Absent cremasteric reflex",
+      "High-riding horizontal testis (Bell-clapper deformity)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden severe pain onset",
+        "say": "Did this severe pain in your scrotum start suddenly, waking you up or while resting?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "scrotum",
+          "scrotal",
+          "suddenly",
+          "resting",
+          "pain"
+        ]
+      },
+      {
+        "objective": "Associated nausea and vomiting",
+        "say": "Along with the testicular pain, have you vomited or felt sick to your stomach?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomited",
+          "nausea",
+          "vomit",
+          "sick",
+          "stomach"
+        ]
+      },
+      {
+        "objective": "Physical elevation non-relief (Prehn sign)",
+        "say": "Does gently lifting your scrotum ease the pain, or does it stay severe?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "lifting",
+          "ease",
+          "relief",
+          "elevating",
+          "testis"
+        ]
+      },
+      {
+        "objective": "Trauma or exertion history",
+        "say": "Did you suffer any hit or trauma to your groin area before the pain started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "trauma",
+          "hit",
+          "groin",
+          "sports",
+          "injury"
+        ]
+      },
+      {
+        "objective": "Fever and dysuria screen",
+        "say": "Do you have a fever or burning when you urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "burning",
+          "urinate",
+          "fevers",
+          "dysuria"
+        ]
+      }
+    ]
+  }
+}

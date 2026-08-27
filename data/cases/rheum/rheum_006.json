@@ -1,0 +1,136 @@
+{
+  "id": "rheum_006",
+  "system": "rheumatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Perez",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "chronic inflammatory lower back pain and morning stiffness improving with exercise",
+  "hpi_details": "29M presenting with a 6-month history of chronic low back pain worst at night and in the early morning, improving with exercise, associated with Achilles enthesitis and a past episode of anterior uveitis.",
+  "ideas": "thinks this is related to ankylosing spondylitis axial spondyloarthritis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "clinical_knowledge": {
+    "topic": "Ankylosing Spondylitis (Axial Spondyloarthritis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ankylosing Spondylitis (Axial Spondyloarthritis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirmatory HLA-B27/imaging workup followed by NSAID first-line therapy with escalation to biologics, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic inflammatory lower back pain and morning stiffness improving with exercise",
+      "Key HPI features: 29M presenting with a 6-month history of chronic low back pain worst at night and in the early morning, improving with exercise, associated with Achilles enthesitis and a past episode of anterior uveitis.",
+      "Objective/Exam findings: Vitals normal. Reduced lumbar flexion (positive Schober test), reduced chest expansion, tenderness over the SI joints (positive FABER/Gaenslen tests), and tenderness at the Achilles insertion (enthesitis). No active eye inflammation on exam today. Normal peripheral joint exam, no synovitis.",
+      "Relevant background/PMH: No significant chronic medical history",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ankylosing Spondylitis (Axial Spondyloarthritis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Mechanical low back pain without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Eye pain and redness — could indicate acute anterior uveitis, a treatable extra-articular manifestation."
+    ],
+    "management_principles": [
+      "Diagnose per ASAS criteria: sacroiliac imaging (radiograph, or MRI with STIR sequences if radiographs are normal but suspicion remains high) plus clinical features, or HLA-B27 plus multiple additional spondyloarthritis features",
+      "First-line pharmacologic treatment is NSAIDs; escalate to biologic therapy (TNF inhibitor or IL-17 inhibitor) if there is inadequate response after an adequate trial",
+      "Emphasize physical therapy and a structured exercise program to maintain spinal mobility and function",
+      "Screen for and urgently refer any acute anterior uveitis (painful red eye, photophobia) to ophthalmology."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "29M presenting with a 6-month history of chronic low back pain worst at night and in the early morning, improving with exercise, associated with Achilles enthesitis and a past episode of anterior uveitis.",
+    "objective": "Vitals normal. Reduced lumbar flexion (positive Schober test), reduced chest expansion, tenderness over the SI joints (positive FABER/Gaenslen tests), and tenderness at the Achilles insertion. No active eye inflammation on exam today. Normal peripheral joint exam, no synovitis.",
+    "assessment": "Chronic inflammatory back pain with enthesitis and a history of uveitis, clinically consistent with axial spondyloarthritis (ankylosing spondylitis); confirmatory HLA-B27 testing and sacroiliac imaging are pending.",
+    "plan": "Order HLA-B27 testing, sacroiliac joint imaging, and inflammatory markers (ESR/CRP) to support the diagnosis per ASAS criteria. Refer to rheumatology for NSAID first-line therapy with escalation to a TNF inhibitor or IL-17 inhibitor if inadequate response. Emphasize physical therapy and an exercise program, and instruct the patient to seek urgent ophthalmology review for any future acute red-eye symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Ankylosing Spondylitis Axial Spondyloarthritis",
+    "Formulate prioritized differential diagnosis for chronic inflammatory lower back pain and morning stiffness improving with exercise",
+    "Select appropriate confirmatory testing (HLA-B27, sacroiliac imaging) per ASAS classification criteria for suspected axial spondyloarthritis",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Ankylosing Spondylitis (Axial Spondyloarthritis)",
+    "one_liner": "An HLA-B27-associated inflammatory arthritis of the spine and sacroiliac joints causing chronic low back pain worse at night and in the morning, improving with exercise — the opposite pattern from mechanical back pain.",
+    "differentials": [
+      "Mechanical low back pain",
+      "Reactive arthritis",
+      "Psoriatic arthritis"
+    ],
+    "red_flags": [
+      "Eye pain and redness — could indicate acute anterior uveitis, a treatable extra-articular manifestation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain pattern",
+        "say": "Is your back pain worse at night and in the morning, and does exercise help?",
+        "domains": [
+          "character",
+          "relieving"
+        ],
+        "keywords": [
+          "night",
+          "morning",
+          "exercise helps"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this back pain been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Enthesitis symptoms",
+        "say": "Have you had pain at the back of your heel, like your Achilles tendon?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "heel",
+          "achilles"
+        ]
+      },
+      {
+        "objective": "Eye symptoms",
+        "say": "Have you ever had a painful red eye?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "uveitis",
+          "eye"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have similar back problems or arthritis?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

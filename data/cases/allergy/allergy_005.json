@@ -1,0 +1,150 @@
+{
+  "id": "allergy_005",
+  "system": "allergy_immunology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lee",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "painful blistering skin rash with peeling of lips, mouth ulcers, and eye inflammation after starting allopurinol",
+  "hpi_details": "58M initiated on allopurinol 2 weeks ago presenting with fever, painful dusky purpuric macules, extensive mucosal sloughing in mouth/eyes, and epidermal detachment (<10% BSA).",
+  "ideas": "thinks this is related to stevens-johnson syndrome sjs ten",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "Allopurinol (started 2 weeks ago)",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "clinical_knowledge": {
+    "topic": "Stevens-Johnson Syndrome (SJS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stevens-Johnson Syndrome (SJS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management is immediate withdrawal of the culprit drug (here, allopurinol) plus supportive care in a burn unit or ICU setting with urgent ophthalmology involvement, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painful blistering skin rash with peeling of lips, mouth ulcers, and eye inflammation after starting allopurinol",
+      "Key HPI features: 58M initiated on allopurinol 2 weeks ago presenting with fever, painful dusky purpuric macules, extensive mucosal sloughing in mouth/eyes, and epidermal detachment (<10% BSA).",
+      "Objective/Exam findings: Febrile; dusky purpuric macules with positive Nikolsky sign, mucosal sloughing of the mouth and conjunctivae, epidermal detachment involving <10% body surface area.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stevens-Johnson Syndrome (SJS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Toxic epidermal necrolysis (TEN, if BSA >30%) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Skin detachment (positive Nikolsky sign)."
+    ],
+    "management_principles": [
+      "Stop allopurinol immediately — prompt withdrawal of the culprit drug is the single most important intervention",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Stevens-Johnson Syndrome SJS TEN: painful blistering skin rash with peeling of lips, mouth ulcers, and eye inflammation after starting allopurinol. 58M initiated on allopurinol 2 weeks ago presenting with fever, painful dusky purpuric macules, extensive mucosal sloughing in mouth/eyes, and epidermal detachment (<10% BSA).",
+    "objective": "Febrile. Dusky purpuric macules with positive Nikolsky sign, mucosal sloughing of the mouth and conjunctivae, epidermal detachment involving <10% body surface area.",
+    "assessment": "Stevens-Johnson Syndrome (SJS) secondary to allopurinol exposure.",
+    "plan": "1. Stop allopurinol immediately and document the drug allergy to prevent rechallenge. 2. Transfer to a burn unit or ICU for supportive wound care, fluid/electrolyte management, and infection surveillance. 3. Obtain urgent ophthalmology consultation for ocular mucosal involvement and dermatology/allergy consultation for further management and follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Stevens-Johnson Syndrome SJS TEN",
+    "Formulate prioritized differential diagnosis for painful blistering skin rash with peeling of lips, mouth ulcers, and eye inflammation after starting allopurinol",
+    "Select appropriate laboratory and imaging studies for allergy_immunology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Stevens-Johnson Syndrome (SJS)",
+    "one_liner": "A severe, drug-induced mucocutaneous emergency with skin blistering and detachment plus mouth, eye, or genital mucosal involvement — a medical emergency requiring immediate drug withdrawal.",
+    "differentials": [
+      "Toxic epidermal necrolysis (TEN, if BSA >30%)",
+      "Staphylococcal scalded skin syndrome",
+      "Erythema multiforme major"
+    ],
+    "red_flags": [
+      "Skin detachment (positive Nikolsky sign)",
+      "Eye involvement — risk of permanent vision damage",
+      "Any mucosal ulceration — mouth, eyes, or genitals"
+    ],
+    "must_ask": [
+      {
+        "objective": "Causative drug and timeline",
+        "say": "What new medication did you start, and how many days ago?",
+        "domains": [
+          "onset_duration",
+          "medications"
+        ],
+        "keywords": [
+          "allopurinol",
+          "started",
+          "days",
+          "weeks"
+        ]
+      },
+      {
+        "objective": "Mucosal involvement",
+        "say": "Do you have painful sores in your mouth, eyes, or genital area?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mouth",
+          "eyes",
+          "ulcer",
+          "sores"
+        ]
+      },
+      {
+        "objective": "Skin blistering and peeling",
+        "say": "Is your skin blistering or peeling off anywhere?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "blister",
+          "peel",
+          "detachment"
+        ]
+      },
+      {
+        "objective": "Fever and how unwell the patient feels",
+        "say": "Have you had a fever or felt generally very unwell before the rash appeared?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "unwell"
+        ]
+      },
+      {
+        "objective": "Prior drug allergies",
+        "say": "Have you ever had a bad reaction to a medication before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "allergy",
+          "before",
+          "reaction"
+        ]
+      }
+    ]
+  }
+}

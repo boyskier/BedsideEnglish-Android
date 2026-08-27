@@ -1,0 +1,139 @@
+{
+  "id": "endo_032",
+  "system": "endo",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Carter",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "mild fatigue, normal free T4, and slightly elevated TSH",
+  "hpi_details": "A 38-year-old female presents to the clinic with mild fatigue, normal free t4, and slightly elevated tsh. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to subclinical_hypo",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "tsh",
+      "test": "TSH",
+      "value": "6.8",
+      "unit": "mIU/L",
+      "reference_range": "0.4-4.0",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "free_t4",
+      "test": "Free T4",
+      "value": "1.1",
+      "unit": "ng/dL",
+      "reference_range": "0.8-1.8",
+      "flag": "normal",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Subclinical Hypothyroidism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subclinical Hypothyroidism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes monitoring the thyroid panel and considering treatment if TSH exceeds 10 mIU/L or the patient is pregnant, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: mild fatigue, normal free T4, and slightly elevated TSH",
+      "Key HPI features: A 38-year-old female presents to the clinic with mild fatigue, normal free t4, and slightly elevated tsh. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Subclinical Hypothyroidism.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subclinical Hypothyroidism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Overt hypothyroidism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: TSH markedly elevated (>10 mIU/L), pregnancy or planning pregnancy, symptoms or signs suggestive of overt hypothyroidism (bradycardia, or pericardial effusion) despite a 'subclinical' label."
+    ],
+    "management_principles": [
+      "Plan for Subclinical Hypothyroidism: Monitor thyroid panel, consider treatment if TSH > 10 or pregnant",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Thyroid Association (ATA) Guidelines for the Treatment of Hypothyroidism",
+        "url": "https://www.liebertpub.com/doi/10.1089/thy.2014.0028"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of mild fatigue, normal free T4, and slightly elevated TSH. HPI: early thyroid failure.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Subclinical Hypothyroidism.",
+    "assessment": "Condition highly suspicious for Subclinical Hypothyroidism.",
+    "plan": "Plan for Subclinical Hypothyroidism: Monitor thyroid panel, consider treatment if TSH > 10 or pregnant. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Subclinical Hypothyroidism",
+    "Select appropriate diagnostic workup for Subclinical Hypothyroidism",
+    "Implement evidence-based management plan: Monitor thyroid panel, consider treatment if TSH > 10 or pregnant"
+  ],
+  "teaching": {
+    "diagnosis": "Subclinical Hypothyroidism",
+    "one_liner": "A mildly elevated TSH with normal Free T4, representing early thyroid failure.",
+    "differentials": [
+      "Overt hypothyroidism"
+    ],
+    "red_flags": [
+      "TSH markedly elevated (>10 mIU/L) — stronger indication for treatment given higher risk of progression to overt disease",
+      "Pregnancy or planning pregnancy — even mild elevations need treatment given foetal neurodevelopmental risk",
+      "Symptoms or signs suggestive of overt hypothyroidism (bradycardia, pericardial effusion) despite a 'subclinical' label — reassess free T4 and treat as overt disease"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptoms",
+        "say": "Do you feel tired at all?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "How found",
+        "say": "Was this found on a routine test?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does thyroid disease run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Pregnancy",
+        "say": "Are you pregnant or planning to be?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Weight changes",
+        "say": "Any weight gain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

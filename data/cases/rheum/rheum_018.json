@@ -1,0 +1,122 @@
+{
+  "id": "rheum_018",
+  "system": "rheumatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Ford",
+  "age": 40,
+  "gender": "female",
+  "chief_complaint": "very dry eyes, dry mouth, and joint pain",
+  "hpi_details": "40F presents with a 1-year history of a persistent 'sand in my eyes' feeling and such severe dry mouth she cannot eat dry crackers without water. She also has generalized aching in her joints.",
+  "ideas": "thinks she is dehydrated",
+  "concerns": "worried about dental cavities from dry mouth",
+  "expectations": "wants drops and medication",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "None",
+  "clinical_knowledge": {
+    "topic": "Sjogren's Syndrome",
+    "core_concepts": [
+      "Autoimmune destruction of exocrine glands (salivary, lacrimal) causing keratoconjunctivitis sicca and xerostomia."
+    ],
+    "diagnostic_clues": [
+      "Dry eyes",
+      "Dry mouth (needs water to swallow dry food)"
+    ],
+    "common_misconceptions": [
+      "Assuming dry eyes/mouth in an older patient is just age-related or medication-induced without checking serologies if it is severe."
+    ],
+    "dangerous_errors": [
+      "Missing the increased risk for B-cell lymphoma (especially if patient presents with a new firm parotid mass)."
+    ],
+    "management_principles": [
+      "Confirm clinically and with appropriate objective testing/serology (including anti-Ro/SSA); provide preservative-free artificial tears, oral hydration and dental prevention. Secretagogues require clinician review for contraindications. Persistent or firm parotid enlargement, lymphadenopathy, fever, or weight loss warrants prompt evaluation for lymphoma."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "40F with severe sicca symptoms (dry eyes, dry mouth) and arthralgias.",
+    "objective": "Dry mucous membranes, absent salivary pooling. Bilateral parotid gland enlargement.",
+    "assessment": "Suspected Sjogren's syndrome; bilateral parotid enlargement also requires assessment for alternative causes and lymphoma risk.",
+    "plan": "Check anti-Ro/SSA, ANA and objective sicca testing as appropriate. Recommend preservative-free artificial tears, frequent hydration and dental referral. Promptly assess persistent/firm gland swelling, lymphadenopathy, fever, or weight loss."
+  },
+  "learning_objectives": [
+    "Identify the classic clinical features of Sjogren's Syndrome."
+  ],
+  "teaching": {
+    "diagnosis": "Sjogren's Syndrome",
+    "one_liner": "A middle-aged female with profound dry eyes, dry mouth, and parotid enlargement.",
+    "differentials": [
+      "Medication-induced sicca",
+      "Sarcoidosis",
+      "Sicca symptoms of aging"
+    ],
+    "red_flags": [
+      "Firm parotid mass (Lymphoma risk)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dry eye symptoms",
+        "say": "Do your eyes feel gritty, like there's sand in them?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "dry eyes",
+          "gritty"
+        ]
+      },
+      {
+        "objective": "Dry mouth severity",
+        "say": "Is your mouth so dry that you need water to swallow dry food like crackers?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "dry mouth",
+          "crackers"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had these dry eyes and dry mouth symptoms?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "one year"
+        ]
+      },
+      {
+        "objective": "Parotid swelling",
+        "say": "Have you noticed any swelling in front of your ears or under your jaw?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "parotid",
+          "swelling"
+        ]
+      },
+      {
+        "objective": "Joint symptoms",
+        "say": "Have you had any joint aches along with the dryness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "joint pain"
+        ]
+      }
+    ]
+  }
+}

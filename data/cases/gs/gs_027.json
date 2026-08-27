@@ -1,0 +1,174 @@
+{
+  "id": "gs_027",
+  "system": "gs",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Smith",
+  "age": 23,
+  "gender": "male",
+  "chief_complaint": "severe RUQ pain, fever, and positive Murphy sign",
+  "hpi_details": "A 23-year-old male presents to the clinic with 2 days of severe, constant right upper quadrant pain radiating to his right shoulder blade, along with fever, nausea, and vomiting, especially worse after fatty meals.",
+  "ideas": "thinks it might be related to cholecystitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_cholecystitis_workup",
+      "title": "Urgent acute cholecystitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "liver function tests",
+        "lfts",
+        "right upper quadrant ultrasound",
+        "ruq ultrasound",
+        "abdominal ultrasound"
+      ],
+      "availability_message": "The urgent acute cholecystitis results are now available; IV fluids, analgesia, antibiotics, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "15.1",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "1.3",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "right_upper_quadrant_ultrasound",
+          "test": "Right-upper-quadrant ultrasound",
+          "value": "Gallstones with gallbladder wall thickening to 5 mm, pericholecystic fluid, and a positive sonographic Murphy sign; common bile duct 5 mm",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Cholecystitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Cholecystitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes NPO status, IV fluid resuscitation, IV antibiotics with gram-negative and anaerobic coverage, and early laparoscopic cholecystectomy during the index admission when feasible, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe RUQ pain, fever, and positive Murphy sign",
+      "Key HPI features: A 23-year-old male presents to the clinic with 2 days of severe, constant right upper quadrant pain radiating to his right shoulder blade, along with fever, nausea, and vomiting, especially worse after fatty meals.",
+      "Objective/Exam findings: Vitals: Temp 38.6C, HR 108, BP 124/78. RUQ tenderness with a positive Murphy's sign (inspiratory arrest on palpation); no rebound or diffuse rigidity. Labs: mild leukocytosis with left shift and mildly elevated LFTs. RUQ ultrasound shows gallstones, gallbladder wall thickening (>3 mm), and pericholecystic fluid, consistent with acute cholecystitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Cholecystitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Biliary colic without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: High fever with rigors — suggests gangrenous cholecystitis."
+    ],
+    "management_principles": [
+      "Keep the patient NPO, provide IV fluids, and start IV antibiotics with gram-negative and anaerobic coverage",
+      "Obtain RUQ ultrasound and consult surgery for early laparoscopic cholecystectomy",
+      "Counsel the patient on the diagnosis and the need for surgery"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "23-year-old male presents with 2 days of severe, constant right upper quadrant pain radiating to his right shoulder blade, along with fever, nausea, and vomiting, especially worse after fatty meals.",
+    "objective": "Vitals: Temp 38.6C, HR 108, BP 124/78. RUQ tenderness with a positive Murphy's sign (inspiratory arrest on palpation); no rebound or diffuse rigidity. Labs: mild leukocytosis with left shift and mildly elevated LFTs. RUQ ultrasound shows gallstones, gallbladder wall thickening (>3 mm), and pericholecystic fluid, consistent with acute cholecystitis.",
+    "assessment": "Acute cholecystitis.",
+    "plan": "Keep NPO, provide IV fluids, analgesia, antiemetics, and obtain right-upper-quadrant ultrasound and relevant laboratory tests. Start empiric IV antibiotics with appropriate gram-negative and anaerobic coverage according to local guidance (for example, ceftriaxone plus metronidazole when suitable). Obtain early surgical consultation for laparoscopic cholecystectomy during the index admission when feasible."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Cholecystitis",
+    "Select appropriate diagnostic workup for Acute Cholecystitis",
+    "Implement evidence-based management plan: NPO, IV fluids, IV Cefazolin, laparoscopic cholecystectomy"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Cholecystitis",
+    "one_liner": "A gallstone obstructs the cystic duct, causing gallbladder inflammation with persistent RUQ pain, fever, and a positive Murphy's sign.",
+    "differentials": [
+      "Biliary colic",
+      "Acute pancreatitis",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "High fever with rigors — suggests gangrenous cholecystitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Location and radiation",
+        "say": "Where is the pain, and does it radiate to your back or shoulder?",
+        "domains": [
+          "location",
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Relationship to food",
+        "say": "Did this start after a fatty meal?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "fatty",
+          "meal"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "Has the pain been constant rather than coming and going?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Nausea and vomiting",
+        "say": "Any nausea or vomiting?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

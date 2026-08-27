@@ -1,0 +1,151 @@
+{
+  "id": "neuro_024",
+  "system": "neurology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. O'Donnell",
+  "age": 56,
+  "gender": "male",
+  "chief_complaint": "acute confusion, staggering unsteadiness, and double vision over 3 days",
+  "hpi_details": "56-year-old male brought to emergency department by his brother due to acute, rapid deterioration over 3 days featuring severe confusion, staggering unsteadiness, and visual disturbances. Brother reports patient lives alone, has severe alcohol use disorder drinking 1 large bottle of vodka daily for years, and has eaten virtually no solid food for the past 3 weeks following a relationship breakdown. On arrival, patient is disoriented to time and place, muttering and confabulating details when asked where he is. When attempting to walk across the room, exhibits severe wide-based truncal ataxia, requiring two nurses to prevent falling. Complains of double vision when looking to the sides.",
+  "ideas": "brother thinks he is just severely intoxicated or having alcohol withdrawal delirium (DTs)",
+  "concerns": "brother is terrified he has suffered a permanent brain stroke from falling while drunk",
+  "expectations": "wants IV rehydration fluids, glucose drip to clear the alcohol, and a brain scan",
+  "pmh": "severe chronic alcohol dependence, alcohol-related liver disease, chronic malnutrition",
+  "medications": "none regular",
+  "social_hx": "chronic heavy vodka intake (250-300g/day), unemployed, lives alone in neglected flat, severe dietary neglect",
+  "investigation_events": [
+    {
+      "id": "stat_wernicke_metabolic_assessment",
+      "title": "Emergency glucose and electrolyte assessment",
+      "order_terms": ["blood glucose", "glucose", "magnesium", "phosphate", "electrolytes", "BMP", "basic metabolic panel"],
+      "availability_message": "Point-of-care glucose and urgent electrolyte results are now available. Parenteral thiamine should be given promptly and must not be delayed for these results.",
+      "results": [
+        {"id": "glucose", "test": "Point-of-care blood glucose", "value": "62", "unit": "mg/dL", "reference_range": "70-140", "flag": "low"},
+        {"id": "magnesium", "test": "Serum magnesium", "value": "1.2", "unit": "mg/dL", "reference_range": "1.7-2.2", "flag": "low"},
+        {"id": "phosphate", "test": "Serum phosphate", "value": "1.8", "unit": "mg/dL", "reference_range": "2.5-4.5", "flag": "low"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Wernicke's Encephalopathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Wernicke's Encephalopathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Medical emergency: immediately administer high-dose Intravenous Thiamine (Pabrinex 2 pairs of ampoules IV three times daily diluted in 100 mL normal saline over 30 minutes for 3 to 5 days), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute confusion, staggering unsteadiness, and double vision over 3 days",
+      "Key HPI features: 56-year-old male brought to emergency department by his brother due to acute, rapid deterioration over 3 days featuring severe confusion, staggering unsteadiness, and visual disturbances. Brother reports patient lives alone, has severe alcohol use disorder drinking 1 large bottle of vodka daily for years, and has eaten virtually no solid food for the past 3 weeks following a relationship breakdown. On arrival, patient is disoriented to time and place, muttering and confabulating details when asked where he is. When attempting to walk across the room, exhibits severe wide-based truncal ataxia, requiring two nurses to prevent falling. Complains of double vision when looking to the sides.",
+      "Objective/Exam findings: Perform targeted neurological exam identifying the classical Wernicke Triad. 1. Ophthalmoplegia/Ocular signs: bilateral horizontal nystagmus on gaze testing, bilateral lateral rectus weakness (cranial nerve VI palsy causing horizontal diplopia), conjugate gaze palsies, and sluggish pupils. 2. Cerebellar/Gait Ataxia: severe broad-based truncal ataxia, unable to stand or perform heel-to-shin testing without losing balance. 3. Encephalopathy: global disorientation, apathy, and confabulation. Check vitals (hypothermia and postural hypotension common). CRITICAL EMERGENCY LAB PROTOCOL: check capillary blood glucose. NEVER ADMINISTER IV GLUCOSE OR DEXTROSE INFUSIONS PRIOR TO THIAMINE REPLACEMENT (giving glucose to a thiamine-deficient brain rapidly depletes remaining pyrophosphate cofactor stores, precipitating irreversible neuronal death and acute Korsakoff psychosis). Bloods: FBC, U&Es, LFTs, magnesium (hypomagnesaemia impairs thiamine utilization and must be corrected simultaneously), phosphate, clotting. MRI Brain (T2/FLAIR shows hyperintensities and petechial haemorrhages in the mammillary bodies, periaqueductal grey matter, medial thalami, and floor of 3rd/4th ventricles).",
+      "Relevant background/PMH: severe chronic alcohol dependence, alcohol-related liver disease, chronic malnutrition",
+      "Current medications: none regular"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Wernicke's Encephalopathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hepatic encephalopathy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any glucose given before thiamine — can precipitate or worsen Wernicke's encephalopathy."
+    ],
+    "management_principles": [
+      "Medical emergency: immediately administer high-dose Intravenous Thiamine (Pabrinex 2 pairs of ampoules IV three times daily diluted in 100 mL normal saline over 30 minutes for 3 to 5 days)",
+      "Administer IV thiamine BEFORE or co-administered with any IV glucose/crystalloid fluids",
+      "Correct concomitant hypomagnesaemia and electrolyte disturbances"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: acute confusion, staggering unsteadiness, and double vision over 3 days\n\n56-year-old male brought to emergency department by his brother due to acute, rapid deterioration over 3 days featuring severe confusion, staggering unsteadiness, and visual disturbances. Brother reports patient lives alone, has severe alcohol use disorder drinking 1 large bottle of vodka daily for years, and has eaten virtually no solid food for the past 3 weeks following a relationship breakdown. On arrival, patient is disoriented to time and place, muttering and confabulating details when asked where he is. When attempting to walk across the room, exhibits severe wide-based truncal ataxia, requiring two nurses to prevent falling. Complains of double vision when looking to the sides.",
+    "objective": "Perform targeted neurological exam identifying the classical Wernicke Triad. 1. Ophthalmoplegia/Ocular signs: bilateral horizontal nystagmus on gaze testing, bilateral lateral rectus weakness (cranial nerve VI palsy causing horizontal diplopia), conjugate gaze palsies, and sluggish pupils. 2. Cerebellar/Gait Ataxia: severe broad-based truncal ataxia, unable to stand or perform heel-to-shin testing without losing balance. 3. Encephalopathy: global disorientation, apathy, and confabulation. Check vitals (hypothermia and postural hypotension common). CRITICAL EMERGENCY LAB PROTOCOL: check capillary blood glucose. NEVER ADMINISTER IV GLUCOSE OR DEXTROSE INFUSIONS PRIOR TO THIAMINE REPLACEMENT (giving glucose to a thiamine-deficient brain rapidly depletes remaining pyrophosphate cofactor stores, precipitating irreversible neuronal death and acute Korsakoff psychosis). Bloods: FBC, U&Es, LFTs, magnesium (hypomagnesaemia impairs thiamine utilization and must be corrected simultaneously), phosphate, clotting. MRI Brain (T2/FLAIR shows hyperintensities and petechial haemorrhages in the mammillary bodies, periaqueductal grey matter, medial thalami, and floor of 3rd/4th ventricles).",
+    "assessment": "Acute Wernicke's Encephalopathy secondary to severe thiamine (Vitamin B1) deficiency. DDx: hepatic encephalopathy (shows asterixis/flapping tremor, elevated ammonia), alcohol withdrawal delirium / Delirium Tremens (shows profound autonomic hyperactivity, tachycardia, hypertension, visual hallucinations), acute cerebellar/brainstem stroke, basilar artery occlusion, hypoglycaemia.",
+    "plan": "This is a medical emergency requiring immediate hospital treatment. Give parenteral thiamine promptly, ideally before or alongside carbohydrate administration; do not delay treatment of hypoglycaemia. Correct magnesium and other electrolyte abnormalities, monitor neurologic status, and involve alcohol-dependence and nutrition services."
+  },
+  "learning_objectives": [
+    "Identify the classical Wernicke's clinical triad: acute encephalopathy, ocular abnormalities (nystagmus/VIth nerve palsy), and gait ataxia",
+    "Execute the absolute life-saving pharmacological rule: administer high-dose IV thiamine (Pabrinex) BEFORE or with any IV glucose administration",
+    "Explain the biochemical mechanism whereby glucose infusion without thiamine cofactor depletes brain pyrophosphate and triggers neuronal necrosis",
+    "Recognise the mandatory requirement to correct hypomagnesaemia simultaneously to enable enzymatic thiamine pyrophosphate utilization"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Wernicke's Encephalopathy",
+    "one_liner": "Severe thiamine (Vitamin B1) deficiency, from chronic alcohol use and poor nutrition, causes the classic triad of confusion, unsteady walking, and eye movement abnormalities — a medical emergency treated with IV thiamine before any glucose, since glucose alone can precipitate the crisis.",
+    "differentials": [
+      "Hepatic encephalopathy",
+      "Alcohol withdrawal delirium (delirium tremens)",
+      "Acute cerebellar/brainstem stroke",
+      "Hypoglycemia"
+    ],
+    "red_flags": [
+      "Any glucose given before thiamine — can precipitate or worsen Wernicke's encephalopathy"
+    ],
+    "must_ask": [
+      {
+        "objective": "Alcohol and nutrition history",
+        "say": "How much alcohol has he been drinking, and has he been eating regularly?",
+        "domains": [
+          "alcohol",
+          "pmh"
+        ],
+        "keywords": [
+          "daily drinking",
+          "not eating"
+        ]
+      },
+      {
+        "objective": "Confusion character",
+        "say": "How confused is he — does he know where he is?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "disoriented",
+          "confabulating"
+        ]
+      },
+      {
+        "objective": "Gait and balance",
+        "say": "How steady is he when walking?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "ataxia",
+          "unsteady"
+        ]
+      },
+      {
+        "objective": "Eye symptoms",
+        "say": "Any double vision or abnormal eye movements?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "double vision"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many days has this deterioration been happening?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

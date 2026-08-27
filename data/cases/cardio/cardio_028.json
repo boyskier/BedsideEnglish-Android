@@ -1,0 +1,213 @@
+{
+  "id": "cardio_028",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Brown",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "acute retrosternal chest pain radiating to left arm and sweating for 1 hour",
+  "hpi_details": "A 26-year-old female presents to the emergency department with sudden-onset retrosternal chest pain radiating to her left arm, accompanied by sweating, for the past 1 hour. She has no traditional cardiovascular risk factors.",
+  "ideas": "thinks it might be related to acs",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "scad_initial_acs_results",
+      "title": "Initial ECG and high-sensitivity troponin",
+      "order_terms": ["ECG", "EKG", "12-lead", "troponin", "cardiac biomarkers"],
+      "availability_message": "The initial ECG and high-sensitivity troponin are now available.",
+      "results": [
+        {
+          "id": "ecg_scad_stemi",
+          "test": "12-lead ECG",
+          "value": "2 mm ST-segment elevation in V3-V5",
+          "unit": "",
+          "reference_range": "No ST elevation",
+          "flag": "critical",
+          "collected_at": "On arrival"
+        },
+        {
+          "id": "troponin_t_scad",
+          "test": "High-sensitivity troponin T",
+          "value": "0.31",
+          "unit": "ng/mL",
+          "reference_range": "<0.014",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "On arrival"
+        }
+      ]
+    },
+    {
+      "id": "scad_coronary_angiography",
+      "title": "Emergency coronary angiography",
+      "order_terms": ["coronary angiography", "coronary angiogram", "cardiac catheterization"],
+      "availability_message": "The emergency coronary angiography report is now available.",
+      "results": [
+        {
+          "id": "angiography_lad_scad",
+          "test": "Coronary angiography",
+          "value": "Long smooth narrowing of the mid-to-distal LAD consistent with type 2 spontaneous coronary artery dissection; TIMI 3 distal flow",
+          "unit": "",
+          "reference_range": "No coronary dissection",
+          "flag": "critical",
+          "collected_at": "Emergency angiography"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Coronary Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Coronary Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes obtaining a STAT 12-lead ECG and cardiac enzymes without delay, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute retrosternal chest pain radiating to left arm and sweating for 1 hour",
+      "Key HPI features: A 26-year-old female presents to the emergency department with sudden-onset retrosternal chest pain radiating to her left arm, accompanied by sweating, for the past 1 hour. She has no traditional cardiovascular risk factors.",
+      "Objective/Exam findings: Vitals: assess for tachycardia, hypotension, or hypoxia. Cardiac auscultation for murmurs or gallops; check for signs of heart failure. STAT 12-lead ECG (looking for ST elevation/depression or new LBBB) and serial high-sensitivity troponin.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Coronary Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aortic dissection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ongoing pain, low blood pressure, or new breathlessness."
+    ],
+    "management_principles": [
+      "Obtain STAT 12-lead ECG and cardiac enzymes without delay",
+      "Give aspirin if not contraindicated; activate the emergency ACS pathway and individualize antiplatelet/reperfusion therapy after ECG, bleeding-risk, and coronary-anatomy assessment (consider SCAD in a young woman without traditional risk factors)",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of acute retrosternal chest pain radiating to left arm and sweating for 1 hour. HPI: myocardial ischemia, plaque rupture.",
+    "objective": "Vitals: assess for tachycardia, hypotension, or hypoxia. Cardiac auscultation for murmurs or gallops; check for signs of heart failure. STAT 12-lead ECG (looking for ST elevation/depression or new LBBB) and serial high-sensitivity troponin.",
+    "assessment": "Acute Coronary Syndrome in a young woman without traditional cardiovascular risk factors; spontaneous coronary artery dissection (SCAD) should be actively considered alongside atherosclerotic ACS given her age and sex. DDx: aortic dissection, pulmonary embolism, oesophageal spasm.",
+    "plan": "Obtain STAT 12-lead ECG and cardiac enzymes without delay. Give aspirin if not contraindicated; activate the emergency ACS pathway and individualize antiplatelet/reperfusion therapy after ECG, bleeding-risk, and coronary-anatomy assessment (coronary angiography can identify SCAD, which is managed conservatively rather than with stenting in most cases). Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Coronary Syndrome",
+    "Select appropriate diagnostic workup for Acute Coronary Syndrome",
+    "Implement evidence-based management plan: Obtain STAT 12-lead ECG, cardiac enzymes. Give aspirin if not contraindicated; activate the emergency ACS pathway and individualize antiplatelet/reperfusion therapy after ECG, bleeding-risk, and coronary-anatomy assessment"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Coronary Syndrome",
+    "one_liner": "Retrosternal pain from acute coronary obstruction. Time is muscle: the history exists to get to ECG and troponin fast.",
+    "differentials": [
+      "Spontaneous coronary artery dissection (SCAD) — the leading cause of ACS in young women without traditional risk factors",
+      "Aortic dissection",
+      "Pulmonary embolism",
+      "Oesophageal spasm"
+    ],
+    "red_flags": [
+      "Ongoing pain, low blood pressure, or new breathlessness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Site and radiation of the pain",
+        "say": "Where exactly is the pain, and does it move anywhere else?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "arm",
+          "jaw",
+          "shoulder",
+          "spread",
+          "radiate",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "When did it start, and how long does it last each time?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "How would you describe it — sharp, crushing, burning, tight?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "sharp",
+          "crushing",
+          "burning",
+          "tight",
+          "pressure",
+          "heavy"
+        ]
+      },
+      {
+        "objective": "Associated autonomic symptoms",
+        "say": "Along with the pain, did you feel sweaty, sick, or short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweat",
+          "nausea",
+          "sick",
+          "vomit",
+          "breath",
+          "clammy"
+        ]
+      },
+      {
+        "objective": "Cardiac risk factors",
+        "say": "Do you have high blood pressure, diabetes, or high cholesterol, and do you smoke?",
+        "domains": [
+          "pmh",
+          "smoking",
+          "family_hx"
+        ],
+        "keywords": [
+          "diabetes",
+          "cholesterol",
+          "smoking",
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Previous cardiac events and interventions",
+        "say": "Have you had a heart attack, stent, or bypass before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "heart",
+          "attack",
+          "stent",
+          "bypass",
+          "angioplasty"
+        ]
+      }
+    ]
+  }
+}

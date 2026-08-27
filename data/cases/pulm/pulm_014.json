@@ -1,0 +1,163 @@
+{
+  "id": "pulm_014",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Rossi",
+  "age": 71,
+  "gender": "female",
+  "chief_complaint": "sudden sharp chest pain, coughing blood, and extreme shortness of breath 10 days after knee surgery",
+  "hpi_details": "Presents via emergency ambulance with acute, sudden-onset, severe right-sided pleuritic chest pain, acute profound dyspnoea, and coughing up bright red blood-streaked sputum (haemoptysis). Symptoms began abruptly 2 hours ago while sitting resting at home. Underwent an elective right Total Knee Replacement (arthroplasty) 10 days ago, and was discharged home 4 days ago. Over the past 3 days, noticed her right calf becoming swollen, tender, and warm compared to the left, but assumed it was normal post-operative swelling. Complains of lightheadedness, heart racing, and feeling terrified she is dying.",
+  "ideas": "thinks a blood clot from her operated right leg has broken off and travelled into her lungs",
+  "concerns": "terrified she will collapse and die from a massive cardiac arrest",
+  "expectations": "wants emergency oxygen, immediate blood thinning injections, and an urgent lung clot scan",
+  "pmh": "right total knee arthroplasty 10 days ago, obesity (BMI 33), varicose veins",
+  "medications": "paracetamol/codeine PRN for knee pain (reports missing several doses of prescribed post-op prophylactic enoxaparin)",
+  "social_hx": "non-smoker, zero alcohol, retired bank teller, sedentary recovering at home",
+  "investigation_events": [{"id":"high_risk_pe_workup","title":"STAT pulmonary embolism results","order_terms":["ctpa","ct pulmonary angiogram","ct pulmonary angiography","ecg","ekg","bedside echo","echocardiogram"],"availability_message":"The STAT PE results are now available; oxygenation support and specialist assessment should not be delayed.","results":[{"id":"ctpa","test":"CT pulmonary angiography","value":"Large emboli in the right main pulmonary artery and right lower-lobe segmental branches","flag":"critical","collected_at":"During emergency assessment"},{"id":"ecg","test":"12-lead ECG","value":"Sinus tachycardia at 118 bpm with S1Q3T3 and anterior right-heart strain","flag":"abnormal","collected_at":"During emergency assessment"},{"id":"bedside_echo","test":"Bedside echocardiogram","value":"Dilated right ventricle with RV:LV ratio 1.1 and McConnell sign; no pericardial effusion","flag":"critical","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Acute pulmonary embolism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of acute pulmonary embolism is essential for rapid risk stratification and treatment.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate emergency assessment, resuscitation, and oxygen titrated by trained clinicians to the patient's oxygenation and local protocol, adapted to individual risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden sharp chest pain, coughing blood, and extreme shortness of breath 10 days after knee surgery",
+      "Key HPI features: Presents via emergency ambulance with acute, sudden-onset, severe right-sided pleuritic chest pain, acute profound dyspnoea, and coughing up bright red blood-streaked sputum (haemoptysis). Symptoms began abruptly 2 hours ago while sitting resting at home. Underwent an elective right Total Knee Replacement (arthroplasty) 10 days ago, and was discharged home 4 days ago. Over the past 3 days, noticed her right calf becoming swollen, tender, and warm compared to the left, but assumed it was normal post-operative swelling. Complains of lightheadedness, heart racing, and feeling terrified she is dying.",
+      "Objective/Exam findings: Vitals: sinus tachycardia HR 118, tachypnoea RR 28, O2 sat 89% on room air, low-normal BP 102/65 mmHg. Physical exam: right calf markedly swollen (measured >3cm larger than left calf at 10cm below tibial tuberosity), warm, and tender to palpation along deep venous system. Chest auscultation: pleural rub audible over right lower zone. Calculate Two-Level Wells Score for PE: Clinical signs of DVT (3 points) + PE #1 diagnosis OR equally likely (3 points) + Surgery/immobilization within 4 weeks (1.5 points) + HR >100 (1.5 points) -> Total Wells Score = 9.0 points (High Risk / PE Likely score >4 points). CRITICAL DIAGNOSTIC PATHWAY: when Wells score >4 (PE Likely), DO NOT ORDER A D-DIMER BLOOD TEST (D-dimer is useless when high pre-test probability or post-surgery); proceed directly to immediate Computed Tomography Pulmonary Angiography (CTPA). 12-lead ECG: sinus tachycardia, S1Q3T3 McGinn-White pattern (deep S in lead I, Q wave and inverted T in lead III indicating acute right ventricular strain), and right precordial T-wave inversions (V1-V4). CTPA: confirms large filling defects occluding the right main pulmonary artery and segmental branches to the lower lobe. Bedside Echocardiogram: shows right ventricular dilatation (RV:LV ratio >1.0) and McConnell's sign (akinesia of RV free wall with normal apical contraction).",
+      "Relevant background/PMH: right total knee arthroplasty 10 days ago, obesity (BMI 33), varicose veins",
+      "Current medications: paracetamol/codeine PRN for knee pain (reports missing several doses of prescribed post-op prophylactic enoxaparin)"
+    ],
+    "common_misconceptions": [
+      "Using D-dimer testing to delay definitive imaging in a patient with high clinical probability of pulmonary embolism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pulmonary embolism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as hypotension or shock indicating high-risk pulmonary embolism."
+    ],
+    "management_principles": [
+      "Immediate emergency assessment, continuous monitoring, and clinician-titrated oxygen/supportive care for hypoxaemia.",
+      "For high clinical probability, arrange urgent definitive imaging when stable; if imaging is delayed, a clinician should weigh empiric anticoagulation against bleeding risk, including the recent operation, renal function, and contraindications.",
+      "If hypotension, shock, or worsening respiratory failure develops, activate critical-care/PE-response support and individualise reperfusion treatment after urgent contraindication review."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "European Society of Cardiology: Acute Pulmonary Embolism Guidelines",
+        "url": "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Acute-Pulmonary-Embolism-Diagnosis-and-Management-of"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "71F 10 days post-total knee replacement presents with acute pleuritic chest pain, haemoptysis, acute dyspnoea, and unilateral right calf swelling/tenderness.",
+    "objective": "Vitals: sinus tachycardia HR 118, tachypnoea RR 28, O2 sat 89% on room air, low-normal BP 102/65 mmHg. Physical exam: right calf markedly swollen (measured >3cm larger than left calf at 10cm below tibial tuberosity), warm, and tender to palpation along deep venous system. Chest auscultation: pleural rub audible over right lower zone. Calculate Two-Level Wells Score for PE: Clinical signs of DVT (3 points) + PE #1 diagnosis OR equally likely (3 points) + Surgery/immobilization within 4 weeks (1.5 points) + HR >100 (1.5 points) -> Total Wells Score = 9.0 points (High Risk / PE Likely score >4 points). CRITICAL DIAGNOSTIC PATHWAY: when Wells score >4 (PE Likely), DO NOT ORDER A D-DIMER BLOOD TEST (D-dimer is useless when high pre-test probability or post-surgery); proceed directly to immediate Computed Tomography Pulmonary Angiography (CTPA). 12-lead ECG: sinus tachycardia, S1Q3T3 McGinn-White pattern (deep S in lead I, Q wave and inverted T in lead III indicating acute right ventricular strain), and right precordial T-wave inversions (V1-V4). CTPA: confirms large filling defects occluding the right main pulmonary artery and segmental branches to the lower lobe. Bedside Echocardiogram: shows right ventricular dilatation (RV:LV ratio >1.0) and McConnell's sign (akinesia of RV free wall with normal apical contraction).",
+    "assessment": "Acute Intermediate-High Risk (Submassive) Pulmonary Embolism with acute right ventricular dysfunction secondary to deep vein thrombosis post-total knee arthroplasty. DDx: acute myocardial infarction, post-operative pneumonia, pneumothorax, pericarditis.",
+    "plan": "This presentation requires immediate emergency-department assessment, continuous cardiac/oxygenation/blood-pressure monitoring, and clinician-titrated oxygen/supportive care. With high PE probability, arrange urgent CTPA when stable rather than using D-dimer to delay imaging; if imaging is delayed, the treating clinician must balance empiric anticoagulation against bleeding risk and contraindications, especially her recent surgery. Consult critical care and a PE-response/appropriate specialist team for RV strain or deterioration. Hypotension, shock, syncope, worsening hypoxaemia, or respiratory failure require immediate escalation; any thrombolysis, catheter-directed therapy, or thrombectomy must follow urgent specialist contraindication review."
+  },
+  "learning_objectives": [
+    "Calculate and interpret the Two-Level Wells Score for PE confirming High pre-test probability (>4 points)",
+    "Explain why D-dimer testing should not delay definitive imaging when pre-test probability is high",
+    "Identify ECG signs of acute right ventricular strain including S1Q3T3 pattern and right precordial T-wave inversions",
+    "Recognise that anticoagulation and reperfusion decisions require bleeding-risk and contraindication assessment, with urgent escalation for haemodynamic collapse"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Pulmonary Embolism",
+    "one_liner": "Acute thromboembolism of the pulmonary arteries causing pleuritic chest pain, hypoxaemia, right-heart strain, and possible haemodynamic collapse.",
+    "differentials": [
+      "Acute myocardial infarction",
+      "Pneumothorax",
+      "Pericarditis"
+    ],
+    "red_flags": [
+      "Hypotension, shock, syncope, or altered mental status",
+      "Worsening hypoxaemia, cyanosis, severe breathlessness, or respiratory failure",
+      "Increasing haemoptysis or cardiac arrest"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden pleuritic pain onset",
+        "say": "Did this sharp pain start abruptly like a sudden knife stab while at rest?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "abruptly",
+          "sharp",
+          "knife",
+          "pleuritic",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Respiration-dependent aggravation",
+        "say": "Does taking a deep breath or coughing make the sharp chest pain unbearable?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "deep",
+          "breath",
+          "coughing",
+          "inhalation",
+          "cough"
+        ]
+      },
+      {
+        "objective": "Breathlessness severity and rest dyspnea",
+        "say": "Do you feel short of breath even when sitting perfectly still?",
+        "domains": [
+          "severity",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "shortness",
+          "still",
+          "breathless",
+          "dyspnea",
+          "resting"
+        ]
+      },
+      {
+        "objective": "Venous thromboembolism risk factors",
+        "say": "Have you recently had surgery, immobility, a previous clot, cancer, or hormone treatment?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "surgery",
+          "immobility",
+          "previous clot",
+          "cancer",
+          "hormone"
+        ]
+      },
+      {
+        "objective": "Haemodynamic instability screen",
+        "say": "Have you fainted, felt severely lightheaded, or noticed your heart racing?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "lightheaded",
+          "dizzy",
+          "racing",
+          "fainting",
+          "tension"
+        ]
+      }
+    ]
+  }
+}

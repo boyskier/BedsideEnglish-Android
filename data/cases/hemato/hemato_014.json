@@ -1,0 +1,128 @@
+{
+  "id": "hemato_014",
+  "system": "hematology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Carter",
+  "age": 25,
+  "gender": "male",
+  "chief_complaint": "swollen lymph node in neck and drenching night sweats",
+  "hpi_details": "25M presents with a painless, rubbery lump in his right supraclavicular area for 2 months. Over the last 3 weeks, he has had drenching night sweats requiring him to change his clothes, a low-grade fever, and a 10-pound weight loss.",
+  "ideas": "thinks he has an infection",
+  "concerns": "worried he might have cancer",
+  "expectations": "wants a biopsy",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "College student",
+  "clinical_knowledge": {
+    "topic": "Hodgkin Lymphoma",
+    "core_concepts": [
+      "B symptoms (fever, night sweats, weight loss) and painless lymphadenopathy in a young adult strongly suggest lymphoma.",
+      "Diagnosis requires excisional lymph node biopsy showing Reed-Sternberg cells."
+    ],
+    "diagnostic_clues": [
+      "Painless rubbery lymphadenopathy",
+      "B symptoms"
+    ],
+    "common_misconceptions": [
+      "Assuming it is just reactive lymphadenopathy from a recent cold."
+    ],
+    "dangerous_errors": [
+      "Doing a fine needle aspiration (FNA) instead of an excisional biopsy, which often misses the diagnosis."
+    ],
+    "management_principles": [
+      "Excisional biopsy, PET-CT for staging, hematology/oncology referral for chemotherapy."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "25M with a painless neck mass, drenching night sweats, and weight loss.",
+    "objective": "3cm firm, rubbery, mobile right supraclavicular lymph node. No hepatosplenomegaly.",
+    "assessment": "Suspicious for lymphoma (e.g., Hodgkin Lymphoma).",
+    "plan": "Excisional lymph node biopsy, CBC, CMP, LDH, refer to hematology."
+  },
+  "learning_objectives": [
+    "Recognize B symptoms and appropriate biopsy technique for lymphoma."
+  ],
+  "teaching": {
+    "diagnosis": "Hodgkin Lymphoma",
+    "one_liner": "Painless supraclavicular lymphadenopathy with B symptoms (night sweats, fever, weight loss) in a young adult.",
+    "differentials": [
+      "Non-Hodgkin Lymphoma",
+      "Tuberculosis"
+    ],
+    "red_flags": [
+      "Supraclavicular location (always suspicious for malignancy)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Lymph node character",
+        "say": "Is the lump painless, and has it been growing over the past few weeks or months?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "painless",
+          "growing",
+          "rubbery"
+        ]
+      },
+      {
+        "objective": "B symptoms",
+        "say": "Have you had drenching night sweats, fevers, or unexplained weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night sweats",
+          "fever",
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "Alcohol-induced pain",
+        "say": "Does the swollen area hurt or itch after you drink alcohol?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "alcohol",
+          "pain",
+          "itch"
+        ]
+      },
+      {
+        "objective": "Response to antibiotics",
+        "say": "Did a course of antibiotics from your doctor make any difference to the swelling?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "antibiotics",
+          "no change"
+        ]
+      },
+      {
+        "objective": "Constitutional symptoms and function",
+        "say": "How is your energy level, and has this been affecting your daily activities?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "fatigue",
+          "energy"
+        ]
+      }
+    ]
+  }
+}

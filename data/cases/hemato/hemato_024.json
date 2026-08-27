@@ -1,0 +1,180 @@
+{
+  "id": "hemato_024",
+  "system": "hematology & oncology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hwang",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "high fever, shaking chills, and extreme fatigue 10 days after chemotherapy",
+  "hpi_details": "55M undergoing active chemotherapy for lymphoma presents with a temperature of 38.9C, shaking chills, and severe weakness that started this morning. Finished his last chemo cycle 10 days ago.",
+  "ideas": "knows he is at risk of infection due to low white blood cells",
+  "concerns": "terrified of septic shock",
+  "expectations": "wants immediate IV antibiotics",
+  "pmh": "Non-Hodgkin Lymphoma (on R-CHOP chemotherapy)",
+  "medications": "None",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_febrile_neutropenia_cbc",
+      "title": "STAT febrile neutropenia blood count",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "white blood cell count",
+        "differential",
+        "absolute neutrophil count",
+        "anc"
+      ],
+      "availability_message": "The STAT blood count is now available; blood cultures should be drawn promptly, but empiric antipseudomonal antibiotics must not wait for this result.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "0.7",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "absolute_neutrophil_count",
+          "test": "Absolute neutrophil count",
+          "value": "0.2",
+          "unit": "x10^3/mcL",
+          "reference_range": "1.5-8.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Neutropenic Fever (post-chemotherapy oncologic emergency) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Neutropenic Fever (post-chemotherapy oncologic emergency) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows an evidence-based diagnostic and therapeutic protocol for neutropenic fever (oncologic emergency) in post-chemotherapy nadir, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Fever ≥38C with shaking chills during the expected post-chemotherapy neutrophil nadir window (10 days after last cycle)",
+      "Active chemotherapy for lymphoma (R-CHOP), a myelosuppressive regimen",
+      "Severe weakness of acute onset without an obvious localizing source"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Neutropenic Fever (post-chemotherapy oncologic emergency).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Tumor fever (non-infectious) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any fever ≥38°C in a patient within the expected nadir window after chemotherapy — treat as neutropenic fever until proven otherwise."
+    ],
+    "management_principles": [
+      "Draw bilateral blood cultures, check STAT CBC with differential",
+      "Administer empiric antipseudomonal IV antibiotics (e.g., Cefepime or Piperacillin-Tazobactam) within 1 hour",
+      "Do not wait for neutrophil count results before starting antibiotics if neutropenic fever is suspected"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M on R-CHOP chemotherapy for lymphoma, last cycle 10 days ago, with acute-onset fever, shaking chills, and severe weakness since this morning.",
+    "objective": "Temperature 38.9C, tachycardic. No clear localizing source of infection on exam. Hemodynamically stable at present.",
+    "assessment": "Neutropenic fever, an oncologic emergency, in the post-chemotherapy nadir window.",
+    "plan": "Draw bilateral blood cultures, check STAT CBC with differential. Administer empiric antipseudomonal IV antibiotics (e.g., Cefepime or Piperacillin-Tazobactam) within 1 hour without waiting for neutrophil count results. Admit for monitoring and oncology/hematology consultation."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Neutropenic Fever (oncologic emergency) in post-chemotherapy nadir.",
+    "Formulate prioritized differential diagnosis for high fever, shaking chills, and extreme fatigue 10 days after chemotherapy",
+    "Select appropriate laboratory and imaging studies for hematology & oncology",
+    "Implement evidence-based acute and long-term management strategies for Neutropenic Fever (oncologic emergency) in post-chemotherapy nadir."
+  ],
+  "teaching": {
+    "diagnosis": "Neutropenic Fever (post-chemotherapy oncologic emergency)",
+    "one_liner": "Chemotherapy suppresses the bone marrow, and fever during the resulting low white-cell nadir may be the only sign of a life-threatening infection — treated as an emergency with antibiotics within one hour.",
+    "differentials": [
+      "Tumor fever (non-infectious)",
+      "Transfusion reaction",
+      "Drug fever"
+    ],
+    "red_flags": [
+      "Any fever ≥38°C in a patient within the expected nadir window after chemotherapy — treat as neutropenic fever until proven otherwise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to chemotherapy",
+        "say": "How many days ago was your last chemotherapy cycle?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "chemotherapy",
+          "days",
+          "cycle"
+        ]
+      },
+      {
+        "objective": "Fever character",
+        "say": "How high has your temperature been, and did you have shaking chills?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "temperature",
+          "chills"
+        ]
+      },
+      {
+        "objective": "Localizing symptoms",
+        "say": "Any cough, sore throat, pain when urinating, or redness anywhere on your skin?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "cough",
+          "dysuria",
+          "redness"
+        ]
+      },
+      {
+        "objective": "Known cancer and treatment",
+        "say": "What cancer are you being treated for, and what chemotherapy regimen?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "lymphoma",
+          "chemotherapy",
+          "r-chop"
+        ]
+      },
+      {
+        "objective": "Functional status",
+        "say": "How weak or unwell do you feel compared to usual?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "weakness"
+        ]
+      }
+    ]
+  }
+}

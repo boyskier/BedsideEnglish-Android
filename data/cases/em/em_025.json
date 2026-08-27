@@ -1,0 +1,132 @@
+{
+  "id": "em_025",
+  "system": "emergency medicine",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mrs. Sim",
+  "age": 31,
+  "gender": "female",
+  "chief_complaint": "bleeding cut on the index finger after a kitchen knife accident",
+  "hpi_details": "31F presents with a 2cm clean-cut laceration on the palmar aspect of her left index finger that occurred while chopping vegetables 1 hour ago. Bleeding is controlled with direct pressure.",
+  "ideas": "worried about tendon damage or needing stitches",
+  "concerns": "anxious about pain of stitching",
+  "expectations": "wants wound cleaned and stitched",
+  "pmh": "Tetanus booster 8 years ago",
+  "medications": "None",
+  "social_hx": "Graphic designer, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Simple Finger Laceration evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Simple Finger Laceration is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Simple Finger Laceration, ruling out tendon or digital nerve injury, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bleeding cut on the index finger after a kitchen knife accident",
+      "Key HPI features: 31F presents with a 2cm clean-cut laceration on the palmar aspect of her left index finger that occurred while chopping vegetables 1 hour ago. Bleeding is controlled with direct pressure.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Simple Finger Laceration, ruling out tendon or digital nerve injury.",
+      "Relevant background/PMH: Tetanus booster 8 years ago"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Simple Finger Laceration.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Flexor tendon laceration without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inability to bend the fingertip or reduced sensation — suggests tendon or nerve injury needing specialist referral."
+    ],
+    "management_principles": [
+      "Evaluate distal sensation (two-point discrimination) and tendon function (flexor digitorum superficialis/profundus) to rule out tendon or digital nerve injury",
+      "Irrigate wound, administer local lidocaine, and suture"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Simple Finger Laceration, ruling out tendon or digital nerve injury. bleeding cut on the index finger after a kitchen knife accident. 31F presents with a 2cm clean-cut laceration on the palmar aspect of her left index finger that occurred while chopping vegetables 1 hour ago. Bleeding is controlled with direct pressure.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Simple Finger Laceration, ruling out tendon or digital nerve injury.",
+    "assessment": "Clinical presentation highly suggestive of Simple Finger Laceration, ruling out tendon or digital nerve injury.",
+    "plan": "Evaluate distal sensation (two-point discrimination) and tendon function (flexor digitorum superficialis/profundus) to rule out tendon or digital nerve injury. Irrigate the wound, administer local lidocaine, and suture. Check tetanus status. Refer to a specialty (hand surgery) team if tendon or nerve injury is found, and provide comprehensive wound-care counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Simple Finger Laceration, ruling out tendon or digital nerve injury.",
+    "Formulate prioritized differential diagnosis for bleeding cut on the index finger after a kitchen knife accident",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies for Simple Finger Laceration, ruling out tendon or digital nerve injury."
+  ],
+  "teaching": {
+    "diagnosis": "Simple Finger Laceration",
+    "one_liner": "A clean cut to the finger requiring assessment of tendon function and nerve sensation before simple wound closure — the exam, not the wound's appearance alone, rules out deeper structural injury.",
+    "differentials": [
+      "Flexor tendon laceration",
+      "Digital nerve injury",
+      "Open fracture"
+    ],
+    "red_flags": [
+      "Inability to bend the fingertip or reduced sensation — suggests tendon or nerve injury needing specialist referral"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and timing",
+        "say": "How did you cut it, and how long ago?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "knife",
+          "hour ago"
+        ]
+      },
+      {
+        "objective": "Bleeding control",
+        "say": "Is the bleeding controlled with pressure?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Sensation",
+        "say": "Can you feel normal touch on your fingertip?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sensation",
+          "numbness"
+        ]
+      },
+      {
+        "objective": "Tendon function",
+        "say": "Can you bend and straighten your finger normally?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "bend",
+          "straighten"
+        ]
+      },
+      {
+        "objective": "Tetanus status",
+        "say": "When was your last tetanus shot?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

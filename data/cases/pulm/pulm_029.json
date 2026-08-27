@@ -1,0 +1,158 @@
+{
+  "id": "pulm_029",
+  "system": "pulm",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Johnson",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "low-grade fever, dry hacking cough, and diffuse wheezing",
+  "hpi_details": "A 29-year-old male presents to the clinic with low-grade fever, dry hacking cough, and diffuse wheezing. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to atypical_pneumonia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Atypical Pneumonia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Atypical Pneumonia is essential for appropriate diagnostic workup and treatment.",
+      "Clinical history, severity assessment, and targeted testing must be interpreted together rather than relying on one symptom alone.",
+      "Assess severity, oxygenation, and chest imaging when pneumonia is suspected.",
+      "Management should follow local pathways and account for patient-specific comorbidity and clinical severity."
+    ],
+    "diagnostic_clues": [
+      "Chief complaint: low-grade fever, dry hacking cough, and diffuse wheezing",
+      "Key HPI features: A 29-year-old male presents to the clinic with low-grade fever, dry hacking cough, and diffuse wheezing. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/examination findings: Perform focused examination, vital-sign assessment, and diagnosis-specific investigations.",
+      "Relevant background/PMH: Unremarkable",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming a mild or atypical presentation rules out Atypical Pneumonia.",
+      "Relying on a single normal test result to prematurely exclude serious pathology.",
+      "Equating transient symptom improvement with resolution of the underlying condition.",
+      "Failing to consider clinically important alternative diagnoses."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation.",
+      "Prematurely discharging or reassuring the patient before appropriate assessment.",
+      "Starting treatment without considering contraindications, interactions, or organ function.",
+      "Ignoring critical warning signs: Hypoxaemia or severe dyspnoea."
+    ],
+    "management_principles": [
+      "Assess severity, oxygenation, and chest imaging when pneumonia is suspected.",
+      "Use local antimicrobial guidance after considering likely pathogens and patient-specific risk factors.",
+      "Escalate urgently for hypoxaemia, haemodynamic instability, or worsening respiratory distress."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ATS/IDSA Community-Acquired Pneumonia Guideline",
+        "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-cap-in-adults/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: low-grade fever, dry hacking cough, and diffuse wheezing\n\nA 29-year-old male presents to the clinic with low-grade fever, dry hacking cough, and diffuse wheezing. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Obtain full vital signs including oxygen saturation and a focused respiratory examination; use chest imaging or pathogen testing selectively when it will change management or severity is uncertain.",
+    "assessment": "Acute respiratory illness; atypical pneumonia is possible, but viral bronchitis and asthma/reactive airways disease remain important alternatives pending examination and investigations.",
+    "plan": "Assess oxygenation and illness severity before deciding on outpatient care. Provide supportive care and safety-net instructions. If bacterial pneumonia is clinically diagnosed, select antimicrobial treatment under local guidance after checking allergies, pregnancy potential, interacting medicines, and individual risk factors; antibiotics are not routine for uncomplicated viral bronchitis. Arrange urgent emergency assessment for hypoxaemia, severe dyspnoea, confusion, hypotension, chest pain, or clinical deterioration."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Atypical Pneumonia",
+    "Select appropriate diagnostic workup for Atypical Pneumonia",
+    "Implement severity-based evaluation, supportive care, and clinician-directed antimicrobial treatment only when bacterial pneumonia is diagnosed"
+  ],
+  "teaching": {
+    "diagnosis": "Atypical Pneumonia",
+    "one_liner": "Lower respiratory infection with a predominantly dry cough and diffuse respiratory symptoms, often caused by atypical organisms.",
+    "differentials": [
+      "Viral bronchitis",
+      "Asthma exacerbation",
+      "Community-acquired bacterial pneumonia"
+    ],
+    "red_flags": [
+      "Hypoxaemia or severe dyspnoea",
+      "Confusion, hypotension, or clinical deterioration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Low-grade fever and dry cough characteristics",
+        "say": "Is your cough dry, and how high has your fever been?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "low-grade fever",
+          "dry cough",
+          "hacking",
+          "temperature",
+          "onset"
+        ]
+      },
+      {
+        "objective": "Extrapulmonary symptoms of atypical infection",
+        "say": "Have you had headache, sore throat, muscle aches, or an upset stomach with this?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "myalgia",
+          "sore throat",
+          "extrapulmonary",
+          "atypical"
+        ]
+      },
+      {
+        "objective": "Living situation and close-contact exposure",
+        "say": "Do you live in a dormitory, shared housing, or have close contact with a lot of people, like at school or work?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "dormitory",
+          "close contact",
+          "outbreak",
+          "mycoplasma",
+          "crowded"
+        ]
+      },
+      {
+        "objective": "Wheeze and gradual symptom progression",
+        "say": "Has the wheeze been getting gradually worse over days rather than coming on suddenly?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "wheeze",
+          "gradual",
+          "progression",
+          "days",
+          "insidious"
+        ]
+      },
+      {
+        "objective": "Response to prior antibiotics if any",
+        "say": "Have you tried any antibiotics already, and did they help?",
+        "domains": [
+          "medications",
+          "relieving"
+        ],
+        "keywords": [
+          "antibiotics",
+          "response",
+          "beta-lactam",
+          "azithromycin",
+          "treatment"
+        ]
+      }
+    ]
+  }
+}

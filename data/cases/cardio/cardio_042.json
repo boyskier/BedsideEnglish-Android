@@ -1,0 +1,187 @@
+{
+  "id": "cardio_042",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Robinson",
+  "age": 18,
+  "gender": "female",
+  "chief_complaint": "shortness of breath and chest tightness during exercise in young athlete",
+  "hpi_details": "An 18-year-old female athlete presents with shortness of breath and chest tightness during exercise. The symptoms occur with exertion and have become more frequent.",
+  "ideas": "thinks it might be related to eib",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "exercise_bronchoprovocation",
+      "title": "Exercise challenge spirometry",
+      "order_terms": ["exercise challenge", "exercise spirometry", "bronchoprovocation", "spirometry"],
+      "availability_message": "The exercise challenge spirometry result is now available.",
+      "results": [
+        {
+          "id": "fev1_post_exercise_drop",
+          "test": "FEV1 change after exercise",
+          "value": "16% fall from baseline at 10 minutes, returning toward baseline after salbutamol",
+          "unit": "",
+          "reference_range": "<10% fall",
+          "flag": "positive",
+          "collected_at": "Exercise challenge"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Exercise-Induced Bronchospasm evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Exercise-Induced Bronchospasm is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Diagnosis is supported by variable airflow limitation demonstrated with spirometry and, when necessary, an exercise or bronchoprovocation challenge; cardiac evaluation is reserved for concerning exertional symptoms or abnormal cardiac findings.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: shortness of breath and chest tightness during exercise in young athlete",
+      "Key HPI features: An 18-year-old female athlete presents with shortness of breath and chest tightness during exercise that have become more frequent.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Exercise-Induced Bronchospasm.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Exercise-Induced Bronchospasm.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Exertional angina without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain with exertion in an older or high-risk patient must still exclude ischaemia."
+    ],
+    "management_principles": [
+      "Perform spirometry and, when needed, exercise or bronchoprovocation testing; assess cardiac red flags and obtain cardiac evaluation when indicated",
+      "Use a short-acting bronchodilator before exercise when appropriate and reassess if symptoms persist",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ATS Clinical Practice Guideline: Exercise-Induced Bronchoconstriction",
+        "url": "https://www.thoracic.org/statements/resources/allergy-asthma/EIB.pdf"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "18-year-old female athlete presenting with shortness of breath and chest tightness during exercise. HPI: possible airway hyperreactivity during exercise.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Exercise-Induced Bronchospasm.",
+    "assessment": "Condition highly suspicious for Exercise-Induced Bronchospasm.",
+    "plan": "Perform spirometry and, when needed, exercise or bronchoprovocation testing. Assess for cardiac red flags and obtain cardiac evaluation when indicated. Use a short-acting bronchodilator before exercise when appropriate and reassess if symptoms persist."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Exercise-Induced Bronchospasm",
+    "Select appropriate diagnostic workup for Exercise-Induced Bronchospasm",
+    "Implement evidence-based management plan: Confirm variable airflow limitation with spirometry or provocation testing, assess cardiac red flags, and use a short-acting bronchodilator before exercise when appropriate"
+  ],
+  "teaching": {
+    "diagnosis": "Exercise-Induced Bronchospasm",
+    "one_liner": "Airways narrow a few minutes into exercise, so chest tightness and breathlessness peak after stopping — not a cardiac pattern.",
+    "differentials": [
+      "Exertional angina",
+      "Vocal cord dysfunction",
+      "Deconditioning"
+    ],
+    "red_flags": [
+      "Chest pain with exertion in an older or high-risk patient must still exclude ischaemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to exercise",
+        "say": "Does it start a few minutes into exercise, or after you stop?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "minutes",
+          "into",
+          "finish"
+        ]
+      },
+      {
+        "objective": "Wheeze and cough",
+        "say": "Do you wheeze or cough with it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "wheeze",
+          "cough",
+          "whistling",
+          "chest",
+          "tight"
+        ]
+      },
+      {
+        "objective": "Cold air and seasonal triggers",
+        "say": "Is it worse in cold air, or at a particular time of year?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "cold",
+          "air",
+          "winter",
+          "season",
+          "pollen"
+        ]
+      },
+      {
+        "objective": "Atopy — asthma, eczema, hay fever",
+        "say": "Do you have asthma, eczema, or hay fever, in you or your family?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "asthma",
+          "eczema",
+          "hay",
+          "fever",
+          "allergy",
+          "inhaler"
+        ]
+      },
+      {
+        "objective": "Inhaler use and response",
+        "say": "Have you used an inhaler, and did it help?",
+        "domains": [
+          "medications",
+          "relieving"
+        ],
+        "keywords": [
+          "inhaler",
+          "puffer",
+          "ventolin"
+        ]
+      },
+      {
+        "objective": "Exclude cardiac features",
+        "say": "Any chest pain radiating to your arm, or fainting?",
+        "domains": [
+          "radiation",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "arm",
+          "jaw",
+          "faint",
+          "radiate"
+        ]
+      }
+    ]
+  }
+}

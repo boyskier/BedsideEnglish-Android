@@ -1,0 +1,131 @@
+{
+  "id": "endo_012",
+  "system": "endocrinology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thompson",
+  "age": 52,
+  "gender": "female",
+  "chief_complaint": "mild fatigue and slightly elevated TSH on routine labs",
+  "hpi_details": "52F asymptomatic presenting for checkup, found to have TSH 7.8 uIU/mL with normal Free T4 and positive TPO antibodies.",
+  "ideas": "thinks this is related to subclinical hypothyroidism",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id":"tsh","test":"Thyroid-stimulating hormone","value":"7.8","unit":"mIU/L","reference_range":"0.4-4.5","flag":"high","specimen":"Blood"},
+    {"id":"free_t4","test":"Free thyroxine","value":"1.1","unit":"ng/dL","reference_range":"0.8-1.8","flag":"normal","specimen":"Blood"},
+    {"id":"tpo_antibody","test":"Thyroid peroxidase antibody","value":"186","unit":"IU/mL","reference_range":"<35","flag":"high","specimen":"Blood"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Subclinical Hypothyroidism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subclinical Hypothyroidism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes repeat TSH and Free T4 testing to confirm persistence before deciding on levothyroxine therapy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: mild fatigue and slightly elevated TSH on routine labs",
+      "Key HPI features: 52F asymptomatic presenting for checkup, found to have TSH 7.8 uIU/mL with normal Free T4 and positive TPO antibodies.",
+      "Objective/Exam findings: Vitals within normal limits. Physical exam unremarkable, no goiter or myxedematous changes. Bloods: TSH 7.8 uIU/mL, Free T4 within normal limits, TPO antibodies positive.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subclinical Hypothyroidism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Overt hypothyroidism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: TSH persistently above 10 mIU/L, pregnancy or fertility plans, or positive TPO antibodies with rising TSH on serial testing."
+    ],
+    "management_principles": [
+      "Repeat TSH and Free T4 in 6-12 weeks to confirm persistent elevation before deciding on treatment",
+      "Consider starting levothyroxine if TSH remains >10 mIU/L, the patient is symptomatic, or TPO antibodies are positive with additional risk factors (e.g., pregnancy planning, cardiovascular risk); otherwise monitor TSH annually",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Thyroid Association (ATA) Guidelines for the Treatment of Hypothyroidism",
+        "url": "https://www.thyroid.org/professionals/ata-professional-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "52F asymptomatic presenting for a routine checkup, found to have TSH 7.8 uIU/mL with normal Free T4 and positive TPO antibodies.",
+    "objective": "Vitals within normal limits. Physical exam unremarkable, no goiter or myxedematous changes. Bloods: TSH 7.8 uIU/mL, Free T4 within normal limits, TPO antibodies positive.",
+    "assessment": "Subclinical Hypothyroidism (mildly elevated TSH with normal Free T4), TPO antibody positive suggesting underlying autoimmune (Hashimoto's) thyroiditis.",
+    "plan": "Repeat TSH and Free T4 in 6-12 weeks to confirm persistent elevation. Consider starting levothyroxine if TSH remains >10 mIU/L, the patient becomes symptomatic, or additional risk factors are present (e.g., pregnancy planning, cardiovascular risk); otherwise monitor TSH annually."
+  },
+  "learning_objectives": [
+    "Identify indications for treating versus monitoring subclinical hypothyroidism based on TSH level and risk factors",
+    "Interpret the significance of positive TPO antibodies in predicting progression to overt hypothyroidism",
+    "Differentiate subclinical from overt hypothyroidism using TSH and Free T4",
+    "Discuss the role of repeat testing before initiating levothyroxine"
+  ],
+  "teaching": {
+    "diagnosis": "Subclinical Hypothyroidism",
+    "one_liner": "A mildly elevated TSH with a normal Free T4 and positive thyroid antibodies, often with subtle or no symptoms — represents early autoimmune thyroid failure and is monitored or treated based on TSH level and symptoms.",
+    "differentials": [
+      "Overt hypothyroidism",
+      "Non-thyroidal illness (sick euthyroid)"
+    ],
+    "red_flags": [
+      "TSH persistently above 10 mIU/L — stronger indication for treatment due to higher risk of progression",
+      "Pregnancy or fertility plans — treatment threshold is lower given foetal risk",
+      "Positive TPO antibodies with rising TSH on serial testing — signals impending progression to overt hypothyroidism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptom presence",
+        "say": "Do you feel tired, or notice anything else, even mildly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fatigue"
+        ]
+      },
+      {
+        "objective": "How the finding was made",
+        "say": "Was this found on a routine blood test?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Family history of thyroid disease",
+        "say": "Does thyroid disease run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Pregnancy status (if relevant)",
+        "say": "Are you pregnant or planning to become pregnant?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Weight or mood changes",
+        "say": "Any weight gain or changes in mood?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

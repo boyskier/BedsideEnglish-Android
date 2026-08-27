@@ -1,0 +1,192 @@
+{
+  "id": "cardio_023",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Petrov",
+  "age": 60,
+  "gender": "male",
+  "chief_complaint": "swollen belly, puffy ankles, and feeling full quickly over 6 months",
+  "hpi_details": "6-month history of progressive abdominal distension, severe leg swelling, and early satiety after eating small meals. Feels chronically exhausted and breathless when walking 100 metres. Treated for pulmonary and pericardial tuberculosis 20 years ago in his home country with a full 9-month course of anti-TB drugs. Recently seen by a gastroenterologist who found normal liver function tests and negative liver serology despite massive ascites.",
+  "ideas": "thinks his old tuberculosis left permanent rigid scar tissue around his heart pump",
+  "concerns": "worried he will be misdiagnosed with liver cirrhosis when his liver blood tests are normal",
+  "expectations": "wants a heart scan to check if the sac around his heart has thickened into a hard shell",
+  "pmh": "pericardial/pulmonary tuberculosis 20 years ago, hypertension",
+  "medications": "furosemide 40mg OD with poor reduction of abdominal fluid",
+  "social_hx": "non-smoker, zero alcohol intake, retired mechanic, immigrated 15 years ago",
+  "investigation_events": [
+    {
+      "id": "constrictive_pericarditis_imaging",
+      "title": "Cardiac CT and echocardiogram",
+      "order_terms": ["cardiac CT", "CT chest", "echocardiogram", "echo", "TTE"],
+      "availability_message": "The pericardial imaging reports are now available.",
+      "results": [
+        {
+          "id": "ct_calcified_pericardium",
+          "test": "Cardiac CT",
+          "value": "Diffuse pericardial calcification with pericardial thickness up to 7 mm",
+          "unit": "",
+          "reference_range": "Pericardial thickness <4 mm",
+          "flag": "abnormal",
+          "collected_at": "During today's work-up"
+        },
+        {
+          "id": "echo_constrictive_physiology",
+          "test": "Transthoracic echocardiogram",
+          "value": "Septal bounce with marked respiratory variation in mitral and tricuspid inflow, consistent with constrictive physiology",
+          "unit": "",
+          "reference_range": "No constrictive physiology",
+          "flag": "abnormal",
+          "collected_at": "During today's work-up"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Constrictive Pericarditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Constrictive Pericarditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes explaining to the patient that the rigid calcified pericardium acts like an iron shell preventing the ventricles from filling normally during diastole, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: swollen belly, puffy ankles, and feeling full quickly over 6 months",
+      "Key HPI features: 6-month history of progressive abdominal distension, severe leg swelling, and early satiety after eating small meals. Feels chronically exhausted and breathless when walking 100 metres. Treated for pulmonary and pericardial tuberculosis 20 years ago in his home country with a full 9-month course of anti-TB drugs. Recently seen by a gastroenterologist who found normal liver function tests and negative liver serology despite massive ascites.",
+      "Objective/Exam findings: Physical exam: marked JVP elevation (+6 cm H2O) demonstrating Kussmaul's sign (paradoxical RISE in JVP during inspiration rather than normal fall, indicating impaired right ventricular filling) and prominent y-descent (Friedreich's sign). Auscultation: early diastolic 'pericardial knock' sound heard at the left sternal border. Abdominal exam: tense ascites and pulsatile, tender hepatomegaly. Chest X-ray or CT chest: shows dense calcification of the pericardial ring. Echocardiogram and Cardiac MRI: thickened, rigid, calcified pericardium (>4mm) with abnormal septal bounce and respiratory variation in ventricular filling (interventricular dependence).",
+      "Relevant background/PMH: pericardial/pulmonary tuberculosis 20 years ago, hypertension",
+      "Current medications: furosemide 40mg OD with poor reduction of abdominal fluid"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Constrictive Pericarditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Liver cirrhosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly increasing abdominal swelling with breathlessness."
+    ],
+    "management_principles": [
+      "Explain to patient that the rigid calcified pericardium acts like an iron shell preventing the ventricles from filling normally during diastole",
+      "Medical optimization: cautious loop diuretic use (furosemide) and aldosterone antagonists (spironolactone) to manage peripheral congestion and ascites without excessive preload reduction that could compromise stroke volume",
+      "Urgent cardiothoracic surgery referral for definitive surgical pericardiectomy (pericardial stripping)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 Concise Clinical Guidance: An ACC Expert Consensus Statement on the Diagnosis and Management of Pericarditis",
+        "url": "https://www.jacc.org/doi/10.1016/j.jacc.2025.05.023"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "60M with history of pericardial tuberculosis presents with chronic right-sided heart failure symptoms: ascites, peripheral oedema, and fatigue refractory to diuretics, with normal liver serology.",
+    "objective": "Physical exam: marked JVP elevation (+6 cm H2O) demonstrating Kussmaul's sign (paradoxical RISE in JVP during inspiration rather than normal fall, indicating impaired right ventricular filling) and prominent y-descent (Friedreich's sign). Auscultation: early diastolic 'pericardial knock' sound heard at the left sternal border. Abdominal exam: tense ascites and pulsatile, tender hepatomegaly. Chest X-ray or CT chest: shows dense calcification of the pericardial ring. Echocardiogram and Cardiac MRI: thickened, rigid, calcified pericardium (>4mm) with abnormal septal bounce and respiratory variation in ventricular filling (interventricular dependence).",
+    "assessment": "Constrictive Pericarditis secondary to remote tuberculous pericarditis. DDx: restrictive cardiomyopathy (cardiac amyloidosis - differentiated by absent pericardial calcification/knock and presence of severe atrial enlargement), cirrhotic liver disease with ascites, right ventricular infarction.",
+    "plan": "Explain to patient that the rigid calcified pericardium acts like an iron shell preventing the ventricles from filling normally during diastole. Medical optimization: cautious loop diuretic use (furosemide) and aldosterone antagonists (spironolactone) to manage peripheral congestion and ascites without excessive preload reduction that could compromise stroke volume. Urgent cardiothoracic surgery referral for definitive surgical pericardiectomy (pericardial stripping)."
+  },
+  "learning_objectives": [
+    "Differentiate constrictive pericarditis from liver cirrhosis when patients present with isolated right heart failure and massive ascites",
+    "Identify classical physical findings of constrictive pericarditis: Kussmaul's sign, prominent y-descent, and early diastolic pericardial knock",
+    "Correlate remote tuberculous pericardial infection with delayed rigid pericardial calcification decades later",
+    "Explain the definitive curative role of surgical pericardiectomy when conservative diuretic management fails"
+  ],
+  "teaching": {
+    "diagnosis": "Constrictive Pericarditis",
+    "one_liner": "A scarred, rigid pericardium stops the heart filling. Right-sided congestion dominates: swollen belly, swollen ankles, early fullness after eating.",
+    "differentials": [
+      "Liver cirrhosis",
+      "Restrictive cardiomyopathy",
+      "Nephrotic syndrome"
+    ],
+    "red_flags": [
+      "Rapidly increasing abdominal swelling with breathlessness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Abdominal swelling and early satiety",
+        "say": "Does your belly feel full quickly when you eat?",
+        "domains": [
+          "associated_symptoms",
+          "location"
+        ],
+        "keywords": [
+          "belly",
+          "full",
+          "bloated",
+          "eating",
+          "abdomen"
+        ]
+      },
+      {
+        "objective": "Ankle and leg swelling",
+        "say": "How far up your legs does the swelling go?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "ankle",
+          "leg",
+          "swelling",
+          "puffy"
+        ]
+      },
+      {
+        "objective": "Past tuberculosis or radiotherapy",
+        "say": "Have you ever had tuberculosis, or radiotherapy to your chest?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "tuberculosis",
+          "radiotherapy",
+          "radiation",
+          "chest"
+        ]
+      },
+      {
+        "objective": "Previous cardiac surgery or pericarditis",
+        "say": "Have you had heart surgery or been told you had pericarditis before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "surgery",
+          "operation",
+          "pericarditis",
+          "heart"
+        ]
+      },
+      {
+        "objective": "Breathlessness pattern",
+        "say": "Are you breathless walking, or also when you sit still?",
+        "domains": [
+          "aggravating",
+          "severity"
+        ],
+        "keywords": [
+          "breath",
+          "walk",
+          "sit",
+          "rest",
+          "still"
+        ]
+      },
+      {
+        "objective": "Progression over months",
+        "say": "Over what period has this built up?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "id": "em_037",
+  "system": "em",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Green",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "deep rapid breathing, abdominal pain, glucose 480",
+  "hpi_details": "A 53-year-old male presents to the clinic with deep rapid breathing, abdominal pain, glucose 480. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to diabetic ketoacidosis (DKA)",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "glucose_at_triage",
+      "test": "Point-of-care glucose",
+      "value": "480",
+      "unit": "mg/dL",
+      "reference_range": "70-140",
+      "flag": "critical",
+      "specimen": "Capillary blood",
+      "collected_at": "At triage"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "dka_initial_labs",
+      "title": "Initial diabetic ketoacidosis studies",
+      "order_terms": [
+        "venous blood gas",
+        "vbg",
+        "blood gas",
+        "beta hydroxybutyrate",
+        "serum ketones",
+        "metabolic panel",
+        "electrolytes"
+      ],
+      "availability_message": "The initial diabetic ketoacidosis studies are now available.",
+      "results": [
+        {
+          "id": "venous_ph_initial",
+          "test": "Venous pH",
+          "value": "7.12",
+          "reference_range": "7.31-7.41",
+          "flag": "critical",
+          "specimen": "Venous blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "bicarbonate_initial",
+          "test": "Bicarbonate",
+          "value": "9",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "anion_gap_initial",
+          "test": "Anion gap",
+          "value": "27",
+          "unit": "mEq/L",
+          "reference_range": "8-12",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "beta_hydroxybutyrate_initial",
+          "test": "Beta-hydroxybutyrate",
+          "value": "6.8",
+          "unit": "mmol/L",
+          "reference_range": "<0.6",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "potassium_initial",
+          "test": "Potassium",
+          "value": "5.4",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample",
+          "note": "Despite the elevated serum value, total-body potassium is depleted in DKA"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Diabetic Ketoacidosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diabetic Ketoacidosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes aggressive normal saline resuscitation, regular insulin IV, and frequent potassium checks for Diabetic Ketoacidosis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: deep rapid breathing, abdominal pain, glucose 480",
+      "Key HPI features: A 53-year-old male presents to the clinic with deep rapid breathing, abdominal pain, glucose 480. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Diabetic Ketoacidosis EM.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diabetic Ketoacidosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Potassium abnormality."
+    ],
+    "management_principles": [
+      "Plan for Diabetic Ketoacidosis EM: Aggressive Normal Saline, regular insulin IV, potassium check",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of deep rapid breathing, abdominal pain, glucose 480. HPI: DKA.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Diabetic Ketoacidosis EM.",
+    "assessment": "Condition highly suspicious for Diabetic Ketoacidosis EM.",
+    "plan": "Plan for Diabetic Ketoacidosis EM: Aggressive Normal Saline, regular insulin IV, potassium check. Consult specialist if symptoms worsen. Counsel patient. Do not start or continue insulin if serum potassium is below 3.5 mEq/L; replace potassium first and monitor potassium frequently during treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Diabetic Ketoacidosis EM",
+    "Select appropriate diagnostic workup for Diabetic Ketoacidosis EM",
+    "Implement evidence-based management plan: Aggressive Normal Saline, regular insulin IV, potassium check"
+  ],
+  "teaching": {
+    "diagnosis": "Diabetic Ketoacidosis",
+    "one_liner": "Insulin deficiency causing deep rapid breathing, abdominal pain, and very high blood glucose.",
+    "differentials": [
+      "Gastroenteritis"
+    ],
+    "red_flags": [
+      "Potassium abnormality"
+    ],
+    "must_ask": [
+      {
+        "objective": "Insulin use",
+        "say": "Have you been taking your insulin?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Breathing",
+        "say": "Are you breathing deeper or faster?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Abdominal pain",
+        "say": "Where is the pain?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Thirst",
+        "say": "Have you been very thirsty?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Preceding illness",
+        "say": "Have you been sick recently?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  },
+  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.5 mEq/L, replace potassium and hold insulin until it is corrected."
+}

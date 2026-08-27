@@ -1,0 +1,141 @@
+{
+  "id": "em_040",
+  "system": "em",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Walker",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "sudden dyspnea, hypoxia, low BP after international flight",
+  "hpi_details": "A 62-year-old female presents to the clinic with sudden dyspnea, hypoxia, low bp after international flight. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to a massive pulmonary embolism",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "bedside_echocardiogram",
+      "title": "Bedside echocardiogram",
+      "order_terms": [
+        "bedside echocardiogram",
+        "bedside echo",
+        "cardiac ultrasound",
+        "heart ultrasound",
+        "pocus"
+      ],
+      "availability_message": "The bedside echocardiogram result is now available.",
+      "results": [
+        {
+          "id": "echo_rv_strain",
+          "test": "Focused bedside echocardiogram",
+          "value": "Severely dilated right ventricle with RV/LV ratio 1.4, interventricular septal flattening, and reduced right-ventricular free-wall motion; no pericardial effusion",
+          "flag": "critical",
+          "collected_at": "At bedside"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Massive Pulmonary Embolism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Massive Pulmonary Embolism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Hypotension with suspected pulmonary embolism requires immediate resuscitation and urgent reperfusion-team assessment; bedside echocardiography or CT pulmonary angiography is chosen according to stability, and systemic thrombolysis or catheter/surgical reperfusion is considered promptly when no contraindication exists.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden dyspnea, hypoxia, low BP after international flight",
+      "Key HPI features: A 62-year-old female presents to the clinic with sudden dyspnea, hypoxia, low bp after international flight. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Massive Pulmonary Embolism.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Massive Pulmonary Embolism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hypotension with hypoxia."
+    ],
+    "management_principles": [
+      "Resuscitate immediately, obtain bedside echocardiography or CT pulmonary angiography according to stability, start anticoagulation when appropriate, and obtain urgent reperfusion-team assessment for thrombolysis or catheter/surgical reperfusion",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden dyspnea, hypoxia, low BP after international flight. HPI: pulmonary embolism.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Massive Pulmonary Embolism.",
+    "assessment": "Condition highly suspicious for Massive Pulmonary Embolism.",
+    "plan": "Resuscitate immediately, obtain bedside echocardiography or CT pulmonary angiography according to stability, start anticoagulation when appropriate, and obtain urgent reperfusion-team assessment for thrombolysis or catheter/surgical reperfusion."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Massive Pulmonary Embolism",
+    "Select appropriate diagnostic workup for Massive Pulmonary Embolism",
+    "Implement evidence-based management plan: Resuscitate unstable patients, confirm with appropriate urgent imaging, and obtain prompt reperfusion-team assessment alongside anticoagulation when appropriate"
+  ],
+  "teaching": {
+    "diagnosis": "Massive Pulmonary Embolism",
+    "one_liner": "A large clot in the pulmonary arteries causing sudden breathlessness and low blood pressure after a long flight.",
+    "differentials": [
+      "Myocardial infarction"
+    ],
+    "red_flags": [
+      "Hypotension with hypoxia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Immobility",
+        "say": "Did you have a long flight recently?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "Did the breathlessness start suddenly?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Chest pain",
+        "say": "Does it hurt more when you breathe?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Leg symptoms",
+        "say": "Any leg swelling?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Lightheadedness",
+        "say": "Do you feel faint?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

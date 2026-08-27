@@ -1,0 +1,151 @@
+{
+  "id": "cs_023",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Cho",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "progressive shortness of breath when lying flat, coughing up pink spit, and heart murmur",
+  "hpi_details": "58M reports progressive shortness of breath over 2 months, worsening significantly when lying flat in bed (orthopnea requiring 3 pillows). Also complains of fatigue and coughing up frothy, pink-tinged sputum.",
+  "ideas": "thinks he has asthma or congestive heart failure",
+  "concerns": "worried about heart valve damage",
+  "expectations": "wants heart valve evaluation",
+  "pmh": "Mitral valve prolapse diagnosed 10 years ago",
+  "medications": "None",
+  "social_hx": "Office worker, non-smoker",
+  "investigation_events": [
+    {
+      "id": "acute_mr_echo",
+      "title": "Urgent transthoracic echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE"],
+      "availability_message": "The urgent echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_severe_mitral_regurgitation",
+          "test": "Transthoracic echocardiogram",
+          "value": "Severe eccentric mitral regurgitation from posterior leaflet prolapse; effective regurgitant orifice 0.46 cm2; LVEF 58%",
+          "unit": "",
+          "reference_range": "No significant mitral regurgitation; EROA <0.20 cm2",
+          "flag": "critical",
+          "collected_at": "Urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Mitral Regurgitation with Congestive Heart Failure evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Mitral Regurgitation with Congestive Heart Failure is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Chronic severe MR causes progressive left atrial and ventricular volume overload; new or worsening heart failure symptoms in a known MR patient signal decompensation and the need for urgent evaluation for valve repair or replacement.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive shortness of breath when lying flat, coughing up pink spit, and heart murmur",
+      "Key HPI features: 58M reports progressive shortness of breath over 2 months, worsening significantly when lying flat in bed (orthopnea requiring 3 pillows). Also complains of fatigue and coughing up frothy, pink-tinged sputum.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Severe Mitral Regurgitation with congestive heart failure.",
+      "Relevant background/PMH: Mitral valve prolapse diagnosed 10 years ago"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Mitral Regurgitation with Congestive Heart Failure.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aortic stenosis with secondary heart failure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Coughing up pink frothy sputum — suggests acute pulmonary edema needing urgent management."
+    ],
+    "management_principles": [
+      "Assess severity clinically and confirm the valve lesion with imaging before deciding on definitive therapy",
+      "Order transthoracic echocardiogram",
+      "Treat suspected acute pulmonary edema urgently with oxygen if hypoxemic, ventilatory support as needed, and IV loop diuresis; determine the valve lesion and longer-term therapy after stabilization"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Severe Mitral Regurgitation with congestive heart failure. progressive shortness of breath when lying flat, coughing up pink spit, and heart murmur. 58M reports progressive shortness of breath over 2 months, worsening significantly when lying flat in bed (orthopnea requiring 3 pillows). Also complains of fatigue and coughing up frothy, pink-tinged sputum.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Severe Mitral Regurgitation with congestive heart failure.",
+    "assessment": "Acute decompensated heart failure with possible pulmonary edema; transthoracic echocardiography is needed to determine whether severe mitral regurgitation is present and its mechanism.",
+    "plan": "Urgently assess and stabilize suspected acute pulmonary edema. Give oxygen if hypoxemic, use ventilatory support as needed, and administer IV loop diuresis while monitoring haemodynamics. Order transthoracic echocardiogram. If severe mitral regurgitation is confirmed, refer to a valve team for repair-versus-replacement assessment after stabilization. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Severe Mitral Regurgitation with congestive heart failure.",
+    "Formulate prioritized differential diagnosis for progressive shortness of breath when lying flat, coughing up pink spit, and heart murmur",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies for Severe Mitral Regurgitation with congestive heart failure."
+  ],
+  "teaching": {
+    "diagnosis": "Severe Mitral Regurgitation with Congestive Heart Failure",
+    "one_liner": "Chronic backward leakage through a damaged mitral valve overloads the left atrium and lungs, causing progressive orthopnea, fatigue, and pink frothy sputum — needs echocardiographic evaluation for valve repair or replacement.",
+    "differentials": [
+      "Aortic stenosis with secondary heart failure",
+      "Dilated cardiomyopathy",
+      "Ischemic heart failure"
+    ],
+    "red_flags": [
+      "Coughing up pink frothy sputum — suggests acute pulmonary edema needing urgent management"
+    ],
+    "must_ask": [
+      {
+        "objective": "Orthopnea",
+        "say": "How many pillows do you need to sleep, and has that changed?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "pillows",
+          "orthopnea"
+        ]
+      },
+      {
+        "objective": "Sputum character",
+        "say": "What does the sputum look like when you cough?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "pink",
+          "frothy"
+        ]
+      },
+      {
+        "objective": "Known valve history",
+        "say": "Have you known about your mitral valve prolapse, and for how long?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "mitral valve prolapse"
+        ]
+      },
+      {
+        "objective": "Duration and progression",
+        "say": "How has your breathlessness changed over the past two months?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How is your energy level?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

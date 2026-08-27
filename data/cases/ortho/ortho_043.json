@@ -1,0 +1,136 @@
+{
+  "id": "ortho_043",
+  "system": "ortho",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Jones",
+  "age": 71,
+  "gender": "female",
+  "chief_complaint": "asymptomatic osteopenia on DEXA scan in elderly female",
+  "hpi_details": "A 71-year-old female presents after an incidental DEXA scan finding of osteopenia. She has no bone pain or prior fragility fracture.",
+  "ideas": "thinks it might be related to bone loss",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id": "dexa", "test": "DEXA scan", "value": "Femoral-neck T-score -1.8; lumbar-spine T-score -1.5", "reference_range": "Osteopenia: T-score between -1.0 and -2.5", "flag": "low", "collected_at": "Before today's encounter"}],
+  "clinical_knowledge": {
+    "topic": "Osteopenia evaluation and fracture risk assessment",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of osteopenia is essential for guiding fracture-risk assessment and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes assessment of fracture risk, adequate calcium and vitamin D intake, weight-bearing and resistance exercise, fall prevention, and pharmacotherapy only when fracture-risk criteria are met.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: asymptomatic osteopenia on DEXA scan in elderly female",
+      "Key HPI features: 71-year-old female with incidental osteopenia on DEXA, no bone pain, and no prior fragility fracture.",
+      "Objective/Exam findings: Review DEXA T-score, calculate fracture risk, and assess for secondary causes of bone loss.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that every patient with osteopenia requires bisphosphonate treatment.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Failing to assess for secondary causes of low bone mass when indicated."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Starting pharmacotherapy without assessing fracture risk and treatment indications.",
+      "Ignoring critical warning signs such as: High fracture risk warrants treatment even though asymptomatic."
+    ],
+    "management_principles": [
+      "Assess fracture risk (including FRAX), optimize calcium and vitamin D intake, recommend weight-bearing/resistance exercise and fall prevention; consider pharmacotherapy only if treatment criteria are met",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of asymptomatic osteopenia on DEXA scan in elderly female. HPI: low bone mass.",
+    "objective": "Review DEXA T-score, calculate FRAX fracture risk, and evaluate for secondary causes of low bone mass when indicated.",
+    "assessment": "Osteopenia; fracture risk requires assessment before pharmacotherapy.",
+    "plan": "Counsel on adequate calcium and vitamin D intake, weight-bearing/resistance exercise, and fall prevention. Calculate FRAX and consider bisphosphonate therapy only if guideline treatment thresholds or another indication are met."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of osteopenia",
+    "Assess fracture risk and evaluate for secondary causes of low bone mass when indicated",
+    "Implement evidence-based management with lifestyle measures and pharmacotherapy only when treatment criteria are met"
+  ],
+  "teaching": {
+    "diagnosis": "Osteopenia with fracture risk assessment",
+    "one_liner": "71-year-old female with asymptomatic low bone mass found incidentally on DEXA scan and no prior fragility fracture.",
+    "differentials": [
+      "Osteoporosis",
+      "Secondary osteoporosis from another cause (hyperthyroidism, steroid use)"
+    ],
+    "red_flags": [
+      "High fracture risk warrants treatment even though asymptomatic"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ask about fall history",
+        "say": "Have you had any falls recently, even minor ones?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fall history"
+        ]
+      },
+      {
+        "objective": "Screen for secondary causes of bone loss",
+        "say": "Do you have any thyroid problems, or have you taken long-term steroid medications?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "secondary osteoporosis causes"
+        ]
+      },
+      {
+        "objective": "Ask about calcium and vitamin D intake",
+        "say": "How much calcium and vitamin D do you get from diet or supplements?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "calcium intake",
+          "vitamin D"
+        ]
+      },
+      {
+        "objective": "Ask about family history of fractures",
+        "say": "Does anyone in your family have a history of hip fractures or osteoporosis?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family history"
+        ]
+      },
+      {
+        "objective": "Explain fracture-risk assessment and management",
+        "say": "We'll assess your fracture risk, optimize calcium and vitamin D intake, and discuss bone-strengthening medication only if your risk meets treatment criteria.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "fracture risk assessment",
+          "calcium and vitamin D"
+        ]
+      }
+    ]
+  }
+}

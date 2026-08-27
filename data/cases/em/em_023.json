@@ -1,0 +1,150 @@
+{
+  "id": "em_023",
+  "system": "emergency medicine",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mrs. Lim",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "severe left ankle pain and swelling after tripping on a step",
+  "hpi_details": "28F presents with acute left ankle pain and swelling after she tripped on a curb and rolled her ankle inward 3 hours ago. Can bear weight with difficulty but has focal tenderness.",
+  "ideas": "thinks she sprained or fractured her ankle",
+  "concerns": "worried about plaster cast or surgery",
+  "expectations": "wants ankle X-ray and brace",
+  "pmh": "No prior ankle injuries",
+  "medications": "None",
+  "social_hx": "Teacher, non-smoker",
+  "investigation_events": [
+    {
+      "id": "left_ankle_radiographs",
+      "title": "Left ankle radiographs",
+      "order_terms": [
+        "ankle x-ray",
+        "ankle xray",
+        "ankle radiograph",
+        "ankle films"
+      ],
+      "availability_message": "The left ankle radiograph report is now available.",
+      "results": [
+        {
+          "id": "left_ankle_xray",
+          "test": "Left ankle X-ray, 3 views",
+          "value": "No acute fracture or dislocation; lateral soft-tissue swelling with preserved ankle mortise",
+          "flag": "abnormal",
+          "collected_at": "During today's emergency visit"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Lateral Ankle Sprain evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Lateral Ankle Sprain is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe left ankle pain and swelling after tripping on a step",
+      "Key HPI features: 28F presents with acute left ankle pain and swelling after she tripped on a curb and rolled her ankle inward 3 hours ago. Can bear weight with difficulty but has focal tenderness.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture.",
+      "Relevant background/PMH: No prior ankle injuries"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Lateral Ankle Sprain.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Distal fibular fracture without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inability to bear weight at all, or bony tenderness — meets Ottawa Ankle Rules criteria for X-ray."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture",
+      "Apply Ottawa Ankle Rules, including posterior-edge/tip tenderness of either malleolus and ability to take four steps; assess foot tenderness at the base of the fifth metatarsal or navicular when relevant",
+      "Order ankle X-ray if rules met"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture. severe left ankle pain and swelling after tripping on a step. 28F presents with acute left ankle pain and swelling after she tripped on a curb and rolled her ankle inward 3 hours ago. Can bear weight with difficulty but has focal tenderness.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture.",
+    "assessment": "Clinical presentation highly suggestive of Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture.",
+    "plan": "Apply Ottawa Ankle Rules, including posterior-edge/tip tenderness of either malleolus and ability to take four steps; assess foot tenderness at the base of the fifth metatarsal or navicular when relevant. Order ankle or foot radiographs if the relevant rule is met. If fracture is excluded, use protected weight bearing and a functional brace with early range-of-motion and rehabilitation exercises; provide analgesia and follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture.",
+    "Formulate prioritized differential diagnosis for severe left ankle pain and swelling after tripping on a step",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies for Acute Lateral Ankle Sprain (ATFL injury), ruling out distal fibular fracture."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Lateral Ankle Sprain",
+    "one_liner": "An inversion injury stretches or tears the anterior talofibular ligament, causing pain and swelling — the Ottawa Ankle Rules determine whether an X-ray is needed to rule out a fracture.",
+    "differentials": [
+      "Distal fibular fracture",
+      "High ankle (syndesmotic) sprain",
+      "Peroneal tendon injury"
+    ],
+    "red_flags": [
+      "Inability to bear weight at all, or bony tenderness — meets Ottawa Ankle Rules criteria for X-ray"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism of injury",
+        "say": "How exactly did your ankle roll — inward or outward?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "inversion",
+          "rolled"
+        ]
+      },
+      {
+        "objective": "Weight-bearing ability",
+        "say": "Can you put weight on it and take a few steps?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "weight bearing"
+        ]
+      },
+      {
+        "objective": "Location of tenderness",
+        "say": "Where exactly does it hurt the most when you press on it?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Swelling and bruising",
+        "say": "How swollen or bruised is it?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Prior ankle injuries",
+        "say": "Have you injured this ankle before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

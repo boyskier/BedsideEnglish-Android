@@ -1,0 +1,130 @@
+{
+  "id": "endo_042",
+  "system": "endo",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Davis",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "abdominal obesity, borderline glucose, and high blood pressure",
+  "hpi_details": "A 68-year-old female presents to the clinic with abdominal obesity, borderline glucose, and high blood pressure. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to metabolic_syndrome",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "fasting_glucose",
+      "test": "Fasting plasma glucose",
+      "value": "112",
+      "unit": "mg/dL",
+      "reference_range": "70-99",
+      "flag": "high",
+      "specimen": "Plasma"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Metabolic Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Metabolic Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes lifestyle modification, dietary restriction, and lipid/blood pressure control for Metabolic Syndrome, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: abdominal obesity, borderline glucose, and high blood pressure",
+      "Key HPI features: A 68-year-old female presents to the clinic with abdominal obesity, borderline glucose, and high blood pressure. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Metabolic Syndrome.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Metabolic Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Type 2 diabetes alone without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: very high blood pressure (hypertensive urgency/emergency) or fasting glucose in the diabetic range, chest pain, exertional dyspnoea, other symptoms of established cardiovascular disease, signs of end-organ damage (retinopathy, nephropathy, or peripheral vascular disease)."
+    ],
+    "management_principles": [
+      "Plan for Metabolic Syndrome: Lifestyle modifications, dietary restriction, lipid/BP control",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Harmonizing the Metabolic Syndrome: A Joint Interim Statement (AHA/NHLBI/IDF)",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIRCULATIONAHA.109.192644"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of abdominal obesity, borderline glucose, and high blood pressure. HPI: insulin resistance.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Metabolic Syndrome.",
+    "assessment": "Condition highly suspicious for Metabolic Syndrome.",
+    "plan": "Plan for Metabolic Syndrome: Lifestyle modifications, dietary restriction, lipid/BP control. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Metabolic Syndrome",
+    "Select appropriate diagnostic workup for Metabolic Syndrome",
+    "Implement evidence-based management plan: Lifestyle modifications, dietary restriction, lipid/BP control"
+  ],
+  "teaching": {
+    "diagnosis": "Metabolic Syndrome",
+    "one_liner": "A cluster of insulin resistance-related conditions — abdominal obesity, borderline glucose, and high blood pressure — that together raise cardiovascular risk.",
+    "differentials": [
+      "Type 2 diabetes alone"
+    ],
+    "red_flags": [
+      "Very high blood pressure (hypertensive urgency/emergency) or fasting glucose in the diabetic range — needs immediate management rather than routine lifestyle counselling",
+      "Chest pain, exertional dyspnoea, or other symptoms of established cardiovascular disease — warrants urgent cardiac workup",
+      "Signs of end-organ damage (retinopathy, nephropathy, peripheral vascular disease) — indicates the syndrome has already caused complications"
+    ],
+    "must_ask": [
+      {
+        "objective": "Weight and waist",
+        "say": "Where is your weight concentrated?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Blood pressure",
+        "say": "Has your blood pressure been high?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Diet and activity",
+        "say": "What does your diet and exercise routine look like?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does diabetes or heart disease run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about this diagnosis?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

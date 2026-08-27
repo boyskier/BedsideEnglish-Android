@@ -1,0 +1,137 @@
+{
+  "id": "endo_040",
+  "system": "endo",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Hill",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "resistant hypertension and hypokalemia",
+  "hpi_details": "62-year-old female referred for resistant hypertension despite being on 3 maximum-dose antihypertensive medications (Amlodipine, Lisinopril, HCTZ). Routine labs showed persistent unprovoked hypokalemia (K 2.9). Reports occasional muscle weakness and cramps.",
+  "ideas": "thinks it might be related to aldosteronism",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine, lisinopril, hydrochlorothiazide",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "potassium",
+      "test": "Serum potassium",
+      "value": "2.9",
+      "unit": "mEq/L",
+      "reference_range": "3.5-5.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "bicarbonate",
+      "test": "Serum bicarbonate",
+      "value": "32",
+      "unit": "mEq/L",
+      "reference_range": "22-29",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Primary Aldosteronism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Aldosteronism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Screening begins with aldosterone-to-renin ratio after potassium correction and attention to interfering medicines; mineralocorticoid-receptor antagonists such as spironolactone should be started after diagnostic testing or used when testing cannot be completed.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: resistant hypertension and hypokalemia",
+      "Key HPI features: A 62-year-old female presents to the clinic with resistant hypertension and hypokalemia. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Primary Aldosteronism.",
+      "Relevant background/PMH: Hypertension"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Aldosteronism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Renal artery stenosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe weakness."
+    ],
+    "management_principles": [
+      "Correct hypokalemia and obtain an aldosterone-to-renin ratio with appropriate medication management; confirm and subtype disease before selecting surgery or mineralocorticoid-receptor antagonist therapy",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Primary Aldosteronism — Case Detection, Diagnosis, and Treatment",
+        "url": "https://academic.oup.com/jcem/article/101/5/1889/2804729"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "62-year-old female referred for resistant hypertension despite being on 3 maximum-dose antihypertensive medications (Amlodipine, Lisinopril, HCTZ). Routine labs showed persistent unprovoked hypokalemia (K 2.9). Reports occasional muscle weakness and cramps.",
+    "objective": "BP 168/95. Heart rate 82. Exam is generally unremarkable. No abdominal bruits. Labs show K+ 2.9 mEq/L, metabolic alkalosis.",
+    "assessment": "Primary Aldosteronism (Conn's syndrome) suspected.",
+    "plan": "Check plasma aldosterone concentration (PAC) and plasma renin activity (PRA) ratio. Withhold interfering anti-hypertensives (e.g., switch to Verapamil/Doxazosin) prior to testing. Replete potassium. Consider adrenal CT if ratio is high."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Primary Aldosteronism",
+    "Select appropriate diagnostic workup for Primary Aldosteronism",
+    "Implement evidence-based management plan: Correct potassium, screen with aldosterone-to-renin ratio using appropriate medication management, then confirm and subtype disease before treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Aldosteronism",
+    "one_liner": "An aldosterone-producing adrenal adenoma causing resistant hypertension and hypokalemia.",
+    "differentials": [
+      "Renal artery stenosis"
+    ],
+    "red_flags": [
+      "Severe weakness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Blood pressure control",
+        "say": "How hard is your blood pressure to control?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Muscle cramps",
+        "say": "Any muscle cramps or weakness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Urination",
+        "say": "Are you urinating more?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "What blood pressure medications are you on?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

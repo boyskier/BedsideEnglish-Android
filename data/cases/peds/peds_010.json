@@ -1,0 +1,144 @@
+{
+  "id": "peds_010",
+  "system": "pediatrics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Nelson",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "newborn infant with failure to pass meconium in first 48 hours, abdominal distension, and salty skin sweat",
+  "hpi_details": "3-week-old male presenting with failure to thrive, steatorrhea, foul-smelling oily stools, and history of meconium ileus at birth where quantitative pilocarpine iontophoresis Sweat Chloride test confirms elevated chloride >60 mmol/L and delta F508 CFTR mutation.",
+  "ideas": "thinks this is related to cystic fibrosis meconium ileus and failure to thrive",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "available_results": [
+    {"id": "prior_sweat_chloride", "test": "Quantitative sweat chloride", "value": "92", "unit": "mmol/L", "reference_range": "<30", "flag": "abnormal", "collected_at": "Before today's visit"},
+    {"id": "prior_cftr_genetic_test", "test": "CFTR genetic testing", "value": "Pathogenic F508del CFTR variant detected", "flag": "abnormal", "collected_at": "Before today's visit"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Cystic fibrosis with meconium ileus and failure to thrive evaluation and management",
+    "core_concepts": [
+      "Meconium ileus plus a sweat chloride concentration greater than 60 mmol/L and two CF-causing CFTR variants supports cystic fibrosis in this infant.",
+      "At 3 weeks, failure to thrive and steatorrhea suggest pancreatic exocrine insufficiency and require prompt nutrition and CF-center assessment.",
+      "First establish stability: obtain weight, temperature, heart rate, respiratory rate, oxygen saturation, hydration status, abdominal examination, and urine output.",
+      "Bilious vomiting, worsening distension, lethargy, fever, dehydration, or reduced urine output may indicate obstruction, sepsis, or electrolyte disturbance and need emergency assessment."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: newborn infant with failure to pass meconium in first 48 hours, abdominal distension, and salty skin sweat",
+      "Key HPI features: 3-week-old male presenting with failure to thrive, steatorrhea, foul-smelling oily stools, and history of meconium ileus at birth where quantitative pilocarpine iontophoresis Sweat Chloride test confirms elevated chloride >60 mmol/L and delta F508 CFTR mutation.",
+      "Objective/Exam findings: Obtain weight and growth trajectory, complete vital signs, hydration and respiratory assessment, and focused abdominal examination; assess for distension, tenderness, emesis, and stool output.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Treating a confirmed diagnosis as sufficient reason to overlook recurrent bowel obstruction or dehydration.",
+      "Assuming poor growth is only a feeding problem without assessing pancreatic insufficiency and caloric intake.",
+      "Starting pancreatic enzymes or vitamin supplements using an adult or unverified dose instead of a current weight-based pediatric regimen supervised by the CF team.",
+      "Attributing delayed meconium passage to cystic fibrosis alone without considering Hirschsprung disease or other neonatal obstruction when the presentation is atypical."
+    ],
+    "dangerous_errors": [
+      "Missing bilious vomiting, progressive abdominal distension, peritonitis, shock, or dehydration; these require urgent emergency evaluation and pediatric surgical input when obstruction is suspected.",
+      "Delaying assessment of poor intake, weight loss, hypernatremic dehydration, or hypoglycemia in a young infant.",
+      "Giving fluids, pancreatic enzyme replacement, or fat-soluble vitamins without confirming the infant's current weight, hydration status, and specialist-directed pediatric dosing.",
+      "Discharging an infant with suspected obstruction, inadequate feeding, or unreliable follow-up before stabilization and a clear escalation plan."
+    ],
+    "management_principles": [
+      "Assess immediate stability and escalate to emergency care for red flags; obtain abdominal imaging and involve pediatric surgery for possible obstruction.",
+      "Coordinate urgent follow-up with a pediatric CF center, gastroenterology, dietitian, and pulmonology as indicated.",
+      "Document weight, length, head circumference, feeding frequency and volume, wet diapers, stool pattern, and serial growth measurements.",
+      "The CF team should initiate and teach weight- and feed-based pancreatic enzyme replacement when pancreatic insufficiency is confirmed, with appropriate fat-soluble vitamin supplementation and monitoring."
+    ],
+    "boundaries_and_exceptions": [
+      "Do not provide a fixed enzyme, vitamin, or fluid dose in this scenario: newborn and infant dosing must use current measured weight and local pediatric/CF protocols.",
+      "The history is provided by a parent or guardian; confirm feeding, diaper counts, medications, allergies, newborn-screen results, and access to urgent care with that caregiver."
+    ],
+    "source_refs": [
+      {
+        "title": "Cystic Fibrosis Foundation: Clinical Care Guidelines",
+        "url": "https://www.cff.org/medical-professionals/clinical-care-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Cystic Fibrosis Meconium Ileus and Failure to Thrive: newborn infant with failure to pass meconium in first 48 hours, abdominal distension, and salty skin sweat. 3-week-old male presenting with failure to thrive, steatorrhea, foul-smelling oily stools, and history of meconium ileus at birth where quantitative pilocarpine iontophoresis Sweat Chloride test confirms elevated chloride >60 mmol/L and delta F508 CFTR mutation.",
+    "objective": "Obtain weight, length, head circumference, temperature, heart rate, respiratory rate, oxygen saturation, hydration status, urine output, and focused respiratory and abdominal examination. Assess for distension, tenderness, bilious emesis, stool output, and signs of dehydration.",
+    "assessment": "Clinical presentation highly suggestive of Cystic Fibrosis Meconium Ileus and Failure to Thrive.",
+    "plan": "Urgently assess for recurrent intestinal obstruction, dehydration, and poor weight gain; send to emergency care for bilious emesis, worsening distension, lethargy, fever, poor perfusion, or reduced urine output. Involve pediatric gastroenterology, pulmonology/CF center, nutrition, and surgery if obstruction is suspected. Begin individualized nutritional support, pancreatic enzyme replacement when exocrine pancreatic insufficiency is confirmed, and fat-soluble vitamin supplementation through the CF team using current weight-based pediatric dosing."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Cystic Fibrosis Meconium Ileus and Failure to Thrive",
+    "Formulate prioritized differential diagnosis for newborn infant with failure to pass meconium in first 48 hours, abdominal distension, and salty skin sweat",
+    "Select appropriate laboratory and imaging studies for pediatrics",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Cystic fibrosis with meconium ileus and failure to thrive",
+    "one_liner": "3-week-old male with history of meconium ileus at birth, now with failure to thrive, steatorrhea, and salty-tasting skin.",
+    "differentials": [
+      "Hirschsprung disease or another neonatal intestinal obstruction",
+      "Sepsis or dehydration contributing to poor feeding and poor weight gain",
+      "Cow's milk protein allergy or other causes of malabsorption"
+    ],
+    "red_flags": [
+      "History of meconium ileus at birth",
+      "Failure to thrive",
+      "Foul-smelling oily stools (steatorrhea)",
+      "Bilious vomiting, worsening abdominal distension, fever, lethargy, poor feeding, reduced urine output, or signs of dehydration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the meconium ileus history at birth",
+        "say": "Was there any problem with him passing his first stool after birth?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "meconium ileus"
+        ]
+      },
+      {
+        "objective": "Characterize the stool appearance",
+        "say": "Can you describe his stools — are they oily, foul-smelling, or floating?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "steatorrhea"
+        ]
+      },
+      {
+        "objective": "Ask about the salty skin observation",
+        "say": "Have you noticed his skin tasting salty when you kiss him?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "salty skin"
+        ]
+      },
+      {
+        "objective": "Assess growth and weight gain",
+        "say": "How has his weight gain been compared to what's expected?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "failure to thrive"
+        ]
+      },
+      {
+        "objective": "Explain the confirmed diagnosis and urgent specialty referral",
+        "say": "The sweat test and genetic result support cystic fibrosis, so we need a specialized cystic fibrosis team to assess his feeding, growth, and bowel symptoms promptly.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "sweat chloride test",
+          "CF specialist referral"
+        ]
+      }
+    ]
+  }
+}

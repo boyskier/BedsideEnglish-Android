@@ -1,0 +1,164 @@
+{
+  "id": "pmr_042",
+  "system": "pmr",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rodriguez",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "anterior knee ache behind kneecap, theater sign positive",
+  "hpi_details": "A 68-year-old female presents with several months of anterior knee ache behind the kneecap, worse after prolonged sitting with the knee bent (positive theater sign) and when descending stairs.",
+  "ideas": "thinks it might be related to patellofemoral_pain_pmr",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "patellofemoral_knee_radiographs",
+    "title": "Weight-bearing knee and Merchant-view radiographs",
+    "order_terms": ["knee x-ray", "knee radiograph", "weight-bearing knee radiographs", "Merchant view", "sunrise view"],
+    "availability_message": "The knee radiographs are now available.",
+    "results": [{"id": "knee_radiographs", "test": "Weight-bearing and Merchant-view knee radiographs", "value": "Mild lateral patellofemoral joint-space narrowing with small marginal osteophytes; tibiofemoral joint spaces are preserved", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Patellofemoral Pain Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Patellofemoral Pain Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes quadriceps (VMO) strengthening, patellar taping, and evaluation of gait and lower-extremity biomechanics, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: anterior knee ache behind kneecap, theater sign positive",
+      "Key HPI features: A 68-year-old female presents with several months of anterior knee ache behind the kneecap, worse after prolonged sitting with the knee bent (positive theater sign) and when descending stairs.",
+      "Objective/Exam findings: Vitals normal. Tenderness to palpation of the patellar facets, positive patellar grind (compression) test, mild crepitus with knee flexion/extension. No joint effusion, warmth, or erythema. Patellar tracking mildly lateralized; quadriceps (especially VMO) strength mildly reduced on the affected side. No ligamentous instability.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Patellofemoral Pain Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Meniscal tear without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hot swollen joint (septic arthritis risk)."
+    ],
+    "management_principles": [
+      "Obtain weight-bearing knee radiographs (including a sunrise/Merchant view) to assess for patellofemoral osteoarthritis given the patient's age",
+      "First-line treatment is quadriceps (VMO) strengthening physical therapy, activity modification, and patellar taping or bracing",
+      "Evaluate gait and lower-extremity biomechanics for contributing factors, rather than assuming a running-related mechanism in a non-running patient",
+      "Reserve intra-articular injection or orthopedic referral for inadequate response to conservative management."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 68-year-old female presents with several months of anterior knee ache behind the kneecap, worse after prolonged sitting with the knee bent (positive theater sign) and when descending stairs.",
+    "objective": "Vitals normal. Tenderness to palpation of the patellar facets, positive patellar grind (compression) test, mild crepitus with knee flexion/extension. No joint effusion, warmth, or erythema. Patellar tracking mildly lateralized; quadriceps (especially VMO) strength mildly reduced. No ligamentous instability.",
+    "assessment": "Patellofemoral pain, most consistent with early patellofemoral osteoarthritis given her age, though the pattern overlaps with patellofemoral pain syndrome seen in younger patients.",
+    "plan": "Obtain weight-bearing knee radiographs, including a sunrise/Merchant view, to assess for patellofemoral joint changes. Begin quadriceps (VMO) strengthening physical therapy, activity modification, patellar taping or bracing, and topical or oral NSAIDs as needed. Evaluate gait and lower-extremity biomechanics, and reserve intra-articular injection or orthopedic referral for inadequate symptom control."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of patellofemoral pain, including how the differential shifts toward patellofemoral osteoarthritis in an older adult",
+    "Select appropriate diagnostic workup (weight-bearing radiographs with sunrise/Merchant view) for patellofemoral pain",
+    "Implement evidence-based management plan: quadriceps (VMO) strengthening, patellar taping, gait/biomechanics evaluation"
+  ],
+  "teaching": {
+    "diagnosis": "Patellofemoral Pain Syndrome",
+    "one_liner": "Anterior knee pain around or behind the patella, commonly aggravated by prolonged sitting, stairs, squatting, or running.",
+    "differentials": [
+      "Meniscal tear",
+      "Patellar tendinopathy",
+      "Patellofemoral osteoarthritis"
+    ],
+    "red_flags": [
+      "Hot swollen joint (septic arthritis risk)",
+      "Joint locking or giving way"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset relation to activity",
+        "say": "When did the pain behind your kneecap start, and is it linked to running, squatting, or stair use?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "onset",
+          "squatting",
+          "stairs",
+          "running",
+          "activity"
+        ]
+      },
+      {
+        "objective": "Theater sign",
+        "say": "Does the pain get worse after sitting for a long time with your knees bent, like at a movie?",
+        "domains": [
+          "character",
+          "aggravating"
+        ],
+        "keywords": [
+          "theater sign",
+          "sitting",
+          "prolonged",
+          "bent knee"
+        ]
+      },
+      {
+        "objective": "Stair pain pattern",
+        "say": "Is the pain worse going down stairs compared to going up?",
+        "domains": [
+          "character",
+          "aggravating"
+        ],
+        "keywords": [
+          "stairs",
+          "descending",
+          "ascending",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Patellar tracking and crepitus",
+        "say": "Do you feel any grinding or catching sensation behind your kneecap when you bend your knee?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "crepitus",
+          "grinding",
+          "catching",
+          "tracking",
+          "patella"
+        ]
+      },
+      {
+        "objective": "Prior treatment tried",
+        "say": "Have you tried quadriceps strengthening exercises, taping, or knee bracing for this?",
+        "domains": [
+          "management"
+        ],
+        "keywords": [
+          "quadriceps",
+          "strengthening",
+          "taping",
+          "bracing",
+          "treatment"
+        ]
+      }
+    ]
+  }
+}

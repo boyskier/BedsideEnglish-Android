@@ -1,0 +1,135 @@
+{
+  "id": "ns_009",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Master Irwin",
+  "age": 6,
+  "gender": "male",
+  "chief_complaint": "morning vomiting, severe ataxia, papilledema, and headache in 6-year-old boy",
+  "hpi_details": "6M brought by parents with 1-month worsening morning headaches and projectile vomiting immediately upon waking. Over the past 2 weeks, parents noticed severe unsteadiness, frequent stumbling and falling to both sides when walking, and tilt of the head to the left.",
+  "ideas": "parents think he has severe stomach flu or inner ear infection",
+  "concerns": "parents terrified after pediatrician noticed eye swelling and ordered emergency brain scan",
+  "expectations": "want pediatric neurosurgery and oncology team to explain diagnosis and surgical plan",
+  "pmh": "No prior past medical history",
+  "medications": "None",
+  "social_hx": "Kindergarten student",
+  "investigation_events": [{
+    "id": "stat_posterior_fossa_mri",
+    "title": "Emergency brain MRI",
+    "order_terms": ["MRI brain", "brain MRI", "MRI with gadolinium", "MRI with contrast"],
+    "availability_message": "The emergency MRI result is now available. PICU stabilization and urgent CSF-diversion planning should not be delayed.",
+    "results": [{"id": "brain_mri", "test": "Brain MRI with gadolinium", "value": "3.8 cm enhancing midline cerebellar vermian mass filling the fourth ventricle, with severe obstructive hydrocephalus and transependymal edema", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Midline Posterior Fossa Tumor (Pediatric Medulloblastoma) with Obstructive Hydrocephalus evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Midline Posterior Fossa Tumor (Pediatric Medulloblastoma) with Obstructive Hydrocephalus is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to Pediatric Intensive Care Unit (PICU), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: morning vomiting, severe ataxia, papilledema, and headache in 6-year-old boy",
+      "Key HPI features: 6M brought by parents with 1-month worsening morning headaches and projectile vomiting immediately upon waking. Over the past 2 weeks, parents noticed severe unsteadiness, frequent stumbling and falling to both sides when walking, and tilt of the head to the left.",
+      "Objective/Exam findings: Vitals: HR 84, BP 110/68. Bilateral papilledema on funduscopic examination. Bilateral horizontal nystagmus. Severe truncal ataxia and wide-based staggering gait (unable to tandem walk). Dysmetria on finger-to-nose testing. Brain MRI with gadolinium demonstrates a 3.8 cm enhancing midline posterior fossa mass arising from the cerebellar vermis and filling the fourth ventricle, causing severe obstructive hydrocephalus with dilation of lateral and third ventricles and periventricular interstitial edema.",
+      "Relevant background/PMH: No prior past medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Midline Posterior Fossa Tumor (Pediatric Medulloblastoma) with Obstructive Hydrocephalus.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ependymoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as papilledema with vomiting and ataxia, which strongly suggests raised intracranial pressure and warrants urgent neuroimaging."
+    ],
+    "management_principles": [
+      "Admit to Pediatric Intensive Care Unit (PICU)",
+      "Start IV Dexamethasone",
+      "Neurosurgery urgent intervention: place external ventricular drain (EVD) or perform endoscopic third ventriculostomy (ETV) to relieve acute hydrocephalus, followed by suboccipital craniotomy for maximal safe tumor resection"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "6M presenting with signs of obstructive hydrocephalus and midline cerebellar vermis dysfunction evolving over 1 month.",
+    "objective": "Vitals: HR 84, BP 110/68. Bilateral papilledema on funduscopic examination. Bilateral horizontal nystagmus. Severe truncal ataxia and wide-based staggering gait (unable to tandem walk). Dysmetria on finger-to-nose testing. Brain MRI with gadolinium demonstrates a 3.8 cm enhancing midline posterior fossa mass arising from the cerebellar vermis and filling the fourth ventricle, causing severe obstructive hydrocephalus with dilation of lateral and third ventricles and periventricular interstitial edema.",
+    "assessment": "Midline Posterior Fossa Tumor of the Cerebellar Vermis causing Obstructive Hydrocephalus, highly concerning for Pediatric Medulloblastoma.",
+    "plan": "Admit to Pediatric Intensive Care Unit (PICU). Start IV Dexamethasone. Neurosurgery urgent intervention: place external ventricular drain (EVD) or perform endoscopic third ventriculostomy (ETV) to relieve acute hydrocephalus, followed by suboccipital craniotomy for maximal safe tumor resection. Obtain spinal MRI and CSF cytology for staging when clinically safe, typically after initial management."
+  },
+  "learning_objectives": [
+    "Identify clinical signs of posterior fossa midline cerebellar vermis pathology (truncal ataxia, morning projectile vomiting, papilledema)",
+    "Correlate obstruction of the fourth ventricle with acute hydrocephalus and elevated intracranial pressure in pediatric brain tumors",
+    "Differentiate Medulloblastoma from Cerebellar Astrocytoma and Ependymoma based on MRI origin (vermis vs hemisphere vs floor of 4th ventricle)",
+    "Outline staged pediatric neurosurgical management (hydrocephalus diversion followed by tumor resection)"
+  ],
+  "teaching": {
+    "diagnosis": "Midline Posterior Fossa Tumor (Pediatric Medulloblastoma) with Obstructive Hydrocephalus",
+    "one_liner": "A tumor in the cerebellum can block the normal flow of cerebrospinal fluid, causing pressure to build in the brain; warning signs include morning vomiting, unsteady walking, and papilledema on eye examination.",
+    "differentials": [
+      "Ependymoma",
+      "Pilocytic astrocytoma",
+      "Migraine (should not cause papilledema or ataxia)"
+    ],
+    "red_flags": [
+      "Papilledema with vomiting or ataxia suggests raised intracranial pressure and warrants urgent neuroimaging"
+    ],
+    "must_ask": [
+      {
+        "objective": "Morning vomiting pattern",
+        "say": "Does he vomit right when he wakes up, without feeling sick first?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "morning vomiting",
+          "on waking"
+        ]
+      },
+      {
+        "objective": "Gait and balance",
+        "say": "Has he been stumbling or falling more than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ataxia",
+          "stumbling"
+        ]
+      },
+      {
+        "objective": "Head tilt",
+        "say": "Have you noticed him tilting his head to one side?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many weeks has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Parents' concerns",
+        "say": "What has worried you most about these changes?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

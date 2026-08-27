@@ -1,0 +1,123 @@
+{
+  "id": "id_040",
+  "system": "id",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lee",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "watery diarrhea, fever, and abdominal cramps after chicken",
+  "hpi_details": "A 62-year-old female presents to the clinic with watery diarrhea, fever, and abdominal cramps after chicken. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gastroenteritis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Salmonella Gastroenteritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Salmonella Gastroenteritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Salmonella Gastroenteritis: Oral rehydration, avoid antibiotics unless severe/elderly, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: watery diarrhea, fever, and abdominal cramps after chicken",
+      "Key HPI features: A 62-year-old female presents to the clinic with watery diarrhea, fever, and abdominal cramps after chicken. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 38.3C, HR 96, BP 110/70. Diffuse mild abdominal tenderness without rebound or guarding, hyperactive bowel sounds, no signs of peritonitis. Mucous membranes slightly dry. Stool studies: stool culture positive for Salmonella species, fecal leukocytes present, no gross blood.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Salmonella Gastroenteritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Bloody diarrhea or signs of severe dehydration."
+    ],
+    "management_principles": [
+      "Plan for Salmonella Gastroenteritis: Oral rehydration, avoid antibiotics unless severe/elderly",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: watery diarrhea, fever, and abdominal cramps after chicken\n\nA 62-year-old female presents to the clinic with watery diarrhea, fever, and abdominal cramps after chicken. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 38.3C, HR 96, BP 110/70. Diffuse mild abdominal tenderness without rebound or guarding, hyperactive bowel sounds, no signs of peritonitis. Mucous membranes slightly dry. Stool studies: stool culture positive for Salmonella species, fecal leukocytes present, no gross blood.",
+    "assessment": "Salmonella Gastroenteritis, confirmed by positive stool culture, in an elderly patient with mild dehydration.",
+    "plan": "Plan for Salmonella Gastroenteritis: Oral rehydration, avoid antibiotics unless severe/elderly. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Salmonella Gastroenteritis",
+    "Select appropriate diagnostic workup for Salmonella Gastroenteritis",
+    "Implement evidence-based management plan: Oral rehydration, avoid antibiotics unless severe/elderly"
+  ],
+  "teaching": {
+    "diagnosis": "Salmonella Gastroenteritis",
+    "one_liner": "A foodborne bacterial infection, often from undercooked poultry, causing watery diarrhea, fever, and abdominal cramps.",
+    "differentials": [
+      "Viral gastroenteritis",
+      "Campylobacter infection"
+    ],
+    "red_flags": [
+      "Bloody diarrhea or signs of severe dehydration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Food history",
+        "say": "Did you eat any chicken or poultry recently that might not have been fully cooked?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "chicken",
+          "poultry"
+        ]
+      },
+      {
+        "objective": "Diarrhea character",
+        "say": "Is the diarrhea watery, and how many times a day?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Abdominal pain",
+        "say": "Where is the cramping, and how severe?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Hydration status",
+        "say": "Have you been able to keep fluids down?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

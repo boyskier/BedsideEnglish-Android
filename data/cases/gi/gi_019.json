@@ -1,0 +1,235 @@
+{
+  "id": "gi_019",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Kowalski",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "vomiting large amounts of dark and bright red blood and dizziness for 2 hours",
+  "hpi_details": "Presents via ambulance with 2-hour history of vomiting two large basinfuls of dark and bright red blood mixed with clots. Reports profound dizziness, lightheadedness, and black tarry stools since yesterday. Known to have hepatitis C cirrhosis with portal hypertension diagnosed 4 years ago.",
+  "ideas": "thinks the swollen veins in his gullet that his doctor warned him about have burst",
+  "concerns": "in fear for his life, feeling faint and sweating profusely",
+  "expectations": "wants emergency blood transfusions and an emergency procedure to stop the bleeding immediately",
+  "pmh": "compensated hepatitis C cirrhosis, oesophageal varices Grade II seen on gastroscopy 2 years ago, portal hypertension",
+  "medications": "propranolol 40mg BD (reports missing doses recently), spironolactone 100mg OD",
+  "social_hx": "ex-IV drug user (30 years ago), abstinent from alcohol, unemployed due to chronic disability",
+  "investigation_events": [
+    {
+      "id": "stat_variceal_bleed_labs",
+      "title": "STAT variceal hemorrhage laboratory results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "platelet count",
+        "coagulation studies",
+        "coagulation panel",
+        "inr",
+        "type and crossmatch",
+        "crossmatch"
+      ],
+      "availability_message": "The STAT hemorrhage laboratory results are now available; airway management, blood-product resuscitation, vasoactive therapy, and antibiotics should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "6.8",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "platelets",
+          "test": "Platelet count",
+          "value": "72",
+          "unit": "x10^3/mcL",
+          "reference_range": "150-400",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.9",
+          "reference_range": "0.8-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    },
+    {
+      "id": "emergency_upper_endoscopy",
+      "title": "Emergency upper gastrointestinal endoscopy",
+      "order_terms": [
+        "emergency upper endoscopy",
+        "urgent upper endoscopy",
+        "upper endoscopy",
+        "emergency ogd",
+        "urgent ogd",
+        "gastroscopy"
+      ],
+      "availability_message": "The emergency upper endoscopy findings are now available.",
+      "results": [
+        {
+          "id": "esophageal_varices",
+          "test": "Emergency upper gastrointestinal endoscopy",
+          "value": "Large distal esophageal varices with active spurting from one varix; hemostasis achieved with endoscopic band ligation",
+          "flag": "critical",
+          "collected_at": "During emergency endoscopy"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Variceal Haemorrhage evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Variceal Haemorrhage is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Medical emergency: secure airway, insert x2 large-bore IV cannulae (14/16G), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: vomiting large amounts of dark and bright red blood and dizziness for 2 hours",
+      "Key HPI features: Presents via ambulance with 2-hour history of vomiting two large basinfuls of dark and bright red blood mixed with clots. Reports profound dizziness, lightheadedness, and black tarry stools since yesterday. Known to have hepatitis C cirrhosis with portal hypertension diagnosed 4 years ago.",
+      "Objective/Exam findings: Vitals: HR 122, BP 88/54 (haemodynamic shock). Airway assessment critical. Bloods: urgent FBC, coagulation (INR), LFTs, U&Es, cross-match 4-6 units packed red blood cells. Emergency upper GI endoscopy (OGD).",
+      "Relevant background/PMH: compensated hepatitis C cirrhosis, oesophageal varices Grade II seen on gastroscopy 2 years ago, portal hypertension",
+      "Current medications: propranolol 40mg BD (reports missing doses recently), spironolactone 100mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Variceal Haemorrhage.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Severe peptic ulcer bleed without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Dizziness and profuse sweating with large-volume haematemesis — signs of haemorrhagic shock."
+    ],
+    "management_principles": [
+      "Medical emergency: secure airway, insert x2 large-bore IV cannulae (14/16G)",
+      "Resuscitate with blood products (restrictive transfusion target Hb 70-80 g/L to avoid worsening portal pressure)",
+      "Immediate IV terlipressin (2mg bolus) or octreotide to reduce portal inflow"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M with known hepatitis C cirrhosis and oesophageal varices presents with massive haematemesis, melaena, and haemodynamic instability.",
+    "objective": "Vitals: HR 122, BP 88/54 (haemodynamic shock). Airway assessment critical. Bloods: urgent FBC, coagulation (INR), LFTs, U&Es, cross-match 4-6 units packed red blood cells. Emergency upper GI endoscopy (OGD).",
+    "assessment": "Acute variceal haemorrhage secondary to portal hypertension in cirrhotic patient. DDx: severe peptic ulcer bleed, portal hypertensive gastropathy, Mallory-Weiss tear.",
+    "plan": "Medical emergency: secure airway, insert x2 large-bore IV cannulae (14/16G). Resuscitate with blood products (restrictive transfusion target Hb 70-80 g/L to avoid worsening portal pressure). Immediate IV terlipressin (2mg bolus) or octreotide to reduce portal inflow. Prophylactic IV antibiotics (ceftriaxone 1g OD) to prevent SBP and re-bleeding. Urgent emergency endoscopy for variceal band ligation. Balloon tamponade (Sengstaken-Blakemore tube) or TIPS on standby if uncontrolled."
+  },
+  "learning_objectives": [
+    "Execute emergency stabilization protocol for massive upper GI haemorrhage including airway safety and large-bore access",
+    "Apply specific pharmacological adjuncts for variceal bleeding immediately upon presentation (terlipressin/octreotide plus prophylactic antibiotics)",
+    "Explain the rationale behind restrictive transfusion strategy (target Hb 7-8 g/dL) in portal hypertensive bleeding",
+    "Communicate urgently and calmly during a life-threatening gastrointestinal crisis"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Variceal Haemorrhage",
+    "one_liner": "Cirrhosis raises the pressure in veins around the oesophagus until one bursts, causing sudden, massive vomiting of blood — a life-threatening emergency.",
+    "differentials": [
+      "Severe peptic ulcer bleed",
+      "Portal hypertensive gastropathy",
+      "Mallory-Weiss tear"
+    ],
+    "red_flags": [
+      "Dizziness and profuse sweating with large-volume haematemesis — signs of haemorrhagic shock"
+    ],
+    "must_ask": [
+      {
+        "objective": "Volume and colour of blood",
+        "say": "How much blood have you brought up, and was it dark or bright red?",
+        "domains": [
+          "severity",
+          "character"
+        ],
+        "keywords": [
+          "blood",
+          "dark",
+          "bright",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Known liver disease / varices",
+        "say": "You mentioned swollen veins in your food pipe before — has a doctor told you about liver disease or varices?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "liver",
+          "cirrhosis",
+          "varices",
+          "veins"
+        ]
+      },
+      {
+        "objective": "Black stools",
+        "say": "Have you also had black, tarry stools?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "black",
+          "tarry",
+          "stool"
+        ]
+      },
+      {
+        "objective": "Medication adherence",
+        "say": "Have you been taking your propranolol regularly?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "propranolol",
+          "tablets",
+          "taking",
+          "missed"
+        ]
+      },
+      {
+        "objective": "Dizziness and faintness",
+        "say": "Do you feel dizzy, faint, or sweaty right now?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizzy",
+          "faint",
+          "sweaty",
+          "lightheaded"
+        ]
+      },
+      {
+        "objective": "Alcohol use",
+        "say": "Have you had any alcohol recently?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drinking"
+        ]
+      }
+    ]
+  }
+}

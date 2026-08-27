@@ -1,0 +1,143 @@
+{
+  "id": "ent_037",
+  "system": "otolaryngology (ent)",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Carter",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "hoarseness and loss of high range in singing teacher",
+  "hpi_details": "A 53-year-old male presents to the clinic with hoarseness and loss of high range in singing teacher. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to vocal_cord_nodules",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "office_laryngoscopy",
+      "title": "Office laryngoscopy",
+      "order_terms": [
+        "laryngoscopy",
+        "flexible laryngoscopy",
+        "videostroboscopy",
+        "stroboscopy",
+        "scope the vocal cords"
+      ],
+      "availability_message": "The office laryngoscopy findings are now available.",
+      "results": [
+        {
+          "id": "bilateral_vocal_fold_nodules",
+          "test": "Laryngoscopy",
+          "value": "Symmetric bilateral nodules at the junction of the anterior and middle thirds of the true vocal folds; no ulceration or unilateral mass",
+          "flag": "abnormal",
+          "collected_at": "During ENT assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Vocal Cord Nodules evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Vocal Cord Nodules is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Persistent dysphonia requires laryngeal visualization before voice therapy; confirmed nodules are managed primarily with voice therapy and vocal hygiene, while surgery is reserved for selected refractory lesions.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: hoarseness and loss of high range in singing teacher",
+      "Key HPI features: A 53-year-old male presents to the clinic with hoarseness and loss of high range in singing teacher. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Vocal Cord Nodules.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Vocal Cord Nodules.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vocal cord polyp without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: persistent hoarseness beyond 2–3 weeks, hemoptysis, or a neck mass — which require laryngoscopy to exclude laryngeal malignancy rather than assuming benign nodules."
+    ],
+    "management_principles": [
+      "Arrange laryngoscopy before voice therapy; manage confirmed nodules with voice therapy and vocal hygiene, reserving surgery for selected refractory lesions",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: hoarseness and loss of high range in singing teacher\n\nA 53-year-old male presents to the clinic with hoarseness and loss of high range in singing teacher. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Vocal Cord Nodules.",
+    "assessment": "Presentation consistent with Vocal Cord Nodules: progressive hoarseness and loss of upper vocal range in a professional voice user (singing teacher), suggesting phonotrauma-related benign lesions.",
+    "plan": "Arrange laryngoscopy to confirm the lesion and exclude other causes of dysphonia before voice therapy. For confirmed nodules, prescribe voice therapy and vocal hygiene; reserve surgery for selected refractory lesions."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Vocal Cord Nodules",
+    "Select appropriate diagnostic workup for Vocal Cord Nodules",
+    "Implement evidence-based management plan: laryngoscopy followed by voice therapy and vocal hygiene for confirmed nodules"
+  ],
+  "teaching": {
+    "diagnosis": "Vocal Cord Nodules",
+    "one_liner": "Voice overuse causing benign vocal cord growths, hoarseness, and loss of high vocal range.",
+    "differentials": [
+      "Vocal cord polyp"
+    ],
+    "red_flags": [
+      "Hoarseness persisting beyond 2–3 weeks despite voice rest — warrants laryngoscopy to exclude malignancy",
+      "Heavy smoking or alcohol use history",
+      "Hemoptysis, stridor, or airway compromise",
+      "Unintentional weight loss or a palpable neck mass"
+    ],
+    "must_ask": [
+      {
+        "objective": "Voice use",
+        "say": "Do you use your voice heavily at work?",
+        "domains": [
+          "living_work"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many months has this hoarseness lasted?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Range loss",
+        "say": "Have you lost your high singing range?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Vocal fatigue",
+        "say": "Does your voice tire during the day?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Smoking",
+        "say": "Do you smoke?",
+        "domains": [
+          "smoking"
+        ]
+      }
+    ]
+  }
+}

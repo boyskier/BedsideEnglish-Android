@@ -1,0 +1,140 @@
+{
+  "id": "allergy_029",
+  "system": "allergy",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Thomas",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "sudden widespread itchy hives lasting few hours each",
+  "hpi_details": "A 29-year-old male presents to the clinic with sudden widespread itchy hives lasting few hours each. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to hives",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Acute Urticaria evaluation and management",
+    "core_concepts": [
+      "Acute urticaria is a mast-cell-mediated eruption of pruritic, transient wheals lasting under six weeks, most often triggered by a viral infection, food, medication, or insect sting.",
+      "Each individual wheal typically fades within 24 hours, but new lesions can continue to appear for the duration of the episode.",
+      "Most cases are self-limited and idiopathic; extensive allergy workup is not routinely needed unless a specific trigger is strongly suspected from the history.",
+      "The clinical priority is distinguishing isolated cutaneous urticaria from anaphylaxis, which requires airway, respiratory, or cardiovascular involvement plus emergency treatment."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden widespread itchy hives lasting few hours each",
+      "Key HPI features: A 29-year-old male presents to the clinic with sudden widespread itchy hives lasting few hours each. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Scattered blanching, erythematous wheals of varying size; no angioedema, stridor, or hemodynamic instability.",
+      "Relevant background/PMH: Unremarkable",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming the accompanying fatigue signals a serious systemic illness rather than a nonspecific viral or inflammatory trigger.",
+      "Ordering extensive allergy testing during the acute episode instead of first identifying a likely trigger from the history.",
+      "Withholding antihistamines because the hives look mild, delaying relief and symptom control.",
+      "Misattributing symptoms exclusively to anaphylaxis (if airway/circulatory symptoms present) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Throat tightness, wheeze, or dizziness accompanying the hives."
+    ],
+    "management_principles": [
+      "Start a non-sedating oral second-generation antihistamine (e.g., cetirizine) at standard dose, up-titrating if needed.",
+      "Identify and remove or avoid any likely trigger (new food, medication, or recent infection).",
+      "Advise avoiding aggravating factors such as hot showers or tight clothing that can worsen itching.",
+      "Educate on red-flag symptoms (throat tightness, wheeze, dizziness) that would require emergency care."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "International EAACI/GA2LEN/EuroGuiDerm/APAAACI Guideline for Urticaria",
+        "url": "https://www.eaaci.org/resources-education/clinical-practice/guidelines.html"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "29-year-old male presents with sudden widespread itchy hives lasting a few hours each. Symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Scattered blanching, erythematous wheals of varying size; no angioedema, stridor, or hemodynamic instability.",
+    "assessment": "Acute urticaria.",
+    "plan": "1. Start a non-sedating oral antihistamine (cetirizine). 2. Ask about and avoid any likely trigger (new food, medication, recent illness). 3. Advise avoiding hot showers or tight clothing that can worsen itching. 4. Educate on red-flag symptoms that would require emergency care."
+  },
+  "learning_objectives": [
+    "Recognize the clinical presentation and course of acute urticaria",
+    "Distinguish acute urticaria from anaphylaxis and chronic urticaria",
+    "Select appropriate first-line antihistamine therapy and trigger-avoidance counseling for acute urticaria"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Urticaria",
+    "one_liner": "A sudden outbreak of itchy hives lasting less than six weeks, usually from a transient trigger such as a food, infection, or medication.",
+    "differentials": [
+      "Anaphylaxis (if airway/circulatory symptoms present)",
+      "Chronic urticaria (if persists beyond 6 weeks)",
+      "Viral exanthem"
+    ],
+    "red_flags": [
+      "Throat tightness, wheeze, or dizziness accompanying the hives"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and possible trigger",
+        "say": "When did the hives start, and can you think of anything new — food, medicine, illness?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "started",
+          "new",
+          "food",
+          "medicine"
+        ]
+      },
+      {
+        "objective": "Duration of individual welts",
+        "say": "Does each welt fade within a few hours?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "hours",
+          "fade"
+        ]
+      },
+      {
+        "objective": "Airway or systemic symptoms",
+        "say": "Any swelling of your lips or throat, or trouble breathing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swelling",
+          "throat",
+          "breathing"
+        ]
+      },
+      {
+        "objective": "Prior similar episodes",
+        "say": "Has this happened before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "What relieves it",
+        "say": "Have you tried anything, like antihistamines, and did it help?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "antihistamine",
+          "helped"
+        ]
+      }
+    ]
+  }
+}

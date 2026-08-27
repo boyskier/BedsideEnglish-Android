@@ -1,0 +1,160 @@
+{
+  "id": "cs_002",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Baker",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "progressive shortness of breath, hypotension, and muffled heart sounds 5 days after coronary artery bypass graft (CABG) surgery",
+  "hpi_details": "68F status post 3-vessel CABG surgery 5 days ago on surgical ward develops progressive dyspnea, orthopnea, lightheadedness, and oliguria over the past 8 hours. Nursing staff notes mediastinal chest tube drainage abruptly ceased 10 hours ago despite persistent bloody output previously.",
+  "ideas": "patient and family terrified by rapid drop in blood pressure and difficulty breathing",
+  "concerns": "worried the heart bypass grafts have failed or closed off",
+  "expectations": "want emergency surgical team bedside immediately to restore her breathing and heart function",
+  "pmh": "Coronary artery disease s/p CABG x3 (5 days ago), Type 2 Diabetes",
+  "medications": "Post-op cardiac medication regimen",
+  "social_hx": "Retired teacher, non-smoker",
+  "investigation_events": [
+    {
+      "id": "post_cabg_tamponade_echo",
+      "title": "Bedside echocardiogram",
+      "order_terms": ["bedside echocardiogram", "echocardiogram", "echo", "TTE", "POCUS"],
+      "availability_message": "The bedside echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_postoperative_tamponade",
+          "test": "Bedside transthoracic echocardiogram",
+          "value": "Large circumferential pericardial blood and clot with right-atrial and right-ventricular diastolic collapse; plethoric IVC without inspiratory collapse",
+          "unit": "",
+          "reference_range": "No pericardial collection or chamber collapse",
+          "flag": "critical",
+          "collected_at": "At clinical deterioration"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Postoperative Cardiac Tamponade evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Postoperative Cardiac Tamponade is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT surgical emergency: alert operating room team for immediate re-exploration of mediastinum (subxiphoid or repeat median sternotomy) to evacuate organized blood clot and hematoma, control bleeding sources, and clear/strip obstructed chest tubes, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive shortness of breath, hypotension, and muffled heart sounds 5 days after coronary artery bypass graft (CABG) surgery",
+      "Key HPI features: 68F status post 3-vessel CABG surgery 5 days ago on surgical ward develops progressive dyspnea, orthopnea, lightheadedness, and oliguria over the past 8 hours. Nursing staff notes mediastinal chest tube drainage abruptly ceased 10 hours ago despite persistent bloody output previously.",
+      "Objective/Exam findings: Vitals: HR 126, BP 82/60, RR 28, SpO2 91%. Jugular venous distention (JVD) elevated to jawline while sitting at 45 degrees. Heart sounds markedly muffled and distant on auscultation. Pulsus paradoxus present (18 mmHg drop in systolic blood pressure during inspiration). Bedside transthoracic echocardiogram (TTE) confirms a large circumferential hyperdense pericardial/mediastinal fluid and clot accumulation compressing the right atrium and right ventricle, with diastolic right ventricular collapse and inferior vena cava plethora without inspiratory collapse.",
+      "Relevant background/PMH: Coronary artery disease s/p CABG x3 (5 days ago), Type 2 Diabetes",
+      "Current medications: Post-op cardiac medication regimen"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Postoperative Cardiac Tamponade.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Graft failure/acute MI without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden cessation of chest tube drainage after heavy bloody output — suggests a clot is obstructing the tube while bleeding continues internally."
+    ],
+    "management_principles": [
+      "STAT surgical emergency: alert operating room team for immediate re-exploration of mediastinum (subxiphoid or repeat median sternotomy) to evacuate organized blood clot and hematoma, control bleeding sources, and clear/strip obstructed chest tubes",
+      "Administer rapid IV normal saline boluses to maintain right ventricular preload during OR transfer",
+      "Avoid positive pressure ventilation/intubation prior to decompression if possible to prevent precipitous drop in venous return"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68F post-CABG day 5 presenting with acute hemodynamic collapse, oliguria, and cessation of mediastinal chest tube drainage suggestive of postoperative pericardial tamponade.",
+    "objective": "Vitals: HR 126, BP 82/60, RR 28, SpO2 91%. Jugular venous distention (JVD) elevated to jawline while sitting at 45 degrees. Heart sounds markedly muffled and distant on auscultation. Pulsus paradoxus present (18 mmHg drop in systolic blood pressure during inspiration). Bedside transthoracic echocardiogram (TTE) confirms a large circumferential hyperdense pericardial/mediastinal fluid and clot accumulation compressing the right atrium and right ventricle, with diastolic right ventricular collapse and inferior vena cava plethora without inspiratory collapse.",
+    "assessment": "Acute Postoperative Cardiac Tamponade secondary to retained blood/clot following chest tube obstruction post-CABG.",
+    "plan": "STAT surgical emergency: alert operating room team for immediate re-exploration of mediastinum (subxiphoid or repeat median sternotomy) to evacuate organized blood clot and hematoma, control bleeding sources, and clear/strip obstructed chest tubes. Administer rapid IV normal saline boluses to maintain right ventricular preload during OR transfer. Avoid positive pressure ventilation/intubation prior to decompression if possible to prevent precipitous drop in venous return."
+  },
+  "learning_objectives": [
+    "Recognize Beck's Triad of acute cardiac tamponade (hypotension, jugular venous distention, muffled heart sounds) and pulsus paradoxus",
+    "Identify acute cessation of mediastinal chest tube output as a primary trigger for clotted hemopericardium and tamponade post-cardiac surgery",
+    "Interpret echocardiographic signs of tamponade (diastolic RV collapse, RA systolic inversion, IVC plethora)",
+    "Explain why pericardiocentesis is contraindicated/ineffective for organized surgical hemopericardium and why emergency mediastinal re-exploration is required"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Postoperative Cardiac Tamponade",
+    "one_liner": "Retained blood clot around the heart after cardiac surgery compresses the heart chambers, causing progressive breathlessness, low blood pressure, and reduced urine output — a surgical emergency needing immediate re-exploration.",
+    "differentials": [
+      "Graft failure/acute MI",
+      "Hypovolemic shock from bleeding",
+      "Pulmonary embolism"
+    ],
+    "red_flags": [
+      "Sudden cessation of chest tube drainage after heavy bloody output — suggests a clot is obstructing the tube while bleeding continues internally"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to surgery",
+        "say": "How many days ago was your bypass surgery?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "days ago",
+          "surgery"
+        ]
+      },
+      {
+        "objective": "Breathlessness progression",
+        "say": "How has your breathing changed over the past several hours?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "worse",
+          "hours"
+        ]
+      },
+      {
+        "objective": "Chest tube drainage",
+        "say": "Has your nurse mentioned anything about the drainage from your chest tube stopping?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "chest tube",
+          "stopped"
+        ]
+      },
+      {
+        "objective": "Lightheadedness",
+        "say": "Do you feel lightheaded or like you might faint?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lightheaded",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Orthopnea",
+        "say": "Is it harder to breathe lying flat?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "lying flat",
+          "orthopnea"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Transfer and Acceptance Call",
+  "description": "Evaluates a clinician-to-clinician transfer request and closed-loop handover.",
+  "metrics": {
+    "grammar": { "label": "Clear Clinical English", "weight": 0.15 },
+    "medical_accuracy": { "label": "Accurate Transfer Details", "weight": 0.25 },
+    "clinical_reasoning": { "label": "Need for Higher-Level Care", "weight": 0.25 },
+    "professionalism": { "label": "Negotiation and Closed Loop", "weight": 0.2 },
+    "fluency": { "label": "Structured Delivery", "weight": 0.15 }
+  },
+  "checklist": [
+    { "item": "stated the transfer request and urgency immediately", "required": true },
+    { "item": "summarized stability, diagnosis, key results, and treatment", "required": true },
+    { "item": "explained why the current site cannot provide the required care", "required": true },
+    { "item": "answered the receiving clinician's safety questions", "required": true },
+    { "item": "confirmed acceptance, transport plan, and responsibility during transfer", "required": true }
+  ],
+  "reference_output_type": "spoken_transfer_handover"
+}

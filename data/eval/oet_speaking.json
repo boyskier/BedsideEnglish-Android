@@ -1,0 +1,66 @@
+{
+  "name": "OET-style Speaking Practice",
+  "output_sections": ["scores", "checklist", "corrections", "anki_cards", "summary"],
+  "metrics": {
+    "grammar": {
+      "label": "Language Control",
+      "anchors": {
+        "90-100": "Accurate and flexible language throughout",
+        "70-80": "Minor errors only; fully intelligible",
+        "50-60": "Errors sometimes distract but do not usually block meaning",
+        "30-40": "Frequent errors with listener effort",
+        "10-20": "Communication often unclear"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Information Giving",
+      "anchors": {
+        "90-100": "Clear, accurate, and tailored health information",
+        "70-80": "Mostly accurate and patient-friendly",
+        "50-60": "Some jargon or incomplete explanation",
+        "30-40": "Information is often unclear or incomplete",
+        "10-20": "Unsafe or misleading information"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Information Gathering",
+      "anchors": {
+        "90-100": "Purposeful questions uncover concerns and priorities",
+        "70-80": "Good questioning with minor omissions",
+        "50-60": "Basic questions asked; several gaps remain",
+        "30-40": "Unfocused or incomplete questioning",
+        "10-20": "Little useful information gathered"
+      }
+    },
+    "communication_fluency": {
+      "label": "Fluency & Clarity",
+      "anchors": {
+        "90-100": "Comfortably intelligible, natural pace, effective pauses",
+        "70-80": "Mostly fluent and easy to follow",
+        "50-60": "Some hesitation or awkward phrasing",
+        "30-40": "Frequent breakdowns",
+        "10-20": "Hard to understand"
+      }
+    },
+    "professionalism": {
+      "label": "Relationship Building",
+      "anchors": {
+        "90-100": "Empathic, collaborative, and reassuring",
+        "70-80": "Professional and patient-centered",
+        "50-60": "Polite but not very responsive to patient concerns",
+        "30-40": "Misses important emotional cues",
+        "10-20": "Dismissive or unsafe communication"
+      }
+    }
+  },
+  "checklist": [
+    {"item": "opened with rapport and acknowledged the patient's concern", "required": true},
+    {"item": "asked what the patient already understands", "required": true},
+    {"item": "explained the condition in plain language", "required": true},
+    {"item": "explained next steps, follow-up, or safety-net advice", "required": true},
+    {"item": "checked understanding before closing", "required": true},
+    {"item": "invited patient questions", "required": false}
+  ],
+  "empathy_markers": [],
+  "reference_output_type": null
+}

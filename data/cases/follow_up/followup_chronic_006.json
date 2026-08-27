@@ -1,0 +1,248 @@
+{
+  "id": "followup_chronic_006",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "chronic_disease",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Arthur Pendelton",
+  "age": 71,
+  "gender": "male",
+  "visit_title": "COPD maintenance & inhaler review",
+  "follow_up_reason": "Three-month COPD control and exacerbation review",
+  "clinician_brief": {
+    "prior_note": "Seen 3 months ago after moderate COPD exacerbation treated with oral steroids and antibiotics. Switched from LAMA monotherapy to LAMA/LABA dual therapy (Umeclidinium-vilanterol).",
+    "active_problems": [
+      "COPD (GOLD Group B)",
+      "Tobacco use disorder (35 pack-years)",
+      "Hypertension"
+    ],
+    "current_medications": [
+      "Umeclidinium-vilanterol 62.5/25 mcg DPI once daily",
+      "Albuterol MDI 90 mcg 2 puffs PRN shortness of breath"
+    ],
+    "previous_plan": [
+      "Start umeclidinium-vilanterol daily",
+      "Demonstrate Ellipta inhaler device technique",
+      "Track rescue inhaler frequency and sputum changes",
+      "Smoking cessation counseling",
+      "Review in 3 months"
+    ],
+    "results_and_observations": [
+      "Post-bronchodilator FEV1 62% predicted",
+      "Oxygen saturation 95% on room air",
+      "Pneumococcal vaccine completed"
+    ],
+    "today_tasks": [
+      "Evaluate breathlessness using mMRC or CAT score",
+      "Review rescue albuterol usage and exacerbation frequency",
+      "Observe Ellipta inhaler technique and check compliance",
+      "Assess sputum volume, color, and infection red flags",
+      "Provide smoking cessation support and pulmonary rehab referral"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Can walk to the mailbox with less panting. Sputum is clear/white.",
+    "adherence": "Uses the Ellipta inhaler every morning. Uses albuterol rescue once or twice a week.",
+    "treatment_response": "COPD Assessment Test (CAT) score improved from 22 to 14.",
+    "side_effects": "Mild dry mouth; no tremor or rapid heartbeat.",
+    "new_symptoms_and_red_flags": "No purulent green sputum, fever, chest pain, leg swelling, or emergency room visits.",
+    "agenda": "Wants to know if he can join the local pulmonary rehabilitation walking group.",
+    "concern": "Worried he will become permanently oxygen-dependent like his older brother.",
+    "preference": "Motivated to cut down smoking from 10 to 5 cigarettes a day."
+  },
+  "clinical_knowledge": {
+    "topic": "Confirming a real GOLD Group B response to LAMA/LABA dual therapy after a recent exacerbation, while pairing pulmonary rehab and smoking-reduction gains with an honest answer about long-term oxygen risk",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "GOLD groups patients by symptom burden and exacerbation history, not FEV1 alone; his single moderate exacerbation 3 months ago plus high symptom burden placed him in Group E/B territory, and switching from LAMA monotherapy to LAMA/LABA (umeclidinium-vilanterol) is exactly the guideline-recommended escalation for that picture.",
+      "A CAT score dropping from 22 to 14 is a clinically meaningful improvement (the minimal important difference is about 2 points), and combined with reduced rescue albuterol use, supports that the current regimen is genuinely working rather than the patient simply having a good week.",
+      "GOLD's dyspnea/exacerbation framework treats ongoing symptoms and smoking status as separate levers: bronchodilator therapy is titrated for symptom control, while pulmonary rehabilitation and smoking cessation are the interventions proven to slow decline and improve quality of life on top of medication.",
+      "Post-bronchodilator FEV1 62% predicted places him in GOLD spirometric grade 2 (moderate airflow limitation) — useful for staging severity, but current management decisions here are driven more by his symptom and exacerbation trajectory than by this single FEV1 number.",
+      "Pulmonary rehabilitation is one of the few COPD interventions with strong evidence for improving exercise capacity and quality of life, and referral is appropriate any time a patient like him is both motivated and clinically stable enough to participate."
+    ],
+    "diagnostic_clues": [
+      "CAT score improving from 22 to 14 alongside walking to the mailbox with less panting demonstrates a consistent, corroborated symptom improvement rather than an isolated data point.",
+      "SpO2 95% on room air with clear/white (not purulent) sputum and no wheeze or crackles on exam is reassuring against an evolving exacerbation.",
+      "Rescue albuterol use of only once or twice weekly, down from presumably more frequent use around his last exacerbation, is an objective marker that daily symptom control has improved.",
+      "Mild dry mouth without tremor or tachycardia is a benign, expected anticholinergic/beta-agonist side effect at this dose and does not warrant stopping therapy.",
+      "His own motivation to cut cigarettes from 10 to 5 a day is a clinically significant opening — smoking cessation is the single intervention most likely to slow his FEV1 decline, more than any inhaler adjustment."
+    ],
+    "common_misconceptions": [
+      "His fear of becoming 'permanently oxygen-dependent like his older brother' deserves a direct answer: home oxygen is reserved for patients with significant resting hypoxemia (roughly SpO2 <=88% or specific criteria with cor pulmonale), and his current 95% on room air is far from that threshold — his family history does not mean his own trajectory is fixed.",
+      "Assuming that feeling much better on the new inhaler means the underlying airflow limitation has improved or COPD has been 'cured,' when bronchodilators relieve symptoms and reduce exacerbations without reversing the fixed component of airflow obstruction.",
+      "Believing cutting down cigarettes (rather than quitting entirely) provides little benefit, when in fact any reduction lowers exposure and complete cessation remains the actionable next goal to build on his current motivation.",
+      "Thinking dry mouth or a mildly bothersome inhaler side effect is a reason to stop the medication on his own, rather than raising it so a technique check or minor adjustment can be tried first."
+    ],
+    "dangerous_errors": [
+      "Reassuring him broadly about his lung health without directly and explicitly walking through what oxygen dependency actually requires, leaving his specific fear about his brother's situation unaddressed.",
+      "Praising the CAT score improvement without confirming he still knows his personal exacerbation action plan (when to start a course of steroids/antibiotics and when to seek urgent care) given his exacerbation only 3 months ago.",
+      "Treating smoking cessation as a side conversation rather than the highest-yield intervention available at this visit, especially now that he has expressed concrete motivation to cut down further.",
+      "Failing to ask specifically about sputum color change, fever, or increased breathlessness, since these are the early markers that would flag a developing exacerbation rather than routine maintenance follow-up."
+    ],
+    "management_principles": [
+      "Refer him to pulmonary rehabilitation now, while he is both clinically stable and motivated, since this program has strong evidence for improving his functional capacity and quality of life.",
+      "Build directly on his stated motivation to cut smoking from 10 to 5 cigarettes/day with concrete cessation support (counseling, pharmacotherapy such as varenicline or nicotine replacement) rather than leaving it as an unstructured goal.",
+      "Reinforce his exacerbation action plan (sputum purulence, fever, escalating breathlessness as triggers to act) given his exacerbation history 3 months ago.",
+      "Directly answer his oxygen-dependency question with the actual criteria for home oxygen therapy, to replace an anecdote-driven fear with an accurate risk picture."
+    ],
+    "boundaries_and_exceptions": [
+      "The reassurance about oxygen dependency applies to his current oxygen saturation and exam; any future finding of resting hypoxemia, exertional desaturation, or signs of cor pulmonale would change this and warrant formal oxygen assessment.",
+      "GOLD group-based bronchodilator escalation assumes correct inhaler technique is confirmed; poor Ellipta technique can mimic inadequate treatment response and should be ruled out before considering triple therapy.",
+      "If exacerbations recur despite dual bronchodilator therapy and good technique, GOLD recommends adding inhaled corticosteroid (triple therapy) particularly if blood eosinophils are elevated — a different pathway than today's stable-patient plan."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2026 Report",
+        "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Confirm the COPD review agenda and link to prior exacerbation recovery",
+    "Assess exertional dyspnea, CAT score trend, and rescue inhaler use",
+    "Check dual-bronchodilator adherence and Ellipta inhaler technique",
+    "Screen for exacerbation signs including sputum purulence and fever",
+    "Address oxygen dependency fears in plain English",
+    "Counsel on smoking reduction and offer pulmonary rehabilitation",
+    "Agree on exacerbation safety-net plan and next follow-up"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Confirm the COPD review agenda and link to prior exacerbation recovery",
+      "category": "Agenda",
+      "question": "Since we changed your daily maintenance inhaler three months ago, what would you most like to discuss today?"
+    },
+    {
+      "objective": "Assess exertional dyspnea, CAT score trend, and rescue inhaler use",
+      "category": "Interval change",
+      "question": "How often are you using your rescue albuterol inhaler, and how far can you walk before getting short of breath?"
+    },
+    {
+      "objective": "Check dual-bronchodilator adherence and Ellipta inhaler technique",
+      "category": "Technique & adherence",
+      "question": "Could you show me how you open and inhale your daily Ellipta inhaler, and how often do you take it?"
+    },
+    {
+      "objective": "Screen for exacerbation signs including sputum purulence and fever",
+      "category": "Safety",
+      "question": "Have you noticed any changes in your sputum color, fever, or signs of a chest infection?"
+    },
+    {
+      "objective": "Address oxygen dependency fears in plain English",
+      "category": "Concerns",
+      "question": "What worries do you have about your lung condition or needing oxygen in the future?"
+    },
+    {
+      "objective": "Counsel on smoking reduction and offer pulmonary rehabilitation",
+      "category": "Lifestyle",
+      "question": "Would you be interested in our pulmonary rehab walking program and discussing support to reduce smoking?"
+    },
+    {
+      "objective": "Agree on exacerbation safety-net plan and next follow-up",
+      "category": "Shared plan",
+      "question": "Shall we agree on a action plan for when your phlegm changes color and set up a review in six months?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Confirm the COPD review agenda and link to prior exacerbation recovery",
+      "keywords": [
+        "copd",
+        "inhaler",
+        "three months",
+        "agenda",
+        "today",
+        "exacerbation"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess exertional dyspnea, CAT score trend, and rescue inhaler use",
+      "keywords": [
+        "rescue",
+        "albuterol",
+        "shortness of breath",
+        "walking",
+        "breathless",
+        "cat score"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Check dual-bronchodilator adherence and Ellipta inhaler technique",
+      "keywords": [
+        "technique",
+        "inhaler technique",
+        "ellipta",
+        "daily",
+        "miss",
+        "demonstrate",
+        "show me"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for exacerbation signs including sputum purulence and fever",
+      "keywords": [
+        "sputum",
+        "phlegm",
+        "color",
+        "green",
+        "fever",
+        "infection",
+        "flare"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address oxygen dependency fears in plain English",
+      "keywords": [
+        "oxygen",
+        "dependent",
+        "worry",
+        "worried",
+        "brother",
+        "lungs",
+        "future"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Counsel on smoking reduction and offer pulmonary rehabilitation",
+      "keywords": [
+        "smoking",
+        "cigarettes",
+        "rehab",
+        "pulmonary rehab",
+        "cut down",
+        "quit"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on exacerbation safety-net plan and next follow-up",
+      "keywords": [
+        "action plan",
+        "safety net",
+        "six months",
+        "agree",
+        "plan",
+        "follow up"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "71M with COPD returns at 3 months post-exacerbation on umeclidinium-vilanterol. CAT score improved from 22 to 14. Uses albuterol 1-2x/week. Good adherence and technique. Sputum clear. Interested in pulmonary rehab and smoking reduction.",
+    "objective": "SpO2 95% on room air. Lungs: distant breath sounds, no acute wheezing or crackles.",
+    "assessment": "COPD GOLD Group B, clinically stable on LAMA/LABA dual therapy with improved symptom control.",
+    "plan": "Refer to pulmonary rehabilitation, provide smoking cessation counseling (target 5 cig/day reduction), review exacerbation action plan, follow up in 6 months."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "COPD maintenance & inhaler review",
+    "one_liner": "Clinical scenario for evaluation and management of COPD maintenance & inhaler review."
+  }
+}

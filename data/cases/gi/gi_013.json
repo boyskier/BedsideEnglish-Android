@@ -1,0 +1,173 @@
+{
+  "id": "gi_013",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Yamamoto",
+  "age": 61,
+  "gender": "female",
+  "chief_complaint": "feeling full after eating only a few bites and burning upper stomach pain for 4 months",
+  "hpi_details": "4-month history of persistent gnawing epigastric pain that is not relieved by over-the-counter antacids. Experiences early satiety after eating less than half her normal portion, persistent mild nausea, and distaste for meat. Has lost 7kg over the past 4 months. Denies dysphagia or haematemesis.",
+  "ideas": "thinks she has a stomach ulcer from chronic stress and eating pickled foods",
+  "concerns": "worried about the rapid weight loss and lack of energy to play with her grandchildren",
+  "expectations": "wants a stronger acid-suppression pill that will restore her appetite",
+  "pmh": "H. pylori eradication therapy attempted 12 years ago (unsure of eradication confirmation), mild hypertension",
+  "medications": "losartan 50mg OD, famotidine 20mg BD over-the-counter with no relief",
+  "social_hx": "non-smoker, drinks green tea daily, emigrated from Japan 30 years ago, diet high in salted/preserved foods",
+  "clinical_knowledge": {
+    "topic": "Gastric Adenocarcinoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Gastric Adenocarcinoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Urgent two-week-wait referral for diagnostic gastroscopy with biopsy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: feeling full after eating only a few bites and burning upper stomach pain for 4 months",
+      "Key HPI features: 4-month history of persistent gnawing epigastric pain that is not relieved by over-the-counter antacids. Experiences early satiety after eating less than half her normal portion, persistent mild nausea, and distaste for meat. Has lost 7kg over the past 4 months. Denies dysphagia or haematemesis.",
+      "Objective/Exam findings: Abdominal exam: palpate for epigastric mass, check for left supraclavicular lymphadenopathy (Virchow's node) or umbilical nodule (Sister Mary Joseph nodule). Bloods: FBC (microcytic anaemia), iron panel, LFTs. Urgent upper GI endoscopy (OGD) with multiple biopsies of suspicious lesions.",
+      "Relevant background/PMH: H. pylori eradication therapy attempted 12 years ago (unsure of eradication confirmation), mild hypertension",
+      "Current medications: losartan 50mg OD, famotidine 20mg BD over-the-counter with no relief"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Gastric Adenocarcinoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Refractory benign peptic ulcer disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Unintentional weight loss with early satiety and pain unresponsive to acid suppression."
+    ],
+    "management_principles": [
+      "Urgent two-week-wait referral for diagnostic gastroscopy with biopsy",
+      "Staging CT abdomen/thorax if malignant features noted on endoscopy",
+      "Nutritional support consultation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "61F with history of H. pylori presents with 4-month epigastric pain refractory to H2 blockers, early satiety, food aversion, and 7kg weight loss.",
+    "objective": "Abdominal exam: palpate for epigastric mass, check for left supraclavicular lymphadenopathy (Virchow's node) or umbilical nodule (Sister Mary Joseph nodule). Bloods: FBC (microcytic anaemia), iron panel, LFTs. Urgent upper GI endoscopy (OGD) with multiple biopsies of suspicious lesions.",
+    "assessment": "Gastric adenocarcinoma until proven otherwise. DDx: refractory benign peptic ulcer disease, gastric lymphoma (MALT), chronic atrophic gastritis.",
+    "plan": "Urgent two-week-wait referral for diagnostic gastroscopy with biopsy. Staging CT abdomen/thorax if malignant features noted on endoscopy. Nutritional support consultation."
+  },
+  "learning_objectives": [
+    "Identify epidemiological and dietary risk factors for gastric malignancy including H. pylori history and preserved foods",
+    "Recognise subtle upper GI red flags: early satiety, unexplained weight loss, new-onset dyspepsia over age 55",
+    "Assess for metastatic signs on physical examination (Virchow's node, Sister Mary Joseph nodule)",
+    "Guide the patient from seeking empirical symptomatic relief toward urgent diagnostic gastroscopy"
+  ],
+  "teaching": {
+    "diagnosis": "Gastric Adenocarcinoma",
+    "one_liner": "A malignant tumour in the stomach lining causes persistent epigastric pain, early fullness after only a few bites, and steady weight loss that doesn't respond to acid-suppressing medicine.",
+    "differentials": [
+      "Refractory benign peptic ulcer disease",
+      "Gastric lymphoma (MALT)",
+      "Chronic atrophic gastritis"
+    ],
+    "red_flags": [
+      "Unintentional weight loss with early satiety and pain unresponsive to acid suppression"
+    ],
+    "must_ask": [
+      {
+        "objective": "Early satiety",
+        "say": "Do you feel full after only a few bites, less than you used to eat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "full",
+          "bites",
+          "satiety",
+          "portion"
+        ]
+      },
+      {
+        "objective": "Response to antacids",
+        "say": "Have the antacid tablets given you any relief at all?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "antacid",
+          "relief",
+          "tablets"
+        ]
+      },
+      {
+        "objective": "Weight loss amount",
+        "say": "How much weight have you lost, and how quickly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "kilograms",
+          "lost"
+        ]
+      },
+      {
+        "objective": "Distaste for meat",
+        "say": "Have you gone off eating meat, or noticed foods taste different?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "meat",
+          "taste",
+          "appetite",
+          "distaste"
+        ]
+      },
+      {
+        "objective": "H. pylori history",
+        "say": "Have you ever been treated for an H. pylori infection or a stomach ulcer?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "pylori",
+          "ulcer",
+          "eradication",
+          "infection"
+        ]
+      },
+      {
+        "objective": "Vomiting blood or black stools",
+        "say": "Have you vomited any blood, or noticed black, tarry stools?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomit",
+          "blood",
+          "black",
+          "tarry"
+        ]
+      },
+      {
+        "objective": "Diet history",
+        "say": "What kind of food do you eat regularly — a lot of salted or pickled food?",
+        "domains": [],
+        "keywords": [
+          "salted",
+          "pickled",
+          "preserved",
+          "diet"
+        ]
+      }
+    ]
+  }
+}

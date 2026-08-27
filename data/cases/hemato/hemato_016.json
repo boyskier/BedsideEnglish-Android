@@ -1,0 +1,128 @@
+{
+  "id": "hemato_016",
+  "system": "hematology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Ellis",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "heavy periods, fatigue, and craving ice",
+  "hpi_details": "28F presents with extreme fatigue for 6 months. She reports very heavy menstrual periods, changing a pad every 2 hours for 7 days each month. She also reports a strange craving to chew on ice cubes.",
+  "ideas": "thinks she is just stressed",
+  "concerns": "worried about losing too much blood",
+  "expectations": "wants a blood test",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Vegan diet for 1 year",
+  "clinical_knowledge": {
+    "topic": "Iron Deficiency Anemia",
+    "core_concepts": [
+      "Most common cause of anemia worldwide, often due to blood loss (menorrhagia in young women, GI bleed in older adults) or poor diet.",
+      "Pica (craving ice/pagophagia) is a highly specific symptom."
+    ],
+    "diagnostic_clues": [
+      "Heavy periods",
+      "Pica (chewing ice)",
+      "Vegan diet"
+    ],
+    "common_misconceptions": [
+      "Treating the anemia without addressing the underlying cause (menorrhagia)."
+    ],
+    "dangerous_errors": [
+      "Assuming iron deficiency in an older adult or postmenopausal woman is dietary (must rule out colon cancer)."
+    ],
+    "management_principles": [
+      "Oral iron supplementation with vitamin C, gynecology referral for menorrhagia."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "28F with fatigue, pagophagia, and heavy menstrual bleeding.",
+    "objective": "Pale conjunctiva, tachycardia (HR 105). No spooning of nails.",
+    "assessment": "Iron deficiency anemia secondary to menorrhagia and possibly vegan diet.",
+    "plan": "CBC, iron panel, ferritin. Start oral ferrous sulfate. OB/GYN referral."
+  },
+  "learning_objectives": [
+    "Recognize pagophagia and menorrhagia as classic clues for iron deficiency anemia."
+  ],
+  "teaching": {
+    "diagnosis": "Iron Deficiency Anemia",
+    "one_liner": "Fatigue and pagophagia (ice craving) in a young female with heavy menstrual bleeding and a vegan diet.",
+    "differentials": [
+      "Thalassemia trait",
+      "Hypothyroidism"
+    ],
+    "red_flags": [
+      "Occult GI bleeding (not typically in this age group)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Menstrual bleeding history",
+        "say": "How heavy are your periods, and how many pads do you soak through in a day?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "heavy periods",
+          "pads",
+          "bleeding"
+        ]
+      },
+      {
+        "objective": "Pica symptoms",
+        "say": "Have you had any unusual cravings, like craving ice, dirt, or starch?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ice",
+          "pica",
+          "craving"
+        ]
+      },
+      {
+        "objective": "GI blood loss",
+        "say": "Have you noticed any blood in your stool, or black tarry stools?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood in stool",
+          "melena"
+        ]
+      },
+      {
+        "objective": "Diet history",
+        "say": "Can you tell me about your typical diet, especially how much meat or iron-rich food you eat?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diet",
+          "vegetarian",
+          "iron"
+        ]
+      },
+      {
+        "objective": "Fatigue and functional impact",
+        "say": "How is the fatigue affecting your day-to-day activities?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "fatigue",
+          "tired"
+        ]
+      }
+    ]
+  }
+}

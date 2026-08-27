@@ -1,0 +1,257 @@
+{
+  "id": "followup_medication_001",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "medication",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Daniel Kim",
+  "age": 58,
+  "gender": "male",
+  "visit_title": "Blood pressure medication check",
+  "follow_up_reason": "Two-week review after starting amlodipine",
+  "clinician_brief": {
+    "prior_note": "Two weeks ago: office BP 168/96 with intermittent morning headaches. No chest pain, dyspnea, focal weakness or visual loss. Amlodipine was started and home BP monitoring was requested.",
+    "active_problems": [
+      "Hypertension",
+      "Type 2 diabetes"
+    ],
+    "current_medications": [
+      "Amlodipine 5 mg once daily",
+      "Metformin 1000 mg twice daily"
+    ],
+    "previous_plan": [
+      "Start amlodipine 5 mg daily",
+      "Record home BP twice daily",
+      "Reduce dietary sodium",
+      "Review in 2 weeks"
+    ],
+    "results_and_observations": [
+      "Baseline creatinine 1.0 mg/dL",
+      "Potassium 4.2 mmol/L",
+      "No documented drug allergies"
+    ],
+    "today_tasks": [
+      "Assess BP response",
+      "Check adherence and side effects",
+      "Screen for red flags",
+      "Agree on the next treatment and monitoring plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Morning headaches are less frequent. Home BP is usually 145-155/85-92.",
+    "adherence": "Missed two doses in the first week because the routine was unfamiliar.",
+    "treatment_response": "Feels somewhat better but expected the pressure to be normal already.",
+    "side_effects": "New mild swelling around both ankles in the evenings, gone by morning.",
+    "new_symptoms_and_red_flags": "No chest pain, shortness of breath, fainting, severe headache, weakness or visual change.",
+    "agenda": "Wants to know if ankle swelling is dangerous and whether another medicine is needed.",
+    "concern": "Worries that taking several medicines will damage his kidneys.",
+    "preference": "Would prefer a simple once-daily regimen."
+  },
+  "clinical_knowledge": {
+    "topic": "Two-week amlodipine titration check: partial blood pressure response, early adherence gaps, and new dependent ankle edema",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Home BP of 145-155/85-92 mmHg on amlodipine 5 mg is improved from his initial office reading of 168/96 but still above most guideline targets, so this visit is about titrating the plan further, not simply confirming success.",
+      "Bilateral ankle edema that is worse in the evening and gone by morning is a classic, dose-related side effect of dihydropyridine calcium channel blockers like amlodipine, caused by selective arteriolar dilation, not fluid overload or kidney/heart failure.",
+      "Missing two doses in the first week while adjusting to a new routine is common and is best addressed with a practical fix (pairing the pill with an existing daily habit, using a pillbox or reminder) rather than framed as a discipline problem.",
+      "Baseline creatinine 1.0 mg/dL and potassium 4.2 mmol/L were normal before starting amlodipine, which — unlike ACE inhibitors or diuretics — does not require routine kidney/electrolyte monitoring, which is directly relevant to his stated fear about his kidneys."
+    ],
+    "diagnostic_clues": [
+      "Home BP still running 145-155/85-92 mmHg despite improved headaches shows a partial, incomplete response to amlodipine 5 mg that likely needs dose escalation or an added agent.",
+      "New bilateral ankle swelling that resolves overnight is the textbook presentation of amlodipine-associated peripheral edema, distinguishing it from a more concerning cause like heart failure (which typically doesn't fully resolve overnight).",
+      "Two missed doses in the first week, explained by an unfamiliar routine, is a specific and fixable adherence barrier rather than a sign of general non-adherence.",
+      "No chest pain, shortness of breath, fainting, severe headache, weakness, or visual change is reassuring against a hypertensive emergency or a cardiovascular complication needing urgent escalation.",
+      "Improved but not resolved morning headaches track with the partial blood pressure improvement, supporting that the headaches were related to elevated pressure rather than an unrelated cause."
+    ],
+    "common_misconceptions": [
+      "Worries that taking several medicines will damage his kidneys — a common concern with any new prescription, especially in a patient with diabetes; amlodipine itself does not require kidney monitoring the way some other antihypertensives do, which is useful, specific reassurance rather than generic reassurance.",
+      "Feels somewhat better but expected the pressure to be normal already — patients often expect a single medication to immediately normalize blood pressure, when reaching target commonly requires dose titration or combination thertherapy over several visits.",
+      "Wants to know if ankle swelling is dangerous and whether another medicine is needed — reasonable to ask, but amlodipine-related edema is a known, generally benign, dose-related effect that can often be managed by dose adjustment rather than automatically requiring a medication change or workup for heart failure.",
+      "Would prefer a simple once-daily regimen — worth honoring where possible, but should not come at the expense of adequate blood pressure control, especially given his coexisting type 2 diabetes, which raises his overall cardiovascular risk."
+    ],
+    "dangerous_errors": [
+      "Attributing the ankle swelling automatically to heart or kidney failure and ordering an extensive workup, rather than recognizing it as a recognized amlodipine side effect, especially when it's bilateral, mild, and resolves overnight.",
+      "Continuing the current dose without escalating therapy despite home readings still above target, simply because the patient reports feeling somewhat better.",
+      "Not screening for hypertensive emergency symptoms (severe headache, chest pain, visual change, weakness) before treating this as a routine, low-acuity titration visit.",
+      "Dismissing the two missed doses as unimportant without addressing the practical barrier, risking continued undertreatment of his blood pressure."
+    ],
+    "management_principles": [
+      "Confirm today's in-clinic BP alongside his home readings to get a fuller picture before deciding on the next step.",
+      "Address the ankle swelling by explaining it as an expected amlodipine effect and considering dose adjustment if it becomes bothersome, rather than switching medications outright.",
+      "Problem-solve the specific adherence barrier from the first week (unfamiliar routine) with a concrete strategy, such as linking the pill to an existing daily habit.",
+      "Discuss next steps for blood pressure control — such as increasing the amlodipine dose or adding a second agent — while being transparent that amlodipine itself doesn't require kidney monitoring, directly addressing his stated worry."
+    ],
+    "boundaries_and_exceptions": [
+      "If his blood pressure remains significantly above target despite dose optimization and good adherence, or if edema becomes severe or asymmetric, this straightforward titration plan no longer applies and further evaluation (or specialist referral) is warranted.",
+      "In patients with type 2 diabetes and hypertension, guideline blood pressure targets and preferred first-line agents (which may include an ACE inhibitor or ARB for renal protection) can differ from a patient without diabetes, which is relevant to how his regimen may evolve going forward."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Confirm the follow-up agenda and connect it to the prior hypertension plan",
+    "Assess home blood pressure response and headache trajectory",
+    "Explore medication adherence with neutral nonjudgmental wording",
+    "Ask about amlodipine adverse effects including ankle swelling",
+    "Screen for hypertensive emergency symptoms",
+    "Address medication and kidney concerns in plain English",
+    "Agree on a concrete treatment monitoring and safety-net plan"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Confirm the follow-up agenda and connect it to the prior hypertension plan",
+      "category": "Agenda",
+      "question": "Since we started the blood-pressure medicine, what would you most like us to review today?"
+    },
+    {
+      "objective": "Assess home blood pressure response and headache trajectory",
+      "category": "Interval change",
+      "question": "What have your home blood-pressure readings been, and how have the morning headaches changed?"
+    },
+    {
+      "objective": "Explore medication adherence with neutral nonjudgmental wording",
+      "category": "Adherence",
+      "question": "Many people miss a dose while building a new routine. How has taking it every day worked for you?"
+    },
+    {
+      "objective": "Ask about amlodipine adverse effects including ankle swelling",
+      "category": "Tolerance",
+      "question": "Have you noticed any new symptoms since starting amlodipine, such as swelling around the ankles?"
+    },
+    {
+      "objective": "Screen for hypertensive emergency symptoms",
+      "category": "Safety",
+      "question": "Have you had severe headache, chest pain, shortness of breath, weakness, or a change in vision?"
+    },
+    {
+      "objective": "Address medication and kidney concerns in plain English",
+      "category": "Concerns",
+      "question": "What concerns do you have about the medicine or its effect on your kidneys?"
+    },
+    {
+      "objective": "Agree on a concrete treatment monitoring and safety-net plan",
+      "category": "Shared plan",
+      "question": "Which next step feels workable, and when should we review your readings or seek urgent help?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Confirm the follow-up agenda and connect it to the prior hypertension plan",
+      "keywords": [
+        "last visit",
+        "last time",
+        "since",
+        "agenda",
+        "today",
+        "we started",
+        "two weeks ago"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess home blood pressure response and headache trajectory",
+      "keywords": [
+        "home blood pressure",
+        "readings",
+        "reading",
+        "numbers",
+        "record",
+        "monitor",
+        "headache",
+        "morning"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explore medication adherence with neutral nonjudgmental wording",
+      "keywords": [
+        "miss",
+        "missed",
+        "forget",
+        "forgot",
+        "remember",
+        "skip",
+        "skipped",
+        "doses"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Ask about amlodipine adverse effects including ankle swelling",
+      "keywords": [
+        "side effects",
+        "ankle",
+        "swelling",
+        "swollen",
+        "puffy",
+        "legs",
+        "feet",
+        "amlodipine"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for hypertensive emergency symptoms",
+      "keywords": [
+        "chest pain",
+        "shortness of breath",
+        "breathless",
+        "faint",
+        "fainting",
+        "vision",
+        "blurred",
+        "weakness",
+        "numbness",
+        "severe headache"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address medication and kidney concerns in plain English",
+      "keywords": [
+        "kidney",
+        "kidneys",
+        "worry",
+        "worried",
+        "concern",
+        "damage",
+        "harm",
+        "safe",
+        "blood test"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on a concrete treatment monitoring and safety-net plan",
+      "keywords": [
+        "plan",
+        "agree",
+        "increase",
+        "add another",
+        "come back",
+        "review in",
+        "call",
+        "warning signs",
+        "emergency"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "58M at two-week hypertension follow-up. Home BP mostly 145-155/85-92; headaches improved. Missed two early doses. Reports mild dependent bilateral ankle edema. No emergency symptoms. Concerned about kidney harm and regimen complexity.",
+    "objective": "Baseline creatinine 1.0 mg/dL and potassium 4.2 mmol/L. Current in-clinic BP must be obtained.",
+    "assessment": "Hypertension improving but likely above goal; early imperfect adherence and probable amlodipine-associated dependent edema.",
+    "plan": "Verify office BP and edema, reinforce adherence, discuss options and kidney monitoring, agree on regimen, provide red-flag advice and arrange follow-up."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Blood pressure medication check",
+    "one_liner": "Clinical scenario for evaluation and management of Blood pressure medication check."
+  }
+}

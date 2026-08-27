@@ -1,0 +1,127 @@
+{
+  "id": "ns_044",
+  "system": "ns",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Perez",
+  "age": 34,
+  "gender": "female",
+  "chief_complaint": "headaches, transient vision loss, and bilateral papilledema",
+  "hpi_details": "A 34-year-old female presents to the clinic with headaches, transient visual obscurations, and bilateral papilledema that have gradually worsened.",
+  "ideas": "thinks it might be related to pseudotumor",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "urgent_intracranial_hypertension_workup",
+    "title": "Urgent MRI/MRV and opening-pressure assessment",
+    "order_terms": ["MRI brain", "brain MRI", "MRV", "MR venography", "lumbar puncture", "opening pressure"],
+    "availability_message": "Urgent MRI/MRV and lumbar puncture results are now available. Lumbar puncture was performed only after imaging excluded a mass lesion and venous sinus thrombosis.",
+    "results": [
+      {"id": "mri_mrv", "test": "Brain MRI with MR venography", "value": "No intracranial mass, hydrocephalus, or venous sinus thrombosis; partially empty sella and bilateral transverse sinus narrowing", "flag": "abnormal"},
+      {"id": "opening_pressure", "test": "CSF opening pressure", "value": "34", "unit": "cm H2O", "reference_range": "10-25", "flag": "high", "note": "Measured in the lateral decubitus position; CSF constituents are normal."}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Idiopathic Intracranial Hypertension (Pseudotumor Cerebri) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Idiopathic Intracranial Hypertension (Pseudotumor Cerebri) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Pseudotumor Cerebri: Brain MRI/MRV, lumbar puncture, Acetazolamide, weight loss, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: headaches, transient vision loss, and bilateral papilledema",
+      "Key HPI features: A 34-year-old female presents to the clinic with headaches, transient visual obscurations, and bilateral papilledema that have gradually worsened.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pseudotumor Cerebri.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Idiopathic Intracranial Hypertension (Pseudotumor Cerebri).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cerebral venous sinus thrombosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Progressive vision loss."
+    ],
+    "management_principles": [
+      "Plan for Pseudotumor Cerebri: Brain MRI/MRV, lumbar puncture, Acetazolamide, weight loss",
+      "Arrange urgent ophthalmology and neurology assessment to protect vision",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 34-year-old female presents with headaches and transient visual obscurations that have gradually worsened. Bilateral papilledema is present on examination.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pseudotumor Cerebri.",
+    "assessment": "Condition highly suspicious for Pseudotumor Cerebri.",
+    "plan": "Plan for Pseudotumor Cerebri: Brain MRI/MRV, lumbar puncture, Acetazolamide, weight loss. Arrange urgent ophthalmology and neurology assessment to protect vision. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pseudotumor Cerebri",
+    "Select appropriate diagnostic workup for Pseudotumor Cerebri",
+    "Implement evidence-based management plan: Brain MRI/MRV, lumbar puncture, Acetazolamide, weight loss"
+  ],
+  "teaching": {
+    "diagnosis": "Idiopathic Intracranial Hypertension (Pseudotumor Cerebri)",
+    "one_liner": "Elevated brain pressure without a mass, causing headaches, transient vision loss, and bilateral papilledema.",
+    "differentials": [
+      "Cerebral venous sinus thrombosis"
+    ],
+    "red_flags": [
+      "Progressive vision loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Headache pattern",
+        "say": "Is the headache worse in the morning or with straining?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Visual symptoms",
+        "say": "Do you have brief episodes of vision going dark?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Weight",
+        "say": "Have you gained weight recently?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Tinnitus",
+        "say": "Any whooshing sound in your ears?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Any new medications, like acne treatments or birth control?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

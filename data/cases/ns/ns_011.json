@@ -1,0 +1,143 @@
+{
+  "id": "ns_011",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 52,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating headache, bilateral visual loss, ophthalmoplegia, and cardiovascular collapse",
+  "hpi_details": "52M with known pituitary macroadenoma presenting with acute tumor hemorrhage causing bitemporal blindness, CN III palsy, and acute adrenal insufficiency requiring stress-dose steroids.",
+  "ideas": "thinks this is related to pituitary apoplexy acute crisis",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{
+    "id": "known_pituitary_macroadenoma",
+    "test": "Prior sellar MRI",
+    "value": "Pituitary macroadenoma",
+    "flag": "abnormal",
+    "collected_at": "Before today's encounter"
+  }],
+  "investigation_events": [{
+    "id": "stat_pituitary_apoplexy_mri",
+    "title": "Emergency sellar MRI",
+    "order_terms": ["sellar MRI", "pituitary MRI", "MRI sella", "MRI brain"],
+    "availability_message": "The emergency sellar MRI result is now available. IV fluids and stress-dose hydrocortisone must not be delayed for imaging or hormone results.",
+    "results": [{"id": "sellar_mri", "test": "MRI of the sellar region", "value": "Acute hemorrhage and infarction within the known pituitary macroadenoma, with optic chiasm compression and left cavernous sinus extension", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Pituitary Apoplexy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pituitary Apoplexy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management prioritizes resuscitation and immediate glucocorticoid replacement for suspected adrenal insufficiency, with urgent endocrine and neurosurgical assessment, adapted to clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating headache, bilateral visual loss, ophthalmoplegia, and cardiovascular collapse",
+      "Key HPI features: 52M with known pituitary macroadenoma presenting with acute tumor hemorrhage causing bitemporal blindness, CN III palsy, and acute adrenal insufficiency requiring stress-dose steroids.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Pituitary Apoplexy Acute Crisis.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pituitary Apoplexy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Subarachnoid hemorrhage without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as hypotension or collapse suggesting adrenal crisis; give stress-dose glucocorticoids immediately after drawing blood for cortisol if doing so does not delay treatment."
+    ],
+    "management_principles": [
+      "Stabilize airway, breathing, circulation, and hypotension; give intravenous fluids and stress-dose hydrocortisone immediately when adrenal insufficiency is suspected.",
+      "Obtain serum cortisol and pituitary laboratory studies before glucocorticoids only if this does not delay treatment; obtain urgent MRI of the sellar region when stable.",
+      "Urgently involve endocrinology, ophthalmology, and neurosurgery; consider prompt transsphenoidal decompression for severe or deteriorating visual or neurologic deficits.",
+      "Monitor fluid balance, electrolytes, glucose, and visual and neurologic status in a high-acuity setting."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Pituitary Apoplexy Acute Crisis: sudden excruciating headache, bilateral visual loss, ophthalmoplegia, and cardiovascular collapse. 52M with known pituitary macroadenoma presenting with acute tumor hemorrhage causing bitemporal blindness, CN III palsy, and acute adrenal insufficiency requiring stress-dose steroids.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Pituitary Apoplexy Acute Crisis.",
+    "assessment": "Clinical presentation highly suggestive of Pituitary Apoplexy Acute Crisis.",
+    "plan": "Stabilize airway, breathing, circulation, and hypotension; give intravenous fluids and stress-dose hydrocortisone immediately when adrenal insufficiency is suspected. Obtain serum cortisol and pituitary laboratory studies before glucocorticoids only if this does not delay treatment; obtain urgent MRI of the sellar region when stable. Urgently involve endocrinology, ophthalmology, and neurosurgery; consider prompt transsphenoidal decompression for severe or deteriorating visual or neurologic deficits. Monitor fluid balance, electrolytes, glucose, and visual and neurologic status in a high-acuity setting."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Pituitary Apoplexy Acute Crisis",
+    "Formulate prioritized differential diagnosis for sudden excruciating headache, bilateral visual loss, ophthalmoplegia, and cardiovascular collapse",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Pituitary Apoplexy",
+    "one_liner": "Sudden hemorrhage or infarction into a pituitary tumor can cause severe headache, sudden vision loss, eye movement paralysis, and life-threatening cortisol deficiency from acute pituitary failure; give stress-dose glucocorticoids immediately when adrenal crisis is suspected.",
+    "differentials": [
+      "Subarachnoid hemorrhage",
+      "Cavernous sinus thrombosis",
+      "Bacterial meningitis"
+    ],
+    "red_flags": [
+      "Hypotension or collapse suggesting adrenal crisis requires immediate stress-dose glucocorticoids; do not wait for imaging"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and severity",
+        "say": "How suddenly did the headache and vision loss start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Vision symptoms",
+        "say": "How has your vision changed; are the sides of your vision affected?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "bitemporal",
+          "vision loss"
+        ]
+      },
+      {
+        "objective": "Eye movement",
+        "say": "Can you move your eyes normally, or is one eye stuck?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "double vision",
+          "eye movement"
+        ]
+      },
+      {
+        "objective": "Known pituitary tumor",
+        "say": "Have you been told you have a pituitary tumor before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Weakness and dizziness",
+        "say": "Do you feel weak or lightheaded, like you might faint?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "cs_004",
+  "system": "cardiothoracic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Davis",
+  "age": 62,
+  "gender": "male",
+  "chief_complaint": "severe crushing chest pain, triple-vessel coronary artery disease on angiogram, and diabetes requiring bypass evaluation",
+  "hpi_details": "62M with type 2 diabetes admitted to cardiac care unit with unstable angina. Coronary angiography performed yesterday revealed severe multi-vessel coronary artery disease: 90% proximal left anterior descending (LAD) stenosis, 85% circumflex artery stenosis, and 95% right coronary artery (RCA) stenosis with reduced left ventricular ejection fraction (40%). Interventional cardiology requested cardiothoracic surgery consultation for surgical revascularization.",
+  "ideas": "thinks cardiac stents are easier and wants to avoid open heart surgery if possible",
+  "concerns": "worried about the risks of heart-lung bypass machine and sternum recovery",
+  "expectations": "wants thorough explanation of why bypass surgery is superior to stents for his specific blockages",
+  "pmh": "Type 2 Diabetes Mellitus (insulin-requiring), Hypertension, CAD",
+  "medications": "Insulin glargine 30 units QHS, Aspirin 81mg, Atorvastatin 80mg, Metoprolol 50mg BID",
+  "social_hx": "Accountant, non-smoker",
+  "available_results": [
+    {
+      "id": "angiogram_three_vessel_cad",
+      "test": "Coronary angiography",
+      "value": "90% proximal LAD, 85% circumflex, and 95% right coronary artery stenoses; SYNTAX score 34",
+      "unit": "",
+      "reference_range": "No obstructive coronary disease",
+      "flag": "critical",
+      "collected_at": "Yesterday"
+    },
+    {
+      "id": "lv_function_cabg_evaluation",
+      "test": "Left ventricular ejection fraction",
+      "value": "40",
+      "unit": "%",
+      "reference_range": "50-70",
+      "flag": "low",
+      "collected_at": "Preoperative assessment"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Three-Vessel Coronary Artery Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Three-Vessel Coronary Artery Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Recommend Coronary Artery Bypass Graft (CABG) x3-4 vessels over Percutaneous Coronary Intervention (PCI) based on FREEDOM and SYNTAX clinical trial evidence demonstrating superior long-term survival and reduced myocardial infarction/revascularization rates in diabetic multi-vessel disease, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe crushing chest pain, triple-vessel coronary artery disease on angiogram, and diabetes requiring bypass evaluation",
+      "Key HPI features: 62M with type 2 diabetes admitted to cardiac care unit with unstable angina. Coronary angiography performed yesterday revealed severe multi-vessel coronary artery disease: 90% proximal left anterior descending (LAD) stenosis, 85% circumflex artery stenosis, and 95% right coronary artery (RCA) stenosis with reduced left ventricular ejection fraction (40%). Interventional cardiology requested cardiothoracic surgery consultation for surgical revascularization.",
+      "Objective/Exam findings: Vitals: HR 66, BP 128/78. Chest clear to auscultation. SYNTAX score calculated from angiogram is 34 (high anatomical complexity). LVEF 40% with anterior hypokinesis. Allen test confirms patent palmar arch of left arm suitable for radial artery harvest. Bilateral lower extremity venous Doppler confirms great saphenous veins patent without varicosities.",
+      "Relevant background/PMH: Type 2 Diabetes Mellitus (insulin-requiring), Hypertension, CAD",
+      "Current medications: Insulin glargine 30 units QHS, Aspirin 81mg, Atorvastatin 80mg, Metoprolol 50mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Three-Vessel Coronary Artery Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Single/double-vessel disease (would favor PCI) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ongoing rest angina — suggests unstable disease needing urgent revascularization."
+    ],
+    "management_principles": [
+      "Recommend Coronary Artery Bypass Graft (CABG) x3-4 vessels over Percutaneous Coronary Intervention (PCI) based on FREEDOM and SYNTAX clinical trial evidence demonstrating superior long-term survival and reduced myocardial infarction/revascularization rates in diabetic multi-vessel disease",
+      "Surgical plan: Left Internal Mammary Artery (LIMA) to LAD (gold standard for long-term patency), plus saphenous vein/radial artery grafts to circumflex and RCA targets",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: severe crushing chest pain, triple-vessel coronary artery disease on angiogram, and diabetes requiring bypass evaluation\n\n62M with type 2 diabetes admitted to cardiac care unit with unstable angina. Coronary angiography performed yesterday revealed severe multi-vessel coronary artery disease: 90% proximal left anterior descending (LAD) stenosis, 85% circumflex artery stenosis, and 95% right coronary artery (RCA) stenosis with reduced left ventricular ejection fraction (40%). Interventional cardiology requested cardiothoracic surgery consultation for surgical revascularization.",
+    "objective": "Vitals: HR 66, BP 128/78. Chest clear to auscultation. SYNTAX score calculated from angiogram is 34 (high anatomical complexity). LVEF 40% with anterior hypokinesis. Allen test confirms patent palmar arch of left arm suitable for radial artery harvest. Bilateral lower extremity venous Doppler confirms great saphenous veins patent without varicosities.",
+    "assessment": "Severe Three-Vessel Coronary Artery Disease in an insulin-dependent diabetic patient with reduced LVEF (SYNTAX score > 33).",
+    "plan": "Recommend Coronary Artery Bypass Graft (CABG) x3-4 vessels over Percutaneous Coronary Intervention (PCI) based on FREEDOM and SYNTAX clinical trial evidence demonstrating superior long-term survival and reduced myocardial infarction/revascularization rates in diabetic multi-vessel disease. Surgical plan: Left Internal Mammary Artery (LIMA) to LAD (gold standard for long-term patency), plus saphenous vein/radial artery grafts to circumflex and RCA targets."
+  },
+  "learning_objectives": [
+    "Explain evidence-based guidelines (FREEDOM and SYNTAX trials) favoring CABG over PCI in diabetic patients with multivessel coronary disease and complex anatomy",
+    "Understand the superior long-term patency rates and survival benefit of using the Left Internal Mammary Artery (LIMA) grafted to the LAD artery over venous conduits",
+    "Perform pre-operative assessment of conduit vessels (radial artery Allen test, great saphenous vein evaluation)",
+    "Outline perioperative management of glycemic control, antiplatelet therapy, and renal protection during cardiac surgery"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Three-Vessel Coronary Artery Disease",
+    "one_liner": "Severe blockages in all three major coronary arteries, especially in a diabetic patient with reduced heart pumping function, where bypass surgery has a proven survival advantage over stenting.",
+    "differentials": [
+      "Single/double-vessel disease (would favor PCI)",
+      "Non-ischemic cardiomyopathy"
+    ],
+    "red_flags": [
+      "Ongoing rest angina — suggests unstable disease needing urgent revascularization"
+    ],
+    "must_ask": [
+      {
+        "objective": "Angina pattern",
+        "say": "How severe is your chest pain, and does it happen with minimal activity now?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "unstable",
+          "minimal exertion"
+        ]
+      },
+      {
+        "objective": "Diabetes history",
+        "say": "How long have you had diabetes, and is it insulin-dependent?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "insulin"
+        ]
+      },
+      {
+        "objective": "Prior cardiac interventions",
+        "say": "Have you had a stent or angiogram before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "stent",
+          "angiogram"
+        ]
+      },
+      {
+        "objective": "Concerns about surgery vs stent",
+        "say": "What worries you about having open heart surgery instead of stents?",
+        "domains": [
+          "concerns"
+        ]
+      },
+      {
+        "objective": "Functional capacity",
+        "say": "How far can you walk before the chest pain starts?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

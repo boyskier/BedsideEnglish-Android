@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Paths exposed to other apps via the FileProvider (androidx.core.content.FileProvider),
+  used to share the de-identified progress cards rendered by ShareCardImage. Only the
+  shared_cards/ cache subdirectory is exposed — nothing else in cacheDir or filesDir.
+-->
+<paths xmlns:android="http://schemas.android.com/apk/res/android">
+    <cache-path name="shared_cards" path="shared_cards/" />
+</paths>

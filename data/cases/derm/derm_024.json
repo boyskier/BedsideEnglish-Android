@@ -1,0 +1,142 @@
+{
+  "id": "derm_024",
+  "system": "dermatology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Yoon",
+  "age": 24,
+  "gender": "male",
+  "chief_complaint": "annular scaly red plaque with raised borders on the arm",
+  "hpi_details": "24M athlete reports a circular, red, scaly skin patch on his left forearm that has been expanding for 2 weeks. The patch has a raised, scaly outer border with a clearer normal-appearing center.",
+  "ideas": "thinks he has ringworm from the gym",
+  "concerns": "worried about spreading it to teammates",
+  "expectations": "wants antifungal ointment",
+  "pmh": "No significant history",
+  "medications": "None",
+  "social_hx": "Wrestler, non-smoker",
+  "investigation_events": [
+    {
+      "id": "lesion_koh_prep",
+      "title": "KOH preparation of the active border",
+      "order_terms": ["koh", "potassium hydroxide", "skin scraping", "fungal scraping", "fungal test"],
+      "availability_message": "The KOH preparation result is now available.",
+      "results": [
+        {"id": "tinea_corporis_koh", "test": "Potassium hydroxide preparation", "value": "Branching septate hyphae seen", "flag": "abnormal", "specimen": "Scale from active lesion border"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Tinea Corporis (Ringworm) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tinea Corporis (Ringworm) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes an evidence-based diagnostic and therapeutic protocol for Tinea Corporis (Ringworm), superficial dermatophyte infection, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: annular scaly red plaque with raised borders on the arm",
+      "Key HPI features: 24M athlete reports a circular, red, scaly skin patch on his left forearm that has been expanding for 2 weeks. The patch has a raised, scaly outer border with a clearer normal-appearing center.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Tinea Corporis (Ringworm), superficial dermatophyte infection.",
+      "Relevant background/PMH: No significant history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tinea Corporis (Ringworm).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Nummular eczema without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: No improvement (or worsening) after appropriate topical antifungal therapy — reconsider the diagnosis or ask about prior topical steroid use masking findings."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Tinea Corporis (Ringworm), superficial dermatophyte infection: perform potassium hydroxide (KOH) prep (look for septate hyphae)",
+      "Prescribe topical Terbinafine or Clotrimazole cream BID for 2 weeks"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: annular scaly red plaque with raised borders on the arm\n\n24M athlete reports a circular, red, scaly skin patch on his left forearm that has been expanding for 2 weeks. The patch has a raised, scaly outer border with a clearer normal-appearing center.",
+    "objective": "Complete vital signs and focused physical examination. Evaluate for pertinent signs.",
+    "assessment": "Clinical presentation highly suggestive of Tinea Corporis (Ringworm), superficial dermatophyte infection.",
+    "plan": "Perform potassium hydroxide (KOH) prep (look for septate hyphae). Prescribe topical Terbinafine or Clotrimazole cream BID for 2 weeks. Avoid topical steroids. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Tinea Corporis (Ringworm), superficial dermatophyte infection.",
+    "Formulate prioritized differential diagnosis for annular scaly red plaque with raised borders on the arm",
+    "Select appropriate laboratory and imaging studies for dermatology",
+    "Implement evidence-based acute and long-term management strategies for Tinea Corporis (Ringworm), superficial dermatophyte infection."
+  ],
+  "teaching": {
+    "diagnosis": "Tinea Corporis (Ringworm)",
+    "one_liner": "A superficial dermatophyte fungal infection causing an expanding annular plaque with an active, scaly raised border and central clearing — confirmed by KOH prep and treated with topical antifungals, never steroids alone.",
+    "differentials": [
+      "Nummular eczema",
+      "Pityriasis rosea (herald patch)",
+      "Erythema migrans (Lyme disease)"
+    ],
+    "red_flags": [
+      "No improvement (or worsening) after appropriate topical antifungal therapy — reconsider the diagnosis or ask about prior topical steroid use masking findings",
+      "Deep, boggy, follicular nodules (Majocchi granuloma) — needs oral antifungal therapy",
+      "Widespread or recurrent disease — screen for diabetes or immunocompromise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Border and center appearance",
+        "say": "Does the patch have a raised, scaly outer edge with a clearer center?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "raised border",
+          "central clearing"
+        ]
+      },
+      {
+        "objective": "Growth pattern",
+        "say": "Has it been expanding outward?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks"
+        ]
+      },
+      {
+        "objective": "Exposure source",
+        "say": "Have you been in contact with gym equipment, mats, or animals?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "gym"
+        ]
+      },
+      {
+        "objective": "Itching",
+        "say": "Is it itchy?",
+        "domains": [
+          "character"
+        ]
+      }
+    ]
+  }
+}

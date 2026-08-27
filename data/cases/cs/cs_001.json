@@ -1,0 +1,162 @@
+{
+  "id": "cs_001",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating tearing chest pain radiating to mid-back between shoulder blades accompanied by right arm numbness",
+  "hpi_details": "59M with poorly controlled hypertension experiences abrupt onset of agonizing 10/10 'tearing and ripping' anterior chest pain radiating directly through to his thoracic spine between his scapulae. Accompanied by diaphoresis, dizziness, and numbness/weakness in right arm. Arrives in ED looking pale and diaphoretic.",
+  "ideas": "thinks he is having a massive heart attack and will die instantly",
+  "concerns": "worried because his right arm feels weak and his blood pressure reading is different in each arm",
+  "expectations": "wants immediate pain medicine and emergency heart intervention",
+  "pmh": "Hypertension for 15 years, Dyslipidemia",
+  "medications": "Amlodipine 10mg daily (non-adherent)",
+  "social_hx": "Truck driver, 40 pack-year smoking history",
+  "investigation_events": [
+    {
+      "id": "type_a_dissection_cta",
+      "title": "Emergency CT angiography of the aorta",
+      "order_terms": ["CT angiography", "CTA", "aortic CT", "aortic angiography"],
+      "availability_message": "The emergency CT angiography report is now available.",
+      "results": [
+        {
+          "id": "cta_type_a_brachiocephalic",
+          "test": "CT angiography of chest and abdomen",
+          "value": "Type A dissection from the ascending aorta through the arch and descending thoracic aorta, involving the brachiocephalic trunk and right coronary ostium",
+          "unit": "",
+          "reference_range": "No aortic dissection",
+          "flag": "critical",
+          "collected_at": "Emergency imaging"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Type A Aortic Dissection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Type A Aortic Dissection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT surgical emergency: immediate cardiothoracic surgery operating room transfer for emergency median sternotomy, ascending aortic replacement with synthetic graft, and aortic valve resuspension/replacement, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating tearing chest pain radiating to mid-back between shoulder blades accompanied by right arm numbness",
+      "Key HPI features: 59M with poorly controlled hypertension experiences abrupt onset of agonizing 10/10 'tearing and ripping' anterior chest pain radiating directly through to his thoracic spine between his scapulae. Accompanied by diaphoresis, dizziness, and numbness/weakness in right arm. Arrives in ED looking pale and diaphoretic.",
+      "Objective/Exam findings: Vitals: HR 112, BP Right Arm 188/104 mmHg, BP Left Arm 132/76 mmHg (significant >20 mmHg inter-arm discrepancy), RR 24. Palpable right radial pulse markedly weaker than left. Early diastolic murmur of aortic regurgitation audible at right upper sternal border. ECG shows left ventricular hypertrophy without acute ST-elevation. STAT CT Angiography (CTA) of chest/abdomen confirms Acute Stanford Type A (DeBakey Type I) Aortic Dissection originating in the ascending aorta just above the sinotubular junction, extending across the aortic arch into the descending thoracic aorta with involvement of the brachiocephalic trunk and right coronary ostium.",
+      "Relevant background/PMH: Hypertension for 15 years, Dyslipidemia",
+      "Current medications: Amlodipine 10mg daily (non-adherent)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Type A Aortic Dissection.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Blood pressure or pulse difference between the two arms — a hallmark finding."
+    ],
+    "management_principles": [
+      "STAT surgical emergency: immediate cardiothoracic surgery operating room transfer for emergency median sternotomy, ascending aortic replacement with synthetic graft, and aortic valve resuspension/replacement",
+      "Prior to OR: initiate continuous IV Esmolol infusion to lower heart rate (<60 bpm) and dP/dt FIRST, then add IV Nicardipine/Nitroprusside to lower systolic BP (<120 mmHg)",
+      "Place an invasive arterial line in a limb with reliable perfusion, without delaying definitive surgical management"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden excruciating tearing chest pain radiating to mid-back between shoulder blades accompanied by right arm numbness\n\n59M with poorly controlled hypertension experiences abrupt onset of agonizing 10/10 'tearing and ripping' anterior chest pain radiating directly through to his thoracic spine between his scapulae. Accompanied by diaphoresis, dizziness, and numbness/weakness in right arm. Arrives in ED looking pale and diaphoretic.",
+    "objective": "Vitals: HR 112, BP Right Arm 188/104 mmHg, BP Left Arm 132/76 mmHg (significant >20 mmHg inter-arm discrepancy), RR 24. Palpable right radial pulse markedly weaker than left. Early diastolic murmur of aortic regurgitation audible at right upper sternal border. ECG shows left ventricular hypertrophy without acute ST-elevation. STAT CT Angiography (CTA) of chest/abdomen confirms Acute Stanford Type A (DeBakey Type I) Aortic Dissection originating in the ascending aorta just above the sinotubular junction, extending across the aortic arch into the descending thoracic aorta with involvement of the brachiocephalic trunk and right coronary ostium.",
+    "assessment": "Acute Stanford Type A Aortic Dissection complicated by severe hypertension and right brachiocephalic malperfusion.",
+    "plan": "STAT surgical emergency: immediate cardiothoracic surgery operating room transfer for emergency median sternotomy, ascending aortic replacement with synthetic graft, and aortic valve resuspension/replacement. Prior to OR: initiate continuous IV Esmolol infusion to lower heart rate (<60 bpm) and dP/dt FIRST, then add IV Nicardipine/Nitroprusside to lower systolic BP (<120 mmHg). Place an invasive arterial line in a limb with reliable perfusion, without delaying definitive surgical management."
+  },
+  "learning_objectives": [
+    "Recognize clinical triad of acute aortic dissection (abrupt tearing chest/back pain, pulse/blood pressure deficit, mediastinal widening)",
+    "Understand the strict pharmacodynamic rule of beta-blockade (Esmolol) BEFORE vasodilator therapy (Nicardipine) to prevent reflex tachycardia and shear stress (dP/dt)",
+    "Classify aortic dissections using Stanford (Type A vs B) and DeBakey systems to guide surgical vs medical management",
+    "Outline operative steps and priorities during emergency repair of ascending Type A dissections"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Type A Aortic Dissection",
+    "one_liner": "A tear in the aortic wall extends through the ascending aorta, causing sudden tearing chest pain radiating to the back, unequal pulses or blood pressures between arms, and a true surgical emergency.",
+    "differentials": [
+      "Acute myocardial infarction",
+      "Pulmonary embolism",
+      "Musculoskeletal chest pain"
+    ],
+    "red_flags": [
+      "Blood pressure or pulse difference between the two arms — a hallmark finding",
+      "Any new neurological symptoms — suggests malperfusion of a major branch artery"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character and radiation",
+        "say": "Does the pain feel like tearing or ripping, and does it go straight through to your back?",
+        "domains": [
+          "character",
+          "radiation"
+        ],
+        "keywords": [
+          "tearing",
+          "ripping",
+          "back"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "Did the pain start suddenly, all at once?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sudden",
+          "abrupt"
+        ]
+      },
+      {
+        "objective": "Arm symptoms",
+        "say": "Does one arm feel weak or numb compared to the other?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "arm weakness",
+          "numbness"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "How long have you had high blood pressure, and how controlled has it been?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Have you felt sweaty or dizzy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "diaphoresis",
+          "dizzy"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "id": "chart_explain_pneumonia",
+  "system": "chart_drills",
+  "difficulty": "beginner",
+  "eval_template": "chart_speech_drill",
+  "patient_name": "Ms. Maria Gomez",
+  "chief_complaint": "explain pneumonia results to patient",
+  "station_minutes": 5,
+  "kickoff_text": "Doctor, the nurse said my x-ray and blood test are back. What do they mean?",
+  "persona_override": "You are Ms. Maria Gomez, a worried patient in urgent care. The learner can see your chart and must explain the results in patient-friendly English. Ask what the chest x-ray and white blood cell count mean, whether this is dangerous, and what the antibiotics are for. If they use jargon like infiltrate, leukocytosis, or oxygen saturation without explaining it, ask them to say it in simpler words. Do not provide chart facts yourself.",
+  "chart_task": {
+    "mode": "chart_to_patient",
+    "title": "Explain results to patient: community-acquired pneumonia",
+    "audience": "patient",
+    "student_goal": "Use the chart to explain the diagnosis, abnormal results, and plan in plain English.",
+    "must_say": [
+      "the x-ray suggests pneumonia in the right lower lung",
+      "white blood cells are high, which can happen with infection",
+      "oxygen level is 94% on room air and will be monitored",
+      "antibiotics and fluids are planned",
+      "check understanding and invite questions"
+    ]
+  },
+  "clinical_chart": {
+    "patient": {
+      "name": "Ms. Maria Gomez",
+      "age": 48,
+      "sex": "female",
+      "location": "Urgent care room 2"
+    },
+    "chief_complaint": "Fever, cough, and right-sided chest discomfort",
+    "triage_note": "3 days of productive cough with yellow sputum, fever, chills, mild shortness of breath. No known drug allergies.",
+    "vitals": [
+      {
+        "label": "BP",
+        "value": "118/72 mmHg"
+      },
+      {
+        "label": "HR",
+        "value": "102/min",
+        "flag": "high"
+      },
+      {
+        "label": "RR",
+        "value": "24/min",
+        "flag": "high"
+      },
+      {
+        "label": "SpO2",
+        "value": "94% on room air",
+        "flag": "low"
+      },
+      {
+        "label": "Temp",
+        "value": "38.5 C",
+        "flag": "high"
+      }
+    ],
+    "labs": [
+      {
+        "test": "WBC",
+        "value": "15.2 x10^9/L",
+        "range": "4.0-11.0",
+        "flag": "high"
+      },
+      {
+        "test": "Creatinine",
+        "value": "0.8 mg/dL"
+      },
+      {
+        "test": "Lactate",
+        "value": "1.4 mmol/L"
+      }
+    ],
+    "studies": [
+      "Chest x-ray: right lower lobe infiltrate consistent with pneumonia"
+    ],
+    "orders": [
+      "Start oral amoxicillin",
+      "Acetaminophen for fever",
+      "Oral fluids",
+      "Return precautions: worsening breathing, chest pain, confusion, persistent fever"
+    ]
+  },
+  "phrase_categories": [
+    {
+      "name": "Plain-language explanations",
+      "phrases": [
+        "The x-ray shows a small area of infection in the lower part of your right lung.",
+        "Your white blood cell count is high, which often means your body is fighting an infection.",
+        "Your oxygen level is a little lower than ideal, so we will keep an eye on your breathing.",
+        "I want to check that I explained this clearly. What questions do you have?"
+      ]
+    },
+    {
+      "name": "Avoid jargon",
+      "phrases": [
+        "Instead of infiltrate, say area of infection on the x-ray.",
+        "Instead of leukocytosis, say a high white blood cell count.",
+        "Instead of antibiotics coverage, say medicine to treat the infection."
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Community-acquired pneumonia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Community-acquired pneumonia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Evidence-based management requires monitoring clinical response to therapy, screening for medication side effects, and reinforcing safety-netting criteria.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: explain pneumonia results to patient",
+      "Clinical presentation and history characteristic of Community-acquired pneumonia"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Community-acquired pneumonia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions."
+    ],
+    "management_principles": [
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Turn chart and lab language into patient-friendly English",
+    "Explain abnormal results without jargon",
+    "Use teach-back or a question check at the end"
+  ],
+  "hpi_details": "",
+  "gender": "female",
+  "age": 48,
+  "teaching": {
+    "diagnosis": "community-acquired pneumonia",
+    "one_liner": "Clinical scenario for evaluation and management of community-acquired pneumonia."
+  }
+}

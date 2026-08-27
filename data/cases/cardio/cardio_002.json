@@ -1,0 +1,169 @@
+{
+  "id": "cardio_002",
+  "system": "cardiology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Park",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "swollen ankles and shortness of breath for 3 weeks",
+  "hpi_details": "bilateral pitting oedema to mid-shin, orthopnoea (3 pillows), PND, dyspnoea on minimal exertion (walking 20 metres), no chest pain",
+  "ideas": "thinks her old heart condition is acting up again",
+  "concerns": "worried she'll end up in hospital again like last year",
+  "expectations": "wants her water tablets reviewed",
+  "pmh": "heart failure (EF 35%, diagnosed 2 years ago), atrial fibrillation, hypertension",
+  "medications": "furosemide 40mg OD, bisoprolol 5mg OD, ramipril 5mg OD, warfarin (INR target 2-3)",
+  "social_hx": "non-smoker, non-drinker, lives alone, daughter checks in daily",
+  "available_results": [
+    {"id": "nt_probnp", "test": "NT-proBNP", "value": "4,250", "unit": "pg/mL", "reference_range": "<125", "flag": "critical", "specimen": "Blood", "collected_at": "At presentation"},
+    {"id": "serum_creatinine", "test": "Creatinine", "value": "1.6", "unit": "mg/dL", "reference_range": "0.6-1.2", "flag": "high", "specimen": "Blood", "collected_at": "At presentation"},
+    {"id": "serum_potassium", "test": "Potassium", "value": "4.7", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "normal", "specimen": "Blood", "collected_at": "At presentation"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Decompensated Heart Failure evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Decompensated Heart Failure is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes escalating diuretic therapy, strict fluid and sodium restriction, daily weight monitoring, and checking renal function and electrolytes, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: swollen ankles and shortness of breath for 3 weeks",
+      "Key HPI features: bilateral pitting oedema to mid-shin, orthopnoea (3 pillows), PND, dyspnoea on minimal exertion (walking 20 metres), no chest pain",
+      "Objective/Exam findings: Likely fluid overload. Requires weight, JVP, lung auscultation, BNP, renal function, ECG.",
+      "Relevant background/PMH: heart failure (EF 35%, diagnosed 2 years ago), atrial fibrillation, hypertension",
+      "Current medications: furosemide 40mg OD, bisoprolol 5mg OD, ramipril 5mg OD, warfarin (INR target 2-3)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Decompensated Heart Failure.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chronic kidney disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Breathlessness at rest, or waking at night gasping for air."
+    ],
+    "management_principles": [
+      "Increase furosemide, strict fluid and sodium restriction, weigh daily, check renal function and electrolytes, consider cardiology review",
+      "Assess compliance",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "url": "https://professional.heart.org/en/guidelines-statements/heart-failure-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "72F with known HFrEF presents with 3-week worsening bilateral ankle oedema, orthopnoea (3 pillows), PND, and markedly reduced exercise tolerance. No chest pain.",
+    "objective": "Likely fluid overload. Requires weight, JVP, lung auscultation, BNP, renal function, ECG.",
+    "assessment": "Decompensated heart failure. DDx: medication non-compliance, dietary Na excess, worsening AF rate control, renal deterioration, new ischaemic event.",
+    "plan": "Increase furosemide, strict fluid and sodium restriction, weigh daily, check renal function and electrolytes, consider cardiology review. Assess compliance."
+  },
+  "learning_objectives": [
+    "Systematically elicit heart failure symptoms (oedema, orthopnoea, PND, dyspnoea)",
+    "Explore precipitating factors for decompensation",
+    "Review medication compliance and dietary history",
+    "Address patient concerns about hospitalisation"
+  ],
+  "teaching": {
+    "diagnosis": "Decompensated Heart Failure",
+    "one_liner": "A weak heart cannot clear fluid, so it backs up into the legs and lungs — ankle swelling plus breathlessness is the classic pair.",
+    "differentials": [
+      "Chronic kidney disease",
+      "Deep vein thrombosis",
+      "Liver cirrhosis"
+    ],
+    "red_flags": [
+      "Breathlessness at rest, or waking at night gasping for air"
+    ],
+    "must_ask": [
+      {
+        "objective": "Orthopnoea — breathlessness lying flat",
+        "say": "Do you get short of breath when you lie flat? How many pillows do you sleep on?",
+        "domains": [
+          "aggravating",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lie",
+          "flat",
+          "pillow",
+          "night",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Paroxysmal nocturnal dyspnoea",
+        "say": "Do you ever wake up in the night suddenly gasping for breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "wake",
+          "night",
+          "gasping",
+          "suddenly"
+        ]
+      },
+      {
+        "objective": "Swelling — where and how far up",
+        "say": "Where does the swelling start, and how far up your legs does it go?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "swelling",
+          "ankle",
+          "leg",
+          "puffy"
+        ]
+      },
+      {
+        "objective": "Weight gain and exercise tolerance",
+        "say": "Have you put on weight recently, and how far can you walk before stopping?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "weight",
+          "walk",
+          "tired"
+        ]
+      },
+      {
+        "objective": "Medication adherence",
+        "say": "Are you taking your water tablets exactly as prescribed?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "tablet",
+          "medication",
+          "diuretic",
+          "taking"
+        ]
+      },
+      {
+        "objective": "Salt and fluid intake",
+        "say": "How much salt do you use, and how much do you drink in a day?",
+        "keywords": [
+          "salt",
+          "fluid",
+          "drink",
+          "water"
+        ]
+      }
+    ]
+  }
+}

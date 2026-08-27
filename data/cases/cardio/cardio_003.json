@@ -1,0 +1,170 @@
+{
+  "id": "cardio_003",
+  "system": "cardiology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Patel",
+  "age": 34,
+  "gender": "female",
+  "chief_complaint": "episodes of palpitations for 3 weeks",
+  "hpi_details": "sudden episodes of fast heartbeat lasting 5-10 minutes, sometimes with lightheadedness, triggered by coffee and stress, no chest pain or syncope",
+  "ideas": "thinks it may be anxiety",
+  "concerns": "worried it could be a heart rhythm problem",
+  "expectations": "wants to know if she needs tests or medication",
+  "pmh": "no known medical problems",
+  "medications": "combined oral contraceptive pill, no supplements",
+  "social_hx": "drinks 3 coffees daily, no smoking, occasional alcohol, medical student under exam stress",
+  "clinical_knowledge": {
+    "topic": "Intermittent Palpitations evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Intermittent Palpitations is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes assessing red flags, obtaining an ECG and labs, reducing caffeine intake, considering ambulatory monitoring, and safety-netting for syncope or chest pain, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodes of palpitations for 3 weeks",
+      "Key HPI features: sudden episodes of fast heartbeat lasting 5-10 minutes, sometimes with lightheadedness, triggered by coffee and stress, no chest pain or syncope",
+      "Objective/Exam findings: Check pulse, BP, ECG, thyroid function, FBC, electrolytes. Consider Holter monitor.",
+      "Relevant background/PMH: no known medical problems",
+      "Current medications: combined oral contraceptive pill, no supplements"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Intermittent Palpitations.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Supraventricular tachycardia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Palpitations with fainting, chest pain, or a family history of sudden death."
+    ],
+    "management_principles": [
+      "Assess red flags, ECG, labs, reduce caffeine, consider ambulatory monitoring, safety-net for syncope/chest pain",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2015 ACC/AHA/HRS Guideline for the Management of Adult Patients with Supraventricular Tachycardia",
+        "url": "https://professional.heart.org/en/guidelines-statements/supraventricular-tachycardia-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "34F with 3-week history of brief palpitations, lightheadedness, triggered by caffeine/stress. No chest pain or syncope.",
+    "objective": "Check pulse, BP, ECG, thyroid function, FBC, electrolytes. Consider Holter monitor.",
+    "assessment": "Intermittent palpitations. DDx: SVT, premature beats, anxiety, hyperthyroidism, anaemia.",
+    "plan": "Assess red flags, ECG, labs, reduce caffeine, consider ambulatory monitoring, safety-net for syncope/chest pain."
+  },
+  "learning_objectives": [
+    "Ask about rhythm symptoms, triggers, duration, syncope, chest pain",
+    "Explain palpitations in patient-friendly language",
+    "Safety-net for concerning symptoms"
+  ],
+  "teaching": {
+    "diagnosis": "Intermittent Palpitations",
+    "one_liner": "The heart being felt when it normally isn't. The history — how it starts, stops, and feels — separates a benign cause from an arrhythmia.",
+    "differentials": [
+      "Supraventricular tachycardia",
+      "Anxiety / panic attacks",
+      "Thyrotoxicosis"
+    ],
+    "red_flags": [
+      "Palpitations with fainting, chest pain, or a family history of sudden death"
+    ],
+    "must_ask": [
+      {
+        "objective": "How it starts and stops",
+        "say": "Does it start suddenly, like a switch, or build up gradually?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "sudden",
+          "gradual",
+          "switch",
+          "build"
+        ]
+      },
+      {
+        "objective": "Rhythm — regular or irregular",
+        "say": "Could you tap out the rhythm for me? Is it regular or all over the place?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "regular",
+          "irregular",
+          "fast",
+          "skip",
+          "tap"
+        ]
+      },
+      {
+        "objective": "Triggers",
+        "say": "Is there anything that sets it off — caffeine, alcohol, exercise, stress?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "coffee",
+          "caffeine",
+          "alcohol",
+          "exercise",
+          "stress"
+        ]
+      },
+      {
+        "objective": "Associated syncope or chest pain",
+        "say": "Have you ever passed out or had chest pain with an episode?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "pass",
+          "out",
+          "black",
+          "chest",
+          "pain",
+          "dizzy"
+        ]
+      },
+      {
+        "objective": "Thyroid symptoms",
+        "say": "Have you noticed weight loss, feeling hot, or trembling hands?",
+        "keywords": [
+          "weight",
+          "hot",
+          "sweaty",
+          "tremor",
+          "shaking",
+          "thyroid"
+        ]
+      },
+      {
+        "objective": "Family history of early heart disease",
+        "say": "Has anyone in your family had a heart attack, especially young?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "father",
+          "mother",
+          "brother",
+          "sister"
+        ]
+      }
+    ]
+  }
+}

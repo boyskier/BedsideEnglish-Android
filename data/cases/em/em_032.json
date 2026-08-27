@@ -1,0 +1,205 @@
+{
+  "id": "em_032",
+  "system": "em",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Rivera",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "pelvic pain, syncope, BP 80/50, missed period 6 weeks",
+  "hpi_details": "A 38-year-old female presents to the clinic with pelvic pain, syncope, bp 80/50, missed period 6 weeks. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to a ruptured ectopic pregnancy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_pregnancy_test",
+      "title": "Point-of-care urine pregnancy test",
+      "order_terms": [
+        "pregnancy test",
+        "urine pregnancy test",
+        "urine hcg",
+        "beta hcg"
+      ],
+      "availability_message": "The point-of-care urine pregnancy test is now available.",
+      "results": [
+        {
+          "id": "urine_hcg",
+          "test": "Urine hCG",
+          "value": "Positive",
+          "flag": "critical",
+          "specimen": "Urine",
+          "collected_at": "At bedside"
+        }
+      ]
+    },
+    {
+      "id": "bedside_pelvic_ultrasound",
+      "title": "Bedside pelvic ultrasound",
+      "order_terms": [
+        "bedside ultrasound",
+        "pelvic ultrasound",
+        "point of care ultrasound",
+        "pocus",
+        "fast scan",
+        "fast exam"
+      ],
+      "availability_message": "The bedside pelvic ultrasound result is now available.",
+      "results": [
+        {
+          "id": "pelvic_pocus",
+          "test": "Pelvic POCUS / FAST",
+          "value": "No intrauterine pregnancy; 3.8 cm complex right adnexal mass with a large volume of echogenic free intraperitoneal fluid",
+          "flag": "critical",
+          "collected_at": "At bedside"
+        }
+      ]
+    },
+    {
+      "id": "hemorrhage_labs",
+      "title": "Hemoglobin and type and screen",
+      "order_terms": [
+        "complete blood count",
+        "cbc",
+        "hemoglobin",
+        "type and screen",
+        "type and cross",
+        "crossmatch"
+      ],
+      "availability_message": "The hemoglobin and type-and-screen results are now available.",
+      "results": [
+        {
+          "id": "hemoglobin_initial",
+          "test": "Hemoglobin",
+          "value": "8.2",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "abo_rh_type",
+          "test": "ABO/Rh type",
+          "value": "O negative",
+          "flag": "abnormal",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "antibody_screen",
+          "test": "Antibody screen",
+          "value": "Negative",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ruptured Ectopic Pregnancy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured Ectopic Pregnancy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate resuscitation with two large-bore IVs, type and crossmatch, and emergent OR transfer for surgery in Ruptured Ectopic Pregnancy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: pelvic pain, syncope, BP 80/50, missed period 6 weeks",
+      "Key HPI features: A 38-year-old female presents to the clinic with pelvic pain, syncope, bp 80/50, missed period 6 weeks. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Ruptured Ectopic Pregnancy.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured Ectopic Pregnancy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ovarian cyst rupture without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope with missed period."
+    ],
+    "management_principles": [
+      "Plan for Ruptured Ectopic Pregnancy: Two large-bore IVs, type/cross, immediate OR transfer for surgery",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of pelvic pain, syncope, BP 80/50, missed period 6 weeks. HPI: ruptured ectopic pregnancy.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Ruptured Ectopic Pregnancy.",
+    "assessment": "Condition highly suspicious for Ruptured Ectopic Pregnancy.",
+    "plan": "Plan for Ruptured Ectopic Pregnancy: Two large-bore IVs, type/cross, immediate OR transfer for surgery. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Ruptured Ectopic Pregnancy",
+    "Select appropriate diagnostic workup for Ruptured Ectopic Pregnancy",
+    "Implement evidence-based management plan: Two large-bore IVs, type/cross, immediate OR transfer for surgery"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured Ectopic Pregnancy",
+    "one_liner": "A pregnancy outside the uterus ruptures, causing sudden pelvic pain, syncope, and hemorrhagic shock.",
+    "differentials": [
+      "Ovarian cyst rupture",
+      "Appendicitis"
+    ],
+    "red_flags": [
+      "Syncope with missed period"
+    ],
+    "must_ask": [
+      {
+        "objective": "Last period",
+        "say": "When was your last period?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Pain location",
+        "say": "Where is the pain?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Bleeding",
+        "say": "Any vaginal bleeding?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Syncope",
+        "say": "Did you pass out?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Pregnancy history",
+        "say": "Any prior pregnancies?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

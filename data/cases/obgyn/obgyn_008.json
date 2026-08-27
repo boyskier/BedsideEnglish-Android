@@ -1,0 +1,159 @@
+{
+  "id": "obgyn_008",
+  "system": "obstetrics & gynecology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Harris",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "severe right upper quadrant pain, hemolysis, elevated liver enzymes, and low platelets (HELLP Syndrome) at 34 weeks gestation",
+  "hpi_details": "38F G2P1 at 34 weeks gestation presents to labor and delivery triage with 12 hours of agonizing, constant right upper quadrant (RUQ) and epigastric pain radiating to her back, accompanied by nausea and dark coffee-colored vomiting. Patient feels extremely weak and reports dark tea-colored urine.",
+  "ideas": "thinks she has severe food poisoning or a gallbladder attack from fatty meal",
+  "concerns": "worried because her blood pressure is 175/110 and her upper stomach pain is unbearable",
+  "expectations": "wants immediate relief from RUQ pain and reassurance about baby's condition",
+  "pmh": "Chronic hypertension on Methyldopa",
+  "medications": "Methyldopa 500mg BID",
+  "social_hx": "Bank manager, non-smoker",
+  "investigation_events": [{
+    "id": "stat_hellp_labs",
+    "title": "Emergency HELLP syndrome laboratory assessment",
+    "order_terms": ["CBC", "platelet", "hemolysis labs", "LDH", "liver enzymes", "AST", "ALT", "coagulation", "fibrinogen"],
+    "availability_message": "STAT HELLP laboratory results are now available. Magnesium, blood-pressure treatment, blood-product preparation, and delivery must not be delayed.",
+    "results": [
+      {"id": "hemoglobin", "test": "Hemoglobin", "value": "9.2", "unit": "g/dL", "reference_range": "12.0-15.5", "flag": "low", "note": "Recent baseline was 12.4 g/dL."},
+      {"id": "ldh", "test": "Lactate dehydrogenase", "value": "1150", "unit": "U/L", "reference_range": "140-280", "flag": "high"},
+      {"id": "platelets", "test": "Platelet count", "value": "42000", "unit": "/uL", "reference_range": "150000-400000", "flag": "critical"},
+      {"id": "ast", "test": "AST", "value": "380", "unit": "U/L", "reference_range": "10-40", "flag": "high"},
+      {"id": "alt", "test": "ALT", "value": "410", "unit": "U/L", "reference_range": "7-56", "flag": "high"},
+      {"id": "blood_smear", "test": "Peripheral blood smear", "value": "Numerous schistocytes", "flag": "abnormal"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "HELLP syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of HELLP syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT obstetric emergency with seizure prophylaxis, blood pressure control, and immediate delivery given severe multisystem maternal morbidity, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe right upper quadrant pain, hemolysis, elevated liver enzymes, and low platelets (HELLP Syndrome) at 34 weeks gestation",
+      "Key HPI features: 38F G2P1 at 34 weeks gestation presents to labor and delivery triage with 12 hours of agonizing, constant right upper quadrant (RUQ) and epigastric pain radiating to her back, accompanied by nausea and dark coffee-colored vomiting. Patient feels extremely weak and reports dark tea-colored urine.",
+      "Objective/Exam findings: Vitals: HR 105, BP 178/112 mmHg, Temp 36.9C. Marked tenderness to palpation over right upper quadrant and epigastrium without peritoneal signs or Murphy sign. Fetal heart tracing shows baseline 145 bpm with decreased variability and occasional late decelerations. STAT Labs confirm classic HELLP triad: 1. Hemolysis: Hemoglobin dropped from 12.4 to 9.2 g/dL, schistocytes/burr cells on peripheral smear, LDH markedly elevated at 1,150 U/L, Indirect Bilirubin 2.4 mg/dL, Haptoglobin undetectable (<10 mg/dL). 2. Elevated Liver enzymes: AST 380 U/L, ALT 410 U/L. 3. Low Platelets: Platelet count severely depressed at 42,000 /uL. Coagulation profile normal (fibrinogen 380 mg/dL, excluding overt DIC).",
+      "Relevant background/PMH: Chronic hypertension on Methyldopa",
+      "Current medications: Methyldopa 500mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out HELLP syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute fatty liver of pregnancy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe RUQ/epigastric pain."
+    ],
+    "management_principles": [
+      "STAT obstetric emergency requiring seizure prophylaxis, blood pressure control, and immediate delivery given severe multisystem maternal morbidity",
+      "Initiate IV Magnesium Sulfate loading (4g) and continuous infusion (2g/hr) for seizure prophylaxis",
+      "Administer IV Labetalol or Hydralazine to strictly maintain blood pressure < 160/105 mmHg (preventing maternal stroke and hepatic subcapsular hematoma rupture)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "38F G2P1 at 34 weeks presenting with severe epigastric/RUQ pain, dark urine, and acute hypertension highly concerning for HELLP syndrome.",
+    "objective": "Vitals: HR 105, BP 178/112 mmHg, Temp 36.9C. Marked tenderness to palpation over right upper quadrant and epigastrium without peritoneal signs or Murphy sign. Fetal heart tracing shows baseline 145 bpm with decreased variability and occasional late decelerations. STAT Labs confirm classic HELLP triad: 1. Hemolysis: Hemoglobin dropped from 12.4 to 9.2 g/dL, schistocytes/burr cells on peripheral smear, LDH markedly elevated at 1,150 U/L, Indirect Bilirubin 2.4 mg/dL, Haptoglobin undetectable (<10 mg/dL). 2. Elevated Liver enzymes: AST 380 U/L, ALT 410 U/L. 3. Low Platelets: Platelet count severely depressed at 42,000 /uL. Coagulation profile normal (fibrinogen 380 mg/dL, excluding overt DIC).",
+    "assessment": "HELLP Syndrome (Hemolysis, Elevated Liver enzymes, Low Platelets) at 34 weeks gestation with severe maternal hypertension and right hepatic lobe capsular distension.",
+    "plan": "STAT obstetric emergency: 1. Initiate IV Magnesium Sulfate loading (4g) and continuous infusion (2g/hr) for seizure prophylaxis. 2. Administer IV Labetalol or Hydralazine to strictly maintain blood pressure < 160/105 mmHg (preventing maternal stroke and hepatic subcapsular hematoma rupture). 3. Given gestational age >= 34 weeks and severe maternal multisystem morbidity (platelets < 50k, liver enzyme elevation >10x), immediate delivery is mandatory without waiting for 48-hour steroid latency. Type and crossmatch 4 units platelets/PRBCs; perform immediate delivery (vaginal if cervix favorable and rapid labor expected, otherwise urgent Cesarean delivery with general anesthesia if platelets < 50k preclude epidural)."
+  },
+  "learning_objectives": [
+    "Memorize diagnostic laboratory triad of HELLP Syndrome: Hemolysis (schistocytes, LDH >600 U/L, low haptoglobin, bilirubin >1.2), Elevated Liver enzymes (AST/ALT > twice upper limit), and Low Platelets (<100,000 /uL)",
+    "Correlate severe right upper quadrant/epigastric pain in HELLP syndrome with stretching/microhemorrhage of Glisson's capsule surrounding the liver and danger of hepatic subcapsular rupture",
+    "Understand why epidural/spinal neuraxial anesthesia is contraindicated when maternal platelet count drops below 50,000-70,000 /uL due to spinal epidural hematoma risk",
+    "Outline the definitive obstetric management rule: immediate delivery after maternal stabilization in HELLP syndrome occurring at >= 34 weeks gestation"
+  ],
+  "teaching": {
+    "diagnosis": "HELLP syndrome",
+    "one_liner": "38F at 34 weeks with chronic hypertension presenting with severe RUQ/epigastric pain, dark urine, and coffee-ground emesis.",
+    "differentials": [
+      "Acute fatty liver of pregnancy",
+      "Cholecystitis",
+      "Viral hepatitis",
+      "TTP/HUS"
+    ],
+    "red_flags": [
+      "Severe RUQ/epigastric pain",
+      "Dark/tea-colored urine (hemolysis)",
+      "Coffee-ground emesis",
+      "Severe hypertension (175/110)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the RUQ/epigastric pain",
+        "say": "Can you point to where the pain is, and does it go to your back?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "RUQ pain",
+          "epigastric pain"
+        ]
+      },
+      {
+        "objective": "Ask about urine color change",
+        "say": "Have you noticed your urine looking darker than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark urine",
+          "hemolysis"
+        ]
+      },
+      {
+        "objective": "Screen for visual changes and headache",
+        "say": "Any headaches or changes in your vision?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "visual changes"
+        ]
+      },
+      {
+        "objective": "Review baseline hypertension control",
+        "say": "Have you been taking your blood pressure medication regularly?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "methyldopa",
+          "hypertension control"
+        ]
+      },
+      {
+        "objective": "Explain need for immediate delivery",
+        "say": "Because your labs show HELLP syndrome, we need to stabilize you and proceed to delivery soon.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "immediate delivery",
+          "stabilization"
+        ]
+      }
+    ]
+  }
+}

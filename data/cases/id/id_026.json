@@ -1,0 +1,161 @@
+{
+  "id": "id_026",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Adams",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "burning urination, frequency, and suprapubic pain",
+  "hpi_details": "A 20-year-old female presents to the clinic with burning urination, frequency, and suprapubic pain. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cystitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_urinalysis",
+      "title": "Point-of-care urinalysis",
+      "order_terms": [
+        "urinalysis",
+        "urine dipstick",
+        "urine dip",
+        "urine test"
+      ],
+      "availability_message": "The point-of-care urinalysis is now available.",
+      "results": [
+        {
+          "id": "leukocyte_esterase",
+          "test": "Urine leukocyte esterase",
+          "value": "2+",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "nitrite",
+          "test": "Urine nitrite",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "urine_white_blood_cells",
+          "test": "Urine white blood cells",
+          "value": "10-15",
+          "unit": "/hpf",
+          "reference_range": "0-5",
+          "flag": "high",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Cystitis (E. coli) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Cystitis (E. coli) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management favors a short-course, narrow-spectrum oral antibiotic regimen (Nitrofurantoin/Macrobid 100mg BID for 5 days), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning urination, frequency, and suprapubic pain",
+      "Key HPI features: A 20-year-old female presents to the clinic with burning urination, frequency, and suprapubic pain. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 37.0C, HR 78, BP 110/68 (afebrile). Suprapubic tenderness on palpation, no CVA tenderness. Urinalysis: positive leukocyte esterase and nitrites, WBC 10-15/hpf.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Cystitis (E. coli).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pyelonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or flank pain — suggests ascending infection."
+    ],
+    "management_principles": [
+      "Confirm diagnosis with urinalysis/urine dipstick (leukocyte esterase, nitrites, pyuria) before starting antibiotics.",
+      "Prescribe Nitrofurantoin (Macrobid) 100mg BID for 5 days as first-line therapy for uncomplicated cystitis.",
+      "Counsel on adequate hydration, completing the full antibiotic course, and returning promptly if fever, flank pain, or symptoms persist beyond 48-72 hours."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "20F with dysuria, urinary frequency, suprapubic pain, and fatigue, gradually worsening over several days.",
+    "objective": "T 37.0C, HR 78, BP 110/68. Suprapubic tenderness on palpation, no CVA tenderness. Urinalysis: positive leukocyte esterase and nitrites, WBC 10-15/hpf.",
+    "assessment": "Acute uncomplicated cystitis, likely E. coli, low risk for pyelonephritis given absence of fever or flank pain.",
+    "plan": "1. Urinalysis/urine dipstick to confirm diagnosis. 2. Prescribe Nitrofurantoin (Macrobid) 100mg BID for 5 days. 3. Advise adequate hydration, completing the full antibiotic course, and return if fever, flank pain, or symptoms persist beyond 48-72 hours."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Cystitis",
+    "Select appropriate diagnostic workup for Acute Cystitis",
+    "Implement evidence-based management plan: Nitrofurantoin (Macrobid) 100mg BID for 5 days"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Cystitis (E. coli UTI)",
+    "one_liner": "E. coli ascends the urethra into the bladder, causing burning urination, frequency, and suprapubic discomfort.",
+    "differentials": [
+      "Pyelonephritis",
+      "Vaginitis"
+    ],
+    "red_flags": [
+      "Fever or flank pain — suggests ascending infection"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dysuria",
+        "say": "Does it burn when you urinate?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Frequency",
+        "say": "Are you urinating more often than usual?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Suprapubic pain",
+        "say": "Do you have pain in your lower belly?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Fever/flank pain",
+        "say": "Any fever or back pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "pulm_026",
+  "system": "pulm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Perez",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "shortness of breath, expiratory wheezing, and dry cough",
+  "hpi_details": "A 20-year-old female presents to the clinic with shortness of breath, expiratory wheezing, and dry cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to asthma",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Asthma Exacerbation evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Asthma Exacerbation is essential for appropriate diagnostic workup and treatment.",
+      "Clinical history, severity assessment, and targeted testing must be interpreted together rather than relying on one symptom alone.",
+      "Assess severity objectively with vital signs, oxygen saturation, and peak expiratory flow where feasible.",
+      "Management should follow local pathways and account for patient-specific comorbidity and clinical severity."
+    ],
+    "diagnostic_clues": [
+      "Chief complaint: shortness of breath, expiratory wheezing, and dry cough",
+      "Key HPI features: A 20-year-old female presents to the clinic with shortness of breath, expiratory wheezing, and dry cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/examination findings: Perform focused examination, vital-sign assessment, and diagnosis-specific investigations.",
+      "Relevant background/PMH: Unremarkable",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming a mild or atypical presentation rules out Asthma Exacerbation.",
+      "Relying on a single normal test result to prematurely exclude serious pathology.",
+      "Equating transient symptom improvement with resolution of the underlying condition.",
+      "Failing to consider clinically important alternative diagnoses."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation.",
+      "Prematurely discharging or reassuring the patient before appropriate assessment.",
+      "Starting treatment without considering contraindications, interactions, or organ function.",
+      "Ignoring critical warning signs: Unable to speak full sentences or silent chest."
+    ],
+    "management_principles": [
+      "Assess severity objectively with vital signs, oxygen saturation, and peak expiratory flow where feasible.",
+      "Give inhaled short-acting bronchodilator promptly; add systemic corticosteroids for moderate or severe exacerbations.",
+      "Escalate immediately for life-threatening features or inadequate response to initial treatment."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Asthma (GINA) Strategy Report",
+        "url": "https://ginasthma.org/gina-reports/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: shortness of breath, expiratory wheezing, and dry cough\n\nA 20-year-old female presents to the clinic with shortness of breath, expiratory wheezing, and dry cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Asthma Exacerbation.",
+    "assessment": "Acute wheeze and breathlessness, with asthma exacerbation possible but not yet established because there is no documented prior asthma diagnosis. Assess urgently for severity and alternative causes including anaphylaxis, infection, pneumothorax, and pulmonary embolism when clinically indicated.",
+    "plan": "Check vital signs, oxygen saturation, work of breathing, and peak flow where feasible. Provide oxygen and repeated inhaled bronchodilator treatment according to local acute-asthma protocol; a clinician should decide whether systemic corticosteroids are indicated after severity assessment. Send for emergency assessment immediately for hypoxaemia, inability to speak full sentences, drowsiness, cyanosis, silent chest, or inadequate response. Once stable, confirm or exclude asthma with objective testing and provide an ICS-containing long-term regimen if diagnosed."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Asthma Exacerbation",
+    "Select appropriate diagnostic workup for Asthma Exacerbation",
+    "Implement severity-based, clinician-directed management while arranging objective confirmation of asthma after the acute episode"
+  ],
+  "teaching": {
+    "diagnosis": "Acute wheeze and breathlessness; possible asthma exacerbation",
+    "one_liner": "Acute worsening of asthma symptoms with wheeze, cough, breathlessness, and variable airflow obstruction.",
+    "differentials": [
+      "Anaphylaxis",
+      "Pneumonia",
+      "Pulmonary embolism"
+    ],
+    "red_flags": [
+      "Unable to speak full sentences or silent chest",
+      "Drowsiness, cyanosis, or poor response to reliever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Wheeze and dyspnea onset with trigger identification",
+        "say": "When did the wheezing and breathlessness start, and did anything seem to trigger it, like allergens or exercise?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "wheeze",
+          "trigger",
+          "onset",
+          "allergen",
+          "exercise"
+        ]
+      },
+      {
+        "objective": "Personal and family history of asthma or atopy",
+        "say": "Have you been diagnosed with asthma before, or does anyone in your family have asthma or allergies?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "asthma",
+          "atopy",
+          "family history",
+          "allergies",
+          "eczema"
+        ]
+      },
+      {
+        "objective": "Inhaler use and rescue medication response",
+        "say": "Do you use an inhaler, and does it help relieve your symptoms?",
+        "domains": [
+          "medications",
+          "relieving"
+        ],
+        "keywords": [
+          "inhaler",
+          "salbutamol",
+          "rescue",
+          "relief",
+          "bronchodilator"
+        ]
+      },
+      {
+        "objective": "Severity red flags: speech, accessory muscle use, peak flow",
+        "say": "Are you able to speak in full sentences, or does it feel like you can't get enough air?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "severity",
+          "peak flow",
+          "accessory muscles",
+          "speech",
+          "distress"
+        ]
+      },
+      {
+        "objective": "Prior exacerbation history and hospitalization risk",
+        "say": "Have you ever needed to go to the hospital or been on steroids for your breathing before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hospitalization",
+          "steroids",
+          "prior exacerbation",
+          "ICU",
+          "intubation"
+        ]
+      }
+    ]
+  }
+}

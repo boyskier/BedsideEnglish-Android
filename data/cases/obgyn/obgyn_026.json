@@ -1,0 +1,153 @@
+{
+  "id": "obgyn_026",
+  "system": "obgyn",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Gonzalez",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "severe vomiting in pregnancy with dehydration/ketones",
+  "hpi_details": "A 20-year-old female presents to the clinic with severe vomiting in pregnancy with dehydration/ketones. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to hyperemesis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Does not use tobacco, alcohol, or recreational drugs during pregnancy",
+  "available_results": [{"id": "urine_ketones", "test": "Urine ketones", "value": "3+", "reference_range": "Negative", "flag": "high"}],
+  "investigation_events": [{
+    "id": "urgent_hyperemesis_electrolytes",
+    "title": "Urgent electrolyte assessment",
+    "order_terms": ["electrolytes", "BMP", "basic metabolic panel", "sodium", "potassium"],
+    "availability_message": "Urgent electrolyte results are now available. IV fluids with thiamine should not be delayed.",
+    "results": [
+      {"id": "sodium", "test": "Serum sodium", "value": "131", "unit": "mEq/L", "reference_range": "135-145", "flag": "low"},
+      {"id": "potassium", "test": "Serum potassium", "value": "3.0", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "low"},
+      {"id": "bicarbonate", "test": "Serum bicarbonate", "value": "18", "unit": "mEq/L", "reference_range": "22-29", "flag": "low"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Hyperemesis gravidarum evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hyperemesis gravidarum is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Hyperemesis Gravidarum: IV fluids, thiamine, Pyridoxine/Doxylamine, Metoclopramide, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe vomiting in pregnancy with dehydration/ketones",
+      "Key HPI features: A 20-year-old female presents to the clinic with severe vomiting in pregnancy with dehydration/ketones. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Hyperemesis Gravidarum.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hyperemesis gravidarum.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Normal nausea/vomiting of pregnancy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Dehydration."
+    ],
+    "management_principles": [
+      "Plan for Hyperemesis Gravidarum: IV fluids, thiamine, Pyridoxine/Doxylamine, Metoclopramide",
+      "Arrange urgent obstetric assessment and consider hospital treatment for dehydration, electrolyte abnormalities, or inability to tolerate oral intake",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of severe vomiting in pregnancy with dehydration/ketones. HPI: hyperemesis gravidarum.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Hyperemesis Gravidarum.",
+    "assessment": "Condition highly suspicious for Hyperemesis Gravidarum.",
+    "plan": "Assess vital signs, weight loss, urine ketones, and electrolytes. Give IV fluids with thiamine and use pregnancy-compatible antiemetics as clinically indicated. Arrange urgent obstetric assessment and consider hospital treatment for dehydration, electrolyte abnormalities, or inability to tolerate oral intake."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Hyperemesis Gravidarum",
+    "Select appropriate diagnostic workup for Hyperemesis Gravidarum",
+    "Implement evidence-based management plan: IV fluids, thiamine, Pyridoxine/Doxylamine, Metoclopramide"
+  ],
+  "teaching": {
+    "diagnosis": "Hyperemesis gravidarum",
+    "one_liner": "Pregnant patient with severe vomiting, dehydration, ketonuria, and associated fatigue.",
+    "differentials": [
+      "Normal nausea/vomiting of pregnancy",
+      "Gastroenteritis",
+      "Molar pregnancy",
+      "Thyroid disease"
+    ],
+    "red_flags": [
+      "Dehydration",
+      "Ketonuria",
+      "Inability to tolerate oral intake"
+    ],
+    "must_ask": [
+      {
+        "objective": "Establish gestational age and onset",
+        "say": "How many weeks pregnant are you, and when did the vomiting start?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "gestational age",
+          "onset"
+        ]
+      },
+      {
+        "objective": "Quantify vomiting and oral tolerance",
+        "say": "How many times a day are you vomiting, and can you keep fluids down?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomiting frequency"
+        ]
+      },
+      {
+        "objective": "Screen for dehydration and weight loss",
+        "say": "Have you lost weight, or felt dizzy and weak?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dehydration",
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "Ask about associated fatigue",
+        "say": "How is the fatigue affecting your daily activities?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fatigue"
+        ]
+      },
+      {
+        "objective": "Explain IV fluids and antiemetic treatment",
+        "say": "We'll give you IV fluids, thiamine, and medication to control the nausea.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "IV fluids",
+          "thiamine",
+          "antiemetics"
+        ]
+      }
+    ]
+  }
+}

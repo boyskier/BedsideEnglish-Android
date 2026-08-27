@@ -1,0 +1,159 @@
+{
+  "id": "ent_021",
+  "system": "otolaryngology (ent)",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Master Park",
+  "age": 6,
+  "gender": "male",
+  "chief_complaint": "fluid in ears, mild hearing loss, and delayed speech after cold",
+  "hpi_details": "6-year-old boy brought by mother after a routine school screening showed mild hearing loss. Mother reports the child has been turning the TV volume very high and asking 'what?' since a cold 2 months ago.",
+  "ideas": "mother worried he has permanent hearing loss or fluid behind eardrum",
+  "concerns": "worried about speech delay",
+  "expectations": "wants ear check and fluid removal",
+  "pmh": "Recurrent cold history",
+  "medications": "None",
+  "social_hx": "Kindergartener, fully vaccinated",
+  "available_results": [
+    {
+      "id": "school_hearing_screen",
+      "test": "School pure-tone hearing screen",
+      "value": "Failed bilaterally at 25 dB HL across 500-2000 Hz",
+      "reference_range": "Response at 20 dB HL",
+      "flag": "abnormal",
+      "collected_at": "Before current encounter"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "office_tympanometry",
+      "title": "Office tympanometry",
+      "order_terms": [
+        "tympanometry",
+        "tympanogram",
+        "middle ear pressure test"
+      ],
+      "availability_message": "The office tympanometry result is now available.",
+      "results": [
+        {
+          "id": "bilateral_tympanogram",
+          "test": "Bilateral tympanometry",
+          "value": "Flat Type B tracing bilaterally with normal ear-canal volumes",
+          "reference_range": "Type A tracing",
+          "flag": "abnormal",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Otitis Media with Effusion (OME) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Otitis Media with Effusion (OME) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows an evidence-based diagnostic and therapeutic protocol for otitis media with effusion (OME / serous otitis media), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fluid in ears, mild hearing loss, and delayed speech after cold",
+      "Key HPI features: 6-year-old boy brought by mother after a routine school screening showed mild hearing loss. Mother reports the child has been turning the TV volume very high and asking 'what?' since a cold 2 months ago.",
+      "Objective/Exam findings: Otoscopy shows a dull, retracted tympanic membrane with visible fluid level, no erythema or bulging; tympanometry shows a flat Type B tracing.",
+      "Relevant background/PMH: Recurrent cold history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Otitis Media with Effusion (OME).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute otitis media (active infection, more painful) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Speech or language delay — signals a need for more prompt intervention."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with otoscopy and tympanometry (flat Type B tympanogram indicating fluid)",
+      "Recommend watchful waiting for 3 months with auto-inflation, then reassess hearing and refer for tympanostomy tubes if effusion persists with hearing loss or speech delay"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Mother reports fluid in the child's ears, mild hearing loss, and delayed speech after a cold. 6-year-old boy brought by mother after a routine school screening showed mild hearing loss; mother reports the child has been turning the TV volume very high and asking 'what?' since a cold 2 months ago.",
+    "objective": "Otoscopy shows a dull, retracted tympanic membrane with a visible fluid level, no erythema or bulging; tympanometry shows a flat Type B tracing.",
+    "assessment": "Otitis media with effusion (OME / serous otitis media), bilateral, following a recent upper respiratory infection.",
+    "plan": "Confirm the diagnosis with otoscopy and tympanometry (flat Type B tympanogram indicating fluid). Recommend watchful waiting for 3 months with auto-inflation, since most effusions resolve spontaneously. Reassess hearing and refer for tympanostomy tubes if the effusion persists beyond 3 months with hearing loss or speech delay. Counsel the family on expected course and warning signs."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Otitis Media with Effusion (OME / Serous Otitis Media).",
+    "Formulate prioritized differential diagnosis for fluid in ears, mild hearing loss, and delayed speech after cold",
+    "Select appropriate laboratory and imaging studies for otolaryngology (ent)",
+    "Implement evidence-based acute and long-term management strategies for Otitis Media with Effusion (OME / Serous Otitis Media)."
+  ],
+  "teaching": {
+    "diagnosis": "Otitis Media with Effusion (OME)",
+    "one_liner": "Fluid remaining behind the eardrum after a cold, without active infection, causing mild hearing loss and asking family to repeat themselves — usually managed with watchful waiting before considering tubes.",
+    "differentials": [
+      "Acute otitis media (active infection, more painful)",
+      "Cerumen impaction",
+      "Sensorineural hearing loss"
+    ],
+    "red_flags": [
+      "Speech or language delay — signals a need for more prompt intervention"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to cold",
+        "say": "Did this start after a cold about two months ago?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "cold",
+          "two months"
+        ]
+      },
+      {
+        "objective": "Hearing behavior",
+        "say": "Has he been turning the TV up loud or asking 'what?' often?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "TV loud",
+          "what"
+        ]
+      },
+      {
+        "objective": "Speech development",
+        "say": "How is his speech and language developing?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Ear pain",
+        "say": "Has he complained of ear pain?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Recurrent colds",
+        "say": "Does he get frequent colds or ear infections?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

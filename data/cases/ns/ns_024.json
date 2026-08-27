@@ -1,0 +1,126 @@
+{
+  "id": "ns_024",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Baek",
+  "age": 58,
+  "gender": "female",
+  "chief_complaint": "progressive severe headache, nausea, and new-onset seizure yesterday",
+  "hpi_details": "58F presents after having a first-time generalized tonic-clonic seizure yesterday. For the past month, she has had a progressive, dull headache that is worst in the morning and associated with mild nausea.",
+  "ideas": "husband terrified by her seizure and morning headaches",
+  "concerns": "worried about a brain tumor",
+  "expectations": "wants brain MRI and neurologist check",
+  "pmh": "No prior history",
+  "medications": "None",
+  "social_hx": "Housewife, non-smoker",
+  "investigation_events": [{
+    "id": "urgent_intracranial_mass_mri",
+    "title": "Urgent contrast-enhanced brain MRI",
+    "order_terms": ["MRI brain", "brain MRI", "MRI with contrast", "MRI with gadolinium"],
+    "availability_message": "The urgent brain MRI result is now available. Acute seizure care should not be delayed.",
+    "results": [{"id": "brain_mri", "test": "Contrast-enhanced brain MRI", "value": "4.1 cm irregular ring-enhancing right frontal mass with central necrosis, extensive vasogenic edema, and 5 mm leftward midline shift", "flag": "critical", "note": "Imaging favors a high-grade primary brain tumor; tissue diagnosis is required."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Intracranial Mass (Brain Tumor) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Intracranial Mass (Brain Tumor) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive severe headache, nausea, and new-onset seizure yesterday",
+      "Key HPI features: 58F presents after having a first-time generalized tonic-clonic seizure yesterday. For the past month, she has had a progressive, dull headache that is worst in the morning and associated with mild nausea.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis."
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Intracranial Mass (Brain Tumor).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Glioblastoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New seizure with progressive headache."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis",
+      "Order contrast-enhanced brain MRI",
+      "Treat the new seizure per acute-care protocol; use corticosteroids for suspected mass-effect edema only with specialist guidance"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 58-year-old woman presents after a first generalized tonic-clonic seizure yesterday, with a month of progressive dull headaches that are worse in the morning and associated with mild nausea.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis.",
+    "assessment": "Clinical presentation highly suggestive of Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis.",
+    "plan": "Obtain contrast-enhanced brain MRI and refer urgently to neurosurgery. Treat the new seizure per acute-care protocol; use corticosteroids for suspected mass-effect edema only with specialist guidance. Provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis.",
+    "Formulate prioritized differential diagnosis for progressive severe headache, nausea, and new-onset seizure yesterday",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies for Intracranial Mass (Brain Tumor), differential includes glioblastoma vs meningioma vs metastasis."
+  ],
+  "teaching": {
+    "diagnosis": "Intracranial Mass (Brain Tumor)",
+    "one_liner": "A new seizure with a month of morning-worse headaches and nausea points to a mass lesion, needing urgent MRI and antiseizure treatment.",
+    "differentials": [
+      "Glioblastoma",
+      "Meningioma",
+      "Metastasis"
+    ],
+    "red_flags": [
+      "New seizure with progressive headache"
+    ],
+    "must_ask": [
+      {
+        "objective": "Seizure description",
+        "say": "What happened during the seizure?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Headache pattern",
+        "say": "Is the headache worse in the morning?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Nausea",
+        "say": "Any nausea with the headache?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many weeks has the headache lasted?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "Any weakness or personality changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

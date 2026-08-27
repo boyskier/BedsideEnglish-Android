@@ -1,0 +1,155 @@
+{
+  "id": "cs_011",
+  "system": "cardiothoracic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Jackson",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "progressive drooping eyelids, double vision, difficulty chewing, and anterior mediastinal mass on CT",
+  "hpi_details": "44F with Myasthenia Gravis presenting with ptosis and diplopia with chest CT demonstrating a 5 cm well-encapsulated anterior mediastinal thymoma undergoing median sternotomy resection.",
+  "ideas": "thinks the drooping eyelids and double vision are caused by the thymus tumor and that removing it will cure her symptoms",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Myasthenia gravis",
+  "medications": "Pyridostigmine (dose not documented)",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "achr_antibody_myasthenia",
+      "test": "Acetylcholine receptor antibody",
+      "value": "8.6",
+      "unit": "nmol/L",
+      "reference_range": "<0.4",
+      "flag": "positive",
+      "specimen": "Blood",
+      "collected_at": "Neurology work-up"
+    },
+    {
+      "id": "ct_encapsulated_thymoma",
+      "test": "Contrast CT chest",
+      "value": "5.0 cm well-circumscribed anterior mediastinal mass without local invasion, consistent with thymoma",
+      "unit": "",
+      "reference_range": "No anterior mediastinal mass",
+      "flag": "abnormal",
+      "collected_at": "Before surgical consultation"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Anterior Mediastinal Thymoma with Myasthenia Gravis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Anterior Mediastinal Thymoma with Myasthenia Gravis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes preoperative optimization of myasthenia gravis (pyridostigmine, and IVIG/plasmapheresis or corticosteroids when indicated) to reduce the risk of postoperative myasthenic crisis, followed by median sternotomy thymectomy with en bloc resection of the encapsulated thymoma, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive drooping eyelids, double vision, difficulty chewing, and anterior mediastinal mass on CT",
+      "Key HPI features: 44F with Myasthenia Gravis presenting with ptosis and diplopia with chest CT demonstrating a 5 cm well-encapsulated anterior mediastinal thymoma undergoing median sternotomy resection.",
+      "Objective/Exam findings: Ptosis worsens with sustained upward gaze (fatigability); positive ice-pack test. Anti-acetylcholine receptor (AChR) antibodies positive. Repetitive nerve stimulation shows a decremental response. Chest CT confirms a 5 cm well-encapsulated anterior mediastinal mass consistent with thymoma, without local invasion. Pulmonary function tests show normal forced vital capacity with no evidence of respiratory muscle weakness at rest.",
+      "Relevant background/PMH: Myasthenia gravis"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Anterior Mediastinal Thymoma with Myasthenia Gravis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Isolated ocular myasthenia (without thymoma) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Difficulty swallowing or breathing — myasthenic crisis, a neuromuscular emergency."
+    ],
+    "management_principles": [
+      "Optimize myasthenia gravis medically (pyridostigmine; consider IVIG/plasmapheresis or corticosteroids preoperatively if indicated) to reduce risk of postoperative myasthenic crisis",
+      "Proceed with median sternotomy thymectomy for en bloc resection of the encapsulated thymoma, with anesthetic avoidance of neuromuscular blocking agents where possible",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "44F with myasthenia gravis presenting with progressive fatigable ptosis, diplopia, and difficulty chewing, found to have a 5 cm well-encapsulated anterior mediastinal thymoma on chest CT.",
+    "objective": "Ptosis worsens with sustained upward gaze (fatigability); positive ice-pack test. Anti-acetylcholine receptor (AChR) antibodies positive. Repetitive nerve stimulation shows a decremental response. Chest CT confirms a 5 cm well-encapsulated anterior mediastinal mass consistent with thymoma, without local invasion. Pulmonary function tests show normal forced vital capacity with no evidence of respiratory muscle weakness at rest.",
+    "assessment": "Anterior mediastinal thymoma (5 cm, well-encapsulated, likely Masaoka-Koga stage I) associated with generalized myasthenia gravis.",
+    "plan": "Optimize myasthenia gravis medically (pyridostigmine; consider IVIG/plasmapheresis or corticosteroids preoperatively if indicated) to reduce risk of postoperative myasthenic crisis. Proceed with median sternotomy thymectomy for en bloc resection of the encapsulated thymoma, with anesthetic avoidance of neuromuscular blocking agents where possible."
+  },
+  "learning_objectives": [
+    "Recognize the fatigable pattern of ptosis, diplopia, and bulbar weakness characteristic of myasthenia gravis and its association with thymoma",
+    "Formulate a prioritized differential diagnosis for an anterior mediastinal mass, including thymoma, lymphoma, and germ cell tumor",
+    "Select appropriate diagnostic studies (AChR antibody testing, repetitive nerve stimulation, chest CT, pulmonary function tests) before thymectomy",
+    "Explain the rationale for preoperative myasthenia optimization and anesthetic precautions to reduce the risk of postoperative myasthenic crisis"
+  ],
+  "teaching": {
+    "diagnosis": "Anterior Mediastinal Thymoma with Myasthenia Gravis",
+    "one_liner": "A thymus gland tumor, strongly associated with myasthenia gravis, causing ptosis and double vision from autoimmune neuromuscular junction dysfunction — treated with surgical resection via median sternotomy.",
+    "differentials": [
+      "Isolated ocular myasthenia (without thymoma)",
+      "Lymphoma",
+      "Germ cell tumor"
+    ],
+    "red_flags": [
+      "Difficulty swallowing or breathing — myasthenic crisis, a neuromuscular emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Eyelid and vision symptoms",
+        "say": "Does the eyelid drooping or double vision get worse as the day goes on?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "ptosis",
+          "diplopia",
+          "worse later"
+        ]
+      },
+      {
+        "objective": "Chewing and swallowing",
+        "say": "Do you have trouble chewing or swallowing, especially later in a meal?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chewing",
+          "swallowing"
+        ]
+      },
+      {
+        "objective": "Fatigability pattern",
+        "say": "Does your weakness improve after resting?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "rest",
+          "improves"
+        ]
+      },
+      {
+        "objective": "Breathing difficulty",
+        "say": "Any trouble breathing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

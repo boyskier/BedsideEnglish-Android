@@ -1,0 +1,172 @@
+{
+  "id": "hemato_020",
+  "system": "hematology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Irwin",
+  "age": 22,
+  "gender": "female",
+  "chief_complaint": "sudden severe pain in my chest, back, and legs",
+  "hpi_details": "22F with a known history of Sickle Cell Disease presents to the ED with extreme, deep, throbbing pain in her chest, lower back, and thighs. It started suddenly 6 hours ago. She has not had a fever or cough. She states this feels like her typical 'pain crises'.",
+  "ideas": "knows it is a sickle cell crisis",
+  "concerns": "worried she won't get enough pain medicine fast enough",
+  "expectations": "wants IV Dilaudid (hydromorphone)",
+  "pmh": "Sickle Cell Disease (HbSS)",
+  "medications": "Hydroxyurea",
+  "social_hx": "College student",
+  "investigation_events": [
+    {
+      "id": "urgent_sickle_crisis_labs",
+      "title": "Urgent sickle cell crisis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "reticulocyte count",
+        "reticulocytes"
+      ],
+      "availability_message": "The urgent sickle cell crisis results are now available; individualized analgesia should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "8.3",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation",
+          "note": "Near documented baseline"
+        },
+        {
+          "id": "reticulocyte_count",
+          "test": "Reticulocyte count",
+          "value": "11.2",
+          "unit": "%",
+          "reference_range": "0.5-2.5",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Vaso-occlusive Crisis (Sickle Cell)",
+    "core_concepts": [
+      "Sickled red blood cells occlude microvasculature, causing severe ischemic pain.",
+      "Triggers include stress, cold, dehydration, and infection."
+    ],
+    "diagnostic_clues": [
+      "Known SCD",
+      "Classic diffuse severe bone/muscle pain"
+    ],
+    "common_misconceptions": [
+      "Labeling patients as 'drug seekers' due to high opioid tolerance and specific requests for strong medications."
+    ],
+    "dangerous_errors": [
+      "Missing Acute Chest Syndrome (new infiltrate on CXR with fever, chest pain, hypoxemia)."
+    ],
+    "management_principles": [
+      "Rapid, aggressive IV opioid analgesia, IV hydration, treat underlying triggers."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "22F with HbSS presenting with severe, typical vaso-occlusive crisis pain in chest/back/legs.",
+    "objective": "In severe distress, writhing. HR 110, SpO2 98%. Clear lungs.",
+    "assessment": "Uncomplicated vaso-occlusive crisis.",
+    "plan": "Provide rapid, individualized analgesia using the patient’s established opioid plan when available, assess oxygenation, and give IV or oral fluids only to correct dehydration while avoiding fluid overload. Obtain CBC, reticulocyte count, and focused evaluation for triggers or complications such as infection, acute chest syndrome, or severe anemia."
+  },
+  "learning_objectives": [
+    "Manage sickle cell pain crises effectively and compassionately."
+  ],
+  "teaching": {
+    "diagnosis": "Sickle Cell Vaso-occlusive Crisis",
+    "one_liner": "A patient with known sickle cell disease presenting with classic severe ischemic bone and muscle pain.",
+    "differentials": [
+      "Acute chest syndrome",
+      "Osteomyelitis"
+    ],
+    "red_flags": [
+      "Hypoxia",
+      "New chest X-ray infiltrate"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character and known diagnosis",
+        "say": "Do you have sickle cell disease, and does this pain feel like your usual crises?",
+        "domains": [
+          "pmh",
+          "character"
+        ],
+        "keywords": [
+          "sickle cell",
+          "usual pain",
+          "crisis"
+        ]
+      },
+      {
+        "objective": "Trigger identification",
+        "say": "Was there anything that may have triggered this, like being cold, dehydrated, or having an infection?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "trigger",
+          "cold",
+          "dehydration",
+          "infection"
+        ]
+      },
+      {
+        "objective": "Respiratory red flags",
+        "say": "Are you having any chest pain, cough, or trouble breathing along with the pain?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "chest pain",
+          "cough",
+          "shortness of breath"
+        ]
+      },
+      {
+        "objective": "Prior crisis pattern",
+        "say": "How does this pain compare to your previous sickle cell crises, and what usually helps?",
+        "domains": [
+          "pmh",
+          "relieving"
+        ],
+        "keywords": [
+          "previous crisis",
+          "opioids",
+          "relief"
+        ]
+      },
+      {
+        "objective": "Hydration and fever",
+        "say": "Have you been drinking enough fluids, and have you had any fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fluids",
+          "fever",
+          "dehydration"
+        ]
+      }
+    ]
+  }
+}

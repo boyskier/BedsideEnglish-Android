@@ -1,0 +1,206 @@
+{
+  "id": "nephro_002",
+  "system": "nephrology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Brown",
+  "age": 22,
+  "gender": "female",
+  "chief_complaint": "dark cola-colored urine, facial swelling, and high blood pressure after a sore throat",
+  "hpi_details": "22F reports sudden appearance of dark, cola/tea-colored urine this morning along with puffiness around both eyes and mild headache. She had a severe untreated sore throat with fever approximately 2 weeks ago.",
+  "ideas": "thinks she is bleeding internally from a urinary tract infection",
+  "concerns": "alarmed by the dark red-brown urine and facial swelling",
+  "expectations": "wants antibiotics to clear the kidney infection",
+  "pmh": "Resolved pharyngitis 2 weeks ago",
+  "medications": "None",
+  "social_hx": "University student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_nephritic_syndrome_workup",
+      "title": "Urgent nephritic syndrome results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "renal function",
+        "creatinine",
+        "bun",
+        "urea",
+        "complement",
+        "c3",
+        "urinalysis",
+        "urine microscopy",
+        "urine sediment"
+      ],
+      "availability_message": "The urgent nephritic syndrome results are now available.",
+      "results": [
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "1.4",
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "urine_blood",
+          "test": "Urine dipstick blood",
+          "value": "3+",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "urine_protein",
+          "test": "Urine dipstick protein",
+          "value": "3+",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "urine_microscopy",
+          "test": "Urine sediment microscopy",
+          "value": "Dysmorphic red blood cells and red blood cell casts",
+          "flag": "critical",
+          "specimen": "Urine",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "c3",
+          "test": "Complement C3",
+          "value": "34",
+          "unit": "mg/dL",
+          "reference_range": "90-180",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Post-Streptococcal Glomerulonephritis (PSGN) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Post-Streptococcal Glomerulonephritis (PSGN) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Supportive management: sodium and fluid restriction, loop diuretics (Furosemide) for volume overload/edema, antihypertensives (calcium channel blocker or ACE inhibitor) for blood pressure control, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: dark cola-colored urine, facial swelling, and high blood pressure after a sore throat",
+      "Key HPI features: 22F reports sudden appearance of dark, cola/tea-colored urine this morning along with puffiness around both eyes and mild headache. She had a severe untreated sore throat with fever approximately 2 weeks ago.",
+      "Objective/Exam findings: Vitals: BP 156/98 (newly elevated), HR 78. Periorbital edema, 1+ pedal edema. Urinalysis: 3+ protein, 3+ blood, red blood cell (RBC) casts present under microscopy. Bloods: BUN 28, Creatinine 1.4 mg/dL, C3 complement level markedly low (34 mg/dL), C4 normal, Antistreptolysin O (ASO) titer elevated.",
+      "Relevant background/PMH: Resolved pharyngitis 2 weeks ago"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Post-Streptococcal Glomerulonephritis (PSGN).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to IgA nephropathy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypertension or significantly reduced urine output — suggests more aggressive glomerular injury."
+    ],
+    "management_principles": [
+      "Supportive management: sodium and fluid restriction, loop diuretics (Furosemide) for volume overload/edema, antihypertensives (calcium channel blocker or ACE inhibitor) for blood pressure control",
+      "Treat residual streptococcal colonization with oral Penicillin V if cultures positive",
+      "Monitor complement C3 levels for recovery over 6-8 weeks"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "22F presenting with acute nephritic syndrome (macrohematuria, periorbital edema, hypertension) 2 weeks post-streptococcal pharyngitis.",
+    "objective": "Vitals: BP 156/98 (newly elevated), HR 78. Periorbital edema, 1+ pedal edema. Urinalysis: 3+ protein, 3+ blood, red blood cell (RBC) casts present under microscopy. Bloods: BUN 28, Creatinine 1.4 mg/dL, C3 complement level markedly low (34 mg/dL), C4 normal, Antistreptolysin O (ASO) titer elevated.",
+    "assessment": "Acute Post-Streptococcal Glomerulonephritis (PSGN) / Acute Nephritic Syndrome.",
+    "plan": "Supportive management: sodium and fluid restriction, loop diuretics (Furosemide) for volume overload/edema, antihypertensives (calcium channel blocker or ACE inhibitor) for blood pressure control. Treat residual streptococcal colonization with oral Penicillin V if cultures positive. Monitor complement C3 levels for recovery over 6-8 weeks."
+  },
+  "learning_objectives": [
+    "Recognize classic triad of acute nephritic syndrome (hematuria with RBC casts, hypertension, edema)",
+    "Correlate latency period (1-3 weeks post-pharyngitis) and hypocomplementemia (low C3) with PSGN",
+    "Differentiate nephritic presentation from nephrotic presentation based on urinalysis and clinical signs",
+    "Formulate supportive management focusing on fluid restriction and blood pressure control"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Post-Streptococcal Glomerulonephritis (PSGN)",
+    "one_liner": "An immune-complex reaction 1-3 weeks after a streptococcal throat infection causes acute nephritic syndrome — cola-colored urine, facial swelling, and high blood pressure — from inflammation of the glomeruli, not a bladder infection.",
+    "differentials": [
+      "IgA nephropathy",
+      "Urinary tract infection",
+      "Rapidly progressive glomerulonephritis"
+    ],
+    "red_flags": [
+      "Severe hypertension or significantly reduced urine output — suggests more aggressive glomerular injury"
+    ],
+    "must_ask": [
+      {
+        "objective": "Recent sore throat",
+        "say": "Did you have a bad sore throat or fever a couple of weeks ago?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "sore throat",
+          "weeks ago",
+          "fever"
+        ]
+      },
+      {
+        "objective": "Urine color",
+        "say": "What color is your urine — dark like cola or tea?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cola",
+          "dark",
+          "tea colored"
+        ]
+      },
+      {
+        "objective": "Facial swelling pattern",
+        "say": "Is the swelling around your eyes worse in the morning?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "periorbital",
+          "morning"
+        ]
+      },
+      {
+        "objective": "Headache and blood pressure symptoms",
+        "say": "Have you had a headache or felt your blood pressure might be high?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "blood pressure"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "Has the amount of urine you're passing changed?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

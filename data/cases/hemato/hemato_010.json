@@ -1,0 +1,160 @@
+{
+  "id": "hemato_010",
+  "system": "hematology_oncology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lee",
+  "age": 51,
+  "gender": "male",
+  "chief_complaint": "massive spleen enlargement, bone pain, and extremely high white blood cell count",
+  "hpi_details": "51M presenting with early satiety from massive splenomegaly, WBC 180,000 /uL across all myeloid stages, and Philadelphia chromosome t(9;22) BCR-ABL positive.",
+  "ideas": "thinks this is related to chronic myeloid leukemia",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "white_blood_cell_count",
+      "test": "White blood cell count",
+      "value": "180",
+      "unit": "x10^3/mcL",
+      "reference_range": "4.0-11.0",
+      "flag": "critical",
+      "specimen": "Blood",
+      "note": "Full left-shifted myeloid spectrum with basophilia"
+    },
+    {
+      "id": "bcr_abl1",
+      "test": "BCR-ABL1 fusion by PCR",
+      "value": "Detected (p210 transcript)",
+      "reference_range": "Not detected",
+      "flag": "critical",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Myeloid Leukemia (CML) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Myeloid Leukemia (CML) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes first-line tyrosine kinase inhibitor (TKI) therapy targeting the BCR-ABL1 fusion protein, with molecular monitoring to confirm treatment response, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: massive spleen enlargement, bone pain, and extremely high white blood cell count",
+      "Key HPI features: 51M presenting with early satiety from massive splenomegaly, WBC 180,000 /uL across all myeloid stages, and Philadelphia chromosome t(9;22) BCR-ABL positive.",
+      "Objective/Exam findings: Vitals: Temp 37.1C, HR 92, BP 138/86. Massive splenomegaly with spleen palpable 10cm below the left costal margin, mild sternal tenderness on palpation, mild conjunctival pallor. Bloods: WBC 180,000/uL with a full left-shifted myeloid spectrum (blasts, promyelocytes, myelocytes, metamyelocytes, and basophilia), Hemoglobin 10.4 g/dL, Platelets 640,000/uL, elevated LDH and uric acid. Cytogenetics/FISH/PCR confirm Philadelphia chromosome t(9;22) BCR-ABL1 fusion.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Myeloid Leukemia (CML).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Leukemoid reaction (reactive, from infection) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly worsening symptoms or new features of blast transformation (fever, bone pain, bleeding) — suggests transformation to a more aggressive phase."
+    ],
+    "management_principles": [
+      "Confirm chronic phase (blasts <10% in blood/marrow, no accelerated/blast-phase features) via bone marrow aspirate/biopsy with cytogenetics",
+      "Start first-line TKI therapy: Imatinib 400mg daily (or a second-generation TKI such as Dasatinib 100mg daily or Nilotinib 300mg twice daily)",
+      "Monitor BCR-ABL1 transcript levels by quantitative PCR at 3, 6, and 12 months to confirm molecular response milestones",
+      "Baseline and periodic CBC, LFTs, and cardiac risk assessment given TKI toxicity profile; counsel on strict medication adherence and avoiding pregnancy on therapy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Chronic Myeloid Leukemia (chronic phase): massive spleen enlargement, bone pain, and extremely high white blood cell count. 51M presenting with early satiety from massive splenomegaly, WBC 180,000 /uL across all myeloid stages, and Philadelphia chromosome t(9;22) BCR-ABL positive.",
+    "objective": "Vitals: Temp 37.1C, HR 92, BP 138/86. Massive splenomegaly with spleen palpable 10cm below the left costal margin, mild sternal tenderness on palpation, mild conjunctival pallor. Bloods: WBC 180,000/uL with a full left-shifted myeloid spectrum (blasts, promyelocytes, myelocytes, metamyelocytes, and basophilia), Hemoglobin 10.4 g/dL, Platelets 640,000/uL, elevated LDH and uric acid. Cytogenetics/FISH/PCR confirm Philadelphia chromosome t(9;22) BCR-ABL1 fusion.",
+    "assessment": "Chronic Myeloid Leukemia (CML), chronic phase, presenting with massive splenomegaly and marked leukocytosis driven by the BCR-ABL1 fusion oncoprotein.",
+    "plan": "1. Bone marrow aspirate and biopsy with cytogenetics to confirm chronic phase (blasts <10%) and rule out accelerated/blast phase. 2. Start first-line TKI therapy: Imatinib 400mg daily (alternative: Dasatinib 100mg daily or Nilotinib 300mg BID). 3. Monitor BCR-ABL1 transcript levels by quantitative PCR at 3, 6, and 12 months to track molecular response. 4. Baseline CBC, comprehensive metabolic panel, LFTs, and cardiovascular risk assessment before starting TKI; monitor for cytopenias and hepatotoxicity. 5. Counsel on need for lifelong therapy adherence, avoiding pregnancy while on TKI, and refer to hematology-oncology for ongoing management."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Chronic Myeloid Leukemia (chronic phase)",
+    "Formulate prioritized differential diagnosis for massive spleen enlargement, bone pain, and extremely high white blood cell count",
+    "Select appropriate laboratory and imaging studies for hematology_oncology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Myeloid Leukemia (CML)",
+    "one_liner": "A myeloproliferative cancer driven by the Philadelphia chromosome (BCR-ABL fusion), causing massive splenomegaly and a dramatically elevated white cell count spanning all stages of myeloid maturation.",
+    "differentials": [
+      "Leukemoid reaction (reactive, from infection)",
+      "Acute myeloid leukemia",
+      "Myelofibrosis"
+    ],
+    "red_flags": [
+      "Rapidly worsening symptoms or new features of blast transformation (fever, bone pain, bleeding) — suggests transformation to a more aggressive phase"
+    ],
+    "must_ask": [
+      {
+        "objective": "Early satiety and abdominal fullness",
+        "say": "Do you feel full quickly when eating, or notice fullness in your left upper belly?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "full",
+          "satiety",
+          "abdomen"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "How long have you been feeling this way?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fatigue and weight loss",
+        "say": "Have you noticed increasing tiredness or unintentional weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fatigue",
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "Bone pain or bleeding",
+        "say": "Any bone pain, easy bruising, or fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bone pain",
+          "bruising",
+          "fever"
+        ]
+      },
+      {
+        "objective": "Prior blood test findings",
+        "say": "Has a routine blood test ever shown an abnormal white cell count?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "blood test",
+          "white cell"
+        ]
+      }
+    ]
+  }
+}

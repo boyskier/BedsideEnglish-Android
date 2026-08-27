@@ -1,0 +1,134 @@
+{
+  "id": "rheum_007",
+  "system": "rheumatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 52,
+  "gender": "male",
+  "chief_complaint": "chronic sinusitis with bloody nasal crusting, cough with blood, and kidney failure",
+  "hpi_details": "52M presenting with several weeks of chronic sinus crusting and bloody discharge progressing to saddle nose deformity, with new hemoptysis and hematuria with facial and leg edema.",
+  "ideas": "thinks this is related to granulomatosis with polyangiitis gpa wegener",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "investigation_events": [{"id":"pulmonary_renal_emergency","title":"Urgent pulmonary-renal syndrome results","order_terms":["urinalysis","urine microscopy","creatinine","renal function","cbc","hemoglobin","chest x ray","chest x-ray","chest ct","ct chest"],"availability_message":"The urgent results confirm pulmonary-renal involvement; admission and stabilization should not await ANCA or biopsy results.","results":[{"id":"urine_microscopy","test":"Urinalysis and urine microscopy","value":"3+ blood, 2+ protein, dysmorphic erythrocytes, and red-cell casts","flag":"critical","specimen":"Urine","collected_at":"During emergency assessment"},{"id":"creatinine","test":"Serum creatinine","value":"3.4","unit":"mg/dL","reference_range":"0.7-1.3","flag":"critical","specimen":"Blood","collected_at":"During emergency assessment"},{"id":"chest_ct","test":"CT chest","value":"Multiple bilateral cavitating pulmonary nodules with patchy ground-glass opacity from alveolar haemorrhage","flag":"critical","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Granulomatosis with Polyangiitis (GPA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Granulomatosis with Polyangiitis (GPA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate hospital admission and urgent induction immunosuppression for pulmonary-renal syndrome without delaying treatment for biopsy confirmation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic sinusitis with bloody nasal crusting, cough with blood, and kidney failure",
+      "Key HPI features: 52M presenting with several weeks of chronic sinus crusting and bloody discharge progressing to saddle nose deformity, with new hemoptysis and hematuria with facial and leg edema.",
+      "Objective/Exam findings: Vitals assessed for hypertension, tachypnea, and hypoxia. Saddle nose deformity with nasal septal perforation and crusted nasal mucosa. Lung exam with crackles, possible signs of alveolar hemorrhage. Peripheral edema. Urinalysis shows hematuria, RBC casts, and proteinuria. Skin exam for palpable purpura. No focal neurologic deficits.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Granulomatosis with Polyangiitis (GPA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Microscopic polyangiitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hemoptysis with kidney involvement — signals life-threatening pulmonary-renal syndrome."
+    ],
+    "management_principles": [
+      "Pulmonary-renal syndrome (hemoptysis plus hematuria/RBC casts) is a medical emergency requiring same-day hospital admission and urgent multidisciplinary evaluation",
+      "Obtain ANCA serology, renal function, urinalysis with microscopy, and chest imaging urgently; pursue tissue biopsy for confirmation when feasible without delaying life-saving treatment",
+      "Initiate induction immunosuppression (high-dose glucocorticoids plus rituximab or cyclophosphamide) under specialist direction; do not delay treatment awaiting biopsy in life-threatening presentations",
+      "Consider plasma exchange for severe alveolar hemorrhage or rapidly progressive glomerulonephritis, and monitor closely for respiratory failure or the need for dialysis."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "52M presenting with several weeks of chronic sinus crusting and bloody discharge progressing to saddle nose deformity, with new hemoptysis and hematuria with facial and leg edema.",
+    "objective": "Vitals assessed for hypertension, tachypnea, and hypoxia. Saddle nose deformity with nasal septal perforation and crusted nasal mucosa. Lung exam with crackles, possible signs of alveolar hemorrhage. Peripheral edema. Urinalysis shows hematuria, RBC casts, and proteinuria. Skin exam for palpable purpura.",
+    "assessment": "Clinical presentation (sinus/nasal involvement, hemoptysis, hematuria with RBC casts) highly concerning for ANCA-associated vasculitis (granulomatosis with polyangiitis) with pulmonary-renal syndrome, a medical emergency; confirmatory ANCA serology and biopsy pending.",
+    "plan": "Admit immediately given the pulmonary-renal syndrome. Obtain urgent ANCA serology, renal function, urinalysis with microscopy, and chest imaging, and pursue biopsy for confirmation when feasible. Initiate induction immunosuppression (high-dose glucocorticoids plus rituximab or cyclophosphamide) under specialist direction without delay, consider plasma exchange for severe alveolar hemorrhage or rapidly progressive glomerulonephritis, and arrange nephrology/rheumatology co-management with monitoring for respiratory failure or need for dialysis."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Granulomatosis with Polyangiitis GPA Wegener",
+    "Formulate prioritized differential diagnosis for chronic sinusitis with bloody nasal crusting, cough with blood, and kidney failure",
+    "Select appropriate urgent laboratory (ANCA serology, renal function, urinalysis) and imaging studies for suspected pulmonary-renal vasculitis",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Granulomatosis with Polyangiitis (GPA)",
+    "one_liner": "An ANCA-associated small-vessel vasculitis classically affecting the sinuses, lungs, and kidneys — sinus crusting and saddle-nose deformity, hemoptysis, and hematuria with red cell casts together should trigger urgent testing for c-ANCA/PR3.",
+    "differentials": [
+      "Microscopic polyangiitis",
+      "Goodpasture's (anti-GBM) disease",
+      "Chronic sinusitis alone"
+    ],
+    "red_flags": [
+      "Hemoptysis with kidney involvement — signals life-threatening pulmonary-renal syndrome"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sinus symptoms",
+        "say": "Have you had chronic sinus problems with bloody crusting?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sinus",
+          "crusting",
+          "bloody"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Have you coughed up any blood?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hemoptysis"
+        ]
+      },
+      {
+        "objective": "Kidney symptoms",
+        "say": "Have you noticed blood in your urine, or foaminess?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hematuria",
+          "foamy"
+        ]
+      },
+      {
+        "objective": "Duration and progression",
+        "say": "How long has this been developing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Any fever, weight loss, or joint pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

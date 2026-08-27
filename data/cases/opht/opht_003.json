@@ -1,0 +1,151 @@
+{
+  "id": "opht_003",
+  "system": "ophthalmology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Clark",
+  "age": 71,
+  "gender": "male",
+  "chief_complaint": "sudden, profound, painless loss of vision in one eye with cherry-red spot on fundus exam (Central Retinal Artery Occlusion)",
+  "hpi_details": "71M with history of carotid stenosis and atrial fibrillation suddenly experienced complete, painless loss of vision in his left eye 2 hours ago while reading the newspaper. Describes vision dropping instantly 'like turning off a light switch' to complete darkness/light perception only. Denies eye pain, headache, jaw claudication, or scalp tenderness.",
+  "ideas": "shocked and terrified by abrupt total blindness in left eye",
+  "concerns": "thinks he suffered an eye stroke or blood clot",
+  "expectations": "wants immediate emergency intervention to restore blood flow before his vision is lost forever",
+  "pmh": "Atrial Fibrillation (off anticoagulation), Left Internal Carotid Artery 70% stenosis, Hypertension",
+  "medications": "Metoprolol 50mg BID, Aspirin 81mg daily",
+  "social_hx": "Retired engineer, non-smoker",
+  "investigation_events": [{
+    "id": "stat_retinal_artery_occlusion_exam",
+    "title": "Emergency dilated fundus examination",
+    "order_terms": ["dilated fundus exam", "dilated retinal exam", "ophthalmoscopy", "fundoscopy"],
+    "availability_message": "The emergency fundus result is now available. Stroke-center transfer must not be delayed.",
+    "results": [{"id": "fundus_exam", "test": "Dilated fundus examination, left eye", "value": "Diffuse retinal whitening with attenuated segmented arterioles and a central cherry-red spot", "flag": "critical", "note": "Consistent with central retinal artery occlusion."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Central retinal artery occlusion (CRAO) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Central retinal artery occlusion (CRAO) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate emergency-stroke-center evaluation and secondary prevention, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden, profound, painless loss of vision in one eye with cherry-red spot on fundus exam (Central Retinal Artery Occlusion)",
+      "Key HPI features: 71M with history of carotid stenosis and atrial fibrillation suddenly experienced complete, painless loss of vision in his left eye 2 hours ago while reading the newspaper. Describes vision dropping instantly 'like turning off a light switch' to complete darkness/light perception only. Denies eye pain, headache, jaw claudication, or scalp tenderness.",
+      "Objective/Exam findings: Vitals: HR 88 (irregularly irregular), BP 162/96. Visual acuity: Left eye Light Perception (LP) only; Right eye 20/30. Left eye pupil exhibits a dense Relative Afferent Pupillary Defect (RAPD). Slit-lamp anterior segment normal. Dilated funduscopic examination of the left eye reveals diffuse, pale, opaque whitening of the entire neurosensory retina (retinal edema/ischemia) with attenuation and segmentation of retinal arterioles ('box-carring' / cattle-trucking of blood column). At the fovea, where the inner retina is thin, the underlying choroidal circulation shines through brightly, creating the classic pathognomonic 'Cherry-Red Spot'. No temporal artery tenderness; ESR/CRP normal.",
+      "Relevant background/PMH: Atrial Fibrillation (off anticoagulation), Left Internal Carotid Artery 70% stenosis, Hypertension",
+      "Current medications: Metoprolol 50mg BID, Aspirin 81mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Central retinal artery occlusion (CRAO).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Giant cell arteritis (arteritic CRAO) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden painless complete monocular blindness."
+    ],
+    "management_principles": [
+      "Treat as an acute ischemic stroke: immediately transfer to the nearest emergency stroke center for coordinated ophthalmology and neurology evaluation",
+      "Obtain urgent stroke evaluation and assess for arteritic CRAO (including ESR, CRP, and platelet count when clinically indicated); start high-dose systemic corticosteroids immediately if giant cell arteritis is suspected",
+      "Conservative ocular maneuvers such as ocular massage, anterior-chamber paracentesis, and IOP-lowering treatment have not shown benefit and should not delay stroke-center evaluation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "71M vasculopathic patient presenting within 2 hours of sudden, catastrophic, painless monocular visual loss pathognomonic for Central Retinal Artery Occlusion (CRAO).",
+    "objective": "Vitals: HR 88 (irregularly irregular), BP 162/96. Visual acuity: Left eye Light Perception (LP) only; Right eye 20/30. Left eye pupil exhibits a dense Relative Afferent Pupillary Defect (RAPD). Slit-lamp anterior segment normal. Dilated funduscopic examination of the left eye reveals diffuse, pale, opaque whitening of the entire neurosensory retina (retinal edema/ischemia) with attenuation and segmentation of retinal arterioles ('box-carring' / cattle-trucking of blood column). At the fovea, where the inner retina is thin, the underlying choroidal circulation shines through brightly, creating the classic pathognomonic 'Cherry-Red Spot'. No temporal artery tenderness; ESR/CRP normal.",
+    "assessment": "Acute Central Retinal Artery Occlusion (CRAO - Ocular Stroke / Retinal Infarction) secondary to thromboembolism from carotid artery or atrial fibrillation.",
+    "plan": "Treat as an acute ischemic stroke with immediate transfer to the nearest emergency stroke center for coordinated ophthalmology and neurology evaluation. Obtain urgent vascular and cardioembolic evaluation and assess for giant cell arteritis (including ESR, CRP, and platelet count when clinically indicated); begin high-dose systemic corticosteroids immediately if giant cell arteritis is suspected. Conservative ocular maneuvers, including ocular massage, anterior-chamber paracentesis, IOP-lowering therapy, and hypercapnia techniques, have not shown benefit and should not delay stroke evaluation. Consider thrombolysis only through the stroke team for a patient who meets systemic eligibility criteria."
+  },
+  "learning_objectives": [
+    "Recognize Central Retinal Artery Occlusion (CRAO) as a true ocular stroke presenting with sudden, profound, painless monocular blindness and positive RAPD",
+    "Interpret pathognomonic funduscopic features of CRAO (diffuse retinal ischemic whitening, attenuated box-carring arterioles, and foveal Cherry-Red Spot)",
+    "Treat CRAO as an acute ischemic stroke requiring immediate stroke-center evaluation, vascular risk assessment, and secondary prevention",
+    "Differentiate thromboembolic CRAO from Giant Cell Arteritis (arteritic CRAO) which requires immediate high-dose IV methylprednisolone to prevent contralateral blindness"
+  ],
+  "teaching": {
+    "diagnosis": "Central retinal artery occlusion (CRAO)",
+    "one_liner": "71M with AFib and carotid stenosis with sudden painless complete vision loss in one eye, like a light switch turning off.",
+    "differentials": [
+      "Giant cell arteritis (arteritic CRAO)",
+      "Retinal detachment",
+      "Vitreous hemorrhage",
+      "Ischemic optic neuropathy"
+    ],
+    "red_flags": [
+      "Sudden painless complete monocular blindness",
+      "Onset within the last 4 hours (time-critical)",
+      "History of AFib or carotid disease"
+    ],
+    "must_ask": [
+      {
+        "objective": "Establish precise time of onset",
+        "say": "Exactly what time did your vision go dark? This is critical for treatment.",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "time of onset",
+          "critical window"
+        ]
+      },
+      {
+        "objective": "Confirm painless and complete nature",
+        "say": "Is there any pain, and can you see anything at all, such as light or shapes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "painless",
+          "light perception"
+        ]
+      },
+      {
+        "objective": "Screen for giant cell arteritis symptoms",
+        "say": "Do you have any scalp tenderness, jaw pain when chewing, or headaches?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "jaw claudication",
+          "scalp tenderness"
+        ]
+      },
+      {
+        "objective": "Review cardiac and vascular history",
+        "say": "Do you have atrial fibrillation or carotid artery disease?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "atrial fibrillation",
+          "carotid stenosis"
+        ]
+      },
+      {
+        "objective": "Explain stroke-center urgency",
+        "say": "This may be an eye stroke, so we need immediate emergency stroke-center evaluation; every minute counts.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "stroke-center evaluation",
+          "time-critical"
+        ]
+      }
+    ]
+  }
+}

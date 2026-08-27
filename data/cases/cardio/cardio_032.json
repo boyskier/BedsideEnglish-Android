@@ -1,0 +1,184 @@
+{
+  "id": "cardio_032",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thomas",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "episodic irregular heartbeat, palpitations, and fatigue for 1 week",
+  "hpi_details": "A 38-year-old female presents to the clinic with episodic irregular heartbeat, palpitations, and fatigue for 1 week. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to af",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "episodic_af_ecg",
+      "title": "12-lead ECG",
+      "order_terms": ["ECG", "EKG", "12-lead"],
+      "availability_message": "The 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_af_rapid_response",
+          "test": "12-lead ECG",
+          "value": "Atrial fibrillation with no discrete P waves and an irregularly irregular ventricular rate of 126 bpm",
+          "unit": "",
+          "reference_range": "Sinus rhythm 60-100 bpm",
+          "flag": "abnormal",
+          "collected_at": "During palpitations"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Atrial Fibrillation evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Atrial Fibrillation is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management requires ECG confirmation, assessment of haemodynamic stability, and individualized decisions on rate/rhythm control and anticoagulation based on thromboembolic risk rather than routine treatment for every patient.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodic irregular heartbeat, palpitations, and fatigue for 1 week",
+      "Key HPI features: A 38-year-old female presents to the clinic with episodic irregular heartbeat, palpitations, and fatigue for 1 week. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Atrial Fibrillation.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Atrial Fibrillation.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atrial flutter without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any focal weakness, slurred speech, or visual loss — thromboembolism."
+    ],
+    "management_principles": [
+      "Obtain ECG, assess haemodynamic stability, calculate CHA2DS2-VASc, and individualize rate/rhythm control and anticoagulation according to thromboembolic risk",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001193"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of episodic irregular heartbeat, palpitations, and fatigue for 1 week. HPI: ectopic atrial activity.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Atrial Fibrillation.",
+    "assessment": "Condition highly suspicious for Atrial Fibrillation.",
+    "plan": "Obtain ECG, assess haemodynamic stability, and calculate CHA2DS2-VASc. Individualize rate/rhythm control and anticoagulation according to thromboembolic risk; a 38-year-old woman without other risk factors does not routinely need anticoagulation."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Atrial Fibrillation",
+    "Select appropriate diagnostic workup for Atrial Fibrillation",
+    "Implement evidence-based management plan: Obtain ECG, calculate CHA2DS2-VASc, and individualize rate/rhythm control and anticoagulation"
+  ],
+  "teaching": {
+    "diagnosis": "Atrial Fibrillation",
+    "one_liner": "An irregularly irregular rhythm. Rate control, rhythm control and — above all — stroke prevention are the three decisions it forces.",
+    "differentials": [
+      "Atrial flutter",
+      "Frequent ectopics",
+      "Sinus tachycardia"
+    ],
+    "red_flags": [
+      "Any focal weakness, slurred speech, or visual loss — thromboembolism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pattern — episodic or constant",
+        "say": "Does it come and go, or is it there all the time?",
+        "domains": [
+          "progression",
+          "onset_duration"
+        ],
+        "keywords": [
+          "and",
+          "all",
+          "the",
+          "constant",
+          "episode"
+        ]
+      },
+      {
+        "objective": "Irregular pulse",
+        "say": "When you feel your pulse, is it irregular?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "irregular",
+          "uneven",
+          "pulse",
+          "random"
+        ]
+      },
+      {
+        "objective": "Stroke risk factors",
+        "say": "Do you have high blood pressure, diabetes, heart failure, or a previous stroke?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "stroke",
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Anticoagulation and bleeding history",
+        "say": "Are you on any blood thinners, and have you ever had a serious bleed?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "blood",
+          "thinner",
+          "warfarin",
+          "anticoagulant",
+          "bleed"
+        ]
+      },
+      {
+        "objective": "Alcohol",
+        "say": "How much alcohol do you drink in a typical week?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drink",
+          "beer",
+          "wine",
+          "soju"
+        ]
+      },
+      {
+        "objective": "Exertional breathlessness",
+        "say": "How far can you walk on the flat before you need to stop?",
+        "domains": [
+          "severity",
+          "aggravating"
+        ],
+        "keywords": [
+          "walk",
+          "breath",
+          "stairs"
+        ]
+      }
+    ]
+  }
+}

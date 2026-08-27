@@ -1,0 +1,149 @@
+{
+  "id": "id_017",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Nguyen",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "chronic cough, night sweats, and weight loss",
+  "hpi_details": "45M presents with a 4-week history of a productive cough (sometimes with blood streaks), drenching night sweats, fatigue, and a 10-pound weight loss. He recently emigrated from Southeast Asia.",
+  "ideas": "thinks he has lung cancer",
+  "concerns": "worried about infecting his family",
+  "expectations": "wants a chest X-ray",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Recent immigrant, living in a crowded apartment",
+  "investigation_events": [
+    {
+      "id": "urgent_chest_xray",
+      "title": "Urgent chest radiograph",
+      "order_terms": [
+        "chest x ray",
+        "chest x-ray",
+        "chest radiograph",
+        "cxr"
+      ],
+      "availability_message": "The urgent chest radiograph is now available; airborne isolation and public-health notification should not be delayed while microbiologic testing is pending.",
+      "results": [
+        {
+          "id": "right_upper_lobe_cavitation",
+          "test": "Chest radiograph",
+          "value": "Right upper-lobe cavitary opacity with surrounding patchy infiltrate",
+          "flag": "critical",
+          "collected_at": "During urgent assessment",
+          "note": "Sputum AFB smear, culture, and NAAT remain pending"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Active Pulmonary Tuberculosis (TB)",
+    "core_concepts": [
+      "Classic symptoms: chronic cough (>2-3 weeks), hemoptysis, weight loss, fever, night sweats."
+    ],
+    "diagnostic_clues": [
+      "Hemoptysis",
+      "Night sweats",
+      "Endemic area origin"
+    ],
+    "common_misconceptions": [
+      "Assuming a negative PPD or IGRA rules out active TB in a severely ill or immunocompromised patient."
+    ],
+    "dangerous_errors": [
+      "Failing to place the patient in airborne isolation (negative pressure room) immediately upon suspicion."
+    ],
+    "management_principles": [
+      "Airborne isolation, Chest X-ray, Sputum AFB smears and cultures, GeneXpert."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45M with a chronic productive cough, hemoptysis, night sweats, and weight loss. Recent immigrant.",
+    "objective": "Thin, cachectic appearing. Bronchial breath sounds and crackles in the right upper lobe.",
+    "assessment": "Suspected Active Pulmonary Tuberculosis.",
+    "plan": "Immediate airborne isolation. STAT Chest X-ray. Order 3 sputum AFB smears/cultures and NAAT. Notify public health."
+  },
+  "learning_objectives": [
+    "Identify classic symptoms of active TB and implement prompt infection control."
+  ],
+  "teaching": {
+    "diagnosis": "Active Pulmonary Tuberculosis",
+    "one_liner": "Chronic cough with hemoptysis, night sweats, and weight loss in a patient from an endemic area.",
+    "differentials": [
+      "Lung cancer",
+      "Histoplasmosis"
+    ],
+    "red_flags": [
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Cough duration and character",
+        "say": "How long have you had the cough, and have you coughed up any blood?",
+        "domains": [
+          "onset_duration",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "cough",
+          "weeks",
+          "hemoptysis",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Night sweats",
+        "say": "Have you had drenching night sweats that soak your clothes or sheets?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night sweats"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost weight without trying?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "TB exposure and risk factors",
+        "say": "Have you traveled from or lived in an area where tuberculosis is common, or been around anyone with TB?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "endemic area",
+          "TB exposure",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Massive hemoptysis red flag",
+        "say": "Have you ever coughed up a large amount of blood at once?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "massive hemoptysis",
+          "large amount blood"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "id": "rheum_041",
+  "system": "rheum",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Smith",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "asymptomatic low bone density on DEXA scan",
+  "hpi_details": "68-year-old female presents for a routine follow-up. She is completely asymptomatic and active. A recent screening DEXA scan showed a T-score of -2.8 in the lumbar spine and -2.6 in the femoral neck.",
+  "ideas": "thinks it might be related to osteoporosis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id":"dexa","test":"DEXA scan","value":"Lumbar-spine T-score -2.8; femoral-neck T-score -2.6","flag":"abnormal","collected_at":"During recent screening before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Osteoporosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Osteoporosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management may include clinician-directed antiresorptive therapy after assessing fracture risk, renal function, and contraindications, along with individualized calcium/vitamin D intake, exercise, and fall-prevention counseling.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: asymptomatic low bone density on DEXA scan",
+      "Key HPI features: A 68-year-old woman is asymptomatic but has T-scores of -2.8 at the lumbar spine and -2.6 at the femoral neck on screening DEXA.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Osteoporosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Osteoporosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Osteomalacia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: History of a fragility fracture (minimal trauma) — signals higher urgency for treatment."
+    ],
+    "management_principles": [
+      "Assess for secondary causes and fracture risk before selecting therapy.",
+      "Use prescription antiresorptive therapy only under a clinician's direction after contraindications and administration requirements are reviewed.",
+      "Counsel on adequate dietary calcium/vitamin D, weight-bearing exercise, and fall prevention."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68F presenting to review routine screening DEXA scan results. Asymptomatic.",
+    "objective": "Exam is unremarkable. No kyphosis or point tenderness over the spine. Normal gait. DEXA scan reveals T-score <= -2.5 at both lumbar spine and femoral neck.",
+    "assessment": "Osteoporosis.",
+    "plan": "Assess fracture risk, secondary causes, renal function, and contraindications. Discuss clinician-directed antiresorptive therapy if appropriate. Recommend weight-bearing exercise, individualized calcium/vitamin D intake, and fall-prevention counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Osteoporosis",
+    "Select appropriate diagnostic workup for Osteoporosis",
+    "Describe safe, clinician-directed osteoporosis management and nonpharmacologic fracture prevention"
+  ],
+  "teaching": {
+    "diagnosis": "Osteoporosis",
+    "one_liner": "An imbalance in bone remodeling favoring resorption over formation, causing reduced bone density found incidentally on a DEXA scan — asymptomatic until a fragility fracture occurs.",
+    "differentials": [
+      "Osteomalacia",
+      "Secondary osteoporosis (steroid-induced, hyperparathyroidism)"
+    ],
+    "red_flags": [
+      "History of a fragility fracture (minimal trauma) — signals higher urgency for treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "Was this found on a routine bone density scan?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fracture history",
+        "say": "Have you ever broken a bone from a minor fall or bump?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "fracture",
+          "fall"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you take steroids, or have a family history of osteoporosis?",
+        "domains": [
+          "family_hx",
+          "medications"
+        ]
+      },
+      {
+        "objective": "Menopause status",
+        "say": "Have you gone through menopause?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Calcium/vitamin D intake",
+        "say": "How much calcium and vitamin D do you get in your diet?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

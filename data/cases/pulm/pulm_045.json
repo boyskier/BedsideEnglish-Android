@@ -1,0 +1,152 @@
+{
+  "id": "pulm_045",
+  "system": "pulm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Taylor",
+  "age": 77,
+  "gender": "male",
+  "chief_complaint": "sudden high fever, body aches, sore throat, and dry cough",
+  "hpi_details": "A 77-year-old male presents to the clinic with sudden high fever, body aches, sore throat, and dry cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to flu",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Suspected Influenza evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Influenza Exacerbation is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Older adults with suspected influenza require assessment for pneumonia, hypoxemia, dehydration, and other complications; antiviral treatment is clinician-directed and may be considered promptly in high-risk or progressive illness.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden high fever, body aches, sore throat, and dry cough",
+      "Key HPI features: A 77-year-old male presents to the clinic with sudden high fever, body aches, sore throat, and dry cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Influenza Exacerbation.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Influenza Exacerbation.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Community-acquired pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Assess vital signs, oxygenation, hydration, symptom timing, and evidence of pneumonia or sepsis; use testing when it will guide care.",
+      "Provide supportive measures and clinician-directed antiviral treatment when indicated; do not use antibiotics unless bacterial infection is suspected or confirmed.",
+      "Send for emergency evaluation for severe dyspnea, hypoxemia, chest pain, confusion, dehydration, persistent hypotension, or rapid deterioration."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": []
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden high fever, body aches, sore throat, and dry cough. HPI: influenza virus A or B.",
+    "objective": "Focused physical exam, vital signs, hydration, oxygenation, and assessment for pneumonia or sepsis.",
+    "assessment": "Suspected influenza in an older adult at increased risk of complications.",
+    "plan": "Assess oxygenation, hydration, symptom timing, and signs of pneumonia or sepsis; test when it will guide care. Provide supportive measures and clinician-directed antiviral treatment when indicated; avoid antibiotics unless bacterial infection is suspected or confirmed. Seek emergency care for severe dyspnea, hypoxemia, chest pain, confusion, dehydration, hypotension, or rapid deterioration."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of suspected influenza",
+    "Select appropriate diagnostic workup for suspected influenza",
+    "Describe supportive care, clinician-directed antiviral treatment, and emergency safety-netting for influenza"
+  ],
+  "teaching": {
+    "diagnosis": "Suspected Influenza",
+    "one_liner": "Pulmonology case presenting with sudden high fever, body aches, sore throat, and dry cough.",
+    "differentials": [
+      "Community-acquired pneumonia",
+      "Acute bronchitis",
+      "Early bacterial superinfection"
+    ],
+    "red_flags": [
+      "Severe hypoxemia (SpO2 < 90%)",
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Abruptness of fever onset and peak temperature",
+        "say": "How suddenly did the fever come on, and how high has it gotten?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "sudden onset",
+          "fever",
+          "temperature",
+          "abrupt",
+          "peak"
+        ]
+      },
+      {
+        "objective": "Myalgia, headache, and sore throat associated symptoms",
+        "say": "Are you having body aches, headache, or a sore throat along with the fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "myalgia",
+          "headache",
+          "sore throat",
+          "body aches",
+          "malaise"
+        ]
+      },
+      {
+        "objective": "Influenza vaccination status and antiviral treatment window",
+        "say": "Did you get a flu shot this year, and how many days has it been since your symptoms started?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "vaccination",
+          "antiviral",
+          "oseltamivir",
+          "treatment window",
+          "flu shot"
+        ]
+      },
+      {
+        "objective": "Sick contacts and exposure setting",
+        "say": "Has anyone around you had similar flu symptoms recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "sick contacts",
+          "exposure",
+          "outbreak",
+          "cluster",
+          "community"
+        ]
+      },
+      {
+        "objective": "High-risk features for complications given age",
+        "say": "Do you have any breathing difficulty, chest pain, or confusion along with these symptoms?",
+        "domains": [
+          "severity",
+          "pmh"
+        ],
+        "keywords": [
+          "complications",
+          "high-risk",
+          "dyspnea",
+          "confusion",
+          "pneumonia"
+        ]
+      }
+    ]
+  }
+}

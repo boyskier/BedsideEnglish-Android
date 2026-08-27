@@ -1,0 +1,141 @@
+{
+  "id": "neuro_008",
+  "system": "neurology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Park",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "room spinning violently for 30 seconds every time I roll over in bed or look up",
+  "hpi_details": "3-week history of intense, brief attacks of spinning rotational dizziness (vertigo) lasting 20 to 40 seconds. Attacks are triggered predictably whenever she rolls over from her back onto her right side in bed, lies down flat, or tilts her head back to reach high kitchen shelves. During episodes, she feels nauseous and holds onto the walls until the spinning stops completely. Between attacks, she feels entirely normal with zero dizziness. Denies hearing loss, tinnitus, ear fullness, headaches, or facial numbness.",
+  "ideas": "thinks inner ear fluid or crystals have shifted out of place after a mild cold last month",
+  "concerns": "worried she might fall and break her hip or have a brainstem stroke during an attack",
+  "expectations": "wants a physical manoeuvre to put the crystals back in place so she can sleep on her right side again",
+  "pmh": "osteopenia, mild osteoarthritis of cervical spine",
+  "medications": "calcium/vitamin D supplement OD",
+  "social_hx": "non-smoker, zero alcohol, retired librarian, lives with husband",
+  "investigation_events": [
+    {
+      "id": "bedside_dix_hallpike",
+      "title": "Dix-Hallpike positional test",
+      "order_terms": ["Dix-Hallpike", "Dix Hallpike", "positional test"],
+      "availability_message": "The bedside positional test result is now available.",
+      "results": [
+        {"id": "right_dix_hallpike", "test": "Right Dix-Hallpike maneuver", "value": "After 3 seconds of latency, transient torsional upbeating nystagmus and typical vertigo lasting 22 seconds, with fatigability on repetition", "flag": "abnormal", "note": "Consistent with right posterior canal BPPV."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Benign Paroxysmal Positional Vertigo (BPPV) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Benign Paroxysmal Positional Vertigo (BPPV) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Perform curative bedside Epley Canalith Repositioning Manoeuvre in the clinic (sequential head turns moving otolith debris out of the posterior semicircular canal back into the utricle), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: room spinning violently for 30 seconds every time I roll over in bed or look up",
+      "Key HPI features: 3-week history of intense, brief attacks of spinning rotational dizziness (vertigo) lasting 20 to 40 seconds. Attacks are triggered predictably whenever she rolls over from her back onto her right side in bed, lies down flat, or tilts her head back to reach high kitchen shelves. During episodes, she feels nauseous and holds onto the walls until the spinning stops completely. Between attacks, she feels entirely normal with zero dizziness. Denies hearing loss, tinnitus, ear fullness, headaches, or facial numbness.",
+      "Objective/Exam findings: Perform diagnostic Dix-Hallpike Manoeuvre (with patient sitting, turn head 45 degrees to the right and rapidly lay back to supine with head hanging 20 degrees off bed): observe eyes closely. Classical positive result for right posterior canal BPPV: after a brief latency of 2-5 seconds, torsional upbeating nystagmus appears, lasts 15-30 seconds, and fatigues/stops completely with continued maintenance of position. Check left ear with left Dix-Hallpike. Cranial nerve and cerebellar exam: completely normal (no dysmetria or ataxia).",
+      "Relevant background/PMH: osteopenia, mild osteoarthritis of cervical spine",
+      "Current medications: calcium/vitamin D supplement OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Benign Paroxysmal Positional Vertigo (BPPV).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Meniere's disease (longer episodes, hearing loss) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Vertical downbeating nystagmus without latency — would suggest a central (brain) cause instead of BPPV."
+    ],
+    "management_principles": [
+      "Perform curative bedside Epley Canalith Repositioning Manoeuvre in the clinic (sequential head turns moving otolith debris out of the posterior semicircular canal back into the utricle)",
+      "Reassure patient regarding immediate high success rate (>80% cured after 1-2 Epley treatments)",
+      "Avoid prescribing vestibular sedatives for uncomplicated BPPV, as they do not correct the mechanical cause and may delay compensation.",
+      "Teach Brandt-Daroff home exercises if minor residual dizziness persists."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "62F presents with recurrent brief (<1 min) positional rotational vertigo triggered strictly by head movements (rolling right or tilting up). No auditory or brainstem symptoms.",
+    "objective": "Perform diagnostic Dix-Hallpike Manoeuvre (with patient sitting, turn head 45 degrees to the right and rapidly lay back to supine with head hanging 20 degrees off bed): observe eyes closely. Classical positive result for right posterior canal BPPV: after a brief latency of 2-5 seconds, torsional upbeating nystagmus appears, lasts 15-30 seconds, and fatigues/stops completely with continued maintenance of position. Check left ear with left Dix-Hallpike. Cranial nerve and cerebellar exam: completely normal (no dysmetria or ataxia).",
+    "assessment": "Benign Paroxysmal Positional Vertigo (BPPV) of the right posterior semicircular canal due to canalithiasis (calcium carbonate otoliths dislodged from utricle). DDx: Meniere's disease (differentiated by episodes lasting hours accompanied by sensorineural hearing loss, tinnitus, and ear fullness), vestibular neuritis (continuous vertigo lasting days with spontaneous nystagmus), central positional vertigo / cerebellar stroke (indicated by vertical downbeating nystagmus without latency or fatigability).",
+    "plan": "Perform curative bedside Epley Canalith Repositioning Manoeuvre in the clinic (sequential head turns moving otolith debris out of the posterior semicircular canal back into the utricle). Reassure patient regarding immediate high success rate (>80% cured after 1-2 Epley treatments). Avoid prescribing vestibular sedatives (e.g., prochlorperazine or betahistine) for uncomplicated BPPV as they delay central vestibular compensation. Instruct on Brandt-Daroff home exercises if minor residual dizziness persists."
+  },
+  "learning_objectives": [
+    "Differentiate BPPV from Meniere's disease and vestibular neuritis based on attack duration (<1 min vs hours/days) and absence of auditory symptoms",
+    "Perform and interpret the diagnostic Dix-Hallpike manoeuvre identifying characteristic latent, fatigable torsional upbeating nystagmus",
+    "Execute the Epley Canalith Repositioning manoeuvre accurately in the clinical setting",
+    "Explain why vestibular sedative medications are contraindicated or unhelpful in mechanical otolith repositioning disorders"
+  ],
+  "teaching": {
+    "diagnosis": "Benign Paroxysmal Positional Vertigo (BPPV)",
+    "one_liner": "Dislodged calcium crystals in the inner ear canal cause brief, intense spinning triggered by specific head movements (rolling over, looking up), lasting under a minute and cured in most cases by a single Epley maneuver in the clinic.",
+    "differentials": [
+      "Meniere's disease (longer episodes, hearing loss)",
+      "Vestibular neuritis (continuous, days-long)",
+      "Central positional vertigo/cerebellar stroke"
+    ],
+    "red_flags": [
+      "Vertical downbeating nystagmus without latency may suggest a central (brain) cause instead of BPPV"
+    ],
+    "must_ask": [
+      {
+        "objective": "Trigger movements",
+        "say": "Does the spinning happen specifically when you roll over in bed or look up?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "rolling over",
+          "looking up"
+        ]
+      },
+      {
+        "objective": "Duration of episodes",
+        "say": "Does each spinning spell last less than a minute?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "seconds",
+          "brief"
+        ]
+      },
+      {
+        "objective": "Absence of hearing symptoms",
+        "say": "Any hearing loss, ringing, or ear fullness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration overall",
+        "say": "How many weeks has this been happening?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fall risk concern",
+        "say": "Are you worried about falling during these episodes?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

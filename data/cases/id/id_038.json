@@ -1,0 +1,150 @@
+{
+  "id": "id_038",
+  "system": "id",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Smith",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "sore throat, high fever, tonsillar exudates, no cough",
+  "hpi_details": "A 56-year-old female presents to the clinic with sore throat, high fever, tonsillar exudates, no cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to strep_throat",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_rapid_strep",
+      "title": "Point-of-care rapid strep test",
+      "order_terms": [
+        "rapid strep test",
+        "rapid strep",
+        "strep test",
+        "group a strep test"
+      ],
+      "availability_message": "The point-of-care rapid strep result is now available.",
+      "results": [
+        {
+          "id": "rapid_strep",
+          "test": "Rapid group A streptococcal antigen",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Throat swab",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Streptococcal Pharyngitis (Strep Throat) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Streptococcal Pharyngitis (Strep Throat) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Acute Pharyngitis: Oral Penicillin V or Amoxicillin for 10 days to prevent RF, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sore throat, high fever, tonsillar exudates, no cough",
+      "Key HPI features: A 56-year-old female presents to the clinic with sore throat, high fever, tonsillar exudates, no cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 38.7C, HR 100, BP 124/78. Tonsils erythematous and enlarged with white-yellow exudate, tender anterior cervical lymphadenopathy, no cough, lungs clear. Centor score 4 (fever, exudate, tender adenopathy, no cough). Rapid strep antigen test positive.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Streptococcal Pharyngitis (Strep Throat).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral pharyngitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Difficulty swallowing saliva or muffled voice — suggests peritonsillar abscess."
+    ],
+    "management_principles": [
+      "Plan for Acute Pharyngitis: Oral Penicillin V or Amoxicillin for 10 days to prevent RF",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sore throat, high fever, tonsillar exudates, no cough\n\nA 56-year-old female presents to the clinic with sore throat, high fever, tonsillar exudates, no cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 38.7C, HR 100, BP 124/78. Tonsils erythematous and enlarged with white-yellow exudate, tender anterior cervical lymphadenopathy, no cough, lungs clear. Centor score 4 (fever, exudate, tender adenopathy, no cough). Rapid strep antigen test positive.",
+    "assessment": "Acute Streptococcal Pharyngitis, Centor score 4 with positive rapid antigen test confirming Group A Streptococcus.",
+    "plan": "Use a rapid antigen detection test or throat culture to confirm group A streptococcal infection before treatment in adults when testing is indicated. Treat confirmed infection with penicillin V or amoxicillin for an appropriate course; provide symptomatic care and reassess for airway or deep-neck-space complications if symptoms worsen."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Pharyngitis",
+    "Select appropriate diagnostic workup for Acute Pharyngitis",
+    "Implement evidence-based management plan: Oral Penicillin V or Amoxicillin for 10 days to prevent RF"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Streptococcal Pharyngitis (Strep Throat)",
+    "one_liner": "Group A Streptococcus infection of the throat causing severe sore throat, high fever, and tonsillar exudates without a cough — treated with penicillin to prevent rheumatic fever.",
+    "differentials": [
+      "Viral pharyngitis",
+      "Infectious mononucleosis",
+      "Peritonsillar abscess"
+    ],
+    "red_flags": [
+      "Difficulty swallowing saliva or muffled voice — suggests peritonsillar abscess"
+    ],
+    "must_ask": [
+      {
+        "objective": "Absence of cough",
+        "say": "Do you have a cough along with the sore throat, or just the throat pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "no cough"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "How high has your fever been?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Swallowing",
+        "say": "Is it painful to swallow?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Tonsil appearance",
+        "say": "Have you noticed any white patches on your tonsils?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "exudate",
+          "white patches"
+        ]
+      },
+      {
+        "objective": "Neck lymph nodes",
+        "say": "Are the glands in your neck tender?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

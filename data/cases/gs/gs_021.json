@@ -1,0 +1,169 @@
+{
+  "id": "gs_021",
+  "system": "general surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Noh",
+  "age": 24,
+  "gender": "male",
+  "chief_complaint": "acute abdominal pain starting around belly button and moving to the right lower side",
+  "hpi_details": "24M presents with 18 hours of abdominal pain that began as a dull ache around his umbilicus and has since migrated to the right lower quadrant, becoming sharp and constant. Reports loss of appetite and mild nausea.",
+  "ideas": "thinks he has appendicitis or food poisoning",
+  "concerns": "worried about appendix rupture and surgery",
+  "expectations": "wants ultrasound/CT and pain relief",
+  "pmh": "No prior surgeries",
+  "medications": "None",
+  "social_hx": "College student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_appendicitis_workup",
+      "title": "Urgent appendicitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "white blood cell count",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The urgent appendicitis results are now available; IV fluids, analgesia, antibiotics, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "13.2",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "ct_appendix",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Dilated appendix measuring 9 mm with periappendiceal fat stranding; no abscess or perforation",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Appendicitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Appendicitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes keeping the patient NPO, IV fluid resuscitation, IV analgesia, pre-operative antibiotics, and urgent surgical consultation for appendectomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute abdominal pain starting around belly button and moving to the right lower side",
+      "Key HPI features: 24M presents with 18 hours of abdominal pain that began as a dull ache around his umbilicus and has since migrated to the right lower quadrant, becoming sharp and constant. Reports loss of appetite and mild nausea.",
+      "Objective/Exam findings: Vitals: Temp 37.8C, HR 92, BP 122/76. Abdominal exam reveals localized tenderness and voluntary guarding at McBurney's point with a positive Rovsing's sign, no rebound or diffuse rigidity. Bloods: WBC 13,200 /uL with left shift. Abdominal CT with IV contrast shows a dilated, non-compressible appendix (9 mm) with periappendiceal fat stranding.",
+      "Relevant background/PMH: No prior surgeries"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Appendicitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Diffuse rigidity or rebound tenderness — suggests perforation."
+    ],
+    "management_principles": [
+      "Perform a focused abdominal exam (check McBurney point tenderness, Rovsing's sign, psoas sign)",
+      "Order CBC, CMP, and abdominal CT",
+      "Keep NPO, give IV fluids and analgesia, start pre-operative IV antibiotics, and refer urgently to general surgery for appendectomy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "24M presents with 18 hours of abdominal pain that began as a dull ache around his umbilicus and has since migrated to the right lower quadrant, becoming sharp and constant. Reports loss of appetite and mild nausea.",
+    "objective": "Vitals: Temp 37.8C, HR 92, BP 122/76. Abdominal exam reveals localized tenderness and voluntary guarding at McBurney's point with a positive Rovsing's sign, no rebound or diffuse rigidity. Bloods: WBC 13,200 /uL with left shift. Abdominal CT with IV contrast shows a dilated, non-compressible appendix (9 mm) with periappendiceal fat stranding.",
+    "assessment": "Acute uncomplicated appendicitis.",
+    "plan": "Perform a focused abdominal exam (check McBurney point tenderness, Rovsing's sign, psoas sign). Order CBC, CMP, and abdominal CT. Keep NPO, give IV fluids and analgesia, start pre-operative IV antibiotics, and refer urgently to general surgery for appendectomy. Counsel the patient on the diagnosis, the need for surgery, and return precautions."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Appendicitis.",
+    "Formulate prioritized differential diagnosis for acute abdominal pain starting around belly button and moving to the right lower side",
+    "Select appropriate laboratory and imaging studies for general surgery",
+    "Implement evidence-based acute and long-term management strategies for Acute Appendicitis."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Appendicitis",
+    "one_liner": "Obstruction of the appendiceal lumen causing pain that migrates from the umbilicus to the right lower quadrant, with anorexia and low-grade fever.",
+    "differentials": [
+      "Gastroenteritis",
+      "Mesenteric adenitis",
+      "Ovarian pathology (in females)"
+    ],
+    "red_flags": [
+      "Diffuse rigidity or rebound tenderness — suggests perforation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Migration of the pain",
+        "say": "Did the pain start around your belly button and move to your lower right side?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "migrate",
+          "moved",
+          "right side"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "When did the pain start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Appetite and nausea",
+        "say": "Have you lost your appetite or felt nauseated?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "appetite",
+          "nausea"
+        ]
+      },
+      {
+        "objective": "Aggravating factors",
+        "say": "Does moving or coughing make it worse?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "moving",
+          "coughing"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Have you had pain like this before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

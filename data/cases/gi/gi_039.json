@@ -1,0 +1,162 @@
+{
+  "id": "gi_039",
+  "system": "gi",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. White",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "severe nausea, bloating, and early satiety after meals",
+  "hpi_details": "A 59-year-old male presents to the clinic with severe nausea, bloating, and early satiety after meals. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gastroparesis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Long-standing type 2 diabetes mellitus with peripheral neuropathy, poorly controlled",
+  "medications": "Metformin, insulin",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Diabetic Gastroparesis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diabetic Gastroparesis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes ordering a gastric emptying study and recommending small, frequent, low-fat meals with metoclopramide as needed, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe nausea, bloating, and early satiety after meals",
+      "Key HPI features: A 59-year-old male presents to the clinic with severe nausea, bloating, and early satiety after meals. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Diabetic Gastroparesis.",
+      "Relevant background/PMH: Long-standing type 2 diabetes mellitus with peripheral neuropathy, poorly controlled"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diabetic Gastroparesis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastric outlet obstruction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: signs of gastric outlet obstruction (succussion splash, persistent vomiting of old food), haematemesis or evidence of GI bleeding, severe dehydration, electrolyte derangement, or ketoacidosis from poor oral intake in a diabetic patient."
+    ],
+    "management_principles": [
+      "Order gastric emptying study, recommend small frequent low-fat meals, metoclopramide",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of severe nausea, bloating, and early satiety after meals. HPI: delayed gastric emptying, diabetic neuropathy.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Diabetic Gastroparesis.",
+    "assessment": "Condition highly suspicious for Diabetic Gastroparesis.",
+    "plan": "Review medications and exclude mechanical obstruction, often with upper endoscopy or appropriate imaging, before gastric-emptying testing. Optimize glycemic control and recommend small, low-fat, low-fiber meals. Consider time-limited metoclopramide only when benefits outweigh neurologic adverse-effect risks."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Diabetic Gastroparesis",
+    "Select appropriate diagnostic workup for Diabetic Gastroparesis",
+    "Implement evidence-based management plan: Order gastric emptying study, recommend small frequent low-fat meals, metoclopramide"
+  ],
+  "teaching": {
+    "diagnosis": "Diabetic Gastroparesis",
+    "one_liner": "Long-standing diabetes damages the nerves controlling stomach emptying, so food sits in the stomach too long, causing nausea, bloating, and feeling full after only a little food.",
+    "differentials": [
+      "Gastric outlet obstruction",
+      "Peptic ulcer disease",
+      "Functional dyspepsia"
+    ],
+    "red_flags": [
+      "Signs of gastric outlet obstruction (succussion splash, persistent vomiting of old food) — needs imaging/endoscopy to exclude mechanical obstruction",
+      "Haematemesis or evidence of GI bleeding",
+      "Severe dehydration, electrolyte derangement, or ketoacidosis from poor oral intake in a diabetic patient"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diabetes duration and control",
+        "say": "How long have you had diabetes, and how well controlled has it been?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "controlled",
+          "sugar",
+          "insulin"
+        ]
+      },
+      {
+        "objective": "Early satiety",
+        "say": "Do you feel full after only eating a small amount?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "full",
+          "small",
+          "amount",
+          "satiety"
+        ]
+      },
+      {
+        "objective": "Nausea and vomiting",
+        "say": "Do you feel nauseous, or have you vomited undigested food from earlier meals?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "vomit",
+          "undigested"
+        ]
+      },
+      {
+        "objective": "Bloating pattern",
+        "say": "Does the bloating get worse as the day goes on?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "bloating",
+          "distended",
+          "worsens"
+        ]
+      },
+      {
+        "objective": "Blood sugar swings",
+        "say": "Have your blood sugar readings become harder to control or more unpredictable?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "sugar",
+          "glucose",
+          "readings",
+          "unpredictable"
+        ]
+      },
+      {
+        "objective": "Neuropathy symptoms",
+        "say": "Do you have any numbness or tingling in your feet?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "numbness",
+          "tingling",
+          "feet",
+          "nerve"
+        ]
+      }
+    ]
+  }
+}

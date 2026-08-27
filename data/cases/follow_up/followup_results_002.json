@@ -1,0 +1,292 @@
+{
+  "id": "followup_results_002",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "results_review",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Ms. Rachel Green",
+  "age": 44,
+  "gender": "female",
+  "visit_title": "Iron deficiency anemia test review",
+  "follow_up_reason": "Discuss blood test results and GI workup plan",
+  "clinician_brief": {
+    "prior_note": "Seen 2 weeks ago for fatigue and pale conjunctiva. Hemoglobin was 9.2 g/dL. Iron studies, celiac panel, and GI evaluation were requested.",
+    "active_problems": [
+      "Microcytic anemia",
+      "Fatigue under evaluation"
+    ],
+    "current_medications": [
+      "Ferrous sulfate 325 mg once daily with Vitamin C"
+    ],
+    "previous_plan": [
+      "CBC, Ferritin, TIBC, iron levels",
+      "Celiac serology",
+      "Fecal occult blood / GI endoscopy consultation",
+      "Review in 2 weeks"
+    ],
+    "results_and_observations": [
+      "Hb 9.4 g/dL, MCV 72 fL (microcytic)",
+      "Ferritin 8 ng/mL (severely low)",
+      "Celiac antibody panel negative",
+      "Stool guaiac positive x1"
+    ],
+    "today_tasks": [
+      "Explain iron deficiency anemia diagnosis",
+      "Review GI endoscopic evaluation rationale (colonoscopy/EGD)",
+      "Assess oral iron tolerance and GI side effects",
+      "Provide advice on iron absorption (take with orange juice, avoid tea/calcium)",
+      "Agree on endoscopy scheduling and follow-up CBC timeline"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Fatigue is slightly better, but notices dark/black stools from iron pills.",
+    "adherence": "Takes ferrous sulfate every morning with orange juice.",
+    "treatment_response": "Less lightheaded when climbing stairs.",
+    "side_effects": "Mild constipation and dark stools.",
+    "new_symptoms_and_red_flags": "No rectal bleeding, severe abdominal pain, vomiting blood, weight loss, or syncope.",
+    "agenda": "Wants to know why she needs a colonoscopy if her blood test showed low iron.",
+    "concern": "Scared that a colonoscopy means she has colon cancer.",
+    "preference": "Wants to understand the endoscopic procedure before agreeing."
+  },
+  "clinical_knowledge": {
+    "topic": "Explaining why a positive fecal occult blood test with severe iron deficiency (ferritin 8) mandates bidirectional endoscopy, not just iron replacement, without confirming her fear of colon cancer",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "In an adult without an obvious alternate cause (like heavy menses), new iron deficiency anemia is presumed to be from gastrointestinal blood loss until proven otherwise, and guidelines recommend both upper (EGD) and lower (colonoscopy) endoscopy to localize the source — a positive stool occult-blood test reinforces but does not replace this bidirectional workup.",
+      "A ferritin of 8 ng/mL is severely depleted (normal is roughly 20-30 ng/mL or higher depending on the lab) and, combined with an MCV of 72 fL, confirms true iron-deficiency microcytic anemia rather than anemia of chronic disease, where ferritin is typically normal or elevated.",
+      "Colonoscopy referral for a positive occult blood test and iron deficiency is a standard, guideline-driven diagnostic step to look for treatable causes across a spectrum from benign (polyps, hemorrhoids) to malignant (colorectal cancer) — ordering it does not imply cancer is likely, only that it needs to be ruled out.",
+      "Negative celiac serology lowers the likelihood of celiac disease as the cause of her iron deficiency, appropriately shifting the diagnostic focus toward direct visualization of the GI tract for a bleeding source."
+    ],
+    "diagnostic_clues": [
+      "Ferritin 8 ng/mL is markedly low and is the most specific lab marker confirming true iron deficiency (rather than a normal-ferritin anemia of another cause), supporting the need for a source evaluation rather than empiric iron alone.",
+      "A single positive stool guaiac test, in the setting of unexplained iron deficiency, meets criteria for GI endoscopic evaluation regardless of whether further stool tests are repeated.",
+      "Dark/black stools reported by the patient are the expected, benign effect of oral ferrous sulfate itself and should be distinguished from melena (true GI bleeding) by asking about associated symptoms like abdominal pain or lightheadedness, which she does not have.",
+      "Mild constipation and improved (though not resolved) fatigue reflect a partial early response to iron supplementation, consistent with expected early improvement before hemoglobin fully normalizes over subsequent weeks."
+    ],
+    "common_misconceptions": [
+      "Rachel's core misconception — that a colonoscopy is only ordered when cancer is strongly suspected — needs direct correction: it is a standard step to find the source of unexplained iron deficiency, and most causes found are benign.",
+      "Assuming the dark stools she has noticed are a bleeding red flag when they are simply the expected color change from oral iron supplementation.",
+      "Believing that if the blood test already 'found' the anemia, endoscopy is a redundant or unnecessary extra step, rather than understanding blood tests identify the anemia while endoscopy identifies its source.",
+      "Assuming oral iron alone will fix the underlying problem long-term, without addressing why iron is being lost in the first place, if there is an ongoing GI source."
+    ],
+    "dangerous_errors": [
+      "Reassuring her that everything is fine because her fatigue is improving on iron, without proceeding to the endoscopic evaluation needed to identify (and potentially treat) an ongoing source of blood loss.",
+      "Failing to distinguish, in the conversation, between iron-induced dark stools and melena, which could either cause unnecessary alarm or, worse, cause a true melena episode to be dismissed as 'just the iron pills' in the future.",
+      "Not screening for hematemesis, severe abdominal pain, unintentional weight loss, or syncope, which would suggest more urgent GI pathology needing expedited rather than routine endoscopy scheduling.",
+      "Not considering non-GI sources of blood loss (e.g., heavy menstrual bleeding) as part of a complete evaluation, even while pursuing the GI workup."
+    ],
+    "management_principles": [
+      "Clearly explain that the colonoscopy (and EGD) are being done to find where the iron loss is coming from, not because cancer is expected or likely.",
+      "Reassure her about the safety and routine nature of endoscopic procedures, addressing any specific fears about sedation, discomfort, or the procedure itself.",
+      "Continue optimizing oral iron absorption — with vitamin C, and counsel that dark stools are an expected, harmless side effect distinct from true GI bleeding.",
+      "Schedule the GI endoscopic evaluation and set a follow-up CBC in about 6 weeks to track hemoglobin response to treatment."
+    ],
+    "boundaries_and_exceptions": [
+      "If she reports heavy menstrual bleeding, that alternate source of blood loss should be evaluated in parallel and may reduce (though not eliminate) the urgency of a full GI workup depending on clinical judgment.",
+      "Any red-flag symptoms — rectal bleeding, hematemesis, severe abdominal pain, unintentional weight loss, or syncope — would warrant expedited rather than routine-interval endoscopy.",
+      "In an older patient or one with a strong family history of colorectal cancer, the same findings would carry a higher pretest probability of malignancy and might change how the risk is framed, though the recommended workup is similar."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guideline: Iron Deficiency Anemia",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the agenda for reviewing anemia blood work and GI findings",
+    "Explain low ferritin microcytic anemia in plain English",
+    "Explain the clinical rationale for upper and lower GI endoscopy (EGD and colonoscopy)",
+    "Assess oral iron tolerance and clarify expected stool color changes",
+    "Recognize and address fear of gastrointestinal cancer empathetically",
+    "Provide clear advice on optimizing oral iron absorption",
+    "Agree on endoscopy scheduling and repeat CBC timeline"
+  ],
+  "evaluation_checklist": [
+    {
+      "item": "Confirms the reason for follow-up and the patient's agenda",
+      "required": true
+    },
+    {
+      "item": "Links the visit to the previous assessment and investigation plan",
+      "required": true
+    },
+    {
+      "item": "Assesses interval improvement, persistence or deterioration",
+      "required": true
+    },
+    {
+      "item": "Reviews adherence using nonjudgmental language",
+      "required": true
+    },
+    {
+      "item": "Checks treatment tolerance and adverse effects",
+      "required": true
+    },
+    {
+      "item": "Screens for case-relevant new symptoms and red flags",
+      "required": true
+    },
+    {
+      "item": "Explains the anemia results and imaging in plain English",
+      "required": true
+    },
+    {
+      "item": "Elicits concerns, questions and treatment preferences",
+      "required": true
+    },
+    {
+      "item": "Agrees on a concrete treatment and monitoring plan",
+      "required": true
+    },
+    {
+      "item": "Provides follow-up timing and safety-net advice",
+      "required": true
+    },
+    {
+      "item": "Uses teach-back or another understanding check",
+      "required": true
+    }
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the agenda for reviewing anemia blood work and GI findings",
+      "category": "Agenda",
+      "question": "Before we review your blood work and test results today, what would you most like us to address?"
+    },
+    {
+      "objective": "Explain low ferritin microcytic anemia in plain English",
+      "category": "Results",
+      "question": "Would it help if I explained what low ferritin and small red blood cells mean for your energy levels?"
+    },
+    {
+      "objective": "Explain the clinical rationale for upper and lower GI endoscopy (EGD and colonoscopy)",
+      "category": "Investigation plan",
+      "question": "Can I explain why checking the stomach and bowel with a camera helps us find where iron is being lost?"
+    },
+    {
+      "objective": "Assess oral iron tolerance and clarify expected stool color changes",
+      "category": "Tolerance",
+      "question": "How are the iron pills agreeing with your stomach, and have you noticed your stools turning dark?"
+    },
+    {
+      "objective": "Recognize and address fear of gastrointestinal cancer empathetically",
+      "category": "Concerns",
+      "question": "What worries you most when we discuss doing a colonoscopy or stomach scope?"
+    },
+    {
+      "objective": "Provide clear advice on optimizing oral iron absorption",
+      "category": "Treatment advice",
+      "question": "Are you taking the iron pill with vitamin C juice, and avoiding coffee or calcium at the same time?"
+    },
+    {
+      "objective": "Agree on endoscopy scheduling and repeat CBC timeline",
+      "category": "Shared plan",
+      "question": "Shall we go ahead and book the gastroenterology scope and recheck your blood count in six weeks?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the agenda for reviewing anemia blood work and GI findings",
+      "keywords": [
+        "results",
+        "blood work",
+        "agenda",
+        "today",
+        "go through",
+        "anemia"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain low ferritin microcytic anemia in plain English",
+      "keywords": [
+        "ferritin",
+        "iron deficiency",
+        "red blood cells",
+        "hemoglobin",
+        "low iron",
+        "stores"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain the clinical rationale for upper and lower GI endoscopy (EGD and colonoscopy)",
+      "keywords": [
+        "colonoscopy",
+        "endoscopy",
+        "scope",
+        "stomach",
+        "bowel",
+        "camera",
+        "iron loss",
+        "bleeding"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess oral iron tolerance and clarify expected stool color changes",
+      "keywords": [
+        "iron pill",
+        "dark stools",
+        "black stools",
+        "constipation",
+        "stomach",
+        "tolerance"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Recognize and address fear of gastrointestinal cancer empathetically",
+      "keywords": [
+        "cancer",
+        "worry",
+        "worried",
+        "fear",
+        "anxious",
+        "scared",
+        "reassure"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Provide clear advice on optimizing oral iron absorption",
+      "keywords": [
+        "vitamin c",
+        "orange juice",
+        "coffee",
+        "tea",
+        "calcium",
+        "absorption",
+        "empty stomach"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on endoscopy scheduling and repeat CBC timeline",
+      "keywords": [
+        "endoscopy",
+        "colonoscopy",
+        "six weeks",
+        "blood test",
+        "schedule",
+        "agree",
+        "plan"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "44F with microcytic anemia returns for test results. Reports fatigue mildly improved on ferrous sulfate. Stools are dark. Anxious regarding colonoscopy recommendation and cancer risk.",
+    "objective": "Hb 9.4 g/dL, Ferritin 8 ng/mL (severely depleted). Stool guaiac positive. Celiac serology negative.",
+    "assessment": "Severe iron deficiency anemia with a positive stool occult-blood test; requires evaluation for gastrointestinal blood loss, while also assessing other sources such as menstrual blood loss.",
+    "plan": "Explain necessity of EGD/colonoscopy to locate source of occult blood loss, reassure regarding scope safety, optimize oral iron with Vitamin C, schedule GI procedure, recheck CBC in 6 weeks."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Iron deficiency anemia test review",
+    "one_liner": "Clinical scenario for evaluation and management of Iron deficiency anemia test review."
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "ortho_010",
+  "system": "orthopedics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Hall",
+  "age": 16,
+  "gender": "male",
+  "chief_complaint": "persistent deep bone pain in knee and palpable hard distal thigh mass in teenager",
+  "hpi_details": "16M presenting with 3-month worsening distal femur pain waking him at night, with sunburst periosteal reaction and Codman triangle on radiograph.",
+  "ideas": "thinks this is related to osteosarcoma distal femur",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant past medical history",
+  "medications": "None",
+  "social_hx": "High school student, plays on the school soccer team, non-smoker",
+  "available_results": [{"id": "femur_radiograph", "test": "Distal femur radiograph", "value": "Aggressive metaphyseal bone-forming lesion with mixed sclerosis, sunburst periosteal reaction, and Codman triangle", "flag": "critical", "note": "Highly suspicious for osteosarcoma; definitive biopsy and staging remain pending."}],
+  "clinical_knowledge": {
+    "topic": "Osteosarcoma of the distal femur evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Osteosarcoma of the distal femur is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent referral to an orthopedic oncology center for staging and biopsy performed by the treating surgical team before any intervention, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: persistent deep bone pain in knee and palpable hard distal thigh mass in teenager",
+      "Key HPI features: 16M presenting with 3-month worsening distal femur pain waking him at night, with sunburst periosteal reaction and Codman triangle on radiograph.",
+      "Objective/Exam findings: Afebrile, vitals within normal limits. Firm, tender, fixed mass over the distal femoral metaphysis with overlying warmth; skin intact, no erythema. Restricted knee range of motion due to pain. Distal pulses and sensation intact. No lymphadenopathy. Labs show elevated alkaline phosphatase and LDH.",
+      "Relevant background/PMH: No significant past medical history",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Osteosarcoma of the distal femur.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ewing sarcoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Night pain waking from sleep."
+    ],
+    "management_principles": [
+      "Urgent referral to an orthopedic oncology center; the diagnostic biopsy must be performed by the treating surgical team to avoid compromising future limb-salvage options",
+      "Staging workup: MRI of the entire affected bone to assess local extent and skip lesions, CT chest for pulmonary metastases, bone scan or PET-CT, and baseline LDH/alkaline phosphatase",
+      "Neoadjuvant chemotherapy (e.g., methotrexate, doxorubicin, cisplatin) followed by limb-salvage resection or amputation depending on tumor response and anatomic extent",
+      "Provide the patient and family with psychosocial support and counseling given the diagnosis and prolonged multidisciplinary treatment course."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Osteosarcoma Distal Femur: persistent deep bone pain in knee and palpable hard distal thigh mass in teenager. 16M presenting with 3-month worsening distal femur pain waking him at night, with sunburst periosteal reaction and Codman triangle on radiograph.",
+    "objective": "Afebrile, vitals within normal limits. Firm, tender, fixed mass over the distal femoral metaphysis with overlying warmth; skin intact, no erythema. Restricted knee range of motion due to pain. Distal pulses and sensation intact. No lymphadenopathy. Labs show elevated alkaline phosphatase and LDH.",
+    "assessment": "Osteosarcoma of the distal femur, pending biopsy confirmation.",
+    "plan": "Obtain full-length MRI of the femur to assess local extent and skip lesions, CT chest for pulmonary metastasis staging, and baseline LDH/alkaline phosphatase. Refer urgently to an orthopedic oncology center for image-guided biopsy performed by the treating surgical team before starting neoadjuvant chemotherapy (e.g., methotrexate, doxorubicin, cisplatin) followed by limb-salvage resection."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Osteosarcoma Distal Femur",
+    "Formulate prioritized differential diagnosis for persistent deep bone pain in knee and palpable hard distal thigh mass in teenager",
+    "Select appropriate staging investigations for suspected osteosarcoma (MRI, CT chest, bone scan/PET-CT, LDH/alkaline phosphatase)",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Osteosarcoma of the distal femur",
+    "one_liner": "16M with 3 months of worsening night-waking distal femur pain and a palpable hard mass, with sunburst pattern on X-ray.",
+    "differentials": [
+      "Ewing sarcoma",
+      "Osteomyelitis",
+      "Growing pains",
+      "Benign bone tumor"
+    ],
+    "red_flags": [
+      "Night pain waking from sleep",
+      "Palpable hard mass",
+      "Progressive pain over months"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the night pain specifically",
+        "say": "Does the pain wake you up at night, separate from activity?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night pain"
+        ]
+      },
+      {
+        "objective": "Ask about the palpable mass",
+        "say": "Have you or your parents noticed a hard lump near your knee?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "palpable mass"
+        ]
+      },
+      {
+        "objective": "Screen for systemic symptoms",
+        "say": "Have you had any unexplained weight loss, fevers, or fatigue?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "systemic symptoms",
+          "B symptoms"
+        ]
+      },
+      {
+        "objective": "Ask about trauma history",
+        "say": "Was there any injury to the leg before this started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "trauma history"
+        ]
+      },
+      {
+        "objective": "Explain the need for urgent oncology workup",
+        "say": "These findings need urgent assessment by a bone-tumor specialist team. They will arrange the imaging and, if needed, plan a biopsy so it does not compromise treatment.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urgent oncology referral",
+          "biopsy"
+        ]
+      }
+    ]
+  }
+}

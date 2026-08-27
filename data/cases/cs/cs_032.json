@@ -1,0 +1,129 @@
+{
+  "id": "cs_032",
+  "system": "cs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thompson",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "incidental 4.8 cm descending aorta dilation on chest CT",
+  "hpi_details": "A 38-year-old female presents to the clinic with an incidental 4.8 cm descending aorta dilation found on a chest CT ordered for an unrelated reason. She is asymptomatic, denying any back pain, chest pain, or hoarseness.",
+  "ideas": "thinks it might be related to an aortic aneurysm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "ct_descending_aorta_48mm",
+      "test": "CT angiography of the thoracic aorta",
+      "value": "Fusiform descending thoracic aortic aneurysm measuring 4.8 cm; no dissection or rupture",
+      "unit": "",
+      "reference_range": "Descending thoracic aorta <4.0 cm",
+      "flag": "abnormal",
+      "collected_at": "Incidental CT finding"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Descending Thoracic Aortic Aneurysm evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Descending Thoracic Aortic Aneurysm is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "A descending thoracic aneurysm at age 38 requires specialist aortic assessment and evaluation for heritable aortopathy; blood-pressure therapy and surveillance intervals should be individualized rather than prescribing specific agents without clinical context.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental 4.8 cm descending aorta dilation on chest CT",
+      "Key HPI features: A 38-year-old female presents to the clinic with incidental 4.8 cm descending aorta dilation on chest ct. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Descending Aortic Aneurysm.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Descending Thoracic Aortic Aneurysm.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ascending aortic aneurysm without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New back pain."
+    ],
+    "management_principles": [
+      "Refer to an aortic specialist, evaluate for heritable aortopathy, manage blood pressure using patient-specific therapy, and arrange serial imaging at an individualized interval",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of incidental 4.8 cm descending aorta dilation on chest CT. HPI: descending thoracic aortic aneurysm.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Descending Aortic Aneurysm.",
+    "assessment": "Condition highly suspicious for Descending Aortic Aneurysm.",
+    "plan": "Refer to an aortic specialist, evaluate for heritable aortopathy, manage blood pressure using patient-specific therapy, and arrange serial imaging at an individualized interval based on size, growth, and risk factors."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Descending Aortic Aneurysm",
+    "Select appropriate diagnostic workup for Descending Aortic Aneurysm",
+    "Implement evidence-based management plan: Obtain specialist assessment for aortopathy, individualize blood-pressure therapy, and arrange serial imaging based on size, growth, and risk factors"
+  ],
+  "teaching": {
+    "diagnosis": "Descending Thoracic Aortic Aneurysm",
+    "one_liner": "An incidentally found dilation of the descending thoracic aorta, managed with strict blood pressure control and serial imaging.",
+    "differentials": [
+      "Ascending aortic aneurysm",
+      "Aortic dissection"
+    ],
+    "red_flags": [
+      "New back pain"
+    ],
+    "must_ask": [
+      {
+        "objective": "How found",
+        "say": "How was this discovered?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Symptoms",
+        "say": "Any back pain or hoarseness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Blood pressure",
+        "say": "How well controlled is your blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Any family history of aneurysms?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you most?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

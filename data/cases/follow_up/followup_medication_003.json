@@ -1,0 +1,249 @@
+{
+  "id": "followup_medication_003",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "medication",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Harold Jenkins",
+  "age": 73,
+  "gender": "male",
+  "visit_title": "DOAC anticoagulation check",
+  "follow_up_reason": "One-month apixaban review for atrial fibrillation",
+  "clinician_brief": {
+    "prior_note": "Initiated Apixaban 5mg twice daily one month ago for stroke prevention in non-valvular Atrial Fibrillation (CHA2DS2-VASc score 3). Baseline renal function eGFR 68 mL/min.",
+    "active_problems": [
+      "Atrial fibrillation (paroxysmal)",
+      "Hypertension",
+      "Osteoarthritis of hips"
+    ],
+    "current_medications": [
+      "Apixaban 5 mg twice daily",
+      "Metoprolol succinate 50 mg once daily",
+      "Acetaminophen 500 mg PRN joint pain"
+    ],
+    "previous_plan": [
+      "Start apixaban 5mg BID",
+      "Avoid NSAIDs (ibuprofen/naproxen) and heavy alcohol",
+      "Counsel on missed dose protocol",
+      "Review bleeding history in 1 month"
+    ],
+    "results_and_observations": [
+      "Hemoglobin 14.1 g/dL",
+      "Serum creatinine 1.1 mg/dL (eGFR 65 mL/min)",
+      "BP 128/78 mmHg, HR 68 bpm"
+    ],
+    "today_tasks": [
+      "Assess bleeding signs (ecchymosis, epistaxis, GI bleeding)",
+      "Review apixaban adherence and twice-daily timing",
+      "Screen for stroke symptoms and red flags",
+      "Check OTC drug interactions (NSAID use)",
+      "Reiterate missed-dose procedure and follow-up plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "No palpitations or shortness of breath. Hip pain managed with acetaminophen.",
+    "adherence": "Takes apixaban with breakfast and dinner. Forgot one dose 2 weeks ago and took it 4 hours late.",
+    "treatment_response": "Heart feels steady and no stroke symptoms.",
+    "side_effects": "Noticed two minor bruises on forearms after gardening.",
+    "new_symptoms_and_red_flags": "No black tarry stools, pink urine, coughing up blood, severe headache, or focal numbness/weakness.",
+    "agenda": "Wants to know if he can take ibuprofen when his hip pain flares up.",
+    "concern": "Worried that a bump to the head could cause brain bleeding.",
+    "preference": "Happy with twice-daily pills as long as they prevent stroke."
+  },
+  "clinical_knowledge": {
+    "topic": "One-month apixaban check for non-valvular AFib: adherence, minor bruising, NSAID avoidance, and head-injury bleeding safety",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "A CHA2DS2-VASc score of 3 indicates a clear indication for anticoagulation in non-valvular atrial fibrillation, and apixaban 5 mg twice daily is the standard full dose given his renal function does not meet dose-reduction criteria.",
+      "Standard-dose apixaban is only reduced to 2.5 mg twice daily when at least two of three criteria are met: age ≥80 years, body weight ≤60 kg, or serum creatinine ≥1.5 mg/dL — at 73 years old with a creatinine of 1.1 mg/dL and no stated low body weight, he does not meet two criteria, so 5 mg twice daily remains correct.",
+      "NSAIDs (like ibuprofen) combined with any anticoagulant substantially raise the risk of serious GI bleeding through a combined mechanism — NSAID-induced mucosal injury plus impaired clotting — and should be avoided in favor of acetaminophen or topical options for his joint pain.",
+      "Minor, resolving bruising after a known mechanical trigger (gardening) is an expected and generally acceptable finding on a therapeutic anticoagulant, and should be distinguished clearly from the major bleeding red flags that would require urgent action."
+    ],
+    "diagnostic_clues": [
+      "Hemoglobin 14.1 g/dL is normal and reassures against any occult or ongoing significant bleeding despite being on anticoagulation.",
+      "eGFR 65 mL/min confirms renal function does not meet the dose-reduction threshold, supporting that his current apixaban 5 mg twice daily dose remains appropriate.",
+      "Two minor forearm bruises after gardening, with no other bleeding signs, are consistent with expected minor bruising on a therapeutic anticoagulant rather than a warning sign.",
+      "One missed dose taken four hours late two weeks ago is a minor adherence lapse that falls within acceptable missed-dose guidance for apixaban, worth confirming he knows the exact rule for future lapses.",
+      "No black tarry stools, pink urine, coughing up blood, severe headache, or focal weakness/numbness rules out the major bleeding and stroke red flags relevant to anticoagulation follow-up."
+    ],
+    "common_misconceptions": [
+      "Wants to know if he can take ibuprofen when his hip pain flares up — a very common and important question to address directly, since NSAIDs are a leading avoidable cause of serious bleeding in patients on anticoagulants and he should be given a clear, safe alternative (acetaminophen, topical NSAID gel, or non-drug measures).",
+      "Worried that a bump to the head could cause brain bleeding — a legitimate and medically valid concern on anticoagulation; rather than dismissing it, the visit should give concrete guidance on what symptoms after a head injury (worsening headache, confusion, vomiting, weakness) should prompt immediate evaluation.",
+      "Assuming that minor bruising after gardening means the apixaban dose is too high or unsafe, when mild, resolving bruising is an expected finding at a therapeutic anticoagulant dose and not, by itself, a reason to adjust or stop the medication.",
+      "Happy with twice-daily pills as long as they prevent stroke — a reasonable framing, but should be paired with explicit teaching on the missed-dose rule, since inconsistent apixaban dosing (unlike warfarin) more directly affects its narrower window of anticoagulant coverage."
+    ],
+    "dangerous_errors": [
+      "Not explicitly asking about over-the-counter NSAID use, since patients often don't think of ibuprofen as a 'real' medication worth mentioning, and this is one of the most preventable causes of major bleeding on anticoagulation.",
+      "Failing to confirm his current renal function still supports the standard 5 mg twice-daily dose rather than assuming the original dosing decision remains valid indefinitely without recheck.",
+      "Reassuring him about the forearm bruising without screening for the major bleeding red flags (GI bleeding, hematuria, hemoptysis, neurologic symptoms) that would need urgent evaluation.",
+      "Giving vague reassurance about head injuries ('you'll probably be fine') instead of specific, actionable red-flag guidance for when to seek emergency care after any head trauma."
+    ],
+    "management_principles": [
+      "Confirm the apixaban dose remains appropriate for his current renal function and continue 5 mg twice daily.",
+      "Counsel firmly against NSAID use for his hip pain, offering acetaminophen and topical options as safer alternatives.",
+      "Review the exact missed-dose protocol for apixaban so he knows what to do if it happens again, rather than leaving it to guesswork.",
+      "Give specific, concrete head-injury safety-netting instructions (which symptoms warrant emergency care) and confirm the plan for renal function rechecks and routine anticoagulation follow-up."
+    ],
+    "boundaries_and_exceptions": [
+      "If his renal function declines significantly on future rechecks, or he develops additional dose-reduction criteria (very low body weight, age progression), the apixaban dose would need formal reassessment rather than remaining fixed at 5 mg twice daily.",
+      "Any major bleeding sign (GI bleeding, hematuria, hemoptysis) or head trauma with neurologic symptoms falls outside this routine follow-up framework and requires immediate emergency evaluation rather than being managed at a scheduled visit."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+        "url": "https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Establish the follow-up agenda for anticoagulation therapy",
+    "Screen for minor bleeding (bruising, epistaxis) and major GI/intracranial bleeding red flags",
+    "Review apixaban adherence and instruct on exact missed-dose timing rules",
+    "Identify and warn against over-the-counter NSAID interactions",
+    "Evaluate stroke prevention and rhythm stability",
+    "Address head injury bleeding concerns and safety precautions in plain English",
+    "Agree on renal monitoring interval and routine follow-up"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Establish the follow-up agenda for anticoagulation therapy",
+      "category": "Agenda",
+      "question": "Since we started apixaban one month ago for your heart rhythm, what would you most like to check today?"
+    },
+    {
+      "objective": "Screen for minor bleeding (bruising, epistaxis) and major GI/intracranial bleeding red flags",
+      "category": "Safety",
+      "question": "Have you noticed any unusual bruising, nosebleeds, dark stools, or blood in your urine?"
+    },
+    {
+      "objective": "Review apixaban adherence and instruct on exact missed-dose timing rules",
+      "category": "Adherence",
+      "question": "How do you manage taking the pill twice a day, and what do you do if you forget a dose?"
+    },
+    {
+      "objective": "Identify and warn against over-the-counter NSAID interactions",
+      "category": "Drug interaction",
+      "question": "What medicines do you take for pain, and are you using over-the-counter anti-inflammatories like ibuprofen?"
+    },
+    {
+      "objective": "Evaluate stroke prevention and rhythm stability",
+      "category": "Interval change",
+      "question": "Have you had any fluttering in your chest, weakness, numbness, or speech trouble?"
+    },
+    {
+      "objective": "Address head injury bleeding concerns and safety precautions in plain English",
+      "category": "Concerns",
+      "question": "What worries do you have about bleeding, especially if you happen to bump your head?"
+    },
+    {
+      "objective": "Agree on renal monitoring interval and routine follow-up",
+      "category": "Shared plan",
+      "question": "Shall we recheck your kidney blood test in six months and continue your current apixaban dose?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Establish the follow-up agenda for anticoagulation therapy",
+      "keywords": [
+        "apixaban",
+        "blood thinner",
+        "month",
+        "agenda",
+        "today",
+        "atrial fibrillation"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for minor bleeding (bruising, epistaxis) and major GI/intracranial bleeding red flags",
+      "keywords": [
+        "bleeding",
+        "bruises",
+        "bruising",
+        "nosebleeds",
+        "black stools",
+        "blood in urine",
+        "red flags"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review apixaban adherence and instruct on exact missed-dose timing rules",
+      "keywords": [
+        "twice a day",
+        "missed dose",
+        "forget",
+        "forgot",
+        "taking",
+        "schedule",
+        "adherence"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Identify and warn against over-the-counter NSAID interactions",
+      "keywords": [
+        "ibuprofen",
+        "advil",
+        "aleve",
+        "nsaid",
+        "painkillers",
+        "aspirin",
+        "interaction"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Evaluate stroke prevention and rhythm stability",
+      "keywords": [
+        "palpitations",
+        "fluttering",
+        "stroke",
+        "numbness",
+        "weakness",
+        "speech",
+        "steady"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address head injury bleeding concerns and safety precautions in plain English",
+      "keywords": [
+        "head bump",
+        "fall",
+        "head injury",
+        "worry",
+        "worried",
+        "brain bleed",
+        "safe"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on renal monitoring interval and routine follow-up",
+      "keywords": [
+        "kidney",
+        "renal",
+        "six months",
+        "blood test",
+        "continue",
+        "plan",
+        "agree"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "73M with AFib on apixaban 5mg BID returns at 1 month. No palpitations or stroke symptoms. Reports minor forearm bruising. Asks about taking ibuprofen for hip OA. Takes apixaban reliably.",
+    "objective": "BP 128/78 mmHg, HR 68 bpm regular. Hb 14.1 g/dL, eGFR 65 mL/min. Forearms show minor resolving ecchymoses.",
+    "assessment": "Stable non-valvular AFib on apixaban with minor expected bruising; needs NSAID avoidance counseling.",
+    "plan": "Counsel against NSAIDs due to severe GI bleed risk (reinforce acetaminophen/topical options), educate on head trauma red flags, plan annual eGFR recheck, continue apixaban 5mg BID."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "DOAC anticoagulation check",
+    "one_liner": "Clinical scenario for evaluation and management of DOAC anticoagulation check."
+  }
+}

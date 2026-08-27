@@ -1,0 +1,252 @@
+{
+  "id": "followup_geriatric_002",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "geriatrics",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Harold Bennett",
+  "age": 79,
+  "gender": "male",
+  "visit_title": "Geriatric brown-bag polypharmacy review",
+  "follow_up_reason": "Comprehensive medication review after recent visits to three different specialists",
+  "clinician_brief": {
+    "prior_note": "Seen by cardiology for atrial fibrillation, urology for benign prostatic hyperplasia, and gastroenterology for reflux over the past two months, each adding or continuing medications without a consolidated review.",
+    "active_problems": [
+      "Atrial fibrillation on anticoagulation",
+      "Hypertension",
+      "Benign prostatic hyperplasia",
+      "Gastroesophageal reflux disease",
+      "Chronic low back pain",
+      "Insomnia"
+    ],
+    "current_medications": [
+      "Apixaban 5 mg twice daily",
+      "Aspirin 81 mg once daily",
+      "Amlodipine 5 mg once daily",
+      "Metoprolol 25 mg twice daily",
+      "Tamsulosin 0.4 mg once daily",
+      "Omeprazole 20 mg once daily",
+      "Gabapentin 300 mg three times daily",
+      "Trazodone 50 mg at bedtime",
+      "Acetaminophen as needed"
+    ],
+    "previous_plan": [
+      "Bring in all pill bottles for a full brown-bag review",
+      "Clarify indication and duration for each medication",
+      "Check renal function to confirm the apixaban dose is appropriate"
+    ],
+    "results_and_observations": [
+      "Creatinine clearance today calculated at 48 mL/min",
+      "Blood pressure 118/68 mmHg, mild orthostatic symptoms not yet assessed",
+      "No documented indication found for continuing aspirin alongside apixaban"
+    ],
+    "today_tasks": [
+      "Perform a full brown-bag medication reconciliation",
+      "Identify the duplicate antithrombotic therapy and its bleeding risk",
+      "Review the PPI, gabapentin, and trazodone for ongoing need versus deprescribing",
+      "Confirm the apixaban dose is appropriate for his renal function",
+      "Produce one consolidated, understandable medication list"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Has been taking everything each specialist prescribed, assuming they were all talking to each other, but has felt more unsteady on his feet and occasionally confused about which pill is for what.",
+    "adherence": "Takes all medications as prescribed by each doctor; did not think to mention the aspirin to the cardiologist since a different doctor started it years ago.",
+    "treatment_response": "Reflux is better on the omeprazole; back pain is somewhat controlled with gabapentin and acetaminophen.",
+    "side_effects": "Some daytime drowsiness he attributes to the trazodone, and one instance of easy bruising on his forearm.",
+    "new_symptoms_and_red_flags": "No overt bleeding, black stools, hematuria, or falls; denies chest pain or palpitations.",
+    "agenda": "Just wants someone to make sense of his 'shoebox full of pill bottles.'",
+    "concern": "Worried he is taking too many medications but does not want to upset any of his specialists by stopping something they prescribed.",
+    "preference": "Wants one simple written list he can bring to every appointment."
+  },
+  "clinical_knowledge": {
+    "topic": "Brown-bag medication reconciliation after three uncoordinated specialist visits: resolving duplicate apixaban/aspirin therapy and confirming the anticoagulant dose",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Concurrent apixaban and aspirin without a specific indication (such as a recent coronary stent) substantially increases bleeding risk without added stroke-prevention benefit in atrial fibrillation, and current guidance favors anticoagulant monotherapy once no dual-indication exists.",
+      "Standard-dose apixaban is 5 mg twice daily; dose reduction to 2.5 mg twice daily is only indicated when at least two of three criteria are met (age ≥80, weight ≤60 kg, creatinine ≥1.5 mg/dL) — his current creatinine clearance of 48 mL/min should be checked against those specific criteria rather than assumed to automatically require a lower dose.",
+      "Gabapentin and trazodone are both associated with sedation, dizziness, and fall risk in older adults, and their ongoing necessity should be reassessed against his reported unsteadiness rather than continued by default because a specialist started them.",
+      "A brown-bag review (bringing every physical medication bottle to one visit) is a structured, evidence-based method for catching duplicate therapy and unclear indications that get missed when care is split across multiple specialists who don't see each other's prescribing."
+    ],
+    "diagnostic_clues": [
+      "No documented indication for continuing aspirin alongside apixaban is the key medication-reconciliation finding driving today's plan — this combination is a recognized avoidable bleeding-risk pattern.",
+      "Creatinine clearance of 48 mL/min needs to be checked against the apixaban dose-reduction criteria (age, weight, creatinine) to confirm 5 mg twice daily is still the correct, guideline-concordant dose rather than assumed correct or incorrect.",
+      "Easy bruising on the forearm, in a patient on both an anticoagulant and an antiplatelet, is a tangible early sign of the excess bleeding risk from dual therapy — reassuring in that it's minor, but a signal that should prompt the deprescribing conversation now rather than later.",
+      "Reported unsteadiness and occasional confusion about his own regimen point toward both a medication-burden safety issue (sedating agents) and a health-literacy issue (needs one consolidated list), both of which the visit should address.",
+      "No overt bleeding, black stools, hematuria, or falls is reassuring that no acute bleeding or fall event has yet occurred, which is exactly the window in which correcting the regimen has the most preventive value."
+    ],
+    "common_misconceptions": [
+      "Worried he is taking too many medications but does not want to upset any of his specialists by stopping something they prescribed — a very common and legitimate concern; framing the aspirin discontinuation as evidence-based safety coordination (not a criticism of any one prescriber) can help him feel comfortable with the change.",
+      "Did not think to mention the aspirin to the cardiologist since a different doctor started it years ago — patients often don't realize a medication is relevant to a new prescriber unless specifically asked, which is exactly the gap a brown-bag review is designed to close.",
+      "Attributes his daytime drowsiness only to the trazodone, when gabapentin (dosed three times daily) can also cause sedation and, in combination with trazodone, the additive sedative effect is more likely than either drug alone.",
+      "Assuming that because each medication was individually prescribed by a specialist for a real problem, the overall combination must also be safe — polypharmacy risk comes specifically from combinations and interactions that no single prescriber may have reviewed."
+    ],
+    "dangerous_errors": [
+      "Continuing both apixaban and aspirin without confirming whether there is a specific short-term indication (e.g., recent stent) that would justify dual therapy, versus stopping the aspirin.",
+      "Adjusting or confirming the apixaban dose based on creatinine clearance alone without checking it against the full age/weight/creatinine dose-reduction criteria, which could lead to an inappropriately reduced (under-protective) or inappropriately maintained (over-anticoagulated) dose.",
+      "Stopping the omeprazole, gabapentin, or trazodone abruptly without confirming ongoing indication and appropriate tapering, given reflux control and pain management benefits currently reported.",
+      "Producing medication changes without a written, consolidated list he can actually use, leaving the same coordination gap that caused this problem in the first place."
+    ],
+    "management_principles": [
+      "Complete a full brown-bag reconciliation, confirming the indication, dose, and continued need for every medication one at a time.",
+      "Stop the aspirin given the absence of a documented indication for dual antithrombotic therapy alongside apixaban, explaining the bleeding-risk reasoning clearly.",
+      "Confirm the apixaban dose against the formal dose-reduction criteria using his renal function, weight, and age.",
+      "Reassess the PPI, gabapentin, and trazodone for ongoing indication versus deprescribing or dose adjustment, particularly given his reported unsteadiness and drowsiness, and produce one written, consolidated medication list he can carry to future appointments."
+    ],
+    "boundaries_and_exceptions": [
+      "If he has had a recent coronary stent or another specific indication for dual antiplatelet/anticoagulant therapy, this default recommendation to stop the aspirin would not apply and the decision should be coordinated with cardiology.",
+      "In a patient with a mechanical heart valve or a history of recurrent thromboembolism despite anticoagulation, medication changes should be made in close coordination with the prescribing specialist rather than through a routine primary-care brown-bag review alone."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+        "url": "https://www.jacc.org/doi/10.1016/j.jacc.2023.08.017"
+      },
+      {
+        "title": "American Geriatrics Society (AGS) 2023 Updated Beers Criteria for Potentially Inappropriate Medication Use in Older Adults",
+        "url": "https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.18372"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Perform a systematic brown-bag review of every medication and its indication",
+    "Identify the duplicate anticoagulant and antiplatelet therapy and its bleeding risk",
+    "Screen for adverse effects of sedating and anticholinergic-adjacent medications",
+    "Explain the reasoning for stopping the aspirin in plain, reassuring language",
+    "Confirm renal function to verify the apixaban dose is correctly adjusted",
+    "Address his fear of upsetting other specialists by changing medications",
+    "Produce and confirm understanding of one consolidated medication list"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Perform a systematic brown-bag review of every medication and its indication",
+      "category": "Medication reconciliation",
+      "question": "Could we go through every bottle you brought today, one at a time, and what each one is for?"
+    },
+    {
+      "objective": "Identify the duplicate anticoagulant and antiplatelet therapy and its bleeding risk",
+      "category": "Safety",
+      "question": "I notice you're on both apixaban and aspirin — do you know why you're taking both blood thinners?"
+    },
+    {
+      "objective": "Screen for adverse effects of sedating and anticholinergic-adjacent medications",
+      "category": "Side effects",
+      "question": "Have you noticed feeling drowsy, unsteady, or more confused since starting any of these?"
+    },
+    {
+      "objective": "Explain the reasoning for stopping the aspirin in plain, reassuring language",
+      "category": "Plan",
+      "question": "Can I explain why stopping the aspirin is actually the safer choice while you're on apixaban?"
+    },
+    {
+      "objective": "Confirm renal function to verify the apixaban dose is correctly adjusted",
+      "category": "Results",
+      "question": "Let's check that your apixaban dose still matches how your kidneys are working."
+    },
+    {
+      "objective": "Address his fear of upsetting other specialists by changing medications",
+      "category": "Concerns",
+      "question": "I hear you're worried about changing something a specialist prescribed — how does that feel to you?"
+    },
+    {
+      "objective": "Produce and confirm understanding of one consolidated medication list",
+      "category": "Understanding & follow-up",
+      "question": "Can we build one simple list together that you can bring to every appointment from now on?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Perform a systematic brown-bag review of every medication and its indication",
+      "keywords": [
+        "bottles",
+        "every medication",
+        "brown bag",
+        "what is this for",
+        "list",
+        "go through"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Identify the duplicate anticoagulant and antiplatelet therapy and its bleeding risk",
+      "keywords": [
+        "apixaban",
+        "aspirin",
+        "blood thinner",
+        "bleeding",
+        "both",
+        "duplicate"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for adverse effects of sedating and anticholinergic-adjacent medications",
+      "keywords": [
+        "drowsy",
+        "unsteady",
+        "confused",
+        "trazodone",
+        "gabapentin",
+        "dizzy",
+        "falls"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain the reasoning for stopping the aspirin in plain, reassuring language",
+      "keywords": [
+        "stop the aspirin",
+        "safer",
+        "explain",
+        "why",
+        "reason"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Confirm renal function to verify the apixaban dose is correctly adjusted",
+      "keywords": [
+        "kidney function",
+        "creatinine",
+        "dose",
+        "apixaban dose",
+        "adjusted"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address his fear of upsetting other specialists by changing medications",
+      "keywords": [
+        "worried",
+        "upset",
+        "specialist",
+        "concern",
+        "understand"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Produce and confirm understanding of one consolidated medication list",
+      "keywords": [
+        "one list",
+        "written list",
+        "bring to every appointment",
+        "simple",
+        "consolidated"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "79M on nine medications from three specialists, including concurrent apixaban and aspirin without clear dual indication. Reports increasing unsteadiness, occasional confusion about his regimen, and one episode of easy bruising. Denies overt bleeding, falls, or cardiopulmonary symptoms.",
+    "objective": "Creatinine clearance 48 mL/min. Easy bruising reported on exam. No clear indication documented for aspirin alongside apixaban.",
+    "assessment": "Polypharmacy with duplicate antithrombotic therapy and multiple potentially deprescribable agents in an older adult.",
+    "plan": "stop the duplicate aspirin given concurrent apixaban therapy, taper the long-standing PPI if no ongoing indication remains, reassess sedative and neuropathic agents for fall and cognitive risk, confirm renal function to verify the apixaban dose, and consolidate the regimen with a written medication list."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Geriatric brown-bag polypharmacy review",
+    "one_liner": "Clinical scenario for evaluation and management of Geriatric brown-bag polypharmacy review."
+  }
+}

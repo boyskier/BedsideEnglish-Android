@@ -1,0 +1,158 @@
+{
+  "id": "ent_008",
+  "system": "otolaryngology (ent)",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Harris",
+  "age": 56,
+  "gender": "male",
+  "chief_complaint": "progressive hoarseness for 4 months in a heavy smoker with exophytic true vocal cord mass on laryngoscopy (Laryngeal Cancer)",
+  "hpi_details": "56M heavy cigarette smoker presents with 4-month history of persistent, progressive hoarseness (`my voice has turned raspy and gravelly and won't clear up`). Over the past 3 weeks, developed mild difficulty and pain when swallowing solid foods (odynophagia) and a feeling that he has to cough every time he drinks fluids. Denies fever or shortness of breath at rest.",
+  "ideas": "thinks his raspy voice is just smoker's cough or chronic laryngitis from allergies",
+  "concerns": "worried because throat lozenges and voice rest have completely failed to restore his normal voice",
+  "expectations": "wants scope exam of his voice box and definitive diagnosis",
+  "pmh": "Hypertension, COPD (mild), 40 pack-year cigarette smoking history (2 packs/day x 20 yrs)",
+  "medications": "Albuterol inhaler PRN",
+  "social_hx": "Truck driver, active smoker",
+  "investigation_events": [
+    {
+      "id": "flexible_laryngoscopy",
+      "title": "Office flexible laryngoscopy",
+      "order_terms": [
+        "flexible laryngoscopy",
+        "laryngoscopy",
+        "scope the larynx",
+        "scope the throat",
+        "fiberoptic scope"
+      ],
+      "availability_message": "The office flexible laryngoscopy findings are now available.",
+      "results": [
+        {
+          "id": "right_vocal_cord_mass",
+          "test": "Flexible laryngoscopy",
+          "value": "1.2 cm irregular exophytic leukoplakic and erythroplakic mass involving the anterior two-thirds of the right true vocal cord, with reduced right cord mobility; airway patent",
+          "flag": "critical",
+          "collected_at": "During ENT assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Laryngeal Cancer (Squamous Cell Carcinoma of the vocal cord) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Laryngeal Cancer (Squamous Cell Carcinoma of the vocal cord) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent biopsy confirmation, staging imaging, and multidisciplinary organ-preservation versus surgical treatment planning, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive hoarseness for 4 months in a heavy smoker with exophytic true vocal cord mass on laryngoscopy (Laryngeal Cancer)",
+      "Key HPI features: 56M heavy cigarette smoker presents with 4-month history of persistent, progressive hoarseness (`my voice has turned raspy and gravelly and won't clear up`). Over the past 3 weeks, developed mild difficulty and pain when swallowing solid foods (odynophagia) and a feeling that he has to cough every time he drinks fluids. Denies fever or shortness of breath at rest.",
+      "Objective/Exam findings: Vitals: HR 76, BP 134/82. External neck palpation reveals normal laryngeal framework crepitus; no palpable cervical lymphadenopathy. Office Flexible Fiberoptic Laryngoscopy reveals a 1.2 cm exophytic, irregular, keratinized white/red (leukoplakic/erythroplakic) fungating mass occupying the anterior two-thirds of the right true vocal cord. The right vocal cord exhibits reduced mobility/fixation during phonation compared to normal mobility of the left cord. Airway remains patent without stridor.",
+      "Relevant background/PMH: Hypertension, COPD (mild), 40 pack-year cigarette smoking history (2 packs/day x 20 yrs)",
+      "Current medications: Albuterol inhaler PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Laryngeal Cancer (Squamous Cell Carcinoma of the vocal cord).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chronic laryngitis (would improve with voice rest) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hoarseness persisting beyond 2-3 weeks in a smoker — always needs laryngoscopy, never assume benign cause."
+    ],
+    "management_principles": [
+      "Urgent Head and Neck Oncology referral for Direct Microlaryngoscopy under general anesthesia with biopsy of the right vocal cord mass to confirm Squamous Cell Carcinoma",
+      "Contrast-enhanced CT of Neck and Chest to evaluate cartilage invasion (thyroid/cricoid cartilage erosion) and regional lymph node involvement",
+      "Multidisciplinary management: for Stage T3 glottic cancer, discuss organ-preservation protocol utilizing concurrent Chemoradiation Therapy (Cisplatin + Radiation) versus Total Laryngectomy with voice rehabilitation (tracheo-esophageal voice prosthesis) depending on cartilage invasion and patient preference"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "56M heavy smoker presenting with unexplained persistent hoarseness >2 weeks accompanied by odynophagia, representing glottic/laryngeal malignancy until proven otherwise.",
+    "objective": "Vitals: HR 76, BP 134/82. External neck palpation reveals normal laryngeal framework crepitus; no palpable cervical lymphadenopathy. Office Flexible Fiberoptic Laryngoscopy reveals a 1.2 cm exophytic, irregular, keratinized white/red (leukoplakic/erythroplakic) fungating mass occupying the anterior two-thirds of the right true vocal cord. The right vocal cord exhibits reduced mobility/fixation during phonation compared to normal mobility of the left cord. Airway remains patent without stridor.",
+    "assessment": "Right True Vocal Cord Glottic Mass with cord fixation, highly suspicious for Invasive Squamous Cell Carcinoma of the Larynx (Clinical Stage cT3 N0 M0 due to vocal cord fixation).",
+    "plan": "1. Urgent Head and Neck Oncology referral for Direct Microlaryngoscopy under general anesthesia with biopsy of the right vocal cord mass to confirm Squamous Cell Carcinoma. 2. Contrast-enhanced CT of Neck and Chest to evaluate cartilage invasion (thyroid/cricoid cartilage erosion) and regional lymph node involvement. 3. Multidisciplinary management: for Stage T3 glottic cancer, discuss organ-preservation protocol utilizing concurrent Chemoradiation Therapy (Cisplatin + Radiation) versus Total Laryngectomy with voice rehabilitation (tracheo-esophageal voice prosthesis) depending on cartilage invasion and patient preference. Mandatory smoking cessation counseling."
+  },
+  "learning_objectives": [
+    "Recognize the critical primary care guideline: any unexplained hoarseness lasting greater than 2 to 3 weeks in an adult (particularly smokers or alcohol users) mandates mandatory visualization of the vocal cords via laryngoscopy to rule out laryngeal cancer",
+    "Correlate anatomical localization of laryngeal cancer (Glottic true vocal cord vs Supraglottic vs Subglottic) with clinical presentation (glottic tumors present EARLY with hoarseness and have sparse lymphatic drainage yielding low lymph node metastasis; supraglottic present LATE with dysphagia/neck mass)",
+    "Understand the T-staging significance of vocal cord mobility (T1 limited to cord with normal mobility; T2 extension with impaired mobility; T3 vocal cord fixation; T4 cartilage/extra-laryngeal invasion)",
+    "Compare organ-preservation chemoradiation protocols against surgical Total Laryngectomy for advanced glottic malignancies"
+  ],
+  "teaching": {
+    "diagnosis": "Laryngeal Cancer (Squamous Cell Carcinoma of the vocal cord)",
+    "one_liner": "Progressive hoarseness lasting more than a few weeks in a heavy smoker — especially when it doesn't respond to voice rest — needs direct visualization, since it can be a vocal cord cancer, here already causing cord fixation.",
+    "differentials": [
+      "Chronic laryngitis (would improve with voice rest)",
+      "Vocal cord polyp/nodule (benign)",
+      "Reflux laryngitis"
+    ],
+    "red_flags": [
+      "Hoarseness persisting beyond 2-3 weeks in a smoker — always needs laryngoscopy, never assume benign cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration and progression",
+        "say": "How many months has your voice been hoarse, and has it been getting worse?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "months",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Response to treatment",
+        "say": "Has resting your voice or using lozenges helped at all?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "no improvement"
+        ]
+      },
+      {
+        "objective": "Swallowing symptoms",
+        "say": "Do you have any pain or difficulty swallowing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "odynophagia"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "How long and how much have you smoked?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "pack-years"
+        ]
+      },
+      {
+        "objective": "Aspiration/coughing with liquids",
+        "say": "Do you cough when you drink liquids?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

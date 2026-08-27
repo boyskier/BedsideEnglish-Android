@@ -1,0 +1,127 @@
+{
+  "id": "ns_040",
+  "system": "ns",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Williams",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "sudden, explosive thunderclap headache—the worst of her life",
+  "hpi_details": "A 62-year-old female presents with a sudden, explosive thunderclap headache that reached maximal intensity within seconds and is the worst headache of her life.",
+  "ideas": "thinks it might be related to bleeding around the brain",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "stat_sah_imaging",
+    "title": "Emergency CT and CT angiography",
+    "order_terms": ["CT head", "CT brain", "non-contrast CT", "CT angiogram", "CT angiography", "CTA"],
+    "availability_message": "Emergency CT and angiographic results are now available. Stroke and neurosurgical care should proceed immediately.",
+    "results": [
+      {"id": "ct_head", "test": "Non-contrast CT head", "value": "Acute subarachnoid hemorrhage within the basal cisterns and right Sylvian fissure", "flag": "critical"},
+      {"id": "cta_head", "test": "CT angiography of the head", "value": "6 mm ruptured right middle cerebral artery bifurcation aneurysm", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Subarachnoid Hemorrhage (ruptured aneurysm) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subarachnoid Hemorrhage (ruptured aneurysm) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Subarachnoid Hemorrhage: Emergent head CT without contrast, CT angiogram, coiling/clipping, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden, explosive thunderclap headache—the worst of her life",
+      "Key HPI features: A 62-year-old female presents with a sudden, explosive thunderclap headache that reached maximal intensity within seconds and is the worst headache of her life.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Subarachnoid Hemorrhage.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subarachnoid Hemorrhage (ruptured aneurysm).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Thunderclap migraine without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Declining consciousness."
+    ],
+    "management_principles": [
+      "Plan for Subarachnoid Hemorrhage: Emergent head CT without contrast, CT angiogram, coiling/clipping",
+      "Activate emergency stroke/neurosurgical care immediately",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 AHA/ASA Guideline for the Management of Patients With Aneurysmal Subarachnoid Hemorrhage",
+        "url": "https://www.ahajournals.org/doi/10.1161/STR.0000000000000436"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with a sudden, explosive thunderclap headache—the worst of her life. HPI: ruptured berry aneurysm.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Subarachnoid Hemorrhage.",
+    "assessment": "Condition highly suspicious for Subarachnoid Hemorrhage.",
+    "plan": "Plan for Subarachnoid Hemorrhage: Emergent head CT without contrast, CT angiogram, coiling/clipping. Activate emergency stroke/neurosurgical care immediately."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Subarachnoid Hemorrhage",
+    "Select appropriate diagnostic workup for Subarachnoid Hemorrhage",
+    "Implement evidence-based management plan: Emergent head CT without contrast, CT angiogram, coiling/clipping"
+  ],
+  "teaching": {
+    "diagnosis": "Subarachnoid Hemorrhage (ruptured aneurysm)",
+    "one_liner": "A sudden explosive thunderclap headache, the worst of the patient's life, from a ruptured berry aneurysm.",
+    "differentials": [
+      "Thunderclap migraine"
+    ],
+    "red_flags": [
+      "Declining consciousness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset",
+        "say": "Did the headache reach its peak within seconds?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Severity",
+        "say": "Is this the worst headache of your life?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any vomiting or neck stiffness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Consciousness",
+        "say": "Did you lose consciousness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Any family history of aneurysms?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

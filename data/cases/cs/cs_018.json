@@ -1,0 +1,150 @@
+{
+  "id": "cs_018",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Jones",
+  "age": 57,
+  "gender": "male",
+  "chief_complaint": "severe abdominal swelling, peripheral edema, elevated jugular pressure, and Kussmaul sign",
+  "hpi_details": "57M with history of remote tuberculous pericarditis presenting with right heart failure symptoms, Kussmaul sign, pericardial calcification on CT, and equalization of diastolic pressures requiring radical pericardiectomy.",
+  "ideas": "thinks this is related to constrictive pericarditis pericardiectomy",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "ct_calcified_constrictive_pericardium",
+      "test": "Cardiac CT",
+      "value": "Diffuse calcified pericardial thickening up to 8 mm encasing both ventricles",
+      "unit": "",
+      "reference_range": "Pericardial thickness <4 mm",
+      "flag": "abnormal",
+      "collected_at": "Before surgical consultation"
+    },
+    {
+      "id": "cath_constrictive_pressures",
+      "test": "Cardiac catheterization",
+      "value": "Near-equal right- and left-ventricular end-diastolic pressures at 24 and 26 mmHg with dip-and-plateau waveforms",
+      "unit": "",
+      "reference_range": "No diastolic pressure equalization",
+      "flag": "abnormal",
+      "collected_at": "Preoperative haemodynamic assessment"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Constrictive Pericarditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Constrictive Pericarditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Definitive treatment is surgical radical pericardiectomy; medical therapy (diuretics) offers only temporary symptomatic relief and does not reverse the fixed restriction.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe abdominal swelling, peripheral edema, elevated jugular pressure, and Kussmaul sign",
+      "Key HPI features: 57M with history of remote tuberculous pericarditis presenting with right heart failure symptoms, Kussmaul sign, pericardial calcification on CT, and equalization of diastolic pressures requiring radical pericardiectomy.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Constrictive Pericarditis Pericardiectomy.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Constrictive Pericarditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Restrictive cardiomyopathy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly worsening ascites unresponsive to diuretics — signals need for definitive surgical treatment."
+    ],
+    "management_principles": [
+      "Confirm with echocardiography/CT/MRI showing pericardial thickening or calcification and septal bounce; cardiac catheterization to demonstrate equalization of diastolic pressures",
+      "Refer to cardiothoracic surgery for pericardiectomy once diagnosis is confirmed; diuretics can bridge symptoms but are not curative",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Constrictive Pericarditis Pericardiectomy: severe abdominal swelling, peripheral edema, elevated jugular pressure, and Kussmaul sign. 57M with history of remote tuberculous pericarditis presenting with right heart failure symptoms, Kussmaul sign, pericardial calcification on CT, and equalization of diastolic pressures requiring radical pericardiectomy.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Constrictive Pericarditis Pericardiectomy.",
+    "assessment": "Findings consistent with constrictive pericarditis, likely sequela of remote tuberculous pericarditis.",
+    "plan": "Confirm with echocardiography/CT and cardiac catheterization (equalization of diastolic pressures); refer to cardiothoracic surgery for pericardiectomy, the definitive treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Constrictive Pericarditis Pericardiectomy",
+    "Formulate prioritized differential diagnosis for severe abdominal swelling, peripheral edema, elevated jugular pressure, and Kussmaul sign",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Constrictive Pericarditis",
+    "one_liner": "A rigid, thickened, often calcified pericardium — commonly from remote tuberculous infection — prevents the heart from filling normally, causing right heart failure symptoms and Kussmaul's sign, treated definitively with surgical pericardiectomy.",
+    "differentials": [
+      "Restrictive cardiomyopathy",
+      "Liver cirrhosis with ascites",
+      "Right ventricular failure from another cause"
+    ],
+    "red_flags": [
+      "Rapidly worsening ascites unresponsive to diuretics — signals need for definitive surgical treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Prior tuberculosis history",
+        "say": "Have you ever had tuberculosis, especially involving your lungs or the sac around your heart?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "tuberculosis",
+          "TB"
+        ]
+      },
+      {
+        "objective": "Swelling pattern",
+        "say": "Where is the swelling — your belly and legs?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "ascites",
+          "edema"
+        ]
+      },
+      {
+        "objective": "Neck vein distension",
+        "say": "Has anyone noticed the veins in your neck are more prominent?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Progression",
+        "say": "How has this been progressing over time?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Fatigue and exercise tolerance",
+        "say": "How is your energy and ability to exercise?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

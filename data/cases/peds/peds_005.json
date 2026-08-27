@@ -1,0 +1,153 @@
+{
+  "id": "peds_005",
+  "system": "pediatrics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Master Evans",
+  "age": 5,
+  "gender": "male",
+  "chief_complaint": "progressive fatigue, pale skin, bone pain, fever, and diffuse petechiae/bruising revealing 82% blasts (Pediatric ALL)",
+  "hpi_details": "5-year-old boy brought by parents with a 3-week history of worsening lethargy, low-grade fevers, and pale complexion. Over the past week, parents noticed the child limping and complaining of diffuse leg and bone pain waking him from sleep. Today noticed numerous tiny purple spots (petechiae) across his chest and ankles, along with large dark bruises over his shins without history of trauma.",
+  "ideas": "parents alarmed by rapid appearance of bruising, blood spots, and severe bone pain causing limping",
+  "concerns": "parents terrified that blood tests will show childhood leukemia after searching symptoms online",
+  "expectations": "want immediate pediatric hematology-oncology evaluation and bone marrow testing",
+  "pmh": "No prior medical history",
+  "medications": "None",
+  "social_hx": "Kindergarten student",
+  "investigation_events": [{
+    "id": "stat_leukemia_blood_workup",
+    "title": "STAT blood count and peripheral smear",
+    "order_terms": ["CBC", "complete blood count", "blood count", "peripheral smear", "blood smear"],
+    "availability_message": "The STAT blood count and peripheral-smear results are now available. Begin urgent hematology/oncology and tumor-lysis precautions; confirmatory marrow and flow studies remain specialist workup.",
+    "results": [
+      {"id": "wbc", "test": "White blood cell count", "value": "64.0", "unit": "x10^3/uL", "reference_range": "5.0-14.5", "flag": "critical"},
+      {"id": "hemoglobin", "test": "Hemoglobin", "value": "6.8", "unit": "g/dL", "reference_range": "11.5-14.5", "flag": "critical"},
+      {"id": "platelets", "test": "Platelet count", "value": "28", "unit": "x10^3/uL", "reference_range": "150-450", "flag": "critical"},
+      {"id": "peripheral_smear", "test": "Peripheral blood smear", "value": "78% circulating lymphoblasts with high nuclear-to-cytoplasmic ratios and prominent nucleoli", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Pediatric B-cell acute lymphoblastic leukemia (B-ALL) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pediatric B-cell acute lymphoblastic leukemia (B-ALL) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to Pediatric Hematology/Oncology and PICU, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive fatigue, pale skin, bone pain, fever, and diffuse petechiae/bruising revealing 82% blasts (Pediatric ALL)",
+      "Key HPI features: 5-year-old boy brought by parents with a 3-week history of worsening lethargy, low-grade fevers, and pale complexion. Over the past week, parents noticed the child limping and complaining of diffuse leg and bone pain waking him from sleep. Today noticed numerous tiny purple spots (petechiae) across his chest and ankles, along with large dark bruises over his shins without history of trauma.",
+      "Objective/Exam findings: Vitals: HR 135, BP 96/60, Temp 38.4C. Marked conjunctival and facial pallor. Diffuse petechiae over trunk and lower extremities; ecchymoses over bilateral anterior tibias. Palpation reveals non-tender generalized cervical and axillary lymphadenopathy. Abdominal exam shows hepatosplenomegaly with spleen palpable 3 cm below left costal margin. Tenderness to palpation over bilateral proximal tibial metaphyses. STAT Complete Blood Count: WBC 64,000 /uL, Hemoglobin 6.8 g/dL, Platelets 28,000 /uL. Peripheral blood smear reveals 78% circulating lymphoblasts with high nuclear-to-cytoplasmic ratios and prominent nucleoli. Flow cytometry confirms B-Cell Acute Lymphoblastic Leukemia (B-ALL: CD19+, CD10+, TdT+). Bone marrow aspiration confirms replacement of marrow elements with >80% lymphoblasts.",
+      "Relevant background/PMH: No prior medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pediatric B-cell acute lymphoblastic leukemia (B-ALL).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Juvenile idiopathic arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Bone pain waking child at night."
+    ],
+    "management_principles": [
+      "Admit to Pediatric Hematology/Oncology and PICU",
+      "Begin tumor-lysis prophylaxis with hematology guidance: potassium-free isotonic IV hydration, allopurinol or rasburicase when indicated, and frequent monitoring of electrolytes, uric acid, renal function, and fluid balance",
+      "Transfuse irradiated, leukoreduced PRBCs and Platelets for severe symptomatic pancytopenia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "5-year-old male presenting with triad of bone marrow failure (fatigue/pallor from anemia, petechiae/bruising from thrombocytopenia, fever from neutropenia) and bone pain.",
+    "objective": "Vitals: HR 135, BP 96/60, Temp 38.4C. Marked conjunctival and facial pallor. Diffuse petechiae over trunk and lower extremities; ecchymoses over bilateral anterior tibias. Palpation reveals non-tender generalized cervical and axillary lymphadenopathy. Abdominal exam shows hepatosplenomegaly with spleen palpable 3 cm below left costal margin. Tenderness to palpation over bilateral proximal tibial metaphyses. STAT Complete Blood Count: WBC 64,000 /uL, Hemoglobin 6.8 g/dL, Platelets 28,000 /uL. Peripheral blood smear reveals 78% circulating lymphoblasts with high nuclear-to-cytoplasmic ratios and prominent nucleoli. Flow cytometry confirms B-Cell Acute Lymphoblastic Leukemia (B-ALL: CD19+, CD10+, TdT+). Bone marrow aspiration confirms replacement of marrow elements with >80% lymphoblasts.",
+    "assessment": "Pediatric B-Cell Acute Lymphoblastic Leukemia (B-ALL) with high tumor burden and impending Tumor Lysis Syndrome.",
+    "plan": "Urgently admit under Pediatric Hematology/Oncology; use PICU-level monitoring if clinically indicated. 1. Begin tumor-lysis prophylaxis with potassium-free isotonic IV hydration, allopurinol or rasburicase when indicated, and frequent monitoring of electrolytes, uric acid, renal function, and fluid balance. 2. Give irradiated, leukoreduced blood products as directed by hematology; correct thrombocytopenia before invasive procedures. 3. Arrange CNS staging/prophylaxis and protocol-based induction therapy through the treating oncology team."
+  },
+  "learning_objectives": [
+    "Recognize clinical manifestations of pediatric acute leukemia combining bone marrow infiltration (pancytopenia, petechiae, pallor) and extramedullary spread (hepatosplenomegaly, bone pain)",
+    "Interpret peripheral blood smear blast morphology and flow cytometry markers for B-cell Acute Lymphoblastic Leukemia (CD19, CD10 CALLA, terminal deoxynucleotidyl transferase TdT)",
+    "Implement emergency Tumor Lysis Syndrome prophylaxis (aggressive IV hydration, Rasburicase/Allopurinol, strict avoidance of IV potassium)",
+    "Outline multi-agent pediatric leukemia induction regimens and the mandatory requirement for intrathecal central nervous system prophylaxis"
+  ],
+  "teaching": {
+    "diagnosis": "Pediatric B-cell acute lymphoblastic leukemia (B-ALL)",
+    "one_liner": "5-year-old boy with 3 weeks of fatigue, pallor, bone pain waking him at night, and new petechiae/bruising.",
+    "differentials": [
+      "Juvenile idiopathic arthritis",
+      "Aplastic anemia",
+      "Immune thrombocytopenic purpura",
+      "Viral infection with reactive changes"
+    ],
+    "red_flags": [
+      "Bone pain waking child at night",
+      "Petechiae and unexplained bruising",
+      "Progressive pallor and fatigue"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the bone pain",
+        "say": "Does the leg pain wake him up at night, and is it in specific spots?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bone pain",
+          "night waking"
+        ]
+      },
+      {
+        "objective": "Ask about bruising without trauma",
+        "say": "Have you noticed bruises appearing without him bumping into anything?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "easy bruising",
+          "no trauma"
+        ]
+      },
+      {
+        "objective": "Screen for petechiae",
+        "say": "Have you seen tiny purple or red spots on his skin that don't fade when pressed?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "petechiae"
+        ]
+      },
+      {
+        "objective": "Assess pallor and fatigue progression",
+        "say": "Has his energy level and color changed over the past few weeks?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pallor",
+          "fatigue"
+        ]
+      },
+      {
+        "objective": "Explain the urgency of hematology referral",
+        "say": "We need to get him to a children's cancer and blood specialist team right away for further testing.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urgent hematology-oncology referral"
+        ]
+      }
+    ]
+  }
+}

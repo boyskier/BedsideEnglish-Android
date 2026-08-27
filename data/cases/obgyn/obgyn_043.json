@@ -1,0 +1,141 @@
+{
+  "id": "obgyn_043",
+  "system": "obgyn",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "amenorrhea, spotting, adnexal mass, beta-hCG 1500",
+  "hpi_details": "A 28-year-old woman presents with amenorrhea, spotting, an adnexal mass, and a beta-hCG level of 1500.",
+  "ideas": "is concerned about an ectopic pregnancy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker; avoids alcohol and recreational drugs",
+  "available_results": [
+    {"id": "quantitative_hcg", "test": "Quantitative beta-hCG", "value": "1500", "unit": "mIU/mL", "flag": "high"},
+    {"id": "tvus", "test": "Transvaginal ultrasound", "value": "2.2 cm unruptured right tubal adnexal mass with yolk sac, no fetal cardiac activity, and no significant free fluid", "flag": "abnormal"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Unruptured ectopic pregnancy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Unruptured ectopic pregnancy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Unruptured Ectopic Pregnancy: Methotrexate injection if stable and meet criteria, close follow-up, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: amenorrhea, spotting, adnexal mass, beta-hCG 1500",
+      "Key HPI features: A 28-year-old female presents with amenorrhea, spotting, an adnexal mass, and beta-hCG of 1500.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Unruptured Ectopic Pregnancy.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Unruptured ectopic pregnancy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Intrauterine pregnancy (early) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any signs of hemodynamic instability would indicate rupture and surgical emergency."
+    ],
+    "management_principles": [
+      "Plan for Unruptured Ectopic Pregnancy: Methotrexate injection if stable and meet criteria, close follow-up",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of amenorrhea, spotting, adnexal mass, beta-hCG 1500. HPI: ectopic pregnancy.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Unruptured Ectopic Pregnancy.",
+    "assessment": "Condition highly suspicious for Unruptured Ectopic Pregnancy.",
+    "plan": "Plan for Unruptured Ectopic Pregnancy: Methotrexate injection if stable and meet criteria, close follow-up. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Unruptured Ectopic Pregnancy",
+    "Select appropriate diagnostic workup for Unruptured Ectopic Pregnancy",
+    "Implement evidence-based management plan: Methotrexate injection if stable and meet criteria, close follow-up"
+  ],
+  "teaching": {
+    "diagnosis": "Unruptured ectopic pregnancy",
+    "one_liner": "Patient with amenorrhea, spotting, an adnexal mass, and beta-hCG of 1500.",
+    "differentials": [
+      "Intrauterine pregnancy (early)",
+      "Miscarriage",
+      "Ovarian cyst"
+    ],
+    "red_flags": [
+      "Any signs of hemodynamic instability would indicate rupture and surgical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm amenorrhea duration and LMP",
+        "say": "When was your last menstrual period?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "LMP",
+          "amenorrhea"
+        ]
+      },
+      {
+        "objective": "Characterize the spotting",
+        "say": "Can you describe the spotting: how much is there and what color is it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "spotting"
+        ]
+      },
+      {
+        "objective": "Screen for pain and hemodynamic symptoms",
+        "say": "Do you have any abdominal pain, dizziness, or shoulder pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "abdominal pain",
+          "dizziness"
+        ]
+      },
+      {
+        "objective": "Ask about desire for future fertility",
+        "say": "Are you hoping to have children in the future? This affects our treatment choice.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "fertility desire"
+        ]
+      },
+      {
+        "objective": "Explain methotrexate criteria and follow-up",
+        "say": "If you're stable and meet criteria, we can treat this with a methotrexate injection instead of surgery, with close hCG follow-up.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "methotrexate",
+          "hCG follow-up"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "id": "peds_016",
+  "system": "pediatrics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Hill",
+  "age": 6,
+  "gender": "male",
+  "chief_complaint": "palpable purple rash over buttocks and lower legs, severe colicky abdominal pain, joint swelling, and hematuria in 6-year-old",
+  "hpi_details": "6-year-old boy post-URI with palpable purpura on the extensor legs and buttocks, ankle arthralgias, abdominal pain, and microscopic hematuria with proteinuria consistent with IgA vasculitis.",
+  "ideas": "thinks this is related to henoch-schonlein purpura iga vasculitis",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "available_results": [{"id": "prior_urinalysis", "test": "Urinalysis", "value": "Blood 2+, protein 1+, 20-30 red blood cells/HPF; no leukocyte esterase or nitrites", "flag": "abnormal", "collected_at": "Before today's encounter"}],
+  "clinical_knowledge": {
+    "topic": "Henoch-Schonlein purpura (IgA vasculitis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Henoch-Schonlein purpura (IgA vasculitis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Henoch-Schonlein Purpura IgA Vasculitis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: palpable purple rash over buttocks and lower legs, severe colicky abdominal pain, joint swelling, and hematuria in 6-year-old",
+      "Key HPI features: 6-year-old boy post-URI with palpable purpura on the extensor legs and buttocks, ankle arthralgias, abdominal pain, and microscopic hematuria with proteinuria consistent with IgA vasculitis.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Henoch-Schonlein Purpura IgA Vasculitis.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Henoch-Schonlein purpura (IgA vasculitis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Idiopathic thrombocytopenic purpura without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Palpable purpura in a dependent distribution."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Henoch-Schonlein Purpura IgA Vasculitis",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Henoch-Schonlein Purpura IgA Vasculitis: palpable purple rash over buttocks and lower legs, severe colicky abdominal pain, joint swelling, and hematuria in 6-year-old. 6-year-old boy post-URI with palpable purpura on the extensor legs and buttocks, ankle arthralgias, abdominal pain, and microscopic hematuria with proteinuria consistent with IgA vasculitis.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Henoch-Schonlein Purpura IgA Vasculitis.",
+    "assessment": "Clinical presentation highly suggestive of Henoch-Schonlein Purpura IgA Vasculitis.",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Henoch-Schonlein Purpura IgA Vasculitis. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Henoch-Schonlein Purpura IgA Vasculitis",
+    "Formulate prioritized differential diagnosis for palpable purple rash over buttocks and lower legs, severe colicky abdominal pain, joint swelling, and hematuria in 6-year-old",
+    "Select appropriate laboratory and imaging studies for pediatrics",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Henoch-Schonlein purpura (IgA vasculitis)",
+    "one_liner": "6-year-old boy post-URI with palpable purpura on legs/buttocks, colicky abdominal pain, joint swelling, and hematuria.",
+    "differentials": [
+      "Idiopathic thrombocytopenic purpura",
+      "Meningococcemia",
+      "Acute glomerulonephritis alone"
+    ],
+    "red_flags": [
+      "Palpable purpura in a dependent distribution",
+      "Severe abdominal pain (risk of intussusception)",
+      "Hematuria/proteinuria (renal involvement)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the rash appearance and distribution",
+        "say": "Can you describe the rash — where is it, and does it feel raised when you touch it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "palpable purpura",
+          "distribution"
+        ]
+      },
+      {
+        "objective": "Ask about recent illness",
+        "say": "Did he have a cold or infection in the past couple of weeks?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "recent URI"
+        ]
+      },
+      {
+        "objective": "Characterize the abdominal pain",
+        "say": "How severe is his belly pain, and does it come and go?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "colicky abdominal pain"
+        ]
+      },
+      {
+        "objective": "Ask about joint swelling",
+        "say": "Are any of his joints swollen or painful, like his ankles or knees?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "arthralgia"
+        ]
+      },
+      {
+        "objective": "Explain the need for urine monitoring",
+        "say": "We need to check his urine regularly to make sure his kidneys aren't affected.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urinalysis monitoring",
+          "renal involvement"
+        ]
+      }
+    ]
+  }
+}

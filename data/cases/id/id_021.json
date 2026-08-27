@@ -1,0 +1,178 @@
+{
+  "id": "id_021",
+  "system": "infectious_disease",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Ko",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "burning urination, frequency, and lower abdominal discomfort for 3 days",
+  "hpi_details": "26F presents with 3 days of sharp burning pain during urination (dysuria), needing to urinate frequently, and a dull ache in her lower abdomen. Denies fever, back pain, or vaginal discharge.",
+  "ideas": "thinks she has a bladder infection",
+  "concerns": "worried it will spread to her kidneys",
+  "expectations": "wants immediate antibiotics",
+  "pmh": "No prior history",
+  "medications": "None",
+  "social_hx": "Student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_urinalysis",
+      "title": "Point-of-care urinalysis",
+      "order_terms": [
+        "urinalysis",
+        "urine dipstick",
+        "urine dip",
+        "urine test"
+      ],
+      "availability_message": "The point-of-care urinalysis is now available.",
+      "results": [
+        {
+          "id": "leukocyte_esterase",
+          "test": "Urine leukocyte esterase",
+          "value": "2+",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "nitrite",
+          "test": "Urine nitrite",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "urine_white_blood_cells",
+          "test": "Urine white blood cells",
+          "value": "15-20",
+          "unit": "/hpf",
+          "reference_range": "0-5",
+          "flag": "high",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Uncomplicated Cystitis (UTI) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Uncomplicated Cystitis (UTI) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for uncomplicated cystitis favors short-course, narrow-spectrum oral antibiotics (e.g., Nitrofurantoin, TMP-SMX, or Fosfomycin), reserving fluoroquinolones for second-line use given resistance and toxicity concerns.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning urination, frequency, and lower abdominal discomfort for 3 days",
+      "Key HPI features: 26F presents with 3 days of sharp burning pain during urination (dysuria), needing to urinate frequently, and a dull ache in her lower abdomen. Denies fever, back pain, or vaginal discharge.",
+      "Objective/Exam findings: Vitals: Temp 37.0C, HR 76, BP 112/70 (afebrile, hemodynamically normal). Mild suprapubic tenderness on palpation, no costovertebral angle (CVA) tenderness. Urinalysis: positive leukocyte esterase and nitrites, WBC 15-20/hpf, few bacteria."
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Uncomplicated Cystitis (UTI).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pyelonephritis (if fever/flank pain present) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or flank pain — suggests the infection has ascended to the kidneys."
+    ],
+    "management_principles": [
+      "Confirm diagnosis with urine dipstick or urinalysis (positive leukocyte esterase and nitrites, pyuria) before starting antibiotics.",
+      "Prescribe Nitrofurantoin (Macrobid) 100mg BID for 5 days as first-line therapy for uncomplicated cystitis.",
+      "Counsel to return promptly if fever, flank pain, nausea/vomiting, or worsening symptoms develop, which would suggest progression to pyelonephritis."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26F with 3 days of dysuria, urinary frequency, and suprapubic discomfort. Denies fever, flank pain, or vaginal discharge.",
+    "objective": "T 37.0C, HR 76, BP 112/70. Mild suprapubic tenderness, no CVA tenderness. Urinalysis: positive leukocyte esterase and nitrites, WBC 15-20/hpf.",
+    "assessment": "Acute uncomplicated cystitis; low risk for pyelonephritis given absence of fever or flank pain.",
+    "plan": "1. Confirm diagnosis with urine dipstick/urinalysis. 2. Prescribe Nitrofurantoin (Macrobid) 100mg BID for 5 days. 3. Advise adequate hydration and to return promptly if fever, flank pain, or nausea/vomiting develop (signs of pyelonephritis)."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Uncomplicated Cystitis (UTI).",
+    "Formulate prioritized differential diagnosis for burning urination, frequency, and lower abdominal discomfort for 3 days",
+    "Select appropriate laboratory and imaging studies for infectious disease",
+    "Implement evidence-based acute and long-term management strategies for Acute Uncomplicated Cystitis (UTI)."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Uncomplicated Cystitis (UTI)",
+    "one_liner": "A bacterial infection confined to the bladder causing dysuria, urinary frequency, and suprapubic discomfort, without fever or flank pain that would suggest kidney involvement.",
+    "differentials": [
+      "Pyelonephritis (if fever/flank pain present)",
+      "Vaginitis",
+      "Sexually transmitted infection"
+    ],
+    "red_flags": [
+      "Fever or flank pain — suggests the infection has ascended to the kidneys"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dysuria character",
+        "say": "Does it burn when you urinate?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "burning",
+          "dysuria"
+        ]
+      },
+      {
+        "objective": "Frequency and urgency",
+        "say": "Are you needing to urinate more often than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "frequency",
+          "urgency"
+        ]
+      },
+      {
+        "objective": "Fever or flank pain (to rule out pyelonephritis)",
+        "say": "Have you had any fever or pain in your back or side?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "flank pain",
+          "back pain"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many days have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Vaginal discharge",
+        "say": "Any unusual vaginal discharge?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "discharge"
+        ]
+      }
+    ]
+  }
+}

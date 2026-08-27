@@ -1,0 +1,132 @@
+{
+  "id": "id_016",
+  "system": "infectious_disease",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Martin",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "high fever, muscle aches, and a rash after a hiking trip",
+  "hpi_details": "28F presents with 4 days of high fever, severe myalgias, and a headache. Yesterday, she developed a pink macular rash starting on her wrists and ankles, which has now spread to her trunk. She returned from a camping trip in North Carolina a week ago.",
+  "ideas": "thinks she got a bad bug bite",
+  "concerns": "worried about Lyme disease",
+  "expectations": "wants a blood test",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Avid hiker",
+  "clinical_knowledge": {
+    "topic": "Rocky Mountain Spotted Fever (RMSF)",
+    "core_concepts": [
+      "Tick-borne illness caused by Rickettsia rickettsii.",
+      "Classic rash starts on extremities (wrists/ankles) and spreads centrally, often involving palms and soles."
+    ],
+    "diagnostic_clues": [
+      "Tick exposure in endemic area",
+      "Fever + headache",
+      "Rash starting on wrists/ankles"
+    ],
+    "common_misconceptions": [
+      "Waiting for a positive serology before treating (treatment must be empiric and immediate as it can be fatal)."
+    ],
+    "dangerous_errors": [
+      "Delaying Doxycycline therapy. Doxycycline is the drug of choice for all ages (even children) for RMSF."
+    ],
+    "management_principles": [
+      "Start Doxycycline IMMEDIATELY if clinically suspected."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "28F with fever, headache, myalgias, and a centripetally spreading rash after camping in NC.",
+    "objective": "T 39.2C. Blanching erythematous macules on wrists, ankles, palms, soles, and trunk.",
+    "assessment": "Suspected Rocky Mountain Spotted Fever.",
+    "plan": "Start oral Doxycycline STAT. Draw Rickettsia serologies but do not delay treatment. CBC, CMP."
+  },
+  "learning_objectives": [
+    "Recognize the clinical presentation and immediate Doxycycline requirement for RMSF."
+  ],
+  "teaching": {
+    "diagnosis": "Rocky Mountain Spotted Fever (RMSF)",
+    "one_liner": "Fever, headache, and a rash starting on wrists/ankles following tick exposure, requiring immediate empiric Doxycycline.",
+    "differentials": [
+      "Meningococcemia",
+      "Secondary Syphilis"
+    ],
+    "red_flags": [
+      "Neurologic symptoms",
+      "Renal failure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Tick or outdoor exposure",
+        "say": "Have you been hiking, camping, or spent time outdoors recently, and did you notice any tick bites?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "tick",
+          "hiking",
+          "camping",
+          "outdoors"
+        ]
+      },
+      {
+        "objective": "Rash pattern and spread",
+        "say": "Where did the rash start, and how has it spread?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "wrists",
+          "ankles",
+          "spread",
+          "trunk"
+        ]
+      },
+      {
+        "objective": "Fever and myalgias",
+        "say": "How high has your fever been, and have you had muscle aches?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "myalgia",
+          "muscle aches"
+        ]
+      },
+      {
+        "objective": "Headache",
+        "say": "Have you had a headache along with the fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache"
+        ]
+      },
+      {
+        "objective": "Neurologic or renal warning signs",
+        "say": "Have you felt confused, or noticed decreased urination?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "confusion",
+          "decreased urination",
+          "renal"
+        ]
+      }
+    ]
+  }
+}

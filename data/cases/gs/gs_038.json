@@ -1,0 +1,149 @@
+{
+  "id": "gs_038",
+  "system": "gs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Harris",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "sudden severe generalized abdominal pain with guarding",
+  "hpi_details": "A 56-year-old female presents to the emergency department with sudden onset of severe, generalized abdominal pain with guarding, which began abruptly and has remained constant since onset.",
+  "ideas": "thinks it might be related to a perforated ulcer",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_upright_chest_xray",
+      "title": "Urgent upright chest radiograph",
+      "order_terms": [
+        "upright chest x ray",
+        "upright chest x-ray",
+        "chest x ray",
+        "chest x-ray",
+        "chest radiograph",
+        "cxr"
+      ],
+      "availability_message": "The urgent chest radiograph is now available; IV fluids, antibiotics, and emergency surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "pneumoperitoneum",
+          "test": "Upright chest radiograph",
+          "value": "Free subdiaphragmatic intraperitoneal air, greatest beneath the right hemidiaphragm",
+          "flag": "critical",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Perforated Peptic Ulcer evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Perforated Peptic Ulcer is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Perforated Peptic Ulcer emphasizes emergent laparotomy with Graham patch repair and IV antibiotics, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden severe generalized abdominal pain with guarding",
+      "Key HPI features: A 56-year-old female presents with sudden onset of severe, generalized abdominal pain with guarding, which began abruptly and has remained constant since onset.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Perforated Peptic Ulcer.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Perforated Peptic Ulcer.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute pancreatitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Board-like rigidity — surgical emergency."
+    ],
+    "management_principles": [
+      "Plan for Perforated Peptic Ulcer: Emergent laparotomy with Graham patch repair, IV antibiotics",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden severe generalized abdominal pain with guarding, consistent with perforation of the gastric or duodenal wall.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Perforated Peptic Ulcer.",
+    "assessment": "Assessment consistent with Perforated Peptic Ulcer.",
+    "plan": "Plan for Perforated Peptic Ulcer: Emergent laparotomy with Graham patch repair, IV antibiotics. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Perforated Peptic Ulcer",
+    "Select appropriate diagnostic workup for Perforated Peptic Ulcer",
+    "Implement evidence-based management plan: Emergent laparotomy with Graham patch repair, IV antibiotics"
+  ],
+  "teaching": {
+    "diagnosis": "Perforated Peptic Ulcer",
+    "one_liner": "A hole through the stomach or duodenal wall spills contents into the peritoneum, causing sudden, severe, generalized abdominal pain with guarding.",
+    "differentials": [
+      "Acute pancreatitis",
+      "Ruptured AAA",
+      "Acute cholecystitis"
+    ],
+    "red_flags": [
+      "Board-like rigidity — surgical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and severity",
+        "say": "Did the pain start suddenly and become severe right away?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ]
+      },
+      {
+        "objective": "NSAID/ulcer history",
+        "say": "Do you take pain relievers regularly, or have you had ulcers before?",
+        "domains": [
+          "medications",
+          "pmh"
+        ],
+        "keywords": [
+          "nsaid",
+          "ulcer"
+        ]
+      },
+      {
+        "objective": "Referred pain",
+        "say": "Does the pain spread to your shoulder?",
+        "domains": [
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Aggravation with movement",
+        "say": "Does moving make the pain worse?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

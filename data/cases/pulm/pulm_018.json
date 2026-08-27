@@ -1,0 +1,161 @@
+{
+  "id": "pulm_018",
+  "system": "pulmonology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Adebayo",
+  "age": 48,
+  "gender": "female",
+  "chief_complaint": "sudden severe shortness of breath, chest pain, and fever 3 days after returning from Nigeria",
+  "hpi_details": "Presents to emergency department with a 24-hour history of rapidly worsening shortness of breath, sharp right-sided pleuritic chest pain, high fever (38.8°C), and productive cough producing rusty-coloured sputum. Three days ago, she returned from a 3-week trip visiting family in rural Nigeria, where she stayed in crowded housing. Complains of chills, rigors, severe fatigue, and feeling completely washed out. Has a history of type 2 diabetes and takes metformin.",
+  "ideas": "thinks she caught tropical malaria or severe flu while travelling in Africa",
+  "concerns": "terrified she will collapse and require breathing machine intensive care",
+  "expectations": "wants urgent malaria blood tests, IV fluids, and strong pneumonia antibiotics immediately",
+  "pmh": "type 2 diabetes mellitus x6 years, hypertension",
+  "medications": "metformin 1000mg BD, ramipril 5mg OD",
+  "social_hx": "never smoked, zero alcohol, school administration officer, recent international travel",
+  "investigation_events": [{"id":"urgent_pneumonia_travel_workup","title":"Urgent pneumonia and travel-related results","order_terms":["blood tests","blood work","cbc","urea","chest x ray","chest x-ray","cxr","malaria test","malaria smear","blood film"],"availability_message":"The urgent pneumonia and malaria-screening results are now available; oxygen and empiric treatment should not be delayed when indicated.","results":[{"id":"white_blood_cells","test":"White blood cell count","value":"18.6","unit":"x10^9/L","reference_range":"4.0-11.0","flag":"high","specimen":"Blood","collected_at":"At emergency presentation"},{"id":"urea","test":"Serum urea","value":"8.2","unit":"mmol/L","reference_range":"2.5-7.8","flag":"high","specimen":"Blood","collected_at":"At emergency presentation"},{"id":"chest_xray","test":"Chest radiograph","value":"Dense right lower-lobe consolidation with air bronchograms and a small right pleural effusion","flag":"critical","collected_at":"During emergency assessment"},{"id":"malaria_screen","test":"Malaria rapid antigen and thick/thin films","value":"No malaria parasites detected","flag":"normal","specimen":"Blood","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Community-Acquired Pneumonia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Community-Acquired Pneumonia is essential for appropriate diagnostic workup and treatment.",
+      "Clinical history, severity assessment, and targeted testing must be interpreted together rather than relying on one symptom alone.",
+      "Assess severity promptly with vital signs, oxygenation, and a validated pneumonia severity tool.",
+      "Management should follow local pathways and account for patient-specific comorbidity and clinical severity."
+    ],
+    "diagnostic_clues": [
+      "Chief complaint: sudden severe shortness of breath, chest pain, and fever 3 days after returning from Nigeria",
+      "Key HPI features: Presents to emergency department with a 24-hour history of rapidly worsening shortness of breath, sharp right-sided pleuritic chest pain, high fever (38.8°C), and productive cough producing rusty-coloured sputum. Three days ago, she returned from a 3-week trip visiting family in rural Nigeria, where she stayed in crowded housing. Complains of chills, rigors, severe fatigue, and feeling completely washed out. Has a history of type 2 diabetes and takes metformin.",
+      "Objective/examination findings: Perform focused examination, vital-sign assessment, and diagnosis-specific investigations.",
+      "Relevant background/PMH: type 2 diabetes mellitus x6 years, hypertension",
+      "Current medications: metformin 1000mg BD, ramipril 5mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming a mild or atypical presentation rules out Community-Acquired Pneumonia.",
+      "Relying on a single normal test result to prematurely exclude serious pathology.",
+      "Equating transient symptom improvement with resolution of the underlying condition.",
+      "Failing to consider clinically important alternative diagnoses."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation.",
+      "Prematurely discharging or reassuring the patient before appropriate assessment.",
+      "Starting treatment without considering contraindications, interactions, or organ function.",
+      "Ignoring critical warning signs: Severe hypoxaemia."
+    ],
+    "management_principles": [
+      "Assess severity promptly with vital signs, oxygenation, and a validated pneumonia severity tool.",
+      "Obtain chest imaging and microbiology where indicated; start empiric antibiotics according to local CAP guidance.",
+      "Escalate urgently for hypoxaemia, shock, confusion, or increasing work of breathing."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ATS/IDSA Community-Acquired Pneumonia Guideline",
+        "url": "https://www.idsociety.org/practice-guideline/community-acquired-pneumonia-cap-in-adults/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "48F diabetic with recent travel to Nigeria presents with acute 24-hour fever, rigors, pleuritic right chest pain, rusty sputum, and acute tachypnoea.",
+    "objective": "Vitals: fever 38.9°C, tachypnoea RR 26, HR 110, BP 105/65 mmHg, O2 sat 91% on room air. Chest examination: right lower zone demonstrates classical signs of pulmonary consolidation -> reduced chest expansion on right, dullness to percussion over right base, increased tactile vocal fremitus, bronchial breath sounds (high-pitched, hollow breath sounds with expiration = inspiration), and coarse late-inspiratory crackles. Calculate CURB-65 Pneumonia Severity Score: Confusion (No - 0 points) + Urea >7 mmol/L (Yes, 8.2 mmol/L - 1 point) + Respiratory Rate >=30 (No, 26 - 0 points) + Blood pressure systolic <90 or diastolic <=60 (No, 105/65 - 0 points) + Age >=65 (No, 48 - 0 points) -> Total CURB-65 Score = 1 point (Moderate Risk / Hospital-managed or supervised outpatient; however, given hypoxaemia O2 sat 91% and diabetes, requires urgent hospital admission). Bloods: peripheral blood cultures x2 sets taken before antibiotics, FBC (leukocytosis >18), CRP >150, U&Es (check urea), glucose. Check Urinary Antigen tests for Streptococcus pneumoniae and Legionella pneumophila. Check Malaria rapid diagnostic antigen test / thick and thin blood films given travel history. Erect Chest X-ray: confirms dense, homogeneous lobar consolidation involving the right lower lobe with visible air bronchograms and blunting of the right costophrenic angle.",
+    "assessment": "Acute Community-Acquired Pneumonia (CAP - right lower lobe consolidation, with pneumococcal infection possible). DDx: Pulmonary embolism after recent travel, malaria or another travel-related febrile illness, tuberculosis, and Legionnaires' disease; investigate according to clinical findings and exposure risk.",
+    "plan": "This presentation needs emergency hospital assessment for hypoxaemia, sepsis, pulmonary embolism, and travel-related infection. Clinicians should monitor vital signs and gas exchange, obtain appropriate cultures, chest imaging, and malaria testing, and provide supplemental oxygen only if indicated to achieve the locally recommended target saturation. After assessment and with local guidance, clinicians may start empiric antimicrobials and give IV fluids if clinically indicated; review treatment when results and clinical response are available."
+  },
+  "learning_objectives": [
+    "Calculate and interpret the CURB-65 pneumonia score while integrating hypoxaemia and diabetic comorbidities to justify hospital admission",
+    "Identify classical physical signs of lobar consolidation: dullness to percussion, increased fremitus, and bronchial breath sounds",
+    "Explain why empiric antibiotics and supportive treatment require urgent clinician assessment and local-guideline selection",
+    "Perform concurrent malaria thick/thin film screening and urinary antigen testing in patients returning from endemic travel"
+  ],
+  "teaching": {
+    "diagnosis": "Community-Acquired Pneumonia",
+    "one_liner": "Acute lower respiratory infection with fever, productive cough, pleuritic pain, and focal consolidation.",
+    "differentials": [
+      "Pulmonary embolism",
+      "Malaria or other travel-related febrile illness",
+      "Tuberculosis"
+    ],
+    "red_flags": [
+      "Severe hypoxaemia",
+      "Hypotension, confusion, or respiratory distress"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fever, chills, and rigors onset",
+        "say": "When did the fever start, and have you had shaking chills or rigors with it?",
+        "domains": [
+          "onset_duration",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "rigors",
+          "onset",
+          "temperature"
+        ]
+      },
+      {
+        "objective": "Sputum character and pleuritic chest pain",
+        "say": "Is your cough bringing up rusty or coloured sputum, and does the chest pain get worse when you breathe in?",
+        "domains": [
+          "character",
+          "location"
+        ],
+        "keywords": [
+          "sputum",
+          "rusty",
+          "pleuritic",
+          "chest pain",
+          "cough"
+        ]
+      },
+      {
+        "objective": "Recent travel and crowded-living exposure",
+        "say": "Have you travelled recently, and did you stay anywhere crowded or with poor ventilation?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "travel",
+          "Nigeria",
+          "crowded",
+          "exposure",
+          "housing"
+        ]
+      },
+      {
+        "objective": "Severity red flags: confusion, hypotension, respiratory rate",
+        "say": "Have you felt confused, very dizzy, or unusually short of breath at rest?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "confusion",
+          "hypotension",
+          "respiratory rate",
+          "CURB-65",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Diabetes control and immunocompromise risk",
+        "say": "How has your blood sugar been running lately, given your diabetes?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "diabetes",
+          "immunocompromise",
+          "blood sugar",
+          "metformin",
+          "risk"
+        ]
+      }
+    ]
+  }
+}

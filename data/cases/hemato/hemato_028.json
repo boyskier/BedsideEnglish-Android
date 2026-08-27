@@ -1,0 +1,129 @@
+{
+  "id": "hemato_028",
+  "system": "hemato",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. White",
+  "age": 46,
+  "gender": "male",
+  "chief_complaint": "fatigue, macrocytic anemia, and history of heavy alcohol use",
+  "hpi_details": "46-year-old male with a history of chronic heavy alcohol use presents with worsening fatigue, weakness, and mild shortness of breath on exertion over 3 months. Diet consists mostly of processed foods with minimal fresh vegetables. Denies numbness or tingling in extremities.",
+  "ideas": "thinks it might be related to folate deficiency",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Folate Deficiency Anemia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Folate Deficiency Anemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes oral folic acid supplementation daily, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chronic heavy alcohol use with poor dietary intake of fresh vegetables",
+      "Worsening fatigue, weakness, and exertional dyspnea over 3 months",
+      "Macrocytic anemia without neurological symptoms (no numbness or tingling)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Folate Deficiency Anemia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vitamin B12 deficiency without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of severe anemia (chest pain, breathlessness)."
+    ],
+    "management_principles": [
+      "Oral folic acid supplementation daily",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "46-year-old male with a history of chronic heavy alcohol use presents with worsening fatigue, weakness, and mild shortness of breath on exertion over 3 months. Diet consists mostly of processed foods with minimal fresh vegetables. Denies numbness or tingling in extremities.",
+    "objective": "Vitals stable. Pale conjunctivae. No jaundice. Neurological exam demonstrates intact proprioception and vibratory sense. Labs: Hemoglobin 9.2 g/dL, MCV 112 fL (macrocytic), normal B12, low serum folate.",
+    "assessment": "Folate Deficiency Anemia, secondary to alcohol abuse and malnutrition.",
+    "plan": "Measure vitamin B12 (and assess for other causes of macrocytosis) before or at the time of folate replacement, because folate can correct anemia while allowing unrecognized B12-related neurologic injury to progress. Start oral folic acid when B12 deficiency is excluded or treated, counsel on alcohol cessation and dietary improvement, and follow CBC response."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Folate Deficiency Anemia",
+    "Select appropriate diagnostic workup for Folate Deficiency Anemia",
+    "Implement evidence-based management plan: Oral Folic Acid supplementation daily"
+  ],
+  "teaching": {
+    "diagnosis": "Folate Deficiency Anemia",
+    "one_liner": "Inadequate folate intake or absorption — common with heavy alcohol use — causes macrocytic anemia without the neurological symptoms seen in B12 deficiency.",
+    "differentials": [
+      "Vitamin B12 deficiency",
+      "Alcoholic liver disease with hypersplenism",
+      "Hypothyroidism"
+    ],
+    "red_flags": [
+      "Signs of severe anemia (chest pain, breathlessness)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Alcohol use",
+        "say": "How much alcohol do you typically drink?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol"
+        ]
+      },
+      {
+        "objective": "Dietary intake",
+        "say": "Are you eating enough fresh vegetables and fruits?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diet",
+          "vegetables"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms (to differentiate)",
+        "say": "Any tingling or numbness in your hands or feet?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tingling",
+          "numbness"
+        ]
+      },
+      {
+        "objective": "Fatigue duration",
+        "say": "How long have you felt fatigued?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Absorption issues",
+        "say": "Do you have any digestive conditions that affect absorption?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

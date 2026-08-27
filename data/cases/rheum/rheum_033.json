@@ -1,0 +1,119 @@
+{
+  "id": "rheum_033",
+  "system": "rheum",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rivera",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "widespread muscle pain, chronic fatigue, and poor sleep",
+  "hpi_details": "A 41-year-old male presents with widespread muscle pain, chronic fatigue, and poor sleep persisting at a similar level for the past 6 months.",
+  "ideas": "thinks it might be related to fibromyalgia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Fibromyalgia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Fibromyalgia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes diagnosis per ACR 2016 criteria after excluding secondary causes, followed by exercise/CBT with pharmacotherapy for inadequate response, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: widespread muscle pain, chronic fatigue, and poor sleep",
+      "Key HPI features: A 41-year-old male presents with widespread muscle pain, chronic fatigue, and poor sleep persisting at a similar level for the past 6 months.",
+      "Objective/Exam findings: Vitals normal. No joint swelling, warmth, or synovitis on exam. Normal strength and neurologic exam. No lymphadenopathy or rash.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Fibromyalgia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypothyroidism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Objective joint swelling."
+    ],
+    "management_principles": [
+      "Diagnose using ACR 2016 criteria (Widespread Pain Index, Symptom Severity Scale, symptoms present at a similar level for at least 3 months) rather than tender-point counting alone",
+      "Exclude secondary causes with basic labs (TSH, CBC, ESR/CRP, CK) since fibromyalgia is a clinical diagnosis of exclusion",
+      "First-line treatment is patient education, graded aerobic exercise, CBT, and sleep hygiene",
+      "Consider pharmacotherapy (duloxetine, pregabalin, or low-dose amitriptyline) for inadequate response, individualized by comorbidities."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 41-year-old male presents with widespread muscle pain, chronic fatigue, and poor sleep persisting at a similar level for the past 6 months.",
+    "objective": "Vitals normal. No joint swelling, warmth, or synovitis on exam. Normal strength and neurologic exam. No lymphadenopathy or rash.",
+    "assessment": "Widespread musculoskeletal pain, fatigue, and non-restorative sleep for 6 months without objective joint swelling or inflammatory findings, meeting ACR 2016 criteria features for fibromyalgia; hypothyroidism and inflammatory conditions should be excluded with basic labs.",
+    "plan": "Confirm using the ACR 2016 fibromyalgia criteria and obtain basic labs (TSH, CBC, ESR/CRP, CK) to exclude secondary causes. Initiate first-line management: patient education, graded aerobic exercise, CBT, and sleep hygiene. Consider pharmacotherapy (duloxetine, pregabalin, or low-dose amitriptyline) for inadequate response to non-pharmacologic measures."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Fibromyalgia",
+    "Select appropriate diagnostic workup (ACR 2016 criteria, exclusion labs) for Fibromyalgia",
+    "Implement evidence-based management plan: Aerobic exercise, CBT, Duloxetine or low-dose Amitriptyline"
+  ],
+  "teaching": {
+    "diagnosis": "Fibromyalgia",
+    "one_liner": "Central sensitization of pain pathways causing widespread muscle pain, chronic fatigue, and poor sleep without inflammation.",
+    "differentials": [
+      "Hypothyroidism",
+      "Polymyalgia rheumatica"
+    ],
+    "red_flags": [
+      "Objective joint swelling"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain distribution",
+        "say": "Is the pain widespread, all over your body?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Sleep quality",
+        "say": "Do you wake up feeling rested?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How severe is the fatigue?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Cognitive symptoms",
+        "say": "Any trouble concentrating?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

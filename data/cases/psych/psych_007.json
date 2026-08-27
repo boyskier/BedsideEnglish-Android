@@ -1,0 +1,172 @@
+{
+  "id": "psych_007",
+  "system": "psychiatry",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Green",
+  "age": 22,
+  "gender": "female",
+  "chief_complaint": "intense fear of weight gain, severe restriction of food intake, BMI 14.8, and secondary amenorrhea (Anorexia Nervosa)",
+  "hpi_details": "22F college student brought by mother due to extreme weight loss and fainting episode during gym workout. Patient restricts daily intake to <500 calories (mostly salad and water) and exercises compulsively for 3 hours daily. Despite weighing 42 kg at height 168 cm (BMI 14.8 kg/m2), she stares in the mirror claiming her thighs and stomach are 'disgustingly fat.' Has not menstruated for 9 months (secondary amenorrhea). Denies self-induced vomiting or laxative abuse.",
+  "ideas": "insists she is completely healthy and merely practicing clean eating and fitness",
+  "concerns": "angry at mother for forcing her to see a doctor; terrified hospital staff will force her to get fat",
+  "expectations": "wants to be discharged immediately to go to her gym class",
+  "pmh": "Secondary amenorrhea, Osteopenia diagnosed on recent DEXA scan",
+  "medications": "None",
+  "social_hx": "College student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "severe_anorexia_medical_workup",
+      "title": "Urgent eating-disorder medical-stability results",
+      "order_terms": ["electrolytes", "metabolic panel", "bmp", "blood tests", "blood work", "glucose", "ecg", "ekg"],
+      "availability_message": "The urgent medical-stability results are now available; monitored admission and refeeding precautions are required.",
+      "results": [
+        {"id": "potassium", "test": "Serum potassium", "value": "3.2", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "low", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "glucose", "test": "Serum glucose", "value": "62", "unit": "mg/dL", "reference_range": "70-99 fasting", "flag": "low", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Sinus bradycardia at 44 bpm with QTc 470 ms", "flag": "critical", "collected_at": "During emergency assessment"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Anorexia Nervosa, Restrictive Type, Severe (BMI 14.8) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Anorexia Nervosa, Restrictive Type, Severe (BMI 14.8) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to medical inpatient unit with psychiatric co-management due to strict criteria for medical hospitalization (BMI <15, HR <50, orthostasis, hypothermia, QTc prolongation), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: intense fear of weight gain, severe restriction of food intake, BMI 14.8, and secondary amenorrhea (Anorexia Nervosa)",
+      "Key HPI features: 22F college student brought by mother due to extreme weight loss and fainting episode during gym workout. Patient restricts daily intake to <500 calories (mostly salad and water) and exercises compulsively for 3 hours daily. Despite weighing 42 kg at height 168 cm (BMI 14.8 kg/m2), she stares in the mirror claiming her thighs and stomach are 'disgustingly fat.' Has not menstruated for 9 months (secondary amenorrhea). Denies self-induced vomiting or laxative abuse.",
+      "Objective/Exam findings: Vitals: HR 44 (severe sinus bradycardia), BP 86/54 (orthostatic drop to 70/40), Temp 35.8C (hypothermia), BMI 14.8 kg/m2. Physical exam reveals emaciated body habitus, prominent bony landmarks, dry scaly skin, fine lanugo hair over arms and back, and cold cyanotic extremities. ECG confirms sinus bradycardia (HR 44) and QTc interval prolongation (470 ms). Labs: Potassium 3.2 mEq/L, BUN 28 mg/dL (dehydration), Glucose 62 mg/dL, WBC 3,200 /uL (leukopenia of starvation).",
+      "Relevant background/PMH: Secondary amenorrhea, Osteopenia diagnosed on recent DEXA scan"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Anorexia Nervosa, Restrictive Type, Severe (BMI 14.8).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Adjustment disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute suicidal or homicidal ideation."
+    ],
+    "management_principles": [
+      "Admit to medical inpatient unit with psychiatric co-management due to strict criteria for medical hospitalization (BMI <15, HR <50, orthostasis, hypothermia, QTc prolongation)",
+      "Begin cautious nutritional rehabilitation under a specialist refeeding protocol, with frequent electrolyte, glucose, fluid-status, and cardiac monitoring for refeeding syndrome",
+      "Provide continuous ECG monitoring and behavioral observation (1-to-1 supervision during and after meals)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "22F presenting with severe Restrictive-Type Anorexia Nervosa characterized by profound low weight, body image distortion, intense fear of weight gain, and physiological starvation signs.",
+    "objective": "Vitals: HR 44 (severe sinus bradycardia), BP 86/54 (orthostatic drop to 70/40), Temp 35.8C (hypothermia), BMI 14.8 kg/m2. Physical exam reveals emaciated body habitus, prominent bony landmarks, dry scaly skin, fine lanugo hair over arms and back, and cold cyanotic extremities. ECG confirms sinus bradycardia (HR 44) and QTc interval prolongation (470 ms). Labs: Potassium 3.2 mEq/L, BUN 28 mg/dL (dehydration), Glucose 62 mg/dL, WBC 3,200 /uL (leukopenia of starvation).",
+    "assessment": "Anorexia Nervosa, Restrictive Type, Severe (BMI 14.8) complicated by hemodynamic instability and bradycardia.",
+    "plan": "Urgently admit to a medical inpatient unit with psychiatric co-management for hemodynamic instability, QTc prolongation, electrolyte disturbance, and high refeeding risk. Begin nutritional rehabilitation only under a specialist refeeding protocol with frequent electrolyte, glucose, fluid-status, and cardiac monitoring. Provide continuous ECG and appropriate meal-related observation, assess capacity and suicide risk, and involve an eating-disorder multidisciplinary team once medically stabilized."
+  },
+  "learning_objectives": [
+    "Identify strict medical hospitalization criteria for Anorexia Nervosa (BMI <15, HR <50 bpm, systolic BP <90, hypothermia <36C, QTc prolongation, electrolyte derangement)",
+    "Explain the pathophysiology of Refeeding Syndrome (sudden insulin surge driving serum phosphate, potassium, and magnesium intracellularly, precipitating hypophosphatemic cardiopulmonary failure)",
+    "Conduct laboratory monitoring and caloric titration protocols during early nutritional rehabilitation to safely prevent refeeding complications",
+    "Differentiate Restrictive Type from Binge-Purge Type Anorexia Nervosa and Bulimia Nervosa regarding BMI thresholds and physical signs (Russell sign, dental erosion)"
+  ],
+  "teaching": {
+    "diagnosis": "Anorexia Nervosa, Restrictive Type, Severe (BMI 14.8) complicated by hemodynamic instability and bradycardia.",
+    "one_liner": "Psychiatric evaluation for patient presenting with intense fear of weight gain, severe restriction of food intake, BMI 14.8, and secondary amenorrhea (Anorexia Nervosa).",
+    "differentials": [
+      "Bulimia nervosa",
+      "Avoidant/restrictive food intake disorder (ARFID)",
+      "Major depressive disorder with appetite loss",
+      "Hyperthyroidism",
+      "Malignancy or GI disease causing weight loss"
+    ],
+    "red_flags": [
+      "Syncope, bradycardia, hypotension, hypothermia, QTc prolongation, or electrolyte disturbance",
+      "Refeeding risk, arrhythmia, seizure, or inability to participate in a safe nutritional plan"
+    ],
+    "must_ask": [
+      {
+        "objective": "Body image and fear of weight gain",
+        "say": "How do you feel about your body and your current weight?",
+        "domains": [
+          "character",
+          "ideas"
+        ],
+        "keywords": [
+          "body",
+          "weight",
+          "fat",
+          "thin",
+          "afraid"
+        ]
+      },
+      {
+        "objective": "Dietary restriction pattern",
+        "say": "What have you been eating in a typical day recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "eating",
+          "diet",
+          "calories",
+          "food",
+          "restrict"
+        ]
+      },
+      {
+        "objective": "Compensatory behaviors",
+        "say": "Do you exercise a lot, make yourself vomit, or use laxatives?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "exercise",
+          "vomit",
+          "laxatives",
+          "purge",
+          "compulsive"
+        ]
+      },
+      {
+        "objective": "Menstrual and physical symptoms",
+        "say": "When was your last period, and have you felt dizzy or noticed your heart racing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "period",
+          "menstrual",
+          "dizzy",
+          "heart",
+          "fainting"
+        ]
+      },
+      {
+        "objective": "Cardiac safety screen",
+        "say": "Have you fainted, or noticed your heartbeat feeling irregular or very slow?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "fainted",
+          "heartbeat",
+          "irregular",
+          "slow",
+          "bradycardia"
+        ]
+      }
+    ]
+  }
+}

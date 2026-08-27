@@ -1,0 +1,66 @@
+{
+  "name": "Clinical English Diagnostic",
+  "output_sections": ["scores", "checklist", "corrections", "anki_cards", "summary"],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentence Control",
+      "anchors": {
+        "90-100": "Accurate, flexible clinical sentences with only rare slips",
+        "70-80": "Mostly accurate; errors do not block understanding",
+        "50-60": "Frequent errors but meaning is usually recoverable",
+        "30-40": "Errors often force listener repair",
+        "10-20": "Meaning is frequently unclear"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Medical Vocabulary & Plain Language",
+      "anchors": {
+        "90-100": "Precise medical words and patient-friendly translations",
+        "70-80": "Mostly precise; occasional awkward wording",
+        "50-60": "Some inaccurate terms or unexplained jargon",
+        "30-40": "Frequent vocabulary problems",
+        "10-20": "Unsafe or unintelligible medical wording"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Structure & Organization",
+      "anchors": {
+        "90-100": "Clear signposting, prioritization, and concise organization",
+        "70-80": "Generally organized with minor gaps",
+        "50-60": "Understandable but loosely structured",
+        "30-40": "Hard to follow",
+        "10-20": "No clear organization"
+      }
+    },
+    "communication_fluency": {
+      "label": "Fluency & Intelligibility",
+      "anchors": {
+        "90-100": "Comfortably intelligible with smooth pacing and useful pauses",
+        "70-80": "Mostly intelligible; minor hesitation",
+        "50-60": "Listener effort needed at times",
+        "30-40": "Frequent hesitation or unclear chunks",
+        "10-20": "Communication often breaks down"
+      }
+    },
+    "professionalism": {
+      "label": "Rapport & Repair Strategies",
+      "anchors": {
+        "90-100": "Empathic, safe, and proactive about clarification",
+        "70-80": "Professional and clear with some repair language",
+        "50-60": "Polite but mechanical or limited repair",
+        "30-40": "Misses cues or avoids clarification",
+        "10-20": "Dismissive, unsafe, or unable to repair misunderstandings"
+      }
+    }
+  },
+  "checklist": [
+    {"item": "explained at least one medical concept in patient-friendly English", "required": true},
+    {"item": "asked at least two focused follow-up questions", "required": true},
+    {"item": "gave a concise SBAR or structured handover", "required": true},
+    {"item": "used signposting or summarizing language", "required": true},
+    {"item": "used a clarification or repair phrase when appropriate", "required": false},
+    {"item": "answered an interview-style question with a specific example", "required": true}
+  ],
+  "empathy_markers": [],
+  "reference_output_type": null
+}

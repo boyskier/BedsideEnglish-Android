@@ -1,0 +1,156 @@
+{
+  "id": "gs_012",
+  "system": "general_surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hernandez",
+  "age": 74,
+  "gender": "male",
+  "chief_complaint": "severe agonizing abdominal pain completely out of proportion to mild physical exam findings in cardiac patient",
+  "hpi_details": "74M with atrial fibrillation off anticoagulation presenting with sudden excruciating abdominal pain out of proportion to soft, non-tender abdominal exam, lactic acidosis, and bowel wall pneumatosis.",
+  "ideas": "thinks this is related to mesenteric arterial ischemia thrombosis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Atrial fibrillation (off anticoagulation), hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "lactate",
+      "test": "Serum lactate",
+      "value": "6.8",
+      "unit": "mmol/L",
+      "reference_range": "0.5-2.2",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "ct_angiography",
+      "test": "CT angiography of abdomen and pelvis",
+      "value": "Embolic occlusion of the proximal superior mesenteric artery with pneumatosis of several small-bowel loops and reduced bowel-wall enhancement",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Mesenteric Ischemia (Arterial Thrombosis/Embolism) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Mesenteric Ischemia (Arterial Thrombosis/Embolism) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate resuscitation with IV fluids and broad-spectrum antibiotics, urgent CT angiography for diagnosis, and emergent surgical or endovascular revascularization before irreversible bowel necrosis occurs, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe agonizing abdominal pain completely out of proportion to mild physical exam findings in cardiac patient",
+      "Key HPI features: 74M with atrial fibrillation off anticoagulation presenting with sudden excruciating abdominal pain out of proportion to soft, non-tender abdominal exam, lactic acidosis, and bowel wall pneumatosis.",
+      "Objective/Exam findings: Abdomen is soft and only mildly tender despite the patient's severe pain (pain out of proportion to exam) - a classic warning sign. Labs show elevated lactate (lactic acidosis) and leukocytosis. CT angiography demonstrates arterial occlusion and bowel wall pneumatosis suggesting early necrosis.",
+      "Relevant background/PMH: Atrial fibrillation (off anticoagulation), hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Mesenteric Ischemia (Arterial Thrombosis/Embolism).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Mesenteric venous thrombosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion to exam findings — the classic warning sign."
+    ],
+    "management_principles": [
+      "Initiate immediate IV fluid resuscitation and start broad-spectrum IV antibiotics covering enteric Gram-negatives and anaerobes",
+      "Obtain emergent CT angiography to confirm the diagnosis and localize the occlusion without delaying surgical consultation",
+      "Obtain emergent vascular/general surgery consultation for urgent revascularization (embolectomy, thrombectomy, or bypass) and resection of any non-viable bowel; initiate systemic anticoagulation once surgical bleeding risk has been addressed"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Mesenteric Arterial Ischemia Thrombosis: severe agonizing abdominal pain completely out of proportion to mild physical exam findings in cardiac patient. 74M with atrial fibrillation off anticoagulation presenting with sudden excruciating abdominal pain out of proportion to soft, non-tender abdominal exam, lactic acidosis, and bowel wall pneumatosis.",
+    "objective": "Abdomen is soft and only mildly tender despite the patient's severe pain (pain out of proportion to exam) - a classic warning sign. Labs show elevated lactate (lactic acidosis) and leukocytosis. CT angiography demonstrates arterial occlusion and bowel wall pneumatosis suggesting early necrosis.",
+    "assessment": "Acute Mesenteric Ischemia (arterial thrombosis/embolism) with evidence of bowel wall pneumatosis - a time-critical surgical emergency.",
+    "plan": "1. Immediate IV fluid resuscitation and broad-spectrum IV antibiotics. 2. Emergent CT angiography to confirm the diagnosis and localize the occlusion. 3. Emergent vascular/general surgery consultation for revascularization and resection of non-viable bowel; initiate anticoagulation once bleeding risk is addressed."
+  },
+  "learning_objectives": [
+    "Recognize pain out of proportion to exam findings as the classic warning sign of mesenteric ischemia",
+    "Link atrial fibrillation off anticoagulation to embolic mesenteric ischemia risk",
+    "Prioritize emergent CT angiography and surgical consultation without delay given the time-critical nature of bowel viability",
+    "Outline revascularization and bowel resection strategies for acute mesenteric ischemia"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Mesenteric Ischemia (Arterial Thrombosis/Embolism)",
+    "one_liner": "Sudden loss of blood flow to the bowel — often from an embolus in a patient with atrial fibrillation — causing pain dramatically out of proportion to a deceptively soft abdominal exam.",
+    "differentials": [
+      "Mesenteric venous thrombosis",
+      "Bowel obstruction",
+      "Acute pancreatitis"
+    ],
+    "red_flags": [
+      "Pain out of proportion to exam findings — the classic warning sign",
+      "Atrial fibrillation off anticoagulation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain severity versus exam",
+        "say": "How severe is the pain, on a scale of one to ten?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "Did the pain come on suddenly?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Cardiac history",
+        "say": "Do you have an irregular heartbeat, like atrial fibrillation?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "atrial fibrillation",
+          "irregular heartbeat"
+        ]
+      },
+      {
+        "objective": "Anticoagulation status",
+        "say": "Are you supposed to be taking a blood thinner, and have you been taking it?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "blood thinner",
+          "anticoagulant",
+          "warfarin"
+        ]
+      },
+      {
+        "objective": "Associated GI symptoms",
+        "say": "Have you had vomiting, diarrhea, or blood in your stool?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomiting",
+          "diarrhea",
+          "blood"
+        ]
+      }
+    ]
+  }
+}

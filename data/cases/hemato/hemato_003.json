@@ -1,0 +1,215 @@
+{
+  "id": "hemato_003",
+  "system": "hematology_oncology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martin",
+  "age": 68,
+  "gender": "male",
+  "chief_complaint": "severe lower back pain, progressive confusion, and extreme thirst in older man",
+  "hpi_details": "68M presents with 3-month history of severe, worsening lower back and rib pain, profound lethargy, polyuria, constipation, and confusion over the past 48 hours. Has lost 12 pounds over the past 3 months. GP noted unexplained anemia on recent checkup.",
+  "ideas": "thinks his severe back pain is just old age arthritis or a slipped disc",
+  "concerns": "family alarmed by his acute confusion and sluggish behavior today",
+  "expectations": "wants strong pain killers and IV fluids to rehydrate him",
+  "pmh": "Mild hypertension, osteoarthritis",
+  "medications": "Acetaminophen PRN, Amlodipine 5mg",
+  "social_hx": "Retired carpenter, ex-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_hypercalcemia_workup",
+      "title": "STAT symptomatic hypercalcemia results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "calcium",
+        "metabolic panel",
+        "renal function",
+        "creatinine",
+        "cbc",
+        "complete blood count",
+        "total protein",
+        "albumin"
+      ],
+      "availability_message": "The STAT symptomatic hypercalcemia results are now available; IV saline and hypercalcemia treatment should not be delayed for myeloma confirmatory studies.",
+      "results": [
+        {
+          "id": "calcium",
+          "test": "Total serum calcium",
+          "value": "13.2",
+          "unit": "mg/dL",
+          "reference_range": "8.6-10.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "2.6",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "8.8",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "total_protein",
+          "test": "Total serum protein",
+          "value": "10.2",
+          "unit": "g/dL",
+          "reference_range": "6.0-8.3",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "albumin",
+          "test": "Serum albumin",
+          "value": "3.1",
+          "unit": "g/dL",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Multiple Myeloma with Hypercalcemic Crisis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Multiple Myeloma with Hypercalcemic Crisis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt treatment of hypercalcemia followed by hematology-directed anti-myeloma therapy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe lower back pain, progressive confusion, and extreme thirst in older man",
+      "Key HPI features: 68M presents with 3-month history of severe, worsening lower back and rib pain, profound lethargy, polyuria, constipation, and confusion over the past 48 hours. Has lost 12 pounds over the past 3 months. GP noted unexplained anemia on recent checkup.",
+      "Objective/Exam findings: Vitals: HR 94, BP 138/82. Bony tenderness over lumbar spine and ribs. Bloods: Calcium 13.2 mg/dL (severe hypercalcemia), Creatinine 2.6 mg/dL, Hemoglobin 8.8 g/dL (normocytic), Total Protein elevated at 10.2 g/dL with Albumin 3.1 g/dL (calculated serum protein gap > 4 g/dL). Serum Protein Electrophoresis (SPEP) reveals a large monoclonal M-spike (3.8 g/dL IgG kappa). Skeletal survey X-rays show punched-out lytic bone lesions in skull, ribs, and L3 vertebra.",
+      "Relevant background/PMH: Mild hypertension, osteoarthritis",
+      "Current medications: Acetaminophen PRN, Amlodipine 5mg"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Multiple Myeloma with Hypercalcemic Crisis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bone metastases from another cancer without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute confusion — a hypercalcemic emergency needing immediate hydration."
+    ],
+    "management_principles": [
+      "Immediate treatment of hypercalcemia: aggressive IV normal saline hydration followed by IV Bisphosphonate (Zoledronic acid 4mg adjusted for eGFR or Pamidronate) and subcutaneous Calcitonin",
+      "Hematology consultation for bone marrow biopsy (>10% clonal plasma cells confirms diagnosis)",
+      "Initiate targeted anti-myeloma therapy (e.g., VRd: Bortezomib, Lenalidomide, Dexamethasone)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68M presenting with classic CRAB criteria constellation: Hypercalcemia (confusion, thirst), Renal impairment, Anemia, and Bone pain.",
+    "objective": "Vitals: HR 94, BP 138/82. Bony tenderness over lumbar spine and ribs. Bloods: Calcium 13.2 mg/dL (severe hypercalcemia), Creatinine 2.6 mg/dL, Hemoglobin 8.8 g/dL (normocytic), Total Protein elevated at 10.2 g/dL with Albumin 3.1 g/dL (calculated serum protein gap > 4 g/dL). Serum Protein Electrophoresis (SPEP) reveals a large monoclonal M-spike (3.8 g/dL IgG kappa). Skeletal survey X-rays show punched-out lytic bone lesions in skull, ribs, and L3 vertebra.",
+    "assessment": "Multiple Myeloma presenting with acute hypercalcemic crisis and renal impairment (myeloma kidney).",
+    "plan": "1. Immediate treatment of hypercalcemia: aggressive IV normal saline hydration followed by IV Bisphosphonate (Zoledronic acid 4mg adjusted for eGFR or Pamidronate) and subcutaneous Calcitonin. 2. Hematology consultation for bone marrow biopsy (>10% clonal plasma cells confirms diagnosis). Initiate targeted anti-myeloma therapy (e.g., VRd: Bortezomib, Lenalidomide, Dexamethasone)."
+  },
+  "learning_objectives": [
+    "Recognize CRAB diagnostic criteria for Multiple Myeloma (Hypercalcemia, Renal failure, Anemia, Bone lesions)",
+    "Interpret Serum Protein Electrophoresis (SPEP) M-spike and elevated serum protein gap",
+    "Execute emergency medical management of symptomatic hypercalcemia of malignancy",
+    "Differentiate lytic bone lesions of myeloma from osteoblastic metastases (e.g., prostate cancer)"
+  ],
+  "teaching": {
+    "diagnosis": "Multiple Myeloma with Hypercalcemic Crisis",
+    "one_liner": "A plasma-cell cancer that erodes bone and impairs the kidneys — remembered by CRAB (Calcium elevated, Renal failure, Anemia, Bone lesions) — presenting here with confusion from severe hypercalcemia.",
+    "differentials": [
+      "Bone metastases from another cancer",
+      "Primary hyperparathyroidism",
+      "Osteoporosis with compression fracture"
+    ],
+    "red_flags": [
+      "Acute confusion — a hypercalcemic emergency needing immediate hydration",
+      "Significant unintentional weight loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Bone pain characteristics",
+        "say": "Where exactly is the pain, and has it been getting worse over months?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "back",
+          "ribs",
+          "months"
+        ]
+      },
+      {
+        "objective": "Confusion timeline",
+        "say": "When did the confusion start, and how has it changed?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "confusion",
+          "48 hours"
+        ]
+      },
+      {
+        "objective": "Hypercalcemia symptoms",
+        "say": "Have you been unusually thirsty, urinating a lot, or constipated?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "thirst",
+          "polyuria",
+          "constipation"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost, and over what time?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight loss",
+          "pounds"
+        ]
+      },
+      {
+        "objective": "Prior anemia finding",
+        "say": "Has a doctor ever told you that you have anemia?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "anemia"
+        ]
+      }
+    ]
+  }
+}

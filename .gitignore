@@ -1,0 +1,50 @@
+# ── Claude Code agent worktrees (local tooling, not repo content) ──
+.claude/worktrees/
+__pycache__/
+*.pyc
+
+# ── Case review orchestration scratch (transient, merged into tools/case_review_progress.json) ──
+tools/.progress_shards/
+
+
+# ── Runtime user data (never commit; also keeps Gradle's data/ asset merge clean) ──
+data/custom/
+data/audio/
+data/listening_audio_cache/
+
+# ── API keys and secrets ────────────────────────────────────────
+.env
+*.env.local
+*.env.*.local
+
+# ── OS files ───────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── IDE files ──────────────────────────────────────────────────
+.idea/
+.vscode/
+.VSCodeCounter/
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs ───────────────────────────────────────────────────────
+*.log
+
+# ── Android / Gradle ───────────────────────────────────────────
+.gradle/
+.gradle-local/
+build/
+local.properties
+*.iml
+.cxx/
+*.apk
+!apk/*.apk
+*.aab
+*.dex
+*.class
+*/build/
+captures/
+.externalNativeBuild/
+.kotlin/

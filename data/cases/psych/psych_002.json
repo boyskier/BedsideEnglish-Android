@@ -1,0 +1,188 @@
+{
+  "id": "psych_002",
+  "system": "psychiatry",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 29,
+  "gender": "female",
+  "chief_complaint": "decreased need for sleep, grandiose delusions, pressured speech, and reckless financial spending for 1 week",
+  "hpi_details": "29F brought by husband due to 7 days of severe behavioral changes. Has slept only 2 hours per night while feeling 'bursting with superhuman energy.' Spent $15,000 online starting a fictional cryptocurrency company. Speaks rapidly without pausing, jumps abruptly between unrelated ideas, and becomes irritable and argumentative when redirected. Husband notes she stopped taking her mood stabilizing medication 3 weeks ago.",
+  "ideas": "thinks she has unlocked 100% of her brain capacity and is destined to become a billionaire",
+  "concerns": "angry at husband for interrupting her business plans",
+  "expectations": "wants to leave hospital immediately to catch a flight to a venture capital conference",
+  "pmh": "Bipolar I Disorder diagnosed age 21",
+  "medications": "Lithium carbonate 600mg BID (discontinued 3 weeks ago)",
+  "social_hx": "Marketing manager, non-smoker",
+  "investigation_events": [
+    {
+      "id": "acute_mania_lithium_workup",
+      "title": "Urgent acute mania medication-safety results",
+      "order_terms": ["lithium level", "serum lithium", "renal function", "creatinine", "tsh", "thyroid function", "pregnancy test", "urine hcg", "urine drug screen", "uds"],
+      "availability_message": "The urgent medication-safety results are now available; psychiatric admission and behavioral stabilization should not be delayed.",
+      "results": [
+        {"id": "lithium_level", "test": "Serum lithium", "value": "<0.1", "unit": "mEq/L", "reference_range": "0.6-1.2 (maintenance target varies)", "flag": "low", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "0.8", "unit": "mg/dL", "reference_range": "0.5-1.1", "flag": "normal", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "tsh", "test": "TSH", "value": "2.1", "unit": "uIU/mL", "reference_range": "0.4-4.0", "flag": "normal", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "urine_hcg", "test": "Urine hCG", "value": "Negative", "flag": "normal", "specimen": "Urine", "collected_at": "During emergency assessment"},
+        {"id": "urine_drug_screen", "test": "Urine drug screen", "value": "Negative for tested substances", "flag": "normal", "specimen": "Urine", "collected_at": "During emergency assessment"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Bipolar I Disorder (Manic Episode) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Bipolar I Disorder (Manic Episode) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to acute psychiatric unit (involuntary hold if criteria met due to financial/personal endangerment and lack of insight), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: decreased need for sleep, grandiose delusions, pressured speech, and reckless financial spending for 1 week",
+      "Key HPI features: 29F brought by husband due to 7 days of severe behavioral changes. Has slept only 2 hours per night while feeling 'bursting with superhuman energy.' Spent $15,000 online starting a fictional cryptocurrency company. Speaks rapidly without pausing, jumps abruptly between unrelated ideas, and becomes irritable and argumentative when redirected. Husband notes she stopped taking her mood stabilizing medication 3 weeks ago.",
+      "Objective/Exam findings: Vitals: HR 96, BP 134/84. Psychomotor agitation and intrusive pacing. Speech is loud, rapid, and pressured (`flight of ideas`). Mood self-reported as 'ecstatic,' affect labile ranging from euphoric to hostile when challenged. Endorses grandiose delusions of superhuman intelligence and wealth. No suicidal/homicidal ideation. Serum Lithium level < 0.1 mEq/L (subtherapeutic). UDS negative.",
+      "Relevant background/PMH: Bipolar I Disorder diagnosed age 21",
+      "Current medications: Lithium carbonate 600mg BID (discontinued 3 weeks ago)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Bipolar I Disorder (Manic Episode).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Schizoaffective disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe impulse control loss (reckless spending/driving)."
+    ],
+    "management_principles": [
+      "Admit to acute psychiatric unit (involuntary hold if criteria met due to financial/personal endangerment and lack of insight)",
+      "Before restarting lithium, assess current renal, thyroid, pregnancy, medication-interaction, and hydration status; prescribe and monitor it under psychiatric supervision"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "29F with Bipolar I Disorder presenting with acute manic episode with psychotic features (grandiose delusions) precipitated by Lithium non-adherence.",
+    "objective": "Vitals: HR 96, BP 134/84. Psychomotor agitation and intrusive pacing. Speech is loud, rapid, and pressured (`flight of ideas`). Mood self-reported as 'ecstatic,' affect labile ranging from euphoric to hostile when challenged. Endorses grandiose delusions of superhuman intelligence and wealth. No suicidal/homicidal ideation. Serum Lithium level < 0.1 mEq/L (subtherapeutic). UDS negative.",
+    "assessment": "Bipolar I Disorder, Current Episode Manic, Severe with Psychotic Features.",
+    "plan": "Urgently admit to an acute psychiatric unit; use involuntary treatment only when legal criteria are met, after assessing decision-making capacity and immediate risk. Before restarting lithium, assess renal and thyroid function, pregnancy status, hydration, concurrent medicines, and obtain serum-level monitoring; select medication and dose under psychiatric supervision. Consider a second-generation antipsychotic or other antimanic treatment for behavioral stabilization with appropriate monitoring."
+  },
+  "learning_objectives": [
+    "Identify DSM-5 diagnostic criteria for Bipolar I Manic Episode (decreased need for sleep, grandiosity, flight of ideas, pressured speech, reckless behavior lasting >=1 week)",
+    "Interpret serum Lithium concentrations and understand baseline organ monitoring (serum creatinine/BUN, TSH, ECG)",
+    "Manage acute manic behavioral dysregulation using combination mood stabilizers and antipsychotics",
+    "Evaluate insight and criteria for involuntary psychiatric hospitalization when severe mania impairs judgment"
+  ],
+  "teaching": {
+    "diagnosis": "Bipolar I Disorder (Manic Episode)",
+    "one_liner": "Distinct period of abnormally elevated or irritable mood with decreased need for sleep and grandiosity.",
+    "differentials": [
+      "Schizoaffective disorder",
+      "Substance-induced mania",
+      "Hyperthyroidism"
+    ],
+    "red_flags": [
+      "Severe impulse control loss (reckless spending/driving)",
+      "Acute exhaustion/dehydration",
+      "Suicidal thoughts, intent, or plan",
+      "Violent thoughts, escalating agitation, or inability to care for basic needs"
+    ],
+    "must_ask": [
+      {
+        "objective": "Decreased need for sleep",
+        "say": "Do you feel full of energy even after sleeping only two or three hours?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "energy",
+          "sleeping",
+          "hours",
+          "sleep",
+          "rested"
+        ]
+      },
+      {
+        "objective": "Pressured speech and racing mind",
+        "say": "Does your mind feel like it is racing so fast that your words cannot keep up?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "racing",
+          "speech",
+          "fast",
+          "talking",
+          "mind"
+        ]
+      },
+      {
+        "objective": "Grandiosity and inflated self-esteem",
+        "say": "Do you feel you have special powers, famous connections, or a divine mission?",
+        "domains": [
+          "ideas"
+        ],
+        "keywords": [
+          "special",
+          "powers",
+          "mission",
+          "famous",
+          "grandiosity"
+        ]
+      },
+      {
+        "objective": "High-risk impulsive behavior",
+        "say": "Have you engaged in risky spending sprees, reckless driving, or risky sexual choices?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "spending",
+          "reckless",
+          "driving",
+          "gambling",
+          "impulsive"
+        ]
+      },
+      {
+        "objective": "Prior depressive episode history",
+        "say": "Have you also experienced severe depressive crashes in the past?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "depressive",
+          "depression",
+          "crashes",
+          "low",
+          "episodes"
+        ]
+      },
+      {
+        "objective": "Immediate safety and capacity assessment",
+        "say": "Are you having thoughts of harming yourself or anyone else, or do you feel unable to keep yourself safe right now?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "harm myself",
+          "harm others",
+          "safe",
+          "suicide",
+          "violence"
+        ]
+      }
+    ]
+  }
+}

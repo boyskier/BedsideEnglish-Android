@@ -1,0 +1,151 @@
+{
+  "id": "obgyn_010",
+  "system": "obstetrics & gynecology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Torres",
+  "age": 25,
+  "gender": "female",
+  "chief_complaint": "high fever, severe lower abdominal pain, purulent cervical discharge, and tender adnexal mass",
+  "hpi_details": "25F presenting with acute pelvic pain, cervical motion tenderness, and transvaginal ultrasound demonstrating a complex, multiloculated 6 cm thick-walled left tubo-ovarian abscess (TOA) requiring admission for IV Cefotetan plus Doxycycline.",
+  "ideas": "thinks this is related to pelvic inflammatory disease tubo-ovarian abscess",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{"id": "tvus", "test": "Transvaginal ultrasound", "value": "Complex multiloculated 6 cm thick-walled left adnexal collection consistent with a tubo-ovarian abscess", "flag": "critical"}],
+  "investigation_events": [{
+    "id": "point_of_care_pregnancy_test",
+    "title": "Point-of-care pregnancy test",
+    "order_terms": ["pregnancy test", "urine hCG", "beta hCG"],
+    "availability_message": "The point-of-care pregnancy test is now available. Sepsis assessment and broad-spectrum antibiotics should not be delayed.",
+    "results": [{"id": "urine_hcg", "test": "Point-of-care urine beta-hCG", "value": "Negative", "flag": "normal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Tubo-ovarian abscess (complication of pelvic inflammatory disease) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tubo-ovarian abscess (complication of pelvic inflammatory disease) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Pelvic Inflammatory Disease Tubo-Ovarian Abscess, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever, severe lower abdominal pain, purulent cervical discharge, and tender adnexal mass",
+      "Key HPI features: 25F presenting with acute pelvic pain, cervical motion tenderness, and transvaginal ultrasound demonstrating a complex, multiloculated 6 cm thick-walled left tubo-ovarian abscess (TOA) requiring admission for IV Cefotetan plus Doxycycline.",
+      "Objective/Exam findings: Febrile and tachycardic with lower abdominal tenderness, cervical motion tenderness, purulent cervical discharge, and a tender left adnexal mass. Obtain pregnancy test, CBC, CMP, urinalysis, gonorrhea/chlamydia NAAT, and blood cultures if septic. Transvaginal ultrasound shows a complex multiloculated 6 cm thick-walled left tubo-ovarian abscess.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tubo-ovarian abscess (complication of pelvic inflammatory disease).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ovarian torsion without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: High fever."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Pelvic Inflammatory Disease Tubo-Ovarian Abscess",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Pelvic Inflammatory Disease Tubo-Ovarian Abscess: high fever, severe lower abdominal pain, purulent cervical discharge, and tender adnexal mass. 25F presenting with acute pelvic pain, cervical motion tenderness, and transvaginal ultrasound demonstrating a complex, multiloculated 6 cm thick-walled left tubo-ovarian abscess (TOA) requiring admission for IV Cefotetan plus Doxycycline.",
+    "objective": "Febrile and tachycardic with lower abdominal tenderness, cervical motion tenderness, purulent cervical discharge, and a tender left adnexal mass. Obtain pregnancy test, CBC, CMP, urinalysis, gonorrhea/chlamydia NAAT, and blood cultures if septic. Transvaginal ultrasound shows a complex multiloculated 6 cm thick-walled left tubo-ovarian abscess.",
+    "assessment": "Clinical presentation highly suggestive of Pelvic Inflammatory Disease Tubo-Ovarian Abscess.",
+    "plan": "Admit and consult gynecology; assess for sepsis, obtain the indicated tests, provide IV fluids and analgesia, and start parenteral broad-spectrum antibiotics such as cefotetan plus doxycycline per local protocol. Once clinically improved, complete 14 days of doxycycline with anaerobic coverage (for example, metronidazole). Reassess within 48-72 hours; arrange image-guided drainage or operative management for clinical deterioration, suspected rupture, sepsis, or inadequate response. Test and treat sexual partners as indicated and advise abstinence until treatment is completed."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Pelvic Inflammatory Disease Tubo-Ovarian Abscess",
+    "Formulate prioritized differential diagnosis for high fever, severe lower abdominal pain, purulent cervical discharge, and tender adnexal mass",
+    "Select appropriate laboratory and imaging studies for obstetrics & gynecology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Tubo-ovarian abscess (complication of pelvic inflammatory disease)",
+    "one_liner": "25F with fever, severe pelvic pain, cervical motion tenderness, and a complex 6cm tubo-ovarian abscess on ultrasound.",
+    "differentials": [
+      "Ovarian torsion",
+      "Appendicitis",
+      "Ectopic pregnancy",
+      "Endometritis"
+    ],
+    "red_flags": [
+      "High fever",
+      "Purulent cervical discharge",
+      "Tender adnexal mass >4cm"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the fever pattern",
+        "say": "How high has your fever gone, and when did it start?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "onset"
+        ]
+      },
+      {
+        "objective": "Ask about vaginal discharge",
+        "say": "Have you noticed any unusual vaginal discharge?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "purulent discharge"
+        ]
+      },
+      {
+        "objective": "Screen for sexual history and STI risk",
+        "say": "Do you have a new sexual partner, or any history of sexually transmitted infections?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "STI history",
+          "sexual partners"
+        ]
+      },
+      {
+        "objective": "Assess pain severity and location",
+        "say": "Where exactly is the pain, and how severe is it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pelvic pain"
+        ]
+      },
+      {
+        "objective": "Explain need for IV antibiotics and possible drainage",
+        "say": "You'll need IV antibiotics, and if the abscess doesn't improve, drainage may be needed.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "IV antibiotics",
+          "drainage"
+        ]
+      }
+    ]
+  }
+}

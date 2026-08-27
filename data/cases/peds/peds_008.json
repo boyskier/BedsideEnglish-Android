@@ -1,0 +1,147 @@
+{
+  "id": "peds_008",
+  "system": "pediatrics",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Master Harris",
+  "age": 1,
+  "gender": "male",
+  "chief_complaint": "brief generalized seizure during rapid fever spike in an otherwise healthy 18-month-old toddler (Simple Febrile Seizure)",
+  "hpi_details": "18-month-old boy brought to ED by ambulance after experiencing a generalized shaking seizure at home lasting 2 minutes. Mother reports child had a mild runny nose and felt warm this afternoon. Suddenly, his eyes rolled back, his arms and legs stiffened and shook rhythmically, and he became unresponsive. Seizure stopped spontaneously after 2 minutes. Currently lethargic and sleeping peacefully in mother's arms upon arrival.",
+  "ideas": "mother crying and traumatized, convinced child has epilepsy or permanent brain damage from the seizure",
+  "concerns": "mother terrified seizure will happen again tonight",
+  "expectations": "wants brain MRI scan, EEG, and strong daily seizure medicines to guarantee it never happens again",
+  "pmh": "Normal birth history, up to date on immunizations",
+  "medications": "None",
+  "social_hx": "18-month-old toddler",
+  "investigation_events": [{
+    "id": "post_seizure_glucose",
+    "title": "Point-of-care glucose after seizure",
+    "order_terms": ["point-of-care glucose", "POC glucose", "fingerstick glucose", "bedside glucose", "blood sugar"],
+    "availability_message": "The bedside glucose result is now available.",
+    "results": [{"id": "poc_glucose", "test": "Point-of-care blood glucose", "value": "98", "unit": "mg/dL", "reference_range": "70-140", "flag": "normal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Simple febrile seizure evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Simple febrile seizure is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes parental reassurance and education, treatment of the underlying fever source, and antipyretics for comfort, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: brief generalized seizure during rapid fever spike in an otherwise healthy 18-month-old toddler (Simple Febrile Seizure)",
+      "Key HPI features: 18-month-old boy brought to ED by ambulance after experiencing a generalized shaking seizure at home lasting 2 minutes. Mother reports child had a mild runny nose and felt warm this afternoon. Suddenly, his eyes rolled back, his arms and legs stiffened and shook rhythmically, and he became unresponsive. Seizure stopped spontaneously after 2 minutes. Currently lethargic and sleeping peacefully in mother's arms upon arrival.",
+      "Objective/Exam findings: Vitals: HR 138, RR 26, Temp 39.4C (rectal), SpO2 99%. Child is in post-ictal sleep, easily arousable to vocal stimulation, crying appropriately when examined, and moving all extremities symmetrically without focal neurological deficits. Neck is supple without nuchal rigidity; Kernig and Brudzinski signs negative. Tympanic membranes show bulging red left eardrum consistent with Acute Otitis Media (the infectious source of the fever). Point-of-care blood glucose normal at 98 mg/dL.",
+      "Relevant background/PMH: Normal birth history, up to date on immunizations"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Simple febrile seizure.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Complex febrile seizure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Focal seizure features would suggest complex febrile seizure."
+    ],
+    "management_principles": [
+      "Reassure parents and provide comprehensive education: Simple febrile seizures occur between ages 6 months and 5 years, are generalized (non-focal), last < 15 minutes, and occur only ONCE within a 24-hour period",
+      "They are benign and do NOT cause brain damage, intellectual disability, or require long-term anti-epileptic medications (phenobarbital/levetiracetam are not indicated)",
+      "Treat the underlying ear infection with oral Amoxicillin (90 mg/kg/day divided BID)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "18-month-old developmentally normal toddler presenting with a single, brief generalized seizure occurring during a rapid rise in body temperature.",
+    "objective": "Vitals: HR 138, RR 26, Temp 39.4C (rectal), SpO2 99%. Child is in post-ictal sleep, easily arousable to vocal stimulation, crying appropriately when examined, and moving all extremities symmetrically without focal neurological deficits. Neck is supple without nuchal rigidity; Kernig and Brudzinski signs negative. Tympanic membranes show bulging red left eardrum consistent with Acute Otitis Media (the infectious source of the fever). Point-of-care blood glucose normal at 98 mg/dL.",
+    "assessment": "Simple Febrile Seizure secondary to Acute Otitis Media fever spike.",
+    "plan": "1. Reassure parents and provide comprehensive education: Simple febrile seizures occur between ages 6 months and 5 years, are generalized (non-focal), last < 15 minutes, and occur only ONCE within a 24-hour period. They are benign and do NOT cause brain damage, intellectual disability, or require long-term anti-epileptic medications (phenobarbital/levetiracetam are not indicated). 2. Treat the underlying ear infection with oral Amoxicillin (90 mg/kg/day divided BID). 3. Prescribe antipyretics (acetaminophen and ibuprofen) for comfort, noting they do not strictly prevent seizure recurrence during rapid fever spikes. Provide emergency rectal/buccal Diazepam or Midazolam rescue abortive gel prescriptions ONLY for prolonged seizures >5 minutes."
+  },
+  "learning_objectives": [
+    "Differentiate Simple Febrile Seizures (generalized tonic-clonic, duration <15 minutes, single episode in 24 hours, normal neurological exam, age 6 mo to 5 yrs) from Complex Febrile Seizures (focal features, duration >15 minutes, or multiple recurrences within 24 hours)",
+    "Understand that simple febrile seizures carry a benign prognosis without risk of permanent neurological injury, intellectual impairment, or requirement for daily maintenance anticonvulsant therapy",
+    "Identify indications for lumbar puncture to exclude meningitis/encephalitis in febrile seizures (age <12 months with incomplete Hib/pneumococcal vaccination, meningeal irritation signs, or prolonged post-ictal lethargy)",
+    "Provide effective parental counseling regarding home management during future fever spikes and proper administration of rescue buccal midazolam/rectal diazepam for prolonged seizures >5 minutes"
+  ],
+  "teaching": {
+    "diagnosis": "Simple febrile seizure",
+    "one_liner": "18-month-old boy with a 2-minute generalized seizure during a rapid fever spike, now back to baseline mental status.",
+    "differentials": [
+      "Complex febrile seizure",
+      "Meningitis/encephalitis",
+      "Epilepsy",
+      "Breath-holding spell"
+    ],
+    "red_flags": [
+      "Focal seizure features would suggest complex febrile seizure",
+      "Seizure >15 minutes or recurrence within 24 hours",
+      "Signs of meningismus"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the seizure duration and type",
+        "say": "How long did the shaking last, and did it involve his whole body or just one side?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "seizure duration",
+          "generalized vs focal"
+        ]
+      },
+      {
+        "objective": "Confirm the seizure occurred only once",
+        "say": "Did this happen just once, or more than once today?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "single episode"
+        ]
+      },
+      {
+        "objective": "Assess current mental status",
+        "say": "How is he acting now — back to normal, or still very sleepy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "post-ictal state"
+        ]
+      },
+      {
+        "objective": "Screen for signs of meningitis",
+        "say": "Does he have a stiff neck, or has he been unusually irritable or hard to wake?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "meningismus screen"
+        ]
+      },
+      {
+        "objective": "Reassure about the benign nature of simple febrile seizures",
+        "say": "This type of seizure is common and does not cause brain damage or epilepsy — he does not need daily seizure medication.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "reassurance",
+          "no daily anticonvulsant needed"
+        ]
+      }
+    ]
+  }
+}

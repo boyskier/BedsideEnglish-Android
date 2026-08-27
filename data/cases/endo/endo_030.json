@@ -1,0 +1,119 @@
+{
+  "id": "endo_030",
+  "system": "endo",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Johnson",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "fatigue, weight gain, cold intolerance, and dry skin",
+  "hpi_details": "A 32-year-old female presents to the clinic with fatigue, weight gain, cold intolerance, and dry skin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to hypothyroidism",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Primary Hypothyroidism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Hypothyroidism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming the diagnosis with TSH and free T4 before starting an individualized levothyroxine dose, with follow-up TSH in 6-8 weeks, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fatigue, weight gain, cold intolerance, and dry skin",
+      "Key HPI features: A 32-year-old female presents to the clinic with fatigue, weight gain, cold intolerance, and dry skin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Primary Hypothyroidism.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Hypothyroidism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Depression without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: signs of myxoedema coma (hypothermia, bradycardia, confusion, hypotension), chest pain or signs of pericardial effusion, coexisting adrenal insufficiency (unexplained hypotension, or hyponatraemia)."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with TSH and free T4, then start an individualized levothyroxine dose and recheck TSH in 6-8 weeks",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Thyroid Association (ATA) Guidelines for the Treatment of Hypothyroidism",
+        "url": "https://www.thyroid.org/professionals/ata-professional-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of fatigue, weight gain, cold intolerance, and dry skin. HPI: autoimmune thyroiditis (Hashimoto).",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Primary Hypothyroidism.",
+    "assessment": "Primary Hypothyroidism, likely autoimmune (Hashimoto's), given the fatigue, weight gain, cold intolerance, and dry skin — pending confirmatory TSH and free T4.",
+    "plan": "Confirm primary hypothyroidism with TSH and free T4 before treatment and review medication interactions and pregnancy status. Start levothyroxine at an individualized dose based on age, body size, cardiac disease, and severity; recheck TSH about 6-8 weeks after initiation or dose changes."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Primary Hypothyroidism",
+    "Select appropriate diagnostic workup for Primary Hypothyroidism",
+    "Implement evidence-based management plan: Levothyroxine replacement, check TSH in 6-8 weeks"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Hypothyroidism",
+    "one_liner": "Autoimmune thyroiditis causing fatigue, weight gain, cold intolerance, and dry skin.",
+    "differentials": [
+      "Depression"
+    ],
+    "red_flags": [
+      "Signs of myxoedema coma (hypothermia, bradycardia, confusion, hypotension) — a medical emergency requiring urgent IV levothyroxine and steroids",
+      "Chest pain or signs of pericardial effusion — hypothyroidism can cause pericardial effusion and unmask underlying cardiac disease",
+      "Coexisting adrenal insufficiency (unexplained hypotension, hyponatraemia) — must be excluded/treated before starting levothyroxine to avoid precipitating adrenal crisis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Cold intolerance",
+        "say": "Do you feel cold when others don't?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Weight change",
+        "say": "How much weight have you gained?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Skin",
+        "say": "Is your skin dry?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Bowel habits",
+        "say": "Any constipation?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "urology_025",
+  "system": "urology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Sim",
+  "age": 54,
+  "gender": "female",
+  "chief_complaint": "leaking urine when coughing, sneezing, or lifting heavy shopping bags",
+  "hpi_details": "54F reports leaking small amounts of urine whenever she laughs, coughs, sneezes, or lifts heavy groceries. Has had to wear protective liners every day for 6 months. Denies painful urination.",
+  "ideas": "embarrassed by urine leakage and wants bladder control treatment",
+  "concerns": "worried about worsening bladder control",
+  "expectations": "wants pelvic floor exercises or surgery",
+  "pmh": "Vaginal deliveries (3 children)",
+  "medications": "None",
+  "social_hx": "Housewife, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stress_incontinence_urinalysis",
+      "title": "Urinalysis",
+      "order_terms": ["urinalysis", "urine dip", "urine test", "ua"],
+      "availability_message": "The urinalysis result is now available.",
+      "results": [
+        {"id": "urine_leukocyte_esterase", "test": "Leukocyte esterase", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_nitrite", "test": "Nitrite", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_blood", "test": "Blood", "value": "Negative", "flag": "normal", "specimen": "Urine"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Stress Urinary Incontinence evaluation and management",
+    "core_concepts": [
+      "Stress urinary incontinence is leakage with raised abdominal pressure; distinguish it from urgency-predominant, mixed, overflow, infection-related, and fistula-associated leakage.",
+      "Initial assessment includes a bladder diary, urinalysis, medication review, pelvic examination for atrophy/prolapse, and demonstrable cough stress test with an adequately filled bladder; measure PVR when voiding dysfunction is suspected.",
+      "Supervised pelvic-floor muscle training for at least three months, weight management when appropriate, and management of cough/constipation are first-line treatments.",
+      "Sling or other continence procedures require shared decision-making about alternatives and risks including mesh exposure/erosion, retention/voiding dysfunction, pain, infection, and need for future treatment."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: leaking urine when coughing, sneezing, or lifting heavy shopping bags",
+      "Key HPI features: 54F reports leaking small amounts of urine whenever she laughs, coughs, sneezes, or lifts heavy groceries. Has had to wear protective liners every day for 6 months. Denies painful urination.",
+      "Objective/Exam findings: Obtain urinalysis, bladder diary, pelvic examination for prolapse/atrophy, and cough stress test; measure PVR if retention, recurrent UTI, neurologic disease, or prior pelvic surgery is present.",
+      "Relevant background/PMH: Vaginal deliveries (3 children)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stress Urinary Incontinence.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Attributing continuous leakage, gross hematuria, recurrent UTI, significant prolapse, pelvic mass, pain, neurologic deficits, or elevated PVR to uncomplicated stress incontinence.",
+      "Recommending surgery without confirming the predominant type of incontinence or discussing procedural alternatives, benefits, and harms.",
+      "Using antimuscarinic or beta-3 agonist drugs for exertional leakage without identifying a clinically important urgency component and reviewing retention/blood-pressure risks."
+    ],
+    "management_principles": [
+      "Confirm the type and severity of leakage with history, diary, urinalysis, examination, and cough stress test; address reversible contributors.",
+      "Offer supervised pelvic-floor muscle training, lifestyle measures, continence products, and counseling before procedural care.",
+      "Refer for urogynecology/urology evaluation when symptoms are mixed/complex, PVR is elevated, prolapse or red flags are present, or she wants a procedure after informed counseling."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Stress Urinary Incontinence. leaking urine when coughing, sneezing, or lifting heavy shopping bags. 54F reports leaking small amounts of urine whenever she laughs, coughs, sneezes, or lifts heavy groceries. Has had to wear protective liners every day for 6 months. Denies painful urination.",
+    "objective": "Use urinalysis, bladder diary, pelvic examination for atrophy/prolapse, and cough stress test; check PVR selectively for possible voiding dysfunction or complicated presentation.",
+    "assessment": "Clinical presentation highly suggestive of Stress Urinary Incontinence.",
+    "plan": "Confirm stress-predominant leakage and exclude infection/complicated features. Offer supervised pelvic-floor muscle training for at least three months and address weight, cough, constipation, and continence-product needs. Refer for informed procedural discussion if conservative care fails or she prefers surgery; review retention, pain, infection, and mesh-specific risks where applicable."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Stress Urinary Incontinence.",
+    "Formulate prioritized differential diagnosis for leaking urine when coughing, sneezing, or lifting heavy shopping bags",
+    "Select appropriate laboratory and imaging studies for urology",
+    "Implement evidence-based acute and long-term management strategies for Stress Urinary Incontinence."
+  ],
+  "teaching": {
+    "diagnosis": "Stress Urinary Incontinence.",
+    "one_liner": "Urology evaluation for patient presenting with leaking urine when coughing, sneezing, or lifting heavy shopping bags.",
+    "differentials": [
+      "Urge incontinence / overactive bladder",
+      "Mixed urinary incontinence",
+      "Pelvic organ prolapse"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Urosepsis with high fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Leakage triggers - cough, sneeze, exertion",
+        "say": "Does the leaking happen specifically when you laugh, cough, sneeze, or lift something heavy?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cough",
+          "laugh",
+          "sneeze",
+          "lift",
+          "leak"
+        ]
+      },
+      {
+        "objective": "Exclude urgency component",
+        "say": "Do you ever get a sudden, strong urge to urinate that you can't hold, separate from the leaking with activity?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "urgency",
+          "urge",
+          "hold",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Obstetric and pelvic surgical history",
+        "say": "How many vaginal deliveries have you had, and have you had any pelvic surgery before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "deliveries",
+          "vaginal birth",
+          "pelvic surgery",
+          "childbirth"
+        ]
+      },
+      {
+        "objective": "Severity and daily pad use",
+        "say": "How many pads or liners do you need to use each day because of the leakage?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pads",
+          "liners",
+          "daily",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Impact on daily activities and treatment expectations",
+        "say": "How is this affecting your exercise or social life, and what are you hoping we can do about it?",
+        "domains": [
+          "concerns",
+          "expectations"
+        ],
+        "keywords": [
+          "exercise",
+          "activities",
+          "expectations",
+          "treatment"
+        ]
+      }
+    ]
+  }
+}

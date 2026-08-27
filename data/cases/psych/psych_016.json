@@ -1,0 +1,166 @@
+{
+  "id": "psych_016",
+  "system": "psychiatry",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lopez",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "persistent fear that minor bodily sensations indicate undetected pancreatic cancer despite multiple negative scans",
+  "hpi_details": "He has had a 1-year fear of cancer since noticing mild abdominal gurgling. He has sought reassurance from eight specialists and has had normal CT and MRI studies. He is open to scheduled follow-up and CBT rather than repeat imaging unless new clinical red flags arise.",
+  "ideas": "He fears he has missed pancreatic cancer despite the normal investigations.",
+  "concerns": "He worries that cancer will be found too late to treat.",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "prior_ct_abdomen", "test": "Prior CT abdomen", "value": "No pancreatic mass or other acute abdominal abnormality", "flag": "normal", "collected_at": "During a prior specialist evaluation"},
+    {"id": "prior_mri_abdomen", "test": "Prior MRI abdomen", "value": "Normal pancreas without focal lesion or ductal dilatation", "flag": "normal", "collected_at": "During a prior specialist evaluation"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Illness anxiety disorder: evaluation and management",
+    "core_concepts": [
+      "Illness anxiety disorder involves persistent fear of serious illness despite minimal or absent somatic symptoms and appropriate medical evaluation.",
+      "Confirm that the medical assessment is adequate, while avoiding repeated tests in the absence of new objective red flags.",
+      "Assess functional impairment, reassurance-seeking, health-related checking, comorbid anxiety or depression, substance use, and suicide risk.",
+      "A consistent therapeutic relationship, scheduled follow-up, and cognitive behavioural therapy are first-line management; an SSRI may be considered for a co-occurring anxiety or depressive disorder."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: persistent preoccupation that minor normal bodily sensations indicate undetected terminal pancreatic cancer despite multiple negative scans",
+      "Key HPI features: 1-year fear of cancer, repeated reassurance seeking, and normal prior CT and MRI studies.",
+      "Objective/Exam findings: Check vital signs and perform a focused abdominal examination; investigate only new findings or alarm symptoms.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Dismissing symptoms as psychiatric without an appropriate initial medical assessment.",
+      "Ordering repeated imaging solely to reduce anxiety when there are no new clinical findings.",
+      "Mistaking temporary reassurance for sustained improvement.",
+      "Assuming the patient is deliberately fabricating symptoms."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Missing new alarm symptoms or objective findings that warrant medical reassessment.",
+      "Providing unstructured repeated reassurance that reinforces the reassurance-seeking cycle.",
+      "Ignoring acute suicidal ideation, self-harm risk, psychosis, or inability to care for oneself."
+    ],
+    "management_principles": [
+      "Validate the distress, explain the diagnosis without dismissing physical symptoms, and agree a single coordinating clinician.",
+      "Use regular scheduled reviews and a clear plan for when new symptoms require medical reassessment.",
+      "Offer cognitive behavioural therapy and treat clinically significant comorbid anxiety or depression.",
+      "Perform a mental-state examination and assess suicide, self-harm, violence, substance use, and capacity when indicated."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "He reports a 1-year fear that mild abdominal gurgling represents pancreatic cancer, despite normal CT and MRI studies and reassurance from eight specialists. The preoccupation has led to repeated reassurance seeking.",
+    "objective": "Obtain vital signs, a focused abdominal examination, and mental-state examination. Review prior investigations and assess for new alarm symptoms, functional impairment, depression, anxiety, substance use, and suicide or self-harm risk.",
+    "assessment": "Presentation is most consistent with illness anxiety disorder, provided the initial medical assessment remains adequate and no new alarm features are present.",
+    "plan": "Agree regular follow-up with one clinician, avoid repeat imaging unless new clinical findings arise, and offer CBT. Screen for and treat comorbid anxiety or depression as indicated. Escalate urgently for suicidal intent, psychosis, inability to care for self, or concerning new medical symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of illness anxiety disorder",
+    "Formulate prioritized differential diagnosis for persistent preoccupation that minor normal bodily sensations indicate undetected terminal pancreatic cancer despite multiple negative scans",
+    "Select appropriate laboratory and imaging studies for psychiatry",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Illness anxiety disorder",
+    "one_liner": "Psychiatric evaluation for patient presenting with persistent preoccupation that minor normal bodily sensations indicate undetected terminal pancreatic cancer despite multiple negative scans.",
+    "differentials": [
+      "Somatic symptom disorder",
+      "Generalized anxiety disorder",
+      "Obsessive-compulsive disorder",
+      "Major depressive disorder",
+      "Undiagnosed medical illness (must exclude)"
+    ],
+    "red_flags": [
+      "Suicidal ideation, self-harm intent, or inability to keep oneself safe",
+      "Psychosis, delirium, intoxication, or severe self-neglect",
+      "New alarm symptoms or abnormal examination findings suggesting an acute medical illness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Nature of the health preoccupation",
+        "say": "Can you tell me what specific symptom worries you, and what you fear it means?",
+        "domains": [
+          "ideas",
+          "concerns"
+        ],
+        "keywords": [
+          "symptom",
+          "worry",
+          "cancer",
+          "fear",
+          "means"
+        ]
+      },
+      {
+        "objective": "Reassurance-seeking pattern",
+        "say": "How many doctors have you seen about this, and does reassurance help for very long?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "doctors",
+          "reassurance",
+          "specialists",
+          "scans",
+          "help"
+        ]
+      },
+      {
+        "objective": "Checking behaviors",
+        "say": "Do you frequently check your body or search the internet for symptoms?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "checking",
+          "internet",
+          "search",
+          "body",
+          "symptoms"
+        ]
+      },
+      {
+        "objective": "Functional impact of the worry",
+        "say": "How much time do you spend worrying about this each day, and how does it affect your life?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "time",
+          "worrying",
+          "affect",
+          "life",
+          "daily"
+        ]
+      },
+      {
+        "objective": "Comorbid anxiety or depression",
+        "say": "Do you also feel anxious or down most days?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "anxious",
+          "down",
+          "depressed",
+          "mood",
+          "most days"
+        ]
+      }
+    ]
+  }
+}

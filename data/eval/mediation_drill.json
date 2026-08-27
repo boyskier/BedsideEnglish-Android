@@ -1,0 +1,66 @@
+{
+  "name": "Clinical Mediation Drill - Patient Words to Team Words",
+  "learner_level": "preclinical",
+  "_note": "Skill drill focused on mediation: adapting information between patient-friendly English, chart English, and team handover English.",
+  "output_sections": ["scores", "checklist", "corrections", "anki_cards", "summary"],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentence Control",
+      "anchors": {
+        "90-100": "Clear, accurate sentences in every register",
+        "70-80": "Minor errors only; meaning always clear",
+        "50-60": "Some errors but message remains understandable",
+        "30-40": "Frequent errors requiring listener effort",
+        "10-20": "Meaning often breaks down"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Accurate Meaning Transfer",
+      "anchors": {
+        "90-100": "Preserves clinical meaning exactly while changing register",
+        "70-80": "Mostly accurate; minor loss of nuance",
+        "50-60": "Some details lost or softened too much",
+        "30-40": "Several clinically important details distorted",
+        "10-20": "Meaning transfer is unsafe or misleading"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Register Switching",
+      "anchors": {
+        "90-100": "Adapts smoothly among patient, chart, nurse/team, and attending language",
+        "70-80": "Mostly adapts to listener needs",
+        "50-60": "Can switch register but unevenly",
+        "30-40": "Often uses the wrong register for the listener",
+        "10-20": "No meaningful register control"
+      }
+    },
+    "communication_fluency": {
+      "label": "Clarity & Flow",
+      "anchors": {
+        "90-100": "Concise, fluent, and easy to follow",
+        "70-80": "Generally fluent with minor hesitation",
+        "50-60": "Understandable but choppy",
+        "30-40": "Frequent pauses or rambling",
+        "10-20": "Hard to follow"
+      }
+    },
+    "professionalism": {
+      "label": "Audience Awareness",
+      "anchors": {
+        "90-100": "Consistently respects what each listener needs to know",
+        "70-80": "Usually audience-aware",
+        "50-60": "Sometimes too technical or too vague",
+        "30-40": "Often mismatches tone or detail",
+        "10-20": "Insensitive or unsafe audience adaptation"
+      }
+    }
+  },
+  "checklist": [
+    {"item": "converted patient lay description into concise clinical/team language", "required": true},
+    {"item": "converted clinical jargon back into patient-friendly language", "required": true},
+    {"item": "preserved key numbers, timings, symptoms, and risk details", "required": true},
+    {"item": "used signposting to show which listener the version was for", "required": false},
+    {"item": "checked understanding when speaking to a patient or family member", "required": true}
+  ],
+  "reference_output_type": "none"
+}

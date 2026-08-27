@@ -1,0 +1,146 @@
+{
+  "id": "em_009",
+  "system": "emergency medicine",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Master Irwin",
+  "age": 4,
+  "gender": "male",
+  "chief_complaint": "sudden barky seal-like cough, inspiratory stridor at rest, intercostal retractions, and steeple sign on neck X-ray (Viral Croup / Laryngotracheobronchitis)",
+  "hpi_details": "4-year-old boy brought to pediatric ED at 02:00 AM after waking up suddenly struggling to breathe. Had a mild runny nose and low-grade fever for 2 days. Tonight developed a loud, harsh, barking cough that sounds exactly like a seal (`barking seal cough`), accompanied by a high-pitched squeaking noise when breathing in (inspiratory stridor). Child is sitting up, anxious, and breathing fast with his chest pulling in deeply between the ribs with each breath.",
+  "ideas": "frightened and crying, clinging to mother while coughing loudly",
+  "concerns": "mother terrified child is choking to death or suffocating",
+  "expectations": "wants immediate breathing treatment to open up his windpipe",
+  "pmh": "Normal childhood history, fully vaccinated",
+  "medications": "None",
+  "social_hx": "Preschooler",
+  "available_results": [
+    {
+      "id": "neck_radiograph_prearrival",
+      "test": "AP soft-tissue neck X-ray",
+      "value": "Symmetric subglottic tracheal narrowing (steeple sign); epiglottis is normal",
+      "flag": "abnormal",
+      "collected_at": "Before the encounter",
+      "note": "Already obtained; croup is primarily a clinical diagnosis and treatment should not be delayed for imaging"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Viral Croup (Laryngotracheobronchitis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Viral Croup (Laryngotracheobronchitis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT pediatric ED respiratory management: administer dexamethasone 0.6 mg/kg immediately, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden barky seal-like cough, inspiratory stridor at rest, intercostal retractions, and steeple sign on neck X-ray (Viral Croup / Laryngotracheobronchitis)",
+      "Key HPI features: 4-year-old boy brought to pediatric ED at 02:00 AM after waking up suddenly struggling to breathe. Had a mild runny nose and low-grade fever for 2 days. Tonight developed a loud, harsh, barking cough that sounds exactly like a seal (`barking seal cough`), accompanied by a high-pitched squeaking noise when breathing in (inspiratory stridor). Child is sitting up, anxious, and breathing fast with his chest pulling in deeply between the ribs with each breath.",
+      "Objective/Exam findings: Vitals: HR 136, RR 38, Temp 37.8C, SpO2 95% on room air. Child exhibits moderate respiratory distress with audible inspiratory stridor at rest and visible suprasternal and intercostal retractions. Westley Croup Score: 5 (Moderate Croup). Soft tissue PA/lateral neck X-ray (if performed, though diagnosis is primarily clinical) demonstrates classic symmetric subglottic tracheal narrowing and edema below the vocal cords forming the pathognomonic 'Steeple Sign'. Epiglottis appears normal and thin.",
+      "Relevant background/PMH: Normal childhood history, fully vaccinated"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Viral Croup (Laryngotracheobronchitis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Epiglottitis (more toxic-appearing, drooling) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Stridor at rest with chest retractions — indicates moderate-severe croup needing racemic epinephrine."
+    ],
+    "management_principles": [
+      "Administer single high-dose oral (or IV/IM) Dexamethasone 0.6 mg/kg immediately (exerts profound anti-inflammatory effect on subglottic mucosal edema within 2-4 hours, reducing hospitalization rates)",
+      "For moderate-to-severe croup with stridor at rest and retractions, administer nebulized racemic epinephrine (0.5 mL of 2.25% solution diluted in normal saline)",
+      "Mandatory observation: keep child under continuous clinical monitoring in ED for at least 3-4 hours post-racemic epinephrine administration to watch for rebound stridor"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "4-year-old boy presenting with sudden nocturnal onset of a barking seal-like cough and inspiratory stridor at rest, following two days of mild coryza and low-grade fever, classic for Viral Croup (Laryngotracheobronchitis).",
+    "objective": "Vitals: HR 136, RR 38, Temp 37.8C, SpO2 95% on room air. Child exhibits moderate respiratory distress with audible inspiratory stridor at rest and visible suprasternal and intercostal retractions. Westley Croup Score: 5 (Moderate Croup). Soft tissue PA/lateral neck X-ray (if performed, though diagnosis is primarily clinical) demonstrates classic symmetric subglottic tracheal narrowing and edema below the vocal cords forming the pathognomonic 'Steeple Sign'. Epiglottis appears normal and thin.",
+    "assessment": "Moderate Viral Croup (Laryngotracheobronchitis), secondary to Parainfluenza Virus Type 1.",
+    "plan": "STAT pediatric ED respiratory management: 1. Administer single high-dose Oral (or IV/IM) Dexamethasone 0.6 mg/kg immediately (exerts profound anti-inflammatory effect on subglottic mucosal edema within 2-4 hours, reducing hospitalization rates). 2. For moderate-to-severe croup with stridor at rest and retractions, immediately administer Nebulized Racemic Epinephrine (0.5 mL of 2.25% solution diluted in normal saline) which provides rapid alpha-adrenergic vasoconstriction, shrinking subglottic airway edema within 10-30 minutes. 3. Mandatory observation: keep child under continuous clinical monitoring in ED for at least 3-4 hours post-racemic epinephrine administration to watch for 'rebound phenomenon' (return of severe stridor as epinephrine wears off prior to dexamethasone peak onset)."
+  },
+  "learning_objectives": [
+    "Recognize clinical features distinguishing Viral Croup / Laryngotracheobronchitis (barking seal-like cough, inspiratory stridor, subglottic steeple sign, age 6 months - 5 years, Parainfluenza etiology) from Epiglottitis (toxic appearance, drooling, dysphagia, distress, sitting in tripod position, thumbprint sign, Haemophilus influenzae type b etiology)",
+    "Execute evidence-based pharmacological treatment for Croup: universal single-dose corticosteroid (Dexamethasone 0.6 mg/kg) combined with Nebulized Racemic Epinephrine for any patient demonstrating stridor at rest or moderate/severe respiratory retractions",
+    "Understand the absolute necessity of maintaining a 3-to-4 hour observation window following racemic epinephrine nebulization to monitor for rebound subglottic mucosal edema before allowing safe ED discharge",
+    "Provide calm, supportive, minimal-handling environments for pediatric airway emergencies to prevent agitation-induced increases in airflow turbulence and subglottic resistance"
+  ],
+  "teaching": {
+    "diagnosis": "Viral Croup (Laryngotracheobronchitis)",
+    "one_liner": "A viral infection causing swelling of the upper airway in young children, producing a classic barking 'seal-like' cough and inspiratory stridor, worse at night — treated with steroids and, if stridor is present at rest, nebulized epinephrine.",
+    "differentials": [
+      "Epiglottitis (more toxic-appearing, drooling)",
+      "Foreign body aspiration",
+      "Bacterial tracheitis"
+    ],
+    "red_flags": [
+      "Stridor at rest with chest retractions — indicates moderate-severe croup needing racemic epinephrine"
+    ],
+    "must_ask": [
+      {
+        "objective": "Cough character",
+        "say": "Does the cough sound like a barking seal?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "barking",
+          "seal"
+        ]
+      },
+      {
+        "objective": "Stridor at rest",
+        "say": "Do you hear a squeaking noise when he breathes in, even when he's calm?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "stridor",
+          "at rest"
+        ]
+      },
+      {
+        "objective": "Preceding cold symptoms",
+        "say": "Did he have a runny nose or mild fever before this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "cold",
+          "runny nose"
+        ]
+      },
+      {
+        "objective": "Breathing effort",
+        "say": "Is his chest pulling in with each breath?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "retractions"
+        ]
+      },
+      {
+        "objective": "Onset timing",
+        "say": "What time did the barking cough start?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

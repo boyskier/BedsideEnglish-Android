@@ -1,0 +1,155 @@
+{
+  "id": "chart_readback_hypokalemia",
+  "system": "chart_drills",
+  "difficulty": "advanced",
+  "eval_template": "chart_speech_drill",
+  "patient_name": "Mr. David Chen",
+  "chief_complaint": "phone order clarification from chart",
+  "station_minutes": 4,
+  "kickoff_text": "This is Nurse Williams on 5 West. I'm calling about Mr. Chen. Can you look at the chart and read back the potassium plan before I page pharmacy?",
+  "persona_override": "You are Nurse Williams, a busy but safety-minded ward nurse. The learner can see the chart and must safely communicate from it. Ask them to read back the potassium replacement plan, clarify monitoring, and confirm when to repeat labs. If they say a dose, route, or time unclearly, ask for a repeat. Do not provide the chart details yourself unless they ask a narrow clarification question.",
+  "chart_task": {
+    "mode": "clarify_orders",
+    "title": "Phone read-back: hypokalemia replacement plan",
+    "audience": "ward nurse",
+    "student_goal": "Use the chart to give a safe read-back of orders, monitoring, and repeat labs.",
+    "must_say": [
+      "potassium is 2.9 mmol/L, which is low",
+      "give potassium chloride 40 mEq by mouth now",
+      "give magnesium sulfate 2 g intravenously now",
+      "repeat potassium and magnesium at 6 PM",
+      "keep the patient on telemetry because of PVCs",
+      "ask the nurse to call back for palpitations, chest pain, weakness, or worsening ectopy"
+    ]
+  },
+  "clinical_chart": {
+    "patient": {
+      "name": "Mr. David Chen",
+      "age": 71,
+      "sex": "male",
+      "location": "5 West, room 512"
+    },
+    "chief_complaint": "Admitted for COPD exacerbation; low potassium on morning labs",
+    "triage_note": "On albuterol nebulizers q4h. Telemetry shows occasional PVCs. No chest pain. Able to take oral medications.",
+    "vitals": [
+      {
+        "label": "BP",
+        "value": "132/76 mmHg"
+      },
+      {
+        "label": "HR",
+        "value": "96/min"
+      },
+      {
+        "label": "RR",
+        "value": "20/min"
+      },
+      {
+        "label": "SpO2",
+        "value": "92% on 2 L nasal cannula"
+      },
+      {
+        "label": "Temp",
+        "value": "37.1 C"
+      }
+    ],
+    "labs": [
+      {
+        "test": "Potassium",
+        "value": "2.9 mmol/L",
+        "range": "3.5-5.0",
+        "flag": "low"
+      },
+      {
+        "test": "Magnesium",
+        "value": "1.7 mg/dL",
+        "range": "1.8-2.4",
+        "flag": "low"
+      },
+      {
+        "test": "Creatinine",
+        "value": "1.1 mg/dL"
+      }
+    ],
+    "studies": [
+      "Telemetry: occasional PVCs, no sustained arrhythmia"
+    ],
+    "orders": [
+      "Potassium chloride 40 mEq PO now",
+      "Magnesium sulfate 2 g IV now",
+      "Repeat BMP and magnesium at 18:00",
+      "Continue telemetry",
+      "Call provider for palpitations, chest pain, new weakness, or increasing PVCs"
+    ]
+  },
+  "phrase_categories": [
+    {
+      "name": "Safe read-back",
+      "phrases": [
+        "Let me read that back to make sure I have it right.",
+        "His potassium is two point nine, so the plan is potassium chloride forty milliequivalents by mouth now.",
+        "His magnesium is also low, so give magnesium sulfate two grams intravenously now.",
+        "Please repeat the BMP and magnesium at six PM.",
+        "Keep him on telemetry, and call us if he has palpitations, chest pain, weakness, or more PVCs."
+      ]
+    },
+    {
+      "name": "Clarifying orders",
+      "phrases": [
+        "Could you repeat the dose and route once more?",
+        "Just to confirm, this is by mouth, not IV.",
+        "When exactly should the repeat labs be drawn?"
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Phone order clarification from chart evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Phone order clarification from chart is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Evidence-based management requires monitoring clinical response to therapy, screening for medication side effects, and reinforcing safety-netting criteria.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: phone order clarification from chart",
+      "Clinical presentation and history characteristic of Phone order clarification from chart"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Phone order clarification from chart.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions."
+    ],
+    "management_principles": [
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Read back medication dose, route, and timing safely",
+    "Pronounce electrolyte values and units clearly",
+    "Use closed-loop communication with a nurse"
+  ],
+  "hpi_details": "",
+  "gender": "male",
+  "age": 71,
+  "teaching": {
+    "diagnosis": "hypokalemia replacement plan",
+    "one_liner": "Clinical scenario for evaluation and management of hypokalemia replacement plan."
+  }
+}

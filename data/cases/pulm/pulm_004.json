@@ -1,0 +1,161 @@
+{
+  "id": "pulm_004",
+  "system": "pulmonology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Harrison",
+  "age": 68,
+  "gender": "male",
+  "chief_complaint": "increasing shortness of breath, wheezing, and coughing up thick green phlegm for 4 days",
+  "hpi_details": "4-day history of progressively worsening shortness of breath at rest and on minimal exertion, accompanied by audible chest wheezing and increased cough producing copious amounts of tenacious green sputum. Over the past 48 hours, his rescue salbutamol inhaler (which usually relieves his breathlessness within minutes) has provided virtually no relief despite using it 8 to 10 times daily. He reports poor sleep due to coughing and difficulty breathing lying flat, having to sleep propped up on three pillows. No chest pain, haemoptysis, or calf swelling. Has a 45 pack-year smoking history and known severe COPD.",
+  "ideas": "thinks he caught a winter chest infection from his grandchildren that flared up his emphysema",
+  "concerns": "terrified he will run out of air completely and end up on a breathing machine in intensive care again",
+  "expectations": "wants strong antibiotics, a steroid burst, and nebulizer treatments immediately",
+  "pmh": "Chronic Obstructive Pulmonary Disease (COPD - GOLD Stage 3, Group E), hypertension, hospitalized for COPD exacerbation 1 year ago requiring non-invasive ventilation (NIV)",
+  "medications": "tiotropium 18mcg OD, formoterol/budesonide inhaler BD, salbutamol inhaler PRN",
+  "social_hx": "ex-smoker (45 pack-years, quit 2 years ago), zero alcohol, retired dock worker, lives with wife",
+  "investigation_events": [{"id":"severe_copd_workup","title":"Urgent COPD exacerbation results","order_terms":["abg","arterial blood gas","chest x ray","chest x-ray","cxr"],"availability_message":"The urgent blood gas and chest radiograph are now available; controlled oxygen and bronchodilator treatment should not be delayed.","results":[{"id":"arterial_blood_gas","test":"Arterial blood gas on room air","value":"pH 7.29; PaCO2 62 mmHg; PaO2 54 mmHg; HCO3 29 mEq/L","flag":"critical","specimen":"Arterial blood","collected_at":"At emergency presentation"},{"id":"chest_xray","test":"Chest radiograph","value":"Hyperinflation with flattened diaphragms; no focal consolidation or pneumothorax","flag":"abnormal","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Acute Exacerbation of COPD evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Exacerbation of COPD is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "When hypoxemic, oxygen is titrated and reassessed with blood gases as clinically indicated; treatments and ventilatory support require clinician assessment of severity and local protocol.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: increasing shortness of breath, wheezing, and coughing up thick green phlegm for 4 days",
+      "Key HPI features: 4-day history of progressively worsening shortness of breath at rest and on minimal exertion, accompanied by audible chest wheezing and increased cough producing copious amounts of tenacious green sputum. Over the past 48 hours, his rescue salbutamol inhaler (which usually relieves his breathlessness within minutes) has provided virtually no relief despite using it 8 to 10 times daily. He reports poor sleep due to coughing and difficulty breathing lying flat, having to sleep propped up on three pillows. No chest pain, haemoptysis, or calf swelling. Has a 45 pack-year smoking history and known severe COPD.",
+      "Objective/Exam findings: Vitals: tachypnoea (RR 26), tachycardia (HR 104), O2 sat 88% on room air. Inspection: use of accessory respiratory muscles, pursed-lip breathing, barrel chest. Auscultation: prolonged expiration, widespread expiratory wheeze, and bibasal crackles. Obtain blood gases as clinically indicated to assess for acute-on-chronic hypercapnic respiratory failure, alongside blood tests and chest imaging to assess for pneumonia, pneumothorax, or other mimics.",
+      "Relevant background/PMH: Chronic Obstructive Pulmonary Disease (COPD - GOLD Stage 3, Group E), hypertension, hospitalized for COPD exacerbation 1 year ago requiring non-invasive ventilation (NIV)",
+      "Current medications: tiotropium 18mcg OD, formoterol/budesonide inhaler BD, salbutamol inhaler PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Exacerbation of COPD.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Congestive heart failure exacerbation without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute hypercapnic respiratory failure (pH < 7.35, PaCO2 > 45)."
+    ],
+    "management_principles": [
+      "Provide clinician-directed controlled oxygen only if hypoxemic, with documented target and reassessment.",
+      "Bronchodilators, corticosteroids, antibiotics, and non-invasive ventilation are selected according to severity, examination, blood gases, imaging, contraindications, and local guidance."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2026 Report",
+        "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68M with severe COPD presents with Anthonisen Type 1 acute exacerbation over 4 days: increased dyspnoea, increased sputum volume, and sputum purulence (green), refractory to salbutamol.",
+    "objective": "Vitals: tachypnoea (RR 26), tachycardia (HR 104), O2 sat 88% on room air. Inspection: use of accessory respiratory muscles (sternocleidomastoid/scalenes), pursed-lip breathing, barrel chest. Auscultation: markedly prolonged expiratory phase, widespread bilateral polyphonic expiratory wheezes, and coarse bibasilar crackles. Check right heart signs (cor pulmonale - ankle oedema, elevated JVP). Arterial Blood Gas (ABG) on room air or controlled O2: check for acute-on-chronic Type 2 respiratory failure (PaO2 <8 kPa / 60 mmHg, PaCO2 >6.5 kPa / 50 mmHg, pH <7.35 with elevated bicarbonate compensation >28 mmol/L). Bloods: FBC (leukocytosis), CRP elevated, U&Es. Chest X-ray: hyperinflated lung fields with flattened hemidiaphragms; check to rule out underlying lobar pneumonia or pneumothorax.",
+    "assessment": "Acute Infective Exacerbation of Severe Chronic Obstructive Pulmonary Disease (Anthonisen Type 1 exacerbation with acute-on-chronic hypercapnic respiratory failure). DDx: acute decompensated congestive heart failure / pulmonary oedema, acute pulmonary embolism, pneumonia, pneumothorax.",
+    "plan": "This presentation needs emergency hospital assessment. Assess oxygenation, blood gases, work of breathing, ECG, and chest imaging; provide clinician-directed controlled oxygen if hypoxemic and reassess. Give bronchodilators and consider corticosteroids, antibiotics, and non-invasive ventilation only when indicated after assessment. Escalate immediately for worsening respiratory distress, altered mental status, hypoxemia, hypercapnic acidosis, chest pain, or concern for PE, ACS, pneumonia, or pneumothorax."
+  },
+  "learning_objectives": [
+    "Apply Anthonisen criteria (increased dyspnoea, sputum volume, and sputum purulence) to classify COPD exacerbation severity and justify antibiotic initiation",
+    "Execute the critical oxygen safety target (88-92% titration via Venturi mask) and explain how excessive O2 causes hypercapnic respiratory failure",
+    "Formulate the immediate triple medical regimen: nebulized bronchodilators driven by compressed air, 5-day oral prednisolone, and targeted antibiotics",
+    "Identify blood gas triggers (pH <7.35 with hypercapnia despite medical therapy) mandating escalation to Non-Invasive Ventilation (BiPAP)"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Exacerbation of COPD",
+    "one_liner": "Acute worsening of respiratory symptoms beyond normal day-to-day variations in a patient with underlying COPD, triggered by infection or air pollution.",
+    "differentials": [
+      "Congestive heart failure exacerbation",
+      "Pulmonary embolism",
+      "Pneumonia"
+    ],
+    "red_flags": [
+      "Acute hypercapnic respiratory failure (pH < 7.35, PaCO2 > 45)",
+      "Use of accessory muscles at rest, altered mental status, or worsening hypoxemia",
+      "New chest pain, syncope, haemoptysis, unilateral leg swelling, or sudden deterioration suggesting PE, ACS, or pneumothorax"
+    ],
+    "must_ask": [
+      {
+        "objective": "Anthonisen criteria - Sputum purulence and volume",
+        "say": "Have you noticed your phlegm becoming thicker, greener, or increasing in amount?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "phlegm",
+          "sputum",
+          "thicker",
+          "green",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Exertional dyspnea and orthopnea",
+        "say": "Are you getting short of breath even while resting or propping up on extra pillows at night?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "shortness",
+          "breath",
+          "pillows",
+          "resting",
+          "propping"
+        ]
+      },
+      {
+        "objective": "Rescue inhaler responsiveness",
+        "say": "Is your quick-relief salbutamol inhaler working as well as usual or failing to give relief?",
+        "domains": [
+          "medications",
+          "relieving"
+        ],
+        "keywords": [
+          "inhaler",
+          "salbutamol",
+          "relief",
+          "working",
+          "reliever"
+        ]
+      },
+      {
+        "objective": "Smoking history quantifying",
+        "say": "How many packs of cigarettes did you smoke per day and for how long?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "packs",
+          "cigarettes",
+          "smoking",
+          "tobacco",
+          "smoker"
+        ]
+      },
+      {
+        "objective": "Prior intubation or NIV history",
+        "say": "Have you ever been admitted to the ICU or placed on a breathing machine for your lungs?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "machine",
+          "bipap",
+          "intubated",
+          "ventilation",
+          "intensive"
+        ]
+      }
+    ]
+  }
+}

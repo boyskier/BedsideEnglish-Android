@@ -1,0 +1,122 @@
+{
+  "id": "nephro_030",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Flores",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "sudden generalized swelling with heavy proteinuria",
+  "hpi_details": "A 32-year-old female presents with sudden onset of generalized swelling (face, legs, abdomen) that developed over just a few days, along with foamy urine and unintentional weight gain. She denies recent infection, new medications, or NSAID use, and otherwise feels well aside from mild fatigue.",
+  "ideas": "thinks it might be related to minimal_change",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "urine_protein_24h", "test": "24-hour urine protein", "value": "6.5", "unit": "g/day", "reference_range": "<0.15", "flag": "high"},
+    {"id": "serum_albumin", "test": "Serum albumin", "value": "1.9", "unit": "g/dL", "reference_range": "3.5-5.0", "flag": "low"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Minimal Change Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Minimal Change Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for adult minimal change disease involves nephrology referral and generally a kidney biopsy to confirm the diagnosis before starting therapy (unlike in children, where empiric steroids are standard), followed by oral corticosteroids and monitoring of urine protein, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden generalized swelling in child with heavy proteinuria",
+      "Key HPI features: A 32-year-old female presents with sudden onset of generalized swelling (face, legs, abdomen) that developed over just a few days, along with foamy urine and unintentional weight gain. She denies recent infection, new medications, or NSAID use, and otherwise feels well aside from mild fatigue.",
+      "Objective/Exam findings: Vitals: BP 118/76, HR 88, afebrile, weight up 4kg from baseline. 3+ pitting edema of face, legs, and abdomen (ascites). Labs: serum albumin 1.9 g/dL, 24-hour urine protein 6.5g, urinalysis with no hematuria, normal complement levels, normal renal function.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Minimal Change Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to FSGS without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or abdominal pain — increased infection risk with nephrotic syndrome."
+    ],
+    "management_principles": [
+      "Involve nephrology and obtain a kidney biopsy to confirm the diagnosis before starting corticosteroids in this adult patient",
+      "Start oral Prednisone once biopsy-confirmed, and monitor daily urine protein",
+      "Counsel patient on infection risk, edema management, and thrombosis precautions"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32F presents with sudden onset of generalized swelling (face, legs, abdomen) that developed over just a few days, along with foamy urine and unintentional weight gain. Denies recent infection, new medications, or NSAID use.",
+    "objective": "Vitals: BP 118/76, HR 88, afebrile, weight up 4kg from baseline. 3+ pitting edema of face, legs, and abdomen (ascites). Labs: serum albumin 1.9 g/dL, 24-hour urine protein 6.5g, urinalysis with no hematuria, normal complement levels, normal renal function.",
+    "assessment": "Nephrotic syndrome with heavy proteinuria, hypoalbuminemia, and normal complement/renal function, most consistent with minimal change disease — though in an adult, biopsy confirmation is needed before treatment, unlike the empiric steroid approach used in children.",
+    "plan": "Confirm nephrotic syndrome and evaluate secondary causes with serum albumin, kidney function, urine protein quantification, and appropriate serologies. In an adult with suspected minimal change disease, involve Nephrology and generally obtain a kidney biopsy before initiating glucocorticoids unless a clear alternative pathway applies. Monitor edema, kidney function, thrombotic risk, and response to treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Minimal Change Disease",
+    "Select appropriate diagnostic workup for Minimal Change Disease",
+    "Implement evidence-based management plan: Oral Prednisone, monitor daily urine protein"
+  ],
+  "teaching": {
+    "diagnosis": "Minimal Change Disease",
+    "one_liner": "The most common cause of nephrotic syndrome in children, with sudden generalized swelling and heavy proteinuria from podocyte injury not visible on light microscopy — usually very steroid-responsive.",
+    "differentials": [
+      "FSGS",
+      "Allergic angioedema"
+    ],
+    "red_flags": [
+      "Fever or abdominal pain — increased infection risk with nephrotic syndrome"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed",
+        "say": "How quickly did the swelling appear?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Swelling location",
+        "say": "Where is the swelling?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Urine appearance",
+        "say": "Has the urine looked foamy?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Recent triggers",
+        "say": "Any recent infection or vaccination?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fever or pain",
+        "say": "Any fever or belly pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

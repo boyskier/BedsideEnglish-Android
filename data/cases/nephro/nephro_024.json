@@ -1,0 +1,144 @@
+{
+  "id": "nephro_024",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Son",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "progressive fatigue, itchy skin, and metallic taste in mouth on routine lab check",
+  "hpi_details": "72F with long-standing hypertension presents with 3 months of progressive fatigue, dry and intensely itchy skin (pruritus), loss of appetite, and a strange metallic taste in her mouth when eating.",
+  "ideas": "thinks it is just skin aging and normal fatigue",
+  "concerns": "worried about blood poisoning",
+  "expectations": "wants blood test review",
+  "pmh": "Hypertension, Dyslipidemia",
+  "medications": "Losartan 50mg daily, Atorvastatin 20mg daily",
+  "social_hx": "Retired, non-smoker",
+  "available_results": [
+    {"id": "egfr", "test": "Estimated glomerular filtration rate", "value": "22", "unit": "mL/min/1.73m2", "reference_range": ">=60", "flag": "low"},
+    {"id": "creatinine", "test": "Serum creatinine", "value": "2.9", "unit": "mg/dL", "reference_range": "0.6-1.1", "flag": "high"},
+    {"id": "bun", "test": "Blood urea nitrogen", "value": "68", "unit": "mg/dL", "reference_range": "7-20", "flag": "high"},
+    {"id": "potassium", "test": "Serum potassium", "value": "5.2", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "high"},
+    {"id": "hemoglobin", "test": "Hemoglobin", "value": "9.8", "unit": "g/dL", "reference_range": "12.0-15.5", "flag": "low"},
+    {"id": "calcium", "test": "Serum calcium", "value": "8.1", "unit": "mg/dL", "reference_range": "8.6-10.2", "flag": "low"},
+    {"id": "phosphorus", "test": "Serum phosphorus", "value": "5.8", "unit": "mg/dL", "reference_range": "2.5-4.5", "flag": "high"},
+    {"id": "pth", "test": "Intact parathyroid hormone", "value": "186", "unit": "pg/mL", "reference_range": "15-65", "flag": "high"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Kidney Disease Stage 4 (uremic symptoms) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Kidney Disease Stage 4 (uremic symptoms) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for CKD stage 4 focuses on slowing progression (blood pressure and RAAS blockade, used cautiously given the risk of hyperkalemia), correcting complications (renal anemia, secondary hyperparathyroidism), and early nephrology referral to plan for dialysis access or transplant before stage 5.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive fatigue, itchy skin, and metallic taste in mouth on routine lab check",
+      "Key HPI features: 72F with long-standing hypertension presents with 3 months of progressive fatigue, dry and intensely itchy skin (pruritus), loss of appetite, and a strange metallic taste in her mouth when eating.",
+      "Objective/Exam findings: Vitals: BP 148/86, HR 76, afebrile. Pale conjunctivae, diffuse skin excoriations from scratching, no peripheral edema. Labs: eGFR 22 mL/min/1.73m2, Creatinine 2.9 mg/dL, BUN 68 mg/dL, Potassium 5.2 mEq/L, Hemoglobin 9.8 g/dL, Calcium 8.1 mg/dL, Phosphorus 5.8 mg/dL, PTH elevated.",
+      "Relevant background/PMH: Hypertension, Dyslipidemia",
+      "Current medications: Losartan 50mg daily, Atorvastatin 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Kidney Disease Stage 4 (uremic symptoms).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Anemia of another cause without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Significant breathlessness or chest pain — could indicate uremic pericarditis or fluid overload as function worsens further."
+    ],
+    "management_principles": [
+      "Monitor potassium closely given continued Losartan (ARB) use in stage 4 CKD, given the risk of hyperkalemia",
+      "Check renal panel (eGFR, BUN, creatinine), electrolytes, calcium, phosphorus, PTH, and CBC for renal anemia",
+      "Refer to nephrology for CKD stage 4 management, treatment of anemia/secondary hyperparathyroidism, and early dialysis-access or transplant planning"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Chronic Kidney Disease (CKD) Stage 4, presenting with early uremic symptoms. progressive fatigue, itchy skin, and metallic taste in mouth on routine lab check. 72F with long-standing hypertension presents with 3 months of progressive fatigue, dry and intensely itchy skin (pruritus), loss of appetite, and a strange metallic taste in her mouth when eating.",
+    "objective": "Vitals: BP 148/86, HR 76, afebrile. Pale conjunctivae, diffuse skin excoriations from scratching, no peripheral edema. Labs: eGFR 22 mL/min/1.73m2, Creatinine 2.9 mg/dL, BUN 68 mg/dL, Potassium 5.2 mEq/L, Hemoglobin 9.8 g/dL, Calcium 8.1 mg/dL, Phosphorus 5.8 mg/dL, PTH elevated.",
+    "assessment": "Chronic kidney disease stage 4 (eGFR 22) in a patient with long-standing hypertension, now with early uremic symptoms (pruritus, metallic taste, fatigue) and biochemical evidence of renal anemia and secondary hyperparathyroidism.",
+    "plan": "1. Confirm CKD stage with a repeat eGFR/creatinine trend over ≥3 months if not already established. 2. Check electrolytes (especially potassium, given ARB therapy), calcium, phosphorus, PTH, and CBC for renal anemia. 3. Continue Losartan for renoprotection with close potassium monitoring; avoid nephrotoxic agents (NSAIDs, contrast) and adjust renally-cleared medications. 4. Address complications: iron or an erythropoiesis-stimulating agent for anemia, phosphate binder and vitamin D analog for secondary hyperparathyroidism if indicated. 5. Refer to nephrology for CKD stage 4 management and early dialysis-access/transplant planning."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Chronic Kidney Disease (CKD) Stage 4, presenting with early uremic symptoms.",
+    "Formulate prioritized differential diagnosis for progressive fatigue, itchy skin, and metallic taste in mouth on routine lab check",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies for Chronic Kidney Disease (CKD) Stage 4, presenting with early uremic symptoms."
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Kidney Disease Stage 4 (uremic symptoms)",
+    "one_liner": "Long-standing hypertension has progressively damaged the kidneys, and as function declines toward stage 4, early uremic symptoms — fatigue, itching, and a metallic taste — begin to appear.",
+    "differentials": [
+      "Anemia of another cause",
+      "Hypothyroidism",
+      "Primary skin condition (for the itching)"
+    ],
+    "red_flags": [
+      "Significant breathlessness or chest pain — could indicate uremic pericarditis or fluid overload as function worsens further"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration of fatigue and itching",
+        "say": "How many months have you had this fatigue and itching?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "months"
+        ]
+      },
+      {
+        "objective": "Metallic taste and appetite",
+        "say": "Have you noticed a metallic taste, or lost your appetite?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "metallic taste",
+          "appetite"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "How long have you had high blood pressure, and how well controlled has it been?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Itching severity",
+        "say": "How severe and widespread is the itching?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "pruritus"
+        ]
+      },
+      {
+        "objective": "Swelling or urine changes",
+        "say": "Any swelling in your legs, or changes in your urine?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

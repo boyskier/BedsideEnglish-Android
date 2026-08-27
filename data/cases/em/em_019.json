@@ -1,0 +1,161 @@
+{
+  "id": "em_019",
+  "system": "emergency medicine",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Wilson",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "excruciating, out-of-proportion leg pain, severe pain on passive stretch of toes, and tense woody calf swelling 12 hours after tibial fracture",
+  "hpi_details": "29M with casted tibial fracture complaining of agonizing 10/10 leg pain unresponsive to opioids with exquisite pain on passive ankle dorsiflexion where compartment pressure measures 45 mmHg requiring immediate emergent bivalving of cast and four-compartment fasciotomy.",
+  "ideas": "thinks this is related to acute compartment syndrome lower extremity fracture",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "compartment_pressure",
+      "title": "Intracompartmental pressure measurement",
+      "order_terms": [
+        "compartment pressure",
+        "intracompartmental pressure",
+        "pressure measurement"
+      ],
+      "availability_message": "The compartment pressure measurement is now available. A clear clinical diagnosis should not be delayed for repeated measurements.",
+      "results": [
+        {
+          "id": "anterior_compartment_pressure",
+          "test": "Anterior compartment pressure",
+          "value": "45",
+          "unit": "mmHg",
+          "reference_range": "<10",
+          "flag": "critical",
+          "collected_at": "At bedside"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Compartment Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Compartment Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Compartment Syndrome Lower Extremity Fracture, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating, out-of-proportion leg pain, severe pain on passive stretch of toes, and tense woody calf swelling 12 hours after tibial fracture",
+      "Key HPI features: 29M with casted tibial fracture complaining of agonizing 10/10 leg pain unresponsive to opioids with exquisite pain on passive ankle dorsiflexion where compartment pressure measures 45 mmHg requiring immediate emergent bivalving of cast and four-compartment fasciotomy.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Compartment Syndrome Lower Extremity Fracture.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Compartment Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple post-fracture pain without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion to the injury, especially with passive stretch — the earliest and most reliable sign."
+    ],
+    "management_principles": [
+      "Immediately loosen or bivalve constricting casts or dressings, keep the limb at heart level, and obtain emergent surgical fasciotomy for clinically diagnosed compartment syndrome",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Compartment Syndrome Lower Extremity Fracture: excruciating, out-of-proportion leg pain, severe pain on passive stretch of toes, and tense woody calf swelling 12 hours after tibial fracture. 29M with casted tibial fracture complaining of agonizing 10/10 leg pain unresponsive to opioids with exquisite pain on passive ankle dorsiflexion where compartment pressure measures 45 mmHg requiring immediate emergent bivalving of cast and four-compartment fasciotomy.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Compartment Syndrome Lower Extremity Fracture.",
+    "assessment": "Clinical presentation highly suggestive of Acute Compartment Syndrome Lower Extremity Fracture.",
+    "plan": "Immediately bivalve and remove constricting cast material, keep the limb at heart level, and obtain emergent Orthopedic Surgery consultation for four-compartment fasciotomy. Do not delay surgery for repeated pressure measurements when the clinical diagnosis is clear; interpret pressures with the clinical examination and perfusion pressure. Monitor for rhabdomyolysis and renal injury."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Compartment Syndrome Lower Extremity Fracture",
+    "Formulate prioritized differential diagnosis for excruciating, out-of-proportion leg pain, severe pain on passive stretch of toes, and tense woody calf swelling 12 hours after tibial fracture",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Compartment Syndrome",
+    "one_liner": "Swelling inside a tight fascial compartment (after a fracture) raises pressure high enough to cut off circulation, causing pain out of proportion to the injury and severe pain on passive stretch — a limb-threatening emergency needing immediate fasciotomy.",
+    "differentials": [
+      "Simple post-fracture pain",
+      "Deep vein thrombosis",
+      "Arterial injury"
+    ],
+    "red_flags": [
+      "Pain out of proportion to the injury, especially with passive stretch — the earliest and most reliable sign"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain versus expected recovery",
+        "say": "Is the pain much worse than you'd expect for this kind of injury, and is it getting worse?",
+        "domains": [
+          "severity",
+          "progression"
+        ],
+        "keywords": [
+          "out of proportion",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Pain with passive movement",
+        "say": "Does it hurt severely when someone moves your toes or ankle for you?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "passive stretch"
+        ]
+      },
+      {
+        "objective": "Sensation changes",
+        "say": "Do you have any numbness or tingling in your foot?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "numbness",
+          "tingling"
+        ]
+      },
+      {
+        "objective": "Response to pain medication",
+        "say": "Has your usual pain medication been helping at all?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "opioids",
+          "no relief"
+        ]
+      },
+      {
+        "objective": "Timing relative to the cast",
+        "say": "How long ago was your leg casted, and when did the pain start getting this bad?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "_note": "Deterministic history-taking domains shared by the phase bar, open-book checklist, Help me continue, and guided-script fallback. `phase` maps to the five-stage navigator (0 initiation, 1 HPI, 2 PMH, 3 medicines/allergies, 4 social/family/close). Flexible intent regexes live in app/analysis/interview_rules.py; `keywords` are additional high-precision learner phrases. `follow_cues` are negation-aware patient cues used only to rank a natural next question. No API or LLM calls are involved.",
+  "domains": [
+    {
+      "key": "opening",
+      "phase": 0,
+      "core": true,
+      "label": "Open the consultation",
+      "keywords": ["brings you in", "how can i help", "what can i do for you", "tell me what happened", "tell me more about", "how are you feeling today"],
+      "follow_cues": [],
+      "questions": [
+        "What brings you in today?",
+        "How can I help you today?"
+      ]
+    },
+    {
+      "key": "onset_duration",
+      "phase": 1,
+      "core": true,
+      "label": "Onset & duration",
+      "keywords": ["when did", "how long", "since when", "when it started", "did it start", "first notice"],
+      "follow_cues": ["started", "began", "recently", "this morning", "yesterday", "few days", "a week", "suddenly", "out of nowhere"],
+      "questions": [
+        "When did symptoms start?",
+        "How long have you had this?"
+      ]
+    },
+    {
+      "key": "location",
+      "phase": 1,
+      "core": true,
+      "label": "Location / site",
+      "keywords": ["where exactly", "where do you feel", "where is the", "which part", "point to", "show me where"],
+      "follow_cues": ["here", "right here", "in my", "on my", "around my", "my chest", "my stomach", "my head", "my back"],
+      "questions": [
+        "Where exactly do you feel it?",
+        "Can you point to where it is?"
+      ]
+    },
+    {
+      "key": "radiation",
+      "phase": 1,
+      "core": false,
+      "chief_terms": ["pain", "ache", "discomfort", "pressure", "tightness"],
+      "label": "Radiation / spread",
+      "keywords": ["radiate", "spread anywhere", "travel anywhere", "move anywhere", "go anywhere else"],
+      "follow_cues": ["to my arm", "into my arm", "to my back", "to my jaw", "to my shoulder", "spreads", "travels"],
+      "questions": [
+        "Does it move or spread anywhere else?",
+        "Does the pain travel to your arm, back, or jaw?"
+      ]
+    },
+    {
+      "key": "character",
+      "phase": 1,
+      "core": true,
+      "label": "Character / quality",
+      "keywords": ["describe", "what does it feel like", "what kind of", "sharp or dull", "feel like"],
+      "follow_cues": ["pain", "ache", "aches", "hurts", "hurting", "sore", "uncomfortable", "discomfort", "pressure", "tight"],
+      "questions": [
+        "Can you describe what it feels like?",
+        "What kind of pain is it — sharp, dull, burning?"
+      ]
+    },
+    {
+      "key": "severity",
+      "phase": 1,
+      "core": true,
+      "label": "Severity (1–10)",
+      "keywords": ["scale of", "out of ten", "out of 10", "how bad", "how severe", "1 to 10", "one to ten"],
+      "follow_cues": ["really bad", "terrible", "unbearable", "so much", "can't stand", "worst", "killing me", "very painful"],
+      "questions": [
+        "On a scale of one to ten, how bad is it?",
+        "How much does it affect your daily life?"
+      ]
+    },
+    {
+      "key": "aggravating",
+      "phase": 1,
+      "core": true,
+      "label": "Aggravating factors",
+      "keywords": ["make it worse", "makes it worse", "worse when", "what worsens", "trigger", "aggravate"],
+      "follow_cues": ["when i move", "when i walk", "when i eat", "worse at night", "after eating", "exercise makes", "deep breath"],
+      "questions": [
+        "Does anything make it worse?",
+        "Have you noticed anything that triggers it?"
+      ]
+    },
+    {
+      "key": "relieving",
+      "phase": 1,
+      "core": true,
+      "label": "Relieving factors",
+      "keywords": ["make it better", "makes it better", "anything help", "better when", "what relieves", "ease it"],
+      "follow_cues": ["rest helps", "better when", "lying down helps", "sitting helps", "taking a pill helps", "goes away with"],
+      "questions": [
+        "Does anything make it better?",
+        "Have you tried anything that helps relieve it?"
+      ]
+    },
+    {
+      "key": "progression",
+      "phase": 1,
+      "core": true,
+      "label": "Timing & progression",
+      "keywords": ["getting worse", "getting better", "come and go", "comes and goes", "constant", "changed since", "all the time", "how often"],
+      "follow_cues": ["worse", "getting worse", "comes and goes", "on and off", "all the time", "every", "constant", "not as bad"],
+      "questions": [
+        "Has it changed since it started?",
+        "Does it come and go, or is it there all the time?"
+      ]
+    },
+    {
+      "key": "associated_symptoms",
+      "phase": 1,
+      "core": true,
+      "label": "Associated symptoms",
+      "keywords": ["any other symptom", "anything else", "along with", "at the same time", "also noticed", "associated"],
+      "follow_cues": ["also", "and i", "as well", "nausea", "dizzy", "sweating", "short of breath", "fever", "vomiting", "tired"],
+      "questions": [
+        "Have you noticed any other symptoms along with it?",
+        "Is there anything else that's been bothering you?"
+      ]
+    },
+    {
+      "key": "pmh",
+      "phase": 2,
+      "core": true,
+      "label": "Past medical history",
+      "keywords": ["medical history", "past medical", "health problems", "health conditions", "been diagnosed", "any conditions", "medical problems", "been told you have", "seen a doctor before"],
+      "follow_cues": ["diabetes", "blood pressure", "hypertension", "asthma", "heart", "cholesterol", "surgery", "operation", "in hospital", "diagnosed"],
+      "questions": [
+        "Do you have any medical conditions I should know about?",
+        "Have you ever been diagnosed with anything in the past?"
+      ]
+    },
+    {
+      "key": "medications",
+      "phase": 3,
+      "core": true,
+      "label": "Medications",
+      "keywords": ["medication", "medicine", "tablets", "pills", "taking any", "prescribed"],
+      "follow_cues": ["pill", "pills", "tablet", "medication", "medicine", "i take", "i'm on", "prescribed", "metformin", "aspirin", "insulin"],
+      "questions": [
+        "Are you taking any medications at the moment?",
+        "Do you take any tablets or medicines regularly?"
+      ]
+    },
+    {
+      "key": "allergies",
+      "phase": 3,
+      "core": true,
+      "label": "Allergies",
+      "keywords": ["allerg"],
+      "follow_cues": ["allergic", "allergy", "reaction", "rash", "penicillin"],
+      "questions": [
+        "Do you have any allergies, especially to medicines?"
+      ]
+    },
+    {
+      "key": "smoking",
+      "phase": 4,
+      "core": true,
+      "label": "Smoking / vaping",
+      "keywords": ["do you smoke", "smoking", "cigarette", "tobacco", "do you vape", "vaping"],
+      "follow_cues": ["smoke", "cigarette", "tobacco", "vape", "pack a day", "used to smoke"],
+      "questions": [
+        "Do you smoke or vape?",
+        "Have you ever smoked in the past?"
+      ]
+    },
+    {
+      "key": "alcohol",
+      "phase": 4,
+      "core": true,
+      "label": "Alcohol",
+      "keywords": ["drink alcohol", "how much alcohol", "beer", "wine", "units a week"],
+      "follow_cues": ["drink alcohol", "beer", "wine", "units a week", "on weekends"],
+      "questions": [
+        "Do you drink alcohol?",
+        "About how many drinks do you have in a typical week?"
+      ]
+    },
+    {
+      "key": "substances",
+      "phase": 4,
+      "core": false,
+      "label": "Recreational substances",
+      "keywords": ["recreational drugs", "street drugs", "cannabis", "marijuana", "cocaine"],
+      "follow_cues": ["cannabis", "marijuana", "cocaine", "recreational drugs"],
+      "questions": [
+        "Do you use any recreational drugs?"
+      ]
+    },
+    {
+      "key": "living_work",
+      "phase": 4,
+      "core": true,
+      "label": "Home & occupation",
+      "keywords": ["who do you live", "live alone", "live with", "your work", "your job", "occupation", "line of work", "what do you do for"],
+      "follow_cues": ["i work", "my job", "i live", "my husband", "my wife", "my partner", "stress at work"],
+      "questions": [
+        "Who do you live with at home?"
+      ]
+    },
+    {
+      "key": "family_hx",
+      "phase": 4,
+      "core": true,
+      "label": "Family history",
+      "keywords": ["family history", "run in your family", "anyone in your family", "your mother", "your father", "your parents"],
+      "follow_cues": ["my mother", "my father", "my parents", "my brother", "my sister", "runs in the family"],
+      "questions": [
+        "Are there any major illnesses that run in your family?"
+      ]
+    },
+    {
+      "key": "ideas",
+      "phase": 4,
+      "core": true,
+      "label": "Patient's ideas (I)",
+      "keywords": ["what do you think is", "your own thoughts", "what you think might", "any idea what", "causing this"],
+      "follow_cues": ["i think it's", "i thought maybe", "could it be", "is it serious", "wondering if"],
+      "questions": [
+        "Do you have any thoughts about what might be causing this?"
+      ]
+    },
+    {
+      "key": "concerns",
+      "phase": 4,
+      "core": true,
+      "label": "Patient's concerns (C)",
+      "keywords": ["worried", "worry", "worries", "concern", "afraid", "scares"],
+      "follow_cues": ["worried", "scared", "afraid", "nervous", "anxious", "frightened", "is it cancer", "is it serious", "is it my heart"],
+      "questions": [
+        "Is there anything in particular you're worried about?"
+      ]
+    },
+    {
+      "key": "expectations",
+      "phase": 4,
+      "core": true,
+      "label": "Patient's expectations (E)",
+      "keywords": ["hoping", "expect", "what would you like", "hoped we could"],
+      "follow_cues": ["i was hoping", "i want", "i need", "can you give me", "do i need", "want to know"],
+      "questions": [
+        "What were you hoping we could do for you today?"
+      ]
+    },
+    {
+      "key": "summary_closing",
+      "phase": 4,
+      "core": true,
+      "label": "Summarize & close",
+      "keywords": ["summarize", "summarise", "to sum up", "let me make sure i", "just to recap", "recap", "so far you've told me", "like to summarize"],
+      "follow_cues": [],
+      "questions": [
+        "Let me summarize what we've discussed to make sure I've got it right.",
+        "Before we finish — is there anything else you'd like to mention?"
+      ]
+    }
+  ]
+}

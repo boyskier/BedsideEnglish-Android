@@ -1,0 +1,157 @@
+{
+  "id": "pulm_038",
+  "system": "pulm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rodriguez",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "positive IGRA / PPD test with completely normal chest X-ray",
+  "hpi_details": "A 56-year-old female presents after a positive IGRA or PPD screening test with a normal chest X-ray. She denies cough, fever, night sweats, weight loss, and hemoptysis.",
+  "ideas": "thinks it might be related to ltbi",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id":"igra","test":"Interferon-gamma release assay","value":"Positive","flag":"abnormal","specimen":"Blood","collected_at":"During screening before the current assessment"},{"id":"chest_xray","test":"Chest radiograph","value":"No focal opacity, cavitation, or other radiographic evidence of active tuberculosis","flag":"normal","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Latent Tuberculosis Infection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Latent Tuberculosis Infection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Exclude active tuberculosis before preventive treatment; regimen choice and monitoring depend on drug interactions, liver risk, pregnancy status, prior treatment, and local public-health guidance.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: positive IGRA / PPD test with completely normal chest X-ray",
+      "Key HPI features: A 56-year-old female presents to the clinic with positive igra / ppd test with completely normal chest x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Latent Tuberculosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that a positive IGRA or PPD alone establishes active tuberculosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Failing to distinguish latent infection from active tuberculosis before starting preventive therapy."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring symptoms such as cough, fever, night sweats, or weight loss that may indicate active tuberculosis."
+    ],
+    "management_principles": [
+      "Confirm that there is no evidence of active tuberculosis and assess risks for progression and medication toxicity.",
+      "Select and monitor preventive therapy through a clinician or tuberculosis program when indicated.",
+      "Promptly reassess new cough, fever, night sweats, weight loss, hemoptysis, or abnormal imaging for active disease."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "CDC: Treatment for Latent Tuberculosis Infection",
+        "url": "https://www.cdc.gov/tb/hcp/treatment/latent-tuberculosis-infection.html"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of positive IGRA / PPD test with completely normal chest X-ray. HPI: exposure to TB.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Latent Tuberculosis.",
+    "assessment": "Condition highly suspicious for Latent Tuberculosis.",
+    "plan": "Confirm no evidence of active tuberculosis, assess progression and medication-toxicity risks, and refer to a clinician or tuberculosis program for regimen selection and monitoring when preventive therapy is indicated. Promptly reassess symptoms suggesting active disease."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Latent Tuberculosis",
+    "Select appropriate diagnostic workup for Latent Tuberculosis",
+    "Describe exclusion of active disease and clinician-directed preventive treatment for latent tuberculosis infection"
+  ],
+  "teaching": {
+    "diagnosis": "Latent Tuberculosis Infection",
+    "one_liner": "A positive IGRA or PPD with no symptoms and a normal chest radiograph indicates TB infection without evidence of active disease.",
+    "differentials": [
+      "Active tuberculosis",
+      "False-positive test result"
+    ],
+    "red_flags": [
+      "Cough, fever, night sweats, or weight loss suggesting active tuberculosis",
+      "Abnormal chest imaging or sputum testing suggesting active tuberculosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptoms of active tuberculosis",
+        "say": "Have you had a cough, fever, night sweats, weight loss, or coughed up blood?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "cough",
+          "fever",
+          "night sweats",
+          "weight loss",
+          "blood"
+        ]
+      },
+      {
+        "objective": "TB exposure history",
+        "say": "Have you been in close contact with anyone who has active tuberculosis?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tuberculosis",
+          "contact",
+          "exposure",
+          "close contact"
+        ]
+      },
+      {
+        "objective": "Reason for TB testing",
+        "say": "What prompted the IGRA or PPD test?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "test",
+          "screening",
+          "work",
+          "immigration",
+          "exposure"
+        ]
+      },
+      {
+        "objective": "Risk factors for progression to active disease",
+        "say": "Do you have HIV, diabetes, or take medicines that suppress your immune system?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "hiv",
+          "diabetes",
+          "steroids",
+          "immunosuppression",
+          "immune"
+        ]
+      },
+      {
+        "objective": "Previous TB treatment",
+        "say": "Have you ever been treated for tuberculosis or latent TB infection before?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "treated",
+          "treatment",
+          "tuberculosis",
+          "latent TB",
+          "medication"
+        ]
+      }
+    ]
+  }
+}

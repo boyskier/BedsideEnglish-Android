@@ -1,0 +1,175 @@
+{
+  "id": "em_013",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Rodriguez",
+  "age": 49,
+  "gender": "female",
+  "chief_complaint": "sudden, explosive, instantaneous peak 'worst headache of my life' (thunderclap headache) followed by neck stiffness and photophobia",
+  "hpi_details": "49F presenting with sudden thunderclap headache where non-contrast head CT demonstrates acute subarachnoid blood filling the basal cisterns requiring urgent neurosurgical/endovascular coiling and Nimodipine to prevent delayed vasospasm.",
+  "ideas": "thinks this is related to subarachnoid hemorrhage ruptured berry aneurysm",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "noncontrast_head_ct",
+      "title": "Non-contrast CT head",
+      "order_terms": [
+        "noncontrast head ct",
+        "non-contrast head ct",
+        "ct head",
+        "head ct",
+        "brain ct"
+      ],
+      "availability_message": "The non-contrast head CT report is now available.",
+      "results": [
+        {
+          "id": "head_ct_report",
+          "test": "Non-contrast CT head",
+          "value": "Acute hyperdense subarachnoid blood in the basal cisterns and Sylvian fissures, greatest near the anterior communicating artery; Fisher grade 3",
+          "flag": "critical",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    },
+    {
+      "id": "cta_head",
+      "title": "CT angiography of the head",
+      "order_terms": [
+        "ct angiography",
+        "ct angiogram",
+        "cta head",
+        "cerebral angiography",
+        "cta"
+      ],
+      "availability_message": "The CT angiography report is now available.",
+      "results": [
+        {
+          "id": "cta_head_report",
+          "test": "CTA head",
+          "value": "7 mm saccular aneurysm of the anterior communicating artery",
+          "flag": "critical",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Subarachnoid Hemorrhage (ruptured aneurysm) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subarachnoid Hemorrhage (ruptured aneurysm) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent neurosurgical/endovascular securing of the aneurysm (coiling or clipping), blood pressure control, and Nimodipine to prevent delayed cerebral vasospasm, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden, explosive, instantaneous peak 'worst headache of my life' (thunderclap headache) followed by neck stiffness and photophobia",
+      "Key HPI features: 49F presenting with sudden thunderclap headache where non-contrast head CT demonstrates acute subarachnoid blood filling the basal cisterns requiring urgent neurosurgical/endovascular coiling and Nimodipine to prevent delayed vasospasm.",
+      "Objective/Exam findings: Vitals: HR 92, BP 168/96 (reactive hypertension), RR 18, Temp 37.0C, GCS 14 (mildly drowsy, oriented). Nuchal rigidity present with positive Kernig and Brudzinski signs. Photophobia noted; pupils equal and reactive with no focal motor deficit. Hunt and Hess Grade II, Fisher Grade 3. STAT Non-Contrast Head CT demonstrates acute hyperdense blood filling the basal cisterns and Sylvian fissures, most pronounced around the anterior communicating artery region. CT Angiography confirms a 7 mm saccular (berry) aneurysm at the anterior communicating artery.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subarachnoid Hemorrhage (ruptured aneurysm).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Migraine without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Headache reaching maximal intensity within seconds — the defining feature of a thunderclap headache."
+    ],
+    "management_principles": [
+      "STAT emergency neurosurgical protocol",
+      "Blood pressure control: titrate IV Nicardipine or Labetalol to keep systolic BP <160 mmHg prior to aneurysm securing, avoiding excessive drops that could worsen cerebral perfusion",
+      "Administer oral or NG Nimodipine 60 mg q4h starting within 96 hours to reduce the risk of delayed cerebral ischemia from vasospasm (does not reduce aneurysm rebleeding risk)",
+      "Immediate neurosurgical/neuro-interventional consultation for urgent aneurysm securing via endovascular coiling or surgical clipping, with admission to a Neuro-ICU for frequent neuro checks and seizure prophylaxis"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AHA/ASA Guideline for the Management of Patients with Aneurysmal Subarachnoid Hemorrhage",
+        "url": "https://professional.heart.org/en/guidelines-statements/subarachnoid-hemorrhage-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "49F presenting with a sudden, explosive, instantaneous-peak 'worst headache of my life' (thunderclap headache) followed by neck stiffness and photophobia, classic for Subarachnoid Hemorrhage from a ruptured berry aneurysm.",
+    "objective": "Vitals: HR 92, BP 168/96 (reactive hypertension), RR 18, Temp 37.0C, GCS 14 (mildly drowsy, oriented). Nuchal rigidity present with positive Kernig and Brudzinski signs. Photophobia noted; pupils equal and reactive with no focal motor deficit. Hunt and Hess Grade II, Fisher Grade 3. STAT Non-Contrast Head CT demonstrates acute hyperdense blood filling the basal cisterns and Sylvian fissures, most pronounced around the anterior communicating artery region. CT Angiography confirms a 7 mm saccular (berry) aneurysm at the anterior communicating artery.",
+    "assessment": "Aneurysmal Subarachnoid Hemorrhage (Hunt and Hess Grade II, Fisher Grade 3) secondary to a ruptured anterior communicating artery aneurysm.",
+    "plan": "STAT emergency neurosurgical protocol: 1. Blood pressure control: titrate IV Nicardipine or Labetalol to keep systolic BP <160 mmHg prior to aneurysm securing, avoiding excessive drops that could worsen cerebral perfusion. 2. Administer oral or NG Nimodipine 60 mg q4h starting within 96 hours to reduce the risk of delayed cerebral ischemia from vasospasm (does not reduce aneurysm rebleeding risk). 3. Immediate neurosurgical/neuro-interventional consultation for urgent aneurysm securing via endovascular coiling or surgical clipping, with admission to a Neuro-ICU for frequent neuro checks and seizure prophylaxis."
+  },
+  "learning_objectives": [
+    "Recognize the classic thunderclap headache presentation (instantaneous peak intensity, 'worst headache of my life') and associated meningismus signs of aneurysmal subarachnoid hemorrhage",
+    "Understand the diagnostic pathway: non-contrast head CT as first-line, followed by CT angiography (or lumbar puncture for xanthochromia if CT is negative but suspicion remains) to identify the aneurysm",
+    "Apply grading scales (Hunt and Hess for clinical severity, Fisher for vasospasm risk) to guide prognosis and monitoring intensity",
+    "Explain the rationale for Nimodipine in preventing delayed cerebral ischemia from vasospasm, and the importance of controlled blood pressure lowering before the aneurysm is secured"
+  ],
+  "teaching": {
+    "diagnosis": "Subarachnoid Hemorrhage (ruptured aneurysm)",
+    "one_liner": "A ruptured berry aneurysm bleeds into the space around the brain, causing a sudden 'thunderclap' headache reaching maximum intensity within seconds — a true neurosurgical emergency needing urgent imaging and aneurysm securing.",
+    "differentials": [
+      "Migraine",
+      "Meningitis",
+      "Reversible cerebral vasoconstriction syndrome"
+    ],
+    "red_flags": [
+      "Headache reaching maximal intensity within seconds — the defining feature of a thunderclap headache"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed and severity",
+        "say": "Did this headache reach its worst point within seconds, and is it truly the worst headache of your life?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "thunderclap",
+          "worst headache"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Have you had neck stiffness or sensitivity to light?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "neck stiffness",
+          "photophobia"
+        ]
+      },
+      {
+        "objective": "Vomiting",
+        "say": "Have you been vomiting?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "Any weakness, vision changes, or loss of consciousness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Trigger activity",
+        "say": "What were you doing when the headache started?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

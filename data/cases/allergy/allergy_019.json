@@ -1,0 +1,125 @@
+{
+  "id": "allergy_019",
+  "system": "allergy_immunology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "David Clark",
+  "age": 12,
+  "gender": "male",
+  "chief_complaint": "recurrent skin abscesses and a new large mass in his liver",
+  "hpi_details": "12-year-old male presents with right upper quadrant abdominal pain and fever. Ultrasound reveals a large liver abscess. His past medical history is significant for multiple recurrent severe skin abscesses requiring surgical drainage, and a previous hospitalization for Aspergillus pneumonia. He has a history of swollen, suppurative lymph nodes.",
+  "ideas": "thinks he just has bad luck with staph infections",
+  "concerns": "worried about having to undergo another surgery for the liver mass",
+  "expectations": "wants antibiotics to cure the liver infection without surgery",
+  "pmh": "Recurrent Staphylococcal skin abscesses, Aspergillus pneumonia, lymphadenitis",
+  "medications": "None",
+  "social_hx": "Middle school student",
+  "available_results": [
+    {"id": "dhr_oxidative_burst", "test": "Dihydrorhodamine (DHR) oxidative burst", "value": "Absent neutrophil oxidative burst", "flag": "critical", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "liver_ultrasound", "test": "Right upper quadrant ultrasound", "value": "8.2 cm complex collection in the right hepatic lobe, consistent with a liver abscess", "flag": "critical", "collected_at": "Before today's encounter"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Granulomatous Disease (CGD)",
+    "core_concepts": [
+      "CGD is a defect in the phagocyte NADPH oxidase complex, preventing neutrophils from generating the oxidative burst needed to kill catalase-positive organisms.",
+      "Catalase-positive organisms (Staphylococcus aureus, Burkholderia cepacia, Serratia marcescens, Nocardia, Aspergillus) cause recurrent severe infections (abscesses, pneumonias, osteomyelitis).",
+      "Granuloma formation can lead to obstructive symptoms (e.g., GI or GU tract obstruction).",
+      "Diagnosis involves the Dihydrorhodamine (DHR) 123 flow cytometry test or Nitroblue tetrazolium (NBT) test."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent skin abscesses and a new large mass in his liver",
+      "Key HPI features: Recurrent deep tissue abscesses (skin, liver) and fungal pneumonia (Aspergillus).",
+      "Objective/Exam findings: Tender hepatomegaly, scars from previous abscess drainages.",
+      "Relevant background/PMH: Abscesses, Aspergillus",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming recurrent abscesses are just MRSA colonization without considering an underlying immune defect in deep/visceral abscesses."
+    ],
+    "dangerous_errors": [
+      "Failing to cover for fungal organisms (Aspergillus) in a patient with CGD presenting with pneumonia.",
+      "Not referring siblings for genetic testing."
+    ],
+    "management_principles": [
+      "Lifelong prophylaxis with Trimethoprim-sulfamethoxazole (bacterial) and Itraconazole (fungal).",
+      "Interferon-gamma therapy to augment phagocyte antimicrobial activity in some cases.",
+      "Aggressive early treatment of infections, often requiring surgical drainage."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "MedlinePlus Genetics: Chronic Granulomatous Disease",
+        "url": "https://medlineplus.gov/genetics/condition/chronic-granulomatous-disease/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "12-year-old male with history of recurrent severe skin abscesses and Aspergillus pneumonia presents with fever and RUQ pain. Ultrasound shows liver abscess.",
+    "objective": "T 38.8C. RUQ tenderness. Multiple surgical scars on skin. DHR flow cytometry confirms absent oxidative burst.",
+    "assessment": "Chronic Granulomatous Disease (CGD) with acute liver abscess (likely S. aureus).",
+    "plan": "1. Admit and begin empiric IV antimicrobial therapy in consultation with Infectious Diseases, then tailor treatment to abscess cultures and susceptibilities. 2. Interventional radiology consult for abscess drainage and culture. 3. Initiate lifelong Bactrim and Itraconazole prophylaxis after acute-treatment planning. 4. Genetic counseling."
+  },
+  "learning_objectives": [
+    "Identify the susceptibility to catalase-positive organisms (Staph, Aspergillus, Burkholderia) in CGD",
+    "Recognize deep tissue and visceral abscesses as hallmark signs",
+    "Understand the DHR test and the need for continuous antimicrobial prophylaxis"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Granulomatous Disease (CGD)",
+    "one_liner": "A phagocyte defect causing inability to kill specific bacteria and fungi, leading to recurrent severe skin and organ abscesses.",
+    "differentials": [
+      "Hyper-IgE Syndrome (Job Syndrome)",
+      "Leukocyte Adhesion Deficiency",
+      "Cystic Fibrosis (if presenting with lung infections)"
+    ],
+    "red_flags": [
+      "Liver or deep organ abscesses in a child",
+      "Infection with unusual organisms like Burkholderia cepacia or Nocardia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Identify the pattern of deep infections",
+        "say": "Have you ever had infections deep inside your body, like in your liver, bones, or lungs, before this?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "liver",
+          "bones",
+          "lungs",
+          "abscess",
+          "deep"
+        ]
+      },
+      {
+        "objective": "Identify fungal infection history",
+        "say": "Were you ever told you had a fungal or mold infection in your lungs?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "fungal",
+          "mold",
+          "aspergillus",
+          "pneumonia"
+        ]
+      },
+      {
+        "objective": "Check for granuloma complications",
+        "say": "Have you ever had problems with food getting stuck or trouble urinating due to blockages?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swallowing",
+          "urinating",
+          "blockage",
+          "stuck"
+        ]
+      }
+    ]
+  }
+}

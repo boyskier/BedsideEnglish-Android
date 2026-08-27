@@ -1,0 +1,152 @@
+{
+  "id": "opht_001",
+  "system": "ophthalmology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 64,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating eye pain, severe headache, rainbow halos around lights, and hard red eye (Acute Angle-Closure Glaucoma)",
+  "hpi_details": "64M hyperopic (farsighted) male entered a darkened movie theater when he suddenly developed excruciating, deep, boring pain in his right eye radiating to his forehead, accompanied by severe headache, nausea, and vomiting. When looking at streetlights outside, noticed prominent colored rainbow halos. Right eye became intensely red and his vision dropped to blurred shapes.",
+  "ideas": "thinks he has a severe migraine or brain aneurysm with food poisoning",
+  "concerns": "in severe agony holding his eye and retching",
+  "expectations": "wants immediate emergency pain medication and eye pressure relief",
+  "pmh": "Hyperopia (farsightedness), Mild cataracts",
+  "medications": "None",
+  "social_hx": "Retired teacher, non-smoker",
+  "investigation_events": [{
+    "id": "stat_angle_closure_assessment",
+    "title": "Emergency intraocular pressure and angle assessment",
+    "order_terms": ["intraocular pressure", "IOP", "Tonopen", "applanation", "gonioscopy"],
+    "availability_message": "Emergency pressure and gonioscopy results are now available. Pressure-lowering treatment should begin immediately.",
+    "results": [
+      {"id": "iop", "test": "Intraocular pressure", "value": "Right 64; left 16", "unit": "mmHg", "reference_range": "10-21", "flag": "critical"},
+      {"id": "gonioscopy", "test": "Gonioscopy", "value": "Complete 360-degree iridocorneal angle closure in the right eye; narrow occludable angle in the left eye", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute primary angle-closure glaucoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute primary angle-closure glaucoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT ophthalmology emergency medical reduction of IOP with topical and systemic pressure-lowering agents followed by urgent laser peripheral iridotomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating eye pain, severe headache, rainbow halos around lights, and hard red eye (Acute Angle-Closure Glaucoma)",
+      "Key HPI features: 64M hyperopic (farsighted) male entered a darkened movie theater when he suddenly developed excruciating, deep, boring pain in his right eye radiating to his forehead, accompanied by severe headache, nausea, and vomiting. When looking at streetlights outside, noticed prominent colored rainbow halos. Right eye became intensely red and his vision dropped to blurred shapes.",
+      "Objective/Exam findings: Vitals: HR 108, BP 154/92. Right eye exam reveals diffuse, prominent ciliary flush (circumcorneal conjunctival injection). Cornea is cloudy and steamy/hazy due to acute epithelial edema. Right pupil is mid-dilated (~5 mm), vertically oval, and completely fixed/non-reactive to light. Palpation of right globe over closed eyelid reveals it is rock-hard compared to left. STAT Intraocular Pressure (IOP) measured via Tonopen/Goldmann applanation: Right eye 64 mmHg (normal 10-21 mmHg); Left eye 16 mmHg. Gonioscopy confirms complete 360-degree iridocorneal angle closure in right eye and narrow occludable angle in left eye.",
+      "Relevant background/PMH: Hyperopia (farsightedness), Mild cataracts"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute primary angle-closure glaucoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Migraine with aura without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rainbow halos around lights."
+    ],
+    "management_principles": [
+      "STAT ophthalmology emergency medical reduction of IOP is the priority, using topical then systemic pressure-lowering therapy before definitive laser iridotomy.",
+      "Administer topical pressure-lowering drops immediately: Timolol 0.5% (beta-blocker), Brimonidine 0.2% (alpha-2 agonist), and Dorzolamide 2% (carbonic anhydrase inhibitor) spaced 5 minutes apart"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden excruciating eye pain, severe headache, rainbow halos around lights, and hard red eye (Acute Angle-Closure Glaucoma)\n\n64M hyperopic (farsighted) male entered a darkened movie theater when he suddenly developed excruciating, deep, boring pain in his right eye radiating to his forehead, accompanied by severe headache, nausea, and vomiting. When looking at streetlights outside, noticed prominent colored rainbow halos. Right eye became intensely red and his vision dropped to blurred shapes.",
+    "objective": "Vitals: HR 108, BP 154/92. Right eye exam reveals diffuse, prominent ciliary flush (circumcorneal conjunctival injection). Cornea is cloudy and steamy/hazy due to acute epithelial edema. Right pupil is mid-dilated (~5 mm), vertically oval, and completely fixed/non-reactive to light. Palpation of right globe over closed eyelid reveals it is rock-hard compared to left. STAT Intraocular Pressure (IOP) measured via Tonopen/Goldmann applanation: Right eye 64 mmHg (normal 10-21 mmHg); Left eye 16 mmHg. Gonioscopy confirms complete 360-degree iridocorneal angle closure in right eye and narrow occludable angle in left eye.",
+    "assessment": "Acute Primary Angle-Closure Glaucoma of the Right Eye with critical intraocular pressure elevation (64 mmHg).",
+    "plan": "STAT ophthalmology emergency medical reduction of IOP: 1. Administer topical pressure-lowering drops immediately: Timolol 0.5% (beta-blocker), Brimonidine 0.2% (alpha-2 agonist), and Dorzolamide 2% (carbonic anhydrase inhibitor) spaced 5 minutes apart. 2. Administer systemic osmotic/aqueous suppressants: Acetazolamide 500 mg IV (or oral) PLUS IV Mannitol 1-2 g/kg over 45 minutes to draw fluid from vitreous cavity. 3. Once IOP drops <35 mmHg and corneal steamy edema clears, instil Pilocarpine 2% or 4% drops q15min x 2 doses to induce miosis and pull peripheral iris away from trabecular meshwork. 4. Urgent Ophthalmology consultation for definitive bilateral Laser Peripheral Iridotomy (LPI) within 24 hours to relieve pupillary block."
+  },
+  "learning_objectives": [
+    "Recognize the classical clinical triad of Acute Angle-Closure Glaucoma (excruciating eye pain/headache with nausea, colored rainbow halos around lights, and hazy steamy cornea with mid-dilated fixed pupil)",
+    "Perform accurate emergency measurement of Intraocular Pressure via Tonometry and palpate for the pathognomonic rock-hard globe",
+    "Outline step-by-step emergency medical IOP-lowering protocols (topical aqueous suppressants plus systemic acetazolamide/mannitol followed by miotic pilocarpine once iris perfusion restored)",
+    "Understand the definitive curative role of bilateral Laser Peripheral Iridotomy (LPI) to equalize anterior-posterior chamber pressure gradients"
+  ],
+  "teaching": {
+    "diagnosis": "Acute primary angle-closure glaucoma",
+    "one_liner": "64M hyperopic male with sudden severe eye pain, headache, nausea, rainbow halos, and a hard red eye after entering a dark theater.",
+    "differentials": [
+      "Migraine with aura",
+      "Acute anterior uveitis",
+      "Conjunctivitis",
+      "Cluster headache"
+    ],
+    "red_flags": [
+      "Rainbow halos around lights",
+      "Rock-hard globe on palpation",
+      "Nausea/vomiting with eye pain",
+      "Mid-dilated fixed pupil"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the eye pain and its trigger",
+        "say": "Can you tell me exactly when the pain started, and were you in a dark room?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark room trigger",
+          "eye pain onset"
+        ]
+      },
+      {
+        "objective": "Ask about halos around lights",
+        "say": "Did you notice colored rings or halos around lights?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "halos",
+          "rainbow vision"
+        ]
+      },
+      {
+        "objective": "Screen for nausea and vomiting",
+        "say": "Have you felt nauseated or vomited along with the eye pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      {
+        "objective": "Ask about baseline refractive error",
+        "say": "Are you farsighted? Do you wear glasses for reading?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hyperopia",
+          "farsighted"
+        ]
+      },
+      {
+        "objective": "Assess vision change",
+        "say": "How is your vision in that eye right now compared to normal?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blurred vision"
+        ]
+      }
+    ]
+  }
+}

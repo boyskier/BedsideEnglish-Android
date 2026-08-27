@@ -1,0 +1,130 @@
+{
+  "id": "derm_042",
+  "system": "derm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Hill",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "hypopigmented scaly spots on chest that fail to tan",
+  "hpi_details": "A 68-year-old female presents to the clinic with hypopigmented scaly spots on chest that fail to tan. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to tinea versicolor",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "lesion_koh_prep",
+      "title": "KOH preparation of lesion scale",
+      "order_terms": ["koh", "potassium hydroxide", "skin scraping", "fungal scraping", "fungal test"],
+      "availability_message": "The KOH preparation result is now available.",
+      "results": [
+        {"id": "tinea_versicolor_koh", "test": "Potassium hydroxide preparation", "value": "Clusters of round yeast with short curved hyphae (spaghetti-and-meatballs pattern)", "flag": "abnormal", "specimen": "Scale from chest lesion"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Tinea Versicolor evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tinea Versicolor is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "First-line treatment is topical antifungal therapy such as selenium sulfide or ketoconazole shampoo; oral ketoconazole should not be used because of hepatotoxicity, while selected refractory or extensive cases may need a different systemic azole under clinician guidance.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: hypopigmented scaly spots on chest that fail to tan",
+      "Key HPI features: A 68-year-old female presents to the clinic with hypopigmented scaly spots on chest that fail to tan. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Tinea Versicolor.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tinea Versicolor.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vitiligo without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Widespread, treatment-refractory, or recurrent disease in an adult — consider underlying immunosuppression."
+    ],
+    "management_principles": [
+      "Treat with selenium sulfide or ketoconazole shampoo; avoid oral ketoconazole, and reserve another systemic azole for selected refractory or extensive cases under clinician guidance",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of hypopigmented scaly spots on chest that fail to tan. HPI: tinea versicolor.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Tinea Versicolor.",
+    "assessment": "Condition highly suspicious for Tinea Versicolor.",
+    "plan": "Treat with selenium sulfide or ketoconazole shampoo. Avoid oral ketoconazole; reserve another systemic azole for selected refractory or extensive cases under clinician guidance."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Tinea Versicolor",
+    "Select appropriate diagnostic workup for Tinea Versicolor",
+    "Implement evidence-based management plan: Use topical selenium sulfide or ketoconazole shampoo; avoid oral ketoconazole and reserve other systemic azoles for selected cases"
+  ],
+  "teaching": {
+    "diagnosis": "Tinea Versicolor",
+    "one_liner": "A superficial yeast infection causing hypopigmented, scaly spots on the chest that fail to tan in the sun.",
+    "differentials": [
+      "Vitiligo",
+      "Pityriasis alba"
+    ],
+    "red_flags": [
+      "Widespread, treatment-refractory, or recurrent disease in an adult — consider underlying immunosuppression",
+      "Signs of secondary bacterial infection (increasing pain, pustules, spreading erythema)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Color",
+        "say": "Are the spots lighter than your normal skin?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Scale",
+        "say": "Is there fine scaling if you scratch it?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Sun/tanning",
+        "say": "Do they fail to tan in the summer?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Sweating",
+        "say": "Do you sweat a lot?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Itching",
+        "say": "Is it itchy?",
+        "domains": [
+          "character"
+        ]
+      }
+    ]
+  }
+}

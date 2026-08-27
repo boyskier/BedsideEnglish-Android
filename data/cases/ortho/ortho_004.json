@@ -1,0 +1,153 @@
+{
+  "id": "ortho_004",
+  "system": "orthopedics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Davis",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "acutely swollen, fiery red, and excruciatingly painful right knee with fever for 2 days",
+  "hpi_details": "62F with rheumatoid arthritis on immunosuppressants presents with 2-day rapid onset of severe right knee pain, swelling, erythema, and inability to bear weight or bend the joint. Accompanied by chills and subjective fever.",
+  "ideas": "thinks she has a severe flare-up of her rheumatoid arthritis requiring steroid injections",
+  "concerns": "worried because her knee has never been this hot and throbbing before",
+  "expectations": "wants joint drainage and strong antibiotics or arthritis medication",
+  "pmh": "Rheumatoid arthritis, Type 2 Diabetes Mellitus",
+  "medications": "Methotrexate 15mg weekly, Adalimumab 40mg biweekly, Metformin 1000mg BID",
+  "social_hx": "Retired librarian, non-smoker",
+  "investigation_events": [{
+    "id": "stat_septic_joint_aspiration",
+    "title": "Emergency synovial-fluid analysis",
+    "order_terms": ["arthrocentesis", "joint aspiration", "synovial fluid", "Gram stain"],
+    "availability_message": "Immediate synovial-fluid cell count and Gram stain are now available; final culture remains pending. Antibiotics and source control should not be delayed.",
+    "results": [
+      {"id": "synovial_cell_count", "test": "Synovial-fluid cell count", "value": "85000 WBC/uL; 92% neutrophils", "flag": "critical", "specimen": "Purulent right-knee synovial fluid"},
+      {"id": "synovial_gram_stain", "test": "Synovial-fluid Gram stain", "value": "Gram-positive cocci in clusters", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Septic arthritis of the right knee evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Septic arthritis of the right knee is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to orthopedic/hospitalist service, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acutely swollen, fiery red, and excruciatingly painful right knee with fever for 2 days",
+      "Key HPI features: 62F with rheumatoid arthritis on immunosuppressants presents with 2-day rapid onset of severe right knee pain, swelling, erythema, and inability to bear weight or bend the joint. Accompanied by chills and subjective fever.",
+      "Objective/Exam findings: Vitals: HR 108, BP 118/72, Temp 38.6C. Right knee markedly effused, erythematous, warm, and exquisitely tender to light touch. Range of motion severely restricted to 10 degrees flexion due to pain. Arthrocentesis of right knee yields 45 mL of purulent, turbid yellow-green fluid. Synovial fluid analysis: WBC 85,000 /uL (92% neutrophils), glucose 15 mg/dL (serum 140 mg/dL), Gram stain reveals Gram-positive cocci in clusters.",
+      "Relevant background/PMH: Rheumatoid arthritis, Type 2 Diabetes Mellitus",
+      "Current medications: Methotrexate 15mg weekly, Adalimumab 40mg biweekly, Metformin 1000mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Septic arthritis of the right knee.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gout/pseudogout flare without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever with monoarticular joint pain."
+    ],
+    "management_principles": [
+      "Admit to orthopedic/hospitalist service",
+      "Send blood and synovial cultures",
+      "Start empirical IV Vancomycin (plus IV Ceftriaxone for gram-negative coverage given diabetes/immunosuppression)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "62F immunocompromised host presenting with acute monoarticular right knee swelling, severe pain, warmth, and systemic fever over 48 hours.",
+    "objective": "Vitals: HR 108, BP 118/72, Temp 38.6C. Right knee markedly effused, erythematous, warm, and exquisitely tender to light touch. Range of motion severely restricted to 10 degrees flexion due to pain. Arthrocentesis of right knee yields 45 mL of purulent, turbid yellow-green fluid. Synovial fluid analysis: WBC 85,000 /uL (92% neutrophils), glucose 15 mg/dL (serum 140 mg/dL), Gram stain reveals Gram-positive cocci in clusters.",
+    "assessment": "Septic Arthritis of the Right Knee, likely Staphylococcus aureus in an immunocompromised patient.",
+    "plan": "Admit to orthopedic/hospitalist service. Send blood and synovial cultures. Start empirical IV Vancomycin (plus IV Ceftriaxone for gram-negative coverage given diabetes/immunosuppression). Urgent orthopedic consultation for surgical arthroscopic or arthrotomy irrigation and debridement of the knee joint. Hold Adalimumab and Methotrexate during acute infection."
+  },
+  "learning_objectives": [
+    "Differentiate septic arthritis from crystal arthropathy (gout/pseudogout) and inflammatory arthritis flares",
+    "Interpret synovial fluid cell count, differential, glucose, and Gram stain diagnostic criteria (>50,000 WBCs with >90% PMNs)",
+    "Explain why immediate joint aspiration must precede antibiotic administration whenever feasible",
+    "Outline the combined medical (IV antibiotics) and surgical (joint washout) treatment strategy"
+  ],
+  "teaching": {
+    "diagnosis": "Septic arthritis of the right knee",
+    "one_liner": "62F with RA on immunosuppressants presenting with 2 days of a hot, swollen, painful knee with fever, unable to bear weight.",
+    "differentials": [
+      "Gout/pseudogout flare",
+      "Rheumatoid arthritis flare",
+      "Reactive arthritis",
+      "Bursitis"
+    ],
+    "red_flags": [
+      "Fever with monoarticular joint pain",
+      "Immunosuppression",
+      "Inability to bear weight or bend the joint"
+    ],
+    "must_ask": [
+      {
+        "objective": "Compare to prior RA flares",
+        "say": "Is this different from your usual arthritis flares—for example, hotter or more painful?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "compare to baseline"
+        ]
+      },
+      {
+        "objective": "Screen for fever and chills",
+        "say": "Have you had fever or chills?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills"
+        ]
+      },
+      {
+        "objective": "Review immunosuppressant medications",
+        "say": "Which medications are you taking for your rheumatoid arthritis?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "methotrexate",
+          "adalimumab",
+          "immunosuppression"
+        ]
+      },
+      {
+        "objective": "Ask about any recent skin breaks or infections",
+        "say": "Have you had any cuts, injections, or infections near the knee recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "portal of entry"
+        ]
+      },
+      {
+        "objective": "Explain the need for urgent joint aspiration before antibiotics",
+        "say": "We need to draw fluid from your knee joint right away to test it before starting antibiotics.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "joint aspiration",
+          "synovial fluid analysis"
+        ]
+      }
+    ]
+  }
+}

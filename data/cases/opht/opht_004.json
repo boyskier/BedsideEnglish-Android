@@ -1,0 +1,148 @@
+{
+  "id": "opht_004",
+  "system": "ophthalmology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Davis",
+  "age": 75,
+  "gender": "female",
+  "chief_complaint": "chronic progressive central vision distortion, straight lines appearing wavy (metamorphopsia), and central blind spot (Age-Related Macular Degeneration)",
+  "hpi_details": "75F presents with 4 months of progressive blurred and distorted central vision in her right eye. She notices when reading that words appear missing or blurred in the center of the page. Last week, while looking at door frames and bathroom tile grid lines, she noticed that straight lines looked wavy and crooked (metamorphopsia). Peripheral vision remains sharp and clear. She denies eye pain or redness.",
+  "ideas": "frustrated because she can no longer read books or recognize grandchildren's faces straight on",
+  "concerns": "worried she is going completely blind across her entire visual field",
+  "expectations": "wants specialized retinal eye injections or laser treatment to fix her central vision",
+  "pmh": "Hypertension, 40 pack-year smoking history",
+  "medications": "Lisinopril 10mg daily, AREDS2 eye multivitamins",
+  "social_hx": "Retired secretary, active smoker",
+  "investigation_events": [{
+    "id": "same_day_macular_oct",
+    "title": "Macular optical coherence tomography",
+    "order_terms": ["OCT", "optical coherence tomography", "macular scan", "macular OCT"],
+    "availability_message": "The macular OCT result is now available.",
+    "results": [{"id": "macular_oct", "test": "OCT of the right macula", "value": "Subretinal and intraretinal fluid with retinal pigment epithelial elevation from active choroidal neovascularization", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Neovascular (wet) age-related macular degeneration evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Neovascular (wet) age-related macular degeneration is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent intravitreal Anti-VEGF injection therapy to halt neovascular leakage and preserve vision, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic progressive central vision distortion, straight lines appearing wavy (metamorphopsia), and central blind spot (Age-Related Macular Degeneration)",
+      "Key HPI features: 75F presents with 4 months of progressive blurred and distorted central vision in her right eye. She notices when reading that words appear missing or blurred in the center of the page. Last week, while looking at door frames and bathroom tile grid lines, she noticed that straight lines looked wavy and crooked (metamorphopsia). Peripheral vision remains sharp and clear. She denies eye pain or redness.",
+      "Objective/Exam findings: Vitals: HR 74, BP 138/82. Visual acuity: Right eye 20/100 (with eccentric viewing); Left eye 20/40. Amsler grid testing confirms central metamorphopsia (wavy/distorted grid lines) and a central scotoma in the right eye. Dilated fundoscopic examination reveals extensive bilateral yellow subretinal drusen and retinal pigment epithelium (RPE) mottling. In the right foveal/macular area, there is a subretinal grayish-green choroidal neovascular membrane surrounded by subretinal hemorrhage, lipid exudates, and subretinal fluid accumulation. Optical Coherence Tomography (OCT) of right macula confirms subretinal and intraretinal fluid pockets with RPE elevation secondary to active Choroidal Neovascularization (CNV).",
+      "Relevant background/PMH: Hypertension, 40 pack-year smoking history",
+      "Current medications: Lisinopril 10mg daily, AREDS2 eye multivitamins"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Neovascular (wet) age-related macular degeneration.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Dry (non-exudative) AMD without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New/worsening metamorphopsia (rapid progression concerning for wet AMD)."
+    ],
+    "management_principles": [
+      "Urgent referral to Retinal Specialist for immediate intravitreal Anti-VEGF injection therapy (Ranibizumab, Aflibercept, or Bevacizumab administered monthly or via treat-and-extend protocol) to halt choroidal neovascular vessel leakage, stabilize subretinal fluid, and preserve/restore central visual acuity",
+      "Counsel patient to immediately cease cigarette smoking (major modifiable progression risk factor) and continue daily AREDS2 antioxidant vitamin supplementation (containing Lutein/Zeaxanthin, avoiding beta-carotene due to lung cancer risk in smokers)",
+      "Provide home Amsler grid for daily self-monitoring of left eye"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "75F smoker presenting with progressive central visual distortion (metamorphopsia) and central scotoma characteristic of Neovascular (Wet) Age-Related Macular Degeneration.",
+    "objective": "Vitals: HR 74, BP 138/82. Visual acuity: Right eye 20/100 (with eccentric viewing); Left eye 20/40. Amsler grid testing confirms central metamorphopsia (wavy/distorted grid lines) and a central scotoma in the right eye. Dilated fundoscopic examination reveals extensive bilateral yellow subretinal drusen and retinal pigment epithelium (RPE) mottling. In the right foveal/macular area, there is a subretinal grayish-green choroidal neovascular membrane surrounded by subretinal hemorrhage, lipid exudates, and subretinal fluid accumulation. Optical Coherence Tomography (OCT) of right macula confirms subretinal and intraretinal fluid pockets with RPE elevation secondary to active Choroidal Neovascularization (CNV).",
+    "assessment": "Neovascular (Wet / Exudative) Age-Related Macular Degeneration of the Right Eye, superimposed on bilateral Dry AMD.",
+    "plan": "1. Urgent referral to Retinal Specialist for immediate intravitreal Anti-VEGF injection therapy (Ranibizumab, Aflibercept, or Bevacizumab administered monthly or via treat-and-extend protocol) to halt choroidal neovascular vessel leakage, stabilize subretinal fluid, and preserve/restore central visual acuity. 2. Counsel patient to immediately cease cigarette smoking (major modifiable progression risk factor) and continue daily AREDS2 antioxidant vitamin supplementation (containing Lutein/Zeaxanthin, avoiding beta-carotene due to lung cancer risk in smokers). Provide home Amsler grid for daily self-monitoring of left eye."
+  },
+  "learning_objectives": [
+    "Differentiate Non-Exudative (Dry) AMD (characterised by subretinal drusen, RPE atrophy, gradual progression) from Exudative (Wet / Neovascular) AMD (characterised by choroidal neovascular membranes CNV, subretinal hemorrhage/exudate, rapid central visual distortion)",
+    "Perform and interpret Amsler grid testing to identify central metamorphopsia (wavy lines) and central scotomas",
+    "Understand the diagnostic role of Optical Coherence Tomography (OCT) in detecting subretinal/intraretinal fluid in wet AMD",
+    "Outline evidence-based treatment regimens: Intravitreal Anti-VEGF injections for Wet AMD and AREDS2 antioxidant formulations plus smoking cessation for intermediate Dry AMD"
+  ],
+  "teaching": {
+    "diagnosis": "Neovascular (wet) age-related macular degeneration",
+    "one_liner": "75F smoker with 4 months of progressive central vision distortion and wavy lines (metamorphopsia) in the right eye.",
+    "differentials": [
+      "Dry (non-exudative) AMD",
+      "Central serous chorioretinopathy",
+      "Macular hole",
+      "Diabetic macular edema"
+    ],
+    "red_flags": [
+      "New/worsening metamorphopsia (rapid progression concerning for wet AMD)",
+      "Central scotoma",
+      "Heavy smoking history"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the visual distortion",
+        "say": "Have straight lines, like door frames, started looking wavy or bent?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "metamorphopsia",
+          "wavy lines"
+        ]
+      },
+      {
+        "objective": "Ask about central vs peripheral vision",
+        "say": "Is it your central vision or side vision that's affected?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "central scotoma"
+        ]
+      },
+      {
+        "objective": "Assess rate of progression",
+        "say": "Has this gotten noticeably worse over the past days or weeks?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "progression rate"
+        ]
+      },
+      {
+        "objective": "Ask about smoking history",
+        "say": "How much and how long have you been smoking?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "smoking history"
+        ]
+      },
+      {
+        "objective": "Explain anti-VEGF injection therapy",
+        "say": "We need an urgent retina specialist referral for injections into the eye that can stop the abnormal blood vessel leakage.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "anti-VEGF",
+          "intravitreal injection"
+        ]
+      }
+    ]
+  }
+}

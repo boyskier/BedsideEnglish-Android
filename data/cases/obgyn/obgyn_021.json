@@ -1,0 +1,153 @@
+{
+  "id": "obgyn_021",
+  "system": "obstetrics & gynecology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Park",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "severe nausea and vomiting in early pregnancy, unable to keep fluids down",
+  "hpi_details": "28F who is 8 weeks pregnant presents with severe, persistent nausea and vomiting. Reports vomiting 5-6 times daily, unable to keep food or water down for 24 hours, and feeling extremely weak.",
+  "ideas": "worried about the health of her baby due to constant vomiting",
+  "concerns": "exhausted and dehydrated",
+  "expectations": "wants anti-nausea medication and IV fluids",
+  "pmh": "Primigravida (8 weeks gestation by LMP)",
+  "medications": "Prenatal vitamins (stopped due to nausea)",
+  "social_hx": "Office worker, non-smoker",
+  "investigation_events": [{
+    "id": "urgent_hyperemesis_assessment",
+    "title": "Urgent dehydration and electrolyte assessment",
+    "order_terms": ["urine ketones", "ketones", "electrolytes", "BMP", "basic metabolic panel", "sodium", "potassium"],
+    "availability_message": "Urine ketone and electrolyte results are now available. IV fluids and thiamine should not be delayed in this clinically dehydrated patient.",
+    "results": [
+      {"id": "urine_ketones", "test": "Urine ketones", "value": "3+", "reference_range": "Negative", "flag": "high"},
+      {"id": "sodium", "test": "Serum sodium", "value": "130", "unit": "mEq/L", "reference_range": "135-145", "flag": "low"},
+      {"id": "potassium", "test": "Serum potassium", "value": "3.1", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "low"},
+      {"id": "bicarbonate", "test": "Serum bicarbonate", "value": "19", "unit": "mEq/L", "reference_range": "22-29", "flag": "low"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Hyperemesis gravidarum evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hyperemesis gravidarum is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe nausea and vomiting in early pregnancy, unable to keep fluids down",
+      "Key HPI features: 28F who is 8 weeks pregnant presents with severe, persistent nausea and vomiting. Reports vomiting 5-6 times daily, unable to keep food or water down for 24 hours, and feeling extremely weak.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration).",
+      "Relevant background/PMH: Primigravida (8 weeks gestation by LMP)",
+      "Current medications: Prenatal vitamins (stopped due to nausea)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hyperemesis gravidarum.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Normal nausea/vomiting of pregnancy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Unable to tolerate any fluids for 24 hours."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration)",
+      "Check weight loss, vital signs for orthostasis, urine ketones, and electrolytes",
+      "Administer IV fluids with thiamine, and prescribe antiemetics (Pyridoxine/Doxylamine first line)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration). severe nausea and vomiting in early pregnancy, unable to keep fluids down. 28F who is 8 weeks pregnant presents with severe, persistent nausea and vomiting. Reports vomiting 5-6 times daily, unable to keep food or water down for 24 hours, and feeling extremely weak.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration).",
+    "assessment": "Clinical presentation highly suggestive of Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration).",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration). Check weight loss, vital signs for orthostasis, urine ketones, and electrolytes. Administer IV fluids with thiamine, and prescribe antiemetics (Pyridoxine/Doxylamine first line). Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration).",
+    "Formulate prioritized differential diagnosis for severe nausea and vomiting in early pregnancy, unable to keep fluids down",
+    "Select appropriate laboratory and imaging studies for obstetrics & gynecology",
+    "Implement evidence-based acute and long-term management strategies for Hyperemesis Gravidarum (severe pregnancy-induced nausea/vomiting causing dehydration)."
+  ],
+  "teaching": {
+    "diagnosis": "Hyperemesis gravidarum",
+    "one_liner": "28F at 8 weeks with severe persistent vomiting, unable to tolerate oral intake for 24 hours.",
+    "differentials": [
+      "Normal nausea/vomiting of pregnancy",
+      "Gastroenteritis",
+      "Molar pregnancy",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "Unable to tolerate any fluids for 24 hours",
+      "Signs of dehydration",
+      "Ketonuria"
+    ],
+    "must_ask": [
+      {
+        "objective": "Quantify vomiting episodes",
+        "say": "How many times have you vomited today, and can you keep anything down?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomiting frequency"
+        ]
+      },
+      {
+        "objective": "Screen for dehydration signs",
+        "say": "Have you felt weak, dizzy, or had a dry mouth?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dehydration"
+        ]
+      },
+      {
+        "objective": "Ask about weight and appetite changes",
+        "say": "Have you lost weight since the vomiting started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "Assess emotional impact and support",
+        "say": "How has this been affecting you emotionally, and do you have support at home?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "emotional impact",
+          "support"
+        ]
+      },
+      {
+        "objective": "Explain IV fluids and antiemetic plan",
+        "say": "We'll start IV fluids and give you medication to control the nausea.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "IV fluids",
+          "antiemetics"
+        ]
+      }
+    ]
+  }
+}

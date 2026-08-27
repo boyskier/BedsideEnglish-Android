@@ -1,0 +1,140 @@
+{
+  "id": "nephro_018",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Taylor",
+  "age": 70,
+  "gender": "male",
+  "chief_complaint": "trouble peeing and lower belly pain",
+  "hpi_details": "70M presents with 2 days of worsening difficulty urinating. Today he has been unable to pass any urine for 12 hours and has severe lower abdominal discomfort and fullness.",
+  "ideas": "thinks his prostate is enlarged",
+  "concerns": "worried his bladder will burst",
+  "expectations": "wants a catheter",
+  "pmh": "BPH (Benign Prostatic Hyperplasia)",
+  "medications": "Tamsulosin, newly started over-the-counter cold medicine (Diphenhydramine)",
+  "social_hx": "Retired",
+  "investigation_events": [
+    {
+      "id": "stat_urinary_retention_workup",
+      "title": "Urgent urinary retention assessment",
+      "order_terms": ["bladder scan", "post-void residual", "BMP", "basic metabolic panel", "renal function", "creatinine", "potassium"],
+      "availability_message": "Bedside bladder scan and urgent renal function results are now available. Bladder decompression should not be delayed while awaiting blood tests.",
+      "results": [
+        {"id": "bladder_volume", "test": "Bedside bladder scan", "value": ">999", "unit": "mL", "flag": "high"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "2.0", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "high"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Urinary Retention",
+    "core_concepts": [
+      "Commonly caused by BPH in older men, often triggered by anticholinergic or sympathomimetic medications (like OTC cold meds).",
+      "Can cause post-renal acute kidney injury (AKI)."
+    ],
+    "diagnostic_clues": [
+      "Inability to void",
+      "Suprapubic pain/fullness",
+      "Recent anticholinergic use"
+    ],
+    "common_misconceptions": [
+      "Assuming anuria is due to a kidney problem (pre-renal/intrinsic) without checking bladder volume."
+    ],
+    "dangerous_errors": [
+      "Failing to decompress the bladder promptly, leading to permanent detrusor damage or severe AKI."
+    ],
+    "management_principles": [
+      "Immediate bladder ultrasound, placement of Foley catheter, check BMP for AKI, stop offending meds."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "70M with BPH presenting with acute inability to void for 12 hours and suprapubic pain after taking cold medicine.",
+    "objective": "Distended, tender suprapubic mass. Bladder scan shows >999 mL.",
+    "assessment": "Acute urinary retention, likely medication-induced superimposed on BPH.",
+    "plan": "STAT Foley catheter placement. Check BMP. Stop diphenhydramine. Follow up with urology."
+  },
+  "learning_objectives": [
+    "Recognize acute urinary retention and identify common medication triggers."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Urinary Retention",
+    "one_liner": "Acute inability to void with a painful, distended bladder in an elderly man, often triggered by anticholinergic medications.",
+    "differentials": [
+      "UTI",
+      "Neurogenic bladder"
+    ],
+    "red_flags": [
+      "Elevated creatinine (post-renal AKI)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and prior voiding pattern",
+        "say": "When did you last pass urine, and how has your urine stream been recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "last urinated",
+          "weak stream"
+        ]
+      },
+      {
+        "objective": "Prostate and BPH history",
+        "say": "Have you had any trouble starting your stream, dribbling, or waking at night to urinate before this?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "BPH",
+          "hesitancy",
+          "nocturia"
+        ]
+      },
+      {
+        "objective": "Medication triggers",
+        "say": "Have you taken any cold or allergy medicine, or other new medications recently?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "anticholinergic",
+          "cold medicine",
+          "decongestant"
+        ]
+      },
+      {
+        "objective": "Pain severity",
+        "say": "How severe is the lower belly pain, and does it come with an urge to void?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "suprapubic pain",
+          "urge"
+        ]
+      },
+      {
+        "objective": "Neurological causes",
+        "say": "Have you had any back pain, leg weakness, or numbness that could point to a nerve problem?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "back pain",
+          "weakness",
+          "numbness"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "id": "hemato_034",
+  "system": "hemato",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Moore",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "burning sensation in fingers and platelet count 850k",
+  "hpi_details": "55-year-old male presents with a burning sensation and redness in his fingertips and toes (erythromelalgia), accompanied by occasional throbbing headaches. Routine blood work done by his PCP showed an isolated platelet count of 850,000/uL.",
+  "ideas": "thinks it might be related to essential_thrombocythemia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "platelets",
+      "test": "Platelet count",
+      "value": "850",
+      "unit": "x10^3/mcL",
+      "reference_range": "150-400",
+      "flag": "critical",
+      "specimen": "Blood",
+      "collected_at": "Before current encounter"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Essential Thrombocythemia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Essential Thrombocythemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Essential Thrombocythemia emphasizes low-dose aspirin and hydroxyurea if high risk for thrombosis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning sensation in fingers and platelet count 850k",
+      "Key HPI features: 55-year-old male presents with a burning sensation and redness in his fingertips and toes (erythromelalgia), accompanied by occasional throbbing headaches. Routine blood work done by his PCP showed an isolated platelet count of 850,000/uL.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Essential Thrombocythemia.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Essential Thrombocythemia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Reactive (secondary) thrombocytosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Symptoms of stroke, heart attack, or clot — thrombosis is the main risk."
+    ],
+    "management_principles": [
+      "Plan for Essential Thrombocythemia: Low-dose Aspirin, Hydroxyurea if high risk for thrombosis",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M presenting with erythromelalgia and incidentally discovered extreme thrombocytosis.",
+    "objective": "Vitals normal. Erythema and warmth over distal phalanges. Spleen is mildly palpable (splenomegaly). CBC: Platelets 850,000/uL. Normal WBC and Hemoglobin.",
+    "assessment": "Essential Thrombocythemia (ET).",
+    "plan": "Order JAK2 V617F mutation assay. Start daily low-dose aspirin (75-100mg) for microvascular symptoms (erythromelalgia) and thrombosis prophylaxis. Refer to hematology for consideration of cytoreductive therapy (e.g., Hydroxyurea)."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Essential Thrombocythemia",
+    "Select appropriate diagnostic workup for Essential Thrombocythemia",
+    "Implement evidence-based management plan: Low-dose Aspirin, Hydroxyurea if high risk for thrombosis"
+  ],
+  "teaching": {
+    "diagnosis": "Essential Thrombocythemia",
+    "one_liner": "A myeloproliferative disorder (JAK2 or CALR mutated) causing markedly elevated platelet counts, which paradoxically can cause both clotting and bleeding, including burning pain in the fingers (erythromelalgia).",
+    "differentials": [
+      "Reactive (secondary) thrombocytosis",
+      "Polycythemia vera",
+      "Chronic myeloid leukemia"
+    ],
+    "red_flags": [
+      "Symptoms of stroke, heart attack, or clot — thrombosis is the main risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Extremity burning",
+        "say": "Do your fingers or toes burn or feel painfully warm?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "burning",
+          "erythromelalgia"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had this symptom?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Clotting or bleeding history",
+        "say": "Have you ever had a blood clot, or unusual bleeding?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "clot",
+          "bleeding"
+        ]
+      },
+      {
+        "objective": "Headache or visual symptoms",
+        "say": "Any headaches or visual disturbances?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Incidental finding context",
+        "say": "Was this platelet count found on a routine test, or were you having symptoms?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

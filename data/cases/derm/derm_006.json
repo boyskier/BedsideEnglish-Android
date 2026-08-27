@@ -1,0 +1,143 @@
+{
+  "id": "derm_006",
+  "system": "dermatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Foster",
+  "age": 23,
+  "gender": "female",
+  "chief_complaint": "intensely itchy, linear, excoriated papules and burrows between finger webs and wrists worsening severely at night (Scabies)",
+  "hpi_details": "23F medical student presents with 3-week history of excruciating, intractable itching that is dramatically worse at night after getting under warm bedcovers. Itching involves her wrists, between her fingers, waistline, and around her nipples. Reports that two of her roommates have also developed similar itchy rashes over the past week. Has scratched her arms raw attempting to relieve the itching.",
+  "ideas": "thinks she developed severe nervous eczema from medical school exams or bedbug bites",
+  "concerns": "desperate for sleep due to relentless nocturnal itching waking her up every hour",
+  "expectations": "wants strong prescription anti-itch pills and creams immediately",
+  "pmh": "No prior dermatological history",
+  "medications": "Over-the-counter antihistamines (ineffective)",
+  "social_hx": "Medical student, living in shared college apartment",
+  "available_results": [
+    {"id": "scabies_scraping", "test": "Mineral-oil skin scraping microscopy", "value": "Live Sarcoptes scabiei mite, ova, and scybala visualized", "flag": "abnormal", "specimen": "Interdigital burrow scraping"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Scabies evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Scabies is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes full-body topical permethrin with a mandatory repeat treatment in 7 days plus simultaneous treatment of household contacts and environmental decontamination, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: intensely itchy, linear, excoriated papules and burrows between finger webs and wrists worsening severely at night (Scabies)",
+      "Key HPI features: 23F medical student presents with 3-week history of excruciating, intractable itching that is dramatically worse at night after getting under warm bedcovers. Itching involves her wrists, between her fingers, waistline, and around her nipples. Reports that two of her roommates have also developed similar itchy rashes over the past week. Has scratched her arms raw attempting to relieve the itching.",
+      "Objective/Exam findings: Vitals: HR 76, Temp 36.7C. Skin exam reveals erythematous, excoriated papules, tiny vesicles, and pathognomonic 2-5 mm serpiginous, grayish-white linear tracts ('burrows') located across the interdigital web spaces of the fingers, flexor surfaces of the wrists, anterior axillary folds, and periareolar skin. Skin scraping of an intact interdigital burrow under mineral oil mount examined via light microscopy reveals live, eight-legged Sarcoptes scabiei mites, oval eggs, and brown fecal pellets (scybala).",
+      "Relevant background/PMH: No prior dermatological history",
+      "Current medications: Over-the-counter antihistamines (ineffective)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Scabies.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atopic dermatitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Widespread crusted lesions — could suggest crusted (Norwegian) scabies in an immunocompromised patient."
+    ],
+    "management_principles": [
+      "Definitive scabicidal therapy: prescribe Topical Permethrin 5% cream",
+      "Patient must apply cream thoroughly from the neck down to the soles of the feet (paying meticulous attention to finger webs, under fingernails, groin, and gluteal cleft), leave on for 8-14 hours (overnight), and wash off",
+      "CRITICAL RULE: Repeat the exact full-body Permethrin application in 7 days to kill newly hatched nymphs"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "23F presenting with severely pruritic cutaneous eruption with nocturnal exacerbation, characteristic distribution, and household contacts affected, classic for Scabies infestation.",
+    "objective": "Vitals: HR 76, Temp 36.7C. Skin exam reveals erythematous, excoriated papules, tiny vesicles, and pathognomonic 2-5 mm serpiginous, grayish-white linear tracts ('burrows') located across the interdigital web spaces of the fingers, flexor surfaces of the wrists, anterior axillary folds, and periareolar skin. Skin scraping of an intact interdigital burrow under mineral oil mount examined via light microscopy reveals live, eight-legged Sarcoptes scabiei mites, oval eggs, and brown fecal pellets (scybala).",
+    "assessment": "Active Scabies Infestation (Sarcoptes scabiei var. hominis).",
+    "plan": "1. Definitive scabicidal therapy: prescribe Topical Permethrin 5% cream. Patient must apply cream thoroughly from the neck down to the soles of the feet (paying meticulous attention to finger webs, under fingernails, groin, and gluteal cleft), leave on for 8-14 hours (overnight), and wash off. CRITICAL RULE: Repeat the exact full-body Permethrin application in 7 days to kill newly hatched nymphs. (Alternatively, prescribe Oral Ivermectin 200 mcg/kg single dose, repeated on day 8-14). 2. Environmental decontamination: ALL household contacts and sexual partners must be treated simultaneously regardless of whether they itch. All clothing, bed linens, and towels used in the past 3 days must be hot-water washed and machine dried on high heat (or sealed in plastic bags for 72 hours). 3. Counsel that post-scabietic pruritus can persist for 2-4 weeks after successful eradication due to retained allergic antigen response (prescribe topical triamcinolone and oral cetirizine for symptom control)."
+  },
+  "learning_objectives": [
+    "Identify clinical hallmarks of Scabies infestation (intense nocturnal pruritus, interdigital/wrist/genital distribution, pathognomonic burrows, multiple household contacts affected)",
+    "Perform mineral oil skin scraping microscopic prep to visualize mites, eggs, and scybala (fecal pellets)",
+    "Outline exact patient administration instructions for Topical Permethrin 5% cream (neck-down full-body application left overnight for 8-14 hours, MANDATORY repeat application at day 7)",
+    "Coordinate comprehensive environmental decontamination and simultaneous treatment of all close contacts while managing post-scabietic allergic hypersensitivity itch"
+  ],
+  "teaching": {
+    "diagnosis": "Scabies",
+    "one_liner": "An infestation with the Sarcoptes scabiei mite causing intense itching that is dramatically worse at night, with burrows classically found between the finger webs, wrists, and waistline — highly contagious to close contacts.",
+    "differentials": [
+      "Atopic dermatitis",
+      "Contact dermatitis",
+      "Bedbug bites"
+    ],
+    "red_flags": [
+      "Widespread crusted lesions — could suggest crusted (Norwegian) scabies in an immunocompromised patient"
+    ],
+    "must_ask": [
+      {
+        "objective": "Nocturnal itching pattern",
+        "say": "Is the itching much worse at night, especially after getting into bed?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "night",
+          "worse at night"
+        ]
+      },
+      {
+        "objective": "Location of burrows",
+        "say": "Where is the itching worst — between your fingers, your wrists, your waistline?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "finger webs",
+          "wrists"
+        ]
+      },
+      {
+        "objective": "Contacts with similar symptoms",
+        "say": "Has anyone you live with had similar itching?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "roommates",
+          "contacts"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many weeks has this been going on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks"
+        ]
+      },
+      {
+        "objective": "Visible burrows",
+        "say": "Have you seen any thin, thread-like lines on your skin?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "burrows",
+          "lines"
+        ]
+      }
+    ]
+  }
+}

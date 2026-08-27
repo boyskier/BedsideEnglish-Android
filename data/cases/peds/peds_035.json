@@ -1,0 +1,138 @@
+{
+  "id": "peds_035",
+  "system": "peds",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ethan Williams",
+  "age": 7,
+  "gender": "male",
+  "chief_complaint": "bedwetting in 7-year-old child, normal urinalysis",
+  "hpi_details": "7-year-old boy is brought in by his parent for nighttime bedwetting. He has never been consistently dry overnight, has no daytime urinary symptoms, and has a normal urinalysis.",
+  "ideas": "thinks it might be related to bedwetting",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Lives with family and attends elementary school.",
+  "available_results": [{"id": "prior_urinalysis", "test": "Urinalysis", "value": "Specific gravity 1.018; negative glucose, protein, blood, leukocyte esterase, and nitrites", "flag": "normal", "collected_at": "Before today's encounter"}],
+  "clinical_knowledge": {
+    "topic": "Nocturnal enuresis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Nocturnal enuresis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Nocturnal Enuresis: Reassurance, bedwetting alarm, limit fluids before bed, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bedwetting in 7-year-old child, normal urinalysis",
+      "Key HPI features: A 7-year-old boy has primary nocturnal enuresis, has never been consistently dry overnight, has no daytime urinary symptoms, and has a normal urinalysis.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Nocturnal Enuresis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Nocturnal enuresis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Daytime symptoms or secondary enuresis (after being previously dry) would warrant further workup."
+    ],
+    "management_principles": [
+      "Plan for Nocturnal Enuresis: Reassurance, bedwetting alarm, limit fluids before bed",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of bedwetting in 7-year-old child, normal urinalysis. HPI: nocturnal enuresis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Nocturnal Enuresis.",
+    "assessment": "Condition highly suspicious for Nocturnal Enuresis.",
+    "plan": "Plan for Nocturnal Enuresis: Reassurance, bedwetting alarm, limit fluids before bed. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Nocturnal Enuresis",
+    "Select appropriate diagnostic workup for Nocturnal Enuresis",
+    "Implement evidence-based management plan: Reassurance, bedwetting alarm, limit fluids before bed"
+  ],
+  "teaching": {
+    "diagnosis": "Nocturnal enuresis",
+    "one_liner": "7-year-old child with bedwetting and a normal urinalysis.",
+    "differentials": [
+      "Urinary tract infection",
+      "Diabetes mellitus/insipidus",
+      "Constipation causing bladder pressure",
+      "Obstructive sleep apnea"
+    ],
+    "red_flags": [
+      "Daytime symptoms or secondary enuresis (after being previously dry) would warrant further workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm this is primary versus secondary enuresis",
+        "say": "Has he ever had a period of being consistently dry at night before this started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "primary vs secondary enuresis"
+        ]
+      },
+      {
+        "objective": "Ask about daytime urinary symptoms",
+        "say": "Does he have any accidents or urgency during the daytime?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "daytime symptoms"
+        ]
+      },
+      {
+        "objective": "Ask about family history",
+        "say": "Did either parent wet the bed as a child?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family history"
+        ]
+      },
+      {
+        "objective": "Ask about fluid intake before bed and sleep patterns",
+        "say": "How much does he drink before bed, and does he snore or seem to sleep very deeply?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "fluid intake",
+          "sleep patterns"
+        ]
+      },
+      {
+        "objective": "Reassure and explain the behavioral treatment plan",
+        "say": "This is very common and usually resolves with time — we recommend a bedwetting alarm and limiting fluids before bedtime.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "bedwetting alarm",
+          "reassurance"
+        ]
+      }
+    ]
+  }
+}

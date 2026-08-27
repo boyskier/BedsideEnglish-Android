@@ -1,0 +1,166 @@
+{
+  "id": "urology_015",
+  "system": "urology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thompson",
+  "age": 61,
+  "gender": "female",
+  "chief_complaint": "severe sudden urges to urinate frequency >12 times per day and leaking urine before reaching toilet",
+  "hpi_details": "61F presenting with severe urgency, nocturia five times nightly, and urge incontinence, with a normal post-void residual and negative urinalysis. She is seeking evaluation and treatment options after discussing bladder retraining.",
+  "ideas": "thinks this is related to overactive bladder urge incontinence",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "oab_urinalysis", "test": "Urinalysis", "value": "Nitrite negative; leukocyte esterase negative; blood negative", "flag": "normal", "specimen": "Urine"},
+    {"id": "oab_post_void_residual", "test": "Post-void residual", "value": "36", "unit": "mL", "reference_range": "<50", "flag": "normal", "collected_at": "During clinic assessment"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Overactive Bladder Urge Incontinence evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Overactive Bladder Urge Incontinence is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Overactive bladder is a symptom diagnosis after excluding infection and other concerning causes; nocturia also requires assessment for nocturnal polyuria, sleep disorders, and systemic contributors.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe sudden urges to urinate frequency >12 times per day and leaking urine before reaching toilet",
+      "Key HPI features: urgency, frequency, nocturia five times nightly, urge incontinence, negative urinalysis, and normal post-void residual.",
+      "Objective/Exam findings: Review a bladder diary, urinalysis, post-void residual when indicated, blood pressure, pelvic examination when relevant, and neurologic findings when symptoms suggest a neurologic cause.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Overactive Bladder Urge Incontinence.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Attributing gross hematuria, persistent microscopic hematuria, pelvic pain, recurrent infection, or new neurologic symptoms to uncomplicated overactive bladder without further evaluation.",
+      "Starting mirabegron without assessing blood pressure and reviewing interacting medicines; it can raise blood pressure and is generally avoided in severe uncontrolled hypertension.",
+      "Using antimuscarinic therapy without considering constipation, urinary retention, glaucoma, and cognitive adverse effects."
+    ],
+    "management_principles": [
+      "Start with bladder training, timed voiding, pelvic-floor muscle training, and individualized reduction of bladder irritants/excess fluid; use a bladder diary to guide care.",
+      "If symptoms remain bothersome, use shared decision-making for a beta-3 agonist or antimuscarinic after reviewing blood pressure, retention risk, constipation, cognition, glaucoma, renal/hepatic function, and drug interactions.",
+      "Refer for specialist therapies such as onabotulinumtoxinA, tibial nerve stimulation, or sacral neuromodulation when conservative and oral treatments fail or are unsuitable.",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "61F with urgency, frequency, nocturia five times nightly, and urge leakage despite a negative urinalysis and normal post-void residual. Ask about fluid intake, caffeine/alcohol, diuretics, constipation, sleep apnea, diabetes symptoms, pelvic symptoms, hematuria, and neurologic changes.",
+    "objective": "Review bladder diary and urinalysis; assess blood pressure, post-void residual when indicated, pelvic findings, and neurologic signs when appropriate.",
+    "assessment": "Likely overactive bladder with urge urinary incontinence; prominent nocturia warrants evaluation for nocturnal polyuria and non-bladder contributors.",
+    "plan": "Begin individualized behavioral and pelvic-floor therapy. If medicine is desired, select a beta-3 agonist or antimuscarinic after safety review; monitor blood pressure with mirabegron. Evaluate hematuria, pain, recurrent UTI, retention, or neurologic symptoms rather than assuming uncomplicated OAB. Refer if refractory."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Overactive Bladder Urge Incontinence",
+    "Formulate prioritized differential diagnosis for severe sudden urges to urinate frequency >12 times per day and leaking urine before reaching toilet",
+    "Select appropriate laboratory and imaging studies for urology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Overactive Bladder Urge Incontinence",
+    "one_liner": "Urology evaluation for patient presenting with severe sudden urges to urinate frequency >12 times per day and leaking urine before reaching toilet.",
+    "differentials": [
+      "Urinary tract infection",
+      "Stress urinary incontinence",
+      "Polyuria from diabetes or diuretic use"
+    ],
+    "red_flags": [
+      "Visible blood in urine, persistent microscopic hematuria, unexplained pelvic/bladder pain, or recurrent UTIs",
+      "New leg weakness/numbness, saddle anesthesia, inability to pass urine, or rapidly changing bladder control (urgent neurologic/retention assessment)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Urgency and frequency pattern",
+        "say": "How many times a day do you feel a sudden, strong urge to urinate, and how often do you actually leak before reaching the toilet?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ],
+        "keywords": [
+          "urgency",
+          "frequency",
+          "leak",
+          "toilet",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Nocturia and sleep impact",
+        "say": "How many times do you wake up at night to urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nocturia",
+          "night",
+          "wake up",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Exclude stress incontinence triggers",
+        "say": "Do you leak urine specifically when you cough, sneeze, or lift something heavy, or is it mainly with a sudden urge?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cough",
+          "sneeze",
+          "stress",
+          "urge",
+          "leak"
+        ]
+      },
+      {
+        "objective": "Fluid, caffeine, and diuretic intake",
+        "say": "How much coffee, tea, or fluids do you drink each day, and are you on any water pills?",
+        "domains": [
+          "social_hx",
+          "pmh"
+        ],
+        "keywords": [
+          "caffeine",
+          "fluids",
+          "diuretic",
+          "intake",
+          "medications"
+        ]
+      },
+      {
+        "objective": "Impact on quality of life and pad use",
+        "say": "How much is this affecting your daily activities, and are you needing to wear pads?",
+        "domains": [
+          "concerns",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pads",
+          "quality of life",
+          "activities",
+          "embarrassing"
+        ]
+      }
+    ]
+  }
+}

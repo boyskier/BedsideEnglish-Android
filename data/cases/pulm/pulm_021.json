@@ -1,0 +1,159 @@
+{
+  "id": "pulm_021",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Kowalski",
+  "age": 49,
+  "gender": "male",
+  "chief_complaint": "chronic cough producing bloody phlegm, sinus pain, and bloody crusts in nose for 4 months",
+  "hpi_details": "4-month history of a persistent, worsening cough accompanied by frequent expectoration of blood-streaked and frankly bloody purulent sputum (haemoptysis). Simultaneously, has suffered from chronic, severe, refractory nasal congestion, facial sinus pain, and constant discharge of thick, bloody, foul-smelling crusts from both nostrils. Over the past 3 weeks, noticed his nose bridge collapsing inward slightly (saddle-nose deformity) and developed right ear pain due to otitis media. Has lost 5kg of weight accompanied by low-grade fevers, night sweats, and joint aches. Over the past 5 days, noticed his urine turning dark, smoky red (haematuria) and swelling around his ankles. Treated with four courses of sinus and chest antibiotics with zero benefit.",
+  "ideas": "thinks a chronic resistant sinus infection has eroded through his nose bones and dripped down to infect his kidneys",
+  "concerns": "terrified he has an aggressive spreading head and neck cancer that is destroying his kidneys",
+  "expectations": "wants urgent rheumatology blood tests, high-strength immune-suppressing infusions, and a kidney biopsy",
+  "pmh": "recurrent sinusitis x1 year, mild hypertension",
+  "medications": "paracetamol/ibuprofen PRN, multiple failed antibiotics",
+  "social_hx": "never smoked, zero alcohol, mechanical engineer, married",
+  "investigation_events": [{"id":"pulmonary_renal_emergency_workup","title":"Urgent pulmonary-renal syndrome results","order_terms":["urinalysis","urine microscopy","cbc","hemoglobin","creatinine","renal function","chest ct","ct chest","hrct"],"availability_message":"The urgent results show pulmonary-renal involvement; admission and specialist assessment should not be delayed while serology or biopsy is pending.","results":[{"id":"urine_microscopy","test":"Urinalysis and urine microscopy","value":"3+ blood, 3+ protein, dysmorphic erythrocytes, and red-cell casts","flag":"critical","specimen":"Urine","collected_at":"During emergency assessment"},{"id":"creatinine","test":"Serum creatinine","value":"3.2","unit":"mg/dL","reference_range":"0.7-1.3","flag":"critical","specimen":"Blood","collected_at":"During emergency assessment"},{"id":"ct_chest","test":"CT chest","value":"Multiple bilateral thick-walled cavitating nodules with patchy ground-glass opacity consistent with alveolar haemorrhage","flag":"critical","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Granulomatosis with Polyangiitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Granulomatosis with Polyangiitis is essential for appropriate diagnostic workup and treatment.",
+      "Clinical history, severity assessment, and targeted testing must be interpreted together rather than relying on one symptom alone.",
+      "Treat pulmonary-renal syndrome as an emergency with hospital admission and multidisciplinary input.",
+      "Management should follow local pathways and account for patient-specific comorbidity and clinical severity."
+    ],
+    "diagnostic_clues": [
+      "Chief complaint: chronic cough producing bloody phlegm, sinus pain, and bloody crusts in nose for 4 months",
+      "Key HPI features: 4-month history of a persistent, worsening cough accompanied by frequent expectoration of blood-streaked and frankly bloody purulent sputum (haemoptysis). Simultaneously, has suffered from chronic, severe, refractory nasal congestion, facial sinus pain, and constant discharge of thick, bloody, foul-smelling crusts from both nostrils. Over the past 3 weeks, noticed his nose bridge collapsing inward slightly (saddle-nose deformity) and developed right ear pain due to otitis media. Has lost 5kg of weight accompanied by low-grade fevers, night sweats, and joint aches. Over the past 5 days, noticed his urine turning dark, smoky red (haematuria) and swelling around his ankles. Treated with four courses of sinus and chest antibiotics with zero benefit.",
+      "Objective/examination findings: Perform focused examination, vital-sign assessment, and diagnosis-specific investigations.",
+      "Relevant background/PMH: recurrent sinusitis x1 year, mild hypertension",
+      "Current medications: paracetamol/ibuprofen PRN, multiple failed antibiotics"
+    ],
+    "common_misconceptions": [
+      "Assuming a mild or atypical presentation rules out Granulomatosis with Polyangiitis.",
+      "Relying on a single normal test result to prematurely exclude serious pathology.",
+      "Equating transient symptom improvement with resolution of the underlying condition.",
+      "Failing to consider clinically important alternative diagnoses."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation.",
+      "Prematurely discharging or reassuring the patient before appropriate assessment.",
+      "Starting treatment without considering contraindications, interactions, or organ function.",
+      "Ignoring critical warning signs: Haemoptysis with hypoxaemia."
+    ],
+    "management_principles": [
+      "Treat pulmonary-renal syndrome as an emergency with hospital admission and multidisciplinary input.",
+      "Confirm the syndrome with urinalysis, renal function, ANCA testing, imaging, and tissue biopsy when safe.",
+      "Use remission-induction immunosuppression under specialist guidance and provide infection prophylaxis and monitoring."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 EULAR Recommendations for ANCA-Associated Vasculitis",
+        "url": "https://ard.bmj.com/content/83/1/30"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "49M presents with 4-month classic pulmonary-renal syndrome: destructive upper airway disease (bloody nasal crusts, saddle nose), lower tract haemoptysis, constitutional decline, and acute glomerulonephritis.",
+    "objective": "Perform targeted multidisciplinary physical examination. Upper airway/ENT exam: inspect nasal septum -> demonstrates septal perforation and saddle-nose deformity (cartilage collapse), plus bloody mucosal crusting. Auscultation: scattered crackles and wheezes over bilateral lung fields. Dipstick urinalysis: 3+ protein and 3+ blood. Urine microscopy: active nephritic sediment confirming Red Blood Cell Casts and dysmorphic erythrocytes (indicates acute rapidly progressive glomerulonephritis). Bloods: serum creatinine rapidly rising (e.g., 280 umol/L confirming acute kidney injury), FBC (normocytic anaemia, leukocytosis), CRP >120. CRITICAL AUTOANTIBODY SEROLOGY: check ANCA (Anti-Neutrophil Cytoplasmic Antibodies) -> strongly positive c-ANCA (cytoplasmic pattern) with high titre anti-PR3 (Proteinase-3 antibodies >100 IU/mL; pathognomonic for GPA). Check anti-GBM antibodies (negative ruling out Goodpasture's). High-Resolution CT (HRCT) Chest: reveals multiple bilateral lung nodules of varying sizes, many exhibiting central cavitation with thick walls, plus ground-glass opacities indicating diffuse alveolar haemorrhage. Urgent Renal Biopsy: demonstrates Pauci-Immune Crescentric Glomerulonephritis (glomerular crescents without immune complex deposition on immunofluorescence).",
+    "assessment": "Granulomatosis with Polyangiitis (GPA -> formerly Wegener's Granulomatosis; ANCA-associated small-vessel vasculitis presenting as severe pulmonary-renal syndrome). DDx: Microscopic Polyangiitis (MPA -> p-ANCA / anti-MPO positive, lacks destructive upper airway/granulomatous saddle-nose lesions), Eosinophilic Granulomatosis with Polyangiitis (EGPA / Churg-Strauss -> shows asthma and severe eosinophilia), Goodpasture's Syndrome (Anti-GBM disease -> linear IgG on renal biopsy without upper airway crusting), systemic lupus erythematosus.",
+    "plan": "This pulmonary-renal presentation requires immediate hospital admission and urgent rheumatology, nephrology, and respiratory input. Assess gas exchange, haemodynamic status, renal function, urinalysis, infection, ANCA and anti-GBM serology, imaging, and obtain tissue diagnosis when safe. The specialist team may initiate remission-induction immunosuppression after evaluating infection and contraindications; critical-care and renal-replacement support may be needed for respiratory failure or severe acute kidney injury."
+  },
+  "learning_objectives": [
+    "Identify the classical pulmonary-renal syndrome triad of Granulomatosis with Polyangiitis: upper airway destruction, nodular/cavitating lung lesions, and crescentric glomerulonephritis",
+    "Interpret c-ANCA with anti-PR3 specificity and pauci-immune crescentic renal biopsy as supporting GPA in the clinical context",
+    "Differentiate GPA from Goodpasture's syndrome and Microscopic Polyangiitis based on upper airway cartilage necrosis and ANCA targets",
+    "Recognize the need for urgent specialist-directed remission induction after infection and diagnostic assessment"
+  ],
+  "teaching": {
+    "diagnosis": "Granulomatosis with Polyangiitis",
+    "one_liner": "ANCA-associated small-vessel vasculitis causing destructive upper-airway disease, pulmonary haemorrhage, and glomerulonephritis.",
+    "differentials": [
+      "Microscopic polyangiitis",
+      "Anti-GBM disease",
+      "Eosinophilic granulomatosis with polyangiitis"
+    ],
+    "red_flags": [
+      "Haemoptysis with hypoxaemia",
+      "Rapidly worsening kidney function or oliguria"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sinonasal disease and saddle-nose deformity",
+        "say": "Have you had ongoing sinus congestion, nosebleeds, or noticed the shape of your nose changing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sinus",
+          "saddle-nose",
+          "crusting",
+          "nasal",
+          "ENT"
+        ]
+      },
+      {
+        "objective": "Pulmonary-renal involvement: haemoptysis and haematuria",
+        "say": "Have you noticed blood in your urine or ankle swelling along with the bloody phlegm?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "haematuria",
+          "haemoptysis",
+          "renal",
+          "swelling",
+          "glomerulonephritis"
+        ]
+      },
+      {
+        "objective": "Constitutional symptoms and antibiotic non-response",
+        "say": "Have you had fevers, night sweats, or weight loss, and did the antibiotics you were given help at all?",
+        "domains": [
+          "associated_symptoms",
+          "aggravating"
+        ],
+        "keywords": [
+          "fever",
+          "night sweats",
+          "weight loss",
+          "antibiotics",
+          "unresponsive"
+        ]
+      },
+      {
+        "objective": "Ear, joint, and skin involvement screen",
+        "say": "Have you had ear pain, joint aches, or any skin rashes recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "otitis",
+          "joint pain",
+          "arthralgia",
+          "rash",
+          "vasculitis"
+        ]
+      },
+      {
+        "objective": "ANCA serology and vasculitis workup",
+        "say": "We'll need blood tests to check for a specific antibody linked to this kind of vasculitis.",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ANCA",
+          "vasculitis",
+          "PR3",
+          "serology",
+          "biopsy"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "consult_unclear_question",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Consult / referral",
+  "urgency": "semi-urgent",
+  "difficulty": "intermediate",
+  "eval_template": "consult_referral",
+  "patient_name": "Neurology consult — define the question",
+  "chief_complaint": "Respond when the consultant asks, 'What exactly do you want from us?'",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Neurology consult: define the question",
+    "task": "Consult / referral",
+    "urgency": "semi-urgent",
+    "patient": "42-year-old woman",
+    "location": "Emergency department",
+    "situation": "Two episodes of transient right-arm weakness and aphasia, each lasting 10 minutes; she is now neurologically normal.",
+    "background": ["Symptoms were focal and transient.", "Aspirin has already been given."],
+    "current_status": ["No current neurologic deficit."],
+    "key_data": ["CT head shows no hemorrhage.", "Glucose is normal."],
+    "treatments": ["Initial CT, glucose check, and aspirin have been completed."],
+    "your_request": "Ask for urgent TIA assessment and advice on vascular imaging and disposition.",
+    "must_include": ["One-sentence problem representation.", "Resolved deficits and relevant tests.", "A specific question instead of 'please review,' plus urgency and the next step."]
+  },
+  "kickoff_text": "Neurology. Who are you calling about, and what exactly would you like us to do?",
+  "persona_override": "You are Dr. Lewis, a busy neurology registrar. The patient is a 42-year-old woman with two episodes of transient right-arm weakness and aphasia lasting ten minutes, now neurologically normal. CT head shows no hemorrhage; glucose is normal; aspirin has been given. If the learner merely says 'for review' or tells a long story, ask, 'What is your actual consult question?' A satisfactory ask is urgent TIA assessment and advice on further vascular imaging and disposition. Ask one follow-up about current deficits and one about imaging. Confirm the agreed next step only after a specific question is stated.",
+  "learning_objectives": [
+    "give a one-sentence problem representation",
+    "state that symptoms have resolved and report relevant initial tests",
+    "formulate a specific consult question rather than asking vaguely for review",
+    "confirm urgency and the agreed next step"
+  ],
+  "suggested_questions": [
+    "My specific question is whether she needs urgent inpatient TIA work-up and vascular imaging.",
+    "She is currently neurologically normal, and CT shows no hemorrhage.",
+    "Would you like her kept in the emergency department until you review her?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Diagnosis-focused neurology consult for suspected transient ischemic attack",
+    "core_concepts": ["A useful consult request states the working problem and the decision for which specialist input is needed.", "Resolved focal neurologic symptoms still require urgent assessment because early stroke risk may remain substantial."],
+    "diagnostic_clues": ["Transient unilateral weakness and aphasia are focal neurologic symptoms.", "A normal examination after symptom resolution does not by itself make the event low risk."],
+    "common_misconceptions": ["The phrase 'for neurology review' supplies a clinical question.", "Resolved symptoms mean no urgent work-up is needed."],
+    "dangerous_errors": ["Omitting the focal nature, duration, recurrence, or current neurologic status.", "Failing to clarify urgency, disposition, and the requested specialist decision."],
+    "management_principles": ["Communicate the exact transient deficit, timing, current baseline, initial imaging, and treatment.", "Use a specific question about urgent assessment, further investigation, and safe disposition."],
+    "boundaries_and_exceptions": ["Imaging, antithrombotic treatment, admission, and rapid-clinic pathways vary with risk, contraindications, resources, and local stroke systems."],
+    "source_refs": [{"title": "AHRQ TeamSTEPPS Diagnosis-Focused Referral", "url": "https://www.ahrq.gov/sites/default/files/wysiwyg/teamstepps-program/dx-improvement/module3-presenters-notes.pdf"}, {"title": "AHA Scientific Statement on TIA in the Emergency Department", "url": "https://professional.heart.org/en/science-news/diagnosis-workup-risk-reduction-of-transient-ischemic-attack-in-the-emergency-department-setting"}]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "endo_006",
+  "system": "endocrinology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Foster",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "severe dizziness, weakness, nausea, and hyperpigmentation of skin for 3 weeks",
+  "hpi_details": "42M presents with 3-week worsening fatigue, profound orthostatic dizziness, anorexia, weight loss, and darkening of skin over knuckles and buccal mucosa. Arrives in emergency department feeling faint after mild gastroenteritis.",
+  "ideas": "thinks his blood pressure is dropping dangerously low",
+  "concerns": "worried because he fainted twice at home today",
+  "expectations": "wants IV fluids and stabilization immediately",
+  "pmh": "Hypothyroidism (Hashimoto's), Vitiligo",
+  "medications": "Levothyroxine 100 mcg daily",
+  "social_hx": "Software engineer, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_adrenal_crisis_labs",
+      "title": "STAT adrenal-crisis laboratory results",
+      "order_terms": ["blood tests", "blood work", "electrolytes", "metabolic panel", "glucose", "urea", "renal function", "cortisol", "adrenal crisis labs"],
+      "availability_message": "The STAT adrenal-crisis laboratory results are now available.",
+      "results": [
+        {"id":"sodium","test":"Serum sodium","value":"126","unit":"mEq/L","reference_range":"135-145","flag":"low","specimen":"Blood","collected_at":"Before hydrocortisone"},
+        {"id":"potassium","test":"Serum potassium","value":"5.8","unit":"mEq/L","reference_range":"3.5-5.0","flag":"critical","specimen":"Blood","collected_at":"Before hydrocortisone"},
+        {"id":"glucose","test":"Serum glucose","value":"62","unit":"mg/dL","reference_range":"70-140","flag":"low","specimen":"Blood","collected_at":"Before hydrocortisone"},
+        {"id":"urea","test":"Blood urea nitrogen","value":"45","unit":"mg/dL","reference_range":"7-20","flag":"high","specimen":"Blood","collected_at":"Before hydrocortisone"},
+        {"id":"random_cortisol","test":"Random serum cortisol","value":"2.1","unit":"ug/dL","reference_range":"Context dependent; <3 strongly concerning in acute illness","flag":"critical","specimen":"Blood","collected_at":"Before hydrocortisone","note":"Treatment should not wait for this result when adrenal crisis is suspected"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Primary Adrenal Insufficiency (Addisonian Crisis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Adrenal Insufficiency (Addisonian Crisis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Immediate IV Hydrocortisone 100 mg bolus, followed by 50 mg IV q6h, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe dizziness, weakness, nausea, and hyperpigmentation of skin for 3 weeks",
+      "Key HPI features: 42M presents with 3-week worsening fatigue, profound orthostatic dizziness, anorexia, weight loss, and darkening of skin over knuckles and buccal mucosa. Arrives in emergency department feeling faint after mild gastroenteritis.",
+      "Objective/Exam findings: Vitals: HR 112, BP 84/50 (orthostatic drop to 68/40). Hyperpigmented palmar creases and gingival mucosa. Bloods: Na 126 mEq/L, K+ 5.8 mEq/L, Glucose 62 mg/dL, Urea 45 mg/dL. Random serum cortisol < 3 ug/dL with elevated ACTH (>500 pg/mL).",
+      "Relevant background/PMH: Hypothyroidism (Hashimoto's), Vitiligo",
+      "Current medications: Levothyroxine 100 mcg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Adrenal Insufficiency (Addisonian Crisis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Sepsis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fainting with recent illness in a known autoimmune patient — treat as Addisonian crisis and give steroids immediately."
+    ],
+    "management_principles": [
+      "Immediate IV Hydrocortisone 100 mg bolus, followed by 50 mg IV q6h",
+      "Aggressive IV normal saline resuscitation with 5% dextrose for hypoglycemia",
+      "Once stable, transition to maintenance oral hydrocortisone and fludrocortisone"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Primary Adrenal Insufficiency",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/adrenal-insufficiency"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42M with polyglandular autoimmune tendencies presenting with subacute fatigue, orthostatic syncope, anorexia, and diffuse hyperpigmentation, worsening acutely into adrenal crisis.",
+    "objective": "Vitals: HR 112, BP 84/50 (orthostatic drop to 68/40). Hyperpigmented palmar creases and gingival mucosa. Bloods: Na 126 mEq/L, K+ 5.8 mEq/L, Glucose 62 mg/dL, Urea 45 mg/dL. Random serum cortisol < 3 ug/dL with elevated ACTH (>500 pg/mL).",
+    "assessment": "Primary Adrenal Insufficiency (Addison's Disease) presenting in acute Addisonian Crisis.",
+    "plan": "Immediate IV Hydrocortisone 100 mg bolus, followed by 50 mg IV q6h. Aggressive IV normal saline resuscitation with 5% dextrose for hypoglycemia. Once stable, transition to maintenance oral hydrocortisone and fludrocortisone. Educate on steroid sick-day rules and emergency alert bracelet."
+  },
+  "learning_objectives": [
+    "Recognize clinical and laboratory triad of acute Addisonian crisis (hyponatremia, hyperkalemia, hypoglycemia)",
+    "Understand the pathophysiology of ACTH-mediated mucosal/skin hyperpigmentation",
+    "Implement emergent life-saving IV glucocorticoid and fluid therapy before lab confirmation",
+    "Educate patient thoroughly on lifelong glucocorticoid dosing and 'sick-day rules'"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Adrenal Insufficiency (Addisonian Crisis)",
+    "one_liner": "Autoimmune destruction of the adrenal glands causes chronic cortisol deficiency, presenting with fatigue, weight loss, and dark hyperpigmentation of the skin — and can decompensate into a life-threatening crisis during minor illness.",
+    "differentials": [
+      "Sepsis",
+      "Hypovolemic shock from another cause",
+      "Secondary adrenal insufficiency (no hyperpigmentation)"
+    ],
+    "red_flags": [
+      "Fainting with recent illness in a known autoimmune patient — treat as Addisonian crisis and give steroids immediately"
+    ],
+    "must_ask": [
+      {
+        "objective": "Skin darkening",
+        "say": "Have you noticed your skin getting darker, especially your knuckles or gums?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "hyperpigmentation",
+          "knuckles"
+        ]
+      },
+      {
+        "objective": "Orthostatic symptoms",
+        "say": "Do you feel dizzy or faint when you stand up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "orthostatic",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Precipitating illness",
+        "say": "Did you have any recent illness, like a stomach bug?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "gastroenteritis"
+        ]
+      },
+      {
+        "objective": "Background autoimmune conditions",
+        "say": "Do you have any other autoimmune conditions, like thyroid disease or vitiligo?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hypothyroidism",
+          "vitiligo"
+        ]
+      },
+      {
+        "objective": "Weight loss and appetite",
+        "say": "Have you lost weight or your appetite?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

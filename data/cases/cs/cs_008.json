@@ -1,0 +1,162 @@
+{
+  "id": "cs_008",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Harris",
+  "age": 46,
+  "gender": "male",
+  "chief_complaint": "severe crushing chest pain after violent retching and vomiting following heavy alcohol consumption",
+  "hpi_details": "46M brought by EMS after waking with severe nausea after drinking 1.5 liters of whiskey. Experienced prolonged, violent retching and vomiting, followed suddenly by excruciating, burning left-sided chest and upper abdominal pain radiating to his left shoulder and back. Reports feeling faint and diaphoretic.",
+  "ideas": "thinks he had a heart attack or tore his stomach from vomiting so hard",
+  "concerns": "worried because every breath causes agonizing stabbing chest pain",
+  "expectations": "wants strong pain relief and immediate diagnosis",
+  "pmh": "Alcohol use disorder, Gastroesophageal reflux disease",
+  "medications": "Omeprazole 20mg daily",
+  "social_hx": "Restaurant manager, heavy alcohol consumer",
+  "investigation_events": [
+    {
+      "id": "boerhaave_contrast_ct",
+      "title": "Contrast CT of the chest",
+      "order_terms": ["CT chest", "chest CT", "contrast CT", "esophagram", "oesophagram"],
+      "availability_message": "The contrast chest CT report is now available.",
+      "results": [
+        {
+          "id": "ct_distal_esophageal_rupture",
+          "test": "CT chest with water-soluble oral contrast",
+          "value": "Full-thickness left posterolateral distal oesophageal rupture with contrast leak into the left pleural cavity, pneumomediastinum, mediastinitis, and large hydropneumothorax",
+          "unit": "",
+          "reference_range": "No oesophageal leak",
+          "flag": "critical",
+          "collected_at": "Emergency imaging"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Boerhaave Syndrome (Spontaneous Esophageal Rupture) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Boerhaave Syndrome (Spontaneous Esophageal Rupture) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT cardiothoracic/thoracic surgical emergency: immediate transfer to operating room for left posterolateral thoracotomy, primary repair of esophageal tear with pleural/intercostal muscle flap buttress, thorough wide debridement and decortication of mediastinum and pleural space, and placement of large-bore chest drainage tubes, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe crushing chest pain after violent retching and vomiting following heavy alcohol consumption",
+      "Key HPI features: 46M brought by EMS after waking with severe nausea after drinking 1.5 liters of whiskey. Experienced prolonged, violent retching and vomiting, followed suddenly by excruciating, burning left-sided chest and upper abdominal pain radiating to his left shoulder and back. Reports feeling faint and diaphoretic.",
+      "Objective/Exam findings: Vitals: HR 124, BP 90/58, RR 26, Temp 38.3C. Palpable crepitus (subcutaneous emphysema) over left lower anterior chest wall and neck (Hamman crunch audible on cardiac auscultation during systole). Chest X-ray and CT chest with water-soluble oral contrast (Gastrografin) demonstrate a full-thickness rupture of the left posterolateral distal esophagus (Boerhaave syndrome) with leakage of contrast into the left pleural cavity, pneumomediastinum, and a large left hydropneumothorax with mediastinitis.",
+      "Relevant background/PMH: Alcohol use disorder, Gastroesophageal reflux disease",
+      "Current medications: Omeprazole 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Boerhaave Syndrome (Spontaneous Esophageal Rupture).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain immediately following forceful vomiting/retching — the classic trigger for this diagnosis."
+    ],
+    "management_principles": [
+      "Urgent thoracic surgical emergency: operative or endoscopic management is selected according to stability, time since perforation, contamination, and local expertise; provide source control and wide drainage when indicated",
+      "Start broad-spectrum IV antibacterial therapy promptly; add antifungal therapy selectively based on risk factors, cultures, and local guidance",
+      "Strict NPO with feeding jejunostomy placement"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "46M presenting with Mackler triad of Boerhaave syndrome: heavy binge drinking, violent retching/vomiting, and sudden severe thoracic pain with subcutaneous emphysema.",
+    "objective": "Vitals: HR 124, BP 90/58, RR 26, Temp 38.3C. Palpable crepitus (subcutaneous emphysema) over left lower anterior chest wall and neck (Hamman crunch audible on cardiac auscultation during systole). Chest X-ray and CT chest with water-soluble oral contrast (Gastrografin) demonstrate a full-thickness rupture of the left posterolateral distal esophagus (Boerhaave syndrome) with leakage of contrast into the left pleural cavity, pneumomediastinum, and a large left hydropneumothorax with mediastinitis.",
+    "assessment": "Boerhaave Syndrome (Spontaneous Transmural Esophageal Perforation) with acute bacterial and chemical mediastinitis.",
+    "plan": "Urgent thoracic surgical emergency: operative or endoscopic management is selected according to stability, time since perforation, contamination, and local expertise; provide source control and wide drainage when indicated. Start broad-spectrum IV antibacterial therapy promptly; add antifungal therapy selectively based on risk factors, cultures, and local guidance. Keep the patient strictly NPO and establish enteral access when appropriate."
+  },
+  "learning_objectives": [
+    "Recognize Mackler's Triad of Boerhaave Syndrome (vomiting, lower thoracic pain, subcutaneous emphysema) and Hamman's crunch",
+    "Understand why water-soluble contrast esophagography or CT is generally used first, with barium contrast considered when needed after a negative initial study because it can improve leak detection",
+    "Explain the critical relationship between time to surgical intervention (<24 hours vs >24 hours) and mortality in esophageal perforation",
+    "Outline operative principles of primary esophageal repair, tissue buttressing, and wide drainage of contaminated mediastinal spaces"
+  ],
+  "teaching": {
+    "diagnosis": "Boerhaave Syndrome (Spontaneous Esophageal Rupture)",
+    "one_liner": "Forceful vomiting causes a full-thickness tear of the esophagus, spilling gastric contents into the mediastinum and causing severe chest and back pain with rapidly developing infection — a surgical emergency.",
+    "differentials": [
+      "Myocardial infarction",
+      "Mallory-Weiss tear (mucosal only, less severe)",
+      "Peptic ulcer perforation"
+    ],
+    "red_flags": [
+      "Pain immediately following forceful vomiting/retching — the classic trigger for this diagnosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sequence of events",
+        "say": "Did the chest pain start right after the vomiting and retching?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "after vomiting",
+          "retching"
+        ]
+      },
+      {
+        "objective": "Alcohol history",
+        "say": "How much did you drink before this happened?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "whiskey",
+          "alcohol"
+        ]
+      },
+      {
+        "objective": "Pain character and radiation",
+        "say": "Where is the pain, and does it spread to your shoulder or back?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "burning",
+          "shoulder",
+          "back"
+        ]
+      },
+      {
+        "objective": "Breathing worsening pain",
+        "say": "Does every breath make the pain worse?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "breath",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Feeling faint",
+        "say": "Do you feel faint or sweaty?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "diaphoretic"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "fm_027",
+  "system": "fm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rodriguez",
+  "age": 23,
+  "gender": "male",
+  "chief_complaint": "elevated LDL 165, ASCVD risk 11.5% in smoker",
+  "hpi_details": "A 23-year-old male presents to review screening labs showing an LDL of 165 mg/dL and a calculated 10-year ASCVD risk of 11.5%. He feels entirely well and denies chest pain, exertional dyspnea, or fatigue. He has smoked about a pack a day for the past 5 years.",
+  "ideas": "thinks it might be related to high cholesterol",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Current smoker (about 1 pack/day for 5 years), social drinker",
+  "available_results": [
+    {
+      "id": "ldl_cholesterol",
+      "test": "LDL cholesterol",
+      "value": "165",
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "flag": "high",
+      "specimen": "Blood",
+      "note": "The reported 10-year ASCVD estimate is not valid for a 23-year-old; use lifetime risk and risk enhancers"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Dyslipidemia (statin candidate) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Dyslipidemia (statin candidate) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes a shared decision-making discussion about starting a statin alongside smoking cessation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: elevated LDL 165, ASCVD risk 11.5% in smoker",
+      "Key HPI features: A 23-year-old male presents to review screening labs showing an LDL of 165 mg/dL and a calculated 10-year ASCVD risk of 11.5%. He feels entirely well and denies chest pain or exertional dyspnea. He has smoked about a pack a day for the past 5 years.",
+      "Objective/Exam findings: Vital signs normal; no xanthomas, xanthelasma, or arcus corneae on exam. Lipid panel: LDL 165 mg/dL.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Dyslipidemia (statin candidate).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Familial hypercholesterolemia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain or exertional dyspnea — needs urgent cardiac evaluation, not just a risk-score calculation."
+    ],
+    "management_principles": [
+      "Confirm the lipid profile, assess family history and secondary causes, pursue smoking cessation, and use lifetime risk rather than a 10-year ASCVD calculator that is not validated at age 23",
+      "Refer to a lipid specialist if LDL remains >190 mg/dL despite therapy, familial hypercholesterolemia is suspected, or chest pain/exertional symptoms develop",
+      "Counsel patient on smoking cessation, statin adherence and potential side effects, and the importance of family lipid screening given the young age of presentation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "23-year-old male presents to review screening labs showing LDL 165 mg/dL and a calculated 10-year ASCVD risk of 11.5%. Feels well, denies chest pain or exertional dyspnea. Smokes about a pack a day for the past 5 years.",
+    "objective": "Vital signs normal. No xanthomas, xanthelasma, or arcus corneae on exam. Lipid panel: LDL 165 mg/dL.",
+    "assessment": "Dyslipidemia with LDL 165 mg/dL; a reported 10-year ASCVD risk of 11.5% is not valid for a 23-year-old because standard calculators are intended for older adults.",
+    "plan": "Confirm the lipid profile, assess family history and secondary causes, pursue smoking cessation, and use lifetime risk rather than a 10-year ASCVD calculator that is not validated at age 23. Discuss statin therapy based on LDL level, risk enhancers, possible familial hypercholesterolemia, and shared decision-making."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Dyslipidemia statin check",
+    "Select appropriate diagnostic workup for Dyslipidemia statin check",
+    "Implement evidence-based management plan: Shared decision start Atorvastatin 20mg, stop smoking"
+  ],
+  "teaching": {
+    "diagnosis": "Dyslipidemia (statin candidate)",
+    "one_liner": "Elevated LDL with an elevated ASCVD risk score in a smoker, guiding a shared decision about starting a statin.",
+    "differentials": [
+      "Familial hypercholesterolemia"
+    ],
+    "red_flags": [
+      "Chest pain or exertional dyspnea — needs urgent cardiac evaluation, not just a risk-score calculation",
+      "LDL >190 mg/dL — consider familial hypercholesterolemia, which needs more aggressive treatment and family screening",
+      "New muscle pain or weakness after starting a statin — consider statin myopathy or rhabdomyolysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Smoking",
+        "say": "How much do you smoke?",
+        "domains": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "What is your typical diet like?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Family history of heart disease?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Symptoms",
+        "say": "Any chest pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "Any concerns about starting a statin?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,207 @@
+{
+  "id": "gs_007",
+  "system": "general_surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Martin",
+  "age": 66,
+  "gender": "female",
+  "chief_complaint": "high fever, right upper abdominal pain, yellowing of skin, confusion, and low blood pressure",
+  "hpi_details": "66F presenting with gallstone obstruction causing Charcot's triad plus hypotension and altered mental status (Reynolds' pentad). Requires urgent fluid resuscitation, IV antibiotics, and ERCP.",
+  "ideas": "thinks this is related to acute ascending cholangitis reynolds pentad",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "investigation_events": [
+    {
+      "id": "stat_ascending_cholangitis_workup",
+      "title": "STAT ascending cholangitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "liver function tests",
+        "lfts",
+        "bilirubin",
+        "lactate",
+        "right upper quadrant ultrasound",
+        "ruq ultrasound",
+        "abdominal ultrasound"
+      ],
+      "availability_message": "The STAT sepsis, liver, and biliary ultrasound results are now available; fluids, antibiotics, and urgent biliary decompression should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "21.4",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "8.6",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "alkaline_phosphatase",
+          "test": "Alkaline phosphatase",
+          "value": "512",
+          "unit": "U/L",
+          "reference_range": "44-147",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "lactate",
+          "test": "Serum lactate",
+          "value": "4.8",
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "biliary_ultrasound",
+          "test": "Right-upper-quadrant ultrasound",
+          "value": "Common bile duct dilated to 13 mm with an obstructing distal duct stone and intrahepatic biliary dilatation",
+          "flag": "critical",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Ascending Cholangitis (Reynolds' Pentad) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Ascending Cholangitis (Reynolds' Pentad) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent sepsis resuscitation with IV fluids and broad-spectrum antibiotics, followed by emergent biliary decompression (ERCP, or percutaneous/surgical drainage if ERCP is unavailable), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever, right upper abdominal pain, yellowing of skin, confusion, and low blood pressure",
+      "Key HPI features: 66F presenting with gallstone obstruction causing Charcot's triad plus hypotension and altered mental status (Reynolds' pentad). Requires urgent fluid resuscitation, IV antibiotics, and ERCP.",
+      "Objective/Exam findings: Fever, hypotension, and altered mental status (Reynolds' pentad) with jaundice and RUQ tenderness. Labs show leukocytosis and elevated bilirubin/alkaline phosphatase. Ultrasound or MRCP demonstrates a dilated common bile duct with choledocholithiasis.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Ascending Cholangitis (Reynolds' Pentad).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute cholecystitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion and low blood pressure alongside jaundice and fever — Reynolds' pentad, needs urgent decompression."
+    ],
+    "management_principles": [
+      "Initiate aggressive IV fluid resuscitation and broad-spectrum IV antibiotics covering enteric Gram-negatives and anaerobes immediately (sepsis bundle)",
+      "Closely monitor hemodynamics and mental status; escalate to ICU-level care if shock or worsening altered mental status persists",
+      "Obtain emergent biliary decompression via ERCP with sphincterotomy and stone extraction within 24 hours (or percutaneous transhepatic drainage/surgical decompression if ERCP is unavailable or fails)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Ascending Cholangitis Reynolds Pentad: high fever, right upper abdominal pain, yellowing of skin, confusion, and low blood pressure. 66F presenting with gallstone obstruction causing Charcot's triad plus hypotension and altered mental status (Reynolds' pentad). Requires urgent fluid resuscitation, IV antibiotics, and ERCP.",
+    "objective": "Fever, hypotension, and altered mental status (Reynolds' pentad) with jaundice and RUQ tenderness. Labs show leukocytosis and elevated bilirubin/alkaline phosphatase. Ultrasound or MRCP demonstrates a dilated common bile duct with choledocholithiasis.",
+    "assessment": "Acute Ascending Cholangitis with Reynolds' pentad (fever, jaundice, RUQ pain, hypotension, altered mental status) - a biliary sepsis emergency.",
+    "plan": "1. Aggressive IV fluid resuscitation and broad-spectrum IV antibiotics (sepsis bundle). 2. Close hemodynamic and mental status monitoring; escalate to ICU-level care if needed. 3. Emergent ERCP with sphincterotomy and stone extraction within 24 hours (or percutaneous/surgical decompression if ERCP is unavailable or fails)."
+  },
+  "learning_objectives": [
+    "Distinguish Charcot's triad from the more severe Reynolds' pentad in ascending cholangitis",
+    "Prioritize sepsis resuscitation (IV fluids, broad-spectrum antibiotics) before definitive biliary drainage",
+    "Recognize the need for emergent biliary decompression via ERCP as the definitive treatment",
+    "Identify hemodynamic and mental status red flags that mandate ICU-level escalation"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Ascending Cholangitis (Reynolds' Pentad)",
+    "one_liner": "Bacterial infection of an obstructed bile duct causing Charcot's triad (fever, jaundice, RUQ pain), and when shock and confusion are added, the more dangerous Reynolds' pentad.",
+    "differentials": [
+      "Acute cholecystitis",
+      "Biliary pancreatitis",
+      "Hepatic abscess"
+    ],
+    "red_flags": [
+      "Confusion and low blood pressure alongside jaundice and fever — Reynolds' pentad, needs urgent decompression"
+    ],
+    "must_ask": [
+      {
+        "objective": "The classic triad",
+        "say": "Have you had fever, yellowing of your skin or eyes, and pain under your right ribs?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "jaundice",
+          "yellow",
+          "pain"
+        ]
+      },
+      {
+        "objective": "Mental status change",
+        "say": "Have you felt confused or less alert than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "altered"
+        ]
+      },
+      {
+        "objective": "Onset and progression",
+        "say": "When did the pain and fever start, and has it been getting worse?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Prior gallstone history",
+        "say": "Have you ever been told you have gallstones?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "gallstones"
+        ]
+      },
+      {
+        "objective": "Urine and stool color",
+        "say": "Has your urine become dark or your stool pale?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark urine",
+          "pale stool"
+        ]
+      }
+    ]
+  }
+}

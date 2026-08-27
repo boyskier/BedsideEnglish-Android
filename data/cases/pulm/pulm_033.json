@@ -1,0 +1,119 @@
+{
+  "id": "pulm_033",
+  "system": "pulm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Jones",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "daytime fatigue, loud snoring, and morning headache",
+  "hpi_details": "A 41-year-old male presents to the clinic with daytime fatigue, loud snoring, and morning headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to osa",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Obstructive Sleep Apnea evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Obstructive Sleep Apnea is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Diagnosis and treatment selection require sleep testing and individualized assessment; positive-airway-pressure therapy is prescribed when indicated and should be fitted and monitored by a clinician.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: daytime fatigue, loud snoring, and morning headache",
+      "Key HPI features: A 41-year-old male presents to the clinic with daytime fatigue, loud snoring, and morning headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Obstructive Sleep Apnea.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Obstructive Sleep Apnea.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Community-acquired pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Arrange sleep testing and assess cardiometabolic comorbidities and sedating substances.",
+      "Advise patients with unsafe sleepiness to avoid driving or hazardous work until evaluated.",
+      "Use CPAP and weight-management support when clinically indicated and clinician-directed."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": []
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: daytime fatigue, loud snoring, and morning headache\n\nA 41-year-old male presents to the clinic with daytime fatigue, loud snoring, and morning headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Obstructive Sleep Apnea.",
+    "assessment": "Condition highly suspicious for Obstructive Sleep Apnea.",
+    "plan": "Arrange sleep testing and evaluate comorbidities, alcohol, and sedating medicines. Advise avoiding driving or hazardous work if sleepy. Use CPAP and weight-management support only when indicated and clinician-directed."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Obstructive Sleep Apnea",
+    "Select appropriate diagnostic workup for Obstructive Sleep Apnea",
+    "Describe sleep-testing referral, safety counseling, and clinician-directed OSA treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Obstructive Sleep Apnea",
+    "one_liner": "Recurrent upper-airway collapse during sleep causes loud snoring, witnessed pauses, unrefreshing sleep, and daytime sleepiness; confirm with sleep testing.",
+    "differentials": [
+      "Insufficient sleep",
+      "Central sleep apnea",
+      "Hypothyroidism",
+      "Depression or medication-related sedation"
+    ],
+    "red_flags": [
+      "Drowsy driving or near-miss accidents",
+      "Severe daytime sleepiness affecting safety",
+      "Observed prolonged apneas with cardiopulmonary symptoms"
+    ],
+    "must_ask": [
+      {
+        "objective": "Snoring and witnessed apneas",
+        "say": "Has anyone noticed loud snoring, pauses in breathing, or gasping while you sleep?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "snoring",
+          "apnea",
+          "gasping"
+        ]
+      },
+      {
+        "objective": "Daytime sleepiness",
+        "say": "Do you doze off unintentionally during the day or while driving?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sleepy",
+          "driving",
+          "doze"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Have you gained weight recently, and do you drink alcohol or take sedating medicines near bedtime?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "weight",
+          "alcohol",
+          "sedating"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "Consult and Referral Request",
+  "description": "Evaluates a spoken request for specialty input using a concise clinical summary and a clear ask.",
+  "metrics": {
+    "grammar": { "label": "Clear Clinical English", "weight": 0.15 },
+    "medical_accuracy": { "label": "Accurate Relevant Details", "weight": 0.25 },
+    "clinical_reasoning": { "label": "Reason for Consult", "weight": 0.25 },
+    "professionalism": { "label": "Professional Collaboration", "weight": 0.2 },
+    "fluency": { "label": "Concise Delivery", "weight": 0.15 }
+  },
+  "checklist": [
+    { "item": "identified self, location, patient, and urgency", "required": true },
+    { "item": "gave a concise problem representation with only relevant background", "required": true },
+    { "item": "reported key objective findings and treatment already completed", "required": true },
+    { "item": "stated a specific clinical question or requested action", "required": true },
+    { "item": "confirmed timing, ownership, and the next step", "required": true }
+  ],
+  "reference_output_type": "spoken_consult_request"
+}

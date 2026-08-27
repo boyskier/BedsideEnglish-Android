@@ -1,0 +1,125 @@
+{
+  "id": "rheum_021",
+  "system": "rheumatology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Kwon",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "acute excruciating pain, redness, and swelling in the right big toe joint",
+  "hpi_details": "45M presents with sudden onset of severe, throbbing pain in his right first metatarsophalangeal joint that woke him up in the middle of the night. The joint is swollen, warm, and extremely red.",
+  "ideas": "thinks he stubbed his toe or has a bad infection",
+  "concerns": "worried about permanent joint damage",
+  "expectations": "wants immediate pain relief",
+  "pmh": "Hypertension, Hyperlipidemia",
+  "medications": "Hydrochlorothiazide 25mg daily, Atorvastatin 20mg daily",
+  "social_hx": "Chef, drinks beer, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Acute Gouty Arthritis (Podagra) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Gouty Arthritis (Podagra) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Gouty Arthritis (Podagra), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute excruciating pain, redness, and swelling in the right big toe joint",
+      "Key HPI features: 45M presents with sudden onset of severe, throbbing pain in his right first metatarsophalangeal joint that woke him up in the middle of the night. The joint is swollen, warm, and extremely red.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Gouty Arthritis (Podagra).",
+      "Relevant background/PMH: Hypertension, Hyperlipidemia",
+      "Current medications: Hydrochlorothiazide 25mg daily, Atorvastatin 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Gouty Arthritis (Podagra).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever — must rule out septic arthritis."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Acute Gouty Arthritis (Podagra)",
+      "Acute-flare treatment (an NSAID, colchicine, or glucocorticoid) must be selected by a clinician after checking renal, gastrointestinal, cardiovascular, drug-interaction, pregnancy, and infection risks.",
+      "Discuss alcohol/diet and, with the prescribing clinician, whether hydrochlorothiazide remains appropriate; do not change antihypertensives independently."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Gouty Arthritis (Podagra). acute excruciating pain, redness, and swelling in the right big toe joint. 45M presents with sudden onset of severe, throbbing pain in his right first metatarsophalangeal joint that woke him up in the middle of the night. The joint is swollen, warm, and extremely red.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Gouty Arthritis (Podagra).",
+    "assessment": "Clinical presentation highly suggestive of Acute Gouty Arthritis (Podagra).",
+    "plan": "Assess vital signs and examine for an effusion or cellulitis. If septic arthritis is plausible, arrange urgent arthrocentesis with synovial cell count, Gram stain, culture, and crystal analysis. A clinician should select flare therapy after renal, gastrointestinal, cardiovascular, interaction, and infection-risk review; do not self-start treatment or change blood-pressure medicines. Discuss lifestyle measures and follow-up for recurrent flares/urate-lowering therapy."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Gouty Arthritis (Podagra).",
+    "Formulate prioritized differential diagnosis for acute excruciating pain, redness, and swelling in the right big toe joint",
+    "Select appropriate laboratory and imaging studies for rheumatology",
+    "Implement evidence-based acute and long-term management strategies for Acute Gouty Arthritis (Podagra)."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Gouty Arthritis (Podagra)",
+    "one_liner": "Sudden deposition of uric acid crystals in the first metatarsophalangeal joint causing excruciating pain, redness, and swelling, often precipitated by diuretics like hydrochlorothiazide.",
+    "differentials": [
+      "Septic arthritis",
+      "Cellulitis",
+      "Trauma"
+    ],
+    "red_flags": [
+      "Fever — must rule out septic arthritis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset",
+        "say": "Did this wake you up suddenly at night?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Joint appearance",
+        "say": "How red, warm, and swollen is the toe?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking a water pill for your blood pressure?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "hydrochlorothiazide",
+          "diuretic"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Has this happened before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

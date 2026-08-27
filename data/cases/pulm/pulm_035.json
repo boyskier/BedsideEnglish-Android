@@ -1,0 +1,153 @@
+{
+  "id": "pulm_035",
+  "system": "pulm",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Johnson",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "shortness of breath and dullness to percussion at lung base",
+  "hpi_details": "A 47-year-old male presents to the clinic with shortness of breath and dullness to percussion at lung base. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to pleural_effusion",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Pleural Effusion evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pleural Effusion is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Confirm and characterize an effusion with imaging, then determine whether diagnostic or therapeutic thoracentesis is indicated based on size, cause, symptoms, and procedural risk.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: shortness of breath and dullness to percussion at lung base",
+      "Key HPI features: A 47-year-old male presents to the clinic with shortness of breath and dullness to percussion at lung base. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pleural Effusion.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pleural Effusion.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Community-acquired pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Assess oxygenation and obtain appropriate chest imaging while evaluating cardiac, infectious, malignant, thromboembolic, and other causes.",
+      "Perform image-guided thoracentesis and fluid analysis only when clinically indicated and by appropriately trained clinicians.",
+      "Escalate urgently for severe hypoxemia, respiratory distress, hemodynamic instability, or rapidly worsening chest pain or dyspnea."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": []
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of shortness of breath and dullness to percussion at lung base. HPI: pneumonia, heart failure, malignancy.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pleural Effusion.",
+    "assessment": "Condition highly suspicious for Pleural Effusion.",
+    "plan": "Assess oxygenation and obtain chest imaging while evaluating the cause. Arrange image-guided thoracentesis with fluid analysis only when clinically indicated and performed by trained clinicians. Seek emergency care for severe hypoxemia, respiratory distress, hemodynamic instability, or rapidly worsening symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pleural Effusion",
+    "Select appropriate diagnostic workup for Pleural Effusion",
+    "Describe imaging, cause-directed evaluation, and clinician-directed drainage for pleural effusion"
+  ],
+  "teaching": {
+    "diagnosis": "Pleural Effusion",
+    "one_liner": "Pulmonology case presenting with shortness of breath and dullness to percussion at lung base.",
+    "differentials": [
+      "Congestive heart failure",
+      "Parapneumonic effusion or empyema",
+      "Malignant pleural effusion"
+    ],
+    "red_flags": [
+      "Severe hypoxemia (SpO2 < 90%)",
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dyspnea onset and effusion-related symptoms",
+        "say": "When did the breathlessness start, and is it worse when lying flat or on one side?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "dyspnea",
+          "onset",
+          "positional",
+          "lying flat",
+          "one-sided"
+        ]
+      },
+      {
+        "objective": "Fever and infective symptoms suggesting parapneumonic effusion",
+        "say": "Have you had a fever, chills, or a productive cough recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "productive cough",
+          "parapneumonic",
+          "infection"
+        ]
+      },
+      {
+        "objective": "Heart failure symptoms: orthopnea, leg swelling, weight gain",
+        "say": "Have you had trouble breathing lying down, or noticed swelling in your legs?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "orthopnea",
+          "leg swelling",
+          "heart failure",
+          "weight gain",
+          "edema"
+        ]
+      },
+      {
+        "objective": "Malignancy risk factors and constitutional symptoms",
+        "say": "Have you had any unexplained weight loss, or a history of cancer, or do you smoke?",
+        "domains": [
+          "pmh",
+          "smoking"
+        ],
+        "keywords": [
+          "malignancy",
+          "weight loss",
+          "cancer history",
+          "smoking",
+          "constitutional"
+        ]
+      },
+      {
+        "objective": "Chest pain character to distinguish exudate causes",
+        "say": "Do you have any chest pain, and does it get worse when you breathe in?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "pleuritic",
+          "chest pain",
+          "exudate",
+          "transudate",
+          "breathing"
+        ]
+      }
+    ]
+  }
+}

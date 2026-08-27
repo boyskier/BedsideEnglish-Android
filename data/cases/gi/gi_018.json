@@ -1,0 +1,235 @@
+{
+  "id": "gi_018",
+  "system": "gastroenterology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Clark",
+  "age": 71,
+  "gender": "male",
+  "chief_complaint": "severe watery diarrhoea 8 times a day and lower abdominal cramping for 4 days",
+  "hpi_details": "4-day history of explosive, watery, foul-smelling diarrhoea occurring 8-10 times per 24 hours, including nocturnal episodes. Accompanied by lower abdominal cramping, low-grade fever, and generalized weakness. Discharged from hospital 10 days ago after completing a 7-day course of oral co-amoxiclav for community-acquired pneumonia.",
+  "ideas": "thinks he caught a hospital superbug while admitted for his chest infection",
+  "concerns": "worried about severe dehydration and kidney failure because his mouth is extremely dry",
+  "expectations": "wants IV fluids and specific antibiotic tablets to kill the bowel infection",
+  "pmh": "COPD, mild benign prostatic hyperplasia, recent pneumonia hospitalization",
+  "medications": "tamsulosin 400mcg OD, tiotropium inhaler OD, recently completed co-amoxiclav course",
+  "social_hx": "ex-smoker, lives with wife who has no GI symptoms, retired engineer",
+  "investigation_events": [
+    {
+      "id": "urgent_c_difficile_workup",
+      "title": "Urgent C. difficile and severity results",
+      "order_terms": [
+        "c difficile test",
+        "c diff test",
+        "stool toxin",
+        "toxin assay",
+        "gdh antigen",
+        "stool test",
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "renal function",
+        "creatinine"
+      ],
+      "availability_message": "The urgent C. difficile assay and severity laboratory results are now available; contact precautions and rehydration should not be delayed.",
+      "results": [
+        {
+          "id": "c_difficile_gdh",
+          "test": "C. difficile glutamate dehydrogenase antigen",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Unformed stool",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "c_difficile_toxin",
+          "test": "C. difficile toxin A/B enzyme immunoassay",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "critical",
+          "specimen": "Unformed stool",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "17.2",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "1.4",
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Clostridioides difficile Infection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Clostridioides difficile Infection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Immediate contact isolation precautions (soap and water hand hygiene essential as alcohol hand rubs do not kill spores), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe watery diarrhoea 8 times a day and lower abdominal cramping for 4 days",
+      "Key HPI features: 4-day history of explosive, watery, foul-smelling diarrhoea occurring 8-10 times per 24 hours, including nocturnal episodes. Accompanied by lower abdominal cramping, low-grade fever, and generalized weakness. Discharged from hospital 10 days ago after completing a 7-day course of oral co-amoxiclav for community-acquired pneumonia.",
+      "Objective/Exam findings: Check HR, BP (postural drop), skin turgor, mucous membranes. Abdominal exam: diffuse mild tenderness without peritonism. Stool test: urgent Clostridioides difficile toxin A/B enzyme immunoassay and glutamate dehydrogenase (GDH) antigen. Bloods: FBC (leukocytosis common), renal profile (acute kidney injury check).",
+      "Relevant background/PMH: COPD, mild benign prostatic hyperplasia, recent pneumonia hospitalization",
+      "Current medications: tamsulosin 400mcg OD, tiotropium inhaler OD, recently completed co-amoxiclav course"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Clostridioides difficile Infection.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Antibiotic-associated diarrhoea without colitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of dehydration (dry mouth, weakness) with high stool frequency — risk of severe colitis."
+    ],
+    "management_principles": [
+      "Immediate contact isolation precautions (soap and water hand hygiene essential as alcohol hand rubs do not kill spores)",
+      "Initiate oral vancomycin 125mg QDS or oral fidaxomicin 200mg BD for 10 days",
+      "Avoid anti-motility agents (loperamide) due to risk of toxic megacolon"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "71M post-antibiotic exposure presents with profuse watery diarrhoea (8-10x/day), abdominal cramping, and signs of dehydration.",
+    "objective": "Check HR, BP (postural drop), skin turgor, mucous membranes. Abdominal exam: diffuse mild tenderness without peritonism. Stool test: urgent Clostridioides difficile toxin A/B enzyme immunoassay and glutamate dehydrogenase (GDH) antigen. Bloods: FBC (leukocytosis common), renal profile (acute kidney injury check).",
+    "assessment": "Clostridioides difficile infection (CDI) secondary to recent broad-spectrum antibiotic use. DDx: antibiotic-associated diarrhoea without colitis, acute infectious gastroenteritis (Salmonella, Campylobacter), ischaemic colitis.",
+    "plan": "Immediate contact isolation precautions (soap and water hand hygiene essential as alcohol hand rubs do not kill spores). Initiate oral vancomycin 125mg QDS or oral fidaxomicin 200mg BD for 10 days. Avoid anti-motility agents (loperamide) due to risk of toxic megacolon. IV crystalloid fluid rehydration and electrolyte correction."
+  },
+  "learning_objectives": [
+    "Link recent broad-spectrum antibiotic exposure directly to dysbiosis and C. difficile proliferation",
+    "Emphasize critical infection control mandates including mandatory soap-and-water handwashing over alcohol gel",
+    "Explain the contraindication of anti-motility agents in toxin-producing bacterial colitis",
+    "Assess volume depletion and acute kidney injury risk in elderly patients with profuse diarrhoea"
+  ],
+  "teaching": {
+    "diagnosis": "Clostridioides difficile Infection",
+    "one_liner": "Antibiotics wipe out normal gut bacteria, letting C. difficile overgrow and release toxins that cause explosive, foul-smelling watery diarrhoea.",
+    "differentials": [
+      "Antibiotic-associated diarrhoea without colitis",
+      "Infectious gastroenteritis (Salmonella, Campylobacter)",
+      "Ischaemic colitis"
+    ],
+    "red_flags": [
+      "Signs of dehydration (dry mouth, weakness) with high stool frequency — risk of severe colitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Recent antibiotic use",
+        "say": "What antibiotics did you take recently, and when did you finish the course?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "antibiotics",
+          "amoxicillin",
+          "course",
+          "finished"
+        ]
+      },
+      {
+        "objective": "Stool frequency and description",
+        "say": "How many times a day are you going, and is it watery and foul-smelling?",
+        "domains": [
+          "severity",
+          "character"
+        ],
+        "keywords": [
+          "watery",
+          "foul",
+          "smelling",
+          "frequency"
+        ]
+      },
+      {
+        "objective": "Nocturnal diarrhoea",
+        "say": "Does it wake you up at night to go?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "wake",
+          "nocturnal"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever with this?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "temperature",
+          "hot"
+        ]
+      },
+      {
+        "objective": "Hydration status",
+        "say": "Does your mouth feel dry, or are you feeling weak and dizzy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dry",
+          "mouth",
+          "weak",
+          "dizzy"
+        ]
+      },
+      {
+        "objective": "Recent hospitalisation",
+        "say": "Have you been in hospital recently?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hospital",
+          "hospitalised",
+          "admitted"
+        ]
+      },
+      {
+        "objective": "Household contacts",
+        "say": "Does anyone else at home have similar symptoms?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "household",
+          "wife",
+          "contacts"
+        ]
+      }
+    ]
+  }
+}

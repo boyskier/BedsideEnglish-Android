@@ -1,0 +1,190 @@
+{
+  "id": "endo_021",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Choi",
+  "age": 19,
+  "gender": "male",
+  "chief_complaint": "excessive thirst, frequent urination, and unintended weight loss of 8kg over 3 weeks",
+  "hpi_details": "19M college student reports persistent severe thirst, drinking 5-6 liters of water daily, and urinating every hour including waking up 4-5 times at night. Despite a huge appetite, has lost 8kg over the last 3 weeks. Feels constantly fatigued and weak.",
+  "ideas": "worried he has a kidney problem or diabetes",
+  "concerns": "afraid of needing daily injections",
+  "expectations": "wants blood tests and immediate treatment",
+  "pmh": "No significant past medical history",
+  "medications": "None",
+  "social_hx": "College freshman, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_diabetes_assessment",
+      "title": "Urgent diabetes and ketoacidosis assessment",
+      "order_terms": [
+        "point of care glucose",
+        "fingerstick glucose",
+        "blood glucose",
+        "glucose",
+        "ketones",
+        "urine ketones",
+        "blood gas",
+        "vbg",
+        "bicarbonate"
+      ],
+      "availability_message": "The urgent glucose and ketoacidosis screening results are now available.",
+      "results": [
+        {
+          "id": "glucose",
+          "test": "Point-of-care glucose",
+          "value": "356",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "critical",
+          "specimen": "Capillary blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "beta_hydroxybutyrate",
+          "test": "Beta-hydroxybutyrate",
+          "value": "0.4",
+          "unit": "mmol/L",
+          "reference_range": "<0.6",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "venous_ph",
+          "test": "Venous pH",
+          "value": "7.37",
+          "reference_range": "7.31-7.41",
+          "flag": "normal",
+          "specimen": "Venous blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "bicarbonate",
+          "test": "Serum bicarbonate",
+          "value": "23",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Type 1 Diabetes Mellitus (new-onset, without ketoacidosis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Type 1 Diabetes Mellitus (new-onset, without ketoacidosis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgently excluding diabetic ketoacidosis before starting an outpatient basal-bolus insulin regimen with diabetes education, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excessive thirst, frequent urination, and unintended weight loss of 8kg over 3 weeks",
+      "Key HPI features: 19M college student reports persistent severe thirst, drinking 5-6 liters of water daily, and urinating every hour including waking up 4-5 times at night. Despite a huge appetite, has lost 8kg over the last 3 weeks. Feels constantly fatigued and weak.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Type 1 Diabetes Mellitus, newly presenting without ketoacidosis.",
+      "Relevant background/PMH: No significant past medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Type 1 Diabetes Mellitus (new-onset, without ketoacidosis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Type 2 diabetes (less likely given age and rapid onset) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Nausea, vomiting, or abdominal pain — could indicate progression to ketoacidosis."
+    ],
+    "management_principles": [
+      "Urgently assess glucose, ketones, and venous pH/bicarbonate to exclude diabetic ketoacidosis before starting outpatient insulin",
+      "If DKA is excluded, start a basal-bolus insulin regimen, refer to a diabetes educator, and arrange structured glucose monitoring",
+      "Refer to Endocrinology and provide comprehensive patient and family counseling about insulin therapy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Type 1 Diabetes Mellitus, newly presenting without ketoacidosis. excessive thirst, frequent urination, and unintended weight loss of 8kg over 3 weeks. 19M college student reports persistent severe thirst, drinking 5-6 liters of water daily, and urinating every hour including waking up 4-5 times at night. Despite a huge appetite, has lost 8kg over the last 3 weeks. Feels constantly fatigued and weak.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Type 1 Diabetes Mellitus, newly presenting without ketoacidosis.",
+    "assessment": "Type 1 Diabetes Mellitus, new-onset, presenting with the classic triad of polyuria, polydipsia, and weight loss with preserved appetite, pending exclusion of diabetic ketoacidosis.",
+    "plan": "Urgently check glucose, blood or urine ketones, and venous pH/bicarbonate to exclude diabetic ketoacidosis. If DKA is excluded and the patient is clinically stable, start a basal-bolus insulin regimen with same-day diabetes education, structured glucose monitoring, and sick-day guidance. Refer to Endocrinology for ongoing management and counsel the patient about insulin therapy and hypoglycemia recognition."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Type 1 Diabetes Mellitus, newly presenting without ketoacidosis.",
+    "Formulate prioritized differential diagnosis for excessive thirst, frequent urination, and unintended weight loss of 8kg over 3 weeks",
+    "Select appropriate laboratory and imaging studies for endocrinology",
+    "Implement evidence-based acute and long-term management strategies for Type 1 Diabetes Mellitus, newly presenting without ketoacidosis."
+  ],
+  "teaching": {
+    "diagnosis": "Type 1 Diabetes Mellitus (new-onset, without ketoacidosis)",
+    "one_liner": "Autoimmune destruction of insulin-producing beta cells causes the classic triad of excessive thirst, frequent urination, and unintentional weight loss despite a big appetite — needs to start insulin promptly.",
+    "differentials": [
+      "Type 2 diabetes (less likely given age and rapid onset)",
+      "Hyperthyroidism (for weight loss)",
+      "Diabetes insipidus (for thirst/urination, but no weight loss/hyperglycemia)"
+    ],
+    "red_flags": [
+      "Nausea, vomiting, or abdominal pain — could indicate progression to ketoacidosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Classic triad",
+        "say": "How much water are you drinking, and how often are you urinating?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "thirst",
+          "urination"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost, and over what time?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "8kg",
+          "3 weeks"
+        ]
+      },
+      {
+        "objective": "Nighttime urination",
+        "say": "Are you waking up at night to urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nocturia"
+        ]
+      },
+      {
+        "objective": "Appetite",
+        "say": "How is your appetite despite losing weight?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Concerns about treatment",
+        "say": "What worries you about needing daily injections?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

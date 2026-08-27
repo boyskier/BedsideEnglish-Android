@@ -1,0 +1,221 @@
+{
+  "id": "gi_034",
+  "system": "gi",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Carter",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "abdominal swelling, fluid accumulation, and leg swelling over 1 month",
+  "hpi_details": "A 44-year-old female presents to the clinic with abdominal swelling, fluid accumulation, and leg swelling over 1 month. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cirrhosis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_ascites_workup",
+      "title": "Urgent cirrhosis and ascites results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "liver function tests",
+        "lfts",
+        "albumin",
+        "inr",
+        "diagnostic paracentesis",
+        "ascitic fluid",
+        "ascitic fluid cell count",
+        "saag"
+      ],
+      "availability_message": "The urgent blood and diagnostic paracentesis results are now available.",
+      "results": [
+        {
+          "id": "serum_albumin",
+          "test": "Serum albumin",
+          "value": "2.6",
+          "unit": "g/dL",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.6",
+          "reference_range": "0.8-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ascitic_pmn_count",
+          "test": "Ascitic fluid polymorphonuclear leukocyte count",
+          "value": "94",
+          "unit": "cells/mm3",
+          "reference_range": "<250",
+          "flag": "normal",
+          "specimen": "Ascitic fluid",
+          "collected_at": "During diagnostic paracentesis"
+        },
+        {
+          "id": "saag",
+          "test": "Serum-ascites albumin gradient",
+          "value": "1.5",
+          "unit": "g/dL",
+          "reference_range": ">=1.1 suggests portal hypertension",
+          "flag": "high",
+          "specimen": "Blood and ascitic fluid",
+          "collected_at": "During diagnostic paracentesis"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Decompensated Liver Cirrhosis (Chronic Hepatitis B) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Decompensated Liver Cirrhosis (Chronic Hepatitis B) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes performing a diagnostic paracentesis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: abdominal swelling, fluid accumulation, and leg swelling over 1 month",
+      "Key HPI features: A 44-year-old female presents to the clinic with abdominal swelling, fluid accumulation, and leg swelling over 1 month. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Decompensated Liver Cirrhosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Decompensated Liver Cirrhosis (Chronic Hepatitis B).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Congestive heart failure (right-sided) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or drowsiness — suggests hepatic encephalopathy."
+    ],
+    "management_principles": [
+      "Perform diagnostic paracentesis",
+      "Start Spironolactone and Furosemide",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of abdominal swelling, fluid accumulation, and leg swelling over 1 month. HPI: chronic hepatitis B, portal hypertension.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Decompensated Liver Cirrhosis.",
+    "assessment": "Condition highly suspicious for Decompensated Liver Cirrhosis.",
+    "plan": "Perform diagnostic paracentesis to assess for spontaneous bacterial peritonitis. Start spironolactone and furosemide for ascites. Consult hepatology if symptoms worsen or encephalopathy develops. Counsel patient on sodium restriction and alcohol/hepatotoxin avoidance."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Decompensated Liver Cirrhosis",
+    "Select appropriate diagnostic workup for Decompensated Liver Cirrhosis",
+    "Implement evidence-based management plan: Perform diagnostic paracentesis. Start Spironolactone and Furosemide"
+  ],
+  "teaching": {
+    "diagnosis": "Decompensated Liver Cirrhosis (Chronic Hepatitis B)",
+    "one_liner": "Long-standing hepatitis B has scarred the liver so badly it can no longer control fluid balance, so fluid builds up in the abdomen and legs.",
+    "differentials": [
+      "Congestive heart failure (right-sided)",
+      "Nephrotic syndrome",
+      "Malignant ascites"
+    ],
+    "red_flags": [
+      "Confusion or drowsiness — suggests hepatic encephalopathy"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and progression of swelling",
+        "say": "When did the swelling start, and has it been getting worse?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "swelling",
+          "swollen",
+          "distended",
+          "gradually"
+        ]
+      },
+      {
+        "objective": "Hepatitis B history",
+        "say": "Have you been told before that you have hepatitis B?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hepatitis",
+          "diagnosed",
+          "liver"
+        ]
+      },
+      {
+        "objective": "Leg swelling extent",
+        "say": "How far up your legs does the swelling go?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "legs",
+          "ankle",
+          "swelling",
+          "puffy"
+        ]
+      },
+      {
+        "objective": "Confusion or sleep changes",
+        "say": "Has anyone noticed you seeming confused or sleeping differently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "confusion",
+          "drowsy",
+          "forgetful"
+        ]
+      },
+      {
+        "objective": "Jaundice",
+        "say": "Have you noticed your skin or eyes turning yellow?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "yellow",
+          "jaundice"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "Does the swelling make it hard to breathe or lie flat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breathless",
+          "breathing",
+          "lie",
+          "uncomfortable"
+        ]
+      }
+    ]
+  }
+}

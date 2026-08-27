@@ -1,0 +1,172 @@
+{
+  "id": "urology_008",
+  "system": "urology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Harris",
+  "age": 31,
+  "gender": "male",
+  "chief_complaint": "painful, rigid, persistent erection lasting 8 hours without sexual stimulation after taking trazodone for sleep",
+  "hpi_details": "31M presents to ED at 07:00 AM with a painful, rigid, persistent erection lasting 8 hours. Reports taking a double dose of Trazodone at 11:00 PM last night for severe insomnia. Awakened at 02:00 AM with an erection that has remained fully rigid and become increasingly painful despite cold showers, walking, and urination. Denies erectile dysfunction drugs or pelvic trauma.",
+  "ideas": "in severe throbbing pain and intense embarrassment",
+  "concerns": "terrified of permanent impotence or gangrene of his penis if blood flow stops",
+  "expectations": "wants immediate drainage or injection to detumesce his erection and stop the pain",
+  "pmh": "Insomnia, Depression",
+  "medications": "Trazodone 100mg QHS, Sertraline 50mg daily",
+  "social_hx": "Software developer, non-smoker",
+  "investigation_events": [
+    {
+      "id": "corporal_blood_gas",
+      "title": "Penile corporal blood gas",
+      "order_terms": ["corporal blood gas", "cavernosal blood gas", "penile blood gas", "aspirate corpora", "corporal aspiration"],
+      "availability_message": "The penile corporal blood-gas result is now available.",
+      "results": [
+        {"id": "corporal_ph", "test": "Corporal blood pH", "value": "7.08", "reference_range": ">7.25", "flag": "low", "specimen": "Dark cavernosal blood"},
+        {"id": "corporal_po2", "test": "Corporal blood pO2", "value": "22", "unit": "mmHg", "reference_range": ">30", "flag": "low", "specimen": "Dark cavernosal blood"},
+        {"id": "corporal_pco2", "test": "Corporal blood pCO2", "value": "78", "unit": "mmHg", "reference_range": "<60", "flag": "high", "specimen": "Dark cavernosal blood"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ischemic (Low-Flow / Veno-Occlusive) Priapism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ischemic (Low-Flow / Veno-Occlusive) Priapism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes emergent corporal aspiration and irrigation with penile ring block, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painful, rigid, persistent erection lasting 8 hours without sexual stimulation after taking trazodone for sleep",
+      "Key HPI features: 31M presents to ED at 07:00 AM with a painful, rigid, persistent erection lasting 8 hours. Reports taking a double dose of Trazodone at 11:00 PM last night for severe insomnia. Awakened at 02:00 AM with an erection that has remained fully rigid and become increasingly painful despite cold showers, walking, and urination. Denies erectile dysfunction drugs or pelvic trauma.",
+      "Objective/Exam findings: Vitals: HR 105, BP 138/84. Genital examination reveals fully rigid, hard, exquisitely tender corpora cavernosa bilaterally with a soft, flaccid glans penis and corpus spongiosum. Penile corporal blood gas aspiration (from lateral base of corpus cavernosum using 19-gauge needle) reveals dark, blackish hypoxemic blood with pO2 22 mmHg, pCO2 78 mmHg, and pH 7.08 (confirming Ischemic Low-Flow Priapism; arterial high-flow shows bright red oxygenated blood with normal pH and pO2 > 90).",
+      "Relevant background/PMH: Insomnia, Depression",
+      "Current medications: Trazodone 100mg QHS, Sertraline 50mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ischemic (Low-Flow / Veno-Occlusive) Priapism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute total urinary retention."
+    ],
+    "management_principles": [
+      "STAT urological emergency procedure: perform a penile ring block, then aspirate and irrigate the corpora cavernosa.",
+      "Perform immediate local penile ring block with plain lidocaine without epinephrine",
+      "Insert 19-gauge butterfly needle into lateral corpora cavernosa to aspirate dark stagnant blood until bright red blood appears, combined with irrigation using sterile normal saline",
+      "If needed, administer diluted intracavernosal phenylephrine with continuous blood-pressure and cardiac monitoring, particularly in cardiovascular disease; obtain urgent urology support if detumescence fails."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "31M presenting with acute painful persistent erection >6 hours precipitated by alpha-adrenergic antagonist sedative use (Trazodone), classic for Ischemic (Low-Flow) Priapism.",
+    "objective": "Vitals: HR 105, BP 138/84. Genital examination reveals fully rigid, hard, exquisitely tender corpora cavernosa bilaterally with a soft, flaccid glans penis and corpus spongiosum. Penile corporal blood gas aspiration (from lateral base of corpus cavernosum using 19-gauge needle) reveals dark, blackish hypoxemic blood with pO2 22 mmHg, pCO2 78 mmHg, and pH 7.08 (confirming Ischemic Low-Flow Priapism; arterial high-flow shows bright red oxygenated blood with normal pH and pO2 > 90).",
+    "assessment": "Ischemic (Low-Flow / Veno-Occlusive) Priapism secondary to Trazodone therapy (>8 hours duration - urological emergency).",
+    "plan": "STAT urological emergency procedure: 1. Perform immediate local penile ring block with plain lidocaine without epinephrine. 2. Insert 19-gauge butterfly needle into lateral corpora cavernosa to aspirate dark stagnant blood until bright red blood appears, combined with irrigation using sterile normal saline. 3. If detumescence not achieved, administer intracavernosal injections of Phenylephrine (pure alpha-1 agonist diluted to 100 to 500 mcg/mL), injecting 1 mL every 3-5 minutes up to 1 hour with direct corporal compression and blood pressure monitoring. 4. If refractory to aspiration and phenylephrine after 1 hour, transfer to OR for distal surgical shunt creation (Winter or Ebbehoj percutaneous glanular-cavernosal shunt or T-shunt)."
+  },
+  "learning_objectives": [
+    "Differentiate Ischemic (Low-Flow / Veno-occlusive, painful, rigid, hypoxemic blood gas pH < 7.25, emergency) from Non-Ischemic (High-Flow / Arterial, painless, semi-rigid, oxygenated blood gas pH 7.40, non-emergency) priapism",
+    "Identify pharmacological causes of ischemic priapism (Trazodone, PDE5 inhibitors, intracavernosal alprostadil/papaverine, antipsychotics, cocaine) and hematological causes (Sickle Cell Disease)",
+    "Outline step-by-step emergency bedside management: corporal blood aspiration, saline irrigation, and intracavernosal alpha-1 agonist phenylephrine titration",
+    "Describe surgical shunt options (distal T-shunt, Winter needle shunt, Al-Ghorab open shunt) when conservative medical detumescence fails after 4-6 hours"
+  ],
+  "teaching": {
+    "diagnosis": "Ischemic (Low-Flow / Veno-Occlusive) Priapism",
+    "one_liner": "Urology evaluation for patient presenting with painful, rigid, persistent erection lasting 8 hours without sexual stimulation after taking trazodone for sleep.",
+    "differentials": [
+      "Non-ischemic (high-flow) priapism",
+      "Recurrent stuttering priapism",
+      "Peyronie disease with painful erection"
+    ],
+    "red_flags": [
+      "Painful fully rigid erection lasting 4 hours or more",
+      "Increasing duration, severe pain, or recurrent episodes with sickle cell disease"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exact onset time and duration of the erection",
+        "say": "Exactly what time did the erection start, and has it stayed constantly rigid since then?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "hours",
+          "started",
+          "duration",
+          "constant",
+          "rigid"
+        ]
+      },
+      {
+        "objective": "Precipitating drugs (PDE5 inhibitors, trazodone, illicit drugs, intracavernosal injections)",
+        "say": "Did you take any medications like trazodone, erectile dysfunction pills, or use any recreational drugs before this started?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "trazodone",
+          "medication",
+          "drugs",
+          "injection",
+          "sildenafil"
+        ]
+      },
+      {
+        "objective": "History of sickle cell disease or hematologic disorder",
+        "say": "Do you have sickle cell disease or trait, or any blood or clotting disorder?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "sickle cell",
+          "blood disorder",
+          "leukemia",
+          "clotting"
+        ]
+      },
+      {
+        "objective": "Pain character and trauma history",
+        "say": "Is the erection painful, and did you have any injury to your genitals or pelvis recently?",
+        "domains": [
+          "character",
+          "pmh"
+        ],
+        "keywords": [
+          "painful",
+          "trauma",
+          "injury",
+          "pelvis",
+          "straddle"
+        ]
+      },
+      {
+        "objective": "Prior episodes of priapism",
+        "say": "Has this happened to you before, and if so, how was it treated?",
+        "domains": [
+          "pmh",
+          "onset_duration"
+        ],
+        "keywords": [
+          "before",
+          "previous",
+          "recurrent",
+          "treated",
+          "aspiration"
+        ]
+      }
+    ]
+  }
+}

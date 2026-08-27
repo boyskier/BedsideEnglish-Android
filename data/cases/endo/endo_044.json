@@ -1,0 +1,120 @@
+{
+  "id": "endo_044",
+  "system": "endo",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Miller",
+  "age": 74,
+  "gender": "female",
+  "chief_complaint": "generalized bone pain and fatigue",
+  "hpi_details": "A 74-year-old female presents to the clinic with generalized bone pain and fatigue. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to vitamin_d_deficiency",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Vitamin D Deficiency evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Vitamin D Deficiency is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes high-dose vitamin D3 (cholecalciferol) supplementation for Vitamin D Deficiency, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: generalized bone pain and fatigue",
+      "Key HPI features: A 74-year-old female presents to the clinic with generalized bone pain and fatigue. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Vitamin D Deficiency.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Vitamin D Deficiency.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Osteomalacia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: severe hypocalcaemia with tetany, seizures, cardiac arrhythmia, pathological or fragility fractures, signs of malabsorption or an underlying cause (e.g., coeliac disease, renal failure) that must be identified and treated, or not just replaced."
+    ],
+    "management_principles": [
+      "Plan for Vitamin D Deficiency: High-dose Vitamin D3 (Cholecalciferol) supplementation",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Evaluation, Treatment, and Prevention of Vitamin D Deficiency",
+        "url": "https://academic.oup.com/jcem/article/96/7/1911/2833671"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of generalized bone pain and fatigue. HPI: insufficient sun exposure, poor intake.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Vitamin D Deficiency.",
+    "assessment": "Condition highly suspicious for Vitamin D Deficiency.",
+    "plan": "Plan for Vitamin D Deficiency: High-dose Vitamin D3 (Cholecalciferol) supplementation. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Vitamin D Deficiency",
+    "Select appropriate diagnostic workup for Vitamin D Deficiency",
+    "Implement evidence-based management plan: High-dose Vitamin D3 (Cholecalciferol) supplementation"
+  ],
+  "teaching": {
+    "diagnosis": "Vitamin D Deficiency",
+    "one_liner": "Insufficient sun exposure or dietary intake causing generalized bone pain and fatigue, corrected with high-dose vitamin D3 supplementation.",
+    "differentials": [
+      "Osteomalacia",
+      "Fibromyalgia"
+    ],
+    "red_flags": [
+      "Severe hypocalcaemia with tetany, seizures, or cardiac arrhythmia — a medical emergency requiring urgent correction",
+      "Pathological or fragility fractures — suggests significant osteomalacia needing urgent treatment",
+      "Signs of malabsorption or an underlying cause (e.g., coeliac disease, renal failure) that must be identified and treated, not just replaced"
+    ],
+    "must_ask": [
+      {
+        "objective": "Bone pain",
+        "say": "Where is the bone pain?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Sun exposure",
+        "say": "How much time do you spend outdoors?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "Do you eat foods rich in vitamin D, like fish or fortified milk?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How is your energy level?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

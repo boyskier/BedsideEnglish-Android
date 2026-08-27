@@ -1,0 +1,127 @@
+{
+  "id": "nephro_028",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Mitchell",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "microalbuminuria and history of diabetes",
+  "hpi_details": "A 26-year-old female with type 2 diabetes presents after her most recent diabetic screening labs showed microalbuminuria on a urine albumin-to-creatinine ratio. She feels well overall and denies leg swelling, foamy urine, or vision changes, though her blood sugar has been poorly controlled over the past year.",
+  "ideas": "thinks it might be related to diabetic_nephropathy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Type 2 diabetes mellitus",
+  "medications": "Metformin",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "urine_acr", "test": "Urine albumin-to-creatinine ratio", "value": "45", "unit": "mg/g", "reference_range": "<30", "flag": "high"},
+    {"id": "hba1c", "test": "Hemoglobin A1c", "value": "9.2", "unit": "%", "reference_range": "<7.0 individualized target", "flag": "high"},
+    {"id": "egfr", "test": "Estimated glomerular filtration rate", "value": "88", "unit": "mL/min/1.73m2", "reference_range": ">=60", "flag": "normal"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Diabetic Nephropathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diabetic Nephropathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management includes strict glycemic and blood pressure control, plus an SGLT2 inhibitor and ACE inhibitor/ARB to slow progression of albuminuria, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: microalbuminuria and history of diabetes",
+      "Key HPI features: A 26-year-old female with type 2 diabetes presents after her most recent diabetic screening labs showed microalbuminuria on a urine albumin-to-creatinine ratio. She feels well overall and denies leg swelling, foamy urine, or vision changes, though her blood sugar has been poorly controlled over the past year.",
+      "Objective/Exam findings: Vitals: BP 138/86, HR 72, afebrile, BMI 31. No peripheral edema. Fundoscopic exam without visible retinopathy. Labs: HbA1c 9.2%, urine albumin-to-creatinine ratio 45 mg/g (microalbuminuria), eGFR 88 mL/min/1.73m2, no hematuria.",
+      "Relevant background/PMH: Type 2 diabetes mellitus"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diabetic Nephropathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypertensive nephrosclerosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly worsening proteinuria or edema."
+    ],
+    "management_principles": [
+      "Optimize glycemic and blood pressure control, and start an SGLT2 inhibitor and ACE inhibitor/ARB for renoprotection",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26F with type 2 diabetes presents after routine diabetic screening labs showed microalbuminuria on a urine albumin-to-creatinine ratio. She feels well overall and denies leg swelling, foamy urine, or vision changes, though her blood sugar has been poorly controlled over the past year.",
+    "objective": "Vitals: BP 138/86, HR 72, afebrile, BMI 31. No peripheral edema. Fundoscopic exam without visible retinopathy. Labs: HbA1c 9.2%, urine albumin-to-creatinine ratio 45 mg/g (microalbuminuria), eGFR 88 mL/min/1.73m2, no hematuria.",
+    "assessment": "Microalbuminuria in a patient with type 2 diabetes and poor glycemic control, consistent with early diabetic nephropathy.",
+    "plan": "Confirm albuminuria with repeat urine albumin-creatinine testing, optimize glycemic and blood-pressure control, and consider ACE inhibitor/ARB for albuminuria with creatinine and potassium monitoring. Consider an SGLT2 inhibitor when eGFR, diabetes type, pregnancy status, and contraindications permit; avoid ACE inhibitors/ARBs during pregnancy."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Diabetic Nephropathy",
+    "Select appropriate diagnostic workup for Diabetic Nephropathy",
+    "Implement evidence-based management plan: Strict glycemic and BP control, SGLT2 inhibitor, ACEi"
+  ],
+  "teaching": {
+    "diagnosis": "Diabetic Nephropathy",
+    "one_liner": "Chronic hyperglycemia damages the glomerular filtration barrier over years, first appearing as microalbuminuria before progressing to overt proteinuria and declining kidney function.",
+    "differentials": [
+      "Hypertensive nephrosclerosis",
+      "Other primary glomerular disease"
+    ],
+    "red_flags": [
+      "Rapidly worsening proteinuria or edema"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diabetes duration and control",
+        "say": "How long have you had diabetes, and how well controlled has your blood sugar been?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "How the finding was made",
+        "say": "How was the protein in your urine discovered?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Other diabetic complications",
+        "say": "Have you had any eye or nerve problems from your diabetes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "retinopathy",
+          "neuropathy"
+        ]
+      },
+      {
+        "objective": "Blood pressure",
+        "say": "Do you have high blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Swelling",
+        "say": "Any swelling in your legs or ankles?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

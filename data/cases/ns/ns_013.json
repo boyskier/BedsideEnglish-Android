@@ -1,0 +1,138 @@
+{
+  "id": "ns_013",
+  "system": "neurosurgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thompson",
+  "age": 55,
+  "gender": "female",
+  "chief_complaint": "progressive anosmia, insidious personality changes, and frontal headache over 2 years",
+  "hpi_details": "55F presenting with complete loss of smell, apathy, and executive dysfunction with dural tail homogenously enhancing subfrontal extra-axial tumor on MRI.",
+  "ideas": "thinks this is related to olfactory groove meningioma",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{
+    "id": "brain_mri",
+    "test": "Contrast-enhanced brain MRI",
+    "value": "Homogeneously enhancing subfrontal extra-axial mass centered on the olfactory groove with a dural tail",
+    "flag": "abnormal",
+    "note": "Appearance is consistent with an olfactory groove meningioma."
+  }],
+  "clinical_knowledge": {
+    "topic": "Olfactory Groove Meningioma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Olfactory Groove Meningioma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Olfactory Groove Meningioma, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive anosmia, insidious personality changes, and frontal headache over 2 years",
+      "Key HPI features: 55F presenting with complete loss of smell, apathy, and executive dysfunction with a dural-tail, homogeneously enhancing subfrontal extra-axial tumor on MRI.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Olfactory Groove Meningioma.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Olfactory Groove Meningioma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Frontotemporal dementia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Progressive visual changes — signals optic nerve involvement as the tumor grows."
+    ],
+    "management_principles": [
+      "Refer to a skull-base neurosurgical team and obtain contrast MRI review, including assessment of optic apparatus involvement and peritumoral edema.",
+      "Discuss observation with interval MRI for small, asymptomatic, or stable tumors versus resection for symptomatic, enlarging, or visually threatening tumors.",
+      "Consider stereotactic radiation or fractionated radiotherapy for selected residual, recurrent, or unresectable tumors, individualized to size and proximity to optic structures.",
+      "Provide counseling on likely olfactory loss, cognitive recovery, visual monitoring, and treatment risks."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Olfactory Groove Meningioma: progressive anosmia, insidious personality changes, and frontal headache over 2 years. 55F presenting with complete loss of smell, apathy, and executive dysfunction with a dural-tail, homogeneously enhancing subfrontal extra-axial tumor on MRI.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Olfactory Groove Meningioma.",
+    "assessment": "Clinical presentation highly suggestive of Olfactory Groove Meningioma.",
+    "plan": "Refer to a skull-base neurosurgical team and obtain contrast MRI review, including assessment of optic apparatus involvement and peritumoral edema. Discuss observation with interval MRI for small, asymptomatic, or stable tumors versus resection for symptomatic, enlarging, or visually threatening tumors. Consider stereotactic radiation or fractionated radiotherapy for selected residual, recurrent, or unresectable tumors, individualized to size and proximity to optic structures."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Olfactory Groove Meningioma",
+    "Formulate prioritized differential diagnosis for progressive anosmia, insidious personality changes, and frontal headache over 2 years",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Olfactory Groove Meningioma",
+    "one_liner": "A slow-growing benign tumor at the base of the skull compresses the olfactory nerves and frontal lobes, causing gradual loss of smell and personality changes over years — easily mistaken for depression or normal aging because of how slowly it progresses.",
+    "differentials": [
+      "Frontotemporal dementia",
+      "Depression",
+      "Normal aging-related anosmia"
+    ],
+    "red_flags": [
+      "Progressive visual changes — signals optic nerve involvement as the tumor grows"
+    ],
+    "must_ask": [
+      {
+        "objective": "Smell loss",
+        "say": "Have you lost your sense of smell completely?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "anosmia"
+        ]
+      },
+      {
+        "objective": "Personality changes",
+        "say": "Have people close to you noticed changes in your personality or motivation?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "apathy",
+          "personality"
+        ]
+      },
+      {
+        "objective": "Headache",
+        "say": "Do you have a headache, and where?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "frontal"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many years has this been developing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Cognitive changes",
+        "say": "Any difficulty with planning or decision-making?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

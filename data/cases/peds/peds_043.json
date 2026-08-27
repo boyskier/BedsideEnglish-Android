@@ -1,0 +1,144 @@
+{
+  "id": "peds_043",
+  "system": "peds",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Jackson Carter",
+  "age": 8,
+  "gender": "male",
+  "chief_complaint": "palpable purple rash on legs, abdominal pain, joint swelling",
+  "hpi_details": "8-year-old boy is brought in by his parent with a palpable purple rash on both legs, crampy abdominal pain, and swollen painful ankles following a recent upper respiratory infection.",
+  "ideas": "thinks it might be related to hsp",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Lives with family and attends elementary school.",
+  "investigation_events": [{
+    "id": "iga_vasculitis_renal_screen",
+    "title": "Same-visit renal screening",
+    "order_terms": ["urinalysis", "urine dipstick", "UA", "urine protein creatinine ratio", "UPCR"],
+    "availability_message": "The renal-screening results are now available. Arrange serial blood-pressure and urinalysis follow-up.",
+    "results": [
+      {"id": "urinalysis", "test": "Urinalysis", "value": "Blood 2+, protein 1+, 15-20 red blood cells/HPF", "flag": "abnormal"},
+      {"id": "urine_protein_creatinine_ratio", "test": "Spot urine protein-to-creatinine ratio", "value": "0.42", "unit": "mg/mg", "reference_range": "<0.2", "flag": "high"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Henoch-Schonlein purpura (IgA vasculitis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Henoch-Schonlein purpura (IgA vasculitis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Henoch-Schonlein Purpura: Check urinalysis (hematuria/proteinuria), supportive care, NSAIDs, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: palpable purple rash on legs, abdominal pain, joint swelling",
+      "Key HPI features: An 8-year-old boy has palpable purpura on both legs, crampy abdominal pain, and swollen painful ankles after an upper respiratory infection.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Henoch-Schonlein Purpura.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Henoch-Schonlein purpura (IgA vasculitis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Idiopathic thrombocytopenic purpura without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hematuria or proteinuria would indicate renal involvement requiring monitoring."
+    ],
+    "management_principles": [
+      "Check urinalysis and blood pressure for renal involvement; provide supportive care and use NSAIDs only when renal and gastrointestinal involvement have been excluded",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of palpable purple rash on legs, abdominal pain, joint swelling. HPI: HSP.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Henoch-Schonlein Purpura.",
+    "assessment": "Condition highly suspicious for Henoch-Schonlein Purpura.",
+    "plan": "Check urinalysis and blood pressure, with follow-up monitoring for renal involvement. Provide supportive care; use NSAIDs only when renal and gastrointestinal involvement have been excluded. Urgently assess severe or worsening abdominal pain, vomiting, GI bleeding, or testicular pain."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Henoch-Schonlein Purpura",
+    "Select appropriate diagnostic workup for Henoch-Schonlein Purpura",
+    "Implement evidence-based management plan: Check urinalysis (hematuria/proteinuria), supportive care, NSAIDs"
+  ],
+  "teaching": {
+    "diagnosis": "Henoch-Schonlein purpura (IgA vasculitis)",
+    "one_liner": "Patient with palpable purple rash on the legs, abdominal pain, and joint swelling.",
+    "differentials": [
+      "Idiopathic thrombocytopenic purpura",
+      "Meningococcemia",
+      "Septic arthritis"
+    ],
+    "red_flags": [
+      "Hematuria or proteinuria would indicate renal involvement requiring monitoring"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the rash",
+        "say": "Can you describe the rash on his legs — is it raised and purple?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "palpable purpura"
+        ]
+      },
+      {
+        "objective": "Ask about abdominal pain severity",
+        "say": "How severe is his belly pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "abdominal pain"
+        ]
+      },
+      {
+        "objective": "Ask about joint symptoms",
+        "say": "Which joints are swollen or painful?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "joint swelling"
+        ]
+      },
+      {
+        "objective": "Ask about recent illness",
+        "say": "Did he have a cold or infection recently?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "recent illness"
+        ]
+      },
+      {
+        "objective": "Explain the urine monitoring plan",
+        "say": "We need to check his urine regularly to watch for kidney involvement.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urinalysis monitoring"
+        ]
+      }
+    ]
+  }
+}

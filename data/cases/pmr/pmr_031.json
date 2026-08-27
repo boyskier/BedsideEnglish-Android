@@ -1,0 +1,153 @@
+{
+  "id": "pmr_031",
+  "system": "pmr",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Young",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "global loss of active and passive shoulder rotation, normal X-ray",
+  "hpi_details": "A 35-year-old male presents to the clinic with global loss of active and passive shoulder rotation, normal x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to frozen_shoulder",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id": "prior_shoulder_radiograph", "test": "Shoulder radiographs", "value": "Preserved glenohumeral joint space without fracture, dislocation, calcific tendinopathy, or advanced osteoarthritis", "flag": "normal", "collected_at": "Before today's encounter"}],
+  "clinical_knowledge": {
+    "topic": "Adhesive Capsulitis (Frozen Shoulder) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Adhesive Capsulitis (Frozen Shoulder) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management may include gentle, pain-limited range-of-motion exercises and physical therapy. Consider a glenohumeral corticosteroid injection only after diagnostic confirmation and assessment for contraindications.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: global loss of active and passive shoulder rotation, normal X-ray",
+      "Key HPI features: A 35-year-old male presents to the clinic with global loss of active and passive shoulder rotation, normal x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Adhesive Capsulitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Adhesive Capsulitis (Frozen Shoulder).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rotator cuff tear without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: fever, marked warmth or swelling, unexplained weight loss, or rapidly progressive weakness."
+    ],
+    "management_principles": [
+      "Use gentle, pain-limited capsular stretching and consider physical therapy; avoid forceful manipulation.",
+      "Consider image-guided glenohumeral corticosteroid injection after confirmation and contraindication screening; refer for diagnostic uncertainty, severe pain, or failure of conservative management.",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of global loss of active and passive shoulder rotation, normal X-ray. HPI: adhesive capsulitis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Adhesive Capsulitis.",
+    "assessment": "Condition highly suspicious for Adhesive Capsulitis.",
+    "plan": "Begin gentle, pain-limited capsular stretching and consider physical therapy; avoid forceful manipulation. Consider a glenohumeral corticosteroid injection only after diagnostic confirmation and contraindication screening. Refer for diagnostic uncertainty, severe pain, or failure of conservative management. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Adhesive Capsulitis",
+    "Select appropriate diagnostic workup for Adhesive Capsulitis",
+    "Implement an individualized management plan using gentle, pain-limited stretching and conditional consideration of corticosteroid injection"
+  ],
+  "teaching": {
+    "diagnosis": "Adhesive Capsulitis (Frozen Shoulder)",
+    "one_liner": "Progressive restriction of both active and passive shoulder movement due to capsular fibrosis.",
+    "differentials": [
+      "Rotator cuff tear",
+      "Subacromial impingement",
+      "Glenohumeral osteoarthritis"
+    ],
+    "red_flags": [
+      "Fever, marked warmth, or swelling of the shoulder",
+      "Unexplained weight loss or rapidly progressive weakness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Active and passive range of motion",
+        "say": "Can you lift your arm yourself, or does it feel stiff even when someone tries to raise it for you?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "stiff",
+          "stiffness",
+          "raise",
+          "lift",
+          "rotation"
+        ]
+      },
+      {
+        "objective": "External rotation restriction",
+        "say": "Is it difficult to reach behind your back or comb your hair?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "reach",
+          "behind",
+          "comb",
+          "hair"
+        ]
+      },
+      {
+        "objective": "Night pain profile",
+        "say": "Does the shoulder pain wake you up at night when you lie on that side?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "sleep",
+          "wake",
+          "lying"
+        ]
+      },
+      {
+        "objective": "Risk factor screening",
+        "say": "Do you have diabetes or thyroid conditions?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "thyroid",
+          "diabetic"
+        ]
+      },
+      {
+        "objective": "Onset and progression phase",
+        "say": "Did the pain start gradually before the stiffness set in?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "gradual",
+          "progressed",
+          "painful",
+          "onset"
+        ]
+      }
+    ]
+  }
+}

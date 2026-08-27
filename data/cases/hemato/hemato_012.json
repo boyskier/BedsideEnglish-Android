@@ -1,0 +1,215 @@
+{
+  "id": "hemato_012",
+  "system": "hematology_oncology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. King",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "muscle cramps, decreased urination, and heart palpitations after starting leukemia treatment",
+  "hpi_details": "45M with Burkitt lymphoma 24 hours post-chemotherapy presenting with hyperkalemia, hyperphosphatemia, hypocalcemia, hyperuricemia, and acute renal failure.",
+  "ideas": "thinks this is related to tumor lysis syndrome post-chemotherapy",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "potassium",
+      "test": "Serum potassium",
+      "value": "6.8",
+      "unit": "mEq/L",
+      "reference_range": "3.5-5.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "phosphate",
+      "test": "Serum phosphate",
+      "value": "8.5",
+      "unit": "mg/dL",
+      "reference_range": "2.5-4.5",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "corrected_calcium",
+      "test": "Corrected serum calcium",
+      "value": "6.5",
+      "unit": "mg/dL",
+      "reference_range": "8.6-10.2",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "uric_acid",
+      "test": "Serum uric acid",
+      "value": "14.0",
+      "unit": "mg/dL",
+      "reference_range": "3.5-7.2",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "3.2",
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3",
+      "flag": "critical",
+      "specimen": "Blood",
+      "note": "Baseline 1.0 mg/dL"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "stat_ecg",
+      "title": "STAT 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "electrocardiogram",
+        "12 lead ecg",
+        "12-lead ecg"
+      ],
+      "availability_message": "The STAT ECG is now available; IV calcium and hyperkalemia treatment should not be delayed.",
+      "results": [
+        {
+          "id": "hyperkalemia_ecg",
+          "test": "12-lead ECG",
+          "value": "Tall peaked T waves with QRS duration 112 ms; no sine-wave pattern",
+          "flag": "critical",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Tumor Lysis Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tumor Lysis Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes aggressive IV hydration, urate-lowering therapy, and continuous cardiac monitoring to correct the hyperkalemia, hyperphosphatemia, hypocalcemia, and hyperuricemia driving acute renal failure, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: muscle cramps, decreased urination, and heart palpitations after starting leukemia treatment",
+      "Key HPI features: 45M with Burkitt lymphoma 24 hours post-chemotherapy presenting with hyperkalemia, hyperphosphatemia, hypocalcemia, hyperuricemia, and acute renal failure.",
+      "Objective/Exam findings: Vitals: Temp 37.0C, HR 104 (irregular), BP 148/92, decreased urine output over the past 12 hours. Muscle cramping in the calves, positive Chvostek sign (facial twitching on tapping) from hypocalcemia, mild lower extremity edema. Bloods: Potassium 6.8 mEq/L, Phosphate 8.5 mg/dL, corrected Calcium 6.5 mg/dL, Uric acid 14 mg/dL, Creatinine 3.2 mg/dL (up from baseline 1.0 mg/dL), BUN elevated. ECG shows peaked T waves consistent with hyperkalemia.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tumor Lysis Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute kidney injury from another cause without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Palpitations or muscle cramps from hyperkalemia — risk of fatal cardiac arrhythmia."
+    ],
+    "management_principles": [
+      "Continuous cardiac (telemetry) monitoring and STAT ECG given hyperkalemia; give IV calcium gluconate for cardiac membrane stabilization if ECG changes are present",
+      "Shift potassium intracellularly with insulin plus dextrose (10 units regular insulin with D50) and consider nebulized albuterol; avoid potassium-containing IV fluids",
+      "Give Rasburicase for hyperuricemia after confirming the patient is not G6PD-deficient (contraindicated in G6PD deficiency); aggressive IV normal saline hydration, avoiding phosphate-containing fluids",
+      "Hold the ACE inhibitor (Lisinopril) given hyperkalemia and acute kidney injury; obtain urgent nephrology consult for possible hemodialysis if hyperkalemia or renal failure are refractory to medical therapy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Tumor Lysis Syndrome Post-Chemotherapy: muscle cramps, decreased urination, and heart palpitations after starting leukemia treatment. 45M with Burkitt lymphoma 24 hours post-chemotherapy presenting with hyperkalemia, hyperphosphatemia, hypocalcemia, hyperuricemia, and acute renal failure.",
+    "objective": "Vitals: Temp 37.0C, HR 104 (irregular), BP 148/92, decreased urine output over the past 12 hours. Muscle cramping in the calves, positive Chvostek sign (facial twitching on tapping) from hypocalcemia, mild lower extremity edema. Bloods: Potassium 6.8 mEq/L, Phosphate 8.5 mg/dL, corrected Calcium 6.5 mg/dL, Uric acid 14 mg/dL, Creatinine 3.2 mg/dL (up from baseline 1.0 mg/dL), BUN elevated. ECG shows peaked T waves consistent with hyperkalemia.",
+    "assessment": "Tumor Lysis Syndrome (laboratory and clinical) occurring 24 hours after chemotherapy for Burkitt lymphoma, with hyperkalemia, hyperphosphatemia, hypocalcemia, hyperuricemia, and acute renal failure.",
+    "plan": "1. Continuous cardiac monitoring and STAT ECG; give IV calcium gluconate for cardiac membrane stabilization given peaked T waves. 2. Shift potassium intracellularly with insulin/dextrose (10 units regular insulin + D50) and nebulized albuterol; avoid potassium-containing fluids. 3. Give Rasburicase for hyperuricemia after confirming the patient is not G6PD-deficient. 4. Aggressive IV normal saline hydration; avoid phosphate-containing or calcium-containing fluids together to prevent calcium-phosphate precipitation. 5. Hold Lisinopril (ACE inhibitor) given hyperkalemia and acute kidney injury. 6. Urgent nephrology consult for possible hemodialysis if hyperkalemia, oliguria, or hyperphosphatemia are refractory to medical management."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Tumor Lysis Syndrome Post-Chemotherapy",
+    "Formulate prioritized differential diagnosis for muscle cramps, decreased urination, and heart palpitations after starting leukemia treatment",
+    "Select appropriate laboratory and imaging studies for hematology_oncology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Tumor Lysis Syndrome",
+    "one_liner": "Rapid death of chemo-sensitive cancer cells releases massive amounts of potassium, phosphate, and uric acid into the blood, overwhelming the kidneys and causing dangerous electrolyte derangements.",
+    "differentials": [
+      "Acute kidney injury from another cause",
+      "Sepsis",
+      "Medication-induced hyperkalemia"
+    ],
+    "red_flags": [
+      "Palpitations or muscle cramps from hyperkalemia — risk of fatal cardiac arrhythmia",
+      "Decreased urine output — worsening renal failure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to chemotherapy",
+        "say": "How many hours or days ago did you receive your leukemia/lymphoma treatment?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "chemotherapy",
+          "hours",
+          "24 hours"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Are you having any heart palpitations or an irregular heartbeat feeling?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "palpitations",
+          "irregular"
+        ]
+      },
+      {
+        "objective": "Muscle symptoms",
+        "say": "Have you had any muscle cramps or weakness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "muscle cramps",
+          "weakness"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "Has the amount of urine you're passing decreased?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urination",
+          "decreased"
+        ]
+      },
+      {
+        "objective": "Hydration status",
+        "say": "How much fluid have you been drinking since your treatment?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "fluids",
+          "hydration"
+        ]
+      }
+    ]
+  }
+}

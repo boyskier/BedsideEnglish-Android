@@ -1,0 +1,127 @@
+{
+  "id": "gs_019",
+  "system": "general_surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Gomez",
+  "age": 30,
+  "gender": "male",
+  "chief_complaint": "excruciating pain with bowel movements and bright red blood on toilet paper",
+  "hpi_details": "30M presents with severe, tearing, glass-like pain during bowel movements, lasting for hours afterwards. He also notices a few drops of bright red blood on the toilet paper. He suffers from chronic constipation.",
+  "ideas": "thinks he has hemorrhoids",
+  "concerns": "terrified to go to the bathroom due to pain",
+  "expectations": "wants a cream to numb the pain",
+  "pmh": "Chronic constipation",
+  "medications": "None",
+  "social_hx": "Office worker",
+  "clinical_knowledge": {
+    "topic": "Anal Fissure",
+    "core_concepts": [
+      "Pain during and after defecation is the hallmark, often with minor bleeding."
+    ],
+    "diagnostic_clues": [
+      "Tearing pain",
+      "Posterior midline location typically"
+    ],
+    "common_misconceptions": [
+      "Misdiagnosing as purely hemorrhoids without inspecting for a fissure."
+    ],
+    "dangerous_errors": [
+      "Performing a digital rectal exam when an acute fissure is obvious on visual inspection (causes extreme unnecessary pain)."
+    ],
+    "management_principles": [
+      "Stool softeners, sitz baths, topical vasodilators (nifedipine/nitroglycerin)."
+    ],
+    "boundaries_and_exceptions": [
+      "Lateral fissures should raise suspicion for Crohn's, HIV, or syphilis."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "30M with extreme pain during defecation and minor bright red blood per rectum.",
+    "objective": "Visual inspection of the anus reveals a posterior midline mucosal tear. DRE deferred due to severe pain.",
+    "assessment": "Acute anal fissure.",
+    "plan": "Topical nifedipine ointment, docusate sodium, high-fiber diet, sitz baths."
+  },
+  "learning_objectives": [
+    "Recognize the clinical presentation of an anal fissure vs hemorrhoids."
+  ],
+  "teaching": {
+    "diagnosis": "Anal Fissure",
+    "one_liner": "Severe, sharp pain during defecation with small amounts of bright red blood, highly characteristic of an anal fissure.",
+    "differentials": [
+      "Internal hemorrhoids",
+      "Perianal abscess"
+    ],
+    "red_flags": [
+      "Lateral fissure location (atypical)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain timing with defecation",
+        "say": "Does the pain happen during or right after a bowel movement, and how long does it last?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ],
+        "keywords": [
+          "defecation",
+          "bowel movement",
+          "hours after"
+        ]
+      },
+      {
+        "objective": "Bleeding character",
+        "say": "Have you noticed blood — is it bright red and only on the toilet paper or in the bowl?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bright red",
+          "toilet paper",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Bowel habits",
+        "say": "Do you tend to have hard stools or constipation?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "constipation",
+          "hard stool"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Have you had this kind of pain with bowel movements before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "prior episodes",
+          "recurrent"
+        ]
+      },
+      {
+        "objective": "Signs of abscess",
+        "say": "Have you noticed any swelling, pus, or fever around your bottom?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "swelling",
+          "pus",
+          "fever",
+          "abscess"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "cs_029",
+  "system": "cs",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Taylor",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "fatigue, dyspnea, orthopnea, and blowing systolic murmur",
+  "hpi_details": "A 29-year-old male presents to the clinic with fatigue, dyspnea, orthopnea, and blowing systolic murmur. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to mitral_regurgitation",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "severe_mr_echo",
+      "title": "Transthoracic echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE"],
+      "availability_message": "The transthoracic echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_severe_primary_mr",
+          "test": "Transthoracic echocardiogram",
+          "value": "Severe primary mitral regurgitation from posterior leaflet prolapse; effective regurgitant orifice 0.48 cm2; regurgitant volume 68 mL; LVEF 60%",
+          "unit": "",
+          "reference_range": "EROA <0.20 cm2; regurgitant volume <30 mL",
+          "flag": "critical",
+          "collected_at": "During today's work-up"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Mitral Regurgitation evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Mitral Regurgitation is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes echocardiographic definition of mitral-regurgitation severity and mechanism, followed by valve-team assessment when severe disease is confirmed, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fatigue, dyspnea, orthopnea, and blowing systolic murmur",
+      "Key HPI features: A 29-year-old male presents to the clinic with fatigue, dyspnea, orthopnea, and blowing systolic murmur. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Severe Mitral Regurgitation.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Mitral Regurgitation.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aortic stenosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden worsening — possible chordae rupture."
+    ],
+    "management_principles": [
+      "Plan for suspected mitral regurgitation: obtain echocardiography to establish severity and mechanism; refer confirmed severe disease for valve-team assessment",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of fatigue, dyspnea, orthopnea, and blowing systolic murmur. HPI: mitral valve prolapse/flail leaflet.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Severe Mitral Regurgitation.",
+    "assessment": "Mitral regurgitation is suspected from the symptoms and blowing systolic murmur; echocardiography is required to establish severity and mechanism.",
+    "plan": "Plan for suspected mitral regurgitation: obtain echocardiography to establish severity and mechanism; refer confirmed severe disease for valve-team assessment. Repair is preferred when durable repair is feasible, while replacement is selected for appropriate anatomy or mechanism. Seek urgent evaluation for sudden deterioration. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Severe Mitral Regurgitation",
+    "Select appropriate diagnostic workup for Severe Mitral Regurgitation",
+    "Implement evidence-based management plan: Echocardiogram, refer for mitral valve repair or replacement"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Mitral Regurgitation",
+    "one_liner": "A flail or prolapsing mitral valve leaflet allows significant backward blood flow, causing fatigue, breathlessness, and orthopnea with a blowing systolic murmur.",
+    "differentials": [
+      "Aortic stenosis",
+      "Cardiomyopathy"
+    ],
+    "red_flags": [
+      "Sudden worsening — possible chordae rupture"
+    ],
+    "must_ask": [
+      {
+        "objective": "Orthopnea",
+        "say": "How many pillows do you need to sleep?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How is your energy level?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Known valve history",
+        "say": "Have you known about your mitral valve problem before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Progression",
+        "say": "Has this been getting worse gradually or suddenly?",
+        "domains": [
+          "progression"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "id": "cs_014",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Clark",
+  "age": 31,
+  "gender": "male",
+  "chief_complaint": "sudden ischemic stroke in young deep sea diver after surfacing with deep vein thrombosis",
+  "hpi_details": "31M scuba diver presenting with acute stroke and DVT where transesophageal echocardiogram with agitated saline bubble study demonstrates right-to-left shunting across a large patent foramen ovale; closure requires multidisciplinary assessment after the acute stroke and venous thrombosis are managed.",
+  "ideas": "thinks the diving trip somehow caused a clot to travel to his brain and worries it could happen again",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "mri_embolic_stroke",
+      "test": "Brain MRI",
+      "value": "Acute cortical infarct in the left middle cerebral artery territory with an embolic pattern",
+      "unit": "",
+      "reference_range": "No acute infarct",
+      "flag": "critical",
+      "collected_at": "Acute stroke assessment"
+    },
+    {
+      "id": "doppler_confirmed_dvt",
+      "test": "Lower-extremity venous ultrasound",
+      "value": "Acute non-compressible proximal deep-vein thrombosis in the right popliteal and femoral veins",
+      "unit": "",
+      "reference_range": "Veins fully compressible",
+      "flag": "positive",
+      "collected_at": "Acute stroke assessment"
+    },
+    {
+      "id": "tee_large_pfo_shunt",
+      "test": "Transesophageal echocardiogram with bubble study",
+      "value": "Large patent foramen ovale with spontaneous right-to-left shunt at rest and increased shunting with Valsalva",
+      "unit": "",
+      "reference_range": "No intracardiac shunt",
+      "flag": "positive",
+      "collected_at": "Stroke aetiology work-up"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Patent Foramen Ovale with Paradoxical Embolism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Patent Foramen Ovale with Paradoxical Embolism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes completing a full secondary stroke workup to exclude other stroke mechanisms, anticoagulating the confirmed venous thromboembolism, and evaluating percutaneous PFO closure using the RoPE score and shared decision-making once the acute stroke and clot are stabilized, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden ischemic stroke in young deep sea diver after surfacing with deep vein thrombosis",
+      "Key HPI features: 31M scuba diver presenting with acute stroke and DVT where transesophageal echocardiogram with agitated saline bubble study demonstrates right-to-left shunting across a large patent foramen ovale; closure requires multidisciplinary assessment after the acute stroke and venous thrombosis are managed.",
+      "Objective/Exam findings: Vitals: HR 84, BP 138/86, afebrile. Neurological exam shows a focal deficit consistent with an embolic infarct in a single arterial territory. Unilateral calf swelling, tenderness, and warmth. MRI brain confirms an acute embolic-pattern infarct. Lower extremity Doppler ultrasound confirms deep vein thrombosis. Transesophageal echocardiogram with agitated saline bubble study demonstrates a large patent foramen ovale with right-to-left shunting at rest and with Valsalva. Standard arrhythmia monitoring and carotid/vertebral imaging are unremarkable.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Patent Foramen Ovale with Paradoxical Embolism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atherosclerotic stroke without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any focal neurological deficit — needs urgent stroke workup regardless of the underlying mechanism."
+    ],
+    "management_principles": [
+      "Complete standard secondary stroke workup (arrhythmia monitoring, carotid/vertebral imaging, hypercoagulable workup) to exclude other stroke mechanisms before attributing the stroke to the PFO",
+      "Anticoagulate the confirmed deep vein thrombosis per standard duration, then evaluate for percutaneous PFO closure using the RoPE score and shared decision-making once the acute stroke and clot are stabilized",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "31M scuba diver presenting with sudden focal neurological deficit and unilateral leg swelling shortly after surfacing, found to have both acute ischemic stroke and deep vein thrombosis.",
+    "objective": "Vitals: HR 84, BP 138/86, afebrile. Neurological exam shows a focal deficit consistent with an embolic infarct in a single arterial territory. Unilateral calf swelling, tenderness, and warmth. MRI brain confirms an acute embolic-pattern infarct. Lower extremity Doppler ultrasound confirms deep vein thrombosis. Transesophageal echocardiogram with agitated saline bubble study demonstrates a large patent foramen ovale with right-to-left shunting at rest and with Valsalva. Standard arrhythmia monitoring and carotid/vertebral imaging are unremarkable.",
+    "assessment": "Likely paradoxical embolism through a large patent foramen ovale, with a concurrent lower extremity deep vein thrombosis as the presumed embolic source, after other stroke mechanisms have been excluded.",
+    "plan": "Complete standard secondary stroke workup (arrhythmia monitoring, carotid/vertebral imaging, hypercoagulable workup) to exclude other stroke mechanisms before attributing the stroke to the PFO. Anticoagulate the confirmed deep vein thrombosis per standard duration, then evaluate for percutaneous PFO closure using the RoPE score and shared decision-making once the acute stroke and clot are stabilized."
+  },
+  "learning_objectives": [
+    "Recognize the clinical pattern of paradoxical embolism (concurrent stroke and venous thromboembolism in a young patient) that should prompt evaluation for a right-to-left shunt",
+    "Formulate a prioritized differential diagnosis for stroke in a young adult, including atherosclerotic stroke, cardioembolic stroke from arrhythmia, and decompression sickness in a diver",
+    "Explain the role of the agitated saline bubble study on TEE in demonstrating a PFO and right-to-left shunting",
+    "Apply the RoPE score and shared decision-making framework to determine candidacy for percutaneous PFO closure after a cryptogenic stroke"
+  ],
+  "teaching": {
+    "diagnosis": "Patent Foramen Ovale with Paradoxical Embolism",
+    "one_liner": "A persistent opening between the heart's atria can allow a venous clot to cross into arterial circulation; a bubble study demonstrates the shunt, while the stroke mechanism and suitability for closure require a full stroke evaluation.",
+    "differentials": [
+      "Atherosclerotic stroke",
+      "Cardioembolic stroke from atrial fibrillation",
+      "Decompression sickness"
+    ],
+    "red_flags": [
+      "Any focal neurological deficit — needs urgent stroke workup regardless of the underlying mechanism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diving activity relative to symptoms",
+        "say": "Were you diving or had you recently surfaced when this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "diving",
+          "surfaced"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "What exactly did you notice — weakness, numbness, trouble speaking?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weakness",
+          "numbness",
+          "speech"
+        ]
+      },
+      {
+        "objective": "Leg symptoms (DVT)",
+        "say": "Have you had any leg swelling or pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "leg swelling",
+          "DVT"
+        ]
+      },
+      {
+        "objective": "Prolonged immobility or risk factors",
+        "say": "Have you had any long flights or periods of immobility recently?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Prior migraine history",
+        "say": "Do you get migraines, especially with visual auras?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

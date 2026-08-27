@@ -1,0 +1,164 @@
+{
+  "id": "id_020",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Quinn",
+  "age": 25,
+  "gender": "female",
+  "chief_complaint": "fever, severe sore throat, and swollen neck glands",
+  "hpi_details": "25F presents with a 5-day history of extreme fatigue, high fever, and a severely sore throat. She states it hurts to swallow. She has large, tender lumps on both sides of her neck, mostly in the back.",
+  "ideas": "thinks she has strep throat",
+  "concerns": "worried because her throat is so swollen",
+  "expectations": "wants antibiotics",
+  "pmh": "None",
+  "medications": "Ibuprofen PRN",
+  "social_hx": "College student",
+  "investigation_events": [
+    {
+      "id": "point_of_care_pharyngitis_tests",
+      "title": "Point-of-care pharyngitis test results",
+      "order_terms": [
+        "rapid strep test",
+        "rapid strep",
+        "strep test",
+        "heterophile antibody",
+        "monospot",
+        "mono test"
+      ],
+      "availability_message": "The point-of-care pharyngitis test results are now available.",
+      "results": [
+        {
+          "id": "rapid_strep",
+          "test": "Rapid group A streptococcal antigen",
+          "value": "Negative",
+          "reference_range": "Negative",
+          "flag": "normal",
+          "specimen": "Throat swab",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "heterophile_antibody",
+          "test": "Heterophile antibody test",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Blood",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infectious Mononucleosis (EBV)",
+    "core_concepts": [
+      "Classic triad: Fever, pharyngitis/tonsillitis, lymphadenopathy (especially posterior cervical).",
+      "Extreme fatigue is a hallmark.",
+      "Splenomegaly occurs in about 50% of cases."
+    ],
+    "diagnostic_clues": [
+      "Posterior cervical lymphadenopathy",
+      "Severe fatigue",
+      "Tonsillar exudates"
+    ],
+    "common_misconceptions": [
+      "Misdiagnosing as Strep pharyngitis and prescribing Amoxicillin, which frequently causes a maculopapular rash in EBV patients."
+    ],
+    "dangerous_errors": [
+      "Failing to advise against contact sports, risking splenic rupture."
+    ],
+    "management_principles": [
+      "Supportive care. Avoid contact sports for 4 weeks. Monospot test."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "25F with fever, severe fatigue, sore throat, and neck swelling for 5 days.",
+    "objective": "Exudative tonsillitis. Prominent posterior cervical lymphadenopathy. Mild splenomegaly on palpation.",
+    "assessment": "Infectious Mononucleosis.",
+    "plan": "Monospot test, Rapid Strep (to rule out co-infection). Supportive care (NSAIDs). Strict avoidance of contact sports/heavy lifting for 4 weeks."
+  },
+  "learning_objectives": [
+    "Differentiate EBV mononucleosis from Strep pharyngitis and counsel on splenic rupture risk."
+  ],
+  "teaching": {
+    "diagnosis": "Infectious Mononucleosis",
+    "one_liner": "Fever, pharyngitis, posterior cervical lymphadenopathy, and extreme fatigue typical of EBV infection.",
+    "differentials": [
+      "Streptococcal pharyngitis",
+      "Acute HIV infection",
+      "CMV infection"
+    ],
+    "red_flags": [
+      "Airway compromise from severe tonsillar hypertrophy",
+      "Severe LUQ pain (splenic rupture)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sore throat severity",
+        "say": "How severe is the sore throat, and is it hard to swallow?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "sore throat",
+          "swallow"
+        ]
+      },
+      {
+        "objective": "Lymph node location",
+        "say": "Are the swollen glands mainly at the back of your neck, or elsewhere?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "posterior cervical",
+          "neck glands"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How tired or exhausted do you feel compared to normal?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fatigue",
+          "exhausted"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "How high has your fever been, and how many days has it lasted?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "days"
+        ]
+      },
+      {
+        "objective": "Splenic and airway red flags",
+        "say": "Have you had any pain in your upper left belly, or trouble breathing or swallowing?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "spleen",
+          "left upper quadrant",
+          "airway"
+        ]
+      }
+    ]
+  }
+}

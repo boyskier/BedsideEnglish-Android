@@ -1,0 +1,143 @@
+{
+  "id": "ns_001",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 21,
+  "gender": "male",
+  "chief_complaint": "brief loss of consciousness following skateboard fall, now presenting with rapid neurological decline and fixed dilated pupil",
+  "hpi_details": "21M skateboarder fell and struck right temporal region on concrete curb without helmet. Experienced brief loss of consciousness (~2 minutes) followed by a 4-hour lucid interval where he walked home and conversed normally. Over the past hour, developed severe progressive headache, vomiting, lethargy, and left-sided hemiparesis. Brought to ED by roommates unresponsive.",
+  "ideas": "roommates alarmed because he woke up screaming of headache then collapsed into coma",
+  "concerns": "roommates worried he suffered catastrophic brain bleeding",
+  "expectations": "want immediate emergency brain surgery to save his life",
+  "pmh": "No prior medical history",
+  "medications": "None",
+  "social_hx": "College student, non-smoker",
+  "investigation_events": [{
+    "id": "stat_epidural_hematoma_ct",
+    "title": "Emergency head CT",
+    "order_terms": ["CT head", "CT brain", "non-contrast CT"],
+    "availability_message": "The emergency CT result is now available. Airway protection, hyperosmolar therapy, and operative transfer should not be delayed.",
+    "results": [{"id": "ct_head", "test": "Non-contrast CT head", "value": "Right temporal biconvex hyperdense extra-axial hematoma, 2.8 cm thick, with 12 mm leftward midline shift and uncal herniation; temporal bone fracture crosses the middle meningeal artery groove", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute Epidural Hematoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Epidural Hematoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT neurosurgical emergency: immediate transfer to operating room for right temporal craniotomy, evacuation of epidural hematoma, and hemostasis of middle meningeal artery, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: brief loss of consciousness following skateboard fall, now presenting with rapid neurological decline and fixed dilated pupil",
+      "Key HPI features: 21M skateboarder fell and struck right temporal region on concrete curb without helmet. Experienced brief loss of consciousness (~2 minutes) followed by a 4-hour lucid interval where he walked home and conversed normally. Over the past hour, developed severe progressive headache, vomiting, lethargy, and left-sided hemiparesis. Brought to ED by roommates unresponsive.",
+      "Objective/Exam findings: Vitals: HR 48, BP 178/95 (Cushing reflex bradycardia and hypertension), Temp 36.8C. GCS 6 (E1 V1 M4 - withdrawing to pain on right, decerebrate posturing on left). Right pupil 7 mm fixed and non-reactive to light; left pupil 3 mm reactive. Non-contrast head CT demonstrates a biconvex (lens-shaped) hyperdense extra-axial collection over the right temporal lobe measuring 2.8 cm in depth with 12 mm leftward midline shift and uncal transtentorial herniation. Underlying skull fracture of squamous temporal bone across middle meningeal artery groove.",
+      "Relevant background/PMH: No prior medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Epidural Hematoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute subdural hematoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: A fixed dilated pupil signals uncal herniation, a neurosurgical emergency."
+    ],
+    "management_principles": [
+      "STAT neurosurgical emergency: immediate transfer to operating room for right temporal craniotomy, evacuation of epidural hematoma, and hemostasis of middle meningeal artery",
+      "Intubate for airway protection and hyperventilate mildly (PaCO2 30-35 mmHg) during transit",
+      "Administer IV Mannitol 1g/kg or hypertonic saline bolus to acutely reduce ICP"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "21M presenting with classic history of acute epidural hematoma: head trauma, brief syncope, lucid interval, and rapid secondary neurological deterioration.",
+    "objective": "Vitals: HR 48, BP 178/95 (Cushing reflex bradycardia and hypertension), Temp 36.8C. GCS 6 (E1 V1 M4 - withdrawing to pain on right, decerebrate posturing on left). Right pupil 7 mm fixed and non-reactive to light; left pupil 3 mm reactive. Non-contrast head CT demonstrates a biconvex (lens-shaped) hyperdense extra-axial collection over the right temporal lobe measuring 2.8 cm in depth with 12 mm leftward midline shift and uncal transtentorial herniation. Underlying skull fracture of squamous temporal bone across middle meningeal artery groove.",
+    "assessment": "Acute Right Temporal Epidural Hematoma secondary to middle meningeal artery disruption with uncal herniation and elevated intracranial pressure.",
+    "plan": "STAT neurosurgical emergency: immediate transfer to operating room for right temporal craniotomy, evacuation of epidural hematoma, and hemostasis of middle meningeal artery. Intubate for airway protection and hyperventilate mildly (PaCO2 30-35 mmHg) during transit. Administer IV Mannitol 1g/kg or hypertonic saline bolus to acutely reduce ICP. Elevate head of bed 30 degrees."
+  },
+  "learning_objectives": [
+    "Recognize classic pathognomonic progression of acute epidural hematoma (trauma, syncope, lucid interval, rapid herniation)",
+    "Correlate ipsilateral fixed dilated pupil (CN III compression) and contralateral hemiparesis (cerebral peduncle compression) with uncal herniation",
+    "Identify biconvex hyperdense extra-axial hematoma morphology on non-contrast head CT",
+    "Outline immediate acute ICP management protocols prior to emergency craniotomy"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Epidural Hematoma",
+    "one_liner": "A tear in the middle meningeal artery from head trauma causes bleeding between the skull and the dura, classically producing a lucid interval: the patient seems fine for hours before rapidly deteriorating as the clot expands.",
+    "differentials": [
+      "Acute subdural hematoma",
+      "Diffuse axonal injury",
+      "Simple concussion"
+    ],
+    "red_flags": [
+      "A fixed dilated pupil signals uncal herniation, a neurosurgical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and initial LOC",
+        "say": "Did he lose consciousness right after the fall, and for how long?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "loss of consciousness",
+          "fall"
+        ]
+      },
+      {
+        "objective": "Lucid interval",
+        "say": "Did he seem completely normal for a while after the fall, before getting worse?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "lucid interval",
+          "walked home"
+        ]
+      },
+      {
+        "objective": "Current symptoms",
+        "say": "How has his headache, vomiting, and alertness changed in the past hour?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "headache",
+          "vomiting",
+          "lethargy"
+        ]
+      },
+      {
+        "objective": "Weakness",
+        "say": "Is one side of his body weaker than the other?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hemiparesis"
+        ]
+      },
+      {
+        "objective": "Helmet use",
+        "say": "Was he wearing a helmet?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

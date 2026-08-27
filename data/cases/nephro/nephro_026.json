@@ -1,0 +1,131 @@
+{
+  "id": "nephro_026",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wilson",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "decreased urine output and elevated creatinine after diarrhea",
+  "hpi_details": "A 20-year-old female presents to the clinic with 3 days of profuse watery diarrhea followed by a marked decrease in urine output over the last 24 hours. She reports generalized fatigue and lightheadedness on standing but denies fever, blood in stool, or NSAID use.",
+  "ideas": "thinks it might be related to aki",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_prerenal_aki_workup",
+      "title": "Urgent kidney function assessment",
+      "order_terms": ["BUN", "creatinine", "renal function", "BMP", "basic metabolic panel", "FeNa", "fractional excretion of sodium"],
+      "availability_message": "Urgent kidney function and renal index results are now available. Isotonic fluid replacement should proceed based on the clinical volume depletion.",
+      "results": [
+        {"id": "bun", "test": "Blood urea nitrogen", "value": "42", "unit": "mg/dL", "reference_range": "7-20", "flag": "high"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "1.8", "unit": "mg/dL", "reference_range": "0.6-1.1", "flag": "high", "note": "Baseline creatinine is 0.8 mg/dL."},
+        {"id": "fena", "test": "Fractional excretion of sodium", "value": "0.7", "unit": "%", "reference_range": "<1% suggests sodium-avid physiology", "flag": "low"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Kidney Injury (prerenal) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Kidney Injury (prerenal) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management includes IV hydration to restore renal perfusion and holding nephrotoxic drugs (NSAIDs, ACEi), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: decreased urine output and elevated creatinine after diarrhea",
+      "Key HPI features: A 20-year-old female presents to the clinic with 3 days of profuse watery diarrhea followed by a marked decrease in urine output over the last 24 hours. She reports generalized fatigue and lightheadedness on standing but denies fever, blood in stool, or NSAID use.",
+      "Objective/Exam findings: Vitals: BP 96/60, HR 104, orthostatic. Dry mucous membranes, poor skin turgor. Labs: BUN 42 mg/dL, Creatinine 1.8 mg/dL (baseline 0.8), BUN:Cr ratio >20:1, FeNa <1%.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Kidney Injury (prerenal).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute tubular necrosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or very low blood pressure."
+    ],
+    "management_principles": [
+      "Initiate IV hydration (isotonic saline) to restore renal perfusion, and hold nephrotoxic drugs (NSAIDs, ACE inhibitors)",
+      "Consult nephrology if creatinine fails to improve or urine output remains low despite adequate hydration",
+      "Counsel patient on maintaining oral hydration and recognizing red-flag symptoms warranting return"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "20F presents with 3 days of profuse watery diarrhea followed by a marked decrease in urine output over the last 24 hours, with associated fatigue and lightheadedness on standing. Denies fever, blood in stool, or NSAID use. Labs today reveal an elevated creatinine.",
+    "objective": "Vitals: BP 96/60, HR 104, orthostatic. Dry mucous membranes, poor skin turgor. Labs: BUN 42 mg/dL, Creatinine 1.8 mg/dL (baseline 0.8), BUN:Cr ratio >20:1, FeNa <1%.",
+    "assessment": "Acute kidney injury, prerenal in etiology, secondary to volume depletion from diarrhea.",
+    "plan": "1. Initiate IV hydration (isotonic saline) to restore renal perfusion. 2. Recheck BUN/creatinine after rehydration to confirm improvement. 3. Consult nephrology if creatinine fails to improve or urine output remains low despite adequate hydration. 4. Counsel patient on oral hydration and red-flag symptoms warranting return."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Kidney Injury",
+    "Select appropriate diagnostic workup for Acute Kidney Injury",
+    "Implement evidence-based management plan: IV hydration, hold nephrotoxic drugs (NSAIDs, ACEi)"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Kidney Injury (prerenal)",
+    "one_liner": "Volume depletion from diarrhea reduces blood flow to the kidneys, causing a rise in creatinine that typically reverses with rehydration.",
+    "differentials": [
+      "Acute tubular necrosis",
+      "Sepsis-associated AKI"
+    ],
+    "red_flags": [
+      "Confusion or very low blood pressure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fluid loss history",
+        "say": "Tell me about the diarrhea — how much and how long?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fluid intake",
+        "say": "Have you been able to drink and keep fluids down?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking blood pressure medications or NSAIDs?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "Has your urine output decreased?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Dizziness",
+        "say": "Do you feel dizzy when standing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

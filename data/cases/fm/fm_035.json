@@ -1,0 +1,117 @@
+{
+  "id": "fm_035",
+  "system": "fm",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Smith",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "excruciating pain, red swollen big toe, took hydrochlorothiazide",
+  "hpi_details": "A 47-year-old male presents to the clinic with excruciating pain, red swollen big toe, took hydrochlorothiazide. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gout_fm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "Hydrochlorothiazide",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Acute Gouty Podagra evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Gouty Podagra is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Acute gout can be treated with an NSAID, colchicine, or glucocorticoid selected for comorbidities; if infection is possible, obtain urgent synovial-fluid evaluation rather than assuming gout. Review whether hydrochlorothiazide can be changed for hypertension management.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating pain, red swollen big toe, took hydrochlorothiazide",
+      "Key HPI features: A 47-year-old male presents to the clinic with excruciating pain, red swollen big toe, took hydrochlorothiazide. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: First metatarsophalangeal joint markedly erythematous, warm, swollen, and exquisitely tender to touch; afebrile.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Gouty Podagra.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever."
+    ],
+    "management_principles": [
+      "Treat an uncomplicated flare with a comorbidity-appropriate anti-inflammatory; urgently evaluate for septic arthritis if fever or infection is possible, and review whether hydrochlorothiazide can be changed",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of excruciating pain, red swollen big toe, took hydrochlorothiazide. HPI: Sudden-onset severe pain and swelling of the first MTP joint, currently on hydrochlorothiazide for hypertension, no fever reported.",
+    "objective": "First metatarsophalangeal joint markedly erythematous, warm, swollen, and exquisitely tender; afebrile with otherwise normal vital signs.",
+    "assessment": "Acute gouty podagra, likely provoked by hydrochlorothiazide; septic arthritis to be excluded if fever or atypical features develop.",
+    "plan": "Treat an uncomplicated flare with an NSAID, colchicine, or glucocorticoid according to renal, gastrointestinal, cardiovascular, and drug-interaction risks. If fever or septic arthritis is possible, obtain urgent joint aspiration and culture. Review whether hydrochlorothiazide can be replaced for the hypertension indication."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Gouty Podagra",
+    "Select appropriate diagnostic workup for Acute Gouty Podagra",
+    "Implement evidence-based management plan: severity-appropriate anti-inflammatory treatment and exclusion of septic arthritis when indicated"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Gouty Podagra",
+    "one_liner": "Sudden excruciating big toe pain in a patient on hydrochlorothiazide, treated with NSAIDs/colchicine and a switch to losartan.",
+    "differentials": [
+      "Septic arthritis"
+    ],
+    "red_flags": [
+      "Fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset",
+        "say": "Did this start suddenly?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Trigger",
+        "say": "Any alcohol or rich food recently?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking a water pill?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Joint appearance",
+        "say": "How red and swollen is the toe?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Has this happened before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

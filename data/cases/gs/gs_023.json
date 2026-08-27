@@ -1,0 +1,178 @@
+{
+  "id": "gs_023",
+  "system": "general surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Yang",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "crampy abdominal pain, severe bloating, inability to pass gas or stool, and vomiting",
+  "hpi_details": "65M presents with 2 days of worsening crampy abdominal pain, severe abdominal distension (bloating), inability to pass gas or stool (obstipation), and vomiting green-yellow fluid. Had abdominal surgery 5 years ago.",
+  "ideas": "thinks his bowel is completely blocked",
+  "concerns": "worried about bowel rupture or emergency surgery",
+  "expectations": "wants stomach tube and scan",
+  "pmh": "Laparoscopic cholecystectomy (5 years ago)",
+  "medications": "None",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_small_bowel_obstruction_workup",
+      "title": "STAT small-bowel obstruction results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "electrolytes",
+        "metabolic panel",
+        "abdominal x ray",
+        "abdominal x-ray",
+        "abdominal radiograph",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The STAT small-bowel obstruction results are now available; nasogastric decompression, IV fluids, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "3.2",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "ct_small_bowel_obstruction",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Dilated small-bowel loops with a discrete adhesive transition point and collapsed distal bowel; no closed-loop configuration, reduced enhancement, or free air",
+          "flag": "critical",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Small Bowel Obstruction (post-surgical adhesions) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Small Bowel Obstruction (post-surgical adhesions) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes NG tube decompression, NPO status, IV fluid resuscitation, and urgent surgical consultation to distinguish safe nonoperative trial from the need for emergency surgery, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: crampy abdominal pain, severe bloating, inability to pass gas or stool, and vomiting",
+      "Key HPI features: 65M presents with 2 days of worsening crampy abdominal pain, severe abdominal distension (bloating), inability to pass gas or stool (obstipation), and vomiting green-yellow fluid. Had abdominal surgery 5 years ago.",
+      "Objective/Exam findings: Vitals: Temp 37.4C, HR 105, BP 118/72. Abdomen markedly distended and tympanitic with high-pitched, hyperactive bowel sounds; no rebound, guarding, or peritonitis. Abdominal X-ray series shows dilated small bowel loops with multiple air-fluid levels; CT abdomen/pelvis confirms a transition point consistent with adhesive small bowel obstruction, without evidence of ischemia or closed-loop obstruction.",
+      "Relevant background/PMH: Laparoscopic cholecystectomy (5 years ago)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Small Bowel Obstruction (post-surgical adhesions).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ileus without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or severe constant pain — suggests strangulation."
+    ],
+    "management_principles": [
+      "Order abdominal X-ray series (look for dilated bowel loops, air-fluid levels) and CT abdomen/pelvis to confirm the diagnosis and exclude strangulation or closed-loop obstruction",
+      "Insert NG tube for decompression, keep NPO, and start IV fluids with electrolyte correction",
+      "Obtain urgent general surgery consultation; escalate to emergency surgery if there are signs of strangulation, peritonitis, or clinical deterioration"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "65M presents with 2 days of worsening crampy abdominal pain, severe abdominal distension (bloating), inability to pass gas or stool (obstipation), and vomiting green-yellow fluid. Had abdominal surgery 5 years ago.",
+    "objective": "Vitals: Temp 37.4C, HR 105, BP 118/72. Abdomen markedly distended and tympanitic with high-pitched, hyperactive bowel sounds; no rebound, guarding, or peritonitis. Abdominal X-ray series shows dilated small bowel loops with multiple air-fluid levels; CT abdomen/pelvis confirms a transition point consistent with adhesive small bowel obstruction, without evidence of ischemia or closed-loop obstruction.",
+    "assessment": "Small bowel obstruction, likely secondary to post-surgical adhesions, without current signs of strangulation.",
+    "plan": "Insert NG tube for decompression, keep NPO, and start IV fluids with electrolyte correction. Order abdominal X-ray series and CT abdomen/pelvis to confirm the diagnosis and exclude strangulation or closed-loop obstruction. Obtain urgent general surgery consultation; a trial of nonoperative management with serial abdominal exams may be appropriate if there are no signs of strangulation, but escalate to emergency surgery if fever, worsening pain, or peritonitis develop."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Small Bowel Obstruction (SBO), likely secondary to post-surgical adhesions.",
+    "Formulate prioritized differential diagnosis for crampy abdominal pain, severe bloating, inability to pass gas or stool, and vomiting",
+    "Select appropriate laboratory and imaging studies for general surgery",
+    "Implement evidence-based acute and long-term management strategies for Small Bowel Obstruction (SBO), likely secondary to post-surgical adhesions."
+  ],
+  "teaching": {
+    "diagnosis": "Small Bowel Obstruction (post-surgical adhesions)",
+    "one_liner": "Scar tissue from a prior operation narrows the small bowel, causing crampy pain, distension, obstipation, and bilious vomiting.",
+    "differentials": [
+      "Ileus",
+      "Large bowel obstruction",
+      "Incarcerated hernia"
+    ],
+    "red_flags": [
+      "Fever or severe constant pain — suggests strangulation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Prior abdominal surgery",
+        "say": "Have you had abdominal surgery before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "surgery",
+          "cholecystectomy"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "Does the pain come and go in waves?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cramp",
+          "waves"
+        ]
+      },
+      {
+        "objective": "Passing gas or stool",
+        "say": "Are you able to pass gas or stool?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "gas",
+          "stool"
+        ]
+      },
+      {
+        "objective": "Vomiting character",
+        "say": "What color is the vomit?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "green",
+          "yellow",
+          "vomit"
+        ]
+      },
+      {
+        "objective": "Distension",
+        "say": "Has your belly become more swollen?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "distension",
+          "bloating"
+        ]
+      }
+    ]
+  }
+}

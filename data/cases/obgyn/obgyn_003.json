@@ -1,0 +1,160 @@
+{
+  "id": "obgyn_003",
+  "system": "obstetrics & gynecology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Clark",
+  "age": 33,
+  "gender": "female",
+  "chief_complaint": "painless, bright red vaginal bleeding at 32 weeks gestation with placenta covering internal cervical os",
+  "hpi_details": "33F G3P2 at 32 weeks gestation presents after waking up in the morning to find her bed sheets soaked with bright red blood. Completely denies any uterine cramping, abdominal pain, contractions, or trauma. Reports active fetal movement. Both prior deliveries were by low transverse Cesarean section.",
+  "ideas": "terrified of losing the baby or hemorrhaging to death from sudden heavy bleeding",
+  "concerns": "worried because the bleeding happened out of nowhere without any warning or cramps",
+  "expectations": "wants immediate check of baby's heart rate and clear plan to keep both her and the baby safe",
+  "pmh": "G3P2, status post two prior low transverse Cesarean deliveries. Second trimester routine anatomy scan noted low-lying placenta",
+  "medications": "Prenatal vitamins",
+  "social_hx": "Homemaker, non-smoker",
+  "investigation_events": [{
+    "id": "urgent_antepartum_bleeding_ultrasound",
+    "title": "Urgent placental localization ultrasound",
+    "order_terms": ["transabdominal ultrasound", "transvaginal ultrasound", "TVUS", "placental ultrasound", "placental location"],
+    "availability_message": "Placental localization ultrasound is now available. A digital cervical examination remains contraindicated.",
+    "results": [{"id": "placental_ultrasound", "test": "Transabdominal and transvaginal ultrasound", "value": "Central placenta previa completely covers the internal cervical os over the anterior lower uterine segment", "flag": "critical", "note": "No definite sonographic features of placenta accreta spectrum are seen."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Placenta previa (third-trimester antepartum hemorrhage) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Placenta previa (third-trimester antepartum hemorrhage) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to high-risk obstetrics antepartum surveillance unit, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless, bright red vaginal bleeding at 32 weeks gestation with placenta covering internal cervical os",
+      "Key HPI features: 33F G3P2 at 32 weeks gestation presents after waking up in the morning to find her bed sheets soaked with bright red blood. Completely denies any uterine cramping, abdominal pain, contractions, or trauma. Reports active fetal movement. Both prior deliveries were by low transverse Cesarean section.",
+      "Objective/Exam findings: Vitals: HR 92, BP 118/74, SpO2 99%. Uterus soft, non-tender, non-irritable without palpable contractions. External genital inspection confirms moderate bright red blood at introitus. ABSOLUTE RULE: DO NOT PERFORM DIGITAL CERVICAL EXAMINATION (digital exam can provoke catastrophic hemorrhage). Continuous cardiotocography (CTG) confirms reactive fetal heart rate at 140 bpm with category I tracing and no contractions. Transabdominal and careful Transvaginal Ultrasound (TVUS) demonstrate a central Placenta Previa with the placenta completely covering the internal cervical os, overriding the anterior lower uterine segment scarred by prior C-sections without obvious lacunae/accreta features.",
+      "Relevant background/PMH: G3P2, status post two prior low transverse Cesarean deliveries. Second trimester routine anatomy scan noted low-lying placenta",
+      "Current medications: Prenatal vitamins"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Placenta previa (third-trimester antepartum hemorrhage).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Placental abruption without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Painless bright-red bleeding."
+    ],
+    "management_principles": [
+      "Admit to high-risk obstetrics antepartum surveillance unit",
+      "Maintain strict pelvic rest (no intercourse, no vaginal exams)",
+      "Type and crossmatch 2-4 units packed RBCs and keep on hold"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "33F G3P2 at 32 weeks with history of two prior C-sections presenting with classic third-trimester painless bright red vaginal hemorrhage.",
+    "objective": "Vitals: HR 92, BP 118/74, SpO2 99%. Uterus soft, non-tender, non-irritable without palpable contractions. External genital inspection confirms moderate bright red blood at introitus. ABSOLUTE RULE: DO NOT PERFORM DIGITAL CERVICAL EXAMINATION (digital exam can provoke catastrophic hemorrhage). Continuous cardiotocography (CTG) confirms reactive fetal heart rate at 140 bpm with category I tracing and no contractions. Transabdominal and careful Transvaginal Ultrasound (TVUS) demonstrate a central Placenta Previa with the placenta completely covering the internal cervical os, overriding the anterior lower uterine segment scarred by prior C-sections without obvious lacunae/accreta features.",
+    "assessment": "Third-Trimester Antepartum Hemorrhage secondary to Complete Placenta Previa at 32 weeks gestation.",
+    "plan": "Admit to high-risk obstetrics antepartum surveillance unit. Maintain strict pelvic rest (no intercourse, no vaginal exams). Type and crossmatch 2-4 units packed RBCs and keep on hold. Administer intramuscular Betamethasone (12 mg IM q24h x 2 doses) for fetal lung maturity in anticipation of preterm delivery. Administer Rho(D) Immune Globulin if maternal blood group is Rh-negative. If bleeding subsides and remains stable, manage expectantly with planned scheduled Cesarean delivery at 36-37 weeks. If massive or persistent uncontrollable hemorrhage occurs or fetal distress develops, proceed to STAT emergency Cesarean delivery regardless of gestational age."
+  },
+  "learning_objectives": [
+    "Recognize painless bright red vaginal bleeding in the third trimester as classic for placenta previa until proven otherwise",
+    "Explain the strict absolute contraindication against performing any digital cervical examination prior to placental localization via ultrasound",
+    "Correlate history of prior Cesarean deliveries with significantly increased risk of Placenta Previa and Placenta Accreta Spectrum (accreta/increta/percreta)",
+    "Outline management algorithms balancing expectant maternal-fetal stabilization with corticosteroids (Betamethasone) for prematurity against indications for emergency Cesarean section"
+  ],
+  "teaching": {
+    "diagnosis": "Placenta previa (third-trimester antepartum hemorrhage)",
+    "one_liner": "33F G3P2 at 32 weeks with painless bright-red bleeding and known low-lying placenta after two prior C-sections.",
+    "differentials": [
+      "Placental abruption",
+      "Vasa previa",
+      "Cervical/vaginal lesion",
+      "Bloody show/labor"
+    ],
+    "red_flags": [
+      "Painless bright-red bleeding",
+      "Prior cesarean deliveries (accreta risk)",
+      "Known low-lying placenta"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the bleeding as painless vs. painful",
+        "say": "Did you have any cramping or abdominal pain along with the bleeding?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "painless bleeding",
+          "cramping"
+        ]
+      },
+      {
+        "objective": "Confirm known placental location",
+        "say": "Did your ultrasound show anything about the position of your placenta?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "placenta previa",
+          "ultrasound"
+        ]
+      },
+      {
+        "objective": "Ask about prior cesarean deliveries",
+        "say": "How many prior C-sections have you had?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "prior cesarean",
+          "accreta risk"
+        ]
+      },
+      {
+        "objective": "Confirm fetal movement",
+        "say": "Have you felt your baby moving normally?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fetal movement"
+        ]
+      },
+      {
+        "objective": "Avoid and explain digital exam contraindication",
+        "say": "I want to reassure you we will not do an internal exam until we confirm the placenta's position on ultrasound.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "no digital exam",
+          "ultrasound first"
+        ]
+      },
+      {
+        "objective": "Screen for trauma",
+        "say": "Has there been any trauma or injury to your abdomen recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "trauma"
+        ]
+      }
+    ]
+  }
+}

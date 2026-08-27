@@ -1,0 +1,93 @@
+{
+  "id": "disclose_anticoagulant_dosing_error",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Error disclosure",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "spikes_bad_news",
+  "patient_name": "Mr. Peter Douglas, disclosure of a medication dosing error",
+  "chief_complaint": "Disclose a tenfold anticoagulant dosing error and its bleeding complication honestly and without being defensive",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Medication error disclosure: tenfold enoxaparin overdose causing a bleeding complication",
+    "task": "Error disclosure",
+    "urgency": "urgent",
+    "patient": "Mr. Peter Douglas, 67-year-old man, admitted for a DVT",
+    "location": "Inpatient ward, private room; the patient is alert and stable but has just been told a nurse noticed a problem",
+    "situation": "A transcription error resulted in enoxaparin being dosed ten times higher than intended for two doses; he has since developed a large hematoma at the injection site and a drop in hemoglobin.",
+    "background": [
+      "Admitted three days ago for a below-knee deep vein thrombosis and started on therapeutic enoxaparin.",
+      "The error was identified on pharmacy reconciliation this morning and has already been corrected; the care team and risk management have been notified."
+    ],
+    "current_status": [
+      "Large, tender hematoma at the abdominal injection site; hemoglobin dropped from 13.2 to 10.8 g/dL over 24 hours.",
+      "Vital signs currently stable; no signs of active major bleeding elsewhere."
+    ],
+    "key_data": [
+      "He received the correct dose today after the error was caught; anticoagulation has been temporarily held pending hematology and surgical review of the hematoma.",
+      "He has not yet been told anything specific — only that 'the doctor wants to talk to him about his medication.'"
+    ],
+    "treatments": [
+      "Anticoagulation held; hemoglobin being monitored; hematology consulted for further management of the hematoma."
+    ],
+    "your_request": "Disclose the dosing error, its cause, and its consequence honestly, apologize appropriately without being defensive, and explain the plan going forward, including how this will be prevented in the future.",
+    "must_include": [
+      "A private setting and an open, honest statement that an error occurred (Setting, Knowledge).",
+      "A clear, factual, jargon-free explanation of what happened and its consequence, without minimizing or over-explaining.",
+      "A genuine apology that does not deflect blame onto the system or another clinician by name.",
+      "Acknowledgment and response to his emotional reaction.",
+      "An explicit plan for monitoring, treatment of the hematoma, and how this type of error will be prevented going forward."
+    ]
+  },
+  "kickoff_text": "The nurse said something about my blood thinner and that you needed to talk to me. What's going on — is something wrong?",
+  "persona_override": "You are Mr. Peter Douglas, a 67-year-old man admitted for a DVT who just learned there may be a problem with his medication and is now anxious. The true situation: a transcription error caused you to receive ten times the intended dose of enoxaparin for two doses, and you have since developed a large, painful hematoma at the injection site with a drop in hemoglobin from 13.2 to 10.8. If the learner discloses honestly and directly that a dosing error occurred, explains what happened in plain language, apologizes sincerely and personally (not just 'the system failed' or blaming a nurse by name), and explains the plan for monitoring and preventing recurrence, respond with initial shock and some anger ('How did this happen to me?') that gradually softens into wanting to understand the plan, especially once you feel the apology was genuine and specific. If the learner is vague, defensive, minimizes what happened, or blames another named staff member instead of taking ownership on behalf of the team, become more upset, more distrustful, and repeatedly ask 'so whose fault was this' and 'how do I know this won't happen again.' Do not fully calm down until the learner has both apologized directly and explained a concrete prevention plan.",
+  "learning_objectives": [
+    "disclose that a medication error occurred honestly and without delay",
+    "explain what happened and its clinical consequence in plain, factual language",
+    "apologize sincerely and take ownership on behalf of the team without blaming a named individual",
+    "acknowledge and respond to the patient's anger or distress without becoming defensive",
+    "explain the monitoring and treatment plan for the resulting complication",
+    "explain concretely how a similar error will be prevented going forward"
+  ],
+  "suggested_questions": [
+    "I need to tell you directly that a medication error happened — you received a higher dose of your blood thinner than you should have on two occasions.",
+    "I'm very sorry this happened to you. This should not have happened, and I want to explain exactly what we're doing about it.",
+    "I understand you're upset, and that's completely understandable. Here is exactly what we're doing to keep you safe now, and what we're changing so this doesn't happen to another patient."
+  ],
+  "clinical_knowledge": {
+    "topic": "Honest, non-defensive medical error disclosure for a tenfold anticoagulant dosing error resulting in a clinically significant bleeding complication",
+    "core_concepts": [
+      "Open disclosure of a medical error is both an ethical obligation and associated with better patient trust and outcomes than concealment.",
+      "A genuine apology takes ownership on behalf of the care team rather than deflecting blame onto a system or a named individual."
+    ],
+    "diagnostic_clues": [
+      "A falling hemoglobin with a new, tender hematoma after supratherapeutic anticoagulant dosing indicates a clinically significant bleeding complication requiring active monitoring."
+    ],
+    "common_misconceptions": [
+      "Disclosing an error will always make the patient more likely to pursue legal action, so vague language is safer.",
+      "Apologizing is the same as admitting personal legal fault."
+    ],
+    "dangerous_errors": [
+      "Failing to disclose the error at all, or disclosing it so vaguely that the patient does not understand what actually happened.",
+      "Blaming a specific named colleague during the disclosure conversation, which damages trust and is not the disclosing clinician's role."
+    ],
+    "management_principles": [
+      "Disclose promptly, honestly, and specifically, paired with a clear plan for monitoring and remediation.",
+      "Follow institutional patient-safety event reporting processes in parallel with the disclosure conversation."
+    ],
+    "boundaries_and_exceptions": [
+      "The exact disclosure process, involvement of risk management or patient safety officers, and documentation requirements vary by institution and jurisdiction."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Communication and Optimal Resolution (CANDOR) Toolkit",
+        "url": "https://www.ahrq.gov/patient-safety/settings/hospital/candor/introduction.html"
+      },
+      {
+        "title": "SPIKES Protocol for Breaking Bad News (Baile et al.)",
+        "url": "https://ascopubs.org/doi/10.1634/theoncologist.5-4-302"
+      }
+    ]
+  }
+}

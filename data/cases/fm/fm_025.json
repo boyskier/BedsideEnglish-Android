@@ -1,0 +1,138 @@
+{
+  "id": "fm_025",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Sim",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "seeking medical advice for weight management and prediabetes lifestyle plan",
+  "hpi_details": "45F presents to discuss weight loss. BMI is 34.2 kg/m2 and recent screening labs showed a fasting blood glucose of 110 mg/dL and HbA1c of 5.9% (prediabetes).",
+  "ideas": "thinks she is stuck being overweight and wants medical help",
+  "concerns": "worried about developing full diabetes",
+  "expectations": "wants structured diet plan and weight loss drugs",
+  "pmh": "Prediabetes, Class I Obesity",
+  "medications": "None",
+  "social_hx": "Office clerk, non-smoker",
+  "available_results": [
+    {
+      "id": "fasting_glucose",
+      "test": "Fasting plasma glucose",
+      "value": "110",
+      "unit": "mg/dL",
+      "reference_range": "70-99",
+      "flag": "high",
+      "specimen": "Plasma"
+    },
+    {
+      "id": "hba1c",
+      "test": "Hemoglobin A1c",
+      "value": "5.9",
+      "unit": "%",
+      "reference_range": "<5.7",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Class I Obesity and Prediabetes evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Class I Obesity and Prediabetes is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes intensive lifestyle modification as first line, with medical weight-loss therapy considered for eligible patients, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: seeking medical advice for weight management and prediabetes lifestyle plan",
+      "Key HPI features: 45F presents to discuss weight loss. BMI is 34.2 kg/m2 and recent screening labs showed a fasting blood glucose of 110 mg/dL and HbA1c of 5.9% (prediabetes).",
+      "Objective/Exam findings: BMI 34.2 kg/m2 (Class I obesity), blood pressure recorded; screen for acanthosis nigricans and other signs of insulin resistance.",
+      "Relevant background/PMH: Prediabetes, Class I Obesity"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Class I Obesity and Prediabetes.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Type 2 diabetes (would have higher HbA1c) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Polyuria, polydipsia, or blurred vision — suggests progression to overt diabetes and needs urgent reassessment."
+    ],
+    "management_principles": [
+      "Recommend intensive lifestyle modification (150 mins exercise/week, caloric deficit)",
+      "Discuss medical weight loss options (GLP-1 agonists Semaglutide/Tirzepatide) and schedule 6-month HbA1c follow-up"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Class I Obesity and Prediabetes. seeking medical advice for weight management and prediabetes lifestyle plan. 45F presents to discuss weight loss. BMI is 34.2 kg/m2 and recent screening labs showed a fasting blood glucose of 110 mg/dL and HbA1c of 5.9% (prediabetes).",
+    "objective": "BMI 34.2 kg/m2 (Class I obesity). Blood pressure normal. No acanthosis nigricans or Cushingoid features noted.",
+    "assessment": "Class I obesity with prediabetes (fasting glucose 110 mg/dL, HbA1c 5.9%).",
+    "plan": "Recommend intensive lifestyle modification (150 mins exercise/week, caloric deficit). Discuss medical weight loss options (GLP-1 agonists such as semaglutide or tirzepatide) and schedule a 6-month HbA1c follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Class I Obesity and Prediabetes.",
+    "Formulate prioritized differential diagnosis for seeking medical advice for weight management and prediabetes lifestyle plan",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies for Class I Obesity and Prediabetes."
+  ],
+  "teaching": {
+    "diagnosis": "Class I Obesity and Prediabetes",
+    "one_liner": "Elevated BMI with a fasting glucose and HbA1c both in the prediabetes range — the plan combines intensive lifestyle change with a discussion of medication options before it progresses to diabetes.",
+    "differentials": [
+      "Type 2 diabetes (would have higher HbA1c)"
+    ],
+    "red_flags": [
+      "Polyuria, polydipsia, or blurred vision — suggests progression to overt diabetes and needs urgent reassessment",
+      "Cushingoid features or symptoms of hypothyroidism — should be screened for rather than assuming simple obesity"
+    ],
+    "must_ask": [
+      {
+        "objective": "Weight history",
+        "say": "How has your weight changed over time?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Diet and exercise",
+        "say": "What does your typical diet and activity level look like?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does diabetes run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Prior attempts",
+        "say": "What have you tried before to lose weight?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you most about developing diabetes?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "id": "followup_chronic_003",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "chronic_disease",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Robert Vance",
+  "age": 67,
+  "gender": "male",
+  "visit_title": "Heart failure symptom & weight review",
+  "follow_up_reason": "One-month heart failure management review",
+  "clinician_brief": {
+    "prior_note": "Discharged one month ago following HFrEF flare (EF 30%). Sacubitril-valsartan 24/26mg BID and spironolactone 12.5mg OD were initiated.",
+    "active_problems": [
+      "HFrEF (EF 30%)",
+      "Coronary artery disease s/p PCI",
+      "Hypertension"
+    ],
+    "current_medications": [
+      "Sacubitril-valsartan 24/26 mg twice daily",
+      "Spironolactone 12.5 mg once daily",
+      "Carvedilol 6.25 mg twice daily",
+      "Furosemide 20 mg once daily"
+    ],
+    "previous_plan": [
+      "Daily morning weight log",
+      "Sodium and fluid restriction (<2L)",
+      "Recheck basic metabolic panel in 2 weeks",
+      "Cardiology follow-up in 1 month"
+    ],
+    "results_and_observations": [
+      "Recent serum potassium: 4.6 mmol/L",
+      "Serum creatinine: 1.2 mg/dL",
+      "BP: 112/70 mmHg, HR: 64 bpm"
+    ],
+    "today_tasks": [
+      "Review daily weight trend and edema",
+      "Assess orthopnea and NYHA functional class",
+      "Check adherence and serum potassium tolerance",
+      "Discuss sacubitril-valsartan dose titration",
+      "Reinforce red-flag weight gain thresholds"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Can now walk around the garden without stopping. Sleeping on two pillows instead of three.",
+    "adherence": "Weighs himself every morning before breakfast. Takes all pills regularly.",
+    "treatment_response": "Breathing is noticeably easier and ankle swelling has decreased.",
+    "side_effects": "Slight dizziness when standing up quickly from an armchair.",
+    "new_symptoms_and_red_flags": "No sudden weight gain (>2 kg in 3 days), severe chest pain, syncope, or nocturnal gasping.",
+    "agenda": "Wants to know if he can increase his daily fluid intake during warm weather.",
+    "concern": "Fears another emergency admission like last month.",
+    "preference": "Wants to keep his medication schedule tied to his breakfast and dinner routine."
+  },
+  "clinical_knowledge": {
+    "topic": "Titrating sacubitril-valsartan toward target dose one month after an HFrEF flare, balancing GDMT uptitration against orthostatic symptoms and a patient's summer fluid question",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Guideline-directed medical therapy (GDMT) for HFrEF with EF 30% is titrated toward target doses as tolerated — sacubitril-valsartan 24/26mg BID is a starting dose, and the target is 97/103mg BID, so this visit is about whether he can safely move up, not about staying put because he feels better.",
+      "A four-pillar GDMT regimen (ARNI, beta-blocker, MRA, and — not yet started here — an SGLT2 inhibitor) each independently reduces mortality and hospitalization; the next uptitration step should be chosen based on which drug his BP and labs can tolerate first.",
+      "Mild positional dizziness in a patient with BP 112/70 on an ARNI and beta-blocker is a common, expected finding during GDMT titration and is usually orthostatic rather than a sign the regimen is too aggressive.",
+      "Potassium 4.6 mmol/L and creatinine 1.2 mg/dL are both within acceptable range to continue spironolactone and proceed with titration, but both need to be tracked as doses increase because ARNIs, beta-blockers are generally potassium-neutral while MRAs raise potassium.",
+      "Daily weight monitoring and a specific weight-gain action threshold (his prior plan's >2 kg trigger) are what actually catches early decompensation — a good NYHA class today doesn't replace the ongoing need for this self-monitoring."
+    ],
+    "diagnostic_clues": [
+      "Improved exercise tolerance (walking the garden without stopping) and needing only two pillows instead of three both indicate a meaningful drop in NYHA functional class since discharge.",
+      "BP 112/70 with HR 64 shows hemodynamic room to titrate the ARNI further, since systolic pressure comfortably above 100 mmHg is generally the threshold watched for uptitration.",
+      "Potassium 4.6 mmol/L and creatinine 1.2 mg/dL, both essentially unchanged from admission, indicate the current spironolactone dose is being tolerated without early hyperkalemia or renal decline.",
+      "Positional dizziness on standing from an armchair, in the absence of syncope or falls, is consistent with medication-related orthostatic hypotension rather than a new cardiac event.",
+      "No red-flag weight gain, chest pain, or nocturnal symptoms since discharge supports that he remains compensated, which is what makes this the right visit to advance therapy rather than just maintain it."
+    ],
+    "common_misconceptions": [
+      "His question about drinking more fluid in warm weather reflects a common but mistaken assumption that heat-related thirst should be managed like in a healthy person; in HFrEF, fluid intake still needs to stay within his prescribed limit even in summer, with any adjustment made by his care team rather than by feel.",
+      "Assuming that feeling much better than at discharge means the medications have 'worked' and can be held at the current dose rather than titrated further, when in fact stopping short of target dosing leaves mortality benefit on the table.",
+      "Believing dizziness on standing means a medication is 'too strong' and should be reduced, rather than first trying simple orthostatic precautions (rising slowly, dorsiflexion exercises) that often resolve it without changing the dose.",
+      "Thinking his fear of another hospital admission is best addressed by being cautious with medication changes, when in guideline terms the opposite is true — full GDMT titration is what most reduces his readmission risk."
+    ],
+    "dangerous_errors": [
+      "Increasing sacubitril-valsartan dose without rechecking basic metabolic panel and blood pressure response, given the combined renal and potassium effects of ARNI plus spironolactone.",
+      "Advising unrestricted fluid intake in warm weather without confirming his individualized fluid limit with the heart failure team, given his history of a recent flare.",
+      "Missing an opportunity to discuss adding an SGLT2 inhibitor, now guideline-recommended as a fourth pillar of HFrEF therapy regardless of diabetes status.",
+      "Reassuring him about his fear of readmission without concretely reviewing his daily-weight action plan and the specific threshold (>2 kg in 3 days) that should trigger a call."
+    ],
+    "management_principles": [
+      "Titrate sacubitril-valsartan toward the next dose step (e.g., 49/51mg BID) given his stable, low-normal blood pressure, and recheck BP and BMP within 1-2 weeks of the change.",
+      "Address the orthostatic dizziness with simple positional precautions before assuming it requires a dose reduction, since his BP and renal function otherwise support continuing to titrate.",
+      "Give clear, individualized guidance on fluid intake in warm weather rather than leaving him to guess, tying it to his existing 2L limit and any adjustment criteria.",
+      "Reconfirm the daily weight log and the explicit weight-gain threshold that should prompt him to call the clinic, since this is what catches decompensation early."
+    ],
+    "boundaries_and_exceptions": [
+      "This titration approach assumes a systolic BP holding above roughly 100 mmHg without symptomatic hypotension; if pressures trend lower or he develops symptomatic hypotension, up-titration should pause.",
+      "Renal function and potassium thresholds for holding or adjusting therapy differ in patients with baseline CKD or on additional potassium-sparing agents, which does not currently apply to him but would change the plan if it did.",
+      "Fluid liberalization in hot weather is generally discouraged in decompensated or borderline-volume HFrEF patients even though it feels intuitive; this differs from healthy-adult fluid advice and should always be individualized by the treating team."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "url": "https://professional.heart.org/en/guidelines-statements/heart-failure-guideline"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Review heart failure symptoms, orthopnea, and daily weight log",
+    "Assess NYHA functional improvement and exertional tolerance",
+    "Screen for orthostatic hypotension and spironolactone side effects",
+    "Evaluate serum potassium and renal function monitoring results",
+    "Discuss GDMT dose titration for sacubitril-valsartan",
+    "Address fluid restriction questions and hospitalization fears in plain language",
+    "Agree on a clear weight action threshold and follow-up plan"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Review heart failure symptoms, orthopnea, and daily weight log",
+      "category": "Interval change",
+      "question": "What has your weight log shown this past month, and how many pillows are you using to sleep?"
+    },
+    {
+      "objective": "Assess NYHA functional improvement and exertional tolerance",
+      "category": "Functional status",
+      "question": "How far can you walk now compared to when you left the hospital?"
+    },
+    {
+      "objective": "Screen for orthostatic hypotension and spironolactone side effects",
+      "category": "Tolerance",
+      "question": "Do you feel lightheaded when you stand up, or have you noticed breast tenderness?"
+    },
+    {
+      "objective": "Evaluate serum potassium and renal function monitoring results",
+      "category": "Results",
+      "question": "Your blood test showed a normal potassium level of 4.6 - would you like to review how we monitor this?"
+    },
+    {
+      "objective": "Discuss GDMT dose titration for sacubitril-valsartan",
+      "category": "Treatment plan",
+      "question": "Since your blood pressure and kidney numbers look stable, can we discuss stepping up your heart failure medication dose?"
+    },
+    {
+      "objective": "Address fluid restriction questions and hospitalization fears in plain language",
+      "category": "Concerns",
+      "question": "What worries you most about managing your fluid intake, especially on warm days?"
+    },
+    {
+      "objective": "Agree on a clear weight action threshold and follow-up plan",
+      "category": "Shared plan",
+      "question": "If your weight increases by more than 2 kilograms in 3 days, what is our agreed plan for calling the clinic?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Review heart failure symptoms, orthopnea, and daily weight log",
+      "keywords": [
+        "weight",
+        "pillows",
+        "orthopnea",
+        "swelling",
+        "ankles",
+        "breathless",
+        "log"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess NYHA functional improvement and exertional tolerance",
+      "keywords": [
+        "walk",
+        "walking",
+        "stairs",
+        "exertion",
+        "stamina",
+        "garden",
+        "better"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for orthostatic hypotension and spironolactone side effects",
+      "keywords": [
+        "dizziness",
+        "dizzy",
+        "lightheaded",
+        "standing",
+        "breast",
+        "tenderness",
+        "side effects"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Evaluate serum potassium and renal function monitoring results",
+      "keywords": [
+        "potassium",
+        "creatinine",
+        "blood test",
+        "kidney",
+        "numbers",
+        "results"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Discuss GDMT dose titration for sacubitril-valsartan",
+      "keywords": [
+        "increase",
+        "step up",
+        "titrate",
+        "dose",
+        "sacubitril",
+        "entresto",
+        "heart failure"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address fluid restriction questions and hospitalization fears in plain language",
+      "keywords": [
+        "fluid",
+        "drinking",
+        "water",
+        "hospital",
+        "worry",
+        "worried",
+        "re-admission"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on a clear weight action threshold and follow-up plan",
+      "keywords": [
+        "threshold",
+        "2 kg",
+        "pounds",
+        "call us",
+        "contact",
+        "plan",
+        "agree"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "67M with HFrEF returns at 1 month. Functional capacity improved (NYHA II). Daily weights stable. Reports mild lightheadedness upon standing. Asks about fluid limits in summer.",
+    "objective": "BP 112/70 mmHg, HR 64 bpm. K+ 4.6 mmol/L, Cr 1.2 mg/dL. No peripheral edema.",
+    "assessment": "Stable compensated HFrEF on low-dose GDMT with good tolerance.",
+    "plan": "Titrate sacubitril-valsartan to 49/51mg BID as tolerated by BP, review orthostatic precautions, clarify summer fluid guidance, and recheck BMP in 2 weeks."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Heart failure symptom & weight review",
+    "one_liner": "Clinical scenario for evaluation and management of Heart failure symptom & weight review."
+  }
+}

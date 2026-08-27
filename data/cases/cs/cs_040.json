@@ -1,0 +1,138 @@
+{
+  "id": "cs_040",
+  "system": "cs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Carter",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "fevers, joint pain, positional dyspnea, and diastolic tumor plop",
+  "hpi_details": "A 62-year-old female presents to the clinic with fevers, joint pain, positional dyspnea, and diastolic tumor plop. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to myxoma",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "left_atrial_myxoma_echo",
+      "title": "Urgent echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE", "TEE", "transesophageal echo"],
+      "availability_message": "The urgent echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_mobile_atrial_myxoma",
+          "test": "Echocardiogram",
+          "value": "4.5 x 3.0 cm pedunculated left-atrial mass attached to the interatrial septum, prolapsing through the mitral valve during diastole",
+          "unit": "",
+          "reference_range": "No intracardiac mass",
+          "flag": "critical",
+          "collected_at": "Urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Left Atrial Myxoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Left Atrial Myxoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Left Atrial Myxoma: Urgent echocardiogram, transfer to cardiothoracic surgery for excision, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fevers, joint pain, positional dyspnea, and diastolic tumor plop",
+      "Key HPI features: A 62-year-old female presents to the clinic with fevers, joint pain, positional dyspnea, and diastolic tumor plop. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Left Atrial Myxoma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Left Atrial Myxoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Infective endocarditis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Positional syncope — suggests significant valve obstruction."
+    ],
+    "management_principles": [
+      "Plan for Left Atrial Myxoma: Urgent echocardiogram, transfer to cardiothoracic surgery for excision",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of fevers, joint pain, positional dyspnea, and diastolic tumor plop. HPI: benign primary cardiac tumor.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Left Atrial Myxoma.",
+    "assessment": "Condition highly suspicious for Left Atrial Myxoma.",
+    "plan": "Plan for Left Atrial Myxoma: Urgent echocardiogram, transfer to cardiothoracic surgery for excision. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Left Atrial Myxoma",
+    "Select appropriate diagnostic workup for Left Atrial Myxoma",
+    "Implement evidence-based management plan: Urgent echocardiogram, transfer to cardiothoracic surgery for excision"
+  ],
+  "teaching": {
+    "diagnosis": "Left Atrial Myxoma",
+    "one_liner": "A benign primary cardiac tumor causing fevers, joint pain (mimicking systemic illness), and positional breathlessness from a 'tumor plop' sound as it prolapses across the mitral valve.",
+    "differentials": [
+      "Infective endocarditis",
+      "Connective tissue disease",
+      "Mitral stenosis"
+    ],
+    "red_flags": [
+      "Positional syncope — suggests significant valve obstruction"
+    ],
+    "must_ask": [
+      {
+        "objective": "Positional symptoms",
+        "say": "Does your breathlessness change with your position?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Have you had fevers or joint pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Embolic symptoms",
+        "say": "Any sudden weakness or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How is your energy level?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "cs_005",
+  "system": "cardiothoracic surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Evans",
+  "age": 24,
+  "gender": "female",
+  "chief_complaint": "sudden sharp right-sided chest pain and shortness of breath while watching television",
+  "hpi_details": "24F tall, thin college volleyball player suddenly experienced sharp, pleuritic right-sided chest pain and dyspnea while sitting on the couch watching TV. No antecedent trauma, heavy lifting, or recent illness. Pain worsens with deep inspiration.",
+  "ideas": "thinks she pulled a rib muscle from volleyball practice or is having an anxiety attack",
+  "concerns": "worried because her breathing feels tight and shallow on the right side",
+  "expectations": "wants chest X-ray and treatment so she can play in her tournament next weekend",
+  "pmh": "No prior medical history, but recalls a mild similar episode 2 years ago that resolved spontaneously",
+  "medications": "None",
+  "social_hx": "College student and athlete, non-smoker, BMI 18.2",
+  "investigation_events": [
+    {
+      "id": "spontaneous_pneumothorax_xray",
+      "title": "Chest radiograph",
+      "order_terms": ["chest X-ray", "chest radiograph", "CXR"],
+      "availability_message": "The chest radiograph is now available.",
+      "results": [
+        {
+          "id": "cxr_right_primary_pneumothorax",
+          "test": "Erect chest radiograph",
+          "value": "Right pneumothorax with approximately 35% lung collapse; no mediastinal shift or tension features",
+          "unit": "",
+          "reference_range": "No pneumothorax",
+          "flag": "critical",
+          "collected_at": "Initial assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Primary Spontaneous Pneumothorax evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Spontaneous Pneumothorax is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Place right small-bore pigtail catheter (14-16 Fr) or standard chest tube via 5th intercostal space mid-axillary line under local anesthesia and connect to underwater seal drainage, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden sharp right-sided chest pain and shortness of breath while watching television",
+      "Key HPI features: 24F tall, thin college volleyball player suddenly experienced sharp, pleuritic right-sided chest pain and dyspnea while sitting on the couch watching TV. No antecedent trauma, heavy lifting, or recent illness. Pain worsens with deep inspiration.",
+      "Objective/Exam findings: Vitals: HR 98, BP 116/74, RR 20, SpO2 95% on room air. Trachea midline. Hyperresonance to percussion over right hemithorax. Diminished breath sounds over entire right lung field. Erect PA chest radiograph demonstrates a 35% Primary Spontaneous Pneumothorax of the right lung with visible visceral pleural line and absence of peripheral lung markings without tension characteristics.",
+      "Relevant background/PMH: No prior medical history, but recalls a mild similar episode 2 years ago that resolved spontaneously"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Spontaneous Pneumothorax.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pulmonary embolism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Tension pneumothorax signs (severe hypotension, tracheal deviation) — would be a more urgent emergency."
+    ],
+    "management_principles": [
+      "Place right small-bore pigtail catheter (14-16 Fr) or standard chest tube via 5th intercostal space mid-axillary line under local anesthesia and connect to underwater seal drainage",
+      "If persistent air leak (>4-5 days) or recurrent pneumothorax occurs (second episode), refer to cardiothoracic surgery for Video-Assisted Thoracoscopic Surgery (VATS) with apical bullectomy/blebectomy and mechanical/chemical pleurodesis to prevent recurrence",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "24F tall slender female presenting with spontaneous acute pleuritic right chest pain and dyspnea.",
+    "objective": "Vitals: HR 98, BP 116/74, RR 20, SpO2 95% on room air. Trachea midline. Hyperresonance to percussion over right hemithorax. Diminished breath sounds over entire right lung field. Erect PA chest radiograph demonstrates a 35% Primary Spontaneous Pneumothorax of the right lung with visible visceral pleural line and absence of peripheral lung markings without tension characteristics.",
+    "assessment": "Right Primary Spontaneous Pneumothorax (35% volume collapse), likely secondary to rupture of apical subpleural bleb/bulla.",
+    "plan": "Place right small-bore pigtail catheter (14-16 Fr) or standard chest tube via 5th intercostal space mid-axillary line under local anesthesia and connect to underwater seal drainage. If persistent air leak (>4-5 days) or recurrent pneumothorax occurs (second episode), refer to cardiothoracic surgery for Video-Assisted Thoracoscopic Surgery (VATS) with apical bullectomy/blebectomy and mechanical/chemical pleurodesis to prevent recurrence."
+  },
+  "learning_objectives": [
+    "Recognize typical demographic and physical exam findings of Primary Spontaneous Pneumothorax (tall thin young adults, hyperresonance, absent breath sounds)",
+    "Differentiate simple pneumothorax from life-threatening tension pneumothorax (tracheal deviation, hypotension, distended neck veins)",
+    "Outline indications for surgical intervention via VATS blebectomy and pleurodesis (recurrent episodes, persistent air leak >4 days, bilateral presentation, high-risk professions)",
+    "Describe anatomical landmarks for safe intercostal chest tube insertion (safe triangle of chest: 5th ICS mid-axillary line above rib border)"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Spontaneous Pneumothorax",
+    "one_liner": "A ruptured apical subpleural bleb allows air to leak into the pleural space, causing sudden pleuritic chest pain and breathlessness in a tall, thin young patient — treated with a chest tube.",
+    "differentials": [
+      "Pulmonary embolism",
+      "Musculoskeletal chest pain",
+      "Anxiety/panic attack"
+    ],
+    "red_flags": [
+      "Tension pneumothorax signs (severe hypotension, tracheal deviation) — would be a more urgent emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and trigger",
+        "say": "Were you doing anything strenuous when the pain started, or did it happen at rest?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sudden",
+          "at rest"
+        ]
+      },
+      {
+        "objective": "Pain character",
+        "say": "Does the pain get worse when you take a deep breath?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "pleuritic",
+          "deep breath"
+        ]
+      },
+      {
+        "objective": "Breathlessness severity",
+        "say": "How short of breath do you feel?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Prior similar episode",
+        "say": "Has anything like this happened before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "before",
+          "similar"
+        ]
+      },
+      {
+        "objective": "Body habitus/smoking",
+        "say": "Are you a smoker, and has anyone described you as tall and thin?",
+        "domains": [
+          "smoking"
+        ]
+      }
+    ]
+  }
+}

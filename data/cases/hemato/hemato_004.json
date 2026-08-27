@@ -1,0 +1,210 @@
+{
+  "id": "hemato_004",
+  "system": "hematology_oncology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lewis",
+  "age": 42,
+  "gender": "female",
+  "chief_complaint": "fever, confusion, dark urine, and purple skin spots",
+  "hpi_details": "42F presenting with classical pentad: microangiopathic hemolytic anemia with schistocytes, thrombocytopenia, neurological deficits, renal injury, and fever. ADAMTS13 <5%.",
+  "ideas": "thinks this is related to thrombotic thrombocytopenic purpura ttp",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "8.1",
+      "unit": "g/dL",
+      "reference_range": "12.0-16.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "platelets",
+      "test": "Platelet count",
+      "value": "12",
+      "unit": "x10^3/mcL",
+      "reference_range": "150-400",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "peripheral_smear",
+      "test": "Peripheral blood smear",
+      "value": "Numerous schistocytes",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "ldh",
+      "test": "Lactate dehydrogenase",
+      "value": "890",
+      "unit": "U/L",
+      "reference_range": "140-280",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "haptoglobin",
+      "test": "Serum haptoglobin",
+      "value": "<8",
+      "unit": "mg/dL",
+      "reference_range": "30-200",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "inr",
+      "test": "INR",
+      "value": "1.0",
+      "reference_range": "0.8-1.2",
+      "flag": "normal",
+      "specimen": "Blood"
+    },
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "1.4",
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.2",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "adamts13_activity",
+      "test": "ADAMTS13 activity",
+      "value": "<5",
+      "unit": "%",
+      "reference_range": ">=50",
+      "flag": "critical",
+      "specimen": "Blood",
+      "note": "Previously obtained result; plasma exchange should not be delayed while awaiting this test in a new suspected episode"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Thrombotic Thrombocytopenic Purpura (TTP) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Thrombotic Thrombocytopenic Purpura (TTP) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent initiation of therapeutic plasma exchange (PLEX) plus corticosteroids, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, confusion, dark urine, and purple skin spots",
+      "Key HPI features: 42F presenting with classical pentad: microangiopathic hemolytic anemia with schistocytes, thrombocytopenia, neurological deficits, renal injury, and fever. ADAMTS13 <5%.",
+      "Objective/Exam findings: Vitals: Temp 38.2C, HR 102, BP 148/92. Pallor, scattered petechiae and purpura on lower extremities, mild scleral icterus. Neurologic exam notable for intermittent confusion without focal deficits. Bloods: Hemoglobin 8.1 g/dL, Platelets 12,000/uL, LDH markedly elevated at 890 U/L, undetectable haptoglobin, indirect hyperbilirubinemia. Peripheral blood smear shows numerous schistocytes. PT/PTT/fibrinogen normal (helps distinguish from DIC). Creatinine mildly elevated at 1.4 mg/dL. ADAMTS13 activity <5%, confirming the diagnosis.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Thrombotic Thrombocytopenic Purpura (TTP).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hemolytic uremic syndrome (HUS) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any neurological symptoms (confusion, seizure, weakness) — mandates urgent plasma exchange."
+    ],
+    "management_principles": [
+      "Urgent initiation of therapeutic plasma exchange (PLEX) within hours of suspected diagnosis — do not delay for ADAMTS13 confirmation",
+      "Start high-dose corticosteroids (e.g., methylprednisolone 1g IV daily) concurrently with PLEX",
+      "Avoid platelet transfusion unless there is life-threatening hemorrhage, as it can worsen microthrombosis",
+      "Urgent hematology consultation; consider caplacizumab or rituximab for refractory or relapsing disease"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42F presenting with fever, confusion, dark urine, and purple skin spots. Reports the classical pentad of microangiopathic hemolytic anemia with schistocytes, thrombocytopenia, neurological deficits, renal injury, and fever. ADAMTS13 <5%.",
+    "objective": "Vitals: Temp 38.2C, HR 102, BP 148/92. Pallor, scattered petechiae and purpura on lower extremities, mild scleral icterus. Neurologic exam notable for intermittent confusion without focal deficits. Bloods: Hemoglobin 8.1 g/dL, Platelets 12,000/uL, LDH markedly elevated at 890 U/L, undetectable haptoglobin, indirect hyperbilirubinemia. Peripheral blood smear shows numerous schistocytes. PT/PTT/fibrinogen normal (helps distinguish from DIC). Creatinine mildly elevated at 1.4 mg/dL. ADAMTS13 activity <5%, confirming the diagnosis.",
+    "assessment": "Thrombotic Thrombocytopenic Purpura (TTP), confirmed by severe ADAMTS13 deficiency (<5%) with the classic pentad of microangiopathic hemolytic anemia, thrombocytopenia, neurologic changes, renal injury, and fever.",
+    "plan": "1. Urgent initiation of therapeutic plasma exchange (PLEX) within hours of suspected diagnosis — do not delay for ADAMTS13 confirmation. 2. Start high-dose corticosteroids (e.g., methylprednisolone 1g IV daily) concurrently with PLEX. 3. Avoid platelet transfusion unless there is life-threatening hemorrhage, as it can worsen microthrombosis. 4. Urgent hematology consultation; consider caplacizumab or rituximab for refractory or relapsing disease."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Thrombotic Thrombocytopenic Purpura TTP",
+    "Formulate prioritized differential diagnosis for fever, confusion, dark urine, and purple skin spots",
+    "Select appropriate laboratory studies to confirm TTP, including ADAMTS13 activity and peripheral smear for schistocytes",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Thrombotic Thrombocytopenic Purpura (TTP)",
+    "one_liner": "A deficiency of ADAMTS13 lets clumps of von Willebrand factor form microclots throughout the body, causing the classic pentad of hemolytic anemia, low platelets, neurological changes, kidney injury, and fever — a hematologic emergency treated with plasma exchange.",
+    "differentials": [
+      "Hemolytic uremic syndrome (HUS)",
+      "DIC (disseminated intravascular coagulation)",
+      "Severe pre-eclampsia/HELLP syndrome"
+    ],
+    "red_flags": [
+      "Any neurological symptoms (confusion, seizure, weakness) — mandates urgent plasma exchange"
+    ],
+    "must_ask": [
+      {
+        "objective": "Neurological symptoms",
+        "say": "Have you had any confusion, headache, or trouble speaking?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confusion",
+          "headache",
+          "speaking"
+        ]
+      },
+      {
+        "objective": "Bleeding and bruising",
+        "say": "Have you noticed any unusual bruising or purple spots on your skin?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bruising",
+          "purple spots",
+          "petechiae"
+        ]
+      },
+      {
+        "objective": "Urine color",
+        "say": "Has your urine looked dark, like tea or cola?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark urine"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "How quickly did all of this come on?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

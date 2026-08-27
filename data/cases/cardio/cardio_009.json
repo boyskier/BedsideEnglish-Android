@@ -1,0 +1,163 @@
+{
+  "id": "cardio_009",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Novak",
+  "age": 58,
+  "gender": "female",
+  "chief_complaint": "worsening breathlessness, chest fullness, and feeling faint over 2 weeks",
+  "hpi_details": "2-week history of progressive dyspnoea at rest, feeling of heavy pressure around her entire chest, and persistent dizziness on sitting upright. Reports feeling exhausted and unable to lie flat comfortably. Underwent treatment for left breast carcinoma (mastectomy and radiotherapy) 3 years ago. Over the past week, her daughter noticed her face and neck looking slightly puffy and swollen.",
+  "ideas": "thinks her breast cancer radiotherapy has left permanent scar tissue in her lungs",
+  "concerns": "terrified that her cancer has returned and spread into her chest cavity",
+  "expectations": "wants oxygen therapy and a chest scan to see if fluid has built up around her lungs",
+  "pmh": "left invasive ductal breast carcinoma treated 3 years ago, hypothyroidism",
+  "medications": "letrozole 2.5mg OD, levothyroxine 100mcg OD",
+  "social_hx": "non-smoker, retired graphic designer, lives with daughter",
+  "investigation_events": [{"id": "bedside_echocardiogram", "title": "Urgent bedside echocardiogram", "order_terms": ["bedside echocardiogram", "bedside echo", "cardiac ultrasound", "heart ultrasound", "pocus"], "availability_message": "The urgent bedside echocardiogram report is now available.", "results": [{"id": "echo_tamponade", "test": "Focused bedside echocardiogram", "value": "Large circumferential pericardial effusion measuring 28 mm with right-atrial systolic and right-ventricular diastolic collapse; plethoric IVC with minimal respiratory variation", "flag": "critical", "collected_at": "At bedside"}]}],
+  "clinical_knowledge": {
+    "topic": "Cardiac Tamponade from Malignant Pericardial Effusion evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cardiac Tamponade from Malignant Pericardial Effusion is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes this as a medical emergency requiring urgent cardiothoracic or cardiology intervention for ultrasound-guided pericardiocentesis or a surgical pericardial window for fluid drainage and cytology, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: worsening breathlessness, chest fullness, and feeling faint over 2 weeks",
+      "Key HPI features: 2-week history of progressive dyspnoea at rest, feeling of heavy pressure around her entire chest, and persistent dizziness on sitting upright. Reports feeling exhausted and unable to lie flat comfortably. Underwent treatment for left breast carcinoma (mastectomy and radiotherapy) 3 years ago. Over the past week, her daughter noticed her face and neck looking slightly puffy and swollen.",
+      "Objective/Exam findings: Vitals: check for hypotension (BP 90/60 mmHg), sinus tachycardia (HR 115 bpm), and pulsus paradoxus (>10 mmHg drop in systolic BP during normal inspiration). Physical exam: Beck's Triad (hypotension, elevated JVP with distended neck veins up to the jawline with blunted y-descent, and muffled/distant heart sounds). Clear lung fields on auscultation. ECG: low voltage QRS complexes in all leads and electrical alternans (beat-to-beat variation in QRS axis). Urgent bedside echocardiogram (POCUS) showing large circumferential pericardial effusion with right ventricular diastolic collapse and inferior vena cava plethora.",
+      "Relevant background/PMH: left invasive ductal breast carcinoma treated 3 years ago, hypothyroidism",
+      "Current medications: letrozole 2.5mg OD, levothyroxine 100mcg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cardiac Tamponade from Malignant Pericardial Effusion.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Congestive heart failure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rising heart rate with falling blood pressure — decompensating tamponade."
+    ],
+    "management_principles": [
+      "Medical emergency: urgent cardiothoracic or cardiology intervention for ultrasound-guided pericardiocentesis or surgical pericardial window for fluid drainage and cytology",
+      "Avoid diuretics and nitrates (preload critical to maintain cardiac output against pericardial pressure)",
+      "Administer IV crystalloids to support right ventricular filling pressure while awaiting drainage"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2015 ESC Guidelines for the diagnosis and management of pericardial diseases",
+        "url": "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Pericardial-Diseases-Guidelines-on-the-Diagnosis-and-Management-of"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "58F with history of treated breast cancer presents with progressive dyspnoea, chest fullness, postural presyncope, and facial puffiness over 2 weeks.",
+    "objective": "Vitals: check for hypotension (BP 90/60 mmHg), sinus tachycardia (HR 115 bpm), and pulsus paradoxus (>10 mmHg drop in systolic BP during normal inspiration). Physical exam: Beck's Triad (hypotension, elevated JVP with distended neck veins up to the jawline with blunted y-descent, and muffled/distant heart sounds). Clear lung fields on auscultation. ECG: low voltage QRS complexes in all leads and electrical alternans (beat-to-beat variation in QRS axis). Urgent bedside echocardiogram (POCUS) showing large circumferential pericardial effusion with right ventricular diastolic collapse and inferior vena cava plethora.",
+    "assessment": "Subacute cardiac tamponade secondary to malignant pericardial effusion (metastatic breast carcinoma vs radiation pericarditis). DDx: congestive heart failure, superior vena cava obstruction, pulmonary embolism, constrictive pericarditis.",
+    "plan": "Medical emergency: urgent cardiothoracic or cardiology intervention for ultrasound-guided pericardiocentesis or surgical pericardial window for fluid drainage and cytology. Avoid diuretics and nitrates (preload critical to maintain cardiac output against pericardial pressure). Administer IV crystalloids to support right ventricular filling pressure while awaiting drainage. Oncology consult for underlying malignancy management."
+  },
+  "learning_objectives": [
+    "Identify Beck's Triad (hypotension, elevated JVP, muffled heart sounds) indicating critical cardiac compression",
+    "Explain the physiological mechanism and clinical measurement of pulsus paradoxus (>10 mmHg drop during inspiration)",
+    "Interpret diagnostic ECG patterns of pericardial effusion: low QRS voltages and electrical alternans",
+    "Recognise the hemodynamic danger of administering diuretics or preload-reducing drugs during cardiac tamponade"
+  ],
+  "teaching": {
+    "diagnosis": "Cardiac Tamponade from Malignant Pericardial Effusion",
+    "one_liner": "Fluid in the pericardial sac squeezes the heart so it cannot fill. Breathlessness that worsens over days plus chest fullness.",
+    "differentials": [
+      "Congestive heart failure",
+      "Pulmonary embolism",
+      "Pleural effusion"
+    ],
+    "red_flags": [
+      "Rising heart rate with falling blood pressure — decompensating tamponade"
+    ],
+    "must_ask": [
+      {
+        "objective": "Rate of progression",
+        "say": "Has the breathlessness been getting worse over days or over months?",
+        "domains": [
+          "progression",
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Positional relief",
+        "say": "Do you feel better sitting up and leaning forward?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "sit",
+          "lean",
+          "forward",
+          "upright"
+        ]
+      },
+      {
+        "objective": "Known or suspected malignancy",
+        "say": "Have you ever been treated for cancer, or had radiotherapy to the chest?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "cancer",
+          "tumour",
+          "tumor",
+          "chemo",
+          "radiotherapy",
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Chest fullness and swelling",
+        "say": "Do you feel a fullness or pressure in your chest, and is your face or neck swollen?",
+        "domains": [
+          "associated_symptoms",
+          "location"
+        ],
+        "keywords": [
+          "fullness",
+          "pressure",
+          "swollen",
+          "neck",
+          "face"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost weight without trying?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "lost",
+          "appetite"
+        ]
+      },
+      {
+        "objective": "Dizziness on standing",
+        "say": "Do you feel faint when you stand up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "stand",
+          "dizzy",
+          "faint",
+          "lightheaded"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "rheum_029",
+  "system": "rheumatology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rivera",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "chronic lower back pain improving with exercise, HLA-B27",
+  "hpi_details": "A 29-year-old male presents to the clinic with chronic lower back pain that improves with exercise and is HLA-B27 positive. The pain has persisted for several months and has been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to ankylosing_spondylitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id":"hla_b27","test":"HLA-B27","value":"Positive","flag":"abnormal","specimen":"Blood","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Ankylosing Spondylitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ankylosing Spondylitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes NSAIDs, exercise and physical therapy, with rheumatology assessment for biologic therapy if disease remains active, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic lower back pain improving with exercise, HLA-B27",
+      "Key HPI features: A 29-year-old male presents with chronic lower back pain that improves with exercise and is HLA-B27 positive. The pain has persisted for several months and has been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Ankylosing Spondylitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ankylosing Spondylitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Mechanical back pain without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Eye pain/redness."
+    ],
+    "management_principles": [
+      "NSAIDs, exercise and physical therapy, with rheumatology assessment for biologic therapy if disease remains active",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of chronic lower back pain improving with exercise, HLA-B27. HPI: enthesitis, sacroiliitis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Ankylosing Spondylitis.",
+    "assessment": "Condition highly suspicious for Ankylosing Spondylitis.",
+    "plan": "Assess inflammatory-back-pain features, neurologic examination, uveitis, psoriasis, inflammatory bowel disease, infection risks, and mechanical alternatives; use pelvic radiography or MRI when clinically indicated. New urinary retention/incontinence, saddle anesthesia, progressive leg weakness, fever/systemic illness, or major trauma needs emergency evaluation for cauda equina syndrome, infection, fracture, or another urgent cause. NSAIDs require clinician review of renal, gastrointestinal, cardiovascular, pregnancy, and interaction risks. Rheumatology should direct biologic therapy after infection screening (including tuberculosis and hepatitis), vaccination review, and ongoing monitoring."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Ankylosing Spondylitis",
+    "Select appropriate diagnostic workup for Ankylosing Spondylitis",
+    "Implement evidence-based management plan: NSAIDs, exercise and physical therapy, with rheumatology assessment for biologic therapy if disease remains active"
+  ],
+  "teaching": {
+    "diagnosis": "Ankylosing Spondylitis",
+    "one_liner": "HLA-B27-associated inflammatory back pain from sacroiliitis and enthesitis, improving with exercise rather than rest.",
+    "differentials": [
+      "Mechanical back pain",
+      "Reactive arthritis"
+    ],
+    "red_flags": [
+      "Eye pain/redness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain pattern",
+        "say": "Does your back pain improve with exercise?",
+        "domains": [
+          "relieving"
+        ]
+      },
+      {
+        "objective": "Timing",
+        "say": "Is the pain worse at night or in the morning?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this back pain lasted?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Enthesitis",
+        "say": "Any heel pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Eye symptoms",
+        "say": "Ever had a painful red eye?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

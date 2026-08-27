@@ -1,0 +1,127 @@
+{
+  "id": "rheum_020",
+  "system": "rheumatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Harris",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "fingers turning blue in the cold and heartburn",
+  "hpi_details": "45F presents with a history of her fingers turning stark white, then blue, then red when exposed to cold. She also complains of worsening heartburn, difficulty swallowing solid foods, and noticing the skin on her hands feels tight and shiny.",
+  "ideas": "thinks she has poor circulation",
+  "concerns": "worried about the tight skin",
+  "expectations": "wants something for heartburn and circulation",
+  "pmh": "Raynaud's phenomenon",
+  "medications": "Antacids",
+  "social_hx": "None",
+  "clinical_knowledge": {
+    "topic": "Systemic Sclerosis (Scleroderma)",
+    "core_concepts": [
+      "Characterized by fibrosis of the skin and internal organs, and vasculopathy.",
+      "CREST syndrome: Calcinosis, Raynaud's, Esophageal dysmotility, Sclerodactyly, Telangiectasia."
+    ],
+    "diagnostic_clues": [
+      "Raynaud's",
+      "Sclerodactyly (tight skin)",
+      "GERD"
+    ],
+    "common_misconceptions": [
+      "Ignoring Raynaud's as a benign symptom when accompanied by systemic signs."
+    ],
+    "dangerous_errors": [
+      "Giving corticosteroids to a patient with Scleroderma, which can precipitate a deadly Scleroderma Renal Crisis."
+    ],
+    "management_principles": [
+      "Calcium channel blockers for Raynaud's, PPIs for GERD, monitor for interstitial lung disease and pulmonary hypertension."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45F with Raynaud's, severe GERD, dysphagia, and skin tightening on hands.",
+    "objective": "Thickened, tight, shiny skin over fingers (sclerodactyly). Telangiectasias on face.",
+    "assessment": "Systemic Sclerosis (likely limited cutaneous / CREST).",
+    "plan": "Check anti-Centromere and anti-Scl-70 antibodies. Start PPI and Amlodipine. PFTs and Echocardiogram screening."
+  },
+  "learning_objectives": [
+    "Identify the features of CREST syndrome and the danger of corticosteroids in scleroderma."
+  ],
+  "teaching": {
+    "diagnosis": "Systemic Sclerosis (Scleroderma)",
+    "one_liner": "Raynaud's phenomenon, esophageal dysmotility, and sclerodactyly suggestive of limited systemic sclerosis (CREST).",
+    "differentials": [
+      "Primary Raynaud's",
+      "Mixed connective tissue disease",
+      "Eosinophilic fasciitis"
+    ],
+    "red_flags": [
+      "Sudden severe hypertension (Scleroderma renal crisis)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Raynaud's pattern",
+        "say": "When your fingers turn cold, do they change color from white to blue to red?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "white",
+          "blue",
+          "red"
+        ]
+      },
+      {
+        "objective": "Skin changes",
+        "say": "Does the skin on your hands feel tight or shiny to you?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "tight skin",
+          "shiny"
+        ]
+      },
+      {
+        "objective": "GI symptoms",
+        "say": "Is your heartburn worse lying down, and is it hard to swallow solid food?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "heartburn",
+          "dysphagia"
+        ]
+      },
+      {
+        "objective": "Renal crisis red flag",
+        "say": "Have you had any sudden severe headaches or very high blood pressure readings?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hypertension",
+          "headache"
+        ]
+      },
+      {
+        "objective": "Pulmonary involvement",
+        "say": "Have you noticed any shortness of breath, especially with activity?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dyspnea",
+          "exertion"
+        ]
+      }
+    ]
+  }
+}

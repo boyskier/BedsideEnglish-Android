@@ -1,0 +1,186 @@
+{
+  "id": "em_001",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Adams",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "crushing substernal chest pain radiating to left jaw, diaphoresis, and shortness of breath (STEMI)",
+  "hpi_details": "55M smoker presents to emergency department via ambulance with 45 minutes of excruciating, crushing, heavy pressure retrosternal chest pain ('feels like an elephant sitting on my chest'). Pain radiates directly up into his left jaw and down the inside of his left arm. Accompanied by drenching cold sweats (diaphoresis), severe nausea, and feeling of impending doom. Pain began while shoveling snow.",
+  "ideas": "terrified he is having a massive fatal heart attack like his father did at age 50",
+  "concerns": "in severe crushing discomfort gasping for breath",
+  "expectations": "wants immediate pain relief, oxygen, and emergency heart treatment",
+  "pmh": "Hypertension, Hyperlipidemia, 35 pack-year smoking history",
+  "medications": "Lisinopril 20mg daily, Atorvastatin 40mg daily",
+  "social_hx": "Construction manager, active smoker",
+  "investigation_events": [
+    {
+      "id": "stat_ecg",
+      "title": "STAT 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "12-lead",
+        "electrocardiogram"
+      ],
+      "availability_message": "The STAT 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_initial",
+          "test": "12-lead ECG",
+          "value": "4 mm ST elevation in V1-V4 with reciprocal ST depression in II, III, and aVF",
+          "flag": "critical",
+          "collected_at": "5 minutes after arrival"
+        }
+      ]
+    },
+    {
+      "id": "initial_troponin",
+      "title": "Initial high-sensitivity troponin T",
+      "order_terms": [
+        "troponin",
+        "cardiac biomarkers",
+        "cardiac enzymes"
+      ],
+      "availability_message": "The initial high-sensitivity troponin T is now available.",
+      "results": [
+        {
+          "id": "troponin_t_initial",
+          "test": "High-sensitivity troponin T",
+          "value": "0.45",
+          "unit": "ng/mL",
+          "reference_range": "<0.014",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "ST-Elevation Myocardial Infarction (STEMI) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of ST-Elevation Myocardial Infarction (STEMI) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate cardiac catheterization lab activation for primary PCI, dual antiplatelet and anticoagulant loading, and symptom/hemodynamic support, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: crushing substernal chest pain radiating to left jaw, diaphoresis, and shortness of breath (STEMI)",
+      "Key HPI features: 55M smoker presents to emergency department via ambulance with 45 minutes of excruciating, crushing, heavy pressure retrosternal chest pain ('feels like an elephant sitting on my chest'). Pain radiates directly up into his left jaw and down the inside of his left arm. Accompanied by drenching cold sweats (diaphoresis), severe nausea, and feeling of impending doom. Pain began while shoveling snow.",
+      "Objective/Exam findings: Vitals: HR 110, BP 164/98, RR 24, SpO2 93% on room air. Patient appears pale, diaphoretic, and in severe distress clutching his chest (Levine sign). STAT 12-lead ECG obtained within 5 minutes of arrival demonstrates 4 mm ST-segment elevations in anterior leads V1 through V4 with reciprocal ST depressions in inferior leads II, III, and aVF. Initial high-sensitivity cardiac Troponin T elevated at 0.45 ng/mL.",
+      "Relevant background/PMH: Hypertension, Hyperlipidemia, 35 pack-year smoking history",
+      "Current medications: Lisinopril 20mg daily, Atorvastatin 40mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out ST-Elevation Myocardial Infarction (STEMI).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aortic dissection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any radiation to jaw or arm with diaphoresis — treat as ACS until proven otherwise."
+    ],
+    "management_principles": [
+      "STAT emergency protocol",
+      "Activate Cardiac Catheterization Lab immediately for Primary Percutaneous Coronary Intervention (PCI; target Door-to-Balloon time <90 minutes)",
+      "Immediate dual antiplatelet and anticoagulant loading: Aspirin 324 mg chewable PLUS Ticagrelor 180 mg PO (or Clopidogrel 600 mg) PLUS IV Unfractionated Heparin bolus (60 U/kg) and continuous infusion"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M presenting with acute, severe retrosternal anginal chest pain radiating to jaw/arm with diaphoresis, classic for Acute Myocardial Infarction.",
+    "objective": "Vitals: HR 110, BP 164/98, RR 24, SpO2 93% on room air. Patient appears pale, diaphoretic, and in severe distress clutching his chest (Levine sign). STAT 12-lead ECG obtained within 5 minutes of arrival demonstrates 4 mm ST-segment elevations in anterior leads V1 through V4 with reciprocal ST depressions in inferior leads II, III, and aVF. Initial high-sensitivity cardiac Troponin T elevated at 0.45 ng/mL.",
+    "assessment": "Acute Anterior Wall ST-Elevation Myocardial Infarction (STEMI), secondary to acute thrombotic occlusion of the Left Anterior Descending (LAD) coronary artery.",
+    "plan": "STAT emergency protocol: 1. Activate Cardiac Catheterization Lab immediately for Primary Percutaneous Coronary Intervention (PCI; target Door-to-Balloon time <90 minutes). 2. Immediate dual antiplatelet and anticoagulant loading: Aspirin 324 mg chewable PLUS Ticagrelor 180 mg PO (or Clopidogrel 600 mg) PLUS IV Unfractionated Heparin bolus (60 U/kg) and continuous infusion. 3. Symptom/hemodynamic management: Administer Sublingual Nitroglycerin 0.4 mg q5min (if BP remains stable and no right ventricular infarction) and IV Morphine for refractory crushing pain. Supplemental oxygen only if SpO2 < 90%."
+  },
+  "learning_objectives": [
+    "Execute rapid triage protocol including STAT 12-lead ECG within 10 minutes of arrival for acute chest pain presentations",
+    "Recognize specific ST-segment elevation distributions indicating coronary vessel occlusion (Anterior V1-V4 for LAD, Inferior II/III/aVF for RCA/LCx, Lateral I/aVL/V5-V6 for LCx)",
+    "Implement immediate pharmacological loading for STEMI (chewable Aspirin, P2Y12 inhibitor Ticagrelor/Clopidogrel, systemic parenteral Heparin)",
+    "Coordinate rapid emergency activation of the Cardiac Catheterization Laboratory adhering to strict door-to-balloon (<90 min) or fibrinolysis (<30 min) time benchmarks"
+  ],
+  "teaching": {
+    "diagnosis": "ST-Elevation Myocardial Infarction (STEMI)",
+    "one_liner": "Complete blockage of a coronary artery causing crushing chest pain radiating to the jaw or arm, with sweating and a sense of impending doom — every minute of delay costs heart muscle, so the cath lab activates immediately.",
+    "differentials": [
+      "Aortic dissection",
+      "Pulmonary embolism",
+      "Esophageal spasm"
+    ],
+    "red_flags": [
+      "Any radiation to jaw or arm with diaphoresis — treat as ACS until proven otherwise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character and radiation",
+        "say": "Does it feel like crushing pressure, and does it spread to your jaw or arm?",
+        "domains": [
+          "character",
+          "radiation"
+        ],
+        "keywords": [
+          "crushing",
+          "pressure",
+          "jaw",
+          "arm"
+        ]
+      },
+      {
+        "objective": "Onset and trigger",
+        "say": "What were you doing when the pain started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "shoveling",
+          "exertion"
+        ]
+      },
+      {
+        "objective": "Associated autonomic symptoms",
+        "say": "Are you sweating or feeling nauseated?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweating",
+          "nausea"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you smoke, and do you have high blood pressure or cholesterol?",
+        "domains": [
+          "smoking",
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Has anyone in your family had a heart attack, especially young?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "father",
+          "young"
+        ]
+      }
+    ]
+  }
+}

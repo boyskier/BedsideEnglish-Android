@@ -1,0 +1,128 @@
+{
+  "id": "fm_038",
+  "system": "fm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wright",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "memory loss, getting lost driving, MoCA score 17/30",
+  "hpi_details": "A 56-year-old female presents to the clinic with memory loss, getting lost driving, moca score 17/30. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to alzheimer_fm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "moca",
+      "test": "Montreal Cognitive Assessment",
+      "value": "17/30",
+      "reference_range": ">=26/30",
+      "flag": "abnormal",
+      "note": "Requires evaluation of functional status and reversible causes; not diagnostic by itself"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Alzheimer Disease (cognitive decline) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Alzheimer Disease (cognitive decline) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "A MoCA score identifies cognitive impairment but does not establish Alzheimer disease; evaluate functional decline, medications, mood, reversible contributors, and appropriate structural imaging. Address immediate driving and home-safety risks while the diagnosis is clarified.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: memory loss, getting lost driving, MoCA score 17/30",
+      "Key HPI features: A 56-year-old female presents to the clinic with memory loss, getting lost driving, moca score 17/30. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: MoCA score 17/30 (below normal cutoff), normal vital signs and general physical exam, no focal neurological deficits.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Alzheimer Disease (cognitive decline).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vascular dementia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Getting lost while driving."
+    ],
+    "management_principles": [
+      "Perform a cognitive-decline evaluation and address driving/home safety; consider disease-specific medication only after establishing the diagnosis and stage",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of memory loss, getting lost driving, MoCA score 17/30. HPI: Alzheimer disease.",
+    "objective": "MoCA score 17/30 (below normal cutoff), normal vital signs and general physical exam, no focal neurological deficits.",
+    "assessment": "Cognitive impairment with unsafe driving; evaluate for Alzheimer disease and alternative or reversible causes.",
+    "plan": "Address immediate driving and home-safety concerns and involve family/support services as appropriate. Evaluate functional decline, mood, medications, CBC/metabolic testing, thyroid and B12 status, and obtain structural neuroimaging when indicated. Consider a cholinesterase inhibitor after an Alzheimer diagnosis is established; reserve memantine for appropriate disease stage."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Alzheimer Disease cognitive",
+    "Select appropriate diagnostic workup for Alzheimer Disease cognitive",
+    "Implement evidence-based management plan: diagnostic evaluation, immediate safety planning, and stage-appropriate treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Alzheimer Disease (cognitive decline)",
+    "one_liner": "Progressive memory loss, getting lost while driving, and a low MoCA score indicate cognitive impairment requiring diagnostic evaluation and immediate safety planning.",
+    "differentials": [
+      "Vascular dementia",
+      "Depression"
+    ],
+    "red_flags": [
+      "Getting lost while driving"
+    ],
+    "must_ask": [
+      {
+        "objective": "Memory symptoms",
+        "say": "Have you been repeating questions or forgetting names?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Getting lost",
+        "say": "Have you gotten lost anywhere familiar?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Functional decline",
+        "say": "Any trouble managing bills or finances?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many years has this been progressing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Safety concerns",
+        "say": "What worries you about your safety at home?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

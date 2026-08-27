@@ -1,0 +1,131 @@
+{
+  "id": "cs_021",
+  "system": "cardiothoracic surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Seok",
+  "age": 62,
+  "gender": "male",
+  "chief_complaint": "chest pain on walking that improves with rest and normal resting ECG",
+  "hpi_details": "62M reports chest tightness and squeezing sensation over his mid-chest when walking uphill or climbing 2 flights of stairs. The pain stops completely within 5 minutes of resting. Denies chest pain at rest.",
+  "ideas": "thinks he has stable angina or heart blockages",
+  "concerns": "worried about sudden heart attack",
+  "expectations": "wants heart test and specialist check",
+  "pmh": "Hypertension, Dyslipidemia, 30 pack-year smoker",
+  "medications": "Lisinopril 10mg daily, Atorvastatin 20mg daily",
+  "social_hx": "Taxi driver, smoker",
+  "clinical_knowledge": {
+    "topic": "Stable Angina (Coronary Artery Disease) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stable Angina (Coronary Artery Disease) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management combines risk-factor modification (smoking cessation, statin, blood pressure control) with anti-anginal medication, guided by objective ischemia testing to determine the need for revascularization.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chest pain on walking that improves with rest and normal resting ECG",
+      "Key HPI features: 62M reports chest tightness and squeezing sensation over his mid-chest when walking uphill or climbing 2 flights of stairs. The pain stops completely within 5 minutes of resting. Denies chest pain at rest.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Stable Coronary Artery Disease (Angina Pectoris).",
+      "Relevant background/PMH: Hypertension, Dyslipidemia, 30 pack-year smoker",
+      "Current medications: Lisinopril 10mg daily, Atorvastatin 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stable Angina (Coronary Artery Disease).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Unstable angina/ACS without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain now occurring at rest, or lasting longer than usual — would suggest progression to unstable angina."
+    ],
+    "management_principles": [
+      "Confirm smoking cessation counseling is offered given the 30 pack-year history, a major modifiable risk factor",
+      "Refer for cardiac stress test or coronary CTA",
+      "Optimize anti-anginal medication and cardiovascular risk factors; use antiplatelet and statin therapy when coronary artery disease is confirmed or otherwise indicated"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001168"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Stable Coronary Artery Disease (Angina Pectoris). chest pain on walking that improves with rest and normal resting ECG. 62M reports chest tightness and squeezing sensation over his mid-chest when walking uphill or climbing 2 flights of stairs. The pain stops completely within 5 minutes of resting. Denies chest pain at rest.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Stable Coronary Artery Disease (Angina Pectoris).",
+    "assessment": "Findings consistent with stable angina from coronary artery disease, given exertional, rest-relieved chest tightness with multiple cardiac risk factors.",
+    "plan": "Refer for cardiac stress test or coronary CTA. Optimize anti-anginal medication and cardiovascular risk factors; use antiplatelet and statin therapy when coronary artery disease is confirmed or otherwise indicated. Refer for coronary angiography if symptoms persist despite medical therapy or if noninvasive testing indicates high risk."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Stable Coronary Artery Disease (Angina Pectoris).",
+    "Formulate prioritized differential diagnosis for chest pain on walking that improves with rest and normal resting ECG",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies for Stable Coronary Artery Disease (Angina Pectoris)."
+  ],
+  "teaching": {
+    "diagnosis": "Stable Angina (Coronary Artery Disease)",
+    "one_liner": "Predictable chest tightness on exertion from a fixed coronary artery narrowing, relieved by rest within minutes — distinct from unstable angina, which occurs at rest or with minimal exertion.",
+    "differentials": [
+      "Unstable angina/ACS",
+      "Gastroesophageal reflux",
+      "Musculoskeletal chest pain"
+    ],
+    "red_flags": [
+      "Pain now occurring at rest, or lasting longer than usual — would suggest progression to unstable angina"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exertional trigger",
+        "say": "Does the chest tightness happen specifically when walking uphill or climbing stairs?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "uphill",
+          "stairs",
+          "exertion"
+        ]
+      },
+      {
+        "objective": "Relief with rest",
+        "say": "Does the pain go away completely within a few minutes of resting?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "rest",
+          "minutes"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "How would you describe the sensation — tight, squeezing, pressure?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you smoke, and do you have high blood pressure or cholesterol?",
+        "domains": [
+          "smoking",
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Rest pain (to exclude ACS)",
+        "say": "Does this ever happen at rest, without exertion?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

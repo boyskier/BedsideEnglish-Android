@@ -1,0 +1,205 @@
+{
+  "id": "cardio_020",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. O'Reilly",
+  "age": 78,
+  "gender": "male",
+  "chief_complaint": "frequent dizzy spells, near fainting, and heart dropping beats over 2 weeks",
+  "hpi_details": "2-week history of recurrent, abrupt-onset dizzy spells, lightheadedness, and feeling on the verge of blacking out when walking or rising from a chair. Reports sensation of his pulse becoming exceptionally slow or dropping several beats in a row. Experienced two episodes of near-syncope where he had to grab a table to avoid falling. Denies chest pain, shortness of breath, or seizure activity. Had a pacemaker discussion years ago but never followed up.",
+  "ideas": "thinks his heart electrical wires are fraying because of old age",
+  "concerns": "afraid he will fall and fracture his hip during a sudden dizzy blackout",
+  "expectations": "wants his pulse checked and a permanent pacemaker implanted so he doesn't fall",
+  "pmh": "hypertension, chronic kidney disease stage 3, osteoarthritis",
+  "medications": "amlodipine 5mg OD, paracetamol PRN (not taking beta-blockers or rate-slowing drugs)",
+  "social_hx": "non-smoker, rare alcohol, retired farmer, lives alone with emergency pendant",
+  "investigation_events": [
+    {
+      "id": "mobitz_two_ecg",
+      "title": "12-lead ECG",
+      "order_terms": ["ECG", "EKG", "12-lead"],
+      "availability_message": "The 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_mobitz_two",
+          "test": "12-lead ECG",
+          "value": "Sinus rhythm with fixed PR intervals and intermittent non-conducted P waves in 2:1 conduction; ventricular rate 42 bpm; QRS 146 ms",
+          "unit": "",
+          "reference_range": "PR 120-200 ms; QRS <120 ms",
+          "flag": "critical",
+          "collected_at": "During today's assessment"
+        }
+      ]
+    },
+    {
+      "id": "bradycardia_electrolytes",
+      "title": "Electrolyte results",
+      "order_terms": ["electrolytes", "potassium", "U&E", "U&Es"],
+      "availability_message": "The electrolyte results are now available.",
+      "results": [
+        {
+          "id": "potassium_mobitz_two",
+          "test": "Potassium",
+          "value": "4.3",
+          "unit": "mmol/L",
+          "reference_range": "3.5-5.0",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Second-Degree AV Block, Mobitz Type II evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Second-Degree AV Block, Mobitz Type II is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent hospital admission with continuous cardiac monitoring and bed rest with bathroom privileges only (high risk of unpredictable progression to complete third-degree AV block or ventricular standstill), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: frequent dizzy spells, near fainting, and heart dropping beats over 2 weeks",
+      "Key HPI features: 2-week history of recurrent, abrupt-onset dizzy spells, lightheadedness, and feeling on the verge of blacking out when walking or rising from a chair. Reports sensation of his pulse becoming exceptionally slow or dropping several beats in a row. Experienced two episodes of near-syncope where he had to grab a table to avoid falling. Denies chest pain, shortness of breath, or seizure activity. Had a pacemaker discussion years ago but never followed up.",
+      "Objective/Exam findings: Examine pulse: slow, irregular pulse at 42 bpm with intermittent dropped beats. Vitals: BP 115/68 mmHg. 12-lead ECG: normal constant PR interval on conducted beats, but sudden unexpected non-conducted P waves (dropped QRS complexes) occurring in a 2:1 or 3:2 conduction ratio with normal sinus P-P intervals (Second-Degree Atrioventricular Block - Mobitz Type II). Check QRS duration (often widened indicating infranodal His-Purkinje conduction disease). Bloods: U&Es (rule out hyperkalaemia), troponin, digoxin level if applicable.",
+      "Relevant background/PMH: hypertension, chronic kidney disease stage 3, osteoarthritis",
+      "Current medications: amlodipine 5mg OD, paracetamol PRN (not taking beta-blockers or rate-slowing drugs)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Second-Degree AV Block, Mobitz Type II.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Sick sinus syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope without warning — high risk of progression to complete heart block."
+    ],
+    "management_principles": [
+      "Urgent hospital admission with continuous cardiac monitoring and bed rest with bathroom privileges only (high risk of unpredictable progression to complete third-degree AV block or ventricular standstill)",
+      "If severe symptomatic bradycardia or haemodynamic instability occurs: administer IV atropine (though less reliable in infranodal Mobitz II) or IV isoprenaline, and prepare transcutaneous/transvenous temporary pacing",
+      "Urgent cardiology consult for permanent dual-chamber pacemaker (PPM) implantation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay",
+        "url": "https://professional.heart.org/en/guidelines-statements/2018-accahahrs-guideline-on-the-evaluation-and-management-of-patients-withcir0000000000000628"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: frequent dizzy spells, near fainting, and heart dropping beats over 2 weeks\n\n2-week history of recurrent, abrupt-onset dizzy spells, lightheadedness, and feeling on the verge of blacking out when walking or rising from a chair. Reports sensation of his pulse becoming exceptionally slow or dropping several beats in a row. Experienced two episodes of near-syncope where he had to grab a table to avoid falling. Denies chest pain, shortness of breath, or seizure activity. Had a pacemaker discussion years ago but never followed up.",
+    "objective": "Examine pulse: slow, irregular pulse at 42 bpm with intermittent dropped beats. Vitals: BP 115/68 mmHg. 12-lead ECG: normal constant PR interval on conducted beats, but sudden unexpected non-conducted P waves (dropped QRS complexes) occurring in a 2:1 or 3:2 conduction ratio with normal sinus P-P intervals (Second-Degree Atrioventricular Block - Mobitz Type II). Check QRS duration (often widened indicating infranodal His-Purkinje conduction disease). Bloods: U&Es (rule out hyperkalaemia), troponin, digoxin level if applicable.",
+    "assessment": "Second-Degree Atrioventricular Block (Mobitz Type II) causing symptomatic bradycardia and presyncope. DDx: Mobitz Type I (Wenckebach - progressive PR prolongation before dropped beat; benign nodal disease), Complete (Third-Degree) AV Block, Sick Sinus Syndrome, drug-induced bradycardia.",
+    "plan": "Urgent hospital admission with continuous cardiac monitoring and bed rest with bathroom privileges only (high risk of unpredictable progression to complete third-degree AV block or ventricular standstill). If severe symptomatic bradycardia or haemodynamic instability occurs: administer IV atropine (though less reliable in infranodal Mobitz II) or IV isoprenaline, and prepare transcutaneous/transvenous temporary pacing. Urgent cardiology consult for permanent dual-chamber pacemaker (PPM) implantation."
+  },
+  "learning_objectives": [
+    "Differentiate Mobitz Type II AV block (constant PR interval before suddenly dropped QRS; high risk infranodal block) from Mobitz Type I Wenckebach (progressive PR prolongation)",
+    "Recognise the high clinical danger of Mobitz Type II progressing unpredictably to complete heart block or asystole",
+    "Outline the emergency step-up bradycardia management protocol from pharmacological adjuncts to temporary and permanent pacing",
+    "Counsel elderly patients clearly regarding permanent pacemaker implantation procedure, safety, and lifestyle benefits"
+  ],
+  "teaching": {
+    "diagnosis": "Second-Degree AV Block, Mobitz Type II",
+    "one_liner": "Conduction to the ventricles fails intermittently and unpredictably. It progresses to complete block, so it needs a pacemaker.",
+    "differentials": [
+      "Sick sinus syndrome",
+      "Vasovagal syncope",
+      "Medication-induced bradycardia"
+    ],
+    "red_flags": [
+      "Syncope without warning — high risk of progression to complete heart block"
+    ],
+    "must_ask": [
+      {
+        "objective": "Warning before the dizzy spells",
+        "say": "Do you get any warning at all, or does it come out of nowhere?",
+        "domains": [
+          "onset_duration",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "warning",
+          "sudden",
+          "nowhere"
+        ]
+      },
+      {
+        "objective": "Frequency and progression",
+        "say": "How often is this happening, and is it getting more frequent?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "often",
+          "frequent",
+          "more"
+        ]
+      },
+      {
+        "objective": "Rate-slowing medications",
+        "say": "Are you on any heart tablets — beta blockers, digoxin, or similar?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "beta",
+          "blocker",
+          "digoxin",
+          "tablet",
+          "heart",
+          "medication"
+        ]
+      },
+      {
+        "objective": "Near-syncope versus true syncope",
+        "say": "Have you actually lost consciousness, or only come close?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "pass",
+          "out",
+          "lost",
+          "consciousness",
+          "nearly",
+          "close",
+          "black"
+        ]
+      },
+      {
+        "objective": "Injury from falls",
+        "say": "Have you hurt yourself when this happened?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fall",
+          "hurt",
+          "injur",
+          "hit"
+        ]
+      },
+      {
+        "objective": "Breathlessness and fatigue",
+        "say": "Have you been unusually tired or short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tired",
+          "fatigue",
+          "breath",
+          "energy"
+        ]
+      }
+    ]
+  }
+}

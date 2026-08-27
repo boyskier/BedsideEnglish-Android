@@ -1,0 +1,159 @@
+{
+  "id": "pulm_031",
+  "system": "pulm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hernandez",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "sudden pleuritic chest pain, severe dyspnea, and tachycardia",
+  "hpi_details": "A 35-year-old male presents to the clinic with sudden pleuritic chest pain, severe dyspnea, and tachycardia. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to pe",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{"id":"urgent_pe_testing","title":"Urgent pulmonary embolism results","order_terms":["ctpa","ct pulmonary angiogram","ct pulmonary angiography","ecg","ekg"],"availability_message":"The urgent results are now available and confirm pulmonary embolism; emergency treatment decisions require immediate bleeding-risk and haemodynamic assessment.","results":[{"id":"ctpa","test":"CT pulmonary angiography","value":"Acute segmental emboli in the right lower-lobe pulmonary arteries without CT evidence of right-heart strain","flag":"critical","collected_at":"During emergency assessment"},{"id":"ecg","test":"12-lead ECG","value":"Sinus tachycardia at 112 bpm without acute ischemic changes","flag":"abnormal","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Pulmonary Embolism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pulmonary Embolism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Suspected pulmonary embolism requires urgent risk stratification, oxygenation assessment, and clinician-directed imaging and treatment; anticoagulation is considered only after bleeding risk and contraindications are assessed.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden pleuritic chest pain, severe dyspnea, and tachycardia",
+      "Key HPI features: A 35-year-old male presents to the clinic with sudden pleuritic chest pain, severe dyspnea, and tachycardia. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pulmonary Embolism.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pulmonary Embolism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Community-acquired pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Send patients with severe dyspnea, hypoxemia, syncope, hypotension, or persistent chest pain for emergency evaluation.",
+      "Use validated pretest-probability assessment and clinician-directed testing (such as D-dimer or CT pulmonary angiography) as appropriate.",
+      "Provide anticoagulation, oxygen, and specialist care only when clinically indicated and supervised."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2026 Report",
+        "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with sudden pleuritic chest pain, severe dyspnea, and tachycardia. Clarify onset, VTE risk factors, leg symptoms, hemoptysis, syncope, and personal or family clotting history.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pulmonary Embolism.",
+    "assessment": "Condition highly suspicious for Pulmonary Embolism.",
+    "plan": "Arrange emergency evaluation now. Obtain pulse oximetry, ECG, and clinician-directed PE testing based on pretest probability. Give oxygen, anticoagulation, and specialist-directed care only when indicated after assessment of bleeding risk and contraindications."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pulmonary Embolism",
+    "Select appropriate diagnostic workup for Pulmonary Embolism",
+    "Describe emergency evaluation and clinician-directed management for suspected pulmonary embolism"
+  ],
+  "teaching": {
+    "diagnosis": "Pulmonary Embolism",
+    "one_liner": "Pulmonology case presenting with sudden pleuritic chest pain, severe dyspnea, and tachycardia.",
+    "differentials": [
+      "Acute coronary syndrome",
+      "Pneumothorax",
+      "Musculoskeletal chest pain"
+    ],
+    "red_flags": [
+      "Severe hypoxemia (SpO2 < 90%)",
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden onset and pleuritic character of chest pain",
+        "say": "How suddenly did the chest pain and breathlessness start, and does it hurt more when you breathe in?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "sudden",
+          "pleuritic",
+          "onset",
+          "chest pain",
+          "acute"
+        ]
+      },
+      {
+        "objective": "VTE risk factors: immobility, surgery, travel, hormones",
+        "say": "Have you had any long trips, surgery, leg injury, cancer treatment, or hormone medicines such as testosterone recently?",
+        "domains": [
+          "pmh",
+          "living_work"
+        ],
+        "keywords": [
+          "immobility",
+          "surgery",
+          "travel",
+          "hormonal",
+          "VTE risk"
+        ]
+      },
+      {
+        "objective": "Unilateral leg swelling or pain",
+        "say": "Is one of your legs more swollen, warm, or painful than the other?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "leg swelling",
+          "DVT",
+          "unilateral",
+          "calf pain",
+          "warmth"
+        ]
+      },
+      {
+        "objective": "Syncope, lightheadedness, and hemodynamic red flags",
+        "say": "Have you felt faint, dizzy, or like you might pass out?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "syncope",
+          "lightheaded",
+          "hemodynamic",
+          "shock",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Family or personal history of clotting disorders",
+        "say": "Has anyone in your family had blood clots, or have you personally had one before?",
+        "domains": [
+          "family_hx",
+          "pmh"
+        ],
+        "keywords": [
+          "thrombophilia",
+          "family history",
+          "clotting",
+          "prior DVT",
+          "genetic"
+        ]
+      }
+    ]
+  }
+}

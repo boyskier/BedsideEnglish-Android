@@ -1,0 +1,177 @@
+{
+  "id": "cardio_012",
+  "system": "cardiology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Moretti",
+  "age": 70,
+  "gender": "male",
+  "chief_complaint": "increasing breathlessness, fatigue, and needing three pillows at night over 6 months",
+  "hpi_details": "6-month history of progressive reduction in exercise tolerance, now becoming breathless when walking 50 metres on level ground. Over the past 2 months, has developed orthopnoea requiring three pillows to sleep without coughing and choking, plus paroxysmal nocturnal dyspnoea waking him up gasping for air twice a week. Has noticed mild ankle swelling in the evenings. Had a myocardial infarction 8 years ago treated with coronary stents.",
+  "ideas": "thinks his old heart damage from his heart attack is getting worse with age",
+  "concerns": "worried he will wake up choking and unable to catch his breath during the night",
+  "expectations": "wants stronger water pills and a check on his stents",
+  "pmh": "prior anterior myocardial infarction (8 years ago), coronary artery bypass/stent history, hypertension, mild chronic kidney disease",
+  "medications": "ramipril 10mg OD, bisoprolol 5mg OD, atorvastatin 40mg ON, aspirin 75mg OD, furosemide 20mg OD",
+  "social_hx": "ex-smoker, occasional glass of wine, retired chef, lives with wife",
+  "investigation_events": [
+    {"id": "heart_failure_labs", "title": "Heart-failure laboratory studies", "order_terms": ["nt-probnp", "nt probnp", "bnp", "natriuretic peptide", "renal function", "electrolytes"], "availability_message": "The heart-failure laboratory results are now available.", "results": [
+      {"id": "nt_probnp", "test": "NT-proBNP", "value": "5,860", "unit": "pg/mL", "reference_range": "<125", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "serum_creatinine", "test": "Creatinine", "value": "1.8", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "high", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "serum_potassium", "test": "Potassium", "value": "4.9", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "normal", "specimen": "Blood", "collected_at": "Initial sample"}
+    ]},
+    {"id": "mr_echocardiogram", "title": "Transthoracic echocardiogram", "order_terms": ["transthoracic echocardiogram", "transthoracic echo", "tte", "echocardiogram"], "availability_message": "The transthoracic echocardiogram report is now available.", "results": [
+      {"id": "left_ventricular_ef", "test": "Left ventricular ejection fraction", "value": "28", "unit": "%", "reference_range": "55-70", "flag": "critical", "collected_at": "Today's echocardiogram"},
+      {"id": "mitral_regurgitant_volume", "test": "Mitral regurgitant volume", "value": "64", "unit": "mL/beat", "reference_range": "Severe: >=60", "flag": "critical", "collected_at": "Today's echocardiogram"},
+      {"id": "effective_regurgitant_orifice", "test": "Effective regurgitant orifice area", "value": "0.42", "unit": "cm2", "reference_range": "Severe: >=0.40", "flag": "critical", "collected_at": "Today's echocardiogram"}
+    ]}
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Functional Mitral Regurgitation evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Functional Mitral Regurgitation is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes optimizing guideline-directed medical therapy for heart failure with specialist and renal-function review, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: increasing breathlessness, fatigue, and needing three pillows at night over 6 months",
+      "Key HPI features: 6-month history of progressive reduction in exercise tolerance, now becoming breathless when walking 50 metres on level ground. Over the past 2 months, has developed orthopnoea requiring three pillows to sleep without coughing and choking, plus paroxysmal nocturnal dyspnoea waking him up gasping for air twice a week. Has noticed mild ankle swelling in the evenings. Had a myocardial infarction 8 years ago treated with coronary stents.",
+      "Objective/Exam findings: Examine JVP (elevated +4 cm H2O above sternal angle). Cardiac auscultation: displaced apex beat to 6th intercostal space anterior axillary line, high-pitched blowing pansystolic/holosystolic murmur best heard at the cardiac apex radiating widely to the left axilla, plus a prominent S3 gallop rhythm. Lung auscultation: bilateral fine bibasilar inspiratory crackles. Bloods: NT-proBNP (interpret using age, renal function, rhythm, and clinical context), U&Es, FBC. ECG: broad anterior Q waves. Transthoracic echocardiogram (TTE) to assess ventricular size, function, and mitral regurgitation.",
+      "Relevant background/PMH: prior anterior myocardial infarction (8 years ago), coronary artery bypass/stent history, hypertension, mild chronic kidney disease",
+      "Current medications: ramipril 10mg OD, bisoprolol 5mg OD, atorvastatin 40mg ON, aspirin 75mg OD, furosemide 20mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Functional Mitral Regurgitation.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aortic stenosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Breathlessness at rest, or coughing up pink frothy sputum."
+    ],
+    "management_principles": [
+      "Optimize guideline-directed medical therapy for heart failure with specialist and renal-function review; diuretics relieve congestion, while ARNI, beta-blocker, MRA, and SGLT2 inhibitor use depends on blood pressure, kidney function, potassium, and contraindications",
+      "Urgent echocardiogram to assess left ventricular ejection fraction and mitral regurgitant volume"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/valvular-heart-disease-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "70M with prior MI presents with progressive biventricular heart failure symptoms: exertional dyspnoea, orthopnoea (3 pillows), PND, and peripheral oedema over 6 months.",
+    "objective": "Examine JVP (elevated +4 cm H2O above sternal angle). Cardiac auscultation: displaced apex beat to 6th intercostal space anterior axillary line, high-pitched blowing pansystolic/holosystolic murmur best heard at the cardiac apex radiating widely to the left axilla, plus a prominent S3 gallop rhythm. Lung auscultation: bilateral fine bibasilar inspiratory crackles. Bloods: NT-proBNP (interpret using age, renal function, rhythm, and clinical context), U&Es, FBC. ECG: broad anterior Q waves. Transthoracic echocardiogram (TTE) to assess ventricular size, function, and mitral regurgitation.",
+    "assessment": "Severe chronic functional mitral regurgitation (secondary to left ventricular remodeling/dilation post-anterior MI) leading to decompensated congestive heart failure. DDx: primary degenerative mitral valve disease (myxomatous/prolapse), aortic stenosis, COPD exacerbation, recurrent silent ischaemia.",
+    "plan": "Optimize guideline-directed medical therapy for heart failure with specialist and renal-function review; diuretics relieve congestion, while ARNI, beta-blocker, MRA, and SGLT2 inhibitor use depends on blood pressure, kidney function, potassium, and contraindications. Urgent echocardiogram to assess left ventricular ejection fraction and mitral regurgitant volume. Cardiology referral for consideration of transcatheter edge-to-edge mitral valve repair (e.g., MitraClip) or surgical mitral valve replacement."
+  },
+  "learning_objectives": [
+    "Elicit classical left and right congestive heart failure signs: orthopnoea, PND, elevated JVP, S3 gallop, peripheral oedema",
+    "Identify the auscultatory hallmarks of mitral regurgitation: pansystolic apical murmur radiating to the left axilla",
+    "Differentiate primary structural mitral regurgitation from secondary functional mitral regurgitation post-myocardial infarction",
+    "Formulate the four-pillar guideline-directed medical therapy regimen for heart failure with reduced ejection fraction (HFrEF)"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Functional Mitral Regurgitation",
+    "one_liner": "A leaking mitral valve sends blood backwards into the lungs, so effort tolerance falls and lying flat becomes difficult.",
+    "differentials": [
+      "Aortic stenosis",
+      "Chronic obstructive pulmonary disease",
+      "Anaemia"
+    ],
+    "red_flags": [
+      "Breathlessness at rest, or coughing up pink frothy sputum"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exercise tolerance now versus before",
+        "say": "What could you do six months ago that you can't do now?",
+        "domains": [
+          "progression",
+          "severity"
+        ],
+        "keywords": [
+          "used",
+          "now",
+          "walk",
+          "stairs"
+        ]
+      },
+      {
+        "objective": "Orthopnoea",
+        "say": "How many pillows do you need to sleep comfortably?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "pillow",
+          "flat",
+          "lie",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Palpitations suggesting atrial fibrillation",
+        "say": "Does your heart ever feel irregular or fluttery?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "irregular",
+          "flutter",
+          "racing",
+          "palpitation"
+        ]
+      },
+      {
+        "objective": "Known murmur or prior echo",
+        "say": "Have you been told you have a murmur, or had a heart scan before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "murmur",
+          "echo",
+          "scan",
+          "valve"
+        ]
+      },
+      {
+        "objective": "Previous myocardial infarction",
+        "say": "Have you ever had a heart attack?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "heart",
+          "attack",
+          "infarct",
+          "stent",
+          "bypass"
+        ]
+      },
+      {
+        "objective": "Ankle swelling",
+        "say": "Have your ankles been swelling up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ankle",
+          "swelling",
+          "puffy",
+          "leg"
+        ]
+      }
+    ]
+  }
+}

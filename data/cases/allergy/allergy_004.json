@@ -1,0 +1,157 @@
+{
+  "id": "allergy_004",
+  "system": "allergy_immunology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hall",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "widespread red skin rash, facial swelling, high fever, and lymph node enlargement after penicillin",
+  "hpi_details": "45M 3 weeks into amoxicillin course presenting with diffuse exfoliative erythroderma, facial edema, fever, eosinophilia (>2,000 /uL), and acute hepatitis/elevated LFTs.",
+  "ideas": "thinks this is related to penicillin dress syndrome drug hypersensitivity",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id": "absolute_eosinophil_count", "test": "Absolute eosinophil count", "value": "2.4", "unit": "x10^3/uL", "reference_range": "0.0-0.5", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+    {"id": "ast_initial", "test": "AST", "value": "186", "unit": "U/L", "reference_range": "10-40", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+    {"id": "alt_initial", "test": "ALT", "value": "322", "unit": "U/L", "reference_range": "7-56", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"}
+  ],
+  "clinical_knowledge": {
+    "topic": "DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management is immediate withdrawal of the culprit drug (here, amoxicillin/penicillin) plus supportive care and, for significant organ involvement, systemic corticosteroids, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: widespread red skin rash, facial swelling, high fever, and lymph node enlargement after penicillin",
+      "Key HPI features: 45M 3 weeks into amoxicillin course presenting with diffuse exfoliative erythroderma, facial edema, fever, eosinophilia (>2,000 /uL), and acute hepatitis/elevated LFTs.",
+      "Objective/Exam findings: Diffuse exfoliative erythroderma with facial edema, fever, cervical lymphadenopathy, peripheral eosinophilia (>2,000/uL), and elevated transaminases.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Stevens-Johnson syndrome / TEN without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Facial swelling with widespread rash."
+    ],
+    "management_principles": [
+      "Stop the culprit drug (amoxicillin/penicillin) immediately — prompt withdrawal is the single most important intervention",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Penicillin DRESS Syndrome Drug Hypersensitivity: widespread red skin rash, facial swelling, high fever, and lymph node enlargement after penicillin. 45M 3 weeks into amoxicillin course presenting with diffuse exfoliative erythroderma, facial edema, fever, eosinophilia (>2,000 /uL), and acute hepatitis/elevated LFTs.",
+    "objective": "Vitals: febrile. Diffuse exfoliative erythroderma with facial edema and cervical lymphadenopathy. Labs: peripheral eosinophilia (>2,000/uL), elevated AST/ALT consistent with acute hepatitis.",
+    "assessment": "DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms) secondary to amoxicillin/penicillin exposure.",
+    "plan": "1. Stop amoxicillin and all beta-lactams immediately; document the drug allergy and avoid future rechallenge. 2. Admit for supportive care and monitoring of hepatic, renal, and hematologic function; consider systemic corticosteroids for significant organ involvement per dermatology/allergy input. 3. Refer to allergy/immunology and dermatology for confirmation, follow-up (relapses can occur over weeks), and future drug-avoidance counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Penicillin DRESS Syndrome Drug Hypersensitivity",
+    "Formulate prioritized differential diagnosis for widespread red skin rash, facial swelling, high fever, and lymph node enlargement after penicillin",
+    "Select appropriate laboratory and imaging studies for allergy_immunology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "DRESS Syndrome (Drug Reaction with Eosinophilia and Systemic Symptoms)",
+    "one_liner": "A delayed, severe drug hypersensitivity reaction — typically 2-8 weeks after starting the drug — with rash, fever, lymphadenopathy, eosinophilia, and internal organ (often liver) involvement.",
+    "differentials": [
+      "Stevens-Johnson syndrome / TEN",
+      "Viral exanthem with hepatitis",
+      "Serum sickness-like reaction"
+    ],
+    "red_flags": [
+      "Facial swelling with widespread rash",
+      "Signs of liver involvement (jaundice, right upper quadrant pain)",
+      "High fever with lymph node swelling"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timeline relative to starting the drug",
+        "say": "When did you start the amoxicillin, and when did the rash and fever begin?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "amoxicillin",
+          "started",
+          "weeks"
+        ]
+      },
+      {
+        "objective": "Extent of the rash and facial swelling",
+        "say": "Where on your body is the rash, and has your face swollen up?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "face",
+          "swelling",
+          "rash",
+          "widespread"
+        ]
+      },
+      {
+        "objective": "Fever and lymph nodes",
+        "say": "Have you had a fever, and have you noticed any swollen glands in your neck?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "lymph node",
+          "swollen glands"
+        ]
+      },
+      {
+        "objective": "Other medications and prior drug reactions",
+        "say": "What other medications are you taking, and have you ever reacted to a drug before?",
+        "domains": [
+          "medications",
+          "pmh"
+        ],
+        "keywords": [
+          "penicillin",
+          "allergy",
+          "before"
+        ]
+      },
+      {
+        "objective": "Systemic organ symptoms",
+        "say": "Have you noticed yellowing of your skin or eyes, or pain under your right ribs?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "jaundice",
+          "yellow",
+          "liver",
+          "pain"
+        ]
+      }
+    ]
+  }
+}

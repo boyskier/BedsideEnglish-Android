@@ -1,0 +1,152 @@
+{
+  "id": "ent_029",
+  "system": "otolaryngology (ent)",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Johnson",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "throat pain, high fever, fatigue, tonsil exudates",
+  "hpi_details": "A 29-year-old male presents to the clinic with throat pain, high fever, fatigue, tonsil exudates. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to mononucleosis (mono) pharyngitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_pharyngitis_tests",
+      "title": "Point-of-care pharyngitis test results",
+      "order_terms": [
+        "rapid strep test",
+        "rapid strep",
+        "strep test",
+        "heterophile antibody",
+        "monospot",
+        "mono test"
+      ],
+      "availability_message": "The point-of-care pharyngitis test results are now available.",
+      "results": [
+        {
+          "id": "rapid_strep",
+          "test": "Rapid group A streptococcal antigen",
+          "value": "Negative",
+          "reference_range": "Negative",
+          "flag": "normal",
+          "specimen": "Throat swab",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "heterophile_antibody",
+          "test": "Heterophile antibody test",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Blood",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infectious Mononucleosis (pharyngitis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infectious Mononucleosis (pharyngitis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows a stepwise approach for infectious mononucleosis (pharyngitis): symptomatic care, rest, and avoiding contact sports due to splenic-rupture risk, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: throat pain, high fever, fatigue, tonsil exudates",
+      "Key HPI features: A 29-year-old male presents to the clinic with throat pain, high fever, fatigue, tonsil exudates. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Fever, exudative tonsillar pharyngitis, tender bilateral posterior cervical lymphadenopathy; abdomen assessed for hepatosplenomegaly.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infectious Mononucleosis (pharyngitis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Streptococcal pharyngitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Splenic symptoms."
+    ],
+    "management_principles": [
+      "Evaluate for streptococcal pharyngitis and infectious mononucleosis with appropriate testing, provide supportive care, and restrict contact/collision sports while splenic enlargement or acute illness is a concern",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with throat pain, high fever, fatigue, and tonsil exudates. 29M reports symptoms started recently and have been gradually worsening.",
+    "objective": "Fever, exudative tonsillar pharyngitis, tender bilateral posterior cervical lymphadenopathy; abdomen assessed for hepatosplenomegaly.",
+    "assessment": "Infectious mononucleosis (pharyngitis), with streptococcal pharyngitis as the key differential to exclude.",
+    "plan": "Evaluate for streptococcal pharyngitis and infectious mononucleosis with appropriate testing, and assess for hepatosplenomegaly. Provide hydration, analgesia/antipyretics, and rest. Restrict contact/collision sports during acute illness and until clinically cleared because of splenic-rupture risk. Seek urgent evaluation for airway compromise, severe abdominal pain, or marked dehydration."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Infectious Mononucleosis pharyngitis",
+    "Select appropriate diagnostic workup for Infectious Mononucleosis pharyngitis",
+    "Implement evidence-based management plan: Symptomatic care, rest, avoid contact sports"
+  ],
+  "teaching": {
+    "diagnosis": "Infectious Mononucleosis (pharyngitis)",
+    "one_liner": "EBV infection causing throat pain, high fever, fatigue, and tonsillar exudates.",
+    "differentials": [
+      "Streptococcal pharyngitis"
+    ],
+    "red_flags": [
+      "Severe left upper quadrant abdominal pain — may indicate splenic enlargement or rupture risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sore throat",
+        "say": "How severe is the throat pain?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "How high is the fever?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How tired do you feel?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Lymph nodes",
+        "say": "Are your neck glands swollen?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Tonsil appearance",
+        "say": "Any white patches on your tonsils?",
+        "domains": [
+          "character"
+        ]
+      }
+    ]
+  }
+}

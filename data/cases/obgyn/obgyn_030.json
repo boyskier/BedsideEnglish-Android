@@ -1,0 +1,137 @@
+{
+  "id": "obgyn_030",
+  "system": "obgyn",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lopez",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "thick cottage-cheese discharge and vaginal itching",
+  "hpi_details": "A 32-year-old female presents to the clinic with thick cottage-cheese discharge and vaginal itching. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to yeast_infection",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Vulvovaginal candidiasis (yeast infection) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Vulvovaginal candidiasis (yeast infection) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management uses topical azole therapy when pregnancy is possible or confirmed; oral fluconazole is an option only when pregnancy has been excluded, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: thick cottage-cheese discharge and vaginal itching",
+      "Key HPI features: A 32-year-old female presents to the clinic with thick cottage-cheese discharge and vaginal itching. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Vulvovaginal Candidiasis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Vulvovaginal candidiasis (yeast infection).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bacterial vaginosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recurrent infection may suggest diabetes or immunosuppression."
+    ],
+    "management_principles": [
+      "Use topical azole therapy when pregnancy is possible or confirmed; oral fluconazole is an option only when pregnancy has been excluded",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of thick cottage-cheese discharge and vaginal itching. HPI: yeast infection.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Vulvovaginal Candidiasis.",
+    "assessment": "Condition highly suspicious for Vulvovaginal Candidiasis.",
+    "plan": "Confirm the likely diagnosis clinically or with testing when indicated. Use topical azole therapy when pregnancy is possible or confirmed; oral fluconazole is an option only when pregnancy has been excluded. Arrange follow-up for persistent, recurrent, or atypical symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Vulvovaginal Candidiasis",
+    "Select appropriate diagnostic workup for Vulvovaginal Candidiasis",
+    "Implement evidence-based management plan: Single-dose oral Fluconazole 150mg or topical Miconazole"
+  ],
+  "teaching": {
+    "diagnosis": "Vulvovaginal candidiasis (yeast infection)",
+    "one_liner": "Patient with thick cottage-cheese discharge, vaginal itching, and associated fatigue consistent with a yeast infection.",
+    "differentials": [
+      "Bacterial vaginosis",
+      "Trichomoniasis",
+      "Contact dermatitis"
+    ],
+    "red_flags": [
+      "Recurrent infection may suggest diabetes or immunosuppression"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the discharge and itching",
+        "say": "Can you describe the discharge and how severe the itching is?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "discharge",
+          "itching"
+        ]
+      },
+      {
+        "objective": "Ask about recurrence",
+        "say": "Have you had yeast infections like this before, and how often?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "recurrent infection"
+        ]
+      },
+      {
+        "objective": "Screen for risk factors (diabetes, antibiotics)",
+        "say": "Do you have diabetes, or have you taken antibiotics recently?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "antibiotics"
+        ]
+      },
+      {
+        "objective": "Ask about sexual activity and partner symptoms",
+        "say": "Is your partner having any similar symptoms?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "partner symptoms"
+        ]
+      },
+      {
+        "objective": "Explain the antifungal treatment",
+        "say": "We'll first check whether pregnancy is possible; topical antifungal cream is preferred in pregnancy, while an oral option may be suitable otherwise.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "fluconazole",
+          "topical antifungal"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,144 @@
+{
+  "id": "allergy_041",
+  "system": "allergy",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lewis",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "recurrent bacterial pneumonias and low IgG levels",
+  "hpi_details": "A 65-year-old male presents to the clinic with recurrent bacterial pneumonias and low igg levels. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cvid",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "serum_igg", "test": "IgG", "value": "380", "unit": "mg/dL", "reference_range": "700-1600", "flag": "critical", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "serum_iga", "test": "IgA", "value": "18", "unit": "mg/dL", "reference_range": "70-400", "flag": "critical", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "serum_igm", "test": "IgM", "value": "25", "unit": "mg/dL", "reference_range": "40-230", "flag": "low", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "pneumococcal_response", "test": "Protective pneumococcal serotype titers after vaccination", "value": "3 of 23 serotypes", "reference_range": "Protective response to >=70% of serotypes", "flag": "abnormal", "specimen": "Blood", "collected_at": "4 weeks after vaccination"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Common Variable Immunodeficiency (CVID) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Common Variable Immunodeficiency (CVID) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "CVID evaluation requires repeat quantitative immunoglobulins, assessment of specific vaccine antibody responses, and exclusion of secondary causes; immunoglobulin replacement is indicated after diagnosis when clinically appropriate.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent bacterial pneumonias and low IgG levels",
+      "Key HPI features: A 65-year-old male presents to the clinic with recurrent bacterial pneumonias and low igg levels. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for CVID.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Common Variable Immunodeficiency (CVID).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Secondary immunodeficiency (medication, malignancy) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pneumonia requiring hospitalization."
+    ],
+    "management_principles": [
+      "Refer to clinical immunology for repeat quantitative immunoglobulins, specific vaccine antibody responses, and exclusion of secondary causes; initiate immunoglobulin replacement when criteria are met",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of recurrent bacterial pneumonias and low IgG levels. HPI: common variable immunodeficiency.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for CVID.",
+    "assessment": "Condition highly suspicious for CVID.",
+    "plan": "Refer to clinical immunology for repeat quantitative immunoglobulins, specific vaccine antibody responses, and exclusion of secondary causes. Initiate immunoglobulin replacement when diagnostic criteria are met and clinically appropriate."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of CVID",
+    "Select appropriate diagnostic workup for CVID",
+    "Implement evidence-based management plan: Confirm antibody deficiency with quantitative immunoglobulins and vaccine responses, exclude secondary causes, then initiate immunoglobulin replacement when appropriate"
+  ],
+  "teaching": {
+    "diagnosis": "Common Variable Immunodeficiency (CVID)",
+    "one_liner": "A primary antibody deficiency with low IgG causing recurrent bacterial pneumonias, usually recognized in adulthood.",
+    "differentials": [
+      "Secondary immunodeficiency (medication, malignancy)",
+      "Bronchiectasis of another cause",
+      "Recurrent infection from anatomic/structural lung disease"
+    ],
+    "red_flags": [
+      "Pneumonia requiring hospitalization",
+      "Chronic diarrhea or unexplained weight loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Infection frequency",
+        "say": "How many pneumonias or serious infections have you had, and over what time period?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "pneumonia",
+          "infections"
+        ]
+      },
+      {
+        "objective": "Onset in life",
+        "say": "When did the frequent infections start?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "started",
+          "childhood",
+          "adult"
+        ]
+      },
+      {
+        "objective": "Response to treatment",
+        "say": "Do the infections respond normally to antibiotics?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "antibiotics",
+          "respond"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any chronic diarrhea, weight loss, or fatigue?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "diarrhea",
+          "weight loss",
+          "fatigue"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have frequent infections or a known immune deficiency?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

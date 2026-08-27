@@ -1,0 +1,173 @@
+{
+  "id": "cardio_005",
+  "system": "cardiology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Thorne",
+  "age": 32,
+  "gender": "male",
+  "chief_complaint": "sharp central chest pain that is worse when lying flat and relieved by sitting forward",
+  "hpi_details": "24-hour history of sharp, pleuritic, retrosternal chest pain of sudden onset. The pain is 8/10 when lying supine in bed and taking deep breaths, but improves significantly to 3/10 when sitting upright and leaning forward. Experienced a sore throat, low-grade fever, and generalized muscle aches 10 days ago. Denies radiation to the jaw or left arm, and denies exertional worsening.",
+  "ideas": "thinks a chest infection from last week has spread to his lungs or ribs",
+  "concerns": "afraid he is having a heart attack despite being young and physically fit",
+  "expectations": "wants a chest X-ray and painkillers to allow him to sleep lying down",
+  "pmh": "none, no cardiovascular risk factors, no prior hospitalizations",
+  "medications": "paracetamol 1g PRN with minimal relief",
+  "social_hx": "non-smoker, drinks alcohol socially on weekends, secondary school teacher, marathon runner",
+  "investigation_events": [
+    {"id": "pericarditis_ecg", "title": "12-lead ECG", "order_terms": ["ecg", "ekg", "12-lead", "electrocardiogram"], "availability_message": "The 12-lead ECG is now available.", "results": [{"id": "ecg_initial", "test": "12-lead ECG", "value": "Diffuse concave ST-segment elevation with PR-segment depression; reciprocal PR elevation in aVR", "flag": "critical", "collected_at": "At presentation"}]},
+    {"id": "inflammatory_and_cardiac_markers", "title": "Inflammatory markers and troponin", "order_terms": ["crp", "c reactive protein", "inflammatory markers", "troponin", "cardiac biomarkers"], "availability_message": "The inflammatory marker and troponin results are now available.", "results": [
+      {"id": "crp_initial", "test": "C-reactive protein", "value": "86", "unit": "mg/L", "reference_range": "<5", "flag": "high", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "troponin_t_initial", "test": "High-sensitivity troponin T", "value": "18", "unit": "ng/L", "reference_range": "0-14", "flag": "high", "specimen": "Blood", "collected_at": "Initial sample"}
+    ]},
+    {"id": "pericarditis_echo", "title": "Transthoracic echocardiogram", "order_terms": ["transthoracic echocardiogram", "transthoracic echo", "tte", "echocardiogram"], "availability_message": "The echocardiogram report is now available.", "results": [{"id": "echo_pericarditis", "test": "Transthoracic echocardiogram", "value": "Small circumferential pericardial effusion measuring 6 mm; normal biventricular function and no tamponade physiology", "flag": "abnormal", "collected_at": "Today"}]}
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Pericarditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Pericarditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes first-line high-dose NSAID therapy combined with colchicine to prevent recurrence, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sharp central chest pain that is worse when lying flat and relieved by sitting forward",
+      "Key HPI features: 24-hour history of sharp, pleuritic, retrosternal chest pain of sudden onset. The pain is 8/10 when lying supine in bed and taking deep breaths, but improves significantly to 3/10 when sitting upright and leaning forward. Experienced a sore throat, low-grade fever, and generalized muscle aches 10 days ago. Denies radiation to the jaw or left arm, and denies exertional worsening.",
+      "Objective/Exam findings: Auscultate heart: superficial, scratchy, high-pitched pericardial friction rub heard best at the left lower sternal border with patient leaning forward in expiration. ECG: widespread, diffuse ST-segment elevations with upward concavity (saddle-shaped) across multiple leads, plus PR-segment depression in limb leads (and PR elevation in aVR). Bloods: CRP, ESR, troponin (mild elevation possible if myopericarditis), FBC. Echocardiogram to exclude pericardial effusion.",
+      "Relevant background/PMH: none, no cardiovascular risk factors, no prior hospitalizations",
+      "Current medications: paracetamol 1g PRN with minimal relief"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Pericarditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to ST-elevation myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Breathlessness with distended neck veins — suggests tamponade."
+    ],
+    "management_principles": [
+      "First-line therapy: high-dose NSAID (e.g., ibuprofen 600mg TDS or aspirin 750mg TDS for 1-2 weeks with PPI gastroprotection) combined with colchicine 0.5mg BID for 3 months to prevent recurrence"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2015 ESC Guidelines for the diagnosis and management of pericardial diseases",
+        "url": "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Pericardial-Diseases-Guidelines-on-the-Diagnosis-and-Management-of"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32M presents with acute pleuritic, postural retrosternal chest pain (worse supine, relieved by sitting forward) preceded by an upper respiratory tract infection 10 days ago.",
+    "objective": "Auscultate heart: superficial, scratchy, high-pitched pericardial friction rub heard best at the left lower sternal border with patient leaning forward in expiration. ECG: widespread, diffuse ST-segment elevations with upward concavity (saddle-shaped) across multiple leads, plus PR-segment depression in limb leads (and PR elevation in aVR). Bloods: CRP, ESR, troponin (mild elevation possible if myopericarditis), FBC. Echocardiogram to exclude pericardial effusion.",
+    "assessment": "Acute viral/idiopathic pericarditis. DDx: acute ST-elevation myocardial infarction (differentiated by diffuse vs territorial ST elevation and PR depression), pulmonary embolism, costochondritis, pneumothorax.",
+    "plan": "First-line therapy: high-dose NSAID (e.g., ibuprofen 600mg TDS or aspirin 750mg TDS for 1-2 weeks with PPI gastroprotection) combined with colchicine 0.5mg BID for 3 months to prevent recurrence. Restrict competitive sports/strenuous exercise until symptom and biomarker resolution. Baseline echocardiogram to rule out effusion."
+  },
+  "learning_objectives": [
+    "Differentiate pericarditis pain from myocardial infarction based on postural relief (sitting forward) and pleuritic nature",
+    "Interpret the classic ECG features of acute pericarditis: diffuse concave ST elevations with PR depressions",
+    "Formulate dual anti-inflammatory therapy using NSAIDs combined with colchicine for recurrence prevention",
+    "Counsel athletic patients on exercise restriction during active pericardial inflammation"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Pericarditis",
+    "one_liner": "Inflammation of the sac around the heart. The giveaway is pain that is worse lying flat and better sitting forward.",
+    "differentials": [
+      "ST-elevation myocardial infarction",
+      "Pulmonary embolism",
+      "Pleurisy"
+    ],
+    "red_flags": [
+      "Breathlessness with distended neck veins — suggests tamponade"
+    ],
+    "must_ask": [
+      {
+        "objective": "Positional nature of the pain",
+        "say": "Is the pain worse when you lie flat, and better when you sit up and lean forward?",
+        "domains": [
+          "aggravating",
+          "relieving"
+        ],
+        "keywords": [
+          "lie",
+          "flat",
+          "sit",
+          "lean",
+          "forward",
+          "position"
+        ]
+      },
+      {
+        "objective": "Pleuritic quality",
+        "say": "Does it get worse when you take a deep breath or cough?",
+        "domains": [
+          "aggravating",
+          "character"
+        ],
+        "keywords": [
+          "breath",
+          "deep",
+          "cough",
+          "sharp"
+        ]
+      },
+      {
+        "objective": "Recent viral illness",
+        "say": "Have you had a cold, sore throat, or fever in the last couple of weeks?",
+        "domains": [
+          "pmh",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "cold",
+          "flu",
+          "fever",
+          "sore",
+          "throat",
+          "virus"
+        ]
+      },
+      {
+        "objective": "Site and radiation of the pain",
+        "say": "Where exactly is the pain, and does it move anywhere else?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "arm",
+          "jaw",
+          "shoulder",
+          "spread",
+          "radiate",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "When did it start, and how long does it last each time?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "Have you become short of breath as well?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breath",
+          "breathless",
+          "short"
+        ]
+      }
+    ]
+  }
+}

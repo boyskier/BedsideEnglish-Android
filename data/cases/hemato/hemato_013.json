@@ -1,0 +1,145 @@
+{
+  "id": "hemato_013",
+  "system": "hematology_oncology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Gonzalez",
+  "age": 60,
+  "gender": "male",
+  "chief_complaint": "rapidly enlarging painless neck mass, drenching sweats, and weight loss",
+  "hpi_details": "60M presenting with rapidly growing 5cm cervical lymph node mass, fevers, and night sweats. Biopsy confirms aggressive CD20+ diffuse large B-cell lymphoma.",
+  "ideas": "thinks this is related to diffuse large b-cell lymphoma dlbcl",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "lymph_node_biopsy",
+      "test": "Excisional cervical lymph node biopsy",
+      "value": "Diffuse large B-cell lymphoma, CD20 positive",
+      "flag": "critical",
+      "specimen": "Cervical lymph node"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Diffuse Large B-Cell Lymphoma (DLBCL) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diffuse Large B-Cell Lymphoma (DLBCL) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt histologic confirmation, full staging with PET-CT, and initiation of curative-intent R-CHOP chemoimmunotherapy given the aggressive but chemosensitive nature of this lymphoma, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: rapidly enlarging painless neck mass, drenching sweats, and weight loss",
+      "Key HPI features: 60M presenting with rapidly growing 5cm cervical lymph node mass, fevers, and night sweats. Biopsy confirms aggressive CD20+ diffuse large B-cell lymphoma.",
+      "Objective/Exam findings: Vitals: Temp 38.1C, HR 92, BP 126/78, unintentional weight loss of 8kg over 2 months. Firm, non-tender, rubbery 5cm right cervical lymph node; no other palpable lymphadenopathy; no hepatosplenomegaly on exam. Bloods: mild normocytic anemia, LDH markedly elevated (poor prognostic marker), ESR elevated. Excisional lymph node biopsy with immunohistochemistry confirms CD20-positive diffuse large B-cell lymphoma.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diffuse Large B-Cell Lymphoma (DLBCL).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hodgkin lymphoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapid growth over weeks — this pace is itself a warning sign of an aggressive lymphoma."
+    ],
+    "management_principles": [
+      "Complete staging workup: whole-body PET-CT, bone marrow biopsy, LDH, and HIV/Hepatitis B and C serologies (Hepatitis B screening is essential before Rituximab due to reactivation risk)",
+      "Obtain baseline echocardiogram (LVEF) before anthracycline-containing chemotherapy",
+      "Initiate curative-intent R-CHOP chemoimmunotherapy (Rituximab, Cyclophosphamide, Doxorubicin, Vincristine, Prednisone) every 21 days for 6 cycles",
+      "Give tumor lysis syndrome prophylaxis (allopurinol and IV hydration) before the first cycle given the tumor's rapid proliferation rate"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Diffuse Large B-Cell Lymphoma DLBCL: rapidly enlarging painless neck mass, drenching sweats, and weight loss. 60M presenting with rapidly growing 5cm cervical lymph node mass, fevers, and night sweats. Biopsy confirms aggressive CD20+ diffuse large B-cell lymphoma.",
+    "objective": "Vitals: Temp 38.1C, HR 92, BP 126/78, unintentional weight loss of 8kg over 2 months. Firm, non-tender, rubbery 5cm right cervical lymph node; no other palpable lymphadenopathy; no hepatosplenomegaly on exam. Bloods: mild normocytic anemia, LDH markedly elevated (poor prognostic marker), ESR elevated. Excisional lymph node biopsy with immunohistochemistry confirms CD20-positive diffuse large B-cell lymphoma.",
+    "assessment": "Diffuse Large B-Cell Lymphoma (DLBCL), an aggressive but potentially curable non-Hodgkin lymphoma, presenting with a rapidly enlarging cervical mass and B symptoms (fever, night sweats, weight loss).",
+    "plan": "1. Complete staging workup: whole-body PET-CT, bone marrow biopsy, LDH, and HIV/Hepatitis B and C serologies before starting Rituximab. 2. Obtain baseline echocardiogram (LVEF) given planned anthracycline (doxorubicin) exposure. 3. Initiate curative-intent R-CHOP chemoimmunotherapy (Rituximab, Cyclophosphamide, Doxorubicin, Vincristine, Prednisone) every 21 days for 6 cycles. 4. Give tumor lysis syndrome prophylaxis (allopurinol and IV hydration) before cycle 1 given the tumor's rapid proliferation rate. 5. Urgent referral to hematology-oncology; counsel patient on the aggressive-but-curable nature of DLBCL and expected treatment course."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Diffuse Large B-Cell Lymphoma DLBCL",
+    "Formulate prioritized differential diagnosis for rapidly enlarging painless neck mass, drenching sweats, and weight loss",
+    "Select appropriate laboratory and imaging studies for hematology_oncology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Diffuse Large B-Cell Lymphoma (DLBCL)",
+    "one_liner": "The most common aggressive non-Hodgkin lymphoma, presenting as a rapidly enlarging lymph node mass with B symptoms (fever, night sweats, weight loss) — fast-growing but often curable with chemotherapy.",
+    "differentials": [
+      "Hodgkin lymphoma",
+      "Reactive lymphadenopathy from infection",
+      "Metastatic carcinoma to lymph nodes"
+    ],
+    "red_flags": [
+      "Rapid growth over weeks — this pace is itself a warning sign of an aggressive lymphoma"
+    ],
+    "must_ask": [
+      {
+        "objective": "Growth rate of the mass",
+        "say": "How quickly has this lump grown — over weeks?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "rapidly",
+          "weeks",
+          "growing"
+        ]
+      },
+      {
+        "objective": "B symptoms",
+        "say": "Have you had fevers, drenching night sweats, or weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "night sweats",
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "Location and character",
+        "say": "Where is the lump, and is it painful?",
+        "domains": [
+          "location",
+          "character"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "When did you first notice it?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Other systemic symptoms",
+        "say": "Any fatigue or loss of appetite?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fatigue",
+          "appetite"
+        ]
+      }
+    ]
+  }
+}

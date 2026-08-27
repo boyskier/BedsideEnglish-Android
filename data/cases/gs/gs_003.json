@@ -1,0 +1,144 @@
+{
+  "id": "gs_003",
+  "system": "general_surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Gonzalez",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "sudden excruciating abdominal pain radiating to back, pulsatile mass, and fainting in smoker",
+  "hpi_details": "72F heavy smoker presenting with sudden severe tearing back/abdominal pain, pulsatile epigastric mass, and hypotension (BP 80/50). POCUS shows 8cm AAA with retroperitoneal hemorrhage.",
+  "ideas": "thinks this is related to ruptured abdominal aortic aneurysm aaa",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Heavy smoker (long-standing tobacco use), social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "triage_aortic_ultrasound",
+      "test": "Bedside aortic ultrasound",
+      "value": "8.0 cm infrarenal abdominal aortic aneurysm with retroperitoneal hematoma",
+      "flag": "critical",
+      "collected_at": "At emergency presentation"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ruptured Abdominal Aortic Aneurysm (AAA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured Abdominal Aortic Aneurysm (AAA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate recognition as a surgical emergency, permissive hypotension resuscitation, and emergent transfer to the operating room for open or endovascular aneurysm repair, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating abdominal pain radiating to back, pulsatile mass, and fainting in smoker",
+      "Key HPI features: 72F heavy smoker presenting with sudden severe tearing back/abdominal pain, pulsatile epigastric mass, and hypotension (BP 80/50). POCUS shows 8cm AAA with retroperitoneal hemorrhage.",
+      "Objective/Exam findings: BP 80/50 (hypotensive shock), skin pale and diaphoretic. Abdominal exam reveals a tender, expansile, pulsatile epigastric mass. Bedside POCUS demonstrates an 8 cm abdominal aortic aneurysm with retroperitoneal free fluid/hematoma.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured Abdominal Aortic Aneurysm (AAA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hypotension with a pulsatile abdominal mass — go straight to the operating room."
+    ],
+    "management_principles": [
+      "SURGICAL EMERGENCY - activate the operating room and vascular/general surgery team immediately; do not delay for confirmatory CT once POCUS is diagnostic in an unstable patient",
+      "Implement permissive hypotension (target systolic BP 80-90 mmHg) with judicious IV fluids/blood products rather than large-volume crystalloid resuscitation, which can dislodge clot and worsen retroperitoneal bleeding",
+      "Activate massive transfusion protocol, secure large-bore IV access, and obtain type and crossmatch"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden excruciating abdominal pain radiating to back, pulsatile mass, and fainting in smoker\n\n72F heavy smoker presenting with sudden severe tearing back/abdominal pain, pulsatile epigastric mass, and hypotension (BP 80/50). POCUS shows 8cm AAA with retroperitoneal hemorrhage.",
+    "objective": "BP 80/50 (hypotensive shock), skin pale and diaphoretic. Abdominal exam reveals a tender, expansile, pulsatile epigastric mass. Bedside POCUS demonstrates an 8 cm abdominal aortic aneurysm with retroperitoneal free fluid/hematoma.",
+    "assessment": "Ruptured Abdominal Aortic Aneurysm (AAA) with hemorrhagic shock - an immediate surgical emergency.",
+    "plan": "SURGICAL EMERGENCY - immediate transfer to the operating room without delaying for further imaging. 1. Implement permissive hypotension (target systolic BP 80-90 mmHg) rather than aggressive crystalloid resuscitation. 2. Activate massive transfusion protocol, secure large-bore IV access, and obtain type and crossmatch. 3. Emergent open or endovascular aneurysm repair (EVAR) by vascular/general surgery."
+  },
+  "learning_objectives": [
+    "Recognize the clinical triad of ruptured AAA: sudden tearing abdominal/back pain, a pulsatile mass, and hypotension",
+    "Apply the principle of permissive hypotension during ruptured AAA resuscitation",
+    "Use bedside POCUS to confirm the diagnosis without delaying definitive surgical care",
+    "Coordinate emergent OR transfer and massive transfusion protocol activation"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured Abdominal Aortic Aneurysm (AAA)",
+    "one_liner": "A tear in a weakened aortic wall producing sudden tearing pain, a pulsatile abdominal mass, and hypotension from retroperitoneal hemorrhage.",
+    "differentials": [
+      "Acute myocardial infarction",
+      "Aortic dissection",
+      "Perforated viscus"
+    ],
+    "red_flags": [
+      "Hypotension with a pulsatile abdominal mass — go straight to the operating room"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and character",
+        "say": "Did the pain start suddenly and feel like tearing?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "sudden",
+          "tearing"
+        ]
+      },
+      {
+        "objective": "Radiation to the back",
+        "say": "Does the pain go through to your back?",
+        "domains": [
+          "radiation"
+        ],
+        "keywords": [
+          "back"
+        ]
+      },
+      {
+        "objective": "Circulatory symptoms",
+        "say": "Do you feel lightheaded or like you might pass out?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lightheaded",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "Do you smoke, or have you smoked in the past?",
+        "domains": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Known aneurysm history",
+        "say": "Has anyone ever told you that you have an aortic aneurysm?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "aneurysm"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "opht_006",
+  "system": "ophthalmology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Foster",
+  "age": 55,
+  "gender": "female",
+  "chief_complaint": "profound eye pain, proptosis, complete ophthalmoplegia, and fever indicating life-threatening Orbital Cellulitis",
+  "hpi_details": "55F with recent severe bacterial sinus infection presents to ED with 2 days of rapidly worsening right eyelid swelling, extreme right eye pain, high fever, and double vision. Today her right eyeball appears pushed forward out of the socket (proptosis) and she is completely unable to move her right eye up, down, or sideways due to severe pain and paralysis. Eyelids are red, hot, and swollen shut.",
+  "ideas": "terrified because her eyeball is bulging and paralyzed",
+  "concerns": "worried the sinus infection has spread into her brain and eyes",
+  "expectations": "wants immediate emergency hospitalization, IV antibiotics, and CT scan",
+  "pmh": "Chronic rhinosinusitis, Type 2 Diabetes",
+  "medications": "Metformin 1000mg BID",
+  "social_hx": "Accountant, non-smoker",
+  "investigation_events": [{
+    "id": "stat_orbital_cellulitis_ct",
+    "title": "Emergency contrast-enhanced orbital CT",
+    "order_terms": ["CT orbit", "orbital CT", "CT sinuses", "contrast CT"],
+    "availability_message": "The emergency orbital and sinus CT result is now available. IV antibiotics and urgent ophthalmology/ENT involvement should not be delayed.",
+    "results": [{"id": "orbital_ct", "test": "Contrast-enhanced CT of orbits and sinuses", "value": "Right ethmoid and maxillary sinus opacification with lamina papyracea erosion, post-septal orbital fat inflammation, and a 1.5 cm medial subperiosteal abscess; no cavernous sinus thrombosis", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Orbital cellulitis (post-septal) with subperiosteal abscess evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Orbital cellulitis (post-septal) with subperiosteal abscess is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate ophthalmology and ENT assessment, hospital admission, broad-spectrum IV antibiotics, and prompt consideration of drainage for a vision-threatening abscess, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profound eye pain, proptosis, complete ophthalmoplegia, and fever indicating life-threatening Orbital Cellulitis",
+      "Key HPI features: 55F with recent severe bacterial sinus infection presents to ED with 2 days of rapidly worsening right eyelid swelling, extreme right eye pain, high fever, and double vision. Today her right eyeball appears pushed forward out of the socket (proptosis) and she is completely unable to move her right eye up, down, or sideways due to severe pain and paralysis. Eyelids are red, hot, and swollen shut.",
+      "Objective/Exam findings: Vitals: HR 112, BP 138/84, Temp 39.2C. Right eye demonstrates severe periorbital erythema and tense edema of upper and lower lids. Lids separated manually to reveal marked conjunctival chemosis and 4 mm axial proptosis. Extraocular motility testing confirms complete ophthalmoplegia (restriction across all gazes) with exquisite pain on attempted movement. Visual acuity slightly reduced to 20/40; pupil reactive without RAPD. Contrast-enhanced CT scan of orbits and sinuses confirms complete opacification of the right ethmoid and maxillary sinuses with erosion through the lamina papyracea into the right orbit, showing diffuse inflammatory fat stranding across the post-septal orbital fat and a 1.5 cm subperiosteal abscess along the medial orbital wall without cavernous sinus thrombosis.",
+      "Relevant background/PMH: Chronic rhinosinusitis, Type 2 Diabetes",
+      "Current medications: Metformin 1000mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Orbital cellulitis (post-septal) with subperiosteal abscess.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Preseptal (periorbital) cellulitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Proptosis."
+    ],
+    "management_principles": [
+      "Immediate ophthalmology and ENT assessment with hospital admission and close serial monitoring of vision and orbital signs",
+      "Promptly determine with ENT and ophthalmology whether the subperiosteal abscess requires surgical drainage",
+      "Initiate broad-spectrum empirical IV antibiotics covering sinus pathogens, MRSA, and anaerobes: IV Vancomycin PLUS IV Ampicillin-Sulbactam (or Piperacillin-Tazobactam)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55F diabetic presenting with high fever, orbital pain, proptosis, and ophthalmoplegia secondary to ethmoid sinusitis extension, diagnostic of Orbital Cellulitis.",
+    "objective": "Vitals: HR 112, BP 138/84, Temp 39.2C. Right eye demonstrates severe periorbital erythema and tense edema of upper and lower lids. Lids separated manually to reveal marked conjunctival chemosis and 4 mm axial proptosis. Extraocular motility testing confirms complete ophthalmoplegia (restriction across all gazes) with exquisite pain on attempted movement. Visual acuity slightly reduced to 20/40; pupil reactive without RAPD. Contrast-enhanced CT scan of orbits and sinuses confirms complete opacification of the right ethmoid and maxillary sinuses with erosion through the lamina papyracea into the right orbit, showing diffuse inflammatory fat stranding across the post-septal orbital fat and a 1.5 cm subperiosteal abscess along the medial orbital wall without cavernous sinus thrombosis.",
+    "assessment": "Severe Right Orbital Cellulitis (Post-Septal) complicated by Medial Subperiosteal Abscess, secondary to Ethmoid Sinusitis.",
+    "plan": "Immediate ophthalmology and ENT assessment with hospital admission and close serial monitoring. Start broad-spectrum IV antibiotics covering sinus pathogens, MRSA, and anaerobes, tailored to local guidance and cultures. Urgently determine with ENT and ophthalmology whether drainage of the 1.5 cm medial subperiosteal abscess and sinus source control are required; the ophthalmoplegia and vision-threatening orbital findings warrant prompt escalation. Monitor optic nerve function frequently."
+  },
+  "learning_objectives": [
+    "Differentiate Preseptal Cellulitis (limited to anterior eyelid skin, NO proptosis, NO pain on eye movement, NORMAL extraocular motility, normal vision) from Orbital Cellulitis (post-septal orbital fat involvement, PROPTOSIS, EXCRUCIATING pain on eye movement, OPHTHALMOPLEGIA, reduced vision/RAPD risk)",
+    "Identify ethmoid sinusitis extending through the thin paper-like lamina papyracea bone as the primary anatomical source of orbital cellulitis in children and adults",
+    "Interpret orbital CT scan findings (subperiosteal abscess, post-septal fat infiltration) to guide urgent surgical drainage thresholds",
+    "Outline empirical IV broad-spectrum antibiotic regimens and serial optic nerve monitoring for cavernous sinus thrombosis or optic neuropathy escalation"
+  ],
+  "teaching": {
+    "diagnosis": "Orbital cellulitis (post-septal) with subperiosteal abscess",
+    "one_liner": "55F diabetic with recent sinusitis, now with rapidly worsening eyelid swelling, proptosis, complete ophthalmoplegia, and fever.",
+    "differentials": [
+      "Preseptal (periorbital) cellulitis",
+      "Cavernous sinus thrombosis",
+      "Allergic angioedema",
+      "Orbital tumor"
+    ],
+    "red_flags": [
+      "Proptosis",
+      "Complete ophthalmoplegia (pain/inability to move eye)",
+      "High fever",
+      "Diabetes (immunocompromise)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm painful eye movement and ophthalmoplegia",
+        "say": "Can you try to move your eye up and down? Is it painful or impossible?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ophthalmoplegia",
+          "painful eye movement"
+        ]
+      },
+      {
+        "objective": "Ask about proptosis awareness",
+        "say": "Has anyone told you your eye looks like it's bulging forward?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "proptosis"
+        ]
+      },
+      {
+        "objective": "Review recent sinus infection history",
+        "say": "Have you had a sinus infection recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sinusitis"
+        ]
+      },
+      {
+        "objective": "Screen for vision changes",
+        "say": "Has your vision changed or gotten blurry in that eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vision change"
+        ]
+      },
+      {
+        "objective": "Ask about diabetes control",
+        "say": "How well controlled is your diabetes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes control"
+        ]
+      },
+      {
+        "objective": "Explain need for IV antibiotics and possible surgery",
+        "say": "You need to be admitted immediately for IV antibiotics, and surgery may be needed to drain the infection.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "IV antibiotics",
+          "surgical drainage"
+        ]
+      }
+    ]
+  }
+}

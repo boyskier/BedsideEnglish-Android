@@ -1,0 +1,260 @@
+{
+  "id": "followup_chronic_002",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "chronic_disease",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mrs. Clara Hughes",
+  "age": 62,
+  "gender": "female",
+  "visit_title": "Type 2 diabetes & HbA1c review",
+  "follow_up_reason": "Three-month diabetes management follow-up",
+  "clinician_brief": {
+    "prior_note": "HbA1c was 8.6% three months ago. Empagliflozin 10mg daily was added to Metformin 1000mg BID. Home blood glucose log and lifestyle modifications were recommended.",
+    "active_problems": [
+      "Type 2 diabetes mellitus",
+      "Essential hypertension",
+      "Mild dyslipidemia"
+    ],
+    "current_medications": [
+      "Metformin 1000 mg twice daily",
+      "Empagliflozin 10 mg once daily",
+      "Lisinopril 10 mg once daily"
+    ],
+    "previous_plan": [
+      "Start empagliflozin 10 mg daily",
+      "Monitor fasting and postprandial glucose",
+      "Maintain foot care and hydration",
+      "Repeat HbA1c in 3 months"
+    ],
+    "results_and_observations": [
+      "New HbA1c: 7.2% (improved)",
+      "eGFR 78 mL/min/1.73m2",
+      "Urine albumin-to-creatinine ratio normal"
+    ],
+    "today_tasks": [
+      "Review glucose logs and HbA1c improvement",
+      "Assess adherence and hypoglycemia frequency",
+      "Check for urinary symptoms and hydration",
+      "Perform annual diabetic foot examination",
+      "Agree on ongoing glycaemic targets"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Fasting glucose is now 110-130 mg/dL. Feels less fatigued overall.",
+    "adherence": "Takes metformin with meals, but skips empagliflozin on weekends when traveling.",
+    "treatment_response": "Weight dropped by 3 kg and blood sugar numbers are lower.",
+    "side_effects": "Noticed increased urination and mild vaginal itching.",
+    "new_symptoms_and_red_flags": "No severe hypoglycemia (shakiness/sweating), vision changes, chest pain, or non-healing foot ulcers.",
+    "agenda": "Wants to know if HbA1c 7.2% means she can reduce her metformin.",
+    "concern": "Worried that frequent urination means her kidneys are failing.",
+    "preference": "Prefers keeping oral medication rather than starting insulin."
+  },
+  "clinical_knowledge": {
+    "topic": "Interpreting a 1.4-point HbA1c drop on metformin plus empagliflozin, and distinguishing an expected SGLT2-inhibitor mycotic side effect from a sign of kidney harm",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "ADA-aligned individualized targets typically aim for HbA1c around 7% in an otherwise healthy 62-year-old; the drop from 8.6% to 7.2% in three months is a strong response, and the visit should confirm the regimen is working, not assume more can be cut.",
+      "Empagliflozin's glucosuric mechanism (spilling glucose in urine) explains both her weight loss and her genital itching and increased urination together — they are the same expected mechanism, not two separate problems.",
+      "An eGFR of 78 mL/min/1.73m2 with a normal urine albumin-to-creatinine ratio is reassuring for kidney function, and SGLT2 inhibitors are in fact renal- and cardio-protective at this eGFR, not harmful to it.",
+      "Reducing or stopping metformin because HbA1c improved would be premature: metformin remains first-line background therapy, and de-escalation is considered only if there is hypoglycemia, intolerance, or a falling eGFR, none of which apply here.",
+      "Weekend nonadherence to empagliflozin is a real, fixable adherence gap that likely blunts control less on its own but still needs a concrete plan (e.g., a travel pill case or phone reminder) rather than being waved away because the labs look good."
+    ],
+    "diagnostic_clues": [
+      "HbA1c falling from 8.6% to 7.2% alongside home fasting glucose of 110-130 mg/dL confirms real glycemic improvement, not just a lab fluke.",
+      "eGFR 78 with a normal urine ACR argues against diabetic kidney disease and supports continuing, not stopping, the renal-protective SGLT2 inhibitor.",
+      "Increased urination plus mild vaginal itching, with no fever, dysuria, or systemic symptoms, is the classic mild genitourinary picture of SGLT2-inhibitor glucosuria rather than a urinary tract infection.",
+      "A 3 kg weight loss alongside improved energy is consistent with the expected metabolic effect of empagliflozin, not an unexplained or worrying finding.",
+      "Adherence gaps clustering specifically on travel weekends (not random days) point to a situational barrier that a specific fix — not general encouragement — will solve."
+    ],
+    "common_misconceptions": [
+      "Her worry that frequent urination means her kidneys are failing is understandable but backwards for this drug class: SGLT2 inhibitors are protective for kidney and heart outcomes at her eGFR, not damaging.",
+      "Believing that HbA1c below 7.5% automatically means a medication can be cut, when in fact the current combination is what produced the improvement and stopping a drug now risks losing that control.",
+      "Assuming genital itching or increased urination signals an infection needing antibiotics, when it is usually just glucosuria and typically responds to local hygiene measures rather than antimicrobial treatment.",
+      "Treating 'oral pills only' as inherently safer or less serious than insulin, when in reality the priority should be whichever regimen keeps her glycemic, renal, and cardiovascular risk best controlled with tolerable side effects."
+    ],
+    "dangerous_errors": [
+      "Agreeing to reduce metformin based on her request without recognizing that the improvement reflects the two-drug combination working together, not a sign either drug is now excess.",
+      "Dismissing the urinary symptoms as 'just the medication' without examining for signs of a genuine yeast infection or urinary tract infection that would need separate treatment.",
+      "Skipping the annual diabetic foot examination because the visit's biochemical news is reassuring — a today_task that is easy to defer but should not be.",
+      "Failing to differentiate mild expected SGLT2-inhibitor glucosuria from red-flag symptoms of diabetic ketoacidosis (which can occur even with near-normal glucose on SGLT2 inhibitors) if she reports nausea, abdominal pain, or unusual fatigue."
+    ],
+    "management_principles": [
+      "Continue the current metformin-empagliflozin combination rather than reducing either drug, since both are contributing to a genuinely well-controlled HbA1c.",
+      "Address the weekend nonadherence concretely — for example, keeping a travel-sized pill organizer or setting a phone alarm tied to a routine she already keeps on trips.",
+      "Explain the mechanism of SGLT2-inhibitor glucosuria in plain terms to directly correct her fear that urination means kidney failure, and reinforce genital hygiene measures to reduce mycotic irritation.",
+      "Complete the annual diabetic foot examination and reconfirm no hypoglycemia, visual change, chest pain, or non-healing ulcers before closing out today's plan."
+    ],
+    "boundaries_and_exceptions": [
+      "This reassurance about SGLT2-inhibitor safety assumes a stable eGFR above roughly 20-25 mL/min/1.73m2; initiation is generally avoided and dosing reassessed at lower kidney function per current label and guideline thresholds.",
+      "Genital mycotic symptoms that recur, worsen, or include fever or pelvic pain need direct examination rather than being attributed to the medication by default.",
+      "If she develops a sick-day illness with poor oral intake, empagliflozin should be temporarily held given the small but real euglycemic diabetic ketoacidosis risk with this drug class."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      },
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Diabetes Management in CKD",
+        "url": "https://kdigo.org/guidelines/diabetes-ckd/"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Confirm the follow-up agenda and connect it to the prior diabetes plan",
+    "Review HbA1c progress and home blood glucose logs",
+    "Explore medication adherence without judgment",
+    "Screen for SGLT2 inhibitor adverse effects such as mycotic infection or polyuria",
+    "Screen for hypoglycemia symptoms and diabetic red flags",
+    "Address kidney and polyuria concerns in plain English",
+    "Agree on glycaemic targets and diabetic foot check routine"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Confirm the follow-up agenda and connect it to the prior diabetes plan",
+      "category": "Agenda",
+      "question": "Since we added the new diabetes pill three months ago, what would you like to focus on today?"
+    },
+    {
+      "objective": "Review HbA1c progress and home blood glucose logs",
+      "category": "Interval change",
+      "question": "What have your home blood sugar numbers been looking like, and how do you feel about the new HbA1c result?"
+    },
+    {
+      "objective": "Explore medication adherence without judgment",
+      "category": "Adherence",
+      "question": "Fitting pills into weekend routines can be challenging. How often do you miss a dose?"
+    },
+    {
+      "objective": "Screen for SGLT2 inhibitor adverse effects such as mycotic infection or polyuria",
+      "category": "Tolerance",
+      "question": "Have you noticed any urinary changes, increased thirst, or genital itching since starting empagliflozin?"
+    },
+    {
+      "objective": "Screen for hypoglycemia symptoms and diabetic red flags",
+      "category": "Safety",
+      "question": "Have you experienced shaky spells, cold sweats, confusion, or any sores on your feet?"
+    },
+    {
+      "objective": "Address kidney and polyuria concerns in plain English",
+      "category": "Concerns",
+      "question": "What worries you about the extra urination, and would you like me to explain how the medicine protects your kidneys?"
+    },
+    {
+      "objective": "Agree on glycaemic targets and diabetic foot check routine",
+      "category": "Shared plan",
+      "question": "Shall we agree on your target blood sugar range and set up your annual foot examination?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Confirm the follow-up agenda and connect it to the prior diabetes plan",
+      "keywords": [
+        "three months",
+        "last visit",
+        "agenda",
+        "today",
+        "focus",
+        "empagliflozin",
+        "diabetes plan"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review HbA1c progress and home blood glucose logs",
+      "keywords": [
+        "hba1c",
+        "blood sugar",
+        "glucose",
+        "logs",
+        "readings",
+        "fasting",
+        "improved"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explore medication adherence without judgment",
+      "keywords": [
+        "miss",
+        "missed",
+        "forget",
+        "skip",
+        "skipped",
+        "weekend",
+        "taking your pills"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for SGLT2 inhibitor adverse effects such as mycotic infection or polyuria",
+      "keywords": [
+        "urination",
+        "urinate",
+        "peeing",
+        "thirst",
+        "itching",
+        "thrush",
+        "yeast",
+        "infection",
+        "side effects"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for hypoglycemia symptoms and diabetic red flags",
+      "keywords": [
+        "shaky",
+        "sweats",
+        "hypo",
+        "low blood sugar",
+        "foot",
+        "ulcer",
+        "sores",
+        "numbness"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address kidney and polyuria concerns in plain English",
+      "keywords": [
+        "kidney",
+        "kidneys",
+        "worry",
+        "worried",
+        "protect",
+        "filter",
+        "urination",
+        "safe"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on glycaemic targets and diabetic foot check routine",
+      "keywords": [
+        "target",
+        "goal",
+        "foot check",
+        "foot exam",
+        "plan",
+        "agree",
+        "follow up"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "62F with T2DM returns for 3-month review. HbA1c down from 8.6% to 7.2%. Reports mild polyuria and vaginal itching. Skips empagliflozin on travel weekends. Anxious that urination indicates kidney damage.",
+    "objective": "eGFR 78 mL/min/1.73m2, urine ACR normal. Foot examination pending.",
+    "assessment": "Substantial glycemic improvement on empagliflozin+metformin with mild SGLT2-i mycotic side effect and weekend nonadherence.",
+    "plan": "Reassure regarding renal protective mechanism of SGLT2-i, manage local mycotic symptoms, reinforce weekend routine, perform foot check, and maintain current regimen."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Type 2 diabetes & HbA1c review",
+    "one_liner": "Clinical scenario for evaluation and management of Type 2 diabetes & HbA1c review."
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "cardio_004",
+  "system": "cardiology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Whitaker",
+  "age": 75,
+  "gender": "male",
+  "chief_complaint": "fainted while walking up a hill and chest tightness on exertion",
+  "hpi_details": "Presents with a 6-month history of progressive shortness of breath when climbing stairs or walking uphill. Yesterday, while carrying groceries up a steep street, experienced tight retrosternal chest discomfort and suddenly lost consciousness for approximately 30 seconds (exertional syncope). Recovered spontaneously with no post-ictal confusion or tongue biting. Denies palpitations or symptoms at rest.",
+  "ideas": "thinks his blood pressure pills made his blood pressure drop too low while walking",
+  "concerns": "worried he might faint while crossing a busy road or fall down stairs",
+  "expectations": "wants his blood pressure medications adjusted and an ECG check",
+  "pmh": "hypertension x15 years, hypercholesterolaemia, mild osteoarthritis of knees",
+  "medications": "ramipril 10mg OD, amlodipine 5mg OD, atorvastatin 40mg ON",
+  "social_hx": "ex-smoker (quit at age 50), drinks 4 units/week, retired civil engineer, lives with wife",
+  "investigation_events": [{"id": "transthoracic_echocardiogram", "title": "Transthoracic echocardiogram", "order_terms": ["transthoracic echocardiogram", "transthoracic echo", "tte", "echocardiogram", "cardiac ultrasound"], "availability_message": "The transthoracic echocardiogram report is now available.", "results": [
+    {"id": "aortic_valve_area", "test": "Aortic valve area", "value": "0.7", "unit": "cm2", "reference_range": ">1.5", "flag": "critical", "collected_at": "Today's echocardiogram"},
+    {"id": "aortic_mean_gradient", "test": "Mean aortic valve gradient", "value": "52", "unit": "mmHg", "reference_range": "Severe: >=40", "flag": "critical", "collected_at": "Today's echocardiogram"},
+    {"id": "aortic_peak_velocity", "test": "Peak aortic jet velocity", "value": "4.6", "unit": "m/s", "reference_range": "Severe: >=4.0", "flag": "critical", "collected_at": "Today's echocardiogram"},
+    {"id": "left_ventricular_ef", "test": "Left ventricular ejection fraction", "value": "58", "unit": "%", "reference_range": "55-70", "flag": "normal", "collected_at": "Today's echocardiogram"}
+  ]}],
+  "clinical_knowledge": {
+    "topic": "Severe Aortic Stenosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Aortic Stenosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes avoidance of hypotension; use nitrates or other vasodilators only cautiously with monitoring when clinically necessary in severe AS, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fainted while walking up a hill and chest tightness on exertion",
+      "Key HPI features: Presents with a 6-month history of progressive shortness of breath when climbing stairs or walking uphill. Yesterday, while carrying groceries up a steep street, experienced tight retrosternal chest discomfort and suddenly lost consciousness for approximately 30 seconds (exertional syncope). Recovered spontaneously with no post-ictal confusion or tongue biting. Denies palpitations or symptoms at rest.",
+      "Objective/Exam findings: Check vitals (narrow pulse pressure e.g., 110/85 mmHg). Cardiac auscultation: harsh, crescendo-decrescendo ejection systolic murmur best heard at the right second intercostal space, radiating to both carotid arteries. Slow-rising, sustained carotid pulse ('pulsus parvus et tardus') and sustained apex beat. ECG (left ventricular hypertrophy with strain pattern). Transthoracic echocardiogram (TTE).",
+      "Relevant background/PMH: hypertension x15 years, hypercholesterolaemia, mild osteoarthritis of knees",
+      "Current medications: ramipril 10mg OD, amlodipine 5mg OD, atorvastatin 40mg ON"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Aortic Stenosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypertrophic cardiomyopathy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope on exertion — a marker of severe stenosis and sudden-death risk."
+    ],
+    "management_principles": [
+      "Avoid hypotension; use nitrates or other vasodilators only cautiously with monitoring when clinically necessary in severe AS",
+      "Urgent cardiology referral for urgent transthoracic echocardiogram to quantify aortic valve area and mean gradient",
+      "Workup for Surgical Aortic Valve Replacement (SAVR) vs Transcatheter Aortic Valve Implantation (TAVI)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/valvular-heart-disease-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "75M with HTN presents with exertional syncope, exertional angina, and progressive dyspnoea over 6 months. No post-ictal features. Spontaneous recovery.",
+    "objective": "Check vitals (narrow pulse pressure e.g., 110/85 mmHg). Cardiac auscultation: harsh, crescendo-decrescendo ejection systolic murmur best heard at the right second intercostal space, radiating to both carotid arteries. Slow-rising, sustained carotid pulse ('pulsus parvus et tardus') and sustained apex beat. ECG (left ventricular hypertrophy with strain pattern). Transthoracic echocardiogram (TTE).",
+    "assessment": "Severe calcific aortic valve stenosis with cardinal triad symptoms (syncope, angina, dyspnoea). DDx: vasovagal syncope, orthostatic hypotension from antihypertensives, cardiac arrhythmia (complete heart block/VT), hypertrophic cardiomyopathy.",
+    "plan": "Avoid hypotension; use nitrates or other vasodilators only cautiously with monitoring when clinically necessary in severe AS. Urgent cardiology referral for urgent transthoracic echocardiogram to quantify aortic valve area and mean gradient. Workup for Surgical Aortic Valve Replacement (SAVR) vs Transcatheter Aortic Valve Implantation (TAVI). Advise to avoid strenuous exertion until evaluated."
+  },
+  "learning_objectives": [
+    "Elicit the classical symptom triad of severe aortic stenosis: exertional dyspnoea, exertional angina, and exertional syncope",
+    "Identify classical physical signs: slow-rising pulse, narrow pulse pressure, and ejection systolic murmur radiating to carotids",
+    "Explain the hemodynamic contraindication of aggressive vasodilators/nitrates in fixed left ventricular outflow tract obstruction",
+    "Outline the comparative indications for Surgical Aortic Valve Replacement vs Transcatheter Aortic Valve Implantation in elderly patients"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Aortic Stenosis",
+    "one_liner": "A calcified valve throttles blood leaving the heart. Syncope, angina and breathlessness on exertion are its cardinal triad.",
+    "differentials": [
+      "Hypertrophic cardiomyopathy",
+      "Coronary artery disease",
+      "Vasovagal syncope"
+    ],
+    "red_flags": [
+      "Syncope on exertion — a marker of severe stenosis and sudden-death risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Syncope and its relation to exertion",
+        "say": "Did you faint while you were exerting yourself, or at rest?",
+        "domains": [
+          "aggravating",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "exert",
+          "walking",
+          "uphill",
+          "exercise"
+        ]
+      },
+      {
+        "objective": "Exertional chest tightness",
+        "say": "Do you get chest tightness when you walk up a hill?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "tight",
+          "chest",
+          "uphill",
+          "walk"
+        ]
+      },
+      {
+        "objective": "Exertional breathlessness",
+        "say": "How far can you walk on the flat before you have to stop for breath?",
+        "domains": [
+          "severity",
+          "progression"
+        ],
+        "keywords": [
+          "walk",
+          "breath"
+        ]
+      },
+      {
+        "objective": "Progression over time",
+        "say": "Has this been getting worse over months, or did it come on suddenly?",
+        "domains": [
+          "progression",
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Known murmur",
+        "say": "Has a doctor ever told you that you have a heart murmur?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "murmur",
+          "heart",
+          "sound",
+          "valve"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most worried this might be?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,193 @@
+{
+  "id": "id_013",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Jenkins",
+  "age": 40,
+  "gender": "male",
+  "chief_complaint": "high fever, severe headache, and neck stiffness",
+  "hpi_details": "40M presents with 24 hours of rapidly worsening headache, a fever of 39.5C, nausea, and severe pain in his neck when trying to look down. He also complains that bright lights hurt his eyes.",
+  "ideas": "thinks he has the flu",
+  "concerns": "worried about his extreme headache",
+  "expectations": "wants strong painkillers",
+  "pmh": "None",
+  "medications": "Ibuprofen PRN",
+  "social_hx": "Office worker",
+  "investigation_events": [
+    {
+      "id": "stat_bacterial_meningitis_workup",
+      "title": "STAT bacterial meningitis results",
+      "order_terms": [
+        "lumbar puncture",
+        "spinal tap",
+        "csf studies",
+        "csf analysis",
+        "csf gram stain"
+      ],
+      "availability_message": "The STAT CSF results are now available; dexamethasone and empiric antibiotics must not be delayed for head CT or lumbar puncture.",
+      "results": [
+        {
+          "id": "csf_opening_pressure",
+          "test": "CSF opening pressure",
+          "value": "270",
+          "unit": "mmH2O",
+          "reference_range": "60-200",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "During emergency lumbar puncture"
+        },
+        {
+          "id": "csf_white_blood_cell_count",
+          "test": "CSF white blood cell count",
+          "value": "2400",
+          "unit": "cells/mcL",
+          "reference_range": "0-5",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "During emergency lumbar puncture",
+          "note": "92% neutrophils"
+        },
+        {
+          "id": "csf_protein",
+          "test": "CSF protein",
+          "value": "210",
+          "unit": "mg/dL",
+          "reference_range": "15-45",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "During emergency lumbar puncture"
+        },
+        {
+          "id": "csf_glucose",
+          "test": "CSF glucose",
+          "value": "22",
+          "unit": "mg/dL",
+          "reference_range": "40-70",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "During emergency lumbar puncture"
+        },
+        {
+          "id": "csf_gram_stain",
+          "test": "CSF Gram stain",
+          "value": "Gram-positive diplococci",
+          "reference_range": "No organisms seen",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "During emergency lumbar puncture"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Bacterial Meningitis",
+    "core_concepts": [
+      "Classic triad: Fever, nuchal rigidity, altered mental status (though not all present simultaneously). Photophobia is common."
+    ],
+    "diagnostic_clues": [
+      "Fever",
+      "Nuchal rigidity",
+      "Photophobia"
+    ],
+    "common_misconceptions": [
+      "Waiting for LP results before starting antibiotics."
+    ],
+    "dangerous_errors": [
+      "Delaying empiric antibiotics to get a CT scan or LP."
+    ],
+    "management_principles": [
+      "STAT blood cultures, then immediate empiric IV antibiotics (Ceftriaxone, Vancomycin, +/- Ampicillin) and Dexamethasone."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "40M with acute onset severe headache, fever, neck stiffness, and photophobia.",
+    "objective": "T 39.5C, HR 110. Positive Brudzinski and Kernig signs. Alert but uncomfortable.",
+    "assessment": "Acute Bacterial Meningitis.",
+    "plan": "Blood cultures STAT. Immediate IV Ceftriaxone, Vancomycin, and Dexamethasone. Head CT then Lumbar Puncture."
+  },
+  "learning_objectives": [
+    "Recognize meningeal signs and prioritize immediate empiric antibiotics."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Bacterial Meningitis",
+    "one_liner": "Acute onset of fever, headache, nuchal rigidity, and photophobia requiring emergent antibiotics.",
+    "differentials": [
+      "Viral meningitis",
+      "Subarachnoid hemorrhage"
+    ],
+    "red_flags": [
+      "Altered mental status",
+      "Petechial rash"
+    ],
+    "must_ask": [
+      {
+        "objective": "Classic triad symptoms",
+        "say": "Do you have a stiff neck, and does looking down or bending your neck cause pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "neck stiffness",
+          "nuchal rigidity"
+        ]
+      },
+      {
+        "objective": "Photophobia",
+        "say": "Does bright light bother your eyes or make the headache worse?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "photophobia",
+          "light"
+        ]
+      },
+      {
+        "objective": "Onset and severity of headache",
+        "say": "How quickly did the headache come on, and is it the worst headache you've ever had?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "sudden",
+          "worst headache"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever, and how high has it been?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "temperature"
+        ]
+      },
+      {
+        "objective": "Mental status and rash",
+        "say": "Have you felt confused, or noticed any rash or spots on your skin?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "confusion",
+          "rash",
+          "petechiae"
+        ]
+      }
+    ]
+  }
+}

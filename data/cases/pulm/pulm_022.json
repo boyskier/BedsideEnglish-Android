@@ -1,0 +1,159 @@
+{
+  "id": "pulm_022",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Adeyemi",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "coughing up bright red blood, shortness of breath, and dark brown urine for 2 weeks",
+  "hpi_details": "2-week history of rapidly worsening shortness of breath accompanied by a persistent cough that is now expectorating daily quantities of bright red, pure blood (frank haemoptysis up to 50-100 mL daily). Over the same timeframe, has experienced profound, exhausting fatigue, low-grade fevers, pale skin, and noticed her urine turning dark, smoky brown/red ('Coca-Cola coloured' urine) with noticeable reduction in daily urine output (oliguria). Noticeably, she reports completely normal nasal sinuses, zero nasal crusting, zero ear pains, and zero joint pains. Previously healthy until a mild flu-like upper respiratory illness 4 weeks ago. Never smoked.",
+  "ideas": "thinks the flu virus attacked the blood vessel walls in both her lungs and kidneys simultaneously",
+  "concerns": "terrified she will bleed to death inside her lungs or require emergency kidney dialysis",
+  "expectations": "wants specific basement membrane antibody blood tests, emergency plasma cleaning, and high-dose IV steroids",
+  "pmh": "none, healthy non-smoker",
+  "medications": "paracetamol PRN",
+  "social_hx": "never smoked, zero alcohol, primary school teacher, married",
+  "investigation_events": [{"id":"alveolar_hemorrhage_renal_workup","title":"Urgent alveolar-haemorrhage and renal results","order_terms":["urinalysis","urine microscopy","cbc","hemoglobin","creatinine","renal function","chest x ray","chest x-ray","cxr","chest ct","ct chest"],"availability_message":"The urgent results show diffuse alveolar haemorrhage with rapidly progressive kidney injury; critical-care and nephrology involvement should not await serology or biopsy.","results":[{"id":"hemoglobin","test":"Hemoglobin","value":"7.2","unit":"g/dL","reference_range":"12.0-16.0","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},{"id":"creatinine","test":"Serum creatinine","value":"4.8","unit":"mg/dL","reference_range":"0.5-1.1","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},{"id":"urine_microscopy","test":"Urinalysis and urine microscopy","value":"4+ blood, 3+ protein, dysmorphic erythrocytes, and abundant red-cell casts","flag":"critical","specimen":"Urine","collected_at":"At emergency presentation"},{"id":"chest_imaging","test":"Chest radiograph","value":"Bilateral perihilar air-space opacities consistent with diffuse alveolar haemorrhage","flag":"critical","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Anti-GBM Disease (Goodpasture Syndrome) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Goodpasture's Syndrome (Anti-GBM Disease -> Type II hypersensitivity autoimmune pulmonary-renal syndrome) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Medical and nephrological emergency requiring immediate ICU admission and respiratory support, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: coughing up bright red blood, shortness of breath, and dark brown urine for 2 weeks",
+      "Key HPI features: 2-week history of rapidly worsening shortness of breath accompanied by a persistent cough that is now expectorating daily quantities of bright red, pure blood (frank haemoptysis up to 50-100 mL daily). Over the same timeframe, has experienced profound, exhausting fatigue, low-grade fevers, pale skin, and noticed her urine turning dark, smoky brown/red ('Coca-Cola coloured' urine) with noticeable reduction in daily urine output (oliguria). Noticeably, she reports completely normal nasal sinuses, zero nasal crusting, zero ear pains, and zero joint pains. Previously healthy until a mild flu-like upper respiratory illness 4 weeks ago. Never smoked.",
+      "Objective/Exam findings: Perform targeted emergency physical examination. Vitals: tachypnoea RR 26, tachycardia HR 112, O2 sat 90% on room air, marked conjunctival and facial pallor. ENT/Upper airway exam: completely normal nasal septum without crusting or saddle-nose deformity (critical distinction from GPA). Chest auscultation: widespread bilateral inspiratory crackles throughout both lung fields indicating Diffuse Alveolar Haemorrhage. Dipstick urinalysis: 4+ blood and 3+ protein. Urine microscopy: abundant Red Blood Cell Casts and dysmorphic RBCs confirming acute glomerulonephritis. Bloods: severe normocytic anaemia (Hb 72 g/L secondary to pulmonary haemorrhage), serum creatinine markedly elevated (creatinine 420 umol/L confirming rapidly progressive renal failure). CRITICAL AUTOANTIBODY SEROLOGY: check Anti-Glomerular Basement Membrane (Anti-GBM antibodies -> markedly positive high titre directed against the non-collagenous NC1 domain of the alpha-3 chain of Type IV collagen). Check ANCA (negative, though 20-30% of patients can be double-positive). Chest X-ray and HRCT Chest: reveals bilateral, symmetrical, alveolar bilateral ground-glass opacities and consolidation radiating from the hila ('bat-wing' appearance) sparing the apices, typical of acute alveolar haemorrhage. Urgent Renal Biopsy: confirms Crescentric Glomerulonephritis with pathognomonic LINEAR IgG and C3 deposition along the glomerular basement membrane on direct immunofluorescence.",
+      "Relevant background/PMH: none, healthy non-smoker",
+      "Current medications: paracetamol PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Goodpasture's Syndrome (Anti-GBM Disease -> Type II hypersensitivity autoimmune pulmonary-renal syndrome).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Community-acquired pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Medical and nephrological emergency requiring immediate ICU admission and respiratory support",
+      "Remission-induction treatment is selected urgently by nephrology and rheumatology after diagnostic and infection assessment.",
+      "Plasma exchange may be considered by the specialist team for selected severe presentations."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO Guideline for Glomerular Diseases",
+        "url": "https://kdigo.org/guidelines/gd/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "44F presents with acute 2-week pulmonary-renal syndrome: frank haemoptysis, progressive dyspnoea, oliguria, and macroscopic haematuria, WITHOUT upper airway/sinus involvement.",
+    "objective": "Perform targeted emergency physical examination. Vitals: tachypnoea RR 26, tachycardia HR 112, O2 sat 90% on room air, marked conjunctival and facial pallor. ENT/Upper airway exam: completely normal nasal septum without crusting or saddle-nose deformity (critical distinction from GPA). Chest auscultation: widespread bilateral inspiratory crackles throughout both lung fields indicating Diffuse Alveolar Haemorrhage. Dipstick urinalysis: 4+ blood and 3+ protein. Urine microscopy: abundant Red Blood Cell Casts and dysmorphic RBCs confirming acute glomerulonephritis. Bloods: severe normocytic anaemia (Hb 72 g/L secondary to pulmonary haemorrhage), serum creatinine markedly elevated (creatinine 420 umol/L confirming rapidly progressive renal failure). CRITICAL AUTOANTIBODY SEROLOGY: check Anti-Glomerular Basement Membrane (Anti-GBM antibodies -> markedly positive high titre directed against the non-collagenous NC1 domain of the alpha-3 chain of Type IV collagen). Check ANCA (negative, though 20-30% of patients can be double-positive). Chest X-ray and HRCT Chest: reveals bilateral, symmetrical, alveolar bilateral ground-glass opacities and consolidation radiating from the hila ('bat-wing' appearance) sparing the apices, typical of acute alveolar haemorrhage. Urgent Renal Biopsy: confirms Crescentric Glomerulonephritis with pathognomonic LINEAR IgG and C3 deposition along the glomerular basement membrane on direct immunofluorescence.",
+    "assessment": "Goodpasture's Syndrome (Anti-GBM Disease -> Type II hypersensitivity autoimmune pulmonary-renal syndrome). DDx: Granulomatosis with Polyangiitis (GPA -> shows c-ANCA/anti-PR3 positive, destructive upper sinus/nasal disease, and pauci-immune renal immunofluorescence), Microscopic Polyangiitis (MPA -> p-ANCA positive, pauci-immune), Systemic Lupus Erythematosus (shows granular immune complex deposition), idiopathic pulmonary haemosiderosis.",
+    "plan": "This is a medical and nephrological emergency: admit urgently and involve nephrology, respiratory, and critical-care teams. Monitor gas exchange, haemoglobin, renal function, urine output, and haemodynamics; confirm anti-GBM disease with appropriate serology and biopsy when safe while excluding infection and other pulmonary-renal syndromes. The specialist team may initiate immunosuppression and consider plasma exchange or renal-replacement/ventilatory support according to severity, contraindications, and local protocols."
+  },
+  "learning_objectives": [
+    "Differentiate Goodpasture's Syndrome from Granulomatosis with Polyangiitis based on complete absence of upper airway sinus/nasal necrosis and specific autoantibody targets",
+    "Correlate circulating Anti-GBM antibodies targeting Type IV collagen with linear IgG deposition along the glomerular basement membrane",
+    "Recognize the need for urgent specialist-directed immunosuppression and consideration of plasma exchange in severe anti-GBM disease",
+    "Monitor serial hemoglobin and arterial blood gases to catch catastrophic diffuse alveolar haemorrhage mandating early mechanical ventilation"
+  ],
+  "teaching": {
+    "diagnosis": "Anti-GBM Disease (Goodpasture Syndrome)",
+    "one_liner": "Pulmonary haemorrhage with rapidly progressive glomerulonephritis suggests an anti-GBM pulmonary-renal syndrome.",
+    "differentials": [
+      "Granulomatosis with polyangiitis",
+      "Microscopic polyangiitis",
+      "Systemic lupus erythematosus with pulmonary-renal syndrome"
+    ],
+    "red_flags": [
+      "Severe hypoxemia (SpO2 < 90%)",
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Rapid onset haemoptysis and volume",
+        "say": "How much blood have you been coughing up each day, and how quickly did this start?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "haemoptysis",
+          "blood",
+          "rapid onset",
+          "volume",
+          "coughing"
+        ]
+      },
+      {
+        "objective": "Haematuria and reduced urine output",
+        "say": "Have you noticed your urine turning dark or brown, or passing less urine than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "haematuria",
+          "dark urine",
+          "oliguria",
+          "kidney",
+          "renal"
+        ]
+      },
+      {
+        "objective": "Absence of ENT symptoms to distinguish from GPA",
+        "say": "Have you had any sinus problems, nosebleeds, or ear pain with this illness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sinus",
+          "ENT",
+          "nasal crusting",
+          "absence",
+          "distinguish"
+        ]
+      },
+      {
+        "objective": "Preceding viral illness or exposure trigger",
+        "say": "Did you have a cold or flu-like illness in the weeks before this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "viral illness",
+          "trigger",
+          "preceding",
+          "exposure",
+          "flu-like"
+        ]
+      },
+      {
+        "objective": "Anti-GBM antibody and renal biopsy workup",
+        "say": "We'll need urgent blood tests for a specific antibody and likely a kidney biopsy to confirm this.",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "anti-GBM",
+          "antibody",
+          "renal biopsy",
+          "linear IgG",
+          "confirm"
+        ]
+      }
+    ]
+  }
+}

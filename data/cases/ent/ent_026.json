@@ -1,0 +1,127 @@
+{
+  "id": "ent_026",
+  "system": "otolaryngology (ent)",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Nelson",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "fluid behind eardrum, hearing loss, flat tympanogram",
+  "hpi_details": "A 20-year-old female presents to the clinic with fluid behind eardrum, hearing loss, flat tympanogram. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to ome",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "tympanometry",
+      "test": "Tympanometry",
+      "value": "Flat Type B tracing with normal ear-canal volume",
+      "reference_range": "Type A tracing",
+      "flag": "abnormal"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Otitis Media with Effusion evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Otitis Media with Effusion is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows a stepwise approach for otitis media with effusion (OME): watchful waiting for up to 3 months with auto-inflation, avoiding routine intranasal steroids, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fluid behind eardrum, hearing loss, flat tympanogram",
+      "Key HPI features: A 20-year-old female presents to the clinic with fluid behind eardrum, hearing loss, flat tympanogram. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Otoscopy shows a dull, retracted tympanic membrane with a visible fluid level, no erythema; tympanometry shows a flat Type B tracing; no neck mass or nasal obstruction noted.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Otitis Media with Effusion.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute otitis media without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Speech delay."
+    ],
+    "management_principles": [
+      "Confirm OME with otoscopy and tympanometry, offer watchful waiting and auto-inflation when appropriate, and avoid routine intranasal steroids solely to clear middle-ear effusion",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with fluid behind the eardrum, hearing loss, and a flat tympanogram. 20F reports symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Otoscopy shows a dull, retracted tympanic membrane with a visible fluid level, no erythema; tympanometry shows a flat Type B tracing; no neck mass or nasal obstruction noted.",
+    "assessment": "Otitis media with effusion is suspected; in an adult, particularly with unilateral or persistent effusion, assess for an underlying nasopharyngeal or other obstructive cause.",
+    "plan": "Confirm OME with otoscopy and tympanometry. Offer watchful waiting and auto-inflation when appropriate, but avoid routine intranasal steroids solely to clear middle-ear effusion. Arrange ENT assessment for unilateral or persistent adult effusion, recurrent disease, or significant hearing loss to evaluate for an underlying obstructive cause."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Otitis Media Effusion OME",
+    "Select appropriate diagnostic workup for Otitis Media Effusion OME",
+    "Implement evidence-based management plan: watchful waiting for up to 3 months with auto-inflation, avoiding unnecessary intranasal steroids, and appropriate referral for unilateral or persistent adult effusion"
+  ],
+  "teaching": {
+    "diagnosis": "Otitis Media with Effusion",
+    "one_liner": "Fluid behind the eardrum without active infection, causing mild hearing loss, confirmed by a flat tympanogram.",
+    "differentials": [
+      "Acute otitis media",
+      "Nasopharyngeal mass (e.g. nasopharyngeal carcinoma) presenting with unilateral adult OME"
+    ],
+    "red_flags": [
+      "Unilateral or persistent effusion in an adult, especially with nasal obstruction, epistaxis, or a neck mass -- warrants nasopharyngoscopy to exclude an obstructive or malignant cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing",
+        "say": "Did this start after a cold, or did it come on some other way?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Laterality",
+        "say": "Is it in one ear or both?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Hearing and ear fullness",
+        "say": "Have you noticed hearing loss or a feeling of fullness in your ear?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Ear pain",
+        "say": "Any ear pain?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Associated nasal/neck symptoms",
+        "say": "Any nasal blockage, nosebleeds, or a lump in your neck?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

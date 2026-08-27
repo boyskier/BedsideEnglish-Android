@@ -1,0 +1,144 @@
+{
+  "id": "em_042",
+  "system": "em",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Sanchez",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "continuous convulsive seizure lasting 8 minutes",
+  "hpi_details": "A 68-year-old female presents to the clinic with continuous convulsive seizure lasting 8 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to status epilepticus",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_glucose",
+      "title": "Point-of-care blood glucose",
+      "order_terms": [
+        "fingerstick glucose",
+        "blood glucose",
+        "glucose check",
+        "blood sugar"
+      ],
+      "availability_message": "The point-of-care blood glucose is now available.",
+      "results": [
+        {
+          "id": "glucose_poc",
+          "test": "Point-of-care glucose",
+          "value": "108",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "normal",
+          "specimen": "Capillary blood",
+          "collected_at": "At bedside",
+          "note": "Antiseizure treatment was not delayed for this result"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Status Epilepticus evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Status Epilepticus is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes IV lorazepam boluses first-line, with second-line IV levetiracetam loading, for Status Epilepticus, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: continuous convulsive seizure lasting 8 minutes",
+      "Key HPI features: A 68-year-old female presents to the clinic with continuous convulsive seizure lasting 8 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Status Epilepticus.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Status Epilepticus.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pseudoseizure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ongoing seizure beyond 5 minutes."
+    ],
+    "management_principles": [
+      "Plan for Status Epilepticus: IV Lorazepam boluses, second-line IV Levetiracetam loading",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of continuous convulsive seizure lasting 8 minutes. HPI: status epilepticus.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Status Epilepticus.",
+    "assessment": "Condition highly suspicious for Status Epilepticus.",
+    "plan": "Plan for Status Epilepticus: IV Lorazepam boluses, second-line IV Levetiracetam loading. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Status Epilepticus",
+    "Select appropriate diagnostic workup for Status Epilepticus",
+    "Implement evidence-based management plan: IV Lorazepam boluses, second-line IV Levetiracetam loading"
+  ],
+  "teaching": {
+    "diagnosis": "Status Epilepticus",
+    "one_liner": "A continuous seizure lasting over 5 minutes, a neurological emergency needing stepwise medication.",
+    "differentials": [
+      "Pseudoseizure"
+    ],
+    "red_flags": [
+      "Ongoing seizure beyond 5 minutes"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration",
+        "say": "How long has the seizure lasted?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Epilepsy history",
+        "say": "Does she have epilepsy?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Medication adherence",
+        "say": "Has she been taking her seizure medication?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Trigger",
+        "say": "Was there any illness or missed medication before this?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Injury",
+        "say": "Did she injure herself during the seizure?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

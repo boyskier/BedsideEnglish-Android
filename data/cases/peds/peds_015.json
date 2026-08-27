@@ -1,0 +1,162 @@
+{
+  "id": "peds_015",
+  "system": "pediatrics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Green",
+  "age": 10,
+  "gender": "female",
+  "chief_complaint": "severe dehydration, Kussmaul breathing, fruity breath, and extreme fatigue in newly diagnosed 10-year-old with T1DM",
+  "hpi_details": "10-year-old girl with new polyuria, polydipsia, and weight loss over the past several weeks, presenting acutely with severe dehydration, Kussmaul breathing, and fruity breath. Initial labs show blood glucose 620 mg/dL, venous pH 7.08, and urine ketones +4.",
+  "ideas": "thinks this is related to pediatric diabetic ketoacidosis cerebral edema risk",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "available_results": [
+    {"id": "initial_glucose", "test": "Initial blood glucose", "value": "620", "unit": "mg/dL", "reference_range": "70-140", "flag": "critical", "collected_at": "At initial triage before the encounter"},
+    {"id": "initial_venous_ph", "test": "Initial venous pH", "value": "7.08", "reference_range": "7.31-7.41", "flag": "critical", "collected_at": "At initial triage before the encounter"},
+    {"id": "initial_urine_ketones", "test": "Urine ketones", "value": "4+", "reference_range": "Negative", "flag": "critical", "collected_at": "At initial triage before the encounter"}
+  ],
+  "investigation_events": [{
+    "id": "dka_initial_metabolic_panel",
+    "title": "STAT DKA metabolic assessment",
+    "order_terms": ["basic metabolic panel", "BMP", "electrolytes", "potassium", "beta-hydroxybutyrate", "serum ketones"],
+    "availability_message": "The STAT metabolic results are now available. Begin protocolized fluids and potassium-guided insulin therapy with serial neurologic and biochemical monitoring.",
+    "results": [
+      {"id": "sodium", "test": "Serum sodium", "value": "128", "unit": "mEq/L", "reference_range": "135-145", "flag": "low", "note": "Corrected sodium is approximately 136 mEq/L for the measured hyperglycemia."},
+      {"id": "potassium", "test": "Serum potassium", "value": "4.8", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "normal", "note": "Total-body potassium depletion is expected despite the initial serum value."},
+      {"id": "bicarbonate", "test": "Serum bicarbonate", "value": "7", "unit": "mEq/L", "reference_range": "22-29", "flag": "critical"},
+      {"id": "anion_gap", "test": "Calculated anion gap", "value": "28", "unit": "mEq/L", "reference_range": "8-12", "flag": "critical"},
+      {"id": "beta_hydroxybutyrate", "test": "Serum beta-hydroxybutyrate", "value": "7.2", "unit": "mmol/L", "reference_range": "<0.6", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Pediatric diabetic ketoacidosis (new-onset T1DM) with cerebral edema risk evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pediatric diabetic ketoacidosis (new-onset T1DM) with cerebral edema risk is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes cautious fluid resuscitation and gradual metabolic correction with hourly neurologic monitoring to minimize cerebral edema risk, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe dehydration, Kussmaul breathing, fruity breath, and extreme fatigue in newly diagnosed 10-year-old with T1DM",
+      "Key HPI features: 10-year-old girl with new polyuria, polydipsia, and weight loss over the past several weeks, presenting acutely with severe dehydration, Kussmaul breathing, and fruity breath. Initial labs show blood glucose 620 mg/dL, venous pH 7.08, and urine ketones +4.",
+      "Objective/Exam findings: Tachycardic with low-normal or low blood pressure, tachypneic with deep Kussmaul respirations, afebrile. Dry mucous membranes, sunken eyes, delayed capillary refill (~3 seconds), and decreased skin turgor consistent with moderate-to-severe dehydration. Fruity (acetone) breath odor. Mental status and pupillary response assessed serially for early cerebral edema; no focal neurologic deficits at presentation.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pediatric diabetic ketoacidosis (new-onset T1DM) with cerebral edema risk.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Sepsis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Kussmaul breathing."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis and severity with venous blood gas, basic metabolic panel, and urine/serum ketones; calculate the anion gap and corrected sodium",
+      "Begin cautious isotonic fluid resuscitation (avoiding rapid boluses) followed by a low-dose IV insulin infusion (0.05-0.1 units/kg/hr), started only once serum potassium is confirmed at least 3.3 mEq/L",
+      "Monitor neurologic status hourly for early cerebral edema (headache, altered mental status, abnormal pupillary response, bradycardia/hypertension) and correct glucose/osmolality gradually",
+      "Once resolved, transition to subcutaneous insulin with diabetes education, and evaluate for a precipitating trigger such as infection."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "10-year-old girl with new polyuria, polydipsia, and weight loss over the past several weeks, presenting acutely with severe dehydration, Kussmaul breathing, and fruity breath. Initial labs show blood glucose 620 mg/dL, venous pH 7.08, and urine ketones +4.",
+    "objective": "Tachycardic with low-normal or low blood pressure, tachypneic with deep Kussmaul respirations, afebrile. Dry mucous membranes, sunken eyes, delayed capillary refill (~3 seconds), and decreased skin turgor consistent with moderate-to-severe dehydration. Fruity (acetone) breath odor. Mental status and pupillary response assessed serially for early cerebral edema; no focal neurologic deficits at presentation.",
+    "assessment": "New-onset type 1 diabetes mellitus presenting in severe diabetic ketoacidosis (glucose 620 mg/dL, venous pH 7.08, ketonuria), with associated moderate-to-severe dehydration and cerebral edema risk given young age and severe acidosis.",
+    "plan": "Confirm severity with venous blood gas, basic metabolic panel, and ketones. Begin cautious isotonic saline resuscitation and a low-dose IV insulin infusion (0.05-0.1 u/kg/hr) started only after initial fluid resuscitation, while strictly monitoring neurological status and avoiding hypotonic fluids/boluses to prevent cerebral edema. Do not start or continue insulin if serum potassium is below 3.3 mEq/L; replace potassium first and monitor potassium frequently during treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Pediatric Diabetic Ketoacidosis Cerebral Edema Risk",
+    "Formulate prioritized differential diagnosis for severe dehydration, Kussmaul breathing, fruity breath, and extreme fatigue in newly diagnosed 10-year-old with T1DM",
+    "Select appropriate labs (venous blood gas, metabolic panel, ketones) to confirm and stage pediatric DKA severity",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Pediatric diabetic ketoacidosis (new-onset T1DM) with cerebral edema risk",
+    "one_liner": "10-year-old girl with severe dehydration, Kussmaul breathing, fruity breath, and extreme fatigue, blood glucose 620 with severe acidosis.",
+    "differentials": [
+      "Sepsis",
+      "Salicylate poisoning",
+      "Other causes of metabolic acidosis"
+    ],
+    "red_flags": [
+      "Kussmaul breathing",
+      "Severe dehydration with altered mental status risk",
+      "Very low pH (cerebral edema risk during correction)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ask about the classic diabetes symptoms preceding this",
+        "say": "Has she been drinking and urinating much more than usual, or losing weight recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "polyuria",
+          "polydipsia",
+          "weight loss"
+        ]
+      },
+      {
+        "objective": "Characterize the breathing pattern",
+        "say": "Is her breathing deep and fast, and does her breath smell fruity or sweet?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "Kussmaul breathing",
+          "fruity breath"
+        ]
+      },
+      {
+        "objective": "Assess mental status closely",
+        "say": "How alert is she right now — is she confused or unusually sleepy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mental status",
+          "cerebral edema screen"
+        ]
+      },
+      {
+        "objective": "Ask about level of dehydration signs",
+        "say": "Has she had dry mouth, sunken eyes, or reduced urination?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dehydration signs"
+        ]
+      },
+      {
+        "objective": "Explain the careful, gradual fluid correction plan",
+        "say": "We need to correct her fluids and blood sugar very gradually and carefully, because doing it too fast can cause dangerous brain swelling.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "gradual correction",
+          "cerebral edema prevention"
+        ]
+      }
+    ]
+  },
+  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.3 mEq/L, replace potassium and hold insulin until it is corrected."
+}

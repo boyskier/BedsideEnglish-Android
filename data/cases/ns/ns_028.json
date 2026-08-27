@@ -1,0 +1,128 @@
+{
+  "id": "ns_028",
+  "system": "ns",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Nguyen",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "bilateral leg pain when walking, relieved by leaning forward",
+  "hpi_details": "A 26-year-old female presents to the clinic with bilateral leg pain when walking, relieved by leaning forward. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to spinal_stenosis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Lumbar Spinal Stenosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Lumbar Spinal Stenosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Neurogenic claudication is less typical at age 26 and warrants confirmation of the cause; management depends on neurologic deficits, imaging findings, and response to conservative care.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bilateral leg pain when walking, relieved by leaning forward",
+      "Key HPI features: A 26-year-old female presents to the clinic with bilateral leg pain when walking, relieved by leaning forward. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Spinal Stenosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Lumbar Spinal Stenosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vascular claudication without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: saddle anesthesia or bladder/bowel dysfunction, which require emergency imaging and surgical referral to exclude cauda equina syndrome."
+    ],
+    "management_principles": [
+      "Perform a focused neurologic and vascular examination; obtain lumbar MRI when symptoms are persistent, disabling, or accompanied by neurologic deficit.",
+      "Consider supervised exercise-based physical therapy and analgesia as appropriate; reserve injections or decompression for selected patients after specialist assessment.",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "North American Spine Society: Clinical Guidelines",
+        "url": "https://www.spine.org/Research-Clinical-Care/Quality-Improvement/Clinical-Guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26-year-old woman with progressively worsening bilateral leg pain brought on by walking and relieved by sitting or leaning forward. The structural cause has not yet been established.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Spinal Stenosis.",
+    "assessment": "Symptoms suggest neurogenic claudication; lumbar spinal stenosis is possible but is atypical at this age and requires confirmation and evaluation for alternative causes.",
+    "plan": "Perform focused neurologic and vascular examination and assess for cauda equina symptoms. Obtain lumbar MRI when symptoms are persistent, disabling, or accompanied by neurologic deficit. Consider supervised exercise-based physical therapy and analgesia as appropriate; refer to a spine specialist for progressive deficits or imaging-confirmed structural disease."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Spinal Stenosis",
+    "Select appropriate diagnostic workup for Spinal Stenosis",
+    "Select conservative management and indications for imaging and specialist referral"
+  ],
+  "teaching": {
+    "diagnosis": "Suspected neurogenic claudication (evaluate for lumbar spinal stenosis and alternative causes)",
+    "one_liner": "Narrowing of the spinal canal causing bilateral leg pain when walking that is relieved by leaning forward (neurogenic claudication).",
+    "differentials": [
+      "Vascular claudication",
+      "Lumbar disc herniation or spondylolisthesis"
+    ],
+    "red_flags": [
+      "Saddle anesthesia, or new bowel/bladder dysfunction (urinary retention or incontinence) — concerning for cauda equina syndrome",
+      "Bilateral progressive leg weakness",
+      "Fever, unexplained weight loss, or history of malignancy — raising suspicion for infection or a spinal tumor"
+    ],
+    "must_ask": [
+      {
+        "objective": "Walking-induced pain",
+        "say": "Does the leg pain come on when you walk and improve when you lean forward or sit?",
+        "domains": [
+          "aggravating",
+          "relieving"
+        ]
+      },
+      {
+        "objective": "Distance tolerance",
+        "say": "How far can you walk before the pain starts?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Bilaterality",
+        "say": "Is this in both legs?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Back pain",
+        "say": "Any back pain along with the leg pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+      ,{
+        "objective": "Cauda equina symptoms",
+        "say": "Any new trouble passing urine, loss of bowel control, or numbness around the groin or buttocks?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

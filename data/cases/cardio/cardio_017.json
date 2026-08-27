@@ -1,0 +1,202 @@
+{
+  "id": "cardio_017",
+  "system": "cardiology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Higgins",
+  "age": 42,
+  "gender": "female",
+  "chief_complaint": "sensation of heart skipping a beat and thumping in chest for 3 months",
+  "hpi_details": "3-month history of frequent, unsettling sensations described as her heart 'skipping a beat', fluttering, or doing a 'hard thrum' in her chest. These episodes occur intermittently throughout the day, often more noticeable when lying quietly in bed at night or after drinking coffee during busy work periods. Each sensation lasts only a second. Denies chest pain, lightheadedness, shortness of breath, or syncope. Can walk 5 miles without cardiac symptoms.",
+  "ideas": "thinks high stress from her new management promotion and energy drinks are making her heart misfire",
+  "concerns": "worried that these skipped beats will suddenly turn into a fatal cardiac arrest while sleeping",
+  "expectations": "wants a portable heart monitor to confirm they are harmless and advice on whether to stop drinking coffee",
+  "pmh": "mild generalized anxiety, no structural heart disease, normal health screening last year",
+  "medications": "none regular",
+  "social_hx": "consumes 4-5 double espressos daily plus occasional energy drinks when working late, non-smoker, bank executive",
+  "investigation_events": [
+    {
+      "id": "pvc_ecg",
+      "title": "12-lead ECG",
+      "order_terms": ["ECG", "EKG", "12-lead"],
+      "availability_message": "The 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_isolated_pvcs",
+          "test": "12-lead ECG",
+          "value": "Sinus rhythm at 72 bpm with two isolated monomorphic PVCs and full compensatory pauses; QTc 418 ms",
+          "unit": "",
+          "reference_range": "Sinus rhythm; QTc <450 ms",
+          "flag": "abnormal",
+          "collected_at": "During today's assessment"
+        }
+      ]
+    },
+    {
+      "id": "pvc_holter",
+      "title": "24-hour Holter monitor",
+      "order_terms": ["Holter", "ambulatory ECG", "24-hour monitor"],
+      "availability_message": "The 24-hour Holter report is now available.",
+      "results": [
+        {
+          "id": "holter_pvc_burden",
+          "test": "PVC burden",
+          "value": "3.2",
+          "unit": "% of all beats",
+          "reference_range": "<10% low burden",
+          "flag": "abnormal",
+          "collected_at": "24-hour recording"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Benign Premature Ventricular Contractions (PVCs) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Benign Premature Ventricular Contractions (PVCs) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes reassuring the patient regarding the benign prognosis of PVCs in a structurally normal heart when ectopic burden is low (<10%) and LVEF is preserved, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sensation of heart skipping a beat and thumping in chest for 3 months",
+      "Key HPI features: 3-month history of frequent, unsettling sensations described as her heart 'skipping a beat', fluttering, or doing a 'hard thrum' in her chest. These episodes occur intermittently throughout the day, often more noticeable when lying quietly in bed at night or after drinking coffee during busy work periods. Each sensation lasts only a second. Denies chest pain, lightheadedness, shortness of breath, or syncope. Can walk 5 miles without cardiac symptoms.",
+      "Objective/Exam findings: Examine pulse: occasional irregular extra beat followed by compensatory pause. Auscultation: normal S1/S2 with occasional premature beat followed by louder post-compensatory beat. 12-lead baseline ECG: normal sinus rhythm with isolated broad, bizarre Premature Ventricular Contractions (PVCs / Ventricular Ectopics) not preceded by P waves, followed by full compensatory pause. Bloods: electrolytes (check potassium and magnesium levels), thyroid function tests (TSH). 24-hour Holter ambulatory ECG monitoring to quantify ectopic burden (% of total beats). Echocardiogram to confirm normal structural heart and LVEF.",
+      "Relevant background/PMH: mild generalized anxiety, no structural heart disease, normal health screening last year",
+      "Current medications: none regular"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Benign Premature Ventricular Contractions (PVCs).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atrial ectopic beats without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Skipped beats with syncope, or a family history of sudden death."
+    ],
+    "management_principles": [
+      "Reassure patient regarding benign prognosis of PVCs in a structurally normal heart when ectopic burden is low (<10%) and LVEF is preserved",
+      "Explain that the 'thump' sensation is simply the more forceful contraction occurring after the compensatory pause due to increased diastolic filling",
+      "Lifestyle modification: gradual reduction of caffeine/energy drinks, stress management, adequate sleep, and maintaining hydration/potassium balance"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
+        "url": "https://professional.heart.org/en/guidelines-statements/2017-ahaacchrs-guideline-for-management-of-patients-with-ventricularcircd1700061"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sensation of heart skipping a beat and thumping in chest for 3 months\n\n3-month history of frequent, unsettling sensations described as her heart 'skipping a beat', fluttering, or doing a 'hard thrum' in her chest. These episodes occur intermittently throughout the day, often more noticeable when lying quietly in bed at night or after drinking coffee during busy work periods. Each sensation lasts only a second. Denies chest pain, lightheadedness, shortness of breath, or syncope. Can walk 5 miles without cardiac symptoms.",
+    "objective": "Examine pulse: occasional irregular extra beat followed by compensatory pause. Auscultation: normal S1/S2 with occasional premature beat followed by louder post-compensatory beat. 12-lead baseline ECG: normal sinus rhythm with isolated broad, bizarre Premature Ventricular Contractions (PVCs / Ventricular Ectopics) not preceded by P waves, followed by full compensatory pause. Bloods: electrolytes (check potassium and magnesium levels), thyroid function tests (TSH). 24-hour Holter ambulatory ECG monitoring to quantify ectopic burden (% of total beats). Echocardiogram to confirm normal structural heart and LVEF.",
+    "assessment": "Benign Premature Ventricular Contractions (PVCs / Ventricular Ectopic Beats) triggered by caffeine and stress in a structurally normal heart. DDx: premature atrial contractions (PACs), paroxysmal atrial fibrillation, underlying structural heart disease (mitral valve prolapse, cardiomyopathy if ectopic burden >15%).",
+    "plan": "Reassure patient regarding benign prognosis of PVCs in a structurally normal heart when ectopic burden is low (<10%) and LVEF is preserved. Explain that the 'thump' sensation is simply the more forceful contraction occurring after the compensatory pause due to increased diastolic filling. Lifestyle modification: gradual reduction of caffeine/energy drinks, stress management, adequate sleep, and maintaining hydration/potassium balance. Trial of low-dose beta-blocker (e.g., bisoprolol 2.5mg OD) only if symptoms remain highly intrusive despite lifestyle adjustments."
+  },
+  "learning_objectives": [
+    "Explain the hemodynamic mechanism behind the subjective 'skipped beat and thump' sensation (compensatory pause and post-pause increased stroke volume)",
+    "Stratify ventricular ectopic risk based on absence of red flags, normal echocardiogram, and 24-hour Holter ectopic burden (<10%)",
+    "Identify dietary and lifestyle triggers for cardiac excitability (caffeine, energy drinks, stress, hypokalaemia)",
+    "Provide empowering reassurance that prevents cardiac hypervigilance in structurally healthy patients"
+  ],
+  "teaching": {
+    "diagnosis": "Benign Premature Ventricular Contractions (PVCs)",
+    "one_liner": "Extra beats that make the heart feel like it skips then thumps. In a structurally normal heart they are harmless but frightening.",
+    "differentials": [
+      "Atrial ectopic beats",
+      "Anxiety",
+      "Thyrotoxicosis"
+    ],
+    "red_flags": [
+      "Skipped beats with syncope, or a family history of sudden death"
+    ],
+    "must_ask": [
+      {
+        "objective": "The skip-then-thump sensation",
+        "say": "Does it feel like a missed beat followed by a stronger thump?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "skip",
+          "miss",
+          "thump",
+          "flip",
+          "jump"
+        ]
+      },
+      {
+        "objective": "When it is noticed",
+        "say": "Do you notice it more when you're resting quietly, or when you're active?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "rest",
+          "quiet",
+          "lying",
+          "active",
+          "exercise",
+          "night"
+        ]
+      },
+      {
+        "objective": "Caffeine, alcohol and sleep",
+        "say": "How much coffee and alcohol do you have, and how are you sleeping?",
+        "domains": [
+          "aggravating",
+          "alcohol"
+        ],
+        "keywords": [
+          "coffee",
+          "caffeine",
+          "alcohol",
+          "sleep",
+          "tired"
+        ]
+      },
+      {
+        "objective": "Associated syncope or chest pain",
+        "say": "Have you fainted or had chest pain with it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "black",
+          "out",
+          "chest",
+          "pain",
+          "dizzy"
+        ]
+      },
+      {
+        "objective": "Stress and anxiety",
+        "say": "Has anything been particularly stressful recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "stress",
+          "anxious",
+          "worried",
+          "work"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most worried this might be?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

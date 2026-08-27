@@ -1,0 +1,189 @@
+{
+  "id": "endo_027",
+  "system": "endo",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Wright",
+  "age": 23,
+  "gender": "male",
+  "chief_complaint": "rapid weight loss, extreme thirst, and polyuria",
+  "hpi_details": "A 23-year-old male presents to the clinic with rapid weight loss, extreme thirst, and polyuria. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to t1dm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_dka_exclusion",
+      "title": "STAT glucose and ketoacidosis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "glucose",
+        "electrolytes",
+        "metabolic panel",
+        "ketones",
+        "beta hydroxybutyrate",
+        "blood gas",
+        "vbg",
+        "venous blood gas",
+        "dka labs"
+      ],
+      "availability_message": "The STAT glucose and ketoacidosis results are now available.",
+      "results": [
+        {
+          "id": "glucose",
+          "test": "Serum glucose",
+          "value": "412",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "beta_hydroxybutyrate",
+          "test": "Beta-hydroxybutyrate",
+          "value": "1.2",
+          "unit": "mmol/L",
+          "reference_range": "<0.6",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "venous_ph",
+          "test": "Venous pH",
+          "value": "7.36",
+          "reference_range": "7.31-7.41",
+          "flag": "normal",
+          "specimen": "Venous blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "bicarbonate",
+          "test": "Serum bicarbonate",
+          "value": "21",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "4.6",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Type 1 Diabetes Mellitus evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Type 1 Diabetes Mellitus is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgently excluding diabetic ketoacidosis before initiating an outpatient basal-bolus insulin regimen with glucose monitoring, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: rapid weight loss, extreme thirst, and polyuria",
+      "Key HPI features: A 23-year-old male presents to the clinic with rapid weight loss, extreme thirst, and polyuria. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Type 1 Diabetes Mellitus.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Type 1 Diabetes Mellitus.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Type 2 diabetes without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of ketoacidosis."
+    ],
+    "management_principles": [
+      "Urgently assess glucose, ketones, electrolytes, venous pH/bicarbonate, and clinical status to exclude diabetic ketoacidosis before initiating an outpatient insulin regimen",
+      "If DKA is confirmed, monitor potassium closely and hold insulin if K+ is <3.5 mEq/L until potassium is corrected, to avoid precipitating life-threatening hypokalemia",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of rapid weight loss, extreme thirst, and polyuria. HPI: autoimmune beta cell destruction.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Type 1 Diabetes Mellitus.",
+    "assessment": "Type 1 Diabetes Mellitus, new-onset, given the rapid weight loss, extreme thirst, and polyuria in a young adult — pending exclusion of diabetic ketoacidosis.",
+    "plan": "Urgently assess glucose, ketones, electrolytes, venous pH/bicarbonate, and clinical status to exclude diabetic ketoacidosis. If DKA is present, manage in an acute-care setting with protocolized fluids, potassium, and insulin; monitor potassium closely and hold insulin if K+ is <3.5 mEq/L until potassium is corrected. If clinically stable without DKA, initiate insulin with same-day diabetes education, glucose/ketone monitoring, sick-day guidance, and prompt Endocrinology follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Type 1 Diabetes Mellitus",
+    "Select appropriate diagnostic workup for Type 1 Diabetes Mellitus",
+    "Implement evidence-based management plan: Basal-bolus insulin regimen, monitor blood glucose"
+  ],
+  "teaching": {
+    "diagnosis": "Type 1 Diabetes Mellitus",
+    "one_liner": "Autoimmune beta cell destruction causing rapid weight loss, extreme thirst, and frequent urination.",
+    "differentials": [
+      "Type 2 diabetes"
+    ],
+    "red_flags": [
+      "Signs of ketoacidosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Thirst and urination",
+        "say": "How much are you drinking and urinating?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Appetite",
+        "say": "How is your appetite?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How is your energy?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Ketoacidosis symptoms",
+        "say": "Any nausea, vomiting, or belly pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

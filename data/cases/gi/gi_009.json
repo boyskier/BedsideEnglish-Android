@@ -1,0 +1,246 @@
+{
+  "id": "gi_009",
+  "system": "gastroenterology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Patel",
+  "age": 41,
+  "gender": "female",
+  "chief_complaint": "yellow eyes, dark urine, and severe fatigue for 5 days",
+  "hpi_details": "5-day history of profound lethargy, nausea, loss of appetite, dark tea-coloured urine, and pale clay-coloured stools. Noticed her sclerae and skin turning yellow 2 days ago. Started taking a high-dose herbal weight-loss supplement and paracetamol for headaches 3 weeks prior.",
+  "ideas": "thinks the herbal supplement she bought online caused liver damage",
+  "concerns": "worried she might need an urgent liver transplant",
+  "expectations": "wants blood tests immediately and an antidote to clear the toxins",
+  "pmh": "mild asthma, no prior hepatic illness or blood transfusions",
+  "medications": "salbutamol inhaler PRN, recently started 'SlimPlus' herbal extracts (containing green tea extract and unknown botanicals), paracetamol 1g PRN",
+  "social_hx": "non-smoker, rare alcohol use, no recent foreign travel, no IV drug use, monogamous partner",
+  "investigation_events": [
+    {
+      "id": "stat_acute_liver_injury_labs",
+      "title": "STAT acute liver injury results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "liver function tests",
+        "lfts",
+        "alt",
+        "ast",
+        "bilirubin",
+        "inr",
+        "coagulation studies",
+        "glucose",
+        "paracetamol level",
+        "acetaminophen level"
+      ],
+      "availability_message": "The STAT acute liver injury results are now available; the suspected supplement must be stopped immediately and treatment should not wait for delayed etiologic testing.",
+      "results": [
+        {
+          "id": "alt",
+          "test": "Alanine aminotransferase",
+          "value": "1860",
+          "unit": "U/L",
+          "reference_range": "7-56",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ast",
+          "test": "Aspartate aminotransferase",
+          "value": "1420",
+          "unit": "U/L",
+          "reference_range": "10-40",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "8.4",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "2.0",
+          "reference_range": "0.8-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "glucose",
+          "test": "Serum glucose",
+          "value": "68",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "acetaminophen_level",
+          "test": "Serum acetaminophen level",
+          "value": "<10",
+          "unit": "mcg/mL",
+          "reference_range": "10-30 therapeutic",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation",
+          "note": "A low level after delayed or repeated exposure does not exclude acetaminophen-related injury"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Drug-Induced Liver Injury (Herbal Supplement) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Drug-Induced Liver Injury (Herbal Supplement) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Immediately discontinue herbal supplement and non-essential medications, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: yellow eyes, dark urine, and severe fatigue for 5 days",
+      "Key HPI features: 5-day history of profound lethargy, nausea, loss of appetite, dark tea-coloured urine, and pale clay-coloured stools. Noticed her sclerae and skin turning yellow 2 days ago. Started taking a high-dose herbal weight-loss supplement and paracetamol for headaches 3 weeks prior.",
+      "Objective/Exam findings: Vitals, mental status (check alertness/flapping tremor for acute liver failure). Abdominal exam: tender hepatomegaly. Bloods: LFTs (markedly elevated ALT/AST >1000 suggests hepatocellular necrosis), bilirubin, alkaline phosphatase, INR/coagulation screen, viral hepatitis panel (HAV, HBV, HCV, HEV), paracetamol level.",
+      "Relevant background/PMH: mild asthma, no prior hepatic illness or blood transfusions",
+      "Current medications: salbutamol inhaler PRN, recently started 'SlimPlus' herbal extracts (containing green tea extract and unknown botanicals), paracetamol 1g PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Drug-Induced Liver Injury (Herbal Supplement).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Paracetamol hepatotoxicity without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any confusion or altered mental state — suggests acute liver failure."
+    ],
+    "management_principles": [
+      "Immediately discontinue herbal supplement and non-essential medications",
+      "N-acetylcysteine (NAC) consideration if acute liver failure or paracetamol toxicity suspected",
+      "Monitor INR and glucose closely"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "41F with 5-day history of profound lethargy, nausea, loss of appetite, dark tea-coloured urine, and pale clay-coloured stools. Noticed her sclerae and skin turning yellow 2 days ago. Started taking a high-dose herbal weight-loss supplement and paracetamol for headaches 3 weeks prior.",
+    "objective": "Vitals, mental status (check alertness/flapping tremor for acute liver failure). Abdominal exam: tender hepatomegaly. Bloods: LFTs (markedly elevated ALT/AST >1000 suggests hepatocellular necrosis), bilirubin, alkaline phosphatase, INR/coagulation screen, viral hepatitis panel (HAV, HBV, HCV, HEV), paracetamol level.",
+    "assessment": "Drug-Induced Liver Injury (DILI) likely secondary to herbal weight-loss supplement vs acute viral hepatitis. DDx: paracetamol hepatotoxicity, autoimmune hepatitis, biliary obstruction.",
+    "plan": "Immediately discontinue herbal supplement and non-essential medications. N-acetylcysteine (NAC) consideration if acute liver failure or paracetamol toxicity suspected. Monitor INR and glucose closely. Hepatology consult and report adverse event to drug regulatory body."
+  },
+  "learning_objectives": [
+    "Perform a comprehensive exposure history including over-the-counter drugs, herbal remedies, and supplements",
+    "Distinguish hepatocellular injury from cholestatic jaundice based on clinical symptoms and lab profiles",
+    "Identify early warning signs of acute liver failure (coagulopathy, hepatic encephalopathy, hypoglycaemia)",
+    "Address patient anxiety regarding liver toxicity and transplant risk"
+  ],
+  "teaching": {
+    "diagnosis": "Drug-Induced Liver Injury (Herbal Supplement)",
+    "one_liner": "A toxic reaction to a medication or herbal supplement injures the liver cells, causing jaundice, dark urine, and pale stools within days to weeks of starting it.",
+    "differentials": [
+      "Paracetamol hepatotoxicity",
+      "Acute viral hepatitis",
+      "Biliary obstruction"
+    ],
+    "red_flags": [
+      "Any confusion or altered mental state — suggests acute liver failure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Herbal supplement details",
+        "say": "Can you tell me exactly what's in the weight-loss supplement, and when you started taking it?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "supplement",
+          "herbal",
+          "ingredients",
+          "botanical"
+        ]
+      },
+      {
+        "objective": "Paracetamol dose",
+        "say": "How much paracetamol have you been taking, and how often?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "paracetamol",
+          "tablets",
+          "dose",
+          "often"
+        ]
+      },
+      {
+        "objective": "Jaundice and stool colour",
+        "say": "Have you noticed your skin turning yellow, or your stools going pale?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "yellow",
+          "jaundice",
+          "pale",
+          "stools"
+        ]
+      },
+      {
+        "objective": "Alcohol intake",
+        "say": "Do you drink alcohol, and if so, how much?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drink",
+          "drinking"
+        ]
+      },
+      {
+        "objective": "Viral hepatitis risk factors",
+        "say": "Have you traveled recently, used injectable drugs, or had unprotected sex?",
+        "domains": [
+          "substances"
+        ],
+        "keywords": [
+          "travel",
+          "injection",
+          "drugs",
+          "unprotected"
+        ]
+      },
+      {
+        "objective": "Confusion or mental status",
+        "say": "Has anyone noticed you seeming more confused or forgetful lately?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "confusion",
+          "forgetful",
+          "drowsy"
+        ]
+      }
+    ]
+  }
+}

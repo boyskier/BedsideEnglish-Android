@@ -1,0 +1,246 @@
+{
+  "id": "followup_medication_004",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "medication",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mrs. Hannah Miller",
+  "age": 42,
+  "gender": "female",
+  "visit_title": "Levothyroxine dose titration review",
+  "follow_up_reason": "Six-week review after levothyroxine dose increase",
+  "clinician_brief": {
+    "prior_note": "Dose of Levothyroxine was increased 6 weeks ago from 75mcg to 88mcg daily due to persistent TSH elevation (4.8 mIU/L) and ongoing sluggishness.",
+    "active_problems": [
+      "Primary hypothyroidism (Hashimoto's)",
+      "Mild hyperlipidemia"
+    ],
+    "current_medications": [
+      "Levothyroxine 88 mcg once daily in the morning",
+      "Calcium carbonate 500 mg daily"
+    ],
+    "previous_plan": [
+      "Increase levothyroxine to 88mcg daily",
+      "Take on empty stomach 30-60 min before breakfast",
+      "Separate calcium/iron supplements by 4 hours",
+      "Recheck TSH in 6 weeks"
+    ],
+    "results_and_observations": [
+      "New TSH: 2.1 mIU/L (normal range 0.5-4.0)",
+      "Free T4: 1.2 ng/dL (normal)",
+      "Weight stable"
+    ],
+    "today_tasks": [
+      "Review TSH normalization (2.1 mIU/L)",
+      "Assess interval change in fatigue, cold tolerance, and bowel habits",
+      "Verify administration rules (empty stomach, separation from calcium)",
+      "Screen for hyperthyroid over-replacement symptoms (palpitations, tremor, insomnia)",
+      "Establish routine annual monitoring plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Energy level is significantly better. No longer feeling freezing indoors.",
+    "adherence": "Takes levothyroxine first thing upon waking with water.",
+    "treatment_response": "Bowel movements are regular and brain fog has lifted.",
+    "side_effects": "No heart racing, shakiness, anxiety, or excessive sweating.",
+    "new_symptoms_and_red_flags": "No chest tightness, rapid weight loss, heat intolerance, or menstrual irregularities.",
+    "agenda": "Wants to confirm if her TSH is now in the ideal target range.",
+    "concern": "Worried that taking calcium supplements at breakfast was blocking her thyroid medication in the past.",
+    "preference": "Wants to stay on the 88mcg dose now that she feels energetic."
+  },
+  "clinical_knowledge": {
+    "topic": "Confirming euthyroid status after a levothyroxine dose increase and correcting the misconception that calcium timing had been sabotaging absorption",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "A TSH of 2.1 mIU/L six weeks after raising levothyroxine from 75 to 88 mcg confirms the dose increase worked; TSH takes roughly 4-6 weeks to fully equilibrate after any dose change, so this timing was appropriate rather than premature.",
+      "Levothyroxine absorption drops substantially when taken with calcium carbonate, iron, or coffee; the standard fix is separating them by at least 4 hours (not avoiding calcium altogether), and Hannah's reported technique already does this correctly.",
+      "Hashimoto's thyroiditis is a lifelong autoimmune process, so 'ideal range' at one visit does not mean treatment can stop — it means this dose is currently correct and needs periodic rechecking as antibody-driven gland destruction can still shift requirements over time.",
+      "Symptoms of over-replacement (palpitations, tremor, heat intolerance, insomnia) should be screened for at every titration visit, since the therapeutic window between under- and over-treatment is narrow and TSH lags clinical symptoms by weeks."
+    ],
+    "diagnostic_clues": [
+      "TSH 2.1 mIU/L (down from 4.8) with Free T4 1.2 ng/dL in the normal range together confirm euthyroid status — TSH alone can be misleading in the first weeks after a dose change, so having both values move together is reassuring.",
+      "Resolution of cold intolerance and brain fog, plus regular bowel movements, are the expected clinical correlates of correcting hypothyroidism and corroborate the biochemical improvement.",
+      "Absence of palpitations, tremor, anxiety, or sweating argues against over-replacement, which is the main risk of titrating a dose upward.",
+      "Stable weight with improved energy is more consistent with reaching an appropriate replacement dose than with over-treatment, which classically causes unintended weight loss."
+    ],
+    "common_misconceptions": [
+      "Hannah's belief that calcium at breakfast was 'blocking' her thyroid medication conflates two different facts: calcium does impair absorption, but only when taken close in time — properly spaced doses are not blocked at all.",
+      "Assuming that feeling well and having a normal TSH means Hashimoto's is cured and levothyroxine could eventually be stopped, when in fact primary hypothyroidism from autoimmune thyroiditis is typically a permanent, lifelong replacement need.",
+      "Believing that a single normal TSH means monitoring is no longer necessary, rather than recognizing that thyroid requirements can drift with weight change, pregnancy, other new medications, or progression of the autoimmune process.",
+      "Assuming that if a dose feels right now, any dose adjustment must be dangerous — when in fact dose needs can change over time and are not a sign that today's success was wrong."
+    ],
+    "dangerous_errors": [
+      "Agreeing to keep the dose unchanged for years without any monitoring plan, rather than scheduling routine annual (or sooner if symptoms recur) TSH checks appropriate for Hashimoto's.",
+      "Failing to screen for early over-replacement symptoms (palpitations, insomnia, heat intolerance) simply because the TSH looks good today, when a further unnoticed rise in absorption or a subsequent weight change could push her into subclinical hyperthyroidism.",
+      "Reinforcing the incorrect idea that calcium must be avoided entirely rather than clearly re-teaching the 4-hour separation rule, which could lead her to stop a needed calcium supplement unnecessarily.",
+      "Not confirming take-on-an-empty-stomach technique explicitly, since consistent absorption conditions are what make a given mcg dose reliably reproducible from refill to refill."
+    ],
+    "management_principles": [
+      "Continue levothyroxine 88 mcg once daily on an empty stomach, since both TSH and Free T4 are now in range and her symptoms have resolved.",
+      "Reinforce the correct administration pattern she is already using — first thing on waking, with water, calcium separated by several hours — rather than introducing unnecessary new restrictions.",
+      "Explicitly correct the absorption misconception using plain language: calcium taken with the pill blocks it, calcium taken hours apart does not.",
+      "Set a concrete annual TSH recheck (sooner if fatigue, palpitations, or weight change recur) and document today's stable dose as her new baseline."
+    ],
+    "boundaries_and_exceptions": [
+      "If she becomes pregnant, levothyroxine requirements typically rise early in pregnancy and TSH must be rechecked far more frequently than annually, with a lower target range.",
+      "New medications that interact with levothyroxine absorption or metabolism (e.g., proton pump inhibitors, iron, certain anticonvulsants) would require re-evaluating the dose and monitoring interval.",
+      "If she develops new cardiac symptoms or is elderly with coronary disease, over-replacement risk becomes more consequential and target TSH may be kept slightly higher with closer monitoring."
+    ],
+    "source_refs": [
+      {
+        "title": "American Thyroid Association (ATA) Guidelines for Hypothyroidism",
+        "url": "https://www.thyroid.org/hypothyroidism/"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the visit agenda for thyroid hormone titration",
+    "Review TSH and Free T4 normalization results",
+    "Assess resolution of hypothyroid symptoms (fatigue, cold intolerance, constipation)",
+    "Verify correct levothyroxine intake timing and calcium/iron spacing",
+    "Screen for thyrotoxicosis red flags from over-replacement",
+    "Address supplement interaction concerns in plain English",
+    "Agree on long-term annual TSH monitoring and prescription maintenance"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the visit agenda for thyroid hormone titration",
+      "category": "Agenda",
+      "question": "Since we increased your levothyroxine dose six weeks ago, what would you most like to cover today?"
+    },
+    {
+      "objective": "Review TSH and Free T4 normalization results",
+      "category": "Results",
+      "question": "Your new TSH came back at 2.1, which is right in the normal target range - how does that sound?"
+    },
+    {
+      "objective": "Assess resolution of hypothyroid symptoms (fatigue, cold intolerance, constipation)",
+      "category": "Interval change",
+      "question": "How have your energy levels, feeling cold, and bowel movements changed over the last six weeks?"
+    },
+    {
+      "objective": "Verify correct levothyroxine intake timing and calcium/iron spacing",
+      "category": "Administration",
+      "question": "How many minutes before breakfast do you take the pill, and when do you take your calcium supplement?"
+    },
+    {
+      "objective": "Screen for thyrotoxicosis red flags from over-replacement",
+      "category": "Safety",
+      "question": "Have you noticed any heart racing, feeling unusually hot, shakiness, or trouble sleeping?"
+    },
+    {
+      "objective": "Address supplement interaction concerns in plain English",
+      "category": "Concerns",
+      "question": "What questions do you have about how calcium or coffee affects how your body absorbs the thyroid medicine?"
+    },
+    {
+      "objective": "Agree on long-term annual TSH monitoring and prescription maintenance",
+      "category": "Shared plan",
+      "question": "Shall we keep you on 88 mcg and schedule our next routine blood test in twelve months?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the visit agenda for thyroid hormone titration",
+      "keywords": [
+        "levothyroxine",
+        "thyroid",
+        "six weeks",
+        "dose increase",
+        "agenda",
+        "today"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review TSH and Free T4 normalization results",
+      "keywords": [
+        "tsh",
+        "free t4",
+        "2.1",
+        "normal",
+        "target",
+        "results",
+        "blood test"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess resolution of hypothyroid symptoms (fatigue, cold intolerance, constipation)",
+      "keywords": [
+        "energy",
+        "fatigue",
+        "cold",
+        "bowels",
+        "constipation",
+        "brain fog",
+        "improved"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Verify correct levothyroxine intake timing and calcium/iron spacing",
+      "keywords": [
+        "empty stomach",
+        "calcium",
+        "water",
+        "breakfast",
+        "spacing",
+        "hours",
+        "morning"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for thyrotoxicosis red flags from over-replacement",
+      "keywords": [
+        "palpitations",
+        "racing heart",
+        "shakiness",
+        "tremor",
+        "hot",
+        "insomnia",
+        "over replacement"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address supplement interaction concerns in plain English",
+      "keywords": [
+        "calcium",
+        "absorption",
+        "coffee",
+        "interaction",
+        "worry",
+        "worried",
+        "explain"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on long-term annual TSH monitoring and prescription maintenance",
+      "keywords": [
+        "keep 88",
+        "maintain",
+        "annual",
+        "twelve months",
+        "agree",
+        "plan"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "42F with primary hypothyroidism returns 6 weeks after levothyroxine increased to 88mcg daily. Energy and cold tolerance significantly improved. Separates calcium by 4 hours. Denies palpitations or insomnia.",
+    "objective": "TSH 2.1 mIU/L (normal), Free T4 1.2 ng/dL. HR 72 bpm, BP 118/74 mmHg.",
+    "assessment": "Euthyroid state achieved on Levothyroxine 88mcg daily with excellent administration technique.",
+    "plan": "Maintain Levothyroxine 88mcg once daily on empty stomach, continue separating calcium supplements, plan annual TSH monitoring."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Levothyroxine dose titration review",
+    "one_liner": "Clinical scenario for evaluation and management of Levothyroxine dose titration review."
+  }
+}

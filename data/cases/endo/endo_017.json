@@ -1,0 +1,143 @@
+{
+  "id": "endo_017",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Sanchez",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "recurrent kidney stones and severe stomach ulcers",
+  "hpi_details": "41M with family history of gland tumors presenting with hypercalcemia (hyperparathyroidism) and Zollinger-Ellison gastrinoma ulcers.",
+  "ideas": "thinks this is related to multiple endocrine neoplasia men1",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "calcium",
+      "test": "Total serum calcium",
+      "value": "11.7",
+      "unit": "mg/dL",
+      "reference_range": "8.6-10.2",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Multiple Endocrine Neoplasia Type 1 (MEN1) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Multiple Endocrine Neoplasia Type 1 (MEN1) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes screening for the classic MEN1 triad (parathyroid, pancreatic, and pituitary tumors) with biochemical testing and genetic counseling, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent kidney stones and severe stomach ulcers",
+      "Key HPI features: 41M with family history of gland tumors presenting with hypercalcemia (hyperparathyroidism) and Zollinger-Ellison gastrinoma ulcers.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Multiple Endocrine Neoplasia MEN1.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Multiple Endocrine Neoplasia Type 1 (MEN1).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Isolated primary hyperparathyroidism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of GI bleeding or perforation from severe ulcers — a surgical emergency."
+    ],
+    "management_principles": [
+      "Screen for the classic MEN1 triad with serum calcium, intact PTH, fasting gastrin, and a pituitary hormone panel (prolactin, IGF-1), and pursue genetic counseling and MEN1 mutation testing given the family history",
+      "Refer to endocrine surgery for parathyroidectomy and start a high-dose proton-pump inhibitor for gastrinoma-related ulcers while further workup proceeds",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Multiple Endocrine Neoplasia Type 1 (MEN1)",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/multiple-endocrine-neoplasia"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: recurrent kidney stones and severe stomach ulcers\n\n41M with family history of gland tumors presenting with hypercalcemia (hyperparathyroidism) and Zollinger-Ellison gastrinoma ulcers.",
+    "objective": "Complete vital signs and focused physical examination. Evaluate for pertinent signs.",
+    "assessment": "Multiple Endocrine Neoplasia Type 1 (MEN1), given the combination of hypercalcemia/hyperparathyroidism, Zollinger-Ellison-type ulcers, and a family history of glandular tumors.",
+    "plan": "Confirm hyperparathyroidism with serum calcium, albumin, and intact PTH, and evaluate for gastrinoma with fasting serum gastrin and secretin stimulation testing. Screen for other MEN1-associated tumors with a pituitary hormone panel and pancreatic/pituitary imaging. Start a high-dose proton-pump inhibitor for ulcer control while workup proceeds. Refer to endocrine surgery for parathyroidectomy and arrange genetic counseling and MEN1 mutation testing for the patient and at-risk family members."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Multiple Endocrine Neoplasia MEN1",
+    "Formulate prioritized differential diagnosis for recurrent kidney stones and severe stomach ulcers",
+    "Select appropriate laboratory and imaging studies for endocrinology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Multiple Endocrine Neoplasia Type 1 (MEN1)",
+    "one_liner": "A hereditary syndrome causing tumors in multiple endocrine glands together — here, parathyroid hyperplasia (hypercalcemia, kidney stones) plus a gastrin-secreting pancreatic tumor (severe peptic ulcers, Zollinger-Ellison syndrome).",
+    "differentials": [
+      "Isolated primary hyperparathyroidism",
+      "Isolated Zollinger-Ellison syndrome",
+      "MEN2 (different tumor combination)"
+    ],
+    "red_flags": [
+      "Signs of GI bleeding or perforation from severe ulcers — a surgical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Kidney stone history",
+        "say": "How many kidney stones have you had?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "kidney stones"
+        ]
+      },
+      {
+        "objective": "Ulcer symptoms",
+        "say": "How severe is your stomach pain, and have you had ulcers diagnosed before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ulcers",
+          "stomach pain"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have glandular tumors or similar conditions?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "tumors"
+        ]
+      },
+      {
+        "objective": "GI bleeding symptoms",
+        "say": "Have you had black stools or vomited blood?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Other endocrine symptoms",
+        "say": "Any other hormone-related symptoms, like headaches or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

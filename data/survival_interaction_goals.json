@@ -1,0 +1,161 @@
+{
+  "_schema_version": 1,
+  "_comment": "Reusable interaction goals for Survival English v3. A goal is the conversational job of the scene, not a fixed script.",
+  "goals": [
+    {
+      "id": "keep_smalltalk_alive",
+      "label": "Keep small talk alive",
+      "instruction": "Aim for natural small talk. React to the user's answer, share one tiny detail, and ask a specific follow-up.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "confirm_information",
+      "label": "Confirm information",
+      "instruction": "Make the user confirm a concrete detail such as a time, place, item, name, announcement, or instruction.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "repair_misunderstanding",
+      "label": "Repair misunderstanding",
+      "instruction": "Let a small misunderstanding surface. Give the user a chance to correct, clarify, or ask what you meant.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "joint_problem_solving",
+      "label": "Joint problem solving",
+      "instruction": "Treat the user like a temporary teammate. Ask what they heard, see, think, or can check next.",
+      "compatible_categories": ["Travel & Transit", "Campus & Lab", "Housing & Daily Life", "Hospital Hallway", "Unexpected Moments", "Shops & Services"]
+    },
+    {
+      "id": "polite_refusal_practice",
+      "label": "Polite refusal",
+      "instruction": "Make a reasonable request or offer. If the user clearly says no, accept it and continue naturally.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "boundary_or_space_negotiation",
+      "label": "Boundary or space negotiation",
+      "instruction": "Create a low-stakes negotiation around space, noise, time, chores, seating, belongings, or shared resources.",
+      "compatible_categories": ["Housing & Daily Life", "Travel & Transit", "Food & Drink", "Parties & Social", "Unexpected Moments"]
+    },
+    {
+      "id": "ask_for_or_give_directions",
+      "label": "Directions",
+      "instruction": "Push toward landmark-based directions, platform/line/floor confirmation, or an honest 'I'm not sure, let's check.'",
+      "compatible_categories": ["Travel & Transit", "Hospital Hallway", "Campus & Lab", "Unexpected Moments"]
+    },
+    {
+      "id": "choose_between_options",
+      "label": "Choose between options",
+      "instruction": "Offer two or three plausible options and make the user choose, compare, or ask for a recommendation.",
+      "compatible_categories": ["Food & Drink", "Shops & Services", "Parties & Social", "Travel & Transit", "Campus & Lab"]
+    },
+    {
+      "id": "clarify_price_or_terms",
+      "label": "Clarify price or terms",
+      "instruction": "Include a price, policy, condition, fee, timing window, or package option that the user should clarify.",
+      "compatible_categories": ["Shops & Services", "Food & Drink", "Travel & Transit", "Housing & Daily Life"]
+    },
+    {
+      "id": "readback_numbers_or_codes",
+      "label": "Read back numbers or codes",
+      "instruction": "Include one number, code, gate, time, size, unit, phone number, or appointment window. Reward the user for reading it back.",
+      "compatible_categories": ["Travel & Transit", "Shops & Services", "Housing & Daily Life", "Food & Drink", "Hospital Hallway"]
+    },
+    {
+      "id": "correct_wrong_assumption",
+      "label": "Correct a wrong assumption",
+      "instruction": "Begin with a plausible but wrong assumption about the user, item, name, location, order, or situation. Let the user correct it.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "make_or_decline_invitation",
+      "label": "Invitation",
+      "instruction": "Invite the user into a social action, quick activity, group, game, food choice, or shared plan. Accept yes, no, or hesitation.",
+      "compatible_categories": ["Parties & Social", "Campus & Lab", "Food & Drink", "Unexpected Moments"]
+    },
+    {
+      "id": "explain_simple_system",
+      "label": "Explain a simple system",
+      "instruction": "Make the conversation about how a local system works: ordering, transit, laundry, checkout, tickets, badges, forms, or machines.",
+      "compatible_categories": ["Travel & Transit", "Shops & Services", "Food & Drink", "Housing & Daily Life", "Campus & Lab", "Hospital Hallway"]
+    },
+    {
+      "id": "recover_from_awkwardness",
+      "label": "Recover from awkwardness",
+      "instruction": "Start from a small awkward moment. Give the user room to laugh, reassure, correct, or gracefully exit.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "ask_preference",
+      "label": "Ask preference",
+      "instruction": "Ask about a concrete preference and react naturally: food, drink, music, weather, seat, schedule, style, or plan.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "apologize_and_fix",
+      "label": "Apologize and fix",
+      "instruction": "You or someone else made a small mistake. Apologize briefly and move toward a practical fix.",
+      "compatible_categories": ["Food & Drink", "Shops & Services", "Housing & Daily Life", "Travel & Transit", "Unexpected Moments", "Campus & Lab"]
+    },
+    {
+      "id": "ask_for_small_help",
+      "label": "Ask for small help",
+      "instruction": "Ask the user for small, realistic help: watching, holding, checking, reading, choosing, spelling, moving, or confirming.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "share_observation",
+      "label": "Share observation",
+      "instruction": "Open with an observation about the environment, crowd, weather, food, machine, event, or awkward moment, then invite a response.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "schedule_or_coordinate",
+      "label": "Schedule or coordinate",
+      "instruction": "Make the user coordinate a time, deadline, pickup, delivery, meeting, visit, chore, or next step.",
+      "compatible_categories": ["Campus & Lab", "Shops & Services", "Housing & Daily Life", "Hospital Hallway", "Travel & Transit"]
+    },
+    {
+      "id": "soft_exit_practice",
+      "label": "Soft exit",
+      "instruction": "Let the conversation run just long enough that the user may need to end it politely or say they have to go.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "get_to_know_each_other",
+      "label": "Get to know each other",
+      "instruction": "Deepen the small talk into really getting to know each other. Ask a genuine follow-up about their life, then share something real about yourself in return, and keep building on it turn after turn instead of moving to a new topic.",
+      "compatible_categories": ["*"],
+      "requires_any_tags": ["hangout"]
+    },
+    {
+      "id": "swap_stories",
+      "label": "Swap stories",
+      "instruction": "Trade a real story of your own for one of theirs. React to their story in detail before offering a related story or memory of your own — do not just move on to a new topic.",
+      "compatible_categories": ["*"],
+      "requires_any_tags": ["hangout"]
+    },
+    {
+      "id": "go_deep_on_one_topic",
+      "label": "Go deep on one topic",
+      "instruction": "Once a topic naturally comes up, do not drop it after one exchange. Dig into it: ask why, ask for more detail, share your own take, and mildly agree or disagree with something specific they said.",
+      "compatible_categories": ["*"],
+      "requires_any_tags": ["hangout"]
+    },
+    {
+      "id": "catch_up_after_a_while",
+      "label": "Catch up",
+      "instruction": "Talk like two people catching up properly. Ask what is new, react to their updates, and loop back to something from earlier in the conversation before it winds down.",
+      "compatible_categories": ["*"],
+      "requires_any_tags": ["hangout"]
+    },
+    {
+      "id": "wind_down_and_debrief",
+      "label": "Wind down and debrief",
+      "instruction": "Keep a slow, reflective, end-of-day energy. Talk through how the day or event actually went, what was good or annoying about it, and what happens next — there is no urgency, just processing it together.",
+      "compatible_categories": ["*"],
+      "requires_any_tags": ["hangout"]
+    }
+  ]
+}

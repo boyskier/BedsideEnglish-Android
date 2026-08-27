@@ -1,0 +1,155 @@
+{
+  "id": "fm_013",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Wright",
+  "age": 34,
+  "gender": "male",
+  "chief_complaint": "6 months of excessive, uncontrollable worry about everyday routines with muscle tension, insomnia, and GAD-7 score 15",
+  "hpi_details": "34M presents with 6 months of excessive, difficult-to-control worry about everyday matters — his job performance, finances, and his family's health — occurring more days than not. He reports associated muscle tension, feeling constantly 'on edge,' difficulty concentrating, and trouble falling asleep due to racing thoughts. He has started avoiding coffee because it worsens his jitteriness. Denies discrete panic attacks, palpitations, or episodes of chest tightness. Denies any thoughts of self-harm. He has never taken medication or seen a therapist for this before.",
+  "ideas": "thinks he might just be a chronic worrier but it's starting to affect his daily life",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "gad7_screen",
+      "title": "GAD-7 anxiety screen",
+      "order_terms": [
+        "gad 7",
+        "gad-7",
+        "anxiety screen",
+        "anxiety questionnaire"
+      ],
+      "availability_message": "The GAD-7 result is now available.",
+      "results": [
+        {
+          "id": "gad7_score",
+          "test": "GAD-7 score",
+          "value": "15/21",
+          "reference_range": "0-4",
+          "flag": "high",
+          "collected_at": "During clinic assessment",
+          "note": "Severe anxiety symptoms"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Generalized Anxiety Disorder evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Generalized Anxiety Disorder is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Generalized Anxiety Disorder emphasizes first-line SSRI or SNRI pharmacotherapy combined with Cognitive Behavioral Therapy, with benzodiazepines avoided as routine therapy given their dependence and withdrawal risk.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: 6 months of excessive, uncontrollable worry about everyday routines with muscle tension, insomnia, and GAD-7 score 15",
+      "Key HPI features: 34M presents with 6 months of excessive, difficult-to-control worry about everyday matters — his job performance, finances, and his family's health — occurring more days than not. He reports associated muscle tension, feeling constantly 'on edge,' difficulty concentrating, and trouble falling asleep due to racing thoughts. He has started avoiding coffee because it worsens his jitteriness. Denies discrete panic attacks, palpitations, or episodes of chest tightness. Denies any thoughts of self-harm. He has never taken medication or seen a therapist for this before.",
+      "Objective/Exam findings: Vitals: HR 82, BP 128/80, Temp 36.8C. Physical exam unremarkable: no tremor, no exophthalmos, no thyromegaly or thyroid nodules, regular rhythm without resting tachycardia. Mental status exam: appears mildly restless and fidgety, mood 'anxious,' affect congruent, speech normal rate, thought process linear without evidence of psychosis, no suicidal or homicidal ideation. GAD-7 anxiety screen score: 15/21 (severe anxiety). Baseline TSH ordered to exclude hyperthyroidism as a mimicking/contributing cause.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Generalized Anxiety Disorder.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hyperthyroidism (should be screened) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Suicidal ideation or a specific plan — needs urgent psychiatric evaluation and safety assessment."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis using DSM-5 criteria (excessive, difficult-to-control worry about multiple domains for 6+ months, with at least 3 associated symptoms: restlessness, fatigue, poor concentration, irritability, muscle tension, sleep disturbance) and exclude medical mimics (hyperthyroidism, caffeine/stimulant excess, substance withdrawal) with a baseline TSH.",
+      "Initiate first-line pharmacotherapy with an SSRI (e.g., Escitalopram 10 mg PO daily, titrating as tolerated) or an SNRI, counseling that full response may take 4-6 weeks and starting at a low dose to minimize initial jitteriness/activation.",
+      "Refer for Cognitive Behavioral Therapy, which is equally effective to medication and provides durable long-term symptom control and relapse prevention.",
+      "Avoid routine use of benzodiazepines for ongoing management given their risk of tolerance, dependence, and withdrawal; reserve short, time-limited courses only for severe acute distress while awaiting SSRI/SNRI onset, with a clear taper plan."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "34M presenting with 6 months of excessive, difficult-to-control worry about work, finances, and family health, accompanied by muscle tension, restlessness, poor concentration, and insomnia, meeting DSM-5 criteria for Generalized Anxiety Disorder (GAD-7 15/21, severe). Denies discrete panic attacks or suicidal ideation.",
+    "objective": "Vitals: HR 82, BP 128/80, Temp 36.8C. Physical exam unremarkable: no tremor, no exophthalmos, no thyromegaly or thyroid nodules, regular rhythm without resting tachycardia. Mental status exam: appears mildly restless and fidgety, mood 'anxious,' affect congruent, speech normal rate, thought process linear without evidence of psychosis, no suicidal or homicidal ideation. GAD-7 anxiety screen score: 15/21 (severe anxiety). Baseline TSH ordered to exclude hyperthyroidism as a mimicking/contributing cause.",
+    "assessment": "Generalized Anxiety Disorder (GAD-7 15/21, severe), without evidence of hyperthyroidism or substance-induced anxiety on today's exam.",
+    "plan": "1. Order baseline TSH to exclude hyperthyroidism as a contributing/mimicking cause. 2. Initiate first-line SSRI pharmacotherapy: Escitalopram 5 mg PO daily for 1 week, then titrating to 10 mg daily, counseling that full response may take 4-6 weeks. 3. Refer for Cognitive Behavioral Therapy. 4. Provide sleep hygiene counseling and recommend reducing caffeine intake. 5. Avoid routine benzodiazepine prescribing given dependence risk; reassess in 2-4 weeks to track GAD-7 score and side effects."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Generalized Anxiety Disorder Outpatient Care",
+    "Formulate prioritized differential diagnosis for 6 months of excessive, uncontrollable worry about everyday routines with muscle tension, insomnia, and GAD-7 score 15",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Generalized Anxiety Disorder",
+    "one_liner": "Excessive, hard-to-control worry about everyday matters for at least six months, accompanied by muscle tension and insomnia — managed with an SSRI and CBT, avoiding benzodiazepines to prevent dependence.",
+    "differentials": [
+      "Hyperthyroidism (should be screened)",
+      "Panic disorder",
+      "Adjustment disorder"
+    ],
+    "red_flags": [
+      "Suicidal ideation or a specific plan — needs urgent psychiatric evaluation and safety assessment",
+      "Tremor, tachycardia, heat intolerance, or unintentional weight loss — hyperthyroidism can mimic or worsen anxiety and must be excluded",
+      "Panic attacks with chest pain or palpitations — cardiac causes must be excluded before attributing symptoms to anxiety"
+    ],
+    "must_ask": [
+      {
+        "objective": "Worry pattern",
+        "say": "What kinds of things do you find yourself worrying about, and can you control it?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "excessive worry",
+          "uncontrollable"
+        ]
+      },
+      {
+        "objective": "Physical symptoms",
+        "say": "Do you have muscle tension or trouble falling asleep?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tension",
+          "insomnia"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many months has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Impact on function",
+        "say": "How is this affecting your work or relationships?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Prior treatment or coping",
+        "say": "Have you tried anything to manage this, like medication or alcohol?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

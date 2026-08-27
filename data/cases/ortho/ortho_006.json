@@ -1,0 +1,149 @@
+{
+  "id": "ortho_006",
+  "system": "orthopedics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Master Foster",
+  "age": 13,
+  "gender": "male",
+  "chief_complaint": "progressive left groin and knee pain with limping in an obese adolescent boy",
+  "hpi_details": "13M brought by parents due to 3-month history of dull, aching left groin and anterior knee pain that worsens with sports and running. Over the past 2 weeks, parents noticed a pronounced limp and external rotation of the left foot when walking. No history of direct trauma.",
+  "ideas": "parents think it is growing pains or a strained thigh muscle from gym class",
+  "concerns": "parents worried because the limp has gotten steadily worse and he walks with his foot turned out",
+  "expectations": "want an X-ray to confirm it's not a bone tumor or serious injury",
+  "pmh": "Obesity (BMI 96th percentile for age)",
+  "medications": "None",
+  "social_hx": "Middle school student, sedentary video gaming habits",
+  "investigation_events": [{
+    "id": "urgent_bilateral_hip_radiographs",
+    "title": "Urgent bilateral hip radiographs",
+    "order_terms": ["hip x-ray", "hip radiograph", "pelvis x-ray", "frog-leg lateral", "bilateral hip"],
+    "availability_message": "Urgent bilateral hip radiographs are now available. The patient should remain strictly non-weight-bearing.",
+    "results": [{"id": "hip_xray", "test": "AP pelvis and frog-leg lateral hip radiographs", "value": "Posteroinferior displacement of the left capital femoral epiphysis with failure of Klein's line to intersect the epiphysis", "flag": "critical", "note": "Consistent with left slipped capital femoral epiphysis."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Slipped capital femoral epiphysis (SCFE), left hip evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Slipped capital femoral epiphysis (SCFE), left hip is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Strict immediate non-weight bearing on crutches or wheelchair to prevent further slippage or acute progression, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive left groin and knee pain with limping in an obese adolescent boy",
+      "Key HPI features: 13M brought by parents due to 3-month history of dull, aching left groin and anterior knee pain that worsens with sports and running. Over the past 2 weeks, parents noticed a pronounced limp and external rotation of the left foot when walking. No history of direct trauma.",
+      "Objective/Exam findings: Vitals: HR 78, BP 118/72, BMI 29.5 (97th percentile). Left hip exam shows restriction of internal rotation. Obligatory external rotation of the left hip during passive hip flexion (Drehmann sign positive). Bilateral hip AP and frog-leg lateral radiographs show displacement of the left femoral head epiphysis posteriorly and inferiorly relative to the femoral neck (ice cream falling off the cone sign). Klein line fails to intersect the lateral epiphysis on AP view.",
+      "Relevant background/PMH: Obesity (BMI 96th percentile for age)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Slipped capital femoral epiphysis (SCFE), left hip.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Transient synovitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Referred knee pain masking hip pathology."
+    ],
+    "management_principles": [
+      "Strict immediate non-weight bearing on crutches or wheelchair to prevent further slippage or acute progression",
+      "Urgent pediatric orthopedics consultation for in situ single-screw percutaneous epiphysiodesis of the left hip",
+      "Prophylactic pinning of contralateral right hip considered given obesity and high bilateral incidence"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "13M obese adolescent presenting with chronic progressive groin/knee pain and antalgic gait over 3 months without acute trauma.",
+    "objective": "Vitals: HR 78, BP 118/72, BMI 29.5 (97th percentile). Left hip exam shows restriction of internal rotation. Obligatory external rotation of the left hip during passive hip flexion (Drehmann sign positive). Bilateral hip AP and frog-leg lateral radiographs show displacement of the left femoral head epiphysis posteriorly and inferiorly relative to the femoral neck (ice cream falling off the cone sign). Klein line fails to intersect the lateral epiphysis on AP view.",
+    "assessment": "Left Slipped Capital Femoral Epiphysis (SCFE), stable type.",
+    "plan": "Strict immediate non-weight bearing on crutches or wheelchair to prevent further slippage or acute progression. Urgent pediatric orthopedics consultation for in situ single-screw percutaneous epiphysiodesis of the left hip. Prophylactic pinning of contralateral right hip considered given obesity and high bilateral incidence."
+  },
+  "learning_objectives": [
+    "Recognize typical demographic and clinical presentation of Slipped Capital Femoral Epiphysis (SCFE) in obese adolescents",
+    "Explain why referred knee pain is a common diagnostic trap delaying the diagnosis of pediatric hip pathology",
+    "Interpret Klein lines and frog-leg lateral radiographic signs of SCFE",
+    "Understand the strict non-weight bearing requirement immediately upon diagnosis prior to surgical pinning"
+  ],
+  "teaching": {
+    "diagnosis": "Slipped capital femoral epiphysis (SCFE), left hip",
+    "one_liner": "13M obese adolescent with 3 months of groin/knee pain and a worsening limp with the foot externally rotated.",
+    "differentials": [
+      "Transient synovitis",
+      "Legg-Calve-Perthes disease",
+      "Muscle strain",
+      "Septic hip"
+    ],
+    "red_flags": [
+      "Referred knee pain masking hip pathology",
+      "Progressive limp with external rotation",
+      "Obesity"
+    ],
+    "must_ask": [
+      {
+        "objective": "Clarify the referred knee pain pattern",
+        "say": "Even though he says his knee hurts, does he ever mention hip or groin pain too?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "referred knee pain",
+          "groin pain"
+        ]
+      },
+      {
+        "objective": "Characterize the limp and foot position",
+        "say": "Have you noticed his foot turning outward when he walks?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "external rotation",
+          "limp"
+        ]
+      },
+      {
+        "objective": "Ask about trauma history",
+        "say": "Was there any specific injury or fall before this started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "trauma history"
+        ]
+      },
+      {
+        "objective": "Ask about weight and activity level",
+        "say": "Can you tell me about his weight and typical daily activity?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "obesity",
+          "activity level"
+        ]
+      },
+      {
+        "objective": "Explain strict non-weight bearing instructions",
+        "say": "It is critical that he does not put weight on that leg until a specialist assesses him, because even walking could worsen the slip.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "non-weight bearing",
+          "urgent orthopedic referral"
+        ]
+      }
+    ]
+  }
+}

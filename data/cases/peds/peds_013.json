@@ -1,0 +1,150 @@
+{
+  "id": "peds_013",
+  "system": "pediatrics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Williams",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "newborn infant choking, coughing, and turning cyanotic with excessive drooling on first feeding attempt",
+  "hpi_details": "1-day-old infant presenting with excessive drooling and bubbling mucus from the mouth, with choking, coughing, and cyanosis on the first attempted feeding.",
+  "ideas": "thinks this is related to tracheoesophageal fistula tef with esophageal atresia",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "investigation_events": [{
+    "id": "esophageal_atresia_confirmation",
+    "title": "Immediate tube-passage study and radiograph",
+    "order_terms": ["orogastric tube", "nasogastric tube", "NG tube", "chest x-ray", "chest radiograph", "chest and abdominal radiograph"],
+    "availability_message": "The tube-passage and radiographic findings are now available. Keep the infant NPO with continuous proximal-pouch suction and urgent pediatric surgical consultation.",
+    "results": [
+      {"id": "tube_passage", "test": "Orogastric tube passage", "value": "Tube stops at approximately 10 cm from the gums and cannot be advanced", "flag": "critical"},
+      {"id": "chest_abdominal_radiograph", "test": "Chest and abdominal radiograph", "value": "Orogastric tube coils in the proximal esophageal pouch; gas is present in the stomach and bowel, consistent with esophageal atresia and a distal tracheoesophageal fistula", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Tracheoesophageal fistula with esophageal atresia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tracheoesophageal fistula with esophageal atresia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate NPO status with continuous proximal-pouch suction while confirming the diagnosis and screening for VACTERL anomalies before urgent surgical repair, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: newborn infant choking, coughing, and turning cyanotic with excessive drooling on first feeding attempt",
+      "Key HPI features: 1-day-old infant presenting with excessive drooling and bubbling mucus from the mouth, with choking, coughing, and cyanosis on the first attempted feeding.",
+      "Objective/Exam findings: Assess respiratory status closely for desaturation with feeding attempts. Copious oral secretions requiring frequent suctioning; an orogastric/nasogastric tube meets resistance and coils in the proximal esophageal pouch. Abdominal distension with audible bowel sounds suggests air entering via a distal fistula. Screen for VACTERL-associated anomalies (vertebral, anal, cardiac, renal, limb).",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tracheoesophageal fistula with esophageal atresia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Laryngeal cleft without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Choking and cyanosis with first feed."
+    ],
+    "management_principles": [
+      "Stop all oral feeding immediately and place a Replogle tube on continuous suction in the proximal esophageal pouch to manage secretions and reduce aspiration risk",
+      "Confirm the diagnosis with an attempted orogastric/nasogastric tube (coils in the proximal pouch) and chest/abdominal radiograph; air in the stomach indicates a distal fistula",
+      "Screen for VACTERL-associated anomalies (echocardiogram, renal ultrasound, spine/limb exam) before surgery, since TEF frequently occurs with other congenital defects",
+      "Consult pediatric surgery urgently for operative repair (fistula ligation and primary esophageal anastomosis), staged if the infant is unstable or the esophageal gap is long."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "1-day-old infant presenting with excessive drooling and bubbling mucus from the mouth, with choking, coughing, and cyanosis on the first attempted feeding.",
+    "objective": "Respiratory status assessed closely for desaturation with feeding attempts. Copious oral secretions requiring frequent suctioning; an orogastric/nasogastric tube meets resistance and coils in the proximal esophageal pouch. Abdominal distension with audible bowel sounds suggests air entering via a distal fistula. Screen for VACTERL-associated anomalies.",
+    "assessment": "Findings concerning for tracheoesophageal fistula with esophageal atresia, pending confirmation with tube-passage study and chest/abdominal radiograph.",
+    "plan": "Stop all oral feeding immediately, place a Replogle tube on continuous suction in the proximal pouch, and position the infant with the head elevated to reduce aspiration risk. Confirm the diagnosis with chest/abdominal radiograph and screen for VACTERL anomalies (echocardiogram, renal ultrasound, spine/limb exam). Consult pediatric surgery urgently for operative repair."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Tracheoesophageal Fistula TEF with Esophageal Atresia",
+    "Formulate prioritized differential diagnosis for newborn infant choking, coughing, and turning cyanotic with excessive drooling on first feeding attempt",
+    "Select appropriate imaging and VACTERL screening studies for suspected tracheoesophageal fistula with esophageal atresia",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Tracheoesophageal fistula with esophageal atresia",
+    "one_liner": "1-day-old infant with choking, coughing, cyanosis, and excessive drooling on first feeding attempt.",
+    "differentials": [
+      "Laryngeal cleft",
+      "Vascular ring",
+      "Congenital diaphragmatic hernia"
+    ],
+    "red_flags": [
+      "Choking and cyanosis with first feed",
+      "Excessive drooling/inability to handle secretions",
+      "Coiling of catheter on imaging"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the choking episode with feeding",
+        "say": "What exactly happened when you first tried to feed him — did he choke or turn blue?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "choking with feed",
+          "cyanosis"
+        ]
+      },
+      {
+        "objective": "Ask about excessive oral secretions",
+        "say": "Have you noticed him having a lot of bubbly mucus or drooling constantly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "excessive secretions"
+        ]
+      },
+      {
+        "objective": "Ask about prenatal history",
+        "say": "Was there any mention during pregnancy of too much amniotic fluid (polyhydramnios)?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "polyhydramnios"
+        ]
+      },
+      {
+        "objective": "Explain why feeding must stop immediately",
+        "say": "We need to stop all feeding attempts right now and confirm this with an X-ray before anything else.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "NPO",
+          "confirm with imaging"
+        ]
+      },
+      {
+        "objective": "Explain the surgical repair plan",
+        "say": "This requires urgent surgery to separate the abnormal connection and repair the esophagus.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "surgical repair"
+        ]
+      }
+    ]
+  }
+}

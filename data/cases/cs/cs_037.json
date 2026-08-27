@@ -1,0 +1,148 @@
+{
+  "id": "cs_037",
+  "system": "cs",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Taylor",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "persistent high fever and loculated pleural fluid with pus",
+  "hpi_details": "A 53-year-old male presents to the clinic with persistent high fever and loculated pleural fluid with pus. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to empyema",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "empyema_pleural_fluid",
+      "title": "Pleural fluid microscopy and culture",
+      "order_terms": ["thoracentesis", "pleural tap", "pleural fluid culture", "pleural aspiration"],
+      "availability_message": "The pleural fluid microscopy and culture results are now available.",
+      "results": [
+        {
+          "id": "purulent_pleural_fluid",
+          "test": "Pleural fluid analysis",
+          "value": "Frank pus; pH 6.88; glucose 18 mg/dL",
+          "unit": "",
+          "reference_range": "Clear fluid; pH >7.20; glucose >60 mg/dL",
+          "flag": "critical",
+          "specimen": "Pleural fluid",
+          "collected_at": "Pleural aspiration"
+        },
+        {
+          "id": "empyema_culture",
+          "test": "Pleural fluid culture",
+          "value": "Streptococcus pneumoniae",
+          "unit": "",
+          "reference_range": "No growth",
+          "flag": "positive",
+          "specimen": "Pleural fluid",
+          "collected_at": "Before targeted antibiotics"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Empyema evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Empyema is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Empyema requires urgent pleural drainage plus appropriate antimicrobial therapy; intrapleural enzyme therapy or surgical decortication is considered when drainage is inadequate or sepsis persists.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: persistent high fever and loculated pleural fluid with pus",
+      "Key HPI features: A 53-year-old male presents to the clinic with persistent high fever and loculated pleural fluid with pus. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Empyema.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Empyema.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple parapneumonic effusion without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Persistent high fever despite drainage."
+    ],
+    "management_principles": [
+      "Urgently drain the infected pleural space and begin appropriate antimicrobial therapy; consider intrapleural enzyme therapy or VATS decortication when drainage is inadequate or sepsis persists",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of persistent high fever and loculated pleural fluid with pus. HPI: bacterial infection of pleural space.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Empyema.",
+    "assessment": "Condition highly suspicious for Empyema.",
+    "plan": "Urgently drain the infected pleural space and begin appropriate antimicrobial therapy. Consider intrapleural enzyme therapy or VATS decortication when drainage is inadequate or sepsis persists."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Empyema",
+    "Select appropriate diagnostic workup for Empyema",
+    "Implement evidence-based management plan: Urgently drain the infected pleural space, provide antimicrobial therapy, and escalate to intrapleural enzyme therapy or surgery when needed"
+  ],
+  "teaching": {
+    "diagnosis": "Empyema",
+    "one_liner": "A bacterial infection of the pleural space causing loculated, pus-filled fluid — needs chest tube drainage, fibrinolytics, or surgical decortication depending on severity.",
+    "differentials": [
+      "Simple parapneumonic effusion",
+      "Lung abscess"
+    ],
+    "red_flags": [
+      "Persistent high fever despite drainage"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fever duration",
+        "say": "How long has the fever lasted?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Preceding illness",
+        "say": "Did this follow a chest infection or pneumonia?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "How is your breathing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Chest pain",
+        "say": "Any chest pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost weight?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

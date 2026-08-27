@@ -1,0 +1,170 @@
+{
+  "id": "hemato_009",
+  "system": "hematology_oncology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Carter",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "intense itching after hot showers, ruddy complexion, and burning toes",
+  "hpi_details": "56F presenting with aquagenic pruritus, erythromelalgia, splenomegaly, hematocrit 58%, and suppressed EPO level. JAK2 V617F mutation positive.",
+  "ideas": "thinks this is related to polycythemia vera jak2 mutation",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "hematocrit",
+      "test": "Hematocrit",
+      "value": "58",
+      "unit": "%",
+      "reference_range": "36-46",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "erythropoietin",
+      "test": "Serum erythropoietin",
+      "value": "1.8",
+      "unit": "mIU/mL",
+      "reference_range": "2.6-18.5",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "jak2_v617f",
+      "test": "JAK2 V617F mutation",
+      "value": "Detected",
+      "reference_range": "Not detected",
+      "flag": "abnormal",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Polycythemia Vera evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Polycythemia Vera is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes therapeutic phlebotomy to keep hematocrit below 45%, low-dose aspirin for thrombosis prophylaxis, and cytoreductive therapy (hydroxyurea) for high-risk patients, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: intense itching after hot showers, ruddy complexion, and burning toes",
+      "Key HPI features: 56F presenting with aquagenic pruritus, erythromelalgia, splenomegaly, hematocrit 58%, and suppressed EPO level. JAK2 V617F mutation positive.",
+      "Objective/Exam findings: Vitals: Temp 36.8C, HR 78, BP 148/92, SpO2 97% on room air. Plethoric (ruddy) facial complexion, conjunctival injection, palpable splenomegaly (spleen tip 3-4cm below left costal margin), excoriations from scratching, erythema and warmth of the toes bilaterally. Bloods: Hemoglobin 19.8 g/dL, Hematocrit 58%, WBC 12,500/uL, Platelets 480,000/uL, serum erythropoietin (EPO) suppressed/low. JAK2 V617F mutation positive.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Polycythemia Vera.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Secondary polycythemia (from hypoxia/smoking) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Symptoms of stroke or clot (weakness, vision changes) — hyperviscosity raises thrombosis risk."
+    ],
+    "management_principles": [
+      "Therapeutic phlebotomy to reduce hematocrit below 45% (target per CYTO-PV trial), removing 250-500mL per session and repeating as needed",
+      "Start low-dose aspirin 81mg daily for thrombosis prophylaxis unless contraindicated",
+      "Risk-stratify by age and thrombosis history: reserve cytoreductive therapy (Hydroxyurea 500-1000mg daily) for high-risk patients (age >60 or prior thrombosis)",
+      "Confirm diagnosis with JAK2 V617F mutation testing and serum erythropoietin level; monitor CBC every 3 months"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Polycythemia Vera JAK2 Mutation: intense itching after hot showers, ruddy complexion, and burning toes. 56F presenting with aquagenic pruritus, erythromelalgia, splenomegaly, hematocrit 58%, and suppressed EPO level. JAK2 V617F mutation positive.",
+    "objective": "Vitals: Temp 36.8C, HR 78, BP 148/92, SpO2 97% on room air. Plethoric (ruddy) facial complexion, conjunctival injection, palpable splenomegaly (spleen tip 3-4cm below left costal margin), excoriations from scratching, erythema and warmth of the toes bilaterally. Bloods: Hemoglobin 19.8 g/dL, Hematocrit 58%, WBC 12,500/uL, Platelets 480,000/uL, serum erythropoietin (EPO) suppressed/low. JAK2 V617F mutation positive.",
+    "assessment": "Polycythemia Vera (PV) presenting with aquagenic pruritus, erythromelalgia, and plethora secondary to a JAK2 V617F-driven myeloproliferative process with hyperviscosity risk.",
+    "plan": "1. Therapeutic phlebotomy to reduce hematocrit to target <45%, removing 250-500mL initially and repeating as needed. 2. Start low-dose aspirin 81mg daily for thrombosis prophylaxis. 3. Risk-stratify: age 56 with no prior thrombosis places her in the lower-risk category — phlebotomy plus aspirin is primary therapy; reserve hydroxyurea for high-risk features. 4. Confirm JAK2 V617F mutation (already positive) and suppressed serum EPO to satisfy WHO diagnostic criteria; consider bone marrow biopsy if diagnosis remains uncertain. 5. Refer to hematology for ongoing CBC monitoring every 3 months and counseling on cardiovascular risk reduction and hydration."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Polycythemia Vera JAK2 Mutation",
+    "Formulate prioritized differential diagnosis for intense itching after hot showers, ruddy complexion, and burning toes",
+    "Select appropriate laboratory and imaging studies for hematology_oncology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Polycythemia Vera",
+    "one_liner": "A JAK2-mutated myeloproliferative disorder causing overproduction of red blood cells, presenting with itching after hot water, a ruddy complexion, and burning pain in the extremities.",
+    "differentials": [
+      "Secondary polycythemia (from hypoxia/smoking)",
+      "Dehydration (relative polycythemia)",
+      "Essential thrombocythemia"
+    ],
+    "red_flags": [
+      "Symptoms of stroke or clot (weakness, vision changes) — hyperviscosity raises thrombosis risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Itching pattern",
+        "say": "Does the itching happen specifically after hot showers?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "hot shower",
+          "itching",
+          "aquagenic"
+        ]
+      },
+      {
+        "objective": "Skin color",
+        "say": "Have people commented that your face looks unusually red or flushed?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "ruddy",
+          "flushed",
+          "red"
+        ]
+      },
+      {
+        "objective": "Extremity burning",
+        "say": "Do your toes or fingers burn or feel painfully hot?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "burning",
+          "toes",
+          "erythromelalgia"
+        ]
+      },
+      {
+        "objective": "Headache or dizziness",
+        "say": "Any headaches, dizziness, or visual changes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "dizziness",
+          "vision"
+        ]
+      },
+      {
+        "objective": "Smoking and lung history",
+        "say": "Do you smoke, or have any lung conditions?",
+        "domains": [
+          "smoking",
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

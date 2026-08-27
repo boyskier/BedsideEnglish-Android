@@ -1,0 +1,194 @@
+{
+  "id": "gs_001",
+  "system": "general_surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Irwin",
+  "age": 26,
+  "gender": "male",
+  "chief_complaint": "periumbilical pain migrating to right lower abdominal quadrant with fever and vomiting",
+  "hpi_details": "26M presents with 18-hour history of abdominal pain that began as a dull, vague ache around his belly button (periumbilical) 12 hours ago, but over the past 6 hours has shifted and intensified into a sharp, constant, excruciating pain localized to his right lower quadrant (RLQ). Associated with anorexia, nausea, one episode of vomiting after the pain started, and low-grade fever.",
+  "ideas": "thinks his appendix is infected and about to burst",
+  "concerns": "worried about needing emergency surgery right away",
+  "expectations": "wants IV pain killers, antibiotics, and an operation to remove his appendix safely",
+  "pmh": "No prior surgery or health conditions",
+  "medications": "None",
+  "social_hx": "Software engineer, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_appendicitis_workup",
+      "title": "Urgent appendicitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "white blood cell count",
+        "crp",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The urgent appendicitis results are now available; analgesia, IV fluids, antibiotics, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "15.8",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "crp",
+          "test": "C-reactive protein",
+          "value": "42",
+          "unit": "mg/L",
+          "reference_range": "<5",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ct_appendix",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Dilated appendix measuring 11 mm with an appendicolith and periappendiceal fat stranding; no abscess or free air",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Appendicitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Appendicitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes keeping the patient NPO, IV fluid resuscitation, IV analgesia, pre-operative antibiotics, and urgent surgical consultation for appendectomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: periumbilical pain migrating to right lower abdominal quadrant with fever and vomiting",
+      "Key HPI features: 26M presents with 18-hour history of abdominal pain that began as a dull, vague ache around his belly button (periumbilical) 12 hours ago, but over the past 6 hours has shifted and intensified into a sharp, constant, excruciating pain localized to his right lower quadrant (RLQ). Associated with anorexia, nausea, one episode of vomiting after the pain started, and low-grade fever.",
+      "Objective/Exam findings: Vitals: Temp 38.2C, HR 98, BP 124/78. Abdominal exam reveals localized involuntary guarding, rebound tenderness, and maximal point tenderness at McBurney's point (1/3 distance from right anterior superior iliac spine to umbilicus). Positive Rovsing's sign (LLQ palpation causes RLQ pain), positive Psoas sign (pain on right hip extension), and positive Obturator sign (pain on internal rotation of flexed right hip). Bloods: WBC 15,800 /uL with 86% neutrophils (left shift), CRP 42 mg/L. Abdominal CT with IV contrast demonstrates an enlarged, non-compressible appendix measuring 11 mm with periappendiceal fat stranding and an appendicolith at the base.",
+      "Relevant background/PMH: No prior surgery or health conditions"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Appendicitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Mesenteric adenitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Diffuse rigid abdomen (suggests perforation)."
+    ],
+    "management_principles": [
+      "Keep patient NPO, initiate IV normal saline maintenance hydration, and administer IV opioid analgesia",
+      "Start pre-operative broad-spectrum IV antibiotics covering enteric Gram-negatives and anaerobes (Cefoxitin 2g IV or Cefazolin + Metronidazole)",
+      "Obtain urgent General Surgery consultation for laparoscopic appendectomy within 12-24 hours"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: periumbilical pain migrating to right lower abdominal quadrant with fever and vomiting\n\n26M presents with 18-hour history of abdominal pain that began as a dull, vague ache around his belly button (periumbilical) 12 hours ago, but over the past 6 hours has shifted and intensified into a sharp, constant, excruciating pain localized to his right lower quadrant (RLQ). Associated with anorexia, nausea, one episode of vomiting after the pain started, and low-grade fever.",
+    "objective": "Vitals: Temp 38.2C, HR 98, BP 124/78. Abdominal exam reveals localized involuntary guarding, rebound tenderness, and maximal point tenderness at McBurney's point (1/3 distance from right anterior superior iliac spine to umbilicus). Positive Rovsing's sign (LLQ palpation causes RLQ pain), positive Psoas sign (pain on right hip extension), and positive Obturator sign (pain on internal rotation of flexed right hip). Bloods: WBC 15,800 /uL with 86% neutrophils (left shift), CRP 42 mg/L. Abdominal CT with IV contrast demonstrates an enlarged, non-compressible appendix measuring 11 mm with periappendiceal fat stranding and an appendicolith at the base.",
+    "assessment": "Acute Uncomplicated Appendicitis.",
+    "plan": "1. Keep patient NPO, initiate IV normal saline maintenance hydration, and administer IV opioid analgesia. 2. Start pre-operative broad-spectrum IV antibiotics covering enteric Gram-negatives and anaerobes (Cefoxitin 2g IV or Cefazolin + Metronidazole). 3. Obtain urgent General Surgery consultation for laparoscopic appendectomy within 12-24 hours."
+  },
+  "learning_objectives": [
+    "Recognize classical visceral-to-somatic pain migration from periumbilical region to McBurney's point",
+    "Elicit and interpret peritoneal irritation signs (Rovsing's, Psoas, Obturator, rebound tenderness)",
+    "Execute pre-operative preparation protocol including NPO status, IV antibiotics, and fluid resuscitation",
+    "Outline surgical anatomy and laparoscopic approach for acute appendicitis"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Appendicitis",
+    "one_liner": "Obstruction of the appendiceal lumen causing pain that classically starts vaguely around the navel and migrates to the right lower quadrant as inflammation reaches the peritoneum.",
+    "differentials": [
+      "Mesenteric adenitis",
+      "Ovarian cyst / torsion (in females)",
+      "Gastroenteritis"
+    ],
+    "red_flags": [
+      "Diffuse rigid abdomen (suggests perforation)",
+      "High fever with tachycardia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Migration of the pain",
+        "say": "Did the pain start around your belly button and then move to your lower right side?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "migrate",
+          "moved",
+          "belly button",
+          "right side"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "When exactly did the pain start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Associated GI symptoms",
+        "say": "Have you lost your appetite, felt nauseated, or vomited?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "appetite",
+          "nausea",
+          "vomit"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Aggravating movement",
+        "say": "Does moving, coughing, or pressing on your belly make the pain worse?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "moving",
+          "coughing",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Prior similar episodes or surgery",
+        "say": "Have you ever had abdominal surgery, or felt pain like this before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

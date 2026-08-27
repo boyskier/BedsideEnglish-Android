@@ -1,0 +1,129 @@
+{
+  "id": "neuro_035",
+  "system": "neuro",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Thomas",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "ascending symmetric flaccid paralysis and absent deep tendon reflexes",
+  "hpi_details": "A 47-year-old male presents to the clinic with ascending symmetric flaccid paralysis and absent deep tendon reflexes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gbs",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_gbs_respiratory_assessment",
+      "title": "Emergency bedside respiratory measurements",
+      "order_terms": ["forced vital capacity", "FVC", "negative inspiratory force", "NIF", "respiratory monitoring"],
+      "availability_message": "Bedside respiratory measurements are now available. Admission and serial monitoring should proceed immediately.",
+      "results": [
+        {"id": "fvc", "test": "Bedside forced vital capacity", "value": "18", "unit": "mL/kg", "reference_range": ">20", "flag": "low"},
+        {"id": "nif", "test": "Negative inspiratory force", "value": "-29", "unit": "cm H2O", "reference_range": "More negative than -30", "flag": "abnormal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Guillain-Barre Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Guillain-Barre Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Guillain-Barre Syndrome: IVIG or Plasmapheresis, respiratory monitoring, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: ascending symmetric flaccid paralysis and absent deep tendon reflexes",
+      "Key HPI features: A 47-year-old male presents to the clinic with ascending symmetric flaccid paralysis and absent deep tendon reflexes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Guillain-Barre Syndrome.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Guillain-Barre Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Transverse myelitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Respiratory or bulbar involvement."
+    ],
+    "management_principles": [
+      "Plan for Guillain-Barre Syndrome: IVIG or Plasmapheresis, respiratory monitoring",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of ascending symmetric flaccid paralysis and absent deep tendon reflexes. HPI: Campylobacter infection, molecular mimicry.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Guillain-Barre Syndrome.",
+    "assessment": "Condition highly suspicious for Guillain-Barre Syndrome.",
+    "plan": "Urgently admit for neurology assessment and serial respiratory monitoring; use IVIG or plasmapheresis for clinically significant Guillain-Barre syndrome. Counsel the patient to seek immediate care for breathing or swallowing difficulty."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Guillain-Barre Syndrome",
+    "Select appropriate diagnostic workup for Guillain-Barre Syndrome",
+    "Implement evidence-based management plan: IVIG or Plasmapheresis, respiratory monitoring"
+  ],
+  "teaching": {
+    "diagnosis": "Guillain-Barre Syndrome",
+    "one_liner": "Ascending symmetric flaccid paralysis with absent reflexes, often after a Campylobacter infection triggering molecular mimicry.",
+    "differentials": [
+      "Transverse myelitis"
+    ],
+    "red_flags": [
+      "Respiratory or bulbar involvement"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ascending pattern",
+        "say": "Did weakness start in the legs and move upward?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Preceding infection",
+        "say": "Any recent diarrhea or infection?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Breathing/swallowing",
+        "say": "Any trouble breathing or swallowing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Reflexes/sensation",
+        "say": "Any numbness along with the weakness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Progression speed",
+        "say": "How fast has this been worsening?",
+        "domains": [
+          "progression"
+        ]
+      }
+    ]
+  }
+}

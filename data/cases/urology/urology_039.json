@@ -1,0 +1,152 @@
+{
+  "id": "urology_039",
+  "system": "urology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. King",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "profuse purulent urethral discharge and severe dysuria",
+  "hpi_details": "A 59-year-old male presents to the clinic with profuse purulent urethral discharge and severe dysuria. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to urethritis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Gonococcal Urethritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Gonococcal Urethritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Obtain gonorrhea/chlamydia NAAT and offer HIV and syphilis testing; treat suspected uncomplicated gonorrhea promptly with guideline-concordant ceftriaxone, adding doxycycline only when chlamydia has not been excluded and it is not contraindicated.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profuse purulent urethral discharge and severe dysuria",
+      "Key HPI features: A 59-year-old male presents to the clinic with profuse purulent urethral discharge and severe dysuria. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Gonococcal Urethritis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Gonococcal Urethritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing epididymo-orchitis, disseminated gonococcal infection, severe systemic illness, or failure to arrange partner treatment and abstinence counseling."
+    ],
+    "management_principles": [
+      "Collect NAAT before treatment when feasible without delaying care; treat suspected uncomplicated gonorrhea with guideline-concordant ceftriaxone and add doxycycline only if chlamydia has not been excluded and it is appropriate.",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of profuse purulent urethral discharge and severe dysuria. HPI: gonococcal urethritis.",
+    "objective": "Obtain first-catch urine or urethral NAAT for gonorrhea and chlamydia before treatment when feasible; offer HIV and syphilis tests and examine for epididymal tenderness, rash, and arthritis.",
+    "assessment": "Urethritis, highly suspicious for gonococcal infection; chlamydia and other STI causes remain possible.",
+    "plan": "Treat promptly with guideline-concordant ceftriaxone. Add doxycycline only if chlamydia has not been excluded and it is appropriate. Advise no sexual contact until seven days after treatment and partners have been treated; arrange partner notification/testing and follow-up. Escalate for testicular pain/swelling, fever, rash, or joint pain."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Gonococcal Urethritis",
+    "Select appropriate diagnostic workup for Gonococcal Urethritis",
+      "Collect STI tests and provide guideline-concordant treatment, partner management, and abstinence counseling"
+  ],
+  "teaching": {
+    "diagnosis": "Gonococcal Urethritis",
+    "one_liner": "Urology evaluation for patient presenting with profuse purulent urethral discharge and severe dysuria.",
+    "differentials": [
+      "Chlamydial urethritis",
+      "Urinary tract infection",
+      "Reactive urethritis (Reiter syndrome)"
+    ],
+    "red_flags": [
+      "Fever, rash, migratory joint pain, or severe systemic illness (possible disseminated gonococcal infection)",
+      "Testicular pain or swelling suggesting epididymo-orchitis or torsion"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and character of discharge",
+        "say": "When did the discharge start, and can you describe its color and thickness?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "discharge",
+          "color",
+          "thick",
+          "onset",
+          "purulent"
+        ]
+      },
+      {
+        "objective": "Sexual history and partner exposure",
+        "say": "When was your last sexual contact, and does your partner have any symptoms?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "sexual contact",
+          "partner",
+          "exposure",
+          "unprotected"
+        ]
+      },
+      {
+        "objective": "Associated symptoms - dysuria, testicular pain",
+        "say": "Do you have burning with urination, or any pain or swelling in your testicles?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dysuria",
+          "burning",
+          "testicular pain",
+          "swelling"
+        ]
+      },
+      {
+        "objective": "Prior STI history and testing",
+        "say": "Have you been diagnosed with any sexually transmitted infections before, or tested for HIV?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "STI",
+          "history",
+          "HIV",
+          "tested"
+        ]
+      },
+      {
+        "objective": "Partner notification and treatment concerns",
+        "say": "Are you comfortable letting your partner know so they can get tested and treated too?",
+        "domains": [
+          "concerns",
+          "expectations"
+        ],
+        "keywords": [
+          "partner notification",
+          "treatment",
+          "comfortable"
+        ]
+      }
+    ]
+  }
+}

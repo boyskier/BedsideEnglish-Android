@@ -1,0 +1,147 @@
+{
+  "id": "fm_043",
+  "system": "fm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Moore",
+  "age": 31,
+  "gender": "female",
+  "chief_complaint": "seeking reliable birth control, forgets daily pills",
+  "hpi_details": "A 31-year-old female presents to discuss reliable contraception because she often forgets daily pills. She has no acute symptoms.",
+  "ideas": "thinks it might be related to contraceptive_larc",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "Combined oral contraceptive pill (often missed)",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_pregnancy_test",
+      "title": "Point-of-care urine pregnancy test",
+      "order_terms": [
+        "pregnancy test",
+        "urine pregnancy test",
+        "urine hcg",
+        "hcg"
+      ],
+      "availability_message": "The point-of-care urine pregnancy test is now available.",
+      "results": [
+        {
+          "id": "urine_hcg",
+          "test": "Urine hCG",
+          "value": "Negative",
+          "reference_range": "Negative",
+          "flag": "normal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Contraceptive Counseling (LARC candidate) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Contraceptive Counseling (LARC candidate) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Counsel on all appropriate contraceptive options, including IUDs and implants; establish that the patient is not pregnant, review contraindications and preferences, and advise that condoms are still needed for STI prevention.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: seeking reliable birth control, forgets daily pills",
+      "Key HPI features: A 31-year-old female presents to discuss reliable contraception because she often forgets daily pills. She has no acute symptoms.",
+      "Objective/Exam findings: Normal vital signs, urine pregnancy test negative, no signs of pelvic infection.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Contraceptive Counseling (LARC candidate).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs or symptoms of pregnancy (missed period, positive test) — must be excluded before device insertion."
+    ],
+    "management_principles": [
+      "Counsel on IUDs and implants after pregnancy assessment, preference review, and contraindication screening; advise condoms for STI prevention",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of seeking reliable birth control, forgets daily pills. HPI: Frequently forgets to take her daily combined oral contraceptive pill and wants a more reliable method; no acute symptoms.",
+    "objective": "Normal vital signs, urine pregnancy test negative, no signs of pelvic infection.",
+    "assessment": "Candidate for long-acting reversible contraception (IUD or implant) given difficulty with daily pill adherence.",
+    "plan": "Use shared decision-making to discuss IUDs, implants, and other methods. Reasonably exclude pregnancy before placement, review relevant contraindications and bleeding preferences, and offer STI screening based on risk; counsel that condoms reduce STI risk."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Contraceptive counseling LARC",
+    "Select appropriate diagnostic workup for Contraceptive counseling LARC",
+    "Implement evidence-based management plan: patient-centered LARC counseling with pregnancy assessment and STI prevention counseling"
+  ],
+  "teaching": {
+    "diagnosis": "Contraceptive Counseling (LARC candidate)",
+    "one_liner": "A patient who struggles to remember daily pills, for whom a long-acting reversible contraceptive (IUD or implant) removes the adherence burden entirely.",
+    "differentials": [
+      "Pregnancy",
+      "Sexually transmitted infection",
+      "Contraindication to a specific contraceptive method"
+    ],
+    "red_flags": [
+      "Signs or symptoms of pregnancy (missed period, positive test) — must be excluded before device insertion",
+      "Unexplained or abnormal vaginal bleeding — needs evaluation before an IUD is placed",
+      "Signs of active pelvic infection or STI (pain, discharge, fever) — contraindicated for IUD insertion until treated"
+    ],
+    "must_ask": [
+      {
+        "objective": "Current method issues",
+        "say": "What has been hard about your current birth control?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "forgets pills"
+        ]
+      },
+      {
+        "objective": "Pregnancy plans",
+        "say": "Are you hoping to avoid pregnancy for a long time, or just for now?",
+        "domains": [
+          "expectations"
+        ]
+      },
+      {
+        "objective": "Menstrual history",
+        "say": "How are your periods now?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about an IUD or implant?",
+        "domains": [
+          "concerns"
+        ]
+      },
+      {
+        "objective": "Sexual history",
+        "say": "Any history of sexually transmitted infections?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

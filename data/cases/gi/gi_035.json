@@ -1,0 +1,162 @@
+{
+  "id": "gi_035",
+  "system": "gi",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Mitchell",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "chronic bloating, abdominal gas, and soft stools after dairy products",
+  "hpi_details": "47-year-old male presents with a 6-month history of abdominal bloating, increased flatulence, and loose stools occurring 1-2 hours after consuming dairy products like milk and ice cream. Denies weight loss, bloody stools, or nighttime awakenings.",
+  "ideas": "thinks it might be related to lactose intolerance",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Lactose Intolerance evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Lactose Intolerance is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes explaining the pathophysiology to the patient, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic bloating, abdominal gas, and soft stools after dairy products",
+      "Key HPI features: 47-year-old male with a 6-month history of abdominal bloating, increased flatulence, and loose stools occurring 1-2 hours after consuming dairy products like milk and ice cream. Denies weight loss, bloody stools, or nighttime awakenings.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Lactose Intolerance.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Lactose Intolerance.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Irritable bowel syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Blood in the stool, unintentional weight loss, or nocturnal symptoms — atypical for lactose intolerance and requiring workup for other GI pathology."
+    ],
+    "management_principles": [
+      "Explain pathophysiology",
+      "Advise lactose avoidance or use of lactase enzyme",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "47-year-old male presents with a 6-month history of abdominal bloating, increased flatulence, and loose stools occurring 1-2 hours after consuming dairy products like milk and ice cream. Denies weight loss, bloody stools, or nighttime awakenings.",
+    "objective": "Vitals normal. Abdomen is soft, non-tender, non-distended, with hyperactive bowel sounds. No palpable masses.",
+    "assessment": "Lactose Intolerance (lactase deficiency).",
+    "plan": "Strict dietary lactose restriction for 2 weeks to assess clinical response. Advise use of over-the-counter lactase enzyme supplements when consuming dairy. Ensure adequate calcium and vitamin D intake."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Lactose Intolerance",
+    "Select appropriate diagnostic workup for Lactose Intolerance",
+    "Implement evidence-based management plan: Explain pathophysiology. Advise lactose avoidance or use of lactase enzyme"
+  ],
+  "teaching": {
+    "diagnosis": "Lactose Intolerance",
+    "one_liner": "A shortage of the enzyme lactase means milk sugar isn't digested and ferments in the gut, causing bloating, gas, and loose stools after dairy.",
+    "differentials": [
+      "Irritable bowel syndrome",
+      "Coeliac disease",
+      "Small intestinal bacterial overgrowth (SIBO)"
+    ],
+    "red_flags": [
+      "Blood in the stool",
+      "Unintentional weight loss",
+      "Nocturnal symptoms waking the patient from sleep",
+      "Family history of celiac disease or inflammatory bowel disease"
+    ],
+    "must_ask": [
+      {
+        "objective": "Relation to dairy",
+        "say": "Do the symptoms happen after you eat or drink dairy products, like milk or cheese?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "dairy",
+          "milk",
+          "cheese",
+          "yogurt"
+        ]
+      },
+      {
+        "objective": "Timing after dairy",
+        "say": "How soon after having dairy do the symptoms start?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "soon",
+          "minutes",
+          "quickly"
+        ]
+      },
+      {
+        "objective": "Bloating and gas",
+        "say": "Do you get a lot of bloating and gas with this?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "bloating",
+          "gas",
+          "wind",
+          "flatulence"
+        ]
+      },
+      {
+        "objective": "Stool consistency",
+        "say": "Are the stools soft or watery when this happens?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "soft",
+          "watery",
+          "loose",
+          "stools"
+        ]
+      },
+      {
+        "objective": "Blood or weight loss screen",
+        "say": "Have you ever noticed blood in your stool, or lost weight without trying?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood",
+          "weight",
+          "lost"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have trouble digesting dairy?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "dairy",
+          "intolerant"
+        ]
+      }
+    ]
+  }
+}

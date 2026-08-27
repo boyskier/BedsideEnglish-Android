@@ -1,0 +1,136 @@
+{
+  "id": "opht_031",
+  "system": "opht",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Nguyen",
+  "age": 72,
+  "gender": "male",
+  "chief_complaint": "gradual central visual blur, drusen on fundus exam",
+  "hpi_details": "A 72-year-old male presents to the clinic with gradual central visual blur, drusen on fundus exam. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to dry_amd",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id": "fundus_exam", "test": "Dilated fundus examination", "value": "Numerous medium and large drusen with retinal pigment epithelial mottling at both maculae; no hemorrhage, exudation, or neovascular membrane", "flag": "abnormal", "note": "Non-neovascular age-related macular degeneration."}],
+  "clinical_knowledge": {
+    "topic": "Dry (non-exudative) age-related macular degeneration evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Dry (non-exudative) age-related macular degeneration is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes smoking cessation, Amsler-grid monitoring, and consideration of AREDS2 vitamins for intermediate AMD or advanced AMD in one eye, adapted to individual risk factors and disease severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual central visual blur, drusen on fundus exam",
+      "Key HPI features: A 72-year-old male presents to the clinic with gradual central visual blur, drusen on fundus exam. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Dry AMD.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Dry (non-exudative) age-related macular degeneration.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Wet AMD without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New metamorphopsia would suggest conversion to wet AMD requiring urgent referral."
+    ],
+    "management_principles": [
+      "Encourage smoking cessation and Amsler-grid monitoring; consider AREDS2 vitamins when disease stage indicates",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of gradual central visual blur, drusen on fundus exam. HPI: dry AMD.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Dry AMD.",
+    "assessment": "Condition highly suspicious for Dry AMD.",
+    "plan": "Encourage smoking cessation and Amsler-grid monitoring; consider AREDS2 vitamins when disease stage indicates. Arrange ophthalmology follow-up, and seek urgent assessment for new distortion or sudden vision loss. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Dry AMD",
+    "Select appropriate diagnostic workup for Dry AMD",
+    "Implement evidence-based management: smoking cessation, Amsler-grid monitoring, and stage-appropriate AREDS2 vitamins"
+  ],
+  "teaching": {
+    "diagnosis": "Dry (non-exudative) age-related macular degeneration",
+    "one_liner": "Patient with gradual central visual blur and drusen seen on fundus exam.",
+    "differentials": [
+      "Wet AMD",
+      "Central serous chorioretinopathy",
+      "Macular hole"
+    ],
+    "red_flags": [
+      "New metamorphopsia would suggest conversion to wet AMD requiring urgent referral"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize central vision changes",
+        "say": "Is it your central vision that's blurry, and how has it progressed?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "central blur"
+        ]
+      },
+      {
+        "objective": "Screen for new distortion (conversion warning)",
+        "say": "Have you noticed any new wavy or distorted lines?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "metamorphopsia warning"
+        ]
+      },
+      {
+        "objective": "Ask about smoking history",
+        "say": "Do you currently smoke or have a smoking history?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Ask about family history of AMD",
+        "say": "Does anyone in your family have macular degeneration?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family history"
+        ]
+      },
+      {
+        "objective": "Explain AREDS2 vitamins and home monitoring",
+        "say": "Depending on the stage of your macular degeneration, we may recommend AREDS2 vitamins. Avoid smoking and check each eye regularly with an Amsler grid.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "AREDS2",
+          "Amsler grid"
+        ]
+      }
+    ]
+  }
+}

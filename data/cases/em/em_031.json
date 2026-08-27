@@ -1,0 +1,164 @@
+{
+  "id": "em_031",
+  "system": "em",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Carter",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "crushing retrosternal chest pain with diaphoresis",
+  "hpi_details": "A 35-year-old male presents to the clinic with crushing retrosternal chest pain with diaphoresis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to stemi",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_ecg",
+      "title": "STAT 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "12-lead",
+        "electrocardiogram"
+      ],
+      "availability_message": "The STAT 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_initial",
+          "test": "12-lead ECG",
+          "value": "3 mm ST elevation in II, III, and aVF with reciprocal ST depression in I and aVL",
+          "flag": "critical",
+          "collected_at": "7 minutes after arrival"
+        }
+      ]
+    },
+    {
+      "id": "initial_troponin",
+      "title": "Initial high-sensitivity troponin T",
+      "order_terms": [
+        "troponin",
+        "cardiac biomarkers",
+        "cardiac enzymes"
+      ],
+      "availability_message": "The initial high-sensitivity troponin T is now available.",
+      "results": [
+        {
+          "id": "troponin_t_initial",
+          "test": "High-sensitivity troponin T",
+          "value": "186",
+          "unit": "ng/L",
+          "reference_range": "0-14",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "STEMI (Heart Attack) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of STEMI (Heart Attack) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate STAT ECG, aspirin, a P2Y12 inhibitor such as ticagrelor, and Cath Lab activation for STEMI (Heart Attack), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: crushing retrosternal chest pain with diaphoresis",
+      "Key HPI features: A 35-year-old male presents to the clinic with crushing retrosternal chest pain with diaphoresis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for STEMI Heart Attack.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out STEMI (Heart Attack).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aortic dissection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Radiation with diaphoresis."
+    ],
+    "management_principles": [
+      "Plan for STEMI Heart Attack: STAT ECG, Aspirin 324mg, Ticagrelor, activate Cath Lab",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of crushing retrosternal chest pain with diaphoresis. HPI: STEMI.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for STEMI Heart Attack.",
+    "assessment": "Condition highly suspicious for STEMI Heart Attack.",
+    "plan": "Plan for STEMI Heart Attack: STAT ECG, Aspirin 324mg, Ticagrelor, activate Cath Lab. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of STEMI Heart Attack",
+    "Select appropriate diagnostic workup for STEMI Heart Attack",
+    "Implement evidence-based management plan: STAT ECG, Aspirin 324mg, Ticagrelor, activate Cath Lab"
+  ],
+  "teaching": {
+    "diagnosis": "STEMI (Heart Attack)",
+    "one_liner": "Crushing chest pain with sweating from a completely blocked coronary artery, needing immediate cath lab activation.",
+    "differentials": [
+      "Aortic dissection",
+      "Pulmonary embolism"
+    ],
+    "red_flags": [
+      "Radiation with diaphoresis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character",
+        "say": "Does the pain feel like crushing pressure?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Radiation",
+        "say": "Does it spread anywhere?",
+        "domains": [
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Sweating",
+        "say": "Are you sweating?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you smoke or have high blood pressure?",
+        "domains": [
+          "smoking",
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "When did the pain start?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

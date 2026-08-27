@@ -1,0 +1,153 @@
+{
+  "id": "opht_005",
+  "system": "ophthalmology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Evans",
+  "age": 40,
+  "gender": "male",
+  "chief_complaint": "deep ocular ache, severe photophobia, circumcorneal redness, and small irregular pupil in patient with back pain (Anterior Uveitis / Iritis)",
+  "hpi_details": "40M with history of Ankylosing Spondylitis presents with 3 days of severe right eye pain that throbs deeply, intense sensitivity to light (photophobia requiring sunglasses indoors), and redness concentrated around the colored part of his eye. Waking up with mild watery tearing but no sticky pus. Vision is mildly hazy. Reports that shining a penlight even into his GOOD left eye causes sudden spasm of throbbing pain in his inflamed right eye (consensual photophobia).",
+  "ideas": "thinks he scratched his eye or caught pink eye from his children",
+  "concerns": "in significant throbbing discomfort and unable to look at bright computer screens at work",
+  "expectations": "wants prescription steroid eye drops to stop the deep inflammation",
+  "pmh": "Ankylosing Spondylitis (HLA-B27 positive)",
+  "medications": "Naproxen 500mg BID",
+  "social_hx": "Software developer, non-smoker",
+  "investigation_events": [{
+    "id": "same_day_anterior_uveitis_exam",
+    "title": "Slit-lamp and intraocular pressure examination",
+    "order_terms": ["slit lamp", "slit-lamp", "anterior chamber exam", "intraocular pressure", "IOP"],
+    "availability_message": "The slit-lamp and pressure results are now available. Ophthalmology should exclude infectious uveitis before topical corticosteroids are started.",
+    "results": [
+      {"id": "slit_lamp", "test": "Slit-lamp examination, right eye", "value": "3+ anterior chamber cells and 3+ flare with fine inferior keratic precipitates and early posterior synechiae", "flag": "abnormal"},
+      {"id": "iop", "test": "Intraocular pressure, right eye", "value": "14", "unit": "mmHg", "reference_range": "10-21", "flag": "normal"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute anterior uveitis (iritis) associated with HLA-B27 spondyloarthropathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute anterior uveitis (iritis) associated with HLA-B27 spondyloarthropathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes topical corticosteroid and cycloplegic therapy after infection has been excluded, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: deep ocular ache, severe photophobia, circumcorneal redness, and small irregular pupil in patient with back pain (Anterior Uveitis / Iritis)",
+      "Key HPI features: 40M with history of Ankylosing Spondylitis presents with 3 days of severe right eye pain that throbs deeply, intense sensitivity to light (photophobia requiring sunglasses indoors), and redness concentrated around the colored part of his eye. Waking up with mild watery tearing but no sticky pus. Vision is mildly hazy. Reports that shining a penlight even into his GOOD left eye causes sudden spasm of throbbing pain in his inflamed right eye (consensual photophobia).",
+      "Objective/Exam findings: Vitals: HR 76, BP 124/80. Visual acuity: Right eye 20/40; Left eye 20/20. External exam shows prominent ciliary flush (erythema ring directly surrounding the corneal limbus). The right pupil is miotic (small, 2 mm), sluggishly reactive, and slightly irregular/scalloped due to early posterior synechiae (adhesions between iris and anterior lens capsule). Slit-lamp biomicroscopy of anterior chamber reveals 3+ flare (protein haze) and 3+ cells (white blood cells circulating in aqueous humor) with fine white keratic precipitates (KPs) on the inferior corneal endothelium. Intraocular pressure normal at 14 mmHg.",
+      "Relevant background/PMH: Ankylosing Spondylitis (HLA-B27 positive)",
+      "Current medications: Naproxen 500mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute anterior uveitis (iritis) associated with HLA-B27 spondyloarthropathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bacterial conjunctivitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Consensual photophobia (light in good eye causes pain in bad eye)."
+    ],
+    "management_principles": [
+      "After urgent ophthalmology assessment has excluded infection, topical corticosteroid therapy may be initiated with Prednisolone acetate 1% eye drops (shaken vigorously), instilling 1 drop every 1 to 2 hours while awake to aggressively suppress anterior chamber leukocytic inflammation",
+      "Topical cycloplegic/mydriatic therapy: instil Cyclopentolate 1% or Homatropine 5% eye drops TID to paralyze the ciliary body muscle (relieving deep ciliary spasm pain/photophobia) and dilate the pupil (preventing and breaking permanent posterior synechiae adhesions to the lens)",
+      "Urgent ophthalmology assessment and follow-up within 48-72 hours to monitor IOP and cellular response"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "40M HLA-B27 positive host presenting with acute unilateral deep ocular ache, direct and consensual photophobia, and ciliary flush characteristic of Acute Anterior Uveitis (Iritis).",
+    "objective": "Vitals: HR 76, BP 124/80. Visual acuity: Right eye 20/40; Left eye 20/20. External exam shows prominent ciliary flush (erythema ring directly surrounding the corneal limbus). The right pupil is miotic (small, 2 mm), sluggishly reactive, and slightly irregular/scalloped due to early posterior synechiae (adhesions between iris and anterior lens capsule). Slit-lamp biomicroscopy of anterior chamber reveals 3+ flare (protein haze) and 3+ cells (white blood cells circulating in aqueous humor) with fine white keratic precipitates (KPs) on the inferior corneal endothelium. Intraocular pressure normal at 14 mmHg.",
+    "assessment": "Acute Non-Granulomatous Anterior Uveitis (Iritis / Iridocyclitis) associated with HLA-B27 Ankylosing Spondylitis.",
+    "plan": "1. After urgent ophthalmology assessment has excluded infection, topical corticosteroid therapy may be initiated with Prednisolone acetate 1% eye drops (shaken vigorously), instilling 1 drop every 1 to 2 hours while awake to aggressively suppress anterior chamber leukocytic inflammation. 2. Topical cycloplegic/mydriatic therapy: instil Cyclopentolate 1% or Homatropine 5% eye drops TID to paralyze the ciliary body muscle (relieving deep ciliary spasm pain/photophobia) and dilate the pupil (preventing and breaking permanent posterior synechiae adhesions to the lens). Urgent ophthalmology assessment and follow-up within 48-72 hours to monitor IOP and cellular response."
+  },
+  "learning_objectives": [
+    "Recognize clinical hallmarks distinguishing Anterior Uveitis/Iritis (ciliary flush, miosis/irregular pupil, deep throb, consensual photophobia, AC cells/flare on slit lamp) from Bacterial Conjunctivitis (diffuse injection, normal pupil, purulent discharge, no photophobia)",
+    "Correlate acute non-granulomatous anterior uveitis with HLA-B27 seronegative spondyloarthropathies (Ankylosing Spondylitis, Reactive Arthritis, Inflammatory Bowel Disease)",
+    "Explain the dual therapeutic rationale for combining topical corticosteroids (Prednisolone to halt inflammation) with topical cycloplegics/mydriatics (Cyclopentolate to relieve ciliary spasm pain and prevent posterior synechiae)",
+    "Understand the necessity of close ophthalmological monitoring during topical steroid use to detect steroid-induced glaucoma (elevated IOP) and cataract formation"
+  ],
+  "teaching": {
+    "diagnosis": "Acute anterior uveitis (iritis) associated with HLA-B27 spondyloarthropathy",
+    "one_liner": "40M with ankylosing spondylitis presenting with deep eye ache, severe photophobia, ciliary redness, and consensual photophobia.",
+    "differentials": [
+      "Bacterial conjunctivitis",
+      "Acute angle-closure glaucoma",
+      "Scleritis",
+      "Keratitis"
+    ],
+    "red_flags": [
+      "Consensual photophobia (light in good eye causes pain in bad eye)",
+      "Deep throbbing pain",
+      "Irregular/small pupil"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the eye pain depth and quality",
+        "say": "Is the pain deep and throbbing, or more surface irritation?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "deep pain",
+          "throbbing"
+        ]
+      },
+      {
+        "objective": "Ask about consensual photophobia",
+        "say": "Does shining light in your good eye also cause pain in the affected eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "consensual photophobia"
+        ]
+      },
+      {
+        "objective": "Review the ankylosing spondylitis history",
+        "say": "How long have you had your back condition, and is it well controlled?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ankylosing spondylitis",
+          "HLA-B27"
+        ]
+      },
+      {
+        "objective": "Ask about discharge type",
+        "say": "Is there any thick, sticky discharge, or just watery tearing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "watery tearing",
+          "no purulent discharge"
+        ]
+      },
+      {
+        "objective": "Explain steroid and cycloplegic drop treatment",
+        "say": "This needs urgent ophthalmology assessment; after infection is excluded, steroid and dilating drops may be prescribed with close pressure monitoring.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "prednisolone drops",
+          "cycloplegic"
+        ]
+      }
+    ]
+  }
+}

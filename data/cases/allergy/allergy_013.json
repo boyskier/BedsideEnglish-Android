@@ -1,0 +1,127 @@
+{
+  "id": "allergy_013",
+  "system": "allergy_immunology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Sarah Jenkins",
+  "age": 25,
+  "gender": "female",
+  "chief_complaint": "fever, joint pain, and itchy rash 7 days after starting antibiotics",
+  "hpi_details": "25F presents with 2 days of high fever, severe bilateral knee and wrist arthralgias, and a widespread itchy maculopapular and urticarial rash. She was prescribed oral Cefaclor 7 days ago for a presumed sinus infection. She denies any shortness of breath, lip swelling, or history of similar reactions.",
+  "ideas": "thinks she caught a new virus on top of her sinus infection",
+  "concerns": "worried about the severe joint pain preventing her from walking",
+  "expectations": "wants strong pain medicine for her joints",
+  "pmh": "Asthma (mild, well-controlled)",
+  "medications": "Cefaclor (started 7 days ago), Albuterol PRN",
+  "social_hx": "Teacher, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Serum Sickness-Like Reaction (SSLR)",
+    "core_concepts": [
+      "Serum sickness-like reaction (SSLR) is a delayed drug reaction, often occurring 1-2 weeks after exposure to certain drugs (including cefaclor or penicillins), but unlike true serum sickness is not generally immune-complex mediated.",
+      "Characterized by the classic triad of fever, rash (often urticarial), and arthralgias.",
+      "Unlike true anaphylaxis, it does not involve airway compromise or hypotension.",
+      "Management focuses on discontinuing the offending agent and symptomatic relief with NSAIDs and antihistamines. Corticosteroids may be used in severe cases."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, joint pain, and itchy rash 7 days after starting antibiotics",
+      "Key HPI features: 25F presenting with fever, bilateral arthralgias, and urticarial rash 7 days into a course of Cefaclor.",
+      "Objective/Exam findings: Vitals: T 38.5C, HR 98, BP 110/70, RR 16, SpO2 99%. Widespread urticarial/maculopapular rash. Tender, swollen knees and wrists with decreased range of motion. Clear lungs.",
+      "Relevant background/PMH: Asthma",
+      "Current medications: Cefaclor"
+    ],
+    "common_misconceptions": [
+      "Confusing SSLR with IgE-mediated anaphylaxis because of the urticarial rash.",
+      "Assuming joint pain implies an acute autoimmune flare rather than a drug reaction.",
+      "Continuing the offending antibiotic under the mistaken belief it is a viral exanthem."
+    ],
+    "dangerous_errors": [
+      "Failing to discontinue the offending drug.",
+      "Missing signs of true anaphylaxis or severe cutaneous adverse reactions (like SJS/TEN).",
+      "Unnecessary invasive joint aspiration if the clinical picture is classic for SSLR."
+    ],
+    "management_principles": [
+      "IMMEDIATE ACTION: Discontinue the offending medication (Cefaclor).",
+      "Administer NSAIDs for arthralgia and antihistamines for pruritus.",
+      "Consider a short course of oral corticosteroids if symptoms are severe."
+    ],
+    "boundaries_and_exceptions": [
+      "In true serum sickness, immune complexes cause hypocomplementemia and renal involvement, whereas SSLR usually has normal complement and no renal disease.",
+      "Monitoring for signs of systemic involvement (e.g., proteinuria, abnormal LFTs) is important."
+    ],
+    "source_refs": [
+      {
+        "title": "Drug Hypersensitivity - Serum Sickness-Like Reactions",
+        "url": "https://www.uptodate.com/contents/serum-sickness-and-serum-sickness-like-reactions"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "25F presents with 2 days of fever, severe arthralgias, and an itchy rash starting 7 days after initiating Cefaclor for a sinus infection. Denies respiratory distress or mucosal involvement.",
+    "objective": "T 38.5C, HR 98. Exam shows widespread urticarial plaques and swollen, tender wrists/knees. No mucosal sloughing. Lungs clear.",
+    "assessment": "Serum Sickness-Like Reaction (SSLR) secondary to Cefaclor.",
+    "plan": "1. Discontinue Cefaclor immediately. 2. Start Ibuprofen 600mg every 6 hours for joint pain. 3. Cetirizine 10mg daily for rash/itching. 4. Prescribe a 5-day course of Prednisone 40mg daily due to severity of joint pain. 5. Educate patient to avoid Cefaclor in the future and document as an allergy. 6. Follow-up in 48-72 hours."
+  },
+  "learning_objectives": [
+    "Identify the classic timeline (1-2 weeks) and triad (fever, rash, arthralgia) of SSLR",
+    "Differentiate SSLR from IgE-mediated immediate hypersensitivity",
+    "Implement correct management by stopping the offending drug and providing symptomatic care"
+  ],
+  "teaching": {
+    "diagnosis": "Serum Sickness-Like Reaction (SSLR)",
+    "one_liner": "A delayed drug reaction causing fever, rash, and joint pain, typically a week after starting a new medication.",
+    "differentials": [
+      "Viral exanthem with arthropathy",
+      "Acute rheumatic fever",
+      "Systemic lupus erythematosus (SLE) flare"
+    ],
+    "red_flags": [
+      "Airway compromise or hypotension (suggests anaphylaxis)",
+      "Mucosal involvement or blistering (suggests SJS/TEN)",
+      "Significant proteinuria or hematuria (suggests true serum sickness with renal involvement)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing of medication exposure",
+        "say": "When exactly did you start taking the antibiotic?",
+        "domains": [
+          "onset_duration",
+          "pmh"
+        ],
+        "keywords": [
+          "start",
+          "antibiotic",
+          "cefaclor",
+          "when",
+          "days"
+        ]
+      },
+      {
+        "objective": "Rule out airway compromise",
+        "say": "Have you had any trouble breathing or swelling in your throat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breathing",
+          "throat",
+          "swelling",
+          "airway"
+        ]
+      },
+      {
+        "objective": "Identify mucosal involvement",
+        "say": "Do you have any sores or blisters in your mouth or eyes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mouth",
+          "eyes",
+          "sores",
+          "blisters",
+          "ulcers"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,154 @@
+{
+  "id": "opht_040",
+  "system": "opht",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Ramirez",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "gradual vision blur, microaneurysms and hard exudates",
+  "hpi_details": "A 62-year-old woman with type 2 diabetes reports gradually progressive blur, worse in the affected eye. Dilated fundus examination shows microaneurysms and hard exudates; she has no sudden curtain-like loss of vision or acute eye pain.",
+  "ideas": "thinks it might be related to diabetic_retinopathy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Type 2 diabetes mellitus",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id": "fundus_exam", "test": "Dilated fundus examination", "value": "Scattered microaneurysms and dot-blot hemorrhages with hard exudates approaching the macula; no neovascularization", "flag": "abnormal", "note": "Moderate nonproliferative diabetic retinopathy; macular OCT is needed if edema is suspected."}],
+  "clinical_knowledge": {
+    "topic": "Diabetic retinopathy (non-proliferative) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diabetic retinopathy (non-proliferative) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Diabetic Retinopathy NPDR: Strict glycemic control, annual dilated fundus exam, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual vision blur, microaneurysms and hard exudates",
+      "Key HPI features: A 62-year-old female presents to the clinic with gradual vision blur, microaneurysms and hard exudates. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Measure visual acuity in each eye, blood pressure, and perform dilated retinal examination; use OCT when diabetic macular edema is suspected and grade retinopathy severity.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diabetic retinopathy (non-proliferative).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypertensive retinopathy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Failing to urgently assess sudden visual loss, new floaters, a curtain or field defect, or suspected vitreous hemorrhage/tractional retinal detachment."
+    ],
+    "management_principles": [
+      "Optimize glycemic, blood-pressure, and lipid management with the patient's primary diabetes team; do not promise that rapid glucose lowering reverses established retinopathy.",
+      "Arrange ophthalmology follow-up based on NPDR severity; refer promptly to retina for diabetic macular edema, severe NPDR, or proliferative disease, where anti-VEGF therapy and/or laser may be indicated.",
+      "Urgently assess sudden vision loss, new floaters, curtain/field loss, or suspected vitreous hemorrhage.",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of gradual vision blur, microaneurysms and hard exudates. HPI: diabetic retinopathy.",
+    "objective": "Measure visual acuity in each eye and blood pressure; perform dilated retinal examination, grade severity, and obtain OCT if macular edema is suspected.",
+    "assessment": "Condition highly suspicious for Diabetic Retinopathy NPDR.",
+    "plan": "Optimize glycemic, blood-pressure, and lipid control and arrange ophthalmology follow-up according to NPDR severity. Promptly refer to retina for diabetic macular edema, severe NPDR, or proliferative disease. Urgently assess sudden vision loss, new floaters, curtain/field loss, or suspected vitreous hemorrhage."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Diabetic Retinopathy NPDR",
+    "Select appropriate diagnostic workup for Diabetic Retinopathy NPDR",
+    "Implement evidence-based management plan: Strict glycemic control, annual dilated fundus exam"
+  ],
+  "teaching": {
+    "diagnosis": "Diabetic retinopathy (non-proliferative)",
+    "one_liner": "Patient with gradual vision blur and microaneurysms with hard exudates on fundus exam.",
+    "differentials": [
+      "Hypertensive retinopathy",
+      "Retinal vein occlusion",
+      "Age-related macular degeneration"
+    ],
+    "red_flags": [
+      "Sudden vision loss, new floaters, curtain/field loss, or suspected vitreous hemorrhage requires urgent eye assessment",
+      "Diabetic macular edema, severe NPDR, or proliferative retinopathy requires prompt retina referral"
+    ],
+    "must_ask": [
+      {
+        "objective": "Review diabetes history and control",
+        "say": "How long have you had diabetes, and how has your blood sugar control been?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes duration",
+          "glycemic control"
+        ]
+      },
+      {
+        "objective": "Characterize the vision blur",
+        "say": "Which eye is affected, how has your vision changed, and was the blur gradual or sudden?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "affected eye",
+          "gradual blur",
+          "sudden loss"
+        ]
+      },
+      {
+        "objective": "Screen for retinal emergency symptoms",
+        "say": "Have you noticed new floaters, flashing lights, a curtain or shadow, or a sudden major drop in vision?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "floaters",
+          "flashes",
+          "curtain",
+          "sudden vision loss"
+        ]
+      },
+      {
+        "objective": "Ask about last dilated eye exam",
+        "say": "When was your last dilated eye exam?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "dilated exam history"
+        ]
+      },
+      {
+        "objective": "Ask about other diabetes complications",
+        "say": "Have you had any problems with your kidneys or feet related to diabetes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetic complications"
+        ]
+      },
+      {
+        "objective": "Explain glycemic control and monitoring plan",
+        "say": "Strict blood sugar control and annual dilated eye exams are essential to prevent progression.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "glycemic control",
+          "annual exam"
+        ]
+      }
+    ]
+  }
+}

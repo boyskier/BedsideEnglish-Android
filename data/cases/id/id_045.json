@@ -1,0 +1,126 @@
+{
+  "id": "id_045",
+  "system": "id",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martin",
+  "age": 77,
+  "gender": "male",
+  "chief_complaint": "non-healing deep foot ulcer probing to bone",
+  "hpi_details": "A 77-year-old male presents to the clinic with non-healing deep foot ulcer probing to bone. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to osteomyelitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Type 2 Diabetes Mellitus diagnosed 15 years ago, complicated by peripheral neuropathy and peripheral arterial disease; hypertension.",
+  "medications": "Metformin 1000mg BID, Insulin glargine 20 units at bedtime, Lisinopril 10mg daily.",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Diabetic Osteomyelitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diabetic Osteomyelitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Diabetic Osteomyelitis: Bone biopsy and culture, prolonged IV antibiotics, surgical debridement, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: non-healing deep foot ulcer probing to bone",
+      "Key HPI features: A 77-year-old male presents to the clinic with non-healing deep foot ulcer probing to bone. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 37.6C, HR 88, BP 138/82. Deep plantar ulcer over the first metatarsal head with visible bone at the base, positive probe-to-bone test, surrounding erythema and mild cellulitis. Diminished sensation to 10g monofilament testing, diminished pedal pulses. ESR 78 mm/hr, CRP elevated. Plain foot X-ray shows cortical erosion and periosteal reaction of the first metatarsal; MRI confirms bone marrow edema consistent with osteomyelitis.",
+      "Relevant background/PMH: Type 2 Diabetes Mellitus diagnosed 15 years ago, complicated by peripheral neuropathy and peripheral arterial disease; hypertension."
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diabetic Osteomyelitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cellulitis alone (no bone involvement) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Systemic signs of infection (fever) — suggests spreading infection."
+    ],
+    "management_principles": [
+      "Plan for Diabetic Osteomyelitis: Bone biopsy and culture, prolonged IV antibiotics, surgical debridement",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: non-healing deep foot ulcer probing to bone\n\nA 77-year-old male with a 15-year history of type 2 diabetes complicated by peripheral neuropathy presents to the clinic with a non-healing deep foot ulcer probing to bone. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 37.6C, HR 88, BP 138/82. Deep plantar ulcer over the first metatarsal head with visible bone at the base, positive probe-to-bone test, surrounding erythema and mild cellulitis. Diminished sensation to 10g monofilament testing, diminished pedal pulses. ESR 78 mm/hr, CRP elevated. Plain foot X-ray shows cortical erosion and periosteal reaction of the first metatarsal; MRI confirms bone marrow edema consistent with osteomyelitis.",
+    "assessment": "Diabetic (foot ulcer-associated) Osteomyelitis of the first metatarsal, supported by a positive probe-to-bone test, elevated inflammatory markers, and MRI findings, in a patient with longstanding diabetic neuropathy and peripheral arterial disease.",
+    "plan": "Assess severity, perfusion, and need for urgent drainage; obtain plain films and MRI when needed. Obtain deep tissue or bone culture when feasible before antibiotics if this will not delay necessary treatment. Use culture-directed antibiotics by oral or IV route according to severity and bioavailability, and involve wound-care, vascular, infectious-disease, and surgical teams for selective debridement or revascularization."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Diabetic Osteomyelitis",
+    "Select appropriate diagnostic workup for Diabetic Osteomyelitis",
+    "Implement evidence-based management plan: Bone biopsy and culture, prolonged IV antibiotics, surgical debridement"
+  ],
+  "teaching": {
+    "diagnosis": "Diabetic Osteomyelitis",
+    "one_liner": "A chronic bone infection arising from a non-healing diabetic foot ulcer that has progressed deep enough to probe to bone.",
+    "differentials": [
+      "Cellulitis alone (no bone involvement)",
+      "Charcot foot"
+    ],
+    "red_flags": [
+      "Systemic signs of infection (fever) — suggests spreading infection"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ulcer duration",
+        "say": "How long has this ulcer been there without healing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Probing to bone",
+        "say": "Has a doctor ever probed this wound down to the bone?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "probe",
+          "bone"
+        ]
+      },
+      {
+        "objective": "Diabetes control",
+        "say": "How well controlled is your diabetes?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Sensation in the foot",
+        "say": "Can you feel your foot normally, or has it gone numb?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "numb",
+          "neuropathy"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Any fever or feeling generally unwell?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

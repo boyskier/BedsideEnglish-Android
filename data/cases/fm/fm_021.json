@@ -1,0 +1,118 @@
+{
+  "id": "fm_021",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Park",
+  "age": 48,
+  "gender": "male",
+  "chief_complaint": "blood pressure of 148/92 discovered on routine health check, asymptomatic",
+  "hpi_details": "48M presents for a routine checkup. Found to have a blood pressure of 148/92 mmHg, confirmed on repeat check. Reports feeling completely well without headache, chest pain, or vision changes.",
+  "ideas": "thinks his blood pressure is just temporarily high from clinic stress",
+  "concerns": "worried about stroke or needing lifetime medications",
+  "expectations": "wants blood pressure advice and check",
+  "pmh": "Dyslipidemia",
+  "medications": "Atorvastatin 10mg daily",
+  "social_hx": "Office manager, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Stage 1/2 Hypertension (newly presenting) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stage 1/2 Hypertension (newly presenting) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming the diagnosis with repeat or out-of-office measurement before committing to lifestyle and pharmacologic therapy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: blood pressure of 148/92 discovered on routine health check, asymptomatic",
+      "Key HPI features: 48M presents for a routine checkup. Found to have a blood pressure of 148/92 mmHg, confirmed on repeat check. Reports feeling completely well without headache, chest pain, or vision changes.",
+      "Objective/Exam findings: Blood pressure 148/92 mmHg confirmed on repeat measurement; remainder of exam, including fundoscopic and cardiovascular exam, otherwise unremarkable.",
+      "Relevant background/PMH: Dyslipidemia",
+      "Current medications: Atorvastatin 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stage 1/2 Hypertension (newly presenting).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to White coat hypertension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Headache, chest pain, or vision changes — hypertensive emergency."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with home or ambulatory blood pressure monitoring before committing to a chronic diagnosis of hypertension",
+      "Recommend home blood pressure monitoring, DASH diet, sodium restriction (<1.5g/day), and weight loss"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Stage 1 / 2 Hypertension, newly presenting. blood pressure of 148/92 discovered on routine health check, asymptomatic. 48M presents for a routine checkup. Found to have a blood pressure of 148/92 mmHg, confirmed on repeat check. Reports feeling completely well without headache, chest pain, or vision changes.",
+    "objective": "Blood pressure 148/92 mmHg, confirmed on repeat measurement. Remainder of exam, including fundoscopic and cardiovascular exam, unremarkable.",
+    "assessment": "Newly presenting Stage 1/2 hypertension, asymptomatic, confirmed on repeat measurement.",
+    "plan": "Recommend home blood pressure monitoring, DASH diet, sodium restriction (<1.5g/day), and weight loss. Discuss initiating low-dose ACE inhibitor or ARB. Check baseline labs (renal function, electrolytes, lipids, glucose) and screen for end-organ damage."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Stage 1 / 2 Hypertension, newly presenting.",
+    "Formulate prioritized differential diagnosis for blood pressure of 148/92 discovered on routine health check, asymptomatic",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies for Stage 1 / 2 Hypertension, newly presenting."
+  ],
+  "teaching": {
+    "diagnosis": "Stage 1/2 Hypertension (newly presenting)",
+    "one_liner": "Elevated blood pressure confirmed on repeat measurement without symptoms — the next steps are home monitoring to confirm it's not just clinic anxiety, plus lifestyle changes and consideration of medication.",
+    "differentials": [
+      "White coat hypertension"
+    ],
+    "red_flags": [
+      "Headache, chest pain, or vision changes — hypertensive emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptom check",
+        "say": "Any headaches, chest pain, or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Confirmation",
+        "say": "Was this confirmed on a repeat check?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Lifestyle",
+        "say": "How much salt do you eat, and how active are you?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does high blood pressure run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about needing medication?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

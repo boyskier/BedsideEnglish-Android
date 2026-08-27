@@ -1,0 +1,160 @@
+{
+  "id": "ent_005",
+  "system": "otolaryngology (ent)",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Evans",
+  "age": 61,
+  "gender": "male",
+  "chief_complaint": "painless, progressively enlarging 3 cm lateral neck mass in a heavy smoker with unilateral tonsillar asymmetry concerning for Head & Neck Cancer",
+  "hpi_details": "61M heavy smoker and social drinker presents with a 3-month history of a painless, hard lump on the left side of his upper neck just below the jawline that has steadily grown to 3 cm. Denies fever, sore throat, or ear pain. However, upon targeted questioning, admits to mild pain when swallowing solids over the past month, a feeling of a lump stuck in the left side of his throat, and occasional blood streaks in his saliva.",
+  "ideas": "thinks the neck lump is just a swollen lymph node from a minor cold or tooth infection",
+  "concerns": "worried because antibiotic courses from urgent care failed to shrink the lump",
+  "expectations": "wants CT scan and biopsy to rule out cancer",
+  "pmh": "Hypertension, 45 pack-year cigarette smoking history, drinks 3-4 beers daily",
+  "medications": "Lisinopril 20mg daily",
+  "social_hx": "Construction foreman, active smoker and alcohol consumer",
+  "investigation_events": [
+    {
+      "id": "flexible_nasolaryngoscopy",
+      "title": "Flexible nasopharyngolaryngoscopy",
+      "order_terms": [
+        "flexible nasopharyngolaryngoscopy",
+        "flexible laryngoscopy",
+        "nasolaryngoscopy",
+        "scope the throat",
+        "fiberoptic scope"
+      ],
+      "availability_message": "The office flexible nasopharyngolaryngoscopy findings are now available.",
+      "results": [
+        {
+          "id": "left_tonsil_base_of_tongue_lesion",
+          "test": "Flexible nasopharyngolaryngoscopy",
+          "value": "Ulcerated indurated left tonsillar lesion extending onto the ipsilateral base of tongue; airway patent",
+          "flag": "critical",
+          "collected_at": "During ENT assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Metastatic Squamous Cell Carcinoma (Head & Neck, from tonsillar primary) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Metastatic Squamous Cell Carcinoma (Head & Neck, from tonsillar primary) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt tissue diagnosis via fine-needle aspiration, cross-sectional and metabolic staging imaging, and referral to head and neck surgical oncology, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless, progressively enlarging 3 cm lateral neck mass in a heavy smoker with unilateral tonsillar asymmetry concerning for Head & Neck Cancer",
+      "Key HPI features: 61M heavy smoker and social drinker presents with a 3-month history of a painless, hard lump on the left side of his upper neck just below the jawline that has steadily grown to 3 cm. Denies fever, sore throat, or ear pain. However, upon targeted questioning, admits to mild pain when swallowing solids over the past month, a feeling of a lump stuck in the left side of his throat, and occasional blood streaks in his saliva.",
+      "Objective/Exam findings: Vitals: HR 78, BP 138/84. Neck examination palpates a 3.2 x 2.8 cm hard, non-tender, fixed lymph node in Level II of the left anterior cervical triangle (jugulodigastric chain). Oropharyngeal examination reveals noticeable asymmetry of the tonsillar fossae: the left palatine tonsil is enlarged, indurated, and ulcerated compared to the normal right tonsil. Flexible fiberoptic nasopharyngolaryngoscopy confirms left tonsillar ulceration extending to the base of tongue. CRITICAL ONCOLOGICAL MANDATE: DO NOT PERFORM OPEN EXCISIONAL OR INCISIONAL BIOPSY OF A CERVICAL LYMPH NODE in an adult with suspected head and neck cancer (open neck biopsy disrupts lymphatic planes, causes tumor seeding across the neck, reduces cure rates, and complicates definitive surgical neck dissection).",
+      "Relevant background/PMH: Hypertension, 45 pack-year cigarette smoking history, drinks 3-4 beers daily",
+      "Current medications: Lisinopril 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Metastatic Squamous Cell Carcinoma (Head & Neck, from tonsillar primary).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Reactive lymphadenitis from infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Failure to shrink with antibiotics — a lump that persists past a course of antibiotics needs biopsy, not another course."
+    ],
+    "management_principles": [
+      "Perform STAT Fine-Needle Aspiration (FNA) or Ultrasound-guided Core Needle Biopsy of the left Level II neck mass (which avoids violating neck fascial planes and seeding tumor)",
+      "Order Contrast-Enhanced CT and PET-CT of Neck and Chest for complete anatomical and metastatic staging",
+      "Refer to Head and Neck Surgical Oncology for Panendoscopy (Direct Laryngoscopy, Bronchoscopy, Esophagoscopy with biopsies of left tonsil primary) under general anesthesia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "61M high-risk smoker/drinker presenting with a persistent, enlarging, painless lateral neck mass and unilateral odynophagia, representing metastatic squamous cell carcinoma to a cervical lymph node from an occult upper aerodigestive tract primary.",
+    "objective": "Vitals: HR 78, BP 138/84. Neck examination palpates a 3.2 x 2.8 cm hard, non-tender, fixed lymph node in Level II of the left anterior cervical triangle (jugulodigastric chain). Oropharyngeal examination reveals noticeable asymmetry of the tonsillar fossae: the left palatine tonsil is enlarged, indurated, and ulcerated compared to the normal right tonsil. Flexible fiberoptic nasopharyngolaryngoscopy confirms left tonsillar ulceration extending to the base of tongue. CRITICAL ONCOLOGICAL MANDATE: DO NOT PERFORM OPEN EXCISIONAL OR INCISIONAL BIOPSY OF A CERVICAL LYMPH NODE in an adult with suspected head and neck cancer (open neck biopsy disrupts lymphatic planes, causes tumor seeding across the neck, reduces cure rates, and complicates definitive surgical neck dissection).",
+    "assessment": "Metastatic Squamous Cell Carcinoma to Left Cervical Lymph Node (Level II, cN2a) from Left Palatine Tonsil Primary (Human Papillomavirus p16 status pending vs Tobacco-related SCC).",
+    "plan": "1. Perform STAT Fine-Needle Aspiration (FNA) or Ultrasound-guided Core Needle Biopsy of the left Level II neck mass (which avoids violating neck fascial planes and seeding tumor). 2. Order Contrast-Enhanced CT and PET-CT of Neck and Chest for complete anatomical and metastatic staging. 3. Refer to Head and Neck Surgical Oncology for Panendoscopy (Direct Laryngoscopy, Bronchoscopy, Esophagoscopy with biopsies of left tonsil primary) under general anesthesia. Multidisciplinary tumor board coordination for definitive chemoradiotherapy vs transoral robotic surgery (TORS) plus neck dissection."
+  },
+  "learning_objectives": [
+    "Understand the cardinal oncological rule: an asymmetric, hard, painless lateral neck mass in an adult >40 (especially smokers/drinkers) is metastatic squamous cell carcinoma from an upper aerodigestive tract primary until proven otherwise",
+    "Explain the strict absolute contraindication against open surgical biopsy (excisional or incisional) of a cervical neck mass prior to thorough mucosal evaluation, utilizing Fine-Needle Aspiration (FNA) instead to prevent tumor seeding and lymphatic disruption",
+    "Correlate unilateral tonsillar enlargement/ulceration or base-of-tongue induration with oropharyngeal squamous cell carcinoma (p16+ HPV-related vs tobacco/alcohol-related)",
+    "Outline diagnostic staging steps including Panendoscopy (laryngoscopy/bronchoscopy/esophagoscopy) and PET-CT prior to definitive multidisciplinary treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Metastatic Squamous Cell Carcinoma (Head & Neck, from tonsillar primary)",
+    "one_liner": "A painless, hard, enlarging neck lump in a heavy smoker/drinker that hasn't responded to antibiotics — with subtle clues like swallowing pain and blood-streaked saliva — is head and neck cancer until proven otherwise, needing biopsy and staging.",
+    "differentials": [
+      "Reactive lymphadenitis from infection",
+      "Lymphoma",
+      "Branchial cleft cyst (would not be new in a 61-year-old)"
+    ],
+    "red_flags": [
+      "Failure to shrink with antibiotics — a lump that persists past a course of antibiotics needs biopsy, not another course"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration and growth",
+        "say": "How long has this lump been there, and has it been growing?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "3 months",
+          "growing"
+        ]
+      },
+      {
+        "objective": "Swallowing and throat symptoms",
+        "say": "Do you have any pain swallowing, or a feeling of something stuck in your throat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swallowing",
+          "lump in throat"
+        ]
+      },
+      {
+        "objective": "Blood in saliva",
+        "say": "Have you noticed any blood when you spit or in your saliva?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood streaks"
+        ]
+      },
+      {
+        "objective": "Smoking and alcohol history",
+        "say": "How much have you smoked and how much do you drink?",
+        "domains": [
+          "smoking",
+          "alcohol"
+        ]
+      },
+      {
+        "objective": "Prior treatment response",
+        "say": "Did the antibiotics from urgent care help at all?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "no effect"
+        ]
+      }
+    ]
+  }
+}

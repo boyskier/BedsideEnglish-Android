@@ -1,0 +1,130 @@
+{
+  "id": "rheum_015",
+  "system": "rheumatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Clark",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "rash on my face, joint pain, and fatigue",
+  "hpi_details": "28F presents with 3 weeks of a sun-sensitive red rash across her cheeks and nose. She also reports severe fatigue, achy joints (wrists, knees), and painless ulcers in her mouth.",
+  "ideas": "thinks she has a weird allergy",
+  "concerns": "worried about the face rash",
+  "expectations": "wants a cream and blood test",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "None",
+  "clinical_knowledge": {
+    "topic": "Systemic Lupus Erythematosus (SLE)",
+    "core_concepts": [
+      "Multisystem autoimmune disease affecting young women.",
+      "Classic triad: malar rash, joint pain, fatigue.",
+      "Other signs: photosensitivity, oral ulcers, serositis, renal disease."
+    ],
+    "diagnostic_clues": [
+      "Malar rash (spares nasolabial folds)",
+      "Oral ulcers",
+      "Photosensitivity"
+    ],
+    "common_misconceptions": [
+      "Confusing malar rash with rosacea (rosacea often involves nasolabial folds)."
+    ],
+    "dangerous_errors": [
+      "Failing to check for renal involvement (lupus nephritis), which can be silent."
+    ],
+    "management_principles": [
+      "Obtain ANA with disease-specific serology as indicated, CBC, renal/liver function, urinalysis with sediment and protein quantification, blood pressure, and prompt rheumatology referral. Treatment is organ- and pregnancy-plan-specific and should be clinician directed."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "28F with a new photosensitive facial rash, fatigue, arthralgias, and oral ulcers.",
+    "objective": "Erythematous rash over cheeks and nasal bridge sparing nasolabial folds. Hard palate ulcers.",
+    "assessment": "Suspected Systemic Lupus Erythematosus (SLE).",
+    "plan": "Check ANA, anti-dsDNA, anti-Smith, CBC, renal/liver function, urinalysis with sediment and protein quantification, and blood pressure; refer promptly to rheumatology. Counsel on sun protection and seek urgent care for reduced urine, edema, chest pain, breathlessness, severe headache, confusion, or fever."
+  },
+  "learning_objectives": [
+    "Recognize the diverse multiorgan presentation of SLE."
+  ],
+  "teaching": {
+    "diagnosis": "Systemic Lupus Erythematosus",
+    "one_liner": "A young female with a photosensitive malar rash, oral ulcers, and inflammatory arthralgias.",
+    "differentials": [
+      "Rosacea",
+      "Dermatomyositis",
+      "Drug-induced lupus"
+    ],
+    "red_flags": [
+      "Foamy or bloody urine, reduced urine output, leg swelling, new hypertension, or breathlessness may indicate organ involvement and needs urgent assessment."
+    ],
+    "must_ask": [
+      {
+        "objective": "Rash characteristics and sun sensitivity",
+        "say": "Does the rash on your face get worse after being out in the sun?",
+        "domains": [
+          "aggravating",
+          "character"
+        ],
+        "keywords": [
+          "sun",
+          "photosensitive"
+        ]
+      },
+      {
+        "objective": "Oral ulcers",
+        "say": "Have you noticed any sores or ulcers in your mouth?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mouth ulcers",
+          "painless"
+        ]
+      },
+      {
+        "objective": "Joint involvement",
+        "say": "Which joints are achy, and is there any swelling?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "wrists",
+          "knees"
+        ]
+      },
+      {
+        "objective": "Renal red flag",
+        "say": "Have you noticed your urine looking foamy, or any swelling in your legs?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "foamy urine",
+          "swelling"
+        ]
+      },
+      {
+        "objective": "Duration and fatigue",
+        "say": "How long has this been going on, and how severe is the fatigue?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "three weeks",
+          "fatigue"
+        ]
+      }
+    ]
+  }
+}

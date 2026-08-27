@@ -1,0 +1,164 @@
+{
+  "id": "cardio_041",
+  "system": "cardio",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Brown",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "atypical sharp chest pain lasting a few seconds, unrelated to exertion",
+  "hpi_details": "A 65-year-old male presents to the clinic with atypical sharp chest pain lasting a few seconds, unrelated to exertion. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to costochondritis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Costochondritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Costochondritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Costochondritis: Perform chest wall palpation, obtain ECG to rule out cardiac, recommend NSAIDs, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: atypical sharp chest pain lasting a few seconds, unrelated to exertion",
+      "Key HPI features: A 65-year-old male presents to the clinic with atypical sharp chest pain lasting a few seconds, unrelated to exertion. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Costochondritis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Costochondritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute coronary syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Do not settle on this until cardiac and pulmonary causes are genuinely excluded."
+    ],
+    "management_principles": [
+      "Plan for Costochondritis: Perform chest wall palpation, obtain ECG to rule out cardiac, recommend NSAIDs",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2021 AHA/ACC/ASE/... Guideline for the Evaluation and Diagnosis of Chest Pain",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001029"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of atypical sharp chest pain lasting a few seconds, unrelated to exertion. HPI: musculoskeletal chest wall pain.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Costochondritis.",
+    "assessment": "Condition highly suspicious for Costochondritis.",
+    "plan": "Plan for Costochondritis: Perform chest wall palpation, obtain ECG to rule out cardiac, recommend NSAIDs. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Costochondritis",
+    "Select appropriate diagnostic workup for Costochondritis",
+    "Implement evidence-based management plan: Perform chest wall palpation, obtain ECG to rule out cardiac, recommend NSAIDs"
+  ],
+  "teaching": {
+    "diagnosis": "Costochondritis",
+    "one_liner": "Inflammation where rib meets sternum. The pain is sharp, positional, and — the key finding — reproduced by pressing on the spot.",
+    "differentials": [
+      "Acute coronary syndrome",
+      "Pleurisy",
+      "GERD"
+    ],
+    "red_flags": [
+      "Do not settle on this until cardiac and pulmonary causes are genuinely excluded"
+    ],
+    "must_ask": [
+      {
+        "objective": "Reproducible on pressure",
+        "say": "Does it hurt more if you press on that spot?",
+        "domains": [
+          "aggravating",
+          "location"
+        ],
+        "keywords": [
+          "press",
+          "touch",
+          "push",
+          "tender",
+          "sore"
+        ]
+      },
+      {
+        "objective": "Movement and breathing",
+        "say": "Does moving your arm or taking a deep breath make it worse?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "move",
+          "arm",
+          "twist",
+          "deep",
+          "breath",
+          "cough"
+        ]
+      },
+      {
+        "objective": "Duration of each episode",
+        "say": "How long does each episode last — seconds, or much longer?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "seconds",
+          "brief",
+          "minutes"
+        ]
+      },
+      {
+        "objective": "Recent unusual activity",
+        "say": "Have you done any heavy lifting, new exercise, or had a bad cough?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "lifting",
+          "exercise",
+          "cough",
+          "gym",
+          "moving"
+        ]
+      },
+      {
+        "objective": "Exclude cardiac features",
+        "say": "Does it ever come on with exertion, or with sweating and nausea?",
+        "domains": [
+          "aggravating",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "exertion",
+          "walking",
+          "sweat",
+          "nausea",
+          "breath"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most worried this might be?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

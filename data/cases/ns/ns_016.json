@@ -1,0 +1,127 @@
+{
+  "id": "ns_016",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. King",
+  "age": 24,
+  "gender": "female",
+  "chief_complaint": "sudden severe headache and intraparenchymal lobar hemorrhage in a 24-year-old",
+  "hpi_details": "24F presenting with sudden occipital hemorrhage and subarachnoid blood with bag of worms tangle of abnormal vessels and draining veins on CT angiography.",
+  "ideas": "thinks this is related to arteriovenous malformation avm rupture",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "ct_head", "test": "Non-contrast CT head", "value": "Acute occipital intraparenchymal hemorrhage with adjacent subarachnoid blood", "flag": "critical"},
+    {"id": "cta_head", "test": "CT angiography of the head", "value": "Compact tangle of abnormal vessels with enlarged feeding arteries and early draining veins in the occipital lobe", "flag": "critical", "note": "Consistent with a ruptured cerebral arteriovenous malformation."}
+  ],
+  "clinical_knowledge": {
+    "topic": "Ruptured Arteriovenous Malformation (AVM) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured Arteriovenous Malformation (AVM) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Arteriovenous Malformation AVM Rupture, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden severe headache and intraparenchymal lobar hemorrhage in healthy 24-year-old",
+      "Key HPI features: 24F presenting with sudden occipital hemorrhage and subarachnoid blood with bag of worms tangle of abnormal vessels and draining veins on CT angiography.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Arteriovenous Malformation AVM Rupture.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured Arteriovenous Malformation (AVM).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ruptured aneurysm without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as prior seizures or headaches, which could represent earlier warning signs of an AVM."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Arteriovenous Malformation AVM Rupture",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Arteriovenous Malformation AVM Rupture: sudden severe headache and intraparenchymal lobar hemorrhage in healthy 24-year-old. 24F presenting with sudden occipital hemorrhage and subarachnoid blood with bag of worms tangle of abnormal vessels and draining veins on CT angiography.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Arteriovenous Malformation AVM Rupture.",
+    "assessment": "Clinical presentation highly suggestive of Arteriovenous Malformation AVM Rupture.",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Arteriovenous Malformation AVM Rupture. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Arteriovenous Malformation AVM Rupture",
+    "Formulate prioritized differential diagnosis for sudden severe headache and intraparenchymal lobar hemorrhage in healthy 24-year-old",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured Arteriovenous Malformation (AVM)",
+    "one_liner": "An abnormal tangle of blood vessels present since birth ('bag of worms') ruptures, causing sudden hemorrhage into the brain; unlike aneurysms, AVMs classically present in young people.",
+    "differentials": [
+      "Ruptured aneurysm",
+      "Cavernous malformation",
+      "Hypertensive hemorrhage (less likely at this age)"
+    ],
+    "red_flags": [
+      "Prior seizures or headaches, which could represent earlier warning signs of an AVM"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and severity",
+        "say": "How suddenly did this headache start, and how severe is it?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Prior neurological symptoms",
+        "say": "Have you ever had seizures or unusual headaches before this?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any weakness, vomiting, or confusion?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have blood vessel abnormalities in the brain?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "Do you have any history of high blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

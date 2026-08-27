@@ -1,0 +1,159 @@
+{
+  "id": "hemato_038",
+  "system": "hemato",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Nguyen",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "fatigue, fever, easy bruising, and circulating myeloblasts",
+  "hpi_details": "A 56-year-old female presents to the clinic with fatigue, fever, easy bruising, and circulating myeloblasts. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to aml",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "white_blood_cell_count",
+      "test": "White blood cell count",
+      "value": "38.0",
+      "unit": "x10^3/mcL",
+      "reference_range": "4.0-11.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "circulating_blasts",
+      "test": "Circulating myeloblasts",
+      "value": "62",
+      "unit": "%",
+      "reference_range": "0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "8.0",
+      "unit": "g/dL",
+      "reference_range": "12.0-16.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "platelets",
+      "test": "Platelet count",
+      "value": "22",
+      "unit": "x10^3/mcL",
+      "reference_range": "150-400",
+      "flag": "critical",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Myeloid Leukemia (AML) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Myeloid Leukemia (AML) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Acute Myeloid Leukemia emphasizes admission for induction chemotherapy and monitoring for tumor lysis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fatigue, fever, easy bruising, and circulating myeloblasts",
+      "Key HPI features: A 56-year-old female presents to the clinic with fatigue, fever, easy bruising, and circulating myeloblasts. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Acute Myeloid Leukemia.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Myeloid Leukemia (AML).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute lymphoblastic leukemia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever (possible neutropenic fever)."
+    ],
+    "management_principles": [
+      "Plan for Acute Myeloid Leukemia: Admit for induction chemotherapy, monitor for tumor lysis",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of fatigue, fever, easy bruising, and circulating myeloblasts. HPI: malignant myeloid precursor proliferation.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Acute Myeloid Leukemia.",
+    "assessment": "Condition highly suspicious for Acute Myeloid Leukemia.",
+    "plan": "Plan for Acute Myeloid Leukemia: Admit for induction chemotherapy, monitor for tumor lysis. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Myeloid Leukemia",
+    "Select appropriate diagnostic workup for Acute Myeloid Leukemia",
+    "Implement evidence-based management plan: Admit for induction chemotherapy, monitor for tumor lysis"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Myeloid Leukemia (AML)",
+    "one_liner": "Malignant proliferation of myeloid precursor cells (blasts) crowds out normal marrow function, causing fatigue, fever, easy bruising, and circulating blasts on a blood smear.",
+    "differentials": [
+      "Acute lymphoblastic leukemia",
+      "Aplastic anemia",
+      "Myelodysplastic syndrome"
+    ],
+    "red_flags": [
+      "Fever (possible neutropenic fever)",
+      "Spontaneous bleeding"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fatigue and duration",
+        "say": "How long have you felt this tired, and how severe is it?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fevers?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Bruising and bleeding",
+        "say": "Have you noticed easy bruising or any bleeding?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Infection symptoms",
+        "say": "Any signs of infection, like a sore throat or cough?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior blood counts",
+        "say": "Has a recent blood test shown any abnormalities?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

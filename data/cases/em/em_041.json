@@ -1,0 +1,161 @@
+{
+  "id": "em_041",
+  "system": "em",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Flores",
+  "age": 55,
+  "gender": "female",
+  "chief_complaint": "explosive thunderclap headache worst of life, vomiting",
+  "hpi_details": "55-year-old female is rushed to the ED by ambulance after suddenly collapsing to the floor grasping her head, screaming about the 'worst headache of my entire life' that peaked in intensity within seconds. Accompanied by severe nausea, profuse vomiting, and neck stiffness.",
+  "ideas": "thinks it might be related to a subarachnoid hemorrhage",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_head_ct",
+      "title": "STAT noncontrast CT of the head",
+      "order_terms": [
+        "noncontrast head ct",
+        "non contrast head ct",
+        "head ct",
+        "brain ct"
+      ],
+      "availability_message": "The STAT noncontrast head CT report is now available.",
+      "results": [
+        {
+          "id": "head_ct_sah",
+          "test": "Noncontrast CT head",
+          "value": "Acute subarachnoid blood throughout the basal cisterns and bilateral sylvian fissures, greatest in the anterior interhemispheric fissure; no midline shift",
+          "flag": "critical",
+          "collected_at": "12 minutes after arrival"
+        }
+      ]
+    },
+    {
+      "id": "cerebral_ct_angiography",
+      "title": "CT angiography of the cerebral arteries",
+      "order_terms": [
+        "ct angiography",
+        "ct angiogram",
+        "cerebral angiogram",
+        "brain angiogram",
+        "head cta"
+      ],
+      "availability_message": "The cerebral CT angiography report is now available.",
+      "results": [
+        {
+          "id": "cta_aneurysm",
+          "test": "CTA head",
+          "value": "7 mm irregular anterior communicating artery aneurysm, consistent with the source of the subarachnoid hemorrhage",
+          "flag": "critical",
+          "collected_at": "Immediately after the noncontrast CT"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Subarachnoid Hemorrhage evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subarachnoid Hemorrhage is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes a STAT noncontrast head CT, with lumbar puncture if the CT is negative but suspicion remains, for Subarachnoid Hemorrhage, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: explosive thunderclap headache worst of life, vomiting",
+      "Key HPI features: A 55-year-old woman has a thunderclap headache that peaked within seconds, with vomiting and neck stiffness.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Subarachnoid Hemorrhage SAH.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subarachnoid Hemorrhage.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Migraine without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Thunderclap onset."
+    ],
+    "management_principles": [
+      "Plan for Subarachnoid Hemorrhage SAH: STAT head CT, check lumbar puncture if CT negative",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55F presenting with acute onset of a thunderclap headache, nausea, and vomiting.",
+    "objective": "Vitals: BP 180/100, HR 105. Patient is lethargic but arousable, clutching her head in agony. Positive nuchal rigidity (meningismus). No focal motor deficits.",
+    "assessment": "Subarachnoid Hemorrhage (SAH), highly suspicious for ruptured berry aneurysm.",
+    "plan": "EMERGENCY. Obtain STAT noncontrast head CT; if negative but suspicion remains, pursue further evaluation with the appropriate pathway. Use IV antihypertensive therapy when needed to manage blood pressure, and give enteral nimodipine after aneurysmal SAH is confirmed to reduce delayed cerebral ischemia. Consult neurosurgery immediately for vascular imaging and aneurysm treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Subarachnoid Hemorrhage SAH",
+    "Select appropriate diagnostic workup for Subarachnoid Hemorrhage SAH",
+    "Implement evidence-based management plan: STAT head CT, check lumbar puncture if CT negative. Nimodipine"
+  ],
+  "teaching": {
+    "diagnosis": "Subarachnoid Hemorrhage",
+    "one_liner": "A ruptured aneurysm causing a sudden 'worst headache of life' reaching peak intensity within seconds.",
+    "differentials": [
+      "Migraine"
+    ],
+    "red_flags": [
+      "Thunderclap onset"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed",
+        "say": "Did the headache reach its worst within seconds?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Severity",
+        "say": "Is this the worst headache of your life?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Vomiting",
+        "say": "Have you been vomiting?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Neck stiffness",
+        "say": "Is your neck stiff?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "Any weakness or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

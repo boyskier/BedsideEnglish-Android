@@ -1,0 +1,147 @@
+{
+  "id": "peds_029",
+  "system": "pediatrics",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Martinez",
+  "age": 7,
+  "gender": "male",
+  "chief_complaint": "coughing at night and wheezing with exercise",
+  "hpi_details": "7-year-old boy with coughing at night and wheezing with exercise for the past month, suggesting persistent asthma symptoms.",
+  "ideas": "thinks it might be related to asthma_pediatric",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "School-age child, age-appropriate social history",
+  "investigation_events": [{
+    "id": "asthma_spirometry",
+    "title": "Office spirometry with bronchodilator response",
+    "order_terms": ["spirometry", "pulmonary function test", "PFT", "bronchodilator response"],
+    "availability_message": "The spirometry and bronchodilator-response results are now available.",
+    "results": [
+      {"id": "pre_bronchodilator_fev1", "test": "Pre-bronchodilator FEV1", "value": "81", "unit": "% predicted", "reference_range": ">=80", "flag": "normal"},
+      {"id": "pre_bronchodilator_ratio", "test": "Pre-bronchodilator FEV1/FVC", "value": "0.74", "reference_range": ">=0.85 for age", "flag": "low"},
+      {"id": "bronchodilator_response", "test": "FEV1 response after albuterol", "value": "+14", "unit": "% from baseline", "reference_range": ">=12 supports reversible obstruction", "flag": "abnormal"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Mild persistent asthma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mild persistent asthma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Mild Persistent Asthma: Daily low-dose ICS (Fluticasone) plus Albuterol rescue, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: coughing at night and wheezing with exercise",
+      "Key HPI features: 7-year-old boy with coughing at night and wheezing with exercise for the past month, suggesting persistent asthma symptoms.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Mild Persistent Asthma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mild persistent asthma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Exercise-induced bronchoconstriction alone without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Nocturnal symptoms suggest persistent rather than intermittent classification."
+    ],
+    "management_principles": [
+      "Plan for Mild Persistent Asthma: Daily low-dose ICS (Fluticasone) plus Albuterol rescue",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Asthma (GINA) 2025 Strategy",
+        "url": "https://ginasthma.org/gina-reports/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of coughing at night and wheezing with exercise. HPI: asthma.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Mild Persistent Asthma.",
+    "assessment": "Condition highly suspicious for Mild Persistent Asthma.",
+    "plan": "Plan for Mild Persistent Asthma: Daily low-dose ICS (Fluticasone) plus Albuterol rescue. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Mild Persistent Asthma",
+    "Select appropriate diagnostic workup for Mild Persistent Asthma",
+    "Implement evidence-based management plan: Daily low-dose ICS (Fluticasone) plus Albuterol rescue"
+  ],
+  "teaching": {
+    "diagnosis": "Mild persistent asthma",
+    "one_liner": "Patient with nighttime coughing and wheezing with exercise.",
+    "differentials": [
+      "Exercise-induced bronchoconstriction alone",
+      "Vocal cord dysfunction"
+    ],
+    "red_flags": [
+      "Nocturnal symptoms suggest persistent rather than intermittent classification",
+      "Severe breathlessness, difficulty speaking, blue lips, drowsiness, or poor response to rescue medication requires emergency care"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the cough and wheeze timing",
+        "say": "Does the cough happen more at night or during exercise?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nocturnal cough",
+          "exercise-induced wheeze"
+        ]
+      },
+      {
+        "objective": "Ask about frequency of symptoms per week",
+        "say": "How many days a week does this happen?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "symptom frequency"
+        ]
+      },
+      {
+        "objective": "Ask about atopic history",
+        "say": "Does he have eczema or allergies?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "atopic history"
+        ]
+      },
+      {
+        "objective": "Ask about associated fatigue",
+        "say": "How has the fatigue been affecting daily activities?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fatigue"
+        ]
+      },
+      {
+        "objective": "Explain the controller inhaler plan",
+        "say": "We'll start a daily low-dose controller inhaler along with a rescue inhaler as needed.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "inhaled corticosteroid",
+          "albuterol"
+        ]
+      }
+    ]
+  }
+}

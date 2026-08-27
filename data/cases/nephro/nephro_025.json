@@ -1,0 +1,149 @@
+{
+  "id": "nephro_025",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Yoo",
+  "age": 50,
+  "gender": "male",
+  "chief_complaint": "sudden muscle weakness, palpitations, and tingling in hands after missing dialysis",
+  "hpi_details": "50M with ESRD on hemodialysis presents after missing his last two scheduled dialysis sessions due to transportation issues. Complains of generalized muscle weakness, fluttering chest sensations, and tingling around his mouth.",
+  "ideas": "knows he is overdue for dialysis and needs fluid/toxin removal",
+  "concerns": "terrified of cardiac arrest due to high potassium",
+  "expectations": "wants urgent hemodialysis",
+  "pmh": "ESRD on hemodialysis (Mon/Wed/Fri), Hypertension",
+  "medications": "Carvedilol 6.25mg BID",
+  "social_hx": "Unemployed, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_hyperkalemia_workup",
+      "title": "Emergency hyperkalemia assessment",
+      "order_terms": ["ECG", "EKG", "potassium", "electrolytes", "BMP", "basic metabolic panel"],
+      "availability_message": "The STAT ECG and potassium result are now available. IV calcium and temporizing potassium treatment should not be delayed while arranging emergency dialysis.",
+      "results": [
+        {"id": "potassium", "test": "Serum potassium", "value": "7.8", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "critical"},
+        {"id": "bicarbonate", "test": "Serum bicarbonate", "value": "14", "unit": "mEq/L", "reference_range": "22-29", "flag": "low"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Sinus bradycardia at 48 bpm with tall peaked T waves and QRS widening", "flag": "critical"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Hyperkalemia (secondary to missed hemodialysis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Hyperkalemia (secondary to missed hemodialysis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management is a medical emergency: immediate cardiac membrane stabilization with IV calcium gluconate, followed by therapies that shift potassium intracellularly (insulin/dextrose, beta-agonist), and definitive potassium removal with emergency hemodialysis.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden muscle weakness, palpitations, and tingling in hands after missing dialysis",
+      "Key HPI features: 50M with ESRD on hemodialysis presents after missing his last two scheduled dialysis sessions due to transportation issues. Complains of generalized muscle weakness, fluttering chest sensations, and tingling around his mouth.",
+      "Objective/Exam findings: Vitals: HR 48 (bradycardic), BP 138/84, RR 18, afebrile. Diminished deep tendon reflexes, mild proximal muscle weakness. ECG: peaked T waves, widened QRS. STAT potassium 7.8 mEq/L, bicarbonate low, creatinine markedly elevated (chronic ESRD baseline).",
+      "Relevant background/PMH: ESRD on hemodialysis (Mon/Wed/Fri), Hypertension",
+      "Current medications: Carvedilol 6.25mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Hyperkalemia (secondary to missed hemodialysis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Anxiety/panic attack (tingling) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any palpitations or muscle weakness in an ESRD patient who missed dialysis — treat as a cardiac emergency until proven otherwise."
+    ],
+    "management_principles": [
+      "Place patient on continuous cardiac monitoring immediately given the risk of a life-threatening arrhythmia",
+      "Obtain urgent 12-lead ECG (look for peaked T waves, PR prolongation, QRS widening) and STAT potassium level",
+      "Administer Calcium Gluconate IV for membrane stabilization, followed by insulin/dextrose and emergency hemodialysis"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Severe Hyperkalemia secondary to missed hemodialysis. sudden muscle weakness, palpitations, and tingling in hands after missing dialysis. 50M with ESRD on hemodialysis presents after missing his last two scheduled dialysis sessions due to transportation issues. Complains of generalized muscle weakness, fluttering chest sensations, and tingling around his mouth.",
+    "objective": "Vitals: HR 48 (bradycardic), BP 138/84, RR 18, afebrile. Diminished deep tendon reflexes, mild proximal muscle weakness. ECG: peaked T waves, widened QRS. STAT potassium 7.8 mEq/L, bicarbonate low, creatinine markedly elevated (chronic ESRD baseline).",
+    "assessment": "Severe hyperkalemia in an ESRD patient who missed two hemodialysis sessions, presenting with neuromuscular symptoms and ECG changes (peaked T waves, widened QRS) — a cardiac emergency until treated.",
+    "plan": "1. Continuous cardiac monitoring and STAT 12-lead ECG and potassium level. 2. Administer IV calcium gluconate immediately for cardiac membrane stabilization. 3. Shift potassium intracellularly with IV insulin plus dextrose and nebulized albuterol. 4. Arrange emergency hemodialysis for definitive potassium removal. 5. Hold Carvedilol until potassium and hemodynamics stabilize given the bradycardia."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Severe Hyperkalemia secondary to missed hemodialysis.",
+    "Formulate prioritized differential diagnosis for sudden muscle weakness, palpitations, and tingling in hands after missing dialysis",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies for Severe Hyperkalemia secondary to missed hemodialysis."
+  ],
+  "teaching": {
+    "diagnosis": "Severe Hyperkalemia (secondary to missed hemodialysis)",
+    "one_liner": "Without regular dialysis, potassium accumulates rapidly in a patient with end-stage renal disease, causing muscle weakness, perioral tingling, and dangerous cardiac effects.",
+    "differentials": [
+      "Anxiety/panic attack (tingling)",
+      "Hypocalcemia",
+      "Medication side effect"
+    ],
+    "red_flags": [
+      "Any palpitations or muscle weakness in an ESRD patient who missed dialysis — treat as a cardiac emergency until proven otherwise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Missed dialysis sessions",
+        "say": "How many dialysis sessions have you missed, and why?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "missed dialysis",
+          "sessions"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Are you feeling your heart flutter or beat irregularly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "palpitations",
+          "flutter"
+        ]
+      },
+      {
+        "objective": "Muscle weakness",
+        "say": "How weak do your muscles feel, and where?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weakness"
+        ]
+      },
+      {
+        "objective": "Tingling",
+        "say": "Where exactly do you feel the tingling?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "tingling",
+          "mouth"
+        ]
+      },
+      {
+        "objective": "Dietary intake since missing dialysis",
+        "say": "Have you eaten anything high in potassium recently?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

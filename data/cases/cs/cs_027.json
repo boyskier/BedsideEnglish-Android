@@ -1,0 +1,148 @@
+{
+  "id": "cs_027",
+  "system": "cs",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Jones",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "angina on minimal exertion, diabetes, and abnormal stress test",
+  "hpi_details": "A 58-year-old male presents to the clinic with angina on minimal exertion, diabetes, and abnormal stress test. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cad",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Type 2 diabetes mellitus",
+  "medications": "Metformin",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "high_risk_stress_test",
+      "test": "Exercise myocardial perfusion study",
+      "value": "Large reversible perfusion defects in the anterior and inferior walls with 2.5 mm exercise-induced ST depression",
+      "unit": "",
+      "reference_range": "No inducible ischaemia",
+      "flag": "critical",
+      "collected_at": "Before today's encounter"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "three_vessel_coronary_angiography",
+      "title": "Coronary angiography",
+      "order_terms": ["coronary angiography", "coronary angiogram", "cardiac catheterization"],
+      "availability_message": "The coronary angiography report is now available.",
+      "results": [
+        {
+          "id": "angiography_three_vessel_disease",
+          "test": "Coronary angiography",
+          "value": "85% proximal LAD, 80% circumflex, and 90% right coronary artery stenoses; SYNTAX score 35",
+          "unit": "",
+          "reference_range": "No obstructive coronary disease",
+          "flag": "critical",
+          "collected_at": "Diagnostic angiography"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Suspected Multivessel Coronary Artery Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Three-Vessel Coronary Artery Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes coronary angiography to define anatomy, followed by individualized medical and revascularization planning, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: angina on minimal exertion, diabetes, and abnormal stress test",
+      "Key HPI features: A 58-year-old male presents to the clinic with angina on minimal exertion, diabetes, and abnormal stress test. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Three-Vessel CAD.",
+      "Relevant background/PMH: Type 2 diabetes mellitus"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Three-Vessel Coronary Artery Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Single-vessel disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rest pain — unstable angina."
+    ],
+    "management_principles": [
+      "Plan for suspected multivessel CAD: coronary angiography to define anatomy, followed by multidisciplinary revascularization planning when indicated",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2021 ACC/AHA/SCAI Guideline for Coronary Artery Revascularization",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001038"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of angina on minimal exertion, diabetes, and abnormal stress test. HPI: severe coronary atherosclerosis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Three-Vessel CAD.",
+    "assessment": "High-risk coronary artery disease is suspected, but the extent of coronary disease requires angiographic definition.",
+    "plan": "Plan for suspected multivessel CAD: coronary angiography to define anatomy, followed by multidisciplinary revascularization planning when indicated. CABG is often favored for diabetes with complex multivessel disease, but the choice between medical therapy, PCI, and CABG depends on anatomy, ventricular function, comorbidity, and patient preference. Seek urgent assessment for rest pain or worsening symptoms. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Three-Vessel CAD",
+    "Select appropriate diagnostic workup for Three-Vessel CAD",
+    "Implement evidence-based management plan: Coronary angiography, refer for bypass surgery (CABG)"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Three-Vessel Coronary Artery Disease",
+    "one_liner": "Severe atherosclerotic narrowing of all three major coronary arteries, causing angina on minimal exertion — typically managed with bypass surgery given the extent of disease.",
+    "differentials": [
+      "Single-vessel disease",
+      "Non-cardiac chest pain"
+    ],
+    "red_flags": [
+      "Rest pain — unstable angina"
+    ],
+    "must_ask": [
+      {
+        "objective": "Angina severity",
+        "say": "How little activity brings on the chest pain now?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Diabetes history",
+        "say": "Do you have diabetes?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Stress test findings",
+        "say": "Has anyone told you about your stress test results?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Prior interventions",
+        "say": "Have you had a stent before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Functional capacity",
+        "say": "How far can you walk before the pain starts?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "neuro_009",
+  "system": "neurology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Kowalski",
+  "age": 38,
+  "gender": "male",
+  "chief_complaint": "tingling in toes and rapidly spreading weakness up both legs over 5 days",
+  "hpi_details": "5-day history of progressive, symmetrical tingling and pins-and-needles (paraesthesia) starting in the toes and soles of both feet, which has now ascended to involve his fingertips and hands. Over the past 3 days, noticed heavy weakness in both lower limbs, stumbling when walking up steps and now unable to stand without assistance. This morning, noticed mild difficulty swallowing dry bread and facial weakness on both sides. Three weeks ago, suffered a severe bout of watery, cramping gastroenteritis (confirmed Campylobacter jejuni on stool test) while on a camping trip.",
+  "ideas": "thinks the food poisoning bacteria from his camping trip attacked his peripheral nerves",
+  "concerns": "terrified the paralysis will spread up to his lung muscles and stop him breathing in his sleep",
+  "expectations": "wants immediate admission to intensive care, immunoglobulin infusions, and close breathing monitoring",
+  "pmh": "recent Campylobacter jejuni gastroenteritis 3 weeks ago, otherwise healthy",
+  "medications": "none regular",
+  "social_hx": "non-smoker, drinks socially, civil engineer, married with two young children",
+  "available_results": [
+    {"id": "prior_stool_culture", "test": "Stool culture from recent gastroenteritis", "value": "Campylobacter jejuni isolated", "flag": "abnormal", "collected_at": "Three weeks before today's encounter"}
+  ],
+  "investigation_events": [
+    {
+      "id": "urgent_gbs_assessment",
+      "title": "Urgent respiratory and CSF assessment",
+      "order_terms": ["forced vital capacity", "FVC", "negative inspiratory force", "NIF", "lumbar puncture", "CSF"],
+      "availability_message": "Bedside respiratory measurements and CSF results are now available. ICU-level monitoring and immunotherapy should not be delayed in this rapidly progressive presentation.",
+      "results": [
+        {"id": "fvc", "test": "Bedside forced vital capacity", "value": "17", "unit": "mL/kg", "reference_range": ">20", "flag": "low"},
+        {"id": "nif", "test": "Negative inspiratory force", "value": "-28", "unit": "cm H2O", "reference_range": "More negative than -30", "flag": "abnormal"},
+        {"id": "csf", "test": "Cerebrospinal fluid analysis", "value": "Protein 1.24 g/L; 2 WBC/uL", "flag": "abnormal", "note": "Albuminocytologic dissociation."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Guillain-Barré Syndrome (GBS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Guillain-Barré Syndrome (GBS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Medical emergency: immediate hospital admission with high-dependency/ICU bed availability and continuous ECG/autonomic and respiratory monitoring, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: tingling in toes and rapidly spreading weakness up both legs over 5 days",
+      "Key HPI features: 5-day history of progressive, symmetrical tingling and pins-and-needles (paraesthesia) starting in the toes and soles of both feet, which has now ascended to involve his fingertips and hands. Over the past 3 days, noticed heavy weakness in both lower limbs, stumbling when walking up steps and now unable to stand without assistance. This morning, noticed mild difficulty swallowing dry bread and facial weakness on both sides. Three weeks ago, suffered a severe bout of watery, cramping gastroenteritis (confirmed Campylobacter jejuni on stool test) while on a camping trip.",
+      "Objective/Exam findings: Neurological exam: bilateral lower limb weakness (power 2/5 distal, 3/5 proximal), bilateral upper limb weakness (4/5), bilateral lower motor neuron facial diplegia. Deep tendon reflexes: complete generalized areflexia (absent ankle, knee, biceps, and triceps jerks). Sensory exam: mild distal stocking-glove loss to vibration and pinprick. Vitals: check for autonomic instability (fluctuating BP, tachycardia). Respiratory assessment is critical: measure bedside Forced Vital Capacity (FVC) and Negative Inspiratory Force (NIF) every 4 hours; FVC <15 mL/kg or NIF <-30 cm H2O mandates elective intubation/ICU transfer. Lumbar puncture may show albuminocytological dissociation after week 1. Nerve Conduction Studies (NCS) show acute demyelinating polyradiculopathy features (prolonged distal latencies, slowed conduction velocities, conduction block).",
+      "Relevant background/PMH: recent Campylobacter jejuni gastroenteritis 3 weeks ago, otherwise healthy",
+      "Current medications: none regular"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Guillain-Barré Syndrome (GBS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Transverse myelitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Difficulty swallowing or facial weakness — signals the paralysis is ascending toward the muscles controlling breathing."
+    ],
+    "management_principles": [
+      "Medical emergency: immediate hospital admission with high-dependency/ICU bed availability and continuous ECG/autonomic and respiratory monitoring",
+      "Initiate disease-modifying immunotherapy immediately: Intravenous Immunoglobulin (IVIG 0.4 g/kg/day for 5 days) or Plasma Exchange (plasmapheresis)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "38M post-Campylobacter gastroenteritis presents with rapidly ascending symmetrical paraesthesia and quadriparesis over 5 days, now involving bilateral facial and bulbar muscles.",
+    "objective": "Neurological exam: bilateral lower limb weakness (power 2/5 distal, 3/5 proximal), bilateral upper limb weakness (4/5), bilateral lower motor neuron facial diplegia. Deep tendon reflexes: complete generalized areflexia (absent ankle, knee, biceps, and triceps jerks). Sensory exam: mild distal stocking-glove loss to vibration and pinprick. Vitals: check for autonomic instability (fluctuating BP, tachycardia). Respiratory assessment critical: measure bedside Forced Vital Capacity (FVC) and Negative Inspiratory Force (NIF) every 4 hours (FVC <15 mL/kg or NIF <-30 cm H2O mandates elective endotracheal intubation/ICU transfer). Lumbar puncture: classical albuminocytological dissociation (markedly elevated CSF protein >1.0 g/L with normal white blood cell count <5 cells/uL after week 1). Nerve Conduction Studies (NCS): acute demyelinating polyradiculopathy features (prolonged distal latencies, slowed conduction velocities, conduction block).",
+    "assessment": "Guillain-Barré Syndrome (Acute Inflammatory Demyelinating Polyradiculopathy - AIDP) triggered by Campylobacter jejuni infection. DDx: transverse myelitis (shows sensory level and brisk reflexes after spinal shock), myasthenia gravis (no sensory loss, fatigable reflexes intact), chronic inflammatory demyelinating polyneuropathy (CIDP - duration >8 weeks), botulism (descending paralysis).",
+    "plan": "Medical emergency: immediate hospital admission with high-dependency/ICU bed availability and continuous ECG/autonomic and respiratory monitoring. Initiate disease-modifying immunotherapy immediately: Intravenous Immunoglobulin (IVIG 0.4 g/kg/day for 5 days) or Plasma Exchange (plasmapheresis). Critical instruction: corticosteroids (prednisolone/methylprednisolone) are NOT effective in GBS and should not be used. Deep vein thrombosis prophylaxis and intensive physiotherapy/rehabilitation planning."
+  },
+  "learning_objectives": [
+    "Link antecedent Campylobacter jejuni gastroenteritis with molecular mimicry driving acute inflammatory demyelinating polyradiculopathy",
+    "Identify the cardinal neurological exam findings of GBS: ascending symmetrical weakness coupled with generalized areflexia",
+    "Execute rigorous bedside respiratory monitoring (serial FVC and Negative Inspiratory Force) to catch impending neuromuscular respiratory failure",
+    "Explain the therapeutic superiority of IVIG or plasmapheresis and the lack of efficacy of corticosteroids in acute GBS"
+  ],
+  "teaching": {
+    "diagnosis": "Guillain-Barré Syndrome (GBS)",
+    "one_liner": "An autoimmune attack on peripheral nerves, often triggered by a preceding infection (here Campylobacter), causing symmetric ascending weakness from the feet upward — a medical emergency because it can progress to affect the breathing muscles.",
+    "differentials": [
+      "Transverse myelitis",
+      "Myasthenia gravis",
+      "Chronic inflammatory demyelinating polyneuropathy (CIDP)",
+      "Botulism"
+    ],
+    "red_flags": [
+      "Difficulty swallowing or facial weakness — signals the paralysis is ascending toward the muscles controlling breathing"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ascending pattern",
+        "say": "Did the tingling start in your toes and move upward to your hands?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "ascending",
+          "toes to hands"
+        ]
+      },
+      {
+        "objective": "Weakness progression",
+        "say": "How has the weakness in your legs changed over the past few days?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "days",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Bulbar/respiratory symptoms",
+        "say": "Any trouble swallowing or breathing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swallowing",
+          "breathing"
+        ]
+      },
+      {
+        "objective": "Preceding infection",
+        "say": "Did you have any diarrhea or stomach illness a few weeks ago?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "gastroenteritis",
+          "Campylobacter"
+        ]
+      },
+      {
+        "objective": "Sensory versus motor",
+        "say": "Is this mostly weakness, or do you also have numbness?",
+        "domains": [
+          "character"
+        ]
+      }
+    ]
+  }
+}

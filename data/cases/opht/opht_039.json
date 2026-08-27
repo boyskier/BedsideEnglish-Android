@@ -1,0 +1,145 @@
+{
+  "id": "opht_039",
+  "system": "opht",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. White",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "dark curtain curtain shadow pulling across vision, flashes",
+  "hpi_details": "58-year-old myopic male presents with acute onset of a 'dark curtain' pulling across his inferior visual field in the right eye. Prior to this, he noticed sudden flashes of light (photopsia) and a new shower of floaters in the same eye yesterday.",
+  "ideas": "thinks it might be related to retinal_detachment",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "stat_retinal_detachment_exam",
+    "title": "Emergency dilated retinal examination",
+    "order_terms": ["dilated fundus exam", "dilated retinal exam", "ophthalmoscopy", "scleral depression"],
+    "availability_message": "The emergency retinal examination is now available. Retinal-surgeon referral should proceed immediately.",
+    "results": [{"id": "fundus_exam", "test": "Dilated fundus examination", "value": "Superior horseshoe retinal tear with an elevated undulating rhegmatogenous retinal detachment extending toward the macula", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Retinal detachment evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Retinal detachment is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Retinal Detachment: Position head tilt, urgent refer for vitrectomy or scleral buckle, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: dark curtain curtain shadow pulling across vision, flashes",
+      "Key HPI features: A 59-year-old male presents to the clinic with dark curtain curtain shadow pulling across vision, flashes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Retinal Detachment.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Retinal detachment.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Posterior vitreous detachment without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Progressive curtain/shadow."
+    ],
+    "management_principles": [
+      "A suspected retinal detachment requires same-day emergency ophthalmology/retina assessment; do not delay referral for positioning instructions or attempt to select definitive surgery outside specialist care",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "58M with high myopia presenting with acute photopsia, floaters, and an advancing shadow in the right visual field.",
+    "objective": "Visual acuity decreased in right eye. Confrontation reveals inferior visual field defect. Dilated fundus exam reveals a superior horseshoe retinal tear with an associated elevated, undulating, pale, detached retina.",
+    "assessment": "Rhegmatogenous Retinal Detachment.",
+    "plan": "OPHTHALMOLOGIC EMERGENCY. Immediate referral to a retinal surgeon for pneumatic retinopexy, scleral buckle, or pars plana vitrectomy."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Retinal Detachment",
+    "Select appropriate diagnostic workup for Retinal Detachment",
+    "Implement evidence-based management plan: Position head tilt, urgent refer for vitrectomy or scleral buckle"
+  ],
+  "teaching": {
+    "diagnosis": "Retinal detachment",
+    "one_liner": "Patient with a dark curtain shadow pulling across their vision along with flashes of light.",
+    "differentials": [
+      "Posterior vitreous detachment",
+      "Vitreous hemorrhage",
+      "Migraine aura"
+    ],
+    "red_flags": [
+      "Progressive curtain/shadow",
+      "New flashes and floaters"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the shadow progression",
+        "say": "Where did the shadow start, and is it spreading toward your center vision?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "curtain",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Ask about flashes and floaters",
+        "say": "Did you notice flashes of light or new floaters before this?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "flashes",
+          "floaters"
+        ]
+      },
+      {
+        "objective": "Confirm painless nature",
+        "say": "Is there any pain in the eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "painless"
+        ]
+      },
+      {
+        "objective": "Ask about risk factors",
+        "say": "Are you nearsighted, or have you had eye surgery or trauma?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "myopia",
+          "prior eye surgery"
+        ]
+      },
+      {
+        "objective": "Explain urgency and positioning instructions",
+        "say": "This is an emergency — please keep your head tilted as instructed until we get you to a retina specialist.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urgent referral",
+          "head positioning"
+        ]
+      }
+    ]
+  }
+}

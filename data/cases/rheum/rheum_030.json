@@ -1,0 +1,118 @@
+{
+  "id": "rheum_030",
+  "system": "rheumatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Smith",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "sudden excruciating pain, redness, and swelling in big toe",
+  "hpi_details": "A 32-year-old female presents to the clinic with sudden excruciating pain, redness, and swelling in big toe. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gout",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Acute Gouty Arthritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Gouty Arthritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes treating the flare with an NSAID or colchicine; continue established urate-lowering therapy, and initiation during a flare is acceptable when indicated with anti-inflammatory treatment, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating pain, redness, and swelling in big toe",
+      "Key HPI features: A 32-year-old female presents to the clinic with sudden excruciating pain, redness, and swelling in big toe. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Acute Gouty Arthritis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Gouty Arthritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever with joint swelling."
+    ],
+    "management_principles": [
+      "Treat the flare with an NSAID or colchicine; continue established urate-lowering therapy, and initiation during a flare is acceptable when indicated with anti-inflammatory treatment",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden excruciating pain, redness, and swelling in big toe\n\nA 32-year-old female presents to the clinic with sudden excruciating pain, redness, and swelling in big toe. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Acute Gouty Arthritis.",
+    "assessment": "Condition highly suspicious for Acute Gouty Arthritis.",
+    "plan": "Assess vital signs and examine for an effusion or cellulitis. Do not assume gout in a first or atypical acute monoarthritis: if septic arthritis is plausible, arrange urgent arthrocentesis with synovial cell count, Gram stain, culture, and crystal analysis. A clinician should select NSAID, colchicine, or glucocorticoid treatment after renal, gastrointestinal, cardiovascular, interaction, pregnancy, and infection-risk review. Continue established urate-lowering therapy unless the treating clinician advises otherwise; decisions to initiate long-term urate-lowering therapy require follow-up and individualized counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Gouty Arthritis",
+    "Select appropriate diagnostic workup for Acute Gouty Arthritis",
+    "Implement evidence-based management plan: treat the flare with an NSAID or colchicine; continue established urate-lowering therapy, and initiate it during a flare when indicated with anti-inflammatory treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Gouty Arthritis",
+    "one_liner": "Monosodium urate crystal deposition in a joint causing sudden excruciating pain, redness, and swelling, classically in the big toe.",
+    "differentials": [
+      "Septic arthritis",
+      "Pseudogout"
+    ],
+    "red_flags": [
+      "Fever with joint swelling"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset",
+        "say": "Did this come on suddenly?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Joint location",
+        "say": "Which joint is affected — the big toe?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Dietary triggers",
+        "say": "Did you eat a lot of meat or drink alcohol recently?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Any fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Has this happened before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

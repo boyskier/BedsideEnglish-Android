@@ -1,0 +1,146 @@
+{
+  "id": "id_033",
+  "system": "id",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "severe sore throat, high fever, and huge neck lymph nodes",
+  "hpi_details": "A 41-year-old male presents to the clinic with severe sore throat, high fever, and huge neck lymph nodes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to mononucleosis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_mononucleosis_test",
+      "title": "Point-of-care mononucleosis test",
+      "order_terms": [
+        "heterophile antibody",
+        "monospot",
+        "mono test"
+      ],
+      "availability_message": "The point-of-care heterophile antibody result is now available.",
+      "results": [
+        {
+          "id": "heterophile_antibody",
+          "test": "Heterophile antibody test",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Blood",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infectious Mononucleosis (EBV) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infectious Mononucleosis (EBV) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Infectious Mononucleosis: Symptomatic care, avoid contact sports (splenic rupture risk), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe sore throat, high fever, and huge neck lymph nodes",
+      "Key HPI features: A 41-year-old male presents to the clinic with severe sore throat, high fever, and huge neck lymph nodes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 38.9C, HR 92, BP 118/74. Bilateral posterior cervical lymphadenopathy, tonsillar exudates with palatal petechiae, mild splenomegaly on abdominal palpation. Heterophile antibody (Monospot) test positive; CBC shows lymphocytosis with >10% atypical lymphocytes.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infectious Mononucleosis (EBV).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Streptococcal pharyngitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe abdominal pain — could indicate splenic enlargement or rupture risk."
+    ],
+    "management_principles": [
+      "Plan for Infectious Mononucleosis: Symptomatic care, avoid contact sports (splenic rupture risk)",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: severe sore throat, high fever, and huge neck lymph nodes\n\nA 41-year-old male presents to the clinic with severe sore throat, high fever, and huge neck lymph nodes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 38.9C, HR 92, BP 118/74. Bilateral posterior cervical lymphadenopathy, tonsillar exudates with palatal petechiae, mild splenomegaly on abdominal palpation. Heterophile antibody (Monospot) test positive; CBC shows lymphocytosis with >10% atypical lymphocytes.",
+    "assessment": "Infectious Mononucleosis (EBV), confirmed by positive heterophile antibody testing and atypical lymphocytosis; mild splenomegaly noted, warranting contact/sport precautions.",
+    "plan": "Plan for Infectious Mononucleosis: Symptomatic care, avoid contact sports (splenic rupture risk). Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Infectious Mononucleosis",
+    "Select appropriate diagnostic workup for Infectious Mononucleosis",
+    "Implement evidence-based management plan: Symptomatic care, avoid contact sports (splenic rupture risk)"
+  ],
+  "teaching": {
+    "diagnosis": "Infectious Mononucleosis (EBV)",
+    "one_liner": "Epstein-Barr virus infection causing severe sore throat, high fever, and marked cervical lymphadenopathy — contact sports should be avoided due to splenic rupture risk.",
+    "differentials": [
+      "Streptococcal pharyngitis",
+      "CMV infection",
+      "Acute HIV infection"
+    ],
+    "red_flags": [
+      "Severe abdominal pain — could indicate splenic enlargement or rupture risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sore throat severity",
+        "say": "How severe is the sore throat?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Lymph node swelling",
+        "say": "Are the glands in your neck swollen?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How tired do you feel?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "How high has the fever been?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Abdominal fullness/pain (spleen)",
+        "say": "Any pain or fullness in your upper left belly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "spleen",
+          "abdominal"
+        ]
+      }
+    ]
+  }
+}

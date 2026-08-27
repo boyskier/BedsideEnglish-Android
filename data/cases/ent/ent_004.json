@@ -1,0 +1,175 @@
+{
+  "id": "ent_004",
+  "system": "otolaryngology (ent)",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Davis",
+  "age": 52,
+  "gender": "female",
+  "chief_complaint": "episodic vertigo lasting 3 hours accompanied by roaring tinnitus, fullness in ear, and fluctuating low-frequency hearing loss (Meniere Disease)",
+  "hpi_details": "52F presents with 1-year history of disabling, recurrent attacks of sudden spinning vertigo that last between 2 and 5 hours per episode. During attacks, experiences severe nausea and vomiting, a loud 'roaring' and 'buzzing' tinnitus in her left ear, a feeling of intense mechanical pressure and fullness clogging the left ear, and muffled hearing. After sleeping off the vertigo, her balance recovers over 24 hours, but over the past 6 months she noticed her left ear hearing is staying permanently muffled.",
+  "ideas": "frustrated and anxious about unpredictable vertigo attacks striking while driving or working",
+  "concerns": "worried she has a brain tumor or inner ear stroke",
+  "expectations": "wants definitive diagnosis and medications to prevent future spinning episodes",
+  "pmh": "Hypertension, High sodium diet",
+  "medications": "Hydrochlorothiazide 25mg daily",
+  "social_hx": "High school counselor, non-smoker",
+  "investigation_events": [
+    {
+      "id": "office_audiogram",
+      "title": "Office audiogram",
+      "order_terms": [
+        "audiogram",
+        "audiometry",
+        "hearing test",
+        "hearing assessment"
+      ],
+      "availability_message": "The office audiogram is now available.",
+      "results": [
+        {
+          "id": "left_low_frequency_threshold",
+          "test": "Left-ear air-conduction threshold at 500 Hz",
+          "value": "50",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "high",
+          "collected_at": "During ENT assessment",
+          "note": "Low-frequency sensorineural hearing loss"
+        },
+        {
+          "id": "left_high_frequency_threshold",
+          "test": "Left-ear air-conduction threshold at 4000 Hz",
+          "value": "20",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "normal",
+          "collected_at": "During ENT assessment"
+        },
+        {
+          "id": "right_pure_tone_average",
+          "test": "Right-ear pure-tone average",
+          "value": "16",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "normal",
+          "collected_at": "During ENT assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Meniere's Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Meniere's Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes acute vestibular suppressant therapy followed by chronic sodium restriction and maintenance diuretics, escalating to intratympanic therapy if refractory, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodic vertigo lasting 3 hours accompanied by roaring tinnitus, fullness in ear, and fluctuating low-frequency hearing loss (Meniere Disease)",
+      "Key HPI features: 52F presents with 1-year history of disabling, recurrent attacks of sudden spinning vertigo that last between 2 and 5 hours per episode. During attacks, experiences severe nausea and vomiting, a loud 'roaring' and 'buzzing' tinnitus in her left ear, a feeling of intense mechanical pressure and fullness clogging the left ear, and muffled hearing. After sleeping off the vertigo, her balance recovers over 24 hours, but over the past 6 months she noticed her left ear hearing is staying permanently muffled.",
+      "Objective/Exam findings: Vitals: HR 74, BP 128/80. Otoscopic examination of bilateral tympanic membranes completely normal. During euthymic interval between attacks, spontaneous nystagmus is absent. Dix-Hallpike maneuver is negative for BPPV. Audiogram demonstrates classic unilateral, low-frequency sensorineural hearing loss in the left ear (rising or peaked configuration between 250-1000 Hz) with preserved high-frequency thresholds and normal tympanometry. Brain MRI with internal auditory canal protocol normal (excluding vestibular schwannoma).",
+      "Relevant background/PMH: Hypertension, High sodium diet",
+      "Current medications: Hydrochlorothiazide 25mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Meniere's Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to BPPV (much shorter episodes, no hearing loss) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any new one-sided weakness or double vision — would suggest a central (brain) cause instead."
+    ],
+    "management_principles": [
+      "Acute vertigo abortive therapy: prescribe vestibular suppressants (Meclizine 25 mg PO or Promethazine/Ondansetron for nausea) to be taken only during active acute vertigo spells",
+      "Chronic prophylactic/maintenance therapy: enforce dietary sodium restriction (<1,500 mg daily), caffeine restriction, and alcohol limitation",
+      "Initiate daily maintenance diuretic therapy (Hydrochlorothiazide-Triamterene or Acetazolamide) to reduce inner ear endolymphatic fluid volume and pressure"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "52F presenting with classic symptom tetrad of Meniere Disease (Endolymphatic Hydrops): spontaneous episodic vertigo (2-5 hours), fluctuating low-frequency sensorineural hearing loss, roaring tinnitus, and aural fullness.",
+    "objective": "Vitals: HR 74, BP 128/80. Otoscopic examination of bilateral tympanic membranes completely normal. During euthymic interval between attacks, spontaneous nystagmus is absent. Dix-Hallpike maneuver is negative for BPPV. Audiogram demonstrates classic unilateral, low-frequency sensorineural hearing loss in the left ear (rising or peaked configuration between 250-1000 Hz) with preserved high-frequency thresholds and normal tympanometry. Brain MRI with internal auditory canal protocol normal (excluding vestibular schwannoma).",
+    "assessment": "Left Meniere Disease (Idiopathic Endolymphatic Hydrops).",
+    "plan": "1. Acute vertigo abortive therapy: prescribe vestibular suppressants (Meclizine 25 mg PO or Promethazine/Ondansetron for nausea) to be taken only during active acute vertigo spells. 2. Chronic prophylactic/maintenance therapy: enforce dietary sodium restriction (<1,500 mg daily), caffeine restriction, and alcohol limitation. Initiate daily maintenance diuretic therapy (Hydrochlorothiazide-Triamterene or Acetazolamide) to reduce inner ear endolymphatic fluid volume and pressure. If frequent disabling attacks persist, refer to neuro-otology for Intratympanic Dexamethasone injections or Intratympanic Gentamicin (chemical labyrinthectomy)."
+  },
+  "learning_objectives": [
+    "Memorize the clinical tetrad of Meniere Disease: spontaneous episodic vertigo lasting 20 minutes to 12 hours, fluctuating low-frequency sensorineural hearing loss, roaring tinnitus, and ipsilateral aural fullness",
+    "Differentiate Meniere Disease (vertigo lasting HOURS with auditory symptoms) from Benign Paroxysmal Positional Vertigo BPPV (vertigo lasting SECONDS triggered exclusively by head movements without hearing loss) and Vestibular Neuritis (constant severe vertigo lasting DAYS following viral URI without hearing loss)",
+    "Interpret audiometric findings demonstrating low-frequency sensorineural hearing loss (rising configuration) characteristic of endolymphatic hydrops",
+    "Outline stepwise management from dietary restriction (low salt <1.5g/day) and daily diuretics to intratympanic steroid/gentamicin injections"
+  ],
+  "teaching": {
+    "diagnosis": "Meniere's Disease",
+    "one_liner": "Excess fluid pressure in the inner ear (endolymphatic hydrops) causes recurrent episodes of vertigo lasting hours, along with roaring tinnitus, ear fullness, and fluctuating hearing loss that gradually becomes permanent.",
+    "differentials": [
+      "BPPV (much shorter episodes, no hearing loss)",
+      "Vestibular migraine",
+      "Acoustic neuroma"
+    ],
+    "red_flags": [
+      "Any new one-sided weakness or double vision — would suggest a central (brain) cause instead"
+    ],
+    "must_ask": [
+      {
+        "objective": "Vertigo duration and character",
+        "say": "How long does each spinning episode last — hours?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "hours",
+          "spinning"
+        ]
+      },
+      {
+        "objective": "Associated ear symptoms",
+        "say": "During an attack, do you have ringing in your ear and a feeling of fullness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tinnitus",
+          "fullness"
+        ]
+      },
+      {
+        "objective": "Hearing changes",
+        "say": "Has your hearing on that side gotten worse over time?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "hearing loss"
+        ]
+      },
+      {
+        "objective": "Frequency",
+        "say": "How often do these attacks happen?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "How much salt and caffeine do you typically consume?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

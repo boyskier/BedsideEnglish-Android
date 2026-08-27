@@ -1,0 +1,265 @@
+{
+  "schema_version": 1,
+  "description": "Detail-bearing real-life listening micro-drills. Audio is generated on demand; no third-party recording is bundled.",
+  "drills": [
+    {
+      "id": "airport_gate_time",
+      "category": "Travel & Transit",
+      "difficulty": 1,
+      "context": "A fellow passenger repeats an airport announcement.",
+      "transcript": "They moved us to gate B twelve, and boarding starts at six forty.",
+      "details": [
+        {"key": "gate", "label": "gate", "answers": ["b12", "b 12", "b twelve", "gate b12", "gate b twelve"]},
+        {"key": "time", "label": "boarding time", "answers": ["6:40", "six forty", "6 40"]}
+      ],
+      "receptive_tags": ["letters_numbers", "times", "connected_speech"],
+      "productive_tags": ["readback", "clarification"],
+      "accent_candidates": ["us", "uk", "aus", "in", "sg"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "coffee_name_order",
+      "category": "Food & Drink",
+      "difficulty": 1,
+      "context": "A barista calls out a drink and a name.",
+      "transcript": "Oat flat white for Mina, with an extra shot and no sugar.",
+      "details": [
+        {"key": "name", "label": "name", "answers": ["mina", "meena"]},
+        {"key": "drink", "label": "drink", "answers": ["oat flat white", "flat white"]},
+        {"key": "extra_shot", "label": "extra shot", "answers": ["extra shot", "one extra shot"]},
+        {"key": "sugar", "label": "sugar preference", "answers": ["no sugar", "without sugar", "zero sugar"]}
+      ],
+      "receptive_tags": ["names", "food_choices", "reductions"],
+      "productive_tags": ["confirmation"],
+      "accent_candidates": ["us", "ca", "nz", "ph"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "meeting_room_change",
+      "category": "Campus & Lab",
+      "difficulty": 1,
+      "context": "A labmate gives a quick meeting update.",
+      "transcript": "Quick heads-up, lab meeting is in room two fourteen at three fifteen, not three thirty.",
+      "details": [
+        {"key": "room", "label": "room", "answers": ["214", "2 14", "two fourteen", "room 214"]},
+        {"key": "time", "label": "correct time", "answers": ["3:15", "three fifteen", "3 15"]}
+      ],
+      "receptive_tags": ["numbers", "times", "contrast_correction"],
+      "productive_tags": ["readback"],
+      "accent_candidates": ["us", "uk", "in", "ng"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "grocery_substitution",
+      "category": "Shops & Services",
+      "difficulty": 2,
+      "context": "A delivery shopper calls about substitutions.",
+      "transcript": "They're out of the twelve-ounce tomato soup, but I can get two smaller cans for four eighty-nine.",
+      "details": [
+        {"key": "size", "label": "missing size", "answers": ["12 ounce", "twelve ounce", "12-ounce"]},
+        {"key": "substitution", "label": "substitution", "answers": ["two smaller cans", "2 smaller cans"]},
+        {"key": "price", "label": "price", "answers": ["4.89", "$4.89", "four eighty nine", "four eighty-nine"]}
+      ],
+      "receptive_tags": ["prices", "quantities", "connected_speech"],
+      "productive_tags": ["decision", "confirmation"],
+      "accent_candidates": ["us", "es", "ph", "sg"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "bus_transfer",
+      "category": "Travel & Transit",
+      "difficulty": 2,
+      "context": "A driver gives transfer directions.",
+      "transcript": "Get off after the library, cross Pine Street, then take the number twenty-seven toward Riverside.",
+      "details": [
+        {"key": "landmark", "label": "landmark", "answers": ["library", "after the library"]},
+        {"key": "street", "label": "street", "answers": ["pine street", "pine"]},
+        {"key": "bus", "label": "bus number", "answers": ["27", "twenty seven", "twenty-seven"]},
+        {"key": "direction", "label": "direction", "answers": ["riverside", "toward riverside"]}
+      ],
+      "receptive_tags": ["directions", "numbers", "sequence"],
+      "productive_tags": ["readback", "clarification"],
+      "accent_candidates": ["uk", "ie", "sco", "aus", "za"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "package_neighbor",
+      "category": "Housing & Daily Life",
+      "difficulty": 2,
+      "context": "A neighbor explains where a package went.",
+      "transcript": "The courier left your parcel with apartment four C, but they'll be out after seven.",
+      "details": [
+        {"key": "apartment", "label": "apartment", "answers": ["4c", "4 c", "four c", "apartment 4c"]},
+        {"key": "availability", "label": "availability", "answers": ["after seven", "after 7", "out after seven", "not after seven"]}
+      ],
+      "receptive_tags": ["letters_numbers", "indirect_information", "times"],
+      "productive_tags": ["confirmation", "thanks"],
+      "accent_candidates": ["ca", "nz", "ng", "fr"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "restaurant_wait",
+      "category": "Food & Drink",
+      "difficulty": 2,
+      "context": "A host gives a wait estimate and asks for a phone number.",
+      "transcript": "It'll be about thirty-five minutes; can I text you at the number ending zero six nine two?",
+      "details": [
+        {"key": "wait", "label": "wait", "answers": ["35 minutes", "thirty five minutes", "thirty-five"]},
+        {"key": "digits", "label": "phone ending", "answers": ["0692", "0 6 9 2", "zero six nine two"]}
+      ],
+      "receptive_tags": ["numbers", "phone_digits", "reductions"],
+      "productive_tags": ["confirmation", "consent"],
+      "accent_candidates": ["us", "in", "es", "de"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "class_deadline",
+      "category": "Campus & Lab",
+      "difficulty": 2,
+      "context": "A classmate corrects an assignment deadline.",
+      "transcript": "The reflection is due Thursday at noon, but the data sheet isn't due until Monday morning.",
+      "details": [
+        {"key": "reflection", "label": "reflection deadline", "answers": ["thursday at noon", "thursday noon", "noon thursday"]},
+        {"key": "sheet", "label": "data sheet deadline", "answers": ["monday morning", "on monday morning"]}
+      ],
+      "receptive_tags": ["dates", "contrast_correction", "connected_speech"],
+      "productive_tags": ["readback"],
+      "accent_candidates": ["us", "ph", "sg", "in"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "pharmacy_pickup",
+      "category": "Shops & Services",
+      "difficulty": 3,
+      "context": "A pharmacy clerk explains a pickup problem without giving medical advice.",
+      "transcript": "The prescription under Park isn't ready, but the one under Kim can be collected after four forty-five at the Oak Avenue branch.",
+      "details": [
+        {"key": "ready_name", "label": "ready surname", "answers": ["kim", "under kim"]},
+        {"key": "time", "label": "pickup time", "answers": ["4:45", "four forty five", "after 4 45"]},
+        {"key": "branch", "label": "branch", "answers": ["oak avenue", "oak avenue branch"]}
+      ],
+      "receptive_tags": ["names", "times", "contrast_correction", "locations"],
+      "productive_tags": ["readback", "clarification"],
+      "accent_candidates": ["us", "ph", "in", "ng"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "wedding_table",
+      "category": "Parties & Social",
+      "difficulty": 3,
+      "context": "Someone at a wedding explains how they know the couple.",
+      "transcript": "I worked with Priya in Leeds back in twenty nineteen, and my partner knows Daniel from university.",
+      "details": [
+        {"key": "person", "label": "coworker", "answers": ["priya"]},
+        {"key": "place", "label": "city", "answers": ["leeds"]},
+        {"key": "year", "label": "year", "answers": ["2019", "twenty nineteen"]},
+        {"key": "other", "label": "other person", "answers": ["daniel"]}
+      ],
+      "receptive_tags": ["names", "places", "years", "relationship_mapping"],
+      "productive_tags": ["small_talk_extension"],
+      "accent_candidates": ["uk", "ie", "in", "fr"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "internet_technician",
+      "category": "Housing & Daily Life",
+      "difficulty": 3,
+      "context": "A technician offers a narrow arrival window.",
+      "transcript": "I can get someone there between ten twenty and eleven, but they'll need access to the utility closet downstairs.",
+      "details": [
+        {"key": "window", "label": "arrival window", "answers": ["10:20 to 11", "ten twenty and eleven", "between 10 20 and 11"]},
+        {"key": "access", "label": "access needed", "answers": ["utility closet", "utility closet downstairs", "downstairs closet"]}
+      ],
+      "receptive_tags": ["time_windows", "indirect_request", "locations"],
+      "productive_tags": ["confirmation", "arrangement"],
+      "accent_candidates": ["us", "ca", "es", "de"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "train_platform_split",
+      "category": "Travel & Transit",
+      "difficulty": 3,
+      "context": "Station staff explains where a train will split.",
+      "transcript": "The front four coaches go to Brighton; if you're for Hove, you need one of the rear three after platform five.",
+      "details": [
+        {"key": "front", "label": "front destination", "answers": ["brighton", "front four to brighton"], "relation_group": "coach_destination", "relation_cues": ["front", "front four", "front coaches"]},
+        {"key": "rear", "label": "rear destination", "answers": ["hove", "rear three for hove"], "relation_group": "coach_destination", "relation_cues": ["rear", "rear three", "rear coaches"]},
+        {"key": "platform", "label": "platform", "answers": ["platform 5", "platform five"]}
+      ],
+      "receptive_tags": ["directions", "quantities", "place_names", "contrast_correction"],
+      "productive_tags": ["readback", "clarification"],
+      "accent_candidates": ["uk", "sco", "ie", "in"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "voicemail_callback",
+      "category": "Unexpected Moments",
+      "difficulty": 4,
+      "context": "A fast voicemail gives a name, extension, and deadline.",
+      "transcript": "Hi, it's Nikhil Rao from admissions—could you call extension eight three one before half past two, otherwise try me tomorrow after nine?",
+      "details": [
+        {"key": "first_name", "label": "caller first name", "answers": ["nikhil", "nikil"]},
+        {"key": "surname", "label": "caller surname", "answers": ["rao"]},
+        {"key": "extension", "label": "extension", "answers": ["831", "8 3 1", "eight three one"]},
+        {"key": "deadline", "label": "today deadline", "answers": ["2:30", "half past two", "before 2 30"]},
+        {"key": "fallback", "label": "fallback", "answers": ["tomorrow after nine", "after 9 tomorrow"]}
+      ],
+      "receptive_tags": ["names", "phone_digits", "times", "alternatives", "reductions"],
+      "productive_tags": ["readback", "callback"],
+      "accent_candidates": ["in", "uk", "sg", "ng"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "lab_freezer_alarm",
+      "category": "Campus & Lab",
+      "difficulty": 4,
+      "context": "A labmate gives an urgent but nonclinical equipment handoff.",
+      "transcript": "Freezer three alarmed at seven oh five; move rack C seventeen to unit two, then message Dr. Moreno on Teams.",
+      "details": [
+        {"key": "freezer", "label": "freezer", "answers": ["freezer 3", "freezer three"]},
+        {"key": "time", "label": "alarm time", "answers": ["7:05", "seven oh five", "7 05"]},
+        {"key": "rack", "label": "rack", "answers": ["c17", "c 17", "c seventeen"]},
+        {"key": "unit", "label": "destination unit", "answers": ["unit 2", "unit two"]},
+        {"key": "contact", "label": "contact", "answers": ["dr moreno", "doctor moreno", "moreno"]}
+      ],
+      "receptive_tags": ["letters_numbers", "times", "sequence", "names"],
+      "productive_tags": ["readback", "handoff"],
+      "accent_candidates": ["us", "es", "ph", "de"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "group_dinner_split",
+      "category": "Food & Drink",
+      "difficulty": 4,
+      "context": "A friend rapidly explains how to split a restaurant bill.",
+      "transcript": "You and Lena owe twenty-six fifty each, Marcus owes thirty-one, and I'll cover the twelve-dollar tip on my card.",
+      "details": [
+        {"key": "pair", "label": "your and Lena's amount", "answers": ["26.50", "$26.50", "twenty six fifty"], "relation_group": "bill_amount", "relation_cues": ["you", "lena", "each"]},
+        {"key": "marcus", "label": "Marcus's amount", "answers": ["31", "$31", "thirty one"], "relation_group": "bill_amount", "relation_cues": ["marcus"]},
+        {"key": "tip", "label": "tip", "answers": ["12", "$12", "twelve dollar", "twelve-dollar"], "relation_group": "bill_amount", "relation_cues": ["tip"]}
+      ],
+      "receptive_tags": ["prices", "names", "relationship_mapping", "connected_speech"],
+      "productive_tags": ["confirmation", "negotiation"],
+      "accent_candidates": ["aus", "nz", "sg", "ca"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    },
+    {
+      "id": "event_entry_rules",
+      "category": "Parties & Social",
+      "difficulty": 4,
+      "context": "An event volunteer gives several entry instructions.",
+      "transcript": "Use the east entrance before eight, show the blue QR code, and leave large bags at desk seven beside the cloakroom.",
+      "details": [
+        {"key": "entrance", "label": "entrance", "answers": ["east entrance", "east"]},
+        {"key": "deadline", "label": "deadline", "answers": ["before 8", "before eight"]},
+        {"key": "code", "label": "code", "answers": ["blue qr code", "blue code", "qr code"]},
+        {"key": "desk", "label": "bag desk", "answers": ["desk 7", "desk seven"]},
+        {"key": "landmark", "label": "landmark", "answers": ["cloakroom", "beside the cloakroom"]}
+      ],
+      "receptive_tags": ["directions", "times", "sequence", "numbers"],
+      "productive_tags": ["readback", "clarification"],
+      "accent_candidates": ["uk", "za", "ng", "fr"],
+      "source": {"type": "generated_tts", "license": "Generated on demand with the learner's Gemini API account"}
+    }
+  ]
+}

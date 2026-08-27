@@ -1,0 +1,173 @@
+{
+  "id": "gi_002",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thompson",
+  "age": 34,
+  "gender": "female",
+  "chief_complaint": "recurrent abdominal pain and diarrhoea for 8 months",
+  "hpi_details": "crampy lower abdominal pain, worse before bowel movements, relieved slightly after, 4-6 loose stools per day, occasional blood and mucus, 6kg unintentional weight loss, fatigue, no fever currently",
+  "ideas": "thinks she has IBS because she's stressed at work",
+  "concerns": "worried about the blood — Google told her it could be cancer",
+  "expectations": "wants something to stop the diarrhoea so she can function at work",
+  "pmh": "appendicectomy at 19, no other medical history",
+  "medications": "none regular, occasional ibuprofen for period pain",
+  "social_hx": "non-smoker, social drinker, works in finance (high stress), no recent travel",
+  "clinical_knowledge": {
+    "topic": "Inflammatory Bowel Disease (Crohn's disease vs Ulcerative Colitis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Inflammatory Bowel Disease (Crohn's disease vs Ulcerative Colitis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Urgent outpatient or inpatient workup: bloods, stool studies, colonoscopy referral, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent abdominal pain and diarrhoea for 8 months",
+      "Key HPI features: crampy lower abdominal pain, worse before bowel movements, relieved slightly after, 4-6 loose stools per day, occasional blood and mucus, 6kg unintentional weight loss, fatigue, no fever currently",
+      "Objective/Exam findings: Needs FBC (anaemia?), CRP/ESR, calprotectin, stool culture/MC&S, colonoscopy with biopsy.",
+      "Relevant background/PMH: appendicectomy at 19, no other medical history",
+      "Current medications: none regular, occasional ibuprofen for period pain"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Inflammatory Bowel Disease (Crohn's disease vs Ulcerative Colitis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Infective colitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Blood and mucus in the stool with unintentional weight loss."
+    ],
+    "management_principles": [
+      "Urgent outpatient or inpatient workup: bloods, stool studies, colonoscopy referral",
+      "Advise stopping NSAIDs",
+      "Address cancer anxiety with reassurance and plan"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "34F with 8-month history of crampy lower abdominal pain, 4-6 loose stools/day with blood and mucus, 6kg weight loss, fatigue. Stress attributed by patient. No travel hx. Takes ibuprofen occasionally.",
+    "objective": "Needs FBC (anaemia?), CRP/ESR, calprotectin, stool culture/MC&S, colonoscopy with biopsy.",
+    "assessment": "Inflammatory bowel disease (Crohn's vs UC) most likely. DDx: infective colitis, IBS (diagnosis of exclusion), colorectal malignancy (less likely at 34 but must exclude), coeliac disease.",
+    "plan": "Urgent outpatient or inpatient workup: bloods, stool studies, colonoscopy referral. Advise stopping NSAIDs. Address cancer anxiety with reassurance and plan. GI referral."
+  },
+  "learning_objectives": [
+    "Characterise lower GI symptoms systematically (SOCRATES for pain, stool chart features)",
+    "Identify red flag symptoms: PR blood, weight loss, nocturnal symptoms",
+    "Explore extraintestinal manifestations of IBD",
+    "Provide structured cancer reassurance while arranging appropriate investigation"
+  ],
+  "teaching": {
+    "diagnosis": "Inflammatory Bowel Disease (Crohn's disease vs Ulcerative Colitis)",
+    "one_liner": "Chronic autoimmune inflammation of the bowel wall causes cramping, bloody diarrhoea, and weight loss; Crohn's and ulcerative colitis are the two main types.",
+    "differentials": [
+      "Infective colitis",
+      "Irritable bowel syndrome",
+      "Colorectal malignancy"
+    ],
+    "red_flags": [
+      "Blood and mucus in the stool with unintentional weight loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Blood or mucus in stool",
+        "say": "Have you noticed any blood or mucus mixed in with your stool?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood",
+          "mucus",
+          "stool"
+        ]
+      },
+      {
+        "objective": "Relation to bowel movements",
+        "say": "Does the cramping ease off once you've had a bowel movement?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "cramp",
+          "cramping",
+          "bowel",
+          "ease"
+        ]
+      },
+      {
+        "objective": "Stool frequency",
+        "say": "How many times a day do you go, and is it loose or watery?",
+        "domains": [
+          "severity",
+          "character"
+        ],
+        "keywords": [
+          "loose",
+          "watery",
+          "diarrhea",
+          "frequency"
+        ]
+      },
+      {
+        "objective": "Unintentional weight loss",
+        "say": "Have you lost weight without trying to?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "kilograms",
+          "lost"
+        ]
+      },
+      {
+        "objective": "Nocturnal symptoms and fatigue",
+        "say": "Do the bowel movements ever wake you up at night, and have you been more tired than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tired",
+          "fatigue",
+          "exhausted",
+          "night"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fevers along with this?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "temperature"
+        ]
+      },
+      {
+        "objective": "Recent travel or food exposure",
+        "say": "Have you traveled anywhere recently, or eaten something that might have been contaminated?",
+        "domains": [],
+        "keywords": [
+          "travel",
+          "food",
+          "contaminated",
+          "abroad"
+        ]
+      }
+    ]
+  }
+}

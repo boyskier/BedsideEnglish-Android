@@ -1,0 +1,136 @@
+{
+  "id": "fm_020",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Gonzalez",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "BMI 36.2 kg/m2 with prediabetes seeking structured medical weight loss guidance and dietary counseling",
+  "hpi_details": "45F with Class II Obesity and metabolic risk where primary care management combines intensive lifestyle modification (caloric deficit, 150 min aerobic exercise), behavioral counseling, and discussion of pharmacotherapy (GLP-1 receptor agonists Semaglutide/Tirzepatide).",
+  "ideas": "thinks this is related to obesity medical weight management and lifestyle",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "hba1c",
+      "test": "Hemoglobin A1c",
+      "value": "6.1",
+      "unit": "%",
+      "reference_range": "<5.7",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Obesity with metabolic risk (medical weight management) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Obesity with metabolic risk (medical weight management) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes structured lifestyle intervention as first line, with pharmacotherapy considered for patients who meet BMI or comorbidity thresholds, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: BMI 36.2 kg/m2 with prediabetes seeking structured medical weight loss guidance and dietary counseling",
+      "Key HPI features: 45F with Class II Obesity and metabolic risk where primary care management combines intensive lifestyle modification (caloric deficit, 150 min aerobic exercise), behavioral counseling, and discussion of pharmacotherapy (GLP-1 receptor agonists Semaglutide/Tirzepatide).",
+      "Objective/Exam findings: BMI 36.2 kg/m2 (Class II obesity), blood pressure may be elevated; screen for acanthosis nigricans and other signs of insulin resistance.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Obesity with metabolic risk (medical weight management).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypothyroidism (should be screened) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Loud snoring, witnessed apneas, or excessive daytime sleepiness — needs evaluation for obstructive sleep apnea."
+    ],
+    "management_principles": [
+      "Initiate intensive lifestyle intervention: caloric deficit diet, 150 minutes/week of aerobic exercise, and behavioral counseling",
+      "Discuss pharmacotherapy (GLP-1 receptor agonists such as semaglutide or tirzepatide) for patients with BMI >=30, or >=27 with a weight-related comorbidity such as prediabetes",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Obesity Medical Weight Management and Lifestyle: BMI 36.2 kg/m2 with prediabetes seeking structured medical weight loss guidance and dietary counseling. 45F with Class II Obesity and metabolic risk where primary care management combines intensive lifestyle modification (caloric deficit, 150 min aerobic exercise), behavioral counseling, and discussion of pharmacotherapy (GLP-1 receptor agonists Semaglutide/Tirzepatide).",
+    "objective": "BMI 36.2 kg/m2 (Class II obesity). Blood pressure mildly elevated. No acanthosis nigricans or Cushingoid features noted.",
+    "assessment": "Class II obesity with metabolic risk (prediabetes), suitable for structured medical weight management.",
+    "plan": "Initiate intensive lifestyle intervention (caloric deficit diet, 150 min/week aerobic exercise, behavioral counseling). Discuss pharmacotherapy options (GLP-1 receptor agonists) given BMI and prediabetes. Screen for obstructive sleep apnea and thyroid dysfunction before attributing weight gain to lifestyle alone."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Obesity Medical Weight Management and Lifestyle",
+    "Formulate prioritized differential diagnosis for BMI 36.2 kg/m2 with prediabetes seeking structured medical weight loss guidance and dietary counseling",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Obesity with metabolic risk (medical weight management)",
+    "one_liner": "Class II obesity with early signs of insulin resistance, where the treatment plan combines structured lifestyle change with a discussion of medication options like GLP-1 receptor agonists.",
+    "differentials": [
+      "Hypothyroidism (should be screened)",
+      "Cushing's syndrome (if other features present)"
+    ],
+    "red_flags": [
+      "Loud snoring, witnessed apneas, or excessive daytime sleepiness — needs evaluation for obstructive sleep apnea",
+      "Polyuria, polydipsia, or blurred vision — suggests progression to overt diabetes and needs urgent glucose check",
+      "Cushingoid features or symptoms of hypothyroidism — should be screened for before attributing weight gain to lifestyle alone"
+    ],
+    "must_ask": [
+      {
+        "objective": "Weight history",
+        "say": "How has your weight changed over the years, and what have you tried before?",
+        "domains": [
+          "onset_duration",
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Diet and activity",
+        "say": "What does a typical day of eating and activity look like?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Metabolic risk factors",
+        "say": "Do you have prediabetes, high blood pressure, or high cholesterol?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Prior weight loss attempts",
+        "say": "What has and hasn't worked for you before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Goals and concerns",
+        "say": "What are you hoping to achieve, and any concerns about medication?",
+        "domains": [
+          "expectations",
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

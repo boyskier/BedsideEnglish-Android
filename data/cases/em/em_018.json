@@ -1,0 +1,194 @@
+{
+  "id": "em_018",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Rodriguez",
+  "age": 56,
+  "gender": "male",
+  "chief_complaint": "massive hematemesis of bright red blood and melena stools in cirrhosis patient causing hemodynamic instability",
+  "hpi_details": "56M alcoholic cirrhosis patient presenting with active profuse hematemesis and BP 82/50 requiring immediate 2 large-bore IVs, blood resuscitation, IV Octreotide infusion, prophylactic Ceftriaxone, and emergent upper endoscopy for variceal band ligation.",
+  "ideas": "thinks this is related to acute upper gastrointestinal bleed esophageal varices",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Alcoholic cirrhosis with known esophageal varices, hypertension",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Long-standing heavy alcohol use, non-smoker",
+  "investigation_events": [
+    {
+      "id": "initial_blood_count",
+      "title": "Initial complete blood count",
+      "order_terms": [
+        "complete blood count",
+        "blood count",
+        "cbc",
+        "hemoglobin",
+        "haemoglobin"
+      ],
+      "availability_message": "The initial blood count is now available.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "6.8",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "platelet_count",
+          "test": "Platelet count",
+          "value": "74",
+          "unit": "×10³/µL",
+          "reference_range": "150-400",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    },
+    {
+      "id": "coagulation_studies",
+      "title": "Coagulation studies",
+      "order_terms": [
+        "coagulation studies",
+        "coagulation panel",
+        "coags",
+        "prothrombin time",
+        "inr"
+      ],
+      "availability_message": "The coagulation studies are now available.",
+      "results": [
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.9",
+          "reference_range": "0.8-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Upper GI Bleed from Esophageal Varices evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Upper GI Bleed from Esophageal Varices is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Upper Gastrointestinal Bleed Esophageal Varices, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: massive hematemesis of bright red blood and melena stools in cirrhosis patient causing hemodynamic instability",
+      "Key HPI features: 56M alcoholic cirrhosis patient presenting with active profuse hematemesis and BP 82/50 requiring immediate 2 large-bore IVs, blood resuscitation, IV Octreotide infusion, prophylactic Ceftriaxone, and emergent upper endoscopy for variceal band ligation.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Upper Gastrointestinal Bleed Esophageal Varices.",
+      "Relevant background/PMH: Alcoholic cirrhosis with known esophageal varices, hypertension",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Upper GI Bleed from Esophageal Varices.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Peptic ulcer bleeding without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ongoing hematemesis with low blood pressure — active life-threatening hemorrhage."
+    ],
+    "management_principles": [
+      "Resuscitate with large-bore IV access and blood products as needed, start vasoactive therapy and antibiotic prophylaxis promptly, and arrange urgent endoscopic variceal ligation after initial stabilization",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Upper Gastrointestinal Bleed Esophageal Varices: massive hematemesis of bright red blood and melena stools in cirrhosis patient causing hemodynamic instability. 56M alcoholic cirrhosis patient presenting with active profuse hematemesis and BP 82/50 requiring immediate 2 large-bore IVs, blood resuscitation, IV Octreotide infusion, prophylactic Ceftriaxone, and emergent upper endoscopy for variceal band ligation.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Upper Gastrointestinal Bleed Esophageal Varices.",
+    "assessment": "Clinical presentation highly suggestive of Acute Upper Gastrointestinal Bleed Esophageal Varices.",
+    "plan": "Resuscitate with two large-bore IVs, type and crossmatch, and blood products as needed while protecting the airway if mental status, active hematemesis, or aspiration risk warrants it. Start octreotide and ceftriaxone promptly. Arrange urgent endoscopy after initial hemodynamic stabilization for variceal band ligation; involve GI, critical care, and hepatology. If bleeding is uncontrolled, escalate to balloon tamponade as a bridge and urgent TIPS evaluation."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Upper Gastrointestinal Bleed Esophageal Varices",
+    "Formulate prioritized differential diagnosis for massive hematemesis of bright red blood and melena stools in cirrhosis patient causing hemodynamic instability",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Upper GI Bleed from Esophageal Varices",
+    "one_liner": "Portal hypertension from cirrhosis causes dilated esophageal veins that can rupture catastrophically, causing massive vomiting of blood and hemodynamic instability — treated with octreotide, antibiotics, and urgent endoscopic band ligation.",
+    "differentials": [
+      "Peptic ulcer bleeding",
+      "Mallory-Weiss tear",
+      "Gastritis"
+    ],
+    "red_flags": [
+      "Ongoing hematemesis with low blood pressure — active life-threatening hemorrhage"
+    ],
+    "must_ask": [
+      {
+        "objective": "Vomiting character",
+        "say": "How much blood have you vomited, and what color is it?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "bright red",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Stool changes",
+        "say": "Have your stools been black or tarry?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "melena",
+          "black stool"
+        ]
+      },
+      {
+        "objective": "Liver disease history",
+        "say": "Do you have liver disease, and have you had bleeding like this before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "cirrhosis"
+        ]
+      },
+      {
+        "objective": "Alcohol use",
+        "say": "How much alcohol do you drink?",
+        "domains": [
+          "alcohol"
+        ]
+      },
+      {
+        "objective": "Lightheadedness",
+        "say": "Do you feel dizzy or like you might faint?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

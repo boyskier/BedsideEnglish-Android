@@ -1,0 +1,154 @@
+{
+  "id": "fm_017",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Martin",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain in young woman",
+  "hpi_details": "26F presents with a 2-day history of acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain. Has not yet started any antibiotic treatment.",
+  "ideas": "thinks this is related to urinary tract infection uncomplicated cystitis",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "point_of_care_urinalysis",
+      "title": "Point-of-care urinalysis",
+      "order_terms": [
+        "urinalysis",
+        "urine dipstick",
+        "urine dip",
+        "urine test"
+      ],
+      "availability_message": "The point-of-care urinalysis is now available.",
+      "results": [
+        {
+          "id": "leukocyte_esterase",
+          "test": "Urine leukocyte esterase",
+          "value": "2+",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "nitrite",
+          "test": "Urine nitrite",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Uncomplicated Cystitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Uncomplicated Cystitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urinalysis confirmation followed by a short empiric course of a first-line oral antibiotic, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain in young woman",
+      "Key HPI features: 26F presents with a 2-day history of acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain. Has not yet started any antibiotic treatment.",
+      "Objective/Exam findings: Afebrile with normal vital signs; suprapubic tenderness may be present, but no costovertebral angle tenderness (which would suggest pyelonephritis). Urine dipstick positive for leukocyte esterase and/or nitrites.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Uncomplicated Cystitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pyelonephritis (would have fever/flank pain) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or flank pain — suggests the infection has ascended to the kidneys."
+    ],
+    "management_principles": [
+      "Confirm with urine dipstick or urinalysis, then start empiric first-line therapy: nitrofurantoin 100 mg BID x 5 days or trimethoprim-sulfamethoxazole DS BID x 3 days",
+      "Counsel on adequate hydration and to return promptly if fever, flank pain, or worsening symptoms develop, which would suggest pyelonephritis requiring escalation",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Urinary Tract Infection Uncomplicated Cystitis: acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain in young woman. 26F presents with a 2-day history of acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain. Has not yet started any antibiotic treatment.",
+    "objective": "Afebrile, vital signs normal. Mild suprapubic tenderness on exam, no costovertebral angle tenderness. Urine dipstick positive for leukocyte esterase and nitrites.",
+    "assessment": "Acute uncomplicated cystitis.",
+    "plan": "Start empiric first-line antibiotic therapy: nitrofurantoin 100 mg BID x 5 days or trimethoprim-sulfamethoxazole DS BID x 3 days. Advise adequate fluid intake. Counsel to return promptly if fever, flank pain, or worsening symptoms develop, which would suggest pyelonephritis requiring escalation."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Urinary Tract Infection Uncomplicated Cystitis",
+    "Formulate prioritized differential diagnosis for acute dysuria, urinary frequency, urgency, and suprapubic discomfort without fever or flank pain in young woman",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Uncomplicated Cystitis",
+    "one_liner": "A bladder infection in a young, otherwise healthy woman causing burning urination, frequency, and suprapubic discomfort without fever or flank pain — treated empirically with a short course of antibiotics.",
+    "differentials": [
+      "Pyelonephritis (would have fever/flank pain)",
+      "Vaginitis",
+      "Sexually transmitted infection"
+    ],
+    "red_flags": [
+      "Fever or flank pain — suggests the infection has ascended to the kidneys"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dysuria",
+        "say": "Does it burn when you urinate?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Frequency and urgency",
+        "say": "Are you urinating more often than usual?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fever or flank pain",
+        "say": "Any fever or back pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many days have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Sexual activity",
+        "say": "Any recent change in sexual activity?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

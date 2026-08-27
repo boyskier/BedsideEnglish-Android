@@ -1,0 +1,202 @@
+{
+  "id": "cardio_034",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Scott",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "high fever, night sweats, and new heart murmur in IV drug user",
+  "hpi_details": "A 44-year-old female presents to the clinic with high fever, night sweats, and new heart murmur in iv drug user. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to endocarditis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "endocarditis_blood_cultures",
+      "title": "Blood culture results",
+      "order_terms": ["blood cultures", "blood culture", "culture sets"],
+      "availability_message": "The blood culture results are now available.",
+      "results": [
+        {
+          "id": "cultures_mssa_endocarditis",
+          "test": "Blood cultures",
+          "value": "Methicillin-susceptible Staphylococcus aureus isolated from all 3 sets",
+          "unit": "",
+          "reference_range": "No growth",
+          "flag": "positive",
+          "specimen": "Blood",
+          "collected_at": "Three sets before antibiotics"
+        }
+      ]
+    },
+    {
+      "id": "endocarditis_echo",
+      "title": "Transthoracic echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE", "transesophageal echo", "TEE"],
+      "availability_message": "The echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_tricuspid_vegetation",
+          "test": "Transthoracic echocardiogram",
+          "value": "Mobile 16 x 8 mm vegetation on the tricuspid valve with moderate tricuspid regurgitation",
+          "unit": "",
+          "reference_range": "No vegetation",
+          "flag": "critical",
+          "collected_at": "During admission"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infective Endocarditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infective Endocarditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management requires urgent hospital evaluation, three blood-culture sets before antibiotics when feasible, and echocardiography (usually transthoracic first, followed by transesophageal imaging when indicated); empiric antibiotics should follow culture collection and local infectious-disease guidance.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever, night sweats, and new heart murmur in IV drug user",
+      "Key HPI features: A 44-year-old female presents to the clinic with high fever, night sweats, and new heart murmur in iv drug user. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Infective Endocarditis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infective Endocarditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Occult malignancy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New heart failure, stroke, or embolic phenomena."
+    ],
+    "management_principles": [
+      "Urgently admit, obtain three blood-culture sets before antibiotics when feasible, obtain transthoracic echocardiography followed by transesophageal imaging when indicated, and begin empiric antibiotics using local infectious-disease guidance",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 ESC Guidelines for the Management of Endocarditis",
+        "url": "https://academic.oup.com/eurheartj/article/44/39/3948/7243107"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of high fever, night sweats, and new heart murmur in IV drug user. HPI: bacterial valvular colonization.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Infective Endocarditis.",
+    "assessment": "Condition highly suspicious for Infective Endocarditis.",
+    "plan": "Urgently admit, obtain three blood-culture sets before antibiotics when feasible, obtain transthoracic echocardiography followed by transesophageal imaging when indicated, and begin empiric antibiotics using local infectious-disease guidance. Involve cardiology and infectious diseases promptly."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Infective Endocarditis",
+    "Select appropriate diagnostic workup for Infective Endocarditis",
+    "Implement evidence-based management plan: Obtain blood cultures before antibiotics when feasible, use staged echocardiography, and initiate empiric treatment with specialist guidance"
+  ],
+  "teaching": {
+    "diagnosis": "Infective Endocarditis",
+    "one_liner": "Infection of a heart valve. Fever plus a new murmur is the pairing that must not be missed, and the history hunts for a source.",
+    "differentials": [
+      "Occult malignancy",
+      "Rheumatic fever",
+      "Systemic vasculitis"
+    ],
+    "red_flags": [
+      "New heart failure, stroke, or embolic phenomena"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fever duration and pattern",
+        "say": "How long have you had the fevers?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "fever",
+          "temperature"
+        ]
+      },
+      {
+        "objective": "Night sweats and weight loss",
+        "say": "Have you been sweating at night or losing weight?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "sweat",
+          "sweating",
+          "weight",
+          "lost"
+        ]
+      },
+      {
+        "objective": "Predisposing valve disease",
+        "say": "Do you have any known heart valve problem or a prosthetic valve?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "valve",
+          "murmur",
+          "prosthetic",
+          "rheumatic"
+        ]
+      },
+      {
+        "objective": "Source — dental work, procedures, IV drug use",
+        "say": "Have you had dental treatment, a procedure, or do you inject any drugs?",
+        "domains": [
+          "pmh",
+          "substances"
+        ],
+        "keywords": [
+          "dental",
+          "dentist",
+          "procedure",
+          "inject",
+          "drug",
+          "needle"
+        ]
+      },
+      {
+        "objective": "Embolic phenomena",
+        "say": "Any sudden weakness, vision problems, or painful lumps on your fingers?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weakness",
+          "vision",
+          "finger",
+          "lump",
+          "painful"
+        ]
+      },
+      {
+        "objective": "Exertional breathlessness",
+        "say": "How far can you walk on the flat before you need to stop?",
+        "domains": [
+          "severity",
+          "aggravating"
+        ],
+        "keywords": [
+          "walk",
+          "breath",
+          "stairs"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "hemato_043",
+  "system": "hemato",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Allen",
+  "age": 71,
+  "gender": "male",
+  "chief_complaint": "incidental M-spike <3 g/dL on SPEP with normal calcium",
+  "hpi_details": "A 71-year-old male presents with an incidental M-spike below 3 g/dL on SPEP and normal calcium. He has no acute symptoms.",
+  "ideas": "thinks it might be related to mgus",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "serum_m_spike",
+      "test": "Serum protein electrophoresis M-spike",
+      "value": "1.4",
+      "unit": "g/dL",
+      "reference_range": "Not detected",
+      "flag": "abnormal",
+      "specimen": "Blood"
+    },
+    {
+      "id": "calcium",
+      "test": "Total serum calcium",
+      "value": "9.4",
+      "unit": "mg/dL",
+      "reference_range": "8.6-10.2",
+      "flag": "normal",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Monoclonal Gammopathy of Undetermined Significance (MGUS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Monoclonal Gammopathy of Undetermined Significance (MGUS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for MGUS: Monitor SPEP and CBC annually, reassure no treatment needed yet, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental M-spike <3 g/dL on SPEP with normal calcium",
+      "Key HPI features: A 71-year-old male presents with an incidental M-spike below 3 g/dL on SPEP and normal calcium. He has no acute symptoms.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for MGUS.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Monoclonal Gammopathy of Undetermined Significance (MGUS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Multiple myeloma (if CRAB criteria present) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any new bone pain, anemia, elevated calcium, or renal impairment — would suggest progression to myeloma."
+    ],
+    "management_principles": [
+      "Plan for MGUS: Monitor SPEP and CBC annually, reassure no treatment needed yet",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of incidental M-spike <3g on SPEP with normal calcium. HPI: plasma cell clonal expansion without organ damage.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for MGUS.",
+    "assessment": "Condition highly suspicious for MGUS.",
+    "plan": "Plan for MGUS: Monitor SPEP and CBC annually, reassure no treatment needed yet. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of MGUS",
+    "Select appropriate diagnostic workup for MGUS",
+    "Implement evidence-based management plan: Monitor SPEP and CBC annually, reassure no treatment needed yet"
+  ],
+  "teaching": {
+    "diagnosis": "Monoclonal Gammopathy of Undetermined Significance (MGUS)",
+    "one_liner": "A benign clonal expansion of plasma cells producing a small monoclonal protein without any organ damage — a pre-malignant condition requiring only annual monitoring, not treatment.",
+    "differentials": [
+      "Multiple myeloma (if CRAB criteria present)",
+      "Smoldering myeloma"
+    ],
+    "red_flags": [
+      "Any new bone pain, anemia, elevated calcium, or renal impairment — would suggest progression to myeloma"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "Was this M-spike found incidentally on a routine blood test?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Bone pain",
+        "say": "Do you have any bone pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue or anemia symptoms",
+        "say": "Have you felt unusually tired?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Renal symptoms",
+        "say": "Any changes in your urination?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "The patient's worry",
+        "say": "What worries you most about this finding?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

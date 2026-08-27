@@ -1,0 +1,159 @@
+{
+  "id": "id_003",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martinez",
+  "age": 46,
+  "gender": "male",
+  "chief_complaint": "prolonged fever, night sweats, heart murmur, and painful nodules on fingers after dental work",
+  "hpi_details": "46M presenting with spiking fevers 4 weeks post-dental cleaning, new mitral regurgitation murmur, Osler nodes, Janeway lesions, and blood cultures positive for S. viridans.",
+  "ideas": "thinks this is related to infective endocarditis native mitral valve",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "blood_cultures",
+      "test": "Three sets of blood cultures",
+      "value": "Streptococcus viridans, penicillin susceptible, in all three sets",
+      "reference_range": "No growth",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "transthoracic_echocardiogram",
+      "test": "Transthoracic echocardiogram",
+      "value": "9 mm mobile vegetation on the mitral valve with moderate mitral regurgitation",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infective Endocarditis (Native Mitral Valve) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infective Endocarditis (Native Mitral Valve) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prolonged pathogen-directed IV antibiotic therapy (typically 4 weeks for penicillin-susceptible viridans streptococci) guided by blood culture susceptibilities, with early echocardiography to assess vegetation size, valve destruction, and surgical indications, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: prolonged fever, night sweats, heart murmur, and painful nodules on fingers after dental work",
+      "Key HPI features: 46M presenting with spiking fevers 4 weeks post-dental cleaning, new mitral regurgitation murmur, Osler nodes, Janeway lesions, and blood cultures positive for S. viridans.",
+      "Objective/Exam findings: Vitals: Temp 38.9C, HR 96, BP 118/74, RR 16, SpO2 98% on room air. New holosystolic murmur at the cardiac apex radiating to the axilla (mitral regurgitation). Tender Osler nodes on finger pulps, painless Janeway lesions on palms, splinter hemorrhages under the nail beds, mild splenomegaly. Bloods: WBC 12,500 /uL, ESR 68 mm/hr, CRP elevated. Three sets of blood cultures positive for penicillin-susceptible Streptococcus viridans. Transthoracic echocardiogram shows a 9mm mobile vegetation on the mitral valve with moderate mitral regurgitation, meeting modified Duke criteria for definite infective endocarditis.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infective Endocarditis (Native Mitral Valve).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rheumatic fever without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New or changing heart murmur with fever — assume endocarditis until proven otherwise."
+    ],
+    "management_principles": [
+      "Obtain three sets of blood cultures from different venipuncture sites before starting antibiotics, then start IV Penicillin G (3-4 million units IV q4h) or Ceftriaxone 2g IV once daily for penicillin-susceptible Streptococcus viridans, typically for 4 weeks",
+      "Order a transthoracic echocardiogram (TTE); proceed to transesophageal echocardiogram (TEE) if TTE is non-diagnostic or suspicion remains high, to characterize vegetation size/mobility and valve damage",
+      "Obtain early cardiology and cardiothoracic surgery consultation; valve surgery is indicated for heart failure, uncontrolled infection, vegetation > 10mm with embolic events, or perivalvular abscess",
+      "Arrange dental evaluation once stable and counsel on antibiotic prophylaxis before future high-risk dental procedures"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Infective Endocarditis Native Mitral Valve: prolonged fever, night sweats, heart murmur, and painful nodules on fingers after dental work. 46M presenting with spiking fevers 4 weeks post-dental cleaning, new mitral regurgitation murmur, Osler nodes, Janeway lesions, and blood cultures positive for S. viridans.",
+    "objective": "Vitals: Temp 38.9C, HR 96, BP 118/74, RR 16, SpO2 98% on room air. New holosystolic murmur at the cardiac apex radiating to the axilla (mitral regurgitation). Tender Osler nodes on finger pulps, painless Janeway lesions on palms, splinter hemorrhages under the nail beds, mild splenomegaly. Bloods: WBC 12,500 /uL, ESR 68 mm/hr, CRP elevated. Three sets of blood cultures positive for penicillin-susceptible Streptococcus viridans. Transthoracic echocardiogram shows a 9mm mobile vegetation on the mitral valve with moderate mitral regurgitation, meeting modified Duke criteria for definite infective endocarditis.",
+    "assessment": "Definite Infective Endocarditis of the native mitral valve due to Streptococcus viridans, meeting modified Duke criteria (positive blood cultures with a typical organism plus echocardiographic evidence of endocardial involvement).",
+    "plan": "1. Obtain three sets of blood cultures from different venipuncture sites before starting antibiotics, then start IV Penicillin G (3-4 million units IV q4h) or Ceftriaxone 2g IV once daily for penicillin-susceptible Streptococcus viridans, typically for 4 weeks. 2. Order a transthoracic echocardiogram (TTE); proceed to transesophageal echocardiogram (TEE) if TTE is non-diagnostic or suspicion remains high, to characterize vegetation size/mobility and valve damage. 3. Obtain early cardiology and cardiothoracic surgery consultation; valve surgery is indicated for heart failure, uncontrolled infection, vegetation > 10mm with embolic events, or perivalvular abscess. 4. Arrange dental evaluation once stable and counsel on antibiotic prophylaxis before future high-risk dental procedures."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Infective Endocarditis Native Mitral Valve",
+    "Formulate prioritized differential diagnosis for prolonged fever, night sweats, heart murmur, and painful nodules on fingers after dental work",
+    "Select appropriate laboratory and imaging studies for infectious_disease",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Infective Endocarditis (Native Mitral Valve)",
+    "one_liner": "Bacteria — often from a dental procedure — seed a native heart valve, causing prolonged fever, a new murmur, and peripheral immune stigmata like Osler's nodes and Janeway lesions.",
+    "differentials": [
+      "Rheumatic fever",
+      "Systemic lupus erythematosus",
+      "Occult malignancy"
+    ],
+    "red_flags": [
+      "New or changing heart murmur with fever — assume endocarditis until proven otherwise",
+      "Signs of embolic stroke or splenic infarct"
+    ],
+    "must_ask": [
+      {
+        "objective": "Recent dental or invasive procedure",
+        "say": "Have you had any dental work or other procedures in the past month or two?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "dental",
+          "procedure"
+        ]
+      },
+      {
+        "objective": "Fever pattern",
+        "say": "How long have you had fevers, and do they come and go?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks",
+          "fever"
+        ]
+      },
+      {
+        "objective": "Peripheral skin findings",
+        "say": "Have you noticed any painful bumps on your fingers or spots on your palms?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nodules",
+          "fingers",
+          "spots"
+        ]
+      },
+      {
+        "objective": "Cardiac history",
+        "say": "Do you have any known heart valve problems?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "heart valve",
+          "murmur"
+        ]
+      },
+      {
+        "objective": "Night sweats and weight loss",
+        "say": "Have you had night sweats or unintentional weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night sweats",
+          "weight loss"
+        ]
+      }
+    ]
+  }
+}

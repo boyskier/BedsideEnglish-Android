@@ -1,0 +1,247 @@
+{
+  "id": "followup_medication_002",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "medication",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mrs. Karen Miller",
+  "age": 55,
+  "gender": "female",
+  "visit_title": "Statin tolerance & lipid review",
+  "follow_up_reason": "Four-week review after starting atorvastatin 40mg",
+  "clinician_brief": {
+    "prior_note": "Initiated Atorvastatin 40mg daily four weeks ago for high ASCVD risk (LDL-C 165 mg/dL, 10-year risk 12%). Baseline LFTs normal.",
+    "active_problems": [
+      "Hyperlipidemia",
+      "Hypertension",
+      "Family history of early CAD"
+    ],
+    "current_medications": [
+      "Atorvastatin 40 mg once daily at bedtime",
+      "Losartan 50 mg once daily"
+    ],
+    "previous_plan": [
+      "Start atorvastatin 40mg daily",
+      "Maintain low-saturated-fat diet",
+      "Check lipid panel and LFTs at 4-12 weeks",
+      "Report muscle aches or dark urine"
+    ],
+    "results_and_observations": [
+      "New LDL-C: 98 mg/dL (improved by 40%)",
+      "Serum CK: 145 U/L (normal)",
+      "ALT: 32 U/L (normal)"
+    ],
+    "today_tasks": [
+      "Review lipid lowering response (LDL reduction)",
+      "Assess for statin-associated muscle symptoms (SAMS)",
+      "Check medication adherence",
+      "Screen for severe muscle breakdown red flags (dark urine, weakness)",
+      "Discuss management options (dose reduction vs switching to rosuvastatin)"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Noticed bilateral thigh ache and heaviness starting 2 weeks after beginning atorvastatin.",
+    "adherence": "Stopped taking the statin 4 days ago due to thigh discomfort.",
+    "treatment_response": "LDL dropped significantly to 98 mg/dL.",
+    "side_effects": "Bilateral symmetrical muscle aching in thighs, no joint swelling.",
+    "new_symptoms_and_red_flags": "No dark cola-colored urine, severe muscle weakness, fever, or chest pain.",
+    "agenda": "Wants to know if she has to take statins or if diet alone is enough.",
+    "concern": "Worried statins cause permanent muscle and liver damage.",
+    "preference": "Willing to try a lower dose or a different statin if muscle pain goes away."
+  },
+  "clinical_knowledge": {
+    "topic": "Four-week statin follow-up: excellent LDL response (165 to 98 mg/dL) complicated by statin-associated muscle symptoms with normal CK",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "An LDL drop from 165 to 98 mg/dL (about 40%) after four weeks of atorvastatin 40 mg is a strong, guideline-concordant response for a high-intensity statin, and this benefit needs to be weighed directly against her muscle symptoms rather than abandoned outright.",
+      "A normal creatine kinase (145 U/L) in the setting of bilateral, symmetric thigh discomfort strongly suggests statin-associated muscle symptoms (SAMS) rather than statin-induced myopathy or rhabdomyolysis, which is an important distinction to explain clearly.",
+      "Statin-associated muscle symptoms with a normal CK do not usually require permanently abandoning statin therapy — options include a brief holiday followed by rechallenge, switching to a different statin (rosuvastatin is often better tolerated), a lower dose, or alternate-day dosing.",
+      "Statins as a class do not typically cause permanent, irreversible muscle or liver damage in patients with normal CK and LFTs; the vast majority of statin-associated muscle symptoms resolve after stopping or adjusting the drug, and her normal ALT of 32 U/L is reassuring on the liver side as well."
+    ],
+    "diagnostic_clues": [
+      "LDL-C 98 mg/dL, down from a baseline of 165 mg/dL, confirms the statin is working well and that any decision here is a tolerability problem, not an efficacy problem.",
+      "Serum CK 145 U/L (normal) in the presence of muscle symptoms is the single most important lab in this visit — it makes severe myopathy or rhabdomyolysis unlikely and reframes the muscle pain as SAMS.",
+      "Bilateral, symmetric thigh aching without joint swelling, beginning about two weeks after starting a high-intensity statin, fits the classic timing and pattern of SAMS rather than an unrelated musculoskeletal problem.",
+      "No dark cola-colored urine, severe weakness, fever, or chest pain rules out the red flags for rhabdomyolysis that would otherwise require urgent evaluation.",
+      "ALT 32 U/L (normal) is reassuring against statin-associated hepatotoxicity, addressing the liver half of her stated worry."
+    ],
+    "common_misconceptions": [
+      "Worried statins cause permanent muscle and liver damage — a very common fear; the reassuring point to make explicitly is that with normal CK and normal LFTs, permanent damage is unlikely, and most muscle symptoms resolve after stopping or switching the statin.",
+      "Wants to know if she has to take statins or if diet alone is enough — given her LDL of 165 mg/dL at baseline, elevated 10-year ASCVD risk, and family history of early coronary disease, diet alone is unlikely to achieve a comparable risk reduction, which is worth explaining honestly alongside her muscle concern.",
+      "Stopped the statin four days ago on her own due to discomfort — a reasonable self-protective response given the symptoms, but it should be explicitly discussed as a starting point for the rechallenge/switch plan rather than treated as a lapse to correct.",
+      "Assuming that because she felt muscle pain, the CK must also be abnormal — patients often expect symptoms and lab findings to track together, when SAMS commonly occurs with a completely normal CK, which is exactly this scenario."
+    ],
+    "dangerous_errors": [
+      "Discontinuing statin therapy permanently without discussing rechallenge, dose reduction, or an alternative statin, which would leave her at unmanaged elevated cardiovascular risk.",
+      "Failing to confirm the CK and LFT results were actually normal before reassuring her, or not clearly communicating what those results mean in plain language.",
+      "Not screening for rhabdomyolysis red flags (dark urine, severe weakness, fever) before categorizing this as straightforward SAMS.",
+      "Restarting atorvastatin 40 mg at the same dose immediately without a brief washout period or a lower starting dose, which risks reproducing the same symptoms and eroding her confidence in statin therapy altogether."
+    ],
+    "management_principles": [
+      "Review the LDL response and clearly frame today's decision as a tolerability issue on top of a very effective treatment, not a treatment failure.",
+      "Explain that the normal CK and ALT make severe muscle or liver injury unlikely, directly addressing her stated fear of permanent damage.",
+      "Discuss a rechallenge strategy — such as a short washout period followed by a lower dose or a switch to rosuvastatin, or alternate-day dosing — matching her stated willingness to try an adjusted regimen.",
+      "Reinforce diet as an adjunct (not a replacement) given her elevated baseline risk and family history, and set a follow-up lipid panel and symptom check after the new regimen starts."
+    ],
+    "boundaries_and_exceptions": [
+      "If CK were significantly elevated, or she reported dark urine, severe weakness, or fever, this SAMS-focused reassurance would not apply and urgent evaluation for rhabdomyolysis would be needed instead.",
+      "In patients with statin intolerance across multiple agents and doses, non-statin options (such as ezetimibe or a PCSK9 inhibitor) become relevant and would shift the plan beyond simple dose or agent switching."
+    ],
+    "source_refs": [
+      {
+        "title": "2018 ACC/AHA Guideline on the Management of Blood Cholesterol",
+        "url": "https://professional.heart.org/en/guidelines-statements/prevention-guidelines"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Confirm the follow-up agenda regarding statin therapy",
+    "Assess lipid panel improvement and LDL target attainment",
+    "Explore statin adherence neutrally and identify discontinuation",
+    "Evaluate statin-associated muscle symptoms (SAMS) and screen for rhabdomyolysis",
+    "Review safety labs (CK and LFTs)",
+    "Address concerns about permanent muscle/liver harm in plain language",
+    "Agree on a step-down or switch plan (e.g. Rosuvastatin 5-10mg or alternate-day dosing)"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Confirm the follow-up agenda regarding statin therapy",
+      "category": "Agenda",
+      "question": "Since starting the atorvastatin four weeks ago, what would you most like to review today?"
+    },
+    {
+      "objective": "Assess lipid panel improvement and LDL target attainment",
+      "category": "Results",
+      "question": "Your cholesterol test showed your LDL dropped from 165 to 98 - shall we review what that means?"
+    },
+    {
+      "objective": "Explore statin adherence neutrally and identify discontinuation",
+      "category": "Adherence",
+      "question": "Many people pause their statin if they feel uncomfortable. How regularly have you taken it lately?"
+    },
+    {
+      "objective": "Evaluate statin-associated muscle symptoms (SAMS) and screen for rhabdomyolysis",
+      "category": "Tolerance",
+      "question": "Where are you feeling the muscle aching, and have you noticed dark urine or muscle weakness?"
+    },
+    {
+      "objective": "Review safety labs (CK and LFTs)",
+      "category": "Results",
+      "question": "Your muscle enzyme (CK) and liver blood tests were completely normal, which is very reassuring."
+    },
+    {
+      "objective": "Address concerns about permanent muscle/liver harm in plain language",
+      "category": "Concerns",
+      "question": "What worries do you have about statins causing long-term damage to your muscles or liver?"
+    },
+    {
+      "objective": "Agree on a step-down or switch plan (e.g. Rosuvastatin 5-10mg or alternate-day dosing)",
+      "category": "Shared plan",
+      "question": "Shall we wash out for a week and then try a lower dose of a different statin like rosuvastatin?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Confirm the follow-up agenda regarding statin therapy",
+      "keywords": [
+        "atorvastatin",
+        "statin",
+        "four weeks",
+        "agenda",
+        "today",
+        "cholesterol"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess lipid panel improvement and LDL target attainment",
+      "keywords": [
+        "ldl",
+        "cholesterol",
+        "lipid",
+        "98",
+        "dropped",
+        "results",
+        "target"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explore statin adherence neutrally and identify discontinuation",
+      "keywords": [
+        "stopped",
+        "paused",
+        "taking",
+        "missed",
+        "regularly",
+        "pills",
+        "adherence"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Evaluate statin-associated muscle symptoms (SAMS) and screen for rhabdomyolysis",
+      "keywords": [
+        "muscle",
+        "thighs",
+        "aching",
+        "cramps",
+        "dark urine",
+        "weakness",
+        "symptoms"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review safety labs (CK and LFTs)",
+      "keywords": [
+        "ck",
+        "creatine kinase",
+        "liver",
+        "lft",
+        "normal",
+        "blood test"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address concerns about permanent muscle/liver harm in plain language",
+      "keywords": [
+        "permanent",
+        "damage",
+        "liver",
+        "muscle harm",
+        "worry",
+        "worried",
+        "safe"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on a step-down or switch plan (e.g. Rosuvastatin 5-10mg or alternate-day dosing)",
+      "keywords": [
+        "rosuvastatin",
+        "lower dose",
+        "switch",
+        "washout",
+        "alternative",
+        "agree",
+        "plan"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "55F with hyperlipidemia returns at 4 weeks on atorvastatin 40mg. Developed bilateral thigh myalgia 2 weeks in and stopped statin 4 days ago. Denies dark urine or weakness. Anxious about organ damage.",
+    "objective": "LDL-C 98 mg/dL. CK 145 U/L (normal), ALT 32 U/L (normal). No muscle tenderness on exam.",
+    "assessment": "Statin-associated muscle symptoms (SAMS) on high-intensity atorvastatin with excellent LDL response (98 mg/dL) and normal CK.",
+    "plan": "Explain that a normal CK is reassuring and makes severe muscle injury unlikely; hold the statin until symptoms resolve, then consider rechallenge with low-dose rosuvastatin or alternate-day dosing."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Statin tolerance & lipid review",
+    "one_liner": "Clinical scenario for evaluation and management of Statin tolerance & lipid review."
+  }
+}

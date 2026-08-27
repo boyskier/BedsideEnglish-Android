@@ -1,0 +1,166 @@
+{
+  "id": "ps_034",
+  "system": "ps",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Hernandez",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "jaw pain, malocclusion, and bleeding gums after trauma",
+  "hpi_details": "A 44-year-old woman presents after facial trauma with jaw pain, malocclusion, and bleeding gums. She reports worsening pain with chewing and is concerned that her teeth no longer meet normally.",
+  "ideas": "thinks it might be related to jaw_fracture",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "mandibular_trauma_ct",
+    "title": "Emergency maxillofacial CT",
+    "order_terms": ["maxillofacial CT", "facial CT", "CT face", "CT mandible"],
+    "availability_message": "The emergency maxillofacial CT result is now available. Continue airway assessment and urgent oral-maxillofacial surgical involvement.",
+    "results": [{"id": "maxillofacial_ct", "test": "Maxillofacial CT", "value": "Displaced fracture through the left mandibular body with a 4 mm step-off and disruption of dental occlusion; no condylar dislocation", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Mandible Fracture evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mandible Fracture is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes maxillofacial CT and urgent specialist assessment; closed treatment or open reduction and internal fixation is selected according to fracture pattern, displacement, occlusion, and patient factors.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: jaw pain, malocclusion, and bleeding gums after trauma",
+      "Key HPI features: Facial trauma followed by jaw pain, malocclusion, gingival bleeding, and pain with chewing.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Mandible Fracture.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mandible Fracture.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Soft tissue infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing airway compromise, uncontrolled bleeding, or associated head and cervical-spine injury after facial trauma."
+    ],
+    "management_principles": [
+      "Plan for Mandible Fracture: Maxillofacial CT, open reduction and internal fixation (ORIF)",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of jaw pain, malocclusion, and bleeding gums after trauma. HPI: facial bone fracture.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Mandible Fracture.",
+    "assessment": "Condition highly suspicious for Mandible Fracture.",
+    "plan": "Obtain maxillofacial CT and urgently involve oral and maxillofacial surgery. Manage with closed treatment or ORIF according to fracture pattern, displacement, and occlusion; assess the airway and provide analgesia and oral-care instructions."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Mandible Fracture",
+    "Select appropriate diagnostic workup for Mandible Fracture",
+    "Implement evidence-based management plan: Maxillofacial CT, open reduction and internal fixation (ORIF)"
+  ],
+  "teaching": {
+    "diagnosis": "Mandible Fracture",
+    "one_liner": "Plastic and reconstructive surgical case presenting with jaw pain, malocclusion, and bleeding gums after trauma.",
+    "differentials": [
+      "Isolated dental or alveolar injury",
+      "Temporomandibular joint injury without fracture",
+      "Zygomaticomaxillary complex fracture",
+      "Soft tissue laceration without fracture"
+    ],
+    "red_flags": [
+      "Difficulty breathing, swallowing secretions, drooling, voice change, or uncontrolled oral bleeding requiring immediate airway assessment",
+      "Altered consciousness, vomiting, focal neurologic symptoms, or other high-energy trauma requiring emergency evaluation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and timing of trauma",
+        "say": "How did you injure your jaw, and when did it happen?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "trauma",
+          "jaw",
+          "injury",
+          "when",
+          "mechanism"
+        ]
+      },
+      {
+        "objective": "Malocclusion and numbness",
+        "say": "Do your teeth fit together the way they used to, and is your lip or chin numb?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "occlusion",
+          "teeth",
+          "numbness",
+          "lip",
+          "chin"
+        ]
+      },
+      {
+        "objective": "Bleeding gums and airway symptoms",
+        "say": "Are your gums bleeding, and are you having any trouble breathing or swallowing?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "bleeding",
+          "gums",
+          "airway",
+          "swallowing",
+          "breathing"
+        ]
+      },
+      {
+        "objective": "Loss of consciousness or associated injuries",
+        "say": "Did you lose consciousness or injure any other part of your body?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "consciousness",
+          "head",
+          "injury",
+          "other",
+          "associated"
+        ]
+      },
+      {
+        "objective": "Alcohol use and prior facial trauma",
+        "say": "Had you been drinking before the injury, and have you had facial trauma before?",
+        "domains": [
+          "alcohol",
+          "pmh"
+        ],
+        "keywords": [
+          "alcohol",
+          "drinking",
+          "prior",
+          "facial",
+          "trauma"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "endo_002",
+  "system": "endocrinology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Baker",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "profound lethargy, confusion, and extreme dehydration over one week",
+  "hpi_details": "68F with type 2 diabetes brought in by family due to progressive confusion, lethargy, and extreme thirst over 7 days. No abdominal pain or vomiting. Blood glucose on arrival is 920 mg/dL without significant ketonuria.",
+  "ideas": "family thinks she had a small stroke because she is so lethargic",
+  "concerns": "family is alarmed by her severe weakness and dry tongue",
+  "expectations": "wants her checked thoroughly and admitted",
+  "pmh": "Type 2 Diabetes, Hypertension, Mild cognitive impairment",
+  "medications": "Metformin 1000mg BID, Glipizide 10mg OD, Lisinopril 20mg OD",
+  "social_hx": "Lives with daughter, non-smoker",
+  "available_results": [
+    {"id":"triage_glucose","test":"Point-of-care glucose","value":"920","unit":"mg/dL","reference_range":"70-140","flag":"critical","specimen":"Capillary blood","collected_at":"At triage"},
+    {"id":"triage_urine_ketones","test":"Urine ketones","value":"Trace","reference_range":"Negative","flag":"high","specimen":"Urine","collected_at":"At triage"}
+  ],
+  "investigation_events": [
+    {
+      "id": "stat_hhs_labs",
+      "title": "STAT hyperosmolar-state laboratory results",
+      "order_terms": ["blood tests", "blood work", "electrolytes", "metabolic panel", "osmolality", "blood gas", "vbg", "venous blood gas", "ketones", "beta hydroxybutyrate", "hhs labs"],
+      "availability_message": "The STAT hyperosmolar-state laboratory results are now available.",
+      "results": [
+        {"id":"effective_osmolality","test":"Effective serum osmolality","value":"368","unit":"mOsm/kg","reference_range":"275-295","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"venous_ph","test":"Venous pH","value":"7.34","reference_range":"7.31-7.41","flag":"normal","specimen":"Venous blood","collected_at":"At emergency presentation"},
+        {"id":"bicarbonate","test":"Serum bicarbonate","value":"20","unit":"mEq/L","reference_range":"22-29","flag":"low","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"beta_hydroxybutyrate","test":"Beta-hydroxybutyrate","value":"0.8","unit":"mmol/L","reference_range":"<0.6","flag":"high","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"sodium","test":"Serum sodium","value":"152","unit":"mEq/L","reference_range":"135-145","flag":"high","specimen":"Blood","collected_at":"At emergency presentation"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hyperosmolar Hyperglycemic State (HHS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hyperosmolar Hyperglycemic State (HHS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes vigorous IV fluid replacement and low-dose IV insulin infusion, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profound lethargy, confusion, and extreme dehydration over one week",
+      "Key HPI features: 68F with type 2 diabetes brought in by family due to progressive confusion, lethargy, and extreme thirst over 7 days. No abdominal pain or vomiting. Blood glucose on arrival is 920 mg/dL without significant ketonuria.",
+      "Objective/Exam findings: Vitals: HR 115, BP 88/54, Temp 36.8C. Severe skin tenting, dry mucous membranes. Bloods: Glucose 920 mg/dL, Serum osmolality 368 mOsm/kg, pH 7.34, HCO3 20 mEq/L, Ketones trace, Na 152 mEq/L.",
+      "Relevant background/PMH: Type 2 Diabetes, Hypertension, Mild cognitive impairment",
+      "Current medications: Metformin 1000mg BID, Glipizide 10mg OD, Lisinopril 20mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hyperosmolar Hyperglycemic State (HHS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Stroke without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe altered mental status — reflects extreme hyperosmolality and dehydration."
+    ],
+    "management_principles": [
+      "Vigorous IV fluid replacement (0.9% NaCl initially, transitioning to 0.45% NaCl based on corrected sodium), low-dose IV insulin infusion (0.05-0.1 units/kg/hr), close neurological monitoring for cerebral edema during rehydration."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68F with type 2 diabetes brought in by family due to progressive confusion, lethargy, and extreme thirst over 7 days. No abdominal pain or vomiting. Blood glucose on arrival is 920 mg/dL without significant ketonuria.",
+    "objective": "Vitals: HR 115, BP 88/54, Temp 36.8C. Severe skin tenting, dry mucous membranes. Bloods: Glucose 920 mg/dL, Serum osmolality 368 mOsm/kg, pH 7.34, HCO3 20 mEq/L, Ketones trace, Na 152 mEq/L.",
+    "assessment": "Hyperosmolar Hyperglycemic State (HHS) with severe dehydration and hyperosmolality.",
+    "plan": "Vigorous IV fluid replacement (0.9% NaCl initially, transitioning to 0.45% NaCl based on corrected sodium), low-dose IV insulin infusion (0.05-0.1 units/kg/hr), close neurological monitoring for cerebral edema during rehydration."
+  },
+  "learning_objectives": [
+    "Differentiate Hyperosmolar Hyperglycemic State (HHS) from Diabetic Ketoacidosis (DKA)",
+    "Calculate and interpret effective serum osmolality and corrected sodium",
+    "Manage careful, gradual fluid and electrolyte rehydration to avoid cerebral complications",
+    "Address underlying triggers such as infection or medication non-adherence"
+  ],
+  "teaching": {
+    "diagnosis": "Hyperosmolar Hyperglycemic State (HHS)",
+    "one_liner": "In Type 2 diabetes, extremely high blood glucose over days causes profound dehydration and confusion without significant ketones — distinct from DKA, and requiring careful fluid resuscitation to avoid cerebral edema.",
+    "differentials": [
+      "Stroke",
+      "Diabetic ketoacidosis",
+      "Sepsis with delirium"
+    ],
+    "red_flags": [
+      "Severe altered mental status — reflects extreme hyperosmolality and dehydration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset over days",
+        "say": "How many days has she been getting more confused and lethargic?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "days",
+          "week"
+        ]
+      },
+      {
+        "objective": "Thirst and fluid intake",
+        "say": "Has she been extremely thirsty, and has she been able to drink enough?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "thirst"
+        ]
+      },
+      {
+        "objective": "Absence of abdominal pain/vomiting",
+        "say": "Has she had any vomiting or belly pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Diabetes history",
+        "say": "How long has she had diabetes, and how is it usually controlled?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Baseline cognitive status",
+        "say": "How does her confusion now compare to her usual memory?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  },
+  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.5 mEq/L, replace potassium and hold insulin until it is corrected."
+}

@@ -1,0 +1,158 @@
+{
+  "id": "hemato_030",
+  "system": "hemato",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Flores",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "excruciating bone pain in legs and back in a patient with known sickle cell disease",
+  "hpi_details": "A 32-year-old female presents to the clinic with excruciating bone pain in legs and back in a patient with known sickle cell disease. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to sickle cell disease",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Known sickle cell disease (HbSS)",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_sickle_crisis_labs",
+      "title": "Urgent sickle cell crisis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "reticulocyte count",
+        "reticulocytes"
+      ],
+      "availability_message": "The urgent sickle cell crisis results are now available; individualized analgesia should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "8.2",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation",
+          "note": "Near documented baseline"
+        },
+        {
+          "id": "reticulocyte_count",
+          "test": "Reticulocyte count",
+          "value": "10.9",
+          "unit": "%",
+          "reference_range": "0.5-2.5",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Sickle Cell Pain Crisis (Vaso-Occlusive Crisis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Sickle Cell Pain Crisis (Vaso-Occlusive Crisis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Sickle Cell Pain Crisis: IV hydration, scheduled IV opioids, oxygen if hypoxic, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating bone pain in legs and back in a patient with known sickle cell disease",
+      "Key HPI features: A 32-year-old female presents to the clinic with excruciating bone pain in legs and back in a patient with known sickle cell disease. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Sickle Cell Pain Crisis.",
+      "Relevant background/PMH: Known sickle cell disease (HbSS)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Sickle Cell Pain Crisis (Vaso-Occlusive Crisis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute chest syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest symptoms or hypoxia — evolving acute chest syndrome."
+    ],
+    "management_principles": [
+      "Plan for Sickle Cell Pain Crisis: IV hydration, scheduled IV opioids, oxygen if hypoxic",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of excruciating bone pain in legs and back in a patient with known sickle cell disease. HPI: vaso-occlusion, HbS aggregation.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Sickle Cell Pain Crisis.",
+    "assessment": "Condition highly suspicious for Sickle Cell Pain Crisis.",
+    "plan": "Provide rapid, individualized opioid analgesia using the patient’s established plan when available, assess oxygenation, and give IV or oral fluids only to correct dehydration while avoiding fluid overload. Provide supplemental oxygen only for hypoxemia and evaluate for infection, acute chest syndrome, severe anemia, or other complications."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Sickle Cell Pain Crisis",
+    "Select appropriate diagnostic workup for Sickle Cell Pain Crisis",
+    "Implement evidence-based management plan: IV hydration, scheduled IV opioids, oxygen if hypoxic"
+  ],
+  "teaching": {
+    "diagnosis": "Sickle Cell Pain Crisis (Vaso-Occlusive Crisis)",
+    "one_liner": "Aggregation of sickled hemoglobin blocks small blood vessels, causing severe ischemic pain in the bones and back — managed with hydration, oxygen if hypoxic, and scheduled opioids.",
+    "differentials": [
+      "Acute chest syndrome",
+      "Osteomyelitis",
+      "Avascular necrosis"
+    ],
+    "red_flags": [
+      "Chest symptoms or hypoxia — evolving acute chest syndrome"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain location",
+        "say": "Where exactly is the pain — legs, back, or elsewhere?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Comparison to prior crises",
+        "say": "Does this feel like your typical crisis pain?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Trigger",
+        "say": "Was there anything that might have triggered this — cold, dehydration, infection?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Any chest pain or shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Home treatment tried",
+        "say": "What have you already tried at home for the pain?",
+        "domains": [
+          "relieving"
+        ]
+      }
+    ]
+  }
+}

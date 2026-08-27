@@ -1,0 +1,155 @@
+{
+  "id": "neuro_011",
+  "system": "neurology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 21,
+  "gender": "male",
+  "chief_complaint": "blacked out at a concert and woke up in ambulance with bitten tongue and confusion",
+  "hpi_details": "Presents via emergency department after an unwitnessed/bystander-witnessed collapse while attending a late-night rock concert with flashing lights after staying awake for 24 hours cramming for university exams. Bystanders report he gave a loud cry, stiffened rigid for 20 seconds, and then underwent violent rhythmic jerking of all four limbs for approximately 2 minutes, accompanied by foaming at the mouth and urinary incontinence. Woke up 30 minutes later in the ambulance feeling profoundly confused, disoriented, with a severely sore lateral border of his tongue (deep laceration) and generalized severe muscle soreness. Recalls experiencing brief morning involuntary arm jerks (myoclonic jerks causing him to drop his coffee cup) over the past 6 months when sleep-deprived.",
+  "ideas": "thinks the combination of extreme sleep deprivation, energy drinks, and strobe lighting overloaded his brain circuits",
+  "concerns": "terrified he has epilepsy and will lose his university driving licence and independence",
+  "expectations": "wants an EEG brain wave check immediately and clear advice on whether he can drive his car to classes next week",
+  "pmh": "morning arm jerks over 6 months (uninvestigated), healthy otherwise",
+  "medications": "none regular",
+  "social_hx": "university computer science student, drinks alcohol heavily on weekends (drank 10 pints night before), non-smoker, holds full driving licence",
+  "investigation_events": [
+    {
+      "id": "stat_first_seizure_metabolic_screen",
+      "title": "Emergency metabolic seizure screen",
+      "order_terms": ["blood glucose", "glucose", "electrolytes", "sodium", "calcium", "magnesium", "BMP", "basic metabolic panel"],
+      "availability_message": "The immediate metabolic seizure screen is now available. EEG and epilepsy-protocol MRI remain specialist follow-up investigations.",
+      "results": [
+        {"id": "glucose", "test": "Point-of-care blood glucose", "value": "104", "unit": "mg/dL", "reference_range": "70-140", "flag": "normal"},
+        {"id": "sodium", "test": "Serum sodium", "value": "139", "unit": "mEq/L", "reference_range": "135-145", "flag": "normal"},
+        {"id": "calcium", "test": "Serum calcium", "value": "9.3", "unit": "mg/dL", "reference_range": "8.6-10.2", "flag": "normal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "First Generalized Tonic-Clonic Seizure (on Juvenile Myoclonic Epilepsy) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of First Generalized Tonic-Clonic Seizure (on Juvenile Myoclonic Epilepsy) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Mandatory legal/driving instruction: patient MUST immediately cease driving all motor vehicles and notify the national driver licensing authority (DVLA/DMV); cannot drive for minimum 6 to 12 months seizure-free depending on local law, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: blacked out at a concert and woke up in ambulance with bitten tongue and confusion",
+      "Key HPI features: Presents via emergency department after an unwitnessed/bystander-witnessed collapse while attending a late-night rock concert with flashing lights after staying awake for 24 hours cramming for university exams. Bystanders report he gave a loud cry, stiffened rigid for 20 seconds, and then underwent violent rhythmic jerking of all four limbs for approximately 2 minutes, accompanied by foaming at the mouth and urinary incontinence. Woke up 30 minutes later in the ambulance feeling profoundly confused, disoriented, with a severely sore lateral border of his tongue (deep laceration) and generalized severe muscle soreness. Recalls experiencing brief morning involuntary arm jerks (myoclonic jerks causing him to drop his coffee cup) over the past 6 months when sleep-deprived.",
+      "Objective/Exam findings: Inspect oral cavity: deep laceration on the lateral border of the tongue (highly specific for generalized tonic-clonic seizure vs syncope where tip bites occur). Neurological exam: alert, oriented, normal cranial nerves and limb power (check for Todd's post-ictal paresis). Bloods: FBC, electrolytes (sodium/calcium/magnesium), glucose, renal function, toxicology screen, serum prolactin (elevated within 2 hours of true seizure vs syncope/pseudoseizure). Outpatient electroencephalogram (EEG or sleep-deprived EEG: showing generalized 4-6 Hz polyspike-and-wave discharges characteristic of Juvenile Myoclonic Epilepsy). MRI Brain (epilepsy protocol) to rule out structural lesion.",
+      "Relevant background/PMH: morning arm jerks over 6 months (uninvestigated), healthy otherwise",
+      "Current medications: none regular"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out First Generalized Tonic-Clonic Seizure (on Juvenile Myoclonic Epilepsy).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Convulsive vasovagal syncope (no lateral tongue bite, brief confusion) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any recurrence — driving must stop immediately and stay stopped per legal requirements."
+    ],
+    "management_principles": [
+      "Mandatory legal/driving instruction: patient MUST immediately cease driving all motor vehicles and notify the national driver licensing authority (DVLA/DMV); cannot drive for minimum 6 to 12 months seizure-free depending on local law",
+      "Refer to specialist first-seizure/epilepsy clinic",
+      "Initiate anti-seizure medication appropriate for idiopathic generalized epilepsy: sodium valproate (first-line in males; strictly restricted in females of childbearing potential due to teratogenicity) or levetiracetam / lamotrigine starting low and titrating up"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: blacked out at a concert and woke up in ambulance with bitten tongue and confusion\n\nPresents via emergency department after an unwitnessed/bystander-witnessed collapse while attending a late-night rock concert with flashing lights after staying awake for 24 hours cramming for university exams. Bystanders report he gave a loud cry, stiffened rigid for 20 seconds, and then underwent violent rhythmic jerking of all four limbs for approximately 2 minutes, accompanied by foaming at the mouth and urinary incontinence. Woke up 30 minutes later in the ambulance feeling profoundly confused, disoriented, with a severely sore lateral border of his tongue (deep laceration) and generalized severe muscle soreness. Recalls experiencing brief morning involuntary arm jerks (myoclonic jerks causing him to drop his coffee cup) over the past 6 months when sleep-deprived.",
+    "objective": "Inspect oral cavity: deep laceration on the lateral border of the tongue (highly specific for generalized tonic-clonic seizure vs syncope where tip bites occur). Neurological exam: alert, oriented, normal cranial nerves and limb power (check for Todd's post-ictal paresis). Bloods: FBC, electrolytes (sodium/calcium/magnesium), glucose, renal function, toxicology screen, serum prolactin (elevated within 2 hours of true seizure vs syncope/pseudoseizure). Outpatient electroencephalogram (EEG or sleep-deprived EEG: showing generalized 4-6 Hz polyspike-and-wave discharges characteristic of Juvenile Myoclonic Epilepsy). MRI Brain (epilepsy protocol) to rule out structural lesion.",
+    "assessment": "First presentation of Generalized Tonic-Clonic Seizure on a background of Juvenile Myoclonic Epilepsy (JME - Janz syndrome), triggered by sleep deprivation, alcohol withdrawal, and photic stimulation. DDx: convulsive vasovagal syncope (myoclonic syncope - no lateral tongue bite or prolonged post-ictal confusion), psychogenic non-epileptic seizures (PNES), illicit drug toxicity, hypoglycaemia.",
+    "plan": "Mandatory legal/driving instruction: patient MUST immediately cease driving all motor vehicles and notify the national driver licensing authority (DVLA/DMV); cannot drive for minimum 6 to 12 months seizure-free depending on local law. Refer to specialist first-seizure/epilepsy clinic. Initiate anti-seizure medication appropriate for idiopathic generalized epilepsy: sodium valproate (first-line in males; strictly restricted in females of childbearing potential due to teratogenicity) or levetiracetam / lamotrigine starting low and titrating up. Counsel on strict avoidance of seizure triggers (sleep deprivation, alcohol excess, flashing lights)."
+  },
+  "learning_objectives": [
+    "Differentiate generalized tonic-clonic seizure from convulsive syncope by evaluating lateral tongue bite, urinary incontinence, and prolonged post-ictal confusion",
+    "Identify the classic clinical triad of Juvenile Myoclonic Epilepsy: morning myoclonic jerks, generalized seizures, and sleep/alcohol triggers",
+    "Execute mandatory legal driving disqualification counseling transparently and firmly upon first seizure presentation",
+    "Select sex-appropriate first-line anti-seizure pharmacotherapy (sodium valproate in males vs avoidance/alternatives in fertile females)"
+  ],
+  "teaching": {
+    "diagnosis": "First Generalized Tonic-Clonic Seizure (on Juvenile Myoclonic Epilepsy)",
+    "one_liner": "A convulsion with tongue biting, incontinence, and prolonged post-ictal confusion, triggered by sleep deprivation and flashing lights — the months of morning arm jerks he'd ignored point to underlying juvenile myoclonic epilepsy.",
+    "differentials": [
+      "Convulsive vasovagal syncope (no lateral tongue bite, brief confusion)",
+      "Psychogenic non-epileptic seizures (PNES)",
+      "Drug toxicity",
+      "Hypoglycemia"
+    ],
+    "red_flags": [
+      "Any recurrence — driving must stop immediately and stay stopped per legal requirements"
+    ],
+    "must_ask": [
+      {
+        "objective": "Witnessed event description",
+        "say": "Can you tell me what bystanders described — did you cry out, stiffen, then jerk?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "stiffened",
+          "jerking"
+        ]
+      },
+      {
+        "objective": "Tongue biting and incontinence",
+        "say": "Did you bite your tongue, and did you lose bladder control?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tongue bite",
+          "incontinence"
+        ]
+      },
+      {
+        "objective": "Post-ictal confusion",
+        "say": "How confused did you feel afterward, and for how long?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "confusion",
+          "post-ictal"
+        ]
+      },
+      {
+        "objective": "Trigger factors",
+        "say": "Had you been sleep-deprived, and were there flashing lights?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sleep deprivation",
+          "strobe lights"
+        ]
+      },
+      {
+        "objective": "Prior similar symptoms",
+        "say": "Have you had any brief jerks of your arms, especially in the morning?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "morning jerks",
+          "myoclonic"
+        ]
+      }
+    ]
+  }
+}

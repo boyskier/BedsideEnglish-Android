@@ -1,0 +1,122 @@
+{
+  "id": "allergy_016",
+  "system": "allergy_immunology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Tom Higgins",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "waking up with hives and shortness of breath in the middle of the night",
+  "hpi_details": "42M presents after two episodes of waking up at 3 AM with severe generalized urticaria, abdominal cramps, and wheezing. He notes these episodes occur about 4-6 hours after eating steak or pork for dinner. He recently moved to a wooded area and reports multiple tick bites over the summer.",
+  "ideas": "thinks he is developing an allergy to his new laundry detergent",
+  "concerns": "terrified he might stop breathing in his sleep",
+  "expectations": "wants an allergy test for environmental allergens",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Landscaper, lives in a wooded area, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Alpha-Gal Syndrome",
+    "core_concepts": [
+      "Alpha-gal syndrome is an IgE-mediated delayed anaphylactic reaction to galactose-alpha-1,3-galactose, a carbohydrate found in mammalian meat.",
+      "Reactions characteristically occur 3-6 hours after ingestion, often waking patients from sleep.",
+      "Sensitization is triggered by tick bites (especially the Lone Star tick in the US).",
+      "Avoidance of mammalian meat (beef, pork, lamb) is the primary management."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: waking up with hives and shortness of breath in the middle of the night",
+      "Key HPI features: Delayed (3-6 hour) anaphylaxis following red meat consumption. History of tick exposure.",
+      "Objective/Exam findings: Unremarkable between episodes. During acute episode, typical signs of anaphylaxis (urticaria, wheezing, hypotension).",
+      "Relevant background/PMH: Tick bites",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Dismissing food allergy because the reaction occurs hours after the meal, rather than immediately.",
+      "Testing for standard meat proteins instead of the alpha-gal carbohydrate.",
+      "Advising avoidance of chicken or fish (which are safe)."
+    ],
+    "dangerous_errors": [
+      "Failing to prescribe an Epinephrine auto-injector for these potentially life-threatening episodes.",
+      "Not recognizing the delayed presentation, leading to misdiagnosis of 'idiopathic' anaphylaxis."
+    ],
+    "management_principles": [
+      "Prescribe Epinephrine auto-injectors.",
+      "Strict avoidance of mammalian meat and sometimes mammalian-derived byproducts (e.g., dairy, gelatin) if highly sensitive.",
+      "Refer to Allergy/Immunology for specific IgE testing to alpha-gal."
+    ],
+    "boundaries_and_exceptions": [
+      "Symptoms may wane over years if further tick bites are avoided."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42M presents with delayed-onset nocturnal anaphylaxis (urticaria, wheezing, GI symptoms) occurring 4-6 hours after consuming mammalian meat. Endorses recent tick bites.",
+    "objective": "Well-appearing today. Vitals stable. Lungs clear, no rash.",
+    "assessment": "Alpha-gal syndrome (delayed mammalian meat allergy).",
+    "plan": "1. Avoid all mammalian meat (beef, pork, lamb, venison). Poultry and fish are safe. 2. Prescribed Epinephrine auto-injector (0.3mg) 2-pack. 3. Refer to Allergy for alpha-gal IgE testing."
+  },
+  "learning_objectives": [
+    "Recognize the unique delayed timeline of alpha-gal anaphylaxis",
+    "Identify the association between tick bites and alpha-gal sensitization",
+    "Provide appropriate dietary avoidance counseling (mammalian meat)"
+  ],
+  "teaching": {
+    "diagnosis": "Alpha-Gal Syndrome (Meat Allergy)",
+    "one_liner": "A delayed allergy to red meat, transmitted by tick bites, causing anaphylaxis several hours after eating.",
+    "differentials": [
+      "Idiopathic anaphylaxis",
+      "Chronic spontaneous urticaria",
+      "Food-dependent exercise-induced anaphylaxis"
+    ],
+    "red_flags": [
+      "Nocturnal awakenings with anaphylaxis symptoms"
+    ],
+    "must_ask": [
+      {
+        "objective": "Identify the delayed trigger",
+        "say": "What did you eat for dinner in the hours before these attacks?",
+        "domains": [
+          "onset_duration",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "eat",
+          "dinner",
+          "meat",
+          "beef",
+          "pork"
+        ]
+      },
+      {
+        "objective": "Assess for tick exposure",
+        "say": "Have you noticed any tick bites recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "tick",
+          "bite",
+          "woods",
+          "outdoor"
+        ]
+      },
+      {
+        "objective": "Evaluate severity of respiratory symptoms",
+        "say": "Did you feel like your throat was closing or have trouble breathing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "throat",
+          "breathing",
+          "closing",
+          "wheeze"
+        ]
+      }
+    ]
+  }
+}

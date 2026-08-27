@@ -1,0 +1,147 @@
+{
+  "id": "peds_014",
+  "system": "pediatrics",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Johnson",
+  "age": 0,
+  "gender": "female",
+  "chief_complaint": "tachypnea and grunting immediately after elective Cesarean delivery without labor in full-term infant",
+  "hpi_details": "2-hour-old term infant born via elective C-section without labor, presenting with respiratory rate 75 and mild grunting shortly after birth.",
+  "ideas": "thinks this is related to transient tachypnea of the newborn ttn",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "investigation_events": [{
+    "id": "newborn_tachypnea_radiograph",
+    "title": "Chest radiograph for persistent newborn tachypnea",
+    "order_terms": ["chest x-ray", "chest radiograph", "CXR"],
+    "availability_message": "The chest radiograph result is now available. Continue supportive care and reassess for infection or an alternate diagnosis if the course is atypical.",
+    "results": [{"id": "chest_radiograph", "test": "Chest radiograph", "value": "Hyperinflation with prominent perihilar interstitial markings and fluid in the interlobar fissures; no focal air-space consolidation", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Transient tachypnea of the newborn (TTN) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Transient tachypnea of the newborn (TTN) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes supportive respiratory care with close monitoring while excluding pneumonia, RDS, and congenital heart disease, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: tachypnea and grunting immediately after elective Cesarean delivery without labor in full-term infant",
+      "Key HPI features: 2-hour-old term infant born via elective C-section without labor, presenting with respiratory rate 75 and mild grunting shortly after birth.",
+      "Objective/Exam findings: RR 75-80 with mild subcostal/intercostal retractions, grunting, and nasal flaring. Oxygen saturation 90-93% on room air, improving with blow-by oxygen. Breath sounds clear bilaterally, no crackles. Heart sounds normal, no murmur. Well-perfused, capillary refill under 2 seconds.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Transient tachypnea of the newborn (TTN).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Neonatal pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Persistent or worsening respiratory distress beyond 24-48 hours would suggest an alternate diagnosis."
+    ],
+    "management_principles": [
+      "Provide supportive respiratory care (supplemental oxygen or nasal CPAP) titrated to maintain adequate oxygen saturation",
+      "Obtain a chest radiograph and consider CBC/blood cultures with a low threshold for empiric antibiotics if neonatal pneumonia or sepsis cannot be confidently excluded",
+      "Monitor respiratory rate, work of breathing, and feeding tolerance closely in a special care nursery; most cases resolve within 24-72 hours",
+      "Reassess for an alternate diagnosis (pneumonia, RDS, congenital heart disease, persistent pulmonary hypertension) if distress persists or worsens beyond 48-72 hours."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "2-hour-old term female infant born via elective C-section without labor, presenting with respiratory rate 75 and mild grunting shortly after birth.",
+    "objective": "RR 75-80 with mild subcostal/intercostal retractions, grunting, and nasal flaring. Oxygen saturation 90-93% on room air, improving with blow-by oxygen. Breath sounds clear bilaterally, no crackles. Heart sounds normal, no murmur. Well-perfused, capillary refill under 2 seconds.",
+    "assessment": "Findings consistent with transient tachypnea of the newborn, most likely related to delayed clearance of fetal lung fluid after elective Cesarean delivery without labor; pneumonia, RDS, and congenital heart disease should be excluded.",
+    "plan": "Provide supportive respiratory care (supplemental oxygen or nasal CPAP as needed), monitor closely in a special care nursery, and obtain a chest radiograph with a low threshold for CBC/blood cultures and empiric antibiotics if pneumonia or sepsis cannot be confidently excluded. Reassess frequently; symptoms typically resolve within 24-72 hours, and persistence beyond that should prompt evaluation for an alternate diagnosis."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Transient Tachypnea of the Newborn TTN",
+    "Formulate prioritized differential diagnosis for tachypnea and grunting immediately after elective Cesarean delivery without labor in full-term infant",
+    "Select appropriate imaging and labs (chest radiograph, CBC/blood culture) to exclude pneumonia and sepsis in a tachypneic newborn",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Transient tachypnea of the newborn (TTN)",
+    "one_liner": "2-hour-old term infant born via elective C-section without labor, with tachypnea and mild grunting.",
+    "differentials": [
+      "Neonatal pneumonia",
+      "Respiratory distress syndrome (more common in preterm)",
+      "Congenital heart disease"
+    ],
+    "red_flags": [
+      "Persistent or worsening respiratory distress beyond 24-48 hours would suggest an alternate diagnosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the delivery mode and absence of labor",
+        "say": "Was the baby born by planned C-section before labor started?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "elective cesarean",
+          "no labor"
+        ]
+      },
+      {
+        "objective": "Characterize the breathing pattern",
+        "say": "How fast is she breathing, and do you notice any grunting sounds?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tachypnea",
+          "grunting"
+        ]
+      },
+      {
+        "objective": "Ask about feeding ability",
+        "say": "Is she able to feed despite the fast breathing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "feeding ability"
+        ]
+      },
+      {
+        "objective": "Reassure about the expected time course",
+        "say": "This condition typically improves within 24 to 48 hours as extra fluid clears from her lungs.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "expected resolution",
+          "reassurance"
+        ]
+      },
+      {
+        "objective": "Explain the supportive CPAP treatment",
+        "say": "We'll support her breathing with gentle nasal pressure support (CPAP) until this resolves on its own.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "nasal CPAP",
+          "supportive care"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "id": "consult_cardio_stable",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Consult / referral",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "consult_referral",
+  "patient_name": "Cardiology consult — stable syncope",
+  "chief_complaint": "Request a focused non-urgent cardiology review with a clear clinical question",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Cardiology consult: stable exertional syncope",
+    "task": "Consult / referral",
+    "urgency": "routine",
+    "patient": "Ms. Elena Ruiz, 54-year-old woman",
+    "location": "Medical ward",
+    "situation": "Admitted after exertional syncope; she is currently stable.",
+    "background": ["The syncopal episode occurred with exertion.", "No echocardiogram has been performed yet."],
+    "current_status": ["Currently stable."],
+    "key_data": ["ECG shows left bundle branch block.", "Troponin is negative and electrolytes are normal."],
+    "treatments": ["Initial ECG and laboratory tests have been completed.", "Echocardiography has not yet been arranged."],
+    "your_request": "Ask whether she needs inpatient cardiology review and how to plan echocardiography.",
+    "must_include": ["Exertional onset and current stability.", "Left bundle branch block and negative troponin.", "A specific question, review timing, and interim ownership."]
+  },
+  "kickoff_text": "Cardiology registrar speaking. How can I help?",
+  "persona_override": "You are Dr. Morgan, a cardiology registrar receiving a consult call from a junior clinician. The patient is Ms. Elena Ruiz, 54, admitted after exertional syncope. She is now stable. ECG shows left bundle branch block; troponin is negative; electrolytes are normal; echocardiography has not yet been done. Ask for the caller's specific question if it is unclear. Ask what has already been arranged. Accept a focused request for cardiology review and echocardiography planning, then confirm when you will review her. Keep each turn short and realistic. Do not volunteer facts the learner has not stated. End after the learner confirms the plan.",
+  "learning_objectives": [
+    "identify self, team, patient, and non-urgent reason for calling",
+    "summarize exertional syncope and the relevant ECG and laboratory results",
+    "ask a specific question about cardiology review and echocardiography",
+    "confirm when the patient will be reviewed and who owns care meanwhile"
+  ],
+  "suggested_questions": [
+    "I'm calling from the medical ward about a stable patient with exertional syncope.",
+    "My specific question is whether she needs inpatient cardiology review and echocardiography.",
+    "Could you confirm when your team can review her?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Diagnosis-focused cardiology referral for exertional syncope with an abnormal ECG",
+    "core_concepts": ["Lead with the reason for referral, then give only the background that changes the consultant's decision.", "Exertional syncope and an abnormal ECG warrant clear cardiovascular risk communication and an explicit specialist question."],
+    "diagnostic_clues": ["Syncope occurred with exertion.", "Left bundle branch block is present on the ECG while the patient is currently stable."],
+    "common_misconceptions": ["A referral is complete simply because the caller says 'please review.'", "A negative initial troponin resolves the cause of exertional syncope."],
+    "dangerous_errors": ["Failing to mention exertional onset or the abnormal ECG.", "Ending the call without confirming review timing and interim ownership."],
+    "management_principles": ["Perform and communicate the initial syncope evaluation, including history, examination, vital signs, and ECG.", "Use a specific diagnostic question and agree on timing and responsibility."],
+    "boundaries_and_exceptions": ["Admission, monitoring, echocardiography, and rhythm-testing decisions depend on the full risk assessment and local cardiology pathway."],
+    "source_refs": [{"title": "AHRQ TeamSTEPPS Diagnosis-Focused Referral", "url": "https://www.ahrq.gov/sites/default/files/wysiwyg/teamstepps-program/dx-improvement/module3-presenters-notes.pdf"}, {"title": "2017 ACC/AHA/HRS Syncope Guideline", "url": "https://professional.heart.org/en/science-news/2017-acc-aha-hrs-guideline-for-the-evaluation-and-management-of-patients-with-syncope"}]
+  }
+}

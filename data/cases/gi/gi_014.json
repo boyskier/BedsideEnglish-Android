@@ -1,0 +1,222 @@
+{
+  "id": "gi_014",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Bradley",
+  "age": 76,
+  "gender": "male",
+  "chief_complaint": "sudden agonizing central stomach pain starting 3 hours ago",
+  "hpi_details": "3-hour history of sudden-onset, diffuse, excruciating abdominal pain that began without warning. Pain is constant, 10/10 intensity, and poorly localized. Accompanied by forceful vomiting and one episode of urgent bowel movement containing mucus and flecks of dark blood. Patient is writhing in discomfort.",
+  "ideas": "thinks he has food poisoning or a ruptured appendix",
+  "concerns": "feels like he is dying from the intensity of the pain",
+  "expectations": "wants immediate morphine and emergency surgical intervention",
+  "pmh": "paroxysmal atrial fibrillation (stopped taking anticoagulation 2 months ago due to minor gum bleeding), congestive heart failure, peripheral vascular disease",
+  "medications": "bisoprolol 2.5mg OD, furosemide 40mg OD, atorvastatin 40mg OD (not taking apixaban)",
+  "social_hx": "ex-smoker 40 pack-years, lives with daughter, retired machinist",
+  "investigation_events": [
+    {
+      "id": "stat_mesenteric_ischemia_workup",
+      "title": "STAT mesenteric ischemia results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "venous blood gas",
+        "vbg",
+        "lactate",
+        "ct angiography",
+        "cta abdomen",
+        "mesenteric angiography"
+      ],
+      "availability_message": "The STAT blood gas and CT angiography results are now available; resuscitation, antibiotics, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "venous_ph",
+          "test": "Venous pH",
+          "value": "7.21",
+          "reference_range": "7.31-7.41",
+          "flag": "critical",
+          "specimen": "Venous blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "bicarbonate",
+          "test": "Serum bicarbonate",
+          "value": "15",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "lactate",
+          "test": "Serum lactate",
+          "value": "6.4",
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "ct_angiography",
+          "test": "CT angiography of abdomen and pelvis",
+          "value": "Abrupt occlusion of the proximal superior mesenteric artery with reduced enhancement of multiple small-bowel loops; no free intraperitoneal air",
+          "flag": "critical",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Mesenteric Ischaemia (SMA Embolism) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Mesenteric Ischaemia (SMA Embolism) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Surgical emergency: high-flow oxygen, aggressive IV crystalloid resuscitation, broad-spectrum IV antibiotics, urgent vascular/general surgery review for laparotomy vs endovascular revascularization, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden agonizing central stomach pain starting 3 hours ago",
+      "Key HPI features: 3-hour history of sudden-onset, diffuse, excruciating abdominal pain that began without warning. Pain is constant, 10/10 intensity, and poorly localized. Accompanied by forceful vomiting and one episode of urgent bowel movement containing mucus and flecks of dark blood. Patient is writhing in discomfort.",
+      "Objective/Exam findings: Examine pulse (check for irregular rhythm/AF), vitals (tachycardia, hypotension suggest sepsis/infarction). Abdominal exam: classic 'pain out of proportion to physical examination' (soft abdomen initially with minimal guarding despite agonizing pain). Bloods: venous blood gas (profound metabolic acidosis with elevated lactate), FBC, amylase, coagulation. Urgent CT angiography (CTA) of mesenteric vessels.",
+      "Relevant background/PMH: paroxysmal atrial fibrillation (stopped taking anticoagulation 2 months ago due to minor gum bleeding), congestive heart failure, peripheral vascular disease",
+      "Current medications: bisoprolol 2.5mg OD, furosemide 40mg OD, atorvastatin 40mg OD (not taking apixaban)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Mesenteric Ischaemia (SMA Embolism).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Perforated viscus without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion to the physical exam findings — classic for mesenteric ischaemia."
+    ],
+    "management_principles": [
+      "Surgical emergency: high-flow oxygen, aggressive IV crystalloid resuscitation, broad-spectrum IV antibiotics, urgent vascular/general surgery review for laparotomy vs endovascular revascularization",
+      "Request immediate emergency CTA abdomen/pelvis",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "76M with untreated atrial fibrillation and vascular disease presents with acute-onset excruciating diffuse abdominal pain, vomiting, and bloody mucus passage over 3 hours.",
+    "objective": "Examine pulse (check for irregular rhythm/AF), vitals (tachycardia, hypotension suggest sepsis/infarction). Abdominal exam: classic 'pain out of proportion to physical examination' (soft abdomen initially with minimal guarding despite agonizing pain). Bloods: venous blood gas (profound metabolic acidosis with elevated lactate), FBC, amylase, coagulation. Urgent CT angiography (CTA) of mesenteric vessels.",
+    "assessment": "Acute superior mesenteric artery (SMA) embolism causing acute mesenteric ischaemia. DDx: perforated viscus, leaking abdominal aortic aneurysm, acute pancreatitis, mesenteric venous thrombosis.",
+    "plan": "Surgical emergency: high-flow oxygen, aggressive IV crystalloid resuscitation, broad-spectrum IV antibiotics, urgent vascular/general surgery review for laparotomy vs endovascular revascularization. Request immediate emergency CTA abdomen/pelvis."
+  },
+  "learning_objectives": [
+    "Recognise the classic presentation of acute mesenteric ischaemia: severe abdominal pain out of proportion to physical exam findings",
+    "Identify cardioembolic risk factors (atrial fibrillation off anticoagulation) as primary triggers for mesenteric infarction",
+    "Interpret metabolic markers (elevated serum lactate and high anion gap acidosis) indicating bowel necrosis",
+    "Demonstrate rapid emergency prioritization and surgical/vascular escalation"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Mesenteric Ischaemia (SMA Embolism)",
+    "one_liner": "A blood clot suddenly blocks the artery feeding the intestine, causing agonising pain that's out of proportion to the exam and putting the bowel at risk of dying.",
+    "differentials": [
+      "Perforated viscus",
+      "Leaking abdominal aortic aneurysm",
+      "Acute pancreatitis"
+    ],
+    "red_flags": [
+      "Pain out of proportion to the physical exam findings — classic for mesenteric ischaemia",
+      "Known atrial fibrillation off anticoagulation — a source of embolism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed and severity",
+        "say": "Did the pain come on suddenly, and how bad is it out of ten?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "sudden",
+          "severe",
+          "agonizing",
+          "intense"
+        ]
+      },
+      {
+        "objective": "Pain versus exam mismatch",
+        "say": "Can you point to exactly where it hurts, or is it hard to say?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "localize",
+          "diffuse",
+          "point",
+          "vague"
+        ]
+      },
+      {
+        "objective": "Atrial fibrillation and anticoagulation",
+        "say": "You have an irregular heartbeat — have you been taking your blood thinner regularly?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "heartbeat",
+          "irregular",
+          "anticoagulant",
+          "apixaban"
+        ]
+      },
+      {
+        "objective": "Bloody bowel movement",
+        "say": "Did you pass any blood or dark material with your bowel movement?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood",
+          "dark",
+          "bowel",
+          "mucus"
+        ]
+      },
+      {
+        "objective": "Vomiting",
+        "say": "Have you been vomiting as well?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomit",
+          "vomiting",
+          "forceful"
+        ]
+      },
+      {
+        "objective": "Vascular risk factors",
+        "say": "Do you have any circulation problems in your legs, or heart failure?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "circulation",
+          "vascular",
+          "heart",
+          "legs"
+        ]
+      }
+    ]
+  }
+}

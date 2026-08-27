@@ -1,0 +1,129 @@
+{
+  "id": "id_041",
+  "system": "id",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hill",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "foul-smelling bloating diarrhea after drinking stream water",
+  "hpi_details": "A 65-year-old male presents to the clinic with foul-smelling bloating diarrhea after drinking stream water. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to giardiasis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Giardiasis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Giardiasis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Giardiasis: Oral Metronidazole 250mg TID for 5-7 days, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: foul-smelling bloating diarrhea after drinking stream water",
+      "Key HPI features: A 65-year-old male presents to the clinic with foul-smelling bloating diarrhea after drinking stream water. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 37.1C (afebrile), HR 78, BP 128/76. Mild abdominal distension and bloating, hyperactive bowel sounds, no rebound or guarding, no blood on stool exam. Stool antigen test and ova/parasite exam positive for Giardia lamblia cysts and trophozoites.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Giardiasis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bacterial gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: bloody diarrhea, high fever, or dehydration, which suggest a more severe or invasive infection requiring urgent workup rather than uncomplicated giardiasis."
+    ],
+    "management_principles": [
+      "Plan for Giardiasis: Oral Metronidazole 250mg TID for 5-7 days",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: foul-smelling bloating diarrhea after drinking stream water\n\nA 65-year-old male presents to the clinic with foul-smelling bloating diarrhea after drinking stream water. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 37.1C (afebrile), HR 78, BP 128/76. Mild abdominal distension and bloating, hyperactive bowel sounds, no rebound or guarding, no blood on stool exam. Stool antigen test and ova/parasite exam positive for Giardia lamblia cysts and trophozoites.",
+    "assessment": "Giardiasis, confirmed by positive stool antigen and ova/parasite testing, consistent with recent untreated stream-water exposure.",
+    "plan": "Plan for Giardiasis: Oral Metronidazole 250mg TID for 5-7 days. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Giardiasis",
+    "Select appropriate diagnostic workup for Giardiasis",
+    "Implement evidence-based management plan: Oral Metronidazole 250mg TID for 5-7 days"
+  ],
+  "teaching": {
+    "diagnosis": "Giardiasis",
+    "one_liner": "A protozoan infection acquired from contaminated water, causing foul-smelling, bloating diarrhea without blood.",
+    "differentials": [
+      "Bacterial gastroenteritis",
+      "Irritable bowel syndrome"
+    ],
+    "red_flags": [
+      "Bloody diarrhea (dysentery) — suggests an invasive bacterial pathogen rather than giardiasis",
+      "High fever or signs of systemic toxicity",
+      "Signs of significant dehydration (hypotension, tachycardia, reduced urine output)",
+      "Immunocompromised status or symptoms persisting despite treatment — warrants further workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "Water exposure",
+        "say": "Did you drink any untreated water, like from a stream, recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "stream water",
+          "untreated"
+        ]
+      },
+      {
+        "objective": "Stool character",
+        "say": "Does the diarrhea smell particularly foul, and does your belly feel bloated?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "foul-smelling",
+          "bloating"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Blood in stool",
+        "say": "Any blood in your stool?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost weight?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

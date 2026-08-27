@@ -1,0 +1,131 @@
+{
+  "id": "cs_024",
+  "system": "cardiothoracic surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Han",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "incidental finding of a 1.5 cm round spot on chest X-ray on routine health check",
+  "hpi_details": "45F presents after her annual health checkup chest X-ray showed a 1.5 cm round, solitary nodule in the right lung. She has no cough, chest pain, shortness of breath, or weight loss. Never smoked.",
+  "ideas": "worried the lung spot is lung cancer",
+  "concerns": "anxious about needing biopsy or lung surgery",
+  "expectations": "wants chest CT scan and specialist evaluation",
+  "pmh": "No prior medical history",
+  "medications": "None",
+  "social_hx": "Office worker, non-smoker",
+  "available_results": [
+    {
+      "id": "screening_cxr_solitary_nodule",
+      "test": "Chest radiograph",
+      "value": "1.5 cm round, well-defined solitary pulmonary nodule in the right upper lobe; no other lung abnormality",
+      "unit": "",
+      "reference_range": "No pulmonary nodule",
+      "flag": "abnormal",
+      "collected_at": "Routine health check"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Solitary Pulmonary Nodule (low-risk) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Solitary Pulmonary Nodule (low-risk) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management is risk-stratified: nodule size, morphology, and patient risk factors (smoking, age, prior cancer) determine whether the Fleischner Society pathway is surveillance CT or biopsy/PET.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental finding of a 1.5 cm round spot on chest X-ray on routine health check",
+      "Key HPI features: 45F presents after her annual health checkup chest X-ray showed a 1.5 cm round, solitary nodule in the right lung. She has no cough, chest pain, shortness of breath, or weight loss. Never smoked.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Solitary Pulmonary Nodule (SPN), low-risk profile.",
+      "Relevant background/PMH: No prior medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Solitary Pulmonary Nodule (low-risk).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Benign granuloma (most common) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New symptoms (cough, weight loss, hemoptysis) — would raise suspicion and change management."
+    ],
+    "management_principles": [
+      "Reassure regarding low malignancy likelihood given the low-risk profile (asymptomatic, never-smoker, no prior cancer)",
+      "Order high-resolution chest CT scan",
+      "Use Fleischner Society guidelines to determine follow-up interval vs biopsy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Solitary Pulmonary Nodule (SPN), low-risk profile. incidental finding of a 1.5 cm round spot on chest X-ray on routine health check. 45F presents after her annual health checkup chest X-ray showed a 1.5 cm round, solitary nodule in the right lung. She has no cough, chest pain, shortness of breath, or weight loss. Never smoked.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Solitary Pulmonary Nodule (SPN), low-risk profile.",
+    "assessment": "Incidental low-risk solitary pulmonary nodule in an asymptomatic, never-smoking patient — most likely benign, but requires imaging follow-up to confirm.",
+    "plan": "Order high-resolution chest CT scan. Use Fleischner Society guidelines to determine follow-up interval vs biopsy. Reassure regarding low malignancy likelihood."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Solitary Pulmonary Nodule (SPN), low-risk profile.",
+    "Formulate prioritized differential diagnosis for incidental finding of a 1.5 cm round spot on chest X-ray on routine health check",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies for Solitary Pulmonary Nodule (SPN), low-risk profile."
+  ],
+  "teaching": {
+    "diagnosis": "Solitary Pulmonary Nodule (low-risk)",
+    "one_liner": "A single small lung nodule found incidentally on imaging in an asymptomatic, never-smoking patient — most such nodules are benign, and management follows Fleischner Society guidelines for follow-up imaging rather than immediate biopsy.",
+    "differentials": [
+      "Benign granuloma (most common)",
+      "Hamartoma",
+      "Early-stage lung cancer (less likely given low-risk profile)"
+    ],
+    "red_flags": [
+      "New symptoms (cough, weight loss, hemoptysis) — would raise suspicion and change management"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "Did you have any symptoms, or was this found on a routine check-up?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "Have you ever smoked?",
+        "domains": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Any cough, chest pain, or breathlessness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost any weight recently?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "The patient's fear",
+        "say": "What worries you most about this finding?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

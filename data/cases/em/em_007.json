@@ -1,0 +1,253 @@
+{
+  "id": "em_007",
+  "system": "emergency medicine",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Green",
+  "age": 21,
+  "gender": "male",
+  "chief_complaint": "deep, rapid Kussmaul breathing, fruity acetone breath, severe abdominal pain, and blood glucose 480 mg/dL (Diabetic Ketoacidosis DKA)",
+  "hpi_details": "21M college student with Type 1 Diabetes brought to ED by roommates after vomiting all day and complaining of severe, crampy diffuse abdominal pain. Has been sick with a stomach flu for 3 days and stopped taking his insulin injections (`because I wasn't eating solid food so I thought I didn't need insulin`). Patient is profoundly thirsty, urinating constantly, weak, and breathing deep and fast.",
+  "ideas": "exhausted and dehydrated, groaning from severe abdominal cramps",
+  "concerns": "worried he has food poisoning or appendicitis",
+  "expectations": "wants IV fluids, anti-nausea medication, and insulin",
+  "pmh": "Type 1 Diabetes Mellitus diagnosed at age 12",
+  "medications": "Insulin Glargine and Insulin Lispro (held for past 48 hours)",
+  "social_hx": "College student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_glucose",
+      "title": "Point-of-care blood glucose",
+      "order_terms": [
+        "fingerstick glucose",
+        "blood glucose",
+        "glucose check",
+        "capillary glucose"
+      ],
+      "availability_message": "The point-of-care glucose result is now available.",
+      "results": [
+        {
+          "id": "capillary_glucose",
+          "test": "Capillary blood glucose",
+          "value": "488",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "critical",
+          "specimen": "Capillary blood",
+          "collected_at": "On arrival"
+        }
+      ]
+    },
+    {
+      "id": "blood_gas",
+      "title": "Emergency blood gas",
+      "order_terms": [
+        "blood gas",
+        "arterial blood gas",
+        "abg",
+        "venous blood gas",
+        "vbg"
+      ],
+      "availability_message": "The emergency blood gas is now available.",
+      "results": [
+        {
+          "id": "blood_gas_ph",
+          "test": "pH",
+          "value": "7.12",
+          "reference_range": "7.35-7.45",
+          "flag": "critical",
+          "specimen": "Arterial blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "blood_gas_bicarbonate",
+          "test": "Bicarbonate",
+          "value": "8",
+          "unit": "mEq/L",
+          "reference_range": "22-26",
+          "flag": "critical",
+          "specimen": "Arterial blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "blood_gas_paco2",
+          "test": "PaCO2",
+          "value": "22",
+          "unit": "mmHg",
+          "reference_range": "35-45",
+          "flag": "low",
+          "specimen": "Arterial blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    },
+    {
+      "id": "dka_initial_chemistry",
+      "title": "Initial DKA chemistry and ketones",
+      "order_terms": [
+        "metabolic panel",
+        "electrolytes",
+        "serum chemistry",
+        "anion gap",
+        "serum ketones",
+        "beta hydroxybutyrate",
+        "beta-hydroxybutyrate"
+      ],
+      "availability_message": "The initial DKA chemistry and ketone results are now available.",
+      "results": [
+        {
+          "id": "anion_gap",
+          "test": "Anion gap",
+          "value": "24",
+          "unit": "mEq/L",
+          "reference_range": "8-12",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "potassium",
+          "test": "Potassium",
+          "value": "5.2",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "beta_hydroxybutyrate",
+          "test": "Beta-hydroxybutyrate",
+          "value": "6.8",
+          "unit": "mmol/L",
+          "reference_range": "<0.6",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Diabetic Ketoacidosis (DKA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diabetic Ketoacidosis (DKA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes aggressive IV fluid resuscitation, careful potassium correction before or alongside insulin, and continuous IV insulin infusion until the anion gap closes, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: deep, rapid Kussmaul breathing, fruity acetone breath, severe abdominal pain, and blood glucose 480 mg/dL (Diabetic Ketoacidosis DKA)",
+      "Key HPI features: 21M college student with Type 1 Diabetes brought to ED by roommates after vomiting all day and complaining of severe, crampy diffuse abdominal pain. Has been sick with a stomach flu for 3 days and stopped taking his insulin injections (`because I wasn't eating solid food so I thought I didn't need insulin`). Patient is profoundly thirsty, urinating constantly, weak, and breathing deep and fast.",
+      "Objective/Exam findings: Vitals: HR 122, BP 102/64, Temp 37.1C, RR 28 (deep, sighing, rapid Kussmaul respirations). Breath has a strong, distinctive sweet/fruity acetone odor. Mucous membranes extremely dry, skin turgor poor. Abdomen exhibits diffuse tenderness without rebound or guarding. STAT Point-of-Care Blood Glucose: 488 mg/dL. STAT Arterial Blood Gas (ABG): pH 7.12, PaCO2 22 mmHg (respiratory compensation), HCO3 8 mEq/L. Serum chemistry reveals Anion Gap of 24 mEq/L (normal 8-12), Potassium 5.2 mEq/L (despite profound whole-body intracellular potassium depletion), BUN 38 mg/dL, Creatinine 1.5 mg/dL (prerenal azotemia). Beta-hydroxybutyrate markedly elevated at 6.8 mmol/L; Urinalysis shows 4+ ketones and 4+ glucose.",
+      "Relevant background/PMH: Type 1 Diabetes Mellitus diagnosed at age 12",
+      "Current medications: Insulin Glargine and Insulin Lispro (held for past 48 hours)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diabetic Ketoacidosis (DKA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute appendicitis or gastroenteritis (for the abdominal pain) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Very low or very high potassium — must be checked before starting insulin, as insulin drives potassium into cells."
+    ],
+    "management_principles": [
+      "STAT ED medical resuscitation following ADA DKA guidelines",
+      "Fluid resuscitation: start rapid IV Normal Saline (0.9% NaCl) at 1000 mL/hr for the first 1-2 hours to restore intravascular volume and renal perfusion"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "21M Type 1 Diabetic presenting with severe nausea/vomiting, abdominal pain, polyuria, polydipsia, and insulin omission during acute viral gastroenteritis, diagnostic of Diabetic Ketoacidosis.",
+    "objective": "Vitals: HR 122, BP 102/64, Temp 37.1C, RR 28 (deep, sighing, rapid Kussmaul respirations). Breath has a strong, distinctive sweet/fruity acetone odor. Mucous membranes extremely dry, skin turgor poor. Abdomen exhibits diffuse tenderness without rebound or guarding. STAT Point-of-Care Blood Glucose: 488 mg/dL. STAT Arterial Blood Gas (ABG): pH 7.12, PaCO2 22 mmHg (respiratory compensation), HCO3 8 mEq/L. Serum chemistry reveals Anion Gap of 24 mEq/L (normal 8-12), Potassium 5.2 mEq/L (despite profound whole-body intracellular potassium depletion), BUN 38 mg/dL, Creatinine 1.5 mg/dL (prerenal azotemia). Beta-hydroxybutyrate markedly elevated at 6.8 mmol/L; Urinalysis shows 4+ ketones and 4+ glucose.",
+    "assessment": "Severe Diabetic Ketoacidosis (DKA) with High Anion Gap Metabolic Acidosis and Severe Dehydration, precipitated by insulin omission during acute viral illness.",
+    "plan": "STAT ED medical resuscitation following ADA DKA guidelines: 1. Fluid resuscitation: start rapid IV Normal Saline (0.9% NaCl) at 1000 mL/hr for the first 1-2 hours to restore intravascular volume and renal perfusion. 2. Potassium management (CRITICAL CHECKPOINT): check serum potassium BEFORE starting insulin. Since initial potassium is 5.2 mEq/L (between 3.5 and 5.0), initiate Potassium Chloride (KCl 10-20 mEq/L infusion) simultaneously with insulin (if baseline K+ was <3.5, insulin MUST be held until K+ is replaced >3.5 to prevent hypokalemic cardiac arrest). 3. Insulin therapy: start continuous IV regular insulin at 0.1 units/kg/hr to halt ketogenesis and close anion gap; a routine IV insulin bolus is not required. 4. Glucose monitoring: when blood glucose drops to 200-250 mg/dL, add 5% Dextrose (D5W) to the IV fluids while continuing insulin infusion until ketoacidosis completely clears (anion gap normalizes <=12 and HCO3 >=18)."
+  },
+  "learning_objectives": [
+    "Identify clinical and biochemical criteria for Diabetic Ketoacidosis (hyperglycemia >250 mg/dL, arterial pH <7.30, serum bicarbonate <18 mEq/L, elevated beta-hydroxybutyrate, and high anion gap metabolic acidosis)",
+    "Execute structured DKA resuscitation sequencing: aggressive initial volume expansion with 0.9% Normal Saline prior to / concurrent with continuous regular insulin infusion",
+    "Understand the critical physiological rule of potassium monitoring in DKA: check baseline K+ before starting insulin, hold insulin if K+ <3.5 mEq/L, and initiate proactive K+ replacement once level falls below 5.0 mEq/L due to massive intracellular shift induced by insulin",
+    "Determine specific biochemical endpoints for transitioning from IV regular insulin infusion to subcutaneous insulin regimens (resolution of ketoacidosis defined as normal anion gap <=12, HCO3 >=18, pH >7.30, and patient tolerating oral intake)"
+  ],
+  "teaching": {
+    "diagnosis": "Diabetic Ketoacidosis (DKA)",
+    "one_liner": "Insulin deficiency during illness or insulin omission causes the body to break down fat for fuel, producing ketoacids that cause deep rapid breathing, fruity breath, and severe abdominal pain — a common trap is stopping insulin because 'I wasn't eating'.",
+    "differentials": [
+      "Acute appendicitis or gastroenteritis (for the abdominal pain)",
+      "Hyperosmolar hyperglycemic state",
+      "Alcoholic ketoacidosis"
+    ],
+    "red_flags": [
+      "Very low or very high potassium — must be checked before starting insulin, as insulin drives potassium into cells"
+    ],
+    "must_ask": [
+      {
+        "objective": "Insulin use around the illness",
+        "say": "Have you been taking your insulin, especially during this illness?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "insulin",
+          "stopped"
+        ]
+      },
+      {
+        "objective": "Breathing pattern",
+        "say": "Are you breathing faster or deeper than usual?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "deep breathing",
+          "kussmaul"
+        ]
+      },
+      {
+        "objective": "Abdominal pain",
+        "say": "Where is the abdominal pain, and how severe?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Thirst and urination",
+        "say": "Have you been extremely thirsty and urinating a lot?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "thirst",
+          "urination"
+        ]
+      },
+      {
+        "objective": "Preceding illness",
+        "say": "Have you been sick recently, like with vomiting or fever?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "vomiting",
+          "illness"
+        ]
+      }
+    ]
+  },
+  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.5 mEq/L, replace potassium and hold insulin until it is corrected."
+}

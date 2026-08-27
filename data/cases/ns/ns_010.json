@@ -1,0 +1,138 @@
+{
+  "id": "ns_010",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lee",
+  "age": 44,
+  "gender": "male",
+  "chief_complaint": "fever, severe headache, focal arm seizures, and ring-enhancing lesion after tooth extraction",
+  "hpi_details": "44M presenting with high fever, headache, and left arm focal seizures 2 weeks after molar extraction, with multi-ring-enhancing lesion showing restricted diffusion on MRI ADC map.",
+  "ideas": "thinks this is related to cerebral abscess odontogenic source",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{
+    "id": "brain_mri",
+    "test": "Brain MRI with diffusion-weighted imaging",
+    "value": "Multiple ring-enhancing lesions with central restricted diffusion adjacent to the odontogenic drainage territory",
+    "flag": "critical",
+    "note": "Findings are consistent with cerebral abscesses; microbiologic confirmation remains pending."
+  }],
+  "clinical_knowledge": {
+    "topic": "Cerebral Abscess (odontogenic source) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cerebral Abscess (odontogenic source) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management includes urgent neurosurgical and infectious-disease evaluation, cultures, empiric intravenous antibiotics, and source control when indicated, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, severe headache, focal arm seizures, and ring-enhancing lesion after tooth extraction",
+      "Key HPI features: 44M presenting with high fever, headache, and left arm focal seizures 2 weeks after molar extraction, with multi-ring-enhancing lesion showing restricted diffusion on MRI ADC map.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Cerebral Abscess Odontogenic Source.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cerebral Abscess (odontogenic source).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Brain tumor (would not show restricted diffusion) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as new seizures with fever and a suspected brain abscess, which require emergency assessment, antimicrobial therapy, and urgent neurosurgical evaluation for possible drainage."
+    ],
+    "management_principles": [
+      "Urgently involve neurosurgery and infectious diseases; obtain blood cultures before antibiotics if this does not delay treatment.",
+      "Start empiric intravenous ceftriaxone (or cefotaxime) plus metronidazole for an odontogenic source, then tailor therapy to culture results and local resistance patterns.",
+      "Arrange stereotactic aspiration or surgical drainage when indicated for diagnosis, source control, mass effect, or poor clinical response; send aspirate for microbiology.",
+      "Treat seizures and monitor neurologic status with serial imaging."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Cerebral Abscess Odontogenic Source: fever, severe headache, focal arm seizures, and ring-enhancing lesion after tooth extraction. 44M presenting with high fever, headache, and left arm focal seizures 2 weeks after molar extraction, with multi-ring-enhancing lesion showing restricted diffusion on MRI ADC map.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Cerebral Abscess Odontogenic Source.",
+    "assessment": "Clinical presentation highly suggestive of Cerebral Abscess Odontogenic Source.",
+    "plan": "Urgently involve neurosurgery and infectious diseases; obtain blood cultures before antibiotics if this does not delay treatment. Start empiric intravenous ceftriaxone (or cefotaxime) plus metronidazole for an odontogenic source, then tailor therapy to culture results and local resistance patterns. Arrange stereotactic aspiration or surgical drainage when indicated for diagnosis, source control, mass effect, or poor clinical response; send aspirate for microbiology. Treat seizures and monitor neurologic status with serial imaging."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Cerebral Abscess Odontogenic Source",
+    "Formulate prioritized differential diagnosis for fever, severe headache, focal arm seizures, and ring-enhancing lesion after tooth extraction",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Cerebral Abscess (odontogenic source)",
+    "one_liner": "Bacteria from a dental infection can spread to the brain, forming a pus-filled abscess that causes fever, headache, and focal seizures; central restricted diffusion on MRI strongly supports an abscess but cultures establish the cause.",
+    "differentials": [
+      "Brain tumor (usually lacks central restricted diffusion)",
+      "Subdural empyema",
+      "Septic emboli"
+    ],
+    "red_flags": [
+      "New seizures with fever and a suspected brain abscess require emergency assessment and urgent neurosurgical evaluation for possible drainage"
+    ],
+    "must_ask": [
+      {
+        "objective": "Recent dental procedure",
+        "say": "Did you have a tooth pulled recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "tooth extraction",
+          "molar"
+        ]
+      },
+      {
+        "objective": "Fever and headache",
+        "say": "How high has your fever been, and how severe is the headache?",
+        "domains": [
+          "character",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Seizure description",
+        "say": "Can you describe what happened with your arm during the seizure?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "focal seizure",
+          "arm"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many weeks since the dental work did this start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "Any weakness or confusion?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "id": "gs_025",
+  "system": "general surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Ma",
+  "age": 62,
+  "gender": "male",
+  "chief_complaint": "severe left lower abdominal pain, fever, and change in bowel habits for 3 days",
+  "hpi_details": "62M presents with 3 days of constant, aching pain in the left lower quadrant of his abdomen, accompanied by a fever of 38.2C, mild nausea, and new onset of constipation.",
+  "ideas": "thinks he has a diverticulum infection or bowel cancer",
+  "concerns": "worried about bowel perforation and peritonitis",
+  "expectations": "wants CT scan and IV antibiotics",
+  "pmh": "Hypertension, Chronic constipation",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_diverticulitis_workup",
+      "title": "Urgent diverticulitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "white blood cell count",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The urgent diverticulitis results are now available.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "12.8",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "ct_diverticulitis",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Sigmoid diverticulosis with segmental wall thickening and pericolic fat stranding; no abscess, free air, or obstruction",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Diverticulitis (uncomplicated) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Diverticulitis (uncomplicated) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes CT confirmation of disease severity, supportive care with hydration and analgesia, and reserving antibiotics for complicated or higher-risk presentations, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe left lower abdominal pain, fever, and change in bowel habits for 3 days",
+      "Key HPI features: 62M presents with 3 days of constant, aching pain in the left lower quadrant of his abdomen, accompanied by a fever of 38.2C, mild nausea, and new onset of constipation.",
+      "Objective/Exam findings: Vitals: Temp 38.2C, HR 92, BP 132/84. Left lower quadrant tenderness to palpation with mild voluntary guarding, no rebound or rigidity. Labs show mild leukocytosis. CT abdomen/pelvis with IV contrast demonstrates sigmoid diverticulosis with pericolic fat stranding, consistent with uncomplicated acute diverticulitis, without abscess, free air, or perforation.",
+      "Relevant background/PMH: Hypertension, Chronic constipation",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Diverticulitis (uncomplicated).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Colorectal cancer without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Diffuse peritonitis (suggests free perforation)."
+    ],
+    "management_principles": [
+      "Order CT scan of the abdomen/pelvis with IV contrast to confirm uncomplicated disease and exclude abscess or perforation",
+      "Provide supportive care with hydration, analgesia, and dietary advancement as tolerated",
+      "Reserve antibiotics for complicated disease, systemic illness, immunocompromise, or other higher-risk presentations"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: severe left lower abdominal pain, fever, and change in bowel habits for 3 days\n\n62M presents with 3 days of constant, aching pain in the left lower quadrant of his abdomen, accompanied by a fever of 38.2C, mild nausea, and new onset of constipation.",
+    "objective": "Vitals: Temp 38.2C, HR 92, BP 132/84. Left lower quadrant tenderness to palpation with mild voluntary guarding, no rebound or rigidity. Labs show mild leukocytosis. CT abdomen/pelvis with IV contrast demonstrates sigmoid diverticulosis with pericolic fat stranding, consistent with uncomplicated acute diverticulitis, without abscess, free air, or perforation.",
+    "assessment": "Acute uncomplicated diverticulitis.",
+    "plan": "Order CT scan of the abdomen/pelvis with IV contrast to confirm uncomplicated disease and exclude abscess or perforation. Use supportive care with hydration, analgesia, and dietary advancement as tolerated; reserve antibiotics for complicated disease, systemic illness, immunocompromise, or other higher-risk presentations. When antibiotics are indicated, select an appropriate regimen such as amoxicillin-clavulanate or ciprofloxacin plus metronidazole according to local guidance and contraindications."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Diverticulitis (uncomplicated).",
+    "Formulate prioritized differential diagnosis for severe left lower abdominal pain, fever, and change in bowel habits for 3 days",
+    "Select appropriate laboratory and imaging studies for general surgery",
+    "Implement evidence-based acute and long-term management strategies for Acute Diverticulitis (uncomplicated)."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Diverticulitis (uncomplicated)",
+    "one_liner": "Micro-perforation or inflammation of a colonic diverticulum, classically causing left lower quadrant pain, fever, and a change in bowel habits — the 'left-sided appendicitis'.",
+    "differentials": [
+      "Colorectal cancer",
+      "Inflammatory bowel disease",
+      "Ischemic colitis"
+    ],
+    "red_flags": [
+      "Diffuse peritonitis (suggests free perforation)",
+      "Inability to tolerate oral intake with high fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Location and character of the pain",
+        "say": "Where exactly is the pain, and has it been constant or crampy?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "left",
+          "lower",
+          "constant"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many days has this been going on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "days"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Bowel habit change",
+        "say": "Has there been any change in your bowel habits, like constipation?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "constipation",
+          "bowel habit"
+        ]
+      },
+      {
+        "objective": "Prior diverticulitis",
+        "say": "Have you ever been diagnosed with diverticulitis before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diverticulitis",
+          "before"
+        ]
+      }
+    ]
+  }
+}

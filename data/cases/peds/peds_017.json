@@ -1,0 +1,145 @@
+{
+  "id": "peds_017",
+  "system": "pediatrics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Jackson",
+  "age": 8,
+  "gender": "male",
+  "chief_complaint": "hypertension in upper extremities, weak delayed femoral pulses, and systolic murmur across back in 8-year-old",
+  "hpi_details": "8-year-old boy noted to have right arm blood pressure 138/88 mmHg with diminished femoral pulses and radio-femoral pulse delay. Chest radiography shows inferior rib notching and a figure-3 sign, with echocardiography confirming aortic coarctation.",
+  "ideas": "thinks this is related to coarctation of the aorta radio-femoral delay",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "available_results": [
+    {"id": "prior_chest_radiograph", "test": "Chest radiograph", "value": "Inferior rib notching with a figure-3 contour of the aortic arch", "flag": "abnormal", "collected_at": "Before today's encounter"},
+    {"id": "prior_echocardiogram", "test": "Transthoracic echocardiogram", "value": "Discrete juxtaductal coarctation with peak Doppler gradient 48 mmHg and mild concentric left-ventricular hypertrophy", "flag": "abnormal", "collected_at": "Before today's encounter"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Coarctation of the aorta evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Coarctation of the aorta is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Coarctation of the Aorta Radio-Femoral Delay, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: hypertension in upper extremities, weak delayed femoral pulses, and systolic murmur across back in 8-year-old",
+      "Key HPI features: 8-year-old boy noted to have right arm blood pressure 138/88 mmHg with diminished femoral pulses and radio-femoral pulse delay. Chest radiography shows inferior rib notching and a figure-3 sign, with echocardiography confirming aortic coarctation.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Coarctation of the Aorta Radio-Femoral Delay.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Coarctation of the aorta.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Essential hypertension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Radio-femoral pulse delay."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Coarctation of the Aorta Radio-Femoral Delay",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Coarctation of the Aorta Radio-Femoral Delay: hypertension in upper extremities, weak delayed femoral pulses, and systolic murmur across back in 8-year-old. 8-year-old boy noted to have right arm blood pressure 138/88 mmHg with diminished femoral pulses and radio-femoral pulse delay. Chest radiography shows inferior rib notching and a figure-3 sign, with echocardiography confirming aortic coarctation.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Coarctation of the Aorta Radio-Femoral Delay.",
+    "assessment": "Clinical presentation highly suggestive of Coarctation of the Aorta Radio-Femoral Delay.",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Coarctation of the Aorta Radio-Femoral Delay. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Coarctation of the Aorta Radio-Femoral Delay",
+    "Formulate prioritized differential diagnosis for hypertension in upper extremities, weak delayed femoral pulses, and systolic murmur across back in 8-year-old",
+    "Select appropriate laboratory and imaging studies for pediatrics",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Coarctation of the aorta",
+    "one_liner": "8-year-old boy with upper extremity hypertension, weak/delayed femoral pulses, and a systolic murmur heard over the back.",
+    "differentials": [
+      "Essential hypertension",
+      "Renal artery stenosis",
+      "Aortic stenosis"
+    ],
+    "red_flags": [
+      "Radio-femoral pulse delay",
+      "Blood pressure discrepancy between arms and legs",
+      "Chest pain, severe headache, fainting, shortness of breath, or neurologic symptoms require emergency assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ask about leg symptoms with exercise",
+        "say": "Does he ever complain of leg pain, cramping, or getting tired quickly during sports?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "leg claudication",
+          "exercise intolerance"
+        ]
+      },
+      {
+        "objective": "Ask about headaches or nosebleeds (hypertension symptoms)",
+        "say": "Has he had frequent headaches or nosebleeds?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hypertension symptoms"
+        ]
+      },
+      {
+        "objective": "Ask about growth and general health history",
+        "say": "How has his overall growth and energy level been?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "growth history"
+        ]
+      },
+      {
+        "objective": "Explain the pulse and blood pressure exam findings",
+        "say": "We found that his arm blood pressure is high and his leg pulses feel weaker and delayed compared to his arms — this points to a narrowing in his aorta.",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "radio-femoral delay",
+          "blood pressure discrepancy"
+        ]
+      },
+      {
+        "objective": "Explain the cardiology referral and treatment plan",
+        "say": "We need to refer him to a pediatric cardiologist for imaging, and he'll likely need a procedure to open the narrowed part of the aorta.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "cardiology referral",
+          "catheter or surgical repair"
+        ]
+      }
+    ]
+  }
+}

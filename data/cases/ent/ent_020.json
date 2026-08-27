@@ -1,0 +1,158 @@
+{
+  "id": "ent_020",
+  "system": "otolaryngology (ent)",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Flores",
+  "age": 76,
+  "gender": "male",
+  "chief_complaint": "gradual bilateral difficulty understanding speech in noisy restaurants and asking family to repeat sentences constantly",
+  "hpi_details": "76M presenting with symmetric, bilateral difficulty hearing high-pitched voices and background noise where pure-tone audiometry confirms sloping high-frequency bilateral sensorineural hearing loss with normal tympanograms responding to bilateral binaural hearing aid fitting.",
+  "ideas": "thinks this is related to presbycusis age-related sensorineural hearing loss",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "right_4000_hz_threshold",
+      "test": "Right-ear air-conduction threshold at 4000 Hz",
+      "value": "55",
+      "unit": "dB HL",
+      "reference_range": "<=25",
+      "flag": "high",
+      "note": "Sloping high-frequency sensorineural hearing loss"
+    },
+    {
+      "id": "left_4000_hz_threshold",
+      "test": "Left-ear air-conduction threshold at 4000 Hz",
+      "value": "58",
+      "unit": "dB HL",
+      "reference_range": "<=25",
+      "flag": "high",
+      "note": "Sloping high-frequency sensorineural hearing loss"
+    },
+    {
+      "id": "tympanometry",
+      "test": "Bilateral tympanometry",
+      "value": "Type A bilaterally",
+      "reference_range": "Type A",
+      "flag": "normal"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Presbycusis (age-related sensorineural hearing loss) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Presbycusis (age-related sensorineural hearing loss) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows an evidence-based diagnostic and therapeutic protocol for presbycusis (age-related sensorineural hearing loss), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual bilateral difficulty understanding speech in noisy restaurants and asking family to repeat sentences constantly",
+      "Key HPI features: 76M presenting with symmetric, bilateral difficulty hearing high-pitched voices and background noise where pure-tone audiometry confirms sloping high-frequency bilateral sensorineural hearing loss with normal tympanograms responding to bilateral binaural hearing aid fitting.",
+      "Objective/Exam findings: Otoscopy normal (no cerumen impaction). Pure-tone audiometry shows sloping high-frequency bilateral sensorineural hearing loss with normal tympanograms.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Presbycusis (age-related sensorineural hearing loss).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cerumen impaction (reversible, should be excluded first) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden or asymmetric hearing loss — would need urgent workup, unlike the gradual symmetric pattern here."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with pure-tone audiometry after excluding reversible causes such as cerumen impaction",
+      "Refer for binaural hearing aid fitting and counsel on communication strategies and assistive listening devices",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with gradual bilateral difficulty understanding speech in noisy restaurants and asking family to repeat sentences constantly. 76M with symmetric, bilateral difficulty hearing high-pitched voices and background noise.",
+    "objective": "Otoscopy normal. Pure-tone audiometry confirms sloping high-frequency bilateral sensorineural hearing loss with normal tympanograms.",
+    "assessment": "Presbycusis (age-related sensorineural hearing loss), confirmed by audiometry with a symmetric, gradual, high-frequency pattern.",
+    "plan": "Confirm the diagnosis with pure-tone audiometry after excluding cerumen impaction on otoscopy. Refer for bilateral binaural hearing aid fitting and counsel on communication strategies, assistive listening devices, and hearing protection to prevent further loss."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Presbycusis (age-related sensorineural hearing loss)",
+    "Formulate prioritized differential diagnosis for gradual bilateral difficulty understanding speech in noisy restaurants and asking family to repeat sentences constantly",
+    "Select appropriate laboratory and imaging studies for otolaryngology (ent)",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Presbycusis (age-related sensorineural hearing loss)",
+    "one_liner": "Gradual, symmetric, high-frequency hearing loss from aging of the inner ear, making it especially hard to understand speech in noisy environments — managed with hearing aid fitting after audiometry.",
+    "differentials": [
+      "Cerumen impaction (reversible, should be excluded first)",
+      "Noise-induced hearing loss",
+      "Otosclerosis"
+    ],
+    "red_flags": [
+      "Sudden or asymmetric hearing loss — would need urgent workup, unlike the gradual symmetric pattern here"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and symmetry",
+        "say": "Has this hearing difficulty come on gradually, and is it the same in both ears?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "gradual",
+          "both ears"
+        ]
+      },
+      {
+        "objective": "Speech in noise",
+        "say": "Is it especially hard to follow conversations in noisy places, like restaurants?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "noisy",
+          "restaurants"
+        ]
+      },
+      {
+        "objective": "TV volume",
+        "say": "Have family members commented that the TV is too loud?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Noise exposure history",
+        "say": "Have you had significant noise exposure in your life, like from work?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Social impact",
+        "say": "How is this affecting your conversations with family and friends?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

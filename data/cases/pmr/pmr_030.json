@@ -1,0 +1,164 @@
+{
+  "id": "pmr_030",
+  "system": "pmr",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Green",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "chronic knee grinding pain on walking, morning stiffness",
+  "hpi_details": "A 32-year-old female presents with several months of chronic knee pain with a grinding sensation on walking and morning stiffness lasting under 30 minutes. She has a history of an ACL and medial meniscus tear in the same knee from a soccer injury 10 years ago, treated non-operatively.",
+  "ideas": "thinks it might be related to knee_oa_pmr",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "ACL and medial meniscus tear in the affected knee 10 years ago, treated non-operatively",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "post_traumatic_knee_radiographs",
+    "title": "Weight-bearing knee radiographs",
+    "order_terms": ["knee x-ray", "knee radiograph", "weight-bearing knee radiographs", "standing knee x-ray"],
+    "availability_message": "The weight-bearing knee radiographs are now available.",
+    "results": [{"id": "knee_radiographs", "test": "Weight-bearing right knee radiographs", "value": "Moderate medial-compartment joint-space loss with marginal osteophytes and subchondral sclerosis, consistent with post-traumatic osteoarthritis", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Knee Osteoarthritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Knee Osteoarthritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming a secondary/post-traumatic cause given the young age, followed by low-impact quad strengthening, weight management, and topical NSAID gel, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic knee grinding pain on walking, morning stiffness",
+      "Key HPI features: A 32-year-old female presents with several months of chronic knee pain with a grinding sensation on walking and morning stiffness lasting under 30 minutes. She has a history of an ACL and medial meniscus tear in the same knee from a soccer injury 10 years ago, treated non-operatively.",
+      "Objective/Exam findings: Vitals normal. Antalgic gait. Bony crepitus with range of motion, mild joint line tenderness, small effusion, no warmth or erythema. Quadriceps atrophy on the affected side. No ligamentous instability on exam. No signs of inflammatory arthritis (no symmetric polyarticular involvement, no rash).",
+      "Relevant background/PMH: ACL and medial meniscus tear in the affected knee 10 years ago, treated non-operatively"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Knee Osteoarthritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Meniscal tear without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hot swollen joint (septic arthritis risk)."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with weight-bearing knee radiographs; given the young age, evaluate for a secondary/post-traumatic cause (prior ligament/meniscal injury, malalignment) rather than assuming primary degenerative OA",
+      "First-line treatment is low-impact quadriceps strengthening physical therapy, weight management, and topical or oral NSAIDs",
+      "Consider intra-articular corticosteroid or hyaluronic acid injection for inadequate symptom control",
+      "Refer to orthopedics for surgical evaluation (cartilage restoration, osteotomy, or arthroplasty) if conservative management fails, favoring joint-preserving options given the patient's young age."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 32-year-old female presents with several months of chronic knee pain with a grinding sensation on walking and morning stiffness lasting under 30 minutes, with a history of an ACL and medial meniscus tear in the same knee 10 years ago, treated non-operatively.",
+    "objective": "Vitals normal. Antalgic gait. Bony crepitus with range of motion, mild joint line tenderness, small effusion, no warmth or erythema. Quadriceps atrophy on the affected side. No ligamentous instability on exam.",
+    "assessment": "Post-traumatic knee osteoarthritis related to the prior ACL/meniscal injury, presenting at a younger-than-typical age for primary osteoarthritis.",
+    "plan": "Confirm with weight-bearing knee radiographs. Begin low-impact quadriceps strengthening physical therapy, weight management, and topical or oral NSAIDs. Consider intra-articular injection for inadequate symptom control, and refer to orthopedics for joint-preserving surgical evaluation if conservative management fails."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Knee Osteoarthritis PMR, including when young-onset OA warrants evaluation for a secondary/post-traumatic cause",
+    "Select appropriate diagnostic workup for Knee Osteoarthritis PMR",
+    "Implement evidence-based management plan: Low-impact quad strengthening, weight loss, topical NSAID gel"
+  ],
+  "teaching": {
+    "diagnosis": "Knee Osteoarthritis",
+    "one_liner": "Progressive articular cartilage loss causing mechanical joint pain, stiffness, and bony crepitus.",
+    "differentials": [
+      "Meniscal tear",
+      "Pes anserine bursitis",
+      "Gouty arthritis"
+    ],
+    "red_flags": [
+      "Hot swollen joint (septic arthritis risk)",
+      "Joint locking or giving way"
+    ],
+    "must_ask": [
+      {
+        "objective": "Weight-bearing pain relation",
+        "say": "Does your knee ache when walking or going down stairs, and feel better when resting?",
+        "domains": [
+          "aggravating",
+          "relieving"
+        ],
+        "keywords": [
+          "walking",
+          "stairs",
+          "down",
+          "resting",
+          "knee"
+        ]
+      },
+      {
+        "objective": "Gel phenomenon morning stiffness",
+        "say": "Do your knees feel stiff in the morning for less than 30 minutes?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "morning",
+          "stiff",
+          "stiffness",
+          "minutes"
+        ]
+      },
+      {
+        "objective": "Bony crepitus and grinding",
+        "say": "Do you feel or hear a grinding, cracking sound when bending your knee?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "grinding",
+          "cracking",
+          "sound",
+          "crepitus",
+          "bending"
+        ]
+      },
+      {
+        "objective": "Joint effusion swelling history",
+        "say": "Does the knee swell up or feel warm after prolonged physical activity?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swelling",
+          "swell",
+          "warm",
+          "puffy",
+          "fluid"
+        ]
+      },
+      {
+        "objective": "Deformity assessment",
+        "say": "Have you noticed your knees turning bow-legged over recent years?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "legged",
+          "bow",
+          "alignment",
+          "deformity",
+          "crooked"
+        ]
+      }
+    ]
+  }
+}

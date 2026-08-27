@@ -1,0 +1,212 @@
+{
+  "id": "gi_017",
+  "system": "gastroenterology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Anwar",
+  "age": 59,
+  "gender": "female",
+  "chief_complaint": "crampy stomach waves, green vomiting, and no bowel movements for 2 days",
+  "hpi_details": "48-hour history of severe colicky, wave-like abdominal pain occurring every 10-15 minutes. Accompanied by progressive abdominal distension and vomiting that has turned dark green (bilious). Has passed neither flatus nor stool for the past 36 hours (absolute constipation).",
+  "ideas": "thinks scar tissue from her old hysterectomy has kinked her intestines",
+  "concerns": "worried her bowel might burst from the pressure build-up",
+  "expectations": "wants a tube to drain her stomach and surgery to unblock the intestine if necessary",
+  "pmh": "total abdominal hysterectomy for fibroids 8 years ago, open appendicectomy at age 20",
+  "medications": "paracetamol PRN",
+  "social_hx": "non-smoker, retired receptionist, normally independent",
+  "investigation_events": [
+    {
+      "id": "stat_bowel_obstruction_workup",
+      "title": "STAT bowel obstruction results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "electrolytes",
+        "metabolic panel",
+        "abdominal x ray",
+        "abdominal x-ray",
+        "abdominal radiograph",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The STAT bowel obstruction results are now available; nasogastric decompression, IV fluids, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "3.2",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "1.4",
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "ct_abdomen_pelvis",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Multiple fluid-filled small-bowel loops dilated to 4.1 cm with a discrete transition point in the distal ileum and collapsed distal bowel; no free air or reduced bowel-wall enhancement",
+          "flag": "critical",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Small Bowel Obstruction (Adhesions) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Small Bowel Obstruction (Adhesions) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes 'Drip and suck' regimen: keep NPO, insert nasogastric (NG) tube on free drainage with intermittent suction, aggressive IV fluid and electrolyte resuscitation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: crampy stomach waves, green vomiting, and no bowel movements for 2 days",
+      "Key HPI features: 48-hour history of severe colicky, wave-like abdominal pain occurring every 10-15 minutes. Accompanied by progressive abdominal distension and vomiting that has turned dark green (bilious). Has passed neither flatus nor stool for the past 36 hours (absolute constipation).",
+      "Objective/Exam findings: Check vitals (tachycardia/fever suggest strangulation/ischaemia). Abdominal exam: distended, tympanitic to percussion, high-pitched 'tinkling' bowel sounds early, check all hernial orifices (groin/umbilical) for incarcerated hernia. Abdominal X-ray and CT abdomen/pelvis with IV contrast showing dilated small bowel loops (>3cm) with transition point.",
+      "Relevant background/PMH: total abdominal hysterectomy for fibroids 8 years ago, open appendicectomy at age 20",
+      "Current medications: paracetamol PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Small Bowel Obstruction (Adhesions).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Incarcerated abdominal or femoral hernia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Absolute constipation with distension — raises concern for strangulation if it progresses."
+    ],
+    "management_principles": [
+      "'Drip and suck' regimen: keep NPO, insert nasogastric (NG) tube on free drainage with intermittent suction, aggressive IV fluid and electrolyte resuscitation",
+      "Keep strict fluid balance",
+      "General surgery consult for admission"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "59F with a 48-hour history of severe colicky, wave-like abdominal pain occurring every 10-15 minutes. Accompanied by progressive abdominal distension and vomiting that has turned dark green (bilious). Has passed neither flatus nor stool for the past 36 hours (absolute constipation). PMH of total abdominal hysterectomy and open appendicectomy, raising concern for adhesive small bowel obstruction.",
+    "objective": "Check vitals (tachycardia/fever suggest strangulation/ischaemia). Abdominal exam: distended, tympanitic to percussion, high-pitched 'tinkling' bowel sounds early, check all hernial orifices (groin/umbilical) for incarcerated hernia. Abdominal X-ray and CT abdomen/pelvis with IV contrast showing dilated small bowel loops (>3cm) with transition point.",
+    "assessment": "Small bowel obstruction (SBO) likely secondary to post-surgical adhesions. DDx: incarcerated abdominal/femoral hernia, small bowel malignancy, paralytic ileus, Crohn's stricture.",
+    "plan": "'Drip and suck' regimen: keep NPO, insert nasogastric (NG) tube on free drainage with intermittent suction, aggressive IV fluid and electrolyte resuscitation. Keep strict fluid balance. General surgery consult for admission. Serial abdominal exams to catch early signs of bowel strangulation requiring emergency laparotomy."
+  },
+  "learning_objectives": [
+    "Recognise the cardinal tetrad of mechanical bowel obstruction: colicky pain, vomiting, distension, and absolute constipation",
+    "Systematically palpate all external hernial orifices in every patient presenting with bowel obstruction",
+    "Explain the therapeutic goal and mechanical relief provided by nasogastric decompression ('drip and suck')",
+    "Identify clinical red flags indicating transition from simple obstruction to bowel strangulation/ischaemia"
+  ],
+  "teaching": {
+    "diagnosis": "Small Bowel Obstruction (Adhesions)",
+    "one_liner": "Scar tissue from previous abdominal surgery kinks or blocks the small bowel, causing colicky cramps, distension, bilious vomiting, and no passage of gas or stool.",
+    "differentials": [
+      "Incarcerated abdominal or femoral hernia",
+      "Small bowel malignancy",
+      "Paralytic ileus"
+    ],
+    "red_flags": [
+      "Absolute constipation with distension — raises concern for strangulation if it progresses"
+    ],
+    "must_ask": [
+      {
+        "objective": "Character of the pain",
+        "say": "Does the pain come in waves, every few minutes, rather than being constant?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "waves",
+          "colicky",
+          "cramping",
+          "minutes"
+        ]
+      },
+      {
+        "objective": "Vomiting colour",
+        "say": "Has the vomiting turned green or dark?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomit",
+          "green",
+          "bilious",
+          "dark"
+        ]
+      },
+      {
+        "objective": "Passing gas or stool",
+        "say": "Have you passed any gas or had a bowel movement in the last day or so?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "gas",
+          "flatus",
+          "bowel",
+          "passed"
+        ]
+      },
+      {
+        "objective": "Abdominal distension",
+        "say": "Has your belly become swollen or bloated?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "belly",
+          "swollen",
+          "bloated",
+          "distended"
+        ]
+      },
+      {
+        "objective": "Previous abdominal surgery",
+        "say": "What operations have you had on your abdomen before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "surgery",
+          "operation",
+          "hysterectomy",
+          "appendix"
+        ]
+      },
+      {
+        "objective": "Hernia screen",
+        "say": "Have you noticed any lumps or bulges in your groin?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lump",
+          "bulge",
+          "groin",
+          "hernia"
+        ]
+      }
+    ]
+  }
+}

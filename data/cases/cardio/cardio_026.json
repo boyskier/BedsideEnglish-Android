@@ -1,0 +1,181 @@
+{
+  "id": "cardio_026",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Martinez",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "blood pressure of 146/94 found on routine screening, asymptomatic",
+  "hpi_details": "A 20-year-old female presents to the clinic with blood pressure of 146/94 found on routine screening. She is asymptomatic, denying headache, chest pain, visual changes, or breathlessness.",
+  "ideas": "thinks it might be related to hypertension",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "young_hypertension_abpm",
+      "title": "24-hour ambulatory blood pressure monitoring",
+      "order_terms": ["ambulatory blood pressure", "ABPM", "24-hour blood pressure", "home blood pressure"],
+      "availability_message": "The ambulatory blood pressure report is now available.",
+      "results": [
+        {
+          "id": "abpm_mean_young_hypertension",
+          "test": "24-hour mean blood pressure",
+          "value": "138/86",
+          "unit": "mmHg",
+          "reference_range": "<130/80",
+          "flag": "high",
+          "collected_at": "24-hour ambulatory recording"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Elevated Blood Pressure (Hypertension to be confirmed) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of newly elevated blood pressure is essential for guiding targeted diagnostic workup and clinical decision-making, without over-diagnosing hypertension from a single reading.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming hypertension with repeat properly measured office readings and home or ambulatory monitoring, initiating lifestyle measures, and evaluating for secondary causes in a young adult, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: blood pressure of 146/94 found on routine screening, asymptomatic",
+      "Key HPI features: A 20-year-old female presents to the clinic with blood pressure of 146/94 found on routine screening. She is asymptomatic, denying headache, chest pain, visual changes, or breathlessness.",
+      "Objective/Exam findings: Repeat, properly measured office BP readings on this and subsequent visits; consider home or ambulatory BP monitoring. Examine for signs of end-organ damage and secondary causes (radiofemoral delay, abdominal/renal bruits, features of Cushing's or thyroid disease).",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Diagnosing essential hypertension from a single elevated office reading without confirmatory repeat or home/ambulatory measurements.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to White-coat hypertension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Headache with visual change or chest pain — check for a hypertensive emergency."
+    ],
+    "management_principles": [
+      "Confirm persistent hypertension with repeat office readings and home or ambulatory monitoring; initiate DASH diet, physical activity, and sodium reduction",
+      "Evaluate for secondary hypertension because of the young age; if medication is indicated, consider pregnancy potential and avoid ACE inhibitors/ARBs during pregnancy",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2017 ACC/AHA/AAPA/ABC/ACPM/AGS/APhA/ASH/ASPC/NMA/PCNA Guideline for the Prevention, Detection, Evaluation, and Management of High Blood Pressure in Adults",
+        "url": "https://professional.heart.org/en/guidelines-statements/2017-accahaaapaabcacpmagsaphaashaspcnmapcna-guideline-for-the-preventionhypd17000072"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of blood pressure of 146/94 found on routine screening, asymptomatic. HPI: high sodium, sedentary lifestyle.",
+    "objective": "Repeat, properly measured office BP readings on this and subsequent visits; consider home or ambulatory BP monitoring. Examine for signs of end-organ damage and secondary causes (radiofemoral delay, abdominal/renal bruits, features of Cushing's or thyroid disease).",
+    "assessment": "Elevated office blood pressure; hypertension requires confirmation with repeat office and home or ambulatory measurements. Given her age, evaluate for secondary causes if hypertension is confirmed.",
+    "plan": "Confirm persistent hypertension with repeat office readings and home or ambulatory monitoring; initiate DASH diet, physical activity, and sodium reduction. Evaluate for secondary hypertension because of the young age. If medication is indicated after confirmation, consider pregnancy potential and avoid ACE inhibitors/ARBs during pregnancy. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Essential Hypertension",
+    "Select appropriate diagnostic workup for Essential Hypertension",
+    "Implement evidence-based management plan: confirm hypertension with repeat/home measurements, initiate lifestyle measures, and assess secondary causes in a young adult"
+  ],
+  "teaching": {
+    "diagnosis": "Elevated Blood Pressure (Hypertension to be confirmed)",
+    "one_liner": "Persistently raised blood pressure with no single underlying cause — silent, common, and the reason a routine reading matters.",
+    "differentials": [
+      "White-coat hypertension",
+      "Primary hyperaldosteronism",
+      "Obstructive sleep apnoea"
+    ],
+    "red_flags": [
+      "Headache with visual change or chest pain — check for a hypertensive emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Repeat readings and home monitoring",
+        "say": "Has your blood pressure been checked more than once, and do you measure it at home?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "reading",
+          "checked",
+          "home",
+          "monitor"
+        ]
+      },
+      {
+        "objective": "Symptoms of end-organ damage",
+        "say": "Have you had headaches, visual changes, chest pain or breathlessness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "vision",
+          "chest",
+          "pain",
+          "breath"
+        ]
+      },
+      {
+        "objective": "Salt, exercise and weight",
+        "say": "Tell me about your diet, how much salt you use, and how active you are.",
+        "keywords": [
+          "salt",
+          "diet",
+          "exercise",
+          "active",
+          "weight"
+        ]
+      },
+      {
+        "objective": "Alcohol and smoking",
+        "say": "How much do you drink in a week, and do you smoke?",
+        "domains": [
+          "alcohol",
+          "smoking"
+        ],
+        "keywords": [
+          "drink",
+          "alcohol",
+          "smoke",
+          "cigarette"
+        ]
+      },
+      {
+        "objective": "Snoring and daytime sleepiness",
+        "say": "Do you snore heavily, or feel sleepy during the day?",
+        "keywords": [
+          "snore",
+          "sleep",
+          "sleepy",
+          "apnoea",
+          "tired"
+        ]
+      },
+      {
+        "objective": "Family history of early heart disease",
+        "say": "Has anyone in your family had a heart attack, especially young?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "father",
+          "mother",
+          "brother",
+          "sister"
+        ]
+      }
+    ]
+  }
+}

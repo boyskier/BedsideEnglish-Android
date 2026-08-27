@@ -1,0 +1,145 @@
+{
+  "id": "endo_019",
+  "system": "endocrinology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Walker",
+  "age": 43,
+  "gender": "male",
+  "chief_complaint": "painless lump on the neck discovered while shaving",
+  "hpi_details": "43M with firm, painless 2 cm thyroid nodule. Ultrasound shows microcalcifications and irregular margins; FNA confirms papillary thyroid cancer.",
+  "ideas": "thinks this is related to papillary thyroid carcinoma nodule",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "thyroid_ultrasound",
+      "test": "Thyroid ultrasound",
+      "value": "2.0 cm solid hypoechoic right-lobe nodule with irregular margins and punctate echogenic foci (microcalcifications)",
+      "flag": "abnormal"
+    },
+    {
+      "id": "thyroid_fna",
+      "test": "Ultrasound-guided thyroid FNA cytology",
+      "value": "Papillary thyroid carcinoma (Bethesda VI)",
+      "flag": "critical",
+      "specimen": "Thyroid nodule aspirate"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Papillary Thyroid Carcinoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Papillary Thyroid Carcinoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes preoperative neck ultrasound staging followed by thyroidectomy, with risk-stratified consideration of adjuvant radioactive iodine, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless lump on the neck discovered while shaving",
+      "Key HPI features: 43M with firm, painless 2 cm thyroid nodule. Ultrasound shows microcalcifications and irregular margins; FNA confirms papillary thyroid cancer.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Papillary Thyroid Carcinoma Nodule.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Papillary Thyroid Carcinoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Benign thyroid nodule/adenoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapid growth, hoarseness, or difficulty swallowing — suggests local invasion needing prompt workup."
+    ],
+    "management_principles": [
+      "Obtain a preoperative neck ultrasound to assess central and lateral cervical lymph nodes before surgery",
+      "Refer to endocrine surgery for thyroidectomy (lobectomy or total thyroidectomy depending on tumor size and risk features), and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Thyroid Association (ATA) Management Guidelines for Adult Patients with Thyroid Nodules and Differentiated Thyroid Cancer",
+        "url": "https://www.thyroid.org/professionals/ata-professional-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Papillary Thyroid Carcinoma Nodule: painless lump on the neck discovered while shaving. 43M with firm, painless 2 cm thyroid nodule. Ultrasound shows microcalcifications and irregular margins; FNA confirms papillary thyroid cancer.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Papillary Thyroid Carcinoma Nodule.",
+    "assessment": "Papillary Thyroid Carcinoma, confirmed by fine-needle aspiration of a 2 cm nodule with suspicious ultrasound features (microcalcifications, irregular margins).",
+    "plan": "Obtain a preoperative neck ultrasound to assess central and lateral cervical lymph nodes. Refer to endocrine surgery for thyroidectomy (lobectomy or total thyroidectomy depending on tumor size and risk features). After surgery, risk-stratify for adjuvant radioactive iodine ablation and start levothyroxine for TSH suppression tailored to recurrence risk. Arrange long-term surveillance with serial thyroglobulin levels and neck ultrasound."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Papillary Thyroid Carcinoma Nodule",
+    "Formulate prioritized differential diagnosis for painless lump on the neck discovered while shaving",
+    "Select appropriate laboratory and imaging studies for endocrinology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Papillary Thyroid Carcinoma",
+    "one_liner": "The most common and generally most curable type of thyroid cancer, typically presenting as a painless, firm thyroid nodule found incidentally, with suspicious ultrasound features confirmed by fine-needle aspiration.",
+    "differentials": [
+      "Benign thyroid nodule/adenoma",
+      "Multinodular goiter",
+      "Thyroid cyst"
+    ],
+    "red_flags": [
+      "Rapid growth, hoarseness, or difficulty swallowing — suggests local invasion needing prompt workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the nodule was found",
+        "say": "How did you first notice this lump?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "shaving",
+          "noticed"
+        ]
+      },
+      {
+        "objective": "Growth and character",
+        "say": "Has it grown, and is it painful?",
+        "domains": [
+          "progression",
+          "character"
+        ]
+      },
+      {
+        "objective": "Compressive symptoms",
+        "say": "Any trouble swallowing, or has your voice changed?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swallowing",
+          "hoarseness"
+        ]
+      },
+      {
+        "objective": "Radiation exposure history",
+        "say": "Have you had any radiation exposure to your neck, like from childhood treatment?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does thyroid cancer run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

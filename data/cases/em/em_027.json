@@ -1,0 +1,164 @@
+{
+  "id": "em_027",
+  "system": "em",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Garcia",
+  "age": 23,
+  "gender": "male",
+  "chief_complaint": "watery diarrhea, vomiting, and dry lips after buffet",
+  "hpi_details": "A 23-year-old male presents to the clinic with watery diarrhea, vomiting, and dry lips after buffet. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gastroenteritis with dehydration",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "basic_metabolic_panel",
+      "title": "Basic metabolic panel",
+      "order_terms": [
+        "basic metabolic panel",
+        "metabolic panel",
+        "bmp",
+        "electrolytes",
+        "renal function"
+      ],
+      "availability_message": "The basic metabolic panel is now available.",
+      "results": [
+        {
+          "id": "serum_potassium",
+          "test": "Potassium",
+          "value": "3.3",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "serum_bicarbonate",
+          "test": "Bicarbonate",
+          "value": "19",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "serum_creatinine",
+          "test": "Creatinine",
+          "value": "1.3",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Gastroenteritis (dehydration) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Gastroenteritis (dehydration) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Watery Gastroenteritis: IV fluid bolus, oral rehydration, Ondansetron, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: watery diarrhea, vomiting, and dry lips after buffet",
+      "Key HPI features: A 23-year-old male presents to the clinic with watery diarrhea, vomiting, and dry lips after buffet. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Watery Gastroenteritis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Gastroenteritis (dehydration).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bacterial gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe dehydration signs."
+    ],
+    "management_principles": [
+      "Plan for Watery Gastroenteritis: IV fluid bolus, oral rehydration, Ondansetron",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of watery diarrhea, vomiting, and dry lips after buffet. HPI: gastroenteritis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Watery Gastroenteritis.",
+    "assessment": "Condition highly suspicious for Watery Gastroenteritis.",
+    "plan": "Plan for Watery Gastroenteritis: IV fluid bolus, oral rehydration, Ondansetron. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Watery Gastroenteritis",
+    "Select appropriate diagnostic workup for Watery Gastroenteritis",
+    "Implement evidence-based management plan: IV fluid bolus, oral rehydration, Ondansetron"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Gastroenteritis (dehydration)",
+    "one_liner": "Foodborne infection causing watery diarrhea and vomiting with signs of dehydration like dry lips.",
+    "differentials": [
+      "Bacterial gastroenteritis"
+    ],
+    "red_flags": [
+      "Severe dehydration signs"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diarrhea and vomiting",
+        "say": "How much diarrhea and vomiting have you had?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Food source",
+        "say": "What did you eat at the buffet?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Dehydration signs",
+        "say": "Do you feel dizzy or have a dry mouth?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Any fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fluid tolerance",
+        "say": "Can you keep fluids down?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,167 @@
+{
+  "id": "urology_004",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Davis",
+  "age": 63,
+  "gender": "male",
+  "chief_complaint": "painless gross hematuria with blood clots throughout entire urinary stream for 3 weeks",
+  "hpi_details": "63M heavy smoker reports 3-week history of passing bright red urine containing worm-like blood clots. States the blood is present throughout the entire duration of urination (total gross hematuria). Completely denies any burning, pain, urgency, frequency, flank pain, or fever.",
+  "ideas": "thinks he might have a minor kidney infection or ruptured blood vessel from exercise",
+  "concerns": "worried after looking up painless bleeding online and seeing cancer warnings",
+  "expectations": "wants thorough evaluation including scopes and scans to find the source of bleeding",
+  "pmh": "Hypertension, 45 pack-year cigarette smoking history (active)",
+  "medications": "Lisinopril 20mg daily",
+  "social_hx": "Factory foreman, active smoker",
+  "available_results": [
+    {"id": "bladder_mass_hemoglobin", "test": "Hemoglobin", "value": "12.1", "unit": "g/dL", "reference_range": "13.5-17.5", "flag": "low", "specimen": "Blood"},
+    {"id": "bladder_mass_creatinine", "test": "Creatinine", "value": "1.0", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "normal", "specimen": "Blood"},
+    {"id": "bladder_mass_urinalysis", "test": "Urine microscopy", "value": ">100 RBC/HPF; 2 WBC/HPF; no bacteria or casts", "reference_range": "RBC 0-2/HPF; WBC 0-5/HPF", "flag": "abnormal", "specimen": "Urine"},
+    {"id": "bladder_mass_cytology", "test": "Urine cytology", "value": "Malignant high-grade urothelial cells identified", "flag": "abnormal", "specimen": "Urine"},
+    {"id": "bladder_mass_ct_urogram", "test": "CT urogram", "value": "3.2 cm enhancing sessile mass arising from the right lateral bladder wall; upper urinary tracts are normal", "flag": "abnormal", "collected_at": "Before urology consultation"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Bladder Cancer evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Bladder Cancer is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Urgent urology consultation for office Flexible Cystoscopy and operating room Transurethral Resection of Bladder Tumor (TURBT) under anesthesia for histological diagnosis, bimanual staging examination, and resection of tumor down to deep muscularis propria, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless gross hematuria with blood clots throughout entire urinary stream for 3 weeks",
+      "Key HPI features: 63M heavy smoker reports 3-week history of passing bright red urine containing worm-like blood clots. States the blood is present throughout the entire duration of urination (total gross hematuria). Completely denies any burning, pain, urgency, frequency, flank pain, or fever.",
+      "Objective/Exam findings: Vitals: HR 78, BP 138/84. Abdominal and digital rectal examinations unremarkable. Urine sample is grossly bloody and opaque with dark clots. Urinalysis confirms >100 RBC/HPF without pyuria, bacteria, or casts. Urine cytology reveals malignant high-grade urothelial cells. CT Urogram (multi-phase CT of abdomen/pelvis with IV contrast) demonstrates a 3.2 cm polypoid, sessile enhancing mass arising from the right lateral wall of the bladder projecting into the lumen, with normal upper tracts.",
+      "Relevant background/PMH: Hypertension, 45 pack-year cigarette smoking history (active)",
+      "Current medications: Lisinopril 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Bladder Cancer.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Renal cell carcinoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Clot retention causing acute urinary blockage."
+    ],
+    "management_principles": [
+      "Urgent urology consultation for office Flexible Cystoscopy and operating room Transurethral Resection of Bladder Tumor (TURBT) under anesthesia for histological diagnosis, bimanual staging examination, and resection of tumor down to deep muscularis propria",
+      "Consider a single immediate intravesical chemotherapy instillation after TURBT only when there is no suspected perforation, significant bleeding, or extensive resection.",
+      "Assess clot retention, hemoglobin, renal function before contrast, and anticoagulant/antiplatelet use; provide urgent catheter irrigation and escalation if retention or hemodynamic compromise occurs.",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "63M high-risk smoker presenting with pathognomonic presentation of urothelial malignancy: painless gross total hematuria with clot passage.",
+    "objective": "Vitals: HR 78, BP 138/84. Abdominal and digital rectal examinations unremarkable. Urine sample is grossly bloody and opaque with dark clots. Urinalysis confirms >100 RBC/HPF without pyuria, bacteria, or casts. Urine cytology reveals malignant high-grade urothelial cells. CT Urogram (multi-phase CT of abdomen/pelvis with IV contrast) demonstrates a 3.2 cm polypoid, sessile enhancing mass arising from the right lateral wall of the bladder projecting into the lumen, with normal upper tracts.",
+    "assessment": "Gross Hematuria secondary to Bladder Mass, highly suspicious for Urothelial Carcinoma (Transitional Cell Carcinoma).",
+    "plan": "Urgent urology consultation for cystoscopy and TURBT for histologic diagnosis and staging, including detrusor muscle when safely feasible. Check hemoglobin, renal function, and anticoagulant/antiplatelet use; if clots cause retention, urgently drain and irrigate the bladder. Consider a single immediate intravesical chemotherapy instillation only if there is no suspected perforation, significant bleeding, or extensive resection."
+  },
+  "learning_objectives": [
+    "Recognize painless gross hematuria in adults over 35 (especially smokers and chemical/dye workers) as urothelial/bladder cancer until proven otherwise by direct visualization",
+    "Differentiate initial (urethral source), terminal (bladder neck/prostatic source), and total (bladder/upper tract source) hematuria",
+    "Outline the mandatory hematuria diagnostic triad: multi-phase CT urogram, direct cystoscopy, and urine cytology",
+    "Explain the staging role and technique of Transurethral Resection of Bladder Tumor (TURBT), specifically the necessity of including detrusor muscle in the specimen to differentiate non-muscle-invasive from muscle-invasive disease"
+  ],
+  "teaching": {
+    "diagnosis": "Bladder Cancer",
+    "one_liner": "Urothelial malignancy classically presenting with painless gross hematuria throughout the voiding stream.",
+    "differentials": [
+      "Renal cell carcinoma",
+      "Hemorrhagic cystitis",
+      "Nephrolithiasis"
+    ],
+    "red_flags": [
+      "Clot retention causing acute urinary blockage",
+      "Weight loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Painless gross hematuria character",
+        "say": "Is the blood in your urine completely painless throughout the entire stream?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "painless",
+          "blood",
+          "urine",
+          "red",
+          "stream"
+        ]
+      },
+      {
+        "objective": "Blood clots presence",
+        "say": "Have you passed dark red blood clots or strings of blood in your toilet bowl?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "clots",
+          "strings",
+          "toilet",
+          "clot",
+          "passing"
+        ]
+      },
+      {
+        "objective": "Cigarette smoking primary risk factor",
+        "say": "Do you have a history of smoking cigarettes, and for how many years?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "smoking",
+          "cigarettes",
+          "smoker",
+          "tobacco",
+          "packs"
+        ]
+      },
+      {
+        "objective": "Occupational chemical dye exposure",
+        "say": "Have you worked in rubber, leather, textile, or chemical dye industries?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "dyes",
+          "chemical",
+          "rubber",
+          "leather",
+          "work"
+        ]
+      },
+      {
+        "objective": "Irritative LUTS screening",
+        "say": "Do you also experience burning or increased frequency when going to the bathroom?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "burning",
+          "frequency",
+          "bathroom",
+          "urination",
+          "irritation"
+        ]
+      }
+    ]
+  }
+}

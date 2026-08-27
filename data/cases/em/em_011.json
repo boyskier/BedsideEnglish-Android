@@ -1,0 +1,178 @@
+{
+  "id": "em_011",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Sanchez",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "sudden pleuritic chest pain, severe dyspnea, hypoxia, tachycardia, and right heart strain on ECG after 14-hour international flight",
+  "hpi_details": "44F recent long-haul traveler presenting with acute dyspnea, HR 126, SpO2 88%, and S1Q3T3 pattern where CT Pulmonary Angiogram confirms bilateral saddle pulmonary emboli requiring immediate systemic anticoagulation (IV Heparin) or thrombolysis if hemodynamically unstable.",
+  "ideas": "worried this could be a blood clot that traveled to her lungs",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "stat_ecg",
+      "title": "STAT 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "12-lead",
+        "electrocardiogram"
+      ],
+      "availability_message": "The STAT 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_initial",
+          "test": "12-lead ECG",
+          "value": "Sinus tachycardia at 126 bpm with S1Q3T3 pattern and new right bundle branch block",
+          "flag": "abnormal",
+          "collected_at": "On arrival"
+        }
+      ]
+    },
+    {
+      "id": "ct_pulmonary_angiography",
+      "title": "CT pulmonary angiography",
+      "order_terms": [
+        "ct pulmonary angiography",
+        "ct pulmonary angiogram",
+        "ctpa",
+        "pe protocol ct",
+        "chest ct angiogram"
+      ],
+      "availability_message": "The CT pulmonary angiography report is now available.",
+      "results": [
+        {
+          "id": "ctpa_report",
+          "test": "CT pulmonary angiography",
+          "value": "Bilateral saddle pulmonary emboli with CT evidence of right ventricular strain",
+          "flag": "critical",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Massive Pulmonary Embolism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Massive Pulmonary Embolism is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate risk stratification for hemodynamic instability, systemic anticoagulation with IV Heparin, and thrombolysis or embolectomy for massive PE with shock, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden pleuritic chest pain, severe dyspnea, hypoxia, tachycardia, and right heart strain on ECG after 14-hour international flight",
+      "Key HPI features: 44F recent long-haul traveler presenting with acute dyspnea, HR 126, SpO2 88%, and S1Q3T3 pattern where CT Pulmonary Angiogram confirms bilateral saddle pulmonary emboli requiring immediate systemic anticoagulation (IV Heparin) or thrombolysis if hemodynamically unstable.",
+      "Objective/Exam findings: Vitals: HR 126 (sinus tachycardia), BP 92/58 (borderline hypotension), RR 30, SpO2 88% on room air. Patient appears anxious and tachypneic with mild cyanosis. Cardiac exam reveals a loud, single S2 (accentuated pulmonic component) and jugular venous distension. Lungs clear to auscultation bilaterally despite hypoxia. Right calf mildly swollen and tender (suspected DVT source). ECG shows sinus tachycardia with classic S1Q3T3 pattern and new right bundle branch block. STAT CT Pulmonary Angiogram confirms bilateral saddle pulmonary emboli with evidence of right ventricular strain.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Massive Pulmonary Embolism.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hypotension with hypoxia — massive PE causing obstructive shock, may need thrombolysis."
+    ],
+    "management_principles": [
+      "STAT emergency protocol for massive/high-risk pulmonary embolism",
+      "Immediate hemodynamic and respiratory support: high-flow supplemental oxygen, cautious IV crystalloid fluid bolus (avoid over-resuscitation which can worsen right ventricular strain), and vasopressor support (norepinephrine) if hypotensive",
+      "Systemic anticoagulation: begin IV Unfractionated Heparin bolus and continuous infusion immediately unless a contraindication to anticoagulation exists",
+      "For hemodynamically unstable (massive) PE with shock or refractory hypotension, administer systemic thrombolysis (IV Alteplase/tPA) or refer emergently for catheter-directed thrombolysis/surgical embolectomy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "44F recent long-haul traveler presenting with sudden pleuritic chest pain, severe dyspnea, hypoxia, and tachycardia after a 14-hour international flight, classic for Acute Massive Pulmonary Embolism.",
+    "objective": "Vitals: HR 126 (sinus tachycardia), BP 92/58 (borderline hypotension), RR 30, SpO2 88% on room air. Patient appears anxious and tachypneic with mild cyanosis. Cardiac exam reveals a loud, single S2 (accentuated pulmonic component) and jugular venous distension. Lungs clear to auscultation bilaterally despite hypoxia. Right calf mildly swollen and tender (suspected DVT source). ECG shows sinus tachycardia with classic S1Q3T3 pattern and new right bundle branch block. STAT CT Pulmonary Angiogram confirms bilateral saddle pulmonary emboli with evidence of right ventricular strain.",
+    "assessment": "Acute Massive (High-Risk) Bilateral Saddle Pulmonary Embolism with Right Ventricular Strain, provoked by prolonged immobility during long-haul air travel.",
+    "plan": "STAT emergency protocol for massive/high-risk pulmonary embolism: 1. Immediate hemodynamic and respiratory support: high-flow supplemental oxygen, cautious IV crystalloid fluid bolus (avoid over-resuscitation which can worsen right ventricular strain), and vasopressor support (norepinephrine) if hypotensive. 2. Systemic anticoagulation: begin IV Unfractionated Heparin bolus and continuous infusion immediately unless a contraindication to anticoagulation exists. 3. For hemodynamically unstable (massive) PE with shock or refractory hypotension, administer systemic thrombolysis (IV Alteplase/tPA) or refer emergently for catheter-directed thrombolysis/surgical embolectomy."
+  },
+  "learning_objectives": [
+    "Recognize the clinical presentation of massive pulmonary embolism (sudden pleuritic chest pain, severe dyspnea, hypoxia, tachycardia) and its classic risk factors including prolonged immobility from long-haul travel",
+    "Interpret ECG right-heart strain findings (S1Q3T3 pattern, new right bundle branch block, sinus tachycardia) and correlate with CT Pulmonary Angiogram findings of saddle embolus",
+    "Distinguish massive (high-risk, hemodynamically unstable) PE requiring thrombolysis or embolectomy from submassive/low-risk PE managed with anticoagulation alone",
+    "Execute initial resuscitation for obstructive shock from PE, including cautious fluid administration and immediate systemic anticoagulation with IV Heparin"
+  ],
+  "teaching": {
+    "diagnosis": "Massive Pulmonary Embolism",
+    "one_liner": "Large blood clots — often from prolonged immobility like a long flight — lodge in the pulmonary arteries, causing sudden breathlessness, chest pain, and right heart strain; hemodynamically unstable cases may need thrombolysis instead of just anticoagulation.",
+    "differentials": [
+      "Acute myocardial infarction",
+      "Pneumothorax",
+      "Pneumonia"
+    ],
+    "red_flags": [
+      "Hypotension with hypoxia — massive PE causing obstructive shock, may need thrombolysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Immobility risk factor",
+        "say": "Did you have a long flight or period of immobility recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "flight",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Onset and character",
+        "say": "Did the breathlessness and chest pain start suddenly?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Chest pain character",
+        "say": "Does the pain get worse when you breathe in?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "pleuritic"
+        ]
+      },
+      {
+        "objective": "Leg symptoms",
+        "say": "Any leg swelling or pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "leg swelling"
+        ]
+      },
+      {
+        "objective": "Lightheadedness",
+        "say": "Do you feel faint or dizzy?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

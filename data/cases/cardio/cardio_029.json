@@ -1,0 +1,204 @@
+{
+  "id": "cardio_029",
+  "system": "cardio",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Young",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "progressive shortness of breath, ankle swelling, and fatigue for 1 month",
+  "hpi_details": "A 29-year-old male presents to the clinic with progressive shortness of breath, ankle swelling, and fatigue for 1 month, gradually worsening. He has no known prior heart disease, and denies any preceding viral illness, recreational drug use, or family history of heart problems that he is aware of.",
+  "ideas": "thinks it might be related to chf",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "young_heart_failure_results",
+      "title": "NT-proBNP and echocardiogram",
+      "order_terms": ["NT-proBNP", "BNP", "natriuretic peptide", "echocardiogram", "echo", "TTE"],
+      "availability_message": "The heart failure blood test and echocardiogram are now available.",
+      "results": [
+        {
+          "id": "nt_probnp_young_hf",
+          "test": "NT-proBNP",
+          "value": "2860",
+          "unit": "pg/mL",
+          "reference_range": "<125",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "echo_young_dcm",
+          "test": "Transthoracic echocardiogram",
+          "value": "Dilated left ventricle with global hypokinesia; LVEF 30%; no significant valvular disease",
+          "unit": "",
+          "reference_range": "LVEF 50-70%",
+          "flag": "critical",
+          "collected_at": "During today's work-up"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Congestive Heart Failure evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Congestive Heart Failure is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes obtaining BNP, chest X-ray, and echocardiography, and, because this is a young patient without typical risk factors, actively searching for a non-ischaemic cause (myocarditis, familial/genetic cardiomyopathy, thyroid disease, or substance use) rather than assuming ischaemic heart failure, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive shortness of breath, ankle swelling, and fatigue for 1 month",
+      "Key HPI features: A 29-year-old male presents to the clinic with progressive shortness of breath, ankle swelling, and fatigue for 1 month, gradually worsening. He has no known prior heart disease, and denies any preceding viral illness, recreational drug use, or family history of heart problems that he is aware of.",
+      "Objective/Exam findings: Vitals and volume status (JVP, lung crackles, peripheral oedema). Cardiac auscultation for S3 gallop or murmurs. BNP/NT-proBNP, chest X-ray, and echocardiogram to confirm heart failure and assess ejection fraction; in a young adult, also screen for treatable causes with TSH, viral serology history, and a family/substance-use history.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Congestive Heart Failure.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chronic obstructive pulmonary disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Breathlessness at rest, or waking at night gasping."
+    ],
+    "management_principles": [
+      "Obtain BNP, chest X-ray, and echocardiogram; in a young adult without typical risk factors, screen for non-ischaemic causes (myocarditis, familial cardiomyopathy, thyroid disease, substance use)",
+      "Start oral Furosemide, titrate GDMT",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "url": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of progressive shortness of breath, ankle swelling, and fatigue for 1 month. HPI: systolic/diastolic dysfunction.",
+    "objective": "Vitals and volume status (JVP, lung crackles, peripheral oedema). Cardiac auscultation for S3 gallop or murmurs. BNP/NT-proBNP, chest X-ray, and echocardiogram to confirm heart failure and assess ejection fraction; in a young adult, also screen for treatable causes with TSH, viral serology history, and a family/substance-use history.",
+    "assessment": "New-onset Congestive Heart Failure in a 29-year-old man; given his age and absence of traditional cardiovascular risk factors, a non-ischaemic cause (myocarditis, familial/genetic dilated cardiomyopathy, thyroid disease, or substance-induced cardiomyopathy) must be actively sought rather than assumed to be ischaemic.",
+    "plan": "Obtain BNP, chest X-ray, and echocardiogram; screen for non-ischaemic causes (myocarditis, familial cardiomyopathy, thyroid disease, substance use). Start oral Furosemide, titrate GDMT. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Congestive Heart Failure",
+    "Select appropriate diagnostic workup for Congestive Heart Failure",
+    "Implement evidence-based management plan: Obtain BNP, chest X-ray, Echo. Start oral Furosemide, titrate GDMT"
+  ],
+  "teaching": {
+    "diagnosis": "Congestive Heart Failure",
+    "one_liner": "The heart cannot pump enough for the body's needs, so fluid backs up — breathlessness, ankle swelling and fatigue together.",
+    "differentials": [
+      "Chronic obstructive pulmonary disease",
+      "Chronic kidney disease",
+      "Anaemia"
+    ],
+    "red_flags": [
+      "Breathlessness at rest, or waking at night gasping"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exertional breathlessness",
+        "say": "How far can you walk on the flat before you need to stop?",
+        "domains": [
+          "severity",
+          "aggravating"
+        ],
+        "keywords": [
+          "walk",
+          "breath",
+          "stairs"
+        ]
+      },
+      {
+        "objective": "Orthopnoea",
+        "say": "Do you get breathless lying flat? How many pillows do you use?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "flat",
+          "lie",
+          "pillow",
+          "night",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Ankle swelling",
+        "say": "Have your ankles or legs been swelling?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ankle",
+          "swelling",
+          "leg",
+          "puffy"
+        ]
+      },
+      {
+        "objective": "Paroxysmal nocturnal dyspnoea",
+        "say": "Do you wake in the night short of breath and have to sit up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "wake",
+          "night",
+          "sit",
+          "gasping"
+        ]
+      },
+      {
+        "objective": "Weight change",
+        "say": "Has your weight gone up quickly in the last week or two?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "weight",
+          "gained",
+          "heavier",
+          "scale"
+        ]
+      },
+      {
+        "objective": "Current medications",
+        "say": "What medications are you taking at the moment?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Possible cause in a young patient",
+        "say": "Have you had a recent viral illness, do you use any recreational drugs, or does anyone in your family have heart problems or an unexplained sudden death?",
+        "domains": [
+          "pmh",
+          "family_hx",
+          "substances"
+        ],
+        "keywords": [
+          "virus",
+          "flu",
+          "drugs",
+          "cocaine",
+          "family",
+          "sudden",
+          "death"
+        ]
+      }
+    ]
+  }
+}

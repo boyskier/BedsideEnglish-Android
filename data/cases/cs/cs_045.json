@@ -1,0 +1,142 @@
+{
+  "id": "cs_045",
+  "system": "cs",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Perez",
+  "age": 77,
+  "gender": "male",
+  "chief_complaint": "painless slowly growing hard lump on ribs, normal skin",
+  "hpi_details": "A 77-year-old male presents to the clinic with painless slowly growing hard lump on ribs, normal skin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to a chest wall tumor",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "chest_wall_mass_ct",
+      "title": "Contrast CT of the chest wall",
+      "order_terms": ["chest CT", "CT chest", "chest wall CT", "cross-sectional imaging"],
+      "availability_message": "The chest-wall CT report is now available.",
+      "results": [
+        {
+          "id": "ct_rib_chest_wall_mass",
+          "test": "Contrast CT chest",
+          "value": "4.2 cm lobulated expansile mass arising from the left sixth rib with cortical destruction and a small soft-tissue component; no lung metastases",
+          "unit": "",
+          "reference_range": "No chest-wall mass or bone destruction",
+          "flag": "abnormal",
+          "collected_at": "Diagnostic imaging"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Chest Wall Mass (chondrosarcoma vs. osteochondroma) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of a chest wall mass is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management requires cross-sectional imaging, assessment for metastatic disease when malignancy is suspected, and multidisciplinary planning of a biopsy approach and definitive surgery; wide excision is not appropriate before diagnosis and resectability assessment.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless slowly growing hard lump on ribs, normal skin",
+      "Key HPI features: A 77-year-old male presents to the clinic with painless slowly growing hard lump on ribs, normal skin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Chest Wall Mass.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that a painless, slow-growing mass is necessarily benign.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Osteochondroma (benign) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapid growth or new pain — would suggest malignant transformation."
+    ],
+    "management_principles": [
+      "Obtain cross-sectional imaging, assess for metastatic disease when appropriate, and refer to a multidisciplinary sarcoma/thoracic team for biopsy planning and definitive treatment",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of painless slowly growing hard lump on ribs, normal skin. HPI: chondrosarcoma vs benign osteochondroma.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Chest Wall Mass.",
+    "assessment": "Condition highly suspicious for Chest Wall Mass.",
+    "plan": "Obtain cross-sectional imaging, assess for metastatic disease when appropriate, and refer to a multidisciplinary sarcoma/thoracic team for biopsy planning and definitive treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Chest Wall Mass",
+    "Select appropriate diagnostic workup for Chest Wall Mass",
+    "Implement evidence-based management plan: Obtain cross-sectional imaging and multidisciplinary biopsy/treatment planning before definitive surgery"
+  ],
+  "teaching": {
+    "diagnosis": "Chest Wall Mass (chondrosarcoma vs. osteochondroma)",
+    "one_liner": "A slow-growing, painless, hard mass arising from a rib, requiring imaging and biopsy to distinguish a benign osteochondroma from a malignant chondrosarcoma before planning wide local excision.",
+    "differentials": [
+      "Osteochondroma (benign)",
+      "Chondrosarcoma (malignant)",
+      "Metastatic bone lesion"
+    ],
+    "red_flags": [
+      "Rapid growth or new pain — would suggest malignant transformation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and growth rate",
+        "say": "How long have you had this lump, and has it been growing slowly or quickly?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Pain",
+        "say": "Is the lump painful at all?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "painless"
+        ]
+      },
+      {
+        "objective": "Skin changes",
+        "say": "Has the skin over the lump changed in any way?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Any fever, weight loss, or fatigue?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "The patient's concern",
+        "say": "What worries you most about this lump?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

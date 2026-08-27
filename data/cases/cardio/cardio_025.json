@@ -1,0 +1,206 @@
+{
+  "id": "cardio_025",
+  "system": "cardiovascular",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Son",
+  "age": 64,
+  "gender": "female",
+  "chief_complaint": "fluttering sensation in chest and mild dizziness for 2 days",
+  "hpi_details": "64F reports feeling sudden fluttering/palpitations in her chest accompanied by mild lightheadedness for 2 days. Vitals show an irregular pulse. Denies chest pain or shortness of breath.",
+  "ideas": "thinks it is stress or too much coffee",
+  "concerns": "worried about stroke risk",
+  "expectations": "wants ECG and advice",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine 5mg daily",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "new_af_ecg",
+      "title": "12-lead ECG",
+      "order_terms": ["ECG", "EKG", "12-lead"],
+      "availability_message": "The 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_atrial_fibrillation",
+          "test": "12-lead ECG",
+          "value": "Atrial fibrillation with no discrete P waves and an irregularly irregular ventricular rate of 118 bpm",
+          "unit": "",
+          "reference_range": "Sinus rhythm 60-100 bpm",
+          "flag": "abnormal",
+          "collected_at": "During today's assessment"
+        }
+      ]
+    },
+    {
+      "id": "af_thyroid_test",
+      "title": "Thyroid function result",
+      "order_terms": ["TSH", "thyroid function", "thyroid tests"],
+      "availability_message": "The thyroid-stimulating hormone result is now available.",
+      "results": [
+        {
+          "id": "tsh_new_af",
+          "test": "Thyroid-stimulating hormone",
+          "value": "1.8",
+          "unit": "mIU/L",
+          "reference_range": "0.4-4.0",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "New-Onset Atrial Fibrillation evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of New-Onset Atrial Fibrillation is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming the rhythm with an ECG, then stratifying stroke risk (CHA2DS2-VASc) and rate/rhythm control needs for newly presenting Atrial Fibrillation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fluttering sensation in chest and mild dizziness for 2 days",
+      "Key HPI features: 64F reports feeling sudden fluttering/palpitations in her chest accompanied by mild lightheadedness for 2 days. Vitals show an irregular pulse. Denies chest pain or shortness of breath.",
+      "Objective/Exam findings: Pulse irregularly irregular in rate and rhythm; BP and O2 saturation otherwise unremarkable. Cardiac auscultation: variable intensity S1, no murmurs. 12-lead ECG to confirm absence of discrete P waves with an irregularly irregular ventricular response. Bloods: TSH (rule out thyrotoxicosis), U&Es, FBC.",
+      "Relevant background/PMH: Hypertension",
+      "Current medications: Amlodipine 5mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out New-Onset Atrial Fibrillation.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Supraventricular tachycardia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain, breathlessness at rest, or any focal weakness (stroke)."
+    ],
+    "management_principles": [
+      "Obtain a 12-lead ECG to confirm the diagnosis",
+      "Assess CHA2DS2-VASc score for anticoagulation indication"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 ACC/AHA/ACCP/HRS Guideline for the Diagnosis and Management of Atrial Fibrillation",
+        "url": "https://professional.heart.org/en/guidelines-statements/2023-accahaaccphrs-guideline-for-the-diagnosis-and-management-of-atrialcir0000000000001193"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Atrial Fibrillation, newly presenting. fluttering sensation in chest and mild dizziness for 2 days. 64F reports feeling sudden fluttering/palpitations in her chest accompanied by mild lightheadedness for 2 days. Vitals show an irregular pulse. Denies chest pain or shortness of breath.",
+    "objective": "Pulse irregularly irregular in rate and rhythm; BP and O2 saturation otherwise unremarkable. Cardiac auscultation: variable intensity S1, no murmurs. 12-lead ECG to confirm absence of discrete P waves with an irregularly irregular ventricular response. Bloods: TSH (rule out thyrotoxicosis), U&Es, FBC.",
+    "assessment": "New-onset Atrial Fibrillation in a patient with hypertension. DDx: supraventricular tachycardia, frequent ectopic beats, thyrotoxicosis-induced AF.",
+    "plan": "Obtain a 12-lead ECG to confirm the diagnosis. Assess CHA2DS2-VASc score for anticoagulation indication. Consider rate control with beta-blockers. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Atrial Fibrillation, newly presenting.",
+    "Formulate prioritized differential diagnosis for fluttering sensation in chest and mild dizziness for 2 days",
+    "Select appropriate laboratory and imaging studies for cardiovascular risk assessment, including ECG and thyroid function tests",
+    "Implement evidence-based acute and long-term management strategies for Atrial Fibrillation, newly presenting."
+  ],
+  "teaching": {
+    "diagnosis": "New-Onset Atrial Fibrillation",
+    "one_liner": "The atria quiver instead of beating, giving an irregularly irregular pulse — the main danger is stroke, not the palpitations.",
+    "differentials": [
+      "Supraventricular tachycardia",
+      "Frequent ectopic beats",
+      "Thyrotoxicosis"
+    ],
+    "red_flags": [
+      "Chest pain, breathlessness at rest, or any focal weakness (stroke)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Irregular rhythm",
+        "say": "If you tap out your heartbeat, is there any pattern to it at all?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "irregular",
+          "pattern",
+          "all",
+          "over",
+          "random",
+          "tap"
+        ]
+      },
+      {
+        "objective": "Duration — when did it start?",
+        "say": "Can you pin down when this started? Was it within the last 48 hours?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "hours",
+          "when"
+        ]
+      },
+      {
+        "objective": "Stroke risk factors",
+        "say": "Do you have high blood pressure, diabetes, or have you ever had a stroke?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "blood",
+          "pressure",
+          "diabetes",
+          "stroke",
+          "heart",
+          "failure"
+        ]
+      },
+      {
+        "objective": "Alcohol and thyroid triggers",
+        "say": "Have you been drinking more than usual, or noticed weight loss and heat intolerance?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drink",
+          "binge",
+          "weight",
+          "hot",
+          "thyroid"
+        ]
+      },
+      {
+        "objective": "Syncope and dizziness",
+        "say": "Have you fainted or felt like you were going to?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "black",
+          "out",
+          "dizzy",
+          "pass",
+          "lightheaded"
+        ]
+      },
+      {
+        "objective": "Exertional breathlessness",
+        "say": "How far can you walk on the flat before you need to stop?",
+        "domains": [
+          "severity",
+          "aggravating"
+        ],
+        "keywords": [
+          "walk",
+          "breath",
+          "stairs"
+        ]
+      }
+    ]
+  }
+}

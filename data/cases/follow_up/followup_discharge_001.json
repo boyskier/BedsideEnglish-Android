@@ -1,0 +1,270 @@
+{
+  "id": "followup_discharge_001",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "post_discharge",
+  "difficulty": "advanced",
+  "eval_template": "follow_up",
+  "patient_name": "Mrs. Evelyn Thompson",
+  "age": 72,
+  "gender": "female",
+  "visit_title": "After hospital discharge for heart failure",
+  "follow_up_reason": "Seven-day post-discharge review",
+  "clinician_brief": {
+    "prior_note": "Admitted for acute decompensated heart failure with leg edema and orthopnea. Improved with IV diuresis and was discharged seven days ago.",
+    "active_problems": [
+      "Heart failure with reduced ejection fraction",
+      "Hypertension",
+      "Chronic kidney disease stage 3"
+    ],
+    "current_medications": [
+      "Furosemide 40 mg every morning",
+      "Carvedilol 6.25 mg twice daily",
+      "Lisinopril 10 mg daily",
+      "Potassium chloride 20 mEq daily"
+    ],
+    "previous_plan": [
+      "Daily morning weight",
+      "Low-sodium diet",
+      "Fluid limit 1.5 L/day",
+      "Call for weight gain over 2 lb overnight or 5 lb in one week",
+      "Repeat basic metabolic panel"
+    ],
+    "results_and_observations": [
+      "Discharge weight 68.0 kg",
+      "Today reported home weight 69.8 kg",
+      "Yesterday creatinine 1.6 mg/dL, discharge creatinine 1.4",
+      "Potassium 4.8 mmol/L"
+    ],
+    "today_tasks": [
+      "Medication reconciliation",
+      "Assess congestion and renal warning symptoms",
+      "Review weight diet and fluid self-management",
+      "Create an explicit escalation and follow-up plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Breathing is better than in hospital, but she slept on three pillows last night instead of two and shoes feel tighter today.",
+    "adherence": "Takes most pills but skipped furosemide yesterday before a long car trip to avoid needing the toilet.",
+    "treatment_response": "Initially lost swelling, which has begun to return slightly.",
+    "side_effects": "Occasional lightheadedness when standing; no fainting.",
+    "new_symptoms_and_red_flags": "No chest pain, breathlessness at rest, confusion or syncope. Mild increased orthopnea and edema with 1.8 kg weight gain since discharge.",
+    "agenda": "Wants to know whether the weight gain means she must return to hospital.",
+    "concern": "The discharge instructions were overwhelming and her daughter normally organizes the medicines.",
+    "preference": "Wants a short written action plan with clear thresholds."
+  },
+  "clinical_knowledge": {
+    "topic": "Interpreting a 1.8 kg weight gain and a rising creatinine seven days after heart-failure discharge, and whether a single skipped furosemide dose explains it",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Post-discharge heart failure weight-monitoring thresholds (commonly a gain of more than roughly 2 lb/1 kg overnight or 5 lb/2.3 kg in a week) exist because weight gain is the earliest, most sensitive sign of recurrent congestion, often preceding symptoms — her 1.8 kg gain since discharge sits right at that action threshold and needs to be treated as clinically meaningful, not incidental.",
+      "The 'three pillows instead of two' and tighter shoes are classic orthopnea and peripheral edema recurrence, and taken with the weight trend, point toward early decongestion failure rather than normal post-discharge fluctuation.",
+      "Creatinine rising from 1.4 to 1.6 mg/dL alongside a missed diuretic dose could reflect either early recurrent congestion (paradoxically, undertreated congestion itself can impair renal perfusion) or diuretic-related volume contraction from her usual dosing — these point to opposite next steps, which is exactly why they need urgent clinical correlation rather than lab review alone.",
+      "A single deliberately skipped furosemide dose before a long car trip is a common, practical adherence barrier (needing to avoid urinary urgency while traveling) rather than a sign of general nonadherence, and deserves a specific fix rather than a blanket adherence lecture.",
+      "The seven-to-fourteen day post-discharge window is recognized as a particularly high-risk period for heart-failure readmission, which is exactly why post-discharge follow-up visits like this one exist and why any early red flag should be taken seriously rather than reassured away."
+    ],
+    "diagnostic_clues": [
+      "Weight up 1.8 kg from discharge (68.0 to 69.8 kg) meets or approaches the standard action threshold used to catch early decompensation before it becomes a hospitalization.",
+      "Progression from two to three pillows for sleep, plus tighter-fitting shoes, corroborates the weight gain as true fluid retention rather than measurement noise.",
+      "Creatinine 1.6 mg/dL, up from a discharge value of 1.4, needs interpretation alongside volume status: it could mean cardiorenal congestion (needs more diuresis) or over-diuresis/volume depletion (needs less) — the physical exam and orthostatic vitals are what will differentiate the two.",
+      "Potassium 4.8 mmol/L is at the upper end of acceptable given she is on furosemide (potassium-wasting) with a K+ supplement and an ACE inhibitor (potassium-sparing) together, and should be watched given any diuretic dose change.",
+      "Mild lightheadedness on standing, without syncope, could reflect either her existing orthostatic tendency or a volume status change and should be re-examined alongside today's vitals before deciding on the diuretic plan."
+    ],
+    "common_misconceptions": [
+      "Her belief that the discharge instructions were 'overwhelming' and that her daughter normally manages her medications is a real barrier to flag today, not a private family matter to leave unaddressed — an explicit, simplified plan involving her daughter is more protective than more written material alone.",
+      "Assuming that because her breathing genuinely feels better than in hospital, the overall picture must be improving, when the pillow number, shoe tightness, and weight trend are telling a more mixed story that needs objective examination.",
+      "Thinking that skipping one 'water pill' dose for a car trip is a minor, inconsequential choice, when in heart failure even a single missed diuretic dose in the setting of early re-accumulating fluid can meaningfully worsen congestion.",
+      "Believing that any weight gain automatically means immediate hospital readmission is required — the correct response depends on clinical assessment today, and many early increases can be managed with an outpatient diuretic adjustment and close follow-up."
+    ],
+    "dangerous_errors": [
+      "Reassuring her that the weight gain is normal fluctuation without performing a volume status exam (jugular venous pressure, lung auscultation, peripheral edema) and reviewing orthostatic vitals first.",
+      "Adjusting the furosemide dose (up or down) without a differential explanation of whether the creatinine rise reflects worsening congestion or volume depletion, since the correct direction of adjustment differs completely between the two.",
+      "Treating the missed diuretic dose as the single full explanation for the weight and symptom changes without confirming there isn't also a dietary sodium lapse or other contributor.",
+      "Sending her home with only verbal instructions rather than confirming, via teach-back, that she and her daughter both understand the specific weight and symptom thresholds that should trigger a call."
+    ],
+    "management_principles": [
+      "Assess her urgently today for signs of instability (vitals, volume exam) before deciding whether this is early recurrent congestion needing a diuretic increase or something else.",
+      "Reconcile the full medication list including the specific missed furosemide dose, and problem-solve a practical fix for future travel days (e.g., adjusting timing rather than skipping).",
+      "Make an explicit, clinician-directed plan for the diuretic dose and repeat basic metabolic panel timing based on today's findings, rather than leaving it open-ended.",
+      "Reinforce the specific weight-gain and symptom action thresholds with teach-back, and loop in her daughter for the written action plan given her stated difficulty managing this alone."
+    ],
+    "boundaries_and_exceptions": [
+      "This outpatient-adjustment approach assumes she remains hemodynamically stable without rest dyspnea, chest pain, syncope, or significant hypoxia; any of those findings would instead warrant same-day escalation to emergency or hospital-level care.",
+      "Diuretic dose adjustments in the setting of CKD stage 3 need closer laboratory follow-up than in a patient with normal renal function, given her narrower margin for both under- and over-diuresis.",
+      "If the creatinine or potassium trend worsens further after today's plan, or she cannot maintain the fluid/sodium restriction at home, this shifts from an outpatient adjustment to needing more intensive monitoring or readmission."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "url": "https://professional.heart.org/en/guidelines-statements/heart-failure-guideline"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Reconcile each discharge medication and assess real-world adherence barriers",
+    "Compare symptoms and weight with the discharge baseline",
+    "Screen for heart failure and orthostatic red flags",
+    "Interpret the mild creatinine and potassium changes in context",
+    "Respond safely to early recurrent congestion",
+    "Explain daily weight sodium fluid and diuretic instructions clearly",
+    "Provide explicit escalation thresholds and confirm understanding with teach-back"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Reconcile each discharge medication and assess real-world adherence barriers",
+      "category": "Medication reconciliation",
+      "question": "Could we go through each medicine you have taken since discharge, including any doses you missed and what got in the way?"
+    },
+    {
+      "objective": "Compare symptoms and weight with the discharge baseline",
+      "category": "Interval change",
+      "question": "How have your breathing, swelling, and morning weight changed since you left hospital?"
+    },
+    {
+      "objective": "Screen for heart failure and orthostatic red flags",
+      "category": "Safety",
+      "question": "Have you had breathlessness at rest, chest pain, fainting, confusion, or worsening dizziness when standing?"
+    },
+    {
+      "objective": "Interpret the mild creatinine and potassium changes in context",
+      "category": "Results",
+      "question": "Can I explain how the kidney and potassium results affect what we do next?"
+    },
+    {
+      "objective": "Respond safely to early recurrent congestion",
+      "category": "Clinical response",
+      "question": "Given the weight gain and swelling, can we agree on what needs assessment or action today?"
+    },
+    {
+      "objective": "Explain daily weight sodium fluid and diuretic instructions clearly",
+      "category": "Self-management",
+      "question": "Could we make a short written plan for daily weight, salt, fluid, and the water tablet?"
+    },
+    {
+      "objective": "Provide explicit escalation thresholds and confirm understanding with teach-back",
+      "category": "Understanding & follow-up",
+      "question": "Could you tell me when you would call us or seek emergency help, and what follow-up is arranged?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Reconcile each discharge medication and assess real-world adherence barriers",
+      "keywords": [
+        "medications",
+        "medicine",
+        "pills",
+        "tablets",
+        "bring",
+        "list",
+        "miss",
+        "missed",
+        "skipped",
+        "furosemide",
+        "water pill",
+        "daughter"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Compare symptoms and weight with the discharge baseline",
+      "keywords": [
+        "weight",
+        "weigh",
+        "scales",
+        "kilos",
+        "pounds",
+        "since discharge",
+        "discharge",
+        "every morning",
+        "record"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for heart failure and orthostatic red flags",
+      "keywords": [
+        "breathless",
+        "shortness of breath",
+        "pillows",
+        "lying flat",
+        "chest pain",
+        "dizzy",
+        "faint",
+        "swelling",
+        "ankles",
+        "standing up"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Interpret the mild creatinine and potassium changes in context",
+      "keywords": [
+        "creatinine",
+        "kidney",
+        "potassium",
+        "blood test",
+        "slightly",
+        "numbers",
+        "results"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Respond safely to early recurrent congestion",
+      "keywords": [
+        "fluid",
+        "congestion",
+        "diuretic",
+        "extra dose",
+        "increase",
+        "come in",
+        "same day",
+        "urgent",
+        "today"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain daily weight sodium fluid and diuretic instructions clearly",
+      "keywords": [
+        "salt",
+        "sodium",
+        "fluid limit",
+        "litres",
+        "liters",
+        "daily weight",
+        "diet",
+        "instructions",
+        "written plan"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Provide explicit escalation thresholds and confirm understanding with teach-back",
+      "keywords": [
+        "call",
+        "hospital",
+        "emergency",
+        "warning signs",
+        "gain",
+        "pounds",
+        "repeat back",
+        "teach back",
+        "understand"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "72F seven days after heart-failure discharge. Breathing improved overall but mild recurrent orthopnea and edema. Weight up 1.8 kg. Skipped one furosemide dose for travel. Occasional orthostatic lightheadedness; no rest dyspnea, chest pain or syncope.",
+    "objective": "Reported weight 69.8 kg versus 68.0 kg at discharge. Creatinine 1.6 from 1.4; potassium 4.8. Requires vitals and volume examination.",
+    "assessment": "Possible early recurrent congestion with a practical diuretic adherence barrier; modest renal-function change requires clinical correlation.",
+    "plan": "Assess urgently for congestion and instability, reconcile medications, make a clinician-directed diuretic and laboratory plan, reinforce action thresholds, arrange close follow-up and use teach-back."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "After hospital discharge for heart failure",
+    "one_liner": "Clinical scenario for evaluation and management of After hospital discharge for heart failure."
+  }
+}

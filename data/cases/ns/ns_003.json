@@ -1,0 +1,136 @@
+{
+  "id": "ns_003",
+  "system": "neurosurgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Clark",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "new-onset generalized seizure, progressive morning headaches, and left-sided personality changes over 6 weeks",
+  "hpi_details": "58M right-handed male brought to ED after first-ever generalized tonic-clonic seizure lasting 3 minutes. Wife reports that over the past 6 weeks, patient has complained of dull, throbbing headaches that are worse in the morning upon waking and when bending over. Has also exhibited personality changes, apathy, memory deficits, and progressive weakness in right leg when walking.",
+  "ideas": "wife thinks he has Alzheimer disease or suffered a major brain tumor",
+  "concerns": "wife worried about rapid mental decline and seizure recurrence",
+  "expectations": "want definitive brain scan and neurosurgical consultation for tumor removal",
+  "pmh": "Hyperlipidemia",
+  "medications": "Atorvastatin 40mg daily",
+  "social_hx": "Civil engineer, non-smoker",
+  "investigation_events": [{
+    "id": "urgent_brain_mass_mri",
+    "title": "Urgent contrast-enhanced brain MRI",
+    "order_terms": ["MRI brain", "brain MRI", "MRI with contrast", "MRI with gadolinium"],
+    "availability_message": "The urgent brain MRI result is now available. Treatment of clinically significant edema and seizures should not be delayed.",
+    "results": [{"id": "brain_mri", "test": "Brain MRI with gadolinium", "value": "4.5 x 3.8 cm necrotic ring-enhancing left frontal mass with extensive vasogenic edema, motor-cortex involvement, and extension across the corpus callosum", "flag": "critical", "note": "Imaging is highly concerning for glioblastoma; tissue diagnosis is required."}]
+  }],
+  "clinical_knowledge": {
+    "topic": "High-Grade Glioma (Glioblastoma Multiforme) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of High-Grade Glioma (Glioblastoma Multiforme) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Start IV Dexamethasone 10 mg loading dose followed by 4 mg q6h to reduce peritumoral vasogenic edema, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: new-onset generalized seizure, progressive morning headaches, and left-sided personality changes over 6 weeks",
+      "Key HPI features: 58M right-handed male brought to ED after first-ever generalized tonic-clonic seizure lasting 3 minutes. Wife reports that over the past 6 weeks, patient has complained of dull, throbbing headaches that are worse in the morning upon waking and when bending over. Has also exhibited personality changes, apathy, memory deficits, and progressive weakness in right leg when walking.",
+      "Objective/Exam findings: Vitals: HR 78, BP 142/86. Post-ictal confusion clearing. Neurological exam reveals subtle right pronator drift, right-sided hyperreflexia (4+ patellar), positive Babinski sign on right, and flattened right nasolabial fold. Brain MRI with gadolinium demonstrates a 4.5 x 3.8 cm peripherally ring-enhancing mass with central necrosis and surrounding vasogenic edema in the left frontal lobe involving the motor cortex and crossing the corpus callosum (butterfly pattern).",
+      "Relevant background/PMH: Hyperlipidemia",
+      "Current medications: Atorvastatin 40mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out High-Grade Glioma (Glioblastoma Multiforme).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Brain metastasis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New seizure with a headache pattern worse in the morning — needs urgent imaging to exclude a mass."
+    ],
+    "management_principles": [
+      "Start IV Dexamethasone 10 mg loading dose followed by 4 mg q6h to reduce peritumoral vasogenic edema",
+      "Initiate Levetiracetam 1000 mg BID for seizure prophylaxis",
+      "Neurosurgery consultation for maximal safe surgical debulking / craniotomy with stereotactic navigation, followed by adjuvant radiation therapy and Temozolomide chemotherapy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "58M presenting with new-onset seizure, morning headaches suggestive of elevated ICP, and focal frontal/motor deficits evolving over 6 weeks.",
+    "objective": "Vitals: HR 78, BP 142/86. Post-ictal confusion clearing. Neurological exam reveals subtle right pronator drift, right-sided hyperreflexia (4+ patellar), positive Babinski sign on right, and flattened right nasolabial fold. Brain MRI with gadolinium demonstrates a 4.5 x 3.8 cm peripherally ring-enhancing mass with central necrosis and surrounding vasogenic edema in the left frontal lobe involving the motor cortex and crossing the corpus callosum (butterfly pattern).",
+    "assessment": "Left Frontal High-Grade Glioma, radiologically consistent with Glioblastoma Multiforme (WHO Grade IV).",
+    "plan": "Start IV Dexamethasone 10 mg loading dose followed by 4 mg q6h to reduce peritumoral vasogenic edema. Initiate Levetiracetam 1000 mg BID for seizure prophylaxis. Neurosurgery consultation for maximal safe surgical debulking / craniotomy with stereotactic navigation, followed by adjuvant radiation therapy and Temozolomide chemotherapy."
+  },
+  "learning_objectives": [
+    "Recognize red flag symptoms of intracranial space-occupying lesions (morning headache, focal neurological signs, new seizures in adult)",
+    "Interpret brain MRI features characteristic of Glioblastoma Multiforme (ring enhancement, central necrosis, vasogenic edema, corpus callosum invasion)",
+    "Understand the role and dosing of high-dose corticosteroids (Dexamethasone) in managing peritumoral edema",
+    "Outline multidisciplinary neuro-oncology treatment paradigms (surgery, radiation, temozolomide)"
+  ],
+  "teaching": {
+    "diagnosis": "High-Grade Glioma (Glioblastoma Multiforme)",
+    "one_liner": "An aggressive primary brain tumor causing morning-worse headaches, a new seizure, and gradual personality change and weakness over weeks — the combination of raised-pressure headache pattern and focal deficits points to a mass, not simple dementia.",
+    "differentials": [
+      "Brain metastasis",
+      "Cerebral abscess",
+      "Alzheimer's disease (would lack focal deficits/seizure)"
+    ],
+    "red_flags": [
+      "New seizure with a headache pattern worse in the morning — needs urgent imaging to exclude a mass"
+    ],
+    "must_ask": [
+      {
+        "objective": "Headache pattern",
+        "say": "Is the headache worse in the morning or when you bend over?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "morning",
+          "bending over"
+        ]
+      },
+      {
+        "objective": "Seizure description",
+        "say": "Can you tell me what happened during the seizure?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Personality and cognitive changes",
+        "say": "Has your husband noticed changes in his personality or memory recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "personality change",
+          "apathy"
+        ]
+      },
+      {
+        "objective": "Weakness",
+        "say": "Have you noticed any weakness, like dragging a leg when walking?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many weeks has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

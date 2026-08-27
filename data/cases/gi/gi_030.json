@@ -1,0 +1,167 @@
+{
+  "id": "gi_030",
+  "system": "gi",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Jones",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "bloody diarrhea, abdominal pain, and fever for 2 weeks",
+  "hpi_details": "A 32-year-old female presents to the clinic with bloody diarrhea, abdominal pain, and fever for 2 weeks. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to ulcerative colitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Ulcerative Colitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ulcerative Colitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes assessing severity, obtaining stool testing to exclude infection, and arranging endoscopy with biopsies to confirm the diagnosis before starting mesalamine or corticosteroids, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bloody diarrhea, abdominal pain, and fever for 2 weeks",
+      "Key HPI features: A 32-year-old female presents to the clinic with bloody diarrhea, abdominal pain, and fever for 2 weeks. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Ulcerative Colitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ulcerative Colitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Crohn's disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever with bloody diarrhoea for two weeks — raises concern for severe or fulminant colitis."
+    ],
+    "management_principles": [
+      "Evaluate the severity of bloody diarrhea, obtain stool testing including C. difficile when indicated, and confirm inflammatory bowel disease with endoscopy/biopsies before immunosuppression unless a specialist directs urgent treatment",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32F presents with a 2-week history of bloody diarrhoea, abdominal pain, and fever, raising concern for inflammatory bowel disease versus infectious colitis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Ulcerative Colitis.",
+    "assessment": "Inflammatory colitis, including ulcerative colitis, is possible; infectious colitis and disease severity require prompt evaluation before immunosuppressive treatment.",
+    "plan": "Assess severity and hydration status, obtain stool testing including C. difficile when indicated, and arrange Gastroenterology evaluation with endoscopy and biopsies to confirm inflammatory bowel disease. Do not start corticosteroids before infectious causes are reasonably excluded unless a specialist directs urgent treatment. Escalate urgently for systemic toxicity, severe abdominal pain/distension, or inability to maintain hydration."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Ulcerative Colitis",
+    "Select appropriate diagnostic workup for Ulcerative Colitis",
+    "Implement an evidence-based management plan: assess severity, order stool testing to exclude infection, arrange colonoscopy with biopsies, and initiate mesalamine or corticosteroids once the diagnosis is confirmed"
+  ],
+  "teaching": {
+    "diagnosis": "Ulcerative Colitis",
+    "one_liner": "Autoimmune inflammation limited to the colon lining causes continuous bloody diarrhoea, cramping, and fever, usually starting in the rectum and spreading upward.",
+    "differentials": [
+      "Crohn's disease",
+      "Infective colitis",
+      "Ischaemic colitis"
+    ],
+    "red_flags": [
+      "Fever with bloody diarrhoea for two weeks — raises concern for severe or fulminant colitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Blood in stool",
+        "say": "Is there blood mixed into every bowel movement?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood",
+          "stool",
+          "mixed"
+        ]
+      },
+      {
+        "objective": "Stool frequency",
+        "say": "How many times a day are you passing bloody stool?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "frequency",
+          "daily",
+          "often"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever along with the diarrhoea?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "temperature"
+        ]
+      },
+      {
+        "objective": "Tenesmus / urgency",
+        "say": "Do you feel a sudden urgent need to go, even with little warning?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urgent",
+          "urgency",
+          "tenesmus"
+        ]
+      },
+      {
+        "objective": "Nocturnal diarrhoea",
+        "say": "Does it wake you up at night to go?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "wake",
+          "nocturnal"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost any weight recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "lost"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have Crohn's disease or ulcerative colitis?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "crohns",
+          "colitis"
+        ]
+      }
+    ]
+  }
+}

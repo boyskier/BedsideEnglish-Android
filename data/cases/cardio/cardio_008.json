@@ -1,0 +1,165 @@
+{
+  "id": "cardio_008",
+  "system": "cardiology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Chen",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "sudden attacks of rapid pounding heartbeat and dizziness lasting 20 minutes",
+  "hpi_details": "Presents with a 1-year history of sudden-onset, unprovoked episodes of rapid, regular pounding palpitations in her chest. Attacks start abruptly like a switch being flipped and stop just as suddenly. During episodes, she feels lightheaded, anxious, and notices a strong urge to urinate (polyuria) afterwards. Yesterday's attack lasted 25 minutes while sitting at her office desk. Denies chest pain or loss of consciousness.",
+  "ideas": "thinks too much coffee and work stress are causing panic attacks",
+  "concerns": "worried her heart rate is going so fast that her heart will stop beating",
+  "expectations": "wants a monitor to capture the rhythm and advice on how to stop attacks when they start",
+  "pmh": "none, healthy young female",
+  "medications": "combined oral contraceptive pill OD",
+  "social_hx": "drinks 3 cups of coffee daily, non-smoker, accountant, goes to gym 3 times/week",
+  "available_results": [{"id": "ecg_during_attack", "test": "12-lead ECG captured during symptoms", "value": "Regular narrow-complex tachycardia at 180 bpm with retrograde P waves buried in the QRS complexes", "flag": "critical", "collected_at": "During yesterday's episode"}],
+  "clinical_knowledge": {
+    "topic": "Paroxysmal Supraventricular Tachycardia (PSVT) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Paroxysmal Supraventricular Tachycardia (PSVT) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes teaching the patient vagal manoeuvres for acute self-termination of future attacks (modified Valsalva manoeuvre with leg elevation; seek urgent care for chest pain, breathlessness, syncope, or a persistent episode), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden attacks of rapid pounding heartbeat and dizziness lasting 20 minutes",
+      "Key HPI features: Presents with a 1-year history of sudden-onset, unprovoked episodes of rapid, regular pounding palpitations in her chest. Attacks start abruptly like a switch being flipped and stop just as suddenly. During episodes, she feels lightheaded, anxious, and notices a strong urge to urinate (polyuria) afterwards. Yesterday's attack lasted 25 minutes while sitting at her office desk. Denies chest pain or loss of consciousness.",
+      "Objective/Exam findings: During attack: 12-lead ECG shows narrow-complex regular tachycardia at 180 bpm with no visible P waves or retrograde P waves buried in QRS. Between attacks: baseline 12-lead ECG completely normal (check for pre-excitation/delta waves of Wolff-Parkinson-White syndrome). Bloods: thyroid function tests (TSH/T4 to rule out hyperthyroidism), electrolytes, FBC.",
+      "Relevant background/PMH: none, healthy young female",
+      "Current medications: combined oral contraceptive pill OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Paroxysmal Supraventricular Tachycardia (PSVT).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atrial fibrillation without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Episodes with chest pain, breathlessness, or collapse."
+    ],
+    "management_principles": [
+      "Teach patient vagal manoeuvres for acute self-termination of future attacks (modified Valsalva manoeuvre with leg elevation; seek urgent care for chest pain, breathlessness, syncope, or a persistent episode)",
+      "Acute hospital protocol if persistent: IV adenosine rapid bolus (6mg -> 12mg -> 12mg) with continuous ECG monitoring",
+      "Outpatient referral to cardiac electrophysiology for consideration of curative catheter ablation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2015 ACC/AHA/HRS Guideline for the Management of Adult Patients with Supraventricular Tachycardia",
+        "url": "https://professional.heart.org/en/guidelines-statements/supraventricular-tachycardia-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "28F presents with abrupt-onset, abrupt-termination episodes of rapid regular palpitations accompanied by presyncope and post-attack polyuria. Normal baseline health.",
+    "objective": "During attack: 12-lead ECG shows narrow-complex regular tachycardia at 180 bpm with no visible P waves or retrograde P waves buried in QRS. Between attacks: baseline 12-lead ECG completely normal (check for pre-excitation/delta waves of Wolff-Parkinson-White syndrome). Bloods: thyroid function tests (TSH/T4 to rule out hyperthyroidism), electrolytes, FBC.",
+    "assessment": "Paroxysmal Supraventricular Tachycardia (PSVT) - likely Atrioventricular Nodal Re-entrant Tachycardia (AVNRT) or AVRT. DDx: sinus tachycardia from anxiety/caffeine, atrial flutter with 2:1 block, hyperthyroidism, panic attacks.",
+    "plan": "Teach patient vagal manoeuvres for acute self-termination of future attacks (modified Valsalva manoeuvre with leg elevation; seek urgent care for chest pain, breathlessness, syncope, or a persistent episode). Acute hospital protocol if persistent: IV adenosine rapid bolus (6mg -> 12mg -> 12mg) with continuous ECG monitoring. Outpatient referral to cardiac electrophysiology for consideration of curative catheter ablation. Advise caffeine moderation."
+  },
+  "learning_objectives": [
+    "Differentiate paroxysmal SVT from sinus tachycardia based on abrupt onset/termination mechanics and regular rate >150 bpm",
+    "Explain the physiological mechanism of post-tachycardia polyuria (atrial stretch releasing Atrial Natriuretic Peptide - ANP)",
+    "Instruct the patient on safe and effective execution of the modified Valsalva manoeuvre",
+    "Outline the stepped pharmacological termination protocol using rapid IV adenosine boluses"
+  ],
+  "teaching": {
+    "diagnosis": "Paroxysmal Supraventricular Tachycardia (PSVT)",
+    "one_liner": "An electrical short-circuit that flips the heart into a fast, regular rhythm — starts and stops abruptly, like a switch.",
+    "differentials": [
+      "Atrial fibrillation",
+      "Panic attack",
+      "Sinus tachycardia"
+    ],
+    "red_flags": [
+      "Episodes with chest pain, breathlessness, or collapse"
+    ],
+    "must_ask": [
+      {
+        "objective": "Abrupt onset and offset",
+        "say": "Does it start and stop suddenly, like flicking a switch?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "sudden",
+          "switch",
+          "abrupt"
+        ]
+      },
+      {
+        "objective": "Regularity and rate",
+        "say": "Is the fast beat regular, and roughly how fast does it feel?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "regular",
+          "fast",
+          "rate",
+          "beat"
+        ]
+      },
+      {
+        "objective": "Neck pounding",
+        "say": "Do you feel a pounding or fullness in your neck during an episode?",
+        "domains": [
+          "associated_symptoms",
+          "location"
+        ],
+        "keywords": [
+          "neck",
+          "throat",
+          "pounding",
+          "fullness"
+        ]
+      },
+      {
+        "objective": "What ends an episode",
+        "say": "Does anything stop it — holding your breath, coughing, splashing cold water?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "breath",
+          "cough",
+          "cold",
+          "water",
+          "bear",
+          "down"
+        ]
+      },
+      {
+        "objective": "Frequency and duration",
+        "say": "How often do these attacks happen, and how long do they last?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Caffeine and stimulants",
+        "say": "How much coffee or energy drink do you have in a day?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "coffee",
+          "caffeine",
+          "energy",
+          "drink",
+          "cola"
+        ]
+      }
+    ]
+  }
+}

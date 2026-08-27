@@ -1,0 +1,49 @@
+{
+  "id": "consult_icu_urgent",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Consult / referral",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "consult_referral",
+  "patient_name": "Urgent ICU review — worsening respiratory failure",
+  "chief_complaint": "Escalate a deteriorating patient and request immediate ICU bedside review",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Urgent ICU review: worsening respiratory failure",
+    "task": "Consult / referral",
+    "urgency": "urgent",
+    "patient": "Mr. Thomas Green, 68-year-old man",
+    "location": "Ward patient with severe community-acquired pneumonia",
+    "situation": "He has respiratory failure and shock despite high-concentration oxygen; request immediate ICU bedside review.",
+    "background": ["Severe community-acquired pneumonia."],
+    "current_status": ["SpO2 86% despite 15 L/min by non-rebreather mask.", "RR 36/min, BP 88/54 mmHg, HR 122/min, lactate 4.1 mmol/L."],
+    "key_data": ["Persistent hypoxemia and hypotension indicate critical deterioration."],
+    "treatments": ["Antibiotics and a 500 mL crystalloid bolus have been given."],
+    "your_request": "State the urgency and ask ICU to come now for respiratory and hemodynamic support.",
+    "must_include": ["Current oxygen support and saturation.", "Blood pressure, respiratory rate, heart rate, and lactate.", "Treatments already given, ceiling of care/access if asked, and who stays with the patient."]
+  },
+  "kickoff_text": "ICU registrar. What's the emergency?",
+  "persona_override": "You are Dr. Shah, the ICU registrar taking an urgent referral. The patient is Mr. Thomas Green, 68, with severe community-acquired pneumonia. Despite 15 L/min oxygen by non-rebreather, saturation is 86%, respiratory rate 36, blood pressure 88/54, heart rate 122, lactate 4.1. Antibiotics and a 500 mL crystalloid bolus have been given. The learner must lead with urgency and explicitly request immediate ICU review for respiratory and hemodynamic support. Interrupt vague background with 'Tell me how unstable he is right now and what you need from me.' Ask about ceiling of care and access. Confirm that you are coming immediately once the learner makes a clear request. Do not provide medical management beyond the roleplay facts.",
+  "learning_objectives": [
+    "lead with immediate urgency and location",
+    "report current oxygen support, vital signs, and lactate accurately",
+    "state treatments already given",
+    "request immediate ICU bedside review and confirm interim ownership"
+  ],
+  "suggested_questions": [
+    "I need an immediate ICU review for a patient in respiratory failure and shock.",
+    "He remains at 86% on 15 litres and his blood pressure is 88 over 54.",
+    "Can you come now? I will stay with him and continue monitoring until you arrive."
+  ],
+  "clinical_knowledge": {
+    "topic": "Urgent ICU escalation for respiratory failure and shock in severe pneumonia",
+    "core_concepts": ["An urgent escalation should open with instability, location, and the action required.", "Sepsis and shock are time-critical; current physiology, support, treatment, and response are more useful than a long chronology."],
+    "diagnostic_clues": ["Persistent hypoxemia despite high-concentration oxygen.", "Hypotension, tachypnea, tachycardia, and elevated lactate indicate critical deterioration."],
+    "common_misconceptions": ["A full background must be delivered before stating that the patient is unstable.", "Saying 'please advise' is equivalent to requesting immediate bedside review."],
+    "dangerous_errors": ["Understating oxygen requirement or hemodynamic instability.", "Failing to make a direct request or to state who remains with the patient."],
+    "management_principles": ["Recognize and communicate sepsis-related organ dysfunction promptly.", "Escalate while immediate stabilization, monitoring, and time-critical treatment continue under local protocols."],
+    "boundaries_and_exceptions": ["Airway, vasopressor, fluid, antimicrobial, and ceiling-of-care decisions require bedside assessment and local critical-care protocols."],
+    "source_refs": [{"title": "AHRQ TeamSTEPPS Communication Tools", "url": "https://www.ahrq.gov/teamstepps-program/resources/modules/index.html"}, {"title": "Surviving Sepsis Campaign Adult Guidelines 2026", "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"}]
+  }
+}

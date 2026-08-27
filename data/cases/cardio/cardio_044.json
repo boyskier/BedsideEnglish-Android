@@ -1,0 +1,170 @@
+{
+  "id": "cardio_044",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Robinson",
+  "age": 24,
+  "gender": "male",
+  "chief_complaint": "incidentally found slow heart rate 42 bpm on routine pulse check",
+  "hpi_details": "24-year-old male marathon runner presents for a routine sports physical. He is completely asymptomatic. During vital sign assessment, his resting heart rate was noted to be 42 bpm. Denies chest pain, shortness of breath, dizziness, or syncope.",
+  "ideas": "thinks it might be related to bradycardia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "athlete_screening_ecg",
+      "test": "12-lead ECG",
+      "value": "Sinus bradycardia at 42 bpm; PR 168 ms; QRS 92 ms; no conduction block or repolarization abnormality",
+      "unit": "",
+      "reference_range": "PR 120-200 ms; QRS <120 ms",
+      "flag": "normal",
+      "collected_at": "Routine sports physical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Physiological Sinus Bradycardia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Physiological Sinus Bradycardia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Physiological Sinus Bradycardia: Obtain ECG (confirm sinus bradycardia), reassure no pacemaker needed if asymptomatic, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidentally found slow heart rate 42 bpm on routine pulse check",
+      "Key HPI features: A 24-year-old male marathon runner is asymptomatic with a resting heart rate of 42 bpm; ECG shows sinus bradycardia without conduction block.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Physiological Sinus Bradycardia.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Physiological Sinus Bradycardia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Sick sinus syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Bradycardia with syncope, breathlessness or chest pain is never physiological."
+    ],
+    "management_principles": [
+      "Plan for Physiological Sinus Bradycardia: Obtain ECG (confirm sinus bradycardia), reassure no pacemaker needed if asymptomatic",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2018 ACC/AHA/HRS Guideline on the Evaluation and Management of Patients With Bradycardia and Cardiac Conduction Delay",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000628"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: incidentally found slow heart rate 42 bpm on routine pulse check\n\n24-year-old male marathon runner presents for a routine sports physical. He is completely asymptomatic. During vital sign assessment, his resting heart rate was noted to be 42 bpm. Denies chest pain, shortness of breath, dizziness, or syncope.",
+    "objective": "Vitals: BP 110/65, HR 42. Cardiac exam: regular rhythm, no murmurs, normal S1 and S2. 12-lead ECG reveals sinus bradycardia at 42 bpm, normal PR interval, normal QRS, no blocks.",
+    "assessment": "Physiological Sinus Bradycardia due to high vagal tone from athletic conditioning.",
+    "plan": "Reassurance. No further workup or intervention is required. Patient cleared for continued athletic participation."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Physiological Sinus Bradycardia",
+    "Select appropriate diagnostic workup for Physiological Sinus Bradycardia",
+    "Implement evidence-based management plan: Obtain ECG (confirm sinus bradycardia), reassure no pacemaker needed if asymptomatic"
+  ],
+  "teaching": {
+    "diagnosis": "Physiological Sinus Bradycardia",
+    "one_liner": "A slow but normal heart rate, common in athletes and during sleep. The question is only whether it is causing symptoms.",
+    "differentials": [
+      "Sick sinus syndrome",
+      "Drug-induced bradycardia",
+      "Hypothyroidism"
+    ],
+    "red_flags": [
+      "Bradycardia with syncope, breathlessness or chest pain is never physiological"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptoms attributable to the slow rate",
+        "say": "Do you feel dizzy, tired, or short of breath at all?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizzy",
+          "tired",
+          "breath",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Exercise capacity",
+        "say": "Can you exercise normally without getting unusually breathless?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "exercise",
+          "run",
+          "gym",
+          "breath"
+        ]
+      },
+      {
+        "objective": "Athletic training",
+        "say": "How much training do you do in a week?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "training",
+          "run",
+          "sport",
+          "gym",
+          "hours",
+          "athlete"
+        ]
+      },
+      {
+        "objective": "Rate-slowing medication",
+        "say": "Are you taking any beta blockers or heart tablets?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "beta",
+          "blocker",
+          "tablet",
+          "heart",
+          "medication",
+          "digoxin"
+        ]
+      },
+      {
+        "objective": "Thyroid symptoms",
+        "say": "Have you been feeling cold, tired, or gained weight?",
+        "keywords": [
+          "cold",
+          "tired",
+          "weight",
+          "constipat",
+          "thyroid"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most worried this might be?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

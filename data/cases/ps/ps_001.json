@@ -1,0 +1,167 @@
+{
+  "id": "ps_001",
+  "system": "plastic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 36,
+  "gender": "male",
+  "chief_complaint": "deep partial and full-thickness thermal burns covering 35% of body surface area after propane explosion",
+  "hpi_details": "36M industrial worker injured when a propane tank exploded in an enclosed workshop. Sustained direct flame burns to anterior trunk, bilateral entire upper extremities, and face. Experienced singed nasal hairs and carbonaceous sputum. Brought by helicopter EMS 1 hour post-injury.",
+  "ideas": "in severe agony complaining of burning skin and difficulty breathing",
+  "concerns": "worried about facial disfigurement, limb loss, and survival",
+  "expectations": "wants immediate pain relief, burn wound care, and sedation",
+  "pmh": "No prior medical history",
+  "medications": "None",
+  "social_hx": "Chemical plant mechanic, non-smoker",
+  "investigation_events": [{
+    "id": "inhalation_injury_toxicology",
+    "title": "STAT co-oximetry and lactate",
+    "order_terms": ["co-oximetry", "carboxyhemoglobin", "COHb", "lactate", "smoke inhalation labs"],
+    "availability_message": "The STAT co-oximetry and lactate results are now available. Continue high-flow oxygen and do not delay early airway control or burn resuscitation.",
+    "results": [
+      {"id": "carboxyhemoglobin", "test": "Carboxyhemoglobin", "value": "18", "unit": "%", "reference_range": "<3 in nonsmokers", "flag": "critical"},
+      {"id": "lactate", "test": "Serum lactate", "value": "4.2", "unit": "mmol/L", "reference_range": "0.5-2.2", "flag": "high"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Thermal Burn Injury evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Thermal Burn Injury is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes airway protection, Parkland formula fluid resuscitation, and escharotomy for circumferential burns with transfer to a burn unit, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: deep partial and full-thickness thermal burns covering 35% of body surface area after propane explosion",
+      "Key HPI features: 36M industrial worker injured when a propane tank exploded in an enclosed workshop. Sustained direct flame burns to anterior trunk, bilateral entire upper extremities, and face. Experienced singed nasal hairs and carbonaceous sputum. Brought by helicopter EMS 1 hour post-injury.",
+      "Objective/Exam findings: Vitals: HR 128, BP 100/65, RR 26, SpO2 93% on non-rebreather mask. Facial burns with singed eyebrows/nasal hairs, carbonaceous soot in oropharynx, and hoarseness (inhalation injury). Wound assessment using Lund-Browder chart / Rule of Nines: Anterior torso (18%) and bilateral upper extremities (18%) show mixed deep partial-thickness (blistering, cherry red/mottled, sluggish capillary refill) and full-thickness (leathery, pearly white, insensate) burns. Total Body Surface Area (TBSA) burned is 36%. Circumferential full-thickness burn noted on right forearm with tight, inelastic eschar and decreasing radial pulse.",
+      "Relevant background/PMH: No prior medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Thermal Burn Injury.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chemical burn without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inhalation injury (soot in mouth, hoarseness)."
+    ],
+    "management_principles": [
+      "STAT emergency management: secure the airway, resuscitate with fluids, and relieve any circumferential constriction.",
+      "Early endotracheal intubation for airway protection given facial burns/hoarseness before severe edema supervenes",
+      "Initiate Parkland Formula fluid resuscitation using Lactated Ringer's solution: 4 mL x 70 kg x 36% TBSA = ~10,080 mL in first 24 hours (give half [5,040 mL] in first 8 hours post-injury, titrating to urine output > 0.5-1 mL/kg/hr via Foley catheter)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: deep partial and full-thickness thermal burns covering 35% of body surface area after propane explosion\n\n36M industrial worker injured when a propane tank exploded in an enclosed workshop. Sustained direct flame burns to anterior trunk, bilateral entire upper extremities, and face. Experienced singed nasal hairs and carbonaceous sputum. Brought by helicopter EMS 1 hour post-injury.",
+    "objective": "Vitals: HR 128, BP 100/65, RR 26, SpO2 93% on non-rebreather mask. Facial burns with singed eyebrows/nasal hairs, carbonaceous soot in oropharynx, and hoarseness (inhalation injury). Wound assessment using Lund-Browder chart / Rule of Nines: Anterior torso (18%) and bilateral upper extremities (18%) show mixed deep partial-thickness (blistering, cherry red/mottled, sluggish capillary refill) and full-thickness (leathery, pearly white, insensate) burns. Total Body Surface Area (TBSA) burned is 36%. Circumferential full-thickness burn noted on right forearm with tight, inelastic eschar and decreasing radial pulse.",
+    "assessment": "Severe Thermal Burns covering 36% TBSA with Inhalation Injury and Right Forearm Circumferential Eschar compartment risk.",
+    "plan": "STAT burn-center management: secure the airway early for progressive inhalation-injury risk; calculate resuscitation from the documented weight and burn size, then titrate lactated Ringer's to physiologic endpoints. Perform escharotomy only when serial neurovascular/perfusion assessment confirms constriction, by an appropriately trained burn/trauma clinician. Transfer urgently to a verified burn unit for definitive wound care."
+  },
+  "learning_objectives": [
+    "Calculate burn Total Body Surface Area (TBSA) accurately using the Wallace Rule of Nines and Lund-Browder charts",
+    "Apply the Parkland / Modified Brooke resuscitation formulas (Lactated Ringer's titration based on urine output targets)",
+    "Recognize critical clinical indications for early preventive airway intubation in inhalation injuries (singed facial hair, carbonaceous sputum, hoarseness, stridor)",
+    "Differentiate escharotomy indications from fasciotomy in circumferential full-thickness extremity burns"
+  ],
+  "teaching": {
+    "diagnosis": "Thermal Burn Injury",
+    "one_liner": "Tissue injury caused by heat exposure, requiring assessment of total body surface area (TBSA), depth, and airway involvement.",
+    "differentials": [
+      "Chemical burn",
+      "Electrical burn",
+      "Stevens-Johnson syndrome"
+    ],
+    "red_flags": [
+      "Inhalation injury (soot in mouth, hoarseness)",
+      "Circumferential chest/limb burns"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and thermal agent",
+        "say": "What caused the burn — open flame, hot liquid, steam, or chemicals?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "flame",
+          "liquid",
+          "steam",
+          "scald",
+          "heat"
+        ]
+      },
+      {
+        "objective": "Inhalation injury screen",
+        "say": "Were you trapped in an enclosed space, and do you have hoarseness or black soot in your cough?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "enclosed",
+          "trapped",
+          "hoarseness",
+          "soot",
+          "singed"
+        ]
+      },
+      {
+        "objective": "Estimated body surface area",
+        "say": "Which body parts were burned — face, chest, arms, or legs?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "chest",
+          "face",
+          "arms",
+          "legs",
+          "body"
+        ]
+      },
+      {
+        "objective": "Pain and depth assessment",
+        "say": "Are the burned areas extremely painful and blistered, or numb and white?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "blistered",
+          "blisters",
+          "painful",
+          "white",
+          "numb"
+        ]
+      },
+      {
+        "objective": "First aid fluid resuscitation status",
+        "say": "Did you cool the burn with clean tap water and have you received IV fluids?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "water",
+          "cooling",
+          "fluids",
+          "cool",
+          "saline"
+        ]
+      }
+    ]
+  }
+}

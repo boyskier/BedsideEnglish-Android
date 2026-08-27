@@ -1,0 +1,160 @@
+{
+  "id": "pulm_036",
+  "system": "pulm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Gonzalez",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "sudden sharp chest pain and absent breath sounds on one side",
+  "hpi_details": "A 50-year-old female presents to the clinic with sudden sharp chest pain and absent breath sounds on one side. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to pneumothorax",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{"id":"urgent_pneumothorax_imaging","title":"Urgent pneumothorax imaging","order_terms":["chest x ray","chest x-ray","cxr","bedside ultrasound","lung ultrasound"],"availability_message":"The urgent imaging is now available; clinical tension physiology would still require treatment without waiting for imaging.","results":[{"id":"chest_xray","test":"Chest radiograph","value":"Left pleural line with absent peripheral lung markings and a 2.1 cm hilar rim; no mediastinal shift","flag":"critical","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Primary Spontaneous Pneumothorax evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Spontaneous Pneumothorax is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Sudden unilateral absent breath sounds require immediate assessment for pneumothorax and tension physiology; in this age group, assess for secondary causes as well as primary spontaneous pneumothorax.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden sharp chest pain and absent breath sounds on one side",
+      "Key HPI features: A 50-year-old female presents to the clinic with sudden sharp chest pain and absent breath sounds on one side. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Primary Spontaneous Pneumothorax.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Spontaneous Pneumothorax.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pulmonary embolism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Tension pneumothorax (tracheal deviation, hypotension, neck vein distension)."
+    ],
+    "management_principles": [
+      "Send for emergency evaluation now, with pulse oximetry and prompt imaging when the patient is stable.",
+      "If tension pneumothorax is suspected, emergency clinicians must not delay decompression for imaging.",
+      "Oxygen, aspiration, and tube thoracostomy require clinician-directed use based on severity and stability."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden sharp chest pain and absent breath sounds on one side\n\nA 50-year-old female presents to the clinic with sudden sharp chest pain and absent breath sounds on one side. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Primary Spontaneous Pneumothorax.",
+    "assessment": "Condition highly suspicious for Primary Spontaneous Pneumothorax.",
+    "plan": "Arrange emergency evaluation now. Assess oxygenation and hemodynamic stability; obtain imaging if stable. Suspected tension pneumothorax requires emergency clinician-led decompression without waiting for imaging. Oxygen, aspiration, and tube thoracostomy are clinician-directed."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Primary Spontaneous Pneumothorax",
+    "Select appropriate diagnostic workup for Primary Spontaneous Pneumothorax",
+    "Describe emergency recognition and clinician-directed management of pneumothorax"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Spontaneous Pneumothorax",
+    "one_liner": "Sudden accumulation of air in the pleural space due to subpleural bleb rupture, causing sharp pleuritic chest pain and dyspnea.",
+    "differentials": [
+      "Pulmonary embolism",
+      "Acute pleurisy",
+      "Costochondritis"
+    ],
+    "red_flags": [
+      "Tension pneumothorax (tracheal deviation, hypotension, neck vein distension)",
+      "Severe hypoxia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden pleuritic pain onset",
+        "say": "Did this sharp pain start abruptly like a sudden knife stab while at rest?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "abruptly",
+          "sharp",
+          "knife",
+          "pleuritic",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Respiration-dependent aggravation",
+        "say": "Does taking a deep breath or coughing make the sharp chest pain unbearable?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "deep",
+          "breath",
+          "coughing",
+          "inhalation",
+          "cough"
+        ]
+      },
+      {
+        "objective": "Breathlessness severity and rest dyspnea",
+        "say": "Do you feel short of breath even when sitting perfectly still?",
+        "domains": [
+          "severity",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "shortness",
+          "still",
+          "breathless",
+          "dyspnea",
+          "resting"
+        ]
+      },
+      {
+        "objective": "Risk factor tall slender body habitus",
+        "say": "Have you or anyone in your family had a collapsed lung before?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "collapsed",
+          "lung",
+          "family",
+          "pneumothorax",
+          "slender"
+        ]
+      },
+      {
+        "objective": "Tension pneumothorax danger screen",
+        "say": "Do you feel lightheaded, dizzy, or like your heart is racing uncontrollably?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "lightheaded",
+          "dizzy",
+          "racing",
+          "fainting",
+          "tension"
+        ]
+      }
+    ]
+  }
+}

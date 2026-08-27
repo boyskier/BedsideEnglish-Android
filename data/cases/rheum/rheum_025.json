@@ -1,0 +1,135 @@
+{
+  "id": "rheum_025",
+  "system": "rheumatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Min",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "widespread muscle pain, chronic fatigue, poor sleep, and brain fog for 1 year",
+  "hpi_details": "38F reports 1 year of constant, widespread aching pain in muscles and joints all over her body. Accompanied by chronic exhaustion, waking up unrefreshed, and difficulty concentrating ('brain fog').",
+  "ideas": "thinks she has chronic fatigue syndrome or fibromyalgia",
+  "concerns": "worried she will never feel normal again",
+  "expectations": "wants pain medication and advice",
+  "pmh": "Irritable bowel syndrome",
+  "medications": "None",
+  "social_hx": "Housewife, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Fibromyalgia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Fibromyalgia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Fibromyalgia (central sensitization pain syndrome), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: widespread muscle pain, chronic fatigue, poor sleep, and brain fog for 1 year",
+      "Key HPI features: 38F reports 1 year of constant, widespread aching pain in muscles and joints all over her body. Accompanied by chronic exhaustion, waking up unrefreshed, and difficulty concentrating ('brain fog').",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Fibromyalgia (central sensitization pain syndrome).",
+      "Relevant background/PMH: Irritable bowel syndrome"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Fibromyalgia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypothyroidism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Objective joint swelling or elevated inflammatory markers — would suggest a different diagnosis instead."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Fibromyalgia (central sensitization pain syndrome)",
+      ": Assess widespread pain and symptom severity using validated criteria; exclude alternative causes when clinically indicated (for example, CBC, ESR/CRP, and TSH)",
+      "Use education, pacing, graded aerobic/strength exercise, sleep support, and CBT when accessible; medication options such as duloxetine or low-dose amitriptyline require clinician-directed selection and monitoring for interactions, adverse effects, and pregnancy considerations."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Fibromyalgia (central sensitization pain syndrome). widespread muscle pain, chronic fatigue, poor sleep, and brain fog for 1 year. 38F reports 1 year of constant, widespread aching pain in muscles and joints all over her body. Accompanied by chronic exhaustion, waking up unrefreshed, and difficulty concentrating ('brain fog').",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Fibromyalgia (central sensitization pain syndrome).",
+    "assessment": "Clinical presentation highly suggestive of Fibromyalgia (central sensitization pain syndrome).",
+    "plan": "Use validated widespread-pain/symptom-severity criteria and a focused examination; test for alternative conditions only when clinically indicated (for example CBC, ESR/CRP, and TSH). Explain that the pain is real and treat with education, pacing, sleep support, and graded activity; a clinician may consider medication after reviewing interactions, adverse effects, mental-health safety, and pregnancy considerations. Objective synovitis, persistent fever, focal neurologic deficit, unexplained weight loss, or abnormal inflammatory findings warrant reassessment rather than labeling the symptoms fibromyalgia."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Fibromyalgia (central sensitization pain syndrome).",
+    "Formulate prioritized differential diagnosis for widespread muscle pain, chronic fatigue, poor sleep, and brain fog for 1 year",
+    "Select appropriate laboratory and imaging studies for rheumatology",
+    "Implement evidence-based acute and long-term management strategies for Fibromyalgia (central sensitization pain syndrome)."
+  ],
+  "teaching": {
+    "diagnosis": "Fibromyalgia",
+    "one_liner": "A central sensitization pain syndrome causing widespread muscle and joint pain, unrefreshing sleep, and cognitive fog, in the absence of inflammation or structural joint damage.",
+    "differentials": [
+      "Hypothyroidism",
+      "Polymyalgia rheumatica",
+      "Early inflammatory arthritis"
+    ],
+    "red_flags": [
+      "Objective joint swelling or elevated inflammatory markers — would suggest a different diagnosis instead"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain distribution",
+        "say": "Is the pain all over your body, or in specific joints?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "widespread",
+          "all over"
+        ]
+      },
+      {
+        "objective": "Sleep quality",
+        "say": "Do you wake up feeling rested, or still exhausted?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "unrefreshed",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Cognitive symptoms",
+        "say": "Have you had trouble concentrating, or 'brain fog'?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "brain fog",
+          "concentration"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "year"
+        ]
+      },
+      {
+        "objective": "Associated conditions",
+        "say": "Do you have irritable bowel syndrome or other chronic symptoms?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

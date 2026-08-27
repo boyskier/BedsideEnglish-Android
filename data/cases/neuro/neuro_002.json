@@ -1,0 +1,144 @@
+{
+  "id": "neuro_002",
+  "system": "neurology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Davis",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "worst headache of my life, came on suddenly 2 hours ago",
+  "hpi_details": "thunderclap headache reaching maximum intensity within 1 minute, occipital and nuchal distribution, 10/10 severity, associated nausea and one vomit, mild photophobia, no focal weakness or speech problems, was lifting at the gym when it started",
+  "ideas": "thinks he pulled a muscle in his neck at the gym",
+  "concerns": "wife told him to come in immediately — he's quite reluctant and anxious about hospitals",
+  "expectations": "wants strong pain relief and to be told it's nothing serious",
+  "pmh": "no significant past medical history",
+  "medications": "none",
+  "social_hx": "non-smoker, drinks 15 units/week, works as a builder, married with 2 children",
+  "investigation_events": [
+    {
+      "id": "stat_thunderclap_headache_ct",
+      "title": "Emergency non-contrast CT head",
+      "order_terms": ["CT head", "CT brain", "non-contrast CT"],
+      "availability_message": "The emergency non-contrast CT result is now available. Neurosurgical escalation should proceed immediately.",
+      "results": [
+        {"id": "ct_head", "test": "Non-contrast CT head", "value": "Acute subarachnoid blood within the basal cisterns and bilateral Sylvian fissures", "flag": "critical", "note": "Appearance is diagnostic of acute subarachnoid hemorrhage."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Subarachnoid Hemorrhage (until proven otherwise) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subarachnoid Hemorrhage (until proven otherwise) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes IMMEDIATE CT head (non-contrast), IV access, analgesia (avoid NSAIDs if SAH confirmed), neurosurgical referral, LP if CT negative, strict bed rest, nimodipine if SAH confirmed, family notification, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: worst headache of my life, came on suddenly 2 hours ago",
+      "Key HPI features: thunderclap headache reaching maximum intensity within 1 minute, occipital and nuchal distribution, 10/10 severity, associated nausea and one vomit, mild photophobia, no focal weakness or speech problems, was lifting at the gym when it started",
+      "Objective/Exam findings: CRITICAL — immediate non-contrast CT head required within 6hrs of onset. If CT negative: LP at 12hrs post-onset for xanthochromia. Neurological exam, BP, pupils, fundoscopy.",
+      "Relevant background/PMH: no significant past medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subarachnoid Hemorrhage (until proven otherwise).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Thunderclap migraine (diagnosis of exclusion) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Reaching maximum intensity within seconds to a minute — the defining feature that separates this from a normal headache."
+    ],
+    "management_principles": [
+      "IMMEDIATE CT head (non-contrast), IV access, analgesia (avoid NSAIDs if SAH confirmed), neurosurgical referral, LP if CT negative, strict bed rest, nimodipine if SAH confirmed, family notification",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42M with sudden 10/10 thunderclap headache reaching maximum intensity in <1 minute during exertion, occipital/nuchal distribution, nausea, vomiting, photophobia. No focal neuro deficit. No prior similar headache.",
+    "objective": "CRITICAL — immediate non-contrast CT head required within 6hrs of onset. If CT negative: LP at 12hrs post-onset for xanthochromia. Neurological exam, BP, pupils, fundoscopy.",
+    "assessment": "Subarachnoid haemorrhage until proven otherwise — MEDICAL EMERGENCY. DDx: thunderclap migraine (diagnosis of exclusion), RCVS, sentinel headache, benign exertional headache.",
+    "plan": "IMMEDIATE CT head (non-contrast), IV access, analgesia (avoid NSAIDs if SAH confirmed), neurosurgical referral, LP if CT negative, strict bed rest, nimodipine if SAH confirmed, family notification."
+  },
+  "learning_objectives": [
+    "Recognise thunderclap headache as a neurological emergency",
+    "Apply Ottawa SAH Rule clinical assessment",
+    "Communicate urgency without catastrophising to an anxious reluctant patient",
+    "Explain why LP is needed even if CT is negative"
+  ],
+  "teaching": {
+    "diagnosis": "Subarachnoid Hemorrhage (until proven otherwise)",
+    "one_liner": "A sudden 'thunderclap' headache reaching maximum intensity within a minute is bleeding around the brain until proven otherwise — needs immediate CT, and if negative, a lumbar puncture, before it can be safely called anything else.",
+    "differentials": [
+      "Thunderclap migraine (diagnosis of exclusion)",
+      "Reversible cerebral vasoconstriction syndrome (RCVS)",
+      "Sentinel headache",
+      "Benign exertional headache"
+    ],
+    "red_flags": [
+      "Reaching maximum intensity within seconds to a minute — the defining feature that separates this from a normal headache"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed",
+        "say": "Did this headache reach its worst point within a minute, or did it build up gradually?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "thunderclap",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Severity and character",
+        "say": "On a scale of one to ten, and is this the worst headache of your life?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "worst headache"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any nausea, vomiting, or sensitivity to light?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Trigger activity",
+        "say": "What were you doing when this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "lifting",
+          "gym"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "Any weakness or trouble speaking?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

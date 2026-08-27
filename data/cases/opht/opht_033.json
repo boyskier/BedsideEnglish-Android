@@ -1,0 +1,136 @@
+{
+  "id": "opht_033",
+  "system": "opht",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Anderson",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "gradual peripheral vision loss, elevated IOP 26",
+  "hpi_details": "A 41-year-old male presents with gradually progressive peripheral vision loss and an intraocular pressure of 26 mmHg.",
+  "ideas": "thinks it might be related to poag",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id": "intraocular_pressure", "test": "Intraocular pressure", "value": "26", "unit": "mmHg", "reference_range": "10-21", "flag": "high"}],
+  "clinical_knowledge": {
+    "topic": "Primary open-angle glaucoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary open-angle glaucoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Primary Open-Angle Glaucoma: Prostaglandin analog drops (Latanoprost), monitor visual fields, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual peripheral vision loss, elevated IOP 26",
+      "Key HPI features: A 41-year-old male presents with gradually progressive peripheral vision loss and an intraocular pressure of 26 mmHg.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Primary Open-Angle Glaucoma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary open-angle glaucoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Normal-tension glaucoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring that glaucoma is often asymptomatic until advanced, making screening and regular monitoring critical."
+    ],
+    "management_principles": [
+      "Plan for Primary Open-Angle Glaucoma: Prostaglandin analog drops (Latanoprost), monitor visual fields",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of gradual peripheral vision loss, elevated IOP 26. HPI: primary open-angle glaucoma.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Primary Open-Angle Glaucoma.",
+    "assessment": "Condition highly suspicious for Primary Open-Angle Glaucoma.",
+    "plan": "Plan for Primary Open-Angle Glaucoma: Prostaglandin analog drops (Latanoprost), monitor visual fields. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Primary Open-Angle Glaucoma",
+    "Select appropriate diagnostic workup for Primary Open-Angle Glaucoma",
+    "Implement evidence-based management plan: Prostaglandin analog drops (Latanoprost), monitor visual fields"
+  ],
+  "teaching": {
+    "diagnosis": "Primary open-angle glaucoma",
+    "one_liner": "Patient with gradual peripheral vision loss and elevated intraocular pressure of 26.",
+    "differentials": [
+      "Normal-tension glaucoma",
+      "Secondary glaucoma",
+      "Optic nerve compression"
+    ],
+    "red_flags": [
+      "Glaucoma is often asymptomatic until advanced, making screening and regular monitoring critical"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ask about awareness of peripheral vision loss",
+        "say": "Have you noticed any difficulty seeing things to the side, or bumping into objects?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "peripheral vision loss"
+        ]
+      },
+      {
+        "objective": "Ask about family history of glaucoma",
+        "say": "Does anyone in your family have glaucoma?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family history"
+        ]
+      },
+      {
+        "objective": "Ask about prior eye pressure checks",
+        "say": "Have you had your eye pressure checked before, and was it ever high?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "prior IOP"
+        ]
+      },
+      {
+        "objective": "Confirm absence of pain (differentiate from acute glaucoma)",
+        "say": "Is there any pain or redness, or is it painless?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "painless"
+        ]
+      },
+      {
+        "objective": "Explain the eye drop treatment and monitoring plan",
+        "say": "We'll start a daily eye drop to lower your eye pressure and monitor your visual fields regularly.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "prostaglandin analog",
+          "visual field monitoring"
+        ]
+      }
+    ]
+  }
+}

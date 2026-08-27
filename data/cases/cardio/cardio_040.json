@@ -1,0 +1,195 @@
+{
+  "id": "cardio_040",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Clark",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "progressive shortness of breath, orthopnea, and bilateral leg swelling post-flu",
+  "hpi_details": "A 62-year-old female presents to the clinic with progressive shortness of breath, orthopnea, and bilateral leg swelling post-flu. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to dilated_cardiomyopathy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "postviral_dcm_results",
+      "title": "NT-proBNP and echocardiogram",
+      "order_terms": ["NT-proBNP", "BNP", "natriuretic peptide", "echocardiogram", "echo", "TTE"],
+      "availability_message": "The NT-proBNP and echocardiogram results are now available.",
+      "results": [
+        {
+          "id": "nt_probnp_postviral_dcm",
+          "test": "NT-proBNP",
+          "value": "5340",
+          "unit": "pg/mL",
+          "reference_range": "<125",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        },
+        {
+          "id": "echo_postviral_dcm",
+          "test": "Transthoracic echocardiogram",
+          "value": "Dilated left ventricle with severe global hypokinesia; LVEF 28%; moderate functional mitral regurgitation",
+          "unit": "",
+          "reference_range": "LVEF 50-70%",
+          "flag": "critical",
+          "collected_at": "Urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Dilated Cardiomyopathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Dilated Cardiomyopathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "This presentation requires urgent assessment for acute decompensated heart failure and echocardiography to define ventricular function and cause; congestion should be treated first, then guideline-directed therapy for reduced ejection fraction started and titrated once clinically stable.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive shortness of breath, orthopnea, and bilateral leg swelling post-flu",
+      "Key HPI features: A 62-year-old female presents to the clinic with progressive shortness of breath, orthopnea, and bilateral leg swelling post-flu. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Dilated Cardiomyopathy.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Dilated Cardiomyopathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ischaemic heart failure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Breathlessness at rest, syncope, or a rapid irregular pulse."
+    ],
+    "management_principles": [
+      "Urgently assess and treat congestion, obtain echocardiography to define ventricular function and cause, then initiate and titrate guideline-directed therapy for reduced ejection fraction once clinically stable",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001063"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of progressive shortness of breath, orthopnea, and bilateral leg swelling post-flu. HPI: post-viral myocarditis sequelae.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Dilated Cardiomyopathy.",
+    "assessment": "Condition highly suspicious for Dilated Cardiomyopathy.",
+    "plan": "Urgently assess for acute decompensated heart failure and treat congestion. Obtain echocardiography to define ventricular function and cause, then initiate and titrate guideline-directed therapy for reduced ejection fraction once clinically stable."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Dilated Cardiomyopathy",
+    "Select appropriate diagnostic workup for Dilated Cardiomyopathy",
+    "Implement evidence-based management plan: Treat congestion first, obtain echocardiography, then initiate and titrate guideline-directed therapy for reduced ejection fraction once clinically stable"
+  ],
+  "teaching": {
+    "diagnosis": "Dilated Cardiomyopathy",
+    "one_liner": "The left ventricle dilates and weakens, producing progressive heart failure — often with a treatable cause behind it.",
+    "differentials": [
+      "Ischaemic heart failure",
+      "Valvular heart disease",
+      "Chronic lung disease"
+    ],
+    "red_flags": [
+      "Breathlessness at rest, syncope, or a rapid irregular pulse"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exertional breathlessness",
+        "say": "How far can you walk on the flat before you need to stop?",
+        "domains": [
+          "severity",
+          "aggravating"
+        ],
+        "keywords": [
+          "walk",
+          "breath",
+          "stairs"
+        ]
+      },
+      {
+        "objective": "Orthopnoea",
+        "say": "Do you get breathless lying flat? How many pillows do you use?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "flat",
+          "lie",
+          "pillow",
+          "night",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Ankle swelling",
+        "say": "Have your ankles or legs been swelling?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ankle",
+          "swelling",
+          "leg",
+          "puffy"
+        ]
+      },
+      {
+        "objective": "Alcohol history",
+        "say": "How much alcohol do you drink in a typical week?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drink",
+          "beer",
+          "wine",
+          "soju",
+          "bottle"
+        ]
+      },
+      {
+        "objective": "Family history of cardiomyopathy",
+        "say": "Has anyone in your family had heart muscle disease or died suddenly?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "heart",
+          "sudden",
+          "died",
+          "cardiomyopathy"
+        ]
+      },
+      {
+        "objective": "Chemotherapy exposure",
+        "say": "Have you ever had chemotherapy?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "chemo",
+          "cancer",
+          "treatment",
+          "chemotherapy"
+        ]
+      }
+    ]
+  }
+}

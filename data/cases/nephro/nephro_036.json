@@ -1,0 +1,122 @@
+{
+  "id": "nephro_036",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Mitchell",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "constipation, fatigue, and elevated calcium level",
+  "hpi_details": "A 50-year-old female presents to the clinic with constipation, fatigue, and elevated calcium level. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "isn't sure why her calcium would be high, but wonders if it's connected to her constipation",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "corrected_calcium", "test": "Corrected serum calcium", "value": "11.9", "unit": "mg/dL", "reference_range": "8.6-10.2", "flag": "high"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Hypercalcemia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hypercalcemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes IV isotonic saline hydration for significant hypercalcemia, checking PTH to direct the cause evaluation, and reserving bisphosphonates for indicated causes such as malignancy-associated hypercalcemia rather than using them routinely, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: constipation, fatigue, and elevated calcium level",
+      "Key HPI features: A 50-year-old female presents to the clinic with constipation, fatigue, and elevated calcium level. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 128/82, HR 84, afebrile, mild dry mucous membranes. Abdomen soft and mildly distended with decreased bowel sounds; no masses, organomegaly, or lymphadenopathy. Labs: Corrected serum calcium 11.9 mg/dL, ionized calcium elevated, intact PTH 95 pg/mL (inappropriately elevated for the calcium level), phosphate low-normal, creatinine 0.9 mg/dL, 25-OH vitamin D normal.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hypercalcemia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Primary hyperparathyroidism without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or severe dehydration — suggests a hypercalcemic crisis."
+    ],
+    "management_principles": [
+      "Confirm with corrected or ionized calcium and check intact PTH to distinguish PTH-mediated (primary hyperparathyroidism) from PTH-independent (malignancy, vitamin D toxicity) causes",
+      "IV isotonic saline hydration for significant or symptomatic hypercalcemia; avoid routine bisphosphonate use until the cause is defined",
+      "Refer to endocrinology/nephrology; if primary hyperparathyroidism is confirmed, evaluate for parathyroidectomy per guideline criteria"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: constipation, fatigue, and elevated calcium level\n\nA 50-year-old female presents with several weeks of worsening constipation, fatigue, and mild diffuse aches, found to have an elevated calcium level on routine bloodwork. Denies bone pain, kidney stones, or psychiatric symptoms. No known history of cancer.",
+    "objective": "Vitals: BP 128/82, HR 84, afebrile, mild dry mucous membranes. Abdomen soft and mildly distended with decreased bowel sounds; no masses, organomegaly, or lymphadenopathy. Labs: Corrected serum calcium 11.9 mg/dL, ionized calcium elevated, intact PTH 95 pg/mL (inappropriately elevated for the calcium level), phosphate low-normal, creatinine 0.9 mg/dL, 25-OH vitamin D normal.",
+    "assessment": "Hypercalcemia (corrected calcium 11.9 mg/dL) with an inappropriately elevated PTH, most consistent with primary hyperparathyroidism; malignancy-associated hypercalcemia is less likely given the elevated (rather than suppressed) PTH and no cancer history.",
+    "plan": "Confirm corrected or ionized calcium, assess severity and volume status, and obtain PTH first to direct the cause evaluation. Use IV isotonic fluids for significant symptomatic hypercalcemia when appropriate. Reserve antiresorptive therapy such as bisphosphonates for indicated causes, particularly malignancy-associated hypercalcemia, rather than giving it routinely before defining the cause."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Hypercalcemia",
+    "Select appropriate diagnostic workup for Hypercalcemia",
+    "Implement evidence-based management plan: IV Normal Saline hydration, Bisphosphonates, check PTH/PTHrP"
+  ],
+  "teaching": {
+    "diagnosis": "Hypercalcemia",
+    "one_liner": "Elevated serum calcium, from causes like malignancy or hyperparathyroidism, causing constipation and fatigue — remembered as 'stones, bones, groans, and psychiatric overtones'.",
+    "differentials": [
+      "Primary hyperparathyroidism",
+      "Malignancy-associated hypercalcemia",
+      "Vitamin D toxicity"
+    ],
+    "red_flags": [
+      "Confusion or severe dehydration — suggests a hypercalcemic crisis"
+    ],
+    "must_ask": [
+      {
+        "objective": "GI symptoms",
+        "say": "How severe is the constipation?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue and mental status",
+        "say": "How is your energy and thinking been?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Cancer history",
+        "say": "Do you have any history of cancer?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Thirst and urination",
+        "say": "Have you been unusually thirsty or urinating more?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Bone pain",
+        "say": "Any bone pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

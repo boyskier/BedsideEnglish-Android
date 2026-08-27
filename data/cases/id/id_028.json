@@ -1,0 +1,118 @@
+{
+  "id": "id_028",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 50,
+  "gender": "male",
+  "chief_complaint": "spreading red, hot, swollen skin plaque on shin",
+  "hpi_details": "50-year-old male with a history of poorly controlled diabetes presents with a 2-day history of an expanding, unilateral, red, hot, swollen, and painful plaque on his right lower leg. He has a history of tinea pedis (athlete's foot) between his toes. Accompanied by fever and chills.",
+  "ideas": "thinks it might be related to cellulitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Poorly controlled Type 2 diabetes mellitus",
+  "medications": "Metformin",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Cellulitis (lower extremity) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cellulitis (lower extremity) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Cellulitis lower extremity: Oral Cephalexin 500mg QID for 7-10 days, elevate leg, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: spreading red, hot, swollen skin plaque on shin",
+      "Key HPI features: A 50-year-old male with poorly controlled diabetes presents with a 2-day history of an expanding, unilateral, red, hot, swollen, and painful plaque on his right lower leg, with a history of tinea pedis between the toes. Accompanied by fever and chills.",
+      "Objective/Exam findings: Vitals: Temp 38.5C, HR 105. Right lower extremity shows a poorly demarcated, warm, erythematous, edematous, tender plaque extending from the ankle to mid-calf. Cracking and maceration in the toe web spaces (portal of entry).",
+      "Relevant background/PMH: Poorly controlled Type 2 diabetes mellitus"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cellulitis (lower extremity).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to DVT without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion or rapid spread."
+    ],
+    "management_principles": [
+      "Initiate empiric oral antibiotics (Cephalexin 500mg QID for 7-10 days) covering streptococci and MSSA; elevate the affected leg.",
+      "Treat the underlying tinea pedis with topical antifungal therapy to eliminate the portal of entry and reduce recurrence risk.",
+      "Outline the borders of erythema and reassess within 48 hours; escalate to IV therapy or admission if there is rapid spread, systemic toxicity, or poor glycemic control."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "50M diabetic presenting with acute onset of fever and a rapidly spreading, painful, erythematous rash on the right lower leg.",
+    "objective": "Vitals: Temp 38.5C, HR 105. Right lower extremity shows a poorly demarcated, warm, erythematous, edematous, tender plaque extending from the ankle to the mid-calf. Cracking and maceration noted in the web spaces between toes.",
+    "assessment": "Acute Bacterial Cellulitis of the lower extremity.",
+    "plan": "Initiate empiric oral antibiotics covering streptococci and MSSA (e.g., Cephalexin). Treat the underlying tinea pedis with topical Terbinafine to eliminate the portal of entry. Elevate the leg. Outline the borders with a marker to monitor for spread."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Cellulitis lower extremity",
+    "Select appropriate diagnostic workup for Cellulitis lower extremity",
+    "Implement evidence-based management plan: Oral Cephalexin 500mg QID for 7-10 days, elevate leg"
+  ],
+  "teaching": {
+    "diagnosis": "Cellulitis (lower extremity)",
+    "one_liner": "Streptococcal or staphylococcal bacteria enter through a skin break, causing a spreading red, hot, swollen plaque.",
+    "differentials": [
+      "DVT",
+      "Necrotizing fasciitis"
+    ],
+    "red_flags": [
+      "Pain out of proportion or rapid spread"
+    ],
+    "must_ask": [
+      {
+        "objective": "Portal of entry",
+        "say": "Was there any cut or injury to the skin there?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Spread rate",
+        "say": "How fast has the redness been spreading?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Any fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Diabetes",
+        "say": "Do you have diabetes?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Pain severity",
+        "say": "How painful is it?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

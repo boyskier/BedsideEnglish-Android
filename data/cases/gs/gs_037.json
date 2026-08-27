@@ -1,0 +1,163 @@
+{
+  "id": "gs_037",
+  "system": "gs",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Mitchell",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "left upper quadrant pain and low BP after car crash",
+  "hpi_details": "A 53-year-old male presents to the emergency department with left upper quadrant pain and low blood pressure following a car crash earlier today. He reports the pain began at the time of the crash and has persisted since.",
+  "ideas": "thinks it might be related to splenic rupture",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "trauma_fast_exam",
+      "title": "Trauma FAST examination",
+      "order_terms": [
+        "fast exam",
+        "fast ultrasound",
+        "efast",
+        "bedside ultrasound",
+        "point of care ultrasound",
+        "pocus"
+      ],
+      "availability_message": "The bedside FAST result is now available; damage-control resuscitation and immediate trauma-surgery involvement should not be delayed for CT in this unstable patient.",
+      "results": [
+        {
+          "id": "left_upper_quadrant_free_fluid",
+          "test": "FAST examination",
+          "value": "Large volume of free intraperitoneal fluid in the left upper quadrant and pelvis, consistent with hemoperitoneum",
+          "flag": "critical",
+          "collected_at": "During emergency bedside assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Traumatic Splenic Rupture evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Traumatic Splenic Rupture is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Traumatic Splenic Rupture emphasizes aggressive fluid/blood resuscitation with laparotomy or embolization as indicated, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: left upper quadrant pain and low BP after car crash",
+      "Key HPI features: A 53-year-old male presents with left upper quadrant pain and low blood pressure following a car crash earlier today; the pain began at the time of the crash and has persisted since.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Traumatic Splenic Rupture.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Traumatic Splenic Rupture.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rib fracture with pulmonary contusion without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Hypotension after trauma — assume ongoing hemorrhage until proven otherwise."
+    ],
+    "management_principles": [
+      "Plan for Traumatic Splenic Rupture: Aggressive fluid/blood resuscitation, laparotomy or embolization",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "A 53-year-old male presents with left upper quadrant pain and low blood pressure following a car crash earlier today. He reports the pain began at the time of the crash and has persisted since.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Traumatic Splenic Rupture.",
+    "assessment": "Assessment consistent with Traumatic Splenic Rupture.",
+    "plan": "Initiate damage-control resuscitation and obtain immediate trauma-surgery involvement. Hemodynamically unstable patients with suspected splenic hemorrhage need operative control; stable patients may undergo CT-based grading and nonoperative management with angioembolization when indicated."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Traumatic Splenic Rupture",
+    "Select appropriate diagnostic workup for Traumatic Splenic Rupture",
+    "Implement evidence-based management plan: Aggressive fluid/blood resuscitation, laparotomy or embolization"
+  ],
+  "teaching": {
+    "diagnosis": "Traumatic Splenic Rupture",
+    "one_liner": "Blunt abdominal trauma tears the spleen, causing left upper quadrant pain, referred left shoulder pain (Kehr's sign), and hemorrhagic shock.",
+    "differentials": [
+      "Rib fracture with pulmonary contusion",
+      "Renal injury",
+      "Diaphragmatic rupture"
+    ],
+    "red_flags": [
+      "Hypotension after trauma — assume ongoing hemorrhage until proven otherwise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism of injury",
+        "say": "Can you tell me exactly what happened in the crash?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "crash",
+          "accident",
+          "trauma"
+        ]
+      },
+      {
+        "objective": "Location of the pain",
+        "say": "Where is the pain — is it on your left side, under your ribs?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "left",
+          "upper"
+        ]
+      },
+      {
+        "objective": "Referred shoulder pain",
+        "say": "Does the pain spread to your left shoulder?",
+        "domains": [
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder"
+        ]
+      },
+      {
+        "objective": "Lightheadedness",
+        "say": "Do you feel dizzy or like you might faint?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizzy",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Loss of consciousness",
+        "say": "Did you lose consciousness at any point?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "consciousness",
+          "passed out"
+        ]
+      }
+    ]
+  }
+}

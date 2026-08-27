@@ -1,0 +1,107 @@
+{
+  "id": "handover_night_shift",
+  "system": "drills",
+  "session_mode": "team_communication",
+  "communication_task": "Handover / escalation",
+  "difficulty": "intermediate",
+  "eval_template": "sbar_handover",
+  "chief_complaint": "SBAR phone handover — new chest-pain admission",
+  "category": "Interprofessional",
+  "patient_name": "Dr. Davis (Night-shift Attending)",
+  "title": "SBAR: Night-shift Admission",
+  "summary": "You are a day-shift intern signing out a newly admitted patient to the night-shift attending. Use the SBAR framework to convey the information.",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "SBAR: Night-shift admission",
+    "task": "Handover / escalation",
+    "urgency": "urgent",
+    "patient": "Mr. John Smith, 65-year-old man",
+    "location": "New admission",
+    "situation": "Presented with two hours of crushing chest pain.",
+    "background": ["Hypertension and type 2 diabetes."],
+    "current_status": ["HR 95/min, BP 150/90 mmHg, SpO2 96% on room air."],
+    "key_data": ["ECG shows ST depressions in V4-V6.", "Troponin is pending."],
+    "treatments": ["Hand over outstanding serial ECG/troponin assessment and monitoring needs."],
+    "your_request": "Give Dr. Davis a concise SBAR and request telemetry, serial ECGs/troponins, and local ACS-pathway review.",
+    "must_include": ["Identity and chest-pain presentation.", "Relevant history, vital signs, ECG, and pending troponin.", "Your assessment and clear overnight plan."]
+  },
+  "suggested_questions": [
+    "Hi Dr. Davis, this is [Your Name]. I have an admission to hand over.",
+    "The patient is a 65-year-old male presenting with chest pain.",
+    "My assessment is possible non-ST-elevation acute coronary syndrome; I recommend telemetry, serial ECGs and troponins, and review of the local ACS pathway."
+  ],
+  "phrase_categories": [
+    {
+      "name": "Situation",
+      "phrases": [
+        "I am calling to hand over.",
+        "I have a new admission for you."
+      ]
+    },
+    {
+      "name": "Background",
+      "phrases": [
+        "He has a history of.",
+        "His vitals are currently stable."
+      ]
+    },
+    {
+      "name": "Assessment",
+      "phrases": [
+        "I suspect he has.",
+        "My working diagnosis is."
+      ]
+    },
+    {
+      "name": "Recommendation",
+      "phrases": [
+        "I recommend we.",
+        "Could you please review his labs when they result?"
+      ]
+    }
+  ],
+  "persona_override": "You are Dr. Davis, a busy and slightly impatient night-shift attending physician. You are receiving a patient handover from an intern over the phone.\n\nYou expect the intern to use the SBAR format (Situation, Background, Assessment, Recommendation).\nIf they ramble or provide disorganised information, interrupt them and say 'Can you get to the point? What is the Situation and what do you want me to do?'\n\nPatient Details (for your reference, the intern should tell you this):\n- Mr. John Smith, 65M.\n- Presented with 2 hours of crushing chest pain.\n- PMH: Hypertension, Type 2 DM.\n- Vitals: HR 95, BP 150/90, SpO2 96% on RA.\n- ECG shows ST depressions in V4-V6.\n- Troponin is pending.\n\nYour behavioral guidelines:\n- Answer the phone quickly: 'Davis here, what's up?'\n- If the intern misses a part of SBAR (e.g. forgets to say their Assessment), ask 'So what do you think is going on?'\n- Once they provide a clear Recommendation (e.g. 'admit for ACS protocol, monitor troponins'), agree and end the call: 'Got it, I'll keep an eye on him. Thanks.' Then the session ends.",
+  "clinical_knowledge": {
+    "topic": "SBAR phone handover — new chest-pain admission evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of SBAR phone handover — new chest-pain admission is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Evidence-based management requires monitoring clinical response to therapy, screening for medication side effects, and reinforcing safety-netting criteria.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: SBAR phone handover — new chest-pain admission",
+      "Clinical presentation and history characteristic of SBAR phone handover — new chest-pain admission"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out SBAR phone handover — new chest-pain admission.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions."
+    ],
+    "management_principles": [
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "SBAR phone handover — new chest-pain admission",
+    "one_liner": "Clinical scenario for evaluation and management of SBAR phone handover — new chest-pain admission."
+  }
+}

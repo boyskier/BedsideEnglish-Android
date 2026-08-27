@@ -1,0 +1,134 @@
+{
+  "id": "neuro_037",
+  "system": "neuro",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Moore",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "sudden loss of consciousness, limb shaking, and tongue biting",
+  "hpi_details": "53-year-old male is brought to the clinic by his wife after she witnessed him suddenly lose consciousness, fall to the floor, and exhibit rhythmic shaking of all four limbs for about 2 minutes. He bit the side of his tongue and was confused and lethargic for 30 minutes afterward.",
+  "ideas": "thinks it might be related to seizure",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_first_seizure_workup",
+      "title": "Emergency first-seizure assessment",
+      "order_terms": ["CT head", "CT brain", "non-contrast CT", "glucose", "sodium", "calcium", "electrolytes", "CMP", "comprehensive metabolic panel"],
+      "availability_message": "Emergency CT and key metabolic results are now available. EEG and MRI remain specialist follow-up investigations.",
+      "results": [
+        {"id": "ct_head", "test": "Non-contrast CT head", "value": "No acute hemorrhage, mass effect, or large territorial infarction", "flag": "normal"},
+        {"id": "glucose", "test": "Serum glucose", "value": "101", "unit": "mg/dL", "reference_range": "70-140", "flag": "normal"},
+        {"id": "sodium", "test": "Serum sodium", "value": "140", "unit": "mEq/L", "reference_range": "135-145", "flag": "normal"},
+        {"id": "calcium", "test": "Serum calcium", "value": "9.1", "unit": "mg/dL", "reference_range": "8.6-10.2", "flag": "normal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Generalized Tonic-Clonic Seizure evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Generalized Tonic-Clonic Seizure is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Generalized Tonic Clonic Seizure: Levetiracetam, EEG, avoid sleep deprivation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden loss of consciousness, limb shaking, and tongue biting",
+      "Key HPI features: witnessed sudden loss of consciousness with generalized rhythmic shaking for about 2 minutes, lateral tongue biting, and 30 minutes of postictal confusion and lethargy.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Generalized Tonic Clonic Seizure.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Generalized Tonic-Clonic Seizure.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Syncope without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: seizure lasting more than 5 minutes, recurrent seizures without recovery of consciousness between them, fever, neck stiffness, altered mental status persisting after the postictal period, focal neurological deficits that don't resolve, or head trauma during the fall."
+    ],
+    "management_principles": [
+      "Plan for Generalized Tonic Clonic Seizure: Levetiracetam, EEG, avoid sleep deprivation",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden loss of consciousness, limb shaking, and tongue biting\n\n53-year-old male is brought to the clinic by his wife after she witnessed him suddenly lose consciousness, fall to the floor, and exhibit rhythmic shaking of all four limbs for about 2 minutes. He bit the side of his tongue and was confused and lethargic for 30 minutes afterward.",
+    "objective": "Vitals normal. Neurological exam reveals a lateral tongue laceration. Currently awake, alert, and oriented x3 with normal cranial nerves, motor, and sensory exams.",
+    "assessment": "First unprovoked Generalized Tonic-Clonic Seizure.",
+    "plan": "Order stat CT head without contrast to rule out acute intracranial hemorrhage or mass. Check comprehensive metabolic panel (calcium, sodium, glucose) and tox screen. Refer to Neurology for EEG and MRI brain. Counsel strictly against driving."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Generalized Tonic Clonic Seizure",
+    "Select appropriate diagnostic workup for Generalized Tonic Clonic Seizure",
+    "Implement evidence-based management plan: Levetiracetam, EEG, avoid sleep deprivation"
+  ],
+  "teaching": {
+    "diagnosis": "Generalized Tonic-Clonic Seizure",
+    "one_liner": "Unprovoked cortical hyper-synchrony causing sudden loss of consciousness, limb shaking, and tongue biting.",
+    "differentials": [
+      "Syncope",
+      "PNES"
+    ],
+    "red_flags": [
+      "Seizure lasting more than 5 minutes, or recurrent seizures without recovery of consciousness between them, indicates status epilepticus and is a medical emergency.",
+      "Fever, neck stiffness, or altered mental status persisting after the postictal period raises concern for CNS infection.",
+      "Persistent focal neurological deficits or head trauma during the fall require urgent neuroimaging."
+    ],
+    "must_ask": [
+      {
+        "objective": "Event description",
+        "say": "What did witnesses see happen?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Tongue biting",
+        "say": "Did you bite your tongue?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Post-ictal confusion",
+        "say": "How confused did you feel afterward?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Triggers",
+        "say": "Were you sleep-deprived or stressed?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Have you had anything like this before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

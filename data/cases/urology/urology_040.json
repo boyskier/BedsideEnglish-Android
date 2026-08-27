@@ -1,0 +1,162 @@
+{
+  "id": "urology_040",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Robinson",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "chronic pelvic pain relieved by urinating, frequency",
+  "hpi_details": "A 62-year-old woman presents with chronic pelvic pain that is relieved by urination and urinary frequency.",
+  "ideas": "thinks it might be related to interstitial_cystitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "bladder_pain_urinalysis",
+      "title": "Urinalysis",
+      "order_terms": ["urinalysis", "urine dip", "urine test", "ua"],
+      "availability_message": "The urinalysis result is now available; the urine culture remains pending.",
+      "results": [
+        {"id": "urine_leukocyte_esterase", "test": "Leukocyte esterase", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_nitrite", "test": "Nitrite", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_blood", "test": "Blood", "value": "Negative", "flag": "normal", "specimen": "Urine"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Interstitial Cystitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Interstitial Cystitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Interstitial cystitis/bladder pain syndrome is a diagnosis of exclusion; begin with education, bladder and dietary strategies, pelvic-floor physical therapy when indicated, and individualized multimodal treatment after excluding infection, hematuria causes, and gynecologic disease.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic pelvic pain relieved by urinating, frequency",
+      "Key HPI features: a 62-year-old woman has chronic pelvic pain relieved by voiding and urinary frequency.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Interstitial Cystitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Interstitial Cystitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Labeling symptoms as bladder pain syndrome without evaluating infection, hematuria, pelvic malignancy, or other gynecologic and gastrointestinal causes."
+    ],
+    "management_principles": [
+      "Start with education, symptom and voiding diaries, dietary/bladder strategies, and pelvic-floor therapy when appropriate; consider medications only through shared decision-making after reviewing adverse effects and contraindications.",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of chronic pelvic pain relieved by urinating, frequency. HPI: interstitial cystitis.",
+    "objective": "Obtain urinalysis and culture; assess for hematuria and perform focused abdominal and pelvic evaluation as indicated. Consider further evaluation for atypical symptoms or malignancy risk.",
+    "assessment": "Possible interstitial cystitis/bladder pain syndrome after exclusion of infection and other urinary, gynecologic, and gastrointestinal causes.",
+    "plan": "Begin education, bladder/dietary trigger review, and a symptom diary; consider pelvic-floor physical therapy and individualized non-opioid symptom management. Refer for persistent, atypical, or red-flag symptoms; do not use antibiotics without evidence of infection."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Interstitial Cystitis",
+    "Select appropriate diagnostic workup for Interstitial Cystitis",
+      "Use an exclusion-based, multimodal management approach for bladder pain syndrome"
+  ],
+  "teaching": {
+    "diagnosis": "Interstitial Cystitis",
+    "one_liner": "Urology evaluation for patient presenting with chronic pelvic pain relieved by urinating, frequency.",
+    "differentials": [
+      "Urinary tract infection",
+      "Overactive bladder",
+      "Endometriosis or chronic pelvic pain syndrome"
+    ],
+    "red_flags": [
+      "Gross hematuria, unexplained weight loss, or a pelvic mass",
+      "Fever, flank pain, or systemic illness suggesting infection or obstruction"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain relationship to bladder filling and voiding",
+        "say": "Does the pain get worse as your bladder fills, and does it improve right after you urinate?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "filling",
+          "relieved",
+          "urination",
+          "pain"
+        ]
+      },
+      {
+        "objective": "Frequency severity and impact",
+        "say": "How many times a day do you need to urinate, and how is that affecting your life?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "frequency",
+          "daily",
+          "impact"
+        ]
+      },
+      {
+        "objective": "Exclude infection - prior culture results",
+        "say": "Have your urine cultures come back negative for infection?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "urine culture",
+          "negative",
+          "infection"
+        ]
+      },
+      {
+        "objective": "Dietary and symptom triggers",
+        "say": "Have you noticed foods or drinks like coffee, alcohol, or spicy food that make the pain worse?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "diet",
+          "triggers",
+          "coffee",
+          "spicy"
+        ]
+      },
+      {
+        "objective": "Duration and chronicity",
+        "say": "How long have you had this pelvic pain and frequency — has it been more than six months?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "chronic",
+          "months",
+          "duration",
+          "years"
+        ]
+      }
+    ]
+  }
+}

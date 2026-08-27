@@ -1,0 +1,88 @@
+{
+  "id": "readback_routine_postop_orders",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Read-back",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "clarify_orders_drill",
+  "patient_name": "Verbal order — routine post-operative diet and activity advance",
+  "chief_complaint": "Take an unhurried, routine verbal order safely, using clarification and read-back",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Verbal order read-back: routine diet and activity advance after uncomplicated appendectomy",
+    "task": "Read-back",
+    "urgency": "routine",
+    "patient": "Mr. Felix Grant, 29-year-old man, post-op day 1 from a laparoscopic appendectomy",
+    "location": "Surgical ward, mid-morning; you are the covering intern taking a phone order from the surgical attending, who is still in clinic",
+    "situation": "The attending is calling with routine, non-urgent orders to advance the patient's diet and activity now that he is recovering well.",
+    "background": [
+      "Uncomplicated laparoscopic appendectomy yesterday for simple appendicitis; no intra-operative complications."
+    ],
+    "current_status": [
+      "Afebrile, tolerating sips of clear fluids, pain controlled on oral analgesia, passing flatus."
+    ],
+    "key_data": [
+      "The order includes a diet advance, an activity change, and a plan for discharge timing — you will need to clarify and read it back."
+    ],
+    "treatments": [
+      "Currently on IV fluids and oral analgesia; no diet advance or activity order yet given."
+    ],
+    "your_request": "Listen to the verbal order, ask for clarification of anything unclear, and read the complete order back accurately before acting on it.",
+    "must_include": [
+      "A request for clarification if any part of the order is unclear or ambiguous.",
+      "An accurate, complete read-back of the diet advance, activity change, and discharge-planning instruction.",
+      "Explicit confirmation from the attending that your read-back is correct before ending the call."
+    ]
+  },
+  "kickoff_text": "Hi, it's Dr. Reyes calling about Mr. Grant. Sounds like he's doing well — let's advance his diet to regular as tolerated, get him up and walking in the hallway with nursing today, and if he's tolerating everything and voiding fine, plan for discharge tomorrow morning. Can you read that back to me?",
+  "persona_override": "You are Dr. Reyes, the surgical attending calling in a routine, unhurried verbal order for Mr. Grant, post-op day 1 from an uncomplicated appendectomy: advance diet to regular as tolerated, ambulate in the hallway with nursing today, and plan for discharge tomorrow morning if he is tolerating diet and voiding normally. Speak calmly and without urgency, the way a routine mid-morning call would sound. If the learner reads the order back completely and accurately (diet, activity, and the discharge-planning condition), confirm warmly: 'That's exactly right, thanks.' If the learner only partially repeats the order (for example, mentions the diet advance but forgets the activity order or the discharge-planning condition), do not simply move on — say something like 'Let's just make sure we've got everything — can you repeat the whole plan back to me?' so the learner practices giving a complete read-back rather than a partial one. Stay pleasant and patient throughout, since there is no time pressure in this call.",
+  "learning_objectives": [
+    "ask for clarification if any part of a routine order is unclear",
+    "accurately read back every element of the order: diet, activity, and the discharge-planning condition",
+    "obtain explicit confirmation that the read-back is correct before ending the call",
+    "practice complete closed-loop communication even when there is no urgency, as a foundation for higher-stakes calls"
+  ],
+  "suggested_questions": [
+    "Just to confirm, could you repeat the diet order — regular as tolerated, is that right?",
+    "Let me read the full plan back: advance his diet to regular as tolerated, get him walking in the hallway with nursing today, and plan discharge tomorrow morning if he's tolerating diet and voiding well.",
+    "Is that everything, or is there anything else you'd like added to the plan before I go write the orders?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Closed-loop verbal order read-back for a routine, non-urgent post-operative diet and activity advance",
+    "review_status": "grounded in AHRQ TeamSTEPPS closed-loop communication principles and standard enhanced-recovery post-appendectomy practice; local order sets apply",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Closed-loop read-back is a habit to build on routine, low-stakes orders, not only on emergencies, so it becomes automatic when it matters most.",
+      "A complete read-back repeats every distinct element of the order, not just the first or most memorable part."
+    ],
+    "diagnostic_clues": [
+      "Afebrile status, tolerating fluids, controlled pain, and passing flatus support a routine diet and activity advance after an uncomplicated appendectomy."
+    ],
+    "common_misconceptions": [
+      "Read-back is only necessary for urgent or high-risk orders.",
+      "Repeating part of an order is an adequate substitute for repeating the whole order."
+    ],
+    "dangerous_errors": [
+      "Omitting part of a multi-part verbal order because the call felt informal or unhurried.",
+      "Writing orders from memory without confirming them with the prescriber first."
+    ],
+    "management_principles": [
+      "Apply the same closed-loop clarify-and-read-back habit to every verbal order, regardless of urgency.",
+      "Confirm each distinct element of a multi-part order separately if needed, rather than summarizing loosely."
+    ],
+    "boundaries_and_exceptions": [
+      "Exact post-operative diet and activity progression depend on the procedure, the surgeon's preference, and local enhanced-recovery protocols."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS Closed-Loop Communication",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/index.html"
+      },
+      {
+        "title": "The Joint Commission: National Patient Safety Goals on Verbal Orders",
+        "url": "https://www.jointcommission.org/standards/national-patient-safety-goals/"
+      }
+    ]
+  }
+}

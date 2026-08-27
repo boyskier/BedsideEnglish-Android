@@ -1,0 +1,141 @@
+{
+  "id": "rheum_003",
+  "system": "rheumatology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "excruciating sudden swelling and redness of the big toe awakening patient at night",
+  "hpi_details": "59M presenting with fiery red, exquisitely tender 1st MTP joint after steak and alcohol binge. Arthrocentesis reveals needle-shaped negatively birefringent uric acid crystals.",
+  "ideas": "thinks this is related to acute podagra gouty arthritis flare",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [{"id":"synovial_crystals","test":"Synovial-fluid crystal analysis","value":"Needle-shaped, strongly negatively birefringent monosodium urate crystals","flag":"abnormal","specimen":"Synovial fluid","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Acute Gouty Arthritis (Podagra) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Gouty Arthritis (Podagra) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Podagra Gouty Arthritis Flare, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating sudden swelling and redness of the big toe awakening patient at night",
+      "Key HPI features: 59M presenting with fiery red, exquisitely tender 1st MTP joint after steak and alcohol binge. Arthrocentesis reveals needle-shaped negatively birefringent uric acid crystals.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Podagra Gouty Arthritis Flare.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Gouty Arthritis (Podagra).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever with joint swelling — must rule out septic arthritis before assuming gout."
+    ],
+    "management_principles": [
+      "For an acute flare, a clinician selects an NSAID, colchicine, or glucocorticoid after considering renal disease, ulcer/bleeding risk, cardiovascular disease, anticoagulants, infection, and drug interactions.",
+      "Joint aspiration with crystal analysis and Gram stain/culture is important when infection is possible; crystals do not rule out infection.",
+      "Discuss hydration, alcohol moderation, trigger reduction, and follow-up to consider urate-lowering therapy for recurrent flares, tophi, CKD, or stones; do not self-start or stop preventive therapy during a flare without clinician advice."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Podagra Gouty Arthritis Flare: excruciating sudden swelling and redness of the big toe awakening patient at night. 59M presenting with fiery red, exquisitely tender 1st MTP joint after steak and alcohol binge. Arthrocentesis reveals needle-shaped negatively birefringent uric acid crystals.",
+    "objective": "Document temperature and full vital signs; examine the 1st MTP for warmth, erythema, effusion, range of motion, skin break, and spreading cellulitis. Arthrocentesis has identified needle-shaped, negatively birefringent monosodium urate crystals; send Gram stain and culture when septic arthritis remains possible.",
+    "assessment": "Acute crystal-proven gout (podagra); assess concurrently for septic arthritis if fever, systemic illness, bacteremia risk, or atypical features are present.",
+    "plan": "1. Provide clinician-selected flare treatment after renal, gastrointestinal, cardiovascular, infection, and interaction review. 2. Escalate urgently for fever, systemic toxicity, rapidly spreading redness, or inability to use the limb; obtain culture/urgent assessment rather than assuming gout excludes infection. 3. Arrange follow-up for serum urate, recurrence prevention, and individualized consideration of urate-lowering therapy."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Podagra Gouty Arthritis Flare",
+    "Formulate prioritized differential diagnosis for excruciating sudden swelling and redness of the big toe awakening patient at night",
+    "Select appropriate laboratory and imaging studies for rheumatology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Gouty Arthritis (Podagra)",
+    "one_liner": "Deposition of needle-shaped monosodium urate crystals in a joint—classically the big toe—causes sudden, excruciating pain, redness, and swelling, often after dietary or alcohol triggers.",
+    "differentials": [
+      "Septic arthritis",
+      "Pseudogout (CPPD)",
+      "Cellulitis"
+    ],
+    "red_flags": [
+      "Fever, rigors, systemic illness, a rapidly worsening hot joint, spreading redness, or inability to bear weight may indicate septic arthritis or cellulitis and needs urgent assessment."
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed",
+        "say": "Did this wake you up in the middle of the night, coming on suddenly?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "night",
+          "sudden",
+          "woke up"
+        ]
+      },
+      {
+        "objective": "Joint location and appearance",
+        "say": "Which joint is it, and how red and swollen is it?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "big toe",
+          "red",
+          "swollen"
+        ]
+      },
+      {
+        "objective": "Dietary and alcohol trigger",
+        "say": "Did you eat a lot of red meat or drink alcohol recently?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "steak",
+          "alcohol",
+          "meat"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior episodes",
+        "say": "Has this happened before, in this or another joint?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "before",
+          "recurrent"
+        ]
+      }
+    ]
+  }
+}

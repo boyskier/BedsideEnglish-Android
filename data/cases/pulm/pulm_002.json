@@ -1,0 +1,164 @@
+{
+  "id": "pulm_002",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Garcia",
+  "age": 29,
+  "gender": "female",
+  "chief_complaint": "coughing up blood twice this morning",
+  "hpi_details": "two episodes of haemoptysis — approximately 2 tablespoons each time, bright red blood mixed with sputum, associated mild right-sided pleuritic chest pain, 3-week history of dry cough and fever, 4kg weight loss over 2 months, night sweats",
+  "ideas": "she recently moved from the Philippines, thinks maybe it's a bad infection from the plane",
+  "concerns": "very frightened, never coughed blood before, worried about TB because her uncle had it",
+  "expectations": "wants to know what's wrong urgently and if she needs to be isolated",
+  "pmh": "asthma as a child, nil current medical conditions",
+  "medications": "salbutamol PRN (rarely uses), oral contraceptive pill",
+  "social_hx": "non-smoker, non-drinker, immigrated from Philippines 6 months ago, healthcare worker (clinic assistant), lives with 4 family members",
+  "investigation_events": [{"id":"urgent_hemoptysis_imaging","title":"Urgent haemoptysis imaging","order_terms":["chest x ray","chest x-ray","cxr"],"availability_message":"The urgent chest radiograph is now available; airborne isolation and microbiologic sampling should continue without delay.","results":[{"id":"chest_xray","test":"Chest radiograph","value":"Right upper-lobe cavitary opacity with adjacent apical infiltrate; no pleural effusion","flag":"critical","collected_at":"During urgent assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Pulmonary Tuberculosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pulmonary Tuberculosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management includes respiratory isolation and public-health notification according to local protocol, appropriate sputum testing and imaging, HIV counselling and testing, and contact tracing. Specialist-directed multidrug treatment is started when indicated after diagnostic assessment and drug-susceptibility considerations.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: coughing up blood twice this morning",
+      "Key HPI features: two episodes of haemoptysis — approximately 2 tablespoons each time, bright red blood mixed with sputum, associated mild right-sided pleuritic chest pain, 3-week history of dry cough and fever, 4kg weight loss over 2 months, night sweats",
+      "Objective/Exam findings: O2 saturation, CXR (apical shadowing, cavitation?), sputum AFB x3, Mantoux/IGRA, HIV test, FBC, CRP. ISOLATE pending results.",
+      "Relevant background/PMH: asthma as a child, nil current medical conditions",
+      "Current medications: salbutamol PRN (rarely uses), oral contraceptive pill"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pulmonary Tuberculosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bronchiectasis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Massive hemoptysis (> 300 mL/24h)."
+    ],
+    "management_principles": [
+      "Respiratory isolation, notify public health, sputum AFB x3 on consecutive days, CXR, IGRA, HIV counselling and testing, contact tracing (4 household contacts + workplace), RIPE therapy if confirmed",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Health Organization: Tuberculosis",
+        "url": "https://www.who.int/health-topics/tuberculosis"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: coughing up blood twice this morning\n\ntwo episodes of haemoptysis — approximately 2 tablespoons each time, bright red blood mixed with sputum, associated mild right-sided pleuritic chest pain, 3-week history of dry cough and fever, 4kg weight loss over 2 months, night sweats",
+    "objective": "O2 saturation, CXR (apical shadowing, cavitation?), sputum AFB x3, Mantoux/IGRA, HIV test, FBC, CRP. ISOLATE pending results.",
+    "assessment": "Pulmonary tuberculosis until proven otherwise. DDx: community acquired pneumonia, bronchiectasis, PE with pulmonary infarction, lung malignancy (less likely at 29).",
+    "plan": "Assess airway, breathing, circulation, haemoptysis volume, and oxygenation urgently; seek emergency care for increasing bleeding, respiratory distress, hypoxemia, hemodynamic instability, or concerning chest pain. Use respiratory isolation and notify public health according to local protocol, obtain appropriate microbiologic testing and imaging, and arrange specialist-guided treatment and contact tracing once indicated."
+  },
+  "learning_objectives": [
+    "Elicit TB risk factors systematically: immigration, contacts, occupation, HIV status",
+    "Handle haemoptysis history sensitively in a frightened patient",
+    "Explain isolation and public health notification appropriately",
+    "Demonstrate cultural sensitivity with an immigrant patient"
+  ],
+  "teaching": {
+    "diagnosis": "Pulmonary Tuberculosis",
+    "one_liner": "Mycobacterium tuberculosis infection causing chronic cough, fever, night sweats, weight loss, and hemoptysis.",
+    "differentials": [
+      "Bronchiectasis",
+      "Lung adenocarcinoma",
+      "Aspergilloma"
+    ],
+    "red_flags": [
+      "Massive hemoptysis (> 300 mL/24h)",
+      "Severe hypoxemia, respiratory distress, or hemodynamic instability",
+      "Increasing bleeding, syncope, or pleuritic chest pain with PE or ACS concern"
+    ],
+    "must_ask": [
+      {
+        "objective": "Chronic cough and hemoptysis duration",
+        "say": "How long have you had this cough, and are you coughing up blood streaks?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "coughing",
+          "blood",
+          "cough",
+          "streaks",
+          "hemoptysis"
+        ]
+      },
+      {
+        "objective": "Night sweats and B symptoms",
+        "say": "Do you wake up drenched in sweat at night or suffer from unexplained low-grade fevers?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweats",
+          "sweat",
+          "drenched",
+          "fevers",
+          "night"
+        ]
+      },
+      {
+        "objective": "Unintentional weight loss",
+        "say": "Have you lost weight rapidly without trying over recent months?",
+        "domains": [
+          "associated_symptoms",
+          "progression"
+        ],
+        "keywords": [
+          "weight",
+          "lost",
+          "slimming",
+          "unintentional",
+          "appetite"
+        ]
+      },
+      {
+        "objective": "Tuberculosis contact and travel history",
+        "say": "Have you been around anyone diagnosed with active tuberculosis or lived in endemic regions?",
+        "domains": [
+          "living_work",
+          "family_hx"
+        ],
+        "keywords": [
+          "tuberculosis",
+          "contact",
+          "endemic",
+          "exposure",
+          "regions"
+        ]
+      },
+      {
+        "objective": "Immunosuppression screen",
+        "say": "Do you have medical conditions or take immunosuppressive medications that lower immunity?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "steroids",
+          "immunosuppressed",
+          "immunity",
+          "hiv",
+          "diabetes"
+        ]
+      }
+    ]
+  }
+}

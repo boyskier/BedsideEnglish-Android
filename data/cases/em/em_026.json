@@ -1,0 +1,162 @@
+{
+  "id": "em_026",
+  "system": "em",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Miller",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "burning chest pain worse lying flat, normal ECG",
+  "hpi_details": "A 20-year-old female presents to the clinic with burning chest pain worse lying flat, normal ecg. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to GERD (acid reflux) causing the chest pain",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "ecg_at_triage",
+      "test": "12-lead ECG",
+      "value": "Normal sinus rhythm at 74 bpm; no acute ST-segment or T-wave changes",
+      "flag": "normal",
+      "collected_at": "At triage"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "serial_troponin",
+      "title": "Serial high-sensitivity troponin T",
+      "order_terms": [
+        "troponin",
+        "cardiac biomarkers",
+        "cardiac enzymes"
+      ],
+      "availability_message": "The serial high-sensitivity troponin T results are now available.",
+      "results": [
+        {
+          "id": "troponin_t_initial",
+          "test": "High-sensitivity troponin T",
+          "value": "4",
+          "unit": "ng/L",
+          "reference_range": "0-14",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At arrival"
+        },
+        {
+          "id": "troponin_t_2_hour",
+          "test": "High-sensitivity troponin T",
+          "value": "4",
+          "unit": "ng/L",
+          "reference_range": "0-14",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "2 hours after the initial sample",
+          "note": "No interval rise"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "GERD-related Chest Pain evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of GERD-related Chest Pain is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Atypical Chest Pain GERD: Obtain ECG, check troponin (normal), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning chest pain worse lying flat, normal ECG",
+      "Key HPI features: A 20-year-old female presents to the clinic with burning chest pain worse lying flat, normal ecg. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Atypical Chest Pain GERD.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out GERD-related Chest Pain.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute coronary syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Radiation to jaw/arm."
+    ],
+    "management_principles": [
+      "Plan for Atypical Chest Pain GERD: Obtain ECG, check troponin (normal)",
+      "GI cocktail, primary care",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of burning chest pain worse lying flat, normal ECG. HPI: GERD.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Atypical Chest Pain GERD.",
+    "assessment": "Condition highly suspicious for Atypical Chest Pain GERD.",
+    "plan": "Evaluate acute coronary syndrome with ECG, risk-appropriate serial troponin testing, and clinical risk stratification; a normal ECG alone does not exclude ischemia. Once serious cardiac disease is appropriately excluded, treat suspected reflux with antacid/acid-suppression therapy and arrange primary-care follow-up. Provide return precautions for exertional pain, radiation, dyspnea, diaphoresis, or worsening symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Atypical Chest Pain GERD",
+    "Select appropriate diagnostic workup for Atypical Chest Pain GERD",
+    "Implement evidence-based management plan: Obtain ECG, check troponin (normal). GI cocktail, primary care"
+  ],
+  "teaching": {
+    "diagnosis": "GERD-related Chest Pain",
+    "one_liner": "Burning chest pain from reflux often worsens lying flat, but a normal ECG alone does not exclude a cardiac cause; evaluate acute coronary syndrome according to clinical risk.",
+    "differentials": [
+      "Acute coronary syndrome"
+    ],
+    "red_flags": [
+      "Radiation to jaw/arm"
+    ],
+    "must_ask": [
+      {
+        "objective": "Position effect",
+        "say": "Is the pain worse lying flat?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Character",
+        "say": "Is it a burning sensation?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Any sweating or arm pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior reflux",
+        "say": "Have you had heartburn before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Relief",
+        "say": "Does anything relieve it?",
+        "domains": [
+          "relieving"
+        ]
+      }
+    ]
+  }
+}

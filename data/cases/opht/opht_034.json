@@ -1,0 +1,157 @@
+{
+  "id": "opht_034",
+  "system": "opht",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thompson",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "excruciating eye pain, steamy cornea, fixed oval pupil",
+  "hpi_details": "A 44-year-old female presents to the clinic with excruciating eye pain, steamy cornea, fixed oval pupil. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to aacg",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "stat_angle_closure_assessment",
+    "title": "Emergency intraocular pressure and angle assessment",
+    "order_terms": ["intraocular pressure", "IOP", "Tonopen", "applanation", "gonioscopy"],
+    "availability_message": "Emergency pressure and gonioscopy results are now available. Pressure-lowering therapy and ophthalmology assessment should proceed immediately.",
+    "results": [
+      {"id": "iop", "test": "Intraocular pressure, affected eye", "value": "58", "unit": "mmHg", "reference_range": "10-21", "flag": "critical"},
+      {"id": "gonioscopy", "test": "Gonioscopy", "value": "Closed iridocorneal angle throughout 360 degrees in the affected eye", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute angle-closure glaucoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute angle-closure glaucoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "This is an ophthalmic emergency: immediately lower intraocular pressure with appropriate topical agents and systemic acetazolamide when not contraindicated, obtain urgent ophthalmology involvement, and arrange definitive laser peripheral iridotomy once the cornea permits.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating eye pain, steamy cornea, fixed oval pupil",
+      "Key HPI features: A 44-year-old female presents to the clinic with excruciating eye pain, steamy cornea, fixed oval pupil. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Acute Angle-Closure Glaucoma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute angle-closure glaucoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Anterior uveitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rock-hard globe."
+    ],
+    "management_principles": [
+      "Treat as an emergency with IOP-lowering therapy while arranging immediate ophthalmology assessment and definitive laser peripheral iridotomy",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: excruciating eye pain, steamy cornea, fixed oval pupil\n\nA 44-year-old female presents to the clinic with excruciating eye pain, steamy cornea, fixed oval pupil. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Acute Angle-Closure Glaucoma.",
+    "assessment": "Condition highly suspicious for Acute Angle-Closure Glaucoma.",
+    "plan": "Treat as an ophthalmic emergency. Start appropriate topical IOP-lowering therapy and systemic acetazolamide if not contraindicated while obtaining immediate ophthalmology assessment; arrange laser peripheral iridotomy once feasible. Assess the fellow eye for prophylactic treatment and provide safety-net advice."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Angle-Closure Glaucoma",
+    "Select appropriate diagnostic workup for Acute Angle-Closure Glaucoma",
+    "Implement evidence-based management plan: STAT drops (Timolol/Brimonidine), IV Acetazolamide, urgent LPI"
+  ],
+  "teaching": {
+    "diagnosis": "Acute angle-closure glaucoma",
+    "one_liner": "Patient with excruciating eye pain, a steamy/hazy cornea, and a fixed mid-dilated oval pupil.",
+    "differentials": [
+      "Anterior uveitis",
+      "Bacterial conjunctivitis",
+      "Migraine"
+    ],
+    "red_flags": [
+      "Rock-hard globe",
+      "Fixed mid-dilated pupil",
+      "Severe pain with nausea/vomiting"
+    ],
+    "must_ask": [
+      {
+        "objective": "Establish which eye is affected and the degree of visual change",
+        "say": "Which eye is painful, and has vision in that eye suddenly become blurred or reduced?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "affected eye",
+          "blurred vision"
+        ]
+      },
+      {
+        "objective": "Characterize the eye pain onset",
+        "say": "How suddenly did this severe pain start?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sudden onset"
+        ]
+      },
+      {
+        "objective": "Ask about halos and visual symptoms",
+        "say": "Are you seeing halos or rainbows around lights?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "halos"
+        ]
+      },
+      {
+        "objective": "Screen for nausea and vomiting",
+        "say": "Do you feel nauseated or have you vomited?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "vomiting"
+        ]
+      },
+      {
+        "objective": "Ask about triggers like dim light",
+        "say": "Were you in a dark room or environment when this started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark room trigger"
+        ]
+      },
+      {
+        "objective": "Explain the emergency IOP-lowering treatment",
+        "say": "This may be an acute glaucoma attack, so we need emergency pressure-lowering treatment and an ophthalmologist immediately to protect your vision.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "emergency IOP reduction"
+        ]
+      }
+    ]
+  }
+}

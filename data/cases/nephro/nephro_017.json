@@ -1,0 +1,129 @@
+{
+  "id": "nephro_017",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Smith",
+  "age": 60,
+  "gender": "female",
+  "chief_complaint": "swelling all over my body and frothy urine",
+  "hpi_details": "60F presents with 2 weeks of worsening swelling in her legs, hands, and face. She also notes her urine looks extremely foamy. She has a history of type 2 diabetes for 15 years.",
+  "ideas": "thinks she is retaining water",
+  "concerns": "worried about heart failure",
+  "expectations": "wants water pills",
+  "pmh": "Type 2 Diabetes, Hypertension",
+  "medications": "Metformin, Amlodipine",
+  "social_hx": "Sedentary",
+  "clinical_knowledge": {
+    "topic": "Nephrotic Syndrome (Diabetic Nephropathy)",
+    "core_concepts": [
+      "Characterized by massive proteinuria (>3.5g/day), hypoalbuminemia, and severe edema.",
+      "Foamy urine is a hallmark of significant proteinuria."
+    ],
+    "diagnostic_clues": [
+      "Anasarca (generalized edema)",
+      "Foamy urine",
+      "Long-standing diabetes"
+    ],
+    "common_misconceptions": [
+      "Prescribing only diuretics without addressing the underlying proteinuria or adding ACEi/ARBs."
+    ],
+    "dangerous_errors": [
+      "Missing the increased risk of DVT/PE in nephrotic syndrome due to loss of antithrombin III."
+    ],
+    "management_principles": [
+      "24hr urine protein or spot UPCR, lipid panel, start ACEi/ARB, diuretics, refer to nephrology."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "60F with long-standing diabetes presents with generalized edema and foamy urine.",
+    "objective": "3+ pitting edema to thighs, periorbital edema. BP 150/90. Urinalysis: 4+ protein, no blood.",
+    "assessment": "Nephrotic Syndrome, likely secondary to diabetic nephropathy.",
+    "plan": "Spot Urine Protein-to-Creatinine ratio. Start Lisinopril, Furosemide. Nephrology consult."
+  },
+  "learning_objectives": [
+    "Identify the clinical signs of nephrotic syndrome and relate it to diabetes."
+  ],
+  "teaching": {
+    "diagnosis": "Nephrotic Syndrome",
+    "one_liner": "Anasarca and foamy urine in a diabetic patient, highly suggestive of nephrotic syndrome.",
+    "differentials": [
+      "Congestive heart failure",
+      "Liver cirrhosis"
+    ],
+    "red_flags": [
+      "Shortness of breath (pulmonary edema or PE)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Edema onset and distribution",
+        "say": "When did the swelling start, and where on your body have you noticed it?",
+        "domains": [
+          "onset_duration",
+          "location"
+        ],
+        "keywords": [
+          "swelling",
+          "edema",
+          "started"
+        ]
+      },
+      {
+        "objective": "Urine appearance",
+        "say": "Have you noticed your urine looking foamy or frothy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "foamy urine",
+          "frothy"
+        ]
+      },
+      {
+        "objective": "Diabetes history and control",
+        "say": "How long have you had diabetes, and how well controlled has your blood sugar been?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "blood sugar",
+          "duration"
+        ]
+      },
+      {
+        "objective": "Weight gain and breathing",
+        "say": "Have you noticed rapid weight gain or any shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight gain",
+          "shortness of breath"
+        ]
+      },
+      {
+        "objective": "Clotting red flags",
+        "say": "Have you had any leg swelling on one side, calf pain, or sudden chest pain?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "DVT",
+          "calf pain",
+          "chest pain"
+        ]
+      }
+    ]
+  }
+}

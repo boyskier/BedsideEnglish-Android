@@ -1,0 +1,144 @@
+{
+  "id": "opht_025",
+  "system": "ophthalmology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Sim",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "gradual, painless clouding of vision and difficulty driving at night",
+  "hpi_details": "72F reports 3 years of progressive, painless clouding and blurring of vision in both eyes. Complains of severe glare from oncoming car headlights when driving at night and colors appearing faded.",
+  "ideas": "thinks she has cataracts and needs surgery",
+  "concerns": "anxious about eye surgery",
+  "expectations": "wants lens replacement evaluation",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine 5mg daily",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [{
+    "id": "same_day_cataract_exam",
+    "title": "Slit-lamp lens examination",
+    "order_terms": ["slit lamp", "slit-lamp", "lens exam", "cataract exam"],
+    "availability_message": "The slit-lamp examination result is now available.",
+    "results": [{"id": "slit_lamp", "test": "Slit-lamp examination", "value": "Bilateral dense nuclear sclerotic lens opacities, right greater than left", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Senile nuclear sclerotic cataracts evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Senile nuclear sclerotic cataracts is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Senile Nuclear Sclerotic Cataracts, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual, painless clouding of vision and difficulty driving at night",
+      "Key HPI features: 72F reports 3 years of progressive, painless clouding and blurring of vision in both eyes. Complains of severe glare from oncoming car headlights when driving at night and colors appearing faded.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Senile Nuclear Sclerotic Cataracts.",
+      "Relevant background/PMH: Hypertension",
+      "Current medications: Amlodipine 5mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Senile nuclear sclerotic cataracts.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Age-related macular degeneration without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden vision loss, eye pain, or redness — atypical for cataracts and requiring urgent ophthalmologic evaluation for another cause."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Senile Nuclear Sclerotic Cataracts",
+      "Perform visual-acuity testing and slit-lamp examination to visualize lens opacification",
+      "Refer to ophthalmology for elective outpatient phacoemulsification and intraocular lens implantation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Senile Nuclear Sclerotic Cataracts. gradual, painless clouding of vision and difficulty driving at night. 72F reports 3 years of progressive, painless clouding and blurring of vision in both eyes. Complains of severe glare from oncoming car headlights when driving at night and colors appearing faded.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Senile Nuclear Sclerotic Cataracts.",
+    "assessment": "Clinical presentation highly suggestive of Senile Nuclear Sclerotic Cataracts.",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Senile Nuclear Sclerotic Cataracts. Perform visual acuity and slit-lamp exam (visualize lens opacification). Refer to ophthalmology for elective outpatient phacoemulsification and intraocular lens implantation. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Senile Nuclear Sclerotic Cataracts.",
+    "Formulate prioritized differential diagnosis for gradual, painless clouding of vision and difficulty driving at night",
+    "Select appropriate laboratory and imaging studies for ophthalmology",
+    "Implement evidence-based acute and long-term management strategies for Senile Nuclear Sclerotic Cataracts."
+  ],
+  "teaching": {
+    "diagnosis": "Senile nuclear sclerotic cataracts",
+    "one_liner": "72F with 3 years of progressive painless bilateral vision clouding, severe night glare, and faded colors.",
+    "differentials": [
+      "Age-related macular degeneration",
+      "Glaucoma",
+      "Diabetic retinopathy"
+    ],
+    "red_flags": [
+      "Sudden vision loss, eye pain, or redness — atypical for cataracts and requiring urgent ophthalmologic evaluation for another cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the vision changes over time",
+        "say": "How has your vision progressively changed over these three years?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "progressive clouding"
+        ]
+      },
+      {
+        "objective": "Ask about night driving glare",
+        "say": "How bad is the glare from oncoming headlights at night?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night glare"
+        ]
+      },
+      {
+        "objective": "Ask about color perception changes",
+        "say": "Have colors seemed faded or less vivid?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faded colors"
+        ]
+      },
+      {
+        "objective": "Address anxiety about surgery",
+        "say": "I understand you're anxious about surgery — what specifically worries you?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "surgery anxiety"
+        ]
+      },
+      {
+        "objective": "Explain the elective surgery process",
+        "say": "This is a very common outpatient surgery to remove the cloudy lens and replace it with a clear artificial one.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "phacoemulsification",
+          "IOL implant"
+        ]
+      }
+    ]
+  }
+}

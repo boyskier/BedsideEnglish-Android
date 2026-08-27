@@ -1,0 +1,140 @@
+{
+  "id": "id_011",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Walker",
+  "age": 30,
+  "gender": "male",
+  "chief_complaint": "fever that keeps getting higher every day, stomach pain, and a pink rash on my chest after coming back from India",
+  "hpi_details": "30M returning from India 2 weeks ago presenting with a continuous, stepwise rising high fever, constipation alternating with diarrhea, diffuse abdominal pain, and a newly developed pink rash on his trunk.",
+  "ideas": "thinks this is related to typhoid fever salmonella enterica serotype typhi",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "clinical_knowledge": {
+    "topic": "Typhoid Fever (Salmonella enterica serotype Typhi) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Typhoid Fever (Salmonella enterica serotype Typhi) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Typhoid Fever Salmonella enterica serotype Typhi, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever that keeps getting higher every day, stomach pain, and a pink rash on my chest after coming back from India",
+      "Key HPI features: 30M with recent travel to India presenting with a 2-week history of stepwise rising fever, GI disturbances, and a pink rash.",
+      "Objective/Exam findings: Vitals show high fever with relative bradycardia (Faget sign). Abdominal exam reveals diffuse tenderness and hepatosplenomegaly. Skin exam shows blanching, salmon-colored macules (rose spots) on the trunk.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Typhoid Fever (Salmonella enterica serotype Typhi).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Malaria without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe abdominal pain or rigidity — risk of intestinal perforation, a feared complication."
+    ],
+    "management_principles": [
+      "Admit to hospital for IV antibiotics (e.g., Ceftriaxone) pending blood, stool, and urine cultures.",
+      "Monitor closely for severe complications such as intestinal perforation or hemorrhage.",
+      "Provide supportive care with IV fluids and antipyretics."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: fever that keeps getting higher every day, stomach pain, and a pink rash on my chest after coming back from India\n\n30M returning from India 2 weeks ago presenting with a continuous, stepwise rising high fever, constipation alternating with diarrhea, diffuse abdominal pain, and a newly developed pink rash on his trunk.",
+    "objective": "Vitals: Temp 39.5C, HR 68 (relative bradycardia), BP 110/70. Abdomen: Mildly distended with diffuse tenderness, hepatosplenomegaly palpable. Skin: Faint blanching, salmon-colored macules (rose spots) on the anterior chest and abdomen.",
+    "assessment": "Typhoid Fever (Salmonella enterica serotype Typhi infection).",
+    "plan": "1. Admit to medicine/infectious disease. 2. Obtain blood, stool, and urine cultures immediately. 3. Start empiric IV Ceftriaxone. 4. Monitor strictly for acute abdominal changes indicative of intestinal perforation."
+  },
+  "learning_objectives": [
+    "Recognize the classic tetrad of Typhoid fever: stepwise fever, relative bradycardia, rose spots, and abdominal symptoms.",
+    "Formulate a prioritized differential diagnosis for a returning traveler with an undifferentiated acute febrile illness.",
+    "Identify the appropriate empiric antibiotic therapy and key complications (e.g., intestinal perforation) of enteric fever."
+  ],
+  "teaching": {
+    "diagnosis": "Typhoid Fever (Salmonella enterica serotype Typhi)",
+    "one_liner": "A systemic bacterial infection from contaminated food or water in endemic regions, causing a stepwise rising fever, relative bradycardia, rose spots, and hepatosplenomegaly.",
+    "differentials": [
+      "Malaria",
+      "Dengue fever",
+      "Viral hepatitis"
+    ],
+    "red_flags": [
+      "Severe abdominal pain or rigidity — risk of intestinal perforation, a feared complication"
+    ],
+    "must_ask": [
+      {
+        "objective": "Travel history",
+        "say": "Where did you travel, and when did you return?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "India",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Fever pattern",
+        "say": "Has the fever been rising day by day, like a staircase?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "stepwise",
+          "rising"
+        ]
+      },
+      {
+        "objective": "GI symptoms",
+        "say": "Have you had constipation or diarrhea?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "constipation",
+          "diarrhea"
+        ]
+      },
+      {
+        "objective": "Rash",
+        "say": "Have you noticed any small pink spots on your chest or abdomen?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "rose spots",
+          "rash"
+        ]
+      },
+      {
+        "objective": "Food and water exposure",
+        "say": "What kind of food or water did you have while traveling — any street food or untreated water?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "food",
+          "water",
+          "street food"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "name": "Korean→English Medical Interpreting Drill",
+  "learner_level": "preclinical",
+  "_note": "Skill drill. Standard metric keys re-pitched: medical_accuracy = meaning fidelity to the Korean source, clinical_reasoning slot = register switching (patient-friendly vs chart English), communication_fluency = speed and naturalness of the rendition.",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Natural English Output",
+      "anchors": {
+        "90-100": "Renditions sound like a native clinician; no Korean-influenced word order or article errors",
+        "70-80": "Occasional minor errors; renditions always sound natural enough",
+        "50-60": "Understandable but noticeably literal or Korean-influenced phrasing",
+        "30-40": "Frequent literal translation; listener must reconstruct the meaning",
+        "10-20": "Renditions are largely word-for-word and hard to follow"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Meaning Fidelity",
+      "anchors": {
+        "90-100": "Every rendition preserves the full clinical meaning of the Korean source — symptoms, time course, doses, qualifiers",
+        "70-80": "Meaning preserved; rare omission of a minor qualifier",
+        "50-60": "Core meaning kept but details (duration, frequency, severity) sometimes dropped",
+        "30-40": "Renditions distort or omit clinically important content",
+        "10-20": "Meaning frequently lost or changed"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Register Switching",
+      "anchors": {
+        "90-100": "Consistently picks the right register — plain English to patients, clinical register for chart/handover lines",
+        "70-80": "Mostly correct register; occasional jargon to a patient or casual wording in a handover",
+        "50-60": "One register used for everything; sometimes inappropriate",
+        "30-40": "Register often mismatched, risking confusion",
+        "10-20": "No awareness of register"
+      }
+    },
+    "communication_fluency": {
+      "label": "Speed & Fluency of Rendition",
+      "anchors": {
+        "90-100": "Starts the English version promptly and delivers it smoothly in one go",
+        "70-80": "Brief hesitation, then a fluent rendition",
+        "50-60": "Noticeable pauses and restarts but completes the rendition",
+        "30-40": "Long silences; renditions fragmented",
+        "10-20": "Unable to produce a rendition without heavy prompting"
+      }
+    },
+    "professionalism": {
+      "label": "Composure & Professionalism",
+      "anchors": {
+        "90-100": "Stays composed on hard items; asks for repetition professionally; self-corrects gracefully",
+        "70-80": "Generally composed; recovers well from misses",
+        "50-60": "Some flustering on misses but keeps going",
+        "30-40": "Visibly derailed by difficult items",
+        "10-20": "Gives up on items without attempting"
+      }
+    }
+  },
+  "checklist": [
+    {
+      "item": "rendered a patient symptom statement with the time course preserved (e.g. 'for three days')",
+      "required": true
+    },
+    {
+      "item": "rendered a medication instruction with dose/frequency intact (e.g. 'twice a day, after meals')",
+      "required": true
+    },
+    {
+      "item": "used patient-friendly plain English for at least one doctor-to-patient instruction",
+      "required": true
+    },
+    {
+      "item": "used clinical register for at least one chart/handover line (e.g. 'a 65-year-old man with a history of…')",
+      "required": true
+    },
+    {
+      "item": "asked for repetition or clarification in English when needed, instead of going silent",
+      "required": false
+    },
+    {
+      "item": "self-corrected a literal/Konglish phrasing into a natural one",
+      "required": false
+    }
+  ],
+  "reference_output_type": "none"
+}

@@ -1,0 +1,135 @@
+{
+  "id": "hemato_027",
+  "system": "hemato",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lopez",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "fatigue, tingling in hands, and macrocytic indices",
+  "hpi_details": "68-year-old female presents with progressive fatigue, shortness of breath on exertion, and bilateral symmetrical tingling (paresthesias) in her hands and feet for 6 months. She also reports a sore, smooth, beefy red tongue.",
+  "ideas": "thinks it might be related to b12 deficiency",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Vitamin B12 Deficiency Anemia (Pernicious Anemia) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Vitamin B12 Deficiency Anemia (Pernicious Anemia) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes IM vitamin B12 injections and checking methylmalonic acid level, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Progressive fatigue and exertional dyspnea",
+      "Bilateral symmetrical paresthesias of hands and feet",
+      "Sore, smooth, beefy red tongue (glossitis)",
+      "Macrocytic red cell indices"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Vitamin B12 Deficiency Anemia (Pernicious Anemia).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Folate deficiency without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Gait instability or significant neurological deficits — B12 deficiency can cause irreversible nerve damage if untreated."
+    ],
+    "management_principles": [
+      "IM Vitamin B12 injections; check methylmalonic acid level",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68F presenting with chronic fatigue, glossitis, and symmetric peripheral paresthesias.",
+    "objective": "Pale conjunctivae. Smooth, erythematous tongue. Neurological exam reveals decreased vibratory sense and proprioception in bilateral lower extremities. Positive Romberg sign. Labs: Hb 9.5 g/dL, MCV 115 fL (macrocytic), Hypersegmented neutrophils.",
+    "assessment": "Vitamin B12 Deficiency Anemia (Pernicious Anemia).",
+    "plan": "Check serum B12 levels, MMA, and intrinsic factor antibodies. Initiate IM Vitamin B12 (cyanocobalamin) injections. Monitor potassium during initial replacement."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Vitamin B12 Deficiency Anemia",
+    "Select appropriate diagnostic workup for Vitamin B12 Deficiency Anemia",
+    "Implement evidence-based management plan: IM Vitamin B12 injections, check methylmalonic acid level"
+  ],
+  "teaching": {
+    "diagnosis": "Vitamin B12 Deficiency Anemia (Pernicious Anemia)",
+    "one_liner": "Inadequate B12 — from a vegan diet or impaired absorption (pernicious anemia) — causes macrocytic anemia with fatigue and neurological symptoms like tingling in the hands.",
+    "differentials": [
+      "Folate deficiency",
+      "Hypothyroidism",
+      "Myelodysplastic syndrome"
+    ],
+    "red_flags": [
+      "Gait instability or significant neurological deficits — B12 deficiency can cause irreversible nerve damage if untreated"
+    ],
+    "must_ask": [
+      {
+        "objective": "Neurological symptoms",
+        "say": "Do you have any tingling or numbness in your hands or feet?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tingling",
+          "numbness"
+        ]
+      },
+      {
+        "objective": "Dietary history",
+        "say": "What does your typical diet look like — do you eat meat, eggs, or dairy?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "vegan",
+          "diet",
+          "meat"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Balance and coordination",
+        "say": "Have you had any trouble with balance or walking?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "balance",
+          "walking"
+        ]
+      },
+      {
+        "objective": "GI history",
+        "say": "Have you had any stomach surgery or digestive conditions?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "stomach surgery"
+        ]
+      }
+    ]
+  }
+}

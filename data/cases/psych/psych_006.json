@@ -1,0 +1,170 @@
+{
+  "id": "psych_006",
+  "system": "psychiatry",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Foster",
+  "age": 50,
+  "gender": "male",
+  "chief_complaint": "confusion, severe truncal ataxia, and bilateral lateral rectus palsy in a chronic heavy alcohol user (Wernicke Encephalopathy)",
+  "hpi_details": "50M with severe alcohol use disorder brought to emergency department by neighbors who found him stumbling and confused in the hallway. Patient is unable to walk independently due to severe imbalance. Speech is slurred and disoriented to time and place. Denies recent head trauma. Has lived alone and consumed 1 liter of vodka daily with minimal food intake for the past 3 weeks.",
+  "ideas": "too disoriented to express clear history; confabulates stories about having just returned from a work trip",
+  "concerns": "neighbors worried he suffered a stroke or head injury",
+  "expectations": "needs urgent emergency department stabilization and thiamine protocol",
+  "pmh": "Severe Alcohol Use Disorder, Alcoholic liver disease, Peripheral neuropathy",
+  "medications": "None",
+  "social_hx": "Unemployed, chronic heavy alcohol consumer",
+  "investigation_events": [
+    {
+      "id": "wernicke_emergency_checks",
+      "title": "Immediate altered-mental-status results",
+      "order_terms": ["fingerstick glucose", "point of care glucose", "poc glucose", "blood glucose", "head ct", "ct head"],
+      "availability_message": "The immediate glucose and head CT results are now available; parenteral thiamine must not be delayed while awaiting investigations.",
+      "results": [
+        {"id": "fingerstick_glucose", "test": "Point-of-care glucose", "value": "78", "unit": "mg/dL", "reference_range": "70-99 fasting", "flag": "normal", "specimen": "Capillary blood", "collected_at": "At emergency presentation"},
+        {"id": "ct_head", "test": "Non-contrast CT head", "value": "No acute intracranial hemorrhage or acute territorial infarction", "flag": "normal", "collected_at": "During emergency assessment"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Wernicke Encephalopathy (Thiamine / Vitamin B1 Deficiency) in severe alcohol withdrawal risk evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Wernicke Encephalopathy (Thiamine / Vitamin B1 Deficiency) in severe alcohol withdrawal risk is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent medical stabilization and parenteral thiamine, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: confusion, severe truncal ataxia, and bilateral lateral rectus palsy in a chronic heavy alcohol user (Wernicke Encephalopathy)",
+      "Key HPI features: 50M with severe alcohol use disorder brought to emergency department by neighbors who found him stumbling and confused in the hallway. Patient is unable to walk independently due to severe imbalance. Speech is slurred and disoriented to time and place. Denies recent head trauma. Has lived alone and consumed 1 liter of vodka daily with minimal food intake for the past 3 weeks.",
+      "Objective/Exam findings: Vitals: HR 104, BP 110/68, Temp 36.6C. Neurological exam reveals: 1. Oculomotor: bilateral CN VI (lateral rectus) palsy with horizontal and vertical nystagmus and conjugate gaze paresis. 2. Cerebellar: severe wide-based truncal ataxia (unable to stand or walk without two-person support). 3. Encephalopathy: disoriented to date and location, lethargic, with confabulation when questioned on recent events. Fingerstick glucose 78 mg/dL. Head CT negative for intracranial hemorrhage or acute infarction.",
+      "Relevant background/PMH: Severe Alcohol Use Disorder, Alcoholic liver disease, Peripheral neuropathy"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Wernicke Encephalopathy (Thiamine / Vitamin B1 Deficiency) in severe alcohol withdrawal risk.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Adjustment disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute suicidal or homicidal ideation."
+    ],
+    "management_principles": [
+      "Urgent medical stabilization and parenteral thiamine",
+      "Give parenteral thiamine urgently under the local hospital protocol, with monitoring and correction of associated nutritional/electrolyte deficiencies",
+      "Administer thiamine promptly before or concurrently with carbohydrate when feasible; do not delay glucose for clinically significant hypoglycemia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "50M malnourished chronic alcohol user presenting with acute onset of classic triad: encephalopathy, cerebellar ataxia, and oculomotor dysfunction.",
+    "objective": "Vitals: HR 104, BP 110/68, Temp 36.6C. Neurological exam reveals: 1. Oculomotor: bilateral CN VI (lateral rectus) palsy with horizontal and vertical nystagmus and conjugate gaze paresis. 2. Cerebellar: severe wide-based truncal ataxia (unable to stand or walk without two-person support). 3. Encephalopathy: disoriented to date and location, lethargic, with confabulation when questioned on recent events. Fingerstick glucose 78 mg/dL. Head CT negative for intracranial hemorrhage or acute infarction.",
+    "assessment": "Acute Wernicke Encephalopathy (Thiamine / Vitamin B1 Deficiency) in severe alcohol withdrawal risk.",
+    "plan": "Transfer for urgent medically supervised stabilization. Give parenteral thiamine under the local hospital protocol, with monitoring and correction of magnesium, folate, and other nutritional/electrolyte deficiencies. Administer thiamine before or with carbohydrate when feasible, but never delay treatment of clinically significant hypoglycemia. Monitor and treat alcohol withdrawal in a setting capable of frequent observation; use an objective or fixed-dose protocol with close monitoring when delirium makes symptom scoring unreliable. Obtain collateral history because the patient lacks capacity for a reliable independent history."
+  },
+  "learning_objectives": [
+    "Recognize the classic clinical triad of Wernicke Encephalopathy (encephalopathy/confusion, oculomotor dysfunction/CN VI palsy, and cerebellar truncal ataxia)",
+    "Administer IV thiamine promptly in malnourished or alcohol-dependent patients, while recognizing that treatment of clinically significant hypoglycemia must not be delayed",
+    "Differentiate reversible Wernicke Encephalopathy from irreversible Korsakoff Syndrome (characterized by chronic anterograde/retrograde amnesia and prominent confabulation)",
+    "Outline CIWA-Ar symptom-triggered benzodiazepine protocols for managing concurrent acute alcohol withdrawal syndrome"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Wernicke Encephalopathy (Thiamine / Vitamin B1 Deficiency) in severe alcohol withdrawal risk.",
+    "one_liner": "Psychiatric evaluation for patient presenting with confusion, severe truncal ataxia, and bilateral lateral rectus palsy in a chronic heavy alcohol user (Wernicke Encephalopathy).",
+    "differentials": [
+      "Alcohol withdrawal delirium",
+      "Hepatic encephalopathy",
+      "Subdural hematoma",
+      "Stroke",
+      "Hypoglycemia"
+    ],
+    "red_flags": [
+      "Altered consciousness, inability to protect the airway, seizure, or autonomic instability",
+      "Delirium with falls risk or inability to participate in a reliable symptom assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Alcohol history and last drink",
+        "say": "How much alcohol do you drink each day, and when was your last drink?",
+        "domains": [
+          "substances"
+        ],
+        "keywords": [
+          "alcohol",
+          "drinking",
+          "last drink",
+          "daily",
+          "vodka"
+        ]
+      },
+      {
+        "objective": "Nutritional status",
+        "say": "Have you been eating regularly, or mostly drinking without much food?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "eating",
+          "food",
+          "nutrition",
+          "appetite",
+          "meals"
+        ]
+      },
+      {
+        "objective": "Ataxia and balance",
+        "say": "Have you had trouble walking steadily or felt off-balance recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "balance",
+          "walking",
+          "ataxia",
+          "unsteady",
+          "falling"
+        ]
+      },
+      {
+        "objective": "Confusion and eye findings",
+        "say": "Have you noticed double vision, and do you know where you are and what day it is?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "vision",
+          "confused",
+          "disoriented",
+          "double vision",
+          "eyes"
+        ]
+      },
+      {
+        "objective": "Withdrawal seizure history",
+        "say": "Have you ever had seizures or hallucinations when you stopped drinking before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "seizures",
+          "hallucinations",
+          "withdrawal",
+          "delirium tremens",
+          "shakes"
+        ]
+      }
+    ]
+  }
+}

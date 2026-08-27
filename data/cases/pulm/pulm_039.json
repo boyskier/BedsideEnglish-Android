@@ -1,0 +1,153 @@
+{
+  "id": "pulm_039",
+  "system": "pulm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Williams",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "unexplained weight loss, cough, and new lung mass in smoker",
+  "hpi_details": "A 59-year-old male presents to the clinic with unexplained weight loss, cough, and new lung mass in smoker. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to lung_cancer",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Current cigarette smoker; pack-year history not yet quantified. Social drinker.",
+  "available_results": [{"id":"chest_imaging","test":"Recent chest imaging","value":"New 4.2 cm spiculated right upper-lobe lung mass","flag":"critical","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Lung Adenocarcinoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Lung Adenocarcinoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "A new lung mass requires prompt, clinician-led imaging, tissue diagnosis when appropriate, staging, and multidisciplinary evaluation; diagnosis and treatment should not be presumed from imaging alone.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: unexplained weight loss, cough, and new lung mass in smoker",
+      "Key HPI features: A 59-year-old male presents to the clinic with unexplained weight loss, cough, and new lung mass in smoker. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Lung Adenocarcinoma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Lung Adenocarcinoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Community-acquired pneumonia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Arrange urgent pulmonology/oncology evaluation for diagnostic imaging, safe tissue acquisition when appropriate, and staging after confirmation.",
+      "Provide smoking-cessation support and assess symptoms of airway compromise, hypoxemia, massive hemoptysis, and metastatic disease.",
+      "Escalate immediately for severe hypoxemia, respiratory distress, massive hemoptysis, new focal neurologic deficits, or chest pain concerning for ACS or PE."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": []
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of unexplained weight loss, cough, and new lung mass in smoker. HPI: malignancy, tobacco smoke.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Lung Adenocarcinoma.",
+    "assessment": "Condition highly suspicious for Lung Adenocarcinoma.",
+    "plan": "Arrange urgent pulmonology/oncology evaluation for diagnostic imaging, tissue acquisition when appropriate, and staging after confirmation. Offer smoking-cessation support. Seek emergency care for severe hypoxemia, respiratory distress, massive hemoptysis, focal neurologic deficits, or concerning chest pain."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Lung Adenocarcinoma",
+    "Select appropriate diagnostic workup for Lung Adenocarcinoma",
+    "Describe urgent diagnostic evaluation and multidisciplinary referral for a new lung mass"
+  ],
+  "teaching": {
+    "diagnosis": "Lung Adenocarcinoma",
+    "one_liner": "Pulmonology case presenting with unexplained weight loss, cough, and new lung mass in smoker.",
+    "differentials": [
+      "Pulmonary tuberculosis",
+      "Metastatic disease from another primary",
+      "Benign lung nodule (granuloma or hamartoma)"
+    ],
+    "red_flags": [
+      "Severe hypoxemia (SpO2 < 90%)",
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Unintentional weight loss and its timeline",
+        "say": "How much weight have you lost, and over what period of time, without trying?",
+        "domains": [
+          "associated_symptoms",
+          "onset_duration"
+        ],
+        "keywords": [
+          "weight loss",
+          "unintentional",
+          "timeline",
+          "amount",
+          "unexplained"
+        ]
+      },
+      {
+        "objective": "Smoking history in pack-years",
+        "say": "How many years have you smoked, and how many cigarettes a day on average?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "smoking",
+          "pack-years",
+          "cigarettes",
+          "history",
+          "quit"
+        ]
+      },
+      {
+        "objective": "Cough character change and haemoptysis",
+        "say": "Has your cough changed recently, and have you noticed any blood when you cough?",
+        "domains": [
+          "character",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "cough change",
+          "haemoptysis",
+          "blood",
+          "new cough",
+          "persistent"
+        ]
+      },
+      {
+        "objective": "Metastatic symptom screen: bone pain, headache, focal weakness",
+        "say": "Have you had any new bone pain, headaches, or weakness anywhere in your body?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bone pain",
+          "headache",
+          "weakness",
+          "metastasis",
+          "neurological"
+        ]
+      },
+      {
+        "objective": "Occupational carcinogen exposure history",
+        "say": "Have you ever worked around asbestos, radon, or other chemical fumes?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "asbestos",
+          "radon",
+          "occupational",
+          "carcinogen",
+          "exposure"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "id": "ns_008",
+  "system": "neurosurgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Harris",
+  "age": 82,
+  "gender": "male",
+  "chief_complaint": "fluctuating confusion, lethargy, and right-sided weakness 4 weeks after minor head bump against car door",
+  "hpi_details": "82M on chronic anticoagulation for atrial fibrillation brought by family due to 1-week history of fluctuating mental status, lethargy, slurred speech, and progressive weakness in right arm and leg. Family recalls patient bumped his head against the car door frame 4 weeks ago without immediate symptoms or loss of consciousness.",
+  "ideas": "family thinks he suffered an ischemic stroke or rapid vascular dementia",
+  "concerns": "family worried because he sleeps 18 hours a day and cannot feed himself with right hand",
+  "expectations": "wants urgent brain CT scan and reversal of blood thinners if bleeding is found",
+  "pmh": "Atrial Fibrillation, Hypertension, Chronic Kidney Disease Stage 3",
+  "medications": "Apixaban 5mg BID, Metoprolol 25mg BID, Lisinopril 10mg daily",
+  "social_hx": "Retired postal worker, non-smoker",
+  "investigation_events": [{
+    "id": "stat_chronic_subdural_ct",
+    "title": "Emergency head CT",
+    "order_terms": ["CT head", "CT brain", "non-contrast CT"],
+    "availability_message": "The emergency CT result is now available. Anticoagulant reversal and neurosurgical consultation should proceed without delay.",
+    "results": [{"id": "ct_head", "test": "Non-contrast CT head", "value": "Large left convexity crescentic hypo- to isodense subdural collection, 1.8 cm thick, with 9 mm rightward midline shift and left lateral ventricular effacement", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Chronic Subdural Hematoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Subdural Hematoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Hold Apixaban immediately, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fluctuating confusion, lethargy, and right-sided weakness 4 weeks after minor head bump against car door",
+      "Key HPI features: 82M on chronic anticoagulation for atrial fibrillation brought by family due to 1-week history of fluctuating mental status, lethargy, slurred speech, and progressive weakness in right arm and leg. Family recalls patient bumped his head against the car door frame 4 weeks ago without immediate symptoms or loss of consciousness.",
+      "Objective/Exam findings: Vitals: HR 74 (irregularly irregular), BP 146/82. GCS 13 (E3 V4 M6). Mild right facial droop, right upper extremity pronator drift, 3/5 motor strength in right arm and leg. Non-contrast head CT reveals a large crescent-shaped (concavoconvex) hypodense-to-isodense extra-axial fluid collection over the left cerebral convexity measuring 1.8 cm thickness with 9 mm rightward midline shift and effacement of left lateral ventricle.",
+      "Relevant background/PMH: Atrial Fibrillation, Hypertension, Chronic Kidney Disease Stage 3",
+      "Current medications: Apixaban 5mg BID, Metoprolol 25mg BID, Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Subdural Hematoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute ischemic stroke without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as anticoagulant use with head trauma, which warrants urgent evaluation; reversal is indicated for clinically significant intracranial bleeding."
+    ],
+    "management_principles": [
+      "Hold Apixaban immediately",
+      "Administer Andexanet alfa (or 4-factor Prothrombin Complex Concentrate - 4F-PCC if Andexanet unavailable) to reverse Factor Xa inhibition",
+      "Urgent neurosurgery consultation for left burr hole drainage or twist-drill craniostomy with closed drainage catheter placement to evacuate chronic subdural fluid under local/general anesthesia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "82M on direct oral anticoagulation presenting with subacute fluctuating encephalopathy and focal hemiparesis 4 weeks post-minor head trauma.",
+    "objective": "Vitals: HR 74 (irregularly irregular), BP 146/82. GCS 13 (E3 V4 M6). Mild right facial droop, right upper extremity pronator drift, 3/5 motor strength in right arm and leg. Non-contrast head CT reveals a large crescent-shaped (concavoconvex) hypodense-to-isodense extra-axial fluid collection over the left cerebral convexity measuring 1.8 cm thickness with 9 mm rightward midline shift and effacement of left lateral ventricle.",
+    "assessment": "Symptomatic Left Chronic Subdural Hematoma (cSDH) with mass effect and midline shift in anticoagulated elderly patient.",
+    "plan": "Hold Apixaban immediately. Administer Andexanet alfa (or 4-factor Prothrombin Complex Concentrate - 4F-PCC if Andexanet unavailable) to reverse Factor Xa inhibition. Urgent neurosurgery consultation for left burr hole drainage or twist-drill craniostomy with closed drainage catheter placement to evacuate chronic subdural fluid under local/general anesthesia."
+  },
+  "learning_objectives": [
+    "Recognize typical clinical presentation of chronic subdural hematoma in elderly anticoagulated patients following minor or remote head trauma",
+    "Differentiate crescent-shaped (concavoconvex) subdural hematoma morphology from biconvex epidural hematoma on head CT",
+    "Understand emergency reversal protocols for direct oral anticoagulants (Factor Xa inhibitors via Andexanet alfa or 4F-PCC) prior to surgical intervention",
+    "Describe surgical evacuation techniques via burr hole drainage and middle meningeal artery embolization"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Subdural Hematoma",
+    "one_liner": "A slow venous bleed under the skull, often from a trivial head bump weeks earlier in an elderly patient on blood thinners, causing gradually worsening confusion and one-sided weakness; clinically significant bleeding requires anticoagulant reversal before surgery.",
+    "differentials": [
+      "Acute ischemic stroke",
+      "Vascular dementia progression",
+      "Intracranial tumor"
+    ],
+    "red_flags": [
+      "Anticoagulant use with head trauma warrants urgent evaluation; reversal is indicated for clinically significant intracranial bleeding"
+    ],
+    "must_ask": [
+      {
+        "objective": "Head trauma history",
+        "say": "Did he bump his head at any point in the past month?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "car door",
+          "weeks ago"
+        ]
+      },
+      {
+        "objective": "Anticoagulant use",
+        "say": "Is he taking a blood thinner for his heart rhythm?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "apixaban",
+          "blood thinner"
+        ]
+      },
+      {
+        "objective": "Symptom progression",
+        "say": "How has his mental status and weakness changed, and does it fluctuate?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "fluctuating"
+        ]
+      },
+      {
+        "objective": "Functional impact",
+        "say": "How much sleeping and how much help does he need now?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "18 hours",
+          "feed himself"
+        ]
+      },
+      {
+        "objective": "Speech",
+        "say": "Has his speech become slurred?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

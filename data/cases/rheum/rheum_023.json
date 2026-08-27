@@ -1,0 +1,119 @@
+{
+  "id": "rheum_023",
+  "system": "rheumatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Huh",
+  "age": 29,
+  "gender": "female",
+  "chief_complaint": "facial rash, joint pain, hair loss, and fatigue worsening over 3 months",
+  "hpi_details": "29F presents with 3 months of worsening fatigue, pain in hand and wrist joints, increased hair shedding, and a red rash across her cheeks and nose that flares up after sun exposure.",
+  "ideas": "thinks she has a severe skin allergy or lupus",
+  "concerns": "worried about internal organ involvement",
+  "expectations": "wants complete autoimmune workup",
+  "pmh": "No significant history",
+  "medications": "None",
+  "social_hx": "Graduate student, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Systemic Lupus Erythematosus (SLE) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Systemic Lupus Erythematosus (SLE) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Systemic Lupus Erythematosus (SLE), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: facial rash, joint pain, hair loss, and fatigue worsening over 3 months",
+      "Key HPI features: 29F presents with 3 months of worsening fatigue, pain in hand and wrist joints, increased hair shedding, and a red rash across her cheeks and nose that flares up after sun exposure.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Systemic Lupus Erythematosus (SLE).",
+      "Relevant background/PMH: No significant history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Systemic Lupus Erythematosus (SLE).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Dermatomyositis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Foamy urine or swelling — kidney involvement."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Systemic Lupus Erythematosus (SLE)",
+      ": Check ANA, anti-dsDNA, anti-Smith antibodies, complement levels, and urinalysis (to screen for lupus nephritis)",
+      "Prompt rheumatology-directed management is required; emergency assessment is needed for nephritis, neurologic symptoms, chest pain/dyspnea, severe cytopenia symptoms, or other organ-threatening disease."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Systemic Lupus Erythematosus (SLE). facial rash, joint pain, hair loss, and fatigue worsening over 3 months. 29F presents with 3 months of worsening fatigue, pain in hand and wrist joints, increased hair shedding, and a red rash across her cheeks and nose that flares up after sun exposure.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Systemic Lupus Erythematosus (SLE).",
+    "assessment": "Clinical presentation highly suggestive of Systemic Lupus Erythematosus (SLE).",
+    "plan": "Confirm the syndrome with targeted testing rather than ANA alone: CBC, creatinine/eGFR, urinalysis with microscopy and urine protein quantification, complements, anti-dsDNA, and other serology as clinically indicated. Urgent same-day assessment is needed for reduced urine output, edema/foamy urine, hypertension, neurologic symptoms, chest pain/dyspnea, or severe illness. Rheumatology should direct hydroxychloroquine, glucocorticoids, or immunosuppressants with pregnancy planning, eye screening, infection review, and laboratory monitoring."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Systemic Lupus Erythematosus (SLE).",
+    "Formulate prioritized differential diagnosis for facial rash, joint pain, hair loss, and fatigue worsening over 3 months",
+    "Select appropriate laboratory and imaging studies for rheumatology",
+    "Implement evidence-based acute and long-term management strategies for Systemic Lupus Erythematosus (SLE)."
+  ],
+  "teaching": {
+    "diagnosis": "Systemic Lupus Erythematosus (SLE)",
+    "one_liner": "A multisystem autoimmune disease causing a sun-sensitive facial rash, joint pain, hair loss, and fatigue — needs screening for internal organ, especially kidney, involvement.",
+    "differentials": [
+      "Dermatomyositis",
+      "Rosacea (for the rash alone)"
+    ],
+    "red_flags": [
+      "Foamy urine or swelling — kidney involvement"
+    ],
+    "must_ask": [
+      {
+        "objective": "Rash and sun sensitivity",
+        "say": "Does your facial rash worsen with sun exposure?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Hair loss",
+        "say": "How much hair are you losing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Joint symptoms",
+        "say": "Which joints hurt?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Urine changes",
+        "say": "Any foaminess in your urine?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many months has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

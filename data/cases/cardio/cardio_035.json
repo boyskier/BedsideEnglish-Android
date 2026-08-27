@@ -1,0 +1,181 @@
+{
+  "id": "cardio_035",
+  "system": "cardio",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Gonzalez",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "left calf swelling, warmth, and throbbing pain after knee surgery",
+  "hpi_details": "A 47-year-old male presents to the clinic with left calf swelling, warmth, and throbbing pain after knee surgery. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to dvt",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "dvt_compression_ultrasound",
+      "title": "Compression ultrasound of the left leg",
+      "order_terms": ["compression ultrasound", "venous ultrasound", "Doppler ultrasound", "leg ultrasound"],
+      "availability_message": "The left-leg compression ultrasound report is now available.",
+      "results": [
+        {
+          "id": "ultrasound_proximal_dvt",
+          "test": "Compression venous ultrasound",
+          "value": "Non-compressible left popliteal vein with intraluminal thrombus extending into the distal femoral vein",
+          "unit": "",
+          "reference_range": "Veins fully compressible with normal flow",
+          "flag": "positive",
+          "collected_at": "During today's assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Deep Vein Thrombosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Deep Vein Thrombosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Deep Vein Thrombosis: Order compression ultrasound, start therapeutic anticoagulation for 3 months, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: left calf swelling, warmth, and throbbing pain after knee surgery",
+      "Key HPI features: A 47-year-old male presents to the clinic with left calf swelling, warmth, and throbbing pain after knee surgery. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Deep Vein Thrombosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Deep Vein Thrombosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cellulitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain, breathlessness, or coughing blood — pulmonary embolism."
+    ],
+    "management_principles": [
+      "Plan for Deep Vein Thrombosis: Order compression ultrasound, start therapeutic anticoagulation for 3 months",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "CHEST Guideline: Antithrombotic Therapy for VTE Disease",
+        "url": "https://journal.chestnet.org/article/S0012-3692(21)01506-3/fulltext"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of left calf swelling, warmth, and throbbing pain after knee surgery. HPI: venous stasis, hypercoagulability.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Deep Vein Thrombosis.",
+    "assessment": "Condition highly suspicious for Deep Vein Thrombosis.",
+    "plan": "Plan for Deep Vein Thrombosis: Order compression ultrasound, start therapeutic anticoagulation for 3 months. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Deep Vein Thrombosis",
+    "Select appropriate diagnostic workup for Deep Vein Thrombosis",
+    "Implement evidence-based management plan: Order compression ultrasound, start therapeutic anticoagulation for 3 months"
+  ],
+  "teaching": {
+    "diagnosis": "Deep Vein Thrombosis",
+    "one_liner": "A clot in a deep leg vein: unilateral swelling, warmth and calf tenderness. The reason it matters is the lung it can travel to.",
+    "differentials": [
+      "Cellulitis",
+      "Ruptured Baker's cyst",
+      "Superficial thrombophlebitis"
+    ],
+    "red_flags": [
+      "Chest pain, breathlessness, or coughing blood — pulmonary embolism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Unilateral versus bilateral",
+        "say": "Is it just the one leg, or both?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "one",
+          "leg",
+          "both",
+          "only"
+        ]
+      },
+      {
+        "objective": "Recent immobility, travel or surgery",
+        "say": "Have you had a long flight, an operation, or been off your feet recently?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "flight",
+          "travel",
+          "surgery",
+          "operation",
+          "bed",
+          "immobile",
+          "cast"
+        ]
+      },
+      {
+        "objective": "Malignancy and clotting history",
+        "say": "Have you had cancer, or a clot before?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "cancer",
+          "clot",
+          "thrombosis",
+          "family"
+        ]
+      },
+      {
+        "objective": "Other prothrombotic risk factors",
+        "say": "Are you on testosterone therapy, or do you have any condition that makes your blood clot more easily?",
+        "domains": [
+          "medications",
+          "pmh"
+        ],
+        "keywords": [
+          "testosterone",
+          "hormone",
+          "clotting",
+          "thrombophilia"
+        ]
+      },
+      {
+        "objective": "Chest symptoms",
+        "say": "Have you had any chest pain or shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chest",
+          "pain",
+          "breath",
+          "breathless",
+          "cough"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "When did it start, and how long does it last each time?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

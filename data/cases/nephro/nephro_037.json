@@ -1,0 +1,118 @@
+{
+  "id": "nephro_037",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Brown",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "bilateral flank pain, hypertension, and family history",
+  "hpi_details": "A 53-year-old male presents to the clinic with bilateral flank pain, hypertension, and family history. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be the same kidney disease that runs in his family",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Autosomal Dominant Polycystic Kidney Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Autosomal Dominant Polycystic Kidney Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes strict blood pressure control with an ACE inhibitor or ARB and consideration of tolvaptan for patients with rapidly progressive disease, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bilateral flank pain, hypertension, and family history",
+      "Key HPI features: A 53-year-old male presents to the clinic with bilateral flank pain, hypertension, and family history. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 158/96, HR 78. Bilateral flank fullness with palpable, irregular masses on deep abdominal palpation; no peritoneal signs. Labs: Serum creatinine 1.4 mg/dL, eGFR 58 mL/min/1.73m2, urinalysis with microscopic hematuria, no significant proteinuria. Renal ultrasound: bilaterally enlarged kidneys with multiple cysts of varying sizes replacing normal parenchyma.",
+      "Relevant background/PMH: Unremarkable; strong family history of polycystic kidney disease"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Autosomal Dominant Polycystic Kidney Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple renal cysts (non-hereditary) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden severe pain — could indicate cyst rupture or hemorrhage."
+    ],
+    "management_principles": [
+      "Start an ACE inhibitor or ARB for strict blood pressure control to slow cyst growth and disease progression",
+      "Assess eligibility for tolvaptan in patients with rapidly progressive disease, with required liver-function monitoring",
+      "Screen for intracranial aneurysm if there is a family history of aneurysm or hemorrhage, screen for hepatic cysts, and refer to nephrology/genetics for family counseling"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: bilateral flank pain, hypertension, and family history\n\nA 53-year-old male presents to the clinic with bilateral flank pain, hypertension, and family history. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: BP 158/96, HR 78. Bilateral flank fullness with palpable, irregular masses on deep abdominal palpation; no peritoneal signs. Labs: Serum creatinine 1.4 mg/dL, eGFR 58 mL/min/1.73m2, urinalysis with microscopic hematuria, no significant proteinuria. Renal ultrasound: bilaterally enlarged kidneys with multiple cysts of varying sizes replacing normal parenchyma.",
+    "assessment": "Autosomal dominant polycystic kidney disease, based on bilateral flank pain, hypertension, a strong family history, and bilaterally enlarged cystic kidneys on imaging.",
+    "plan": "Confirm disease extent and assess kidney function and progression risk. Control blood pressure, commonly with a renin-angiotensin-system blocker when appropriate. Consider tolvaptan only for adults with evidence of rapidly progressive ADPKD after specialist assessment and with required liver-function monitoring and counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Polycystic Kidney Disease",
+    "Select appropriate diagnostic workup for Polycystic Kidney Disease",
+    "Implement evidence-based management plan: Strict blood pressure control (ACEi), Tolvaptan for progression"
+  ],
+  "teaching": {
+    "diagnosis": "Autosomal Dominant Polycystic Kidney Disease",
+    "one_liner": "A genetic disorder (PKD1/PKD2 mutation) causing progressive cyst growth in both kidneys, presenting with bilateral flank pain and hypertension, usually with a strong family history.",
+    "differentials": [
+      "Simple renal cysts (non-hereditary)",
+      "Bilateral kidney stones"
+    ],
+    "red_flags": [
+      "Sudden severe pain — could indicate cyst rupture or hemorrhage"
+    ],
+    "must_ask": [
+      {
+        "objective": "Family history",
+        "say": "Does polycystic kidney disease run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Pain character",
+        "say": "Where is the flank pain, and is it on both sides?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Blood pressure",
+        "say": "Do you have high blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Hematuria",
+        "say": "Any blood in your urine?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Other organ involvement",
+        "say": "Have you ever been checked for cysts in your liver, or aneurysms in your brain?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

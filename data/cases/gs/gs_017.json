@@ -1,0 +1,174 @@
+{
+  "id": "gs_017",
+  "system": "general_surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Evans",
+  "age": 60,
+  "gender": "male",
+  "chief_complaint": "painless jaundice and weight loss",
+  "hpi_details": "60M presents with progressive yellowing of his skin and eyes over 3 weeks, dark urine, pale stools, and a 15-pound unintentional weight loss.",
+  "ideas": "thinks it's a liver problem",
+  "concerns": "worried it might be cancer",
+  "expectations": "wants imaging and blood tests",
+  "pmh": "Smoker (30 pack-years)",
+  "medications": "None",
+  "social_hx": "Smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_pancreatic_obstruction_workup",
+      "title": "Urgent obstructive jaundice results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "liver function tests",
+        "lfts",
+        "bilirubin",
+        "alkaline phosphatase",
+        "ct pancreas",
+        "pancreas protocol ct",
+        "ct abdomen"
+      ],
+      "availability_message": "The urgent liver tests and pancreas-protocol CT are now available; specialist referral should proceed without waiting for tumor-marker testing.",
+      "results": [
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "9.2",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "alkaline_phosphatase",
+          "test": "Alkaline phosphatase",
+          "value": "534",
+          "unit": "U/L",
+          "reference_range": "44-147",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "ct_pancreas",
+          "test": "Pancreas-protocol CT",
+          "value": "3.1 cm hypoenhancing mass in the pancreatic head causing abrupt common bile duct and pancreatic duct cutoff with upstream biliary dilatation; no definite liver metastasis",
+          "flag": "critical",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Pancreatic Cancer",
+    "core_concepts": [
+      "Painless jaundice + weight loss = pancreatic head mass until proven otherwise."
+    ],
+    "diagnostic_clues": [
+      "Painless jaundice",
+      "Courvoisier's sign (palpable non-tender gallbladder)"
+    ],
+    "common_misconceptions": [
+      "Assuming gallstones without pain in painless jaundice."
+    ],
+    "dangerous_errors": [
+      "Delaying CT/MRI in older patients with painless jaundice."
+    ],
+    "management_principles": [
+      "CT abdomen (pancreatic protocol), surgical oncology consultation for Whipple evaluation."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "60M with painless jaundice, dark urine, pale stool, and weight loss.",
+    "objective": "Scleral icterus, palpable non-tender gallbladder in RUQ.",
+    "assessment": "Suspected pancreatic head or periampullary malignancy.",
+    "plan": "STAT CT Pancreas protocol, LFTs, CA 19-9, GI and Surgery consult."
+  },
+  "learning_objectives": [
+    "Recognize painless jaundice as a hallmark of malignant biliary obstruction."
+  ],
+  "teaching": {
+    "diagnosis": "Pancreatic Cancer",
+    "one_liner": "Painless jaundice, weight loss, and a palpable gallbladder (Courvoisier sign) highly concerning for a pancreatic head tumor.",
+    "differentials": [
+      "Cholangiocarcinoma",
+      "Choledocholithiasis"
+    ],
+    "red_flags": [
+      "Weight loss",
+      "Painless jaundice"
+    ],
+    "must_ask": [
+      {
+        "objective": "Jaundice onset and progression",
+        "say": "When did you first notice the yellowing of your skin and eyes, and has it gotten worse?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "jaundice",
+          "yellow",
+          "worsening"
+        ]
+      },
+      {
+        "objective": "Pain presence",
+        "say": "Have you had any pain in your belly or back, or has the jaundice been completely painless?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "painless",
+          "pain",
+          "back"
+        ]
+      },
+      {
+        "objective": "Urine and stool color",
+        "say": "Have you noticed your urine getting darker or your stools becoming pale or clay-colored?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark urine",
+          "pale stool",
+          "clay"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost weight without trying?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight loss",
+          "unintentional"
+        ]
+      },
+      {
+        "objective": "Itching",
+        "say": "Have you had any itching all over your skin?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "itching",
+          "pruritus"
+        ]
+      }
+    ]
+  }
+}

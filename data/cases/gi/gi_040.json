@@ -1,0 +1,221 @@
+{
+  "id": "gi_040",
+  "system": "gi",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Moore",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "progressive fatigue, pale skin, and dark tarry stools for 2 weeks",
+  "hpi_details": "A 62-year-old female presents to the clinic with progressive fatigue, pale skin, and dark tarry stools for 2 weeks. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to an upper GI bleed",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_upper_gi_bleed_labs",
+      "title": "STAT upper gastrointestinal bleed laboratory results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "urea",
+        "bun",
+        "renal function",
+        "coagulation studies",
+        "coagulation panel",
+        "type and crossmatch",
+        "crossmatch"
+      ],
+      "availability_message": "The STAT upper gastrointestinal bleed laboratory results are now available; IV access and stabilization should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "7.6",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "blood_urea_nitrogen",
+          "test": "Blood urea nitrogen",
+          "value": "34",
+          "unit": "mg/dL",
+          "reference_range": "7-20",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "0.9",
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.1",
+          "reference_range": "0.8-1.2",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Upper Gastrointestinal Bleeding (NSAID-Induced Gastric Ulcer) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Upper Gastrointestinal Bleeding (NSAID-Induced Gastric Ulcer) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes admitting the patient and checking CBC with type and cross, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive fatigue, pale skin, and dark tarry stools for 2 weeks",
+      "Key HPI features: A 62-year-old female presents to the clinic with progressive fatigue, pale skin, and dark tarry stools for 2 weeks. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Upper Gastrointestinal Bleeding.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Upper Gastrointestinal Bleeding (NSAID-Induced Gastric Ulcer).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Variceal haemorrhage without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Progressive fatigue and pallor over two weeks — suggests significant chronic blood loss and anaemia."
+    ],
+    "management_principles": [
+      "Assess hemodynamic stability, secure IV access, admit, check CBC, type and cross",
+      "Hold NSAIDs, start high-dose IV PPI, schedule EGD",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of progressive fatigue, pale skin, and dark tarry stools for 2 weeks. HPI: NSAID-induced gastric ulcer bleeding.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Upper Gastrointestinal Bleeding.",
+    "assessment": "Condition highly suspicious for Upper Gastrointestinal Bleeding.",
+    "plan": "Assess hemodynamic stability (vital signs, orthostatics) and secure IV access; transfuse packed red cells if indicated. Admit, check CBC with type and cross. Hold NSAIDs, start high-dose IV PPI, and schedule EGD within 24 hours. Consult gastroenterology and counsel the patient on NSAID avoidance."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Upper Gastrointestinal Bleeding",
+    "Select appropriate diagnostic workup for Upper Gastrointestinal Bleeding",
+    "Implement evidence-based management plan: Admit, check CBC, type and cross. Hold NSAIDs, start high-dose IV PPI, schedule EGD"
+  ],
+  "teaching": {
+    "diagnosis": "Upper Gastrointestinal Bleeding (NSAID-Induced Gastric Ulcer)",
+    "one_liner": "An NSAID-damaged ulcer in the stomach bleeds slowly over days, causing progressive fatigue, pale skin from anaemia, and black, tarry stools.",
+    "differentials": [
+      "Variceal haemorrhage",
+      "Gastric malignancy",
+      "Mallory-Weiss tear"
+    ],
+    "red_flags": [
+      "Progressive fatigue and pallor over two weeks — suggests significant chronic blood loss and anaemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Stool description",
+        "say": "Can you describe the stool — is it black, tarry, and sticky?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "black",
+          "tarry",
+          "stool",
+          "sticky"
+        ]
+      },
+      {
+        "objective": "NSAID use",
+        "say": "How often do you take painkillers like ibuprofen?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "painkillers",
+          "tablets"
+        ]
+      },
+      {
+        "objective": "Fatigue and breathlessness",
+        "say": "Have you felt more tired, or short of breath climbing stairs?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "tired",
+          "breathless",
+          "stairs",
+          "exhausted"
+        ]
+      },
+      {
+        "objective": "Vomiting blood",
+        "say": "Have you vomited any blood, or anything like coffee grounds?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomit",
+          "blood",
+          "coffee"
+        ]
+      },
+      {
+        "objective": "Epigastric pain",
+        "say": "Do you have any pain in your upper stomach area?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "stomach",
+          "pain",
+          "upper",
+          "epigastric"
+        ]
+      },
+      {
+        "objective": "Prior ulcer history",
+        "say": "Have you ever had a stomach ulcer before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ulcer",
+          "gastroscopy",
+          "history"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,203 @@
+{
+  "id": "nephro_001",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Allen",
+  "age": 64,
+  "gender": "male",
+  "chief_complaint": "decreased urine output and rising creatinine after contrast CT scan",
+  "hpi_details": "64M with baseline chronic kidney disease stage 3 (creatinine 1.6 mg/dL) underwent contrast-enhanced CT angiography of lower extremities for claudication 48 hours ago. Now reports oligarchic urine output (<300 mL/day), peripheral ankle puffiness, and general malaise.",
+  "ideas": "thinks the dye from his CT scan poisoned his kidneys",
+  "concerns": "worried he will need emergency dialysis right away",
+  "expectations": "wants IV fluids to flush the kidney dye out",
+  "pmh": "CKD stage 3a (baseline eGFR 45), hypertension, peripheral artery disease",
+  "medications": "Lisinopril 20mg, Atorvastatin 40mg",
+  "social_hx": "Retired plumber, ex-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_acute_kidney_injury_workup",
+      "title": "Urgent acute kidney injury results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "renal function",
+        "creatinine",
+        "bun",
+        "urea",
+        "electrolytes",
+        "metabolic panel",
+        "urinalysis",
+        "urine microscopy",
+        "urine sediment"
+      ],
+      "availability_message": "The urgent acute kidney injury results are now available; nephrotoxin withdrawal, fluid assessment, and close monitoring should not be delayed.",
+      "results": [
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "3.4",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment",
+          "note": "Baseline 1.6 mg/dL"
+        },
+        {
+          "id": "blood_urea_nitrogen",
+          "test": "Blood urea nitrogen",
+          "value": "54",
+          "unit": "mg/dL",
+          "reference_range": "7-20",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "5.1",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "urine_microscopy",
+          "test": "Urine sediment microscopy",
+          "value": "Numerous muddy brown granular casts and renal tubular epithelial cells",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Contrast-Induced Acute Kidney Injury (Acute Tubular Necrosis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Contrast-Induced Acute Kidney Injury (Acute Tubular Necrosis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Discontinue nephrotoxic agents (hold Lisinopril/NSAIDs), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: decreased urine output and rising creatinine after contrast CT scan",
+      "Key HPI features: 64M with baseline chronic kidney disease stage 3 (creatinine 1.6 mg/dL) underwent contrast-enhanced CT angiography of lower extremities for claudication 48 hours ago. Now reports oligarchic urine output (<300 mL/day), peripheral ankle puffiness, and general malaise.",
+      "Objective/Exam findings: Vitals normal. Mild bilateral pedal edema. Bloods: Serum Creatinine jumped from baseline 1.6 to 3.4 mg/dL; BUN 54 mg/dL; K+ 5.1 mEq/L. Urine microscopy shows muddy brown granular casts and renal tubular epithelial cells, FENA > 2% consistent with acute tubular necrosis (ATN).",
+      "Relevant background/PMH: CKD stage 3a (baseline eGFR 45), hypertension, peripheral artery disease",
+      "Current medications: Lisinopril 20mg, Atorvastatin 40mg"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Contrast-Induced Acute Kidney Injury (Acute Tubular Necrosis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Prerenal AKI from dehydration without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Anuria (no urine output at all) — suggests a more severe or different process."
+    ],
+    "management_principles": [
+      "Discontinue nephrotoxic agents (hold Lisinopril/NSAIDs)",
+      "Provide isotonic IV crystalloid hydration (0.9% NaCl)",
+      "Monitor strict intake/output, daily electrolytes, and acid-base status"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "64M with baseline CKD stage 3 presenting with acute kidney injury (oliguria, creatinine spike) 48 hours post-iodinated contrast exposure.",
+    "objective": "Vitals normal. Mild bilateral pedal edema. Bloods: Serum Creatinine jumped from baseline 1.6 to 3.4 mg/dL; BUN 54 mg/dL; K+ 5.1 mEq/L. Urine microscopy shows muddy brown granular casts and renal tubular epithelial cells, FENA > 2% consistent with acute tubular necrosis (ATN).",
+    "assessment": "Contrast-Induced Acute Kidney Injury (CI-AKI) manifesting as Acute Tubular Necrosis (ATN).",
+    "plan": "Discontinue nephrotoxic agents (hold Lisinopril/NSAIDs). Provide isotonic IV crystalloid hydration (0.9% NaCl). Monitor strict intake/output, daily electrolytes, and acid-base status. Avoid repeat contrast exposures. Supportive care; prognosis good for recovery within 7-14 days."
+  },
+  "learning_objectives": [
+    "Identify risk factors for contrast-induced acute kidney injury (baseline CKD, diabetes, volume depletion)",
+    "Interpret urine microscopy and fractional excretion of sodium (FENA > 2%, muddy brown casts) in ATN",
+    "Implement evidence-based preventive volume expansion protocols prior to contrast procedures",
+    "Formulate supportive inpatient care and nephrotoxin avoidance strategies during acute renal failure"
+  ],
+  "teaching": {
+    "diagnosis": "Contrast-Induced Acute Kidney Injury (Acute Tubular Necrosis)",
+    "one_liner": "IV contrast dye can directly injure kidney tubules in patients with reduced baseline kidney function, causing a rise in creatinine and reduced urine output 24-72 hours after the scan.",
+    "differentials": [
+      "Prerenal AKI from dehydration",
+      "Cholesterol embolization syndrome (post-catheterization)",
+      "Progression of underlying CKD"
+    ],
+    "red_flags": [
+      "Anuria (no urine output at all) — suggests a more severe or different process"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to the contrast scan",
+        "say": "When did you have the CT scan with dye, and when did the swelling and low urine start?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "CT scan",
+          "dye",
+          "48 hours"
+        ]
+      },
+      {
+        "objective": "Urine output change",
+        "say": "How much urine have you been passing compared to normal?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "urine output",
+          "decreased"
+        ]
+      },
+      {
+        "objective": "Baseline kidney function",
+        "say": "Did you know you had kidney problems before this scan?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "kidney disease",
+          "CKD"
+        ]
+      },
+      {
+        "objective": "Medications around the time of the scan",
+        "say": "Were you taking any blood pressure pills or pain relievers around the time of the scan?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "lisinopril",
+          "nsaid"
+        ]
+      },
+      {
+        "objective": "Swelling and malaise",
+        "say": "Where is the swelling, and how has your energy been?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swelling",
+          "malaise"
+        ]
+      }
+    ]
+  }
+}

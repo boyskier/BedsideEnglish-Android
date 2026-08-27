@@ -1,0 +1,145 @@
+{
+  "id": "cs_003",
+  "system": "cardiothoracic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Clark",
+  "age": 75,
+  "gender": "male",
+  "chief_complaint": "exertional syncope, severe shortness of breath when climbing stairs, and angina in elderly man with loud systolic murmur",
+  "hpi_details": "75M presents with 6-month history of worsening dyspnea on exertion and chest tightness when walking up inclines. Yesterday experienced sudden loss of consciousness (syncope) while carrying groceries up steps, recovering fully within 2 minutes without neuro deficits. Reports sleeping on 3 pillows due to orthopnea.",
+  "ideas": "thinks he is getting old and out of shape or having minor dizzy spells",
+  "concerns": "worried because he fainted on the stairs and could have broken his neck",
+  "expectations": "wants his heart valves checked and fixed so he can walk without blacking out",
+  "pmh": "Hypertension, Chronic Kidney Disease Stage 3a",
+  "medications": "Lisinopril 20mg daily, Furosemide 20mg daily",
+  "social_hx": "Retired mechanic, former smoker",
+  "available_results": [
+    {
+      "id": "echo_severe_calcific_as",
+      "test": "Transthoracic echocardiogram",
+      "value": "Peak aortic velocity 4.6 m/s; mean gradient 52 mmHg; valve area 0.65 cm2; LVEF 48%",
+      "unit": "",
+      "reference_range": "Valve area >1.5 cm2; mean gradient <20 mmHg; LVEF 50-70%",
+      "flag": "critical",
+      "collected_at": "Before surgical consultation"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Symptomatic Calcific Aortic Stenosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Symptomatic Calcific Aortic Stenosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit for urgent heart team multidisciplinary evaluation (Cardiothoracic Surgery and Interventional Cardiology), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: exertional syncope, severe shortness of breath when climbing stairs, and angina in elderly man with loud systolic murmur",
+      "Key HPI features: 75M presents with 6-month history of worsening dyspnea on exertion and chest tightness when walking up inclines. Yesterday experienced sudden loss of consciousness (syncope) while carrying groceries up steps, recovering fully within 2 minutes without neuro deficits. Reports sleeping on 3 pillows due to orthopnea.",
+      "Objective/Exam findings: Vitals: HR 68, BP 112/82 (narrow pulse pressure). Carotid upstrokes delayed and diminished in amplitude (pulsus parvus et tardus). Auscultation reveals a harsh, Grade 4/6 late-peaking crescendo-decrescendo systolic ejection murmur loudest at right second intercostal space radiating to bilateral carotid arteries, with diminished/absent A2 heart sound. Transthoracic echocardiogram confirms Severe Calcific Aortic Stenosis: peak aortic jet velocity 4.6 m/s, mean transvalvular gradient 52 mmHg, and aortic valve area (AVA) 0.65 cm2 (normal > 2.0 cm2). Left ventricular ejection fraction (LVEF) 48%.",
+      "Relevant background/PMH: Hypertension, Chronic Kidney Disease Stage 3a",
+      "Current medications: Lisinopril 20mg daily, Furosemide 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Symptomatic Calcific Aortic Stenosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Coronary artery disease alone without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Exertional syncope — one of the three classic symptoms and a marker of high mortality risk if untreated."
+    ],
+    "management_principles": [
+      "Admit for urgent heart team multidisciplinary evaluation (Cardiothoracic Surgery and Interventional Cardiology)",
+      "Perform pre-operative coronary angiography and CT TAVR protocol",
+      "Given age 75, CKD, and anatomy, evaluate suitability for Transcatheter Aortic Valve Replacement (TAVR) vs Surgical Aortic Valve Replacement (SAVR)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/valvular-heart-disease-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "75M presenting with classic symptomatic triad of severe aortic stenosis: angina, syncope, and heart failure (dyspnea/orthopnea).",
+    "objective": "Vitals: HR 68, BP 112/82 (narrow pulse pressure). Carotid upstrokes delayed and diminished in amplitude (pulsus parvus et tardus). Auscultation reveals a harsh, Grade 4/6 late-peaking crescendo-decrescendo systolic ejection murmur loudest at right second intercostal space radiating to bilateral carotid arteries, with diminished/absent A2 heart sound. Transthoracic echocardiogram confirms Severe Calcific Aortic Stenosis: peak aortic jet velocity 4.6 m/s, mean transvalvular gradient 52 mmHg, and aortic valve area (AVA) 0.65 cm2 (normal > 2.0 cm2). Left ventricular ejection fraction (LVEF) 48%.",
+    "assessment": "Severe Symptomatic Calcific Aortic Valve Stenosis with poor prognosis without mechanical intervention.",
+    "plan": "Admit for urgent heart team multidisciplinary evaluation (Cardiothoracic Surgery and Interventional Cardiology). Perform pre-operative coronary angiography and CT TAVR protocol. Given age 75, CKD, and anatomy, evaluate suitability for Transcatheter Aortic Valve Replacement (TAVR) vs Surgical Aortic Valve Replacement (SAVR). Avoid hypotension and use diuretics or vasodilators cautiously with monitoring when clinically necessary."
+  },
+  "learning_objectives": [
+    "Recognize the classic prognostic triad of severe aortic stenosis (angina = 5 yr survival, syncope = 3 yr survival, heart failure = 2 yr survival without replacement)",
+    "Correlate physical exam findings (pulsus parvus et tardus, late-peaking systolic murmur radiating to carotids, absent A2) with hemodynamic severity of AS",
+    "Interpret echocardiographic thresholds for severe aortic stenosis (jet velocity > 4.0 m/s, mean gradient > 40 mmHg, AVA < 1.0 cm2)",
+    "Compare Heart Team selection criteria between TAVR and SAVR based on surgical risk and anatomical factors"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Symptomatic Calcific Aortic Stenosis",
+    "one_liner": "Progressive calcification narrows the aortic valve, and once symptoms appear — exertional breathlessness, angina, or syncope — prognosis is poor without valve replacement (surgical or transcatheter).",
+    "differentials": [
+      "Coronary artery disease alone",
+      "Hypertrophic cardiomyopathy",
+      "Vasovagal syncope"
+    ],
+    "red_flags": [
+      "Exertional syncope — one of the three classic symptoms and a marker of high mortality risk if untreated"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptom triad",
+        "say": "Do you get chest tightness, breathlessness, or dizziness when you exert yourself?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "exertion",
+          "chest tightness",
+          "dizziness"
+        ]
+      },
+      {
+        "objective": "Syncope details",
+        "say": "Tell me exactly what happened when you fainted on the stairs.",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "syncope",
+          "fainted"
+        ]
+      },
+      {
+        "objective": "Orthopnea",
+        "say": "How many pillows do you need to sleep comfortably?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pillows",
+          "orthopnea"
+        ]
+      },
+      {
+        "objective": "Progression",
+        "say": "How has your breathlessness changed over the past six months?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "The patient's fear",
+        "say": "What worries you most about the fainting episode?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

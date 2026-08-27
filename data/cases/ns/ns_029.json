@@ -1,0 +1,129 @@
+{
+  "id": "ns_029",
+  "system": "ns",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Thompson",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "gradual confusion, headache, and walking unsteadiness",
+  "hpi_details": "A 29-year-old male presents to the clinic with gradual confusion, headache, and walking unsteadiness. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to chronic_sdh",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "urgent_chronic_subdural_ct",
+    "title": "Urgent non-contrast head CT",
+    "order_terms": ["CT head", "CT brain", "non-contrast CT"],
+    "availability_message": "The urgent CT result is now available. Neurosurgical input is required promptly.",
+    "results": [{"id": "ct_head", "test": "Non-contrast CT head", "value": "Right convexity crescentic mixed-density subdural hematoma, 1.4 cm thick, with 6 mm leftward midline shift", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Chronic Subdural Hematoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Subdural Hematoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Progressive confusion, headache, and gait unsteadiness require urgent assessment and non-contrast head CT; chronic subdural hematoma is a consideration but is less typical in a young adult without trauma or bleeding risk factors.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual confusion, headache, and walking unsteadiness",
+      "Key HPI features: A 29-year-old male presents to the clinic with gradual confusion, headache, and walking unsteadiness. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Chronic Subdural Hematoma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Subdural Hematoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Dementia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: declining consciousness, focal deficits, or anticoagulant use, which require urgent CT imaging and neurosurgical referral rather than being attributed to dementia."
+    ],
+    "management_principles": [
+      "Arrange urgent emergency evaluation with non-contrast head CT and focused neurologic assessment.",
+      "Obtain neurosurgical input if imaging confirms a clinically significant subdural hematoma or there is neurologic deterioration; drainage is determined by imaging and clinical status.",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of gradual confusion, headache, and walking unsteadiness. HPI: symptoms may reflect a slowly accumulating subdural collection from torn bridging veins.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Chronic Subdural Hematoma.",
+    "assessment": "Progressive altered cognition, headache, and gait unsteadiness require urgent evaluation. Chronic subdural hematoma is a differential diagnosis, alongside other intracranial and systemic causes.",
+    "plan": "Arrange urgent emergency evaluation with non-contrast head CT and focused neurologic assessment. Obtain neurosurgical input if imaging confirms a clinically significant subdural hematoma or there is neurologic deterioration; drainage is determined by imaging and clinical status."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Chronic Subdural Hematoma",
+    "Select appropriate diagnostic workup for Chronic Subdural Hematoma",
+    "Recognize indications for urgent head CT and conditional neurosurgical management"
+  ],
+  "teaching": {
+    "diagnosis": "Suspected intracranial pathology (evaluate urgently for chronic subdural hematoma)",
+    "one_liner": "A slowly accumulating subdural collection, often from torn bridging veins after head trauma, can cause gradual confusion, headache, and unsteadiness.",
+    "differentials": [
+      "Intracranial mass lesion",
+      "CNS infection or encephalitis",
+      "Dementia"
+    ],
+    "red_flags": [
+      "Rapidly declining level of consciousness or GCS",
+      "New focal neurological deficit (e.g., hemiparesis)",
+      "Anticoagulant or antiplatelet use",
+      "Signs of raised intracranial pressure (vomiting, papilledema, unequal pupils) — requires urgent CT and neurosurgical referral"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fall history",
+        "say": "Did you have a fall recently?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Confusion",
+        "say": "How has your thinking changed?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Headache",
+        "say": "Do you have a constant headache?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Gait",
+        "say": "Has your walking become unsteady?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Anticoagulation",
+        "say": "Are you on a blood thinner?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

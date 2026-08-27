@@ -1,0 +1,124 @@
+{
+  "id": "endo_013",
+  "system": "endocrinology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Moore",
+  "age": 39,
+  "gender": "female",
+  "chief_complaint": "facial puffiness, central weight gain, and purple stretch marks",
+  "hpi_details": "39F with 1-year history of moon facies, buffalo hump, violaceous abdominal striae, and proximal weakness. Elevated 24h urinary cortisol.",
+  "ideas": "thinks this is related to cushing disease pituitary adenoma",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id":"urinary_free_cortisol","test":"24-hour urinary free cortisol","value":"284","unit":"ug/24 h","reference_range":"4-50","flag":"high","specimen":"Urine","collected_at":"Before this encounter"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Cushing's Disease (pituitary ACTH-secreting adenoma) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cushing's Disease (pituitary ACTH-secreting adenoma) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirmatory biochemical testing (low-dose dexamethasone suppression, 24-hour urinary free cortisol) followed by pituitary MRI, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: facial puffiness, central weight gain, and purple stretch marks",
+      "Key HPI features: 39F with 1-year history of moon facies, buffalo hump, violaceous abdominal striae, and proximal weakness. Elevated 24h urinary cortisol.",
+      "Objective/Exam findings: Vitals: BP 148/92, HR 80. Facial plethora, dorsocervical fat pad (buffalo hump), wide violaceous abdominal striae, proximal muscle weakness. Bloods: 24-hour urinary free cortisol elevated; low-dose dexamethasone suppression test fails to suppress cortisol; Plasma ACTH normal/elevated (suggesting ACTH-dependent Cushing's).",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cushing's Disease (pituitary ACTH-secreting adenoma).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Adrenal Cushing's syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New severe hypertension or psychiatric symptoms — part of the syndrome's systemic impact."
+    ],
+    "management_principles": [
+      "Perform low-dose dexamethasone suppression test and 24-hour urinary free cortisol, then pituitary MRI with contrast",
+      "Refer to endocrinology and neurosurgery for potential transsphenoidal resection",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Cushing's Syndrome",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/cushings-syndrome"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "39F with 1-year history of moon facies, buffalo hump, violaceous abdominal striae, and proximal weakness, with elevated 24-hour urinary cortisol.",
+    "objective": "Vitals: BP 148/92, HR 80. Facial plethora, dorsocervical fat pad (buffalo hump), wide violaceous abdominal striae, proximal muscle weakness. Bloods: 24-hour urinary free cortisol elevated; low-dose dexamethasone suppression test fails to suppress cortisol; Plasma ACTH normal/elevated (suggesting ACTH-dependent Cushing's).",
+    "assessment": "Cushing's Disease (pituitary ACTH-secreting adenoma) causing ACTH-dependent Cushing's syndrome.",
+    "plan": "Perform low-dose dexamethasone suppression test and 24-hour urinary free cortisol, then pituitary MRI with contrast. Refer to endocrinology and neurosurgery for potential transsphenoidal resection."
+  },
+  "learning_objectives": [
+    "Identify clinical characteristics distinguishing Cushing's Disease from simple obesity",
+    "Outline the stepwise diagnostic screening algorithm for hypercortisolemia",
+    "Differentiate ACTH-dependent (pituitary) from ACTH-independent (adrenal) Cushing's syndrome",
+    "Discuss pre-operative and post-operative management of hypercortisolemia"
+  ],
+  "teaching": {
+    "diagnosis": "Cushing's Disease (pituitary ACTH-secreting adenoma)",
+    "one_liner": "A pituitary tumor overproduces ACTH, driving excess cortisol and causing moon facies, a buffalo hump, violaceous striae, and proximal muscle weakness — confirmed by elevated 24-hour urinary cortisol.",
+    "differentials": [
+      "Adrenal Cushing's syndrome",
+      "Ectopic ACTH syndrome",
+      "Exogenous steroid use"
+    ],
+    "red_flags": [
+      "New severe hypertension or psychiatric symptoms — part of the syndrome's systemic impact"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fat distribution",
+        "say": "Has the weight gain been mostly around your belly, with a rounder face?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Skin findings",
+        "say": "Any purple stretch marks or easy bruising?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Muscle weakness",
+        "say": "Is it hard to climb stairs or get up from a chair?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been developing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Steroid use",
+        "say": "Have you used any steroid medications?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

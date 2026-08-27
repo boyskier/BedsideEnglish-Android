@@ -1,0 +1,206 @@
+{
+  "id": "gi_037",
+  "system": "gi",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martin",
+  "age": 73,
+  "gender": "male",
+  "chief_complaint": "severe crampy abdominal pain and bloody stools in elderly",
+  "hpi_details": "A 73-year-old male presents to the clinic with severe crampy abdominal pain and bloody stools. The symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to ischemic colitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_ischemic_colitis_workup",
+      "title": "Urgent ischemic colitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "lactate",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The urgent laboratory and CT results are now available; IV fluids, bowel rest, and early specialist consultation should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "10.8",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "lactate",
+          "test": "Serum lactate",
+          "value": "2.8",
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ct_abdomen_pelvis",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Segmental wall thickening and submucosal edema centered at the splenic flexure with reduced enhancement; no pneumatosis or free air",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ischemic Colitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ischemic Colitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes ordering urgent CT angiography of the abdomen, starting IV fluids, and placing the bowel on rest, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe crampy abdominal pain and bloody stools in elderly",
+      "Key HPI features: A 73-year-old male presents to the clinic with severe crampy abdominal pain and bloody stools. The symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Ischemic Colitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ischemic Colitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Inflammatory bowel disease flare without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Known atrial fibrillation with acute abdominal pain and bloody stools — raises suspicion for bowel ischaemia."
+    ],
+    "management_principles": [
+      "Order urgent CT angiography of abdomen, start IV fluids, place bowel on rest",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of severe crampy abdominal pain and bloody stools in elderly. HPI: hypoperfusion of colon, atrial fibrillation.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Ischemic Colitis.",
+    "assessment": "Condition highly suspicious for Ischemic Colitis.",
+    "plan": "Assess hemodynamic stability and obtain CT abdomen/pelvis with IV contrast. Provide IV fluids and bowel rest, with early gastroenterology/surgical consultation when severe disease is suspected. Obtain CT angiography urgently if pain is disproportionate or embolic risk suggests acute mesenteric ischemia."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Ischemic Colitis",
+    "Select appropriate diagnostic workup for Ischemic Colitis",
+    "Implement evidence-based management plan: Order urgent CT angiography of abdomen, start IV fluids, place bowel on rest"
+  ],
+  "teaching": {
+    "diagnosis": "Ischemic Colitis",
+    "one_liner": "Reduced blood flow to the colon, often from an irregular heartbeat, damages its lining and causes sudden crampy abdominal pain with bloody stools.",
+    "differentials": [
+      "Inflammatory bowel disease flare",
+      "Infective colitis",
+      "Diverticular bleed"
+    ],
+    "red_flags": [
+      "Known atrial fibrillation with acute abdominal pain and bloody stools — raises suspicion for bowel ischaemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sequence of pain then bleeding",
+        "say": "Did the cramping start before the bloody stools appeared?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "cramping",
+          "bleeding",
+          "followed"
+        ]
+      },
+      {
+        "objective": "Irregular heartbeat",
+        "say": "Do you have an irregular heartbeat, or take blood thinners?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "heartbeat",
+          "irregular",
+          "anticoagulant",
+          "fibrillation"
+        ]
+      },
+      {
+        "objective": "Stool colour",
+        "say": "What colour is the blood — bright red, or darker and mixed with the stool?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "bright",
+          "dark",
+          "blood",
+          "mixed"
+        ]
+      },
+      {
+        "objective": "Severity and location",
+        "say": "Where exactly is the pain, and how severe is it?",
+        "domains": [
+          "location",
+          "severity"
+        ],
+        "keywords": [
+          "abdomen",
+          "cramp",
+          "severe"
+        ]
+      },
+      {
+        "objective": "Vascular risk factors",
+        "say": "Do you have any circulation problems or heart disease?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "circulation",
+          "vascular",
+          "heart"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fever with this?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills"
+        ]
+      }
+    ]
+  }
+}

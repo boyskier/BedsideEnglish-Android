@@ -1,0 +1,121 @@
+{
+  "id": "rheum_035",
+  "system": "rheum",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Wright",
+  "age": 57,
+  "gender": "male",
+  "chief_complaint": "new headache, jaw pain when chewing, and high ESR",
+  "hpi_details": "A 57-year-old male presents to the clinic with new headache, jaw pain when chewing, and high ESR. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gca",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id":"esr","test":"Erythrocyte sedimentation rate","value":"96","unit":"mm/hr","reference_range":"0-20","flag":"critical","specimen":"Blood","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Giant Cell Arteritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Giant Cell Arteritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Suspected giant cell arteritis is a vision-threatening emergency: arrange same-day emergency specialist assessment and clinician-directed glucocorticoids without delaying treatment for confirmatory testing.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: new headache, jaw pain when chewing, and high ESR",
+      "Key HPI features: A 57-year-old male presents to the clinic with new headache, jaw pain when chewing, and high ESR. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Giant Cell Arteritis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Giant Cell Arteritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Tension headache without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing visual or neurologic symptoms that require immediate emergency assessment to prevent irreversible vision loss or stroke."
+    ],
+    "management_principles": [
+      "Arrange same-day emergency ophthalmology/rheumatology or emergency-department assessment; clinician-directed glucocorticoids should not be delayed for temporal-artery imaging or biopsy",
+      "Confirm with temporal-artery ultrasound and/or biopsy according to local pathway, while monitoring glucocorticoid toxicity and preventive care",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of new headache, jaw pain when chewing, and high ESR. HPI: granulomatous vasculitis of temporal artery.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Giant Cell Arteritis.",
+    "assessment": "Condition highly suspicious for Giant Cell Arteritis.",
+    "plan": "Arrange same-day emergency assessment and clinician-directed glucocorticoids; do not delay for temporal-artery imaging or biopsy. Confirm according to the local pathway and monitor steroid toxicity. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Giant Cell Arteritis",
+    "Select appropriate diagnostic workup for Giant Cell Arteritis",
+    "Recognize suspected Giant Cell Arteritis as a same-day emergency requiring clinician-directed treatment and confirmatory testing"
+  ],
+  "teaching": {
+    "diagnosis": "Giant Cell Arteritis",
+    "one_liner": "A large-vessel vasculitis in adults over 50 causing new headache, jaw claudication, and elevated inflammatory markers; it can rapidly threaten vision.",
+    "differentials": [
+      "Tension headache",
+      "TIA"
+    ],
+    "red_flags": [
+      "Any new visual change, double vision, or transient vision loss: seek emergency care immediately",
+      "New focal neurologic deficit, severe sudden headache, or stroke-like symptoms"
+    ],
+    "must_ask": [
+      {
+        "objective": "Headache",
+        "say": "Is this a new type of headache for you?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Jaw claudication",
+        "say": "Does your jaw hurt when chewing?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Vision changes",
+        "say": "Any vision changes or episodes of dark vision?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Scalp tenderness",
+        "say": "Is your scalp tender?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Shoulder/hip stiffness",
+        "say": "Any shoulder or hip stiffness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

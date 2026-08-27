@@ -1,0 +1,168 @@
+{
+  "id": "cardio_013",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Sterling",
+  "age": 62,
+  "gender": "male",
+  "chief_complaint": "sudden tearing pain in the chest and shoulder blades 1 hour ago",
+  "hpi_details": "Presents via emergency ambulance with 1-hour history of sudden onset, agonizing, 10/10 tearing pain that began abruptly between his shoulder blades and migrated to the anterior chest and neck. The pain reached maximal intensity within seconds of onset. Accompanied by cold sweats, dizziness, and numbness tingling in his left arm. Has a 20-year history of poorly controlled hypertension.",
+  "ideas": "thinks his main artery has ripped from high blood pressure",
+  "concerns": "terrified that he is dying immediately in the room",
+  "expectations": "wants immediate pain relief and emergency surgery",
+  "pmh": "long-standing severe hypertension (poorly compliant with therapy), heavy smoker, hypercholesterolaemia",
+  "medications": "lisinopril 20mg OD (reports missing frequent doses)",
+  "social_hx": "smoker 45 pack-years, drinks 20 units/week, retired construction worker",
+  "investigation_events": [{"id": "aortic_ct_angiography", "title": "Emergency CT angiography of the aorta", "order_terms": ["ct angiography", "ct angiogram", "cta", "aortic angiogram", "aorta scan"], "availability_message": "The emergency CT angiography report is now available.", "results": [{"id": "cta_type_a_dissection", "test": "CTA aorta", "value": "Acute dissection flap beginning at the aortic root and extending through the arch into the descending thoracic aorta; ascending aorta 5.3 cm with a small hemopericardium", "flag": "critical", "collected_at": "During today's emergency evaluation"}]}],
+  "clinical_knowledge": {
+    "topic": "Acute Type A Aortic Dissection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Type A Aortic Dissection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes this as a surgical emergency requiring immediate cardiothoracic surgery consultation for emergency ascending aorta repair, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden tearing pain in the chest and shoulder blades 1 hour ago",
+      "Key HPI features: Presents via emergency ambulance with 1-hour history of sudden onset, agonizing, 10/10 tearing pain that began abruptly between his shoulder blades and migrated to the anterior chest and neck. The pain reached maximal intensity within seconds of onset. Accompanied by cold sweats, dizziness, and numbness tingling in his left arm. Has a 20-year history of poorly controlled hypertension.",
+      "Objective/Exam findings: Measure blood pressure simultaneously in both right and left arms (a >20 mmHg systolic discrepancy can support differential perfusion but is neither sensitive nor diagnostic). Check radial and femoral pulses for pulse deficits or asymmetries. Auscultate heart: early diastolic blowing murmur of acute aortic regurgitation at right upper sternal border. ECG: check for ST elevation (if dissection flap involves right coronary artery ostium causing inferior STEMI). Bloods: urgent cross-match 6 units, baseline troponin, renal function, D-dimer. Emergency CT Angiography (CTA) aorta from vertex to femoral arteries.",
+      "Relevant background/PMH: long-standing severe hypertension (poorly compliant with therapy), heavy smoker, hypercholesterolaemia",
+      "Current medications: lisinopril 20mg OD (reports missing frequent doses)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Type A Aortic Dissection.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to ST-elevation myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Unequal pulses or blood pressure between arms; new neurological deficit."
+    ],
+    "management_principles": [
+      "Surgical emergency: immediate cardiothoracic surgery consultation for emergency ascending aorta surgical repair",
+      "Strict anti-impulse therapy inside emergency room: IV labetalol or esmolol continuous infusion to rapidly lower heart rate <60 bpm first, followed by IV nicardipine or sodium nitroprusside target systolic BP 100-120 mmHg (crucial: never give pure vasodilators before beta-blockers as reflex tachycardia increases dP/dt shear stress on the dissection flap)",
+      "Adequate IV opioid analgesia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/aortic-disease-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "62M with poorly controlled HTN presents with sudden instantaneous tearing interscapular and retrosternal pain migrating anteriorly with left upper limb neurological symptoms.",
+    "objective": "Measure blood pressure simultaneously in both right and left arms (a >20 mmHg systolic discrepancy can support differential perfusion but is neither sensitive nor diagnostic). Check radial and femoral pulses for pulse deficits or asymmetries. Auscultate heart: early diastolic blowing murmur of acute aortic regurgitation at right upper sternal border. ECG: check for ST elevation (if dissection flap involves right coronary artery ostium causing inferior STEMI). Bloods: urgent cross-match 6 units, baseline troponin, renal function, D-dimer. Emergency CT Angiography (CTA) aorta from vertex to femoral arteries.",
+    "assessment": "Acute Stanford Type A (DeBakey I/II) thoracic aortic dissection. DDx: acute ST-elevation myocardial infarction, pulmonary embolism, spontaneous oesophageal rupture (Boerhaave syndrome), acute pericarditis.",
+    "plan": "Surgical emergency: immediate cardiothoracic surgery consultation for emergency ascending aorta surgical repair. Strict anti-impulse therapy inside emergency room: IV labetalol or esmolol continuous infusion to rapidly lower heart rate <60 bpm first, followed by IV nicardipine or sodium nitroprusside target systolic BP 100-120 mmHg (crucial: never give pure vasodilators before beta-blockers as reflex tachycardia increases dP/dt shear stress on the dissection flap). Adequate IV opioid analgesia."
+  },
+  "learning_objectives": [
+    "Recognise the classic presentation of acute thoracic aortic dissection: abrupt instantaneous onset tearing pain radiating interscapularly",
+    "Identify critical physical findings: inter-arm blood pressure differential (>20 mmHg) and pulse deficits across limbs",
+    "Explain the strict sequence of anti-impulse therapy: IV beta-blockade before vasodilators to prevent reflex dP/dt shear stress increase",
+    "Execute immediate emergency escalation to cardiothoracic surgery while coordinating urgent CT angiography"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Type A Aortic Dissection",
+    "one_liner": "The aortic wall tears. Pain is instantly maximal, tearing, and moves to the back — a surgical emergency measured in minutes.",
+    "differentials": [
+      "ST-elevation myocardial infarction",
+      "Pulmonary embolism",
+      "Oesophageal rupture"
+    ],
+    "red_flags": [
+      "Unequal pulses or blood pressure between arms; new neurological deficit"
+    ],
+    "must_ask": [
+      {
+        "objective": "Speed of onset and peak",
+        "say": "Was the pain at its very worst the moment it started?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "sudden",
+          "worst",
+          "instantly",
+          "moment"
+        ]
+      },
+      {
+        "objective": "Tearing character",
+        "say": "How would you describe it — tearing, ripping, or something else?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "tearing",
+          "ripping",
+          "sharp",
+          "knife"
+        ]
+      },
+      {
+        "objective": "Migration of the pain",
+        "say": "Did the pain move — did it start in the chest and travel to your back?",
+        "domains": [
+          "radiation",
+          "progression"
+        ],
+        "keywords": [
+          "move",
+          "travel",
+          "shoulder",
+          "between"
+        ]
+      },
+      {
+        "objective": "Neurological symptoms",
+        "say": "Have you had any weakness, numbness, or trouble speaking?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weakness",
+          "numb",
+          "speech",
+          "arm",
+          "leg"
+        ]
+      },
+      {
+        "objective": "Hypertension history",
+        "say": "Do you have high blood pressure, and is it well controlled?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "blood",
+          "pressure",
+          "hypertension",
+          "high"
+        ]
+      },
+      {
+        "objective": "Connective tissue disease and family history",
+        "say": "Has anyone in your family had an aortic problem, or Marfan syndrome?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "marfan",
+          "aorta",
+          "aneurysm"
+        ]
+      }
+    ]
+  }
+}

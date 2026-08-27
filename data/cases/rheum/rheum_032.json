@@ -1,0 +1,145 @@
+{
+  "id": "rheum_032",
+  "system": "rheum",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Williams",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "joint pain, sausage digits (dactylitis), and scaling skin rash",
+  "hpi_details": "A 38-year-old female presents to the clinic with joint pain, sausage digits (dactylitis), and scaling skin rash. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to psoriatic_arthritis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Psoriatic Arthritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Psoriatic Arthritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Disease-modifying therapy is selected by a rheumatology clinician according to peripheral, axial, enthesitis, skin, eye, and bowel involvement; methotrexate and biologics require safety screening and monitoring.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: joint pain, sausage digits (dactylitis), and scaling skin rash",
+      "Key HPI features: A 38-year-old female presents to the clinic with joint pain, sausage digits (dactylitis), and scaling skin rash. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Psoriatic Arthritis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Psoriatic Arthritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rheumatoid arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing septic arthritis in an acutely hot swollen joint or urgent inflammatory eye disease with a painful red photophobic eye or vision change."
+    ],
+    "management_principles": [
+      "Refer to rheumatology and coordinate dermatologic care; use clinician-directed conventional DMARD or biologic therapy based on disease domains and severity",
+      "Before methotrexate or biologic therapy, assess pregnancy intentions, infection history, tuberculosis and hepatitis B/C status, vaccinations, blood counts, liver and renal function; monitor as directed",
+      "Avoid methotrexate in pregnancy and do not start or continue biologic therapy during a serious active infection without specialist guidance",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with joint pain, sausage digits (dactylitis), a scaling skin rash, and enthesopathy in the setting of psoriasis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Psoriatic Arthritis.",
+    "assessment": "Condition highly suspicious for Psoriatic Arthritis.",
+    "plan": "Plan for Psoriatic Arthritis: Methotrexate or biologic agents, dermatological care. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Psoriatic Arthritis",
+    "Select appropriate diagnostic workup for Psoriatic Arthritis",
+    "Implement evidence-based management plan: Methotrexate or biologic agents, dermatological care"
+  ],
+  "teaching": {
+    "diagnosis": "Psoriatic Arthritis",
+    "one_liner": "An inflammatory arthritis occurring in patients with psoriasis, causing dactylitis ('sausage digits'), enthesitis, and joint pain alongside a scaling skin rash.",
+    "differentials": [
+      "Rheumatoid arthritis",
+      "Gout",
+      "Reactive arthritis"
+    ],
+    "red_flags": [
+      "A hot, markedly swollen joint with fever or systemic illness (possible septic arthritis)",
+      "Painful red photophobic eye or new visual symptoms (possible uveitis)",
+      "New weakness, numbness, or bowel/bladder changes with severe spinal pain"
+    ],
+    "must_ask": [
+      {
+        "objective": "Skin history",
+        "say": "Do you have psoriasis, or a scaling skin rash?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "psoriasis"
+        ]
+      },
+      {
+        "objective": "Dactylitis",
+        "say": "Have any of your fingers or toes swollen up entirely, like a sausage?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "dactylitis",
+          "sausage"
+        ]
+      },
+      {
+        "objective": "Joint pain pattern",
+        "say": "Which joints are affected?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Nail changes",
+        "say": "Any changes to your nails, like pitting?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does psoriasis or arthritis run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Inflammatory back and eye symptoms",
+        "say": "Do you have prolonged morning back stiffness, a painful red eye, light sensitivity, or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Treatment safety",
+        "say": "Could you be pregnant or planning pregnancy, and have you had recurrent infections, tuberculosis exposure, hepatitis, or liver disease?",
+        "domains": [
+          "medications",
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

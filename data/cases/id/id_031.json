@@ -1,0 +1,150 @@
+{
+  "id": "id_031",
+  "system": "id",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Nguyen",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "sudden fever, severe body aches, sore throat, and cough",
+  "hpi_details": "A 35-year-old male presents to the clinic with sudden fever, severe body aches, sore throat, and cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to flu",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_influenza_test",
+      "title": "Point-of-care influenza test",
+      "order_terms": [
+        "influenza test",
+        "flu test",
+        "rapid influenza",
+        "influenza antigen",
+        "influenza pcr"
+      ],
+      "availability_message": "The point-of-care influenza result is now available.",
+      "results": [
+        {
+          "id": "influenza_a",
+          "test": "Rapid influenza A assay",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Nasopharyngeal swab",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Influenza evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Influenza is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Influenza: Rest, hydration, Oseltamivir (Tamiflu) if within 48 hours, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden fever, severe body aches, sore throat, and cough",
+      "Key HPI features: A 35-year-old male presents to the clinic with sudden fever, severe body aches, sore throat, and cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 39.0C, HR 96, BP 118/76, RR 18, SpO2 97% on room air. Pharyngeal erythema without exudate, mild cervical lymphadenopathy, lungs clear to auscultation bilaterally. Rapid influenza PCR/antigen test positive for Influenza A.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Influenza.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to COVID-19 without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe breathlessness or chest pain — suggests complication like pneumonia."
+    ],
+    "management_principles": [
+      "Plan for Influenza: Rest, hydration, Oseltamivir (Tamiflu) if within 48 hours",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden fever, severe body aches, sore throat, and cough\n\nA 35-year-old male presents to the clinic with sudden fever, severe body aches, sore throat, and cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 39.0C, HR 96, BP 118/76, RR 18, SpO2 97% on room air. Pharyngeal erythema without exudate, mild cervical lymphadenopathy, lungs clear to auscultation bilaterally. Rapid influenza PCR/antigen test positive for Influenza A.",
+    "assessment": "Influenza A, uncomplicated, based on positive rapid antigen/PCR testing and consistent clinical picture (acute fever, myalgia, sore throat, cough).",
+    "plan": "Plan for Influenza: Rest, hydration, Oseltamivir (Tamiflu) if within 48 hours. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Influenza",
+    "Select appropriate diagnostic workup for Influenza",
+    "Implement evidence-based management plan: Rest, hydration, Oseltamivir (Tamiflu) if within 48 hours"
+  ],
+  "teaching": {
+    "diagnosis": "Influenza",
+    "one_liner": "A viral respiratory infection causing sudden fever, severe body aches, sore throat, and cough — antivirals like oseltamivir help most if started within 48 hours.",
+    "differentials": [
+      "COVID-19",
+      "Bacterial pneumonia",
+      "Common cold"
+    ],
+    "red_flags": [
+      "Severe breathlessness or chest pain — suggests complication like pneumonia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed",
+        "say": "Did the fever and body aches come on suddenly?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Symptom cluster",
+        "say": "Do you have body aches, sore throat, and cough together?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Timing for antivirals",
+        "say": "How many days have you had symptoms?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "48 hours"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "Any shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Vaccination status",
+        "say": "Did you get a flu shot this year?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

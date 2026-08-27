@@ -1,0 +1,154 @@
+{
+  "id": "id_032",
+  "system": "id",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wright",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "fever, cough with yellow sputum, and focal lung crackles",
+  "hpi_details": "A 38-year-old female presents to the clinic with fever, cough with yellow sputum, and focal lung crackles. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cap",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_pneumonia_workup",
+      "title": "Urgent pneumonia results",
+      "order_terms": [
+        "chest x ray",
+        "chest x-ray",
+        "chest radiograph",
+        "cxr",
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count"
+      ],
+      "availability_message": "The urgent chest radiograph and blood count are now available.",
+      "results": [
+        {
+          "id": "chest_xray",
+          "test": "Chest radiograph",
+          "value": "Focal right lower-lobe air-space consolidation with air bronchograms; no pleural effusion",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "14.2",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Community-Acquired Pneumonia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Community-Acquired Pneumonia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Community-Acquired Pneumonia: Oral Amoxicillin 1g TID or Doxycycline for 5 days, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, cough with yellow sputum, and focal lung crackles",
+      "Key HPI features: A 38-year-old female presents to the clinic with fever, cough with yellow sputum, and focal lung crackles. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 38.5C, HR 102, RR 20, BP 122/78, SpO2 95% on room air. Focal inspiratory crackles and dullness to percussion over the right lower lung field. Chest X-ray shows right lower lobe consolidation. WBC 14,200/uL with left shift.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Community-Acquired Pneumonia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bronchitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe breathlessness or confusion."
+    ],
+    "management_principles": [
+      "Plan for Community-Acquired Pneumonia: Oral Amoxicillin 1g TID or Doxycycline for 5 days",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: fever, cough with yellow sputum, and focal lung crackles\n\nA 38-year-old female presents to the clinic with fever, cough with yellow sputum, and focal lung crackles. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 38.5C, HR 102, RR 20, BP 122/78, SpO2 95% on room air. Focal inspiratory crackles and dullness to percussion over the right lower lung field. Chest X-ray shows right lower lobe consolidation. WBC 14,200/uL with left shift.",
+    "assessment": "Community-Acquired Pneumonia, right lower lobe; low-risk by CURB-65, appropriate for outpatient management.",
+    "plan": "Plan for Community-Acquired Pneumonia: Oral Amoxicillin 1g TID or Doxycycline for 5 days. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Community-Acquired Pneumonia",
+    "Select appropriate diagnostic workup for Community-Acquired Pneumonia",
+    "Implement evidence-based management plan: Oral Amoxicillin 1g TID or Doxycycline for 5 days"
+  ],
+  "teaching": {
+    "diagnosis": "Community-Acquired Pneumonia",
+    "one_liner": "A bacterial lung infection causing fever, productive cough with colored sputum, and focal crackles on exam.",
+    "differentials": [
+      "Bronchitis",
+      "Influenza"
+    ],
+    "red_flags": [
+      "Severe breathlessness or confusion"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sputum character",
+        "say": "What color is the sputum you're coughing up?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "Are you short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had this cough?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Chest pain",
+        "say": "Any chest pain, especially with breathing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

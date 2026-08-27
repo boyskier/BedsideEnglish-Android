@@ -1,0 +1,170 @@
+{
+  "id": "gs_028",
+  "system": "gs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Clark",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "intermittent RUQ pain radiating to back after fatty food",
+  "hpi_details": "A 26-year-old female presents to the clinic with several episodes of intermittent, cramping right upper quadrant pain radiating to the back, typically triggered by fatty meals and resolving spontaneously within a few hours.",
+  "ideas": "thinks it might be related to a gallbladder problem (biliary colic)",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "biliary_colic_workup",
+      "title": "Biliary colic results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "liver function tests",
+        "lfts",
+        "bilirubin",
+        "lipase",
+        "amylase",
+        "right upper quadrant ultrasound",
+        "ruq ultrasound",
+        "abdominal ultrasound"
+      ],
+      "availability_message": "The biliary laboratory and ultrasound results are now available.",
+      "results": [
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "0.7",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "During assessment"
+        },
+        {
+          "id": "lipase",
+          "test": "Serum lipase",
+          "value": "26",
+          "unit": "U/L",
+          "reference_range": "13-60",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "During assessment"
+        },
+        {
+          "id": "right_upper_quadrant_ultrasound",
+          "test": "Right-upper-quadrant ultrasound",
+          "value": "Multiple mobile gallstones without gallbladder wall thickening, pericholecystic fluid, or sonographic Murphy sign; common bile duct 4 mm",
+          "flag": "abnormal",
+          "collected_at": "During assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Biliary Colic evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Biliary Colic is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes dietary fat restriction, analgesia for acute episodes, and elective outpatient laparoscopic cholecystectomy for recurrent symptomatic gallstones, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: intermittent RUQ pain radiating to back after fatty food",
+      "Key HPI features: A 26-year-old female presents to the clinic with several episodes of intermittent, cramping right upper quadrant pain radiating to the back, typically triggered by fatty meals and resolving spontaneously within a few hours.",
+      "Objective/Exam findings: Vitals: Temp 36.9C, HR 84, BP 118/74. Mild RUQ tenderness during episodes without rebound, guarding, or a positive Murphy's sign; abdomen soft and non-tender between episodes. Labs: LFTs, amylase, and lipase within normal limits. RUQ ultrasound shows gallstones without gallbladder wall thickening or pericholecystic fluid.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Biliary Colic.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute cholecystitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain lasting over 6 hours or fever — suggests cholecystitis instead."
+    ],
+    "management_principles": [
+      "Advise a low-fat diet and provide analgesia for acute episodes",
+      "Refer for elective outpatient laparoscopic cholecystectomy given recurrent symptomatic gallstones",
+      "Provide return precautions for fever, jaundice, or pain lasting beyond a few hours, which would suggest acute cholecystitis or choledocholithiasis"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26-year-old female presents with several episodes of intermittent, cramping right upper quadrant pain radiating to the back, typically triggered by fatty meals and resolving spontaneously within a few hours.",
+    "objective": "Vitals: Temp 36.9C, HR 84, BP 118/74. Mild RUQ tenderness during episodes without rebound, guarding, or a positive Murphy's sign; abdomen soft and non-tender between episodes. Labs: LFTs, amylase, and lipase within normal limits. RUQ ultrasound shows gallstones without gallbladder wall thickening or pericholecystic fluid.",
+    "assessment": "Biliary colic due to cholelithiasis, with no sonographic evidence of acute cholecystitis.",
+    "plan": "Advise a low-fat diet and provide analgesia for acute episodes. Refer for elective outpatient laparoscopic cholecystectomy given recurrent symptomatic gallstones. Provide return precautions for fever, jaundice, or pain lasting beyond a few hours, which would suggest acute cholecystitis or choledocholithiasis."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Biliary Colic",
+    "Select appropriate diagnostic workup for Biliary Colic",
+    "Implement evidence-based management plan: Low-fat diet, elective outpatient laparoscopic cholecystectomy"
+  ],
+  "teaching": {
+    "diagnosis": "Biliary Colic",
+    "one_liner": "A gallstone temporarily blocks the cystic duct, causing intermittent RUQ pain radiating to the back after fatty food, which resolves once the stone moves.",
+    "differentials": [
+      "Acute cholecystitis",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "Pain lasting over 6 hours or fever — suggests cholecystitis instead"
+    ],
+    "must_ask": [
+      {
+        "objective": "Relationship to fatty food",
+        "say": "Does the pain come on after fatty meals?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "fatty",
+          "food"
+        ]
+      },
+      {
+        "objective": "Radiation",
+        "say": "Does it radiate to your back?",
+        "domains": [
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Duration and resolution",
+        "say": "Does the pain go away on its own after a while?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fever with these episodes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Frequency",
+        "say": "How often does this happen?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

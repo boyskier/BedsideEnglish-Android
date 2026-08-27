@@ -1,0 +1,114 @@
+{
+  "id": "psych_019",
+  "system": "psychiatry",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Johnson",
+  "age": 82,
+  "gender": "female",
+  "chief_complaint": "sudden acute onset of fluctuating confusion, visual hallucinations, and agitation in an 82-year-old nursing home resident",
+  "hpi_details": "82F with baseline mild Alzheimer dementia developing acute, fluctuating confusion over 24 hours, picking at bedclothes, and seeing imaginary intruders; urinalysis shows pyuria and blood cultures grow bacteria, requiring antibiotic treatment and non-pharmacological reorientation.",
+  "ideas": "Unable to provide a reliable account because of acute confusion; obtain collateral history.",
+  "concerns": "Unable to reliably state concerns because of delirium.",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Mild Alzheimer dementia",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "urinalysis", "test": "Urinalysis", "value": "Pyuria present", "flag": "abnormal", "specimen": "Urine", "collected_at": "Before the current assessment"},
+    {"id": "blood_cultures", "test": "Blood cultures", "value": "Growth of bacteria reported; organism identification and susceptibilities pending review", "flag": "critical", "specimen": "Blood", "collected_at": "Before the current assessment"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Delirium in a person with dementia: urgent evaluation and management",
+    "core_concepts": [
+      "Delirium is an acute, fluctuating disturbance in attention and awareness and is a medical emergency, particularly in an older person with dementia.",
+      "Seek collateral baseline history and identify precipitants including infection, hypoxia, pain, dehydration, retention, constipation, medication effects, intoxication or withdrawal, and metabolic or neurologic illness.",
+      "Pyuria alone may represent asymptomatic bacteriuria; evaluate the whole clinical picture, although bacteremia and systemic illness require urgent infection management.",
+      "Use non-drug measures first, review capacity and consent, and use the least restrictive safety measures; antipsychotics are reserved for severe distress or immediate risk after medical review."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden acute onset of fluctuating confusion, visual hallucinations, and agitation in an 82-year-old nursing home resident",
+      "Key HPI features: 82F with baseline mild Alzheimer dementia developing acute, fluctuating confusion over 24 hours, picking at bedclothes, and seeing imaginary intruders; urinalysis shows pyuria and blood cultures grow bacteria, requiring antibiotic treatment and non-pharmacological reorientation.",
+      "Objective/Exam findings: Check vital signs, oxygenation, hydration, glucose, attention, level of consciousness, and focused neurologic and infection examination; obtain targeted investigations for the cause.",
+      "Relevant background/PMH: Mild Alzheimer dementia"
+    ],
+    "common_misconceptions": [
+      "Attributing abrupt confusion to dementia progression without assessing delirium.",
+      "Diagnosing UTI from pyuria alone without systemic or urinary clinical evidence.",
+      "Treating hallucinations as primary psychosis rather than assessing medical causes."
+    ],
+    "dangerous_errors": [
+      "Delaying emergency medical assessment for sepsis, hypoxia, stroke, hypoglycaemia, or other reversible causes.",
+      "Failing to assess decision-making capacity, falls risk, hydration, and ability to accept essential care.",
+      "Using sedatives or antipsychotics routinely without reviewing risks, interactions, and the underlying cause."
+    ],
+    "management_principles": [
+      "Arrange urgent medical assessment and treat confirmed or strongly suspected infection according to local antimicrobial guidance and culture results.",
+      "Provide reorientation, sensory aids, sleep support, hydration, pain control, mobility, and familiar carers where possible.",
+      "Review medications and address reversible precipitants; involve family or legal surrogate when capacity is impaired.",
+      "Escalate immediately for unstable observations, reduced consciousness, focal deficit, seizures, severe agitation, or inability to maintain hydration or safety."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Collateral reports an abrupt, fluctuating change from her mild dementia baseline over 24 hours, with visual hallucinations and agitation. She cannot provide a reliable history.",
+    "objective": "Assess vital signs, oxygenation, glucose, hydration, attention and consciousness; examine for infection and neurologic signs. Blood cultures are positive and urinalysis shows pyuria; review source, susceptibilities, and other precipitants.",
+    "assessment": "Hyperactive delirium in a person with Alzheimer dementia, with bacteremia requiring urgent source evaluation and treatment. Do not attribute delirium to pyuria alone.",
+    "plan": "Urgently manage suspected sepsis and identify the source. Use reorientation, family support, sensory aids, hydration, and medication review; assess capacity and involve the surrogate as appropriate. Escalate for instability, focal signs, seizures, reduced consciousness, or inability to stay safe."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Delirium Secondary to Urinary Tract Infection in Dementia",
+    "Formulate prioritized differential diagnosis for sudden acute onset of fluctuating confusion, visual hallucinations, and agitation in an 82-year-old nursing home resident",
+    "Select appropriate laboratory and imaging studies for psychiatry",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Delirium due to infection",
+    "one_liner": "An abrupt, fluctuating change in attention and awareness with visual hallucinations in an older person with dementia is delirium until proven otherwise; identify and treat the precipitating cause.",
+    "differentials": [
+      "Medication toxicity or withdrawal",
+      "Metabolic disturbance",
+      "Stroke or seizure",
+      "Progression of dementia"
+    ],
+    "red_flags": [
+      "Reduced consciousness, unstable vital signs, new focal neurologic deficit, or inability to maintain hydration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Baseline and onset",
+        "say": "When was she last acting like herself, and does the confusion come and go?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "baseline",
+          "sudden",
+          "fluctuate"
+        ]
+      },
+      {
+        "objective": "Infection and medication triggers",
+        "say": "Has she had fever, pain when urinating, cough, new medicines, or missed medicines?",
+        "domains": [
+          "associated_symptoms",
+          "medications"
+        ],
+        "keywords": [
+          "fever",
+          "urinating",
+          "medicines"
+        ]
+      }
+    ]
+  }
+}

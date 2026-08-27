@@ -1,0 +1,124 @@
+{
+  "id": "ns_033",
+  "system": "ns",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hill",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "incidental finding of calcified extra-axial brain mass",
+  "hpi_details": "A 41-year-old male is seen after a calcified extra-axial brain mass was found incidentally on imaging obtained for an unrelated reason. He has no new focal neurological symptoms.",
+  "ideas": "thinks it might be related to meningioma",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{
+    "id": "incidental_head_ct",
+    "test": "Prior head CT",
+    "value": "1.4 cm densely calcified, well-circumscribed extra-axial mass along the right frontal convexity without edema or mass effect",
+    "flag": "abnormal",
+    "note": "Incidental appearance is most consistent with a small meningioma."
+  }],
+  "clinical_knowledge": {
+    "topic": "Incidental Meningioma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Incidental Meningioma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Incidental Meningioma: Reassure, serial brain MRI surveillance, surgery only if growing, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental finding of calcified extra-axial brain mass",
+      "Key HPI features: A 41-year-old male is seen after a calcified extra-axial brain mass was found incidentally on imaging obtained for an unrelated reason. He has no new focal neurological symptoms.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Incidental Meningioma.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Incidental Meningioma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Malignant tumor (rare for meningioma) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New neurological symptoms."
+    ],
+    "management_principles": [
+      "Plan for Incidental Meningioma: Reassure, serial brain MRI surveillance, surgery only if growing",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of incidental finding of calcified extra-axial brain mass. HPI: benign slow-growing arachnoid cell tumor.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Incidental Meningioma.",
+    "assessment": "Condition highly suspicious for Incidental Meningioma.",
+    "plan": "Plan for Incidental Meningioma: Reassure, serial brain MRI surveillance, surgery only if growing. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Incidental Meningioma",
+    "Select appropriate diagnostic workup for Incidental Meningioma",
+    "Implement evidence-based management plan: Reassure, serial brain MRI surveillance, surgery only if growing"
+  ],
+  "teaching": {
+    "diagnosis": "Incidental Meningioma",
+    "one_liner": "A benign, slow-growing tumor of the meninges found incidentally, usually managed with surveillance rather than immediate surgery.",
+    "differentials": [
+      "Malignant tumor (rare for meningioma)"
+    ],
+    "red_flags": [
+      "New neurological symptoms"
+    ],
+    "must_ask": [
+      {
+        "objective": "How found",
+        "say": "How was this mass discovered?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Symptoms",
+        "say": "Any headaches or seizures?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Neurological changes",
+        "say": "Any new weakness or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about this finding?",
+        "domains": [
+          "concerns"
+        ]
+      },
+      {
+        "objective": "Growth",
+        "say": "Has anyone mentioned if it's grown?",
+        "domains": [
+          "progression"
+        ]
+      }
+    ]
+  }
+}

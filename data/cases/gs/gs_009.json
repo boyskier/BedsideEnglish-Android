@@ -1,0 +1,158 @@
+{
+  "id": "gs_009",
+  "system": "general_surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wright",
+  "age": 47,
+  "gender": "female",
+  "chief_complaint": "sharp right upper quadrant abdominal pain after fatty meal with fever and vomiting",
+  "hpi_details": "47F presenting with persistent RUQ pain radiating to right shoulder, positive Murphy's sign, leukocytosis, and gallstones with gallbladder wall thickening (>4mm) on ultrasound.",
+  "ideas": "thinks this is related to acute calculous cholecystitis murphy sign",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "white_blood_cell_count",
+      "test": "White blood cell count",
+      "value": "14.7",
+      "unit": "x10^3/mcL",
+      "reference_range": "4.0-11.0",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "right_upper_quadrant_ultrasound",
+      "test": "Right-upper-quadrant ultrasound",
+      "value": "Gallstones with gallbladder wall thickening to 5 mm, pericholecystic fluid, and a positive sonographic Murphy sign; common bile duct 5 mm",
+      "flag": "abnormal"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Calculous Cholecystitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Calculous Cholecystitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes NPO status, IV fluid resuscitation, IV antibiotics, and early laparoscopic cholecystectomy within 24-72 hours of symptom onset, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sharp right upper quadrant abdominal pain after fatty meal with fever and vomiting",
+      "Key HPI features: 47F presenting with persistent RUQ pain radiating to right shoulder, positive Murphy's sign, leukocytosis, and gallstones with gallbladder wall thickening (>4mm) on ultrasound.",
+      "Objective/Exam findings: Fever and RUQ tenderness with a positive Murphy's sign (inspiratory arrest on palpation). Labs show leukocytosis. Ultrasound demonstrates gallstones with gallbladder wall thickening (>4mm) and pericholecystic fluid.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Calculous Cholecystitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Biliary colic (pain resolves within hours, no fever) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: High fever with rigors — suggests progression to cholangitis or gangrenous gallbladder."
+    ],
+    "management_principles": [
+      "Keep patient NPO, initiate IV fluid resuscitation, and administer IV analgesia and antiemetics",
+      "Start IV antibiotics covering enteric Gram-negatives and anaerobes (e.g., ceftriaxone plus metronidazole, or piperacillin-tazobactam)",
+      "Obtain General Surgery consultation for early laparoscopic cholecystectomy, ideally within 24-72 hours of symptom onset"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Calculous Cholecystitis Murphy Sign: sharp right upper quadrant abdominal pain after fatty meal with fever and vomiting. 47F presenting with persistent RUQ pain radiating to right shoulder, positive Murphy's sign, leukocytosis, and gallstones with gallbladder wall thickening (>4mm) on ultrasound.",
+    "objective": "Fever and RUQ tenderness with a positive Murphy's sign (inspiratory arrest on palpation). Labs show leukocytosis. Ultrasound demonstrates gallstones with gallbladder wall thickening (>4mm) and pericholecystic fluid.",
+    "assessment": "Acute Calculous Cholecystitis.",
+    "plan": "1. NPO, IV fluid resuscitation, IV analgesia and antiemetics. 2. IV antibiotics covering enteric Gram-negatives and anaerobes. 3. General Surgery consultation for early laparoscopic cholecystectomy, ideally within 24-72 hours of symptom onset."
+  },
+  "learning_objectives": [
+    "Elicit and interpret a positive Murphy's sign on physical exam",
+    "Distinguish acute cholecystitis from simple biliary colic based on persistence, fever, and inflammatory markers",
+    "Select ultrasound as the first-line imaging study for suspected cholecystitis",
+    "Outline pre-operative management and timing for early laparoscopic cholecystectomy"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Calculous Cholecystitis",
+    "one_liner": "A gallstone blocks the cystic duct, causing gallbladder inflammation with persistent RUQ pain, fever, and a positive Murphy's sign — distinct from biliary colic by its persistence and inflammation.",
+    "differentials": [
+      "Biliary colic (pain resolves within hours, no fever)",
+      "Acute pancreatitis",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "High fever with rigors — suggests progression to cholangitis or gangrenous gallbladder"
+    ],
+    "must_ask": [
+      {
+        "objective": "Character and radiation of the pain",
+        "say": "Where is the pain, and does it spread to your right shoulder blade?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder",
+          "radiate"
+        ]
+      },
+      {
+        "objective": "Relationship to fatty food",
+        "say": "Did the pain start after eating a fatty meal?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "fatty",
+          "food",
+          "meal"
+        ]
+      },
+      {
+        "objective": "Duration — colic versus persistent",
+        "say": "Has the pain been constant, or does it come and go?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "constant",
+          "persistent"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever with this pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Nausea and vomiting",
+        "say": "Have you felt nauseated or vomited?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "vomit"
+        ]
+      }
+    ]
+  }
+}

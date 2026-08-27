@@ -1,0 +1,179 @@
+{
+  "id": "gi_003",
+  "system": "gastroenterology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Charles Henderson",
+  "age": 48,
+  "gender": "male",
+  "chief_complaint": "heartburn and sour taste in the mouth after meals",
+  "hpi_details": "burning sensation behind the breastbone, starting 30-45 minutes after meals (especially fatty, spicy, or tomato-based food). Worse when lying down or bending over. Reports a sour/acid taste in the back of the mouth. Relieved temporarily by OTC antacids. No dysphagia, no odynophagia, no weight loss, no hematemesis, no chest tightness or shortness of breath.",
+  "ideas": "thinks it is acid reflux (GERD) related to his diet and weight",
+  "concerns": "worried that the constant acid is damaging his food pipe or could lead to cancer in the long term",
+  "expectations": "wants stronger prescription medication and advice on lifestyle changes",
+  "pmh": "hypertension (diagnosed 3 years ago), mild obesity",
+  "medications": "amlodipine 5mg OD, over-the-counter antacids as needed",
+  "social_hx": "office manager, smoker (10 cigarettes/day), drinks 4-6 units of alcohol per week",
+  "clinical_knowledge": {
+    "topic": "Gastroesophageal Reflux Disease (GERD) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Gastroesophageal Reflux Disease (GERD) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes starting a trial of daily Proton Pump Inhibitor (PPI) (e.g., omeprazole 20mg OD for 4-8 weeks), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: heartburn and sour taste in the mouth after meals",
+      "Key HPI features: burning sensation behind the breastbone, starting 30-45 minutes after meals (especially fatty, spicy, or tomato-based food). Worse when lying down or bending over. Reports a sour/acid taste in the back of the mouth. Relieved temporarily by OTC antacids. No dysphagia, no odynophagia, no weight loss, no hematemesis, no chest tightness or shortness of breath.",
+      "Objective/Exam findings: Needs weight/BMI check, abdominal examination, blood pressure monitoring.",
+      "Relevant background/PMH: hypertension (diagnosed 3 years ago), mild obesity",
+      "Current medications: amlodipine 5mg OD, over-the-counter antacids as needed"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Gastroesophageal Reflux Disease (GERD).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: dysphagia or odynophagia, unintentional weight loss or GI bleeding (haematemesis, melena), or chest pain with exertion or radiating to the arm/jaw."
+    ],
+    "management_principles": [
+      "Start trial of daily Proton Pump Inhibitor (PPI) (e.g., omeprazole 20mg OD for 4-8 weeks)",
+      "Educate on lifestyle changes (weight loss, smoking cessation, avoiding food 3 hours before sleep, elevating head of bed)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "48M with chronic postprandial heartburn and acid regurgitation, aggravated by fatty/spicy food and recumbency. Temporarily relieved by antacids. No red flag symptoms (dysphagia, weight loss, bleeding). History of hypertension and smoking.",
+    "objective": "Needs weight/BMI check, abdominal examination, blood pressure monitoring.",
+    "assessment": "Gastroesophageal reflux disease (GERD). DDx: gastritis, peptic ulcer disease, esophageal dysmotility, coronary artery disease (less likely given typical reflux symptoms and lack of exertional chest pain).",
+    "plan": "Start trial of daily Proton Pump Inhibitor (PPI) (e.g., omeprazole 20mg OD for 4-8 weeks). Educate on lifestyle changes (weight loss, smoking cessation, avoiding food 3 hours before sleep, elevating head of bed). Advise return if dysphagia, weight loss, or persistent symptoms occur."
+  },
+  "learning_objectives": [
+    "Elicit typical GERD symptoms (heartburn, acid regurgitation, aggravating factors)",
+    "Screen for upper GI alarm symptoms (dysphagia, odynophagia, weight loss, bleeding)",
+    "Differentiate esophageal symptoms from cardiac-related chest pain",
+    "Counsel the patient on lifestyle modifications (smoking cessation, weight loss, dietary changes)"
+  ],
+  "teaching": {
+    "diagnosis": "Gastroesophageal Reflux Disease (GERD)",
+    "one_liner": "Stomach acid flows back up into the oesophagus, causing a burning sensation behind the breastbone and a sour taste in the mouth.",
+    "differentials": [
+      "Gastritis",
+      "Peptic ulcer disease",
+      "Coronary artery disease"
+    ],
+    "red_flags": [
+      "Dysphagia or odynophagia — alarm feature needing urgent endoscopy",
+      "Unintentional weight loss or GI bleeding (haematemesis, melena)",
+      "Chest pain with exertion or radiating to the arm/jaw — must exclude a cardiac cause first"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to meals",
+        "say": "Does the burning start soon after you eat, especially fatty or spicy food?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "burning",
+          "spicy",
+          "fatty",
+          "meals"
+        ]
+      },
+      {
+        "objective": "Positional aggravation",
+        "say": "Is it worse when you lie down or bend over?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "lying",
+          "bend",
+          "flat",
+          "position"
+        ]
+      },
+      {
+        "objective": "Sour or acid taste",
+        "say": "Do you get a sour or acid taste at the back of your throat?",
+        "domains": [
+          "character",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sour",
+          "acid",
+          "taste",
+          "throat"
+        ]
+      },
+      {
+        "objective": "Dysphagia screen",
+        "say": "Do you ever have trouble swallowing, or does food feel like it's sticking?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swallowing",
+          "sticking",
+          "choking"
+        ]
+      },
+      {
+        "objective": "Chest pain vs cardiac",
+        "say": "Do you ever get chest tightness or shortness of breath with exertion, separate from the burning?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chest",
+          "tightness",
+          "breathless",
+          "exertion"
+        ]
+      },
+      {
+        "objective": "Smoking and alcohol",
+        "say": "Do you smoke, and how much alcohol do you drink?",
+        "domains": [
+          "smoking",
+          "alcohol"
+        ],
+        "keywords": [
+          "smoke",
+          "cigarettes",
+          "alcohol",
+          "drink"
+        ]
+      },
+      {
+        "objective": "Weight and appetite",
+        "say": "Have you noticed any weight loss or change in your appetite?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "appetite",
+          "loss"
+        ]
+      }
+    ]
+  }
+}

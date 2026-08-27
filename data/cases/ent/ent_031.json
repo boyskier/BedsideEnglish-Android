@@ -1,0 +1,144 @@
+{
+  "id": "ent_031",
+  "system": "otolaryngology (ent)",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rivera",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "brief spinning vertigo 20 seconds triggered rolling in bed",
+  "hpi_details": "A 35-year-old male presents to the clinic with brief spinning vertigo 20 seconds triggered rolling in bed. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to bppv",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "dix_hallpike",
+      "title": "Dix-Hallpike positional test",
+      "order_terms": [
+        "dix hallpike",
+        "dix-hallpike",
+        "positional test",
+        "positional testing"
+      ],
+      "availability_message": "The bedside Dix-Hallpike result is now available.",
+      "results": [
+        {
+          "id": "right_dix_hallpike",
+          "test": "Right Dix-Hallpike maneuver",
+          "value": "Positive after 4-second latency, producing torsional upbeating nystagmus and typical vertigo that fatigues within 22 seconds",
+          "reference_range": "No provoked vertigo or nystagmus",
+          "flag": "abnormal",
+          "collected_at": "During bedside assessment",
+          "note": "Consistent with right posterior-canal canalithiasis"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Benign Paroxysmal Positional Vertigo (BPPV) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Benign Paroxysmal Positional Vertigo (BPPV) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming the diagnosis with the Dix-Hallpike maneuver and treating with the curative Epley (canalith repositioning) maneuver, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: brief spinning vertigo 20 seconds triggered rolling in bed",
+      "Key HPI features: A 35-year-old male presents to the clinic with brief spinning vertigo 20 seconds triggered rolling in bed. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for BPPV vertigo.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Benign Paroxysmal Positional Vertigo (BPPV).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vestibular neuritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: focal neurological deficits or continuous non-positional vertigo, which suggest a central cause requiring urgent workup rather than typical BPPV."
+    ],
+    "management_principles": [
+      "Plan for BPPV vertigo: Perform Dix-Hallpike, treat with curative Epley maneuver",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of brief spinning vertigo 20 seconds triggered rolling in bed. HPI: BPPV.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for BPPV vertigo.",
+    "assessment": "Presentation consistent with Benign Paroxysmal Positional Vertigo (BPPV): brief, positional, rotational vertigo triggered by rolling over in bed, without red-flag or central features.",
+    "plan": "Plan for BPPV vertigo: Perform Dix-Hallpike, treat with curative Epley maneuver. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of BPPV vertigo",
+    "Select appropriate diagnostic workup for BPPV vertigo",
+    "Implement evidence-based management plan: Perform Dix-Hallpike, treat with curative Epley maneuver"
+  ],
+  "teaching": {
+    "diagnosis": "Benign Paroxysmal Positional Vertigo (BPPV)",
+    "one_liner": "Brief spinning vertigo triggered by specific head movements like rolling over in bed.",
+    "differentials": [
+      "Vestibular neuritis"
+    ],
+    "red_flags": [
+      "Vertigo accompanied by focal neurological deficits (dysarthria, diplopia, limb weakness/ataxia) — concerning for posterior circulation stroke",
+      "Continuous (rather than brief, positional) vertigo lasting hours to days",
+      "Direction-changing or vertical nystagmus not suppressed by visual fixation",
+      "Severe headache"
+    ],
+    "must_ask": [
+      {
+        "objective": "Trigger",
+        "say": "Does it happen when rolling over or looking up?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "Does it last under a minute?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Hearing symptoms",
+        "say": "Any hearing changes or ringing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration overall",
+        "say": "How many weeks has this happened?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fall concern",
+        "say": "Are you worried about falling?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

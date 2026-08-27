@@ -1,0 +1,138 @@
+{
+  "id": "obgyn_032",
+  "system": "obgyn",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Moore",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "abnormal 1-hour glucose tolerance test at 24 weeks",
+  "hpi_details": "A 38-year-old pregnant patient presents after an abnormal 1-hour glucose screening test at 24 weeks. She reports generalized fatigue but no acute symptoms.",
+  "ideas": "thinks she may have gestational diabetes",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker; no alcohol or recreational drug use during pregnancy",
+  "available_results": [{"id": "one_hour_glucose_screen", "test": "1-hour 50 g glucose challenge test", "value": "156", "unit": "mg/dL", "reference_range": "<140", "flag": "high", "collected_at": "Before today's encounter", "note": "A positive screening test requires diagnostic oral glucose-tolerance testing."}],
+  "clinical_knowledge": {
+    "topic": "Gestational diabetes mellitus (GDM) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Gestational diabetes mellitus (GDM) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Gestational Diabetes GDM: Dietary modifications, blood glucose monitoring, insulin if needed, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: abnormal 1-hour glucose tolerance test at 24 weeks",
+      "Key HPI features: A 38-year-old pregnant patient presents after an abnormal 1-hour glucose screening test at 24 weeks and reports generalized fatigue without acute symptoms.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Gestational Diabetes GDM.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Gestational diabetes mellitus (GDM).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pre-existing (pregestational) diabetes without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Failed screening test requiring confirmatory 3-hour GTT."
+    ],
+    "management_principles": [
+      "Plan for Gestational Diabetes GDM: Dietary modifications, blood glucose monitoring, insulin if needed",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of abnormal 1-hour glucose tolerance test at 24 weeks. HPI: gestational diabetes.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Gestational Diabetes GDM.",
+    "assessment": "Condition highly suspicious for Gestational Diabetes GDM.",
+    "plan": "Plan for Gestational Diabetes GDM: Dietary modifications, blood glucose monitoring, insulin if needed. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Gestational Diabetes GDM",
+    "Select appropriate diagnostic workup for Gestational Diabetes GDM",
+    "Implement evidence-based management plan: Dietary modifications, blood glucose monitoring, insulin if needed"
+  ],
+  "teaching": {
+    "diagnosis": "Gestational diabetes mellitus (GDM)",
+    "one_liner": "Pregnant patient with an abnormal 1-hour glucose tolerance test at 24 weeks.",
+    "differentials": [
+      "Pre-existing (pregestational) diabetes",
+      "Impaired glucose tolerance"
+    ],
+    "red_flags": [
+      "Failed screening test requiring confirmatory 3-hour GTT"
+    ],
+    "must_ask": [
+      {
+        "objective": "Explore risk factors for diabetes",
+        "say": "Do you have a family history of diabetes, or did you have gestational diabetes in a prior pregnancy?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family history",
+          "prior GDM"
+        ]
+      },
+      {
+        "objective": "Ask about symptoms of hyperglycemia",
+        "say": "Have you noticed increased thirst, urination, or fatigue?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "polyuria",
+          "polydipsia"
+        ]
+      },
+      {
+        "objective": "Discuss diet and exercise habits",
+        "say": "Can you tell me about your typical diet and activity level?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "diet",
+          "exercise"
+        ]
+      },
+      {
+        "objective": "Explain the confirmatory 3-hour glucose test",
+        "say": "Because your 1-hour test was abnormal, we need a follow-up 3-hour test to confirm the diagnosis.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "3-hour glucose tolerance test"
+        ]
+      },
+      {
+        "objective": "Explain monitoring and treatment plan",
+        "say": "We'll teach you to monitor your blood sugar, and start insulin if diet alone isn't enough.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "blood glucose monitoring",
+          "insulin"
+        ]
+      }
+    ]
+  }
+}

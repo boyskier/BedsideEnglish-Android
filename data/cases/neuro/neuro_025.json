@@ -1,0 +1,126 @@
+{
+  "id": "neuro_025",
+  "system": "neurology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Yoon",
+  "age": 28,
+  "gender": "female",
+  "chief_complaint": "severe throbbing unilateral headache with nausea and light sensitivity",
+  "hpi_details": "28F reports severe, throbbing pain on the right side of her head for 24 hours. Accompanied by nausea, vomiting, and extreme sensitivity to light/sound. Saw flashing lights (aura) 30 minutes before the pain started.",
+  "ideas": "knows she is having a migraine attack",
+  "concerns": "worried about recurring severe pain disrupting her work",
+  "expectations": "wants rescue migraine medication",
+  "pmh": "History of similar headaches since teenage years",
+  "medications": "Over-the-counter ibuprofen (ineffective)",
+  "social_hx": "Web designer, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Migraine with Aura evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Migraine with Aura is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Migraine Headache with Aura, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe throbbing unilateral headache with nausea and light sensitivity",
+      "Key HPI features: 28F reports severe, throbbing pain on the right side of her head for 24 hours. Accompanied by nausea, vomiting, and extreme sensitivity to light/sound. Saw flashing lights (aura) 30 minutes before the pain started.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Migraine Headache with Aura.",
+      "Relevant background/PMH: History of similar headaches since teenage years",
+      "Current medications: Over-the-counter ibuprofen (ineffective)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Migraine with Aura.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Retinal migraine without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any change in the usual aura pattern or a new type of headache — would need re-evaluation."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Migraine Headache with Aura",
+      "Discuss acute treatment options, such as a triptan and an antiemetic when clinically appropriate, after screening for contraindications."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Migraine Headache with Aura. severe throbbing unilateral headache with nausea and light sensitivity. 28F reports severe, throbbing pain on the right side of her head for 24 hours. Accompanied by nausea, vomiting, and extreme sensitivity to light/sound. Saw flashing lights (aura) 30 minutes before the pain started.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Migraine Headache with Aura.",
+    "assessment": "Clinical presentation highly suggestive of Migraine Headache with Aura.",
+    "plan": "Confirm that this is her usual migraine pattern and screen for red flags. Discuss acute treatment options, including a triptan and antiemetic when clinically appropriate after contraindication screening, along with trigger management and follow-up. Seek urgent reassessment for a new or substantially changed headache or aura pattern."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Migraine Headache with Aura.",
+    "Formulate prioritized differential diagnosis for severe throbbing unilateral headache with nausea and light sensitivity",
+    "Select appropriate laboratory and imaging studies for neurology",
+    "Implement evidence-based acute and long-term management strategies for Migraine Headache with Aura."
+  ],
+  "teaching": {
+    "diagnosis": "Migraine with Aura",
+    "one_liner": "A severe throbbing one-sided headache preceded by a visual aura (flashing lights), with nausea and sensitivity to light/sound — the pattern since teenage years confirms this is her known migraine type, not a new concerning symptom.",
+    "differentials": [
+      "Retinal migraine",
+      "TIA (if new/atypical aura)",
+      "Secondary headache (should be excluded if pattern changes)"
+    ],
+    "red_flags": [
+      "Any change in the usual aura pattern or a new type of headache — would need re-evaluation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Aura description",
+        "say": "What did the flashing lights look like, and how long before the headache started?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ],
+        "keywords": [
+          "aura",
+          "30 minutes before"
+        ]
+      },
+      {
+        "objective": "Headache character and duration",
+        "say": "Is the pain throbbing, one-sided, and how long has it lasted?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any nausea, vomiting, or sensitivity to light and sound?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Pattern since youth",
+        "say": "Have you had headaches like this since you were a teenager?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Impact on work",
+        "say": "How is this affecting your ability to work?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

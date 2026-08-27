@@ -1,0 +1,124 @@
+{
+  "id": "rheum_031",
+  "system": "rheum",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martinez",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "acute knee pain, swelling, and chondrocalcinosis on X-ray",
+  "hpi_details": "A 35-year-old male presents to the clinic with acute knee pain, swelling, and chondrocalcinosis on x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to pseudogout",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id":"knee_xray","test":"Knee radiograph","value":"Linear calcification in the menisci and articular cartilage consistent with chondrocalcinosis","flag":"abnormal","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Pseudogout (CPPD) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pseudogout (CPPD) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "Because CPPD at age 35 is atypical, assess for secondary causes such as hemochromatosis, hyperparathyroidism, hypomagnesemia, hypothyroidism, and prior joint injury.",
+      "Standard management emphasizes joint aspiration to exclude septic arthritis before intra-articular glucocorticoid injection; oral NSAIDs are an alternative, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute knee pain, swelling, and chondrocalcinosis on X-ray",
+      "Key HPI features: A 35-year-old male presents to the clinic with acute knee pain, swelling, and chondrocalcinosis on x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pseudogout CPPD.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pseudogout (CPPD).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gout without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing septic arthritis in a hot swollen joint, especially with fever, systemic illness, inability to bear weight, or immunosuppression."
+    ],
+    "management_principles": [
+      "Urgently aspirate a hot swollen joint for cell count, Gram stain, culture, and crystal analysis before intra-articular glucocorticoid injection; arrange emergency assessment if septic arthritis is suspected",
+      "Use oral NSAIDs only when appropriate after considering renal disease, gastrointestinal bleeding risk, cardiovascular disease, anticoagulation, and pregnancy status",
+      "In this unusually young patient, evaluate for secondary metabolic causes of CPPD",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: acute knee pain, swelling, and chondrocalcinosis on X-ray\n\nA 35-year-old male presents to the clinic with acute knee pain, swelling, and chondrocalcinosis on x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pseudogout CPPD.",
+    "assessment": "Condition highly suspicious for Pseudogout CPPD.",
+    "plan": "Aspirate the joint to exclude septic arthritis before intra-articular glucocorticoid injection; use oral NSAIDs when appropriate. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pseudogout CPPD",
+    "Select appropriate diagnostic workup for Pseudogout CPPD",
+    "Implement evidence-based management plan: aspirate the joint to exclude septic arthritis before intra-articular glucocorticoid injection; use oral NSAIDs when appropriate"
+  ],
+  "teaching": {
+    "diagnosis": "Pseudogout (CPPD)",
+    "one_liner": "Calcium pyrophosphate crystal deposition causing acute knee pain and swelling, with chondrocalcinosis visible on X-ray.",
+    "differentials": [
+      "Gout",
+      "Septic arthritis"
+    ],
+    "red_flags": [
+      "Fever, rigors, or feeling systemically unwell with a hot swollen joint",
+      "Inability to bear weight or rapidly worsening joint pain/swelling",
+      "Immunosuppression or a recent joint procedure with acute monoarthritis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Joint and onset",
+        "say": "Which joint, and how suddenly did it start?",
+        "domains": [
+          "location",
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Swelling",
+        "say": "How swollen is the knee?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Any fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior episodes and secondary causes",
+        "say": "Has this happened before, or do you have thyroid, parathyroid, iron-overload, or magnesium problems?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Other joint conditions",
+        "say": "Do you have any other joint problems?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

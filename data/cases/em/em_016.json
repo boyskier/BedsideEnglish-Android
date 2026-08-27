@@ -1,0 +1,162 @@
+{
+  "id": "em_016",
+  "system": "emergency medicine",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Taylor",
+  "age": 46,
+  "gender": "female",
+  "chief_complaint": "severe headache, confusion, nausea, and cherry-red lips in whole family using indoor propane heater during winter power outage",
+  "hpi_details": "Family of 4 presenting with headache and lethargy with normal standard pulse oximetry (SpO2 99% falsely normal due to carboxyhemoglobin) where co-oximetry confirms COHb level of 28% requiring immediate 100% high-flow oxygen via non-rebreather mask or hyperbaric oxygen therapy.",
+  "ideas": "thinks this is related to carbon monoxide poisoning smoke inhalation",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "co_oximetry",
+      "title": "Blood co-oximetry",
+      "order_terms": [
+        "co-oximetry",
+        "co oximetry",
+        "carboxyhemoglobin",
+        "carbon monoxide level",
+        "cohb"
+      ],
+      "availability_message": "The blood co-oximetry result is now available.",
+      "results": [
+        {
+          "id": "carboxyhemoglobin",
+          "test": "Carboxyhemoglobin",
+          "value": "28",
+          "unit": "%",
+          "reference_range": "<3% in a non-smoker",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "Initial sample before prolonged oxygen therapy",
+          "note": "Standard pulse oximetry may appear normal in carbon monoxide poisoning."
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Carbon Monoxide Poisoning evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Carbon Monoxide Poisoning is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Carbon Monoxide Poisoning Smoke Inhalation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe headache, confusion, nausea, and cherry-red lips in whole family using indoor propane heater during winter power outage",
+      "Key HPI features: Family of 4 presenting with headache and lethargy with normal standard pulse oximetry (SpO2 99% falsely normal due to carboxyhemoglobin) where co-oximetry confirms COHb level of 28% requiring immediate 100% high-flow oxygen via non-rebreather mask or hyperbaric oxygen therapy.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Carbon Monoxide Poisoning Smoke Inhalation.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Carbon Monoxide Poisoning.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral illness (flu-like symptoms) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Multiple household members with the same symptoms — a strong clue pointing to a shared environmental exposure."
+    ],
+    "management_principles": [
+      "Immediately remove from exposure, give 100% oxygen by non-rebreather mask, and measure carboxyhemoglobin with co-oximetry; discuss hyperbaric oxygen for severe poisoning or high-risk features",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Carbon Monoxide Poisoning Smoke Inhalation: severe headache, confusion, nausea, and cherry-red lips in whole family using indoor propane heater during winter power outage. Family of 4 presenting with headache and lethargy with normal standard pulse oximetry (SpO2 99% falsely normal due to carboxyhemoglobin) where co-oximetry confirms COHb level of 28% requiring immediate 100% high-flow oxygen via non-rebreather mask or hyperbaric oxygen therapy.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Carbon Monoxide Poisoning Smoke Inhalation.",
+    "assessment": "Clinical presentation highly suggestive of Carbon Monoxide Poisoning Smoke Inhalation.",
+    "plan": "Immediately remove all affected people from the exposure and give 100% oxygen by non-rebreather mask. Measure carboxyhemoglobin with co-oximetry, assess neurologic and cardiac involvement, and consult a hyperbaric center for severe poisoning or high-risk features such as loss of consciousness, neurologic deficits, myocardial ischemia, severe acidosis, pregnancy, or markedly elevated carboxyhemoglobin. Do not use standard pulse oximetry to exclude poisoning. Ensure the combustion source is remediated before return home."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Carbon Monoxide Poisoning Smoke Inhalation",
+    "Formulate prioritized differential diagnosis for severe headache, confusion, nausea, and cherry-red lips in whole family using indoor propane heater during winter power outage",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Carbon Monoxide Poisoning",
+    "one_liner": "Carbon monoxide from an indoor combustion source (like a propane heater) binds hemoglobin far more strongly than oxygen, causing headache, confusion, and cherry-red skin — standard pulse oximetry reads falsely normal, so co-oximetry is needed.",
+    "differentials": [
+      "Viral illness (flu-like symptoms)",
+      "Migraine",
+      "Food poisoning"
+    ],
+    "red_flags": [
+      "Multiple household members with the same symptoms — a strong clue pointing to a shared environmental exposure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Source of combustion",
+        "say": "Were you using any heater, generator, or stove indoors?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "propane heater",
+          "indoor"
+        ]
+      },
+      {
+        "objective": "Others affected",
+        "say": "Is anyone else in your household having similar symptoms?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family",
+          "others"
+        ]
+      },
+      {
+        "objective": "Symptom character",
+        "say": "Do you have a headache, and how confused do you feel?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "headache",
+          "confusion"
+        ]
+      },
+      {
+        "objective": "Ventilation",
+        "say": "Was the area well ventilated, or were windows closed?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Duration of exposure",
+        "say": "How long were you exposed to this?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

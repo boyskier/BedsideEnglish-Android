@@ -1,0 +1,88 @@
+{
+  "id": "readback_hyperkalemia_verbal_order",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Read-back",
+  "urgency": "urgent",
+  "difficulty": "intermediate",
+  "eval_template": "clarify_orders_drill",
+  "patient_name": "Verbal order — critical hyperkalemia treatment",
+  "chief_complaint": "Take a rapid verbal order for hyperkalemia treatment safely, using clarification and closed-loop read-back",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Verbal order read-back: critical potassium of 6.8 with ECG changes",
+    "task": "Read-back",
+    "urgency": "urgent",
+    "patient": "Mrs. Diane Foster, 70-year-old woman with acute kidney injury",
+    "location": "Inpatient ward, night shift; you are the covering intern taking a phone order from the nephrology senior",
+    "situation": "Critical potassium of 6.8 mmol/L with peaked T waves on ECG; the senior is giving you a rapid verbal treatment order over a noisy phone line and is in a hurry.",
+    "background": [
+      "Acute kidney injury, creatinine 3.4 mg/dL, on no potassium-sparing medications currently."
+    ],
+    "current_status": [
+      "Potassium 6.8 mmol/L, ECG shows peaked T waves; patient hemodynamically stable, no arrhythmia yet."
+    ],
+    "key_data": [
+      "The order will include several drugs, doses, and a repeat-lab time — you will need to actively clarify and read it back."
+    ],
+    "treatments": [
+      "No hyperkalemia treatment given yet; the senior is dictating the order now."
+    ],
+    "your_request": "Listen to the verbal order, ask for clarification of anything unclear or ambiguous, and read the complete order back accurately before acting on it.",
+    "must_include": [
+      "A request for clarification if any drug, dose, route, or timing is unclear or garbled.",
+      "An accurate, complete read-back of every drug, dose, and route in the order.",
+      "The specific time to repeat the potassium level.",
+      "Explicit confirmation from the senior that your read-back is correct before ending the call."
+    ]
+  },
+  "kickoff_text": "Nephrology here — sorry, bad signal. Listen carefully, I'm going to give you the potassium order once: ten units of regular insulin IV, with fifty mils of D50, calcium gluconate one amp — that's one gram — IV over ten minutes, and nebulized albuterol. Repeat the potassium in one hour. Did you get all that?",
+  "persona_override": "You are Dr. Nakamura, the nephrology senior giving a rushed verbal order over a poor phone connection for a critical potassium of 6.8 mmol/L with ECG changes: 10 units regular insulin IV with 50 mL of D50 (dextrose), calcium gluconate 1 gram IV over 10 minutes, nebulized albuterol, and a repeat potassium in one hour. Deliver the order quickly and somewhat run-together the first time, the way a rushed senior would. If the learner does not ask for clarification or does not read the full order back accurately (all four treatments, doses, route, and the one-hour recheck time), do not simply confirm — instead say something like 'Wait, read that back to me, I need to make sure you have it right' and repeat the order once more, slightly slower. Only once the learner gives a complete, accurate read-back should you say 'That's correct, go ahead' and end the call. Reward asking for clarification and an accurate closed-loop read-back; do not reward a learner who simply says 'okay, got it' without repeating the order back.",
+  "learning_objectives": [
+    "ask for clarification or repetition when part of a verbal order is unclear",
+    "accurately read back every drug, dose, and route in the order",
+    "read back the specific timing for the repeat potassium level",
+    "obtain explicit confirmation that the read-back is correct before ending the call",
+    "stay calm and concise despite the urgency and poor phone connection"
+  ],
+  "suggested_questions": [
+    "Sorry, the line broke up — could you repeat the calcium gluconate dose and how it should be given?",
+    "Let me read that back to confirm: ten units of regular insulin IV with fifty mils of D50, calcium gluconate one gram IV over ten minutes, and nebulized albuterol.",
+    "And I'll recheck the potassium in one hour — can you confirm that's everything before I go give these orders?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Closed-loop verbal order read-back for critical hyperkalemia with ECG changes",
+    "core_concepts": [
+      "A verbal order for a high-risk, time-critical treatment must be read back in full before it is acted on, not simply acknowledged.",
+      "Asking for clarification on a poor connection or an ambiguous instruction is a safety behavior, not a sign of incompetence."
+    ],
+    "diagnostic_clues": [
+      "A potassium of 6.8 mmol/L with peaked T waves is a medical emergency requiring immediate membrane-stabilizing and potassium-shifting treatment."
+    ],
+    "common_misconceptions": [
+      "Saying 'okay, got it' is an adequate substitute for reading the order back verbatim.",
+      "Asking a senior to repeat an order will be seen as incompetence rather than as safe practice."
+    ],
+    "dangerous_errors": [
+      "Acting on a verbal order without confirming the dose, route, or timing when any part was unclear.",
+      "Omitting the repeat-potassium timing, which risks missing ongoing arrhythmia risk."
+    ],
+    "management_principles": [
+      "Use explicit closed-loop communication: clarify, read back the full order, and get explicit confirmation before proceeding.",
+      "Treat hyperkalemia with ECG changes as a time-critical emergency requiring immediate action once the order is confirmed."
+    ],
+    "boundaries_and_exceptions": [
+      "Exact hyperkalemia treatment doses, sequencing, and monitoring depend on the patient's renal function, cardiac status, and local protocols."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS Closed-Loop Communication",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/index.html"
+      },
+      {
+        "title": "KDIGO Acute Kidney Injury and Electrolyte Management Guidance",
+        "url": "https://kdigo.org/guidelines/acute-kidney-injury/"
+      }
+    ]
+  }
+}

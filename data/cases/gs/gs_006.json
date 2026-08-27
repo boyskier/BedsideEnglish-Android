@@ -1,0 +1,154 @@
+{
+  "id": "gs_006",
+  "system": "general_surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Mitchell",
+  "age": 49,
+  "gender": "male",
+  "chief_complaint": "sudden agonizing upper abdominal pain with board-like rigid abdomen and shoulder pain",
+  "hpi_details": "49M taking high-dose NSAIDs presenting with abrupt-onset excruciating epigastric pain, board-like abdominal rigidity, rebound tenderness, and free air under diaphragm on upright chest X-ray.",
+  "ideas": "thinks this is related to perforated peptic ulcer with peritonitis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily; high-dose ibuprofen (self-directed, NSAID) for chronic back pain",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "upright_chest_xray",
+      "test": "Upright chest radiograph",
+      "value": "Free subdiaphragmatic intraperitoneal air, greatest beneath the right hemidiaphragm",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Perforated Peptic Ulcer with Peritonitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Perforated Peptic Ulcer with Peritonitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate surgical consultation for emergent laparotomy or laparoscopic repair, together with NPO status, nasogastric decompression, IV fluid resuscitation, and broad-spectrum antibiotics, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden agonizing upper abdominal pain with board-like rigid abdomen and shoulder pain",
+      "Key HPI features: 49M taking high-dose NSAIDs presenting with abrupt-onset excruciating epigastric pain, board-like abdominal rigidity, rebound tenderness, and free air under diaphragm on upright chest X-ray.",
+      "Objective/Exam findings: Board-like abdominal rigidity with diffuse rebound tenderness and guarding; absent bowel sounds. Upright chest X-ray demonstrates free air under the diaphragm (pneumoperitoneum). Vitals may show tachycardia and fever as sepsis develops.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily; high-dose ibuprofen (self-directed, NSAID) for chronic back pain"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Perforated Peptic Ulcer with Peritonitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute pancreatitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Board-like abdominal rigidity — assume perforation."
+    ],
+    "management_principles": [
+      "Keep patient NPO, place a nasogastric tube for decompression, and initiate aggressive IV fluid resuscitation",
+      "Start broad-spectrum IV antibiotics covering enteric Gram-negatives and anaerobes, and give an IV proton pump inhibitor",
+      "Obtain emergent General Surgery consultation for urgent laparotomy or laparoscopic repair (omental/Graham patch) of the perforation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Perforated Peptic Ulcer with Peritonitis: sudden agonizing upper abdominal pain with board-like rigid abdomen and shoulder pain. 49M taking high-dose NSAIDs presenting with abrupt-onset excruciating epigastric pain, board-like abdominal rigidity, rebound tenderness, and free air under diaphragm on upright chest X-ray.",
+    "objective": "Board-like abdominal rigidity with diffuse rebound tenderness and guarding; absent bowel sounds. Upright chest X-ray demonstrates free air under the diaphragm (pneumoperitoneum). Vitals may show tachycardia and fever as sepsis develops.",
+    "assessment": "Perforated Peptic Ulcer with generalized peritonitis - a surgical emergency.",
+    "plan": "1. NPO, nasogastric decompression, and aggressive IV fluid resuscitation. 2. Broad-spectrum IV antibiotics and IV proton pump inhibitor. 3. Emergent General Surgery consultation for urgent laparotomy or laparoscopic repair of the perforation."
+  },
+  "learning_objectives": [
+    "Recognize board-like abdominal rigidity and free air under the diaphragm as signs of perforation",
+    "Link chronic NSAID use to peptic ulcer perforation risk",
+    "Execute pre-operative resuscitation including NG decompression, IV fluids, and broad-spectrum antibiotics",
+    "Outline the surgical approach (omental/Graham patch repair) for a perforated peptic ulcer"
+  ],
+  "teaching": {
+    "diagnosis": "Perforated Peptic Ulcer with Peritonitis",
+    "one_liner": "A hole through the stomach or duodenal wall spills gastric contents into the peritoneum, causing sudden severe pain and a rigid, board-like abdomen — a surgical emergency.",
+    "differentials": [
+      "Acute pancreatitis",
+      "Ruptured AAA",
+      "Acute cholecystitis"
+    ],
+    "red_flags": [
+      "Board-like abdominal rigidity — assume perforation",
+      "Shoulder tip pain (referred diaphragmatic irritation)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and severity",
+        "say": "Did the pain start suddenly and become unbearable right away?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "sudden",
+          "abrupt",
+          "severe"
+        ]
+      },
+      {
+        "objective": "NSAID or ulcer history",
+        "say": "Have you been taking pain relievers like ibuprofen regularly, or have you had ulcers before?",
+        "domains": [
+          "medications",
+          "pmh"
+        ],
+        "keywords": [
+          "nsaid",
+          "ibuprofen",
+          "ulcer"
+        ]
+      },
+      {
+        "objective": "Referred shoulder pain",
+        "say": "Does the pain spread up to your shoulder?",
+        "domains": [
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder"
+        ]
+      },
+      {
+        "objective": "Rigidity and worsening with movement",
+        "say": "Does it hurt more when you move or take a deep breath?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "move",
+          "breathe",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Have you had a fever or felt your heart racing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "heart racing"
+        ]
+      }
+    ]
+  }
+}

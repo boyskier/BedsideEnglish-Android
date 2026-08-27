@@ -1,0 +1,173 @@
+{
+  "id": "hemato_011",
+  "system": "hematology_oncology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Torres",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "rapid jaundice, dark tea urine, and severe fatigue",
+  "hpi_details": "38F presenting with acute hemolytic anemia, scleral icterus, splenomegaly, spherocytes on smear, and strongly positive Direct Antiglobulin Test (Coombs IgG).",
+  "ideas": "thinks this is related to autoimmune hemolytic anemia warm aiha",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "7.8",
+      "unit": "g/dL",
+      "reference_range": "12.0-16.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "peripheral_smear",
+      "test": "Peripheral blood smear",
+      "value": "Spherocytes with polychromasia",
+      "flag": "abnormal",
+      "specimen": "Blood"
+    },
+    {
+      "id": "direct_antiglobulin_test",
+      "test": "Direct antiglobulin test",
+      "value": "Strongly positive for IgG",
+      "reference_range": "Negative",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "indirect_bilirubin",
+      "test": "Indirect bilirubin",
+      "value": "3.6",
+      "unit": "mg/dL",
+      "reference_range": "0.2-0.8",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Autoimmune Hemolytic Anemia (Warm AIHA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Autoimmune Hemolytic Anemia (Warm AIHA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes first-line high-dose corticosteroids to suppress autoantibody-mediated red cell destruction, with escalation to rituximab or splenectomy for steroid-refractory disease, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: rapid jaundice, dark tea urine, and severe fatigue",
+      "Key HPI features: 38F presenting with acute hemolytic anemia, scleral icterus, splenomegaly, spherocytes on smear, and strongly positive Direct Antiglobulin Test (Coombs IgG).",
+      "Objective/Exam findings: Vitals: Temp 37.2C, HR 108, BP 110/70. Scleral icterus, mucosal pallor, mild splenomegaly (spleen tip palpable), no lymphadenopathy. Bloods: Hemoglobin 7.8 g/dL, reticulocyte count 12% (elevated), LDH markedly elevated, haptoglobin undetectable, total bilirubin 4.2 mg/dL with indirect fraction 3.6 mg/dL. Peripheral smear shows spherocytes and polychromasia. Direct Antiglobulin Test (Coombs) strongly positive for IgG.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Autoimmune Hemolytic Anemia (Warm AIHA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cold agglutinin disease (cold AIHA) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly falling hemoglobin or symptoms of severe anemia (chest pain, breathlessness) — may need urgent transfusion."
+    ],
+    "management_principles": [
+      "Assess hemodynamic stability; transfuse crossmatch-compatible (least incompatible) packed RBCs if symptomatic or hemoglobin critically low, recognizing the autoantibody may complicate crossmatching",
+      "Start high-dose corticosteroids (Prednisone 1mg/kg/day) as first-line therapy to suppress hemolysis",
+      "Supplement folic acid 1mg daily given ongoing hemolysis and increased red cell turnover",
+      "Escalate to Rituximab or splenectomy if steroid-refractory; screen for secondary causes (lupus, CLL, lymphoma, drug-induced hemolysis)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Autoimmune Hemolytic Anemia Warm AIHA: rapid jaundice, dark tea urine, and severe fatigue. 38F presenting with acute hemolytic anemia, scleral icterus, splenomegaly, spherocytes on smear, and strongly positive Direct Antiglobulin Test (Coombs IgG).",
+    "objective": "Vitals: Temp 37.2C, HR 108, BP 110/70. Scleral icterus, mucosal pallor, mild splenomegaly (spleen tip palpable), no lymphadenopathy. Bloods: Hemoglobin 7.8 g/dL, reticulocyte count 12% (elevated), LDH markedly elevated, haptoglobin undetectable, total bilirubin 4.2 mg/dL with indirect fraction 3.6 mg/dL. Peripheral smear shows spherocytes and polychromasia. Direct Antiglobulin Test (Coombs) strongly positive for IgG.",
+    "assessment": "Warm Autoimmune Hemolytic Anemia (Warm AIHA) presenting with acute IgG-mediated extravascular hemolysis, jaundice, and symptomatic anemia.",
+    "plan": "1. Assess hemodynamic stability; obtain a type and crossmatch, transfusing least-incompatible packed RBCs if symptomatic or hemoglobin critically low. 2. Start high-dose corticosteroids: Prednisone 1mg/kg/day as first-line therapy. 3. Supplement folic acid 1mg daily given ongoing hemolysis. 4. If steroid-refractory after 1-3 weeks, escalate to Rituximab; consider splenectomy for relapsed/refractory disease. 5. Screen for secondary causes (ANA/lupus workup, CLL/lymphoma evaluation, recent new medications) and refer to hematology for ongoing monitoring of Hgb, reticulocytes, and LDH."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Autoimmune Hemolytic Anemia Warm AIHA",
+    "Formulate prioritized differential diagnosis for rapid jaundice, dark tea urine, and severe fatigue",
+    "Select appropriate laboratory and imaging studies for hematology_oncology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Autoimmune Hemolytic Anemia (Warm AIHA)",
+    "one_liner": "IgG autoantibodies coat red blood cells at body temperature, marking them for destruction by the spleen, causing rapid jaundice, dark urine, and fatigue with a positive direct Coombs test.",
+    "differentials": [
+      "Cold agglutinin disease (cold AIHA)",
+      "Hereditary spherocytosis",
+      "G6PD deficiency hemolysis"
+    ],
+    "red_flags": [
+      "Rapidly falling hemoglobin or symptoms of severe anemia (chest pain, breathlessness) — may need urgent transfusion"
+    ],
+    "must_ask": [
+      {
+        "objective": "Jaundice onset",
+        "say": "How quickly did the yellowing of your eyes or skin come on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "jaundice",
+          "yellow",
+          "quickly"
+        ]
+      },
+      {
+        "objective": "Urine color",
+        "say": "Has your urine looked unusually dark, like tea?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dark urine",
+          "tea colored"
+        ]
+      },
+      {
+        "objective": "Fatigue severity",
+        "say": "How severe is your fatigue — is it affecting your ability to function?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "fatigue",
+          "severe"
+        ]
+      },
+      {
+        "objective": "Associated autoimmune conditions",
+        "say": "Do you have any other autoimmune conditions, like lupus?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "lupus",
+          "autoimmune"
+        ]
+      },
+      {
+        "objective": "Medication history",
+        "say": "Are you taking any new medications recently?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

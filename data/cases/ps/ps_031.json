@@ -1,0 +1,156 @@
+{
+  "id": "ps_031",
+  "system": "ps",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Wright",
+  "age": 40,
+  "gender": "male",
+  "chief_complaint": "painless white leathery skin after house fire",
+  "hpi_details": "40-year-old male presents to the ED after being rescued from a house fire. He sustained burns to his entire right arm. The skin on the arm appears stark white, leathery, and dry. It is completely painless to the touch and lacks capillary refill.",
+  "ideas": "thinks it might be related to burn_torso",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Thermal Burn Injury evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Thermal Burn Injury is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent burn-center evaluation, assessment of total body surface area (TBSA), and early excision/grafting when indicated, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless white leathery skin after house fire",
+      "Key HPI features: A 40-year-old male presents to the ED after a house fire with a painless, white, leathery right arm.",
+      "Objective/Exam findings: A dry, insensate, nonblanching eschar of the right upper extremity; assess TBSA, distal perfusion, and inhalation injury.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Thermal Burn Injury.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chemical burn without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inhalation injury (soot in mouth, hoarseness)."
+    ],
+    "management_principles": [
+      "Urgent burn-center evaluation; calculate TBSA and provide IV fluid resuscitation when indicated; plan excision and grafting",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "40M presenting with severe burns to the right upper extremity following a structural fire.",
+    "objective": "Right arm reveals dry, inelastic, leathery, pearly white to charred eschar extending circumferentially. Sensation to pinprick is completely absent. No capillary blanching.",
+    "assessment": "Full-thickness (Third-degree) Thermal Burn Injury.",
+    "plan": "Urgently consult or transfer to a burn center. Calculate TBSA and provide IV fluid resuscitation when indicated by burn size and clinical status. Arrange early excision and split-thickness skin grafting. Monitor a circumferential limb burn for vascular compromise requiring escharotomy."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of a full-thickness burn of the upper extremity",
+    "Select appropriate diagnostic workup for a full-thickness burn of the upper extremity",
+    "Implement evidence-based management: burn-center evaluation, TBSA-guided resuscitation, and surgical debridement/grafting when indicated"
+  ],
+  "teaching": {
+    "diagnosis": "Thermal Burn Injury",
+    "one_liner": "Tissue injury caused by heat exposure, requiring assessment of total body surface area (TBSA), depth, and airway involvement.",
+    "differentials": [
+      "Chemical burn",
+      "Electrical burn",
+      "Stevens-Johnson syndrome"
+    ],
+    "red_flags": [
+      "Inhalation injury (soot in mouth, hoarseness)",
+      "Circumferential chest/limb burns"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and thermal agent",
+        "say": "What caused the burn — open flame, hot liquid, steam, or chemicals?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "flame",
+          "liquid",
+          "steam",
+          "scald",
+          "heat"
+        ]
+      },
+      {
+        "objective": "Inhalation injury screen",
+        "say": "Were you trapped in an enclosed space, and do you have hoarseness or black soot in your cough?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "enclosed",
+          "trapped",
+          "hoarseness",
+          "soot",
+          "singed"
+        ]
+      },
+      {
+        "objective": "Estimated body surface area",
+        "say": "Which body parts were burned — face, chest, arms, or legs?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "chest",
+          "face",
+          "arms",
+          "legs",
+          "body"
+        ]
+      },
+      {
+        "objective": "Pain and depth assessment",
+        "say": "Are the burned areas extremely painful and blistered, or numb and white?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "blistered",
+          "blisters",
+          "painful",
+          "white",
+          "numb"
+        ]
+      },
+      {
+        "objective": "First aid fluid resuscitation status",
+        "say": "Did you cool the burn with clean tap water and have you received IV fluids?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "water",
+          "cooling",
+          "fluids",
+          "cool",
+          "saline"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "id": "nephro_016",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Roberts",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating right flank pain",
+  "hpi_details": "45M presents with acute onset of severe, colicky right flank pain that radiates down to his right groin. The pain started 2 hours ago. He is pacing around the room unable to find a comfortable position. He has nausea and vomiting. He noticed his urine looked slightly pink this morning.",
+  "ideas": "thinks he has a kidney stone",
+  "concerns": "terrified the pain will not stop",
+  "expectations": "wants pain medication and a scan",
+  "pmh": "Gout",
+  "medications": "Allopurinol",
+  "social_hx": "Low water intake",
+  "investigation_events": [
+    {
+      "id": "stat_renal_colic_workup",
+      "title": "Urgent renal colic investigations",
+      "order_terms": ["urinalysis", "urine test", "CT abdomen", "CT pelvis", "non-contrast CT", "stone CT"],
+      "availability_message": "Urinalysis and non-contrast CT results are now available. Analgesia and antiemetic treatment should not be delayed while obtaining imaging.",
+      "results": [
+        {"id": "urinalysis", "test": "Urinalysis", "value": "3+ blood; >50 RBC/hpf; no pyuria or nitrites", "flag": "abnormal"},
+        {"id": "ct_kub", "test": "Non-contrast CT abdomen and pelvis", "value": "4 mm obstructing calculus at the right ureterovesical junction with mild right hydroureteronephrosis", "flag": "abnormal", "note": "No additional obstructing calculus is seen."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Nephrolithiasis (Kidney Stone)",
+    "core_concepts": [
+      "Classic presentation is acute, severe, colicky flank pain radiating to the groin with hematuria.",
+      "Patients typically cannot sit still, differentiating it from peritonitis."
+    ],
+    "diagnostic_clues": [
+      "Flank pain to groin",
+      "Pacing",
+      "Hematuria"
+    ],
+    "common_misconceptions": [
+      "Assuming all flank pain is pyelonephritis (which typically has fever)."
+    ],
+    "dangerous_errors": [
+      "Missing an infected stone (fever + stone), which is a urologic emergency."
+    ],
+    "management_principles": [
+      "Analgesia (NSAIDs/opioids), antiemetics, non-contrast CT abdomen/pelvis, urology consult if >10mm or infected."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45M with severe, colicky right flank pain radiating to groin, nausea, and hematuria.",
+    "objective": "Writhing in pain. Afebrile. Right CVA tenderness.",
+    "assessment": "Nephrolithiasis / Ureteral colic.",
+    "plan": "IV Toradol, Ondansetron. Non-contrast CT Abdomen/Pelvis. Urinalysis."
+  },
+  "learning_objectives": [
+    "Recognize the clinical presentation of ureteral colic and appropriate initial imaging."
+  ],
+  "teaching": {
+    "diagnosis": "Nephrolithiasis (Ureteral Colic)",
+    "one_liner": "Acute severe colicky flank pain radiating to the groin in a patient unable to sit still, with hematuria.",
+    "differentials": [
+      "Pyelonephritis",
+      "Abdominal aortic aneurysm rupture"
+    ],
+    "red_flags": [
+      "Fever with a stone (infected urolithiasis)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character and radiation",
+        "say": "Can you describe the pain, and does it move from your back down toward your groin?",
+        "domains": [
+          "character",
+          "radiation"
+        ],
+        "keywords": [
+          "colicky",
+          "flank",
+          "groin"
+        ]
+      },
+      {
+        "objective": "Hematuria",
+        "say": "Have you noticed any blood in your urine?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hematuria",
+          "blood in urine"
+        ]
+      },
+      {
+        "objective": "Fever and infection signs",
+        "say": "Have you had any fever, chills, or burning when you urinate?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "dysuria"
+        ]
+      },
+      {
+        "objective": "Prior stone history",
+        "say": "Have you ever had a kidney stone before, and do you know its size?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "previous stone",
+          "history"
+        ]
+      },
+      {
+        "objective": "Nausea and vomiting",
+        "say": "Are you feeling nauseated or have you been vomiting with the pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "vomiting"
+        ]
+      }
+    ]
+  }
+}

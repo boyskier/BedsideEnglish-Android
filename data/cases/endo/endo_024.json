@@ -1,0 +1,118 @@
+{
+  "id": "endo_024",
+  "system": "endocrinology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Kang",
+  "age": 44,
+  "gender": "male",
+  "chief_complaint": "progressive muscle weakness, facial puffiness, easy bruising, and new hypertension",
+  "hpi_details": "44M presents with progressive proximal muscle weakness (difficulty rising from chair), new purple stretch marks on his abdomen, round puffy face, and 12kg weight gain concentrated in the abdomen. Blood pressure checked at home is high.",
+  "ideas": "thinks he is just getting fat and out of shape",
+  "concerns": "worried about stroke due to high blood pressure",
+  "expectations": "wants hormone check",
+  "pmh": "No prior history",
+  "medications": "None",
+  "social_hx": "Office manager, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Cushing Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cushing Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes using a single guideline-supported screening test for hypercortisolism, confirming abnormal results, then localizing to an adrenal or pituitary source before treatment, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive muscle weakness, facial puffiness, easy bruising, and new hypertension",
+      "Key HPI features: 44M presents with progressive proximal muscle weakness (difficulty rising from chair), new purple stretch marks on his abdomen, round puffy face, and 12kg weight gain concentrated in the abdomen. Blood pressure checked at home is high.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Cushing Syndrome (hypercortisolism), differential includes adrenal adenoma vs pituitary ACTH tumor."
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cushing Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple obesity without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New severe hypertension."
+    ],
+    "management_principles": [
+      "Review any exogenous glucocorticoid exposure (oral, inhaled, topical, or injected) as a common mimicker before pursuing endogenous Cushing syndrome workup",
+      "Use one guideline-supported initial screening test for hypercortisolism (late-night salivary cortisol, 24-hour urinary free cortisol, or overnight dexamethasone suppression), then confirm abnormal results before determining ACTH-dependent versus ACTH-independent causes",
+      "Refer to specialty team and provide comprehensive patient counseling"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Cushing's Syndrome",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/cushings-syndrome"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Cushing Syndrome (hypercortisolism), differential includes adrenal adenoma vs pituitary ACTH tumor. progressive muscle weakness, facial puffiness, easy bruising, and new hypertension. 44M presents with progressive proximal muscle weakness (difficulty rising from chair), new purple stretch marks on his abdomen, round puffy face, and 12kg weight gain concentrated in the abdomen. Blood pressure checked at home is high.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Cushing Syndrome (hypercortisolism), differential includes adrenal adenoma vs pituitary ACTH tumor.",
+    "assessment": "Cushing Syndrome (hypercortisolism), given the central weight gain, rounded face, purple striae, proximal muscle weakness, and new hypertension; differential includes an adrenal adenoma versus a pituitary ACTH-secreting tumor.",
+    "plan": "Use one guideline-supported initial screening test for hypercortisolism (late-night salivary cortisol, 24-hour urinary free cortisol, or overnight dexamethasone suppression) and confirm abnormal results before determining ACTH-dependent versus ACTH-independent causes. Review exogenous glucocorticoid exposure and refer to Endocrinology for definitive testing and imaging only after biochemical confirmation."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Cushing Syndrome (hypercortisolism), differential includes adrenal adenoma vs pituitary ACTH tumor.",
+    "Formulate prioritized differential diagnosis for progressive muscle weakness, facial puffiness, easy bruising, and new hypertension",
+    "Select appropriate laboratory and imaging studies for endocrinology",
+    "Implement evidence-based acute and long-term management strategies for Cushing Syndrome (hypercortisolism), differential includes adrenal adenoma vs pituitary ACTH tumor."
+  ],
+  "teaching": {
+    "diagnosis": "Cushing Syndrome",
+    "one_liner": "Excess cortisol causing central weight gain, a rounded face, purple stretch marks, easy bruising, and proximal muscle weakness — needs biochemical testing to distinguish adrenal from pituitary causes.",
+    "differentials": [
+      "Simple obesity",
+      "Depression (for some overlapping symptoms)"
+    ],
+    "red_flags": [
+      "New severe hypertension"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fat distribution",
+        "say": "Where has your weight gain been concentrated?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Muscle weakness",
+        "say": "Is it hard to get up from a chair?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Skin changes",
+        "say": "Any stretch marks or easy bruising?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Blood pressure",
+        "say": "Has your blood pressure been high?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

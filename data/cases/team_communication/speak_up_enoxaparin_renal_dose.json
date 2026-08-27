@@ -1,0 +1,93 @@
+{
+  "id": "speak_up_enoxaparin_renal_dose",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Advocacy / escalation",
+  "urgency": "semi-urgent",
+  "difficulty": "beginner",
+  "eval_template": "speak_up_drill",
+  "patient_name": "Raise a concern about an anticoagulant order in a patient with renal impairment",
+  "chief_complaint": "Respectfully flag that a full treatment-dose anticoagulant order may need renal adjustment before it is given",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Speaking up: enoxaparin ordered at full treatment dose in a patient with significant renal impairment",
+    "task": "Advocacy / escalation",
+    "urgency": "semi-urgent",
+    "patient": "Mr. Walter Higgins, 76-year-old man admitted with a confirmed deep vein thrombosis",
+    "location": "Medical ward, mid-morning; the senior resident has just written orders and is about to move to the next patient",
+    "situation": "The senior resident ordered enoxaparin 1 mg/kg twice daily for treatment anticoagulation, but you just saw this morning's labs show a creatinine clearance of 24 mL/min, and standard dosing for significant renal impairment is different.",
+    "background": [
+      "Admitted yesterday with a confirmed proximal deep vein thrombosis in the left leg; no contraindication to anticoagulation.",
+      "Known chronic kidney disease, previously stable, but today's creatinine clearance is notably lower than his baseline."
+    ],
+    "current_status": [
+      "Hemodynamically stable, mild leg swelling, no signs of bleeding.",
+      "Creatinine clearance calculated this morning at 24 mL/min, not yet reviewed by the senior resident before the order was written."
+    ],
+    "key_data": [
+      "The order as written is enoxaparin 1 mg/kg subcutaneously every 12 hours, which is the standard treatment dose for normal renal function.",
+      "You have not yet mentioned the renal function result to the senior resident."
+    ],
+    "treatments": [
+      "No dose of enoxaparin has been given yet; the order is written but nursing has not administered it."
+    ],
+    "your_request": "Raise your specific concern with the senior resident clearly before the dose is given, and reach an explicit, agreed plan.",
+    "must_include": [
+      "A clear statement that you have a concern about the order, not just a question.",
+      "The specific issue: this morning's creatinine clearance of 24 mL/min and the standard full treatment dose that was ordered.",
+      "A respectful, collaborative tone that treats the senior resident as a partner.",
+      "An explicit agreed next step before the medication is administered."
+    ]
+  },
+  "kickoff_text": "Yep, I've written up the DVT orders — enoxaparin at treatment dose. Anything else before I move on?",
+  "persona_override": "You are Dr. Alvarez, a senior resident who just wrote orders for Mr. Higgins and is moving quickly through a busy morning. You had not yet reviewed this morning's renal function when you wrote the enoxaparin order at the standard full treatment dose. If the learner clearly states a specific concern — naming the creatinine clearance of 24 mL/min and that the dose may need renal adjustment — respond receptively: 'Oh, good catch, I hadn't seen that result yet. Let's adjust the dose and frequency.' This is a beginner-level scenario, so you are easy to persuade and do not push back once the learner states the concern clearly; you only ask a brief clarifying question such as 'What result exactly, and when was it drawn?' before agreeing. If the learner only hints vaguely ('should we maybe double check something?') without stating the specific finding and the specific concern, ask directly: 'What exactly is the concern — is there a result I'm missing?' so the learner has to practice naming it clearly. Stay friendly and approachable throughout.",
+  "learning_objectives": [
+    "raise the safety concern directly and promptly, before the medication is given",
+    "state the specific finding driving the concern: the creatinine clearance and the standard dose that was ordered",
+    "use a collaborative, non-confrontational tone appropriate for flagging a likely oversight rather than a deliberate error",
+    "confirm an explicit next step with the senior resident before ending the conversation",
+    "practice speaking up even in a low-hierarchy-tension, easily-resolved situation, as a foundation for harder cases"
+  ],
+  "suggested_questions": [
+    "Before that order goes ahead, I did want to flag something about Mr. Higgins' enoxaparin dose.",
+    "His creatinine clearance came back at 24 this morning, and the order is written at the standard full treatment dose — I wasn't sure if that had been factored in.",
+    "Would you like me to hold the dose while we adjust it, or would you like to update the order now?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Speaking up about a full-dose enoxaparin order that may need adjustment for significant renal impairment",
+    "review_status": "grounded in AHRQ TeamSTEPPS graded-assertiveness principles and standard low-molecular-weight-heparin renal dose-adjustment practice; local pharmacy protocols and prescribing information apply",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Flagging a likely oversight, such as an order written before a relevant lab result was seen, is a routine and expected safety behavior, not a confrontation.",
+      "A specific concern (naming the result and the standard versus needed dose) is far more actionable than a vague question."
+    ],
+    "diagnostic_clues": [
+      "A creatinine clearance of 24 mL/min represents significant renal impairment, which is relevant to how low-molecular-weight heparin is cleared and dosed."
+    ],
+    "common_misconceptions": [
+      "Pointing out a new lab result the prescriber has not yet seen will be received as criticism.",
+      "A vague, hedged comment is enough to make sure the concern is actually addressed."
+    ],
+    "dangerous_errors": [
+      "Staying silent about a known renal function result because the order has already been written.",
+      "Allowing the dose to be administered before the concern is explicitly resolved."
+    ],
+    "management_principles": [
+      "Raise medication-safety concerns promptly and specifically, before the dose is given, and confirm an explicit resolution.",
+      "Treat a newly available lab result as routine information to share, not as a challenge to the prescriber's judgment."
+    ],
+    "boundaries_and_exceptions": [
+      "The exact adjusted dose, frequency, and whether an alternative anticoagulant is preferred depend on local protocols, the severity of renal impairment, and pharmacy guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS Mutual Support and CUS Words",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/teamwork/mutual/index.html"
+      },
+      {
+        "title": "ASH Clinical Practice Guidelines on Venous Thromboembolism",
+        "url": "https://www.hematology.org/education/clinicians/guidelines-and-quality-care/clinical-practice-guidelines/venous-thromboembolism-guidelines"
+      }
+    ]
+  }
+}

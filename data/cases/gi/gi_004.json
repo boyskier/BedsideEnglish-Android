@@ -1,0 +1,161 @@
+{
+  "id": "gi_004",
+  "system": "gastroenterology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lee",
+  "age": 46,
+  "gender": "male",
+  "chief_complaint": "burning upper abdominal pain after meals",
+  "hpi_details": "epigastric burning pain for 2 months, worse after spicy food and late meals, partial relief with antacids, no weight loss, no black stools, no vomiting blood",
+  "ideas": "thinks it is gastritis",
+  "concerns": "worried about stomach cancer because his uncle had it",
+  "expectations": "wants medicine and to know whether he needs an endoscopy",
+  "pmh": "no major illness",
+  "medications": "ibuprofen several times per week for back pain",
+  "social_hx": "restaurant owner, drinks alcohol on weekends, non-smoker",
+  "clinical_knowledge": {
+    "topic": "NSAID-Induced Gastritis (Functional Dyspepsia) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of NSAID-Induced Gastritis (Functional Dyspepsia) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes stopping NSAIDs if possible, trialling a PPI, and H. pylori test-and-treat, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning upper abdominal pain after meals",
+      "Key HPI features: epigastric burning pain for 2 months, worse after spicy food and late meals, partial relief with antacids, no weight loss, no black stools, no vomiting blood",
+      "Objective/Exam findings: Abdominal exam, weight, stool occult blood if indicated, H. pylori testing.",
+      "Relevant background/PMH: no major illness",
+      "Current medications: ibuprofen several times per week for back pain"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out NSAID-Induced Gastritis (Functional Dyspepsia).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastroesophageal reflux disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: haematemesis or melena, unintentional weight loss or early satiety, or sudden severe pain with a rigid abdomen."
+    ],
+    "management_principles": [
+      "Stop NSAIDs if possible, trial PPI, H. pylori test-and-treat, safety-net alarm symptoms, consider endoscopy if alarm features or persistent symptoms",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "46M with 2 months epigastric burning after meals, partial antacid relief. NSAID use. No alarm symptoms reported.",
+    "objective": "Abdominal exam, weight, stool occult blood if indicated, H. pylori testing.",
+    "assessment": "Dyspepsia/GERD/gastritis. Consider peptic ulcer disease; assess alarm features.",
+    "plan": "Stop NSAIDs if possible, trial PPI, H. pylori test-and-treat, safety-net alarm symptoms, consider endoscopy if alarm features or persistent symptoms."
+  },
+  "learning_objectives": [
+    "Elicit dyspepsia red flags and medication risks",
+    "Explain alarm symptoms and endoscopy simply",
+    "Address cancer worry without false reassurance"
+  ],
+  "teaching": {
+    "diagnosis": "NSAID-Induced Gastritis (Functional Dyspepsia)",
+    "one_liner": "Regular NSAID use irritates and inflames the stomach lining, producing burning upper-abdominal pain after meals without any alarm features of cancer.",
+    "differentials": [
+      "Gastroesophageal reflux disease",
+      "Peptic ulcer disease",
+      "Gastric malignancy"
+    ],
+    "red_flags": [
+      "Haematemesis or melena — suggests a bleeding ulcer rather than uncomplicated gastritis",
+      "Unintentional weight loss or early satiety — raises concern for gastric malignancy",
+      "Sudden severe pain with a rigid abdomen — suggests perforation"
+    ],
+    "must_ask": [
+      {
+        "objective": "NSAID use pattern",
+        "say": "How often do you take ibuprofen, and what are you taking it for?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "painkiller",
+          "tablets",
+          "often"
+        ]
+      },
+      {
+        "objective": "Relation to food and timing",
+        "say": "Does the pain come on after spicy food or late meals?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "spicy",
+          "meals",
+          "late"
+        ]
+      },
+      {
+        "objective": "Alarm symptoms screen",
+        "say": "Have you noticed any black stools, vomited blood, or unplanned weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "black",
+          "stools",
+          "vomited",
+          "weight"
+        ]
+      },
+      {
+        "objective": "Family history of stomach cancer",
+        "say": "You mentioned your uncle had stomach cancer — has anyone else in the family had it?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "uncle",
+          "family",
+          "cancer"
+        ]
+      },
+      {
+        "objective": "Antacid response",
+        "say": "Do the antacids give you much relief when you take them?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "antacid",
+          "relief",
+          "relieves"
+        ]
+      },
+      {
+        "objective": "Alcohol intake",
+        "say": "How much alcohol do you drink, and how often?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drink",
+          "weekends"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,137 @@
+{
+  "id": "cs_035",
+  "system": "cs",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "second episode of spontaneous pneumothorax",
+  "hpi_details": "A 47-year-old male presents with a second episode of spontaneous pneumothorax. Symptoms have become progressively more concerning.",
+  "ideas": "thinks it might be related to a recurrent pneumothorax",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "recurrent_pneumothorax_xray",
+      "title": "Chest radiograph",
+      "order_terms": ["chest X-ray", "chest radiograph", "CXR"],
+      "availability_message": "The chest radiograph is now available.",
+      "results": [
+        {
+          "id": "cxr_recurrent_pneumothorax",
+          "test": "Erect chest radiograph",
+          "value": "Moderate recurrent right pneumothorax with 30% lung collapse; no mediastinal shift",
+          "unit": "",
+          "reference_range": "No pneumothorax",
+          "flag": "critical",
+          "collected_at": "Current episode"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Recurrent Spontaneous Pneumothorax evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Recurrent Spontaneous Pneumothorax is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Acute pneumothorax first requires assessment of stability and appropriate observation, aspiration, or drainage; a second ipsilateral spontaneous episode is an indication to discuss definitive recurrence prevention such as VATS pleurodesis.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: second episode of spontaneous pneumothorax",
+      "Key HPI features: A 47-year-old male presents with a second episode of spontaneous pneumothorax.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Recurrent Pneumothorax.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Recurrent Spontaneous Pneumothorax.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Traumatic pneumothorax without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Tension pneumothorax signs."
+    ],
+    "management_principles": [
+      "Assess stability and manage the acute pneumothorax with observation, aspiration, or drainage as appropriate, then refer for discussion of VATS pleurodesis for recurrence prevention",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with a second episode of spontaneous pneumothorax. HPI: possible ruptured apical blebs.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Recurrent Pneumothorax.",
+    "assessment": "Condition highly suspicious for Recurrent Pneumothorax.",
+    "plan": "Assess stability and manage the acute pneumothorax with observation, aspiration, or drainage as appropriate. Refer for discussion of VATS pleurodesis for recurrence prevention after a second ipsilateral spontaneous episode."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Recurrent Pneumothorax",
+    "Select appropriate diagnostic workup for Recurrent Pneumothorax",
+    "Implement evidence-based management plan: Stabilize and treat the acute pneumothorax appropriately, then discuss VATS pleurodesis for recurrence prevention"
+  ],
+  "teaching": {
+    "diagnosis": "Recurrent Spontaneous Pneumothorax",
+    "one_liner": "A second episode of pneumothorax from ruptured apical blebs, meeting criteria for surgical pleurodesis (VATS) to prevent further recurrence.",
+    "differentials": [
+      "Traumatic pneumothorax",
+      "Secondary pneumothorax from lung disease"
+    ],
+    "red_flags": [
+      "Tension pneumothorax signs"
+    ],
+    "must_ask": [
+      {
+        "objective": "First episode history",
+        "say": "Tell me about your first pneumothorax — when was it, and how was it treated?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "This episode's onset",
+        "say": "When did this current episode start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Pain character",
+        "say": "Does the pain worsen with breathing?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "How short of breath are you?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Body habitus/smoking",
+        "say": "Are you tall and thin, or do you smoke?",
+        "domains": [
+          "smoking"
+        ]
+      }
+    ]
+  }
+}

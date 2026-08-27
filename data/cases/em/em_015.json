@@ -1,0 +1,180 @@
+{
+  "id": "em_015",
+  "system": "emergency medicine",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Adams",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "severe lower back pain, bilateral leg weakness, saddle anesthesia, and acute urinary retention / incontinence after lifting heavy weights",
+  "hpi_details": "42M weightlifter presenting with bilateral sciatica, numbness in perianal saddle region, and post-void residual >400 mL where emergent lumbar spine MRI confirms massive central L4-L5 disc extrusion requiring STAT emergency neurosurgical decompression within 24-48 hours.",
+  "ideas": "worried a slipped disc from lifting is pinching the nerves in his back",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "post_void_bladderscan",
+      "title": "Post-void bladder scan",
+      "order_terms": [
+        "bladder scan",
+        "post void residual",
+        "post-void residual",
+        "pvr"
+      ],
+      "availability_message": "The post-void bladder scan result is now available.",
+      "results": [
+        {
+          "id": "post_void_residual",
+          "test": "Post-void residual volume",
+          "value": "420",
+          "unit": "mL",
+          "reference_range": "<100",
+          "flag": "critical",
+          "collected_at": "At bedside"
+        }
+      ]
+    },
+    {
+      "id": "lumbar_spine_mri",
+      "title": "Emergency lumbar spine MRI",
+      "order_terms": [
+        "lumbar spine mri",
+        "lumbar mri",
+        "spine mri",
+        "mri lumbar spine"
+      ],
+      "availability_message": "The emergency lumbar spine MRI report is now available.",
+      "results": [
+        {
+          "id": "lumbar_mri_report",
+          "test": "MRI lumbar spine",
+          "value": "Massive central L4-L5 disc extrusion causing severe compression of the cauda equina nerve roots",
+          "flag": "critical",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Cauda Equina Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cauda Equina Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes emergent MRI confirmation followed by STAT neurosurgical decompression within 24-48 hours to prevent permanent neurological damage, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe lower back pain, bilateral leg weakness, saddle anesthesia, and acute urinary retention / incontinence after lifting heavy weights",
+      "Key HPI features: 42M weightlifter presenting with bilateral sciatica, numbness in perianal saddle region, and post-void residual >400 mL where emergent lumbar spine MRI confirms massive central L4-L5 disc extrusion requiring STAT emergency neurosurgical decompression within 24-48 hours.",
+      "Objective/Exam findings: Vitals: HR 88, BP 138/84, RR 16, Temp 36.9C, afebrile. Neurological exam reveals bilateral lower extremity weakness (3/5 dorsiflexion and plantarflexion), diminished bilateral ankle reflexes, and decreased sensation to light touch and pinprick in the perianal (saddle) distribution. Decreased rectal sphincter tone on digital rectal exam. Bladder scan reveals post-void residual volume of 420 mL, confirming urinary retention. STAT lumbar spine MRI demonstrates a massive central disc extrusion at L4-L5 with severe compression of the cauda equina nerve roots.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cauda Equina Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple disc herniation with radiculopathy (unilateral, no bladder involvement) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Bladder or bowel dysfunction with saddle numbness — the defining red flag requiring emergency MRI and surgery."
+    ],
+    "management_principles": [
+      "STAT emergency neurosurgical protocol",
+      "Emergent STAT lumbar spine MRI (without delay for outpatient scheduling) to confirm the level and severity of cauda equina compression",
+      "Immediate neurosurgical or orthopedic spine surgery consultation for surgical decompression (laminectomy/discectomy) within 24-48 hours of symptom onset to maximize the chance of neurological recovery",
+      "Bladder management with indwelling or intermittent catheterization for urinary retention; document baseline neurological and rectal tone exam for postoperative comparison"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42M weightlifter presenting with severe lower back pain, bilateral leg weakness, saddle anesthesia, and acute urinary retention/incontinence after lifting heavy weights, classic for Cauda Equina Syndrome.",
+    "objective": "Vitals: HR 88, BP 138/84, RR 16, Temp 36.9C, afebrile. Neurological exam reveals bilateral lower extremity weakness (3/5 dorsiflexion and plantarflexion), diminished bilateral ankle reflexes, and decreased sensation to light touch and pinprick in the perianal (saddle) distribution. Decreased rectal sphincter tone on digital rectal exam. Bladder scan reveals post-void residual volume of 420 mL, confirming urinary retention. STAT lumbar spine MRI demonstrates a massive central disc extrusion at L4-L5 with severe compression of the cauda equina nerve roots.",
+    "assessment": "Cauda Equina Syndrome secondary to massive central L4-L5 disc extrusion, with bilateral motor/sensory deficits, saddle anesthesia, and urinary retention.",
+    "plan": "STAT emergency neurosurgical protocol: 1. Emergent STAT lumbar spine MRI (without delay for outpatient scheduling) to confirm the level and severity of cauda equina compression. 2. Immediate neurosurgical or orthopedic spine surgery consultation for surgical decompression (laminectomy/discectomy) within 24-48 hours of symptom onset to maximize the chance of neurological recovery. 3. Bladder management with indwelling or intermittent catheterization for urinary retention; document baseline neurological and rectal tone exam for postoperative comparison."
+  },
+  "learning_objectives": [
+    "Recognize the red-flag triad of cauda equina syndrome: bilateral leg symptoms, saddle anesthesia, and bladder/bowel dysfunction, distinguishing it from simple unilateral radiculopathy",
+    "Understand that post-void residual measurement and digital rectal exam for sphincter tone are essential objective screening tools when cauda equina syndrome is suspected",
+    "Order emergent (not outpatient) MRI of the lumbar spine when cauda equina syndrome is suspected, given the time-critical nature of the diagnosis",
+    "Explain why surgical decompression within 24-48 hours of symptom onset is the standard of care to maximize recovery of bladder, bowel, and motor function"
+  ],
+  "teaching": {
+    "diagnosis": "Cauda Equina Syndrome",
+    "one_liner": "A massive disc herniation compresses the bundle of nerve roots below the spinal cord, causing bilateral leg weakness, numbness in the saddle area, and loss of bladder control — a surgical emergency needing decompression within 24-48 hours to prevent permanent damage.",
+    "differentials": [
+      "Simple disc herniation with radiculopathy (unilateral, no bladder involvement)",
+      "Spinal cord compression from another cause",
+      "Conus medullaris syndrome"
+    ],
+    "red_flags": [
+      "Bladder or bowel dysfunction with saddle numbness — the defining red flag requiring emergency MRI and surgery"
+    ],
+    "must_ask": [
+      {
+        "objective": "Bladder symptoms",
+        "say": "Have you had trouble urinating, or noticed you can't feel when your bladder is full?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urinary retention",
+          "incontinence"
+        ]
+      },
+      {
+        "objective": "Saddle numbness",
+        "say": "Do you have numbness in the area you'd sit on a saddle — your inner thighs and groin?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "saddle anesthesia",
+          "groin"
+        ]
+      },
+      {
+        "objective": "Leg weakness",
+        "say": "Is the weakness in both legs?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "bilateral"
+        ]
+      },
+      {
+        "objective": "Onset and trigger",
+        "say": "When did this start, and what were you doing?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "lifting"
+        ]
+      },
+      {
+        "objective": "Back pain character",
+        "say": "How severe is the back pain?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

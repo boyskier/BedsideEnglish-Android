@@ -1,0 +1,132 @@
+{
+  "id": "nephro_034",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Roberts",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "muscle weakness and cramps after taking furosemide",
+  "hpi_details": "A 44-year-old female presents to the clinic with muscle weakness and cramps after taking furosemide. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "wonders if her water pill is the cause",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Hypertension",
+  "medications": "Furosemide 40mg daily",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_diuretic_electrolyte_workup",
+      "title": "Electrolyte and ECG assessment",
+      "order_terms": ["electrolytes", "potassium", "magnesium", "BMP", "basic metabolic panel", "ECG", "EKG"],
+      "availability_message": "The urgent electrolytes and ECG are now available.",
+      "results": [
+        {"id": "potassium", "test": "Serum potassium", "value": "2.9", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "low"},
+        {"id": "magnesium", "test": "Serum magnesium", "value": "1.4", "unit": "mg/dL", "reference_range": "1.7-2.2", "flag": "low"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Flattened T waves with prominent U waves; no acute ST-segment changes", "flag": "abnormal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hypokalemia (diuretic-induced) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hypokalemia (diuretic-induced) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes oral potassium chloride replacement, correction of any coexisting hypomagnesemia, and dose reduction of the offending diuretic, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: muscle weakness and cramps after taking furosemide",
+      "Key HPI features: A 44-year-old female presents to the clinic with muscle weakness and cramps after taking furosemide. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 122/78, HR 88 and regular. Diffuse mild proximal muscle weakness, decreased deep tendon reflexes, no focal deficits. Labs: Serum potassium 2.9 mEq/L, magnesium 1.4 mg/dL (low), bicarbonate 30 mEq/L (mild metabolic alkalosis), creatinine 0.8 mg/dL. ECG: flattened T waves with prominent U waves, no acute ST changes.",
+      "Relevant background/PMH: Hypertension on furosemide 40mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hypokalemia (diuretic-induced).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to GI losses (vomiting, diarrhea) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Significant weakness or palpitations — risk of arrhythmia."
+    ],
+    "management_principles": [
+      "Obtain an ECG and check serum magnesium, since coexisting hypomagnesemia can make hypokalemia refractory to correction",
+      "Start oral potassium chloride replacement (e.g., 40 mEq PO, repeat as needed) and reduce the furosemide dose or add a potassium-sparing agent (e.g., spironolactone)",
+      "Recheck electrolytes in 3-5 days; refer to nephrology if hypokalemia is refractory or recurrent"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: muscle weakness and cramps after taking furosemide\n\nA 44-year-old female on furosemide for hypertension reports several days of generalized muscle weakness and leg cramps. Denies vomiting or diarrhea, though she notices her heart occasionally 'skip' a beat.",
+    "objective": "Vitals: BP 122/78, HR 88 and regular. Diffuse mild proximal muscle weakness, decreased deep tendon reflexes, no focal deficits. Labs: Serum potassium 2.9 mEq/L, magnesium 1.4 mg/dL (low), bicarbonate 30 mEq/L (mild metabolic alkalosis), creatinine 0.8 mg/dL. ECG: flattened T waves with prominent U waves, no acute ST changes.",
+    "assessment": "Diuretic-induced hypokalemia with likely coexisting hypomagnesemia, causing muscle weakness and cramps in a patient on furosemide for hypertension.",
+    "plan": "1. Obtain an ECG and check serum magnesium. 2. Start oral potassium chloride replacement and reduce the furosemide dose or add a potassium-sparing agent (e.g., spironolactone). 3. Recheck electrolytes in 3-5 days. 4. Refer to nephrology if hypokalemia is refractory or recurrent."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Hypokalemia",
+    "Select appropriate diagnostic workup for Hypokalemia",
+    "Implement evidence-based management plan: Oral Potassium Chloride replacement, adjust diuretic dose"
+  ],
+  "teaching": {
+    "diagnosis": "Hypokalemia (diuretic-induced)",
+    "one_liner": "Loop diuretics like furosemide cause renal potassium wasting, leading to muscle weakness and cramps from low serum potassium.",
+    "differentials": [
+      "GI losses (vomiting, diarrhea)",
+      "Primary hyperaldosteronism"
+    ],
+    "red_flags": [
+      "Significant weakness or palpitations — risk of arrhythmia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diuretic use",
+        "say": "How long have you been taking furosemide, and at what dose?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Muscle symptoms",
+        "say": "Where are the cramps, and how severe is the weakness?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "When did the weakness start relative to starting or increasing the medication?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "GI losses",
+        "say": "Any vomiting or diarrhea recently?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Any palpitations?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

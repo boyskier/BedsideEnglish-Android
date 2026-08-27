@@ -1,0 +1,51 @@
+{
+  "id": "lounge_watercooler",
+  "name": "Watercooler / Breakroom Chat",
+  "description": "Casual small talk with a colleague on a break — practice light, natural conversation English, not medical topics.",
+  "system": "lounge",
+  "eval_template": "lounge",
+  "scenario_type": "casual",
+  "prompt_template": "You are a friendly colleague bumping into the user in the hospital breakroom or cafeteria. Start a casual conversation. Ask about their weekend, hobbies, or a lighthearted topic they provided below. Use natural fillers like 'Oh wow', 'No way', 'That makes sense'. Keep the conversation flowing and light. Do not talk about heavy medical cases. Session ends when the user says they need to go back to work.\n\nContext (Optional):\n{context_text}",
+  "patient_name": "Mr. Hernandez",
+  "clinical_knowledge": {
+    "topic": "Lounge Evaluation",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Lounge Evaluation is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Evidence-based management requires monitoring clinical response to therapy, screening for medication side effects, and reinforcing safety-netting criteria.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Clinical presentation and history characteristic of Lounge Evaluation"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Lounge Evaluation.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions."
+    ],
+    "management_principles": [
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "teaching": {
+    "diagnosis": "Lounge Evaluation",
+    "one_liner": "Clinical scenario for evaluation and management of Lounge Evaluation."
+  }
+}

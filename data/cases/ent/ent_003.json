@@ -1,0 +1,184 @@
+{
+  "id": "ent_003",
+  "system": "otolaryngology (ent)",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Clark",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "massive anterior and posterior epistaxis refractory to direct pressure requiring balloon packing and arterial ligation evaluation",
+  "hpi_details": "58M hypertensive male on blood thinners brought by ambulance after 3 hours of continuous, profuse nosebleeding. Began while blowing his nose and failed to stop despite pinching nostrils for 45 minutes at home. Patient spits up large dark blood clots constantly from the back of his throat and feels faint and diaphoretic. Blood is actively pouring from both nostrils.",
+  "ideas": "terrified watching pints of blood gush from nose and mouth without stopping",
+  "concerns": "feeling dizzy and weak from significant blood loss",
+  "expectations": "wants emergency nasal packing or surgery to stop the hemorrhage immediately",
+  "pmh": "Hypertension (poorly controlled), Atrial Fibrillation",
+  "medications": "Apixaban 5mg BID, Lisinopril 20mg daily",
+  "social_hx": "Real estate broker, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_epistaxis_labs",
+      "title": "STAT hemorrhage laboratory results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "coagulation studies",
+        "coagulation panel",
+        "pt inr",
+        "type and crossmatch",
+        "crossmatch"
+      ],
+      "availability_message": "The STAT hemorrhage laboratory results are now available; resuscitation and posterior nasal packing should not be delayed while testing is processed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "10.2",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "platelets",
+          "test": "Platelet count",
+          "value": "228",
+          "unit": "x10^3/mcL",
+          "reference_range": "150-400",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.3",
+          "reference_range": "0.8-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation",
+          "note": "INR does not reliably quantify apixaban effect"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Posterior Epistaxis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Posterior Epistaxis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT ENT and emergency management Stepwise Protocol: hemodynamic stabilization, posterior nasal packing, ICU admission, and escalation to endoscopic SPA ligation or embolization if bleeding persists, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: massive anterior and posterior epistaxis refractory to direct pressure requiring balloon packing and arterial ligation evaluation",
+      "Key HPI features: 58M hypertensive male on blood thinners brought by ambulance after 3 hours of continuous, profuse nosebleeding. Began while blowing his nose and failed to stop despite pinching nostrils for 45 minutes at home. Patient spits up large dark blood clots constantly from the back of his throat and feels faint and diaphoretic. Blood is actively pouring from both nostrils.",
+      "Objective/Exam findings: Vitals: HR 112, BP 168/100, SpO2 96%. Active bright red arterial hemorrhage draining continuously from bilateral nostrils and cascading down the posterior pharynx into the oropharynx (confirmed on tongue blade visualization). Anterior rhinoscopy after suctioning and clearing clots fails to identify an anterior bleeding source on Little's area / Kiesselbach plexus on the anterior septum. Bleeding continues vigorously down the back of the throat despite bilateral anterior Merocel nasal tampons, confirming a Posterior Epistaxis (typically originating from branches of the Sphenopalatine Artery in the posterior nasal cavity).",
+      "Relevant background/PMH: Hypertension (poorly controlled), Atrial Fibrillation",
+      "Current medications: Apixaban 5mg BID, Lisinopril 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Posterior Epistaxis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Anterior epistaxis (Kiesselbach's plexus, responds to pressure) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Blood pouring from both nostrils with dizziness — significant blood loss, needs urgent stabilization."
+    ],
+    "management_principles": [
+      "STAT ENT and emergency management Stepwise Protocol: hemodynamic stabilization, posterior nasal packing, ICU admission, and escalation to endoscopic SPA ligation or embolization if bleeding persists",
+      "Hemodynamic stabilization: establish 2 large-bore IVs, type and crossmatch 4 units PRBCs, initiate crystalloid infusion, and control acute hypertension",
+      "Hold Apixaban"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "58M anticoagulated hypertensive patient presenting with uncontrolled, profuse posterior/anterior epistaxis and hypovolemic symptoms.",
+    "objective": "Vitals: HR 112, BP 168/100, SpO2 96%. Active bright red arterial hemorrhage draining continuously from bilateral nostrils and cascading down the posterior pharynx into the oropharynx (confirmed on tongue blade visualization). Anterior rhinoscopy after suctioning and clearing clots fails to identify an anterior bleeding source on Little's area / Kiesselbach plexus on the anterior septum. Bleeding continues vigorously down the back of the throat despite bilateral anterior Merocel nasal tampons, confirming a Posterior Epistaxis (typically originating from branches of the Sphenopalatine Artery in the posterior nasal cavity).",
+    "assessment": "Severe Posterior Epistaxis (Sphenopalatine Artery distribution) in an anticoagulated, hypertensive host with acute blood loss.",
+    "plan": "STAT ENT and emergency management Stepwise Protocol: 1. Hemodynamic stabilization: establish 2 large-bore IVs, type and crossmatch 4 units PRBCs, initiate crystalloid infusion, and control acute hypertension. Hold Apixaban. 2. Immediate Posterior Nasal Packing: insert dual-balloon posterior nasal catheter (Epistat or Rapid Rhino 7.5 cm anterior-posterior balloon) inflated with sterile water to tamponade the posterior choana and sphenopalatine artery branches. 3. Mandatory admission: admit to ICU/monitored bed due to high risk of posterior packing complications (reflex hypoventilation, hypoxia, vagal bradycardia, aspiration). 4. If bleeding persists despite balloon tamponade, transfer to operating room for endoscopic Sphenopalatine Artery (SPA) ligation or interventional radiology endovascular embolization."
+  },
+  "learning_objectives": [
+    "Differentiate Anterior Epistaxis (90% of cases, originating from Kiesselbach plexus / Little's area on anterior septum, controlled with direct pressure/cautery/Merocel) from Posterior Epistaxis (10% of cases, originating from Sphenopalatine Artery, bleeding into posterior pharynx despite anterior pressure)",
+    "Execute stepwise epistaxis management: vasoconstrictor/anesthetic packing (oxymetazoline/lidocaine), chemical silver nitrate cautery for visible anterior vessels, anterior tampons, followed by dual-balloon posterior catheters",
+    "Recognize critical ICU admission criteria and respiratory monitoring requirements whenever posterior nasal packing is inserted (due to nasopulmonary reflex hypoxemia and airway obstruction)",
+    "Outline definitive surgical stabilization via endoscopic Sphenopalatine Artery (SPA) ligation or IR embolization for refractory posterior hemorrhage"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Posterior Epistaxis",
+    "one_liner": "Bleeding from the posterior nasal artery (sphenopalatine) in an anticoagulated, hypertensive patient — unlike simple anterior nosebleeds, it doesn't respond to pinching and often needs posterior packing or arterial ligation.",
+    "differentials": [
+      "Anterior epistaxis (Kiesselbach's plexus, responds to pressure)",
+      "Coagulopathy-related bleeding",
+      "Nasal tumor"
+    ],
+    "red_flags": [
+      "Blood pouring from both nostrils with dizziness — significant blood loss, needs urgent stabilization"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration and response to pressure",
+        "say": "How long has this been bleeding, and did pinching your nose stop it?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "hours",
+          "pressure didn't work"
+        ]
+      },
+      {
+        "objective": "Blood thinner use",
+        "say": "Are you taking a blood thinner, and have you taken your dose recently?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "blood thinner",
+          "apixaban"
+        ]
+      },
+      {
+        "objective": "Blood swallowing",
+        "say": "Are you swallowing blood or spitting up clots from the back of your throat?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "swallowing blood",
+          "clots"
+        ]
+      },
+      {
+        "objective": "Lightheadedness",
+        "say": "Do you feel dizzy or faint?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "Do you have high blood pressure, and is it well controlled?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

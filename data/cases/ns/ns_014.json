@@ -1,0 +1,131 @@
+{
+  "id": "ns_014",
+  "system": "neurosurgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Johnson",
+  "age": 38,
+  "gender": "male",
+  "chief_complaint": "severe shooting sciatica down back of right leg to outer foot after lifting heavy box",
+  "hpi_details": "38M presenting with positive straight leg raise at 30 degrees, weak plantar flexion, and absent right Achilles reflex due to L5-S1 posterolateral disc extrusion.",
+  "ideas": "thinks this is related to lumbar disc herniation l5-s1 radiculopathy",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{
+    "id": "lumbar_mri",
+    "test": "Lumbar spine MRI",
+    "value": "Right posterolateral L5-S1 disc extrusion compressing the traversing right S1 nerve root",
+    "flag": "abnormal"
+  }],
+  "clinical_knowledge": {
+    "topic": "L5-S1 Lumbar Disc Herniation (S1 Radiculopathy) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of L5-S1 Lumbar Disc Herniation (S1 Radiculopathy) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Lumbar Disc Herniation L5-S1 Radiculopathy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe shooting sciatica down back of right leg to outer foot after lifting heavy box",
+      "Key HPI features: 38M presenting with positive straight leg raise at 30 degrees, weak plantar flexion, and absent right Achilles reflex due to L5-S1 posterolateral disc extrusion.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Lumbar Disc Herniation L5-S1 Radiculopathy.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out L5-S1 Lumbar Disc Herniation (S1 Radiculopathy).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to L4-L5 disc herniation (different nerve root/reflex) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Bladder/bowel dysfunction or saddle numbness — would suggest cauda equina syndrome, a surgical emergency."
+    ],
+    "management_principles": [
+      "Assess for cauda equina symptoms and document strength, reflexes, and sensory deficits; obtain urgent lumbar MRI for significant or progressive motor weakness.",
+      "Use activity as tolerated, non-opioid analgesia when safe, and physical therapy after urgent conditions are excluded.",
+      "Obtain urgent spine-surgery assessment for cauda equina syndrome or progressive/significant motor deficit; consider discectomy for persistent disabling radicular symptoms despite conservative care.",
+      "Give explicit return precautions for new urinary retention or incontinence, saddle anesthesia, or worsening weakness."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Lumbar Disc Herniation L5-S1 Radiculopathy: severe shooting sciatica down back of right leg to outer foot after lifting heavy box. 38M presenting with positive straight leg raise at 30 degrees, weak plantar flexion, and absent right Achilles reflex due to L5-S1 posterolateral disc extrusion.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Lumbar Disc Herniation L5-S1 Radiculopathy.",
+    "assessment": "Clinical presentation highly suggestive of Lumbar Disc Herniation L5-S1 Radiculopathy.",
+    "plan": "Assess for cauda equina symptoms and document strength, reflexes, and sensory deficits; obtain urgent lumbar MRI for significant or progressive motor weakness. Use activity as tolerated, non-opioid analgesia when safe, and physical therapy after urgent conditions are excluded. Obtain urgent spine-surgery assessment for cauda equina syndrome or progressive/significant motor deficit; consider discectomy for persistent disabling radicular symptoms despite conservative care. Give explicit return precautions for new urinary retention or incontinence, saddle anesthesia, or worsening weakness."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Lumbar Disc Herniation L5-S1 Radiculopathy",
+    "Formulate prioritized differential diagnosis for severe shooting sciatica down back of right leg to outer foot after lifting heavy box",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "L5-S1 Lumbar Disc Herniation (S1 Radiculopathy)",
+    "one_liner": "A herniated disc compresses the S1 nerve root, causing sciatica radiating down the back of the leg to the outer foot, with weak plantar flexion and an absent ankle reflex — most cases improve without surgery.",
+    "differentials": [
+      "L4-L5 disc herniation (different nerve root/reflex)",
+      "Piriformis syndrome",
+      "Spinal stenosis"
+    ],
+    "red_flags": [
+      "Bladder/bowel dysfunction or saddle numbness — would suggest cauda equina syndrome, a surgical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and trigger",
+        "say": "Did this start right after lifting something heavy?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Pain radiation",
+        "say": "Does the pain go down the back of your leg to your foot?",
+        "domains": [
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Weakness",
+        "say": "Have you noticed weakness pushing off with that foot, like on your toes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "plantar flexion"
+        ]
+      },
+      {
+        "objective": "Numbness",
+        "say": "Any numbness in your foot?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Red flag symptoms",
+        "say": "Any changes in bladder or bowel control, or numbness in your groin area?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "id": "gs_030",
+  "system": "gs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. King",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "painful lump in groin that cannot be pushed back",
+  "hpi_details": "A 32-year-old female presents to the clinic with a painful groin lump that appeared a few hours ago and, unlike her usual bulge, can no longer be pushed back in.",
+  "ideas": "thinks it might be an incarcerated hernia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Known reducible inguinal hernia for several months",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Incarcerated Hernia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Incarcerated Hernia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate assessment for strangulation, cautious attempted reduction only when safe, and urgent surgical repair to prevent bowel strangulation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painful lump in groin that cannot be pushed back",
+      "Key HPI features: A 32-year-old female presents to the clinic with a painful groin lump that appeared a few hours ago and, unlike her usual bulge, can no longer be pushed back in.",
+      "Objective/Exam findings: Vitals: Temp 37.0C, HR 98, BP 122/78. Groin reveals a firm, tender, non-reducible bulge; no skin discoloration or crepitus, no signs of peritonitis. Abdomen soft without distension.",
+      "Relevant background/PMH: Known reducible inguinal hernia for several months"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Incarcerated Hernia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Reducible hernia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Skin discoloration or fever — suggests strangulation."
+    ],
+    "management_principles": [
+      "Obtain urgent surgical assessment and keep the patient NPO with IV access, fluids, and analgesia",
+      "Assess immediately for strangulation; do not attempt manual reduction when peritonitis, systemic toxicity, skin changes, or other signs of ischemia are present",
+      "If a carefully selected reduction attempt is unsuccessful or strangulation is suspected, proceed to emergency operative repair"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32-year-old female presents with a painful groin lump that appeared a few hours ago and, unlike her usual bulge, can no longer be pushed back in.",
+    "objective": "Vitals: Temp 37.0C, HR 98, BP 122/78. Groin reveals a firm, tender, non-reducible bulge; no skin discoloration or crepitus, no signs of peritonitis. Abdomen soft without distension.",
+    "assessment": "Incarcerated inguinal hernia, high risk for strangulation.",
+    "plan": "Obtain urgent surgical assessment and keep the patient NPO with IV access, fluids, and analgesia. Assess immediately for strangulation; do not attempt manual reduction when peritonitis, systemic toxicity, skin changes, or other signs of ischemia are present. If a carefully selected reduction attempt is unsuccessful or strangulation is suspected, proceed to emergency operative repair."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Incarcerated Hernia",
+    "Select appropriate diagnostic workup for Incarcerated Hernia",
+    "Implement evidence-based management plan: Urgent surgical repair to prevent bowel strangulation"
+  ],
+  "teaching": {
+    "diagnosis": "Incarcerated Hernia",
+    "one_liner": "A hernia trapped outside the abdominal wall that cannot be pushed back, risking strangulation of the bowel if not surgically repaired urgently.",
+    "differentials": [
+      "Reducible hernia",
+      "Lymphadenopathy"
+    ],
+    "red_flags": [
+      "Skin discoloration or fever — suggests strangulation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Reducibility",
+        "say": "Can you push the lump back in like you normally could?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "When did it become stuck?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Pain and skin changes",
+        "say": "How painful is it, and has the skin changed color?",
+        "domains": [
+          "severity",
+          "character"
+        ]
+      },
+      {
+        "objective": "Bowel symptoms",
+        "say": "Any vomiting or inability to pass gas?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

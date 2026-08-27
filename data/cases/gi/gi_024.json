@@ -1,0 +1,209 @@
+{
+  "id": "gi_024",
+  "system": "gastroenterology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Vance",
+  "age": 73,
+  "gender": "female",
+  "chief_complaint": "sudden sharp left lower tummy cramps followed by passing bright red blood",
+  "hpi_details": "Presents with acute onset of cramping left lower quadrant abdominal pain that began 4 hours ago after a mild episode of lightheadedness. Two hours later, passed an urgent bowel movement consisting almost entirely of maroon-coloured liquid and bright red blood mixed with small stool fragments. Pain partially eased after the bloody movement, but left lower quadrant tenderness remains.",
+  "ideas": "thinks a blood vessel ruptured inside her colon due to hardened arteries",
+  "concerns": "worried she might lose too much blood and require major bowel surgery or a blood transfusion",
+  "expectations": "wants blood tests, IV fluids, and a colon scan to confirm where the bleeding came from",
+  "pmh": "peripheral arterial disease, coronary artery disease post-stenting 5 years ago, type 2 diabetes, chronic kidney disease stage 3",
+  "medications": "clopidogrel 75mg OD, atorvastatin 40mg OD, ramipril 5mg OD, metformin 500mg OD",
+  "social_hx": "ex-smoker 35 pack-years, lives with husband, retired school principal",
+  "investigation_events": [
+    {
+      "id": "urgent_ischemic_colitis_workup",
+      "title": "Urgent ischemic colitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "lactate",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The urgent laboratory and CT results are now available; hydration, bowel rest, and serial abdominal examinations should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "11.4",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "lactate",
+          "test": "Serum lactate",
+          "value": "2.3",
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ct_abdomen_pelvis",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Segmental circumferential wall thickening and submucosal edema from the splenic flexure through the descending colon with reduced enhancement; no pneumatosis or free air",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ischaemic Colitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ischaemic Colitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Most cases of ischaemic colitis are transient and non-gangrenous: manage conservatively with IV crystalloid hydration, bowel rest (clear fluids initially), and optimization of cardiac output and blood pressure, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden sharp left lower tummy cramps followed by passing bright red blood",
+      "Key HPI features: Presents with acute onset of cramping left lower quadrant abdominal pain that began 4 hours ago after a mild episode of lightheadedness. Two hours later, passed an urgent bowel movement consisting almost entirely of maroon-coloured liquid and bright red blood mixed with small stool fragments. Pain partially eased after the bloody movement, but left lower quadrant tenderness remains.",
+      "Objective/Exam findings: Vitals: check for tachycardia or hypotension. Abdominal exam: localized tenderness in LLQ over the descending/sigmoid colon, no peritoneal signs. Bloods: FBC, urea/creatinine (baseline CKD check), coagulation profile, lactate. Flexible sigmoidoscopy or colonoscopy (shows segmental erythema, oedema, petechiae, or cyanotic mucosa typically in watershed areas: splenic flexure or rectosigmoid junction). CT abdomen with IV contrast.",
+      "Relevant background/PMH: peripheral arterial disease, coronary artery disease post-stenting 5 years ago, type 2 diabetes, chronic kidney disease stage 3",
+      "Current medications: clopidogrel 75mg OD, atorvastatin 40mg OD, ramipril 5mg OD, metformin 500mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ischaemic Colitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute diverticular bleed without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Vascular risk factors (peripheral arterial disease, prior stenting) with acute pain and bleeding — raises concern for bowel ischaemia."
+    ],
+    "management_principles": [
+      "Most cases of ischaemic colitis are transient and non-gangrenous: manage conservatively with IV crystalloid hydration, bowel rest (clear fluids initially), and optimization of cardiac output and blood pressure",
+      "Avoid vasoconstrictive drugs",
+      "Monitor serial lactates and abdominal exams for signs of transmural infarction requiring surgical resection"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "73F with vascular risk factors presents with acute onset of cramping left lower quadrant abdominal pain that began 4 hours ago after a mild episode of lightheadedness. Two hours later, passed an urgent bowel movement consisting almost entirely of maroon-coloured liquid and bright red blood mixed with small stool fragments. Pain partially eased after the bloody movement, but left lower quadrant tenderness remains.",
+    "objective": "Vitals: check for tachycardia or hypotension. Abdominal exam: localized tenderness in LLQ over the descending/sigmoid colon, no peritoneal signs. Bloods: FBC, urea/creatinine (baseline CKD check), coagulation profile, lactate. Flexible sigmoidoscopy or colonoscopy (shows segmental erythema, oedema, petechiae, or cyanotic mucosa typically in watershed areas: splenic flexure or rectosigmoid junction). CT abdomen with IV contrast.",
+    "assessment": "Ischaemic colitis (non-occlusive colonic ischaemia affecting watershed zone). DDx: acute diverticular bleed, infectious colitis (E. coli O157, Campylobacter), inflammatory bowel disease flare, colon cancer.",
+    "plan": "Most cases of ischaemic colitis are transient and non-gangrenous: manage conservatively with IV crystalloid hydration, bowel rest (clear fluids initially), and optimization of cardiac output and blood pressure. Avoid vasoconstrictive drugs. Monitor serial lactates and abdominal exams for signs of transmural infarction requiring surgical resection. Flexible sigmoidoscopy within 48 hours for confirmation."
+  },
+  "learning_objectives": [
+    "Distinguish colonic ischaemia (crampy LLQ pain followed by bloody diarrhoea) from acute mesenteric arterial occlusion (diffuse agonizing pain out of proportion to exam)",
+    "Identify anatomical 'watershed areas' (splenic flexure and rectosigmoid junction) vulnerable to hypoperfusion in vascular patients",
+    "Formulate a conservative supportive management plan for non-gangrenous ischaemic colitis while monitoring for surgical emergencies",
+    "Evaluate antiplatelet and antihypertensive medication balance during an acute gastrointestinal bleeding presentation"
+  ],
+  "teaching": {
+    "diagnosis": "Ischaemic Colitis",
+    "one_liner": "Reduced blood flow to a watershed area of the colon injures its lining, causing sudden crampy left-sided pain followed by passage of bloody, maroon-coloured stool.",
+    "differentials": [
+      "Acute diverticular bleed",
+      "Infectious colitis (E. coli O157, Campylobacter)",
+      "Inflammatory bowel disease flare"
+    ],
+    "red_flags": [
+      "Vascular risk factors (peripheral arterial disease, prior stenting) with acute pain and bleeding — raises concern for bowel ischaemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sequence of pain then bleeding",
+        "say": "Did the cramping come first, and the bleeding follow a couple of hours later?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "cramping",
+          "followed",
+          "bleeding",
+          "hours"
+        ]
+      },
+      {
+        "objective": "Stool colour and consistency",
+        "say": "What colour was the blood — bright red, or more maroon and mixed with the stool?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "maroon",
+          "bright",
+          "blood",
+          "mixed"
+        ]
+      },
+      {
+        "objective": "Vascular disease history",
+        "say": "Do you have any circulation problems, or have you had a heart stent placed?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "circulation",
+          "vascular",
+          "stent",
+          "heart"
+        ]
+      },
+      {
+        "objective": "Lightheadedness before the episode",
+        "say": "Did you feel lightheaded or dizzy just before this started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lightheaded",
+          "dizzy",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Pain relief pattern",
+        "say": "Did the pain ease off once you passed the blood?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "eased",
+          "passed",
+          "relief"
+        ]
+      },
+      {
+        "objective": "Diabetes and smoking history",
+        "say": "Do you have diabetes, and did you used to smoke?",
+        "domains": [
+          "pmh",
+          "smoking"
+        ],
+        "keywords": [
+          "diabetes",
+          "smoking",
+          "smoked"
+        ]
+      }
+    ]
+  }
+}

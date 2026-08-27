@@ -1,0 +1,145 @@
+{
+  "id": "ortho_012",
+  "system": "orthopedics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Nguyen",
+  "age": 27,
+  "gender": "female",
+  "chief_complaint": "popping sensation during twisting injury followed by knee locking and joint line pain",
+  "hpi_details": "27F soccer player presenting with right knee joint line tenderness, mechanical locking, and positive McMurray and Apley grind tests.",
+  "ideas": "thinks this is related to meniscal tear medial knee",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant past medical history",
+  "medications": "None",
+  "social_hx": "Plays recreational soccer, non-smoker",
+  "investigation_events": [{
+    "id": "same_day_knee_radiographs",
+    "title": "Knee radiographs",
+    "order_terms": ["knee x-ray", "knee radiograph", "knee films"],
+    "availability_message": "The knee radiographs are now available. MRI remains a follow-up investigation to characterize the suspected meniscal tear.",
+    "results": [{"id": "knee_xray", "test": "Right knee radiographs", "value": "Small joint effusion without acute fracture, dislocation, or radiopaque loose body", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Medial meniscal tear of the right knee evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Medial meniscal tear of the right knee is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes initial conservative care with orthopedic/sports medicine referral for MRI-guided decision between meniscal repair and partial meniscectomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: popping sensation during twisting injury followed by knee locking and joint line pain",
+      "Key HPI features: 27F soccer player presenting with right knee joint line tenderness, mechanical locking, and positive McMurray and Apley grind tests.",
+      "Objective/Exam findings: Vitals normal. Medial joint line tenderness, positive McMurray test, positive Apley grind test, small-to-moderate knee effusion, and limited terminal extension consistent with mechanical locking. Ligamentous exam (Lachman, drawer, varus/valgus stress) stable with no laxity.",
+      "Relevant background/PMH: No significant past medical history",
+      "Current medications: None"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Medial meniscal tear of the right knee.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to ACL tear without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Mechanical locking (inability to fully extend the knee)."
+    ],
+    "management_principles": [
+      "Obtain knee radiographs to exclude fracture or loose body, followed by MRI to characterize tear pattern and size",
+      "Initial conservative care: rest, ice, NSAIDs as needed, activity modification, and crutches if locking limits weight-bearing",
+      "Refer to orthopedics/sports medicine for definitive management: arthroscopic meniscal repair for peripheral (vascular) tears versus partial meniscectomy for central (avascular) or degenerative tears, based on MRI findings",
+      "Structured physical therapy to restore range of motion and strength regardless of the treatment pathway chosen."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Meniscal Tear Medial Knee: popping sensation during twisting injury followed by knee locking and joint line pain. 27F soccer player presenting with right knee joint line tenderness, mechanical locking, and positive McMurray and Apley grind tests.",
+    "objective": "Vitals normal. Medial joint line tenderness, positive McMurray test, positive Apley grind test, small-to-moderate knee effusion, and limited terminal extension consistent with mechanical locking. Ligamentous exam (Lachman, drawer, varus/valgus stress) stable with no laxity.",
+    "assessment": "Right medial meniscal tear.",
+    "plan": "Obtain knee radiographs to exclude fracture or loose body, followed by MRI to characterize the tear. Begin conservative measures (rest, ice, NSAIDs, activity modification, crutches if locking limits weight-bearing) and refer to orthopedics/sports medicine for definitive management (meniscal repair versus partial meniscectomy depending on tear location) with structured physical therapy."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Meniscal Tear Medial Knee",
+    "Formulate prioritized differential diagnosis for popping sensation during twisting injury followed by knee locking and joint line pain",
+    "Select appropriate imaging (radiographs, MRI) to characterize a suspected meniscal tear",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Medial meniscal tear of the right knee",
+    "one_liner": "27F soccer player with a popping sensation during a twisting injury, followed by knee locking and joint line pain.",
+    "differentials": [
+      "ACL tear",
+      "MCL sprain",
+      "Loose body in the joint"
+    ],
+    "red_flags": [
+      "Mechanical locking (inability to fully extend the knee)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the mechanism of injury",
+        "say": "Can you describe how you twisted your knee?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "twisting mechanism"
+        ]
+      },
+      {
+        "objective": "Ask about mechanical locking",
+        "say": "Does your knee ever get stuck or lock so you can't fully straighten it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mechanical locking"
+        ]
+      },
+      {
+        "objective": "Ask about swelling timeline",
+        "say": "Did the swelling happen immediately, or over the next day?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swelling timeline"
+        ]
+      },
+      {
+        "objective": "Assess joint line tenderness location",
+        "say": "Can you point to exactly where it hurts most on your knee?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "joint line tenderness"
+        ]
+      },
+      {
+        "objective": "Explain the MRI and treatment plan",
+        "say": "We'll get an MRI to look at the meniscus, and depending on the tear, treatment ranges from physical therapy to arthroscopic surgery.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "MRI",
+          "arthroscopic surgery"
+        ]
+      }
+    ]
+  }
+}

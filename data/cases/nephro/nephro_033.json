@@ -1,0 +1,137 @@
+{
+  "id": "nephro_033",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martinez",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "asymptomatic elevated potassium 5.6 on routine check",
+  "hpi_details": "A 41-year-old male presents to the clinic with asymptomatic elevated potassium 5.6 on routine check. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "wonders if it's related to his blood pressure medication or his diet",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Hypertension, mild CKD",
+  "medications": "Lisinopril 20 mg daily",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "routine_potassium", "test": "Routine serum potassium", "value": "5.6", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "high"}
+  ],
+  "investigation_events": [
+    {
+      "id": "confirm_mild_hyperkalemia",
+      "title": "Repeat potassium and ECG",
+      "order_terms": ["repeat potassium", "potassium level", "ECG", "EKG"],
+      "availability_message": "The non-hemolyzed repeat potassium and ECG are now available.",
+      "results": [
+        {"id": "repeat_potassium", "test": "Repeat non-hemolyzed serum potassium", "value": "5.5", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "high"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Normal sinus rhythm without peaked T waves or conduction widening", "flag": "normal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Mild Hyperkalemia (medication-related) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mild Hyperkalemia (medication-related) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes a low-potassium diet, dose adjustment or discontinuation of the offending ACE inhibitor/potassium-sparing diuretic, and a repeat basic metabolic panel to confirm the value is not a lab artifact, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: asymptomatic elevated potassium 5.6 on routine check",
+      "Key HPI features: A 41-year-old male presents to the clinic with asymptomatic elevated potassium 5.6 on routine check. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 148/90, HR 76 and regular, no peripheral edema. Physical exam unremarkable, no muscle weakness. Labs: Repeat non-hemolyzed potassium 5.5 mEq/L, serum creatinine 1.3 mg/dL, eGFR 58 mL/min/1.73m2 (mild CKD), bicarbonate 24 mEq/L, ECG shows normal sinus rhythm without peaked T waves.",
+      "Relevant background/PMH: Hypertension on lisinopril 20 mg daily; otherwise unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mild Hyperkalemia (medication-related).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Lab artifact (hemolyzed sample) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any muscle weakness or palpitations — would suggest higher severity than the lab implies."
+    ],
+    "management_principles": [
+      "Confirm with a repeat non-hemolyzed potassium level and obtain an ECG to rule out any conduction changes",
+      "Reduce or hold the ACE inhibitor (lisinopril) dose and start a low-potassium diet, avoiding high-potassium foods (bananas, oranges, potatoes)",
+      "Recheck basic metabolic panel in 1-2 weeks; refer to nephrology if hyperkalemia persists or eGFR continues to decline"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: asymptomatic elevated potassium 5.6 on routine check\n\nA 41-year-old male on lisinopril for hypertension found to have potassium 5.6 mEq/L on routine bloodwork. Denies muscle weakness, palpitations, or reduced urine output.",
+    "objective": "Vitals: BP 148/90, HR 76 and regular, no peripheral edema. Physical exam unremarkable, no muscle weakness. Labs: Repeat non-hemolyzed potassium 5.5 mEq/L, serum creatinine 1.3 mg/dL, eGFR 58 mL/min/1.73m2 (mild CKD), bicarbonate 24 mEq/L, ECG shows normal sinus rhythm without peaked T waves.",
+    "assessment": "Mild, asymptomatic hyperkalemia likely related to ACE inhibitor use in the setting of underlying mild CKD, with no ECG changes to suggest acute severity.",
+    "plan": "1. Confirm with a repeat non-hemolyzed potassium level and obtain an ECG. 2. Reduce or hold the lisinopril dose and start a low-potassium diet. 3. Recheck basic metabolic panel in 1-2 weeks. 4. Refer to nephrology if hyperkalemia persists or eGFR continues to decline."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Mild Hyperkalemia",
+    "Select appropriate diagnostic workup for Mild Hyperkalemia",
+    "Implement evidence-based management plan: Low-potassium diet, adjust ACEi/diuretics, check repeat level"
+  ],
+  "teaching": {
+    "diagnosis": "Mild Hyperkalemia (medication-related)",
+    "one_liner": "A mildly elevated potassium found incidentally, usually from medications (ACE inhibitors, potassium-sparing diuretics) combined with some degree of renal dysfunction — managed with diet and medication adjustment.",
+    "differentials": [
+      "Lab artifact (hemolyzed sample)",
+      "Underlying CKD progression"
+    ],
+    "red_flags": [
+      "Any muscle weakness or palpitations — would suggest higher severity than the lab implies"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "Was this found on a routine check, and did you have any symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "What medications are you taking, especially for blood pressure?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ACE inhibitor",
+          "diuretic"
+        ]
+      },
+      {
+        "objective": "Dietary intake",
+        "say": "How much potassium-rich food do you eat — bananas, oranges, potatoes?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Kidney function history",
+        "say": "Do you have any known kidney problems?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Any symptoms",
+        "say": "Any muscle weakness or heart palpitations?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

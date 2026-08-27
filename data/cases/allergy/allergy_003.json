@@ -1,0 +1,145 @@
+{
+  "id": "allergy_003",
+  "system": "allergy_immunology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wright",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "recurrent sudden episodes of severe lip swelling and abdominal cramps without itchy hives",
+  "hpi_details": "32F with family history presenting with non-pruritic, non-urticarial lip/hand swelling and colicky abdominal pain. Low C4 and C1 esterase inhibitor levels; unresponsive to antihistamines/epinephrine.",
+  "ideas": "thinks this is related to hereditary angioedema c1 inhibitor deficiency",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id": "complement_c4", "test": "Complement C4", "value": "5", "unit": "mg/dL", "reference_range": "10-40", "flag": "low", "specimen": "Blood", "collected_at": "Between attacks"},
+    {"id": "c1_inhibitor_antigen", "test": "C1 esterase inhibitor antigen", "value": "28", "unit": "% of normal", "reference_range": "70-130", "flag": "critical", "specimen": "Blood", "collected_at": "Between attacks"},
+    {"id": "c1_inhibitor_function", "test": "C1 esterase inhibitor function", "value": "18", "unit": "% of normal", "reference_range": ">=68", "flag": "critical", "specimen": "Blood", "collected_at": "Between attacks"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Hereditary Angioedema (C1-inhibitor deficiency) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hereditary Angioedema (C1-inhibitor deficiency) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management is bradykinin-targeted (e.g., C1 inhibitor concentrate, icatibant, or ecallantide) rather than antihistamines, epinephrine, or corticosteroids, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent sudden episodes of severe lip swelling and abdominal cramps without itchy hives",
+      "Key HPI features: 32F with family history presenting with non-pruritic, non-urticarial lip/hand swelling and colicky abdominal pain. Low C4 and C1 esterase inhibitor levels; unresponsive to antihistamines/epinephrine.",
+      "Objective/Exam findings: Non-pitting, non-pruritic edema of the lips and hand without urticarial wheals; low C4 with low C1 esterase inhibitor antigenic and functional levels.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hereditary Angioedema (C1-inhibitor deficiency).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Allergic angioedema without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Laryngeal swelling with voice change or stridor."
+    ],
+    "management_principles": [
+      "Treat attacks early — especially any laryngeal involvement — with an on-demand bradykinin-targeted therapy (IV C1 inhibitor concentrate, icatibant, or ecallantide) rather than antihistamines or epinephrine",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Hereditary Angioedema C1 Inhibitor Deficiency: recurrent sudden episodes of severe lip swelling and abdominal cramps without itchy hives. 32F with family history presenting with non-pruritic, non-urticarial lip/hand swelling and colicky abdominal pain. Low C4 and C1 esterase inhibitor levels; unresponsive to antihistamines/epinephrine.",
+    "objective": "Vitals normal between attacks. Non-pitting, non-pruritic edema of the lips and hand without urticarial wheals. Complement C4 low; C1 esterase inhibitor quantitative antigen and functional activity both low.",
+    "assessment": "Hereditary Angioedema (HAE) Type 1 secondary to C1 esterase inhibitor deficiency.",
+    "plan": "1. Treat attacks early with an on-demand bradykinin-targeted therapy (IV C1 inhibitor concentrate, icatibant, or ecallantide); treat any laryngeal involvement as an airway emergency and prepare for emergency airway management if respiratory compromise progresses. 2. Antihistamines, epinephrine, and corticosteroids do not target bradykinin-mediated HAE and should not delay HAE-specific therapy. 3. Refer to an allergy/immunology specialist for confirmatory testing, individualized long-term prophylaxis, and an emergency action plan."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hereditary Angioedema C1 Inhibitor Deficiency",
+    "Formulate prioritized differential diagnosis for recurrent sudden episodes of severe lip swelling and abdominal cramps without itchy hives",
+    "Select appropriate laboratory and imaging studies for allergy_immunology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Hereditary Angioedema (C1-inhibitor deficiency)",
+    "one_liner": "Recurrent bradykinin-mediated swelling from low or dysfunctional C1-esterase inhibitor — supported by low C4 plus abnormal C1-INH antigenic and functional testing, not by allergy testing.",
+    "differentials": [
+      "Allergic angioedema",
+      "Acquired C1-inhibitor deficiency (lymphoproliferative disease)",
+      "Idiopathic angioedema"
+    ],
+    "red_flags": [
+      "Laryngeal swelling with voice change or stridor",
+      "Severe abdominal attack mimicking an acute abdomen"
+    ],
+    "must_ask": [
+      {
+        "objective": "Itch versus pure swelling",
+        "say": "Is the swelling itchy, or does it come without any itching or hives?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "itch",
+          "hives"
+        ]
+      },
+      {
+        "objective": "Trigger pattern",
+        "say": "Does anything seem to set off an episode — stress, minor injury, dental work?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "trigger",
+          "stress",
+          "injury",
+          "dental"
+        ]
+      },
+      {
+        "objective": "Abdominal attacks",
+        "say": "Do you ever get severe abdominal pain with the swelling?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "abdominal",
+          "stomach"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does this run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Response to standard allergy treatment",
+        "say": "Have antihistamines or epinephrine ever helped?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "antihistamine",
+          "epinephrine"
+        ]
+      }
+    ]
+  }
+}

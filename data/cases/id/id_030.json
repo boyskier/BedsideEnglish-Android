@@ -1,0 +1,118 @@
+{
+  "id": "id_030",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thomas",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "burning pain and vesicular rash in dermatomal pattern",
+  "hpi_details": "A 32-year-old female presents to the clinic with burning pain and vesicular rash in dermatomal pattern. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to shingles",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Herpes Zoster (Shingles) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Herpes Zoster (Shingles) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Herpes Zoster: Valacyclovir 1000mg TID for 7 days started within 72 hours, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning pain and vesicular rash in dermatomal pattern",
+      "Key HPI features: A 32-year-old female presents to the clinic with burning pain and vesicular rash in dermatomal pattern. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 37.2C, HR 82, BP 118/72 (afebrile, well-appearing). Grouped vesicles on an erythematous base in a band-like distribution over the right T6 dermatome, not crossing the midline. No periorbital or nasal-tip involvement.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Herpes Zoster (Shingles).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Herpes simplex without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rash near the eye."
+    ],
+    "management_principles": [
+      "Prescribe Valacyclovir 1000mg TID for 7 days, ideally started within 72 hours of rash onset.",
+      "Provide pain control (e.g., gabapentin or NSAIDs) and counsel to keep lesions covered until crusted to reduce transmission risk.",
+      "Examine for ophthalmic involvement (Hutchinson's sign) and refer urgently to ophthalmology if the nose or eye is affected."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32F with burning pain and a vesicular rash in a dermatomal pattern, gradually worsening, with associated fatigue, consistent with reactivation of varicella-zoster virus.",
+    "objective": "T 37.2C, HR 82, BP 118/72. Grouped vesicles on an erythematous base in a band over the right T6 dermatome, not crossing the midline. No periorbital or nasal-tip involvement.",
+    "assessment": "Herpes Zoster (Shingles) in the right T6 dermatome, presenting within the antiviral treatment window.",
+    "plan": "1. Prescribe Valacyclovir 1000mg TID for 7 days, started within 72 hours of rash onset. 2. Provide pain control (e.g., gabapentin or NSAIDs) and advise keeping lesions covered until crusted. 3. Counsel on postherpetic neuralgia risk and avoiding contact with unvaccinated/immunocompromised individuals and pregnant women until lesions crust over."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Herpes Zoster",
+    "Select appropriate diagnostic workup for Herpes Zoster",
+    "Implement evidence-based management plan: Valacyclovir 1000mg TID for 7 days started within 72 hours"
+  ],
+  "teaching": {
+    "diagnosis": "Herpes Zoster (Shingles)",
+    "one_liner": "Reactivation of varicella-zoster virus causing burning dermatomal pain and a vesicular rash in a band pattern.",
+    "differentials": [
+      "Herpes simplex",
+      "Contact dermatitis"
+    ],
+    "red_flags": [
+      "Rash near the eye"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain before rash",
+        "say": "Did pain start before you saw the blisters?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Distribution",
+        "say": "Is the rash in a band on one side of your body?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Days since onset",
+        "say": "How many days ago did the rash start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Eye involvement",
+        "say": "Is any of it near your eye?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Pain character",
+        "say": "Does it burn or tingle?",
+        "domains": [
+          "character"
+        ]
+      }
+    ]
+  }
+}

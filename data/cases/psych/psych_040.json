@@ -1,0 +1,172 @@
+{
+  "id": "psych_040",
+  "system": "psych",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Robinson",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "BMI 14.8, restricts calories to 500 daily, amenorrhea",
+  "hpi_details": "A 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, amenorrhea. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to anorexia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "severe_anorexia_urgent_assessment",
+      "title": "Urgent eating-disorder medical-stability results",
+      "order_terms": ["electrolytes", "metabolic panel", "bmp", "blood tests", "blood work", "glucose", "ecg", "ekg"],
+      "availability_message": "The urgent medical-stability results are now available and support monitored admission; nutritional treatment should follow a supervised refeeding protocol.",
+      "results": [
+        {"id": "potassium", "test": "Serum potassium", "value": "3.1", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "low", "specimen": "Blood", "collected_at": "During same-day medical assessment"},
+        {"id": "phosphate", "test": "Serum phosphate", "value": "2.3", "unit": "mg/dL", "reference_range": "2.5-4.5", "flag": "low", "specimen": "Blood", "collected_at": "During same-day medical assessment"},
+        {"id": "glucose", "test": "Serum glucose", "value": "61", "unit": "mg/dL", "reference_range": "70-99 fasting", "flag": "low", "specimen": "Blood", "collected_at": "During same-day medical assessment"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Sinus bradycardia at 46 bpm with QTc 468 ms", "flag": "critical", "collected_at": "During same-day medical assessment"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Anorexia Nervosa restrictive evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Anorexia Nervosa restrictive is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Anorexia Nervosa restrictive: Medical hospitalization if unstable, careful refeeding, therapy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: BMI 14.8, restricts calories to 500 daily, amenorrhea",
+      "Key HPI features: A 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, amenorrhea. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Anorexia Nervosa restrictive.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Anorexia Nervosa restrictive.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Adjustment disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute suicidal or homicidal ideation."
+    ],
+    "management_principles": [
+      "Plan for Anorexia Nervosa restrictive: Medical hospitalization if unstable, careful refeeding, therapy",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: BMI 14.8, restricts calories to 500 daily, amenorrhea\n\nA 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, amenorrhea. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Anorexia Nervosa restrictive.",
+    "assessment": "Condition highly suspicious for Anorexia Nervosa restrictive.",
+    "plan": "Urgently assess vital signs, ECG, electrolytes, glucose, hydration, and suicide risk. Given the very low BMI and severe restriction, arrange same-day specialist medical evaluation to determine need for monitored admission and supervised nutritional rehabilitation; do not initiate unsupervised refeeding."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Anorexia Nervosa restrictive",
+    "Select appropriate diagnostic workup for Anorexia Nervosa restrictive",
+    "Implement evidence-based management plan: Medical hospitalization if unstable, careful refeeding, therapy"
+  ],
+  "teaching": {
+    "diagnosis": "Anorexia Nervosa restrictive",
+    "one_liner": "Psychiatric evaluation for patient presenting with BMI 14.8, restricts calories to 500 daily, amenorrhea.",
+    "differentials": [
+      "Bulimia nervosa",
+      "Avoidant/restrictive food intake disorder (ARFID)",
+      "Major depressive disorder with appetite loss",
+      "Hyperthyroidism",
+      "Malignancy or GI disease causing weight loss"
+    ],
+    "red_flags": [
+      "Acute suicidal or homicidal ideation",
+      "Severe self-neglect"
+    ],
+    "must_ask": [
+      {
+        "objective": "Body image and weight concerns",
+        "say": "How do you feel about your body and your current weight?",
+        "domains": [
+          "character",
+          "ideas"
+        ],
+        "keywords": [
+          "body",
+          "weight",
+          "afraid",
+          "thin",
+          "image"
+        ]
+      },
+      {
+        "objective": "Dietary restriction pattern",
+        "say": "What have you been eating in a typical day recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "eating",
+          "diet",
+          "calories",
+          "restrict",
+          "food"
+        ]
+      },
+      {
+        "objective": "Compensatory behaviors",
+        "say": "Do you exercise excessively, make yourself vomit, or use laxatives?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "exercise",
+          "vomit",
+          "laxatives",
+          "purge",
+          "excessive"
+        ]
+      },
+      {
+        "objective": "Physical symptoms of malnutrition",
+        "say": "Have you noticed dizziness, fainting, or your heart racing or feeling irregular?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizziness",
+          "fainting",
+          "heart",
+          "irregular",
+          "weak"
+        ]
+      },
+      {
+        "objective": "Bone and strength impact",
+        "say": "Have you had any fractures or noticed a loss of strength or energy?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "fractures",
+          "strength",
+          "energy",
+          "bones",
+          "weak"
+        ]
+      }
+    ]
+  }
+}

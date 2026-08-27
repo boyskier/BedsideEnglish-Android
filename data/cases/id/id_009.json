@@ -1,0 +1,165 @@
+{
+  "id": "id_009",
+  "system": "infectious_disease",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lewis",
+  "age": 25,
+  "gender": "male",
+  "chief_complaint": "fever, sore throat, generalized swollen lymph glands, and mononucleosis-like rash after exposure",
+  "hpi_details": "25M presenting 3 weeks after high-risk exposure with fever, pharyngitis, diffuse lymphadenopathy, maculopapular rash, and high HIV RNA viral load while antibody test is still indeterminate.",
+  "ideas": "thinks this is related to acute retroviral syndrome primary hiv infection",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "hiv_rna",
+      "test": "Quantitative HIV-1 RNA",
+      "value": ">500000",
+      "unit": "copies/mL",
+      "reference_range": "Not detected",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "hiv_fourth_generation",
+      "test": "Fourth-generation HIV antigen/antibody assay",
+      "value": "Reactive; p24 antigen detected",
+      "reference_range": "Nonreactive",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "hiv_differentiation_assay",
+      "test": "HIV-1/HIV-2 antibody differentiation assay",
+      "value": "Indeterminate",
+      "reference_range": "Negative",
+      "flag": "abnormal",
+      "specimen": "Blood",
+      "note": "Pattern is consistent with acute HIV during the antibody window period"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Retroviral Syndrome (Primary HIV Infection) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Retroviral Syndrome (Primary HIV Infection) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming acute infection with HIV RNA testing (since antibody assays may still be negative in the window period) and initiating antiretroviral therapy immediately upon diagnosis regardless of CD4 count, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, sore throat, generalized swollen lymph glands, and mononucleosis-like rash after exposure",
+      "Key HPI features: 25M presenting 3 weeks after high-risk exposure with fever, pharyngitis, diffuse lymphadenopathy, maculopapular rash, and high HIV RNA viral load while antibody test is still indeterminate.",
+      "Objective/Exam findings: Vitals: Temp 38.5C, HR 96, BP 118/74, RR 16. Diffuse non-tender cervical, axillary, and inguinal lymphadenopathy; pharyngeal erythema without exudate; diffuse maculopapular rash over the trunk and proximal extremities; mild hepatosplenomegaly. Bloods: HIV RNA viral load markedly elevated (>500,000 copies/mL); 4th-generation HIV Ag/Ab combo immunoassay reactive (p24 antigen positive) with an indeterminate/negative antibody differentiation assay, consistent with the acute 'window period'; CD4 count transiently reduced at 450 cells/uL; mild transaminitis; heterophile (Monospot) test and EBV serology negative.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Retroviral Syndrome (Primary HIV Infection).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Infectious mononucleosis (EBV) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recent high-risk exposure with this symptom cluster — needs urgent HIV RNA testing, not just antibody testing."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with quantitative HIV RNA PCR (viral load) — the primary test for acute HIV, since antibody-based assays can still be negative in the window period; repeat the 4th-generation Ag/Ab test and differentiation assay to document seroconversion",
+      "Initiate antiretroviral therapy (ART) immediately upon diagnosis regardless of CD4 count, per 'rapid/same-day ART start' guidance, after sending baseline resistance genotype and routine labs (e.g., Bictegravir/Emtricitabine/Tenofovir alafenamide as a typical first-line regimen)",
+      "Counsel on the markedly elevated transmission risk during acute infection given very high viral loads; advise consistent condom use, offer partner notification, and discuss PrEP for HIV-negative partners",
+      "Screen for concurrent sexually transmitted infections (syphilis, gonorrhea, chlamydia, hepatitis B/C) and link the patient to ongoing HIV primary care with an ID/HIV specialist"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Retroviral Syndrome Primary HIV Infection: fever, sore throat, generalized swollen lymph glands, and mononucleosis-like rash after exposure. 25M presenting 3 weeks after high-risk exposure with fever, pharyngitis, diffuse lymphadenopathy, maculopapular rash, and high HIV RNA viral load while antibody test is still indeterminate.",
+    "objective": "Vitals: Temp 38.5C, HR 96, BP 118/74, RR 16. Diffuse non-tender cervical, axillary, and inguinal lymphadenopathy; pharyngeal erythema without exudate; diffuse maculopapular rash over the trunk and proximal extremities; mild hepatosplenomegaly. Bloods: HIV RNA viral load markedly elevated (>500,000 copies/mL); 4th-generation HIV Ag/Ab combo immunoassay reactive (p24 antigen positive) with an indeterminate/negative antibody differentiation assay, consistent with the acute 'window period'; CD4 count transiently reduced at 450 cells/uL; mild transaminitis; heterophile (Monospot) test and EBV serology negative.",
+    "assessment": "Acute Retroviral Syndrome (Primary HIV Infection) confirmed by a markedly elevated HIV RNA viral load with an indeterminate antibody differentiation assay, consistent with recent high-risk exposure 3 weeks prior.",
+    "plan": "1. Confirm the diagnosis with quantitative HIV RNA PCR (viral load) — the primary test for acute HIV, since antibody-based assays can still be negative in the window period; repeat the 4th-generation Ag/Ab test and differentiation assay to document seroconversion. 2. Initiate antiretroviral therapy (ART) immediately upon diagnosis regardless of CD4 count, per 'rapid/same-day ART start' guidance, after sending baseline resistance genotype and routine labs (e.g., Bictegravir/Emtricitabine/Tenofovir alafenamide as a typical first-line regimen). 3. Counsel on the markedly elevated transmission risk during acute infection given very high viral loads; advise consistent condom use, offer partner notification, and discuss PrEP for HIV-negative partners. 4. Screen for concurrent sexually transmitted infections (syphilis, gonorrhea, chlamydia, hepatitis B/C) and link the patient to ongoing HIV primary care with an ID/HIV specialist."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Retroviral Syndrome Primary HIV Infection",
+    "Formulate prioritized differential diagnosis for fever, sore throat, generalized swollen lymph glands, and mononucleosis-like rash after exposure",
+    "Select appropriate laboratory and imaging studies for infectious_disease",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Retroviral Syndrome (Primary HIV Infection)",
+    "one_liner": "The mononucleosis-like illness that occurs 2-4 weeks after HIV acquisition, with fever, pharyngitis, diffuse lymphadenopathy, and rash, at a time when the antibody test may still be negative but the viral load is very high.",
+    "differentials": [
+      "Infectious mononucleosis (EBV)",
+      "CMV infection",
+      "Secondary syphilis"
+    ],
+    "red_flags": [
+      "Recent high-risk exposure with this symptom cluster — needs urgent HIV RNA testing, not just antibody testing"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to exposure",
+        "say": "How many weeks ago was the exposure you're concerned about?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks",
+          "exposure"
+        ]
+      },
+      {
+        "objective": "Symptom cluster",
+        "say": "Do you have a sore throat, fever, and swollen glands all together?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sore throat",
+          "fever",
+          "lymph nodes"
+        ]
+      },
+      {
+        "objective": "Rash",
+        "say": "Have you noticed a rash on your body?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "rash"
+        ]
+      },
+      {
+        "objective": "Prior HIV testing",
+        "say": "Have you been tested for HIV before, and what was the result?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "HIV test",
+          "before"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most concerned this might be?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

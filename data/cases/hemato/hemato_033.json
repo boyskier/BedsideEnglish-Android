@@ -1,0 +1,138 @@
+{
+  "id": "hemato_033",
+  "system": "hemato",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Williams",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "generalized itching after hot showers and high hemoglobin",
+  "hpi_details": "A 41-year-old male presents to the clinic with generalized itching after hot showers and high hemoglobin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to polycythemia_vera",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "19.2",
+      "unit": "g/dL",
+      "reference_range": "13.5-17.5",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "hematocrit",
+      "test": "Hematocrit",
+      "value": "57",
+      "unit": "%",
+      "reference_range": "41-53",
+      "flag": "critical",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Polycythemia Vera evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Polycythemia Vera is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Polycythemia Vera emphasizes therapeutic phlebotomy, low-dose aspirin, and hydroxyurea, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: generalized itching after hot showers and high hemoglobin",
+      "Key HPI features: A 41-year-old male presents to the clinic with generalized itching after hot showers and high hemoglobin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Polycythemia Vera.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Polycythemia Vera.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Secondary polycythemia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Symptoms of clot or stroke."
+    ],
+    "management_principles": [
+      "Plan for Polycythemia Vera: Therapeutic phlebotomy, low-dose Aspirin, Hydroxyurea",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of generalized itching after hot showers and high hemoglobin. A 41-year-old male presents to the clinic with generalized itching after hot showers and high hemoglobin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Polycythemia Vera.",
+    "assessment": "Condition highly suspicious for Polycythemia Vera.",
+    "plan": "Confirm the diagnosis with JAK2 testing and serum erythropoietin level, and refer to hematology. Use phlebotomy to maintain hematocrit below 45% and low-dose aspirin when not contraindicated. Reserve cytoreductive therapy such as hydroxyurea for high-risk or otherwise indicated patients rather than routinely treating all patients."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Polycythemia Vera",
+    "Select appropriate diagnostic workup for Polycythemia Vera",
+    "Implement evidence-based management plan: Therapeutic phlebotomy, low-dose Aspirin, Hydroxyurea"
+  ],
+  "teaching": {
+    "diagnosis": "Polycythemia Vera",
+    "one_liner": "A JAK2-driven overproduction of red blood cells causing itching after hot water exposure and an elevated hemoglobin/hematocrit.",
+    "differentials": [
+      "Secondary polycythemia",
+      "Dehydration"
+    ],
+    "red_flags": [
+      "Symptoms of clot or stroke"
+    ],
+    "must_ask": [
+      {
+        "objective": "Itching trigger",
+        "say": "Does the itching happen after hot showers specifically?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this itching been happening?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Headache or vision changes",
+        "say": "Any headaches or vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Skin color",
+        "say": "Has anyone said your face looks red or flushed?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "Do you smoke?",
+        "domains": [
+          "smoking"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "id": "psych_001",
+  "system": "psychiatry",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 24,
+  "gender": "male",
+  "chief_complaint": "acute auditory hallucinations, persecutory delusions, and disorganized behavior over 2 months",
+  "hpi_details": "24M college student brought by campus security after barricading himself in his dorm room for 5 days. Claims the FBI has implanted a microchip in his dental filling to broadcast his thoughts and monitor his actions. Reports hearing two distinct voices commanding him to smash his computer. Has stopped attending classes, neglected personal hygiene, and shows flat affect with formal thought disorder (derailment).",
+  "ideas": "believes the hospital is part of a government surveillance network",
+  "concerns": "terrified the voices will punish him if he cooperates with medical staff",
+  "expectations": "wants his phone back immediately so he can expose the conspiracy online",
+  "pmh": "No prior psychiatric history; cannabis use socially",
+  "medications": "None",
+  "social_hx": "College senior, non-smoker",
+  "investigation_events": [
+    {
+      "id": "first_episode_psychosis_workup",
+      "title": "Urgent first-episode psychosis results",
+      "order_terms": ["urine drug screen", "uds", "toxicology screen", "tsh", "thyroid function", "head ct", "ct head"],
+      "availability_message": "The urgent first-episode psychosis results are now available; safety observation and psychiatric admission should not be delayed.",
+      "results": [
+        {"id": "urine_drug_screen", "test": "Urine drug screen", "value": "Positive for cannabinoids; negative for amphetamines and cocaine", "flag": "abnormal", "specimen": "Urine", "collected_at": "During emergency assessment"},
+        {"id": "tsh", "test": "TSH", "value": "1.8", "unit": "uIU/mL", "reference_range": "0.4-4.0", "flag": "normal", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "ct_head", "test": "Non-contrast CT head", "value": "No acute intracranial hemorrhage, mass effect, or other acute abnormality", "flag": "normal", "collected_at": "During emergency assessment"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "First-Episode Psychosis / Schizophrenia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of First-Episode Psychosis / Schizophrenia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent psychiatric admission for safety and diagnostic evaluation, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute auditory hallucinations, persecutory delusions, and disorganized behavior over 2 months",
+      "Key HPI features: 24M college student brought by campus security after barricading himself in his dorm room for 5 days. Claims the FBI has implanted a microchip in his dental filling to broadcast his thoughts and monitor his actions. Reports hearing two distinct voices commanding him to smash his computer. Has stopped attending classes, neglected personal hygiene, and shows flat affect with formal thought disorder (derailment).",
+      "Objective/Exam findings: Vitals: HR 88, BP 124/80. Patient is unkempt, malodorous, with suspicious guarded posture and poor eye contact. Speech is fluent but exhibits loose associations and tangentiality. Affect is blunted and incongruent. Endorses third-person commanding auditory hallucinations and thought broadcasting. Cognitive orientation intact. Urine drug screen negative for amphetamines/cocaine, positive for cannabinoids. Comprehensive lab workup (TSH, RPR, B12, CMP) and head CT unremarkable, ruling out organic secondary causes.",
+      "Relevant background/PMH: No prior psychiatric history; cannabis use socially"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out First-Episode Psychosis / Schizophrenia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bipolar I with psychotic features without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Command auditory hallucinations."
+    ],
+    "management_principles": [
+      "Urgently admit to an acute psychiatric inpatient unit; maintain observation and assess risk to self or others, including whether command hallucinations are actionable",
+      "After psychiatric assessment, consider a second-generation antipsychotic with baseline and ongoing metabolic, neurologic, and other indicated monitoring",
+      "Provide low-stimulus environment and supportive reality-oriented nursing care"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "24M first-episode presentation of psychosis characterized by persecutory/passivity delusions, third-person auditory hallucinations, and negative symptoms lasting >1 month.",
+    "objective": "Vitals: HR 88, BP 124/80. Patient is unkempt, malodorous, with suspicious guarded posture and poor eye contact. Speech is fluent but exhibits loose associations and tangentiality. Affect is blunted and incongruent. Endorses third-person commanding auditory hallucinations and thought broadcasting. Cognitive orientation intact. Urine drug screen negative for amphetamines/cocaine, positive for cannabinoids. Comprehensive lab workup (TSH, RPR, B12, CMP) and head CT unremarkable, ruling out organic secondary causes.",
+    "assessment": "First-Episode Psychosis, schizophreniform disorder vs Schizophrenia (meeting DSM-5 Criterion A symptoms with duration >1 month and marked functional impairment).",
+    "plan": "Urgently admit to an acute psychiatric inpatient unit for safety and diagnostic evaluation, with observation and assessment of risk to self or others, including whether command hallucinations are actionable. After psychiatric assessment, consider a second-generation antipsychotic with baseline and ongoing metabolic, neurologic, and other indicated monitoring. Provide a low-stimulus environment and supportive reality-oriented nursing care. Obtain collateral and capacity assessment as clinically indicated; involve social work for family psychoeducation and referral to an early-intervention psychosis program."
+  },
+  "learning_objectives": [
+    "Perform a structured mental status examination assessing for formal thought disorder, delusions, and perceptual disturbances",
+    "Differentiate primary psychotic disorders (Schizophrenia/Schizophreniform) from substance-induced psychosis and organic medical conditions",
+    "Select first-line second-generation antipsychotic pharmacotherapy and monitor for extrapyramidal symptoms (EPS) and metabolic side effects",
+    "Outline principles of early intervention and family psychoeducation in first-episode psychosis"
+  ],
+  "teaching": {
+    "diagnosis": "First-Episode Psychosis / Schizophrenia",
+    "one_liner": "Psychotic disorder characterized by delusions, auditory hallucinations, disorganized thought processes, and negative symptoms.",
+    "differentials": [
+      "Bipolar I with psychotic features",
+      "Substance-induced psychosis",
+      "Schizoaffective disorder"
+    ],
+    "red_flags": [
+      "Command auditory hallucinations",
+      "Severe paranoia with threat to self/others",
+      "Suicidal thoughts, intent, plan, or access to means",
+      "Violent thoughts, intent, or inability to resist harmful commands"
+    ],
+    "must_ask": [
+      {
+        "objective": "Auditory hallucination screen",
+        "say": "Do you hear voices or sounds that other people around you cannot hear?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "voices",
+          "hearing",
+          "sounds",
+          "voice",
+          "hallucinations"
+        ]
+      },
+      {
+        "objective": "Persecutory or grandiose delusion screen",
+        "say": "Do you feel that people are watching, spying, or trying to harm you?",
+        "domains": [
+          "ideas",
+          "concerns"
+        ],
+        "keywords": [
+          "spying",
+          "watching",
+          "harm",
+          "conspiracy",
+          "delusions"
+        ]
+      },
+      {
+        "objective": "Thought broadcasting or insertion",
+        "say": "Do you ever feel like your mind is being broadcasted aloud or controlled by outside forces?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "broadcast",
+          "inserted",
+          "mind",
+          "forces",
+          "controlling"
+        ]
+      },
+      {
+        "objective": "Substance use screening",
+        "say": "Have you been using cannabis, amphetamines, or hallucinogens recently?",
+        "domains": [
+          "substances"
+        ],
+        "keywords": [
+          "cannabis",
+          "weed",
+          "drugs",
+          "amphetamines",
+          "substances"
+        ]
+      },
+      {
+        "objective": "Social withdrawal and functional decline",
+        "say": "Have you isolated yourself from friends or stopped attending work or school?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "isolated",
+          "withdrawn",
+          "school",
+          "friends",
+          "work"
+        ]
+      },
+      {
+        "objective": "Immediate safety assessment",
+        "say": "Have the voices told you to hurt yourself or anyone else, and do you feel you might act on that?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "hurt myself",
+          "hurt someone",
+          "command",
+          "act on it",
+          "suicide",
+          "violence"
+        ]
+      }
+    ]
+  }
+}

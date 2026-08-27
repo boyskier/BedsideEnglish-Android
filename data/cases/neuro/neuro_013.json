@@ -1,0 +1,146 @@
+{
+  "id": "neuro_013",
+  "system": "neurology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Henderson",
+  "age": 81,
+  "gender": "male",
+  "chief_complaint": "progressive headache, confusion, and right arm clumsiness over 3 weeks following a minor fall",
+  "hpi_details": "81-year-old male brought in by his concerned daughter due to a 3-week history of fluctuating confusion, memory lapses, progressive dull headaches, and increased daytime sleepiness. Over the past 5 days, daughter noticed he is dragging his right foot slightly and his right hand has become clumsy when dropping his teacup. Recalls that 4 weeks ago, he tripped over a rug at home and struck the left side of his forehead against a wooden doorpost; he had a minor bruise but did not lose consciousness and did not seek medical attention at the time. Takes warfarin for atrial fibrillation.",
+  "ideas": "daughter thinks his old age and dementia are rapidly worsening after his trip",
+  "concerns": "daughter is worried he had a major stroke or brain bleed because he takes warfarin",
+  "expectations": "wants an emergency brain CT scan and reversal of blood thinners to stop internal bleeding",
+  "pmh": "paroxysmal atrial fibrillation, type 2 diabetes mellitus, benign prostatic hyperplasia, mild age-related cognitive decline",
+  "medications": "warfarin 4mg OD (recent INR measured at 3.8 last week), metformin 500mg BD, tamsulosin 400mcg OD",
+  "social_hx": "ex-smoker, zero alcohol, lives alone with daughter visiting daily, previously independent",
+  "investigation_events": [
+    {
+      "id": "stat_chronic_subdural_workup",
+      "title": "Emergency CT and anticoagulation assessment",
+      "order_terms": ["CT head", "CT brain", "non-contrast CT", "INR", "coagulation", "clotting"],
+      "availability_message": "Emergency CT and coagulation results are now available. Warfarin reversal and neurosurgical transfer should proceed immediately.",
+      "results": [
+        {"id": "ct_head", "test": "Non-contrast CT brain", "value": "Large mixed-density crescentic left frontoparietal extra-axial collection crossing suture lines, with 9 mm rightward midline shift and left lateral ventricular effacement", "flag": "critical", "note": "Consistent with acute-on-chronic subdural hematoma."},
+        {"id": "inr", "test": "International normalized ratio", "value": "3.1", "reference_range": "2.0-3.0 therapeutic for atrial fibrillation", "flag": "high"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Subacute/Chronic Subdural Hematoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Subacute/Chronic Subdural Hematoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Neurosurgical emergency: immediate referral and transfer to neurosurgery for urgent surgical evacuation via burr hole drainage or craniotomy under local/general anaesthesia, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive headache, confusion, and right arm clumsiness over 3 weeks following a minor fall",
+      "Key HPI features: 81-year-old male brought in by his concerned daughter due to a 3-week history of fluctuating confusion, memory lapses, progressive dull headaches, and increased daytime sleepiness. Over the past 5 days, daughter noticed he is dragging his right foot slightly and his right hand has become clumsy when dropping his teacup. Recalls that 4 weeks ago, he tripped over a rug at home and struck the left side of his forehead against a wooden doorpost; he had a minor bruise but did not lose consciousness and did not seek medical attention at the time. Takes warfarin for atrial fibrillation.",
+      "Objective/Exam findings: Neurological exam: drowsy but rousable (GCS 14: E4 V4 M6), mild right facial weakness, right upper and lower limb pronator drift and weakness (power 4/5), brisk right tendon reflexes with positive right Babinski sign. Check pupils (if left pupil dilated and sluggish -> impending uncal herniation). Vitals: check for Cushing's triad (hypertension and bradycardia indicating critical raised ICP). Bloods: urgent coagulation profile (check INR), FBC, U&Es, group and save/cross-match. Immediate emergency non-contrast CT Brain: shows crescent-shaped, hypodense or mixed-density (isodense/hypodense) extra-axial collection over the left cerebral hemisphere crossing cranial suture lines, causing significant midline shift to the right and effacement of the left lateral ventricle.",
+      "Relevant background/PMH: paroxysmal atrial fibrillation, type 2 diabetes mellitus, benign prostatic hyperplasia, mild age-related cognitive decline",
+      "Current medications: warfarin 4mg OD (recent INR measured at 3.8 last week), metformin 500mg BD, tamsulosin 400mcg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Subacute/Chronic Subdural Hematoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute ischemic stroke without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Warfarin use with any head trauma, even minor — needs urgent reversal before neurosurgical intervention."
+    ],
+    "management_principles": [
+      "Neurosurgical emergency: immediate referral and transfer to neurosurgery for urgent surgical evacuation via burr hole drainage or craniotomy under local/general anaesthesia",
+      "For confirmed intracranial bleeding, urgently reverse warfarin according to local protocol with IV 4-factor Prothrombin Complex Concentrate plus IV vitamin K before neurosurgical intervention."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "81M on warfarin presents with insidious 3-week fluctuating confusion, headache, and progressive right hemiparesis following a minor head trauma 4 weeks prior.",
+    "objective": "Neurological exam: drowsy but rousable (GCS 14: E4 V4 M6), mild right facial weakness, right upper and lower limb pronator drift and weakness (power 4/5), brisk right tendon reflexes with positive right Babinski sign. Check pupils (if left pupil dilated and sluggish -> impending uncal herniation). Vitals: check for Cushing's triad (hypertension and bradycardia indicating critical raised ICP). Bloods: urgent coagulation profile (check INR), FBC, U&Es, group and save/cross-match. Immediate emergency non-contrast CT Brain: shows crescent-shaped, hypodense or mixed-density (isodense/hypodense) extra-axial collection over the left cerebral hemisphere crossing cranial suture lines, causing significant midline shift to the right and effacement of the left lateral ventricle.",
+    "assessment": "Subacute/Chronic Subdural Haematoma (cSDH) over the left cerebral hemisphere with mass effect, precipitated by minor head trauma and warfarin anticoagulation. DDx: acute ischaemic stroke / cerebral infarct, intracranial tumour with vasogenic oedema, cerebral abscess, normal pressure hydrocephalus.",
+    "plan": "Neurosurgical emergency: immediate referral and transfer to neurosurgery for urgent surgical evacuation via burr hole drainage or craniotomy under local/general anaesthesia. Immediate emergency reversal of warfarin anticoagulation: administer IV 4-factor Prothrombin Complex Concentrate (PCC - Beriplex/Octaplex 25-50 units/kg) plus IV Vitamin K 10mg slowly to target INR <1.5 before neurosurgical intervention (PCC reverses INR within 15 minutes, far superior to Fresh Frozen Plasma). Keep head elevated 30 degrees, monitor neurological observations (GCS/pupils) every 30 minutes."
+  },
+  "learning_objectives": [
+    "Link minor, easily forgotten head trauma in elderly or anticoagulated patients with delayed subacute/chronic subdural haematoma weeks later",
+    "Interpret CT brain findings of chronic subdural haematoma: crescent-shaped extra-axial collection crossing sutures with midline shift",
+    "Execute immediate life-saving warfarin reversal using 4-factor Prothrombin Complex Concentrate (PCC) and IV Vitamin K prior to neurosurgery",
+    "Perform serial neurological assessments monitoring GCS, pupillary symmetry, and motor signs to catch early brain herniation"
+  ],
+  "teaching": {
+    "diagnosis": "Subacute/Chronic Subdural Hematoma",
+    "one_liner": "A slow venous bleed under the skull, often from a trivial head bump weeks earlier in an elderly patient on blood thinners, causing gradually worsening confusion and one-sided weakness that can look like dementia progressing.",
+    "differentials": [
+      "Acute ischemic stroke",
+      "Intracranial tumor with vasogenic edema",
+      "Cerebral abscess",
+      "Normal pressure hydrocephalus"
+    ],
+    "red_flags": [
+      "Warfarin use with any head trauma, even minor, requires urgent clinical assessment for intracranial bleeding"
+    ],
+    "must_ask": [
+      {
+        "objective": "Head trauma history",
+        "say": "Did he hit his head at any point in the past month, even a minor bump?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "fall",
+          "hit head",
+          "weeks ago"
+        ]
+      },
+      {
+        "objective": "Anticoagulant use",
+        "say": "Is he taking warfarin or another blood thinner?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "warfarin"
+        ]
+      },
+      {
+        "objective": "Symptom progression",
+        "say": "How has his confusion and arm clumsiness changed over the past weeks?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "fluctuating",
+          "worsening"
+        ]
+      },
+      {
+        "objective": "Sleepiness",
+        "say": "Has he been more drowsy or sleepy during the day than usual?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "One-sided weakness",
+        "say": "Which side is weaker, and when did you first notice it?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

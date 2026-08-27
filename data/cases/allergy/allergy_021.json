@@ -1,0 +1,154 @@
+{
+  "id": "allergy_021",
+  "system": "allergy & immunology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Master Kang",
+  "age": 8,
+  "gender": "male",
+  "chief_complaint": "severe shortness of breath, wheezing, and coughing triggered by cat dander",
+  "hpi_details": "8-year-old boy presents with sudden shortness of breath, loud wheezing, and tight dry cough after visiting a friend's house with cats. Mother states he has had eczema and seasonal allergies since toddlerhood.",
+  "ideas": "mother knows he is having an asthma flare-up",
+  "concerns": "worried he will stop breathing",
+  "expectations": "wants quick-acting nebulizer treatment",
+  "pmh": "Asthma, Atopic dermatitis",
+  "medications": "Albuterol inhaler PRN",
+  "social_hx": "2nd grade student",
+  "available_results": [
+    {"id": "oxygen_saturation_triage", "test": "Oxygen saturation", "value": "91", "unit": "% on room air", "reference_range": "95-100", "flag": "low", "collected_at": "At triage"},
+    {"id": "peak_expiratory_flow", "test": "Peak expiratory flow", "value": "140 (45% of personal best)", "unit": "L/min", "reference_range": ">80% of personal best", "flag": "critical", "collected_at": "At triage"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Asthma Exacerbation (animal-allergen triggered) evaluation and management",
+    "core_concepts": [
+      "Acute asthma exacerbations are episodes of progressively worsening shortness of breath, cough, wheeze, and chest tightness driven by airway inflammation, bronchospasm, and mucus plugging.",
+      "In atopic children, exposure to an aeroallergen such as cat or dog dander is a common, identifiable trigger, distinct from viral-induced wheeze.",
+      "Severity is graded by ability to speak in full sentences, respiratory rate, accessory muscle use, oxygen saturation, and peak expiratory flow when available.",
+      "First-line treatment is repeated or continuous inhaled short-acting beta-agonist (albuterol), with inhaled ipratropium and systemic corticosteroids added for moderate-to-severe exacerbations."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe shortness of breath, wheezing, and coughing triggered by cat dander",
+      "Key HPI features: 8-year-old boy presents with sudden shortness of breath, loud wheezing, and tight dry cough after visiting a friend's house with cats. Mother states he has had eczema and seasonal allergies since toddlerhood.",
+      "Objective/Exam findings: Tachypnea, prolonged expiratory phase with diffuse wheeze, and accessory muscle use in more severe cases; pulse oximetry may show mild hypoxia.",
+      "Relevant background/PMH: Asthma, Atopic dermatitis",
+      "Current medications: Albuterol inhaler PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming a clear trigger, such as a friend's cat, makes the exacerbation inherently milder than one without an obvious trigger.",
+      "Treating a single albuterol treatment as sufficient without reassessing the response before deciding on discharge.",
+      "Overlooking eczema and seasonal allergies as clues to an atopic phenotype that raises the likelihood of allergen-triggered asthma.",
+      "Misattributing symptoms exclusively to viral-induced wheeze without asking about allergen exposure."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Struggling to speak in full sentences or accessory muscle use."
+    ],
+    "management_principles": [
+      "Assess peak flow, SpO2, and respiratory effort to grade exacerbation severity.",
+      "Administer inhaled albuterol promptly; add inhaled ipratropium for a moderate-to-severe exacerbation.",
+      "Give a short course of oral corticosteroids for a moderate-to-severe exacerbation or inadequate response to bronchodilators.",
+      "Counsel on allergen avoidance (e.g., cat/pet exposure) and review the written asthma action plan before discharge."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Asthma (GINA) 2025 Strategy",
+        "url": "https://ginasthma.org/gina-reports/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "8-year-old boy presents with sudden shortness of breath, loud wheezing, and tight dry cough after visiting a friend's house with cats. Mother states he has had eczema and seasonal allergies since toddlerhood.",
+    "objective": "Tachypnea, prolonged expiratory phase with diffuse wheeze, and accessory muscle use in more severe cases; pulse oximetry may show mild hypoxia.",
+    "assessment": "Acute asthma exacerbation, likely triggered by cat allergen exposure, in a child with known asthma and atopic dermatitis.",
+    "plan": "1. Assess peak flow and SpO2. 2. Administer inhaled albuterol promptly; add inhaled ipratropium for a moderate-to-severe exacerbation. 3. Provide an oral corticosteroid course for a moderate-to-severe exacerbation or inadequate response to initial bronchodilator therapy. 4. Counsel on cat/pet allergen avoidance and review the asthma action plan before discharge."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and severity grading of an acute asthma exacerbation.",
+    "Formulate a prioritized differential diagnosis for acute wheeze and shortness of breath triggered by animal exposure",
+    "Identify pet/animal dander as an allergic trigger in a child with an atopic background",
+    "Implement evidence-based acute management of pediatric asthma exacerbation, including step-up bronchodilator and corticosteroid therapy."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Asthma Exacerbation (animal-allergen triggered)",
+    "one_liner": "A sudden asthma flare triggered by exposure to an allergen — here, cat dander — in a child with an atopic background of eczema and allergies.",
+    "differentials": [
+      "Viral-induced wheeze",
+      "Foreign body aspiration",
+      "Anaphylaxis"
+    ],
+    "red_flags": [
+      "Struggling to speak in full sentences or accessory muscle use",
+      "Lips or fingertips turning blue"
+    ],
+    "must_ask": [
+      {
+        "objective": "Trigger and timing",
+        "say": "What happened right before the breathing trouble started — were you around any pets?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "cat",
+          "pet",
+          "before"
+        ]
+      },
+      {
+        "objective": "Severity of breathing difficulty",
+        "say": "Is it hard to talk or finish a sentence because of the breathing trouble?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "hard to talk",
+          "wheeze",
+          "breathless"
+        ]
+      },
+      {
+        "objective": "Background asthma and atopy history",
+        "say": "Has he been diagnosed with asthma or eczema before, and does he use an inhaler?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "asthma",
+          "eczema",
+          "inhaler"
+        ]
+      },
+      {
+        "objective": "Relief with rescue medication",
+        "say": "Has a rescue inhaler helped before, and has one been used today?",
+        "domains": [
+          "relieving",
+          "medications"
+        ],
+        "keywords": [
+          "inhaler",
+          "albuterol",
+          "used"
+        ]
+      },
+      {
+        "objective": "Color and consciousness",
+        "say": "Has he turned pale, blue around the lips, or seemed drowsy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blue",
+          "pale",
+          "drowsy"
+        ]
+      }
+    ]
+  }
+}

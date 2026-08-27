@@ -1,0 +1,207 @@
+{
+  "id": "cardio_022",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lindqvist",
+  "age": 36,
+  "gender": "female",
+  "chief_complaint": "severe squeezing chest pain waking me up from sleep at 4 AM every morning",
+  "hpi_details": "4-week history of highly predictable, severe retrosternal squeezing chest pain that occurs reliably between 3 AM and 5 AM while sleeping in bed, waking her up in severe distress. Episodes last 10 to 15 minutes, radiate to her left shoulder, and resolve spontaneously. Curiously, she can run 5 kilometres on the treadmill at the gym during the afternoon without experiencing any chest pain or shortness of breath whatsoever. Has a heavy cigarette smoking history.",
+  "ideas": "thinks smoking cigarettes late at night makes her heart arteries spasm while sleeping",
+  "concerns": "terrified she will have a massive fatal heart attack in her sleep when alone",
+  "expectations": "wants calcium channel blockers and a clear explanation for why her heart hurts only when sleeping",
+  "pmh": "migraine headaches, Raynaud's phenomenon of fingers in cold weather, no diabetes or hypertension",
+  "medications": "sumatriptan PRN for migraines (reports taking one last week which triggered a severe nocturnal angina attack)",
+  "social_hx": "smokes 20 cigarettes/day since age 18, drinks 6 units/week, graphic designer",
+  "investigation_events": [
+    {
+      "id": "vasospasm_attack_ecg",
+      "title": "ECG recorded during chest pain",
+      "order_terms": ["ECG", "EKG", "12-lead"],
+      "availability_message": "An ECG recorded during the chest-pain episode is now available.",
+      "results": [
+        {
+          "id": "ecg_transient_st_elevation",
+          "test": "12-lead ECG during pain",
+          "value": "Transient 2 mm ST-segment elevation in leads II, III, and aVF, resolving completely after sublingual nitrate",
+          "unit": "",
+          "reference_range": "No ST elevation",
+          "flag": "critical",
+          "collected_at": "During early-morning pain"
+        }
+      ]
+    },
+    {
+      "id": "vasospasm_coronary_angiography",
+      "title": "Coronary angiography with provocation",
+      "order_terms": ["coronary angiography", "coronary angiogram", "acetylcholine provocation", "spasm provocation"],
+      "availability_message": "The coronary angiography and provocation report is now available.",
+      "results": [
+        {
+          "id": "angiography_provoked_spasm",
+          "test": "Coronary angiography with acetylcholine",
+          "value": "No fixed obstructive disease; transient 90% right coronary artery spasm reproduced pain and resolved with intracoronary nitrate",
+          "unit": "",
+          "reference_range": "No inducible epicardial spasm",
+          "flag": "positive",
+          "collected_at": "Provocation study"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Prinzmetal (Vasospastic) Angina evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Prinzmetal (Vasospastic) Angina is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes avoiding vasoconstrictive triggers such as sumatriptan and generally avoiding beta-blockers, especially non-selective agents, which can worsen coronary spasm, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe squeezing chest pain waking me up from sleep at 4 AM every morning",
+      "Key HPI features: 4-week history of highly predictable, severe retrosternal squeezing chest pain that occurs reliably between 3 AM and 5 AM while sleeping in bed, waking her up in severe distress. Episodes last 10 to 15 minutes, radiate to her left shoulder, and resolve spontaneously. Curiously, she can run 5 kilometres on the treadmill at the gym during the afternoon without experiencing any chest pain or shortness of breath whatsoever. Has a heavy cigarette smoking history.",
+      "Objective/Exam findings: Vitals and physical exam: completely normal. 12-lead resting ECG: normal sinus rhythm. Outpatient or emergency room ECG captured during an early-morning attack: shows transient, reversible ST-segment elevation that completely resolves when the pain subsides (or after sublingual GTN). CT Coronary Angiography or invasive coronary angiography: reveals completely smooth, patent epicardial coronary arteries without obstructive atherosclerotic plaques, but hyper-reactivity to provocation testing (e.g., acetylcholine or ergonovine infusion inducing focal coronary artery spasm).",
+      "Relevant background/PMH: migraine headaches, Raynaud's phenomenon of fingers in cold weather, no diabetes or hypertension",
+      "Current medications: sumatriptan PRN for migraines (reports taking one last week which triggered a severe nocturnal angina attack)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Prinzmetal (Vasospastic) Angina.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute coronary syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Spasm can cause dangerous arrhythmias — syncope with the pain is a red flag."
+    ],
+    "management_principles": [
+      "Avoid vasoconstrictive triggers such as sumatriptan and generally avoid beta-blockers, especially non-selective agents, which can worsen coronary spasm",
+      "Initiate high-dose Calcium Channel Blockers (e.g., diltiazem 240mg OD or amlodipine 10mg OD) as first-line therapy to relax vascular smooth muscle, combined with long-acting nitrates (e.g., isosorbide mononitrate) and PRN sublingual GTN spray for acute attacks"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2023 AHA/ACC/ACCP/ASPC/NLA/PCNA Guideline for the Management of Patients With Chronic Coronary Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/2023-ahaaccaccpaspcnlapcna-guideline-for-the-management-of-patients-withcir0000000000001168"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "36F heavy smoker with Raynaud's/migraine presents with recurrent nocturnal rest angina waking her at 4 AM, with completely normal daytime exercise tolerance. Exacerbated by triptan ingestion.",
+    "objective": "Vitals and physical exam: completely normal. 12-lead resting ECG: normal sinus rhythm. Outpatient or emergency room ECG captured during an early-morning attack: shows transient, reversible ST-segment elevation that completely resolves when the pain subsides (or after sublingual GTN). CT Coronary Angiography or invasive coronary angiography: reveals completely smooth, patent epicardial coronary arteries without obstructive atherosclerotic plaques, but hyper-reactivity to provocation testing (e.g., acetylcholine or ergonovine infusion inducing focal coronary artery spasm).",
+    "assessment": "Prinzmetal's Variant Angina (Vasospastic Angina) due to focal coronary artery vasospasm. DDx: unstable angina / atherosclerotic ACS, gastro-oesophageal reflux disease (nocturnal reflux), panic attacks, obstructive sleep apnoea induced angina.",
+    "plan": "Avoid vasoconstrictive triggers such as sumatriptan and generally avoid beta-blockers, especially non-selective agents, which can worsen coronary spasm. Initiate high-dose Calcium Channel Blockers (e.g., diltiazem 240mg OD or amlodipine 10mg OD) as first-line therapy to relax vascular smooth muscle, combined with long-acting nitrates (e.g., isosorbide mononitrate) and PRN sublingual GTN spray for acute attacks. Mandatory urgent smoking cessation support (tobacco is the primary trigger for endothelial dysfunction and vasospasm)."
+  },
+  "learning_objectives": [
+    "Identify the classical circadian presentation of Prinzmetal's variant angina: rest angina waking patients in the early morning with preserved daytime exercise tolerance",
+    "Explain the physiological mechanism of coronary vasospasm linked to generalized vasospastic disorders (Raynaud's, migraines)",
+    "Recognise medications that can precipitate or worsen vasospasm, including triptans and especially non-selective beta-blockers",
+    "Formulate first-line vasodilator prophylaxis utilizing calcium channel blockers and nitrates coupled with mandatory smoking cessation"
+  ],
+  "teaching": {
+    "diagnosis": "Prinzmetal (Vasospastic) Angina",
+    "one_liner": "Coronary spasm rather than fixed narrowing — pain at rest, typically in the early hours, in someone who exercises without symptoms.",
+    "differentials": [
+      "Acute coronary syndrome",
+      "GERD",
+      "Panic attack"
+    ],
+    "red_flags": [
+      "Spasm can cause dangerous arrhythmias — syncope with the pain is a red flag"
+    ],
+    "must_ask": [
+      {
+        "objective": "Time of day",
+        "say": "Does it wake you at a particular time — the early hours of the morning?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "night",
+          "morning",
+          "early",
+          "hours",
+          "wake",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Pain at rest but not on exertion",
+        "say": "Can you exercise without any chest pain at all?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "exercise",
+          "walk",
+          "gym",
+          "rest",
+          "without"
+        ]
+      },
+      {
+        "objective": "Smoking",
+        "say": "Do you smoke, and how much?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "smoke",
+          "cigarette",
+          "pack"
+        ]
+      },
+      {
+        "objective": "Stimulant use",
+        "say": "Do you use any recreational drugs, particularly cocaine?",
+        "domains": [
+          "substances"
+        ],
+        "keywords": [
+          "cocaine",
+          "drug",
+          "stimulant",
+          "amphetamine"
+        ]
+      },
+      {
+        "objective": "Response to nitrates",
+        "say": "Have you been given a spray or tablet under the tongue, and did it help?",
+        "domains": [
+          "relieving",
+          "medications"
+        ],
+        "keywords": [
+          "spray",
+          "under",
+          "the",
+          "tongue",
+          "nitrate",
+          "gtn"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "How would you describe it — sharp, crushing, burning, tight?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "sharp",
+          "crushing",
+          "burning",
+          "tight",
+          "pressure",
+          "heavy"
+        ]
+      }
+    ]
+  }
+}

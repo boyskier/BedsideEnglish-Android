@@ -1,0 +1,182 @@
+{
+  "id": "cardio_031",
+  "system": "cardio",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Wright",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "sudden racing heartbeat, dizziness, and throat tightness for 15 minutes",
+  "hpi_details": "A 35-year-old male presents to the clinic with sudden racing heartbeat, dizziness, and throat tightness for 15 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to psvt",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "psvt_ecg",
+      "title": "12-lead ECG during palpitations",
+      "order_terms": ["ECG", "EKG", "12-lead"],
+      "availability_message": "The ECG recorded during the palpitations is now available.",
+      "results": [
+        {
+          "id": "ecg_regular_narrow_svt",
+          "test": "12-lead ECG",
+          "value": "Regular narrow-complex tachycardia at 186 bpm with QRS 84 ms and no clearly visible preceding P waves",
+          "unit": "",
+          "reference_range": "Sinus rhythm 60-100 bpm; QRS <120 ms",
+          "flag": "critical",
+          "collected_at": "During symptoms"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Paroxysmal Supraventricular Tachycardia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Paroxysmal Supraventricular Tachycardia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management begins with ECG assessment and haemodynamic stability; stable regular narrow-complex SVT may be treated with vagal manoeuvres then monitored IV adenosine, while unstable tachyarrhythmia requires synchronized cardioversion.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden racing heartbeat, dizziness, and throat tightness for 15 minutes",
+      "Key HPI features: A 35-year-old male presents to the clinic with sudden racing heartbeat, dizziness, and throat tightness for 15 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Paroxysmal SVT.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Paroxysmal Supraventricular Tachycardia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atrial fibrillation without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Episodes with chest pain, syncope, or breathlessness at rest."
+    ],
+    "management_principles": [
+      "Obtain ECG and assess haemodynamic stability; for stable regular narrow-complex SVT, use vagal manoeuvres then monitored IV adenosine, while unstable tachyarrhythmia requires synchronized cardioversion",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2015 ACC/AHA/HRS Guideline for the Management of Adult Patients With Supraventricular Tachycardia",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000311"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden racing heartbeat, dizziness, and throat tightness for 15 minutes. HPI: re-entrant conduction pathway.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Paroxysmal SVT.",
+    "assessment": "Condition highly suspicious for Paroxysmal SVT.",
+    "plan": "Obtain ECG and assess haemodynamic stability. For stable regular narrow-complex SVT, use vagal manoeuvres then monitored IV adenosine; treat unstable tachyarrhythmia with synchronized cardioversion. Arrange cardiology follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Paroxysmal SVT",
+    "Select appropriate diagnostic workup for Paroxysmal SVT",
+    "Implement evidence-based management plan: Use ECG and haemodynamic status to guide vagal manoeuvres and monitored IV adenosine for stable regular narrow-complex SVT or synchronized cardioversion for instability"
+  ],
+  "teaching": {
+    "diagnosis": "Paroxysmal Supraventricular Tachycardia",
+    "one_liner": "A re-entry circuit produces sudden, regular, very fast palpitations — often with a pounding sensation in the throat.",
+    "differentials": [
+      "Atrial fibrillation",
+      "Panic attack",
+      "Inappropriate sinus tachycardia"
+    ],
+    "red_flags": [
+      "Episodes with chest pain, syncope, or breathlessness at rest"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden switch-like onset",
+        "say": "Does it start instantly, or build up over minutes?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "instant",
+          "sudden",
+          "switch",
+          "build",
+          "gradual"
+        ]
+      },
+      {
+        "objective": "Throat pounding",
+        "say": "Do you feel a pounding in your neck or throat with it?",
+        "domains": [
+          "location",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "neck",
+          "throat",
+          "pounding",
+          "fullness"
+        ]
+      },
+      {
+        "objective": "Regularity",
+        "say": "Is the fast beat completely regular?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "regular",
+          "steady",
+          "even"
+        ]
+      },
+      {
+        "objective": "Vagal manoeuvres",
+        "say": "Does bearing down or holding your breath ever stop it?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "bear",
+          "down",
+          "hold",
+          "breath",
+          "cough",
+          "cold",
+          "water"
+        ]
+      },
+      {
+        "objective": "Syncope and dizziness",
+        "say": "Have you fainted or felt like you were going to?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "black",
+          "out",
+          "dizzy",
+          "pass",
+          "lightheaded"
+        ]
+      },
+      {
+        "objective": "Frequency and impact",
+        "say": "How often does this happen, and has it stopped you doing anything?",
+        "domains": [
+          "progression",
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

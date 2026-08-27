@@ -1,0 +1,159 @@
+{
+  "id": "cs_013",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Jackson",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "persistent high fever, weight loss, and loculated thick pleural pus resistant to tube drainage",
+  "hpi_details": "55M with poorly treated bacterial pneumonia developing a loculated, thick-walled purulent pleural collection (empyema) requiring VATS or open thoracotomy pleural peel decortication.",
+  "ideas": "thinks the pneumonia never fully cleared and worries the infection is walled off and untreatable with antibiotics alone",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "ct_organizing_empyema",
+      "test": "Contrast CT chest",
+      "value": "Multiloculated pleural collection with enhancing thick pleural rind, split-pleura sign, and trapped underlying lung",
+      "unit": "",
+      "reference_range": "No pleural collection",
+      "flag": "abnormal",
+      "collected_at": "Before surgical consultation"
+    },
+    {
+      "id": "pleural_fluid_empyema",
+      "test": "Pleural fluid analysis",
+      "value": "Frank pus; pH 6.92; glucose 24 mg/dL; LDH 3580 U/L",
+      "unit": "",
+      "reference_range": "pH >7.20; glucose >60 mg/dL",
+      "flag": "critical",
+      "specimen": "Pleural fluid",
+      "collected_at": "Chest-tube aspiration"
+    },
+    {
+      "id": "pleural_culture_empyema",
+      "test": "Pleural fluid culture",
+      "value": "Streptococcus anginosus",
+      "unit": "",
+      "reference_range": "No growth",
+      "flag": "positive",
+      "specimen": "Pleural fluid",
+      "collected_at": "Before targeted antibiotics"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Empyema (Thoracic) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Empyema (Thoracic) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes surgical decortication (VATS or open thoracotomy) to remove the thick fibrous pleural peel, evacuate loculated purulent collections, and re-expand the trapped lung, combined with targeted IV antibiotics, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: persistent high fever, weight loss, and loculated thick pleural pus resistant to tube drainage",
+      "Key HPI features: 55M with poorly treated bacterial pneumonia developing a loculated, thick-walled purulent pleural collection (empyema) requiring VATS or open thoracotomy pleural peel decortication.",
+      "Objective/Exam findings: Vitals: Temp 38.7C, HR 108, BP 122/76, RR 22. Decreased breath sounds and dullness to percussion over the affected hemithorax. Chest CT shows a loculated pleural fluid collection with a thick, enhancing pleural rind (split pleura sign) and underlying lung entrapment. Pleural fluid aspirate is frankly purulent with pH < 7.2, low glucose, elevated LDH, and positive culture.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Empyema (Thoracic).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple parapneumonic effusion without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ongoing high fever and weight loss despite drainage — suggests need for more definitive surgical treatment."
+    ],
+    "management_principles": [
+      "Perform VATS or open thoracotomy decortication to remove the thick fibrous pleural peel, evacuate loculated purulent collections, and fully re-expand the entrapped lung",
+      "Continue targeted IV antibiotics guided by pleural fluid and blood culture results",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M with poorly treated bacterial pneumonia presenting with persistent high fever and weight loss, now with a loculated, thick-walled purulent pleural collection resistant to simple tube drainage.",
+    "objective": "Vitals: Temp 38.7C, HR 108, BP 122/76, RR 22. Decreased breath sounds and dullness to percussion over the affected hemithorax. Chest CT shows a loculated pleural fluid collection with a thick, enhancing pleural rind (split pleura sign) and underlying lung entrapment. Pleural fluid aspirate is frankly purulent with pH < 7.2, low glucose, elevated LDH, and positive culture.",
+    "assessment": "Chronic (organizing-stage) thoracic empyema with a thick fibrous pleural peel and trapped lung, refractory to tube drainage alone.",
+    "plan": "Perform VATS or open thoracotomy decortication to remove the thick fibrous pleural peel, evacuate loculated purulent collections, and fully re-expand the entrapped lung. Continue targeted IV antibiotics guided by pleural fluid and blood culture results."
+  },
+  "learning_objectives": [
+    "Recognize the progression from simple parapneumonic effusion to fibropurulent and chronic organizing empyema, and why tube drainage alone fails once a thick pleural peel forms",
+    "Formulate a prioritized differential diagnosis for persistent fever and weight loss with a loculated pleural collection, including lung abscess and malignant pleural effusion",
+    "Interpret pleural fluid analysis (pH, glucose, LDH, culture) and CT findings (split pleura sign) that indicate need for surgical decortication",
+    "Outline the goals of VATS or open decortication (removing the fibrous peel, evacuating loculations, re-expanding trapped lung) alongside targeted antibiotics"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Empyema (Thoracic)",
+    "one_liner": "A pleural infection that has organized into a thick, loculated collection of pus resistant to simple tube drainage, requiring surgical decortication to fully re-expand the lung.",
+    "differentials": [
+      "Simple parapneumonic effusion",
+      "Lung abscess",
+      "Malignant pleural effusion"
+    ],
+    "red_flags": [
+      "Ongoing high fever and weight loss despite drainage — suggests need for more definitive surgical treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Preceding pneumonia",
+        "say": "Did this start after a bout of pneumonia?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "pneumonia"
+        ]
+      },
+      {
+        "objective": "Fever duration",
+        "say": "How long have you had fever?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior drainage attempts",
+        "say": "Has a tube already been placed in your chest to drain fluid?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "chest tube",
+          "drainage"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "Are you short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

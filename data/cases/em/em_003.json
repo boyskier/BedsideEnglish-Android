@@ -1,0 +1,177 @@
+{
+  "id": "em_003",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Clark",
+  "age": 68,
+  "gender": "male",
+  "chief_complaint": "sudden tearing interscapular back pain radiating to chest, asymmetric blood pressures, and pulse deficit (Acute Aortic Dissection)",
+  "hpi_details": "68M male with severe poorly controlled hypertension suddenly developed excruciating, `ripping and tearing` pain directly between his shoulder blades while lifting heavy boxes. Pain is a 10/10 from the very second it started and radiates forward into his mid-chest and down his lower back. Complains of numbness and tingling in his left arm and feeling lightheaded.",
+  "ideas": "in severe agony crying out that his chest and back feel like they are ripping apart",
+  "concerns": "terrified he is dying right now from a heart attack",
+  "expectations": "wants strongest emergency pain medication immediately",
+  "pmh": "Hypertension (poorly controlled for 20 years), Smoker",
+  "medications": "Lisinopril 10mg (frequently misses doses)",
+  "social_hx": "Retired mechanic, active smoker",
+  "investigation_events": [
+    {
+      "id": "stat_ecg",
+      "title": "STAT 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "12-lead",
+        "electrocardiogram"
+      ],
+      "availability_message": "The STAT 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_initial",
+          "test": "12-lead ECG",
+          "value": "Left ventricular hypertrophy; no acute ST-segment elevation",
+          "collected_at": "On arrival"
+        }
+      ]
+    },
+    {
+      "id": "cta_aorta",
+      "title": "CT angiography of the aorta",
+      "order_terms": [
+        "ct angiography",
+        "ct angiogram",
+        "cta",
+        "cta aorta",
+        "aortic ct"
+      ],
+      "availability_message": "The CT angiography report is now available.",
+      "results": [
+        {
+          "id": "cta_aorta_report",
+          "test": "CTA chest, abdomen, and pelvis",
+          "value": "Acute Stanford type A dissection with an intimal flap from just above the aortic valve through the arch and descending thoracoabdominal aorta, partially occluding the left subclavian artery",
+          "flag": "critical",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Stanford Type A Aortic Dissection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Stanford Type A Aortic Dissection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate anti-impulse therapy with beta-blockade before any vasodilator, titrating heart rate and blood pressure down while arranging emergency surgical aortic repair, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden tearing interscapular back pain radiating to chest, asymmetric blood pressures, and pulse deficit (Acute Aortic Dissection)",
+      "Key HPI features: 68M male with severe poorly controlled hypertension suddenly developed excruciating, `ripping and tearing` pain directly between his shoulder blades while lifting heavy boxes. Pain is a 10/10 from the very second it started and radiates forward into his mid-chest and down his lower back. Complains of numbness and tingling in his left arm and feeling lightheaded.",
+      "Objective/Exam findings: Vitals: Right arm BP 188/104, Left arm BP 132/76 (significant systolic inter-arm blood pressure discrepancy >20 mmHg); HR 115, SpO2 96%. Peripheral vascular exam reveals strong right radial pulse but markedly diminished, delayed left radial pulse (pulse deficit). Auscultation reveals a new high-pitched early diastolic murmur of Aortic Regurgitation along the right sternal border. STAT ECG shows left ventricular hypertrophy without acute ST elevations. STAT CT Angiography (CTA) of the Chest, Abdomen, and Pelvis confirms an acute Stanford Type A (DeBakey Type I) Aortic Dissection with intimal flap originating just above the aortic valve, extending through the aortic arch and descending thoracic aorta into the abdominal aorta, partially occluding the left subclavian artery.",
+      "Relevant background/PMH: Hypertension (poorly controlled for 20 years), Smoker",
+      "Current medications: Lisinopril 10mg (frequently misses doses)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Stanford Type A Aortic Dissection.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Numbness or weakness in a limb — suggests malperfusion of a major branch artery."
+    ],
+    "management_principles": [
+      "STAT cardiothoracic surgical emergency",
+      "Immediate anti-impulse therapy: administer IV Esmolol continuous infusion (or IV Labetalol) to rapidly lower heart rate < 60 bpm FIRST (to reduce dP/dt shear forces across the aortic wall), followed by IV Nicardipine or Nitroprusside titration to target systolic blood pressure strictly between 100-120 mmHg",
+      "CRITICAL RULE: NEVER give vasodilators (nitrates/hydralazine) before adequate beta-blockade, as reflex tachycardia increases aortic wall shear stress and accelerates dissection propagation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/aortic-disease-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68M hypertensive host presenting with instantaneous onset of severe, ripping/tearing chest and interscapular back pain with neurological arm symptoms, classic for Acute Aortic Dissection.",
+    "objective": "Vitals: Right arm BP 188/104, Left arm BP 132/76 (significant systolic inter-arm blood pressure discrepancy >20 mmHg); HR 115, SpO2 96%. Peripheral vascular exam reveals strong right radial pulse but markedly diminished, delayed left radial pulse (pulse deficit). Auscultation reveals a new high-pitched early diastolic murmur of Aortic Regurgitation along the right sternal border. STAT ECG shows left ventricular hypertrophy without acute ST elevations. STAT CT Angiography (CTA) of the Chest, Abdomen, and Pelvis confirms an acute Stanford Type A (DeBakey Type I) Aortic Dissection with intimal flap originating just above the aortic valve, extending through the aortic arch and descending thoracic aorta into the abdominal aorta, partially occluding the left subclavian artery.",
+    "assessment": "Acute Stanford Type A Aortic Dissection with Aortic Valve Incompetence and Left Subclavian Malperfusion.",
+    "plan": "STAT cardiothoracic surgical emergency: 1. Immediate anti-impulse therapy: administer IV Esmolol continuous infusion (or IV Labetalol) to rapidly lower heart rate < 60 bpm FIRST (to reduce dP/dt shear forces across the aortic wall), followed by IV Nicardipine or Nitroprusside titration to target systolic blood pressure strictly between 100-120 mmHg. CRITICAL RULE: NEVER give vasodilators (nitrates/hydralazine) before adequate beta-blockade, as reflex tachycardia increases aortic wall shear stress and accelerates dissection propagation. 2. Immediate transfer to the Operating Room for Emergency Ascending Aortic Replacement and graft repair by Cardiothoracic Surgery."
+  },
+  "learning_objectives": [
+    "Identify clinical hallmarks of Acute Aortic Dissection (instantaneous peak intensity pain described as tearing/ripping radiating to back, inter-arm BP discrepancy >20 mmHg, pulse deficits, and new aortic regurgitation murmur)",
+    "Explain the physiological rationale for strict Anti-Impulse Therapy requiring beta-blockade (IV Esmolol/Labetalol) BEFORE arterial vasodilators (Nicardipine) to lower both heart rate (<60 bpm) and systolic BP (100-120 mmHg) while minimizing left ventricular ejection velocity (dP/dt)",
+    "Differentiate Stanford Type A (involving ascending aorta, surgical emergency requiring immediate graft replacement) from Stanford Type B (involving descending aorta distal to left subclavian, managed medically with intensive blood pressure control unless complicated by malperfusion/rupture)",
+    "Select rapid definitive imaging (CT Angiography CTA with runoff vs Transesophageal Echocardiogram TEE in unstable hosts) to visualize intimal flap and true/false lumen dynamics"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Stanford Type A Aortic Dissection",
+    "one_liner": "A tear in the aortic wall extending through the ascending aorta causes sudden tearing pain, unequal pulses, and risk of malperfusion to major arteries — treated with heart-rate control first, then blood pressure control, before emergency surgery.",
+    "differentials": [
+      "Acute myocardial infarction",
+      "Pulmonary embolism",
+      "Musculoskeletal back pain"
+    ],
+    "red_flags": [
+      "Numbness or weakness in a limb — suggests malperfusion of a major branch artery"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character and onset",
+        "say": "Did the pain feel like tearing, and did it start instantly at full intensity?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ],
+        "keywords": [
+          "ripping",
+          "tearing",
+          "instant"
+        ]
+      },
+      {
+        "objective": "Radiation",
+        "say": "Does the pain go from your back to your chest, or down your back?",
+        "domains": [
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Limb symptoms",
+        "say": "Do you have any numbness or weakness in your arm?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "numbness",
+          "weakness"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "How long have you had high blood pressure, and how controlled has it been?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Trigger activity",
+        "say": "What were you doing when this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "lifting"
+        ]
+      }
+    ]
+  }
+}

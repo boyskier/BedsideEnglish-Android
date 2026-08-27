@@ -1,0 +1,144 @@
+{
+  "id": "neuro_018",
+  "system": "neurology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Sterling",
+  "age": 76,
+  "gender": "male",
+  "chief_complaint": "difficulty walking with feet glued to floor, wetting trousers, and forgetfulness over 1 year",
+  "hpi_details": "76-year-old male brought in by his son with a 1-year progressive triad of gait deterioration, urinary incontinence, and cognitive decline. Son reports that his father's walking has become slow, shuffling, and unstable, describing his feet as looking 'glued or stuck to the floor' when trying to initiate walking or turn corners (magnetic gait). Has fallen four times in the past 6 months. Simultaneously, developed urinary urgency progressing to complete urinary incontinence without awareness or concern. Over the past 6 months, became increasingly forgetful, slow to respond to questions (bradyphrenia), and apathetic, sitting in his chair all day without initiating activities. No resting tremor, rigidity, or prior stroke.",
+  "ideas": "son thinks father has Parkinson's disease combined with advanced Alzheimer's dementia",
+  "concerns": "son is exhausted cleaning up incontinence daily and terrified his father will fracture a hip during a fall",
+  "expectations": "wants Parkinson's medications started immediately and a nursing home placement assessment",
+  "pmh": "hypertension, mild benign prostatic hyperplasia, head injury with concussion 15 years ago in a car crash",
+  "medications": "ramipril 5mg OD, finasteride 5mg OD",
+  "social_hx": "non-smoker, zero alcohol, retired mechanical engineer, lives with son",
+  "investigation_events": [
+    {
+      "id": "large_volume_csf_tap_test",
+      "title": "High-volume lumbar puncture tap test",
+      "order_terms": ["tap test", "high-volume lumbar puncture", "large-volume lumbar puncture", "drain CSF"],
+      "availability_message": "The high-volume tap-test results, including the post-drainage gait reassessment, are now available.",
+      "results": [
+        {"id": "opening_pressure", "test": "CSF opening pressure", "value": "16", "unit": "cm H2O", "reference_range": "10-20", "flag": "normal"},
+        {"id": "gait_response", "test": "Timed 10-meter walk after removal of 40 mL CSF", "value": "Time improved from 24.8 seconds pre-tap to 16.1 seconds at 2 hours, with longer stride length and easier turning", "flag": "abnormal", "note": "A clinically meaningful positive tap-test response."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Normal Pressure Hydrocephalus (NPH) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Normal Pressure Hydrocephalus (NPH) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Perform diagnostic large-volume CSF tap test with objective pre- and post-tap timed 10-meter walk test, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: difficulty walking with feet glued to floor, wetting trousers, and forgetfulness over 1 year",
+      "Key HPI features: 76-year-old male brought in by his son with a 1-year progressive triad of gait deterioration, urinary incontinence, and cognitive decline. Son reports that his father's walking has become slow, shuffling, and unstable, describing his feet as looking 'glued or stuck to the floor' when trying to initiate walking or turn corners (magnetic gait). Has fallen four times in the past 6 months. Simultaneously, developed urinary urgency progressing to complete urinary incontinence without awareness or concern. Over the past 6 months, became increasingly forgetful, slow to respond to questions (bradyphrenia), and apathetic, sitting in his chair all day without initiating activities. No resting tremor, rigidity, or prior stroke.",
+      "Objective/Exam findings: Gait assessment: broad-based, short-stepped, shuffling, 'magnetic' gait with difficulty initiating steps and multi-step turning, but normal foot clearance when kicking a ball or cycling in air (gait apraxia). Neurological exam: increased tone/spasticity in lower limbs with brisk ankle jerks and bilateral positive Babinski signs, but NO resting tremor or cogwheel rigidity. Cognitive exam: MoCA/MMSE shows subcortical executive dysfunction, bradyphrenia, and impaired attention with relatively preserved recognition memory. MRI Brain: shows communicating ventriculomegaly out of proportion to cerebral sulcal atrophy (Evans index >0.30), periventricular high-signal capping on FLAIR (transependymal CSF resorption), and narrow high-convexity sulci (DESH - Disproportionately Enlarged Subarachnoid Space Hydrocephalus). Bedside High-Volume Lumbar Puncture ('Tap Test'): measure normal opening pressure (10-20 cm H2O), drain 30-50 mL of CSF, and re-assess quantitative gait speed/stride length at 2 hours and 24 hours post-tap (objective improvement confirms diagnosis).",
+      "Relevant background/PMH: hypertension, mild benign prostatic hyperplasia, head injury with concussion 15 years ago in a car crash",
+      "Current medications: ramipril 5mg OD, finasteride 5mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Normal Pressure Hydrocephalus (NPH).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Parkinson's disease with dementia (resting tremor, rigidity, levodopa response) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Repeated falls — significant injury risk needing prompt mobility support while workup proceeds."
+    ],
+    "management_principles": [
+      "Perform diagnostic large-volume CSF tap test with objective pre- and post-tap timed 10-meter walk test",
+      "Refer urgently to neurosurgery for consideration of Ventriculoperitoneal (VP) Shunt insertion with programmable valve (shunting yields dramatic, potentially curative improvement in gait and incontinence in >70% of tap-test positive patients)",
+      "Provide immediate fall prevention and mobility aids, plus urological containment advice while awaiting shunt placement"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "76M presents with the classic Hakim-Adams triad over 1 year: progressive gait apraxia/magnetic gait, urinary incontinence, and subcortical cognitive decline/apathy.",
+    "objective": "Gait assessment: broad-based, short-stepped, shuffling, 'magnetic' gait with difficulty initiating steps and multi-step turning, but normal foot clearance when kicking a ball or cycling in air (gait apraxia). Neurological exam: increased tone/spasticity in lower limbs with brisk ankle jerks and bilateral positive Babinski signs, but NO resting tremor or cogwheel rigidity. Cognitive exam: MoCA/MMSE shows subcortical executive dysfunction, bradyphrenia, and impaired attention with relatively preserved recognition memory. MRI Brain: shows communicating ventriculomegaly out of proportion to cerebral sulcal atrophy (Evans index >0.30), periventricular high-signal capping on FLAIR (transependymal CSF resorption), and narrow high-convexity sulci (DESH - Disproportionately Enlarged Subarachnoid Space Hydrocephalus). Bedside High-Volume Lumbar Puncture ('Tap Test'): measure normal opening pressure (10-20 cm H2O), drain 30-50 mL of CSF, and re-assess quantitative gait speed/stride length at 2 hours and 24 hours post-tap (objective improvement confirms diagnosis).",
+    "assessment": "Normal Pressure Hydrocephalus (NPH - Hakim-Adams Syndrome), likely secondary to remote head trauma/concussion or idiopathic. DDx: Parkinson's disease with dementia (shows resting tremor, cogwheel rigidity, response to levodopa), Alzheimer's disease (prominent early cortical amnesia without early gait apraxia/incontinence), vascular dementia (subcortical ischaemic vessel disease/Binswanger's disease).",
+    "plan": "Perform diagnostic large-volume CSF tap test with objective pre- and post-tap timed 10-meter walk test. Refer urgently to neurosurgery for consideration of Ventriculoperitoneal (VP) Shunt insertion with programmable valve (shunting yields dramatic, potentially curative improvement in gait and incontinence in >70% of tap-test positive patients). Provide immediate fall prevention and mobility aids, plus urological containment advice while awaiting shunt placement."
+  },
+  "learning_objectives": [
+    "Identify the classical Hakim-Adams clinical triad of Normal Pressure Hydrocephalus: gait apraxia, urinary incontinence, and cognitive decline ('wobbly, wet, and wacky')",
+    "Differentiate NPH gait apraxia ('magnetic gait' with preserved leg movements when supine) from Parkinsonian festinating gait",
+    "Execute and interpret the High-Volume Lumbar Puncture 'Tap Test' incorporating quantitative pre- and post-tap gait metrics",
+    "Advocate for neurosurgical shunt evaluation as a potentially reversible, treatable cause of dementia and gait failure in the elderly"
+  ],
+  "teaching": {
+    "diagnosis": "Normal Pressure Hydrocephalus (NPH)",
+    "one_liner": "Enlarged brain ventricles causing the classic triad of a magnetic, shuffling gait ('feet glued to the floor'), urinary incontinence, and cognitive decline — one of the few dementia-like conditions that can dramatically improve with a shunt.",
+    "differentials": [
+      "Parkinson's disease with dementia (resting tremor, rigidity, levodopa response)",
+      "Alzheimer's disease (early amnesia without gait apraxia)",
+      "Vascular dementia"
+    ],
+    "red_flags": [
+      "Repeated falls — significant injury risk needing prompt mobility support while workup proceeds"
+    ],
+    "must_ask": [
+      {
+        "objective": "Gait character",
+        "say": "Does it look like his feet are stuck to the floor when he tries to start walking?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "magnetic gait",
+          "shuffling"
+        ]
+      },
+      {
+        "objective": "Urinary symptoms",
+        "say": "Has he had trouble controlling his bladder?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "incontinence"
+        ]
+      },
+      {
+        "objective": "Cognitive changes",
+        "say": "How has his thinking and initiative changed?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "apathy",
+          "slow"
+        ]
+      },
+      {
+        "objective": "Falls history",
+        "say": "How many times has he fallen recently?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Onset order and duration",
+        "say": "Which came first — the walking trouble, the incontinence, or the memory problems?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

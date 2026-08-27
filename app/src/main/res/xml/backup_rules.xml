@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- API keys are bound to this device's Android Keystore. -->
+    <exclude domain="sharedpref" path="med_voice_encrypted_prefs.xml" />
+    <!-- Keystore-unavailable fallback store (Repository.openPrefs): plaintext, so never back it up. -->
+    <exclude domain="sharedpref" path="med_voice_prefs_unencrypted.xml" />
+    <!-- Raw clinical transcripts are local medical-learning data, not cloud-backup payload. -->
+    <exclude domain="database" path="." />
+    <exclude domain="file" path="learner_audio/" />
+</full-backup-content>

@@ -1,0 +1,164 @@
+{
+  "id": "urology_007",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Green",
+  "age": 57,
+  "gender": "male",
+  "chief_complaint": "classic triad of flank pain, palpable abdominal mass, and hematuria leading to discovery of 7 cm renal cell carcinoma",
+  "hpi_details": "57M presents with 4-month history of intermittent right flank pain, 15-lb unintentional weight loss, night sweats, and episodes of dark bloody urine. Last week while showering, noticed a firm bulge below his right ribcage. Reports feeling chronically fatigued and generally unwell.",
+  "ideas": "thinks he has a severe kidney infection or cyst",
+  "concerns": "worried about cancer because of the weight loss and hard lump in his side",
+  "expectations": "wants CT scan and clear explanation of surgical options for removing the kidney growth",
+  "pmh": "Hypertension, 35 pack-year smoking history",
+  "medications": "Lisinopril 20mg daily",
+  "social_hx": "Real estate developer, active smoker",
+  "available_results": [
+    {"id": "rcc_hemoglobin", "test": "Hemoglobin", "value": "18.2", "unit": "g/dL", "reference_range": "13.5-17.5", "flag": "high", "specimen": "Blood"},
+    {"id": "rcc_calcium", "test": "Total serum calcium", "value": "11.6", "unit": "mg/dL", "reference_range": "8.6-10.2", "flag": "high", "specimen": "Blood"},
+    {"id": "rcc_ct_urogram", "test": "Multiphase CT urogram", "value": "7.5 cm heterogeneous hypervascular right lower-pole renal mass with central necrosis and renal-vein invasion; no IVC thrombus or distant metastasis", "flag": "abnormal", "collected_at": "Before urologic-oncology consultation"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Renal Cell Carcinoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Renal Cell Carcinoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to urologic oncology, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: classic triad of flank pain, palpable abdominal mass, and hematuria leading to discovery of 7 cm renal cell carcinoma",
+      "Key HPI features: 57M presents with 4-month history of intermittent right flank pain, 15-lb unintentional weight loss, night sweats, and episodes of dark bloody urine. Last week while showering, noticed a firm bulge below his right ribcage. Reports feeling chronically fatigued and generally unwell.",
+      "Objective/Exam findings: Vitals: HR 82, BP 152/94. Abdominal palpation confirms a firm, non-tender, 6 x 5 cm ballottable mass in the right upper quadrant/flank moving with respiration. Auscultation reveals no renal bruits. Left scrotal exam reveals a new-onset non-reducing varicocele (or right-sided varicocele when IVC/gonadal vein obstruction occurs). Labs: Hemoglobin 18.2 g/dL (paraneoplastic erythrocytosis due to tumor EPO production), Serum Calcium 11.6 mg/dL (paraneoplastic PTHrP secretion). Multi-phase CT Urogram confirms a 7.5 cm heterogeneous, hypervascular, solid enhancing mass arising from the right kidney lower pole with central necrosis, involving the renal vein without IVC thrombus or distant organ metastasis.",
+      "Relevant background/PMH: Hypertension, 35 pack-year smoking history",
+      "Current medications: Lisinopril 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Renal Cell Carcinoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing hematuria exclusively to nephrolithiasis or infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: gross hematuria with a renal mass or new-onset varicocele."
+    ],
+    "management_principles": [
+      "Urgently refer to urologic oncology and complete staging, renal-function assessment, and multidisciplinary surgical planning; admit if hypercalcemia, hematuria, or other complications require acute management.",
+      "For this renal-vein-involving tumor, discuss radical nephrectomy with renal-vein tumor-thrombus management; remove the adrenal gland only when suspicious and perform lymph-node dissection for clinically involved nodes.",
+      "(Partial nephrectomy / nephron-sparing surgery is reserved for T1 lesions <4-7 cm)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "57M smoker presenting with classic late diagnostic triad (flank pain, hematuria, palpable mass) and constitutional B-symptoms of Renal Cell Carcinoma.",
+    "objective": "Vitals: HR 82, BP 152/94. Abdominal palpation confirms a firm, non-tender, 6 x 5 cm ballottable mass in the right upper quadrant/flank moving with respiration. Auscultation reveals no renal bruits. Left scrotal exam reveals a new-onset non-reducing varicocele (or right-sided varicocele when IVC/gonadal vein obstruction occurs). Labs: Hemoglobin 18.2 g/dL (paraneoplastic erythrocytosis due to tumor EPO production), Serum Calcium 11.6 mg/dL (paraneoplastic PTHrP secretion). Multi-phase CT Urogram confirms a 7.5 cm heterogeneous, hypervascular, solid enhancing mass arising from the right kidney lower pole with central necrosis, involving the renal vein without IVC thrombus or distant organ metastasis.",
+    "assessment": "Right Renal Cell Carcinoma (Clear Cell Subtype likely, Stage cT3a N0 M0 - renal vein extension) with paraneoplastic syndromes (polycythemia and hypercalcemia).",
+    "plan": "Urgently refer to urologic oncology for complete staging, renal-function assessment, and planning for radical nephrectomy with renal-vein tumor-thrombus management. Adrenalectomy is indicated only for a suspicious adrenal lesion, and lymph-node dissection is reserved for clinically involved nodes. Treat clinically significant hypercalcemia with IV hydration and appropriate antiresorptive therapy after renal-function review; admit if complications require acute management."
+  },
+  "learning_objectives": [
+    "Recognize the classic triad of Renal Cell Carcinoma (flank pain, hematuria, palpable mass) as representing late, advanced disease (present in <10% of cases)",
+    "Identify paraneoplastic syndromes associated with RCC (erythrocytosis via EPO, hypercalcemia via PTHrP, Stauffer syndrome non-metastatic hepatic dysfunction, hypertension via renin)",
+    "Correlate acute right-sided varicocele or non-reducing left varicocele with renal vein/inferior vena cava tumor thrombus obstruction",
+    "Compare surgical selection criteria between Partial Nephrectomy (nephron-sparing, T1 tumors <7 cm) and Radical Nephrectomy (larger tumors, renal vein involvement)"
+  ],
+  "teaching": {
+    "diagnosis": "Renal Cell Carcinoma",
+    "one_liner": "A malignant renal tumor that may present with hematuria, flank pain, a palpable mass, constitutional symptoms, or paraneoplastic syndromes.",
+    "differentials": [
+      "Urothelial carcinoma",
+      "Renal oncocytoma",
+      "Angiomyolipoma"
+    ],
+    "red_flags": [
+      "Gross hematuria with constitutional symptoms",
+      "New-onset non-reducing varicocele"
+    ],
+    "must_ask": [
+      {
+        "objective": "Gross or intermittent hematuria characteristics",
+        "say": "Have you noticed blood in your urine, and does it come and go or happen every time you urinate?",
+        "domains": [
+          "associated_symptoms",
+          "character"
+        ],
+        "keywords": [
+          "blood",
+          "hematuria",
+          "dark",
+          "urine",
+          "intermittent"
+        ]
+      },
+      {
+        "objective": "Palpable flank or abdominal mass",
+        "say": "Have you felt any new lump or fullness in your side or upper belly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mass",
+          "lump",
+          "bulge",
+          "flank",
+          "abdomen"
+        ]
+      },
+      {
+        "objective": "Constitutional / paraneoplastic symptoms",
+        "say": "Have you lost weight without trying, had night sweats, or felt unusually tired?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight loss",
+          "night sweats",
+          "fatigue",
+          "fever",
+          "anorexia"
+        ]
+      },
+      {
+        "objective": "Smoking and occupational exposure history",
+        "say": "Do you smoke, and have you ever worked with chemicals or heavy metals?",
+        "domains": [
+          "pmh",
+          "social_hx"
+        ],
+        "keywords": [
+          "smoking",
+          "tobacco",
+          "exposure",
+          "occupation",
+          "chemicals"
+        ]
+      },
+      {
+        "objective": "Explore patient's concerns about a possible cancer diagnosis",
+        "say": "What worries you most about what might be causing these symptoms?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ],
+        "keywords": [
+          "worried",
+          "cancer",
+          "concerns",
+          "afraid"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "rheum_034",
+  "system": "rheum",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Perez",
+  "age": 54,
+  "gender": "female",
+  "chief_complaint": "shoulder and hip stiffness with high ESR",
+  "hpi_details": "A 54-year-old female presents to the clinic with shoulder and hip stiffness and a high ESR. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to pmr",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [{"id":"esr","test":"Erythrocyte sedimentation rate","value":"72","unit":"mm/hr","reference_range":"0-30","flag":"high","specimen":"Blood","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Polymyalgia Rheumatica evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Polymyalgia Rheumatica is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "After excluding important mimics and screening urgently for giant cell arteritis, PMR is typically managed with clinician-directed glucocorticoids and a monitored taper individualized to response and adverse-effect risk.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: shoulder and hip stiffness in elderly patient, high ESR",
+      "Key HPI features: A 54-year-old female presents to the clinic with shoulder and hip stiffness in an older adult, with a high ESR. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Polymyalgia Rheumatica.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Polymyalgia Rheumatica.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rheumatoid arthritis (elderly onset) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing giant cell arteritis: new headache, scalp tenderness, jaw claudication, or any visual symptom requires same-day emergency assessment to protect vision."
+    ],
+    "management_principles": [
+      "Arrange prompt clinician-directed glucocorticoid treatment only after assessment for giant cell arteritis and relevant mimics; do not use response to steroids as the sole diagnostic test",
+      "Monitor glucocorticoid toxicity and preventive care, including blood pressure, glucose, infection risk, bone protection, and tapering under the treating clinician's direction",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with shoulder and hip stiffness and a high ESR. HPI: inflammatory systemic disorder.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Polymyalgia Rheumatica.",
+    "assessment": "Condition highly suspicious for Polymyalgia Rheumatica.",
+    "plan": "Screen immediately for giant cell arteritis and arrange emergency assessment for visual symptoms. Use clinician-directed glucocorticoid treatment and taper with monitoring for adverse effects. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Polymyalgia Rheumatica",
+    "Select appropriate diagnostic workup for Polymyalgia Rheumatica",
+    "Implement safe, clinician-directed glucocorticoid treatment and monitoring for Polymyalgia Rheumatica"
+  ],
+  "teaching": {
+    "diagnosis": "Polymyalgia Rheumatica",
+    "one_liner": "An inflammatory condition in adults aged 50 years or older causing symmetric shoulder and hip girdle stiffness and aching, often with elevated inflammatory markers.",
+    "differentials": [
+      "Rheumatoid arthritis (elderly onset)",
+      "Giant cell arteritis (often coexists)",
+      "Hypothyroidism"
+    ],
+    "red_flags": [
+      "New headache, scalp tenderness, or jaw pain when chewing (possible giant cell arteritis)",
+      "Any visual change, double vision, or transient vision loss: seek emergency care immediately",
+      "Fever, marked weight loss, or focal weakness suggesting infection, malignancy, or an alternative diagnosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symmetry and location",
+        "say": "Is the stiffness in both shoulders and hips equally?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Morning stiffness",
+        "say": "How long does the morning stiffness last?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Associated GCA symptoms",
+        "say": "Any new headache, scalp tenderness, jaw pain when chewing, double vision, or vision loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "jaw"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long have you had this?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Any fatigue or weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

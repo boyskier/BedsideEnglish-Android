@@ -1,0 +1,153 @@
+{
+  "id": "allergy_008",
+  "system": "allergy_immunology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Robinson",
+  "age": 31,
+  "gender": "male",
+  "chief_complaint": "recurrent severe sinus infections and bacterial pneumonias since young adulthood",
+  "hpi_details": "31M presenting with history of 5 lobar pneumonias and chronic sinusitis over 4 years. Lab work confirms markedly reduced IgG, IgA, and IgM with impaired vaccine antibody responses.",
+  "ideas": "thinks this is related to common variable immunodeficiency cvid",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id": "serum_igg", "test": "IgG", "value": "280", "unit": "mg/dL", "reference_range": "700-1600", "flag": "critical", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "serum_iga", "test": "IgA", "value": "9", "unit": "mg/dL", "reference_range": "70-400", "flag": "critical", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "serum_igm", "test": "IgM", "value": "18", "unit": "mg/dL", "reference_range": "40-230", "flag": "critical", "specimen": "Blood", "collected_at": "Before today's visit"},
+    {"id": "pneumococcal_response", "test": "Protective pneumococcal serotype titers after vaccination", "value": "2 of 23 serotypes", "reference_range": "Protective response to >=70% of serotypes", "flag": "abnormal", "specimen": "Blood", "collected_at": "4 weeks after vaccination"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Common Variable Immunodeficiency (CVID) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Common Variable Immunodeficiency (CVID) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management is lifelong immunoglobulin replacement therapy (IVIG or SCIG) plus prompt treatment of infections, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent severe sinus infections and bacterial pneumonias since young adulthood",
+      "Key HPI features: 31M presenting with history of 5 lobar pneumonias and chronic sinusitis over 4 years. Lab work confirms markedly reduced IgG, IgA, and IgM with impaired vaccine antibody responses.",
+      "Objective/Exam findings: Markedly reduced serum IgG, IgA, and IgM with impaired vaccine (protein and polysaccharide) antibody responses; no other identifiable cause of hypogammaglobulinemia.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Common Variable Immunodeficiency (CVID).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Secondary immunodeficiency (medication, malignancy) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recurrent pneumonia requiring hospitalization."
+    ],
+    "management_principles": [
+      "Start lifelong immunoglobulin replacement therapy (IVIG or SCIG) and treat infections promptly and aggressively",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Common Variable Immunodeficiency CVID: recurrent severe sinus infections and bacterial pneumonias since young adulthood. 31M presenting with history of 5 lobar pneumonias and chronic sinusitis over 4 years. Lab work confirms markedly reduced IgG, IgA, and IgM with impaired vaccine antibody responses.",
+    "objective": "Markedly reduced serum IgG, IgA, and IgM with impaired vaccine antibody responses; no other identifiable cause of hypogammaglobulinemia.",
+    "assessment": "Common Variable Immunodeficiency (CVID).",
+    "plan": "1. Start lifelong immunoglobulin replacement therapy (IVIG or SCIG). 2. Treat sinopulmonary infections promptly and aggressively; consider prophylactic antibiotics if infections remain frequent despite replacement therapy. 3. Screen for and monitor associated autoimmune and lymphoproliferative complications; avoid live vaccines. 4. Refer to allergy/immunology for ongoing specialist management."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Common Variable Immunodeficiency CVID",
+    "Formulate prioritized differential diagnosis for recurrent severe sinus infections and bacterial pneumonias since young adulthood",
+    "Select appropriate laboratory and imaging studies for allergy_immunology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Common Variable Immunodeficiency (CVID)",
+    "one_liner": "A primary antibody deficiency — low IgG, IgA, and/or IgM with poor vaccine response — presenting as recurrent sinopulmonary bacterial infections, usually diagnosed in adulthood.",
+    "differentials": [
+      "Secondary immunodeficiency (medication, malignancy)",
+      "Recurrent infections from anatomic cause (e.g., cystic fibrosis)",
+      "IgA deficiency alone"
+    ],
+    "red_flags": [
+      "Recurrent pneumonia requiring hospitalization",
+      "Unexplained weight loss or chronic diarrhea (may suggest complications)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Infection frequency and pattern",
+        "say": "How many chest or sinus infections have you had in the past year or two, and did any need hospital treatment?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "pneumonia",
+          "sinusitis",
+          "infections",
+          "hospital"
+        ]
+      },
+      {
+        "objective": "Onset in life",
+        "say": "When did these frequent infections start — childhood, or more recently as an adult?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "childhood",
+          "adult",
+          "recently"
+        ]
+      },
+      {
+        "objective": "Response to antibiotics",
+        "say": "Do the infections respond normally to antibiotics, or keep coming back quickly?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "antibiotics",
+          "recur"
+        ]
+      },
+      {
+        "objective": "Associated GI or autoimmune symptoms",
+        "say": "Have you had ongoing diarrhea, weight loss, or joint problems?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "diarrhea",
+          "weight loss",
+          "joint"
+        ]
+      },
+      {
+        "objective": "Family history of immune problems",
+        "say": "Does anyone in your family have frequent infections or a known immune condition?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "immune"
+        ]
+      }
+    ]
+  }
+}

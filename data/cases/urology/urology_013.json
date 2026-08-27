@@ -1,0 +1,165 @@
+{
+  "id": "urology_013",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martinez",
+  "age": 41,
+  "gender": "male",
+  "chief_complaint": "straining to void, splayed bifid urine stream, and incomplete emptying months after straddle injury",
+  "hpi_details": "41M status post bicycle crossbar straddle injury one year ago with severe obstructive voiding, Qmax under 8 mL/sec, and a RUG-confirmed 2.5 cm bulbar urethral stricture. He needs reconstructive-urology assessment to discuss durable management options.",
+  "ideas": "thinks this is related to urethral stricture obstructive voiding",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "stricture_qmax", "test": "Maximum urinary flow rate", "value": "7.2", "unit": "mL/s", "reference_range": ">15", "flag": "low", "collected_at": "Recent uroflowmetry"},
+    {"id": "stricture_post_void_residual", "test": "Post-void residual", "value": "215", "unit": "mL", "reference_range": "<100", "flag": "high", "collected_at": "After uroflowmetry"},
+    {"id": "retrograde_urethrogram", "test": "Retrograde urethrogram", "value": "2.5 cm bulbar urethral stricture", "flag": "abnormal", "collected_at": "Before reconstructive-urology referral"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Urethral Stricture Obstructive Voiding evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Urethral Stricture Obstructive Voiding is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Treatment is selected by stricture length, location, etiology, tissue quality, prior procedures, and patient goals; a 2.5 cm bulbar stricture does not automatically require a buccal mucosa graft.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: straining to void, splayed bifid urine stream, and incomplete emptying months after straddle injury",
+      "Key HPI features: remote straddle injury, obstructive lower urinary tract symptoms, low flow, and a 2.5 cm bulbar stricture on RUG.",
+      "Objective/Exam findings: Record uroflowmetry pattern and post-void residual; obtain urinalysis/culture when infection is suspected and define length/location with RUG, with VCUG or cystoscopy when needed for operative planning.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Urethral Stricture Obstructive Voiding.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Repeated blind urethral catheter attempts in retention when a stricture is known or suspected, risking false passage and injury.",
+      "Missing infected obstruction, renal impairment, or acute retention requiring urgent decompression."
+    ],
+    "management_principles": [
+      "Refer to reconstructive urology for shared decision-making. A single endoscopic treatment may be considered for selected short bulbar strictures, but repeated dilation or urethrotomy has poor durability.",
+      "Discuss urethroplasty options based on anatomy, including excision and primary anastomosis or substitution/augmentation with oral mucosa when appropriate.",
+      "If retention occurs, obtain urgent urologic help for safe drainage (guidewire-assisted catheterization or suprapubic diversion as appropriate) rather than repeated blind attempts.",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "41M with obstructive voiding one year after straddle injury; Qmax is under 8 mL/sec and RUG shows a 2.5 cm bulbar stricture. Ask about retention, infection, hematuria, prior instrumentation, and erectile function.",
+    "objective": "Review RUG and obtain uroflowmetry/post-void residual; use urinalysis/culture if infection is suspected and add VCUG or cystoscopy if required for operative planning.",
+    "assessment": "Post-traumatic 2.5 cm bulbar urethral stricture causing bothersome bladder-outlet obstruction.",
+    "plan": "Refer to reconstructive urology to select endoscopic versus urethroplasty management based on full anatomy and prior treatment; avoid repeated endoscopic procedures when durable reconstruction is appropriate. Send for urgent assessment for retention, systemic infection, or reduced urine output; avoid repeated blind catheter attempts."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Urethral Stricture Obstructive Voiding",
+    "Formulate prioritized differential diagnosis for straining to void, splayed bifid urine stream, and incomplete emptying months after straddle injury",
+    "Select appropriate laboratory and imaging studies for urology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Urethral Stricture Obstructive Voiding",
+    "one_liner": "Urology evaluation for patient presenting with straining to void, splayed bifid urine stream, and incomplete emptying months after straddle injury.",
+    "differentials": [
+      "Benign prostatic hyperplasia",
+      "Bladder neck contracture",
+      "Neurogenic bladder outlet dysfunction"
+    ],
+    "red_flags": [
+      "Inability to pass urine, worsening suprapubic pain/distension, or very low urine output (urgent decompression assessment)",
+      "Fever, rigors, flank pain, or confusion with obstructive urinary symptoms (possible infected obstruction)"
+    ],
+    "must_ask": [
+      {
+        "objective": "History of straddle injury or urethral trauma",
+        "say": "Did you have any injury to your groin or pelvis, like a fall onto a bicycle crossbar, before these symptoms began?",
+        "domains": [
+          "pmh",
+          "onset_duration"
+        ],
+        "keywords": [
+          "straddle",
+          "trauma",
+          "injury",
+          "bicycle",
+          "pelvis"
+        ]
+      },
+      {
+        "objective": "Urine stream character",
+        "say": "Has your urine stream become weak, split into two streams, or sprayed instead of a single stream?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "weak stream",
+          "split",
+          "spraying",
+          "bifid",
+          "slow"
+        ]
+      },
+      {
+        "objective": "Straining and incomplete emptying",
+        "say": "Do you have to strain to start or keep urinating, and does it feel like your bladder is not completely empty afterward?",
+        "domains": [
+          "character",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "straining",
+          "incomplete emptying",
+          "residual",
+          "effort"
+        ]
+      },
+      {
+        "objective": "History of urethral catheterization or instrumentation",
+        "say": "Have you ever had a urinary catheter placed, or any prior surgery or scope procedure on your urethra?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "catheter",
+          "instrumentation",
+          "surgery",
+          "scope",
+          "prior"
+        ]
+      },
+      {
+        "objective": "Recurrent urinary infections from stasis",
+        "say": "Have you had repeated urinary tract infections since this started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "infections",
+          "recurrent",
+          "uti",
+          "fever"
+        ]
+      }
+    ]
+  }
+}

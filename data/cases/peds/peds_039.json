@@ -1,0 +1,143 @@
+{
+  "id": "peds_039",
+  "system": "peds",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mateo Lopez",
+  "age": 7,
+  "gender": "male",
+  "chief_complaint": "sore throat, fever, and sandpaper-like red skin rash",
+  "hpi_details": "7-year-old boy is brought in by his parent with fever, sore throat, and a rough sandpaper-like red rash that began today. He has no cough or rhinorrhea.",
+  "ideas": "thinks it might be related to scarlet_fever",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Attends elementary school; possible school sick contacts.",
+  "investigation_events": [{
+    "id": "rapid_strep_test",
+    "title": "Point-of-care group A streptococcal test",
+    "order_terms": ["rapid strep", "rapid antigen detection test", "RADT", "strep test"],
+    "availability_message": "The rapid group A streptococcal test result is now available.",
+    "results": [{"id": "rapid_strep", "test": "Rapid group A streptococcal antigen", "value": "Positive", "reference_range": "Negative", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Scarlet fever evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Scarlet fever is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming group A streptococcal infection with rapid antigen testing or throat culture, then giving oral amoxicillin for 10 days to prevent acute rheumatic fever.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sore throat, fever, and sandpaper-like red skin rash",
+      "Key HPI features: A 7-year-old boy has fever, sore throat, and a new rough, sandpaper-like erythematous rash without cough or rhinorrhea.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Scarlet Fever.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Scarlet fever.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral exanthem without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Untreated strep infection risks rheumatic fever and glomerulonephritis."
+    ],
+    "management_principles": [
+      "Confirm group A streptococcal infection with rapid antigen testing or throat culture, then give oral amoxicillin for 10 days to prevent acute rheumatic fever",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sore throat, fever, and sandpaper-like red skin rash. HPI: scarlet fever.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Scarlet Fever.",
+    "assessment": "Condition highly suspicious for Scarlet Fever.",
+    "plan": "Obtain a rapid antigen detection test; if negative in this child, send a throat culture. If group A streptococcal infection is confirmed, treat with oral amoxicillin for 10 days."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Scarlet Fever",
+    "Select appropriate diagnostic workup for Scarlet Fever",
+    "Implement evidence-based management plan: Confirm group A streptococcal infection, then give oral amoxicillin for 10 days"
+  ],
+  "teaching": {
+    "diagnosis": "Scarlet fever",
+    "one_liner": "Patient with sore throat, fever, and a sandpaper-like red skin rash.",
+    "differentials": [
+      "Viral exanthem",
+      "Kawasaki disease",
+      "Toxic shock syndrome"
+    ],
+    "red_flags": [
+      "Untreated strep infection risks rheumatic fever and glomerulonephritis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the rash texture",
+        "say": "Does the rash feel rough like sandpaper when you touch it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sandpaper rash"
+        ]
+      },
+      {
+        "objective": "Ask about the sore throat and tongue appearance",
+        "say": "Does he have a sore throat, and does his tongue look red and bumpy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "strawberry tongue",
+          "sore throat"
+        ]
+      },
+      {
+        "objective": "Ask about fever",
+        "say": "How high has the fever been?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Ask about sick contacts with strep throat",
+        "say": "Has anyone around him had strep throat recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "sick contacts"
+        ]
+      },
+      {
+        "objective": "Explain the antibiotic course and rheumatic fever prevention",
+        "say": "We'll prescribe a 10-day antibiotic course, which is important to prevent rare but serious complications like rheumatic fever.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "amoxicillin",
+          "rheumatic fever prevention"
+        ]
+      }
+    ]
+  }
+}

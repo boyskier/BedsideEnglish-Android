@@ -1,0 +1,189 @@
+{
+  "id": "em_021",
+  "system": "emergency medicine",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Park",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "sudden burning chest pain after eating spicy food, worse when lying flat",
+  "hpi_details": "45M presents to the ED with 2 hours of burning retrosternal chest pain that started after eating hot wings. Pain is worse when lying flat and relieved by sitting up and antacids. Denies sweating or jaw pain.",
+  "ideas": "worried he is having a heart attack",
+  "concerns": "anxious to get a rapid ECG",
+  "expectations": "wants pain relief and reassurance",
+  "pmh": "Hypertension, Gastroesophageal reflux disease",
+  "medications": "Amlodipine 5mg daily",
+  "social_hx": "Sales manager, non-smoker",
+  "investigation_events": [
+    {
+      "id": "initial_ecg",
+      "title": "Initial 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "12-lead",
+        "electrocardiogram"
+      ],
+      "availability_message": "The initial 12-lead ECG is now available.",
+      "results": [
+        {
+          "id": "ecg_initial",
+          "test": "12-lead ECG",
+          "value": "Normal sinus rhythm at 78 bpm; no ST-segment elevation, depression, or new T-wave inversion",
+          "flag": "normal",
+          "collected_at": "10 minutes after arrival"
+        }
+      ]
+    },
+    {
+      "id": "serial_troponin",
+      "title": "Serial high-sensitivity troponin T",
+      "order_terms": [
+        "troponin",
+        "cardiac biomarkers",
+        "cardiac enzymes"
+      ],
+      "availability_message": "The serial high-sensitivity troponin T results are now available.",
+      "results": [
+        {
+          "id": "troponin_t_initial",
+          "test": "High-sensitivity troponin T",
+          "value": "7",
+          "unit": "ng/L",
+          "reference_range": "0-14",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At arrival"
+        },
+        {
+          "id": "troponin_t_2_hour",
+          "test": "High-sensitivity troponin T",
+          "value": "7",
+          "unit": "ng/L",
+          "reference_range": "0-14",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "2 hours after the initial sample",
+          "note": "No interval rise"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "GERD-related Chest Pain (Atypical Chest Pain) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of GERD-related Chest Pain (Atypical Chest Pain) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden burning chest pain after eating spicy food, worse when lying flat",
+      "Key HPI features: 45M presents to the ED with 2 hours of burning retrosternal chest pain that started after eating hot wings. Pain is worse when lying flat and relieved by sitting up and antacids. Denies sweating or jaw pain.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome.",
+      "Relevant background/PMH: Hypertension, Gastroesophageal reflux disease",
+      "Current medications: Amlodipine 5mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out GERD-related Chest Pain (Atypical Chest Pain).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute coronary syndrome (must be excluded first) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any radiation to jaw/arm, diaphoresis, or exertional trigger — reconsider cardiac cause."
+    ],
+    "management_principles": [
+      "Obtain an immediate 12-lead ECG (confirm normal, no ST-T changes) and check troponin to evaluate for Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome",
+      "Treat suspected reflux after an initial acute-coronary-syndrome evaluation; symptom response to antacids or a GI cocktail does not exclude cardiac ischemia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome. sudden burning chest pain after eating spicy food, worse when lying flat. 45M presents to the ED with 2 hours of burning retrosternal chest pain that started after eating hot wings. Pain is worse when lying flat and relieved by sitting up and antacids. Denies sweating or jaw pain.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome.",
+    "assessment": "Clinical presentation highly suggestive of Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome.",
+    "plan": "Obtain an immediate ECG and evaluate for acute coronary syndrome using risk-appropriate serial troponin testing and clinical risk stratification. A normal initial ECG, troponin, or response to antacids does not by itself exclude ischemia. Once a serious cardiac cause is appropriately excluded, treat suspected reflux with antacid/acid-suppression therapy and arrange outpatient follow-up; provide return precautions for exertional pain, radiation, dyspnea, diaphoresis, or worsening symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome.",
+    "Formulate prioritized differential diagnosis for sudden burning chest pain after eating spicy food, worse when lying flat",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies for Atypical Chest Pain, likely Gastroesophageal Reflux (GERD) flare, ruling out acute coronary syndrome."
+  ],
+  "teaching": {
+    "diagnosis": "GERD-related Chest Pain (Atypical Chest Pain)",
+    "one_liner": "Reflux of stomach acid causes burning retrosternal pain that worsens lying flat and improves sitting up or with antacids — diagnosed only after a normal ECG and troponin exclude a cardiac cause first.",
+    "differentials": [
+      "Acute coronary syndrome (must be excluded first)",
+      "Esophageal spasm",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "Any radiation to jaw/arm, diaphoresis, or exertional trigger — reconsider cardiac cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Relationship to food and position",
+        "say": "Did the pain start after eating spicy food, and is it worse lying flat?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "spicy food",
+          "lying flat"
+        ]
+      },
+      {
+        "objective": "Relief with antacids/sitting up",
+        "say": "Does sitting up or taking an antacid help?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "antacid",
+          "sitting up"
+        ]
+      },
+      {
+        "objective": "Cardiac-mimicking symptoms",
+        "say": "Any sweating or pain radiating to your jaw or arm?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweating",
+          "jaw",
+          "arm"
+        ]
+      },
+      {
+        "objective": "Character",
+        "say": "Does it feel like burning, rather than pressure or squeezing?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Prior GERD history",
+        "say": "Have you had reflux or heartburn before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

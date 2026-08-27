@@ -1,0 +1,168 @@
+{
+  "id": "cardio_010",
+  "system": "cardiology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 67,
+  "gender": "male",
+  "chief_complaint": "cramping pain in both calves after walking 100 metres that stops when resting",
+  "hpi_details": "1-year history of predictable, cramping ache in the right and left calf muscles brought on consistently after walking approximately 100 to 150 metres on level ground. The pain forces him to stop walking, and characteristically disappears completely within 3 to 5 minutes of standing still. Over the past two months, the walking distance before pain begins has shortened to 50 metres. Denies rest pain at night, leg ulceration, or discoloration.",
+  "ideas": "thinks he is getting arthritis or muscle strain from old age",
+  "concerns": "worried he will lose his mobility and become wheelchair-bound like his brother who had a leg amputation",
+  "expectations": "wants muscle relaxing cream and advice on what exercise is safe",
+  "pmh": "type 2 diabetes mellitus x12 years, hypertension, hypercholesterolaemia",
+  "medications": "metformin 1000mg BD, ramipril 10mg OD, atorvastatin 20mg OD",
+  "social_hx": "smoker 40 pack-years (currently smokes 20/day), retired bus driver, sedentary lifestyle",
+  "investigation_events": [{"id": "ankle_brachial_index", "title": "Ankle-brachial index", "order_terms": ["ankle brachial index", "ankle-brachial index", "abi", "doppler pressures"], "availability_message": "The ankle-brachial index results are now available.", "results": [
+    {"id": "abi_right", "test": "Right ankle-brachial index", "value": "0.62", "reference_range": "1.00-1.40", "flag": "abnormal", "collected_at": "At rest"},
+    {"id": "abi_left", "test": "Left ankle-brachial index", "value": "0.68", "reference_range": "1.00-1.40", "flag": "abnormal", "collected_at": "At rest"}
+  ]}],
+  "clinical_knowledge": {
+    "topic": "Peripheral Arterial Disease with Intermittent Claudication evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Peripheral Arterial Disease with Intermittent Claudication is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes aggressive cardiovascular secondary prevention: high-intensity statin therapy, antiplatelet therapy, strict glycemic control, and blood pressure optimization, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: cramping pain in both calves after walking 100 metres that stops when resting",
+      "Key HPI features: 1-year history of predictable, cramping ache in the right and left calf muscles brought on consistently after walking approximately 100 to 150 metres on level ground. The pain forces him to stop walking, and characteristically disappears completely within 3 to 5 minutes of standing still. Over the past two months, the walking distance before pain begins has shortened to 50 metres. Denies rest pain at night, leg ulceration, or discoloration.",
+      "Objective/Exam findings: Vascular examination: palpate and compare femoral, popliteal, dorsalis pedis, and posterior tibial pulses (diminished or absent below popliteal). Check for trophic skin changes (hair loss on shins, shiny thin skin, thickened toenails, arterial bruits over femoral arteries). Measure Ankle-Brachial Index (ABI: <=0.90 is abnormal and supports PAD; very low values suggest severe PAD but do not alone diagnose chronic limb-threatening ischaemia). Bloods: HbA1c, lipid profile, renal function.",
+      "Relevant background/PMH: type 2 diabetes mellitus x12 years, hypertension, hypercholesterolaemia",
+      "Current medications: metformin 1000mg BD, ramipril 10mg OD, atorvastatin 20mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Peripheral Arterial Disease with Intermittent Claudication.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Lumbar spinal stenosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain at rest or at night, or a non-healing ulcer — critical limb ischaemia."
+    ],
+    "management_principles": [
+      "Aggressive cardiovascular secondary prevention: high-intensity statin (atorvastatin 80mg OD), antiplatelet therapy (clopidogrel 75mg OD), strict glycemic control, and blood pressure optimization",
+      "Mandatory smoking cessation support (pharmacotherapy + behavioural counseling)",
+      "Prescribe structured supervised exercise training programme (walking through mild pain to stimulate collateral vessel formation)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2024 AHA/ACC Guideline for the Management of Lower Extremity Peripheral Artery Disease",
+        "url": "https://professional.heart.org/en/guidelines-statements/peripheral-artery-disease-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: cramping pain in both calves after walking 100 metres that stops when resting\n\n1-year history of predictable, cramping ache in the right and left calf muscles brought on consistently after walking approximately 100 to 150 metres on level ground. The pain forces him to stop walking, and characteristically disappears completely within 3 to 5 minutes of standing still. Over the past two months, the walking distance before pain begins has shortened to 50 metres. Denies rest pain at night, leg ulceration, or discoloration.",
+    "objective": "Vascular examination: palpate and compare femoral, popliteal, dorsalis pedis, and posterior tibial pulses (diminished or absent below popliteal). Check for trophic skin changes (hair loss on shins, shiny thin skin, thickened toenails, arterial bruits over femoral arteries). Measure Ankle-Brachial Index (ABI: <=0.90 is abnormal and supports PAD; very low values suggest severe PAD but do not alone diagnose chronic limb-threatening ischaemia). Bloods: HbA1c, lipid profile, renal function.",
+    "assessment": "Lower extremity Peripheral Arterial Disease (PAD) causing intermittent claudication (Fontaine Stage IIb). DDx: lumbar spinal stenosis (pseudoclaudication - pain relieved by sitting/flexing spine rather than just standing still), deep vein thrombosis, diabetic peripheral neuropathy, venous claudication.",
+    "plan": "Aggressive cardiovascular secondary prevention: high-intensity statin (atorvastatin 80mg OD), antiplatelet therapy (clopidogrel 75mg OD), strict glycemic control, and blood pressure optimization. Mandatory smoking cessation support (pharmacotherapy + behavioural counseling). Prescribe structured supervised exercise training programme (walking through mild pain to stimulate collateral vessel formation). Vascular surgery referral if refractory or severe functional impairment."
+  },
+  "learning_objectives": [
+    "Differentiate vascular intermittent claudication (relieved promptly by standing still) from neurogenic claudication/spinal stenosis (relieved by lumbar flexion/sitting)",
+    "Perform and interpret the Ankle-Brachial Index (ABI) to stratify peripheral arterial disease severity",
+    "Formulate an aggressive systemic cardiovascular risk reduction bundle (antiplatelet, high-dose statin, smoking cessation)",
+    "Explain the physiological rationale behind structured supervised exercise therapy in promoting collateral vascularization"
+  ],
+  "teaching": {
+    "diagnosis": "Peripheral Arterial Disease with Intermittent Claudication",
+    "one_liner": "Narrowed leg arteries cannot meet the muscle's demand when walking, so the calves cramp at a predictable distance and settle with rest.",
+    "differentials": [
+      "Lumbar spinal stenosis",
+      "Deep vein thrombosis",
+      "Osteoarthritis of the hip"
+    ],
+    "red_flags": [
+      "Pain at rest or at night, or a non-healing ulcer — critical limb ischaemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Claudication distance",
+        "say": "How far can you walk before the cramp starts, and is it always about the same distance?",
+        "domains": [
+          "severity",
+          "aggravating"
+        ],
+        "keywords": [
+          "distance",
+          "block",
+          "metres",
+          "walk"
+        ]
+      },
+      {
+        "objective": "Relief with rest",
+        "say": "Does it go away if you stand still for a few minutes?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "rest",
+          "stand",
+          "still",
+          "minutes"
+        ]
+      },
+      {
+        "objective": "Rest pain and night pain",
+        "say": "Do you ever get the pain in bed at night, or hanging your foot out of bed?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "night",
+          "bed",
+          "rest",
+          "hang"
+        ]
+      },
+      {
+        "objective": "Skin changes and ulcers",
+        "say": "Have you noticed any sores on your feet that won't heal?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ulcer",
+          "sore",
+          "wound",
+          "heal",
+          "skin"
+        ]
+      },
+      {
+        "objective": "Smoking history in pack-years",
+        "say": "How many cigarettes a day, and for how many years?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "cigarette",
+          "smoke",
+          "pack"
+        ]
+      },
+      {
+        "objective": "Diabetes and cholesterol",
+        "say": "Do you have diabetes or raised cholesterol?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "sugar",
+          "cholesterol"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,153 @@
+{
+  "id": "neuro_006",
+  "system": "neurology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Higgins",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "daily throbbing headache and whooshing sound in ears for 2 months",
+  "hpi_details": "2-month history of daily, severe, generalized throbbing headaches that are worse in the morning on waking and exacerbated by coughing, straining, or bending forward. Experiences a rhythmic whooshing noise in both ears synchronised with her heartbeat (pulsatile tinnitus). Reports transient 5-second episodes of complete visual darkening or grey-out (transient visual obscurations) triggered whenever she stands up quickly or bends over to tie her shoes. Gained 15kg over the past year.",
+  "ideas": "thinks high blood pressure from her recent weight gain is causing pressure headaches",
+  "concerns": "afraid she has a large brain tumour pressing on her optic nerves",
+  "expectations": "wants a brain scan immediately and fluid tablets to drain the pressure behind her eyes",
+  "pmh": "obesity (BMI 36), polycystic ovary syndrome (PCOS), mild acne",
+  "medications": "combined oral contraceptive pill, minocycline 100mg OD for acne over past 4 months",
+  "social_hx": "non-smoker, zero alcohol, administrative assistant, sedentary",
+  "investigation_events": [
+    {
+      "id": "urgent_raised_icp_workup",
+      "title": "Urgent intracranial pressure assessment",
+      "order_terms": ["MRI brain", "MR venography", "MRV", "lumbar puncture", "opening pressure"],
+      "availability_message": "Urgent MRI/MRV and lumbar puncture results are now available. Lumbar puncture was performed only after imaging excluded a mass lesion and venous sinus thrombosis.",
+      "results": [
+        {"id": "mri_mrv", "test": "MRI brain with MR venography", "value": "No mass, hydrocephalus, or cerebral venous sinus thrombosis; partially empty sella and bilateral transverse sinus narrowing", "flag": "abnormal"},
+        {"id": "csf_opening_pressure", "test": "CSF opening pressure", "value": "36", "unit": "cm H2O", "reference_range": "10-25", "flag": "high", "note": "Measured in the lateral decubitus position; routine CSF constituents are normal."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Idiopathic Intracranial Hypertension (IIH / Pseudotumor Cerebri) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Idiopathic Intracranial Hypertension (IIH / Pseudotumor Cerebri) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Immediately discontinue offending medications (minocycline and oral contraceptive pill), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: daily throbbing headache and whooshing sound in ears for 2 months",
+      "Key HPI features: 2-month history of daily, severe, generalized throbbing headaches that are worse in the morning on waking and exacerbated by coughing, straining, or bending forward. Experiences a rhythmic whooshing noise in both ears synchronised with her heartbeat (pulsatile tinnitus). Reports transient 5-second episodes of complete visual darkening or grey-out (transient visual obscurations) triggered whenever she stands up quickly or bends over to tie her shoes. Gained 15kg over the past year.",
+      "Objective/Exam findings: Fundoscopy: bilateral grade IV papilloedema (blurred disc margins, loss of venous pulsations, peripapillary flame haemorrhages). Visual field testing: enlarged blind spots and early nasal step/peripheral constriction. Cranial nerve exam: check for bilateral VIth nerve palsy (false localizing sign of raised ICP causing horizontal diplopia). Urgent MRI Brain with MR Venography (normal brain parenchyma without mass/hydrocephalus; MRV rules out cerebral venous sinus thrombosis and shows transverse sinus stenosis/empty sella). Lumbar puncture in lateral decubitus position: opening pressure markedly elevated (>25 cm H2O, often >30-40 cm H2O) with completely normal CSF constituents.",
+      "Relevant background/PMH: obesity (BMI 36), polycystic ovary syndrome (PCOS), mild acne",
+      "Current medications: combined oral contraceptive pill, minocycline 100mg OD for acne over past 4 months"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Idiopathic Intracranial Hypertension (IIH / Pseudotumor Cerebri).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cerebral venous sinus thrombosis (CVST) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any visual field loss or progression — optic nerve damage can become permanent."
+    ],
+    "management_principles": [
+      "Immediately discontinue offending medications (minocycline and oral contraceptive pill)",
+      "Initiate carbonic anhydrase inhibitor (acetazolamide starting 500mg BID up-titrated up to 2g daily) to decrease CSF production",
+      "Urgent ophthalmology referral for regular visual field monitoring (critical instructions: permanent optic atrophy and blindness can occur if uncontrolled)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26F with recent weight gain and minocycline/OCP exposure presents with signs of raised intracranial pressure: morning throbbing headache, pulsatile tinnitus, and transient visual obscurations on posture change.",
+    "objective": "Fundoscopy: bilateral grade IV papilloedema (blurred disc margins, loss of venous pulsations, peripapillary flame haemorrhages). Visual field testing: enlarged blind spots and early nasal step/peripheral constriction. Cranial nerve exam: check for bilateral VIth nerve palsy (false localizing sign of raised ICP causing horizontal diplopia). Urgent MRI Brain with MR Venography (normal brain parenchyma without mass/hydrocephalus; MRV rules out cerebral venous sinus thrombosis and shows transverse sinus stenosis/empty sella). Lumbar puncture in lateral decubitus position: opening pressure markedly elevated (>25 cm H2O, often >30-40 cm H2O) with completely normal CSF constituents.",
+    "assessment": "Idiopathic Intracranial Hypertension (IIH / Pseudotumor Cerebri) likely exacerbated by minocycline and rapid weight gain. DDx: cerebral venous sinus thrombosis (CVST), intracranial mass lesion, obstructive hydrocephalus, secondary intracranial hypertension from tetracyclines/retinoids.",
+    "plan": "Immediately discontinue offending medications (minocycline and oral contraceptive pill). Initiate carbonic anhydrase inhibitor (acetazolamide starting 500mg BID up-titrated up to 2g daily) to decrease CSF production. Urgent ophthalmology referral for regular visual field monitoring (critical instructions: permanent optic atrophy and blindness can occur if uncontrolled). Structured multidisciplinary weight loss management (target 10-15% body weight reduction is curative in many cases). Neurosurgical referral for optic nerve sheath fenestration or CSF shunting if visual fields deteriorate despite medical therapy."
+  },
+  "learning_objectives": [
+    "Identify the classical symptom triad of raised intracranial pressure: morning headache, pulsatile tinnitus, and transient visual obscurations",
+    "Correlate epidemiological risk factors (young obese female) and drug exposures (tetracyclines, retinoids, contraceptives) with IIH pathogenesis",
+    "Explain the mandatory sequence of neuroimaging (MRI/MRV to exclude mass or venous sinus thrombosis) prior to diagnostic lumbar puncture",
+    "Emphasize the urgent priority of visual field monitoring to prevent irreversible optic atrophy"
+  ],
+  "teaching": {
+    "diagnosis": "Idiopathic Intracranial Hypertension (IIH / Pseudotumor Cerebri)",
+    "one_liner": "Elevated pressure around the brain without a mass — typically in young obese women — causing daily morning headaches worse with straining, pulsatile tinnitus, and brief 'graying out' of vision on standing; untreated, it can cause permanent blindness.",
+    "differentials": [
+      "Cerebral venous sinus thrombosis (CVST)",
+      "Intracranial mass lesion",
+      "Obstructive hydrocephalus",
+      "Secondary intracranial hypertension from medications"
+    ],
+    "red_flags": [
+      "Any visual field loss or progression — optic nerve damage can become permanent"
+    ],
+    "must_ask": [
+      {
+        "objective": "Headache pattern",
+        "say": "Is the headache worse in the morning, and does it get worse when you cough or bend over?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "morning",
+          "straining",
+          "coughing"
+        ]
+      },
+      {
+        "objective": "Pulsatile tinnitus",
+        "say": "Do you hear a whooshing sound in your ears that matches your heartbeat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "whooshing",
+          "pulsatile"
+        ]
+      },
+      {
+        "objective": "Visual symptoms",
+        "say": "Do you have brief moments where your vision goes gray or dark, especially when standing up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "visual obscuration",
+          "standing"
+        ]
+      },
+      {
+        "objective": "Weight change",
+        "say": "How much weight have you gained recently?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "weight gain"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking any acne medications like minocycline, or birth control pills?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "minocycline"
+        ]
+      }
+    ]
+  }
+}

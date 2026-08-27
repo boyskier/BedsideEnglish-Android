@@ -1,0 +1,121 @@
+{
+  "id": "allergy_014",
+  "system": "allergy_immunology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Brian Miller",
+  "age": 28,
+  "gender": "male",
+  "chief_complaint": "trouble swallowing and feeling like food gets stuck in my chest",
+  "hpi_details": "28M with a history of allergic rhinitis and childhood asthma presents with progressive solid-food dysphagia over the last 2 years. He reports three episodes of food impaction requiring him to regurgitate. He denies weight loss, vomiting blood, or heartburn. He has noticed that eating slower and drinking lots of water helps him swallow.",
+  "ideas": "thinks his throat is narrowing from some kind of scar tissue",
+  "concerns": "terrified of choking to death while eating",
+  "expectations": "hopes for an imaging test to see what's blocking his throat",
+  "pmh": "Allergic rhinitis, childhood asthma",
+  "medications": "Fluticasone nasal spray PRN",
+  "social_hx": "Software engineer, social drinker, no tobacco use",
+  "clinical_knowledge": {
+    "topic": "Eosinophilic Esophagitis (EoE)",
+    "core_concepts": [
+      "Eosinophilic esophagitis is a chronic, immune-mediated disease characterized clinically by esophageal dysfunction and histologically by eosinophil-predominant inflammation.",
+      "Most commonly seen in young males with a personal or family history of atopy.",
+      "The classic presentation is solid-food dysphagia and episodes of food impaction.",
+      "Diagnosis requires endoscopy showing typical features (rings, furrows, exudates) and biopsies with >=15 eosinophils/hpf."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: trouble swallowing and feeling like food gets stuck in my chest",
+      "Key HPI features: 28M with atopic history experiencing progressive solid-food dysphagia and food impaction without typical GERD symptoms.",
+      "Objective/Exam findings: Vitals normal. Physical exam is generally unremarkable. The key to diagnosis is history and subsequent endoscopy.",
+      "Relevant background/PMH: Allergic rhinitis, asthma (Atopic triad)",
+      "Current medications: Fluticasone nasal spray"
+    ],
+    "common_misconceptions": [
+      "Assuming all dysphagia in young people is strictly due to GERD or anxiety.",
+      "Delaying endoscopy and trying prolonged blind PPI therapy without investigating for EoE in highly suspicious cases.",
+      "Ignoring the patient's atopic history which is a major risk factor."
+    ],
+    "dangerous_errors": [
+      "Attempting blind esophageal dilation before confirming the diagnosis, which can lead to high risk of esophageal perforation in EoE.",
+      "Failing to refer to gastroenterology for urgent endoscopy in the setting of acute food impaction."
+    ],
+    "management_principles": [
+      "Refer to Gastroenterology for upper endoscopy with esophageal biopsies.",
+      "Initial treatment options include Proton Pump Inhibitors (PPIs), swallowed topical corticosteroids (e.g., fluticasone or budesonide), and dietary elimination therapies.",
+      "Allergist consultation for potential food allergy testing, though empiric elimination diets are often preferred."
+    ],
+    "boundaries_and_exceptions": [
+      "PPI therapy can be effective in EoE and is no longer just used to rule out GERD.",
+      "Patients with acute food impaction require emergent endoscopy."
+    ],
+    "source_refs": [
+      {
+        "title": "Eosinophilic Esophagitis Guidelines",
+        "url": "https://www.gastro.org/guidelines/eosinophilic-esophagitis"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "28M with a history of atopy presents with a 2-year history of solid-food dysphagia and recurrent food impactions. No red flag symptoms like weight loss or hematemesis.",
+    "objective": "Vitals stable. General appearance is healthy. Oropharynx clear. Abdomen soft, non-tender.",
+    "assessment": "Solid-food dysphagia highly suspicious for Eosinophilic Esophagitis (EoE), given the patient's atopic history.",
+    "plan": "1. Refer to Gastroenterology for upper endoscopy and esophageal biopsies (requesting multi-level biopsies to check for eosinophils). 2. Start a trial of oral PPI (Omeprazole 20mg twice daily). 3. Advise the patient to chew food thoroughly, eat slowly, and seek emergency care immediately if food becomes completely impacted and cannot be cleared. 4. Outpatient Allergy/Immunology follow-up for potential dietary elimination guidance."
+  },
+  "learning_objectives": [
+    "Recognize the clinical presentation of EoE in young, atopic adults",
+    "Identify solid-food dysphagia and food impaction as key symptoms",
+    "Formulate an appropriate referral plan for endoscopy and biopsy"
+  ],
+  "teaching": {
+    "diagnosis": "Eosinophilic Esophagitis (EoE)",
+    "one_liner": "An allergic inflammation of the esophagus causing swallowing difficulties and food impaction, typically in young men with asthma or allergies.",
+    "differentials": [
+      "Gastroesophageal reflux disease (GERD) with peptic stricture",
+      "Achalasia",
+      "Esophageal web or Schatzki ring"
+    ],
+    "red_flags": [
+      "Inability to swallow liquids or saliva (indicates complete acute obstruction needing emergent endoscopy)",
+      "Significant weight loss or hematemesis (suggests malignancy or severe ulceration)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Assess type of dysphagia",
+        "say": "Do you have trouble swallowing solids, liquids, or both?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "solids",
+          "liquids",
+          "swallow",
+          "both"
+        ]
+      },
+      {
+        "objective": "Check for acute obstruction",
+        "say": "Can you swallow your own saliva right now?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "saliva",
+          "swallow",
+          "spit"
+        ]
+      },
+      {
+        "objective": "Identify atopic history",
+        "say": "Do you have any history of asthma, eczema, or environmental allergies?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "asthma",
+          "eczema",
+          "allergies",
+          "hay fever"
+        ]
+      }
+    ]
+  }
+}

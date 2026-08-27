@@ -1,0 +1,245 @@
+{
+  "id": "followup_discharge_004",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "post_discharge",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Ms. Chloe Bennett",
+  "age": 27,
+  "gender": "female",
+  "visit_title": "Post-pyelonephritis discharge review",
+  "follow_up_reason": "Ten-day post-hospital discharge review for kidney infection",
+  "clinician_brief": {
+    "prior_note": "Hospitalized 10 days ago for severe acute E. coli pyelonephritis with bacteremia. Treated with IV ceftriaxone then discharged on oral Ciprofloxacin to complete a 10-day course.",
+    "active_problems": [
+      "Acute pyelonephritis (resolved)",
+      "E. coli bacteremia (resolved)"
+    ],
+    "current_medications": [
+      "Ciprofloxacin 500 mg twice daily (day 10 of 10)"
+    ],
+    "previous_plan": [
+      "Complete 10-day oral ciprofloxacin course",
+      "Hydration 2-3L daily",
+      "Repeat urine culture at 10-14 days post-discharge",
+      "Review fever and flank pain"
+    ],
+    "results_and_observations": [
+      "Inpatient urine culture: E. coli sensitive to ciprofloxacin",
+      "Discharge CRP 12 mg/L (normalized)",
+      "eGFR >90 mL/min"
+    ],
+    "today_tasks": [
+      "Confirm antibiotic completion and symptom resolution (fever, dysuria, flank pain)",
+      "Review repeat urine culture results or order test",
+      "Screen for fluoroquinolone adverse effects (tendon pain/tendinitis, diarrhea)",
+      "Provide UTI prevention advice (hydration, post-coital voiding)",
+      "Confirm successful recovery and discharge from acute follow-up"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Fever and severe back pain completely gone. Urination feels normal.",
+    "adherence": "Finished the last ciprofloxacin tablet this morning.",
+    "treatment_response": "Feels 100% back to her usual energy level.",
+    "side_effects": "Slight stomach tightness; no Achilles tendon pain or diarrhea.",
+    "new_symptoms_and_red_flags": "No return of fever, chills, flank pain, dysuria, or tendon stiffness.",
+    "agenda": "Wants to confirm the infection is completely cleared from her kidneys.",
+    "concern": "Worried that UTIs will keep returning and damage her kidneys.",
+    "preference": "Wants practical advice on preventing future kidney infections."
+  },
+  "clinical_knowledge": {
+    "topic": "Confirming true clinical cure after a completed 10-day ciprofloxacin course for E. coli pyelonephritis with bacteremia, and explaining why a routine test-of-cure urine culture usually isn't needed",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Clinical cure of pyelonephritis is judged primarily by resolution of fever, flank pain, and dysuria after a completed appropriate antibiotic course — in a young, otherwise healthy, nonpregnant, asymptomatic patient like her, a routine repeat urine culture is not generally recommended by IDSA guidance and adds little beyond the clinical picture.",
+      "Bacteremia complicating pyelonephritis (as she had) does not by itself require a longer antibiotic course than uncomplicated pyelonephritis once source control and clinical response are confirmed — the standard 7-14 day course (she received 10 days) tailored to susceptibility remains appropriate.",
+      "Fluoroquinolones such as ciprofloxacin carry specific, distinct risks worth actively screening for at course completion: tendinopathy/tendon rupture (especially Achilles), peripheral neuropathy, and QT prolongation, separate from the more common GI side effects.",
+      "Evidence-based recurrent UTI prevention for a young woman centers on adequate hydration, post-coital voiding, and avoiding spermicide use if applicable — these are the interventions with the best supporting evidence, more than cranberry products or other commonly cited but weaker measures.",
+      "A single episode of pyelonephritis, even with bacteremia, in a young woman without underlying urologic abnormality does not by itself indicate chronic kidney damage or predict inevitable recurrence — most patients recover full renal function, which is directly relevant to her stated worry."
+    ],
+    "diagnostic_clues": [
+      "Complete resolution of fever and flank pain, with normal urination, after finishing the full antibiotic course is the primary evidence of clinical cure — more informative here than any single lab value.",
+      "Discharge CRP normalizing to 12 mg/L and an eGFR above 90 mL/min both support that the acute infection resolved without residual renal functional impairment.",
+      "Absence of Achilles tendon pain, stiffness, or significant diarrhea on ciprofloxacin at course completion is reassuring against the fluoroquinolone-specific toxicities that would otherwise need attention.",
+      "No return of fever, chills, flank pain, or dysuria today argues against an early recurrence or inadequately treated infection.",
+      "An inpatient culture showing E. coli sensitive to ciprofloxacin confirms the chosen oral step-down antibiotic was an appropriate, susceptibility-guided choice, supporting confidence in the completed course."
+    ],
+    "common_misconceptions": [
+      "Her wish to 'confirm the infection is completely cleared' with a repeat urine culture reflects a common but not evidence-supported expectation — guidelines do not recommend routine test-of-cure cultures in asymptomatic patients after treatment, and a truly negative test would add little to her being asymptomatic today.",
+      "Her worry that UTIs will keep recurring and permanently damage her kidneys should be addressed directly: one episode of pyelonephritis in an otherwise healthy young woman does not predict chronic kidney disease, and most patients recover completely.",
+      "Assuming that completing the antibiotic course automatically 'sterilizes' the urinary tract in a way that prevents any future infection, rather than understanding that future UTIs, if they occur, are typically new, separate infections influenced by modifiable risk factors.",
+      "Believing that mild stomach tightness on ciprofloxacin needs to be reported as a treatment failure, when it is a common, self-limited side effect distinct from the more serious tendon or neurologic toxicities actually worth screening for."
+    ],
+    "dangerous_errors": [
+      "Ordering a routine repeat urine culture in an asymptomatic patient out of habit or to reassure her, when this is not evidence-supported and does not change management if she remains asymptomatic.",
+      "Failing to specifically ask about Achilles tendon symptoms before closing out the fluoroquinolone course, since tendinopathy can be missed if not directly screened for.",
+      "Not exploring modifiable, evidence-based UTI-prevention strategies (hydration, post-coital voiding) since this was explicitly her stated agenda and a missed opportunity if skipped.",
+      "Discharging her from acute follow-up without clear, explicit red-flag instructions (recurrent fever, flank pain, dysuria) for when to seek care again."
+    ],
+    "management_principles": [
+      "Confirm clinical recovery based on symptom resolution and exam rather than reflexively ordering a repeat urine culture, and explain the reasoning to her directly.",
+      "Provide concrete, evidence-based UTI-prevention counseling (adequate hydration, post-coital voiding) tailored to her stated interest in prevention.",
+      "Directly reassure her, with accurate reasoning, that a single treated episode of pyelonephritis does not predict chronic kidney damage.",
+      "Give explicit recurrence safety-netting — which symptoms (fever, flank pain, dysuria) should prompt her to seek care again — before concluding acute follow-up."
+    ],
+    "boundaries_and_exceptions": [
+      "Test-of-cure cultures and closer follow-up are indicated in pregnancy, recurrent pyelonephritis, urologic abnormality, immunocompromise, or ongoing symptoms — none of which apply to her, but any of which would change this default approach.",
+      "If she develops recurrent pyelonephritis in the future, evaluation for an underlying anatomic or functional urologic cause becomes appropriate, unlike after this single episode.",
+      "Fluoroquinolone tendon-toxicity risk is notably higher in patients over 60, on concurrent corticosteroids, or with prior tendon disorders — relevant caution for a different patient than this healthy 27-year-old."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guideline for Complicated UTI and Pyelonephritis",
+        "url": "https://www.idsociety.org/practice-guideline/complicated-uti-and-pyelonephritis/"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Establish the agenda for post-pyelonephritis follow-up",
+    "Confirm complete antibiotic course adherence and symptom resolution",
+    "Confirm clinical resolution and explain when repeat urine testing is indicated",
+    "Screen for fluoroquinolone side effects (Achilles tendon pain, severe diarrhea)",
+    "Screen for infection recurrence red flags (fever, flank pain, dysuria)",
+    "Address fears of chronic kidney damage and recurrent UTIs in plain English",
+    "Provide evidence-based UTI prevention guidance and conclude acute care"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Establish the agenda for post-pyelonephritis follow-up",
+      "category": "Agenda",
+      "question": "Since finishing your hospital treatment for the kidney infection ten days ago, how are you feeling today?"
+    },
+    {
+      "objective": "Confirm complete antibiotic course adherence and symptom resolution",
+      "category": "Adherence & symptoms",
+      "question": "Did you manage to finish all ten days of the ciprofloxacin, and have the fever and back pain completely gone?"
+    },
+    {
+      "objective": "Confirm clinical resolution and explain when repeat urine testing is indicated",
+      "category": "Results",
+      "question": "Your symptoms have resolved; let's discuss when a repeat urine test would be needed and what symptoms should prompt you to contact us."
+    },
+    {
+      "objective": "Screen for fluoroquinolone side effects (Achilles tendon pain, severe diarrhea)",
+      "category": "Safety",
+      "question": "Have you experienced any tendon stiffness, heel pain, or severe diarrhea while on ciprofloxacin?"
+    },
+    {
+      "objective": "Screen for infection recurrence red flags (fever, flank pain, dysuria)",
+      "category": "Safety",
+      "question": "Have you noticed any return of burning when peeing, fever, chills, or side pain?"
+    },
+    {
+      "objective": "Address fears of chronic kidney damage and recurrent UTIs in plain English",
+      "category": "Concerns",
+      "question": "What concerns do you have about your kidneys or worrying that the infection might come back?"
+    },
+    {
+      "objective": "Provide evidence-based UTI prevention guidance and conclude acute care",
+      "category": "Shared plan",
+      "question": "Would you like some tips on fluid intake and habits to prevent future UTIs before we sign you off?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Establish the agenda for post-pyelonephritis follow-up",
+      "keywords": [
+        "kidney infection",
+        "pyelonephritis",
+        "ten days",
+        "discharge",
+        "agenda",
+        "today"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Confirm complete antibiotic course adherence and symptom resolution",
+      "keywords": [
+        "ciprofloxacin",
+        "antibiotics",
+        "finished",
+        "completed",
+        "fever gone",
+        "back pain",
+        "resolved"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Confirm clinical resolution and explain when repeat urine testing is indicated",
+      "keywords": [
+        "urine test",
+        "culture",
+        "cleared",
+        "infection free",
+        "results",
+        "clean"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for fluoroquinolone side effects (Achilles tendon pain, severe diarrhea)",
+      "keywords": [
+        "tendon",
+        "achilles",
+        "heel pain",
+        "diarrhea",
+        "side effects",
+        "cipro"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for infection recurrence red flags (fever, flank pain, dysuria)",
+      "keywords": [
+        "fever",
+        "chills",
+        "flank pain",
+        "burning",
+        "dysuria",
+        "recurrence",
+        "red flags"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address fears of chronic kidney damage and recurrent UTIs in plain English",
+      "keywords": [
+        "kidney damage",
+        "recurrent uti",
+        "worry",
+        "worried",
+        "scared",
+        "reassure"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Provide evidence-based UTI prevention guidance and conclude acute care",
+      "keywords": [
+        "prevention",
+        "fluids",
+        "water",
+        "voiding",
+        "sign off",
+        "plan",
+        "prevention tips"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "27F returns at 10 days post-discharge after pyelonephritis. Completed 10-day ciprofloxacin course. Fever, dysuria, and flank pain fully resolved. Denies tendon pain or diarrhea. Asks how to prevent future UTIs.",
+    "objective": "Afebrile. Costovertebral angle tenderness negative bilaterally. No repeat urine culture is indicated while she remains asymptomatic.",
+    "assessment": "Clinical recovery after treated acute E. coli pyelonephritis; no current evidence of ongoing infection.",
+    "plan": "Confirm clinical recovery, counsel on adequate hydration and individualized UTI-prevention measures, explain that repeat urine testing is needed if symptoms recur or another indication develops, and provide recurrence safety-netting."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Post-pyelonephritis discharge review",
+    "one_liner": "Clinical scenario for evaluation and management of Post-pyelonephritis discharge review."
+  }
+}

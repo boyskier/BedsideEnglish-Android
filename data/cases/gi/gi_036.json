@@ -1,0 +1,161 @@
+{
+  "id": "gi_036",
+  "system": "gi",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wilson",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "burning upper abdominal pain 2 hours after meals relieved by food",
+  "hpi_details": "A 50-year-old female presents to the clinic with burning upper abdominal pain 2 hours after meals relieved by food. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to peptic ulcer disease",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Peptic Ulcer Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Peptic Ulcer Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes testing for and treating H. pylori infection, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning upper abdominal pain 2 hours after meals relieved by food",
+      "Key HPI features: A 50-year-old female presents to the clinic with burning upper abdominal pain 2 hours after meals relieved by food. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Peptic Ulcer Disease.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Peptic Ulcer Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: haematemesis or melena, sudden severe abdominal pain with rigidity, unintentional weight loss, early satiety, or persistent vomiting."
+    ],
+    "management_principles": [
+      "Perform H. pylori urea breath test, initiate triple therapy eradication",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of burning upper abdominal pain 2 hours after meals relieved by food. HPI: H. pylori infection, NSAID use.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Peptic Ulcer Disease.",
+    "assessment": "Condition highly suspicious for Peptic Ulcer Disease.",
+    "plan": "Assess for alarm features and NSAID use. Test for H. pylori with an appropriate noninvasive test, holding acid suppression when required for accuracy. Treat confirmed infection using a locally appropriate regimen, commonly bismuth quadruple therapy when susceptibility is unknown, and confirm eradication after treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Peptic Ulcer Disease",
+    "Select appropriate diagnostic workup for Peptic Ulcer Disease",
+    "Implement evidence-based management plan: Perform H. pylori urea breath test, initiate triple therapy eradication"
+  ],
+  "teaching": {
+    "diagnosis": "Peptic Ulcer Disease",
+    "one_liner": "An ulcer in the stomach or duodenum, usually from H. pylori infection or NSAID use, causes burning epigastric pain a couple of hours after meals that eating can actually relieve.",
+    "differentials": [
+      "Gastritis",
+      "Gastroesophageal reflux disease",
+      "Gastric malignancy"
+    ],
+    "red_flags": [
+      "Haematemesis or melena — suggests active ulcer bleeding",
+      "Sudden severe abdominal pain with rigidity — suggests perforation",
+      "Unintentional weight loss, early satiety, or persistent vomiting — raises concern for gastric malignancy or outlet obstruction"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to meals",
+        "say": "Does the pain come on a couple of hours after eating, and does eating actually make it better?",
+        "domains": [
+          "onset_duration",
+          "relieving"
+        ],
+        "keywords": [
+          "eating",
+          "hours",
+          "relieved",
+          "hunger"
+        ]
+      },
+      {
+        "objective": "NSAID use",
+        "say": "Do you take ibuprofen or any other painkillers regularly?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "painkillers",
+          "tablets"
+        ]
+      },
+      {
+        "objective": "H. pylori history",
+        "say": "Have you ever been tested or treated for H. pylori infection?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "pylori",
+          "tested",
+          "infection"
+        ]
+      },
+      {
+        "objective": "Alarm symptoms",
+        "say": "Have you had any black stools, vomited blood, or unplanned weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "black",
+          "stools",
+          "vomited",
+          "weight"
+        ]
+      },
+      {
+        "objective": "Smoking and alcohol",
+        "say": "Do you smoke, or drink alcohol regularly?",
+        "domains": [
+          "smoking",
+          "alcohol"
+        ],
+        "keywords": [
+          "smoke",
+          "alcohol",
+          "drink"
+        ]
+      },
+      {
+        "objective": "Nighttime pain",
+        "say": "Does the pain ever wake you up at night?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "wake",
+          "nocturnal"
+        ]
+      }
+    ]
+  }
+}

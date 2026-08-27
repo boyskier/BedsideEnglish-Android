@@ -1,0 +1,111 @@
+{
+  "name": "Ward Round Case Presentation",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "soap_note",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Language",
+      "anchors": {
+        "90-100": "No errors; succinct, precise medical register; appropriate abbreviations used correctly",
+        "70-80": "Occasional minor errors; does not impair clinical communication",
+        "50-60": "Some errors; slightly reduces clarity",
+        "30-40": "Frequent errors; impairs clarity of presentation",
+        "10-20": "Errors seriously impair communication"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Medical Accuracy",
+      "anchors": {
+        "90-100": "All clinical data and interpretations accurate; correct medical terminology throughout",
+        "70-80": "Mostly accurate; minor imprecision",
+        "50-60": "Some clinical inaccuracies or terminology errors",
+        "30-40": "Multiple clinical errors; interpretation errors present",
+        "10-20": "Significant clinical errors compromising patient safety"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Clinical Reasoning & Structure",
+      "anchors": {
+        "90-100": "Succinct, structured, prioritized presentation; clear assessment with differential; logical plan",
+        "70-80": "Good structure; assessment and plan present; minor gaps",
+        "50-60": "Adequate structure but key elements missing or poorly organized",
+        "30-40": "Disorganized; assessment or plan inadequate",
+        "10-20": "Severely disorganized; unable to follow clinical reasoning"
+      }
+    },
+    "communication_fluency": {
+      "label": "Presentation Fluency",
+      "anchors": {
+        "90-100": "Confident, well-paced delivery; no notes dependency; fielded questions smoothly",
+        "70-80": "Mostly fluent; occasional reference to notes; good question handling",
+        "50-60": "Some hesitation; over-reliant on notes",
+        "30-40": "Frequent hesitation; poor pacing; difficulty answering questions",
+        "10-20": "Severely disrupted presentation"
+      }
+    },
+    "professionalism": {
+      "label": "Empathy & Professionalism",
+      "anchors": {
+        "90-100": "Exceptional empathy and professionalism; creates psychological safety",
+        "70-80": "Good empathy; acknowledges emotion; polite and professional",
+        "50-60": "Adequate but mechanical empathy; some emotional cues missed",
+        "30-40": "Little empathic response; information delivery prioritized",
+        "10-20": "No empathic response; dismissive or unprofessional"
+      }
+    }
+  },
+  "checklist": [
+    {
+      "item": "patient demographics and one-liner (age, sex, presenting complaint)",
+      "required": true
+    },
+    {
+      "item": "HPI presented in chronological order",
+      "required": true
+    },
+    {
+      "item": "relevant positives and negatives from history",
+      "required": true
+    },
+    {
+      "item": "examination findings presented (even if brief/simulated)",
+      "required": true
+    },
+    {
+      "item": "relevant investigations cited with values",
+      "required": true
+    },
+    {
+      "item": "clear assessment: primary diagnosis stated first",
+      "required": true
+    },
+    {
+      "item": "differential diagnoses provided (at least 2)",
+      "required": true
+    },
+    {
+      "item": "management plan presented in logical order",
+      "required": true
+    },
+    {
+      "item": "outstanding issues or follow-up mentioned",
+      "required": false
+    },
+    {
+      "item": "presentation under 3 minutes without being asked to shorten",
+      "required": false
+    },
+    {
+      "item": "used Teach-back method to verify patient understanding",
+      "required": false
+    }
+  ],
+  "empathy_markers": [],
+  "reference_output_type": "soap"
+}

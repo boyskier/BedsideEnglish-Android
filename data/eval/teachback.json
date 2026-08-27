@@ -1,0 +1,95 @@
+{
+  "name": "Lecture Teach-back (Feynman)",
+  "learner_level": "preclinical",
+  "_note": "Teach-back of the student's own lecture material. The case JSON carries the lecture material as ground truth. Standard metric keys re-pitched: medical_accuracy = content accuracy vs the material, clinical_reasoning slot = explanation structure & logic.",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentences",
+      "anchors": {
+        "90-100": "Clear, well-formed sentences throughout the explanation",
+        "70-80": "Occasional minor errors; meaning always clear",
+        "50-60": "Some errors but understandable",
+        "30-40": "Frequent errors; listener must work to follow",
+        "10-20": "Errors block most sentences"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Content Accuracy",
+      "anchors": {
+        "90-100": "Explanations match the lecture material; mechanisms, terms, and facts are correct",
+        "70-80": "Mostly accurate; minor imprecision on details",
+        "50-60": "Core ideas right but several details wrong or muddled",
+        "30-40": "Multiple conceptual errors against the material",
+        "10-20": "Explanation contradicts the material throughout"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Explanation Structure & Logic",
+      "anchors": {
+        "90-100": "Big picture first, then logically ordered steps; cause→effect chains explicit; good examples/analogies",
+        "70-80": "Generally well ordered; occasional jumps the listener must bridge",
+        "50-60": "Lists facts more than explaining; some logical steps missing",
+        "30-40": "Disorganized; listener cannot reconstruct the concept",
+        "10-20": "No discernible structure"
+      }
+    },
+    "communication_fluency": {
+      "label": "Fluency & Plain Language",
+      "anchors": {
+        "90-100": "Flows naturally; defines or paraphrases jargon without being asked",
+        "70-80": "Mostly fluent; explains terms when prompted",
+        "50-60": "Frequent pauses; leans on jargon or reading-style delivery",
+        "30-40": "Halting; cannot rephrase when the listener is confused",
+        "10-20": "Cannot sustain an explanation aloud"
+      }
+    },
+    "professionalism": {
+      "label": "Engagement & Teaching Manner",
+      "anchors": {
+        "90-100": "Checks the listener's understanding, responds to confusion gracefully, stays patient",
+        "70-80": "Responds well to questions; generally engaged",
+        "50-60": "Answers questions but never checks understanding",
+        "30-40": "Ignores listener confusion; plows ahead",
+        "10-20": "Dismissive of the listener"
+      }
+    }
+  },
+  "checklist": [
+    {
+      "item": "opened with the big picture before diving into details",
+      "required": true
+    },
+    {
+      "item": "explained the main concept(s) of the material in their own words, not by reciting",
+      "required": true
+    },
+    {
+      "item": "defined or paraphrased at least one technical term in plain English",
+      "required": true
+    },
+    {
+      "item": "used an example or analogy to illustrate a concept",
+      "required": false
+    },
+    {
+      "item": "answered at least one follow-up/'why' question correctly",
+      "required": true
+    },
+    {
+      "item": "re-explained a point more simply after the listener was confused",
+      "required": false
+    },
+    {
+      "item": "gave a closing summary of the whole topic",
+      "required": true
+    }
+  ],
+  "reference_output_type": "none"
+}

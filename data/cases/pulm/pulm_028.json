@@ -1,0 +1,157 @@
+{
+  "id": "pulm_028",
+  "system": "pulm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Flores",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "fever, productive cough with rusty sputum, and focal crackles",
+  "hpi_details": "A 26-year-old female presents to the clinic with fever, productive cough with rusty sputum, and focal crackles. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cap",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Community-Acquired Pneumonia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Community-Acquired Pneumonia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management begins with severity assessment and confirmation when appropriate, then clinician-selected antimicrobial therapy based on setting, allergies, pregnancy status, comorbidities, and local guidance.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, productive cough with rusty sputum, and focal crackles",
+      "Key HPI features: A 26-year-old female presents to the clinic with fever, productive cough with rusty sputum, and focal crackles. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Community-Acquired Pneumonia.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Community-Acquired Pneumonia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral tracheobronchitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe hypoxemia (SpO2 < 90%)."
+    ],
+    "management_principles": [
+      "Assess severity, oxygenation, and need for urgent hospital care; select antimicrobial therapy only after clinical review",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with fever, productive cough with rusty sputum, focal crackles, and recent gradual worsening with fatigue.",
+    "objective": "Obtain full vital signs including oxygen saturation, focused respiratory examination, and chest radiography when pneumonia confirmation or exclusion will alter management. Consider pregnancy testing when relevant before imaging or drug selection.",
+    "assessment": "Condition highly suspicious for Community-Acquired Pneumonia.",
+    "plan": "Use a validated severity assessment together with vital signs, oxygenation, and social support to decide outpatient versus hospital care. Start supplemental oxygen and arrange emergency assessment for hypoxaemia, hypotension, confusion, respiratory distress, or inability to maintain oral intake. If bacterial CAP is clinically diagnosed, a clinician should select empiric antibiotics appropriate to the care setting, allergies, pregnancy status, comorbidities, and local resistance guidance; review promptly if there is no improvement or complications are suspected."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Community-Acquired Pneumonia",
+    "Select appropriate diagnostic workup for Community-Acquired Pneumonia",
+    "Implement severity-based, clinician-directed evaluation and treatment for community-acquired pneumonia"
+  ],
+  "teaching": {
+    "diagnosis": "Community-Acquired Pneumonia",
+    "one_liner": "Pulmonology case presenting with fever, productive cough with rusty sputum, and focal crackles.",
+    "differentials": [
+      "Viral tracheobronchitis",
+      "Acute exacerbation of COPD",
+      "Pulmonary embolism"
+    ],
+    "red_flags": [
+      "Severe hypoxemia (SpO2 < 90%)",
+      "Massive hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fever onset and rusty sputum production",
+        "say": "When did the fever begin, and what color is the sputum you're coughing up?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "fever",
+          "rusty sputum",
+          "onset",
+          "productive cough",
+          "colour"
+        ]
+      },
+      {
+        "objective": "Pleuritic chest pain and breathing-related pain",
+        "say": "Does the chest pain get worse when you take a deep breath or cough?",
+        "domains": [
+          "location",
+          "aggravating"
+        ],
+        "keywords": [
+          "pleuritic",
+          "chest pain",
+          "breathing",
+          "cough",
+          "sharp"
+        ]
+      },
+      {
+        "objective": "Severity assessment and vital sign red flags",
+        "say": "Have you felt confused, very short of breath at rest, or extremely weak?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "confusion",
+          "severity",
+          "respiratory rate",
+          "CURB-65",
+          "weakness"
+        ]
+      },
+      {
+        "objective": "Sick contacts and recent respiratory illness exposure",
+        "say": "Has anyone around you been sick recently with a cough or cold?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "sick contacts",
+          "exposure",
+          "cluster",
+          "community",
+          "outbreak"
+        ]
+      },
+      {
+        "objective": "Comorbidities and vaccination history",
+        "say": "Do you have any ongoing health conditions, and have you had your flu or pneumonia vaccines?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "comorbidities",
+          "vaccination",
+          "pneumococcal",
+          "influenza vaccine",
+          "immune"
+        ]
+      }
+    ]
+  }
+}

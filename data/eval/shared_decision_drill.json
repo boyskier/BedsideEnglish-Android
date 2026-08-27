@@ -1,0 +1,87 @@
+{
+  "name": "Shared Decision-Making Drill — Deciding With the Patient",
+  "learner_level": "preclinical",
+  "_note": "Skill drill. Standard 4 metric keys re-pitched: medical_accuracy = balanced/plain-language options, clinical_reasoning slot = shared decision-making (the focus), communication_fluency = clarity of explanation.",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentences",
+      "anchors": {
+        "90-100": "Clear, well-formed sentences throughout",
+        "70-80": "Occasional minor errors; meaning always clear",
+        "50-60": "Some errors but understandable",
+        "30-40": "Frequent errors; listener must work",
+        "10-20": "Errors block most sentences"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Balanced, Plain-language Options",
+      "anchors": {
+        "90-100": "Presents options with pros and cons in clear lay language, no jargon, no bias",
+        "70-80": "Mostly balanced and plain; minor jargon",
+        "50-60": "Explains options but unevenly or with some jargon",
+        "30-40": "Mentions options only vaguely or pushes one heavily",
+        "10-20": "Dictates a single plan; no real options given"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Shared Decision-Making",
+      "anchors": {
+        "90-100": "Explicitly elicits values, checks understanding, and decides together with the patient",
+        "70-80": "Asks the patient's preference and involves them in the choice",
+        "50-60": "Some attempt to involve the patient but mostly leads them",
+        "30-40": "Token involvement; effectively decides for the patient",
+        "10-20": "No attempt to involve the patient at all"
+      }
+    },
+    "communication_fluency": {
+      "label": "Clarity of Explanation",
+      "anchors": {
+        "90-100": "Explanations are smooth, well-structured, and easy to follow",
+        "70-80": "Generally clear with minor stumbles",
+        "50-60": "Understandable but disorganised in places",
+        "30-40": "Confusing or rambling explanations",
+        "10-20": "Cannot explain the options intelligibly"
+      }
+    },
+    "professionalism": {
+      "label": "Respect & Empathy",
+      "anchors": {
+        "90-100": "Treats the patient as an equal partner; respects autonomy throughout",
+        "70-80": "Respectful and warm; acknowledges the patient's views",
+        "50-60": "Polite but somewhat paternalistic",
+        "30-40": "Dismissive of the patient's preferences",
+        "10-20": "Disrespects the patient's autonomy"
+      }
+    }
+  },
+  "checklist": [
+    {
+      "item": "presented more than one reasonable option",
+      "required": true
+    },
+    {
+      "item": "explained benefits and downsides in plain language",
+      "required": true
+    },
+    {
+      "item": "checked the patient's existing understanding",
+      "required": false
+    },
+    {
+      "item": "explicitly asked what matters to the patient / their preference",
+      "required": true
+    },
+    {
+      "item": "reached the decision together rather than dictating it",
+      "required": true
+    }
+  ],
+  "reference_output_type": "none"
+}

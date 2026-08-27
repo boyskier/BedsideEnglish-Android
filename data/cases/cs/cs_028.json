@@ -1,0 +1,137 @@
+{
+  "id": "cs_028",
+  "system": "cs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Green",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "dyspnea on exertion, systolic murmur radiating to carotids",
+  "hpi_details": "A 72-year-old female presents to the clinic with dyspnea on exertion, systolic murmur radiating to carotids. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to aortic_stenosis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "calcific_as_echo",
+      "title": "Transthoracic echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE"],
+      "availability_message": "The transthoracic echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_calcific_severe_as",
+          "test": "Transthoracic echocardiogram",
+          "value": "Heavily calcified trileaflet aortic valve; peak velocity 4.2 m/s, mean gradient 44 mmHg, valve area 0.8 cm2; LVEF 57%",
+          "unit": "",
+          "reference_range": "Valve area >1.5 cm2; mean gradient <20 mmHg",
+          "flag": "critical",
+          "collected_at": "During today's work-up"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Aortic Stenosis (calcific) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Aortic Stenosis (calcific) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes echocardiographic confirmation of severity and referral of confirmed severe symptomatic disease to a multidisciplinary valve team, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: dyspnea on exertion, systolic murmur radiating to carotids",
+      "Key HPI features: A 72-year-old female presents to the clinic with dyspnea on exertion, systolic murmur radiating to carotids. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Aortic Stenosis calcific.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Aortic Stenosis (calcific).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Coronary artery disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope."
+    ],
+    "management_principles": [
+      "Plan for suspected aortic stenosis: obtain echocardiography; refer confirmed severe symptomatic disease to a multidisciplinary valve team for SAVR-versus-TAVR assessment",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2020 ACC/AHA Guideline for the Management of Patients With Valvular Heart Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000923"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: dyspnea on exertion, systolic murmur radiating to carotids\n\nA 72-year-old female presents to the clinic with dyspnea on exertion, systolic murmur radiating to carotids. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Aortic Stenosis calcific.",
+    "assessment": "Aortic stenosis is suspected from exertional dyspnea and a systolic murmur radiating to the carotids; echocardiography is required to establish severity.",
+    "plan": "Plan for suspected aortic stenosis: obtain echocardiography. Refer confirmed severe symptomatic disease to a multidisciplinary valve team for SAVR-versus-TAVR assessment. Seek urgent evaluation for syncope, angina, or acute worsening dyspnea. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Aortic Stenosis calcific",
+    "Select appropriate diagnostic workup for Aortic Stenosis calcific",
+    "Implement evidence-based management plan: Echocardiogram, refer for SAVR or transcatheter TAVR"
+  ],
+  "teaching": {
+    "diagnosis": "Aortic Stenosis (calcific)",
+    "one_liner": "Age-related calcification narrows the aortic valve, causing exertional breathlessness and a systolic murmur radiating to the carotids.",
+    "differentials": [
+      "Coronary artery disease",
+      "Hypertrophic cardiomyopathy"
+    ],
+    "red_flags": [
+      "Syncope"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exertional symptoms",
+        "say": "Do you get short of breath or chest pain with activity?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Syncope",
+        "say": "Have you ever fainted?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Progression",
+        "say": "How has this changed over time?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Murmur history",
+        "say": "How long have you known about the heart murmur?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Functional capacity",
+        "say": "How far can you walk?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

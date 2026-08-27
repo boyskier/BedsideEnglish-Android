@@ -1,0 +1,161 @@
+{
+  "id": "gi_026",
+  "system": "gi",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Anderson",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "burning chest pain and sour acid taste in mouth after heavy meals",
+  "hpi_details": "A 20-year-old female presents to the clinic with burning chest pain and sour acid taste in mouth after heavy meals. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gerd",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Gastroesophageal Reflux Disease (GERD) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Gastroesophageal Reflux Disease (GERD) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes lifestyle modifications, elevating the head of the bed, and starting a daily PPI (omeprazole 20mg), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning chest pain and sour acid taste in mouth after heavy meals",
+      "Key HPI features: A 20-year-old female presents to the clinic with burning chest pain and sour acid taste in mouth after heavy meals. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Gastroesophageal Reflux Disease.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Gastroesophageal Reflux Disease (GERD).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Peptic ulcer disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: dysphagia or odynophagia, unintentional weight loss or evidence of GI bleeding (haematemesis, melena, iron-deficiency anaemia), chest pain with exertion, radiation, or diaphoresis."
+    ],
+    "management_principles": [
+      "Lifestyle modifications, elevate head of bed, start daily PPI (Omeprazole 20mg)",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "20F presents with burning chest pain and a sour acid taste in the mouth after heavy meals, worse when lying flat, with gradual onset over recent weeks.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Gastroesophageal Reflux Disease.",
+    "assessment": "Gastroesophageal reflux disease (GERD). DDx: peptic ulcer disease, gastritis, cardiac chest pain (must exclude coronary ischaemia).",
+    "plan": "Lifestyle modifications, elevate head of bed, start daily PPI (Omeprazole 20mg). Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Gastroesophageal Reflux Disease",
+    "Select appropriate diagnostic workup for Gastroesophageal Reflux Disease",
+    "Implement evidence-based management plan: Lifestyle modifications, elevate head of bed, start daily PPI (Omeprazole 20mg)"
+  ],
+  "teaching": {
+    "diagnosis": "Gastroesophageal Reflux Disease (GERD)",
+    "one_liner": "Stomach acid backs up into the oesophagus after meals, producing a burning sensation behind the breastbone and a sour taste that's worse lying flat.",
+    "differentials": [
+      "Peptic ulcer disease",
+      "Gastritis",
+      "Coronary artery disease (cardiac chest pain)"
+    ],
+    "red_flags": [
+      "Dysphagia or odynophagia — alarm feature requiring urgent endoscopy to exclude stricture or malignancy",
+      "Unintentional weight loss or evidence of GI bleeding (haematemesis, melena, iron-deficiency anaemia)",
+      "Chest pain with exertion, radiation, or diaphoresis — must exclude cardiac ischaemia before attributing to reflux"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing after meals",
+        "say": "Does the burning start after heavy meals, especially spicy food?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "burning",
+          "spicy",
+          "heavy",
+          "meals"
+        ]
+      },
+      {
+        "objective": "Positional aggravation",
+        "say": "Is it worse when you lie flat?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "lying",
+          "flat",
+          "position"
+        ]
+      },
+      {
+        "objective": "Sour taste",
+        "say": "Do you get a sour or acid taste in your mouth?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "sour",
+          "acid",
+          "taste"
+        ]
+      },
+      {
+        "objective": "Cardiac chest pain screen",
+        "say": "Do you ever get chest tightness or breathlessness with exertion, separate from this?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chest",
+          "tightness",
+          "breathless",
+          "exertion"
+        ]
+      },
+      {
+        "objective": "Dysphagia screen",
+        "say": "Do you ever have trouble swallowing, or does food feel like it's sticking?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "swallowing",
+          "sticking",
+          "choking"
+        ]
+      },
+      {
+        "objective": "Alcohol use",
+        "say": "Do you drink alcohol, and how often?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drink",
+          "drinking"
+        ]
+      }
+    ]
+  }
+}

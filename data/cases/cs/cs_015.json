@@ -1,0 +1,146 @@
+{
+  "id": "cs_015",
+  "system": "cardiothoracic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Ramirez",
+  "age": 49,
+  "gender": "female",
+  "chief_complaint": "episodic syncope and severe shortness of breath when sitting up, with tumor plop on heart exam",
+  "hpi_details": "49F presenting with posture-dependent syncope and low-grade fever where 2D echocardiogram reveals a large, pedunculated gelatinous mass attached to the fossa ovalis in left atrium prolapsing across mitral valve.",
+  "ideas": "thinks something inside her heart is blocking blood flow when she sits up and is terrified of fainting again without warning",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "echo_left_atrial_myxoma",
+      "test": "Transesophageal echocardiogram",
+      "value": "4.8 x 3.2 cm pedunculated left-atrial mass attached to the fossa ovalis, prolapsing across the mitral valve and intermittently obstructing inflow",
+      "unit": "",
+      "reference_range": "No intracardiac mass",
+      "flag": "critical",
+      "collected_at": "Before surgical consultation"
+    },
+    {
+      "id": "crp_atrial_myxoma",
+      "test": "C-reactive protein",
+      "value": "32",
+      "unit": "mg/L",
+      "reference_range": "<5",
+      "flag": "high",
+      "specimen": "Blood",
+      "collected_at": "Preoperative assessment"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Left Atrial Myxoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Left Atrial Myxoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt surgical resection via median sternotomy and cardiopulmonary bypass, excising the tumor with a margin of the atrial septum at its attachment site to prevent recurrence, without delaying for the risk of embolization or sudden mitral inflow obstruction, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodic syncope and severe shortness of breath when sitting up, with tumor plop on heart exam",
+      "Key HPI features: 49F presenting with posture-dependent syncope and low-grade fever where 2D echocardiogram reveals a large, pedunculated gelatinous mass attached to the fossa ovalis in left atrium prolapsing across mitral valve.",
+      "Objective/Exam findings: Vitals: Temp 37.8C, HR 92, BP 118/74, symptoms and murmur intensity vary with position. Auscultation reveals a low-pitched early diastolic sound ('tumor plop') following S2, with a variable diastolic murmur that changes with posture. Labs show mild anemia and elevated ESR/CRP. 2D and transesophageal echocardiogram confirm a large, pedunculated gelatinous mass attached to the fossa ovalis in the left atrium, prolapsing across the mitral valve during diastole and intermittently obstructing left ventricular inflow.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Left Atrial Myxoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Mitral stenosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope that changes with position — a classic clue to a mobile obstructing mass."
+    ],
+    "management_principles": [
+      "Arrange prompt cardiothoracic surgical resection via median sternotomy and cardiopulmonary bypass, excising the tumor with a margin of the atrial septum at its attachment site to prevent recurrence",
+      "Avoid delaying surgery given the risk of systemic embolization or sudden fatal mitral inflow obstruction",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "49F presenting with posture-dependent syncope, severe shortness of breath when sitting up, and low-grade fever, found on echocardiogram to have a large pedunculated left atrial mass prolapsing across the mitral valve.",
+    "objective": "Vitals: Temp 37.8C, HR 92, BP 118/74, symptoms and murmur intensity vary with position. Auscultation reveals a low-pitched early diastolic sound ('tumor plop') following S2, with a variable diastolic murmur that changes with posture. Labs show mild anemia and elevated ESR/CRP. 2D and transesophageal echocardiogram confirm a large, pedunculated gelatinous mass attached to the fossa ovalis in the left atrium, prolapsing across the mitral valve during diastole and intermittently obstructing left ventricular inflow.",
+    "assessment": "Left atrial myxoma causing intermittent, posture-dependent mitral inflow (\"ball-valve\") obstruction, with associated constitutional symptoms.",
+    "plan": "Arrange prompt cardiothoracic surgical resection via median sternotomy and cardiopulmonary bypass, excising the tumor with a margin of the atrial septum at its attachment site to prevent recurrence. Avoid delaying surgery given the risk of systemic embolization or sudden fatal mitral inflow obstruction."
+  },
+  "learning_objectives": [
+    "Recognize the classic triad of left atrial myxoma: positional obstructive symptoms (syncope/dyspnea), constitutional symptoms mimicking infection, and embolic phenomena",
+    "Formulate a prioritized differential diagnosis for a left atrial mass, including mitral stenosis, left atrial thrombus, and other cardiac tumors",
+    "Select and interpret echocardiography (2D and transesophageal) to characterize the mass, its attachment site, and its effect on mitral inflow",
+    "Explain why prompt surgical excision, including a margin of the atrial septum at the attachment site, is required regardless of symptom severity"
+  ],
+  "teaching": {
+    "diagnosis": "Left Atrial Myxoma",
+    "one_liner": "A benign but dangerous gelatinous tumor attached to the atrial septum can prolapse across the mitral valve, causing posture-dependent obstruction to blood flow with syncope and breathlessness worse when sitting up.",
+    "differentials": [
+      "Mitral stenosis",
+      "Left atrial thrombus",
+      "Other cardiac tumors"
+    ],
+    "red_flags": [
+      "Syncope that changes with position — a classic clue to a mobile obstructing mass"
+    ],
+    "must_ask": [
+      {
+        "objective": "Positional symptoms",
+        "say": "Does your breathlessness or fainting change depending on your position — like sitting up versus lying down?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "sitting up",
+          "position"
+        ]
+      },
+      {
+        "objective": "Syncope episodes",
+        "say": "Can you describe what happens during the fainting spells?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Have you had any low-grade fevers or fatigue?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Embolic symptoms",
+        "say": "Any sudden weakness, vision changes, or limb pain that could suggest a piece broke off?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "id": "handover_stable_signout",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Handover / escalation",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "sbar_handover",
+  "patient_name": "End-of-shift signout — stable post-operative patient",
+  "chief_complaint": "Give a routine end-of-shift SBAR signout for a stable, recovering patient to the night covering resident",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Routine signout: stable post-op day 3 after total hip replacement",
+    "task": "Handover / escalation",
+    "urgency": "routine",
+    "patient": "Mrs. Helen Barros, 71-year-old woman, post-op day 3 from an elective right total hip replacement",
+    "location": "Orthopedic ward, end of your day shift; you are handing over to the night covering resident",
+    "situation": "She is recovering well and there is no active problem, but the night team needs a clear, complete signout in case anything changes overnight.",
+    "background": [
+      "Elective right total hip replacement three days ago; uncomplicated surgery and recovery so far.",
+      "Started on a standard post-operative anticoagulant for VTE prophylaxis and has been mobilizing with physiotherapy since day 1."
+    ],
+    "current_status": [
+      "Afebrile, vitals stable, pain well controlled on oral analgesia.",
+      "Wound clean and dry; walking short distances with a frame today."
+    ],
+    "key_data": [
+      "One watch item: her evening dose of the anticoagulant is due at 20:00 and has not yet been given.",
+      "Labs from this morning were unremarkable; no results are pending."
+    ],
+    "treatments": [
+      "Oral analgesia, standard VTE prophylaxis anticoagulant, and physiotherapy-directed mobilization."
+    ],
+    "your_request": "Give a concise, structured SBAR signout so the night resident knows the plan and the one thing that still needs to happen tonight.",
+    "must_include": [
+      "Who the patient is and why she is a routine, low-concern signout (Situation).",
+      "The surgery, day post-op, and course so far (Background).",
+      "Your assessment that she is stable with no active issues (Assessment).",
+      "The one specific action still needed overnight: giving the 20:00 anticoagulant dose (Recommendation)."
+    ]
+  },
+  "kickoff_text": "Hey, I'm on for nights. What have you got for me on the ortho list?",
+  "persona_override": "You are Dr. Osei, the night covering resident receiving a routine end-of-shift signout. Mrs. Barros is post-op day 3 from an uncomplicated total hip replacement, stable, afebrile, mobilizing well, with one outstanding task: her 20:00 VTE prophylaxis dose has not yet been given. If the learner gives a clear, complete SBAR that names her as low-concern but still tells you the outstanding anticoagulant dose, acknowledge it warmly, confirm you will make sure the 20:00 dose is given, and ask if there is anything else. If the learner gives only a vague summary ('she's fine, nothing to worry about') and omits the specific outstanding dose, ask directly: 'Is there anything outstanding I need to action tonight, or any medications due?' so the learner experiences why even a routine handover needs a specific action item, not just reassurance. Stay friendly and unhurried throughout — this is not an urgent call.",
+  "learning_objectives": [
+    "recognize that even a routine, low-concern patient needs a structured signout, not just a general reassurance",
+    "state who the patient is and why the case is low-concern (Situation)",
+    "summarize the relevant surgical and post-operative course concisely (Background)",
+    "give a clear assessment that the patient is currently stable",
+    "name the one specific outstanding action for the night team (Recommendation)"
+  ],
+  "suggested_questions": [
+    "This is Mrs. Barros, post-op day 3 from a hip replacement — she's stable, so this is a routine handover.",
+    "She's been afebrile with good pain control and is mobilizing well with physio; nothing acute has come up.",
+    "The one thing outstanding is her 20:00 anticoagulant dose, which hasn't been given yet — could your team make sure that happens?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Structured SBAR signout for a stable, low-concern post-operative patient at shift change",
+    "review_status": "grounded in AHRQ TeamSTEPPS SBAR principles and Joint Commission hand-off communication standards; local signout tools apply",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Most shift handovers describe a stable patient, but the structure still matters: it prevents outstanding tasks from being lost between teams.",
+      "A routine signout should still explicitly state the one thing the receiving team must do, not just describe that the patient is fine."
+    ],
+    "diagnostic_clues": [
+      "Stable vitals, controlled pain, and a clean wound support a low-concern signout, but an unadministered scheduled medication is still an active task to hand over."
+    ],
+    "common_misconceptions": [
+      "A stable patient does not need a structured handover, only a brief mention.",
+      "Saying 'nothing to worry about' is a complete signout even when a scheduled task is still outstanding."
+    ],
+    "dangerous_errors": [
+      "Omitting a scheduled medication or task from the handover because the patient otherwise seems uneventful.",
+      "Giving an unstructured, rushed signout that the receiving team cannot act on if something changes overnight."
+    ],
+    "management_principles": [
+      "Use SBAR even for routine, low-concern patients so outstanding tasks are never lost at shift change.",
+      "Explicitly separate 'stable, no action needed' patients from 'stable, but one task outstanding' patients."
+    ],
+    "boundaries_and_exceptions": [
+      "The exact format and content of a signout (verbal, written, or electronic) depend on local handover tools and ward policy."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS SBAR Technique",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html"
+      },
+      {
+        "title": "The Joint Commission: Hand-off Communications Standards",
+        "url": "https://www.jointcommission.org/resources/patient-safety-topics/hand-off-communications/"
+      }
+    ]
+  }
+}

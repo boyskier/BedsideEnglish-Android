@@ -1,0 +1,123 @@
+{
+  "id": "endo_015",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Garcia",
+  "age": 50,
+  "gender": "male",
+  "chief_complaint": "enlarging hands and feet with coarsening facial features",
+  "hpi_details": "50M reporting shoe and ring size increase over 3 years along with frontal headaches and joint aches. Elevated IGF-1 and non-suppressible GH on OGTT.",
+  "ideas": "thinks this is related to acromegaly gh adenoma",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id":"igf_1","test":"Insulin-like growth factor 1","value":"612","unit":"ng/mL","reference_range":"94-252 for age","flag":"critical","specimen":"Blood"},
+    {"id":"gh_nadir_ogtt","test":"Growth hormone nadir after 75 g oral glucose","value":"7.2","unit":"ng/mL","reference_range":"<1.0","flag":"high","specimen":"Blood"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Acromegaly evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acromegaly is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes pituitary MRI with gadolinium and referral for transsphenoidal resection, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: enlarging hands and feet with coarsening facial features",
+      "Key HPI features: 50M reporting shoe and ring size increase over 3 years along with frontal headaches and joint aches. Elevated IGF-1 and non-suppressible GH on OGTT.",
+      "Objective/Exam findings: Vitals: HR 74, BP 142/88. Prominent supraorbital ridges, spade-like hands, prognathism, mild joint tenderness. Bloods: Serum IGF-1 elevated for age; 75g Oral Glucose Tolerance Test (OGTT) fails to suppress Growth Hormone.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acromegaly.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple weight gain/aging without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Visual field changes."
+    ],
+    "management_principles": [
+      "Pituitary MRI with gadolinium",
+      "Refer to neurosurgery for transsphenoidal tumor resection; consider medical therapy (somatostatin analogs or Pegvisomant) if residual tumor post-op",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Acromegaly",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/acromegaly"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "50M reporting shoe and ring size increase over 3 years along with frontal headaches and joint aches, with elevated IGF-1 and non-suppressible GH on OGTT.",
+    "objective": "Vitals: HR 74, BP 142/88. Prominent supraorbital ridges, spade-like hands, prognathism, mild joint tenderness. Bloods: Serum IGF-1 elevated for age; 75g Oral Glucose Tolerance Test (OGTT) fails to suppress Growth Hormone.",
+    "assessment": "Acromegaly secondary to GH-secreting pituitary adenoma.",
+    "plan": "Pituitary MRI with gadolinium. Refer to neurosurgery for transsphenoidal tumor resection; consider medical therapy (somatostatin analogs or Pegvisomant) if residual tumor post-op."
+  },
+  "learning_objectives": [
+    "Recognize subtle chronic somatic changes characteristic of acromegaly",
+    "Interpret IGF-1 screening and OGTT growth hormone suppression confirmation tests",
+    "Correlate visual field changes with pituitary macroadenoma optic chiasm compression",
+    "Discuss multidisciplinary surgical and medical management of GH excess"
+  ],
+  "teaching": {
+    "diagnosis": "Acromegaly",
+    "one_liner": "Excess growth hormone from a pituitary adenoma causing gradual enlargement of the hands, feet, and facial features, confirmed by elevated IGF-1.",
+    "differentials": [
+      "Simple weight gain/aging"
+    ],
+    "red_flags": [
+      "Visual field changes"
+    ],
+    "must_ask": [
+      {
+        "objective": "Change in size",
+        "say": "How much has your shoe or ring size changed?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Facial changes",
+        "say": "Have your facial features changed?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Vision",
+        "say": "Any vision changes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Headache",
+        "say": "Any headaches?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Joint aches",
+        "say": "Any joint aches or excessive sweating?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "id": "psych_021",
+  "system": "psychiatry",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Park",
+  "age": 38,
+  "gender": "male",
+  "chief_complaint": "profound sadness, loss of interest in hobbies, and terminal insomnia for 3 months",
+  "hpi_details": "38M librarian presents with 3 months of persistent low mood, loss of interest in reading and piano (anhedonia), early morning awakening at 3 AM, and constant fatigue. Reports feelings of worthlessness.",
+  "ideas": "thinks he is a failure and has lost his spark",
+  "concerns": "worried he will never feel happy again",
+  "expectations": "wants medication to lift the dark mood",
+  "pmh": "No prior psychiatric history",
+  "medications": "None",
+  "social_hx": "Librarian, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Major Depressive Disorder evaluation and management",
+    "core_concepts": [
+      "Major depressive disorder requires a depressive episode with clinically significant distress or impairment, after excluding bipolar disorder, substance-related causes, and relevant medical conditions.",
+      "Assess severity, psychotic symptoms, functional decline, suicide risk, access to means, protective factors, and capacity for a collaborative safety plan.",
+      "Screen carefully for past mania or hypomania before antidepressant treatment.",
+      "Psychotherapy and/or an antidepressant may be appropriate after shared decision-making; selection, dose, and monitoring must be individualized."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profound sadness, loss of interest in hobbies, and terminal insomnia for 3 months",
+      "Key HPI features: 38M librarian presents with 3 months of persistent low mood, loss of interest in reading and piano (anhedonia), early morning awakening at 3 AM, and constant fatigue. Reports feelings of worthlessness.",
+      "Objective/Exam findings: Mental-state examination, suicide-risk assessment, and targeted physical examination or tests when history suggests a medical contributor.",
+      "Relevant background/PMH: No prior psychiatric history"
+    ],
+    "common_misconceptions": [
+      "Prescribing an antidepressant before screening for mania or hypomania.",
+      "Using a screening score alone to determine diagnosis or immediate risk.",
+      "Assuming absence of volunteered suicidal thoughts means risk is absent."
+    ],
+    "dangerous_errors": [
+      "Failing to urgently assess active suicidal intent, a plan, access to lethal means, recent attempt, psychosis, severe self-neglect, or inability to stay safe.",
+      "Starting an antidepressant without discussing adverse effects, early activation, interactions, bipolar risk, and follow-up."
+    ],
+    "management_principles": [
+      "Complete a diagnostic, mental-state, and suicide-risk assessment, including bipolar screening.",
+      "Offer evidence-based psychotherapy and discuss antidepressant treatment when indicated using shared decision-making and planned monitoring.",
+      "Create a collaborative safety plan and restrict access to lethal means where appropriate; arrange urgent emergency assessment if safety cannot be maintained."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Major Depressive Disorder (MDD), moderate episode. profound sadness, loss of interest in hobbies, and terminal insomnia for 3 months. 38M librarian presents with 3 months of persistent low mood, loss of interest in reading and piano (anhedonia), early morning awakening at 3 AM, and constant fatigue. Reports feelings of worthlessness.",
+    "objective": "Complete mental-state examination, assess suicide risk and bipolar history, and perform targeted physical examination or tests if clinically indicated.",
+    "assessment": "Clinical presentation highly suggestive of Major Depressive Disorder (MDD), moderate episode.",
+    "plan": "Assess suicide risk, access to means, psychosis, and capacity now. Offer CBT and discuss antidepressant treatment only after bipolar screening and shared decision-making, with early follow-up for response and adverse effects. Arrange emergency evaluation if he has suicidal intent, cannot maintain safety, or has psychosis or severe self-neglect."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Major Depressive Disorder (MDD), moderate episode.",
+    "Formulate prioritized differential diagnosis for profound sadness, loss of interest in hobbies, and terminal insomnia for 3 months",
+    "Select appropriate laboratory and imaging studies for psychiatry",
+    "Implement evidence-based acute and long-term management strategies for Major Depressive Disorder (MDD), moderate episode."
+  ],
+  "teaching": {
+    "diagnosis": "Major Depressive Disorder",
+    "one_liner": "Persistent depressed mood and pervasive anhedonia lasting at least two weeks, severely impairing daily psychosocial functioning.",
+    "differentials": [
+      "Persistent depressive disorder (Dysthymia)",
+      "Bipolar depression",
+      "Hypothyroidism",
+      "Burnout / adjustment disorder"
+    ],
+    "red_flags": [
+      "Active suicidal ideation with plan",
+      "Psychotic features (delusions of guilt)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mood and anhedonia specific to lost hobbies",
+        "say": "Have you lost interest in reading or playing piano, things you used to enjoy?",
+        "domains": [
+          "associated_symptoms",
+          "character"
+        ],
+        "keywords": [
+          "reading",
+          "piano",
+          "interest",
+          "enjoy",
+          "hobbies"
+        ]
+      },
+      {
+        "objective": "Early morning waking pattern",
+        "say": "Are you waking up very early in the morning and unable to fall back asleep?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "early",
+          "waking",
+          "morning",
+          "insomnia",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Fatigue and worthlessness",
+        "say": "Do you feel constantly fatigued, or like you're not good enough?",
+        "domains": [
+          "character",
+          "concerns"
+        ],
+        "keywords": [
+          "fatigue",
+          "worthless",
+          "tired",
+          "not good enough",
+          "guilt"
+        ]
+      },
+      {
+        "objective": "Suicidality and safety screen",
+        "say": "Have you had any thoughts of ending your life?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "suicidal",
+          "ending",
+          "life",
+          "harm",
+          "death"
+        ]
+      },
+      {
+        "objective": "Prior manic or hypomanic episode screening",
+        "say": "Have you ever had a period of unusually elevated mood or energy?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "manic",
+          "elevated",
+          "energy",
+          "hypomania",
+          "bipolar"
+        ]
+      }
+    ]
+  }
+}

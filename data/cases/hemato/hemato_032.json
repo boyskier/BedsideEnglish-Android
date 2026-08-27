@@ -1,0 +1,145 @@
+{
+  "id": "hemato_032",
+  "system": "hemato",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Mitchell",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "unilateral calf pain, swelling, and warmth",
+  "hpi_details": "A 38-year-old female presents to the clinic with unilateral calf pain, swelling, and warmth. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to dvt",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_leg_compression_ultrasound",
+      "title": "Urgent lower-extremity compression ultrasound",
+      "order_terms": [
+        "compression ultrasound",
+        "venous ultrasound",
+        "duplex ultrasound",
+        "doppler ultrasound",
+        "leg ultrasound"
+      ],
+      "availability_message": "The urgent compression ultrasound result is now available.",
+      "results": [
+        {
+          "id": "proximal_dvt",
+          "test": "Affected-leg compression ultrasound",
+          "value": "Noncompressible thrombus extending from the popliteal vein into the distal femoral vein with absent color flow",
+          "flag": "critical",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Deep Vein Thrombosis (DVT) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Deep Vein Thrombosis (DVT) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Deep Vein Thrombosis emphasizes anticoagulation (apixaban / warfarin) and compression ultrasound, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: unilateral calf pain, swelling, and warmth",
+      "Key HPI features: A 38-year-old female presents to the clinic with unilateral calf pain, swelling, and warmth. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Deep Vein Thrombosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Deep Vein Thrombosis (DVT).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cellulitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain or shortness of breath — possible pulmonary embolism."
+    ],
+    "management_principles": [
+      "Plan for Deep Vein Thrombosis: Anticoagulation (Apixaban / Warfarin), compression ultrasound",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of unilateral calf pain, swelling, and warmth. HPI: hypercoagulability, prolonged immobility.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Deep Vein Thrombosis.",
+    "assessment": "Condition highly suspicious for Deep Vein Thrombosis.",
+    "plan": "Assess pretest probability and obtain compression ultrasonography promptly. Start anticoagulation after confirmation, or before imaging only when clinical suspicion is high and imaging will be delayed with acceptable bleeding risk. Select the anticoagulant based on patient factors rather than routinely defaulting to warfarin."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Deep Vein Thrombosis",
+    "Select appropriate diagnostic workup for Deep Vein Thrombosis",
+    "Implement evidence-based management plan: Anticoagulation (Apixaban / Warfarin), compression ultrasound"
+  ],
+  "teaching": {
+    "diagnosis": "Deep Vein Thrombosis (DVT)",
+    "one_liner": "A clot forms in a deep leg vein, often from prolonged immobility, causing unilateral calf pain, swelling, and warmth.",
+    "differentials": [
+      "Cellulitis",
+      "Muscle strain"
+    ],
+    "red_flags": [
+      "Chest pain or shortness of breath — possible pulmonary embolism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Immobility or risk factors",
+        "say": "Have you been immobile recently, or had surgery?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "immobility",
+          "surgery"
+        ]
+      },
+      {
+        "objective": "Location",
+        "say": "Is the swelling in just one leg?",
+        "domains": [
+          "location"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "When did the swelling and pain start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Any chest pain or trouble breathing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior clot history",
+        "say": "Have you ever had a blood clot before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

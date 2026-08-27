@@ -1,0 +1,169 @@
+{
+  "id": "urology_037",
+  "system": "urology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Wright",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "painless gross hematuria throughout urination, smoker",
+  "hpi_details": "A 53-year-old male presents to the clinic with painless gross hematuria throughout urination, smoker. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to bladder_cancer",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Current or former smoker; social drinker",
+  "clinical_knowledge": {
+    "topic": "Bladder Cancer evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Bladder Cancer is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Visible hematuria requires prompt cystoscopy and upper-tract imaging after assessing renal function; TURBT is used to diagnose and treat a confirmed bladder lesion, not as an empiric procedure.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless gross hematuria throughout urination, smoker",
+      "Key HPI features: A 53-year-old male presents to the clinic with painless gross hematuria throughout urination, smoker. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Bladder Cancer.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Bladder Cancer.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Renal cell carcinoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Clot retention causing acute urinary blockage."
+    ],
+    "management_principles": [
+      "Assess for anemia, clot retention, anticoagulant use, and renal function; arrange urgent cystoscopy and upper-tract imaging, with TURBT if a bladder lesion is identified.",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of painless gross hematuria throughout urination, smoker. HPI: bladder cancer.",
+    "objective": "Check vital signs, urinalysis, CBC, creatinine/eGFR, and urinary retention; assess anticoagulant/antiplatelet use and obtain upper-tract imaging as renal function permits.",
+    "assessment": "Painless gross hematuria in a smoker is concerning for urothelial malignancy; infection, stones, renal malignancy, and anticoagulant-associated bleeding remain differentials.",
+    "plan": "Arrange urgent urology assessment for cystoscopy and upper-tract imaging. Escalate immediately for clot retention, hemodynamic instability, or symptomatic anemia; perform TURBT if cystoscopy identifies a lesion."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Bladder Cancer",
+    "Select appropriate diagnostic workup for Bladder Cancer",
+      "Evaluate gross hematuria urgently with cystoscopy and upper-tract imaging; reserve TURBT for an identified lesion"
+  ],
+  "teaching": {
+    "diagnosis": "Bladder Cancer",
+    "one_liner": "Urothelial malignancy classically presenting with painless gross hematuria throughout the voiding stream.",
+    "differentials": [
+      "Renal cell carcinoma",
+      "Hemorrhagic cystitis",
+      "Nephrolithiasis"
+    ],
+    "red_flags": [
+      "Clot retention causing acute urinary blockage",
+      "Weight loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Painless gross hematuria character",
+        "say": "Is the blood in your urine completely painless throughout the entire stream?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "painless",
+          "blood",
+          "urine",
+          "red",
+          "stream"
+        ]
+      },
+      {
+        "objective": "Blood clots presence",
+        "say": "Have you passed dark red blood clots or strings of blood in your toilet bowl?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "clots",
+          "strings",
+          "toilet",
+          "clot",
+          "passing"
+        ]
+      },
+      {
+        "objective": "Cigarette smoking primary risk factor",
+        "say": "Do you have a history of smoking cigarettes, and for how many years?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "smoking",
+          "cigarettes",
+          "smoker",
+          "tobacco",
+          "packs"
+        ]
+      },
+      {
+        "objective": "Occupational chemical dye exposure",
+        "say": "Have you worked in rubber, leather, textile, or chemical dye industries?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "dyes",
+          "chemical",
+          "rubber",
+          "leather",
+          "work"
+        ]
+      },
+      {
+        "objective": "Irritative LUTS screening",
+        "say": "Do you also experience burning or increased frequency when going to the bathroom?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "burning",
+          "frequency",
+          "bathroom",
+          "urination",
+          "irritation"
+        ]
+      },
+      {
+        "objective": "Anticoagulant and bleeding-risk review",
+        "say": "Do you take any blood thinners, aspirin, or medicines that affect bleeding?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "blood thinner",
+          "anticoagulant",
+          "aspirin",
+          "bleeding"
+        ]
+      }
+    ]
+  }
+}

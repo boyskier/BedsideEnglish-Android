@@ -1,0 +1,162 @@
+{
+  "id": "pulm_023",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Sullivan",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "severe shortness of breath, chest pain, and coughing up blood 4 weeks after starting chemotherapy",
+  "hpi_details": "55-year-old male with a history of advanced non-small cell lung cancer presenting via emergency ambulance with acute, severe, rapidly worsening shortness of breath over the past 24 hours. Accompanied by right-sided pleuritic chest pain and coughing up fresh blood-streaked sputum (haemoptysis). Four weeks ago, he began systemic outpatient chemotherapy combined with immunotherapy. Has felt increasingly weak and immobilized, spending most of the past 2 weeks resting in bed at home due to cancer fatigue. His wife noticed his right leg looking slightly puffy and swollen yesterday morning. On arrival, he is extremely distressed, gasping for air while sitting upright, and complains of lightheadedness.",
+  "ideas": "thinks his lung cancer has suddenly doubled in size overnight blocking off his main windpipe",
+  "concerns": "terrified he is dying from respiratory failure and wants to know if the chemotherapy caused a blood clot",
+  "expectations": "wants immediate high-pressure oxygen, urgent CT scans, and emergency blood thinning injections",
+  "pmh": "metastatic adenocarcinoma of the right lung diagnosed 2 months ago, hypertension",
+  "medications": "carboplatin/pemetrexed/pembrolizumab chemotherapy regimen, amlodipine 5mg OD, prophylactic ondansetron",
+  "social_hx": "ex-smoker (40 pack-years, quit 2 months ago), zero alcohol, retired engineer, bedbound secondary to fatigue",
+  "investigation_events": [{"id":"cancer_associated_pe_workup","title":"STAT cancer-associated PE results","order_terms":["ctpa","ct pulmonary angiogram","ct pulmonary angiography","bedside echo","echocardiogram","troponin","platelet count","cbc","creatinine","renal function"],"availability_message":"The STAT results confirm high-risk pulmonary embolism with right-heart strain; oxygenation support and PE/ICU consultation should not be delayed.","results":[{"id":"ctpa","test":"CT pulmonary angiography","value":"Saddle embolus across the main pulmonary artery bifurcation with extensive bilateral pulmonary-artery clot burden","flag":"critical","collected_at":"During emergency assessment"},{"id":"bedside_echo","test":"Bedside echocardiogram","value":"Severe right-ventricular dilatation, RV:LV ratio 1.3, systolic dysfunction, and septal flattening","flag":"critical","collected_at":"During emergency assessment"},{"id":"troponin","test":"High-sensitivity troponin I","value":"186","unit":"ng/L","reference_range":"<20","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},{"id":"platelets","test":"Platelet count","value":"118","unit":"x10^9/L","reference_range":"150-400","flag":"low","specimen":"Blood","collected_at":"At emergency presentation"},{"id":"creatinine","test":"Serum creatinine","value":"1.0","unit":"mg/dL","reference_range":"0.7-1.3","flag":"normal","specimen":"Blood","collected_at":"At emergency presentation"}]}],
+  "clinical_knowledge": {
+    "topic": "Acute Pulmonary Embolism evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Pulmonary Embolism is essential for appropriate diagnostic workup and treatment.",
+      "Clinical history, severity assessment, and targeted testing must be interpreted together rather than relying on one symptom alone.",
+      "Stabilize oxygenation and circulation, then assess haemodynamic risk and right-ventricular strain.",
+      "Management should follow local pathways and account for patient-specific comorbidity and clinical severity."
+    ],
+    "diagnostic_clues": [
+      "Chief complaint: severe shortness of breath, chest pain, and coughing up blood 4 weeks after starting chemotherapy",
+      "Key HPI features: 55-year-old male with a history of advanced non-small cell lung cancer presenting via emergency ambulance with acute, severe, rapidly worsening shortness of breath over the past 24 hours. Accompanied by right-sided pleuritic chest pain and coughing up fresh blood-streaked sputum (haemoptysis). Four weeks ago, he began systemic outpatient chemotherapy combined with immunotherapy. Has felt increasingly weak and immobilized, spending most of the past 2 weeks resting in bed at home due to cancer fatigue. His wife noticed his right leg looking slightly puffy and swollen yesterday morning. On arrival, he is extremely distressed, gasping for air while sitting upright, and complains of lightheadedness.",
+      "Objective/examination findings: Perform focused examination, vital-sign assessment, and diagnosis-specific investigations.",
+      "Relevant background/PMH: metastatic adenocarcinoma of the right lung diagnosed 2 months ago, hypertension",
+      "Current medications: carboplatin/pemetrexed/pembrolizumab chemotherapy regimen, amlodipine 5mg OD, prophylactic ondansetron"
+    ],
+    "common_misconceptions": [
+      "Assuming a mild or atypical presentation rules out Acute Pulmonary Embolism.",
+      "Relying on a single normal test result to prematurely exclude serious pathology.",
+      "Equating transient symptom improvement with resolution of the underlying condition.",
+      "Failing to consider clinically important alternative diagnoses."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation.",
+      "Prematurely discharging or reassuring the patient before appropriate assessment.",
+      "Starting treatment without considering contraindications, interactions, or organ function.",
+      "Ignoring critical warning signs: Hypotension or shock."
+    ],
+    "management_principles": [
+      "Stabilize oxygenation and circulation, then assess haemodynamic risk and right-ventricular strain.",
+      "Obtain urgent CTPA when appropriate; do not delay anticoagulation in a high-probability patient when imaging is delayed and bleeding risk permits.",
+      "Select anticoagulation with attention to cancer, renal function, thrombocytopenia, and drug interactions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "European Society of Cardiology Guidelines: Acute Pulmonary Embolism",
+        "url": "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Acute-Pulmonary-Embolism-Diagnosis-and-Management-of"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: severe shortness of breath, chest pain, and coughing up blood 4 weeks after starting chemotherapy\n\n55-year-old male with a history of advanced non-small cell lung cancer presenting via emergency ambulance with acute, severe, rapidly worsening shortness of breath over the past 24 hours. Accompanied by right-sided pleuritic chest pain and coughing up fresh blood-streaked sputum (haemoptysis). Four weeks ago, he began systemic outpatient chemotherapy combined with immunotherapy. Has felt increasingly weak and immobilized, spending most of the past 2 weeks resting in bed at home due to cancer fatigue. His wife noticed his right leg looking slightly puffy and swollen yesterday morning. On arrival, he is extremely distressed, gasping for air while sitting upright, and complains of lightheadedness.",
+    "objective": "Vitals: severe tachypnoea RR 32, marked tachycardia HR 126, severe hypoxaemia O2 sat 84% on room air (improving to 92% on 15L non-rebreather mask), BP 108/68 mmHg. Physical exam: right calf swollen (measured +3.5 cm larger than left), warm, and tender along deep vein. Chest auscultation: diminished breath sounds over right lower lung base with pleural rub. Calculate Two-Level Wells Score: Active cancer (1 point) + Bedridden recently >3 days (1.5 points) + Clinical signs of DVT (3 points) + PE #1 diagnosis or equally likely (3 points) + HR >100 (1.5 points) -> Total Wells Score = 10.0 points (High Risk / PE Likely). In this high-probability, unstable-appearing presentation, do not use D-dimer to rule out PE; arrange urgent CTPA if safe for transfer, or bedside echocardiography/leg ultrasound if too unstable. 12-lead ECG: sinus tachycardia, S1Q3T3 pattern, and right precordial T-wave inversions. Bloods: FBC, U&Es, coagulation, baseline troponin (elevated indicating right ventricular myocardial injury), and arterial blood gas. CTPA: confirms large saddle pulmonary embolism straddling the main pulmonary artery bifurcation with extensive occlusive clots extending into both right and left pulmonary arteries. Bedside echocardiogram: confirms severe right ventricular dilation (RV:LV ratio >1.3), RV systolic dysfunction, and septal flattening.",
+    "assessment": "Acute Submassive (Intermediate-High Risk) Pulmonary Embolism with acute right ventricular strain and myocardial necrosis, secondary to cancer-associated thrombosis (Trousseau syndrome / hypercoagulability of malignancy exacerbated by chemotherapy and immobilization). DDx: acute malignant pericardial effusion / cardiac tamponade (ruled out by echo), acute post-obstructive pneumonia, pneumothorax, chemotherapy-induced pneumonitis.",
+    "plan": "Immediate emergency medical stabilization: give supplemental oxygen, urgently involve senior emergency/PE and ICU teams, and admit to a monitored high-dependency setting for continuous ECG and blood-pressure observation. Start therapeutic anticoagulation promptly only after a clinician assesses active haemoptysis, platelet count, renal function, interactions, and other bleeding contraindications; in this potentially deteriorating patient, parenteral anticoagulation is generally preferred initially because it can be rapidly adjusted. Select longer-term LMWH or a DOAC with oncology/haematology input after bleeding-risk assessment. If systolic BP falls below 90 mmHg, shock develops, or there is other haemodynamic collapse, activate ICU/interventional PE pathways immediately to assess reperfusion (systemic thrombolysis, catheter-directed treatment, or thrombectomy); the choice must balance the major bleeding risk."
+  },
+  "learning_objectives": [
+    "Calculate and interpret the Two-Level Wells Score (>4 points High Risk) in active oncology patients mandating direct transition to CTPA without D-dimer",
+    "Identify the prothrombotic pathophysiology of cancer-associated thrombosis (Trousseau syndrome exacerbated by chemotherapy and immobilization)",
+    "Select evidence-based anticoagulation for cancer-associated thrombosis (LMWH or DOACs apixaban/rivaroxaban) while screening for luminal bleeding risks",
+    "Monitor continuous hemodynamic and echocardiographic parameters to catch submassive-to-massive PE progression requiring immediate thrombolytic/interventional rescue"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Pulmonary Embolism",
+    "one_liner": "Acute thromboembolism of the pulmonary arteries causing pleuritic chest pain, hypoxaemia, right-heart strain, and possible haemodynamic collapse.",
+    "differentials": [
+      "Malignant pericardial effusion or tamponade",
+      "Pneumothorax",
+      "Post-obstructive pneumonia"
+    ],
+    "red_flags": [
+      "Hypotension or shock",
+      "Syncope or worsening hypoxaemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden onset dyspnea and pleuritic chest pain",
+        "say": "How suddenly did the breathlessness and chest pain start, and does the pain worsen with breathing?",
+        "domains": [
+          "onset_duration",
+          "location"
+        ],
+        "keywords": [
+          "sudden",
+          "pleuritic",
+          "chest pain",
+          "dyspnea",
+          "acute"
+        ]
+      },
+      {
+        "objective": "VTE risk factors: immobility and active malignancy",
+        "say": "Have you been mostly resting in bed lately, and how is your cancer treatment going?",
+        "domains": [
+          "pmh",
+          "aggravating"
+        ],
+        "keywords": [
+          "immobility",
+          "malignancy",
+          "cancer",
+          "VTE risk",
+          "bedbound"
+        ]
+      },
+      {
+        "objective": "Unilateral leg swelling suggesting DVT",
+        "say": "Has one of your legs been more swollen or painful than the other?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "leg swelling",
+          "DVT",
+          "unilateral",
+          "calf",
+          "deep vein thrombosis"
+        ]
+      },
+      {
+        "objective": "Haemoptysis and hemodynamic instability signs",
+        "say": "Have you felt lightheaded or faint along with coughing up blood?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "haemoptysis",
+          "lightheaded",
+          "syncope",
+          "hemodynamic",
+          "instability"
+        ]
+      },
+      {
+        "objective": "Recent chemotherapy and central line exposure",
+        "say": "Have you had any central lines placed or recent chemotherapy that could increase clotting risk?",
+        "domains": [
+          "medications",
+          "pmh"
+        ],
+        "keywords": [
+          "chemotherapy",
+          "central line",
+          "clotting",
+          "thrombosis risk",
+          "immunotherapy"
+        ]
+      }
+    ]
+  }
+}

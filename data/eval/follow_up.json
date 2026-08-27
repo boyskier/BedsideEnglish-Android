@@ -1,0 +1,86 @@
+{
+  "name": "Patient Follow-up Visit",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "follow_up_completeness",
+    "shared_plan",
+    "ice_empathy",
+    "soap_note",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Language",
+      "anchors": {
+        "90-100": "Clear, accurate and natural clinical English throughout",
+        "70-80": "Occasional minor errors without loss of meaning",
+        "50-60": "Repeated errors sometimes require listener effort",
+        "30-40": "Frequent errors interfere with the consultation",
+        "10-20": "Communication is often difficult to understand"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Follow-up Safety & Accuracy",
+      "anchors": {
+        "90-100": "Accurately reviews the prior plan, response, adherence, adverse effects, results and safety-netting",
+        "70-80": "Safe and mostly accurate with only minor omissions",
+        "50-60": "Covers the main issue but misses a relevant safety or monitoring point",
+        "30-40": "Several important omissions or misleading explanations",
+        "10-20": "Unsafe or substantially inaccurate follow-up communication"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Longitudinal Clinical Reasoning",
+      "anchors": {
+        "90-100": "Connects interval change to the prior plan and reaches a clear, evidence-based next step",
+        "70-80": "Structured review and reasonable next plan with minor gaps",
+        "50-60": "Some longitudinal reasoning but the link between response and plan is incomplete",
+        "30-40": "Visit is unfocused or does not meaningfully reassess the prior plan",
+        "10-20": "No coherent follow-up reasoning is demonstrated"
+      }
+    },
+    "communication_fluency": {
+      "label": "Communication Fluency",
+      "anchors": {
+        "90-100": "Smooth signposting and efficient transitions across the follow-up agenda",
+        "70-80": "Mostly smooth with occasional hesitation",
+        "50-60": "Noticeable hesitation or awkward transitions",
+        "30-40": "Frequent pauses disrupt the consultation",
+        "10-20": "Fluency significantly impairs communication"
+      }
+    },
+    "professionalism": {
+      "label": "Partnership & Professionalism",
+      "anchors": {
+        "90-100": "Nonjudgmental adherence discussion, clear explanation, shared decisions and teach-back",
+        "70-80": "Respectful and patient-centred with minor missed opportunities",
+        "50-60": "Professional but mechanical or insufficiently collaborative",
+        "30-40": "Judgmental, dismissive or unclear in important moments",
+        "10-20": "Communication undermines trust or patient safety"
+      }
+    }
+  },
+  "checklist": [
+    { "item": "Confirms the reason for follow-up and the patient's agenda", "required": true },
+    { "item": "Links the visit to the previous assessment and plan", "required": true },
+    { "item": "Assesses interval improvement, persistence or deterioration", "required": true },
+    { "item": "Reviews adherence using nonjudgmental language", "required": true },
+    { "item": "Checks treatment tolerance and adverse effects", "required": true },
+    { "item": "Screens for case-relevant new symptoms and red flags", "required": true },
+    { "item": "Explains available results or monitoring data in plain English", "required": false },
+    { "item": "Elicits concerns, questions and treatment preferences", "required": true },
+    { "item": "Agrees on a concrete next plan", "required": true },
+    { "item": "Provides follow-up timing and safety-net advice", "required": true },
+    { "item": "Uses teach-back or another understanding check", "required": false }
+  ],
+  "empathy_markers": [
+    "uses neutral language when discussing adherence",
+    "acknowledges the burden or uncertainty of ongoing treatment",
+    "invites the patient's questions and preferences",
+    "checks understanding of the updated plan"
+  ],
+  "reference_output_type": "soap"
+}

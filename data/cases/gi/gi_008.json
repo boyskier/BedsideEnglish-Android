@@ -1,0 +1,248 @@
+{
+  "id": "gi_008",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Sullivan",
+  "age": 57,
+  "gender": "male",
+  "chief_complaint": "swollen abdomen and yellowing of the eyes over the past month",
+  "hpi_details": "4-week progressive abdominal distension with ankle swelling and mild scleral icterus. Reports early satiety due to abdominal tightness, dark tea-coloured urine, and easy bruising. Denies haematemesis, melaena, or acute confusion, though spouse notes mild sleep disturbances.",
+  "ideas": "thinks his liver is struggling from his drinking days",
+  "concerns": "terrified that his liver has totally failed and he only has weeks to live",
+  "expectations": "wants the fluid drained from his stomach so he can breathe and sleep comfortably",
+  "pmh": "alcohol use disorder (heavy drinking 80g/day for 25 years, abstinent for past 4 months), hypertension",
+  "medications": "thiamine 100mg OD, spironolactone 100mg OD (started recently by GP)",
+  "social_hx": "ex-heavy drinker (abstinent 4 months), smokes 10 cigarettes/day, unemployed, lives with supportive wife",
+  "investigation_events": [
+    {
+      "id": "urgent_decompensated_cirrhosis_workup",
+      "title": "Urgent cirrhosis and ascites results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "liver function tests",
+        "lfts",
+        "inr",
+        "coagulation studies",
+        "albumin",
+        "diagnostic paracentesis",
+        "ascitic fluid",
+        "ascitic fluid cell count",
+        "saag"
+      ],
+      "availability_message": "The urgent blood and diagnostic paracentesis results are now available; clinically necessary paracentesis and stabilization should not be delayed.",
+      "results": [
+        {
+          "id": "serum_albumin",
+          "test": "Serum albumin",
+          "value": "2.5",
+          "unit": "g/dL",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "4.2",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.7",
+          "reference_range": "0.8-1.2",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ascitic_pmn_count",
+          "test": "Ascitic fluid polymorphonuclear leukocyte count",
+          "value": "86",
+          "unit": "cells/mm3",
+          "reference_range": "<250",
+          "flag": "normal",
+          "specimen": "Ascitic fluid",
+          "collected_at": "During diagnostic paracentesis"
+        },
+        {
+          "id": "saag",
+          "test": "Serum-ascites albumin gradient",
+          "value": "1.6",
+          "unit": "g/dL",
+          "reference_range": ">=1.1 suggests portal hypertension",
+          "flag": "high",
+          "specimen": "Blood and ascitic fluid",
+          "collected_at": "During diagnostic paracentesis"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Decompensated Alcohol-Related Liver Cirrhosis with Ascites evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Decompensated Alcohol-Related Liver Cirrhosis with Ascites is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Diagnostic and therapeutic paracentesis with IV albumin replacement if large volume, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: swollen abdomen and yellowing of the eyes over the past month",
+      "Key HPI features: 4-week progressive abdominal distension with ankle swelling and mild scleral icterus. Reports early satiety due to abdominal tightness, dark tea-coloured urine, and easy bruising. Denies haematemesis, melaena, or acute confusion, though spouse notes mild sleep disturbances.",
+      "Objective/Exam findings: Check vitals, weight, abdominal girth. Examine for stigmata of chronic liver disease (spider naevi, palmar erythema, gynaecomastia, caput medusae, shifting dullness, asterixis). Bloods: LFTs, INR/PT, albumin, FBC, U&Es. Diagnostic paracentesis (SAAG, cell count to rule out SBP).",
+      "Relevant background/PMH: alcohol use disorder (heavy drinking 80g/day for 25 years, abstinent for past 4 months), hypertension",
+      "Current medications: thiamine 100mg OD, spironolactone 100mg OD (started recently by GP)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Decompensated Alcohol-Related Liver Cirrhosis with Ascites.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Spontaneous bacterial peritonitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or drowsiness — suggests hepatic encephalopathy."
+    ],
+    "management_principles": [
+      "Diagnostic and therapeutic paracentesis with IV albumin replacement if large volume",
+      "Optimize diuretics (spironolactone + furosemide ratio)",
+      "Initiate lactulose for hepatic encephalopathy prophylaxis"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "57M with history of alcohol dependence presents with progressive ascites, peripheral oedema, jaundice, and sleep reversal over 4 weeks. No GI bleeding reported.",
+    "objective": "Check vitals, weight, abdominal girth. Examine for stigmata of chronic liver disease (spider naevi, palmar erythema, gynaecomastia, caput medusae, shifting dullness, asterixis). Bloods: LFTs, INR/PT, albumin, FBC, U&Es. Diagnostic paracentesis (SAAG, cell count to rule out SBP).",
+    "assessment": "Decompensated alcohol-related liver cirrhosis with ascites and mild hepatic encephalopathy. DDx: spontaneous bacterial peritonitis (SBP), hepatocellular carcinoma (HCC) progression, portal vein thrombosis.",
+    "plan": "Diagnostic and therapeutic paracentesis with IV albumin replacement if large volume. Optimize diuretics (spironolactone + furosemide ratio). Initiate lactulose for hepatic encephalopathy prophylaxis. Ultrasound abdomen with Doppler and alpha-fetoprotein to screen for HCC. Hepatology referral."
+  },
+  "learning_objectives": [
+    "Elicit a detailed alcohol history quantified in units/grams and assess duration of abstinence",
+    "Screen systematically for complications of cirrhosis: ascites, variceal bleed risk, hepatic encephalopathy, SBP",
+    "Explain the rationale behind sodium restriction, diuretic therapy, and paracentesis",
+    "Provide compassionate communication surrounding liver disease prognosis and relapse prevention"
+  ],
+  "teaching": {
+    "diagnosis": "Decompensated Alcohol-Related Liver Cirrhosis with Ascites",
+    "one_liner": "Years of heavy drinking have scarred the liver; it can no longer make enough protein or clear fluid, so fluid pools in the abdomen and legs and the skin turns yellow.",
+    "differentials": [
+      "Spontaneous bacterial peritonitis",
+      "Hepatocellular carcinoma",
+      "Portal vein thrombosis"
+    ],
+    "red_flags": [
+      "Confusion or drowsiness — suggests hepatic encephalopathy"
+    ],
+    "must_ask": [
+      {
+        "objective": "Abdominal distension timeline",
+        "say": "When did your belly start to swell, and has it been getting bigger?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "belly",
+          "swollen",
+          "swelling",
+          "distended"
+        ]
+      },
+      {
+        "objective": "Alcohol history",
+        "say": "How much alcohol were you drinking, and when did you last have a drink?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drinking",
+          "drank",
+          "sober"
+        ]
+      },
+      {
+        "objective": "Confusion or sleep changes",
+        "say": "Has anyone noticed you seeming confused, forgetful, or sleeping differently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "confusion",
+          "forgetful",
+          "drowsy"
+        ]
+      },
+      {
+        "objective": "Jaundice and urine colour",
+        "say": "Have you noticed your skin or eyes turning yellow, or your urine getting darker?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "yellow",
+          "jaundice",
+          "urine",
+          "dark"
+        ]
+      },
+      {
+        "objective": "Easy bruising or bleeding",
+        "say": "Have you noticed bruising more easily than before?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bruising",
+          "bruise",
+          "bleeding"
+        ]
+      },
+      {
+        "objective": "Breathlessness and mobility",
+        "say": "Does the swelling make it hard to breathe or lie flat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breathless",
+          "breathing",
+          "lie",
+          "uncomfortable"
+        ]
+      },
+      {
+        "objective": "Medication adherence",
+        "say": "Are you taking your water tablets exactly as prescribed?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "diuretic",
+          "tablets",
+          "spironolactone",
+          "taking"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,129 @@
+{
+  "id": "fm_030",
+  "system": "fm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. King",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "BMI 34.0, HbA1c 5.9%, waist circumference 112 cm",
+  "hpi_details": "A 32-year-old female presents to review recent screening labs and body measurements: BMI 34.0 kg/m2, HbA1c 5.9%, and waist circumference 112 cm. She feels generally well and reports no polyuria, polydipsia, or blurred vision.",
+  "ideas": "thinks it might be related to obesity and prediabetes",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "hba1c",
+      "test": "Hemoglobin A1c",
+      "value": "5.9",
+      "unit": "%",
+      "reference_range": "<5.7",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Obesity and Prediabetes evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Obesity and Prediabetes is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes structured lifestyle intervention, with metformin considered for patients at higher risk of progression to diabetes, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: BMI 34.0, HbA1c 5.9%, waist circumference 112 cm",
+      "Key HPI features: A 32-year-old female presents to review screening labs and measurements: BMI 34.0 kg/m2, HbA1c 5.9%, waist circumference 112 cm. Feels well, denies polyuria, polydipsia, or blurred vision.",
+      "Objective/Exam findings: BMI 34.0 kg/m2 (Class I obesity), waist circumference 112 cm; screen for acanthosis nigricans and other signs of insulin resistance.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Obesity and Prediabetes.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Type 2 diabetes without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Polyuria, polydipsia, or blurred vision — suggests progression to overt diabetes and needs urgent reassessment."
+    ],
+    "management_principles": [
+      "Recommend Mediterranean diet and 150 minutes/week of exercise; consider metformin for patients at higher risk of progression (e.g., higher HbA1c, prior gestational diabetes, strong family history)",
+      "Recheck HbA1c and fasting glucose in 6-12 months, or sooner if symptoms of hyperglycemia develop",
+      "Counsel patient on the meaning of prediabetes, the goal of preventing progression to type 2 diabetes, and screen for Cushingoid features or hypothyroidism before attributing findings to lifestyle alone"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32-year-old female presents to review screening labs and measurements: BMI 34.0 kg/m2, HbA1c 5.9%, waist circumference 112 cm. Feels well overall, denies polyuria, polydipsia, or blurred vision.",
+    "objective": "BMI 34.0 kg/m2 (Class I obesity), waist circumference 112 cm. No acanthosis nigricans or Cushingoid features noted.",
+    "assessment": "Class I obesity with prediabetes (HbA1c 5.9%) and increased central adiposity (waist circumference 112 cm).",
+    "plan": "Recommend Mediterranean diet and 150 minutes/week of exercise; consider metformin for patients at higher risk of progression. Recheck HbA1c and fasting glucose in 6-12 months. Counsel on the meaning of prediabetes and screen for Cushingoid features or hypothyroidism before attributing findings to lifestyle alone."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Obesity and Prediabetes",
+    "Select appropriate diagnostic workup for Obesity and Prediabetes",
+    "Implement evidence-based management plan: Mediterranean diet, 150 min exercise, metformin if high risk"
+  ],
+  "teaching": {
+    "diagnosis": "Obesity and Prediabetes",
+    "one_liner": "Elevated BMI and waist circumference with a borderline HbA1c, managed with diet, exercise, and consideration of metformin.",
+    "differentials": [
+      "Type 2 diabetes"
+    ],
+    "red_flags": [
+      "Polyuria, polydipsia, or blurred vision — suggests progression to overt diabetes and needs urgent reassessment",
+      "Cushingoid features or symptoms of hypothyroidism — should be screened for rather than assuming simple obesity"
+    ],
+    "must_ask": [
+      {
+        "objective": "Weight and waist",
+        "say": "How has your weight and waist size changed?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "What is your typical diet?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Exercise",
+        "say": "How much do you exercise?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Family history of diabetes?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about this diagnosis?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

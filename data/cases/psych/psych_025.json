@@ -1,0 +1,206 @@
+{
+  "id": "psych_025",
+  "system": "psychiatry",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Ahn",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "decreased need for sleep, grandiose delusions, pressured speech, and reckless spending",
+  "hpi_details": "29M brought by husband after 7 days of sleeping only 2 hours per night, feeling full of superhuman energy, spending $15,000 online starting a fictitious business, and speaking rapidly.",
+  "ideas": "thinks he has unlocked 100% of his brain power",
+  "concerns": "angry at husband for interrupting his plans",
+  "expectations": "wants immediate discharge to catch a flight",
+  "pmh": "Bipolar I Disorder diagnosed age 21",
+  "medications": "Lithium carbonate (discontinued 3 weeks ago)",
+  "social_hx": "Marketing manager, non-smoker",
+  "investigation_events": [
+    {
+      "id": "acute_mania_baseline_workup",
+      "title": "Urgent acute mania baseline results",
+      "order_terms": ["lithium level", "serum lithium", "renal function", "creatinine", "calcium", "tsh", "thyroid function", "urine toxicology", "urine drug screen", "uds", "ecg", "ekg"],
+      "availability_message": "The urgent baseline results are now available; psychiatric admission and behavioral stabilization should not be delayed.",
+      "results": [
+        {"id": "lithium_level", "test": "Serum lithium", "value": "<0.1", "unit": "mEq/L", "reference_range": "0.6-1.2 (maintenance target varies)", "flag": "low", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "0.9", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "normal", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "calcium", "test": "Serum calcium", "value": "9.4", "unit": "mg/dL", "reference_range": "8.6-10.2", "flag": "normal", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "tsh", "test": "TSH", "value": "1.6", "unit": "uIU/mL", "reference_range": "0.4-4.0", "flag": "normal", "specimen": "Blood", "collected_at": "During emergency assessment"},
+        {"id": "urine_drug_screen", "test": "Urine drug screen", "value": "Negative for tested substances", "flag": "normal", "specimen": "Urine", "collected_at": "During emergency assessment"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Normal sinus rhythm at 94 bpm; QTc 432 ms", "flag": "normal", "collected_at": "During emergency assessment"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Bipolar I Disorder (Manic Episode) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Bipolar I Disorder (Manic Episode) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Bipolar I Disorder, Current Episode Manic, Severe with Psychotic Features, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: decreased need for sleep, grandiose delusions, pressured speech, and reckless spending",
+      "Key HPI features: 29M brought by husband after 7 days of sleeping only 2 hours per night, feeling full of superhuman energy, spending $15,000 online starting a fictitious business, and speaking rapidly.",
+      "Objective/Exam findings: Obtain vital signs, hydration status, focused neurologic and mental-status examination, including psychosis, insight, judgment, capacity, and suicide, self-harm, violence, vulnerability, and inability-to-care-for-self risk.",
+      "Relevant background/PMH: Bipolar I Disorder diagnosed age 21",
+      "Current medications: Lithium carbonate (discontinued 3 weeks ago)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Bipolar I Disorder (Manic Episode).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Schizoaffective disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging a patient with impaired judgment, psychosis, or inability to participate in a safe discharge plan; use local involuntary-treatment procedures when criteria are met.",
+      "Restarting lithium without checking renal function, thyroid function, calcium, pregnancy potential when applicable, baseline weight, interacting medicines, and a serum lithium concentration; monitor level, renal and thyroid function after initiation.",
+      "Missing intoxication, stimulant use, medication-induced mania, delirium, or hyperthyroidism as mimics or contributors.",
+      "Ignoring critical warning signs such as: Severe impulse control loss (reckless spending/driving)."
+    ],
+    "management_principles": [
+      "Urgently assess danger to self or others, grave disability, capacity, ability to consent, and need for emergency psychiatric evaluation or involuntary admission under local law; obtain collateral from the husband when appropriate.",
+      "Admit to a psychiatric inpatient unit; use a low-stimulation setting, protect sleep and hydration, and restrict access to money, vehicles, and other foreseeable hazards.",
+      "Obtain CBC, CMP including renal function and calcium, TSH, urine toxicology, blood alcohol level when indicated, ECG and pregnancy test when applicable; investigate neurologic or infectious causes when examination or course is atypical.",
+      "For acute mania, initiate an antipsychotic and a mood stabilizer according to local protocol. If resuming lithium, first establish a safe baseline and monitor serum level, renal function, thyroid function, adverse effects, interactions, and adherence. Consider urgent ECT for severe or treatment-resistant mania, catatonia, or when rapid response is necessary."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Bipolar I Disorder, Current Episode Manic, Severe with Psychotic Features. decreased need for sleep, grandiose delusions, pressured speech, and reckless spending. 29M brought by husband after 7 days of sleeping only 2 hours per night, feeling full of superhuman energy, spending $15,000 online starting a fictitious business, and speaking rapidly.",
+    "objective": "Obtain vital signs, hydration status, focused neurologic and mental-status examination, including psychosis, insight, judgment, capacity, and suicide, self-harm, violence, vulnerability, and inability-to-care-for-self risk. Obtain CBC, CMP/renal function/calcium, TSH, urine toxicology, alcohol testing when indicated, ECG, and pregnancy test when applicable.",
+    "assessment": "Clinical presentation highly suggestive of Bipolar I Disorder, Current Episode Manic, Severe with Psychotic Features.",
+    "plan": "Urgent psychiatric evaluation and inpatient admission; determine whether involuntary treatment criteria apply under local law. Use a low-stimulation setting, restore sleep and hydration, obtain collateral, and restrict foreseeable financial and driving risks. Assess capacity and suicide, self-harm, violence, vulnerability, and inability-to-care-for-self risk. Exclude substance/medication-induced and medical causes. Initiate an antipsychotic and a mood stabilizer per local protocol. Before restarting lithium, check renal function, thyroid function, calcium, interactions, and serum lithium level; then monitor level, renal/thyroid function, adverse effects, and adherence. Consider ECT when urgent response is required or mania is severe or treatment resistant."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Bipolar I Disorder, Current Episode Manic, Severe with Psychotic Features.",
+    "Formulate prioritized differential diagnosis for decreased need for sleep, grandiose delusions, pressured speech, and reckless spending",
+    "Select appropriate laboratory and imaging studies for psychiatry",
+    "Implement evidence-based acute and long-term management strategies for Bipolar I Disorder, Current Episode Manic, Severe with Psychotic Features."
+  ],
+  "teaching": {
+    "diagnosis": "Bipolar I Disorder (Manic Episode)",
+    "one_liner": "Distinct period of abnormally elevated or irritable mood with decreased need for sleep and grandiosity.",
+    "differentials": [
+      "Schizoaffective disorder",
+      "Substance-induced mania",
+      "Hyperthyroidism"
+    ],
+    "red_flags": [
+      "Severe impulse control loss (reckless spending/driving)",
+      "Acute exhaustion/dehydration",
+      "Suicide, self-harm, violence, vulnerability, inability to care for self, or impaired capacity",
+      "Delirium, intoxication, substance withdrawal, or rapidly changing consciousness"
+    ],
+    "must_ask": [
+      {
+        "objective": "Decreased need for sleep",
+        "say": "Do you feel full of energy even after sleeping only two or three hours?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "energy",
+          "sleeping",
+          "hours",
+          "sleep",
+          "rested"
+        ]
+      },
+      {
+        "objective": "Pressured speech and racing mind",
+        "say": "Does your mind feel like it is racing so fast that your words cannot keep up?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "racing",
+          "speech",
+          "fast",
+          "talking",
+          "mind"
+        ]
+      },
+      {
+        "objective": "Grandiosity and inflated self-esteem",
+        "say": "Do you feel you have special powers, famous connections, or a divine mission?",
+        "domains": [
+          "ideas"
+        ],
+        "keywords": [
+          "special",
+          "powers",
+          "mission",
+          "famous",
+          "grandiosity"
+        ]
+      },
+      {
+        "objective": "High-risk impulsive behavior",
+        "say": "Have you engaged in risky spending sprees, reckless driving, or risky sexual choices?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "spending",
+          "reckless",
+          "driving",
+          "gambling",
+          "impulsive"
+        ]
+      },
+      {
+        "objective": "Prior depressive episode history",
+        "say": "Have you also experienced severe depressive crashes in the past?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "depressive",
+          "depression",
+          "crashes",
+          "low",
+          "episodes"
+        ]
+      },
+      {
+        "objective": "Immediate safety, capacity, and need for emergency care",
+        "say": "Are you having thoughts of suicide, harming yourself or anyone else, or do you feel unable to keep yourself safe? May we talk with your husband about a safe plan?",
+        "domains": [
+          "safety"
+        ],
+        "keywords": [
+          "suicide",
+          "self-harm",
+          "harm",
+          "safe",
+          "husband"
+        ]
+      },
+      {
+        "objective": "Substance, medication, and medical contributors",
+        "say": "Have you used alcohol, cannabis, stimulants, or other drugs, stopped any substances suddenly, or started medicines such as antidepressants or steroids?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "alcohol",
+          "cannabis",
+          "stimulants",
+          "drugs",
+          "stopped",
+          "steroids"
+        ]
+      }
+    ]
+  }
+}

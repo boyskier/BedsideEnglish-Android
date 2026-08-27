@@ -1,0 +1,186 @@
+{
+  "id": "em_002",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Baker",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "sudden excruciating right lower quadrant abdominal pain, syncope, hypotension, and positive urine pregnancy test (Ruptured Ectopic Pregnancy)",
+  "hpi_details": "26F brought by boyfriend after collapsing (syncope) in her bathroom. Reports 2 hours of sudden, excruciating, sharp stabbing pain in her right lower abdomen and pelvic area accompanied by left shoulder blade tip pain. Patient missed her last menstrual period 6 weeks ago and noticed mild dark vaginal spotting yesterday. Currently dizzy, weak, and lightheaded.",
+  "ideas": "terrified by sudden fainting and agonizing abdominal pain",
+  "concerns": "feeling faint and cold, worried she has a burst appendix or internal bleeding",
+  "expectations": "wants immediate emergency IV fluids and diagnosis",
+  "pmh": "No prior surgeries or pregnancies, history of Chlamydia infection treated age 20",
+  "medications": "None",
+  "social_hx": "Graduate student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_pregnancy_test",
+      "title": "Point-of-care urine pregnancy test",
+      "order_terms": [
+        "pregnancy test",
+        "urine pregnancy test",
+        "urine hcg",
+        "beta hcg"
+      ],
+      "availability_message": "The point-of-care urine pregnancy test is now available.",
+      "results": [
+        {
+          "id": "urine_hcg",
+          "test": "Urine hCG",
+          "value": "Positive",
+          "flag": "critical",
+          "specimen": "Urine",
+          "collected_at": "At bedside"
+        }
+      ]
+    },
+    {
+      "id": "bedside_pelvic_ultrasound",
+      "title": "Bedside pelvic ultrasound",
+      "order_terms": [
+        "bedside ultrasound",
+        "pelvic ultrasound",
+        "point of care ultrasound",
+        "pocus",
+        "fast scan",
+        "fast exam"
+      ],
+      "availability_message": "The bedside pelvic ultrasound result is now available.",
+      "results": [
+        {
+          "id": "pelvic_pocus",
+          "test": "Pelvic POCUS / FAST",
+          "value": "4.5 cm complex right adnexal mass with a large volume of echogenic free fluid in the pouch of Douglas and Morison's pouch",
+          "flag": "critical",
+          "collected_at": "At bedside"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ruptured Ectopic Pregnancy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured Ectopic Pregnancy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes hemodynamic resuscitation with large-bore IV access and blood products, followed by emergent surgical control of the bleeding via laparoscopy/laparotomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating right lower quadrant abdominal pain, syncope, hypotension, and positive urine pregnancy test (Ruptured Ectopic Pregnancy)",
+      "Key HPI features: 26F brought by boyfriend after collapsing (syncope) in her bathroom. Reports 2 hours of sudden, excruciating, sharp stabbing pain in her right lower abdomen and pelvic area accompanied by left shoulder blade tip pain. Patient missed her last menstrual period 6 weeks ago and noticed mild dark vaginal spotting yesterday. Currently dizzy, weak, and lightheaded.",
+      "Objective/Exam findings: Vitals: HR 128 (sinus tachycardia), BP 82/50 (profound hypotension / hemorrhagic shock), RR 22, SpO2 97%. Abdominal examination reveals distension, diffuse peritoneal signs with severe guarding and rebound tenderness, most pronounced in the right lower quadrant. Pelvic exam reveals dark blood in vaginal vault and exquisite cervical motion tenderness (Chandelier sign). Bedside Urine Pregnancy Test (hCG) is POSITIVE. Bedside FAST (Focused Assessment with Sonography for Trauma / Pelvic Ultrasound) reveals complex right adnexal mass measuring 4.5 cm with significant free echogenic fluid (blood) pooling in the Pouch of Douglas and Morison's pouch.",
+      "Relevant background/PMH: No prior surgeries or pregnancies, history of Chlamydia infection treated age 20"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured Ectopic Pregnancy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ruptured ovarian cyst without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope with abdominal pain and a missed period — assume ectopic pregnancy until ruled out."
+    ],
+    "management_principles": [
+      "STAT surgical emergency",
+      "Hemodynamic resuscitation: immediately establish two large-bore (14- or 16-gauge) peripheral IVs, initiate rapid warmed crystalloid infusion, order STAT Type and Crossmatch for 4 units Packed Red Blood Cells (PRBCs) and activate Massive Transfusion Protocol if unresponsive",
+      "Immediate OB/GYN surgical consultation and transfer directly to the Operating Room for emergency Exploratory Laparoscopy/Laparotomy and Salpingectomy to arrest active arterial hemorrhage"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26F presenting with acute severe pelvic pain, syncope, amenorrhea (6 weeks), and vaginal spotting with referred shoulder pain, classic for Ruptured Ectopic Pregnancy causing hemoperitoneum.",
+    "objective": "Vitals: HR 128 (sinus tachycardia), BP 82/50 (profound hypotension / hemorrhagic shock), RR 22, SpO2 97%. Abdominal examination reveals distension, diffuse peritoneal signs with severe guarding and rebound tenderness, most pronounced in the right lower quadrant. Pelvic exam reveals dark blood in vaginal vault and exquisite cervical motion tenderness (Chandelier sign). Bedside Urine Pregnancy Test (hCG) is POSITIVE. Bedside FAST (Focused Assessment with Sonography for Trauma / Pelvic Ultrasound) reveals complex right adnexal mass measuring 4.5 cm with significant free echogenic fluid (blood) pooling in the Pouch of Douglas and Morison's pouch.",
+    "assessment": "Ruptured Right Tubal Ectopic Pregnancy with Hemoperitoneum and Class III Hemorrhagic Shock.",
+    "plan": "STAT surgical emergency: 1. Hemodynamic resuscitation: immediately establish two large-bore (14- or 16-gauge) peripheral IVs, initiate rapid warmed crystalloid infusion, order STAT Type and Crossmatch for 4 units Packed Red Blood Cells (PRBCs) and activate Massive Transfusion Protocol if unresponsive. 2. Immediate OB/GYN surgical consultation and transfer directly to the Operating Room for emergency Exploratory Laparoscopy/Laparotomy and Salpingectomy to arrest active arterial hemorrhage. 3. Administer Rho(D) Immune Globulin (RhoGAM) if maternal blood type is Rh-negative."
+  },
+  "learning_objectives": [
+    "Recognize the classic clinical triad of Ectopic Pregnancy (amenorrhea, vaginal bleeding/spotting, and acute abdominal/pelvic pain) and red flags for rupture (syncope, shoulder tip pain from diaphragmatic irritation by intraperitoneal blood, hemorrhagic shock)",
+    "Execute immediate hemodynamic stabilization protocols in hemorrhagic shock (two large-bore IVs, Type and Crossmatch, balanced blood product resuscitation over crystalloids)",
+    "Understand the definitive diagnostic role of bedside pelvic ultrasound / FAST exam combined with pregnancy testing in acute female lower abdominal pain",
+    "Coordinate rapid emergency transfer to the operating room for definitive surgical control (laparoscopic salpingectomy) in ruptured ectopic pregnancy without delaying for quantitative serum beta-hCG titration"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured Ectopic Pregnancy",
+    "one_liner": "A pregnancy implanted outside the uterus (usually the fallopian tube) ruptures, causing sudden severe pelvic pain and internal bleeding — a true surgical emergency in any woman of reproductive age with a missed period and abdominal pain.",
+    "differentials": [
+      "Ruptured ovarian cyst",
+      "Appendicitis",
+      "Pelvic inflammatory disease"
+    ],
+    "red_flags": [
+      "Syncope with abdominal pain and a missed period — assume ectopic pregnancy until ruled out"
+    ],
+    "must_ask": [
+      {
+        "objective": "Last menstrual period",
+        "say": "When was your last period, and was it normal?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "missed period",
+          "last period"
+        ]
+      },
+      {
+        "objective": "Pain character and location",
+        "say": "Where exactly is the pain, and does it spread to your shoulder?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder tip"
+        ]
+      },
+      {
+        "objective": "Vaginal bleeding",
+        "say": "Have you had any vaginal spotting or bleeding?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "spotting",
+          "bleeding"
+        ]
+      },
+      {
+        "objective": "Syncope and dizziness",
+        "say": "Did you actually pass out, or just feel dizzy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "syncope",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Pregnancy and STI risk factors",
+        "say": "Have you had any prior pregnancies, or a history of chlamydia or other infections?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "chlamydia",
+          "pelvic infection"
+        ]
+      }
+    ]
+  }
+}

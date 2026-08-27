@@ -1,0 +1,153 @@
+{
+  "id": "ent_034",
+  "system": "otolaryngology (ent)",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rodriguez",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "episodic vertigo 3 hours, roaring tinnitus, ear fullness",
+  "hpi_details": "A 44-year-old female presents to the clinic with episodic vertigo 3 hours, roaring tinnitus, ear fullness. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to meniere",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "office_audiogram",
+      "title": "Office audiogram",
+      "order_terms": [
+        "audiogram",
+        "audiometry",
+        "hearing test",
+        "hearing assessment"
+      ],
+      "availability_message": "The office audiogram is now available.",
+      "results": [
+        {
+          "id": "affected_ear_500_hz_threshold",
+          "test": "Affected-ear air-conduction threshold at 500 Hz",
+          "value": "48",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "high",
+          "collected_at": "During ENT assessment",
+          "note": "Low-frequency sensorineural hearing loss"
+        },
+        {
+          "id": "affected_ear_4000_hz_threshold",
+          "test": "Affected-ear air-conduction threshold at 4000 Hz",
+          "value": "20",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "normal",
+          "collected_at": "During ENT assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Meniere Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Meniere Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Diagnosis requires audiometry documenting sensorineural hearing loss in the appropriate clinical context; management includes dietary/lifestyle counseling and short-term vestibular suppressants only during acute attacks, with diuretics considered selectively.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodic vertigo 3 hours, roaring tinnitus, ear fullness",
+      "Key HPI features: A 44-year-old female presents to the clinic with episodic vertigo 3 hours, roaring tinnitus, ear fullness. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Meniere Disease.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Meniere Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to BPPV without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: focal neurological deficits or asymmetric progressive hearing loss, which suggest stroke or acoustic neuroma rather than typical Meniere disease."
+    ],
+    "management_principles": [
+      "Obtain audiometry; provide dietary/lifestyle counseling and short-term vestibular suppressants only during acute attacks, with diuretics considered selectively",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of episodic vertigo 3 hours, roaring tinnitus, ear fullness. HPI: Meniere's disease.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Meniere Disease.",
+    "assessment": "Presentation consistent with Meniere Disease: episodic vertigo lasting hours accompanied by roaring tinnitus and aural fullness.",
+    "plan": "Obtain audiometry to assess for sensorineural hearing loss and exclude alternative causes. Counsel on dietary/lifestyle measures; use a vestibular suppressant only briefly during acute attacks. Consider a diuretic with ENT follow-up if attacks persist."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Meniere Disease",
+    "Select appropriate diagnostic workup for Meniere Disease",
+    "Implement evidence-based management plan: audiometry, lifestyle measures, and short-term treatment of acute vertigo attacks"
+  ],
+  "teaching": {
+    "diagnosis": "Meniere Disease",
+    "one_liner": "Recurrent vertigo attacks lasting hours with roaring tinnitus and ear fullness.",
+    "differentials": [
+      "BPPV"
+    ],
+    "red_flags": [
+      "Vertigo accompanied by focal neurological deficits (diplopia, dysarthria, limb weakness/ataxia) — concerning for posterior circulation stroke",
+      "Sudden severe (\"thunderclap\") headache",
+      "Progressive unilateral hearing loss or asymmetric symptoms — raises suspicion for acoustic neuroma"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration",
+        "say": "How long does each episode last?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Ear symptoms",
+        "say": "Any ringing and fullness during attacks?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Hearing",
+        "say": "Has hearing gotten worse over time?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Frequency",
+        "say": "How often do attacks happen?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "How much salt do you eat?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

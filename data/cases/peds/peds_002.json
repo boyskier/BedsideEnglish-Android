@@ -1,0 +1,153 @@
+{
+  "id": "peds_002",
+  "system": "pediatrics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Master Baker",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "sudden intermittent bouts of screaming and drawing legs to chest with passage of currant-jelly stool (Intussusception)",
+  "hpi_details": "8-month-old male infant brought to ED with 12 hours of sudden-onset, severe, paroxysmal episodes of crying and irritability where the baby screams inconsolably, draws his knees up to his abdomen, and turns pale. Episodes last 3-5 minutes, after which the baby appears exhausted and lethargic. Two hours ago, mother changed his diaper and discovered dark red, gelatinous, mucus-mixed stool.",
+  "ideas": "mother terrified watching baby scream in agony and pass bloody jelly-like diapers",
+  "concerns": "mother worried baby has a ruptured intestine or internal hemorrhage",
+  "expectations": "wants immediate pain medicine and emergency abdominal ultrasound or X-ray",
+  "pmh": "Had a mild upper respiratory adenovirus infection 1 week ago",
+  "medications": "None",
+  "social_hx": "8-month-old infant",
+  "investigation_events": [{
+    "id": "stat_intussusception_ultrasound",
+    "title": "Emergency abdominal ultrasound",
+    "order_terms": ["abdominal ultrasound", "abdomen ultrasound", "ultrasound for intussusception", "bowel ultrasound"],
+    "availability_message": "The emergency abdominal ultrasound result is now available. Resuscitation and urgent enema reduction should continue without delay.",
+    "results": [{"id": "abdominal_ultrasound", "test": "Abdominal ultrasound", "value": "Concentric bowel-within-bowel target lesion measuring 3.1 cm in the right upper abdomen, consistent with ileocolic intussusception", "flag": "critical"}]
+  }, {
+    "id": "intussusception_perforation_screen",
+    "title": "Emergency abdominal radiographs",
+    "order_terms": ["abdominal x-ray", "abdominal radiograph", "abdominal films", "free air"],
+    "availability_message": "The abdominal radiographs are now available. There is no radiographic perforation to preclude urgent enema reduction.",
+    "results": [{"id": "abdominal_radiographs", "test": "Supine and decubitus abdominal radiographs", "value": "Right-sided soft-tissue mass with relative paucity of colonic gas; no free intraperitoneal air", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute ileocolic intussusception evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute ileocolic intussusception is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT pediatric surgical notification, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden intermittent bouts of screaming and drawing legs to chest with passage of currant-jelly stool (Intussusception)",
+      "Key HPI features: 8-month-old male infant brought to ED with 12 hours of sudden-onset, severe, paroxysmal episodes of crying and irritability where the baby screams inconsolably, draws his knees up to his abdomen, and turns pale. Episodes last 3-5 minutes, after which the baby appears exhausted and lethargic. Two hours ago, mother changed his diaper and discovered dark red, gelatinous, mucus-mixed stool.",
+      "Objective/Exam findings: Vitals: HR 155, BP 88/54, RR 34, Temp 37.4C. Infant appears lethargic between pain spasms with episodic pallor. Abdominal palpation reveals a firm, sausage-shaped mass in the right upper quadrant/epigastrium, with corresponding emptiness in the right lower quadrant (Dance sign positive). Rectal exam reveals gross blood and mucus mixed resembling currant jelly on glove. Abdominal ultrasound confirms a large, multi-layered concentric ring / bull's-eye target sign in the transverse colon representing telescoping of the terminal ileum into the cecum and ascending colon (ileocolic intussusception).",
+      "Relevant background/PMH: Had a mild upper respiratory adenovirus infection 1 week ago"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute ileocolic intussusception.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Currant jelly stools."
+    ],
+    "management_principles": [
+      "STAT pediatric surgical notification",
+      "After establishing IV hydration and verifying absence of peritonitis or free air on radiographs (no perforation), proceed immediately to fluoroscopically or ultrasound-guided Pneumatic (Air) or Hydrostatic (Saline) Enema Reduction under sedation by pediatric radiology/surgery",
+      "Air enema successfully reduces 80-90% of ileocolic intussusceptions"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "8-month-old male presenting with episodic colicky abdominal pain (drawing legs up) and currant-jelly stools following a recent adenovirus infection.",
+    "objective": "Vitals: HR 155, BP 88/54, RR 34, Temp 37.4C. Infant appears lethargic between pain spasms with episodic pallor. Abdominal palpation reveals a firm, sausage-shaped mass in the right upper quadrant/epigastrium, with corresponding emptiness in the right lower quadrant (Dance sign positive). Rectal exam reveals gross blood and mucus mixed resembling currant jelly on glove. Abdominal ultrasound confirms a large, multi-layered concentric ring / bull's-eye target sign in the transverse colon representing telescoping of the terminal ileum into the cecum and ascending colon (ileocolic intussusception).",
+    "assessment": "Acute Ileocolic Intussusception with Currant Jelly Stools and lethargy.",
+    "plan": "STAT pediatric surgical notification. After establishing IV hydration and verifying absence of peritonitis or free air on radiographs (no perforation), proceed immediately to fluoroscopically or ultrasound-guided Pneumatic (Air) or Hydrostatic (Saline) Enema Reduction by pediatric radiology/surgery. Air enema successfully reduces 80-90% of ileocolic intussusceptions. If enema reduction fails after 3 attempts, or if peritonitis/perforation occurs, transfer to operating room for laparoscopic/open manual surgical reduction and bowel viability assessment."
+  },
+  "learning_objectives": [
+    "Recognize the classic clinical triad of pediatric intussusception (episodic colicky pain with knee-to-chest posturing, vomiting, and bloody currant jelly stools)",
+    "Palpate for the characteristic right upper quadrant sausage-shaped abdominal mass combined with right lower quadrant emptiness (Dance sign)",
+    "Identify the pathognomonic ultrasound 'target sign' / 'pseudokidney sign' of invaginated bowel segments",
+    "Compare non-operative Pneumatic/Air Enema reduction vs surgical manual reduction indications and techniques"
+  ],
+  "teaching": {
+    "diagnosis": "Acute ileocolic intussusception",
+    "one_liner": "8-month-old boy with episodic screaming, knees drawn to chest, lethargy between episodes, and currant-jelly stools.",
+    "differentials": [
+      "Gastroenteritis",
+      "Incarcerated hernia",
+      "Volvulus",
+      "Meckel's diverticulum"
+    ],
+    "red_flags": [
+      "Currant jelly stools",
+      "Lethargy between episodes",
+      "Episodic knee-to-chest posturing"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the episodic pain pattern",
+        "say": "Does he scream and pull his knees up in episodes, then seem okay in between?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "episodic pain",
+          "knee-to-chest"
+        ]
+      },
+      {
+        "objective": "Ask about the stool appearance",
+        "say": "Can you describe the stool you found — what color and consistency?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "currant jelly stool"
+        ]
+      },
+      {
+        "objective": "Assess lethargy between episodes",
+        "say": "How does he act between the crying episodes — playful or very tired?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lethargy"
+        ]
+      },
+      {
+        "objective": "Ask about recent illness",
+        "say": "Has he had a cold or virus in the past couple of weeks?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "recent viral illness"
+        ]
+      },
+      {
+        "objective": "Explain the enema reduction procedure",
+        "say": "We'll likely try a special enema using air or fluid guided by ultrasound to un-telescope the bowel, which works most of the time without surgery.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "air enema",
+          "hydrostatic reduction"
+        ]
+      }
+    ]
+  }
+}

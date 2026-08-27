@@ -1,0 +1,132 @@
+{
+  "id": "nephro_038",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Jones",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "sudden sharp flank pain radiating to groin with hematuria",
+  "hpi_details": "A 56-year-old female presents to the clinic with sudden sharp flank pain radiating to groin with hematuria. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be a kidney stone, since her father has had them before",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urgent_ureteric_colic_workup",
+      "title": "Urgent ureteric colic investigations",
+      "order_terms": ["urinalysis", "urine test", "CT KUB", "non-contrast CT", "stone CT"],
+      "availability_message": "Urinalysis and non-contrast CT KUB results are now available. Analgesia should not be delayed while obtaining imaging.",
+      "results": [
+        {"id": "urinalysis", "test": "Urinalysis", "value": "3+ blood with numerous RBCs; no pyuria or nitrites", "flag": "abnormal"},
+        {"id": "ct_kub", "test": "Non-contrast CT KUB", "value": "6 mm left distal ureteral calculus with mild upstream hydronephrosis", "flag": "abnormal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Nephrolithiasis (Kidney Stone) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Nephrolithiasis (Kidney Stone) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes analgesia, adequate hydration, and selective use of alpha-blocker therapy (tamsulosin) for an appropriately sized distal ureteral stone to aid passage, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden sharp flank pain radiating to groin with hematuria",
+      "Key HPI features: A 56-year-old female presents to the clinic with sudden sharp flank pain radiating to groin with hematuria. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 138/86, HR 96, afebrile; patient restless and unable to find a comfortable position. Left costovertebral angle tenderness; abdomen soft without rebound or guarding. Labs: Urinalysis with microscopic/gross hematuria, no pyuria or nitrites. Non-contrast CT KUB: 6mm left distal ureteral stone with mild hydronephrosis. Basic metabolic panel and white count normal.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Nephrolithiasis (Kidney Stone).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pyelonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever with flank pain — suggests an infected obstructing stone, a urologic emergency."
+    ],
+    "management_principles": [
+      "Assess for infection, solitary kidney, or renal impairment that would require urgent urologic evaluation",
+      "Provide NSAID analgesia (e.g., ketorolac) when safe, encourage adequate hydration, and consider tamsulosin for an appropriately sized distal ureteral stone to aid passage",
+      "Strain urine for stone analysis, arrange follow-up imaging, and counsel on dietary/fluid modification to reduce recurrence"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden sharp flank pain radiating to groin with hematuria\n\nA 56-year-old female presents with sudden-onset severe left flank pain radiating to the groin, associated with visible blood in the urine and nausea. Reports restlessness and being unable to find a comfortable position. Denies fever or chills.",
+    "objective": "Vitals: BP 138/86, HR 96, afebrile; patient restless and unable to find a comfortable position. Left costovertebral angle tenderness; abdomen soft without rebound or guarding. Labs: Urinalysis with microscopic/gross hematuria, no pyuria or nitrites. Non-contrast CT KUB: 6mm left distal ureteral stone with mild hydronephrosis. Basic metabolic panel and white count normal.",
+    "assessment": "Acute nephrolithiasis (likely calcium oxalate stone) causing left ureteral colic, with an obstructing 6mm distal ureteral stone on CT and no evidence of infection.",
+    "plan": "Assess for infection, solitary kidney, renal impairment, and uncontrolled symptoms, which require urgent urologic evaluation. Provide NSAID analgesia when safe and encourage normal hydration. Consider tamsulosin selectively for an appropriate distal ureteral stone rather than routinely; strain recovered stones for analysis and arrange imaging/follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Nephrolithiasis",
+    "Select appropriate diagnostic workup for Nephrolithiasis",
+    "Implement evidence-based management plan: Hydration, NSAIDs, Tamsulosin, strain urine for stone analysis"
+  ],
+  "teaching": {
+    "diagnosis": "Nephrolithiasis (Kidney Stone)",
+    "one_liner": "A calcium oxalate or uric acid stone forms in the kidney and becomes lodged in the ureter, causing sudden severe colicky flank pain radiating to the groin with visible blood in the urine.",
+    "differentials": [
+      "Pyelonephritis",
+      "Appendicitis (right-sided)",
+      "Ovarian torsion (in females)"
+    ],
+    "red_flags": [
+      "Fever with flank pain — suggests an infected obstructing stone, a urologic emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain character and radiation",
+        "say": "Where did the pain start, and does it move to your groin?",
+        "domains": [
+          "location",
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "How suddenly did the pain start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Hematuria",
+        "say": "Have you noticed blood in your urine?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior stones",
+        "say": "Have you had kidney stones before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

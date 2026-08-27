@@ -1,0 +1,120 @@
+{
+  "id": "ent_040",
+  "system": "otolaryngology (ent)",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rivera",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "7 documented sore throat episodes in the past year",
+  "hpi_details": "A 62-year-old female presents to the clinic with 7 documented sore throat episodes in the past year. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to chronic_tonsillitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Recurrent Acute Tonsillitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of recurrent acute tonsillitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "For adults, the frequency, severity, documentation, and functional impact of recurrent episodes should guide shared decision-making about tonsillectomy; pediatric Paradise criteria should not be applied as an automatic adult surgical indication.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: 7 documented sore throat episodes in the past year",
+      "Key HPI features: A 62-year-old female presents to the clinic with 7 documented sore throat episodes in the past year. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for recurrent acute tonsillitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out recurrent acute tonsillitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Isolated viral pharyngitis episodes without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: unilateral tonsillar asymmetry or weight loss in an adult, which require urgent ENT referral to exclude malignancy rather than routine recurrent tonsillitis management."
+    ],
+    "management_principles": [
+      "Document episode frequency, severity, and functional impact; discuss ENT referral and possible tonsillectomy using adult shared decision-making",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: 7 documented sore throat episodes in the past year\n\nA 62-year-old female presents to the clinic with 7 documented sore throat episodes in the past year. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for recurrent acute tonsillitis.",
+    "assessment": "Recurrent acute tonsillitis; assess episode documentation, severity, and impact.",
+    "plan": "Document frequency, severity, test results, and functional impact of episodes. Refer to ENT to discuss possible tonsillectomy using adult shared decision-making; treat each acute episode according to its cause and severity."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of recurrent acute tonsillitis",
+    "Select appropriate diagnostic workup for recurrent acute tonsillitis",
+    "Implement evidence-based management plan: document disease burden and use adult shared decision-making about tonsillectomy"
+  ],
+  "teaching": {
+    "diagnosis": "Recurrent Acute Tonsillitis",
+    "one_liner": "Recurrent documented sore-throat episodes in an adult, requiring assessment of disease burden and shared decision-making about tonsillectomy.",
+    "differentials": [
+      "Isolated viral pharyngitis episodes"
+    ],
+    "red_flags": [
+      "Unilateral tonsillar enlargement or asymmetry, especially in an adult — concerning for lymphoma or squamous cell carcinoma",
+      "Persistent odynophagia or sore throat beyond 3–4 weeks",
+      "Unintentional weight loss or a palpable neck mass",
+      "Trismus, drooling, or peritonsillar bulging — suggesting quinsy (peritonsillar abscess) or airway compromise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Episode count",
+        "say": "How many documented strep throat episodes have you had this year?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Severity of episodes",
+        "say": "How severe are these episodes, and do you miss school or work?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Duration pattern",
+        "say": "How many years has this been a recurring problem?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Sleep symptoms",
+        "say": "Any snoring or breathing trouble at night?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Impact",
+        "say": "How is this affecting your daily life?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

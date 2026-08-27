@@ -1,0 +1,176 @@
+{
+  "id": "hemato_018",
+  "system": "hematology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Green",
+  "age": 35,
+  "gender": "female",
+  "chief_complaint": "new tiny red spots on my legs and heavy bleeding from gums",
+  "hpi_details": "35F presents with sudden onset of a non-blanching pinpoint red rash (petechiae) on her lower legs. She noticed her gums bleeding profusely after brushing her teeth. She had a severe viral upper respiratory infection 2 weeks ago.",
+  "ideas": "thinks she has a blood disorder",
+  "concerns": "worried about internal bleeding",
+  "expectations": "wants blood tests immediately",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Healthy",
+  "investigation_events": [
+    {
+      "id": "stat_thrombocytopenia_workup",
+      "title": "STAT thrombocytopenia results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "platelet count",
+        "peripheral smear",
+        "blood smear"
+      ],
+      "availability_message": "The STAT platelet count and smear are now available; bleeding precautions and urgent hematology involvement should not be delayed.",
+      "results": [
+        {
+          "id": "platelets",
+          "test": "Platelet count",
+          "value": "8",
+          "unit": "x10^3/mcL",
+          "reference_range": "150-400",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "12.8",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "peripheral_smear",
+          "test": "Peripheral blood smear",
+          "value": "Marked thrombocytopenia with occasional large platelets; no schistocytes or blasts",
+          "flag": "abnormal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Immune Thrombocytopenic Purpura (ITP)",
+    "core_concepts": [
+      "ITP involves IgG antibodies targeting platelets for destruction in the spleen.",
+      "Often follows a viral illness.",
+      "Presents with isolated severe thrombocytopenia (no anemia or leukopenia)."
+    ],
+    "diagnostic_clues": [
+      "Petechiae",
+      "Mucosal bleeding",
+      "Recent viral infection"
+    ],
+    "common_misconceptions": [
+      "Assuming a coagulation factor defect (PT/aPTT will be normal in ITP)."
+    ],
+    "dangerous_errors": [
+      "Discharging a patient with severe thrombocytopenia (<10k) due to risk of intracranial hemorrhage."
+    ],
+    "management_principles": [
+      "Corticosteroids, IVIG, hematology consult. Avoid NSAIDs and trauma."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "35F with sudden petechiae and gingival bleeding following a viral illness.",
+    "objective": "Widespread petechiae on bilateral lower extremities. Blood in oral cavity. Hemodynamically stable.",
+    "assessment": "Isolated severe thrombocytopenia, likely ITP.",
+    "plan": "STAT CBC, peripheral smear. Avoid NSAIDs. Hematology consult for possible IVIG and steroids."
+  },
+  "learning_objectives": [
+    "Identify clinical signs of severe thrombocytopenia (petechiae, mucosal bleeding)."
+  ],
+  "teaching": {
+    "diagnosis": "Immune Thrombocytopenic Purpura (ITP)",
+    "one_liner": "Sudden onset of petechiae and mucosal bleeding following a viral infection, indicative of ITP.",
+    "differentials": [
+      "TTP/HUS",
+      "Acute Leukemia"
+    ],
+    "red_flags": [
+      "Severe headache (intracranial hemorrhage risk)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Bleeding pattern and onset",
+        "say": "When did you first notice the tiny red spots on your legs and the gum bleeding?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "petechiae",
+          "gum bleeding",
+          "started"
+        ]
+      },
+      {
+        "objective": "Recent viral illness",
+        "say": "Have you had a cold, flu, or any other viral infection in the past few weeks?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "viral illness",
+          "recent infection"
+        ]
+      },
+      {
+        "objective": "Other bleeding sites",
+        "say": "Have you noticed any other unusual bruising, nosebleeds, or blood in your urine or stool?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bruising",
+          "nosebleed",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Medication history",
+        "say": "Are you taking any new medications, aspirin, or blood thinners?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "aspirin",
+          "NSAIDs",
+          "new medication"
+        ]
+      },
+      {
+        "objective": "Neurological red flags",
+        "say": "Have you had any severe headache, confusion, or vision changes?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "headache",
+          "confusion",
+          "vision"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "id": "gi_demo_patel",
+  "system": "gi",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Patel",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "acute right-sided abdominal pain for 12 hours",
+  "hpi_details": "pain started around the umbilicus last night then migrated to the right lower quadrant, now 8/10 and constant, sharper with movement or coughing, walking hunched over eases it slightly, vomited twice this morning, subjective fever (checked at home, 38.2°C), no bowel motion or flatus since the pain started",
+  "ideas": "wonders if it could be his appendix — his grandfather had his appendix out",
+  "concerns": "worried it will burst",
+  "expectations": "wants to be seen and treated quickly",
+  "pmh": "no previous episodes like this, no previous abdominal surgery",
+  "medications": "none",
+  "social_hx": "brought in by his wife, hasn't eaten since yesterday lunchtime, family history of appendicectomy (grandfather)",
+  "clinical_knowledge": {
+    "topic": "Acute appendicitis until proven otherwise evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute appendicitis until proven otherwise is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes keeping the patient NPO, securing IV access and fluids, providing analgesia, obtaining urgent bloods and imaging, and referring urgently to surgery for likely appendicectomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute right-sided abdominal pain for 12 hours",
+      "Key HPI features: pain started around the umbilicus last night then migrated to the right lower quadrant, now 8/10 and constant, sharper with movement or coughing, walking hunched over eases it slightly, vomited twice this morning, subjective fever (checked at home, 38.2°C), no bowel motion or flatus since the pain started",
+      "Objective/Exam findings: Vitals, abdominal exam (McBurney's point, Rovsing's, psoas/obturator signs), FBC, CRP, urinalysis, imaging (ultrasound or CT) as indicated.",
+      "Relevant background/PMH: no previous episodes like this, no previous abdominal surgery"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute appendicitis until proven otherwise.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: diffuse rigidity or rebound tenderness beyond McBurney's point, high fever with marked tachycardia, signs of sepsis (hypotension, marked tachycardia, or altered mental status)."
+    ],
+    "management_principles": [
+      "NPO, IV access and fluids, analgesia, urgent bloods and imaging, surgical referral for likely appendicectomy",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Pain started around the umbilicus last night then migrated to the right lower quadrant, now 8/10 and constant, sharper with movement or coughing, walking hunched over eases it slightly, vomited twice this morning, subjective fever (checked at home, 38.2°C), no bowel motion or flatus since the pain started.",
+    "objective": "Vitals, abdominal exam (McBurney's point, Rovsing's, psoas/obturator signs), FBC, CRP, urinalysis, imaging (ultrasound or CT) as indicated.",
+    "assessment": "Acute appendicitis until proven otherwise. DDx: mesenteric adenitis, ureteric colic, Meckel's diverticulitis, gastroenteritis.",
+    "plan": "NPO, IV access and fluids, analgesia, urgent bloods and imaging, surgical referral for likely appendicectomy."
+  },
+  "learning_objectives": [
+    "Elicit the classic migratory pattern of appendicitis pain using OPQRST",
+    "Screen for peritonism red flags (fever, guarding, anorexia, vomiting)",
+    "Address the patient's ICE — specifically his fear of rupture",
+    "Verbalise the surgical abdomen differential and next steps clearly"
+  ],
+  "teaching": {
+    "diagnosis": "Acute appendicitis until proven otherwise",
+    "one_liner": "Obstruction and inflammation of the appendix causes pain that classically migrates from around the umbilicus to the right lower quadrant, worsened by movement or coughing, with vomiting and fever — a surgical emergency treated as appendicitis until proven otherwise.",
+    "red_flags": [
+      "Diffuse rigidity or rebound tenderness beyond McBurney's point — suggests perforation and peritonitis",
+      "High fever with marked tachycardia — suggests progression to perforation or abscess",
+      "Signs of sepsis (hypotension, marked tachycardia, altered mental status)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain migration pattern",
+        "say": "Did the pain start somewhere else, like around your belly button, before moving to the right side?",
+        "domains": [
+          "onset_duration",
+          "location"
+        ],
+        "keywords": [
+          "periumbilical",
+          "migration",
+          "right lower quadrant"
+        ]
+      },
+      {
+        "objective": "Associated GI symptoms",
+        "say": "Have you had any nausea, vomiting, or loss of appetite along with the pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "vomiting",
+          "anorexia"
+        ]
+      },
+      {
+        "objective": "Aggravating factors",
+        "say": "Does the pain get worse with movement, coughing, or going over bumps in the car?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "movement",
+          "coughing",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fever or chills since the pain started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills"
+        ]
+      },
+      {
+        "objective": "Bowel and urinary symptoms",
+        "say": "Have you had any changes in your bowel movements, or any burning when you urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bowel changes",
+          "dysuria"
+        ]
+      }
+    ],
+    "differentials": [
+      "Gastroenteritis",
+      "Mesenteric adenitis",
+      "Urinary tract infection or renal colic"
+    ]
+  }
+}

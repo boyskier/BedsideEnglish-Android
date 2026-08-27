@@ -1,0 +1,252 @@
+{
+  "id": "followup_geriatric_001",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "geriatrics",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mrs. Eleanor Vance",
+  "age": 82,
+  "gender": "female",
+  "visit_title": "Geriatric fall & polypharmacy review",
+  "follow_up_reason": "Two-week review following a mechanical fall at home",
+  "clinician_brief": {
+    "prior_note": "Evaluated 2 weeks ago following a fall in her hallway. X-rays negative for fracture. History of insomnia treated with zolpidem and allergy treated with diphenhydramine.",
+    "active_problems": [
+      "Fall at home",
+      "Osteopenia",
+      "Hypertension",
+      "Polypharmacy (sedating meds)"
+    ],
+    "current_medications": [
+      "Zolpidem 5 mg at bedtime",
+      "Diphenhydramine 25 mg PRN allergy",
+      "Amlodipine 5 mg once daily",
+      "Hydrochlorothiazide 12.5 mg once daily"
+    ],
+    "previous_plan": [
+      "Deprescribing sedating medications (taper zolpidem, stop diphenhydramine)",
+      "Check orthostatic blood pressure",
+      "Home safety evaluation / physical therapy balance assessment",
+      "DEXA scan ordering"
+    ],
+    "results_and_observations": [
+      "Standing BP today: 118/70 mmHg (supine 136/82 mmHg - orthostatic drop)",
+      "Physical therapy balance score: mild gait ataxia",
+      "Vitamin D: 18 ng/mL (deficient)"
+    ],
+    "today_tasks": [
+      "Evaluate fall recovery and gait stability",
+      "Assess orthostatic hypotension and blood pressure medications",
+      "Review medication deprescribing (tapering zolpidem, stopping anticholinergics)",
+      "Discuss Vitamin D supplementation and DEXA bone density plan",
+      "Review home safety modifications (rugs, lighting, grab bars)"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Has not fallen again. Walking carefully with her cane.",
+    "adherence": "Stopped the diphenhydramine as advised, but still taking half a zolpidem pill for sleep.",
+    "treatment_response": "Feels less groggy in the morning.",
+    "side_effects": "Slight lightheadedness when standing up quickly from bed.",
+    "new_symptoms_and_red_flags": "No head injury, hip pain, loss of consciousness, or palpitations.",
+    "agenda": "Wants to know how she can sleep without zolpidem.",
+    "concern": "Terrified that another fall will force her into a nursing home.",
+    "preference": "Wants to stay living independently in her home."
+  },
+  "clinical_knowledge": {
+    "topic": "Post-fall geriatric review: confirming orthostatic hypotension as the driver, completing a sedative taper, and balancing safety with independence",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "A drop from 136/82 mmHg supine to 118/70 mmHg standing (18/12 mmHg) meets the standard definition of orthostatic hypotension (a systolic drop of 20 mmHg or diastolic drop of 10 mmHg or more) and is a highly plausible contributor to her fall.",
+      "Zolpidem and diphenhydramine are both flagged as potentially inappropriate in older adults (per Beers Criteria) because of fall risk, sedation, and — for diphenhydramine specifically — anticholinergic effects including confusion and dizziness; deprescribing them is guideline-directed, not just cautious.",
+      "A vitamin D level of 18 ng/mL is deficient and is an independent, modifiable contributor to falls and fracture risk in older adults, on top of its role in bone density.",
+      "Falls in geriatric patients are almost always multifactorial: this case layers orthostatic hypotension, sedative medication, vitamin D deficiency, and mild gait ataxia together, and each contributor needs its own action rather than treating the fall as a single problem with a single fix."
+    ],
+    "diagnostic_clues": [
+      "Standing BP 118/70 vs supine 136/82 mmHg confirms clinically significant orthostatic hypotension, a leading and treatable cause of falls in older adults.",
+      "Vitamin D 18 ng/mL is deficient, contributing both to fall risk (via muscle weakness) and to fracture risk if a fall does occur.",
+      "Mild gait ataxia on physical therapy balance testing indicates residual mobility impairment that has not fully resolved, even though she has not fallen again.",
+      "Still taking half a zolpidem pill despite the plan to taper, with new lightheadedness on standing quickly, suggests the residual sedative dose may still be contributing to her orthostatic symptoms.",
+      "No head injury, hip pain, loss of consciousness, or palpitations on this visit is reassuring against an unrecognized cardiac or neurologic cause of the fall."
+    ],
+    "common_misconceptions": [
+      "Terrified that another fall will force her into a nursing home — this fear, if left unaddressed, can make her reluctant to disclose ongoing symptoms like lightheadedness; naming the fear directly and framing today's plan as protecting her independence (not threatening it) is part of the treatment.",
+      "Wants to know how she can sleep without zolpidem — many patients believe a sedative is the only path to sleep, when non-pharmacologic sleep strategies and addressing daytime factors are safer first-line options in her age group, especially given her fall history.",
+      "Assuming that because she 'feels less groggy' on the reduced zolpidem dose, the medication is no longer a fall risk — even a half-dose of a sedative-hypnotic can still contribute to orthostatic symptoms and impaired balance, so subjective grogginess is not a reliable safety marker.",
+      "Believing the hydrochlorothiazide is unrelated to her dizziness since it's 'just a blood pressure pill' — thiazide diuretics can worsen orthostatic hypotension, especially when combined with reduced fluid intake, and should be reconsidered alongside the sedative taper."
+    ],
+    "dangerous_errors": [
+      "Attributing her lightheadedness solely to 'getting older' without confirming it correlates with the measured orthostatic drop, missing the specific reversible contributors (sedative, diuretic).",
+      "Stopping the zolpidem taper conversation because she reports feeling better, without recognizing that continuing even a half dose still carries meaningful fall risk in someone with documented orthostatic hypotension.",
+      "Not revisiting the hydrochlorothiazide dose or need in the setting of a new, symptomatic orthostatic drop, since continuing it unchanged perpetuates a modifiable risk factor.",
+      "Failing to connect the vitamin D deficiency to concrete next steps (supplementation and DEXA) and instead treating it as an incidental lab finding."
+    ],
+    "management_principles": [
+      "Complete the zolpidem taper to full discontinuation on a clinician-guided schedule rather than leaving her on a partial dose indefinitely, while offering non-drug sleep strategies.",
+      "Reassess the hydrochlorothiazide given the new symptomatic orthostatic hypotension, considering dose reduction, timing changes, or an alternative antihypertensive if needed.",
+      "Start vitamin D supplementation and proceed with the DEXA scan to address both fall risk and fracture risk.",
+      "Continue physical therapy for gait and balance and follow through on home safety modifications (grab bars, rug removal, adequate lighting) to reduce future fall risk."
+    ],
+    "boundaries_and_exceptions": [
+      "If orthostatic symptoms or the BP drop persist after completing the sedative taper and adjusting the diuretic, further workup for autonomic dysfunction or cardiac causes of the fall would be warranted rather than assuming medications fully explain it.",
+      "In patients with cognitive impairment or living alone without support, a fall with these risk factors may warrant a lower threshold for a formal home safety evaluation or increased in-home support, beyond the standard advice given here."
+    ],
+    "source_refs": [
+      {
+        "title": "American Geriatrics Society (AGS) 2023 Updated Beers Criteria for Potentially Inappropriate Medication Use in Older Adults",
+        "url": "https://agsjournals.onlinelibrary.wiley.com/doi/10.1111/jgs.18372"
+      },
+      {
+        "title": "CDC STEADI (Stopping Elderly Accidents, Deaths & Injuries) Older Adult Fall Prevention",
+        "url": "https://www.cdc.gov/steadi/index.html"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the visit agenda for geriatric fall prevention",
+    "Evaluate gait stability, balance, and fall recurrence",
+    "Assess orthostatic hypotension and review standing BP drops",
+    "Review medication deprescribing (tapering zolpidem, eliminating anticholinergics)",
+    "Discuss bone health, Vitamin D supplementation, and DEXA ordering",
+    "Address fears of losing independence or nursing home placement empathetically",
+    "Agree on home safety modifications and ongoing physical therapy"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the visit agenda for geriatric fall prevention",
+      "category": "Agenda",
+      "question": "Since your fall two weeks ago, what would you most like us to focus on today to keep you safe?"
+    },
+    {
+      "objective": "Evaluate gait stability, balance, and fall recurrence",
+      "category": "Mobility",
+      "question": "How has your walking been with your cane, and have you had any near-misses or stumbles?"
+    },
+    {
+      "objective": "Assess orthostatic hypotension and review standing BP drops",
+      "category": "Orthostatics",
+      "question": "Do you feel lightheaded when you stand up from bed or a chair?"
+    },
+    {
+      "objective": "Review medication deprescribing (tapering zolpidem, eliminating anticholinergics)",
+      "category": "Deprescribing",
+      "question": "How has cutting down on the sleeping pill zolpidem and stopping the Benadryl gone?"
+    },
+    {
+      "objective": "Discuss bone health, Vitamin D supplementation, and DEXA ordering",
+      "category": "Bone health",
+      "question": "Your Vitamin D was low at 18 - shall we discuss starting a supplement and checking your bone density?"
+    },
+    {
+      "objective": "Address fears of losing independence or nursing home placement empathetically",
+      "category": "Concerns",
+      "question": "What worries do you have about falls affecting your ability to live independently at home?"
+    },
+    {
+      "objective": "Agree on home safety modifications and ongoing physical therapy",
+      "category": "Shared plan",
+      "question": "Shall we agree on installing bathroom grab bars, removing throw rugs, and continuing balance therapy?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the visit agenda for geriatric fall prevention",
+      "keywords": [
+        "fall",
+        "two weeks",
+        "agenda",
+        "today",
+        "focus",
+        "safety",
+        "geriatric"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Evaluate gait stability, balance, and fall recurrence",
+      "keywords": [
+        "walking",
+        "cane",
+        "stumbles",
+        "balance",
+        "stability",
+        "gait",
+        "fallen"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess orthostatic hypotension and review standing BP drops",
+      "keywords": [
+        "orthostatic",
+        "dizziness",
+        "lightheaded",
+        "standing",
+        "blood pressure drop"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review medication deprescribing (tapering zolpidem, eliminating anticholinergics)",
+      "keywords": [
+        "zolpidem",
+        "sleeping pill",
+        "benadryl",
+        "diphenhydramine",
+        "deprescribing",
+        "taper",
+        "stopped"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Discuss bone health, Vitamin D supplementation, and DEXA ordering",
+      "keywords": [
+        "vitamin d",
+        "bone density",
+        "dexa",
+        "osteopenia",
+        "supplement",
+        "bones"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address fears of losing independence or nursing home placement empathetically",
+      "keywords": [
+        "nursing home",
+        "independence",
+        "living at home",
+        "worry",
+        "worried",
+        "fear",
+        "reassure"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on home safety modifications and ongoing physical therapy",
+      "keywords": [
+        "grab bars",
+        "rugs",
+        "physical therapy",
+        "home safety",
+        "agree",
+        "plan"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "82F returns 2 weeks post-fall. No new falls. Walking with cane. Stopped diphenhydramine; reduced zolpidem to 2.5mg. Reports orthostatic dizziness upon standing. Anxious about losing home independence.",
+    "objective": "Supine BP 136/82, Standing BP 118/70 (orthostatic drop 18/12). Gait mildly ataxic; Vitamin D 18 ng/mL.",
+    "assessment": "Multifactorial fall risk secondary to orthostatic hypotension, sedative use, Vitamin D deficiency, and mild gait ataxia.",
+    "plan": "Complete a clinician-guided zolpidem taper, treat vitamin D deficiency and assess bone health, review whether hydrochlorothiazide dose or need should be adjusted in the setting of symptomatic orthostasis, continue physical therapy for gait and balance, and recommend home grab bars/rug removal."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Geriatric fall & polypharmacy review",
+    "one_liner": "Clinical scenario for evaluation and management of Geriatric fall & polypharmacy review."
+  }
+}

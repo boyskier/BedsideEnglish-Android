@@ -1,0 +1,167 @@
+{
+  "id": "hemato_019",
+  "system": "hematology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hughes",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "confusion, fever, and a purple rash",
+  "hpi_details": "42M brought in by his wife for acute confusion, fever, and extreme weakness over 2 days. He has a purpuric rash on his legs. Labs done in triage show severe anemia, thrombocytopenia, and elevated creatinine.",
+  "ideas": "wife thinks he has meningitis",
+  "concerns": "terrified for his life",
+  "expectations": "wants ICU admission",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "None",
+  "available_results": [
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "7.0",
+      "unit": "g/dL",
+      "reference_range": "13.5-17.5",
+      "flag": "critical",
+      "specimen": "Blood",
+      "collected_at": "At triage"
+    },
+    {
+      "id": "platelets",
+      "test": "Platelet count",
+      "value": "15",
+      "unit": "x10^3/mcL",
+      "reference_range": "150-400",
+      "flag": "critical",
+      "specimen": "Blood",
+      "collected_at": "At triage"
+    },
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "2.2",
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3",
+      "flag": "critical",
+      "specimen": "Blood",
+      "collected_at": "At triage"
+    },
+    {
+      "id": "peripheral_smear",
+      "test": "Peripheral blood smear",
+      "value": "Numerous schistocytes",
+      "flag": "critical",
+      "specimen": "Blood",
+      "collected_at": "At triage"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Thrombotic Thrombocytopenic Purpura (TTP)",
+    "core_concepts": [
+      "Classic pentad: Microangiopathic hemolytic anemia (MAHA), thrombocytopenia, neurologic symptoms, renal failure, fever.",
+      "Caused by ADAMTS13 deficiency leading to massive microthrombi."
+    ],
+    "diagnostic_clues": [
+      "Neurologic symptoms + thrombocytopenia + MAHA"
+    ],
+    "common_misconceptions": [
+      "Waiting for all 5 symptoms of the pentad (often only MAHA and thrombocytopenia are present initially)."
+    ],
+    "dangerous_errors": [
+      "Transfusing platelets in TTP, which 'adds fuel to the fire' and worsens thrombosis."
+    ],
+    "management_principles": [
+      "STAT plasma exchange (plasmapheresis) is lifesaving."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42M presenting with acute encephalopathy, fever, and purpura.",
+    "objective": "Confused. Petechiae/purpura. Labs: Hgb 7.0, Platelets 15k, Cr 2.2, Schistocytes on smear.",
+    "assessment": "Thrombotic Thrombocytopenic Purpura (TTP).",
+    "plan": "STAT Hematology consult for emergency Plasma Exchange. DO NOT transfuse platelets."
+  },
+  "learning_objectives": [
+    "Recognize the deadly presentation of TTP and the contraindication to platelet transfusion."
+  ],
+  "teaching": {
+    "diagnosis": "Thrombotic Thrombocytopenic Purpura (TTP)",
+    "one_liner": "Acute presentation of MAHA, thrombocytopenia, and neurologic changes requiring emergency plasma exchange.",
+    "differentials": [
+      "DIC",
+      "HUS"
+    ],
+    "red_flags": [
+      "Altered mental status",
+      "Schistocytes on smear"
+    ],
+    "must_ask": [
+      {
+        "objective": "Neurological symptom timeline",
+        "say": "When did the confusion start, and how has it changed over the past day?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "confusion",
+          "started",
+          "hours"
+        ]
+      },
+      {
+        "objective": "Bleeding and rash character",
+        "say": "Where did the purple rash appear first, and has it been spreading?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "purple rash",
+          "petechiae",
+          "spreading"
+        ]
+      },
+      {
+        "objective": "Fever pattern",
+        "say": "How high has your fever been, and when did it start?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "fever",
+          "high"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "Have you noticed any change in how much urine you are passing, or its color?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urine output",
+          "dark urine"
+        ]
+      },
+      {
+        "objective": "Recent illness or diarrhea",
+        "say": "Have you had any recent bloody diarrhea or infection?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diarrhea",
+          "infection"
+        ]
+      }
+    ]
+  }
+}

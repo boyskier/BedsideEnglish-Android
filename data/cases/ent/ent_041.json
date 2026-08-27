@@ -1,0 +1,142 @@
+{
+  "id": "ent_041",
+  "system": "otolaryngology (ent)",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Thomas",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "progressive gravelly hoarseness for 4 weeks in heavy smoker",
+  "hpi_details": "A 65-year-old male presents to the clinic with progressive gravelly hoarseness for 4 weeks in heavy smoker. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to laryngeal_cancer",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Heavy smoker (40 pack-years), social drinker",
+  "investigation_events": [
+    {
+      "id": "flexible_laryngoscopy",
+      "title": "Urgent office flexible laryngoscopy",
+      "order_terms": [
+        "flexible laryngoscopy",
+        "laryngoscopy",
+        "scope the larynx",
+        "scope the throat",
+        "fiberoptic scope"
+      ],
+      "availability_message": "The urgent office flexible laryngoscopy findings are now available.",
+      "results": [
+        {
+          "id": "true_vocal_cord_mass",
+          "test": "Flexible laryngoscopy",
+          "value": "Irregular exophytic lesion on the right true vocal cord with reduced cord mobility; airway remains patent",
+          "flag": "critical",
+          "collected_at": "During ENT assessment",
+          "note": "Requires tissue diagnosis; no pathology result is available during this encounter"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Laryngeal Cancer evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Laryngeal Cancer is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt flexible laryngoscopy with vocal cord biopsy and staging CT of the neck, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive gravelly hoarseness for 4 weeks in heavy smoker",
+      "Key HPI features: A 65-year-old male presents to the clinic with progressive gravelly hoarseness for 4 weeks in heavy smoker. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Laryngeal Cancer.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Laryngeal Cancer.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chronic laryngitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Persistent hoarseness beyond a few weeks."
+    ],
+    "management_principles": [
+      "Plan for Laryngeal Cancer: Flexible laryngoscopy, vocal cord biopsy, staging CT neck",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of progressive gravelly hoarseness for 4 weeks in heavy smoker. HPI: laryngeal cancer.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Laryngeal Cancer.",
+    "assessment": "Presentation concerning for Laryngeal Cancer: progressive hoarseness beyond 4 weeks in a heavy smoker warrants urgent laryngoscopic evaluation to exclude malignancy.",
+    "plan": "Plan for Laryngeal Cancer: Flexible laryngoscopy, vocal cord biopsy, staging CT neck. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Laryngeal Cancer",
+    "Select appropriate diagnostic workup for Laryngeal Cancer",
+    "Implement evidence-based management plan: Flexible laryngoscopy, vocal cord biopsy, staging CT neck"
+  ],
+  "teaching": {
+    "diagnosis": "Laryngeal Cancer",
+    "one_liner": "Progressive gravelly hoarseness in a heavy smoker, needing laryngoscopy and biopsy.",
+    "differentials": [
+      "Chronic laryngitis"
+    ],
+    "red_flags": [
+      "Persistent hoarseness beyond a few weeks"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration and progression",
+        "say": "How many weeks has your voice been hoarse, and is it worsening?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Response to rest",
+        "say": "Has resting your voice helped?",
+        "domains": [
+          "relieving"
+        ]
+      },
+      {
+        "objective": "Swallowing",
+        "say": "Any pain or difficulty swallowing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "How much have you smoked?",
+        "domains": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost weight?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

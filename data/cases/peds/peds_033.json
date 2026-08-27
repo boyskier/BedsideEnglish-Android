@@ -1,0 +1,144 @@
+{
+  "id": "peds_033",
+  "system": "peds",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Noah Lee",
+  "age": 9,
+  "gender": "male",
+  "chief_complaint": "sore throat, tonsillar exudates, and tender neck nodes",
+  "hpi_details": "9-year-old boy is brought in by his parent with 2 days of sore throat, fever, tonsillar exudates, and tender anterior cervical nodes. He has no cough or rhinorrhea.",
+  "ideas": "thinks it might be related to strep_throat",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Attends elementary school; possible school sick contacts.",
+  "investigation_events": [{
+    "id": "rapid_strep_test",
+    "title": "Point-of-care group A streptococcal test",
+    "order_terms": ["rapid strep", "rapid antigen detection test", "RADT", "strep test"],
+    "availability_message": "The rapid group A streptococcal test result is now available.",
+    "results": [{"id": "rapid_strep", "test": "Rapid group A streptococcal antigen", "value": "Positive", "reference_range": "Negative", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Streptococcal pharyngitis (strep throat) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Streptococcal pharyngitis (strep throat) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming group A streptococcal infection with rapid antigen testing or throat culture before prescribing antibiotics; if positive, treat with oral amoxicillin for 10 days and return to school after 24 hours of antibiotics when afebrile.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sore throat, tonsillar exudates, and tender neck nodes",
+      "Key HPI features: A 9-year-old boy has 2 days of fever, sore throat, tonsillar exudates, and tender anterior cervical nodes without cough or rhinorrhea.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Streptococcal Pharyngitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Streptococcal pharyngitis (strep throat).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral pharyngitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Trismus or drooling would suggest peritonsillar abscess rather than simple pharyngitis."
+    ],
+    "management_principles": [
+      "Confirm group A streptococcal infection with rapid antigen testing or throat culture; if positive, give oral amoxicillin for 10 days and allow return to school after 24 hours of antibiotics when afebrile",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sore throat, tonsillar exudates, and tender neck nodes. HPI: strep throat.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Streptococcal Pharyngitis.",
+    "assessment": "Condition highly suspicious for Streptococcal Pharyngitis.",
+    "plan": "Obtain a rapid antigen detection test; if negative in this child, send a throat culture. If group A streptococcal infection is confirmed, treat with oral amoxicillin for 10 days. He may return to school after 24 hours of antibiotics once afebrile."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Streptococcal Pharyngitis",
+    "Select appropriate diagnostic workup for Streptococcal Pharyngitis",
+    "Implement evidence-based management plan: Confirm group A streptococcal infection, then give oral amoxicillin for 10 days"
+  ],
+  "teaching": {
+    "diagnosis": "Streptococcal pharyngitis (strep throat)",
+    "one_liner": "Patient with sore throat, tonsillar exudates, and tender anterior cervical lymph nodes.",
+    "differentials": [
+      "Viral pharyngitis",
+      "Infectious mononucleosis",
+      "Peritonsillar abscess"
+    ],
+    "red_flags": [
+      "Trismus or drooling would suggest peritonsillar abscess rather than simple pharyngitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the sore throat and swallowing difficulty",
+        "say": "How painful is the sore throat, and is it hard to swallow?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sore throat",
+          "dysphagia"
+        ]
+      },
+      {
+        "objective": "Ask about fever",
+        "say": "How high has his fever been?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Screen for cough and runny nose (favoring viral cause)",
+        "say": "Does he have a cough or runny nose along with the sore throat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "cough",
+          "rhinorrhea"
+        ]
+      },
+      {
+        "objective": "Ask about sick contacts",
+        "say": "Has anyone else at home or school had strep throat recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "sick contacts"
+        ]
+      },
+      {
+        "objective": "Explain the antibiotic course and return-to-school timing",
+        "say": "We'll prescribe a 10-day antibiotic course, and he can return to school 24 hours after starting it once the fever is gone.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "amoxicillin",
+          "return to school timing"
+        ]
+      }
+    ]
+  }
+}

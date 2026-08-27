@@ -1,0 +1,122 @@
+{
+  "id": "nephro_041",
+  "system": "nephrology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "mild kidney dysfunction and sterile pyuria on urinalysis",
+  "hpi_details": "A 65-year-old male presents to the clinic with mild kidney dysfunction and sterile pyuria on urinalysis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "wonders if it's connected to the pain pills he's been taking for his back",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Chronic low back pain",
+  "medications": "Ibuprofen 400-600mg, taken several times daily for years for back pain",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "creatinine", "test": "Serum creatinine", "value": "1.6", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "high", "note": "Prior baseline was 1.0 mg/dL."},
+    {"id": "urine_microscopy_and_culture", "test": "Urine microscopy and culture", "value": "White blood cells present; culture negative; nitrites negative", "flag": "abnormal", "note": "Sterile pyuria."}
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Interstitial Nephritis (NSAID-induced) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Interstitial Nephritis (NSAID-induced) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt discontinuation of the offending nephrotoxic agent (NSAID) and close monitoring of renal function for recovery, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: mild kidney dysfunction and sterile pyuria on urinalysis",
+      "Key HPI features: A 65-year-old male presents to the clinic with mild kidney dysfunction and sterile pyuria on urinalysis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 132/82, HR 74, afebrile, no rash. No peripheral edema. Labs: Serum creatinine 1.6 mg/dL (up from a baseline of 1.0 mg/dL), urinalysis with sterile pyuria (WBCs present, negative culture and nitrites), mild sub-nephrotic proteinuria (0.6 g/day), renal ultrasound showing normal-to-mildly reduced kidney size without hydronephrosis.",
+      "Relevant background/PMH: Chronic low back pain treated with long-term daily NSAID (ibuprofen) use"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Interstitial Nephritis (NSAID-induced).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chronic pyelonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly worsening kidney function."
+    ],
+    "management_principles": [
+      "Stop the offending NSAID immediately and avoid other nephrotoxic agents",
+      "Monitor renal function with serial creatinine and urinalysis every few weeks after discontinuation",
+      "Refer to nephrology if renal function does not stabilize or improve within weeks, or if proteinuria is significant or progressive, for consideration of renal biopsy and corticosteroid therapy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: mild kidney dysfunction and sterile pyuria on urinalysis\n\nA 65-year-old male on long-term daily NSAID use for chronic back pain is found to have a mildly elevated creatinine and sterile pyuria on routine bloodwork and urinalysis. Denies dysuria, fever, or flank pain.",
+    "objective": "Vitals: BP 132/82, HR 74, afebrile, no rash. No peripheral edema. Labs: Serum creatinine 1.6 mg/dL (up from a baseline of 1.0 mg/dL), urinalysis with sterile pyuria (WBCs present, negative culture and nitrites), mild sub-nephrotic proteinuria (0.6 g/day), renal ultrasound showing normal-to-mildly reduced kidney size without hydronephrosis.",
+    "assessment": "Chronic interstitial nephritis, most likely NSAID-induced given long-term use, sterile pyuria, and mild sub-nephrotic proteinuria without evidence of infection or obstruction.",
+    "plan": "1. Stop the offending NSAID immediately and avoid other nephrotoxic agents. 2. Monitor renal function with serial creatinine and urinalysis every few weeks. 3. Refer to nephrology if renal function does not stabilize or improve, or if proteinuria progresses, for consideration of renal biopsy and corticosteroid therapy."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Chronic Interstitial Nephritis",
+    "Select appropriate diagnostic workup for Chronic Interstitial Nephritis",
+    "Implement evidence-based management plan: Stop offending agent, monitor renal function"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Interstitial Nephritis (NSAID-induced)",
+    "one_liner": "Long-term NSAID exposure causes chronic inflammation of the renal tubulointerstitium, presenting with mild kidney dysfunction and sterile pyuria without infection.",
+    "differentials": [
+      "Chronic pyelonephritis",
+      "Analgesic nephropathy (more severe, with papillary necrosis)"
+    ],
+    "red_flags": [
+      "Rapidly worsening kidney function"
+    ],
+    "must_ask": [
+      {
+        "objective": "NSAID use history",
+        "say": "How long have you been taking NSAIDs, and how often?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Reason for chronic use",
+        "say": "What are you taking the medication for?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Urinary symptoms",
+        "say": "Any burning with urination, despite no infection being found?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "How the finding was made",
+        "say": "Was this found on a routine urine test?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Other symptoms",
+        "say": "Any fatigue or swelling?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

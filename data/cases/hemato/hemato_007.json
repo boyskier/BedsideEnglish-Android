@@ -1,0 +1,179 @@
+{
+  "id": "hemato_007",
+  "system": "hematology_oncology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Flores",
+  "age": 34,
+  "gender": "female",
+  "chief_complaint": "heavy menstrual periods and prolonged bleeding after tooth extractions",
+  "hpi_details": "34F presenting with lifelong menorrhagia, easy bruising, normal platelet count, prolonged PTT, and low vWF antigen/ristocetin cofactor activity.",
+  "ideas": "thinks this is related to von willebrand disease type 1",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "vwf_antigen",
+      "test": "von Willebrand factor antigen",
+      "value": "35",
+      "unit": "%",
+      "reference_range": "50-200",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "vwf_activity",
+      "test": "von Willebrand factor ristocetin cofactor activity",
+      "value": "30",
+      "unit": "%",
+      "reference_range": "50-200",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "factor_viii_activity",
+      "test": "Factor VIII activity",
+      "value": "42",
+      "unit": "%",
+      "reference_range": "50-150",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "aptt",
+      "test": "Activated partial thromboplastin time",
+      "value": "39",
+      "unit": "seconds",
+      "reference_range": "25-35",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Von Willebrand Disease, Type 1 evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Von Willebrand Disease, Type 1 is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes a desmopressin (DDAVP) trial and antifibrinolytics for mucosal bleeding, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: heavy menstrual periods and prolonged bleeding after tooth extractions",
+      "Key HPI features: 34F presenting with lifelong menorrhagia, easy bruising, normal platelet count, prolonged PTT, and low vWF antigen/ristocetin cofactor activity.",
+      "Objective/Exam findings: Vitals normal. Scattered bruises on the shins, no active bleeding, no petechiae, no joint swelling. Bloods: Platelet count normal, PT normal, PTT mildly prolonged. vWF antigen 35% (low), Ristocetin cofactor activity 30% (low), Factor VIII mildly reduced at 42%.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Von Willebrand Disease, Type 1.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Immune thrombocytopenic purpura (low platelet count) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Bleeding requiring transfusion — suggests a more severe subtype."
+    ],
+    "management_principles": [
+      "Trial of desmopressin (DDAVP) intranasal or IV to raise vWF/Factor VIII levels for minor bleeding or before minor procedures, after confirming responsiveness",
+      "Tranexamic acid (antifibrinolytic) for menorrhagia and mucosal bleeding, alone or alongside DDAVP",
+      "vWF/Factor VIII concentrate for major bleeding, surgery, or DDAVP non-responders",
+      "Avoid NSAIDs and antiplatelet agents; hematology referral for DDAVP challenge testing and contraceptive/gynecologic co-management of menorrhagia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "34F presenting with lifelong menorrhagia and easy bruising, plus prolonged bleeding after tooth extractions. Labs show a normal platelet count, prolonged PTT, and low vWF antigen/ristocetin cofactor activity.",
+    "objective": "Vitals normal. Scattered bruises on the shins, no active bleeding, no petechiae, no joint swelling. Bloods: Platelet count normal, PT normal, PTT mildly prolonged. vWF antigen 35% (low), Ristocetin cofactor activity 30% (low), Factor VIII mildly reduced at 42%.",
+    "assessment": "Von Willebrand Disease, Type 1, based on lifelong mucocutaneous bleeding with low vWF antigen and ristocetin cofactor activity, normal platelet count.",
+    "plan": "1. Trial of desmopressin (DDAVP) to raise vWF/Factor VIII levels for minor bleeding or before minor procedures, after confirming responsiveness. 2. Tranexamic acid for menorrhagia and mucosal bleeding. 3. Reserve vWF/Factor VIII concentrate for major bleeding, surgery, or DDAVP non-response. 4. Avoid NSAIDs and antiplatelet agents; hematology referral for DDAVP challenge testing and gynecologic co-management of menorrhagia."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Von Willebrand Disease Type 1",
+    "Formulate prioritized differential diagnosis for heavy menstrual periods and prolonged bleeding after tooth extractions",
+    "Select appropriate laboratory studies to confirm Von Willebrand Disease, including vWF antigen, ristocetin cofactor activity, and Factor VIII level",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Von Willebrand Disease, Type 1",
+    "one_liner": "The most common inherited bleeding disorder — reduced von Willebrand factor impairs platelet adhesion, causing mucocutaneous bleeding like heavy periods and prolonged bleeding after dental work, despite a normal platelet count.",
+    "differentials": [
+      "Immune thrombocytopenic purpura (low platelet count)",
+      "Hemophilia (isolated factor deficiency)",
+      "Platelet function disorder"
+    ],
+    "red_flags": [
+      "Bleeding requiring transfusion — suggests a more severe subtype"
+    ],
+    "must_ask": [
+      {
+        "objective": "Menstrual bleeding severity",
+        "say": "How heavy are your periods — do you need to change protection very frequently?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "heavy",
+          "menorrhagia"
+        ]
+      },
+      {
+        "objective": "Bleeding after procedures",
+        "say": "Have you had prolonged bleeding after dental work or surgery before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "dental",
+          "bleeding",
+          "surgery"
+        ]
+      },
+      {
+        "objective": "Lifelong pattern",
+        "say": "Has this bleeding tendency been there since you were young?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "lifelong",
+          "since childhood"
+        ]
+      },
+      {
+        "objective": "Easy bruising",
+        "say": "Do you bruise more easily than others?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bruising"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have a bleeding disorder?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "bleeding disorder"
+        ]
+      }
+    ]
+  }
+}

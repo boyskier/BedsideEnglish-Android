@@ -1,0 +1,46 @@
+{
+  "name": "Survival English Eval",
+  "learner_level": "intermediate",
+  "output_sections": ["scores", "corrections", "anki_cards", "summary"],
+  "custom_criteria_prose": "This was casual, non-medical, real-life conversation practice (small talk, shops, travel, strangers). Judge everyday spoken English only: natural reactions, follow-up questions, casual register, and comprehension repair. Prefer corrections that replace stiff textbook phrasing with what a real person would actually say. If the AI spoke fast, mumbled, or with a non-US accent, asking for repetition ('sorry?', 'what was that?') is a SKILL to reward, never a weakness. Anki cards should teach natural everyday phrases, reaction words, and polite repair/refusal lines.",
+  "metrics": {
+    "naturalness": {
+      "label": "Grammar & Naturalness",
+      "anchors": {
+        "100": "Accurate and natural — sounds like everyday speech, not a textbook.",
+        "70": "Minor slips that don't affect meaning; occasionally stiff or overly formal phrasing.",
+        "40": "Frequent errors or persistently unnatural, translated-sounding phrasing.",
+        "10": "Errors so frequent that a stranger would struggle to follow."
+      }
+    },
+    "interaction": {
+      "label": "Everyday Interaction & Vocabulary",
+      "anchors": {
+        "100": "Uses fitting everyday wording and completes the conversational job naturally—answering, asking back, choosing, declining, or exiting as the situation requires.",
+        "70": "Gets the meaning across with mostly suitable wording but misses an obvious interaction move or sounds somewhat rehearsed.",
+        "40": "Limited everyday vocabulary or responses that often do not fit what the other person just said.",
+        "10": "Cannot express a usable response to the immediate everyday situation."
+      }
+    },
+    "fluency": {
+      "label": "Conversational Flow",
+      "anchors": {
+        "100": "Responds with comfortable pacing and smooth turn-taking; short answers remain fully acceptable when the task calls for them.",
+        "70": "Meaning is clear despite some searching, pauses, or awkward turn transitions.",
+        "40": "Frequent long pauses or abandoned phrases make the exchange hard to sustain.",
+        "10": "Conversation stalls almost immediately."
+      }
+    },
+    "comprehension_repair": {
+      "label": "Comprehension & Repair",
+      "anchors": {
+        "100": "Follows fast/unclear speech; when lost, repairs naturally ('sorry, what was that?') and confirms key details.",
+        "70": "Mostly follows; sometimes answers the wrong question or lets unclear details slide.",
+        "40": "Frequent misunderstandings without repair; guesses instead of asking.",
+        "10": "Loses the thread constantly and never asks for clarification."
+      }
+    }
+  },
+  "checklist": [],
+  "empathy_markers": []
+}

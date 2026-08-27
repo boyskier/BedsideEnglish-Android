@@ -1,0 +1,121 @@
+{
+  "id": "nephro_042",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Jones",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "creatinine rise 48 hours after coronary angiogram",
+  "hpi_details": "A 68-year-old female presents to the clinic with creatinine rise 48 hours after coronary angiogram. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "wonders if the dye used in her heart procedure could be the cause",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "post_contrast_creatinine", "test": "Serum creatinine 48 hours after coronary angiography", "value": "1.6", "unit": "mg/dL", "reference_range": "0.6-1.1", "flag": "high", "note": "Baseline creatinine before contrast exposure was 1.0 mg/dL."}
+  ],
+  "clinical_knowledge": {
+    "topic": "Contrast-Induced Nephropathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Contrast-Induced Nephropathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes IV isotonic fluid hydration, avoidance of further nephrotoxic exposures, and close monitoring of urine output and creatinine until renal function recovers, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: creatinine rise 48 hours after coronary angiogram",
+      "Key HPI features: A 68-year-old female presents to the clinic with creatinine rise 48 hours after coronary angiogram. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 128/78, HR 76, euvolemic, no edema. Labs: Serum creatinine rose from a baseline of 1.0 mg/dL to 1.6 mg/dL at 48 hours post-procedure (meeting AKI criteria), urine output mildly decreased, urinalysis with rare granular casts and no red cell casts or eosinophils, FENa <1%. Received approximately 150 mL of iodinated contrast during the angiogram.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Contrast-Induced Nephropathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cholesterol embolization syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Anuria — suggests a more severe process."
+    ],
+    "management_principles": [
+      "Provide IV isotonic fluids (e.g., normal saline) for volume expansion and hold nephrotoxic medications (NSAIDs, additional contrast, certain antibiotics)",
+      "Monitor daily urine output and serum creatinine until renal function stabilizes or returns to baseline",
+      "Refer to nephrology if creatinine continues to rise, oliguria/anuria develops, or renal replacement therapy is being considered"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: creatinine rise 48 hours after coronary angiogram\n\nA 68-year-old female underwent a coronary angiogram with iodinated contrast 48 hours ago for evaluation of chest pain; routine follow-up labs show a rise in creatinine. Reports mild fatigue but denies decreased urine output, flank pain, or swelling.",
+    "objective": "Vitals: BP 128/78, HR 76, euvolemic, no edema. Labs: Serum creatinine rose from a baseline of 1.0 mg/dL to 1.6 mg/dL at 48 hours post-procedure (meeting AKI criteria), urine output mildly decreased, urinalysis with rare granular casts and no red cell casts or eosinophils, FENa <1%. Received approximately 150 mL of iodinated contrast during the angiogram.",
+    "assessment": "Contrast-induced nephropathy, based on the temporal rise in creatinine within 48-72 hours of iodinated contrast exposure during coronary angiography, without evidence of an alternative cause (no eosinophilia, no red cell casts, FENa <1%).",
+    "plan": "1. Provide IV isotonic fluids for volume expansion and hold nephrotoxic medications. 2. Monitor daily urine output and serum creatinine until renal function stabilizes. 3. Refer to nephrology if creatinine continues to rise, oliguria develops, or renal replacement therapy is being considered."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Contrast-Induced Nephropathy",
+    "Select appropriate diagnostic workup for Contrast-Induced Nephropathy",
+    "Implement evidence-based management plan: IV hydration, monitor urine output and creatinine"
+  ],
+  "teaching": {
+    "diagnosis": "Contrast-Induced Nephropathy",
+    "one_liner": "Intravascular contrast used during a coronary angiogram directly injures the renal tubules in susceptible patients, causing a rise in creatinine 24-72 hours after the procedure.",
+    "differentials": [
+      "Cholesterol embolization syndrome",
+      "Prerenal AKI"
+    ],
+    "red_flags": [
+      "Anuria — suggests a more severe process"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to procedure",
+        "say": "When did you have the angiogram, and when did your kidney numbers change?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Baseline kidney function",
+        "say": "Did you have any kidney problems before this procedure?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "Has your urine output changed?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Medications around the procedure",
+        "say": "What medications were you taking around the time of the procedure?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Hydration",
+        "say": "How much fluid have you been drinking?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

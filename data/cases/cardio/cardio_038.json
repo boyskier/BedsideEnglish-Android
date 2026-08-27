@@ -1,0 +1,189 @@
+{
+  "id": "cardio_038",
+  "system": "cardio",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rodriguez",
+  "age": 56,
+  "gender": "female",
+  "chief_complaint": "incidental finding of irregular heartbeat (palpitations) on routine check",
+  "hpi_details": "A 56-year-old female presents to the clinic with incidental finding of irregular heartbeat (palpitations) on routine check. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to pvcs",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "benign_pvc_rhythm_assessment",
+      "title": "ECG and ambulatory rhythm monitor",
+      "order_terms": ["ECG", "EKG", "12-lead", "Holter", "ambulatory monitor"],
+      "availability_message": "The ECG and ambulatory rhythm report are now available.",
+      "results": [
+        {
+          "id": "ecg_monorphic_pvcs",
+          "test": "12-lead ECG",
+          "value": "Sinus rhythm at 68 bpm with isolated monomorphic PVCs; QTc 424 ms",
+          "unit": "",
+          "reference_range": "Sinus rhythm; QTc <460 ms",
+          "flag": "abnormal",
+          "collected_at": "Routine check"
+        },
+        {
+          "id": "holter_low_pvc_burden",
+          "test": "24-hour PVC burden",
+          "value": "2.6",
+          "unit": "% of all beats",
+          "reference_range": "<10% low burden",
+          "flag": "abnormal",
+          "collected_at": "24-hour recording"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Benign Premature Ventricular Contractions evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Benign Premature Ventricular Contractions is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "PVCs should be documented with ECG and, when needed, ambulatory monitoring; reassurance is appropriate only after assessing symptoms, PVC burden, and structural heart disease, with lifestyle measures or a beta-blocker considered for persistent symptoms.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental finding of irregular heartbeat (palpitations) on routine check",
+      "Key HPI features: A 56-year-old female presents to the clinic with incidental finding of irregular heartbeat (palpitations) on routine check. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Benign PVCs.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Benign Premature Ventricular Contractions.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Atrial ectopics without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ectopics with syncope, or a family history of sudden cardiac death."
+    ],
+    "management_principles": [
+      "Document rhythm with ECG and, when needed, ambulatory monitoring; assess for structural heart disease and PVC burden before reassurance, then address triggers and consider a beta-blocker for persistent symptoms",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2017 AHA/ACC/HRS Guideline for Management of Patients With Ventricular Arrhythmias and the Prevention of Sudden Cardiac Death",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000000549"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of incidental finding of irregular heartbeat (palpitations) on routine check. HPI: ectopic ventricular beats.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Benign PVCs.",
+    "assessment": "Condition highly suspicious for Benign PVCs.",
+    "plan": "Document rhythm with ECG and, when needed, ambulatory monitoring. Assess for structural heart disease and PVC burden before reassurance; address triggers and consider a beta-blocker for persistent symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Benign PVCs",
+    "Select appropriate diagnostic workup for Benign PVCs",
+    "Implement evidence-based management plan: Document PVCs, assess symptoms, burden, and structural heart disease before reassurance, then address triggers or use a beta-blocker for persistent symptoms"
+  ],
+  "teaching": {
+    "diagnosis": "Benign Premature Ventricular Contractions",
+    "one_liner": "Extra ventricular beats found incidentally. In a structurally normal heart the job is reassurance plus excluding the dangerous mimics.",
+    "differentials": [
+      "Atrial ectopics",
+      "Atrial fibrillation",
+      "Anxiety"
+    ],
+    "red_flags": [
+      "Ectopics with syncope, or a family history of sudden cardiac death"
+    ],
+    "must_ask": [
+      {
+        "objective": "Awareness of the beats",
+        "say": "Can you actually feel these extra beats, or was it only found on a check-up?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "notice",
+          "aware",
+          "check",
+          "found"
+        ]
+      },
+      {
+        "objective": "Whether exercise suppresses or provokes them",
+        "say": "Do they get better or worse when you exercise?",
+        "domains": [
+          "aggravating",
+          "relieving"
+        ],
+        "keywords": [
+          "exercise",
+          "walk",
+          "gym"
+        ]
+      },
+      {
+        "objective": "Syncope and dizziness",
+        "say": "Have you fainted or felt like you were going to?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "black",
+          "out",
+          "dizzy",
+          "pass",
+          "lightheaded"
+        ]
+      },
+      {
+        "objective": "Caffeine, alcohol, sleep and stress",
+        "say": "How much coffee and alcohol do you have, and how are you sleeping?",
+        "domains": [
+          "aggravating",
+          "alcohol"
+        ],
+        "keywords": [
+          "coffee",
+          "caffeine",
+          "alcohol",
+          "sleep",
+          "stress"
+        ]
+      },
+      {
+        "objective": "Family history of early heart disease",
+        "say": "Has anyone in your family had a heart attack, especially young?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "father",
+          "mother",
+          "brother",
+          "sister"
+        ]
+      },
+      {
+        "objective": "What the patient is worried about",
+        "say": "What's worrying you most about this?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

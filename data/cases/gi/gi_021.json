@@ -1,0 +1,231 @@
+{
+  "id": "gi_021",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Gupta",
+  "age": 66,
+  "gender": "male",
+  "chief_complaint": "shivering chills, yellow skin, and right upper side stomach pain for 24 hours",
+  "hpi_details": "Presents to ER with acute 24-hour history of severe right upper quadrant abdominal pain accompanied by high spiking fevers, violent rigors/shivering, and rapidly developing jaundice. Patient appears unwell, drowsy, and slightly confused according to his son. Has a known history of gallstones but declined elective surgery 2 years ago.",
+  "ideas": "son thinks a gallstone has completely blocked the bile pipe and caused severe poisoning",
+  "concerns": "son is terrified his father is going into septic shock",
+  "expectations": "wants immediate IV antibiotics and an emergency procedure to clear the blockage",
+  "pmh": "cholelithiasis diagnosed on ultrasound 2 years ago, type 2 diabetes mellitus, hypertension",
+  "medications": "metformin 850mg BD, ramipril 5mg OD",
+  "social_hx": "retired shop owner, non-smoker, rare alcohol intake",
+  "investigation_events": [
+    {
+      "id": "stat_ascending_cholangitis_workup",
+      "title": "STAT ascending cholangitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "liver function tests",
+        "lfts",
+        "bilirubin",
+        "lactate",
+        "right upper quadrant ultrasound",
+        "ruq ultrasound",
+        "abdominal ultrasound"
+      ],
+      "availability_message": "The STAT sepsis, liver, and biliary ultrasound results are now available; cultures, antibiotics, fluids, and urgent biliary decompression should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "19.6",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "total_bilirubin",
+          "test": "Total bilirubin",
+          "value": "7.8",
+          "unit": "mg/dL",
+          "reference_range": "0.2-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "alkaline_phosphatase",
+          "test": "Alkaline phosphatase",
+          "value": "486",
+          "unit": "U/L",
+          "reference_range": "44-147",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "lactate",
+          "test": "Serum lactate",
+          "value": "4.1",
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "right_upper_quadrant_ultrasound",
+          "test": "Right-upper-quadrant ultrasound",
+          "value": "Dilated common bile duct measuring 12 mm with an obstructing distal duct stone and intrahepatic biliary dilatation; gallstones present",
+          "flag": "critical",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Ascending Cholangitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Ascending Cholangitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Medical/surgical emergency: Sepsis 6 resuscitation (IV crystalloids, high-flow O2 if hypoxic, blood cultures prior to antibiotics, broad-spectrum IV antibiotics e.g., piperacillin-tazobactam or meropenem, monitor lactate/urine output), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: shivering chills, yellow skin, and right upper side stomach pain for 24 hours",
+      "Key HPI features: Presents to ER with acute 24-hour history of severe right upper quadrant abdominal pain accompanied by high spiking fevers, violent rigors/shivering, and rapidly developing jaundice. Patient appears unwell, drowsy, and slightly confused according to his son. Has a known history of gallstones but declined elective surgery 2 years ago.",
+      "Objective/Exam findings: Vitals: temperature 39.1°C, HR 114, BP 92/58, RR 24. Abdominal exam: tender RUQ with guarding. Scleral icterus visible. Bloods: FBC (neutrophilia), blood cultures x2 sets, LFTs (obstructive pattern: raised bilirubin and ALP > ALT), CRP, urea/creatinine, lactate. Urgent abdominal ultrasound or CT abdomen, progressing to ERCP.",
+      "Relevant background/PMH: cholelithiasis diagnosed on ultrasound 2 years ago, type 2 diabetes mellitus, hypertension",
+      "Current medications: metformin 850mg BD, ramipril 5mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Ascending Cholangitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute suppurative cholecystitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or drowsiness with fever and jaundice — suggests progression to septic shock (Reynolds pentad)."
+    ],
+    "management_principles": [
+      "Medical/surgical emergency: Sepsis 6 resuscitation (IV crystalloids, high-flow O2 if hypoxic, blood cultures prior to antibiotics, broad-spectrum IV antibiotics e.g., piperacillin-tazobactam or meropenem, monitor lactate/urine output)",
+      "Urgent gastroenterology/surgical consult for emergency biliary decompression via Endoscopic Retrograde Cholangiopancreatography (ERCP) with sphincterotomy/stenting within 24 hours"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "66M with known gallstones presents with Charcot's triad (RUQ pain, fever/rigors, jaundice) progressing toward Reynolds' pentad (plus confusion and hypotension).",
+    "objective": "Vitals: temperature 39.1°C, HR 114, BP 92/58, RR 24. Abdominal exam: tender RUQ with guarding. Scleral icterus visible. Bloods: FBC (neutrophilia), blood cultures x2 sets, LFTs (obstructive pattern: raised bilirubin and ALP > ALT), CRP, urea/creatinine, lactate. Urgent abdominal ultrasound or CT abdomen, progressing to ERCP.",
+    "assessment": "Acute ascending cholangitis (biliary sepsis) likely secondary to choledocholithiasis. DDx: acute suppurative cholecystitis, liver abscess, severe viral/drug hepatitis, mirizzi syndrome.",
+    "plan": "Medical/surgical emergency: Sepsis 6 resuscitation (IV crystalloids, high-flow O2 if hypoxic, blood cultures prior to antibiotics, broad-spectrum IV antibiotics e.g., piperacillin-tazobactam or meropenem, monitor lactate/urine output). Urgent gastroenterology/surgical consult for emergency biliary decompression via Endoscopic Retrograde Cholangiopancreatography (ERCP) with sphincterotomy/stenting within 24 hours."
+  },
+  "learning_objectives": [
+    "Identify Charcot's triad (RUQ pain, fever, jaundice) and Reynolds' pentad indicating life-threatening ascending cholangitis",
+    "Recognise the obstructive LFT profile (predominant alkaline phosphatase and conjugated bilirubin elevation)",
+    "Execute immediate sepsis resuscitation and blood culture acquisition before antibiotic initiation",
+    "Explain the urgent necessity of mechanical biliary decompression via ERCP alongside antibiotic therapy"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Ascending Cholangitis",
+    "one_liner": "A gallstone blocks the bile duct and bacteria multiply upstream, causing the classic triad of right-upper-quadrant pain, fever with rigors, and jaundice — a biliary sepsis emergency.",
+    "differentials": [
+      "Acute suppurative cholecystitis",
+      "Liver abscess",
+      "Severe viral or drug-induced hepatitis"
+    ],
+    "red_flags": [
+      "Confusion or drowsiness with fever and jaundice — suggests progression to septic shock (Reynolds pentad)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Charcot's triad screen",
+        "say": "Have you had pain, fevers with shivering, and yellow skin all together?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "shivering",
+          "jaundice",
+          "rigors"
+        ]
+      },
+      {
+        "objective": "Confusion or drowsiness",
+        "say": "Has your father seemed confused or unusually drowsy?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "drowsy",
+          "confusion",
+          "sleepy"
+        ]
+      },
+      {
+        "objective": "Known gallstones",
+        "say": "Has he been told before that he has gallstones?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "gallstones",
+          "gallbladder",
+          "diagnosed"
+        ]
+      },
+      {
+        "objective": "Prior surgery declined",
+        "say": "Did he ever have an operation offered for the gallstones, and why wasn't it done?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "surgery",
+          "operation",
+          "declined",
+          "offered"
+        ]
+      },
+      {
+        "objective": "Urine and stool colour",
+        "say": "Has his urine gone darker, or his stools become pale?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urine",
+          "dark",
+          "stools",
+          "pale"
+        ]
+      },
+      {
+        "objective": "Rigors severity",
+        "say": "Did he have violent shaking or shivering with the fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "shaking",
+          "shivering",
+          "rigors",
+          "chills"
+        ]
+      }
+    ]
+  }
+}

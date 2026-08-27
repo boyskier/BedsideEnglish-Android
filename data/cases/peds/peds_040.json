@@ -1,0 +1,135 @@
+{
+  "id": "peds_040",
+  "system": "peds",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mia Carter",
+  "age": 6,
+  "gender": "female",
+  "chief_complaint": "slapped-cheek appearance on face followed by lacy body rash",
+  "hpi_details": "6-year-old girl is brought in by her parent with bright red cheeks followed by a lacy rash on her arms and trunk. She had a mild cold and low-grade fever several days ago and is otherwise well.",
+  "ideas": "thinks it might be related to fifth_disease",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Attends elementary school.",
+  "clinical_knowledge": {
+    "topic": "Erythema infectiosum (fifth disease) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Erythema infectiosum (fifth disease) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes supportive care; children are generally no longer contagious once the characteristic rash appears, but pregnant contacts with a relevant exposure should contact their obstetric clinician.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: slapped-cheek appearance on face followed by lacy body rash",
+      "Key HPI features: A 6-year-old girl presents with bright red cheeks followed by a lacy rash on her arms and trunk, preceded a few days earlier by a mild cold and low-grade fever.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Erythema Infectiosum.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Erythema infectiosum (fifth disease).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rubella without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Exposure to pregnant contacts is a concern due to fetal hydrops risk from parvovirus B19."
+    ],
+    "management_principles": [
+      "Provide supportive care; children are generally no longer contagious once the characteristic rash appears, but pregnant contacts with a relevant exposure should contact their obstetric clinician",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of slapped-cheek appearance on face followed by lacy body rash. HPI: fifth disease.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Erythema Infectiosum.",
+    "assessment": "Condition highly suspicious for Erythema Infectiosum.",
+    "plan": "Provide supportive care. The child is generally no longer contagious once the characteristic rash appears; advise pregnant contacts with a relevant exposure to contact their obstetric clinician."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Erythema Infectiosum",
+    "Select appropriate diagnostic workup for Erythema Infectiosum",
+    "Implement evidence-based management plan: Supportive care, advise avoiding pregnant contacts (hydrops risk)"
+  ],
+  "teaching": {
+    "diagnosis": "Erythema infectiosum (fifth disease)",
+    "one_liner": "Patient with a slapped-cheek facial appearance followed by a lacy body rash.",
+    "differentials": [
+      "Rubella",
+      "Scarlet fever",
+      "Drug reaction"
+    ],
+    "red_flags": [
+      "Exposure to pregnant contacts is a concern due to fetal hydrops risk from parvovirus B19"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the facial rash",
+        "say": "Does the redness on her cheeks look like she's been slapped?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "slapped cheek rash"
+        ]
+      },
+      {
+        "objective": "Ask about the body rash pattern",
+        "say": "Can you describe the rash on her body — is it lacy or net-like?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lacy rash"
+        ]
+      },
+      {
+        "objective": "Ask about prior fever or cold symptoms",
+        "say": "Did she have a mild fever or cold before the rash appeared?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "prior mild illness"
+        ]
+      },
+      {
+        "objective": "Ask about exposure to pregnant individuals",
+        "say": "Has she been around anyone who is pregnant recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "pregnant contact exposure"
+        ]
+      },
+      {
+        "objective": "Explain the supportive care and pregnancy precaution",
+        "say": "This is a mild, self-limited illness, but please let any pregnant contacts know since it can rarely cause problems for a fetus.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "supportive care",
+          "pregnancy exposure warning"
+        ]
+      }
+    ]
+  }
+}

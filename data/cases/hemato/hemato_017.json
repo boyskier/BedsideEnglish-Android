@@ -1,0 +1,128 @@
+{
+  "id": "hemato_017",
+  "system": "hematology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Foster",
+  "age": 60,
+  "gender": "male",
+  "chief_complaint": "numbness in feet, trouble walking, and fatigue",
+  "hpi_details": "60M presents with progressive tingling and numbness in both feet, causing him to stumble. He also reports severe fatigue, a sore tongue, and mild memory issues. He had a partial gastrectomy 5 years ago for an ulcer.",
+  "ideas": "thinks he has neuropathy",
+  "concerns": "worried about dementia",
+  "expectations": "wants a nerve test",
+  "pmh": "Partial gastrectomy",
+  "medications": "Omeprazole",
+  "social_hx": "Occasional alcohol",
+  "clinical_knowledge": {
+    "topic": "Vitamin B12 Deficiency (Pernicious Anemia / Gastrectomy)",
+    "core_concepts": [
+      "B12 deficiency causes macrocytic anemia and subacute combined degeneration of the spinal cord (neuropathy, ataxia).",
+      "Gastrectomy eliminates intrinsic factor, causing failure of B12 absorption."
+    ],
+    "diagnostic_clues": [
+      "Neuropathy",
+      "Sore tongue (glossitis)",
+      "Prior gastrectomy"
+    ],
+    "common_misconceptions": [
+      "Giving folate alone, which corrects the anemia but allows irreversible neurological damage to progress."
+    ],
+    "dangerous_errors": [
+      "Missing the neurological signs of B12 deficiency."
+    ],
+    "management_principles": [
+      "IM Vitamin B12 injections."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "60M with neuropathy, ataxia, glossitis, and history of partial gastrectomy.",
+    "objective": "Decreased vibratory and position sense in lower extremities. Positive Romberg. Beefy red, smooth tongue.",
+    "assessment": "Vitamin B12 deficiency (Macrocytic Anemia and neuropathy).",
+    "plan": "CBC, peripheral smear, Vitamin B12 and folate levels. Start IM Vitamin B12 injections."
+  },
+  "learning_objectives": [
+    "Recognize the neurological complications and causes of Vitamin B12 deficiency."
+  ],
+  "teaching": {
+    "diagnosis": "Vitamin B12 Deficiency",
+    "one_liner": "Progressive neuropathy, ataxia, and fatigue in a patient with a history of gastrectomy, suggestive of Vitamin B12 deficiency.",
+    "differentials": [
+      "Diabetic neuropathy",
+      "Folate deficiency (no neuro symptoms)"
+    ],
+    "red_flags": [
+      "Irreversible neurological damage if untreated"
+    ],
+    "must_ask": [
+      {
+        "objective": "Neurological symptom onset",
+        "say": "When did the numbness in your feet and the trouble walking start?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "numbness",
+          "walking",
+          "started"
+        ]
+      },
+      {
+        "objective": "Surgical and dietary history",
+        "say": "Have you ever had stomach surgery, or do you follow a strict vegan diet?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "gastrectomy",
+          "surgery",
+          "vegan"
+        ]
+      },
+      {
+        "objective": "Glossitis and GI symptoms",
+        "say": "Have you noticed a sore or smooth-feeling tongue, or any changes in your appetite?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sore tongue",
+          "glossitis"
+        ]
+      },
+      {
+        "objective": "Balance and coordination",
+        "say": "Have you noticed any problems with your balance or coordination, especially in the dark?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "balance",
+          "ataxia",
+          "coordination"
+        ]
+      },
+      {
+        "objective": "Fatigue severity",
+        "say": "How is the fatigue affecting your ability to do your usual daily activities?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "fatigue",
+          "weakness"
+        ]
+      }
+    ]
+  }
+}

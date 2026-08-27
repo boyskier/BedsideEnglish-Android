@@ -1,0 +1,90 @@
+{
+  "name": "Chart-to-Speech Drill",
+  "description": "Evaluates spoken conversion of visible chart information into patient-facing or team-facing clinical English.",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentence Control",
+      "anchors": {
+        "90-100": "Clear, controlled sentences with natural clinical phrasing",
+        "70-80": "Minor errors but meaning is consistently clear",
+        "50-60": "Understandable with repeated grammar or wording issues",
+        "30-40": "Frequent errors make the message hard to follow",
+        "10-20": "Language errors block most of the clinical message"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Chart Accuracy",
+      "anchors": {
+        "90-100": "All key chart facts, numbers, and abnormal results are accurate",
+        "70-80": "Nearly all key facts are accurate; only minor omissions",
+        "50-60": "Main idea is correct but some important facts or numbers are missing",
+        "30-40": "Several inaccurate or unsafe chart details",
+        "10-20": "Chart information is mostly wrong or misleading"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Clinical Organization",
+      "anchors": {
+        "90-100": "Information is prioritized, concise, and organized for the audience",
+        "70-80": "Mostly organized with a clear next step",
+        "50-60": "Some structure but order or prioritization is uneven",
+        "30-40": "Disorganized; listener must reconstruct the situation",
+        "10-20": "No usable clinical structure"
+      }
+    },
+    "communication_fluency": {
+      "label": "Delivery & Number Reading",
+      "anchors": {
+        "90-100": "Smooth delivery; numbers, units, times, and medication doses are easy to understand",
+        "70-80": "Generally smooth; minor hesitation or number-reading issues",
+        "50-60": "Noticeable hesitation; some numbers or units need repetition",
+        "30-40": "Frequent stops or unclear numbers interfere with safety",
+        "10-20": "Delivery blocks understanding of key chart details"
+      }
+    },
+    "professionalism": {
+      "label": "Register & Professionalism",
+      "anchors": {
+        "90-100": "Perfectly adapts register: concise team language or plain patient language as needed",
+        "70-80": "Mostly audience-appropriate and professional",
+        "50-60": "Generally polite but sometimes too technical, vague, or casual",
+        "30-40": "Register often mismatches the audience",
+        "10-20": "Unprofessional or confusing for the audience"
+      }
+    }
+  },
+  "checklist": [
+    {
+      "item": "identified the patient and situation clearly",
+      "required": true
+    },
+    {
+      "item": "reported key abnormal vitals/labs/studies accurately",
+      "required": true
+    },
+    {
+      "item": "used the right register for the audience (team vs patient)",
+      "required": true
+    },
+    {
+      "item": "organized information in a safe clinical sequence",
+      "required": true
+    },
+    {
+      "item": "gave a clear next step, recommendation, or confirmation",
+      "required": true
+    },
+    {
+      "item": "checked understanding or confirmed read-back when appropriate",
+      "required": false
+    }
+  ],
+  "reference_output_type": "spoken_chart_summary"
+}

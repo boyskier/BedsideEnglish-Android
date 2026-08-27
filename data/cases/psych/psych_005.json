@@ -1,0 +1,162 @@
+{
+  "id": "psych_005",
+  "system": "psychiatry",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Evans",
+  "age": 31,
+  "gender": "female",
+  "chief_complaint": "sudden unprovoked spells of intense panic, palpitations, chest tightness, and fear of dying occurring multiple times weekly",
+  "hpi_details": "31F presents with 3-month history of sudden, unpredictable surges of overwhelming fear and panic reaching peak intensity within 10 minutes. During episodes, experiences racing heartbeat, shortness of breath, trembling, dizziness, and intense fear that she is having a heart attack or losing control. Episodes occur 3-4 times per week without specific situational triggers. Patient has developed persistent anticipatory anxiety regarding future attacks and avoids crowded grocery stores and elevators.",
+  "ideas": "thinks she has a hidden cardiac arrhythmia that emergency room tests keep missing",
+  "concerns": "terrified of having a panic attack in public where she cannot escape",
+  "expectations": "wants fast-acting nerve pills to carry with her at all times",
+  "pmh": "Multiple ED visits for chest pain (all cardiac workups including Holter monitor and stress test negative)",
+  "medications": "None",
+  "social_hx": "Human resources specialist, non-smoker",
+  "available_results": [
+    {"id": "prior_holter", "test": "Prior ambulatory Holter monitor", "value": "Sinus rhythm throughout reported symptomatic episodes; no clinically significant arrhythmia", "flag": "normal", "collected_at": "During a prior cardiac evaluation"},
+    {"id": "prior_stress_test", "test": "Prior exercise stress test", "value": "No inducible ischemia or exercise-associated arrhythmia", "flag": "normal", "collected_at": "During a prior cardiac evaluation"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Panic Disorder evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Panic Disorder is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes cognitive behavioral therapy and an SSRI or SNRI when medication is indicated, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden unprovoked spells of intense panic, palpitations, chest tightness, and fear of dying occurring multiple times weekly",
+      "Key HPI features: 31F presents with 3-month history of sudden, unpredictable surges of overwhelming fear and panic reaching peak intensity within 10 minutes. During episodes, experiences racing heartbeat, shortness of breath, trembling, dizziness, and intense fear that she is having a heart attack or losing control. Episodes occur 3-4 times per week without specific situational triggers. Patient has developed persistent anticipatory anxiety regarding future attacks and avoids crowded grocery stores and elevators.",
+      "Objective/Exam findings: Vitals (baseline between attacks): HR 76, BP 118/76. Physical and neurological examinations unremarkable. Cardiac auscultation normal without murmurs or clicks. GAD-7 score 15. Thyroid function tests (TSH 1.4 uIU/mL) and ECG completely normal.",
+      "Relevant background/PMH: Multiple ED visits for chest pain (all cardiac workups including Holter monitor and stress test negative)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Panic Disorder.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pheochromocytoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Agoraphobic homebound state."
+    ],
+    "management_principles": [
+      "Education: validate symptoms while reinforcing benign physiological nature of adrenaline surges (breaking the fear-of-fear cycle)",
+      "If medication is indicated, consider an SSRI or SNRI after reviewing comorbidity, interactions, patient preference, and early activation risk",
+      "Psychotherapy: refer to Cognitive Behavioral Therapy (CBT) focusing on interoceptive exposure (deliberately inducing physical sensations like hyperventilation or spinning to habituate to somatic panic cues)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "31F presenting with recurrent unexpected panic attacks complicated by persistent anticipatory anxiety and agoraphobic avoidance.",
+    "objective": "Vitals (baseline between attacks): HR 76, BP 118/76. Physical and neurological examinations unremarkable. Cardiac auscultation normal without murmurs or clicks. GAD-7 score 15. Thyroid function tests (TSH 1.4 uIU/mL) and ECG completely normal.",
+    "assessment": "Panic Disorder and Agoraphobia.",
+    "plan": "Validate symptoms while explaining the panic cycle, while advising emergency evaluation for new, severe, persistent, or exertional chest pain, syncope, or other acute medical features. Refer for CBT with interoceptive and situational exposure. If medication is indicated, consider an SSRI or SNRI after reviewing comorbidity, interactions, patient preference, and early activation risk. Avoid chronic benzodiazepine maintenance."
+  },
+  "learning_objectives": [
+    "Recognize DSM-5 criteria for Panic Disorder (recurrent unexpected panic attacks followed by >=1 month of anticipatory anxiety or maladaptive behavioral avoidance)",
+      "Differentiate Panic Disorder and Agoraphobia from medical phenocopies (hyperthyroidism, pheochromocytoma, cardiac arrhythmias, caffeine/stimulant intoxication)",
+    "Implement interoceptive exposure principles within Cognitive Behavioral Therapy to extinguish somatic fear responses",
+    "Prescribe appropriate SSRI titration schedules for panic (starting at half standard depression doses to prevent initial somatic activation)"
+  ],
+  "teaching": {
+    "diagnosis": "Panic Disorder",
+    "one_liner": "Recurrent unexpected panic attacks accompanied by persistent concern about having future attacks.",
+    "differentials": [
+      "Pheochromocytoma",
+      "Hyperthyroidism",
+      "Acute coronary syndrome"
+    ],
+    "red_flags": [
+      "Agoraphobic homebound state",
+      "Severe secondary depressive despair"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden onset autonomic panic symptoms",
+        "say": "Do these intense spells of terror and heart racing strike out of nowhere?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ],
+        "keywords": [
+          "strike",
+          "terror",
+          "racing",
+          "heart",
+          "spells"
+        ]
+      },
+      {
+        "objective": "Somatic hyperarousal symptoms",
+        "say": "During an attack, do you feel short of breath, chest tightness, or tingling in your hands?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "shortness",
+          "breath",
+          "tightness",
+          "tingling",
+          "sweating"
+        ]
+      },
+      {
+        "objective": "Fear of dying or losing control",
+        "say": "Do you feel terrifying fear that you are having a heart attack or going crazy?",
+        "domains": [
+          "ideas",
+          "concerns"
+        ],
+        "keywords": [
+          "dying",
+          "crazy",
+          "control",
+          "frightened",
+          "terrified"
+        ]
+      },
+      {
+        "objective": "Anticipatory anxiety check",
+        "say": "Are you constantly worrying about when the next attack might strike?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "worrying",
+          "worry",
+          "future",
+          "next",
+          "attack"
+        ]
+      },
+      {
+        "objective": "Agoraphobic avoidance behavior",
+        "say": "Do you avoid crowded places or public transport where escape might be difficult?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "avoid",
+          "crowds",
+          "transport",
+          "buses",
+          "escape"
+        ]
+      }
+    ]
+  }
+}

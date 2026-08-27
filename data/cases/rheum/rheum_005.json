@@ -1,0 +1,120 @@
+{
+  "id": "rheum_005",
+  "system": "rheumatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rivera",
+  "age": 46,
+  "gender": "female",
+  "chief_complaint": "skin tightening on fingers, Raynaud phenomenon, and sudden severe high blood pressure",
+  "hpi_details": "46F with diffuse systemic sclerosis presenting with acute hypertensive crisis (BP 215/135), oliguria, and schistocytes requiring rapid titration of oral ACE inhibitor Captopril.",
+  "ideas": "thinks this is related to scleroderma renal crisis hypertensive emergency",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [{"id":"peripheral_smear","test":"Peripheral blood smear","value":"Numerous schistocytes consistent with microangiopathic hemolysis","flag":"critical","specimen":"Blood","collected_at":"Before the current assessment"}],
+  "clinical_knowledge": {
+    "topic": "Scleroderma Renal Crisis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Scleroderma Renal Crisis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Scleroderma Renal Crisis Hypertensive Emergency, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: skin tightening on fingers, Raynaud phenomenon, and sudden severe high blood pressure",
+      "Key HPI features: 46F with diffuse systemic sclerosis presenting with acute hypertensive crisis (BP 215/135), oliguria, and schistocytes requiring rapid titration of oral ACE inhibitor Captopril.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Scleroderma Renal Crisis Hypertensive Emergency.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Scleroderma Renal Crisis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Thrombotic thrombocytopenic purpura without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Blood pressure this severe with new kidney failure in a scleroderma patient — start ACE inhibitor immediately, do not wait."
+    ],
+    "management_principles": [
+      "This presentation requires emergency hospital management with immediate nephrology/rheumatology input and closely monitored blood-pressure reduction.",
+      "An ACE inhibitor is standard first-line treatment for suspected scleroderma renal crisis, but agent, route, titration, and monitoring must be directed by the inpatient treating team.",
+      "Assess creatinine, electrolytes, urinalysis, CBC/hemolysis markers, ECG/troponin when indicated, neurologic/cardiopulmonary end-organ injury, and possible dialysis need."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Scleroderma Renal Crisis Hypertensive Emergency: skin tightening on fingers, Raynaud phenomenon, and sudden severe high blood pressure. 46F with diffuse systemic sclerosis presenting with acute hypertensive crisis (BP 215/135), oliguria, and schistocytes requiring rapid titration of oral ACE inhibitor Captopril.",
+    "objective": "BP 215/135 with oliguria and schistocytes is a hypertensive emergency. Obtain repeated monitored BP, creatinine/electrolytes, urinalysis, CBC/platelets and hemolysis studies, ECG and evaluation for neurologic, cardiac, and pulmonary end-organ injury.",
+    "assessment": "Probable scleroderma renal crisis with hypertensive emergency, acute kidney injury, and microangiopathic hemolysis.",
+    "plan": "1. Transfer for immediate emergency/inpatient management and urgent nephrology/rheumatology consultation. 2. The treating team should initiate and rapidly titrate ACE-inhibitor therapy with close BP, renal-function, and potassium monitoring. 3. Evaluate for dialysis and alternative thrombotic microangiopathies; seek critical care support for neurologic, cardiac, pulmonary, or worsening renal complications."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Scleroderma Renal Crisis Hypertensive Emergency",
+    "Formulate prioritized differential diagnosis for skin tightening on fingers, Raynaud phenomenon, and sudden severe high blood pressure",
+    "Select appropriate laboratory and imaging studies for rheumatology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Scleroderma Renal Crisis",
+    "one_liner": "In diffuse systemic sclerosis, abrupt severe hypertension with acute kidney injury and microangiopathic haemolysis suggests scleroderma renal crisis and needs urgent ACE-inhibitor treatment.",
+    "differentials": [
+      "Thrombotic thrombocytopenic purpura",
+      "Malignant hypertension from another cause",
+      "Acute glomerulonephritis"
+    ],
+    "red_flags": [
+      "Severe hypertension with oliguria or new kidney failure requires emergency management"
+    ],
+    "must_ask": [
+      {
+        "objective": "Known systemic sclerosis",
+        "say": "How long have you had scleroderma, and what type?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "scleroderma",
+          "diffuse"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "Has the amount of urine you're passing decreased?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urine output",
+          "oliguria"
+        ]
+      },
+      {
+        "objective": "Hypertensive emergency symptoms",
+        "say": "Have you had a severe headache, vision changes, chest pain, or shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "vision",
+          "chest pain"
+        ]
+      }
+    ]
+  }
+}

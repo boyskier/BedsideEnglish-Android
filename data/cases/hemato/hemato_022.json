@@ -1,0 +1,161 @@
+{
+  "id": "hemato_022",
+  "system": "hematology & oncology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Shin",
+  "age": 62,
+  "gender": "male",
+  "chief_complaint": "swollen left calf pain, warmth, and redness 1 week after a long-haul flight",
+  "hpi_details": "62M presents with 3 days of throbbing pain, swelling, and redness in his left calf. He returned from a 12-hour international flight 1 week ago. Left calf measures 4cm larger in circumference than the right calf.",
+  "ideas": "thinks he pulled a muscle or has a cramp",
+  "concerns": "worried the clot will travel to his lungs (pulmonary embolism)",
+  "expectations": "wants ultrasound and blood thinner",
+  "pmh": "Hypertension",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_leg_compression_ultrasound",
+      "title": "Urgent lower-extremity compression ultrasound",
+      "order_terms": [
+        "compression ultrasound",
+        "venous ultrasound",
+        "duplex ultrasound",
+        "doppler ultrasound",
+        "leg ultrasound"
+      ],
+      "availability_message": "The urgent compression ultrasound result is now available.",
+      "results": [
+        {
+          "id": "left_proximal_dvt",
+          "test": "Left lower-extremity compression ultrasound",
+          "value": "Noncompressible thrombus extending from the popliteal vein into the distal femoral vein with absent color flow",
+          "flag": "critical",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Deep Vein Thrombosis (DVT), left lower extremity evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Deep Vein Thrombosis (DVT), left lower extremity is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows an evidence-based diagnostic and therapeutic protocol for deep vein thrombosis (DVT) of the left lower extremity, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Unilateral calf swelling, warmth, and redness with a 4cm circumference difference from the other leg",
+      "Recent prolonged immobility (12-hour long-haul flight 1 week ago)",
+      "Throbbing calf pain progressing over 3 days"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Deep Vein Thrombosis (DVT), left lower extremity.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cellulitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain or shortness of breath — suggests pulmonary embolism, a medical emergency."
+    ],
+    "management_principles": [
+      "Order compression ultrasound of the left leg",
+      "Start therapeutic anticoagulation (Apixaban or Rivaroxaban)",
+      "Assess bleeding risk and renal function before starting anticoagulation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "62M with 3 days of throbbing pain, swelling, and redness in his left calf, beginning about a week after a 12-hour international flight.",
+    "objective": "Left calf circumference 4cm greater than right. Localized warmth, erythema, and tenderness along the deep venous course. Homan's sign unreliable, not relied upon. No respiratory distress.",
+    "assessment": "Deep vein thrombosis (DVT) of the left lower extremity.",
+    "plan": "Order compression ultrasound of the left leg. Start therapeutic anticoagulation (Apixaban or Rivaroxaban) pending imaging confirmation. Assess for pulmonary embolism if any respiratory symptoms develop. Provide patient counseling on anticoagulation and return precautions."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Deep Vein Thrombosis (DVT) of the left lower extremity.",
+    "Formulate prioritized differential diagnosis for swollen left calf pain, warmth, and redness 1 week after a long-haul flight",
+    "Select appropriate laboratory and imaging studies for hematology & oncology",
+    "Implement evidence-based acute and long-term management strategies for Deep Vein Thrombosis (DVT) of the left lower extremity."
+  ],
+  "teaching": {
+    "diagnosis": "Deep Vein Thrombosis (DVT), left lower extremity",
+    "one_liner": "A blood clot forms in a deep leg vein, often after prolonged immobility like a long flight, causing unilateral calf pain, swelling, warmth, and redness — with a risk of embolizing to the lungs.",
+    "differentials": [
+      "Cellulitis",
+      "Calf muscle strain / Baker's cyst rupture",
+      "Chronic venous insufficiency"
+    ],
+    "red_flags": [
+      "Chest pain or shortness of breath — suggests pulmonary embolism, a medical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Immobility risk factor",
+        "say": "Have you traveled on a long flight or been immobile recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "flight",
+          "travel",
+          "immobile"
+        ]
+      },
+      {
+        "objective": "Character and location",
+        "say": "Is the swelling and pain only in one leg?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "one leg",
+          "unilateral"
+        ]
+      },
+      {
+        "objective": "Onset and progression",
+        "say": "When did the swelling start, and has it been getting worse?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Any chest pain or shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chest pain",
+          "breath"
+        ]
+      },
+      {
+        "objective": "Clotting risk factors",
+        "say": "Do you have any history of blood clots, cancer, or recent surgery?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "clot",
+          "cancer",
+          "surgery"
+        ]
+      }
+    ]
+  }
+}

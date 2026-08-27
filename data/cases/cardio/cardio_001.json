@@ -1,0 +1,181 @@
+{
+  "id": "cardio_001",
+  "system": "cardiology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Johnson",
+  "age": 58,
+  "gender": "male",
+  "chief_complaint": "chest pain for 2 hours",
+  "hpi_details": "substernal, 7/10, radiates to left arm, onset at rest, no relief with antacids",
+  "ideas": "thinks it might be heartburn",
+  "concerns": "afraid of heart attack — father died of MI at 62",
+  "expectations": "wants reassurance and something for the pain",
+  "pmh": "hypertension x5 years, type 2 diabetes x3 years",
+  "medications": "metformin 1000mg BD, lisinopril 10mg OD",
+  "social_hx": "smoker 20 pack-years, 2 beers/night, retired",
+  "investigation_events": [
+    {"id": "initial_ecg", "title": "Initial 12-lead ECG", "order_terms": ["ecg", "ekg", "12-lead", "electrocardiogram"], "availability_message": "The initial 12-lead ECG is now available.", "results": [{"id": "ecg_initial", "test": "12-lead ECG", "value": "Sinus rhythm with 1 mm horizontal ST depression in V4-V6; no ST elevation", "flag": "critical", "collected_at": "10 minutes after arrival"}]},
+    {"id": "serial_troponin", "title": "Serial high-sensitivity troponin T", "order_terms": ["troponin", "cardiac biomarkers", "cardiac enzymes"], "availability_message": "The serial high-sensitivity troponin T results are now available.", "results": [
+      {"id": "troponin_t_initial", "test": "High-sensitivity troponin T", "value": "84", "unit": "ng/L", "reference_range": "0-14", "flag": "critical", "specimen": "Blood", "collected_at": "At arrival"},
+      {"id": "troponin_t_2_hour", "test": "High-sensitivity troponin T", "value": "176", "unit": "ng/L", "reference_range": "0-14", "flag": "critical", "specimen": "Blood", "collected_at": "2 hours after the initial sample", "note": "Significant interval rise"}
+    ]}
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute coronary syndrome evaluation",
+    "core_concepts": [
+      "Ongoing substernal pain at rest with arm radiation and major cardiovascular risk factors must be treated as possible acute coronary syndrome until urgent assessment excludes it.",
+      "ACS includes unstable angina, NSTEMI, and STEMI; symptoms alone do not reliably distinguish them.",
+      "Initial evaluation requires urgent ECG-based assessment and cardiac troponin testing within an emergency pathway; treatment then depends on ACS subtype, bleeding risk, and reperfusion strategy."
+    ],
+    "diagnostic_clues": [
+      "Two hours of pain at rest",
+      "Substernal pain radiating to the left arm",
+      "Hypertension, diabetes, smoking, and family history of myocardial infarction",
+      "No relief with antacids"
+    ],
+    "common_misconceptions": [
+      "Antacid response or non-response is not enough to confirm or exclude ACS.",
+      "A patient describing pain as heartburn does not make a gastrointestinal diagnosis safe.",
+      "Absence of every classic symptom does not rule out ACS."
+    ],
+    "dangerous_errors": [
+      "Reassuring or discharging the patient as reflux before urgent ACS evaluation",
+      "Delaying emergency escalation while completing a routine outpatient history",
+      "Claiming that a single symptom, ECG, or troponin result always rules ACS in or out"
+    ],
+    "management_principles": [
+      "Escalate promptly to an acute chest-pain/ACS pathway and monitor the patient.",
+      "Use ECG, serial troponin assessment, and the full clinical context rather than one symptom in isolation.",
+      "Use antithrombotic and reperfusion strategies according to the working diagnosis, contraindications, bleeding risk, and local emergency protocol."
+    ],
+    "boundaries_and_exceptions": [
+      "Exact drug selection, dose, and invasive timing depend on ECG findings, troponin results, contraindications, bleeding risk, and local protocol.",
+      "Other immediately dangerous causes of chest pain, including aortic dissection and pulmonary embolism, remain in the differential when supported by the presentation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "doorknob_disclosure": "you have actually had a few of these same chest pains over the past two weeks, but they went away, so you told yourself it was nothing and didn't want to make a fuss about it",
+  "doorknob_probability": 0.7,
+  "reference_soap": {
+    "subjective": "58M presenting with 2hr substernal chest pain 7/10, radiating to left arm, onset at rest. Denies relief with antacids. PMH: HTN, T2DM. Smokes 20 pack-years.",
+    "objective": "Vitals pending. ECG, troponins required.",
+    "assessment": "ACS until proven otherwise. DDx: STEMI, NSTEMI, unstable angina, aortic dissection, PE.",
+    "plan": "Urgent acute chest-pain/ACS pathway with monitoring, ECG and serial troponin assessment; give aspirin when appropriate and not contraindicated, provide oxygen only if clinically indicated for hypoxemia, establish IV access, and obtain urgent cardiology/emergency input. Further antithrombotic and reperfusion management depends on findings, contraindications, bleeding risk, and local protocol."
+  },
+  "learning_objectives": [
+    "Elicit cardiac history systematically using SOCRATES",
+    "Explore cardiac risk factors: HTN, DM, smoking, family Hx, dyslipidaemia",
+    "Address patient's ICE — especially fear of MI",
+    "Verbalize ACS differential and dangerous diagnosis first"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Coronary Syndrome (ACS)",
+    "one_liner": "Chest pain from a blocked or critically narrowed coronary artery — the one diagnosis you must exclude first in any adult with chest pain.",
+    "differentials": [
+      "GERD / oesophageal spasm",
+      "Aortic dissection",
+      "Pulmonary embolism"
+    ],
+    "red_flags": [
+      "Pain lasting over 20 minutes at rest, sweating, low blood pressure, or fainting"
+    ],
+    "must_ask": [
+      {
+        "objective": "Site and radiation of the pain",
+        "say": "Where exactly is the pain, and does it move anywhere else?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "arm",
+          "jaw",
+          "shoulder",
+          "spread",
+          "radiate",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "When did it start, and how long does it last each time?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "How would you describe it — sharp, crushing, burning, tight?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "sharp",
+          "crushing",
+          "burning",
+          "tight",
+          "pressure",
+          "heavy"
+        ]
+      },
+      {
+        "objective": "Associated autonomic symptoms",
+        "say": "Along with the pain, did you feel sweaty, sick, or short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweat",
+          "nausea",
+          "sick",
+          "vomit",
+          "breath",
+          "clammy"
+        ]
+      },
+      {
+        "objective": "Cardiac risk factors",
+        "say": "Do you have high blood pressure, diabetes, or high cholesterol, and do you smoke?",
+        "domains": [
+          "pmh",
+          "smoking",
+          "family_hx"
+        ],
+        "keywords": [
+          "diabetes",
+          "cholesterol",
+          "smoking",
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Family history of early heart disease",
+        "say": "Has anyone in your family had a heart attack, especially young?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "father",
+          "mother",
+          "brother",
+          "sister"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most worried this might be?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

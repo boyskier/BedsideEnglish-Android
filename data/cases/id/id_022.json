@@ -1,0 +1,136 @@
+{
+  "id": "id_022",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Oh",
+  "age": 48,
+  "gender": "male",
+  "chief_complaint": "red, warm, painful swelling on the right lower leg spreading over 2 days",
+  "hpi_details": "48M presents with a painful, swollen, hot, and red area on his right shin that has been spreading over 2 days. Recalls scratching his leg on a bush while gardening 4 days ago. Has a low-grade fever.",
+  "ideas": "thinks he has a bad bug bite or skin infection",
+  "concerns": "worried about blood poisoning (sepsis)",
+  "expectations": "wants antibiotic cream or pills",
+  "pmh": "Type 2 Diabetes",
+  "medications": "Metformin 1000mg BID",
+  "social_hx": "Gardener, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Cellulitis of the lower extremity evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cellulitis of the lower extremity is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "In diabetic patients, cellulitis carries higher risk of rapid progression and treatment failure, so coverage should account for possible atypical organisms and closer follow-up is warranted.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: red, warm, painful swelling on the right lower leg spreading over 2 days",
+      "Key HPI features: 48M presents with a painful, swollen, hot, and red area on his right shin that has been spreading over 2 days. Recalls scratching his leg on a bush while gardening 4 days ago. Has a low-grade fever.",
+      "Objective/Exam findings: Vitals: Temp 37.8C, HR 92, BP 132/80. Right shin has a well-demarcated, warm, tender area of erythema approximately 10x8cm with mild edema, no fluctuance or crepitus. Small healing scratch at the leading edge. Blood glucose 168 mg/dL.",
+      "Relevant background/PMH: Type 2 Diabetes",
+      "Current medications: Metformin 1000mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cellulitis of the lower extremity.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Deep vein thrombosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion to exam, or rapidly spreading redness — consider necrotizing fasciitis."
+    ],
+    "management_principles": [
+      "Outline the borders of erythema with a marker to track progression or spread.",
+      "Prescribe oral Cephalexin 500mg QID for 7-10 days, covering typical Staphylococcal and Streptococcal pathogens.",
+      "Optimize glycemic control and arrange close follow-up given diabetes increases risk of rapid progression or treatment failure."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "48M with diabetes, 2 days of spreading redness, warmth, and pain on the right shin after a gardening scratch 4 days ago, with low-grade fever.",
+    "objective": "T 37.8C, HR 92, BP 132/80. Right shin has a well-demarcated, warm, tender erythematous area ~10x8cm with mild edema, no fluctuance or crepitus. Small healing scratch at the leading edge. Blood glucose 168 mg/dL.",
+    "assessment": "Cellulitis of the right lower extremity, likely Staphylococcal or Streptococcal, in a patient with type 2 diabetes.",
+    "plan": "1. Outline borders of erythema with a marker to monitor spread. 2. Prescribe oral Cephalexin 500mg QID for 7-10 days. 3. Optimize glycemic control and counsel on leg elevation. 4. Reassess in 48 hours or sooner if pain worsens, fever develops, or erythema spreads beyond the marked borders."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Cellulitis of the right lower extremity, likely Staphylococcal or Streptococcal.",
+    "Formulate prioritized differential diagnosis for red, warm, painful swelling on the right lower leg spreading over 2 days",
+    "Select appropriate laboratory and imaging studies for infectious disease",
+    "Implement evidence-based acute and long-term management strategies for Cellulitis of the right lower extremity, likely Staphylococcal or Streptococcal."
+  ],
+  "teaching": {
+    "diagnosis": "Cellulitis of the lower extremity",
+    "one_liner": "A bacterial skin and soft tissue infection — usually Staphylococcus or Streptococcus entering through a break in the skin — causing spreading redness, warmth, and swelling.",
+    "differentials": [
+      "Deep vein thrombosis",
+      "Necrotizing fasciitis (if pain out of proportion)",
+      "Contact dermatitis"
+    ],
+    "red_flags": [
+      "Pain out of proportion to exam, or rapidly spreading redness — consider necrotizing fasciitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Portal of entry",
+        "say": "Do you remember any cut, scratch, or injury to that leg?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "scratch",
+          "bush",
+          "injury"
+        ]
+      },
+      {
+        "objective": "Progression",
+        "say": "How quickly has the redness been spreading?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "spreading",
+          "days"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever"
+        ]
+      },
+      {
+        "objective": "Diabetes history",
+        "say": "Do you have diabetes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes"
+        ]
+      },
+      {
+        "objective": "Pain severity",
+        "say": "How painful is the area, on a scale of one to ten?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

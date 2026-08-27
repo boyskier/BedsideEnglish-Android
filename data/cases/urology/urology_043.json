@@ -1,0 +1,176 @@
+{
+  "id": "urology_043",
+  "system": "urology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Johnson",
+  "age": 71,
+  "gender": "male",
+  "chief_complaint": "leakage of urine before reaching toilet, nocturia",
+  "hpi_details": "A 71-year-old male presents to the clinic with leakage of urine before reaching toilet, nocturia. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to urge_incontinence",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "urge_incontinence_urinalysis",
+      "title": "Urinalysis",
+      "order_terms": ["urinalysis", "urine dip", "urine test", "ua"],
+      "availability_message": "The urinalysis result is now available.",
+      "results": [
+        {"id": "urine_leukocyte_esterase", "test": "Leukocyte esterase", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_nitrite", "test": "Nitrite", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_blood", "test": "Blood", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_glucose", "test": "Glucose", "value": "Negative", "flag": "normal", "specimen": "Urine"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Overactive Bladder urge evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Overactive Bladder urge is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "In an older man, exclude infection, hematuria, polyuria, medication effects, and bladder outlet obstruction with history, urinalysis, and post-void residual before considering overactive-bladder medicines.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: leakage of urine before reaching toilet, nocturia",
+      "Key HPI features: A 71-year-old male presents to the clinic with leakage of urine before reaching toilet, nocturia. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Overactive Bladder urge.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Overactive Bladder urge.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Missing bladder outlet obstruction or urinary retention, hematuria, infection, or neurologic disease before treating presumed overactive bladder."
+    ],
+    "management_principles": [
+      "Start with bladder training, fluid/caffeine review, and pelvic-floor strategies; only consider medication after assessing post-void residual, blood pressure, cognition, constipation, and obstruction risk.",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of leakage of urine before reaching toilet, nocturia. HPI: urge urinary incontinence.",
+    "objective": "Obtain urinalysis, voiding diary, medication review, focused neurologic/prostate assessment when indicated, and post-void residual to assess for retention or outlet obstruction.",
+    "assessment": "Urge urinary incontinence/possible overactive bladder; exclude UTI, hematuria causes, nocturnal polyuria, and bladder outlet obstruction from benign prostatic enlargement.",
+    "plan": "Begin behavioral bladder training and fluid/caffeine modification. Address contributing conditions and refer for significant residual, obstruction, hematuria, recurrent infection, or neurologic symptoms; consider medication only after safety review."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Overactive Bladder urge",
+    "Select appropriate diagnostic workup for Overactive Bladder urge",
+      "Evaluate urge incontinence for obstruction and other reversible causes before individualized treatment"
+  ],
+  "teaching": {
+    "diagnosis": "Overactive Bladder urge",
+    "one_liner": "Urology evaluation for patient presenting with leakage of urine before reaching toilet, nocturia.",
+    "differentials": [
+      "Urinary tract infection",
+      "Stress urinary incontinence",
+      "Nocturnal polyuria from heart failure or sleep apnea"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Urosepsis with high fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Urgency and leakage pattern",
+        "say": "How often do you feel a sudden urge to urinate that you can't hold, and does it cause leakage before you reach the toilet?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "urgency",
+          "leak",
+          "toilet",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Nocturia frequency and impact on sleep",
+        "say": "How many times a night do you wake up to urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nocturia",
+          "night",
+          "wake up",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Exclude infection - dysuria, hematuria",
+        "say": "Do you have any burning with urination or blood in your urine?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "dysuria",
+          "burning",
+          "hematuria"
+        ]
+      },
+      {
+        "objective": "Cardiac and sleep history for nocturnal polyuria",
+        "say": "Do you have any history of heart failure, leg swelling, or sleep apnea?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "heart failure",
+          "leg swelling",
+          "sleep apnea"
+        ]
+      },
+      {
+        "objective": "Obstructive urinary symptoms and medication review",
+        "say": "Do you have a weak stream, straining, incomplete emptying, or medicines such as diuretics that affect when you urinate?",
+        "domains": [
+          "associated_symptoms",
+          "medications"
+        ],
+        "keywords": [
+          "weak stream",
+          "straining",
+          "emptying",
+          "diuretics"
+        ]
+      },
+      {
+        "objective": "Impact on daily function and safety (falls risk)",
+        "say": "Has rushing to the bathroom at night ever caused you to trip or fall?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "falls",
+          "trip",
+          "safety",
+          "night"
+        ]
+      }
+    ]
+  }
+}

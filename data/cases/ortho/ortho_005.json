@@ -1,0 +1,146 @@
+{
+  "id": "ortho_005",
+  "system": "orthopedics",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Evans",
+  "age": 81,
+  "gender": "female",
+  "chief_complaint": "shortened, externally rotated right leg and severe hip pain after fall at home",
+  "hpi_details": "81F with osteoporosis tripped on a throw rug in her hallway and fell onto her right hip. Unable to stand up or walk since the fall. Presents to ED c/o severe right groin and lateral hip pain exacerbated by any attempt to move the leg.",
+  "ideas": "thinks she broke her hip and will lose her independence",
+  "concerns": "worried she will never be able to live alone or walk without a walker again",
+  "expectations": "wants pain relief and quick surgical repair so she can get into rehabilitation",
+  "pmh": "Osteoporosis, Hypertension, Mild cognitive decline",
+  "medications": "Alendronate 70mg weekly, Calcium/Vitamin D daily, Lisinopril 10mg daily",
+  "social_hx": "Lives alone in one-story home, non-smoker",
+  "investigation_events": [{
+    "id": "urgent_hip_radiographs",
+    "title": "Urgent pelvis and hip radiographs",
+    "order_terms": ["hip x-ray", "hip radiograph", "pelvis x-ray", "pelvic radiograph"],
+    "availability_message": "Urgent pelvis and hip radiographs are now available.",
+    "results": [{"id": "hip_xray", "test": "AP pelvis and right hip radiographs", "value": "Displaced intracapsular right femoral-neck fracture", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Displaced right femoral neck fracture evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Displaced right femoral neck fracture is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Admit to orthopedics with geriatrics co-management, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: shortened, externally rotated right leg and severe hip pain after fall at home",
+      "Key HPI features: 81F with osteoporosis tripped on a throw rug in her hallway and fell onto her right hip. Unable to stand up or walk since the fall. Presents to ED c/o severe right groin and lateral hip pain exacerbated by any attempt to move the leg.",
+      "Objective/Exam findings: Vitals: HR 92, BP 145/88, Temp 36.7C. Right lower extremity is noticeably shortened and externally rotated while resting in bed. Marked tenderness over right femoral triangle and greater trochanter. Pelvic AP and right hip radiographs demonstrate a displaced intracapsular femoral neck fracture.",
+      "Relevant background/PMH: Osteoporosis, Hypertension, Mild cognitive decline",
+      "Current medications: Alendronate 70mg weekly, Calcium/Vitamin D daily, Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Displaced right femoral neck fracture.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Intertrochanteric fracture without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inability to bear weight after fall in elderly patient."
+    ],
+    "management_principles": [
+      "Admit to orthopedics with geriatrics co-management",
+      "Provide adequate analgesia (fascia iliaca compartment block plus multimodal sparing opioids)",
+      "Pre-operative clearance and optimization for urgent surgical hemiarthroplasty (or total hip arthroplasty depending on pre-morbid functional status) within 24-48 hours"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "81F presenting with mechanical fall resulting in inability to ambulate and classic anatomical deformity of right lower extremity.",
+    "objective": "Vitals: HR 92, BP 145/88, Temp 36.7C. Right lower extremity is noticeably shortened and externally rotated while resting in bed. Marked tenderness over right femoral triangle and greater trochanter. Pelvic AP and right hip radiographs demonstrate a displaced intracapsular femoral neck fracture.",
+    "assessment": "Displaced Right Femoral Neck Fracture in an elderly patient with osteoporosis.",
+    "plan": "Admit to orthopedics with geriatrics co-management. Provide adequate analgesia (fascia iliaca compartment block plus multimodal sparing opioids). Pre-operative clearance and optimization for urgent surgical hemiarthroplasty (or total hip arthroplasty depending on pre-morbid functional status) within 24-48 hours. Start DVT/VTE prophylaxis."
+  },
+  "learning_objectives": [
+    "Recognize the classic physical exam posture of a displaced femoral neck or intertrochanteric hip fracture (shortening and external rotation)",
+    "Differentiate intracapsular (femoral neck) vs extracapsular (intertrochanteric) hip fractures regarding vascular supply and avascular necrosis risk",
+    "Understand the survival and functional benefits of rapid surgical intervention (<48 hours) in elderly hip fractures",
+    "Outline post-operative delirium precautions, VTE prophylaxis, and secondary osteoporosis workup"
+  ],
+  "teaching": {
+    "diagnosis": "Displaced right femoral neck fracture",
+    "one_liner": "81F with osteoporosis, fell at home, now with a shortened, externally rotated right leg and inability to bear weight.",
+    "differentials": [
+      "Intertrochanteric fracture",
+      "Hip contusion/soft tissue injury",
+      "Pelvic fracture"
+    ],
+    "red_flags": [
+      "Inability to bear weight after fall in elderly patient",
+      "Shortened, externally rotated leg"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the mechanism of the fall",
+        "say": "Can you tell me exactly how you fell?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mechanism of fall"
+        ]
+      },
+      {
+        "objective": "Assess ability to bear weight",
+        "say": "Are you able to stand or put any weight on that leg?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "inability to bear weight"
+        ]
+      },
+      {
+        "objective": "Ask about home living situation for discharge planning",
+        "say": "Do you live alone, and what does your home look like—for example, are there stairs or loose rugs?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "living situation",
+          "home safety"
+        ]
+      },
+      {
+        "objective": "Review osteoporosis treatment history",
+        "say": "Have you been taking medication for your bone density?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "osteoporosis treatment"
+        ]
+      },
+      {
+        "objective": "Explain urgency of surgery and address independence concerns",
+        "say": "After we assess and prepare you safely, the orthopedic team will usually aim for surgery within a day or two to support recovery and mobility.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urgent surgery",
+          "surgical timing"
+        ]
+      }
+    ]
+  }
+}

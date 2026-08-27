@@ -1,0 +1,156 @@
+{
+  "id": "cs_016",
+  "system": "cardiothoracic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lopez",
+  "age": 33,
+  "gender": "male",
+  "chief_complaint": "high fever, septic pulmonary emboli with cavitary lung lesions, and right-sided heart murmur",
+  "hpi_details": "33M active IV methamphetamine user presenting with bacteremia, bilateral nodular cavitary lung infiltrates, and TEE showing 2 cm vegetation on tricuspid valve requiring repair/replacement.",
+  "ideas": "thinks this is related to tricuspid valve endocarditis iv drug use",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "cultures_tricuspid_endocarditis",
+      "test": "Blood cultures",
+      "value": "Methicillin-resistant Staphylococcus aureus isolated from all 3 sets",
+      "unit": "",
+      "reference_range": "No growth",
+      "flag": "positive",
+      "specimen": "Blood",
+      "collected_at": "Before antibiotics"
+    },
+    {
+      "id": "tee_tricuspid_vegetation",
+      "test": "Transesophageal echocardiogram",
+      "value": "2.0 cm mobile vegetation on the anterior tricuspid leaflet with severe tricuspid regurgitation",
+      "unit": "",
+      "reference_range": "No vegetation",
+      "flag": "critical",
+      "collected_at": "Before surgical consultation"
+    },
+    {
+      "id": "ct_septic_pulmonary_emboli",
+      "test": "CT chest",
+      "value": "Multiple bilateral peripheral nodules, several cavitating, consistent with septic pulmonary emboli",
+      "unit": "",
+      "reference_range": "No septic emboli",
+      "flag": "abnormal",
+      "collected_at": "During admission"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Tricuspid Valve Endocarditis (IV drug use) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tricuspid Valve Endocarditis (IV drug use) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management requires prolonged IV antibiotics targeted to blood culture results (empiric coverage for Staphylococcus aureus, the most common organism in IVDU-associated tricuspid endocarditis) and surgical evaluation when there is persistent bacteremia, recurrent septic emboli, or right heart failure.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever, septic pulmonary emboli with cavitary lung lesions, and right-sided heart murmur",
+      "Key HPI features: 33M active IV methamphetamine user presenting with bacteremia, bilateral nodular cavitary lung infiltrates, and TEE showing 2 cm vegetation on tricuspid valve requiring repair/replacement.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Tricuspid Valve Endocarditis IV Drug Use.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tricuspid Valve Endocarditis (IV drug use).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Left-sided (aortic/mitral) endocarditis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Respiratory distress with new cavitary lesions — signals ongoing septic embolization."
+    ],
+    "management_principles": [
+      "Start empiric IV antibiotics (e.g., vancomycin) after blood cultures are drawn, then narrow therapy once the causative organism and sensitivities are known",
+      "Consult cardiothoracic surgery and infectious disease; counsel on harm-reduction and substance-use treatment referral",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Tricuspid Valve Endocarditis IV Drug Use: high fever, septic pulmonary emboli with cavitary lung lesions, and right-sided heart murmur. 33M active IV methamphetamine user presenting with bacteremia, bilateral nodular cavitary lung infiltrates, and TEE showing 2 cm vegetation on tricuspid valve requiring repair/replacement.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Tricuspid Valve Endocarditis IV Drug Use.",
+    "assessment": "Findings consistent with tricuspid valve infective endocarditis complicated by septic pulmonary emboli, in the context of injection drug use.",
+    "plan": "Draw blood cultures x2-3 sets before starting antibiotics; begin empiric IV vancomycin pending sensitivities; obtain TTE/TEE; consult cardiothoracic surgery and infectious disease; counsel on harm-reduction and substance-use treatment referral."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Tricuspid Valve Endocarditis IV Drug Use",
+    "Formulate prioritized differential diagnosis for high fever, septic pulmonary emboli with cavitary lung lesions, and right-sided heart murmur",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Tricuspid Valve Endocarditis (IV drug use)",
+    "one_liner": "Bacteria introduced through injection drug use seed the tricuspid valve, and vegetation fragments embolize to the lungs, causing septic pulmonary emboli with cavitary lesions and fever.",
+    "differentials": [
+      "Left-sided (aortic/mitral) endocarditis",
+      "Community-acquired pneumonia",
+      "Pulmonary tuberculosis"
+    ],
+    "red_flags": [
+      "Respiratory distress with new cavitary lesions — signals ongoing septic embolization"
+    ],
+    "must_ask": [
+      {
+        "objective": "Injection drug use",
+        "say": "Can you tell me about your drug use — what and how often you inject?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "injection",
+          "methamphetamine"
+        ]
+      },
+      {
+        "objective": "Fever pattern",
+        "say": "How long have you had fevers?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Any cough, chest pain, or coughing up blood?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Injection site infections",
+        "say": "Have you had any skin infections at your injection sites?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior endocarditis",
+        "say": "Have you had a heart valve infection before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

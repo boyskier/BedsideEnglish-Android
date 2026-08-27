@@ -1,0 +1,127 @@
+{
+  "id": "em_024",
+  "system": "emergency medicine",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Yoon",
+  "age": 20,
+  "gender": "male",
+  "chief_complaint": "throbbing headache, dizziness, and mild nausea after bumping head in basketball",
+  "hpi_details": "20M college student presents 4 hours after colliding with another player during basketball and bumping his head. Experienced brief disorientation but no loss of consciousness. Complains of mild headache and dizziness.",
+  "ideas": "worried he has a concussion or brain bleed",
+  "concerns": "anxious about returning to basketball practice",
+  "expectations": "wants head scan and advice",
+  "pmh": "No prior concussions",
+  "medications": "None",
+  "social_hx": "College sophomore, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Mild Traumatic Brain Injury (Concussion) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mild Traumatic Brain Injury (Concussion) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Mild Traumatic Brain Injury (Concussion), ruling out intracranial hemorrhage, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: throbbing headache, dizziness, and mild nausea after bumping head in basketball",
+      "Key HPI features: 20M college student presents 4 hours after colliding with another player during basketball and bumping his head. Experienced brief disorientation but no loss of consciousness. Complains of mild headache and dizziness.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Mild Traumatic Brain Injury (Concussion), ruling out intracranial hemorrhage.",
+      "Relevant background/PMH: No prior concussions"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mild Traumatic Brain Injury (Concussion).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Intracranial hemorrhage without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Worsening headache, repeated vomiting, or increasing confusion — would suggest a more serious brain injury."
+    ],
+    "management_principles": [
+      "Perform a neurological and balance exam to evaluate for Mild Traumatic Brain Injury (Concussion), ruling out intracranial hemorrhage",
+      "Apply the Canadian CT Head Rule only after confirming eligibility and assessing all high- and medium-risk features, anticoagulant use, and neurologic examination"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: throbbing headache, dizziness, and mild nausea after bumping head in basketball\n\n20M college student presents 4 hours after colliding with another player during basketball and bumping his head. Experienced brief disorientation but no loss of consciousness. Complains of mild headache and dizziness.",
+    "objective": "Complete vital signs and focused physical examination. Evaluate for pertinent signs.",
+    "assessment": "Clinical presentation highly suggestive of Mild Traumatic Brain Injury (Concussion), ruling out intracranial hemorrhage.",
+    "plan": "Perform a complete neurologic examination and assess for anticoagulant use. Apply the Canadian CT Head Rule only after confirming eligibility and assessing all high- and medium-risk features; obtain CT if indicated. If discharged, provide written return precautions for worsening headache, repeated vomiting, seizure, increasing confusion, weakness, or drowsiness. Recommend 24-48 hours of relative rest followed by graded return to school/work and sport only after symptom resolution and supervised progression."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Mild Traumatic Brain Injury (Concussion), ruling out intracranial hemorrhage.",
+    "Formulate prioritized differential diagnosis for throbbing headache, dizziness, and mild nausea after bumping head in basketball",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies for Mild Traumatic Brain Injury (Concussion), ruling out intracranial hemorrhage."
+  ],
+  "teaching": {
+    "diagnosis": "Mild Traumatic Brain Injury (Concussion)",
+    "one_liner": "A blow to the head causing transient neurological disturbance — brief disorientation, headache, dizziness — without loss of consciousness; the Canadian CT Head Rule determines whether imaging is needed.",
+    "differentials": [
+      "Intracranial hemorrhage",
+      "Cervical spine injury",
+      "Post-concussive migraine"
+    ],
+    "red_flags": [
+      "Worsening headache, repeated vomiting, or increasing confusion — would suggest a more serious brain injury"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and loss of consciousness",
+        "say": "Did you lose consciousness, even briefly?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "loss of consciousness"
+        ]
+      },
+      {
+        "objective": "Memory of the event",
+        "say": "Do you remember exactly what happened during and right after the collision?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "disorientation",
+          "amnesia"
+        ]
+      },
+      {
+        "objective": "Current symptoms",
+        "say": "How is your headache and dizziness right now?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Vomiting",
+        "say": "Have you vomited since the injury?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior concussions",
+        "say": "Have you had a concussion before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,224 @@
+{
+  "id": "gi_016",
+  "system": "gastroenterology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Miller",
+  "age": 24,
+  "gender": "male",
+  "chief_complaint": "vomiting bright red blood after heavy drinking last night",
+  "hpi_details": "Presents after attending a stag party last night where he consumed approximately 18 units of alcohol. Experienced repeated, violent dry-retching and non-bloody vomiting around 3 AM. On the fourth episode of vomiting, noticed a cup of bright red blood mixed with stomach contents. No further bleeding since arrival.",
+  "ideas": "thinks he popped a blood vessel in his throat from retching so hard",
+  "concerns": "scared because he has never seen blood in his vomit before",
+  "expectations": "wants assurance that his stomach isn't bleeding out and fluids to cure his hangover",
+  "pmh": "no prior medical history, no previous GI bleeding, no liver disease",
+  "medications": "none regular, took two ibuprofen tablets before bed last night",
+  "social_hx": "university student, binge drinks on weekends, non-smoker, no illicit drug use",
+  "investigation_events": [
+    {
+      "id": "urgent_upper_gi_bleed_labs",
+      "title": "Urgent upper gastrointestinal bleed laboratory results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "urea",
+        "bun",
+        "renal function",
+        "coagulation studies",
+        "coagulation panel",
+        "type and screen"
+      ],
+      "availability_message": "The urgent bleeding-risk laboratory results are now available; IV access and clinical observation should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "13.4",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "blood_urea_nitrogen",
+          "test": "Blood urea nitrogen",
+          "value": "19",
+          "unit": "mg/dL",
+          "reference_range": "7-20",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "0.9",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.0",
+          "reference_range": "0.8-1.2",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Mallory-Weiss Tear evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mallory-Weiss Tear is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes IV access, antiemetics, high-dose oral or IV proton pump inhibitor (omeprazole 40mg BID), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: vomiting bright red blood after heavy drinking last night",
+      "Key HPI features: Presents after attending a stag party last night where he consumed approximately 18 units of alcohol. Experienced repeated, violent dry-retching and non-bloody vomiting around 3 AM. On the fourth episode of vomiting, noticed a cup of bright red blood mixed with stomach contents. No further bleeding since arrival.",
+      "Objective/Exam findings: Vitals: HR and BP lying/standing (check for postural hypotension/tachycardia). Calculate Glasgow-Blatchford Bleeding Score. Bloods: FBC, urea/creatinine, LFTs, coagulation screen, group and save. Upper GI endoscopy (OGD) within 24 hours.",
+      "Relevant background/PMH: no prior medical history, no previous GI bleeding, no liver disease",
+      "Current medications: none regular, took two ibuprofen tablets before bed last night"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mallory-Weiss Tear.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Erosive gastritis (alcohol/NSAID) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: haemodynamic instability (tachycardia, hypotension), large-volume or persistent haematemesis beyond the initial retching episode, signs of chronic liver disease (jaundice, ascites, or spider naevi)."
+    ],
+    "management_principles": [
+      "IV access, antiemetics, high-dose oral or IV proton pump inhibitor (omeprazole 40mg BID)",
+      "Observe clinically for re-bleeding",
+      "Inpatient or outpatient OGD depending on risk stratification (Blatchford score 0-1 may allow safe discharge after observation)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "24M presents with acute haematemesis preceded by multiple episodes of violent retching/vomiting post-alcohol intoxication. Took ibuprofen. No ongoing haematemesis.",
+    "objective": "Vitals: HR and BP lying/standing (check for postural hypotension/tachycardia). Calculate Glasgow-Blatchford Bleeding Score. Bloods: FBC, urea/creatinine, LFTs, coagulation screen, group and save. Upper GI endoscopy (OGD) within 24 hours.",
+    "assessment": "Mallory-Weiss mucosal tear at the gastro-oesophageal junction secondary to forceful vomiting. DDx: acute erosive gastritis from alcohol/NSAIDs, peptic ulcer bleed, oesophageal varices (unlikely given age/history).",
+    "plan": "IV access, antiemetics, high-dose oral or IV proton pump inhibitor (omeprazole 40mg BID). Observe clinically for re-bleeding. Inpatient or outpatient OGD depending on risk stratification (Blatchford score 0-1 may allow safe discharge after observation). Counsel on alcohol moderation and avoiding NSAIDs."
+  },
+  "learning_objectives": [
+    "Elicit the characteristic chronological sequence of Mallory-Weiss tears: forceful non-bloody vomiting preceding haematemesis",
+    "Stratify upper GI bleeding risk using validated tools (Glasgow-Blatchford score)",
+    "Identify compounding factors for mucosal haemorrhage (acute alcohol binge combined with NSAID ingestion)",
+    "Explain post-emetic mucosal laceration mechanics reassuringly while maintaining monitoring safety"
+  ],
+  "teaching": {
+    "diagnosis": "Mallory-Weiss Tear",
+    "one_liner": "Forceful retching or vomiting tears the lining where the oesophagus meets the stomach, producing a small amount of bright red blood in the vomit.",
+    "differentials": [
+      "Erosive gastritis (alcohol/NSAID)",
+      "Peptic ulcer bleed",
+      "Oesophageal varices"
+    ],
+    "red_flags": [
+      "Haemodynamic instability (tachycardia, hypotension) — suggests ongoing significant blood loss rather than a self-limiting tear",
+      "Large-volume or persistent haematemesis beyond the initial retching episode — raises concern for a deeper bleed such as a variceal or ulcer source",
+      "Signs of chronic liver disease (jaundice, ascites, spider naevi) — raises suspicion for oesophageal varices rather than a simple mucosal tear"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sequence of vomiting then blood",
+        "say": "Did the blood appear only after you'd already been retching or vomiting several times?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "retching",
+          "vomiting",
+          "repeated"
+        ]
+      },
+      {
+        "objective": "Amount and colour of blood",
+        "say": "How much blood was there, and what colour — bright red or darker?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "blood",
+          "bright",
+          "red",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Alcohol consumed",
+        "say": "How much alcohol did you drink last night?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "alcohol",
+          "drinking",
+          "drank",
+          "units"
+        ]
+      },
+      {
+        "objective": "NSAID use",
+        "say": "Did you take any painkillers like ibuprofen recently?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "painkiller",
+          "tablets"
+        ]
+      },
+      {
+        "objective": "Liver disease history",
+        "say": "Do you have any history of liver problems?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "liver",
+          "disease",
+          "jaundice"
+        ]
+      },
+      {
+        "objective": "Ongoing bleeding since arrival",
+        "say": "Have you brought up any more blood since you got here?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "blood",
+          "since",
+          "arrival",
+          "vomited"
+        ]
+      }
+    ]
+  }
+}

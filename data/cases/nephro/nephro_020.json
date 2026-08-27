@@ -1,0 +1,140 @@
+{
+  "id": "nephro_020",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Vance",
+  "age": 68,
+  "gender": "male",
+  "chief_complaint": "decreased urine output and extreme weakness",
+  "hpi_details": "68M is brought in by his son. He has had a severe diarrheal illness for 4 days and hasn't been able to keep fluids down. For the last 24 hours, he has barely urinated. He is extremely weak and lightheaded.",
+  "ideas": "thinks he is just dehydrated",
+  "concerns": "son is worried about kidney failure",
+  "expectations": "wants IV fluids",
+  "pmh": "Hypertension",
+  "medications": "Lisinopril, Hydrochlorothiazide",
+  "social_hx": "Lives alone",
+  "investigation_events": [
+    {
+      "id": "stat_hypovolemic_aki_workup",
+      "title": "Urgent renal function assessment",
+      "order_terms": ["BMP", "basic metabolic panel", "renal function", "BUN", "creatinine", "electrolytes"],
+      "availability_message": "Urgent renal function results are now available. IV fluid resuscitation should not be delayed in this hypotensive, volume-depleted patient.",
+      "results": [
+        {"id": "bun", "test": "Blood urea nitrogen", "value": "60", "unit": "mg/dL", "reference_range": "7-20", "flag": "high"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "2.5", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "high", "note": "Baseline creatinine is 1.0 mg/dL."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Pre-Renal Acute Kidney Injury (AKI)",
+    "core_concepts": [
+      "Caused by decreased renal perfusion (volume depletion).",
+      "BUN:Creatinine ratio is usually > 20:1. FeNa < 1%."
+    ],
+    "diagnostic_clues": [
+      "Severe diarrhea",
+      "Oliguria",
+      "ACEi/Diuretic use"
+    ],
+    "common_misconceptions": [
+      "Continuing BP meds (ACEi) in the setting of severe volume depletion, which worsens AKI."
+    ],
+    "dangerous_errors": [
+      "Delaying fluid resuscitation, which can lead to Acute Tubular Necrosis (intrinsic renal failure)."
+    ],
+    "management_principles": [
+      "Aggressive IV fluid resuscitation, hold antihypertensives, monitor urine output."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68M with severe diarrhea, poor oral intake, oliguria, and weakness.",
+    "objective": "Dry mucous membranes, poor skin turgor. HR 110, BP 90/60. Labs show BUN 60, Cr 2.5 (baseline 1.0).",
+    "assessment": "Pre-renal AKI secondary to severe dehydration.",
+    "plan": "Hold Lisinopril and HCTZ. STAT 1L NS IV bolus. Monitor urine output. Recheck BMP."
+  },
+  "learning_objectives": [
+    "Recognize pre-renal AKI and the necessity of holding nephrotoxic/BP meds."
+  ],
+  "teaching": {
+    "diagnosis": "Pre-Renal Acute Kidney Injury",
+    "one_liner": "Oliguria and elevated BUN/Cr ratio in a volume-depleted patient, exacerbated by ACE inhibitor use.",
+    "differentials": [
+      "Acute Tubular Necrosis (intrinsic AKI)",
+      "Post-renal AKI"
+    ],
+    "red_flags": [
+      "Hyperkalemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fluid loss history",
+        "say": "Have you had vomiting, diarrhea, or reduced fluid intake recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "diarrhea",
+          "vomiting",
+          "dehydration"
+        ]
+      },
+      {
+        "objective": "Urine output change",
+        "say": "Have you noticed a decrease in how much urine you're passing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "decreased urine",
+          "oliguria"
+        ]
+      },
+      {
+        "objective": "Medication review",
+        "say": "Are you taking any blood pressure medications, ACE inhibitors, or diuretics?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ACE inhibitor",
+          "diuretic",
+          "medications"
+        ]
+      },
+      {
+        "objective": "Orthostatic symptoms",
+        "say": "Do you feel dizzy or lightheaded when you stand up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizzy",
+          "lightheaded",
+          "orthostatic"
+        ]
+      },
+      {
+        "objective": "Weakness severity",
+        "say": "How is the weakness affecting your ability to do your usual activities?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "weakness",
+          "fatigue"
+        ]
+      }
+    ]
+  }
+}

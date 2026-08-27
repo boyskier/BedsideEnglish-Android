@@ -1,0 +1,161 @@
+{
+  "id": "obgyn_001",
+  "system": "obstetrics & gynecology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Adams",
+  "age": 29,
+  "gender": "female",
+  "chief_complaint": "sudden generalized tonic-clonic seizures, severe headache, and visual scotomas at 36 weeks gestation",
+  "hpi_details": "29F G1P0 at 36 weeks gestation brought to ED by ambulance after husband witnessed her experience a 2-minute generalized tonic-clonic seizure at home. For the past 2 days, patient complained of severe, unrelenting frontal headache, flashing lights/blind spots in her vision, and rapid swelling of her hands and face. Still post-ictal and confused upon arrival.",
+  "ideas": "husband terrified she and the baby will die from stroke or brain hemorrhage",
+  "concerns": "husband wants immediate emergency delivery and medicine to stop any more seizures",
+  "expectations": "patient currently post-ictal with blood pressure spiking dangerously high",
+  "pmh": "No prior chronic medical history. Prenatal course notable for borderline blood pressures starting at 34 weeks without proteinuria at last check",
+  "medications": "Prenatal vitamins",
+  "social_hx": "High school teacher, non-smoker",
+  "investigation_events": [{
+    "id": "stat_eclampsia_assessment",
+    "title": "Emergency maternal and fetal assessment",
+    "order_terms": ["CBC", "platelet", "liver enzymes", "AST", "ALT", "protein creatinine", "urine protein", "fetal monitoring", "cardiotocography", "CTG"],
+    "availability_message": "STAT maternal laboratory and fetal-monitoring results are now available. Magnesium, severe-hypertension treatment, and delivery preparation must not be delayed.",
+    "results": [
+      {"id": "urine_protein_creatinine", "test": "Urine protein-to-creatinine ratio", "value": "4.8", "unit": "g/g", "reference_range": "<0.3", "flag": "high"},
+      {"id": "platelets", "test": "Platelet count", "value": "95000", "unit": "/uL", "reference_range": "150000-400000", "flag": "low"},
+      {"id": "ast", "test": "AST", "value": "142", "unit": "U/L", "reference_range": "10-40", "flag": "high"},
+      {"id": "alt", "test": "ALT", "value": "156", "unit": "U/L", "reference_range": "7-56", "flag": "high"},
+      {"id": "ctg", "test": "Continuous fetal heart-rate monitoring", "value": "Baseline 150 bpm with minimal variability and recurrent late decelerations after the seizure", "flag": "critical"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Eclampsia (seizure secondary to severe preeclampsia) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Eclampsia (seizure secondary to severe preeclampsia) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT obstetric emergency with magnesium sulfate for seizure prophylaxis, acute blood pressure control, and stabilization for urgent delivery, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden generalized tonic-clonic seizures, severe headache, and visual scotomas at 36 weeks gestation",
+      "Key HPI features: 29F G1P0 at 36 weeks gestation brought to ED by ambulance after husband witnessed her experience a 2-minute generalized tonic-clonic seizure at home. For the past 2 days, patient complained of severe, unrelenting frontal headache, flashing lights/blind spots in her vision, and rapid swelling of her hands and face. Still post-ictal and confused upon arrival.",
+      "Objective/Exam findings: Vitals: HR 118, BP 188/116 mmHg, RR 22, SpO2 96% post-ictal. 4+ pitting edema of lower extremities and facial puffiness. Deep tendon reflexes 4+ bilaterally with 3 beats of clonus at ankles. Continuous fetal heart rate monitoring reveals baseline 150 bpm with minimal variability and late decelerations post-seizure. Labs: Protein/Creatinine ratio 4.8 g/g (marked proteinuria), Platelets 95,000 /uL, AST 142 U/L, ALT 156 U/L, Uric acid 8.4 mg/dL.",
+      "Relevant background/PMH: No prior chronic medical history. Prenatal course notable for borderline blood pressures starting at 34 weeks without proteinuria at last check",
+      "Current medications: Prenatal vitamins"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Eclampsia (seizure secondary to severe preeclampsia).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Severe preeclampsia without seizure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Generalized tonic-clonic seizure."
+    ],
+    "management_principles": [
+      "STAT obstetric emergency requiring seizure prophylaxis, acute blood pressure control, and stabilization for urgent delivery",
+      "Initiate Magnesium Sulfate IV bolus (4 grams over 20 minutes) followed by continuous infusion (2 grams/hour) for seizure prophylaxis and neuroprotection (monitor patellar reflexes, respiratory rate >12, and urine output >30 mL/hr; have Calcium Gluconate readily available for toxicity)",
+      "Lower acute severe hypertension using IV Labetalol (20-40 mg IV bolus) or IV Hydralazine (5-10 mg IV bolus) targeting systolic BP 140-150 / diastolic 90-100 mmHg to prevent maternal stroke"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden generalized tonic-clonic seizures, severe headache, and visual scotomas at 36 weeks gestation\n\n29F G1P0 at 36 weeks gestation brought to ED by ambulance after husband witnessed her experience a 2-minute generalized tonic-clonic seizure at home. For the past 2 days, patient complained of severe, unrelenting frontal headache, flashing lights/blind spots in her vision, and rapid swelling of her hands and face. Still post-ictal and confused upon arrival.",
+    "objective": "Vitals: HR 118, BP 188/116 mmHg, RR 22, SpO2 96% post-ictal. 4+ pitting edema of lower extremities and facial puffiness. Deep tendon reflexes 4+ bilaterally with 3 beats of clonus at ankles. Continuous fetal heart rate monitoring reveals baseline 150 bpm with minimal variability and late decelerations post-seizure. Labs: Protein/Creatinine ratio 4.8 g/g (marked proteinuria), Platelets 95,000 /uL, AST 142 U/L, ALT 156 U/L, Uric acid 8.4 mg/dL.",
+    "assessment": "Eclampsia (Seizure secondary to Severe Preeclampsia at 36 weeks gestation) with secondary fetal distress.",
+    "plan": "STAT obstetric emergency: 1. Initiate Magnesium Sulfate IV bolus (4 grams over 20 minutes) followed by continuous infusion (2 grams/hour) for seizure prophylaxis and neuroprotection (monitor patellar reflexes, respiratory rate >12, and urine output >30 mL/hr; have Calcium Gluconate readily available for toxicity). 2. Lower acute severe hypertension using IV Labetalol (20-40 mg IV bolus) or IV Hydralazine (5-10 mg IV bolus) targeting systolic BP 140-150 / diastolic 90-100 mmHg to prevent maternal stroke. 3. Stabilize maternal condition and proceed to urgent/emergent delivery (Cesarean section if fetal distress/late decelerations persist post-maternal stabilization)."
+  },
+  "learning_objectives": [
+    "Recognize the clinical progression of preeclampsia with severe features (headache, visual changes, hyperreflexia, clonus) to Eclampsia (seizure)",
+    "Administer correct IV Magnesium Sulfate loading and maintenance dosages and monitor toxicity signs (loss of patellar reflexes, respiratory depression, oliguria)",
+    "Understand the therapeutic threshold and selection of rapid-acting antihypertensives (IV Labetalol, IV Hydralazine, oral Nifedipine) for maternal hypertensive emergencies (BP > 160/110)",
+    "Explain that delivery of the fetus and placenta is the only definitive cure for preeclampsia/eclampsia, while maternal stabilization precedes surgical delivery during acute seizures"
+  ],
+  "teaching": {
+    "diagnosis": "Eclampsia (seizure secondary to severe preeclampsia)",
+    "one_liner": "36-week primigravida with new-onset seizure, headache, visual scotomas, and facial/hand swelling on a background of rising blood pressure.",
+    "differentials": [
+      "Severe preeclampsia without seizure",
+      "Epilepsy/primary seizure disorder",
+      "Hemorrhagic stroke",
+      "PRES (posterior reversible encephalopathy syndrome)"
+    ],
+    "red_flags": [
+      "Generalized tonic-clonic seizure",
+      "Severe unrelenting headache",
+      "Visual scotomas",
+      "Rapid facial/hand edema",
+      "Post-ictal confusion"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the seizure characteristics and duration",
+        "say": "Can you describe what happened during the seizure — how long did it last?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "seizure",
+          "tonic-clonic",
+          "duration"
+        ]
+      },
+      {
+        "objective": "Elicit premonitory symptoms of severe preeclampsia",
+        "say": "Did you have a headache, blurred vision, or flashing lights before this happened?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "visual disturbance",
+          "scotoma"
+        ]
+      },
+      {
+        "objective": "Check for rapid edema",
+        "say": "Have you noticed sudden swelling in your hands, face, or legs?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "edema",
+          "swelling"
+        ]
+      },
+      {
+        "objective": "Screen for epigastric pain (impending eclampsia sign)",
+        "say": "Have you had any pain under your ribs or in your upper stomach?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "epigastric pain",
+          "RUQ pain"
+        ]
+      },
+      {
+        "objective": "Review antenatal blood pressure trend",
+        "say": "Has your blood pressure been high at any of your prenatal visits?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "blood pressure",
+          "prenatal"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "id": "pulm_019",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 67,
+  "gender": "male",
+  "chief_complaint": "severe shortness of breath, coughing up pink frothy fluid, and choking 2 hours after waking up",
+  "hpi_details": "Presents via emergency ambulance in severe acute respiratory distress, sitting upright leaning forward, unable to speak in full sentences. His frightened wife reports he went to bed feeling entirely well, but woke up abruptly 2 hours ago gasping for air, coughing violently, and producing copious amounts of pink, frothy, blood-tinged liquid from his mouth. Complains of intense pressure across his chest and feeling completely suffocated. Has a history of anterior myocardial infarction 6 years ago and poorly controlled hypertension.",
+  "ideas": "thinks his heart pump has failed completely causing fluid to back up and drown his lungs from the inside",
+  "concerns": "terrified he is drowning in his own fluids and will die within minutes without emergency help",
+  "expectations": "wants emergency IV water pills, high-pressure oxygen, and immediate relief",
+  "pmh": "previous anterior myocardial infarction 6 years ago, hypertension, chronic kidney disease stage 3",
+  "medications": "ramipril 10mg OD, bisoprolol 5mg OD, furosemide 40mg OD",
+  "social_hx": "ex-smoker, zero alcohol, retired bus driver, lives with wife",
+  "investigation_events": [{"id":"acute_pulmonary_edema_workup","title":"STAT acute pulmonary oedema results","order_terms":["chest x ray","chest x-ray","cxr","ecg","ekg","abg","arterial blood gas","nt-probnp","bnp","troponin"],"availability_message":"The STAT cardiopulmonary results are now available; ventilatory support and treatment of severe hypertension should not be delayed.","results":[{"id":"chest_xray","test":"Portable chest radiograph","value":"Bilateral perihilar bat-wing air-space opacities, Kerley B lines, cardiomegaly, and small bilateral pleural effusions","flag":"critical","collected_at":"At emergency presentation"},{"id":"ecg","test":"12-lead ECG","value":"Sinus tachycardia with old anterior Q waves and new lateral ST-segment depression","flag":"critical","collected_at":"At emergency presentation"},{"id":"arterial_blood_gas","test":"Arterial blood gas on room air","value":"pH 7.28; PaO2 48 mmHg; lactate 4.1 mmol/L","flag":"critical","specimen":"Arterial blood","collected_at":"At emergency presentation"},{"id":"nt_probnp","test":"NT-proBNP","value":"6,420","unit":"pg/mL","reference_range":"<125","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"}]}],
+  "clinical_knowledge": {
+    "topic": "Acute Cardiogenic Pulmonary Oedema evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Cardiogenic Pulmonary Oedema is essential for appropriate diagnostic workup and treatment.",
+      "Clinical history, severity assessment, and targeted testing must be interpreted together rather than relying on one symptom alone.",
+      "Provide immediate upright positioning, oxygen only when hypoxaemic, and ventilatory support when needed.",
+      "Management should follow local pathways and account for patient-specific comorbidity and clinical severity."
+    ],
+    "diagnostic_clues": [
+      "Chief complaint: severe shortness of breath, coughing up pink frothy fluid, and choking 2 hours after waking up",
+      "Key HPI features: Presents via emergency ambulance in severe acute respiratory distress, sitting upright leaning forward, unable to speak in full sentences. His frightened wife reports he went to bed feeling entirely well, but woke up abruptly 2 hours ago gasping for air, coughing violently, and producing copious amounts of pink, frothy, blood-tinged liquid from his mouth. Complains of intense pressure across his chest and feeling completely suffocated. Has a history of anterior myocardial infarction 6 years ago and poorly controlled hypertension.",
+      "Objective/examination findings: Perform focused examination, vital-sign assessment, and diagnosis-specific investigations.",
+      "Relevant background/PMH: previous anterior myocardial infarction 6 years ago, hypertension, chronic kidney disease stage 3",
+      "Current medications: ramipril 10mg OD, bisoprolol 5mg OD, furosemide 40mg OD"
+    ],
+    "common_misconceptions": [
+      "Assuming a mild or atypical presentation rules out Acute Cardiogenic Pulmonary Oedema.",
+      "Relying on a single normal test result to prematurely exclude serious pathology.",
+      "Equating transient symptom improvement with resolution of the underlying condition.",
+      "Failing to consider clinically important alternative diagnoses."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation.",
+      "Prematurely discharging or reassuring the patient before appropriate assessment.",
+      "Starting treatment without considering contraindications, interactions, or organ function.",
+      "Ignoring critical warning signs: Severe respiratory distress or hypoxaemia."
+    ],
+    "management_principles": [
+      "Provide immediate upright positioning, oxygen only when hypoxaemic, and ventilatory support when needed.",
+      "Treat congestion and the precipitant with urgent senior assessment, diuretics, and vasodilators when clinically appropriate.",
+      "Evaluate for acute coronary syndrome, arrhythmia, hypertensive emergency, and renal dysfunction."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ESC Guidelines for Acute and Chronic Heart Failure",
+        "url": "https://www.escardio.org/Guidelines/Clinical-Practice-Guidelines/Acute-and-Chronic-Heart-Failure"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "67M with prior MI and HTN presents with acute-onset severe nocturnal dyspnoea, pink frothy expectoration, orthopnoea, and acute respiratory distress.",
+    "objective": "Vitals: severe tachypnoea RR 34, tachycardia HR 122, severe hypoxaemia O2 sat 81% on room air, severe acute hypertension BP 195/110 mmHg (sympathetic surge). Physical exam: patient sitting bolt upright, cold clammy diaphoretic skin, marked peripheral cyanosis. Cardiovascular exam: JVP markedly elevated (+6 cm H2O), loud S3 gallop rhythm heard at apex. Respiratory auscultation: loud, coarse, bubbling inspiratory and expiratory crackles heard throughout all lung fields ('wet lungs' from apex to base), plus cardiac wheeze ('cardiac asthma'). Erect Chest X-ray (or portable): demonstrates classical Acute Pulmonary Oedema / Congestive Heart Failure signs ('ABCDE' -> Alveolar bat-wing/butterfly perihilar shadowing, Kerley B lines in costophrenic angles, Cardiomegaly, Dilated upper lobe pulmonary vessels / upper lobe diversion, and pleural Effusions). 12-lead ECG: sinus tachycardia, broad Q waves anteriorly, and acute ST-segment depressions in lateral leads (subendocardial ischemia). Bloods: NT-proBNP markedly elevated (>5000 pg/mL confirming acute cardiogenic pulmonary oedema), urgent troponin, U&Es, ABG (severe hypoxaemia with metabolic lactic acidosis).",
+    "assessment": "Acute Cardiogenic Pulmonary Oedema (Acute Decompensated Heart Failure triggered by hypertensive emergency / acute ischemia). DDx: Acute Respiratory Distress Syndrome (ARDS -> non-cardiogenic pulmonary oedema with normal PCWP and absent S3/JVP), severe COPD/asthma exacerbation (ruled out by pink frothy sputum and bat-wing CXR), acute bilateral pneumonia.",
+    "plan": "This is a medical emergency requiring immediate senior/emergency-team management. Keep the patient upright, continuously monitor oxygenation, ventilation, ECG, blood pressure, and renal function, and evaluate urgently for acute coronary syndrome, arrhythmia, hypertensive emergency, and other precipitants. Clinicians may provide oxygen for hypoxaemia and select non-invasive ventilation, diuretics, or vasodilators only after assessment of oxygenation, blood pressure, contraindications, renal function, and response. Escalate to critical care if respiratory failure, altered consciousness, shock, or failure of initial support develops."
+  },
+  "learning_objectives": [
+    "Identify classical physical and radiographic signs of acute cardiogenic pulmonary oedema: pink frothy sputum, S3 gallop, and bat-wing CXR",
+    "Recognize the need for immediate clinician-led ventilatory and circulatory support in severe pulmonary oedema",
+    "Explain why diuretics and vasodilators require haemodynamic, renal, and contraindication assessment",
+    "Differentiate cardiogenic pulmonary oedema (high NT-proBNP, elevated JVP) from non-cardiogenic ARDS"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Cardiogenic Pulmonary Oedema",
+    "one_liner": "Acute left-sided heart failure causing pulmonary fluid accumulation, severe dyspnoea, and pink frothy sputum.",
+    "differentials": [
+      "Acute coronary syndrome",
+      "ARDS",
+      "Severe asthma or COPD exacerbation"
+    ],
+    "red_flags": [
+      "Severe respiratory distress or hypoxaemia",
+      "Hypotension, altered consciousness, or ongoing chest pain"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sudden onset of dyspnea and pink frothy sputum",
+        "say": "You said this started very suddenly two hours ago - can you describe what came up when you coughed?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "sudden",
+          "frothy",
+          "pink",
+          "sputum",
+          "coughing"
+        ]
+      },
+      {
+        "objective": "Orthopnea and paroxysmal nocturnal dyspnea",
+        "say": "Do you need to sit up or use extra pillows to breathe comfortably at night?",
+        "domains": [
+          "aggravating",
+          "relieving"
+        ],
+        "keywords": [
+          "orthopnea",
+          "pillows",
+          "sitting up",
+          "nocturnal",
+          "breathless"
+        ]
+      },
+      {
+        "objective": "Cardiac history and prior myocardial infarction",
+        "say": "You've had a heart attack before - have you had any chest pain or pressure with this episode?",
+        "domains": [
+          "pmh",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "myocardial infarction",
+          "chest pressure",
+          "cardiac history",
+          "heart attack",
+          "ischemia"
+        ]
+      },
+      {
+        "objective": "Medication and fluid restriction adherence",
+        "say": "Have you been taking your heart and blood pressure medicines, and eating a lot of salty food lately?",
+        "domains": [
+          "medications",
+          "aggravating"
+        ],
+        "keywords": [
+          "furosemide",
+          "adherence",
+          "salt",
+          "fluid",
+          "medications"
+        ]
+      },
+      {
+        "objective": "Renal function and fluid overload signs",
+        "say": "Have your legs been swelling up, or has your urine output changed recently?",
+        "domains": [
+          "associated_symptoms",
+          "pmh"
+        ],
+        "keywords": [
+          "swelling",
+          "edema",
+          "renal",
+          "fluid overload",
+          "urine output"
+        ]
+      }
+    ]
+  }
+}

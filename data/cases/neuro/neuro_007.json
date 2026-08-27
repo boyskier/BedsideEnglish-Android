@@ -1,0 +1,145 @@
+{
+  "id": "neuro_007",
+  "system": "neurology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Bradley",
+  "age": 51,
+  "gender": "male",
+  "chief_complaint": "sudden explosive headache like being hit with a baseball bat 2 hours ago",
+  "hpi_details": "Presents via emergency ambulance with a 2-hour history of an instantaneous, blinding, 10/10 thunderclap headache that reached peak intensity within 5 seconds while lifting weights at the gym. Describes it as 'the worst headache of my entire life, like someone struck the back of my head with a sledgehammer.' Accompanied immediately by forceful vomiting, photophobia, and stiff neck. Experienced brief 30-second loss of consciousness at onset, now alert but drowsy and complaining of agonizing neck and occipital pain.",
+  "ideas": "thinks a major blood vessel ruptured inside his brain while straining with heavy weights",
+  "concerns": "terrified that he will re-bleed and die within the next hour",
+  "expectations": "wants immediate emergency pain relief and emergency brain surgery",
+  "pmh": "hypertension (poorly controlled), family history of sudden cerebral stroke (father died at age 55 from brain haemorrhage), adult polycystic kidney disease in family",
+  "medications": "losartan 50mg OD (intermittent adherence)",
+  "social_hx": "smoker 30 pack-years, drinks 10 units/week, financial trader",
+  "investigation_events": [
+    {
+      "id": "stat_subarachnoid_hemorrhage_workup",
+      "title": "Emergency CT and cerebral angiography",
+      "order_terms": ["CT head", "CT brain", "non-contrast CT", "CT angiography", "CTA", "cerebral angiography"],
+      "availability_message": "Emergency CT and CT angiography results are now available. Blood-pressure control and neurosurgical transfer should not be delayed.",
+      "results": [
+        {"id": "ct_head", "test": "Non-contrast CT brain", "value": "Diffuse acute subarachnoid hemorrhage centered in the basal cisterns and left Sylvian fissure", "flag": "critical"},
+        {"id": "cta_head", "test": "CT angiography of the head", "value": "7 mm ruptured left posterior communicating artery aneurysm", "flag": "critical"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Spontaneous Subarachnoid Hemorrhage (ruptured aneurysm) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Spontaneous Subarachnoid Hemorrhage (ruptured aneurysm) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Neurosurgical emergency: immediate transfer/referral to neurosurgical center for urgent aneurysm endovascular coiling or surgical clipping within 24 hours to prevent fatal re-bleeding, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden explosive headache like being hit with a baseball bat 2 hours ago",
+      "Key HPI features: Presents via emergency ambulance with a 2-hour history of an instantaneous, blinding, 10/10 thunderclap headache that reached peak intensity within 5 seconds while lifting weights at the gym. Describes it as 'the worst headache of my entire life, like someone struck the back of my head with a sledgehammer.' Accompanied immediately by forceful vomiting, photophobia, and stiff neck. Experienced brief 30-second loss of consciousness at onset, now alert but drowsy and complaining of agonizing neck and occipital pain.",
+      "Objective/Exam findings: Vitals: BP 185/105 mmHg, HR 98. Neurological exam: marked nuchal rigidity/neck stiffness, positive Kernig's and Brudzinski's signs, photophobia. Check for focal neurological deficits or cranial nerve palsies (e.g., painful third nerve palsy with blown pupil suggests enlarging posterior communicating artery aneurysm). Immediate emergency non-contrast CT Brain (has >98% sensitivity for subarachnoid blood within first 6 hours; hyperdense blood seen in basal cisterns and Sylvian fissures). If CT is negative beyond 6 hours: perform mandatory lumbar puncture at 12 hours post-symptom onset (check for elevated opening pressure, uniformly blood-stained CSF across all tubes without clearing, and spectrophotometry confirming bilirubin xanthochromia). Urgent CT Angiography (CTA) or Digital Subtraction Angiography (DSA) of cerebral vessels.",
+      "Relevant background/PMH: hypertension (poorly controlled), family history of sudden cerebral stroke (father died at age 55 from brain haemorrhage), adult polycystic kidney disease in family",
+      "Current medications: losartan 50mg OD (intermittent adherence)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Spontaneous Subarachnoid Hemorrhage (ruptured aneurysm).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Reversible cerebral vasoconstriction syndrome (RCVS) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Loss of consciousness at onset — indicates a more severe bleed with higher mortality risk."
+    ],
+    "management_principles": [
+      "Neurosurgical emergency: immediate transfer/referral to neurosurgical center for urgent aneurysm endovascular coiling or surgical clipping within 24 hours to prevent fatal re-bleeding",
+      "Strict bed rest in quiet darkened room with head elevated 30 degrees",
+      "Initiate oral nimodipine 60mg every 4 hours for 21 days (calcium channel blocker specifically proven to prevent delayed cerebral vasospasm and secondary ischaemic stroke)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "51M hypertensive smoker presents with acute thunderclap headache reaching maximum intensity in <5 seconds post-exertion, accompanied by syncope, vomiting, and meningismus.",
+    "objective": "Vitals: BP 185/105 mmHg, HR 98. Neurological exam: marked nuchal rigidity/neck stiffness, positive Kernig's and Brudzinski's signs, photophobia. Check for focal neurological deficits or cranial nerve palsies (e.g., painful third nerve palsy with blown pupil suggests enlarging posterior communicating artery aneurysm). Immediate emergency non-contrast CT Brain (has >98% sensitivity for subarachnoid blood within first 6 hours; hyperdense blood seen in basal cisterns and Sylvian fissures). If CT is negative beyond 6 hours: perform mandatory lumbar puncture at 12 hours post-symptom onset (check for elevated opening pressure, uniformly blood-stained CSF across all tubes without clearing, and spectrophotometry confirming bilirubin xanthochromia). Urgent CT Angiography (CTA) or Digital Subtraction Angiography (DSA) of cerebral vessels.",
+    "assessment": "Spontaneous Subarachnoid Haemorrhage (SAH) secondary to ruptured intracranial saccular (berry) aneurysm. DDx: reversible cerebral vasoconstriction syndrome (RCVS), cerebral venous sinus thrombosis, pituitary apoplexy, acute bacterial meningitis, cervical artery dissection.",
+    "plan": "Neurosurgical emergency: immediate transfer/referral to neurosurgical center for urgent aneurysm endovascular coiling or surgical clipping within 24 hours to prevent fatal re-bleeding. Strict bed rest in quiet darkened room with head elevated 30 degrees. Initiate oral nimodipine 60mg every 4 hours for 21 days (calcium channel blocker specifically proven to prevent delayed cerebral vasospasm and secondary ischaemic stroke). Strict blood pressure control (maintain systolic BP <160 mmHg using IV labetalol or nicardipine). Adequate IV opioid analgesia and antiemetics."
+  },
+  "learning_objectives": [
+    "Define the diagnostic threshold of a true thunderclap headache: sudden explosive onset reaching maximal intensity within seconds",
+    "Explain the mandatory diagnostic pathway: non-contrast CT brain followed by 12-hour lumbar puncture with xanthochromia screening if CT negative",
+    "Recognise the life-saving role of oral nimodipine for 21 days in preventing delayed cerebral vasospasm",
+    "Execute rapid emergency neurosurgical escalation while strictly managing blood pressure and intracranial pressure"
+  ],
+  "teaching": {
+    "diagnosis": "Spontaneous Subarachnoid Hemorrhage (ruptured aneurysm)",
+    "one_liner": "A ruptured berry aneurysm bleeds into the space around the brain, causing an instantaneous 'worst headache of my life,' vomiting, and brief loss of consciousness — a neurosurgical emergency needing the aneurysm secured within 24 hours to prevent fatal re-bleeding.",
+    "differentials": [
+      "Reversible cerebral vasoconstriction syndrome (RCVS)",
+      "Cerebral venous sinus thrombosis",
+      "Pituitary apoplexy",
+      "Cervical artery dissection"
+    ],
+    "red_flags": [
+      "Loss of consciousness at onset — indicates a more severe bleed with higher mortality risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed and trigger",
+        "say": "What were you doing when this started, and how quickly did it become the worst headache ever?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "lifting weights",
+          "instant"
+        ]
+      },
+      {
+        "objective": "Loss of consciousness",
+        "say": "Did you actually pass out, even briefly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "loss of consciousness"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any vomiting, neck stiffness, or sensitivity to light?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have brain aneurysms, sudden strokes, or polycystic kidney disease?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "aneurysm",
+          "polycystic kidney"
+        ]
+      },
+      {
+        "objective": "Blood pressure history",
+        "say": "How well controlled has your blood pressure been?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

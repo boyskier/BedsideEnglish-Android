@@ -1,0 +1,236 @@
+{
+  "id": "gi_001",
+  "system": "gastroenterology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Nguyen",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "black tarry stools for 2 days and feeling dizzy",
+  "hpi_details": "3 episodes of melaena in 2 days, no haematemesis, dizziness on standing, mild epigastric discomfort, no frank PR bleeding",
+  "ideas": "thinks it might be from eating too much iron-rich food",
+  "concerns": "scared it could be bowel cancer",
+  "expectations": "wants a camera test done",
+  "pmh": "osteoarthritis (takes NSAIDs daily), no prior GI history",
+  "medications": "ibuprofen 400mg TDS (taking for 6 months), omeprazole 20mg OD (recently started)",
+  "social_hx": "non-smoker, occasional alcohol (3-4 units/week), works as a chef",
+  "investigation_events": [
+    {
+      "id": "stat_upper_gi_bleed_labs",
+      "title": "STAT upper gastrointestinal bleed laboratory results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "urea",
+        "bun",
+        "renal function",
+        "coagulation studies",
+        "coagulation panel",
+        "type and screen",
+        "crossmatch"
+      ],
+      "availability_message": "The STAT upper gastrointestinal bleed laboratory results are now available; IV access and resuscitation should not be delayed while testing is processed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "9.1",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "blood_urea_nitrogen",
+          "test": "Blood urea nitrogen",
+          "value": "38",
+          "unit": "mg/dL",
+          "reference_range": "7-20",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "1.0",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "inr",
+          "test": "INR",
+          "value": "1.1",
+          "reference_range": "0.8-1.2",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Peptic Ulcer Disease with Upper GI Bleeding evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Peptic Ulcer Disease with Upper GI Bleeding is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Stop NSAIDs, IV access x2, IV PPI (80mg bolus then infusion), cross-match, urgent endoscopy (OGD) within 24hrs, surgical consult on standby, Blatchford score, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: black tarry stools for 2 days and feeling dizzy",
+      "Key HPI features: 3 episodes of melaena in 2 days, no haematemesis, dizziness on standing, mild epigastric discomfort, no frank PR bleeding",
+      "Objective/Exam findings: Likely upper GI bleed. Needs HR, BP (lying and standing), Hb, coagulation, urea (raised urea:creatinine ratio in upper GI bleed), group and screen.",
+      "Relevant background/PMH: osteoarthritis (takes NSAIDs daily), no prior GI history",
+      "Current medications: ibuprofen 400mg TDS (taking for 6 months), omeprazole 20mg OD (recently started)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Peptic Ulcer Disease with Upper GI Bleeding.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Mallory-Weiss tear without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Dizziness on standing — suggests significant blood loss."
+    ],
+    "management_principles": [
+      "Stop NSAIDs, IV access x2, IV PPI (80mg bolus then infusion), cross-match, urgent endoscopy (OGD) within 24hrs, surgical consult on standby, Blatchford score",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45M with 2-day history of melaena x3 episodes, orthostatic dizziness, mild epigastric pain. Takes NSAIDs daily for OA. No haematemesis, no frank PR bleeding.",
+    "objective": "Likely upper GI bleed. Needs HR, BP (lying and standing), Hb, coagulation, urea (raised urea:creatinine ratio in upper GI bleed), group and screen.",
+    "assessment": "Upper GI haemorrhage, likely peptic ulcer disease secondary to NSAID use. DDx: Mallory-Weiss tear, oesophagitis, gastric malignancy.",
+    "plan": "Stop NSAIDs, IV access x2, IV PPI (80mg bolus then infusion), cross-match, urgent endoscopy (OGD) within 24hrs, surgical consult on standby, Blatchford score."
+  },
+  "learning_objectives": [
+    "Distinguish upper vs lower GI bleeding by symptom characterisation",
+    "Identify NSAID-related GI risk factors",
+    "Assess haemodynamic stability",
+    "Address ICE around cancer fear sensitively"
+  ],
+  "teaching": {
+    "diagnosis": "Peptic Ulcer Disease with Upper GI Bleeding",
+    "one_liner": "An NSAID- or acid-related ulcer erodes into a blood vessel in the stomach or duodenum, so blood passing through the gut turns the stool black and tarry.",
+    "differentials": [
+      "Mallory-Weiss tear",
+      "Erosive oesophagitis",
+      "Gastric malignancy"
+    ],
+    "red_flags": [
+      "Dizziness on standing — suggests significant blood loss"
+    ],
+    "must_ask": [
+      {
+        "objective": "Melaena description",
+        "say": "Can you describe the stool for me — is it black, tarry, and sticky?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "black",
+          "tarry",
+          "stool",
+          "sticky"
+        ]
+      },
+      {
+        "objective": "Vomiting blood",
+        "say": "Have you vomited any blood, or anything that looks like coffee grounds?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomit",
+          "vomiting",
+          "blood",
+          "coffee"
+        ]
+      },
+      {
+        "objective": "NSAID dose and duration",
+        "say": "How much ibuprofen do you take, and for how long have you been taking it?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "painkiller",
+          "tablets",
+          "dose"
+        ]
+      },
+      {
+        "objective": "Orthostatic dizziness",
+        "say": "Do you feel dizzy or lightheaded when you stand up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizzy",
+          "lightheaded",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Epigastric pain pattern",
+        "say": "Where exactly is the discomfort, and does eating make it better or worse?",
+        "domains": [
+          "location",
+          "aggravating",
+          "relieving"
+        ],
+        "keywords": [
+          "stomach",
+          "discomfort",
+          "eating",
+          "meals"
+        ]
+      },
+      {
+        "objective": "Prior ulcer or bleeding history",
+        "say": "Have you ever had a stomach ulcer or gastrointestinal bleeding before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ulcer",
+          "bleeding",
+          "gastroscopy"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What are you most worried this might be?",
+        "domains": [
+          "concerns",
+          "ideas"
+        ],
+        "keywords": []
+      }
+    ]
+  }
+}

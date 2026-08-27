@@ -1,0 +1,153 @@
+{
+  "id": "fm_012",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Scott",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "profound sadness, loss of interest in hobbies, fatigue, and early morning awakening for 3 months with PHQ-9 score 18",
+  "hpi_details": "38F presents with 3 months of persistent low mood and loss of interest in hobbies she used to enjoy, including gardening and her book club. Reports difficulty falling and staying asleep with early morning awakening around 4 AM, decreased appetite with an unintentional 8-pound weight loss, low energy, poor concentration at work, and feelings of guilt about being 'a burden' to her family. Denies any prior episodes of elevated mood, mania, or psychotic symptoms, and denies any thoughts of self-harm or suicide. She has never taken an antidepressant or seen a therapist before.",
+  "ideas": "thinks she may be depressed but is embarrassed to bring it up",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "phq9_screen",
+      "title": "PHQ-9 depression screen",
+      "order_terms": [
+        "phq 9",
+        "phq-9",
+        "depression screen",
+        "depression questionnaire"
+      ],
+      "availability_message": "The PHQ-9 result is now available.",
+      "results": [
+        {
+          "id": "phq9_score",
+          "test": "PHQ-9 score",
+          "value": "18/27",
+          "reference_range": "0-4",
+          "flag": "high",
+          "collected_at": "During clinic assessment",
+          "note": "Moderately severe depressive symptoms; item 9 negative"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Major Depressive Disorder evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Major Depressive Disorder is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for moderate-to-severe Major Depressive Disorder (PHQ-9 >=15) emphasizes combination treatment: initiation of a first-line SSRI antidepressant together with referral for evidence-based psychotherapy (Cognitive Behavioral Therapy), with close early follow-up to monitor treatment response and safety.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profound sadness, loss of interest in hobbies, fatigue, and early morning awakening for 3 months with PHQ-9 score 18",
+      "Key HPI features: 38F presents with 3 months of persistent low mood and loss of interest in hobbies she used to enjoy, including gardening and her book club. Reports difficulty falling and staying asleep with early morning awakening around 4 AM, decreased appetite with an unintentional 8-pound weight loss, low energy, poor concentration at work, and feelings of guilt about being 'a burden' to her family. Denies any prior episodes of elevated mood, mania, or psychotic symptoms, and denies any thoughts of self-harm or suicide. She has never taken an antidepressant or seen a therapist before.",
+      "Objective/Exam findings: Vitals: HR 76, BP 118/74, unintentional weight loss of 8 lbs over 3 months. Mental status exam: appears tired with mildly slowed psychomotor activity; downcast affect congruent with reported mood but full range; speech normal rate and volume; thought process linear and goal-directed without evidence of psychosis; no suicidal or homicidal ideation elicited on direct questioning; insight and judgment intact. PHQ-9 depression screen score: 18/27 (moderately severe depression). Baseline TSH and CBC ordered to exclude hypothyroidism and anemia as contributing/mimicking causes.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Major Depressive Disorder.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Adjustment disorder with depressed mood without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any suicidal ideation or plan — requires immediate safety assessment."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis using DSM-5 criteria (SIGECAPS: Sleep, Interest, Guilt, Energy, Concentration, Appetite, Psychomotor changes, Suicidality) with at least 5 symptoms present for 2+ weeks, and exclude medical mimics (hypothyroidism, anemia, medication side effects) with baseline TSH and CBC.",
+      "Perform a structured suicide risk assessment at this and every follow-up visit, directly asking about ideation, intent, and plan, since untreated depression carries meaningful suicide risk even without an initial positive screen.",
+      "Initiate first-line pharmacotherapy with an SSRI (e.g., Escitalopram 10 mg PO daily or Sertraline 50 mg PO daily), counseling the patient that a full therapeutic response may take 4-6 weeks and that early side effects (nausea, jitteriness) often improve within the first 1-2 weeks.",
+      "Refer for Cognitive Behavioral Therapy or another evidence-based psychotherapy, since combining medication with psychotherapy is more effective than either alone for moderate-to-severe depression; schedule close follow-up in 1-2 weeks initially (then every 4 weeks) to reassess PHQ-9 score, side effects, and safety."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "38F presenting with 3 months of depressed mood, anhedonia, early morning awakening, unintentional weight loss, low energy, poor concentration, and guilt, meeting DSM-5 criteria for Major Depressive Disorder (PHQ-9 18/27, moderately severe). Denies suicidal ideation, intent, or plan; no history of mania or psychosis.",
+    "objective": "Vitals: HR 76, BP 118/74, unintentional weight loss of 8 lbs over 3 months. Mental status exam: appears tired with mildly slowed psychomotor activity; downcast affect congruent with reported mood but full range; speech normal rate and volume; thought process linear and goal-directed without evidence of psychosis; no suicidal or homicidal ideation elicited on direct questioning; insight and judgment intact. PHQ-9 depression screen score: 18/27 (moderately severe depression). Baseline TSH and CBC ordered to exclude hypothyroidism and anemia as contributing/mimicking causes.",
+    "assessment": "Major Depressive Disorder, Single Episode, Moderately Severe (PHQ-9 18/27), without active suicidal ideation.",
+    "plan": "1. Confirm safety: structured suicide risk assessment negative for active ideation, intent, or plan today; provide crisis line information and safety-net instructions to return or call immediately if thoughts of self-harm emerge. 2. Initiate first-line SSRI pharmacotherapy: Escitalopram 10 mg PO daily, counseling that full response may take 4-6 weeks and early side effects often improve within 1-2 weeks. 3. Refer for Cognitive Behavioral Therapy. 4. Order baseline TSH and CBC to exclude hypothyroidism/anemia as contributing causes. 5. Schedule close follow-up in 2 weeks to reassess PHQ-9 score, side effects, and suicide risk, then every 4 weeks until remission."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Major Depressive Disorder Outpatient Screening",
+    "Formulate prioritized differential diagnosis for profound sadness, loss of interest in hobbies, fatigue, and early morning awakening for 3 months with PHQ-9 score 18",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Major Depressive Disorder",
+    "one_liner": "Persistent low mood and loss of interest for over two weeks, meeting the SIGECAPS criteria (sleep, interest, guilt, energy, concentration, appetite, psychomotor, suicidality) — treated with an SSRI plus therapy.",
+    "differentials": [
+      "Adjustment disorder with depressed mood",
+      "Hypothyroidism (should be screened)",
+      "Bipolar disorder (screen for prior mania)"
+    ],
+    "red_flags": [
+      "Any suicidal ideation or plan — requires immediate safety assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mood and anhedonia",
+        "say": "How would you describe your mood, and have you lost interest in things you used to enjoy?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "sad",
+          "loss of interest"
+        ]
+      },
+      {
+        "objective": "Sleep pattern",
+        "say": "Are you waking up early and unable to fall back asleep?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "early awakening"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many months has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Energy and concentration",
+        "say": "How is your energy and ability to concentrate?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Safety screening",
+        "say": "Have you had any thoughts of harming yourself or that life isn't worth living?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

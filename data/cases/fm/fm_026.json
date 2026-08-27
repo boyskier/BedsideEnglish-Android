@@ -1,0 +1,118 @@
+{
+  "id": "fm_026",
+  "system": "fm",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Anderson",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "asymptomatic elevated blood pressure 138/88 on check",
+  "hpi_details": "A 20-year-old female presents to the clinic after a routine visit showed an elevated blood pressure of 138/88. She feels well overall and reports no headaches, chest pain, or vision changes, though she notes mild generalized fatigue that she attributes to a busy exam schedule.",
+  "ideas": "thinks it might be related to high blood pressure",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Stage 1 Hypertension evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stage 1 Hypertension is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming the diagnosis with home BP monitoring and initiating DASH diet and exercise counseling with re-check in 3 months, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: asymptomatic elevated blood pressure 138/88 on check",
+      "Key HPI features: A 20-year-old female presents after a routine visit showed an elevated blood pressure of 138/88. She feels well overall, denies headaches, chest pain, or vision changes, and reports only mild generalized fatigue.",
+      "Objective/Exam findings: Blood pressure 138/88 mmHg on office check; remainder of vital signs and physical exam, including fundoscopic and cardiovascular exam, unremarkable.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stage 1 Hypertension.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to White coat hypertension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severely elevated BP (>=180/120) with headache, chest pain, dyspnea, or vision changes — hypertensive emergency requiring immediate care."
+    ],
+    "management_principles": [
+      "Home BP monitoring, DASH diet, exercise, and re-check in 3 months",
+      "Refer to a specialist or work up secondary causes if hypertension persists, worsens, or is resistant to lifestyle measures, given the patient's young age",
+      "Counsel patient on the diagnosis, the rationale for repeat confirmation before starting medication, and the importance of adherence to lifestyle changes"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "20-year-old female presents after a routine visit showed an elevated blood pressure of 138/88. She feels well overall, denies headaches, chest pain, or vision changes, and reports only mild generalized fatigue. No personal or family history of hypertension noted so far.",
+    "objective": "Blood pressure 138/88 mmHg on office check; remainder of vital signs and physical exam, including fundoscopic and cardiovascular exam, unremarkable.",
+    "assessment": "Single elevated office blood-pressure measurement; hypertension requires confirmation with repeat standardized office and home or ambulatory readings.",
+    "plan": "Confirm persistent blood-pressure elevation with repeat standardized office measurements and home or ambulatory monitoring. Begin DASH-style diet, physical activity, weight management, and sodium reduction. If hypertension is confirmed in this young adult, assess for secondary causes and individualize follow-up and medication decisions."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Stage 1 Hypertension",
+    "Select appropriate diagnostic workup for Stage 1 Hypertension",
+    "Implement evidence-based management plan: Home BP monitoring, DASH diet, exercise, re-check in 3 months"
+  ],
+  "teaching": {
+    "diagnosis": "Stage 1 Hypertension",
+    "one_liner": "Mildly elevated blood pressure found on routine check, managed initially with home monitoring and lifestyle change.",
+    "differentials": [
+      "White coat hypertension"
+    ],
+    "red_flags": [
+      "Severely elevated BP (>=180/120) with headache, chest pain, dyspnea, or vision changes — hypertensive emergency requiring immediate care",
+      "Resistant hypertension, abrupt onset, or young age at diagnosis — screen for a secondary cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptoms",
+        "say": "Any headaches or chest pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Confirmation",
+        "say": "Was this checked more than once?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "How much salt do you eat?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Exercise",
+        "say": "How active are you?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Family history of hypertension?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

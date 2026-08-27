@@ -1,0 +1,153 @@
+{
+  "id": "ent_024",
+  "system": "otolaryngology (ent)",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Yoon",
+  "age": 20,
+  "gender": "male",
+  "chief_complaint": "severe sore throat, high fever, swollen neck lumps, and exhaustion for 5 days",
+  "hpi_details": "20M college student presents with 5 days of severe sore throat, fever of 38.8C, painful swollen lymph nodes in his neck, and profound fatigue. Reports being unable to attend classes due to exhaustion.",
+  "ideas": "thinks he has strep throat or mononucleosis",
+  "concerns": "worried about missing college exams",
+  "expectations": "wants blood test and throat swab",
+  "pmh": "No prior history",
+  "medications": "None",
+  "social_hx": "College sophomore, non-smoker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_pharyngitis_tests",
+      "title": "Point-of-care pharyngitis test results",
+      "order_terms": [
+        "rapid strep test",
+        "rapid strep",
+        "strep test",
+        "heterophile antibody",
+        "monospot",
+        "mono test"
+      ],
+      "availability_message": "The point-of-care pharyngitis test results are now available.",
+      "results": [
+        {
+          "id": "rapid_strep",
+          "test": "Rapid group A streptococcal antigen",
+          "value": "Negative",
+          "reference_range": "Negative",
+          "flag": "normal",
+          "specimen": "Throat swab",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "heterophile_antibody",
+          "test": "Heterophile antibody test",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Blood",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infectious Mononucleosis (EBV pharyngitis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infectious Mononucleosis (EBV pharyngitis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management follows an evidence-based diagnostic and therapeutic protocol for infectious mononucleosis (EBV pharyngitis), with streptococcal pharyngitis as a key differential, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe sore throat, high fever, swollen neck lumps, and exhaustion for 5 days",
+      "Key HPI features: 20M college student presents with 5 days of severe sore throat, fever of 38.8C, painful swollen lymph nodes in his neck, and profound fatigue. Reports being unable to attend classes due to exhaustion.",
+      "Objective/Exam findings: Fever 38.8C, exudative pharyngitis, tender bilateral posterior cervical lymphadenopathy, no hepatosplenomegaly on abdominal exam."
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infectious Mononucleosis (EBV pharyngitis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Streptococcal pharyngitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe abdominal pain — could suggest splenic enlargement/rupture risk."
+    ],
+    "management_principles": [
+      "Perform rapid strep test and monospot (heterophile antibody) test to distinguish from streptococcal pharyngitis",
+      "Check for hepatosplenomegaly on abdominal exam given splenic rupture risk"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with severe sore throat, high fever, swollen neck lumps, and exhaustion for 5 days. 20M college student presents with 5 days of severe sore throat, fever of 38.8C, painful swollen lymph nodes in his neck, and profound fatigue. Reports being unable to attend classes due to exhaustion.",
+    "objective": "Fever 38.8C, exudative pharyngitis, tender bilateral posterior cervical lymphadenopathy, no hepatosplenomegaly on abdominal exam.",
+    "assessment": "Infectious mononucleosis (EBV pharyngitis), with streptococcal pharyngitis as the key differential to exclude.",
+    "plan": "Perform rapid strep test and monospot (heterophile antibody) test. Check for hepatosplenomegaly. Recommend rest, hydration, avoidance of contact sports for 4 weeks (splenic rupture risk), and supportive care. Refer to specialty team if severe abdominal pain, airway compromise, or diagnostic uncertainty."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Infectious Mononucleosis (EBV pharyngitis).",
+    "Formulate prioritized differential diagnosis for severe sore throat, high fever, swollen neck lumps, and exhaustion for 5 days",
+    "Select appropriate laboratory and imaging studies for otolaryngology (ent)",
+    "Implement evidence-based acute and long-term management strategies for Infectious Mononucleosis (EBV pharyngitis)."
+  ],
+  "teaching": {
+    "diagnosis": "Infectious Mononucleosis (EBV pharyngitis)",
+    "one_liner": "Epstein-Barr virus infection causing severe sore throat, fever, tender swollen lymph nodes, and profound fatigue — needs a monospot test and strep testing, since the two can look similar.",
+    "differentials": [
+      "Streptococcal pharyngitis",
+      "CMV infection",
+      "Acute HIV infection"
+    ],
+    "red_flags": [
+      "Severe abdominal pain — could suggest splenic enlargement/rupture risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sore throat severity",
+        "say": "How severe is the sore throat?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Lymph nodes",
+        "say": "Are the glands in your neck swollen and tender?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How exhausted do you feel?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Fever duration",
+        "say": "How many days have you had the fever?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Abdominal symptoms",
+        "say": "Any pain or fullness in your upper left belly?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

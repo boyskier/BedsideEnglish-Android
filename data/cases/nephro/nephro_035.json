@@ -1,0 +1,144 @@
+{
+  "id": "nephro_035",
+  "system": "nephrology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lee",
+  "age": 47,
+  "gender": "male",
+  "chief_complaint": "mild confusion and nausea with low serum sodium 128",
+  "hpi_details": "A 47-year-old male presents to the clinic with mild confusion and nausea with low serum sodium 128. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "isn't sure what's wrong, but is worried it's something serious with his brain since he's been feeling foggy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "serum_sodium_initial",
+      "test": "Serum sodium",
+      "value": "128",
+      "unit": "mEq/L",
+      "reference_range": "135-145",
+      "flag": "low",
+      "specimen": "Blood",
+      "collected_at": "Before today's encounter"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "symptomatic_hyponatremia_workup",
+      "title": "Urgent hypotonic hyponatremia assessment",
+      "order_terms": ["serum osmolality", "urine osmolality", "urine sodium", "hyponatremia workup"],
+      "availability_message": "Serum and urine osmolality studies are now available. Because confusion may indicate clinically significant hyponatremia, monitored assessment and treatment should not be delayed.",
+      "results": [
+        {"id": "serum_osmolality", "test": "Serum osmolality", "value": "262", "unit": "mOsm/kg", "reference_range": "275-295", "flag": "low"},
+        {"id": "urine_osmolality", "test": "Urine osmolality", "value": "450", "unit": "mOsm/kg", "flag": "abnormal"},
+        {"id": "urine_sodium", "test": "Urine sodium", "value": "45", "unit": "mEq/L", "flag": "abnormal", "note": "Inappropriately elevated for hypotonic hyponatremia in a clinically euvolemic patient."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hyponatremia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hyponatremia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes correcting the underlying cause -- fluid restriction for SIADH or isotonic saline for hypovolemic hyponatremia -- while limiting the rate of sodium correction to avoid osmotic demyelination, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: mild confusion and nausea with low serum sodium 128",
+      "Key HPI features: A 47-year-old male presents to the clinic with mild confusion and nausea with low serum sodium 128. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 122/76 without orthostatic changes, HR 74, afebrile. Mild confusion (oriented to person and place, not date), no focal neurologic deficits, euvolemic exam (moist mucous membranes, no edema, no jugular venous distension). Labs: Serum sodium 128 mEq/L, serum osmolality 262 mOsm/kg, urine osmolality 450 mOsm/kg, urine sodium 45 mEq/L (consistent with SIADH), normal TSH and cortisol, normal renal function.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hyponatremia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to SIADH without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Seizure or severe confusion — suggests dangerously low or rapidly falling sodium."
+    ],
+    "management_principles": [
+      "Confirm hypotonic hyponatremia and assess volume status, urine osmolality, and urine sodium to determine the etiology",
+      "For SIADH: fluid restriction (~1L/day); for hypovolemic hyponatremia: isotonic (normal) saline",
+      "Correct sodium slowly (no more than 8 mEq/L in 24 hours) to avoid osmotic demyelination; reserve hypertonic saline for severe symptoms (seizure, severe confusion) under close monitoring"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: mild confusion and nausea with low serum sodium 128\n\nA 47-year-old male presents with several days of mild confusion, nausea, and fatigue; family noticed he seemed 'foggy'. Denies vomiting, diarrhea, or reduced oral intake. No headache or seizure.",
+    "objective": "Vitals: BP 122/76 without orthostatic changes, HR 74, afebrile. Mild confusion (oriented to person and place, not date), no focal neurologic deficits, euvolemic exam (moist mucous membranes, no edema, no jugular venous distension). Labs: Serum sodium 128 mEq/L, serum osmolality 262 mOsm/kg, urine osmolality 450 mOsm/kg, urine sodium 45 mEq/L (consistent with SIADH), normal TSH and cortisol, normal renal function.",
+    "assessment": "Symptomatic hyponatremia (Na 128) with mild confusion, most consistent with SIADH given the elevated urine osmolality and natriuresis in a euvolemic patient; hypovolemic and hypervolemic causes are excluded on exam.",
+    "plan": "Confirm hypotonic hyponatremia and assess volume status, urine osmolality, and urine sodium. Because confusion may represent clinically significant symptoms, assess acuity and need for monitored hypertonic saline; otherwise treat the underlying cause (for example, fluid restriction for SIADH or isotonic saline for hypovolemia). Limit correction to avoid osmotic demyelination."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Hyponatremia",
+    "Select appropriate diagnostic workup for Hyponatremia",
+    "Implement evidence-based management plan: Fluid restriction for SIADH, normal saline for hypovolemic"
+  ],
+  "teaching": {
+    "diagnosis": "Hyponatremia",
+    "one_liner": "Low serum sodium, from either excess free water (SIADH) or true volume depletion, causing mild confusion and nausea — the distinction determines whether treatment is fluid restriction or saline.",
+    "differentials": [
+      "SIADH",
+      "Hypovolemic hyponatremia",
+      "Heart failure/cirrhosis (hypervolemic hyponatremia)"
+    ],
+    "red_flags": [
+      "Seizure or severe confusion — suggests dangerously low or rapidly falling sodium"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confusion and cognitive symptoms",
+        "say": "How confused have you been feeling?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Volume status clues",
+        "say": "Have you had vomiting, diarrhea, or reduced fluid intake?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking any medications, including antidepressants or diuretics?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "How long have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Nausea",
+        "say": "How severe is the nausea?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

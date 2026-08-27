@@ -1,0 +1,118 @@
+{
+  "id": "id_044",
+  "system": "id",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Hall",
+  "age": 74,
+  "gender": "female",
+  "chief_complaint": "fever, new heart murmur, and vascular skin lesions",
+  "hpi_details": "A 74-year-old female presents to the clinic with fever, new heart murmur, and vascular skin lesions. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to endocarditis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Infective Endocarditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infective Endocarditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Infective Endocarditis: Draw blood cultures, start IV antibiotics, request echo, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, new heart murmur, and vascular skin lesions",
+      "Key HPI features: A 74-year-old female presents to the clinic with fever, new heart murmur, and vascular skin lesions. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 38.6C, HR 110, BP 108/64. New holosystolic murmur at the apex consistent with mitral regurgitation. Tender erythematous Osler nodes on finger pads, non-tender Janeway lesions on palms, splinter hemorrhages in nail beds. Blood cultures (3 sets) growing Streptococcus viridans. Transthoracic echocardiogram shows a mobile vegetation on the mitral valve.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infective Endocarditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Rheumatic fever without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New murmur with fever — assume endocarditis until proven otherwise."
+    ],
+    "management_principles": [
+      "Plan for Infective Endocarditis: Draw blood cultures, start IV antibiotics, request echo",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: fever, new heart murmur, and vascular skin lesions\n\nA 74-year-old female presents to the clinic with fever, new heart murmur, and vascular skin lesions. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 38.6C, HR 110, BP 108/64. New holosystolic murmur at the apex consistent with mitral regurgitation. Tender erythematous Osler nodes on finger pads, non-tender Janeway lesions on palms, splinter hemorrhages in nail beds. Blood cultures (3 sets) growing Streptococcus viridans. Transthoracic echocardiogram shows a mobile vegetation on the mitral valve.",
+    "assessment": "Infective Endocarditis (mitral valve), meeting Duke criteria with positive blood cultures, echocardiographic vegetation, and peripheral stigmata (Osler nodes, Janeway lesions, splinter hemorrhages).",
+    "plan": "Plan for Infective Endocarditis: Draw blood cultures, start IV antibiotics, request echo. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Infective Endocarditis",
+    "Select appropriate diagnostic workup for Infective Endocarditis",
+    "Implement evidence-based management plan: Draw blood cultures, start IV antibiotics, request echo"
+  ],
+  "teaching": {
+    "diagnosis": "Infective Endocarditis",
+    "one_liner": "Bacterial colonization of a heart valve causing fever, a new murmur, and vascular/immunologic skin lesions.",
+    "differentials": [
+      "Rheumatic fever",
+      "Marantic endocarditis"
+    ],
+    "red_flags": [
+      "New murmur with fever — assume endocarditis until proven otherwise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fever duration",
+        "say": "How long have you had fevers?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Any recent dental work, IV drug use, or known heart valve problems?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Skin lesions",
+        "say": "Have you noticed any spots on your skin, palms, or fingers?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Any chest pain or shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Weight loss/night sweats",
+        "say": "Any weight loss or night sweats?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

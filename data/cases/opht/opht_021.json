@@ -1,0 +1,143 @@
+{
+  "id": "opht_021",
+  "system": "ophthalmology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Park",
+  "age": 25,
+  "gender": "female",
+  "chief_complaint": "thick yellow discharge, redness, and grittiness in the right eye",
+  "hpi_details": "25F presents with 2 days of redness, a gritty feeling, and thick yellowish-green discharge in her right eye. Woke up with her eyelids glued shut with dried crust. Visual acuity is normal.",
+  "ideas": "thinks she has pink eye or bacterial infection",
+  "concerns": "worried about spreading it to her left eye",
+  "expectations": "wants antibiotic eye drops",
+  "pmh": "Myopia (contact lens wearer)",
+  "medications": "None",
+  "social_hx": "Office clerk, non-smoker",
+  "investigation_events": [{
+    "id": "same_day_fluorescein_exam",
+    "title": "Fluorescein corneal examination",
+    "order_terms": ["fluorescein", "corneal stain", "corneal exam", "cobalt blue"],
+    "availability_message": "The fluorescein corneal examination is now available.",
+    "results": [{"id": "fluorescein", "test": "Fluorescein examination", "value": "No corneal epithelial defect, dendrite, or stromal infiltrate", "flag": "normal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute bacterial conjunctivitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute bacterial conjunctivitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Bacterial Conjunctivitis, differential includes viral/allergic, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: thick yellow discharge, redness, and grittiness in the right eye",
+      "Key HPI features: 25F presents with 2 days of redness, a gritty feeling, and thick yellowish-green discharge in her right eye. Woke up with her eyelids glued shut with dried crust. Visual acuity is normal.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Bacterial Conjunctivitis, differential includes viral/allergic.",
+      "Relevant background/PMH: Myopia (contact lens wearer)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute bacterial conjunctivitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral conjunctivitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Contact lens wear raises concern for keratitis if pain or vision loss develops."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Acute Bacterial Conjunctivitis, differential includes viral/allergic",
+      "Confirm normal visual acuity, reactive pupils, and lack of corneal involvement with fluorescein examination",
+      "Because she wears contact lenses, stop lens wear and use an antipseudomonal topical antibiotic if bacterial conjunctivitis is treated; arrange urgent ophthalmology assessment for pain, photophobia, reduced vision, or corneal staining"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Bacterial Conjunctivitis, differential includes viral/allergic. thick yellow discharge, redness, and grittiness in the right eye. 25F presents with 2 days of redness, a gritty feeling, and thick yellowish-green discharge in her right eye. Woke up with her eyelids glued shut with dried crust. Visual acuity is normal.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Bacterial Conjunctivitis, differential includes viral/allergic.",
+    "assessment": "Clinical presentation highly suggestive of Acute Bacterial Conjunctivitis, differential includes viral/allergic.",
+    "plan": "Confirm normal visual acuity, reactive pupils, and no corneal involvement with fluorescein examination. Stop contact-lens wear; if bacterial conjunctivitis is treated, select an antipseudomonal topical antibiotic. Arrange urgent ophthalmology assessment for pain, photophobia, reduced vision, or corneal staining."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Bacterial Conjunctivitis, differential includes viral/allergic.",
+    "Formulate prioritized differential diagnosis for thick yellow discharge, redness, and grittiness in the right eye",
+    "Select appropriate laboratory and imaging studies for ophthalmology",
+    "Implement evidence-based acute and long-term management strategies for Acute Bacterial Conjunctivitis, differential includes viral/allergic."
+  ],
+  "teaching": {
+    "diagnosis": "Acute bacterial conjunctivitis",
+    "one_liner": "25F contact lens wearer with 2 days of redness, gritty feeling, and thick yellow-green discharge with eyelids glued shut in the morning.",
+    "differentials": [
+      "Viral conjunctivitis",
+      "Allergic conjunctivitis",
+      "Contact lens-related keratitis"
+    ],
+    "red_flags": [
+      "Contact lens wear raises concern for keratitis if pain or vision loss develops"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the discharge",
+        "say": "What color and thickness is the discharge, especially in the morning?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "purulent discharge"
+        ]
+      },
+      {
+        "objective": "Confirm normal vision",
+        "say": "Has your vision changed at all, or is it just redness and discharge?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "normal vision"
+        ]
+      },
+      {
+        "objective": "Ask about contact lens wear during symptoms",
+        "say": "Have you continued wearing your contacts since this started?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "contact lens use"
+        ]
+      },
+      {
+        "objective": "Ask about spread to the other eye",
+        "say": "Has the other eye started showing any symptoms?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bilateral spread"
+        ]
+      },
+      {
+        "objective": "Explain the antibiotic drop plan and lens discontinuation",
+        "say": "We'll prescribe antibiotic drops, and you must stop wearing contacts until this fully clears.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "antibiotic drops",
+          "discontinue contacts"
+        ]
+      }
+    ]
+  }
+}

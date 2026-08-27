@@ -1,0 +1,144 @@
+{
+  "id": "allergy_037",
+  "system": "allergy",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Green",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "maculopapular rash 3 days after starting Amoxicillin",
+  "hpi_details": "A 53-year-old male presents to the clinic with maculopapular rash 3 days after starting amoxicillin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to drug_allergy",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "Amoxicillin (started 3 days ago)",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Penicillin (Amoxicillin) Drug Allergy — Delayed Maculopapular Rash evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Penicillin (Amoxicillin) Drug Allergy — Delayed Maculopapular Rash is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes stopping the suspected drug, assessing for severe cutaneous adverse reactions, and arranging allergy evaluation; future beta-lactam selection should be guided by reaction phenotype and side-chain considerations.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: maculopapular rash 3 days after starting Amoxicillin",
+      "Key HPI features: A 53-year-old male presents to the clinic with maculopapular rash 3 days after starting amoxicillin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Penicillin Drug Allergy.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Penicillin (Amoxicillin) Drug Allergy — Delayed Maculopapular Rash.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral exanthem without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Mucosal involvement or skin blistering (suggests SJS/TEN instead)."
+    ],
+    "management_principles": [
+      "Stop amoxicillin, document the reaction phenotype, assess for severe cutaneous adverse reactions, and arrange allergy evaluation before future beta-lactam use",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "World Allergy Organization (WAO) Anaphylaxis & Angioedema Guidelines",
+        "url": "https://www.worldallergy.org/education-and-programs/education/allergic-disease-resource-center/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of maculopapular rash 3 days after starting Amoxicillin. HPI: Type IV drug hypersensitivity.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Penicillin Drug Allergy.",
+    "assessment": "Condition highly suspicious for Penicillin Drug Allergy.",
+    "plan": "Stop amoxicillin, document the reaction phenotype, assess for severe cutaneous adverse reactions, and arrange allergy evaluation before future beta-lactam use. Select any alternative antibiotic based on the infection and specialist guidance."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Penicillin Drug Allergy",
+    "Select appropriate diagnostic workup for Penicillin Drug Allergy",
+    "Implement evidence-based management plan: Stop amoxicillin, document the reaction phenotype, and arrange allergy evaluation before future beta-lactam use"
+  ],
+  "teaching": {
+    "diagnosis": "Penicillin (Amoxicillin) Drug Allergy — Delayed Maculopapular Rash",
+    "one_liner": "A Type IV, T-cell-mediated delayed drug hypersensitivity causing a widespread maculopapular rash several days after starting the antibiotic, distinct from immediate IgE anaphylaxis.",
+    "differentials": [
+      "Viral exanthem",
+      "DRESS syndrome (if fever, eosinophilia, organ involvement)",
+      "IgE-mediated (immediate) penicillin allergy"
+    ],
+    "red_flags": [
+      "Mucosal involvement or skin blistering (suggests SJS/TEN instead)",
+      "Fever with facial swelling (suggests DRESS)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to the drug",
+        "say": "How many days after starting the amoxicillin did the rash appear?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "days",
+          "amoxicillin",
+          "started"
+        ]
+      },
+      {
+        "objective": "Rash character",
+        "say": "What does the rash look like — flat, raised, or blistering?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "flat",
+          "raised",
+          "blister"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any fever, itching, or swelling with the rash?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "itching",
+          "swelling"
+        ]
+      },
+      {
+        "objective": "Immediate versus delayed reaction",
+        "say": "Did anything happen right when you took the pill, like swelling or breathing trouble, or did it only start later?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "immediately",
+          "later",
+          "breathing"
+        ]
+      },
+      {
+        "objective": "Prior antibiotic reactions",
+        "say": "Have you ever reacted to penicillin or a related antibiotic before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "penicillin",
+          "before"
+        ]
+      }
+    ]
+  }
+}

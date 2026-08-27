@@ -1,0 +1,152 @@
+{
+  "id": "opht_008",
+  "system": "ophthalmology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Master Harris",
+  "age": 2,
+  "gender": "male",
+  "chief_complaint": "white pupillary reflex (Leukocoria) and new crossed eye (Esotropia) in a 2-year-old toddler concerning for Retinoblastoma",
+  "hpi_details": "2-year-old boy brought by parents after noticing unusual appearance of his right eye in flash photographs. In multiple recent family photos taken with a camera flash, the child's left pupil glows red normally, but his right pupil glows bright white (leukocoria / 'cat's eye reflex'). Over the past month, mother also noticed the right eye has started drifting inward toward his nose (esotropia/strabismus). Child rubs his right eye occasionally but shows no redness or fever.",
+  "ideas": "parents confused and frightened by the white glow in photos after reading online warnings about childhood eye tumors",
+  "concerns": "terrified child has eye cancer requiring eye removal",
+  "expectations": "want specialized pediatric ophthalmology evaluation and ultrasound immediately",
+  "pmh": "Normal developmental history",
+  "medications": "None",
+  "social_hx": "2-year-old toddler",
+  "investigation_events": [{
+    "id": "urgent_leukocoria_exam",
+    "title": "Urgent red-reflex and dilated retinal examination",
+    "order_terms": ["red reflex", "dilated fundus exam", "dilated retinal exam", "ophthalmoscopy"],
+    "availability_message": "The red-reflex and specialist dilated examination findings are now available. Urgent pediatric ocular-oncology referral is required.",
+    "results": [
+      {"id": "red_reflex", "test": "Red-reflex examination", "value": "Dense white reflex in the right pupil; normal red-orange reflex in the left", "flag": "abnormal"},
+      {"id": "dilated_exam", "test": "Dilated indirect ophthalmoscopy, right eye", "value": "Large chalky-white lobulated retinal tumor with intrinsic calcification and feeder vessels", "flag": "critical", "note": "Highly suspicious for retinoblastoma; imaging and genetic testing remain follow-up investigations."}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Retinoblastoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Retinoblastoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Urgent referral to multidisciplinary Pediatric Ocular Oncology center, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: white pupillary reflex (Leukocoria) and new crossed eye (Esotropia) in a 2-year-old toddler concerning for Retinoblastoma",
+      "Key HPI features: 2-year-old boy brought by parents after noticing unusual appearance of his right eye in flash photographs. In multiple recent family photos taken with a camera flash, the child's left pupil glows red normally, but his right pupil glows bright white (leukocoria / 'cat's eye reflex'). Over the past month, mother also noticed the right eye has started drifting inward toward his nose (esotropia/strabismus). Child rubs his right eye occasionally but shows no redness or fever.",
+      "Objective/Exam findings: Vitals: HR 105, Temp 36.7C. External eye inspection in room light shows right convergent strabismus (esotropia). Red reflex testing with direct ophthalmoscope held 3 feet away reveals a normal bright red-orange reflex in the left eye, but reveals an abnormal dense white/yellowish reflex (Leukocoria) in the right pupil. Dilated indirect ophthalmoscopy performed by pediatric ophthalmologist under anesthesia confirms a large, chalky-white, lobulated intraocular tumor arising from the right retina projecting into the vitreous cavity with extensive intrinsic calcifications and feeder vessels. Ocular ultrasound and orbital MRI confirm retinoblastoma without optic nerve invasion or extraocular extension.",
+      "Relevant background/PMH: Normal developmental history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Retinoblastoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Coats disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Leukocoria (white pupil reflex)."
+    ],
+    "management_principles": [
+      "Urgent referral to multidisciplinary Pediatric Ocular Oncology center",
+      "Perform genetic counseling and germline RB1 gene mutation testing (germline mutations carry high risk of bilateral disease and secondary osteosarcomas)",
+      "Globe-salvaging oncological therapy: initiate systemic intravenous chemotherapy (Carboplatin, Etoposide, Vincristine) or intra-arterial chemotherapy infused directly into the ophthalmic artery, combined with focal laser photocoagulation or cryotherapy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "2-year-old male presenting with high-priority pediatric warning signs: leukocoria (white pupil reflex in photographs) and secondary strabismus.",
+    "objective": "Vitals: HR 105, Temp 36.7C. External eye inspection in room light shows right convergent strabismus (esotropia). Red reflex testing with direct ophthalmoscope held 3 feet away reveals a normal bright red-orange reflex in the left eye, but reveals an abnormal dense white/yellowish reflex (Leukocoria) in the right pupil. Dilated indirect ophthalmoscopy performed by pediatric ophthalmologist under anesthesia confirms a large, chalky-white, lobulated intraocular tumor arising from the right retina projecting into the vitreous cavity with extensive intrinsic calcifications and feeder vessels. Ocular ultrasound and orbital MRI confirm retinoblastoma without optic nerve invasion or extraocular extension.",
+    "assessment": "Right-eye unilateral intraocular retinoblastoma (pediatric retinal malignancy); evaluate for a germline RB1 mutation.",
+    "plan": "Urgent referral to a multidisciplinary pediatric ocular-oncology center. Perform genetic counseling and germline RB1 testing; germline mutations carry a higher risk of bilateral disease and subsequent malignancies. Globe-salvaging therapy may include systemic intravenous chemotherapy or intra-arterial chemotherapy delivered through the ophthalmic artery, combined with focal laser photocoagulation or cryotherapy. Enucleation is considered for advanced eyes with no visual potential or high-risk features, such as extensive retinal detachment or secondary glaucoma."
+  },
+  "learning_objectives": [
+    "Recognize Leukocoria (white pupil reflex replacing normal red reflex) and new-onset strabismus in infants/toddlers as high-priority red flags for intraocular Retinoblastoma until proven otherwise",
+    "Explain the clinical genetics of Knudson's 'two-hit hypothesis' regarding germline vs somatic RB1 tumor suppressor gene mutations in hereditary vs non-hereditary retinoblastoma",
+    "Understand the diagnostic utility of detecting intrinsic tumor calcification on ocular ultrasound/MRI distinguishing retinoblastoma from Coats disease or cataract",
+    "Outline modern globe-salvaging ocular-oncology modalities (systemic or intra-arterial chemotherapy and focal cryotherapy/laser) and when enucleation is considered"
+  ],
+  "teaching": {
+    "diagnosis": "Retinoblastoma",
+    "one_liner": "2-year-old boy with leukocoria (white pupillary reflex) in photographs and new-onset esotropia.",
+    "differentials": [
+      "Coats disease",
+      "Congenital cataract",
+      "Persistent fetal vasculature",
+      "Toxocariasis"
+    ],
+    "red_flags": [
+      "Leukocoria (white pupil reflex)",
+      "New strabismus in a young child"
+    ],
+    "must_ask": [
+      {
+        "objective": "Elicit the leukocoria history from parents",
+        "say": "Can you tell me more about when you first noticed the white glow in photos?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "leukocoria",
+          "white pupil"
+        ]
+      },
+      {
+        "objective": "Ask about the new eye drifting (strabismus)",
+        "say": "When did you notice the eye starting to turn inward?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "esotropia",
+          "strabismus"
+        ]
+      },
+      {
+        "objective": "Ask about family history of eye tumors",
+        "say": "Has anyone in your family had eye cancer or retinoblastoma as a child?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "family history",
+          "genetic risk"
+        ]
+      },
+      {
+        "objective": "Address parental fear directly",
+        "say": "I understand this is very frightening. Let me explain what we need to do next.",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "reassurance",
+          "next steps"
+        ]
+      },
+      {
+        "objective": "Explain the urgent referral and treatment options",
+        "say": "We need an urgent referral to a specialized pediatric eye cancer center for further testing and treatment planning.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "urgent referral",
+          "oncology"
+        ]
+      }
+    ]
+  }
+}

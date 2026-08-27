@@ -1,0 +1,150 @@
+{
+  "_schema_version": 1,
+  "_comment": "Reusable low-stakes twists for Survival English v3. Twists are AI-private unless they naturally emerge.",
+  "twists": [
+    {
+      "id": "no_extra_twist",
+      "label": "No extra twist",
+      "instruction": "",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "misheard_detail",
+      "label": "Misheard detail",
+      "instruction": "You misheard one important detail. Sound plausible at first, but let the user correct you if they check or ask.",
+      "compatible_categories": ["Travel & Transit", "Food & Drink", "Shops & Services", "Campus & Lab", "Hospital Hallway", "Unexpected Moments"]
+    },
+    {
+      "id": "wrong_name_or_identity",
+      "label": "Wrong name or identity",
+      "instruction": "You initially think the user, item, order, or person is someone/something else. Recover naturally after correction.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "numbers_too_fast",
+      "label": "Numbers too fast",
+      "instruction": "Say one number, code, time, price, gate, size, or window too quickly the first time. Repeat clearly if asked.",
+      "compatible_categories": ["Travel & Transit", "Shops & Services", "Food & Drink", "Housing & Daily Life", "Hospital Hallway"]
+    },
+    {
+      "id": "app_or_machine_failure",
+      "label": "App or machine failure",
+      "instruction": "A phone app, kiosk, scanner, ticket machine, payment terminal, lockbox, or device is not behaving as expected.",
+      "compatible_categories": ["Travel & Transit", "Food & Drink", "Shops & Services", "Housing & Daily Life", "Unexpected Moments"]
+    },
+    {
+      "id": "time_pressure",
+      "label": "Time pressure",
+      "instruction": "There is mild time pressure: a line is moving, boarding may start, class is soon, a delivery window is closing, or someone is waiting.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "policy_confusion",
+      "label": "Policy confusion",
+      "instruction": "A rule, fee, eligibility condition, return policy, quiet rule, building rule, or procedure is unclear.",
+      "compatible_categories": ["Travel & Transit", "Shops & Services", "Housing & Daily Life", "Campus & Lab", "Hospital Hallway"]
+    },
+    {
+      "id": "background_noise",
+      "label": "Background noise",
+      "instruction": "The environment is noisy enough that a natural clarification request would be appropriate.",
+      "compatible_categories": ["Food & Drink", "Travel & Transit", "Parties & Social", "Hospital Hallway", "Campus & Lab"]
+    },
+    {
+      "id": "soft_mumble",
+      "label": "Soft mumble",
+      "instruction": "You are friendly but soft-spoken for the first turn or two. Clarify normally if the user asks.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "overconfident_wrong",
+      "label": "Overconfident wrong",
+      "instruction": "You are confident about something small and wrong. Do not become defensive; let correction become part of the conversation.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "partial_information",
+      "label": "Partial information",
+      "instruction": "You only know part of the situation. Ask the user to help fill the gap instead of pretending certainty.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "unexpected_upsell",
+      "label": "Unexpected upsell",
+      "instruction": "Offer one extra option, add-on, upgrade, subscription, topping, package, or service. Accept a clear no.",
+      "compatible_categories": ["Shops & Services", "Food & Drink", "Travel & Transit"]
+    },
+    {
+      "id": "tiny_spill_or_mess",
+      "label": "Tiny spill or mess",
+      "instruction": "A minor spill, clutter, blocked object, dropped item, stuck snack, or small mess creates a reason to talk.",
+      "compatible_categories": ["Food & Drink", "Housing & Daily Life", "Hospital Hallway", "Campus & Lab", "Unexpected Moments"]
+    },
+    {
+      "id": "shared_resource_shortage",
+      "label": "Shared resource shortage",
+      "instruction": "There is only one outlet, seat, washer, charger, remote, machine, last pastry, or other shared resource.",
+      "compatible_categories": ["Campus & Lab", "Food & Drink", "Travel & Transit", "Housing & Daily Life", "Hospital Hallway", "Parties & Social"]
+    },
+    {
+      "id": "too_many_options",
+      "label": "Too many options",
+      "instruction": "There are too many options. List a few quickly, then help narrow them down if the user asks.",
+      "compatible_categories": ["Food & Drink", "Shops & Services", "Parties & Social", "Travel & Transit"]
+    },
+    {
+      "id": "missing_receipt_or_proof",
+      "label": "Missing proof",
+      "instruction": "A receipt, ID, proof of address, booking confirmation, label, ticket, or screenshot is missing or hard to find.",
+      "compatible_categories": ["Shops & Services", "Travel & Transit", "Housing & Daily Life", "Campus & Lab"]
+    },
+    {
+      "id": "awkward_social_pressure",
+      "label": "Awkward social pressure",
+      "instruction": "There is gentle social pressure to join, sing, vote, choose, help, or answer. Back off after one clear refusal.",
+      "compatible_categories": ["Parties & Social", "Campus & Lab", "Food & Drink", "Unexpected Moments"]
+    },
+    {
+      "id": "public_attention",
+      "label": "Public attention",
+      "instruction": "A small public spotlight appears: a camera, microphone, group attention, announcement, photo, or line of people waiting.",
+      "compatible_categories": ["Parties & Social", "Campus & Lab", "Travel & Transit", "Unexpected Moments", "Hospital Hallway"]
+    },
+    {
+      "id": "spelling_or_pronunciation",
+      "label": "Spelling or pronunciation",
+      "instruction": "A name, code, address, order, or label needs spelling or pronunciation clarification. Ask politely.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "weather_or_delay",
+      "label": "Weather or delay",
+      "instruction": "Weather, traffic, a delay, a line, or a slow process creates natural small talk.",
+      "compatible_categories": ["Travel & Transit", "Campus & Lab", "Housing & Daily Life", "Hospital Hallway", "Unexpected Moments"]
+    },
+    {
+      "id": "unclear_ownership",
+      "label": "Unclear ownership",
+      "instruction": "It is unclear whose cup, bag, seat, package, laundry, charger, ticket, tray, or order something is.",
+      "compatible_categories": ["Food & Drink", "Travel & Transit", "Housing & Daily Life", "Campus & Lab", "Unexpected Moments"]
+    },
+    {
+      "id": "harmless_secret_or_surprise",
+      "label": "Harmless secret or surprise",
+      "instruction": "There is a harmless surprise, hidden plan, or social secret nearby. Keep it light and do not force the user to participate.",
+      "compatible_categories": ["Parties & Social", "Campus & Lab", "Unexpected Moments", "Food & Drink"]
+    },
+    {
+      "id": "needs_polite_exit",
+      "label": "Needs polite exit",
+      "instruction": "You are chatty enough that the user may need to end the conversation politely. Let them leave gracefully.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "culture_or_custom_question",
+      "label": "Culture or custom question",
+      "instruction": "Ask one curious but respectful question about a custom, food, language, name, habit, or comparison with the user's home culture.",
+      "compatible_categories": ["Campus & Lab", "Food & Drink", "Parties & Social", "Housing & Daily Life", "Unexpected Moments"]
+    }
+  ]
+}

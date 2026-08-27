@@ -1,0 +1,156 @@
+{
+  "id": "urology_030",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Taylor",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "leaking urine when coughing, laughing, or jumping",
+  "hpi_details": "A 32-year-old female presents with a 6-month history of urine leakage when coughing, laughing, or jumping, gradually increasing in frequency.",
+  "ideas": "thinks it might be related to stress_incontinence",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "stress_incontinence_urinalysis", "test": "Urinalysis", "value": "Nitrite negative; leukocyte esterase negative; blood negative", "flag": "normal", "specimen": "Urine"},
+    {"id": "stress_incontinence_post_void_residual", "test": "Post-void residual", "value": "24", "unit": "mL", "reference_range": "<50", "flag": "normal", "collected_at": "During clinic assessment"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Stress Urinary Incontinence evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stress Urinary Incontinence is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes first-line conservative therapy (pelvic floor exercises/physical therapy) with surgery reserved and risk-counseled for inadequate response, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: leaking urine when coughing, laughing, or jumping",
+      "Key HPI features: A 32-year-old female presents with a 6-month history of urine leakage when coughing, laughing, or jumping, gradually increasing in frequency.",
+      "Objective/Exam findings: Vitals normal. Positive cough stress test (visible urine leakage with Valsalva/cough), no significant pelvic organ prolapse. Post-void residual within normal limits. Urinalysis clean, no evidence of UTI.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stress Urinary Incontinence.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute total urinary retention."
+    ],
+    "management_principles": [
+      "Confirm the diagnosis with a positive cough stress test, urinalysis to exclude UTI, and post-void residual",
+      "First-line treatment is conservative: pelvic floor muscle (Kegel) exercises/pelvic floor physical therapy, weight optimization, and a pessary as an option",
+      "Reserve surgical treatment (mid-urethral sling) for inadequate response to an adequate trial of conservative therapy, with counseling on surgical risks (mesh complications, voiding dysfunction, urgency, erosion)",
+      "Consider urodynamic testing before surgery if the diagnosis is unclear or mixed incontinence is suspected."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of leaking urine when coughing, laughing, or jumping. HPI: stress urinary incontinence.",
+    "objective": "Vitals normal. Positive cough stress test, no significant pelvic organ prolapse. Post-void residual within normal limits. Urinalysis clean, no evidence of UTI.",
+    "assessment": "Stress urinary incontinence based on classic effort-related leakage and a positive cough stress test, with urinary tract infection and significant prolapse excluded.",
+    "plan": "Begin first-line conservative management: pelvic floor muscle (Kegel) exercises, ideally with formal pelvic floor physical therapy, and weight optimization if applicable. Reserve surgical options (mid-urethral sling) for inadequate response after an adequate conservative trial, with counseling on surgical risks (mesh-related complications, voiding dysfunction, urgency, erosion) and consideration of urodynamic testing before surgery if the diagnosis is unclear."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Stress Urinary Incontinence",
+    "Select appropriate diagnostic workup for Stress Urinary Incontinence",
+    "Implement evidence-based management: conservative pelvic floor therapy first-line, with sling surgery reserved and risk-counseled for refractory cases"
+  ],
+  "teaching": {
+    "diagnosis": "Stress Urinary Incontinence",
+    "one_liner": "Urology evaluation for patient presenting with leaking urine when coughing, laughing, or jumping.",
+    "differentials": [
+      "Urge incontinence / overactive bladder",
+      "Mixed urinary incontinence",
+      "Urinary tract infection"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Urosepsis with high fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Leakage triggers - cough, laugh, jump",
+        "say": "Does the leaking happen specifically when you cough, laugh, or jump, and how much urine leaks?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cough",
+          "laugh",
+          "jump",
+          "leak",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Exclude urgency component",
+        "say": "Do you also get sudden, strong urges to urinate that you struggle to hold?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "urgency",
+          "urge",
+          "hold",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Obstetric history and childbirth",
+        "say": "How many children have you delivered vaginally, and were there any large babies or long labors?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "deliveries",
+          "vaginal birth",
+          "labor",
+          "childbirth"
+        ]
+      },
+      {
+        "objective": "Duration and progression of symptoms",
+        "say": "How long has this been happening, and has it been getting worse over time?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "duration",
+          "months",
+          "progression",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Impact on activity and exercise",
+        "say": "Is this stopping you from exercising or doing activities you enjoy?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "exercise",
+          "activities",
+          "avoid",
+          "impact"
+        ]
+      }
+    ]
+  }
+}

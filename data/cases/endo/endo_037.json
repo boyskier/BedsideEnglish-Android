@@ -1,0 +1,127 @@
+{
+  "id": "endo_037",
+  "system": "endo",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rivera",
+  "age": 65,
+  "gender": "female",
+  "chief_complaint": "asymptomatic low bone density on DEXA scan",
+  "hpi_details": "65-year-old female presents for a routine physical exam. She is completely asymptomatic, has no history of fractures, and went through menopause at age 51. A screening dual-energy X-ray absorptiometry (DEXA) scan ordered by her PCP last week returned with a T-score of -2.9 at the lumbar spine.",
+  "ideas": "thinks it might be related to osteoporosis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "lumbar_spine_dexa",
+      "test": "DXA lumbar spine T-score",
+      "value": "-2.9",
+      "reference_range": ">-2.5",
+      "flag": "low",
+      "collected_at": "One week before encounter"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Postmenopausal Osteoporosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Postmenopausal Osteoporosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes starting an antiresorptive agent such as alendronate, along with calcium, vitamin D, and weight-bearing exercise for Postmenopausal Osteoporosis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: asymptomatic low bone density on DEXA scan",
+      "Key HPI features: A 65-year-old postmenopausal woman without prior fracture has a screening DEXA T-score of -2.9 at the lumbar spine.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Postmenopausal Osteoporosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Postmenopausal Osteoporosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Osteomalacia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fragility fracture history."
+    ],
+    "management_principles": [
+      "Plan for Postmenopausal Osteoporosis: Alendronate, Calcium + Vitamin D, weight-bearing exercise",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Pharmacological Management of Osteoporosis in Postmenopausal Women",
+        "url": "https://academic.oup.com/jcem/article/105/3/587/5715062"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "65F presenting asymptomatically after a screening DEXA scan showed low bone mineral density.",
+    "objective": "Exam is unremarkable. No loss of height, kyphosis, or spinal tenderness. Labs: Calcium, Vitamin D, and TSH are within normal limits. DEXA T-score: -2.9.",
+    "assessment": "Postmenopausal Osteoporosis.",
+    "plan": "Initiate first-line antiresorptive therapy with oral Alendronate 70mg weekly (instruct to take on empty stomach, sit upright for 30 mins). Emphasize weight-bearing exercises and adequate Calcium (1200mg/day) and Vitamin D (800 IU/day) intake."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Postmenopausal Osteoporosis",
+    "Select appropriate diagnostic workup for Postmenopausal Osteoporosis",
+    "Implement evidence-based management plan: Alendronate, Calcium + Vitamin D, weight-bearing exercise"
+  ],
+  "teaching": {
+    "diagnosis": "Postmenopausal Osteoporosis",
+    "one_liner": "Estrogen deficiency after menopause accelerates bone resorption, causing reduced bone density found on a DEXA scan.",
+    "differentials": [
+      "Osteomalacia"
+    ],
+    "red_flags": [
+      "Fragility fracture history"
+    ],
+    "must_ask": [
+      {
+        "objective": "Menopause status",
+        "say": "Have you gone through menopause?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Fracture history",
+        "say": "Have you ever broken a bone easily?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Calcium/vitamin D intake",
+        "say": "How much calcium and vitamin D do you get?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does osteoporosis run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "How found",
+        "say": "Was this found on a routine scan?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

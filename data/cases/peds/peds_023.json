@@ -1,0 +1,153 @@
+{
+  "id": "peds_023",
+  "system": "pediatrics",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Miss Lim",
+  "age": 4,
+  "gender": "female",
+  "chief_complaint": "frequent vomiting, watery diarrhea, and lethargy for 24 hours",
+  "hpi_details": "4-year-old girl brought by mother due to 24 hours of watery diarrhea (6-7 episodes) and vomiting four times. Child is sleepy, has dry lips, and has not urinated for 8 hours.",
+  "ideas": "mother worried about severe dehydration and needing IV fluids",
+  "concerns": "worried child won't drink fluids",
+  "expectations": "wants anti-vomiting medicine and hydration check",
+  "pmh": "Atopic dermatitis",
+  "medications": "None",
+  "social_hx": "Preschooler, fully vaccinated",
+  "investigation_events": [{
+    "id": "severe_dehydration_labs",
+    "title": "Urgent metabolic assessment for dehydration",
+    "order_terms": ["basic metabolic panel", "BMP", "electrolytes", "renal function", "point-of-care glucose", "POC glucose", "blood glucose"],
+    "availability_message": "The urgent metabolic results are now available. Begin IV isotonic rehydration and monitor urine output without waiting for further testing.",
+    "results": [
+      {"id": "glucose", "test": "Blood glucose", "value": "72", "unit": "mg/dL", "reference_range": "70-140", "flag": "normal"},
+      {"id": "sodium", "test": "Serum sodium", "value": "148", "unit": "mEq/L", "reference_range": "135-145", "flag": "high"},
+      {"id": "bicarbonate", "test": "Serum bicarbonate", "value": "16", "unit": "mEq/L", "reference_range": "22-29", "flag": "low"},
+      {"id": "bun", "test": "Blood urea nitrogen", "value": "34", "unit": "mg/dL", "reference_range": "5-18", "flag": "high"},
+      {"id": "creatinine", "test": "Serum creatinine", "value": "0.8", "unit": "mg/dL", "reference_range": "0.2-0.7", "flag": "high"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Acute viral gastroenteritis with moderate dehydration evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute viral gastroenteritis with moderate dehydration is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acute Viral Gastroenteritis with moderate dehydration, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: frequent vomiting, watery diarrhea, and lethargy for 24 hours",
+      "Key HPI features: 4-year-old girl brought by mother due to 24 hours of watery diarrhea (6-7 episodes) and vomiting four times. Child is sleepy, has dry lips, and has not urinated for 8 hours.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Viral Gastroenteritis with moderate dehydration.",
+      "Relevant background/PMH: Atopic dermatitis"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute viral gastroenteritis with moderate dehydration.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bacterial gastroenteritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: No urination for 8 hours (significant dehydration)."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Acute Viral Gastroenteritis with moderate dehydration",
+      ": Assess hydration status (mucous membranes, skin turgor, capillary refill)",
+      "Attempt oral rehydration therapy (ORT) with oral electrolyte solution"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Viral Gastroenteritis with moderate dehydration. frequent vomiting, watery diarrhea, and lethargy for 24 hours. 4-year-old girl brought by mother due to 24 hours of watery diarrhea (6-7 episodes) and vomiting four times. Child is sleepy, has dry lips, and has not urinated for 8 hours.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acute Viral Gastroenteritis with moderate dehydration.",
+    "assessment": "Clinical presentation highly suggestive of Acute Viral Gastroenteritis with moderate dehydration.",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Acute Viral Gastroenteritis with moderate dehydration. Given lethargy and no urine for 8 hours, urgently assess in an emergency-capable setting for severe dehydration and need for IV fluids. Assess hydration status (mucous membranes, skin turgor, capillary refill). Use oral rehydration therapy only if the child is alert and can tolerate it. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Viral Gastroenteritis with moderate dehydration.",
+    "Formulate prioritized differential diagnosis for frequent vomiting, watery diarrhea, and lethargy for 24 hours",
+    "Select appropriate laboratory and imaging studies for pediatrics",
+    "Implement evidence-based acute and long-term management strategies for Acute Viral Gastroenteritis with moderate dehydration."
+  ],
+  "teaching": {
+    "diagnosis": "Acute viral gastroenteritis with moderate dehydration",
+    "one_liner": "4-year-old girl with 24 hours of watery diarrhea and vomiting, now lethargic with dry lips and no urination for 8 hours.",
+    "differentials": [
+      "Bacterial gastroenteritis",
+      "Appendicitis",
+      "Diabetic ketoacidosis (if severe dehydration/altered mental status)"
+    ],
+    "red_flags": [
+      "No urination for 8 hours (significant dehydration)",
+      "Lethargy",
+      "Dry mucous membranes",
+      "Inability to drink, worsening sleepiness, green/bilious or bloody vomit, bloody stool, or severe abdominal pain requires emergency assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Quantify the diarrhea and vomiting episodes",
+        "say": "How many times has she had diarrhea and vomiting in the past 24 hours?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "diarrhea frequency",
+          "vomiting frequency"
+        ]
+      },
+      {
+        "objective": "Assess urine output as a dehydration marker",
+        "say": "When was the last time she urinated?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urine output"
+        ]
+      },
+      {
+        "objective": "Assess mental status and energy level",
+        "say": "How alert and active is she right now compared to normal?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lethargy"
+        ]
+      },
+      {
+        "objective": "Ask about oral intake tolerance",
+        "say": "Is she able to keep any fluids down at all?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "oral intake"
+        ]
+      },
+      {
+        "objective": "Explain the oral rehydration plan",
+        "say": "Because she is sleepy and has not urinated for 8 hours, she needs urgent assessment for dehydration and may need IV fluids; we will use oral rehydration only if she is alert and keeping fluids down.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "oral rehydration therapy"
+        ]
+      }
+    ]
+  },
+  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.5 mEq/L, replace potassium and hold insulin until it is corrected."
+}

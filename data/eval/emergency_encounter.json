@@ -1,0 +1,83 @@
+{
+  "name": "Emergency Encounter — Focused Clinical English",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "history_completeness",
+    "ice_empathy",
+    "soap_note",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Language",
+      "anchors": {
+        "90-100": "Accurate, concise spoken English even under urgency; errors are rare and harmless",
+        "70-80": "Mostly accurate and immediately understandable; minor errors do not slow care",
+        "50-60": "Meaning is recoverable but structural errors occasionally require listener effort",
+        "30-40": "Frequent errors obscure questions, instructions, or the immediate plan",
+        "10-20": "Meaning is often unclear during safety-critical communication"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Accurate Emergency Communication",
+      "anchors": {
+        "90-100": "Communicates case-supported facts, priorities, tests, and next steps precisely without inventing certainty",
+        "70-80": "Minor imprecision only; no unsafe or misleading statement",
+        "50-60": "Some inaccurate terminology or unclear explanation, without immediate serious harm",
+        "30-40": "Multiple misleading statements or an important safety-critical misunderstanding",
+        "10-20": "Spoken advice or claims could plausibly cause immediate serious harm"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Prioritization & Focus",
+      "anchors": {
+        "90-100": "Rapidly foregrounds stability, red flags, time-critical threats, and a focused next step",
+        "70-80": "Appropriately focused with only minor omissions or inefficient sequencing",
+        "50-60": "Some prioritization is audible but urgent and routine details are mixed together",
+        "30-40": "Unfocused questioning delays the central concern or fails to state a clear next step",
+        "10-20": "No audible prioritization in a time-sensitive encounter"
+      }
+    },
+    "communication_fluency": {
+      "label": "Clear Delivery Under Pressure",
+      "anchors": {
+        "90-100": "Calm, concise, well-signposted delivery with effective pauses and confirmation",
+        "70-80": "Mostly smooth and easy to follow despite occasional hesitation",
+        "50-60": "Noticeable hesitation or wordiness, but the listener can follow",
+        "30-40": "Fragmented or rushed delivery repeatedly disrupts understanding",
+        "10-20": "Communication frequently breaks down"
+      }
+    },
+    "professionalism": {
+      "label": "Reassurance, Consent & Closed Loop",
+      "anchors": {
+        "90-100": "Acknowledges distress, explains immediate actions plainly, checks understanding, and avoids false reassurance",
+        "70-80": "Professional and reassuring with minor missed opportunities to confirm or orient",
+        "50-60": "Polite but mechanical, jargon-heavy, or incomplete about what happens next",
+        "30-40": "Misses distress or communicates the plan in a confusing or dismissive way",
+        "10-20": "Unsafe, dismissive, coercive, or seriously misleading communication"
+      }
+    }
+  },
+  "checklist": [
+    {"item": "identified the immediate concern and assessed relevant red-flag symptoms", "required": true},
+    {"item": "asked a focused onset, severity, and progression history appropriate to the case", "required": true},
+    {"item": "checked case-relevant medications, allergies, risks, or contraindications", "required": true},
+    {"item": "used concise signposting so the patient understood what was happening now", "required": true},
+    {"item": "communicated an immediate case-supported investigation, treatment, escalation, or monitoring step", "required": true},
+    {"item": "explained uncertainty without false reassurance or unsupported certainty", "required": false},
+    {"item": "acknowledged pain, fear, confusion, or loss of control", "required": true},
+    {"item": "checked understanding, consent, or ability to follow the immediate plan when appropriate", "required": false}
+  ],
+  "empathy_markers": [
+    "acknowledged the patient's immediate distress",
+    "used calm orienting language",
+    "explained an urgent action before or while taking it",
+    "avoided false reassurance",
+    "checked that the patient could understand or follow the immediate plan"
+  ],
+  "reference_output_type": "soap"
+}

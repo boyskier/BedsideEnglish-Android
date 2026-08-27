@@ -1,0 +1,143 @@
+{
+  "id": "peds_037",
+  "system": "peds",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Liam Anderson",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "unexplained fever and irritability in 6-month-old",
+  "hpi_details": "6-month-old boy is brought in by his parent with a fever to 39.0C for 24 hours and irritability. He has no cough, rhinorrhea, vomiting, diarrhea, or rash and is feeding somewhat less than usual.",
+  "ideas": "thinks it might be related to uti_infant",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Lives with parents; no known sick contacts.",
+  "investigation_events": [{
+    "id": "catheterized_urinalysis",
+    "title": "Immediate catheterized urinalysis",
+    "order_terms": ["catheterized urinalysis", "urinalysis", "urine dipstick", "UA"],
+    "availability_message": "The catheterized urinalysis result is now available. The urine culture remains pending and should guide definitive therapy.",
+    "results": [{"id": "urinalysis", "test": "Catheterized urinalysis", "value": "Leukocyte esterase 3+, nitrite positive, >50 WBC/HPF", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Infant urinary tract infection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infant urinary tract infection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes obtaining catheterized urinalysis and urine culture before antibiotics, then using empiric treatment when indicated and tailoring it to culture results.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: unexplained fever and irritability in 6-month-old",
+      "Key HPI features: A 6-month-old boy has fever to 39.0C for 24 hours, irritability, and decreased feeding without a clear source of infection.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Infant Urinary Tract Infection.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infant urinary tract infection.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Occult bacteremia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever without an obvious source in an infant warrants UTI workup."
+    ],
+    "management_principles": [
+      "Obtain catheterized urinalysis and urine culture before antibiotics; start empiric treatment when urinalysis supports infection or the infant is clinically ill, then tailor therapy to culture results",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of unexplained fever and irritability in 6-month-old. HPI: infant UTI.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Infant Urinary Tract Infection.",
+    "assessment": "Condition highly suspicious for Infant Urinary Tract Infection.",
+    "plan": "Obtain catheterized urinalysis and urine culture before antibiotics. Start empiric antibiotics if urinalysis supports infection or the infant is clinically ill, then tailor therapy to culture results."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Infant Urinary Tract Infection",
+    "Select appropriate diagnostic workup for Infant Urinary Tract Infection",
+    "Implement evidence-based management plan: Obtain catheterized urine studies before antibiotics and tailor therapy to culture results"
+  ],
+  "teaching": {
+    "diagnosis": "Infant urinary tract infection",
+    "one_liner": "6-month-old with unexplained fever and irritability, concerning for infant UTI.",
+    "differentials": [
+      "Occult bacteremia",
+      "Viral illness",
+      "Otitis media"
+    ],
+    "red_flags": [
+      "Fever without an obvious source in an infant warrants UTI workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "Assess fever pattern and duration",
+        "say": "How high has his fever been, and how many days has it lasted?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever duration"
+        ]
+      },
+      {
+        "objective": "Ask about feeding and voiding changes",
+        "say": "Has he been feeding normally, and have you noticed any change in his urine smell or diaper wetness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "feeding changes",
+          "urine changes"
+        ]
+      },
+      {
+        "objective": "Screen for other sources of fever",
+        "say": "Does he have any cough, runny nose, ear pulling, or rash that might explain the fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "source of fever screen"
+        ]
+      },
+      {
+        "objective": "Ask about irritability pattern",
+        "say": "Has he been unusually fussy or hard to console?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "irritability"
+        ]
+      },
+      {
+        "objective": "Explain the catheterized urine sample and antibiotic plan",
+        "say": "We need to collect a urine sample using a small catheter before antibiotics, then tailor treatment to the test results.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "catheterized urine culture",
+          "antibiotics"
+        ]
+      }
+    ]
+  }
+}

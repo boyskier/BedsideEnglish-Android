@@ -1,0 +1,152 @@
+{
+  "id": "cs_019",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Brown",
+  "age": 52,
+  "gender": "male",
+  "chief_complaint": "sudden onset severe pulmonary edema, pink frothy sputum, and loud hyperdynamic apical systolic murmur",
+  "hpi_details": "52M with known asymptomatic MVP experiences sudden rupture of posterior leaflet chordae tendineae during exertion causing acute severe mitral regurgitation and flash pulmonary edema requiring emergent mitral valve repair.",
+  "ideas": "thinks this is related to mitral valve prolapse flail leaflet ruptured chordae",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "acute_flail_mitral_echo",
+      "title": "Emergency echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE", "TEE", "transesophageal echo"],
+      "availability_message": "The emergency echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "echo_flail_posterior_leaflet",
+          "test": "Echocardiogram",
+          "value": "Flail P2 posterior mitral leaflet from ruptured chordae with severe eccentric mitral regurgitation; LVEF 68%",
+          "unit": "",
+          "reference_range": "No flail leaflet or significant regurgitation",
+          "flag": "critical",
+          "collected_at": "Emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ruptured Chordae Tendineae (Acute Severe Mitral Regurgitation) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured Chordae Tendineae (Acute Severe Mitral Regurgitation) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Acute severe MR from ruptured chordae is a surgical emergency: hemodynamic stabilization (afterload reduction, possible intra-aortic balloon pump) is a bridge to urgent mitral valve repair, not a substitute for it.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden onset severe pulmonary edema, pink frothy sputum, and loud hyperdynamic apical systolic murmur",
+      "Key HPI features: 52M with known asymptomatic MVP experiences sudden rupture of posterior leaflet chordae tendineae during exertion causing acute severe mitral regurgitation and flash pulmonary edema requiring emergent mitral valve repair.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Mitral Valve Prolapse Flail Leaflet Ruptured Chordae.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured Chordae Tendineae (Acute Severe Mitral Regurgitation).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute myocardial infarction with papillary muscle rupture without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden pink frothy sputum during exertion — a classic sign of acute flash pulmonary edema."
+    ],
+    "management_principles": [
+      "Stabilize with IV diuretics, vasodilators/afterload reduction, and consider intra-aortic balloon pump if hypotensive; obtain urgent echocardiography to confirm flail leaflet and severity",
+      "Emergent cardiothoracic surgery referral for mitral valve repair — delay risks refractory cardiogenic pulmonary edema",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Mitral Valve Prolapse Flail Leaflet Ruptured Chordae: sudden onset severe pulmonary edema, pink frothy sputum, and loud hyperdynamic apical systolic murmur. 52M with known asymptomatic MVP experiences sudden rupture of posterior leaflet chordae tendineae during exertion causing acute severe mitral regurgitation and flash pulmonary edema requiring emergent mitral valve repair.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Mitral Valve Prolapse Flail Leaflet Ruptured Chordae.",
+    "assessment": "Findings consistent with acute severe mitral regurgitation from ruptured chordae tendineae (flail posterior leaflet) in known MVP.",
+    "plan": "Stabilize with IV diuretics and afterload reduction; urgent echocardiography to confirm; emergent cardiothoracic surgery referral for mitral valve repair."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Mitral Valve Prolapse Flail Leaflet Ruptured Chordae",
+    "Formulate prioritized differential diagnosis for sudden onset severe pulmonary edema, pink frothy sputum, and loud hyperdynamic apical systolic murmur",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured Chordae Tendineae (Acute Severe Mitral Regurgitation)",
+    "one_liner": "Sudden rupture of a chordae tendineae in a patient with mitral valve prolapse causes a flail leaflet and acute severe mitral regurgitation, precipitating sudden pulmonary edema — a surgical emergency for mitral valve repair.",
+    "differentials": [
+      "Acute myocardial infarction with papillary muscle rupture",
+      "Infective endocarditis with leaflet destruction",
+      "Decompensated heart failure from another cause"
+    ],
+    "red_flags": [
+      "Sudden pink frothy sputum during exertion — a classic sign of acute flash pulmonary edema"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset relative to activity",
+        "say": "What were you doing when the breathlessness suddenly got much worse?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "exertion",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Sputum character",
+        "say": "What does the sputum you're coughing up look like?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "pink",
+          "frothy"
+        ]
+      },
+      {
+        "objective": "Known valve history",
+        "say": "Have you been told you have mitral valve prolapse before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "MVP",
+          "mitral valve prolapse"
+        ]
+      },
+      {
+        "objective": "Breathlessness severity",
+        "say": "How severe is your breathlessness right now?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Orthopnea",
+        "say": "Can you lie flat, or do you need to sit up to breathe?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "_schema_version": 1,
+  "_comment": "Reusable user-state variants for Survival English v3. Public context is shown only when the learner would realistically know it.",
+  "user_states": [
+    {
+      "id": "open",
+      "label": "Open-ended",
+      "public_user_context": "",
+      "ai_private": "Do not assume the user's role, knowledge, stake, or confidence. Let their first reply establish it.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "directly_involved",
+      "label": "Directly involved",
+      "public_user_context": "This situation may affect you directly.",
+      "ai_private": "Treat the user as someone who may need to decide, clarify, or act.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "nearby_bystander",
+      "label": "Nearby bystander",
+      "public_user_context": "You are nearby and can choose how much to get involved.",
+      "ai_private": "Allow help, refusal, a short answer, or a soft exit.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "also_affected",
+      "label": "Also affected",
+      "public_user_context": "You may be affected by the same problem.",
+      "ai_private": "Push toward joint problem-solving and shared confirmation.",
+      "compatible_categories": ["Travel & Transit", "Housing & Daily Life", "Campus & Lab", "Hospital Hallway"]
+    },
+    {
+      "id": "not_directly_affected",
+      "label": "Not directly affected",
+      "public_user_context": "This may not be your own problem, but you are close enough to respond.",
+      "ai_private": "The user may offer limited help or point you to a better source.",
+      "compatible_categories": ["Travel & Transit", "Food & Drink", "Shops & Services", "Unexpected Moments", "Hospital Hallway"]
+    },
+    {
+      "id": "new_here",
+      "label": "New here",
+      "public_user_context": "You are still learning how this place works.",
+      "ai_private": "Do not expect the user to know local shortcuts or exact rules. Let them ask basic questions honestly.",
+      "compatible_categories": ["Campus & Lab", "Travel & Transit", "Housing & Daily Life", "Hospital Hallway"]
+    },
+    {
+      "id": "some_context",
+      "label": "Some context",
+      "public_user_context": "You have some context here, but not necessarily all the details.",
+      "ai_private": "The user can help a little but may still need to clarify specifics.",
+      "compatible_categories": ["*"]
+    },
+    {
+      "id": "local_or_regular",
+      "label": "Local or regular",
+      "public_user_context": "You know this place at least a little.",
+      "ai_private": "The user may answer with practical familiarity, but can still admit uncertainty.",
+      "compatible_categories": ["Campus & Lab", "Food & Drink", "Travel & Transit", "Housing & Daily Life", "Hospital Hallway"]
+    },
+    {
+      "id": "customer_decision",
+      "label": "Customer decision",
+      "public_user_context": "You are the customer or the person being asked to decide.",
+      "ai_private": "Make the user choose, ask for clarification, or decline options.",
+      "compatible_categories": ["Food & Drink", "Shops & Services", "Travel & Transit"]
+    },
+    {
+      "id": "waiting_or_in_line",
+      "label": "Waiting or in line",
+      "public_user_context": "You are waiting nearby or in the same line.",
+      "ai_private": "Use waiting time, line pressure, and shared observation as the social opening.",
+      "compatible_categories": ["Food & Drink", "Travel & Transit", "Shops & Services", "Campus & Lab", "Unexpected Moments"]
+    },
+    {
+      "id": "part_of_event",
+      "label": "Part of event",
+      "public_user_context": "You are part of this event, even if you do not know everyone.",
+      "ai_private": "Use introductions, choices, group energy, and polite participation.",
+      "compatible_categories": ["Parties & Social", "Campus & Lab", "Food & Drink"]
+    },
+    {
+      "id": "edge_of_group",
+      "label": "Edge of group",
+      "public_user_context": "You are near the edge of the group and can either join in or hang back.",
+      "ai_private": "Respect shyness or refusal and pivot to friendly side-conversation.",
+      "compatible_categories": ["Parties & Social", "Campus & Lab", "Food & Drink"]
+    },
+    {
+      "id": "resident_or_neighbor",
+      "label": "Resident or neighbor",
+      "public_user_context": "You live in or near this building or shared space.",
+      "ai_private": "Treat the user as someone whose routine, comfort, or relationship may be affected.",
+      "compatible_categories": ["Housing & Daily Life"]
+    },
+    {
+      "id": "shared_responsibility",
+      "label": "Shared responsibility",
+      "public_user_context": "This may affect your comfort, space, or routine too.",
+      "ai_private": "Nudge toward a concrete agreement, boundary, or practical next step.",
+      "compatible_categories": ["Housing & Daily Life", "Campus & Lab", "Hospital Hallway"]
+    },
+    {
+      "id": "hospital_insider",
+      "label": "Hospital insider",
+      "public_user_context": "You belong in the hospital environment, but this is casual hallway talk.",
+      "ai_private": "Keep the exchange non-clinical and logistical or social.",
+      "compatible_categories": ["Hospital Hallway"]
+    },
+    {
+      "id": "asked_for_help",
+      "label": "Asked for help",
+      "public_user_context": "The person is asking you directly, even if you may not know the answer.",
+      "ai_private": "Reward honest uncertainty, clarification, or directing them to a better source.",
+      "compatible_categories": ["*"]
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "id_015",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lopez",
+  "age": 30,
+  "gender": "male",
+  "chief_complaint": "painful sore on genitals",
+  "hpi_details": "30M presents with a painful, shallow ulcer on the shaft of his penis for 3 days. It started as small blisters. He also complains of a low-grade fever and painful swollen glands in his groin. He has a new sexual partner.",
+  "ideas": "thinks he caught an STD",
+  "concerns": "worried it will never go away",
+  "expectations": "wants antibiotics",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Sexually active with a new partner, inconsistent condom use",
+  "clinical_knowledge": {
+    "topic": "Genital Herpes (HSV)",
+    "core_concepts": [
+      "Primary outbreak often features painful vesicles/ulcers, tender lymphadenopathy, and systemic symptoms (fever, malaise)."
+    ],
+    "diagnostic_clues": [
+      "Painful grouped vesicles/ulcers",
+      "Tender inguinal lymphadenopathy"
+    ],
+    "common_misconceptions": [
+      "Assuming a painless ulcer is herpes (syphilis is painless, herpes is painful)."
+    ],
+    "dangerous_errors": [
+      "Failing to screen for other STIs (HIV, Syphilis, GC/CT) when a patient presents with one STI."
+    ],
+    "management_principles": [
+      "Oral antivirals (Valacyclovir/Acyclovir), STI screening, counseling on transmission."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "30M with a painful genital ulcer, fever, and tender groin lumps.",
+    "objective": "Multiple shallow, painful, erythematous based ulcers on penile shaft. Bilateral tender inguinal lymphadenopathy.",
+    "assessment": "Primary Genital Herpes Simplex Virus (HSV) infection.",
+    "plan": "HSV PCR swab. Start oral Valacyclovir. Full STI screening (HIV, Syphilis, Gonorrhea, Chlamydia)."
+  },
+  "learning_objectives": [
+    "Differentiate painful genital ulcers (herpes, chancroid) from painless (syphilis)."
+  ],
+  "teaching": {
+    "diagnosis": "Genital Herpes (Primary Outbreak)",
+    "one_liner": "Painful genital vesicles and ulcers with tender inguinal lymphadenopathy typical of primary HSV infection.",
+    "differentials": [
+      "Syphilis (Primary chancre)",
+      "Chancroid"
+    ],
+    "red_flags": [
+      "Urinary retention (due to severe pain or radiculopathy)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Lesion evolution",
+        "say": "Did the sore start as small blisters before it became an ulcer?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "blisters",
+          "vesicles",
+          "ulcer"
+        ]
+      },
+      {
+        "objective": "Pain",
+        "say": "Is the sore painful?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "painful",
+          "tender"
+        ]
+      },
+      {
+        "objective": "Associated lymphadenopathy",
+        "say": "Have you noticed any swollen, tender glands in your groin?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "groin",
+          "lymph node",
+          "swollen"
+        ]
+      },
+      {
+        "objective": "Systemic symptoms",
+        "say": "Have you had a fever or felt generally unwell?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "malaise"
+        ]
+      },
+      {
+        "objective": "Sexual history",
+        "say": "Have you had any new sexual partners recently, and do you use protection?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "new partner",
+          "sexual history",
+          "protection"
+        ]
+      }
+    ]
+  }
+}

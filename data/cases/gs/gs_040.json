@@ -1,0 +1,138 @@
+{
+  "id": "gs_040",
+  "system": "gs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Clark",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "recurrent mild RUQ pain and gallstones on ultrasound",
+  "hpi_details": "A 62-year-old female presents to the clinic with recurrent mild ruq pain and gallstones on ultrasound. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to chronic cholecystitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "right_upper_quadrant_ultrasound",
+      "test": "Right-upper-quadrant ultrasound",
+      "value": "Multiple gallstones with a contracted mildly thick-walled gallbladder; no pericholecystic fluid, biliary duct dilatation, or sonographic Murphy sign",
+      "flag": "abnormal"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Cholecystitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Cholecystitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Chronic Cholecystitis emphasizes referral for elective outpatient laparoscopic cholecystectomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent mild RUQ pain and gallstones on ultrasound",
+      "Key HPI features: A 62-year-old female presents to the clinic with recurrent mild ruq pain and gallstones on ultrasound. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Chronic Cholecystitis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Cholecystitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute cholecystitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden worsening pain with fever — suggests acute cholecystitis."
+    ],
+    "management_principles": [
+      "Plan for Chronic Cholecystitis: Refer for elective outpatient laparoscopic cholecystectomy",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of recurrent mild RUQ pain and gallstones on ultrasound, consistent with chronic gallbladder wall inflammation.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Chronic Cholecystitis.",
+    "assessment": "Assessment consistent with Chronic Cholecystitis.",
+    "plan": "Plan for Chronic Cholecystitis: Refer for elective outpatient laparoscopic cholecystectomy. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Chronic Cholecystitis",
+    "Select appropriate diagnostic workup for Chronic Cholecystitis",
+    "Implement evidence-based management plan: Refer for elective outpatient laparoscopic cholecystectomy"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Cholecystitis",
+    "one_liner": "Recurrent low-grade gallbladder inflammation from chronic gallstone irritation, causing mild, recurring RUQ pain rather than a single acute attack.",
+    "differentials": [
+      "Acute cholecystitis",
+      "Biliary colic",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "Sudden worsening pain with fever — suggests acute cholecystitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pattern of pain",
+        "say": "Does the pain come and go over months, rather than being one bad attack?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "recurrent",
+          "months"
+        ]
+      },
+      {
+        "objective": "Relationship to food",
+        "say": "Does it happen after fatty meals?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "fatty"
+        ]
+      },
+      {
+        "objective": "Severity",
+        "say": "How severe is the pain compared to before?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Known gallstones",
+        "say": "Have you been told you have gallstones on an ultrasound?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "gallstones",
+          "ultrasound"
+        ]
+      },
+      {
+        "objective": "Fever history",
+        "say": "Have you ever had fever with any of these episodes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

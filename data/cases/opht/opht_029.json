@@ -1,0 +1,144 @@
+{
+  "id": "opht_029",
+  "system": "ophthalmology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Davis",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "severe sharp pain, tearing, photophobia post-scratch",
+  "hpi_details": "A 29-year-old man develops immediate severe sharp pain, tearing, and photophobia after a fingernail scratches his eye. He has no penetrating mechanism, but visual acuity and pupil examination are required before diagnosing a simple abrasion.",
+  "ideas": "thinks it might be related to corneal_abrasion",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "same_day_fluorescein_exam",
+    "title": "Fluorescein corneal examination",
+    "order_terms": ["fluorescein", "cobalt blue", "corneal stain", "corneal exam"],
+    "availability_message": "The fluorescein examination result is now available after assessment excluded an open-globe injury.",
+    "results": [{"id": "fluorescein", "test": "Fluorescein examination", "value": "3 mm superficial linear corneal epithelial defect without stromal infiltrate; negative Seidel test", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Corneal abrasion (fingernail trauma) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Corneal abrasion (fingernail trauma) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Corneal Abrasion finger: Fluorescein stain check, topical Erythromycin ointment, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe sharp pain, tearing, photophobia post-scratch",
+      "Key HPI features: A 29-year-old male presents to the clinic with severe sharp pain, tearing, photophobia post-scratch. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Corneal Abrasion finger.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Corneal abrasion (fingernail trauma).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Corneal foreign body without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Whitish infiltrate would suggest secondary infection."
+    ],
+    "management_principles": [
+      "Plan for Corneal Abrasion finger: Fluorescein stain check, topical Erythromycin ointment",
+      "Urgently refer for reduced vision, irregular pupil, hyphema, suspected penetrating injury, corneal infiltrate, or failure to improve",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of severe sharp pain, tearing, photophobia post-scratch. HPI: corneal abrasion.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Corneal Abrasion finger.",
+    "assessment": "Condition highly suspicious for Corneal Abrasion finger.",
+    "plan": "Plan for Corneal Abrasion finger: Fluorescein stain check, topical Erythromycin ointment. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Corneal Abrasion finger",
+    "Select appropriate diagnostic workup for Corneal Abrasion finger",
+    "Implement evidence-based management plan: Fluorescein stain check, topical Erythromycin ointment"
+  ],
+  "teaching": {
+    "diagnosis": "Corneal abrasion (fingernail trauma)",
+    "one_liner": "Patient with severe sharp pain, tearing, and photophobia after a scratch to the eye.",
+    "differentials": [
+      "Corneal foreign body",
+      "Corneal ulcer",
+      "Traumatic iritis"
+    ],
+    "red_flags": [
+      "Whitish infiltrate would suggest secondary infection",
+      "Reduced vision, an irregular pupil, hyphema, or suspected penetrating injury requires urgent assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the mechanism of injury",
+        "say": "Can you tell me exactly what scratched your eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mechanism of injury"
+        ]
+      },
+      {
+        "objective": "Assess pain and light sensitivity",
+        "say": "How severe is the pain, and does bright light bother you?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pain",
+          "photophobia"
+        ]
+      },
+      {
+        "objective": "Screen for vision change",
+        "say": "Has your vision been affected?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vision change"
+        ]
+      },
+      {
+        "objective": "Ask about foreign body sensation",
+        "say": "Does it feel like there's something still in your eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "foreign body sensation"
+        ]
+      },
+      {
+        "objective": "Explain the fluorescein exam and treatment",
+        "say": "We'll stain your eye to check the scratch, then use antibiotic ointment.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "fluorescein stain",
+          "antibiotic ointment"
+        ]
+      }
+    ]
+  }
+}

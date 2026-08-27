@@ -1,0 +1,132 @@
+{
+  "id": "fm_031",
+  "system": "fm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Walker",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "routine 3-month review, HbA1c 7.2% on metformin",
+  "hpi_details": "A 35-year-old male presents to the clinic with routine 3-month review, hba1c 7.2% on metformin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to t2dm_followup",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Type 2 diabetes mellitus",
+  "medications": "Metformin",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "hba1c",
+      "test": "Hemoglobin A1c",
+      "value": "7.2",
+      "unit": "%",
+      "reference_range": "<7.0 individualized target",
+      "flag": "high",
+      "specimen": "Blood",
+      "collected_at": "Before 3-month review"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Type 2 Diabetes (follow-up) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Type 2 Diabetes (follow-up) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes optimizing the metformin dose, checking creatinine, and screening the feet with monofilament testing, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: routine 3-month review, HbA1c 7.2% on metformin",
+      "Key HPI features: A 35-year-old male presents to the clinic with routine 3-month review, hba1c 7.2% on metformin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Stable vital signs, feet examined with monofilament testing (no ulcers or sensory loss), HbA1c 7.2% above goal.",
+      "Relevant background/PMH: Type 2 diabetes mellitus"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Type 2 Diabetes (follow-up).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Symptoms of a hyperglycemic crisis (polyuria, polydipsia, vomiting, confusion) — DKA/HHS needs emergent care."
+    ],
+    "management_principles": [
+      "Plan for Type 2 Diabetes follow-up: Optimize metformin dose, check creatinine, screen feet with monofilament",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of routine 3-month review, HbA1c 7.2% on metformin. HPI: Established type 2 diabetic on metformin returns for routine follow-up, reporting gradual fatigue but no polyuria, polydipsia, vision changes, or foot symptoms.",
+    "objective": "Vital signs stable, BMI reviewed. Feet examined with monofilament testing, no ulcers or sensory deficits noted. HbA1c 7.2%, above goal.",
+    "assessment": "Type 2 diabetes mellitus, routine follow-up with HbA1c 7.2% above target on metformin monotherapy.",
+    "plan": "Plan for Type 2 Diabetes follow-up: Optimize metformin dose, check creatinine, screen feet with monofilament. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Type 2 Diabetes follow-up",
+    "Select appropriate diagnostic workup for Type 2 Diabetes follow-up",
+    "Implement evidence-based management plan: Optimize metformin dose, check creatinine, screen feet with monofilament"
+  ],
+  "teaching": {
+    "diagnosis": "Type 2 Diabetes (follow-up)",
+    "one_liner": "A routine 3-month diabetes follow-up with an HbA1c above goal on metformin, prompting dose optimization and complication screening.",
+    "differentials": [
+      "Medication nonadherence",
+      "Intercurrent illness causing hyperglycemia",
+      "Diabetes complications"
+    ],
+    "red_flags": [
+      "Symptoms of a hyperglycemic crisis (polyuria, polydipsia, vomiting, confusion) — DKA/HHS needs emergent care",
+      "New vision changes, numbness/tingling in the feet, or chest pain — screen for diabetic complications",
+      "Recurrent or severe hypoglycemia — needs urgent medication adjustment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Medication adherence",
+        "say": "Have you been taking your metformin regularly?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Blood sugar control",
+        "say": "How have your home glucose readings been?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Diet and exercise",
+        "say": "How has your diet and exercise been?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Foot symptoms",
+        "say": "Any numbness or sores on your feet?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Side effects",
+        "say": "Any side effects from the medication, like stomach upset?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

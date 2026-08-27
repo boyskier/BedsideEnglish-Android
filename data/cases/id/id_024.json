@@ -1,0 +1,137 @@
+{
+  "id": "id_024",
+  "system": "infectious_disease",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Joo",
+  "age": 64,
+  "gender": "male",
+  "chief_complaint": "burning skin pain followed by clusters of small blisters on the left side of chest",
+  "hpi_details": "64M reports 4 days of severe burning, tingling pain on the left side of his chest and back. Yesterday, developed a band of red bumps and small fluid-filled blisters in the exact area where the pain was.",
+  "ideas": "thinks he was bitten by a spider or has shingles",
+  "concerns": "worried about permanent nerve pain (postherpetic neuralgia)",
+  "expectations": "wants shingles medication",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine 5mg daily",
+  "social_hx": "Retired, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Herpes Zoster (Shingles) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Herpes Zoster (Shingles) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Diagnosis is usually clinical, based on the characteristic dermatomal pattern of grouped vesicles on an erythematous base; PCR or Tzanck smear is reserved for atypical or disseminated presentations.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: burning skin pain followed by clusters of small blisters on the left side of chest",
+      "Key HPI features: 64M reports 4 days of severe burning, tingling pain on the left side of his chest and back. Yesterday, developed a band of red bumps and small fluid-filled blisters in the exact area where the pain was.",
+      "Objective/Exam findings: Vitals: Temp 37.1C, HR 78, BP 138/84 (afebrile, well-appearing). Grouped vesicles on an erythematous base in a band-like distribution over the left T4-T5 dermatome, not crossing the midline. No periorbital or nasal-tip involvement. Skin elsewhere clear.",
+      "Relevant background/PMH: Hypertension",
+      "Current medications: Amlodipine 5mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Herpes Zoster (Shingles).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Herpes simplex virus infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rash involving the eye or tip of the nose (Hutchinson's sign) — risk of vision-threatening ophthalmic zoster."
+    ],
+    "management_principles": [
+      "Prescribe Valacyclovir 1g PO TID (or Famciclovir 500mg TID) for 7 days, ideally started within 72 hours of rash onset.",
+      "Provide pain control (e.g., gabapentin or NSAIDs) and counsel to keep lesions covered until crusted to reduce transmission risk.",
+      "Examine for ophthalmic involvement (Hutchinson's sign) and refer urgently to ophthalmology if the nose or eye is affected."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "64M with hypertension, 4 days of burning, tingling left-sided chest/back pain followed yesterday by a band of grouped vesicles in the same distribution.",
+    "objective": "T 37.1C, HR 78, BP 138/84. Grouped vesicles on an erythematous base in a band over the left T4-T5 dermatome, not crossing the midline. No periorbital or nasal-tip involvement.",
+    "assessment": "Herpes Zoster (Shingles) in the left thoracic (T4-T5) dermatome, presenting within the antiviral treatment window.",
+    "plan": "1. Prescribe Valacyclovir 1g PO TID for 7 days (started within 72 hours of rash onset). 2. Provide pain control (e.g., gabapentin or NSAIDs) and advise keeping lesions covered until crusted. 3. Counsel on postherpetic neuralgia risk and to avoid contact with unvaccinated/immunocompromised individuals and pregnant women until lesions crust over."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Herpes Zoster (Shingles) in the left thoracic dermatome.",
+    "Formulate prioritized differential diagnosis for burning skin pain followed by clusters of small blisters on the left side of chest",
+    "Select appropriate laboratory and imaging studies for infectious disease",
+    "Implement evidence-based acute and long-term management strategies for Herpes Zoster (Shingles) in the left thoracic dermatome."
+  ],
+  "teaching": {
+    "diagnosis": "Herpes Zoster (Shingles)",
+    "one_liner": "Reactivation of latent varicella-zoster virus in a dorsal root ganglion, causing burning dermatomal pain followed by a band of grouped vesicles — antivirals within 72 hours reduce the risk of postherpetic neuralgia.",
+    "differentials": [
+      "Herpes simplex virus infection",
+      "Contact dermatitis",
+      "Cellulitis"
+    ],
+    "red_flags": [
+      "Rash involving the eye or tip of the nose (Hutchinson's sign) — risk of vision-threatening ophthalmic zoster"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain before the rash",
+        "say": "Did the burning pain start before the blisters appeared?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "before",
+          "pain first"
+        ]
+      },
+      {
+        "objective": "Rash distribution",
+        "say": "Is the rash confined to a band on one side of your body?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "band",
+          "one side",
+          "dermatome"
+        ]
+      },
+      {
+        "objective": "Timing since rash onset",
+        "say": "How many days ago did the blisters appear?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "days"
+        ]
+      },
+      {
+        "objective": "Eye involvement",
+        "say": "Is any of the rash near your eye or the tip of your nose?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "eye",
+          "nose"
+        ]
+      },
+      {
+        "objective": "Immune status",
+        "say": "Do you have any condition that weakens your immune system?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

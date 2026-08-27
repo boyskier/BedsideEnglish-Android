@@ -1,0 +1,97 @@
+{
+  "name": "Empathy Drill — Responding to Emotion (NURSE)",
+  "learner_level": "preclinical",
+  "_note": "Skill drill. Same 4 metric keys as standard rubric (keeps self-assessment/DB working) but re-pitched to empathic communication. clinical_reasoning slot is repurposed as the Empathy score — the focus of this drill.",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "ice_empathy",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentences",
+      "anchors": {
+        "90-100": "Clear, well-formed sentences throughout",
+        "70-80": "Occasional minor errors; meaning always clear",
+        "50-60": "Some errors but understandable",
+        "30-40": "Frequent errors; listener must work",
+        "10-20": "Errors block most sentences"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Naturalness of Phrasing",
+      "anchors": {
+        "90-100": "Empathic phrases sound natural and native-like",
+        "70-80": "Mostly natural; minor awkwardness",
+        "50-60": "Understandable but stilted or textbook-like",
+        "30-40": "Often unnatural or formulaic",
+        "10-20": "Phrasing consistently unnatural"
+      }
+    },
+    "communication_fluency": {
+      "label": "Warmth & Delivery",
+      "anchors": {
+        "90-100": "Warm, unhurried delivery that fits the emotional moment",
+        "70-80": "Generally warm; occasional hesitation",
+        "50-60": "Flat or rushed at times",
+        "30-40": "Cold or hurried delivery",
+        "10-20": "Delivery undermines any empathic content"
+      }
+    },
+    "professionalism": {
+      "label": "Empathy & Professionalism",
+      "anchors": {
+        "90-100": "Names the emotion, validates it, and explores it before moving on",
+        "70-80": "Acknowledges feelings clearly; minor lapses",
+        "50-60": "Some acknowledgement but often jumps to facts or reassurance",
+        "30-40": "Rarely acknowledges emotion; mostly task-focused",
+        "10-20": "Ignores the patient's emotion entirely"
+      }
+    }
+  },
+  "checklist": [
+    {
+      "item": "NAME — named or labelled the patient's emotion (e.g. 'It sounds like you're scared')",
+      "required": true
+    },
+    {
+      "item": "UNDERSTAND — expressed understanding of why they feel that way",
+      "required": true
+    },
+    {
+      "item": "RESPECT — acknowledged the patient's effort or strength",
+      "required": false
+    },
+    {
+      "item": "SUPPORT — offered partnership/support (e.g. 'We'll work through this together')",
+      "required": true
+    },
+    {
+      "item": "EXPLORE — invited the patient to say more about the feeling",
+      "required": true
+    },
+    {
+      "item": "did NOT jump straight to facts or premature reassurance",
+      "required": true
+    },
+    {
+      "item": "avoided false promises (e.g. 'everything will be fine')",
+      "required": false
+    },
+    {
+      "item": "gave the patient space without interrupting",
+      "required": false
+    }
+  ],
+  "empathy_markers": [
+    "named the emotion explicitly",
+    "validated the patient's feeling",
+    "offered support or partnership",
+    "invited the patient to share more",
+    "avoided premature reassurance"
+  ],
+  "reference_output_type": "none"
+}

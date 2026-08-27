@@ -1,0 +1,137 @@
+{
+  "id": "neuro_004",
+  "system": "neurology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Garcia",
+  "age": 29,
+  "gender": "female",
+  "chief_complaint": "recurrent headaches with nausea",
+  "hpi_details": "throbbing unilateral headaches for 6 months, 2-3 times per month, nausea and light sensitivity, lasts several hours, better in a dark room, no weakness, no fever, no sudden thunderclap onset",
+  "ideas": "thinks it may be migraine",
+  "concerns": "worried about a brain tumor",
+  "expectations": "wants pain relief and to know when headache is dangerous",
+  "pmh": "no major illness",
+  "medications": "paracetamol occasionally, no regular medications",
+  "social_hx": "works night shifts, sleeps irregularly, no smoking",
+  "clinical_knowledge": {
+    "topic": "Migraine evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Migraine is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Assess red flags, acute analgesia/triptan suitability, trigger diary, sleep advice, safety-net for sudden severe headache or neurological deficits, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent headaches with nausea",
+      "Key HPI features: throbbing unilateral headaches for 6 months, 2-3 times per month, nausea and light sensitivity, lasts several hours, better in a dark room, no weakness, no fever, no sudden thunderclap onset",
+      "Objective/Exam findings: Neurological exam, fundoscopy if indicated, headache diary.",
+      "Relevant background/PMH: no major illness",
+      "Current medications: paracetamol occasionally, no regular medications"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Migraine.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Tension headache without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden thunderclap onset, fever, or new neurological deficit — would suggest a secondary cause instead."
+    ],
+    "management_principles": [
+      "Assess red flags, acute analgesia/triptan suitability, trigger diary, sleep advice, safety-net for sudden severe headache or neurological deficits",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "29F with recurrent unilateral throbbing headaches with nausea and photophobia, no red flag symptoms reported.",
+    "objective": "Neurological exam, fundoscopy if indicated, headache diary.",
+    "assessment": "Migraine likely. DDx: tension headache, medication-overuse headache; red flags less likely from history.",
+    "plan": "Assess red flags, acute analgesia/triptan suitability, trigger diary, sleep advice, safety-net for sudden severe headache or neurological deficits."
+  },
+  "learning_objectives": [
+    "Elicit headache red flags clearly",
+    "Explain migraine and safety-net symptoms in patient language",
+    "Address brain tumor concern empathetically"
+  ],
+  "teaching": {
+    "diagnosis": "Migraine",
+    "one_liner": "Recurrent throbbing, one-sided headaches with nausea and light sensitivity, lasting hours and relieved in a dark room — the diagnosis rests on the recurring pattern, and treatment includes both acute relief and trigger identification.",
+    "differentials": [
+      "Tension headache",
+      "Medication-overuse headache",
+      "Secondary headache (needs red flags excluded)"
+    ],
+    "red_flags": [
+      "Sudden thunderclap onset, fever, or new neurological deficit — would suggest a secondary cause instead"
+    ],
+    "must_ask": [
+      {
+        "objective": "Headache character and location",
+        "say": "Is the pain throbbing and on one side of your head?",
+        "domains": [
+          "character",
+          "location"
+        ],
+        "keywords": [
+          "throbbing",
+          "unilateral"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Do you feel nauseated or sensitive to light during the headache?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nausea",
+          "light sensitivity"
+        ]
+      },
+      {
+        "objective": "Frequency and duration",
+        "say": "How often do these happen, and how long do they last?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "2-3 times a month",
+          "hours"
+        ]
+      },
+      {
+        "objective": "Relief measures",
+        "say": "Does resting in a dark room help?",
+        "domains": [
+          "relieving"
+        ]
+      },
+      {
+        "objective": "The patient's fear",
+        "say": "What worries you most about these headaches?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "brain tumor"
+        ]
+      }
+    ]
+  }
+}

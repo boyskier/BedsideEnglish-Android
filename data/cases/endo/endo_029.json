@@ -1,0 +1,221 @@
+{
+  "id": "endo_029",
+  "system": "endo",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Mitchell",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "altered mental status, severe dehydration, and glucose >600",
+  "hpi_details": "A 29-year-old male presents to the clinic with altered mental status, severe dehydration, and glucose >600. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to hhs",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "triage_glucose",
+      "test": "Point-of-care glucose",
+      "value": ">600",
+      "unit": "mg/dL",
+      "reference_range": "70-140",
+      "flag": "critical",
+      "specimen": "Capillary blood",
+      "collected_at": "At triage"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "stat_hhs_labs",
+      "title": "STAT hyperosmolar-state laboratory results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "electrolytes",
+        "metabolic panel",
+        "osmolality",
+        "blood gas",
+        "vbg",
+        "venous blood gas",
+        "ketones",
+        "beta hydroxybutyrate",
+        "hhs labs"
+      ],
+      "availability_message": "The STAT hyperosmolar-state laboratory results are now available; fluid resuscitation should not be delayed while testing is processed.",
+      "results": [
+        {
+          "id": "serum_glucose",
+          "test": "Serum glucose",
+          "value": "842",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "effective_osmolality",
+          "test": "Effective serum osmolality",
+          "value": "348",
+          "unit": "mOsm/kg",
+          "reference_range": "275-295",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "sodium",
+          "test": "Serum sodium",
+          "value": "149",
+          "unit": "mEq/L",
+          "reference_range": "135-145",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "4.7",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "venous_ph",
+          "test": "Venous pH",
+          "value": "7.36",
+          "reference_range": "7.31-7.41",
+          "flag": "normal",
+          "specimen": "Venous blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "bicarbonate",
+          "test": "Serum bicarbonate",
+          "value": "22",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "normal",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "beta_hydroxybutyrate",
+          "test": "Beta-hydroxybutyrate",
+          "value": "0.9",
+          "unit": "mmol/L",
+          "reference_range": "<0.6",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hyperosmolar Hyperglycemic State (HHS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hyperosmolar Hyperglycemic State (HHS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes protocolized IV fluid resuscitation before insulin, with close monitoring of mental status, electrolytes, and effective osmolality, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: altered mental status, severe dehydration, and glucose >600",
+      "Key HPI features: A 29-year-old male presents to the clinic with altered mental status, severe dehydration, and glucose >600. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Hyperosmolar Hyperglycemic State HHS.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hyperosmolar Hyperglycemic State (HHS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Stroke without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe altered mental status."
+    ],
+    "management_principles": [
+      "Treat HHS with protocolized IV fluid resuscitation, frequent electrolyte and osmolality monitoring, potassium replacement, and IV insulin only after initial fluids and potassium assessment to avoid overly rapid osmolar shifts",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of altered mental status, severe dehydration, and glucose >600. HPI: relative insulin deficiency in a 29-year-old with new-onset T2DM.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Hyperosmolar Hyperglycemic State HHS.",
+    "assessment": "Hyperosmolar Hyperglycemic State (HHS), given the altered mental status, severe dehydration, and glucose >600 mg/dL, likely reflecting relative insulin deficiency in new-onset type 2 diabetes.",
+    "plan": "Manage HHS in an acute-care setting with protocolized IV fluid resuscitation, frequent glucose, electrolyte, mental-status, and effective-osmolality monitoring, and treatment of the precipitating cause. Replace potassium as needed and begin IV insulin only after initial fluid resuscitation and potassium assessment; avoid overly rapid correction of glucose or osmolality."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Hyperosmolar Hyperglycemic State HHS",
+    "Select appropriate diagnostic workup for Hyperosmolar Hyperglycemic State HHS",
+    "Implement evidence-based management plan: Aggressive IV hydration, IV insulin, monitor mental status"
+  ],
+  "teaching": {
+    "diagnosis": "Hyperosmolar Hyperglycemic State (HHS)",
+    "one_liner": "Extremely high glucose over days causing altered mental status and severe dehydration, usually with minimal ketosis; although more common in older adults with type 2 diabetes, it can occur in younger adults.",
+    "differentials": [
+      "Stroke",
+      "DKA"
+    ],
+    "red_flags": [
+      "Severe altered mental status"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset over days",
+        "say": "How many days has this confusion been developing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Thirst",
+        "say": "Has there been extreme thirst?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Absence of abdominal pain",
+        "say": "Any vomiting or belly pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Diabetes history",
+        "say": "How long has diabetes been managed, and how?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Baseline cognition",
+        "say": "How does the confusion compare to usual memory?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

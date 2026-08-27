@@ -1,0 +1,167 @@
+{
+  "id": "allergy_002",
+  "system": "allergy_immunology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Harris",
+  "age": 31,
+  "gender": "female",
+  "chief_complaint": "recurrent sudden episodes of severe abdominal cramps and facial/lip swelling without itching",
+  "hpi_details": "31F reports 5-year history of unpredictable, recurrent episodes of dramatic, non-itchy swelling of her lips, eyelids, and hands lasting 2-4 days, frequently accompanied by excruciating episodes of colicky abdominal pain, watery diarrhea, and vomiting. Crucially, the swelling never involves itchy hives (urticaria) and does NOT respond at all to high-dose antihistamines, epinephrine, or corticosteroids. Notes her father died young of asphyxiation during a throat swelling attack.",
+  "ideas": "thinks she inherited her father's rare genetic swelling disease",
+  "concerns": "terrified that her next swelling attack will strike her larynx and choke her to death",
+  "expectations": "wants specific diagnostic genetic checks and emergency rescue injections for her swelling",
+  "pmh": "Recurrent unexplained angioedema and abdominal pain crises",
+  "medications": "Antihistamines and steroids (completely ineffective)",
+  "social_hx": "Architect, non-smoker",
+  "available_results": [
+    {"id": "complement_c4", "test": "Complement C4", "value": "6", "unit": "mg/dL", "reference_range": "10-40", "flag": "low", "specimen": "Blood", "collected_at": "Between attacks"},
+    {"id": "c1_inhibitor_antigen", "test": "C1 esterase inhibitor antigen", "value": "30", "unit": "% of normal", "reference_range": "70-130", "flag": "critical", "specimen": "Blood", "collected_at": "Between attacks"},
+    {"id": "c1_inhibitor_function", "test": "C1 esterase inhibitor function", "value": "<20", "unit": "% of normal", "reference_range": ">=68", "flag": "critical", "specimen": "Blood", "collected_at": "Between attacks"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Hereditary angioedema due to C1-inhibitor deficiency",
+    "core_concepts": [
+      "HAE due to C1-inhibitor deficiency is bradykinin-mediated rather than histamine-mediated.",
+      "Recurrent angioedema without urticaria, abdominal attacks, poor response to antihistamines, and a compatible family history are important clues.",
+      "Diagnosis is supported by C4 and C1-inhibitor antigenic and functional measurements; their patterns help distinguish type 1 from type 2 disease.",
+      "Attacks should be considered for early on-demand treatment, and upper-airway involvement or potential involvement is an emergency.",
+      "Guideline-supported on-demand options include intravenous C1 inhibitor, icatibant, or ecallantide, subject to age, availability, approval, contraindications, and local protocol."
+    ],
+    "diagnostic_clues": [
+      "Non-pruritic swelling without hives",
+      "Recurrent severe abdominal attacks",
+      "No response to antihistamines, epinephrine, or corticosteroids",
+      "A first-degree relative who died during a throat-swelling attack",
+      "Low C4 with low C1-inhibitor quantity and function"
+    ],
+    "common_misconceptions": [
+      "HAE is not simply an allergic reaction and should not be expected to respond to antihistamines.",
+      "Absence of hives is a useful clue but does not alone establish the diagnosis.",
+      "Long-term prophylaxis does not remove the need for access to on-demand treatment."
+    ],
+    "dangerous_errors": [
+      "Treating progressive upper-airway HAE only as ordinary allergy and delaying HAE-specific therapy and airway planning",
+      "Reassuring a patient with throat or tongue swelling without emergency escalation",
+      "Assuming antihistamine response is required for this bradykinin-mediated condition"
+    ],
+    "management_principles": [
+      "Treat attacks early with an appropriate on-demand therapy and provide an emergency action plan.",
+      "Treat actual or potential upper-airway involvement as an emergency and prepare for airway intervention if respiratory compromise progresses.",
+      "Individualize long-term prophylaxis with specialist input while maintaining on-demand medication access."
+    ],
+    "boundaries_and_exceptions": [
+      "Product licensing, age restrictions, pregnancy considerations, availability, and administration requirements vary by jurisdiction.",
+      "Other bradykinin-mediated and mast-cell-mediated forms of angioedema require a different diagnostic context."
+    ],
+    "source_refs": [
+      {
+        "title": "International WAO/EAACI hereditary angioedema guideline: 2021 revision and update",
+        "url": "https://eaaci.org/guidelines-position-papers/the-international-wao-eaaci-guideline-for-the-management-of-hereditary-angioedema-the-2021-revision-and-update/"
+      },
+      {
+        "title": "2025 WAO Guidelines for hereditary angioedema",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13184495/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: recurrent sudden episodes of severe abdominal cramps and facial/lip swelling without itching\n\n31F reports 5-year history of unpredictable, recurrent episodes of dramatic, non-itchy swelling of her lips, eyelids, and hands lasting 2-4 days, frequently accompanied by excruciating episodes of colicky abdominal pain, watery diarrhea, and vomiting. Crucially, the swelling never involves itchy hives (urticaria) and does NOT respond at all to high-dose antihistamines, epinephrine, or corticosteroids. Notes her father died young of asphyxiation during a throat swelling attack.",
+    "objective": "Vitals normal between attacks. Exam during attack shows marked, non-pitting, non-pruritic, brawny edema of upper lip and right hand without urticarial wheals. Abdominal ultrasound during abdominal pain crisis reveals ascites and thickened edematous bowel loops. Bloods during quiescence/attack: Complement C4 level persistently and markedly LOW (6 mg/dL, sensitivity > 95%), C1q normal, C1 Esterase Inhibitor quantitative antigen low (30% of normal), C1 Esterase Inhibitor functional activity markedly low (<20%).",
+    "assessment": "Hereditary Angioedema (HAE) Type 1 secondary to C1 Esterase Inhibitor Deficiency.",
+    "plan": "1. For acute attacks, especially actual or potential upper-airway involvement: treat early with an available guideline-supported on-demand option such as IV C1 inhibitor, subcutaneous icatibant, or ecallantide, while preparing for emergency airway management if respiratory compromise progresses. 2. Antihistamines, epinephrine, and corticosteroids do not target bradykinin-mediated HAE; do not let ordinary allergy treatment delay HAE-specific therapy. 3. Individualize long-term prophylaxis with specialist input; options include subcutaneous lanadelumab or C1-INH prophylaxis depending on the patient and jurisdiction. Maintain on-demand medication access and provide an emergency action plan."
+  },
+  "learning_objectives": [
+    "Differentiate bradykinin-mediated Hereditary Angioedema (non-pruritic, no hives, low C4, antihistamine-resistant) from histamine-mediated allergic angioedema",
+    "Interpret diagnostic complement profiles (screening low C4, quantitative and functional C1 esterase inhibitor levels)",
+    "Enforce targeted rescue therapies (Icatibant, C1-INH concentrate) over ineffective standard anaphylaxis drugs for HAE",
+    "Formulate acute laryngeal airway emergency plans and long-term prophylactic regimens for HAE patients"
+  ],
+  "teaching": {
+    "diagnosis": "Hereditary Angioedema (HAE), Type 1",
+    "one_liner": "A genetic C1-esterase-inhibitor deficiency causing recurrent, non-itchy swelling that does not respond to epinephrine or antihistamines because it is driven by bradykinin, not histamine.",
+    "differentials": [
+      "Allergic (histamine-mediated) angioedema",
+      "ACE-inhibitor-induced angioedema",
+      "Chronic urticaria with angioedema"
+    ],
+    "red_flags": [
+      "Any throat or tongue swelling — laryngeal attacks can be fatal",
+      "Severe abdominal pain episodes mimicking a surgical abdomen"
+    ],
+    "must_ask": [
+      {
+        "objective": "Character of the swelling — itchy or not",
+        "say": "Does the swollen area itch, or is it just swollen?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "itch",
+          "itchy",
+          "hives"
+        ]
+      },
+      {
+        "objective": "Duration and recurrence pattern",
+        "say": "How long does each swelling episode last, and how often does this happen?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Associated abdominal attacks",
+        "say": "Do you also get episodes of severe stomach pain, vomiting, or diarrhea?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "abdominal",
+          "stomach pain",
+          "vomiting",
+          "diarrhea"
+        ]
+      },
+      {
+        "objective": "Response to previous treatment",
+        "say": "Have antihistamines, steroids, or epinephrine ever helped your swelling before?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "antihistamine",
+          "steroid",
+          "epinephrine",
+          "no help",
+          "didn't work"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Has anyone in your family had unexplained swelling attacks, especially any that were fatal?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "father",
+          "mother",
+          "died"
+        ]
+      },
+      {
+        "objective": "Airway danger recognition",
+        "say": "Has the swelling ever affected your throat or made your voice change?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "throat",
+          "voice",
+          "swallow"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "peds_012",
+  "system": "pediatrics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Clark",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "severe constipation since birth, failure to pass meconium within 48 hours, and explosive release of stool upon digital rectal exam",
+  "hpi_details": "2-month-old male presenting with abdominal distension and bilious vomiting, with a history of delayed meconium passage beyond 48 hours after birth and chronic severe constipation since birth.",
+  "ideas": "thinks this is related to hirschsprung disease congenital megacolon",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Pediatric age-appropriate social history",
+  "investigation_events": [{
+    "id": "hirschsprung_emergency_imaging",
+    "title": "Emergency abdominal imaging",
+    "order_terms": ["abdominal x-ray", "abdominal radiograph", "KUB", "contrast enema", "water-soluble contrast enema"],
+    "availability_message": "The emergency abdominal imaging results are now available. Maintain decompression and pediatric surgical involvement; rectal biopsy confirmation is not an immediate result.",
+    "results": [
+      {"id": "abdominal_radiograph", "test": "Abdominal radiograph", "value": "Dilated bowel loops with paucity of rectal gas; no free intraperitoneal air", "flag": "abnormal"},
+      {"id": "contrast_enema", "test": "Water-soluble contrast enema", "value": "Narrow rectosigmoid segment with a transition zone to dilated proximal colon and rectosigmoid ratio below 1", "flag": "abnormal"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Hirschsprung disease (congenital megacolon) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hirschsprung disease (congenital megacolon) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes treating bilious vomiting as a surgical emergency (NPO, decompression, urgent surgical consultation) while confirming the diagnosis with rectal suction biopsy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe constipation since birth, failure to pass meconium within 48 hours, and explosive release of stool upon digital rectal exam",
+      "Key HPI features: 2-month-old male presenting with abdominal distension and bilious vomiting, with a history of delayed meconium passage beyond 48 hours after birth and chronic severe constipation since birth.",
+      "Objective/Exam findings: Assess vitals urgently for signs of dehydration or sepsis (tachycardia, fever) suggesting enterocolitis. Abdomen distended and tympanic to percussion with visible bowel loops. Digital rectal exam reveals a tight anal canal with explosive release of gas and stool on withdrawal ('squirt sign') and an empty rectal vault. No anal stenosis or ectopic anus. Growth parameters reviewed for failure to thrive.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hirschsprung disease (congenital megacolon).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Meconium plug syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Failure to pass meconium in first 48 hours."
+    ],
+    "management_principles": [
+      "Bilious vomiting in an infant is a surgical emergency until obstruction is excluded: keep NPO, place a nasogastric tube for decompression, obtain IV access with fluid resuscitation, and consult pediatric surgery urgently",
+      "Obtain abdominal radiographs (dilated bowel loops, absence of rectal gas) and contrast enema (transition zone, delayed evacuation) to support the diagnosis",
+      "Confirm the diagnosis with rectal suction biopsy showing absence of ganglion cells and hypertrophied nerve fibers before definitive surgery",
+      "Watch for Hirschsprung-associated enterocolitis (fever, worsening distension, explosive diarrhea, sepsis) as a life-threatening complication requiring immediate resuscitation and decompression; screen for associated anomalies (Down syndrome, MEN2)."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "2-month-old male presenting with abdominal distension and bilious vomiting, with a history of delayed meconium passage beyond 48 hours after birth and chronic severe constipation since birth.",
+    "objective": "Vitals assessed urgently for signs of dehydration or sepsis (tachycardia, fever) suggesting enterocolitis. Abdomen distended and tympanic to percussion with visible bowel loops. Digital rectal exam reveals a tight anal canal with explosive release of gas and stool on withdrawal ('squirt sign') and an empty rectal vault. No anal stenosis or ectopic anus.",
+    "assessment": "Clinical presentation concerning for Hirschsprung disease (congenital megacolon); bilious vomiting raises concern for possible enterocolitis or bowel obstruction requiring urgent evaluation.",
+    "plan": "Treat the bilious vomiting as a surgical emergency until obstruction is excluded: NPO, nasogastric decompression, IV fluid resuscitation, and urgent pediatric surgery consultation. Obtain abdominal radiographs and contrast enema, then confirm the diagnosis with rectal suction biopsy before definitive pull-through surgery. Monitor closely for enterocolitis and screen for associated anomalies."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hirschsprung Disease Congenital Megacolon",
+    "Formulate prioritized differential diagnosis for severe constipation since birth, failure to pass meconium within 48 hours, and explosive release of stool upon digital rectal exam",
+    "Select appropriate imaging (abdominal radiograph, contrast enema) and confirmatory rectal suction biopsy for suspected Hirschsprung disease",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Hirschsprung disease (congenital megacolon)",
+    "one_liner": "2-month-old male with severe constipation since birth, failure to pass meconium within 48 hours, abdominal distension, and bilious vomiting.",
+    "differentials": [
+      "Meconium plug syndrome",
+      "Anal stenosis",
+      "Hypothyroidism",
+      "Functional constipation (unlikely given onset at birth)"
+    ],
+    "red_flags": [
+      "Failure to pass meconium in first 48 hours",
+      "Abdominal distension",
+      "Bilious vomiting"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the meconium passage timing at birth",
+        "say": "Did he pass his first stool within the first two days after birth?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "meconium passage timing"
+        ]
+      },
+      {
+        "objective": "Characterize the constipation pattern since birth",
+        "say": "How has his bowel movement pattern been since he was born — always difficult?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chronic constipation since birth"
+        ]
+      },
+      {
+        "objective": "Ask about abdominal distension and vomiting",
+        "say": "Has his belly looked swollen, and has he been vomiting anything green or yellow?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "abdominal distension",
+          "bilious vomiting"
+        ]
+      },
+      {
+        "objective": "Ask about growth and feeding",
+        "say": "How has his weight gain and feeding been overall?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "growth",
+          "feeding"
+        ]
+      },
+      {
+        "objective": "Explain the biopsy and surgical plan",
+        "say": "We need a rectal biopsy to check for the nerve cells in his bowel, and he will likely need surgery to remove the affected segment.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "rectal biopsy",
+          "pull-through surgery"
+        ]
+      }
+    ]
+  }
+}

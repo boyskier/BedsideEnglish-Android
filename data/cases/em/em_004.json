@@ -1,0 +1,201 @@
+{
+  "id": "em_004",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mrs. Davis",
+  "age": 72,
+  "gender": "female",
+  "chief_complaint": "sudden right-sided weakness, facial droop, and expressive aphasia within 75 minutes of onset (Acute Ischemic Stroke / Middle Cerebral Artery Occlusion)",
+  "hpi_details": "72F with atrial fibrillation suddenly dropped her coffee cup, slurred her words, and lost the ability to speak clearly or move her right arm and right leg exactly 75 minutes ago while eating breakfast with her husband. Husband immediately called 911. Patient is alert but frustrated because she understands questions but can only utter garbled single words and cannot lift her right side.",
+  "ideas": "alert and distressed, pointing to her paralyzed right arm and crying",
+  "concerns": "terrified of permanent brain damage and paralysis",
+  "expectations": "wants immediate clot-busting stroke treatment",
+  "pmh": "Atrial Fibrillation (stopped taking her anticoagulant 2 weeks ago due to cost), Type 2 Diabetes, Hypertension",
+  "medications": "Metformin 1000mg BID, Amlodipine 10mg daily",
+  "social_hx": "Retired teacher, non-smoker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_glucose",
+      "title": "Point-of-care blood glucose",
+      "order_terms": [
+        "fingerstick glucose",
+        "blood glucose",
+        "glucose check",
+        "capillary glucose"
+      ],
+      "availability_message": "The point-of-care glucose result is now available.",
+      "results": [
+        {
+          "id": "capillary_glucose",
+          "test": "Capillary blood glucose",
+          "value": "135",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "specimen": "Capillary blood",
+          "collected_at": "On arrival"
+        }
+      ]
+    },
+    {
+      "id": "noncontrast_head_ct",
+      "title": "Non-contrast CT head",
+      "order_terms": [
+        "noncontrast head ct",
+        "non-contrast head ct",
+        "ct head",
+        "head ct",
+        "brain ct"
+      ],
+      "availability_message": "The non-contrast head CT report is now available.",
+      "results": [
+        {
+          "id": "head_ct_report",
+          "test": "Non-contrast CT head",
+          "value": "No acute intracranial hemorrhage, mass, or established early infarct change",
+          "collected_at": "20 minutes after arrival"
+        }
+      ]
+    },
+    {
+      "id": "cta_head_neck",
+      "title": "CT angiography of the head and neck",
+      "order_terms": [
+        "ct angiography",
+        "ct angiogram",
+        "cta head and neck",
+        "cta",
+        "vascular imaging"
+      ],
+      "availability_message": "The head and neck CT angiography report is now available.",
+      "results": [
+        {
+          "id": "cta_head_neck_report",
+          "test": "CTA head and neck",
+          "value": "Acute occlusion of the M1 segment of the left middle cerebral artery",
+          "flag": "critical",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Ischemic Stroke (Middle Cerebral Artery Occlusion) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Ischemic Stroke (Middle Cerebral Artery Occlusion) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate IV thrombolysis and, for large vessel occlusion, simultaneous activation of endovascular mechanical thrombectomy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden right-sided weakness, facial droop, and expressive aphasia within 75 minutes of onset (Acute Ischemic Stroke / Middle Cerebral Artery Occlusion)",
+      "Key HPI features: 72F with atrial fibrillation suddenly dropped her coffee cup, slurred her words, and lost the ability to speak clearly or move her right arm and right leg exactly 75 minutes ago while eating breakfast with her husband. Husband immediately called 911. Patient is alert but frustrated because she understands questions but can only utter garbled single words and cannot lift her right side.",
+      "Objective/Exam findings: Vitals: HR 96 (irregularly irregular), BP 168/92, SpO2 97%. Fingerstick blood glucose 135 mg/dL (ruling out hypoglycemia stroke mimic). NIH Stroke Scale (NIHSS) score: 16 (Right facial palsy 2, Right motor arm 4, Right motor leg 3, Expressive aphasia 3, Right hemisensory loss 2, Dysarthria 2). STAT Non-Contrast Head CT completed within 20 minutes of arrival shows normal brain parenchyma without acute intracranial hemorrhage, tumor, or early hypodensity (confirming acute ischemic etiology). CT Angiography (CTA) head/neck confirms acute occlusion of the M1 segment of the Left Middle Cerebral Artery.",
+      "Relevant background/PMH: Atrial Fibrillation (stopped taking her anticoagulant 2 weeks ago due to cost), Type 2 Diabetes, Hypertension",
+      "Current medications: Metformin 1000mg BID, Amlodipine 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Ischemic Stroke (Middle Cerebral Artery Occlusion).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hypoglycemia (stroke mimic) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Exact time last known well — determines eligibility for time-critical clot-busting treatment."
+    ],
+    "management_principles": [
+      "STAT emergency `Brain Attack` protocol",
+      "Intravenous Thrombolysis: administer IV Tenecteplase (TNK 0.25 mg/kg IV bolus over 5 seconds) or IV Alteplase (tPA 0.9 mg/kg over 1 hour)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "72F with un-anticoagulated atrial fibrillation presenting within an exact 75-minute window with acute right hemiparesis, right facial droop, and Broca expressive aphasia, diagnostic of Left Middle Cerebral Artery (MCA) syndrome.",
+    "objective": "Vitals: HR 96 (irregularly irregular), BP 168/92, SpO2 97%. Fingerstick blood glucose 135 mg/dL (ruling out hypoglycemia stroke mimic). NIH Stroke Scale (NIHSS) score: 16 (Right facial palsy 2, Right motor arm 4, Right motor leg 3, Expressive aphasia 3, Right hemisensory loss 2, Dysarthria 2). STAT Non-Contrast Head CT completed within 20 minutes of arrival shows normal brain parenchyma without acute intracranial hemorrhage, tumor, or early hypodensity (confirming acute ischemic etiology). CT Angiography (CTA) head/neck confirms acute occlusion of the M1 segment of the Left Middle Cerebral Artery.",
+    "assessment": "Acute Ischemic Stroke of the Left Middle Cerebral Artery (M1 occlusion) secondary to cardioembolism from Atrial Fibrillation, presenting within the 4.5-hour thrombolysis and 24-hour thrombectomy window.",
+    "plan": "STAT emergency `Brain Attack` protocol: 1. Intravenous Thrombolysis: administer IV Tenecteplase (TNK 0.25 mg/kg IV bolus over 5 seconds) or IV Alteplase (tPA 0.9 mg/kg over 1 hour) immediately, as patient meets all inclusion criteria (onset <4.5 hours, NIHSS 16, no hemorrhage on CT, BP <185/110, no active bleeding). 2. Endovascular Mechanical Thrombectomy: simultaneously activate Neuro-Interventional Radiology for emergent endovascular thrombectomy of the M1 occlusion (proven benefit up to 24 hours in large vessel occlusion with salvageable penumbra). Admit to Neuro-ICU with frequent neuro checks and blood pressure monitoring <180/105 mmHg."
+  },
+  "learning_objectives": [
+    "Apply fast stroke identification criteria (BE-FAST: Balance, Eyes, Face, Arm, Speech, Time) and execute rapid ED stroke team activation with NIHSS scoring",
+    "Understand the absolute prerequisite of performing a STAT Non-Contrast Head CT and checking fingerstick blood glucose BEFORE initiating any intravenous thrombolytic therapy to exclude hemorrhage and hypoglycemia phenocopies",
+    "Determine eligibility thresholds for IV Thrombolysis (Alteplase/Tenecteplase within 4.5 hours of last-known-well, BP strictly <185/110 mmHg, INR <=1.7, no recent major surgery/bleed)",
+    "Coordinate dual-therapy pathway combining IV thrombolysis with immediate Endovascular Mechanical Thrombectomy for confirmed Large Vessel Occlusions (LVOs involving ICA or M1/M2 vessels)"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Ischemic Stroke (Middle Cerebral Artery Occlusion)",
+    "one_liner": "A clot — here from atrial fibrillation off anticoagulation — blocks blood flow to the brain, causing sudden weakness, facial droop, and speech difficulty; time-critical treatment (thrombolysis, thrombectomy) depends entirely on exact time of onset.",
+    "differentials": [
+      "Hypoglycemia (stroke mimic)",
+      "Hemorrhagic stroke",
+      "Todd's paralysis (post-seizure)"
+    ],
+    "red_flags": [
+      "Exact time last known well — determines eligibility for time-critical clot-busting treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exact time of onset",
+        "say": "What time exactly did this start, or when were you last seen completely normal?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "exact time",
+          "last known well"
+        ]
+      },
+      {
+        "objective": "Symptom description",
+        "say": "Which side is weak, and can you understand what I'm saying even if you can't speak clearly?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "weakness",
+          "speech"
+        ]
+      },
+      {
+        "objective": "Anticoagulation history",
+        "say": "Are you supposed to be taking a blood thinner, and have you been taking it?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "anticoagulant",
+          "stopped"
+        ]
+      },
+      {
+        "objective": "Atrial fibrillation history",
+        "say": "Do you have an irregular heartbeat?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "atrial fibrillation"
+        ]
+      },
+      {
+        "objective": "Other risk factors",
+        "say": "Do you have diabetes or high blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

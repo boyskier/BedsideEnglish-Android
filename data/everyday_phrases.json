@@ -1,0 +1,444 @@
+{
+  "_note": "Everyday Phrasebook — the function bank behind the in-session phrase help, the pre-start scene card and the 'Say It: Everyday' drill. Organised by conversational function, not place: these are the small moves that keep a real conversation moving when vocabulary, speed or social pressure gets in the way. Scene-specific lines may also appear as `key_expressions` in survival_situations.json / cases/lounge/*.json.",
+  "_phrase_schema": {
+    "en": "the sentence the learner says (required)",
+    "function": "what this sentence DOES, shown alone at reveal level 1 so the learner tries their own English first",
+    "gloss": "native-language note, keyed by language code; `en` is the fallback",
+    "register": "casual | neutral | polite — everyday English fails on register far more often than on grammar",
+    "why": "one line on when this works and when it does not",
+    "skeleton": "optional hand-written level-2 frame with ___ blanks; derived from `en` when omitted",
+    "keywords": "words that count as having used this, for the live 'you said it' tick"
+  },
+  "categories": [
+    {
+      "id": "repair",
+      "name": "When you didn't catch it",
+      "goal": "Keep the conversation alive instead of nodding at something you did not understand.",
+      "phrases": [
+        {
+          "en": "Sorry, could you say that again?",
+          "function": "Ask for a repeat",
+          "gloss": { "en": "Ask them to repeat the whole thing", "ko": "다시 한 번 말해 달라고 부탁하기" },
+          "register": "neutral",
+          "why": "Works with anyone — a stranger, a professor, a friend. Safer than \"What?\", which can sound blunt.",
+          "keywords": ["again", "repeat", "sorry"]
+        },
+        {
+          "en": "Sorry, did you say Tuesday?",
+          "function": "Check the one word you missed",
+          "gloss": { "en": "Repeat back just the part you are unsure about", "ko": "놓친 부분만 다시 말해 확인하기" },
+          "register": "neutral",
+          "why": "It shows you followed the rest and protects the details that matter: times, names and numbers.",
+          "skeleton": "Sorry, did you say ___?",
+          "keywords": ["did you say"]
+        },
+        {
+          "en": "Sorry, what does that mean?",
+          "function": "Ask what a word means",
+          "gloss": { "en": "Ask about a word you heard but do not know", "ko": "들었지만 모르는 단어의 뜻 묻기" },
+          "register": "neutral",
+          "why": "Not knowing a word is normal; asking is faster and safer than guessing.",
+          "keywords": ["what does", "mean"]
+        },
+        {
+          "en": "Could you slow down a little? I'm still learning.",
+          "function": "Ask them to slow down",
+          "gloss": { "en": "Ask for a slower pace and give a reason", "ko": "조금 천천히 말해 달라고 이유와 함께 부탁하기" },
+          "register": "polite",
+          "why": "Giving the reason helps people slow down for more than one sentence.",
+          "keywords": ["slow", "slowly", "learning"]
+        },
+        {
+          "en": "Could you spell that for me?",
+          "function": "Check the spelling of a name or place",
+          "gloss": { "en": "Ask someone to spell an important word", "ko": "이름·주소·장소의 철자를 확인하기" },
+          "register": "polite",
+          "why": "Essential for names, email addresses and locations — details you cannot safely guess from sound.",
+          "keywords": ["spell that", "spell"]
+        },
+        {
+          "en": "Could you write that down for me?",
+          "function": "Ask to have important information written down",
+          "gloss": { "en": "Ask for a written version of a detail", "ko": "중요한 정보를 적어 달라고 부탁하기" },
+          "register": "polite",
+          "why": "A practical rescue for an address, phone number, platform, room number or unfamiliar name.",
+          "keywords": ["write that down", "write it down"]
+        }
+      ]
+    },
+    {
+      "id": "buying_time",
+      "name": "When you need a moment",
+      "goal": "Hold your turn while you think, instead of going silent and losing it.",
+      "phrases": [
+        {
+          "en": "Let me think for a second.",
+          "function": "Ask for thinking time",
+          "gloss": { "en": "Say out loud that you are thinking", "ko": "생각할 시간이 조금 필요하다고 말하기" },
+          "register": "neutral",
+          "why": "Four words keep the turn yours; silence often invites the other person to jump in.",
+          "keywords": ["let me think", "second"]
+        },
+        {
+          "en": "That's a good question — how do I put this?",
+          "function": "Fill the gap while you search for words",
+          "gloss": { "en": "Use a natural filler while you find the words", "ko": "단어를 찾는 동안 자연스럽게 시간 벌기" },
+          "register": "casual",
+          "why": "It sounds thoughtful rather than stuck, and buys you a few calm seconds.",
+          "keywords": ["good question", "how do i put"]
+        },
+        {
+          "en": "How do you say it in English — the thing you keep money in?",
+          "function": "Describe a word you don't know",
+          "gloss": { "en": "Describe the thing instead of stopping at the missing word", "ko": "모르는 단어를 설명으로 풀어 말하기" },
+          "register": "casual",
+          "why": "A high-value rescue skill: the conversation continues and the word is often handed to you.",
+          "skeleton": "How do you say it in English — ___?",
+          "keywords": ["how do you say", "in english"]
+        },
+        {
+          "en": "Sorry, I lost my train of thought. Where was I?",
+          "function": "Recover after losing your place",
+          "gloss": { "en": "Admit you lost track and get back in", "ko": "말의 흐름을 놓쳤을 때 자연스럽게 다시 이어가기" },
+          "register": "casual",
+          "why": "It is more natural than trailing off, and it lets the other person help you continue.",
+          "keywords": ["train of thought", "where was i"]
+        }
+      ]
+    },
+    {
+      "id": "requests",
+      "name": "When you need something",
+      "goal": "Make a clear, considerate request instead of a vague hint or a bare command.",
+      "phrases": [
+        {
+          "en": "Could you help me with ___?",
+          "function": "Ask for help",
+          "gloss": { "en": "Politely ask someone to help with a specific thing", "ko": "구체적인 도움을 정중하게 부탁하기" },
+          "register": "polite",
+          "why": "The most reusable request frame: add the task, not a long explanation.",
+          "skeleton": "Could you help me with ___?",
+          "keywords": ["help me", "could you"]
+        },
+        {
+          "en": "Would you mind ___?",
+          "function": "Ask someone to do something",
+          "gloss": { "en": "Make a polite request for an action", "ko": "상대에게 어떤 행동을 정중하게 부탁하기" },
+          "register": "polite",
+          "why": "Useful when the action affects you directly: opening a window, moving over, speaking up.",
+          "skeleton": "Would you mind ___?",
+          "keywords": ["would you mind"]
+        },
+        {
+          "en": "Is it okay if I ___?",
+          "function": "Ask permission",
+          "gloss": { "en": "Check before you do something", "ko": "어떤 행동을 하기 전에 허락 구하기" },
+          "register": "neutral",
+          "why": "Short, natural and useful in shared spaces, at work, and with new people.",
+          "skeleton": "Is it okay if I ___?",
+          "keywords": ["okay if i", "is it okay"]
+        }
+      ]
+    },
+    {
+      "id": "counter_service",
+      "name": "At a counter or restaurant",
+      "goal": "Handle the compact American phrases used when ordering, taking food away and paying.",
+      "phrases": [
+        {
+          "en": "Can I get ___?",
+          "function": "Order or ask for an item",
+          "gloss": { "en": "The natural US counter-service way to ask for something", "ko": "미국의 카운터에서 자연스럽게 주문하거나 요청하기" },
+          "register": "neutral",
+          "why": "In the U.S., this is the everyday ordering frame at cafés, delis and many stores — not a demand.",
+          "skeleton": "Can I get ___?",
+          "keywords": ["can i get"]
+        },
+        {
+          "en": "Could I get this to go?",
+          "function": "Ask to take food away",
+          "gloss": { "en": "Ask for takeaway food", "ko": "음식을 포장해 달라고 부탁하기" },
+          "register": "neutral",
+          "why": "\"To go\" is the everyday U.S. expression; it covers a drink, a new order or leftovers.",
+          "keywords": ["to go"]
+        },
+        {
+          "en": "Could we split the check?",
+          "function": "Ask to divide a restaurant bill",
+          "gloss": { "en": "Ask to pay separately at a restaurant", "ko": "식당 계산을 나눠서 할 수 있는지 묻기" },
+          "register": "neutral",
+          "why": "\"Check\" is the usual U.S. restaurant word; ask before payment when separate cards are involved.",
+          "keywords": ["split the check", "split check"]
+        },
+        {
+          "en": "Is gratuity included?",
+          "function": "Check whether a tip has already been added",
+          "gloss": { "en": "Ask if the service charge or tip is already on the bill", "ko": "팁 또는 서비스료가 이미 포함됐는지 확인하기" },
+          "register": "polite",
+          "why": "Especially useful for groups and visitors: it prevents accidentally tipping twice.",
+          "keywords": ["gratuity included", "tip included"]
+        }
+      ]
+    },
+    {
+      "id": "getting_information",
+      "name": "When you need to find something",
+      "goal": "Get the exact location or service information you need without relying on gestures.",
+      "phrases": [
+        {
+          "en": "Could you tell me how to get to ___?",
+          "function": "Ask for directions",
+          "gloss": { "en": "Ask how to reach a place", "ko": "어떤 장소로 가는 길 묻기" },
+          "register": "polite",
+          "why": "Works for a building, platform, office or neighborhood — not just tourist directions.",
+          "skeleton": "Could you tell me how to get to ___?",
+          "keywords": ["how to get", "tell me how"]
+        },
+        {
+          "en": "Is this the right place for ___?",
+          "function": "Check that you are in the right place",
+          "gloss": { "en": "Confirm a location before waiting or lining up", "ko": "여기가 맞는 장소인지 확인하기" },
+          "register": "neutral",
+          "why": "A quick check prevents a very common real-life mistake: waiting in the wrong line or room.",
+          "skeleton": "Is this the right place for ___?",
+          "keywords": ["right place"]
+        },
+        {
+          "en": "Could you point me to the ___?",
+          "function": "Ask where something is",
+          "gloss": { "en": "Ask someone to indicate a nearby place", "ko": "가까운 장소가 어디인지 물어보기" },
+          "register": "polite",
+          "why": "Best for nearby essentials such as the restroom, exit, elevator or information desk.",
+          "skeleton": "Could you point me to the ___?",
+          "keywords": ["point me", "could you point"]
+        }
+      ]
+    },
+    {
+      "id": "plans",
+      "name": "When you make or change plans",
+      "goal": "Set up a plan clearly, then repair it politely when real life changes.",
+      "phrases": [
+        {
+          "en": "What time works for you?",
+          "function": "Ask for a convenient time",
+          "gloss": { "en": "Let the other person suggest a time", "ko": "상대에게 편한 시간을 물어보기" },
+          "register": "neutral",
+          "why": "More cooperative than naming one time and hoping it works.",
+          "keywords": ["what time works"]
+        },
+        {
+          "en": "Just to make sure, we're meeting at ___, right?",
+          "function": "Confirm the plan",
+          "gloss": { "en": "Repeat the key detail to make sure you understood", "ko": "약속의 핵심 정보를 다시 확인하기" },
+          "register": "neutral",
+          "why": "A tiny confirmation prevents missed meetings, wrong locations and timezone mistakes.",
+          "skeleton": "Just to make sure, we're meeting at ___, right?",
+          "keywords": ["just to make sure", "we're meeting"]
+        },
+        {
+          "en": "Something came up. Could we reschedule?",
+          "function": "Ask to change a plan",
+          "gloss": { "en": "Politely ask to move an arrangement", "ko": "약속을 변경할 수 있는지 정중하게 묻기" },
+          "register": "polite",
+          "why": "It gives a brief reason without oversharing and keeps the relationship warm.",
+          "keywords": ["came up", "reschedule"]
+        }
+      ]
+    },
+    {
+      "id": "check_in_and_pickup",
+      "name": "At an appointment or pickup desk",
+      "goal": "Check in, collect something and complete the first step at an unfamiliar desk without a long explanation.",
+      "phrases": [
+        {
+          "en": "I have an appointment under ___.",
+          "function": "Check in for an appointment",
+          "gloss": { "en": "Give the name used for a booking", "ko": "예약에 사용한 이름으로 접수하기" },
+          "register": "neutral",
+          "why": "\"Under [name]\" is the compact phrase staff expect at clinics, salons, offices and reservations.",
+          "skeleton": "I have an appointment under ___.",
+          "keywords": ["appointment under"]
+        },
+        {
+          "en": "I'm here to pick up ___.",
+          "function": "Collect an order or item",
+          "gloss": { "en": "Tell the desk or counter why you are there", "ko": "주문품·서류·물건을 찾으러 왔다고 말하기" },
+          "register": "neutral",
+          "why": "Works for an online order, prescription, package, document or food order.",
+          "skeleton": "I'm here to pick up ___.",
+          "keywords": ["here to pick up", "pick up"]
+        },
+        {
+          "en": "Do I need to fill this out?",
+          "function": "Ask whether a form is required",
+          "gloss": { "en": "Check if you need to complete a form", "ko": "이 서류를 작성해야 하는지 묻기" },
+          "register": "neutral",
+          "why": "Useful at reception desks, government offices, schools and services where the process is not obvious.",
+          "keywords": ["fill this out", "fill out"]
+        }
+      ]
+    },
+    {
+      "id": "public_transit",
+      "name": "On a bus or train",
+      "goal": "Confirm the route, the line and your stop before a transit mistake becomes expensive or stressful.",
+      "phrases": [
+        {
+          "en": "Does this bus go to ___?",
+          "function": "Check the route",
+          "gloss": { "en": "Ask whether this vehicle goes to your destination", "ko": "이 버스가 목적지로 가는지 확인하기" },
+          "register": "neutral",
+          "why": "Ask before boarding when the route name or display is unclear; replace \"bus\" with \"train\" when needed.",
+          "skeleton": "Does this bus go to ___?",
+          "keywords": ["bus go to", "go to"]
+        },
+        {
+          "en": "Where should I get off for ___?",
+          "function": "Ask which stop to use",
+          "gloss": { "en": "Ask where to leave the bus or train", "ko": "어느 정류장·역에서 내려야 하는지 묻기" },
+          "register": "neutral",
+          "why": "More useful than asking only for a station name when you are headed to a building or landmark.",
+          "skeleton": "Where should I get off for ___?",
+          "keywords": ["get off for", "where should i get off"]
+        },
+        {
+          "en": "Is this the line for ___?",
+          "function": "Check the queue or platform",
+          "gloss": { "en": "Confirm that you are waiting in the right line", "ko": "줄이나 승강장이 맞는지 확인하기" },
+          "register": "neutral",
+          "why": "Useful at buses, airport shuttles, ticket counters and any fast-moving queue.",
+          "skeleton": "Is this the line for ___?",
+          "keywords": ["line for", "is this the line"]
+        }
+      ]
+    },
+    {
+      "id": "keeping_conversation_going",
+      "name": "When you want to keep talking",
+      "goal": "Show interest and return the conversational ball instead of ending every answer with a full stop.",
+      "phrases": [
+        {
+          "en": "What have you been up to lately?",
+          "function": "Ask for a personal update",
+          "gloss": { "en": "Invite someone to talk about their recent life", "ko": "상대의 근황을 자연스럽게 묻기" },
+          "register": "casual",
+          "why": "A warm, open question for friends, classmates and coworkers you already know a little.",
+          "keywords": ["been up to", "lately"]
+        },
+        {
+          "en": "How did that go?",
+          "function": "Follow up on something they mentioned",
+          "gloss": { "en": "Ask about the outcome of an event or plan", "ko": "상대가 전에 말한 일의 결과를 물어보기" },
+          "register": "neutral",
+          "why": "Remembering one detail makes a conversation feel attentive, not scripted.",
+          "keywords": ["how did", "that go"]
+        },
+        {
+          "en": "What about you?",
+          "function": "Return the question",
+          "gloss": { "en": "Invite the other person to share too", "ko": "상대에게도 같은 질문을 돌려주기" },
+          "register": "casual",
+          "why": "A tiny phrase with a large effect: it turns an answer into a two-way conversation.",
+          "keywords": ["what about you"]
+        }
+      ]
+    },
+    {
+      "id": "responding",
+      "name": "When you respond with care",
+      "goal": "Acknowledge the other person before you agree, disagree or move on.",
+      "phrases": [
+        {
+          "en": "That sounds tough.",
+          "function": "Show empathy",
+          "gloss": { "en": "Acknowledge that something sounds difficult", "ko": "상대의 힘든 상황에 공감하기" },
+          "register": "casual",
+          "why": "A simple, natural response when someone shares a problem; do not rush straight into advice.",
+          "keywords": ["sounds tough"]
+        },
+        {
+          "en": "That makes sense.",
+          "function": "Show you understand their reason",
+          "gloss": { "en": "Acknowledge that their explanation is reasonable", "ko": "상대의 이유가 이해된다고 표현하기" },
+          "register": "neutral",
+          "why": "Useful before a follow-up question or a different opinion, because it keeps the tone cooperative.",
+          "keywords": ["makes sense"]
+        },
+        {
+          "en": "I see what you mean, but ___.",
+          "function": "Disagree without sounding dismissive",
+          "gloss": { "en": "Recognise their point before giving your different view", "ko": "상대의 의견을 인정한 뒤 부드럽게 다른 의견 말하기" },
+          "register": "neutral",
+          "why": "The most useful soft-disagreement frame for work, study and everyday decisions.",
+          "skeleton": "I see what you mean, but ___.",
+          "keywords": ["see what you mean"]
+        }
+      ]
+    },
+    {
+      "id": "boundaries_and_exits",
+      "name": "When you need to say no or leave",
+      "goal": "Protect your time or preference without sounding cold, apologetic for too long, or trapped.",
+      "phrases": [
+        {
+          "en": "I'd love to, but I can't make it.",
+          "function": "Decline an invitation warmly",
+          "gloss": { "en": "Say no while showing you appreciate the invitation", "ko": "초대에는 고마움을 보이면서 정중하게 거절하기" },
+          "register": "neutral",
+          "why": "Warm and complete — you do not need to invent a detailed excuse.",
+          "keywords": ["love to", "can't make it"]
+        },
+        {
+          "en": "Thanks for asking, but I'll pass this time.",
+          "function": "Turn something down politely",
+          "gloss": { "en": "Decline an offer without closing the relationship", "ko": "제안은 고맙게 받고 이번에는 정중히 사양하기" },
+          "register": "neutral",
+          "why": "Clearer than a hesitant maybe, especially when you do not want to explain why.",
+          "keywords": ["thanks for asking", "pass this time"]
+        },
+        {
+          "en": "I should get going, but it was great talking to you.",
+          "function": "End a conversation warmly",
+          "gloss": { "en": "Signal that you are leaving while ending on a positive note", "ko": "대화를 긍정적인 분위기로 마무리하고 자리 뜨기" },
+          "register": "neutral",
+          "why": "A graceful exit when you need to leave but do not want to seem abrupt.",
+          "keywords": ["get going", "great talking"]
+        }
+      ]
+    },
+    {
+      "id": "self_correction",
+      "name": "When you need to correct yourself",
+      "goal": "Fix a wrong word or unclear idea quickly, without apologising so much that the conversation stalls.",
+      "phrases": [
+        {
+          "en": "Sorry, I mean ___.",
+          "function": "Correct one word or detail",
+          "gloss": { "en": "Replace the word or detail you just got wrong", "ko": "방금 잘못 말한 단어나 정보를 바로 고치기" },
+          "register": "neutral",
+          "why": "Use it immediately for names, dates, directions and small vocabulary mistakes.",
+          "skeleton": "Sorry, I mean ___.",
+          "keywords": ["i mean", "sorry i mean"]
+        },
+        {
+          "en": "What I meant was ___.",
+          "function": "Clarify your intended meaning",
+          "gloss": { "en": "Restate an idea more clearly", "ko": "의도한 뜻을 더 분명하게 다시 말하기" },
+          "register": "neutral",
+          "why": "Better than repeating the same unclear sentence louder or more slowly.",
+          "skeleton": "What I meant was ___.",
+          "keywords": ["what i meant", "meant was"]
+        },
+        {
+          "en": "Let me say that another way.",
+          "function": "Rephrase a whole idea",
+          "gloss": { "en": "Start over with clearer wording", "ko": "문장 전체를 더 분명하게 바꿔 말하기" },
+          "register": "neutral",
+          "why": "Useful when the problem is not one word but the whole sentence or tone.",
+          "keywords": ["another way", "let me say"]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "id": "obgyn_002",
+  "system": "obstetrics & gynecology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 26,
+  "gender": "female",
+  "chief_complaint": "sudden excruciating right lower quadrant pelvic pain, syncope, vaginal spotting, and positive pregnancy test with hypotension",
+  "hpi_details": "26F presents with 3-hour history of severe, sharp right lower quadrant abdominal/pelvic pain that caused her to faint (syncope) while walking to the bathroom. Reports 6 weeks of amenorrhea since last normal menstrual period accompanied by light brown vaginal spotting for the past 3 days. Complains of right shoulder tip pain when lying flat.",
+  "ideas": "thinks she has appendicitis or had a miscarriage that caused internal bleeding",
+  "concerns": "in severe pain and feeling extremely faint and dizzy when sitting up",
+  "expectations": "wants immediate ultrasound, IV fluids, and emergency surgery to stop the internal bleeding",
+  "pmh": "History of Chlamydia pelvic inflammatory disease 3 years ago treated successfully",
+  "medications": "None",
+  "social_hx": "Graphic designer, non-smoker",
+  "investigation_events": [{
+    "id": "stat_ruptured_ectopic_workup",
+    "title": "Emergency pregnancy test and transvaginal ultrasound",
+    "order_terms": ["pregnancy test", "urine hCG", "beta hCG", "transvaginal ultrasound", "TVUS", "pelvic ultrasound"],
+    "availability_message": "Point-of-care pregnancy testing and emergency ultrasound results are now available. Resuscitation and operative transfer must not be delayed.",
+    "results": [
+      {"id": "urine_hcg", "test": "Point-of-care urine beta-hCG", "value": "Positive", "flag": "abnormal"},
+      {"id": "tvus", "test": "Transvaginal ultrasound", "value": "No intrauterine gestational sac; 3.8 cm right adnexal complex mass with peripheral vascularity and large-volume echogenic free fluid extending to Morison pouch", "flag": "critical", "note": "Consistent with ruptured right ectopic pregnancy and hemoperitoneum."}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Ruptured ectopic pregnancy with hemoperitoneum evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured ectopic pregnancy with hemoperitoneum is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT gynecological surgical emergency: immediately transfer to operating room for emergency exploratory Laparoscopy vs Laparotomy, right salpingectomy (or salpingostomy if contralateral tube damaged/fertility desired and stable), and evacuation of hemoperitoneum, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating right lower quadrant pelvic pain, syncope, vaginal spotting, and positive pregnancy test with hypotension",
+      "Key HPI features: 26F presents with 3-hour history of severe, sharp right lower quadrant abdominal/pelvic pain that caused her to faint (syncope) while walking to the bathroom. Reports 6 weeks of amenorrhea since last normal menstrual period accompanied by light brown vaginal spotting for the past 3 days. Complains of right shoulder tip pain when lying flat.",
+      "Objective/Exam findings: Vitals: HR 126, BP 86/52 (orthostatic drop), SpO2 98%. Abdomen distended with severe tenderness, guarding, and rebound tenderness over right lower quadrant. Positive Kehr sign (referred right shoulder tip pain secondary to hemoperitoneum irritating subphrenic diaphragm). Pelvic exam reveals marked cervical motion tenderness and right adnexal fullness with excruciating tenderness. Point-of-care urine beta-hCG positive. STAT Transvaginal Ultrasound (TVUS) reveals NO intrauterine gestational sac, a 3.8 cm right adnexal complex mass with peripheral vascular ring of fire Doppler flow, and a large volume of echogenic free fluid (hemoperitoneum) filling the cul-de-sac and tracking up into the hepatorenal Morison pouch.",
+      "Relevant background/PMH: History of Chlamydia pelvic inflammatory disease 3 years ago treated successfully"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured ectopic pregnancy with hemoperitoneum.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ruptured ovarian cyst without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope."
+    ],
+    "management_principles": [
+      "STAT gynecological surgical emergency: immediately transfer to operating room for emergency exploratory Laparoscopy vs Laparotomy, right salpingectomy (or salpingostomy if contralateral tube damaged/fertility desired and stable), and evacuation of hemoperitoneum",
+      "Establish two large-bore IVs (14-16 gauge), type and crossmatch 4 units packed RBCs, and initiate rapid Type O-negative / crossmatched blood transfusion and crystalloid resuscitation en route to OR",
+      "Methotrexate is strictly contraindicated given ruptured state and hemodynamic collapse"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "26F with 6-week amenorrhea and prior PID history presenting with acute ruptured ectopic pregnancy triad: abdominal pain, vaginal bleeding, and hemodynamic syncope.",
+    "objective": "Vitals: HR 126, BP 86/52 (orthostatic drop), SpO2 98%. Abdomen distended with severe tenderness, guarding, and rebound tenderness over right lower quadrant. Positive Kehr sign (referred right shoulder tip pain secondary to hemoperitoneum irritating subphrenic diaphragm). Pelvic exam reveals marked cervical motion tenderness and right adnexal fullness with excruciating tenderness. Point-of-care urine beta-hCG positive. STAT Transvaginal Ultrasound (TVUS) reveals NO intrauterine gestational sac, a 3.8 cm right adnexal complex mass with peripheral vascular ring of fire Doppler flow, and a large volume of echogenic free fluid (hemoperitoneum) filling the cul-de-sac and tracking up into the hepatorenal Morison pouch.",
+    "assessment": "Ruptured Right Tubal Ectopic Pregnancy with Hemoperitoneum and Hemodynamic Instability (Class III Hemorrhagic Shock).",
+    "plan": "STAT gynecological surgical emergency: immediately transfer to operating room for emergency exploratory Laparoscopy vs Laparotomy, right salpingectomy (or salpingostomy if contralateral tube damaged/fertility desired and stable), and evacuation of hemoperitoneum. Establish two large-bore IVs (14-16 gauge), type and crossmatch 4 units packed RBCs, and initiate rapid Type O-negative / crossmatched blood transfusion and crystalloid resuscitation en route to OR. Methotrexate is strictly contraindicated given ruptured state and hemodynamic collapse."
+  },
+  "learning_objectives": [
+    "Identify the clinical triad of ectopic pregnancy (amenorrhea, abdominal pain, vaginal bleeding) and red flag signs of rupture (syncope, hypotension, shoulder tip pain via Kehr sign)",
+    "Correlate transvaginal ultrasound findings (empty uterine cavity with beta-hCG above discriminatory zone 1500-2000 mIU/mL, adnexal mass, echogenic free fluid) with ruptured tubal pregnancy",
+    "Understand why medical management with intramuscular Methotrexate is absolutely contraindicated in ruptured ectopic pregnancy with hemodynamic instability or adnexal mass >3.5-4.0 cm with fetal heartbeat",
+    "Outline emergency surgical priorities: rapid operating room transfer for laparoscopic/open salpingectomy coupled with aggressive blood product resuscitation"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured ectopic pregnancy with hemoperitoneum",
+    "one_liner": "26F with 6 weeks amenorrhea, sharp RLQ pain, syncope, and shoulder-tip pain — classic ruptured ectopic triad plus Kehr sign.",
+    "differentials": [
+      "Ruptured ovarian cyst",
+      "Appendicitis",
+      "Ovarian torsion",
+      "Miscarriage"
+    ],
+    "red_flags": [
+      "Syncope",
+      "Shoulder-tip pain (Kehr sign)",
+      "Hypotension",
+      "Severe sudden pelvic pain"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm last menstrual period and pregnancy status",
+        "say": "When was your last period, and have you taken a pregnancy test?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "LMP",
+          "pregnancy test"
+        ]
+      },
+      {
+        "objective": "Elicit syncope details",
+        "say": "You mentioned you fainted — can you tell me more about that?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "syncope",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Screen for referred shoulder pain (Kehr sign)",
+        "say": "Do you feel any pain in your shoulder, especially when lying flat?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "shoulder pain",
+          "Kehr sign"
+        ]
+      },
+      {
+        "objective": "Ask about vaginal bleeding",
+        "say": "Have you had any vaginal spotting or bleeding?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vaginal bleeding",
+          "spotting"
+        ]
+      },
+      {
+        "objective": "Review risk factors for ectopic pregnancy",
+        "say": "Have you ever had a pelvic infection or surgery on your tubes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "PID",
+          "tubal surgery"
+        ]
+      }
+    ]
+  }
+}

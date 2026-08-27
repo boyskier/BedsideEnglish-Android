@@ -1,0 +1,170 @@
+{
+  "id": "fm_008",
+  "system": "family medicine",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Harris",
+  "age": 74,
+  "gender": "female",
+  "chief_complaint": "progressive memory loss, getting lost in familiar neighborhood, repeating questions, and functional cognitive decline (Alzheimer Disease Evaluation)",
+  "hpi_details": "74F retired teacher brought to clinic by her adult daughter due to a 2-year insidious progression of memory problems. Daughter reports her mother has begun asking the same questions repeatedly within 15 minutes of being answered, frequently misplaces her keys and purse inside the refrigerator or oven, and forgets the names of close grandchildren. Two weeks ago, mother got lost while driving home from her local grocery store where she has shopped for 20 years and had to be brought home by police. Mother struggled recently to pay her monthly utility bills and balance her checkbook (`instrumental activities of daily living impairment`). Mother smiles pleasantly and insists her memory is `just fine for an old lady.` Denies hallucinations, tremor, shuffling gait, or sudden step-wise drops in ability.",
+  "ideas": "patient pleasantly confused and unconcerned with her memory; daughter deeply worried and stressed about mother's safety living alone",
+  "concerns": "daughter terrified mother has Alzheimer dementia and worried about leaving her alone with the stove on",
+  "expectations": "wants memory testing, brain scan, and medications to slow down cognitive decline",
+  "pmh": "Hypertension, Mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily, Atorvastatin 20mg daily",
+  "social_hx": "Retired high school teacher, lives alone in single-family home, non-smoker",
+  "investigation_events": [
+    {
+      "id": "cognitive_assessment",
+      "title": "Standardized cognitive assessment",
+      "order_terms": [
+        "moca",
+        "montreal cognitive assessment",
+        "mmse",
+        "mini mental state examination",
+        "cognitive assessment",
+        "cognitive screening"
+      ],
+      "availability_message": "The standardized cognitive assessment results are now available.",
+      "results": [
+        {
+          "id": "moca",
+          "test": "Montreal Cognitive Assessment",
+          "value": "17/30",
+          "reference_range": ">=26/30",
+          "flag": "abnormal",
+          "collected_at": "During clinic assessment",
+          "note": "Impaired delayed recall, visuospatial/executive tasks, and orientation"
+        },
+        {
+          "id": "mmse",
+          "test": "Mini-Mental State Examination",
+          "value": "20/30",
+          "reference_range": ">=24/30",
+          "flag": "abnormal",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Major Neurocognitive Disorder due to Alzheimer's Disease evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Major Neurocognitive Disorder due to Alzheimer's Disease is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes a comprehensive Family Medicine dementia and caregiver management plan, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive memory loss, getting lost in familiar neighborhood, repeating questions, and functional cognitive decline (Alzheimer Disease Evaluation)",
+      "Key HPI features: 74F retired teacher brought to clinic by her adult daughter due to a 2-year insidious progression of memory problems. Daughter reports her mother has begun asking the same questions repeatedly within 15 minutes of being answered, frequently misplaces her keys and purse inside the refrigerator or oven, and forgets the names of close grandchildren. Two weeks ago, mother got lost while driving home from her local grocery store where she has shopped for 20 years and had to be brought home by police. Mother struggled recently to pay her monthly utility bills and balance her checkbook (`instrumental activities of daily living impairment`). Mother smiles pleasantly and insists her memory is `just fine for an old lady.` Denies hallucinations, tremor, shuffling gait, or sudden step-wise drops in ability.",
+      "Objective/Exam findings: Vitals: HR 72, BP 130/80. Neurological exam reveals normal cranial nerves, normal motor strength, normal bulk, normal reflexes without pathological signs, and a smooth, steady gait without shuffling, rigidity, or tremor (excluding Parkinsonian/Lewy Body dementia). Standardized Cognitive Assessment: Montreal Cognitive Assessment (MoCA) score is 17/30 (scores <26 indicate impairment; patient loses points on delayed word recall 0/5, cube drawing, clock drawing hands placement, and orientation to date/day of week). Mini-Mental State Examination (MMSE) score is 20/30 (Moderate Dementia). Reversible Dementia Laboratory Workup: Complete Blood Count, Comprehensive Metabolic Panel, Serum TSH (1.8 uIU/mL), and Serum Vitamin B12 (540 pg/mL) are all completely NORMAL (excluding hypothyroidism, B12 deficiency, kidney/liver failure, or severe anemia). Brain MRI without contrast demonstrates moderate generalized cerebral atrophy with prominent, symmetric disproportionate volume loss and atrophy of the bilateral medial temporal lobes and Hippocampi (Scheltens Grade 3), without acute infarctions, subdural hematoma, or normal pressure hydrocephalus.",
+      "Relevant background/PMH: Hypertension, Mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily, Atorvastatin 20mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Major Neurocognitive Disorder due to Alzheimer's Disease.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vascular dementia (would have stepwise decline) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Getting lost while driving — an immediate safety issue requiring prompt action, not just monitoring."
+    ],
+    "management_principles": [
+      "Comprehensive Family Medicine Dementia and Caregiver management plan",
+      "Pharmacotherapy: initiate first-line Acetylcholinesterase Inhibitor therapy: Donepezil (Aricept) starting at 5 mg PO QHS for 4 weeks, then titrating to 10 mg QHS (or Rivastigmine/Galantamine) to stabilize acetylcholine levels and modestly slow cognitive/behavioral decline",
+      "Since patient has moderate dementia (MMSE <20), co-prescribe Memantine (NMDA receptor antagonist, starting 5 mg daily titrating to 10 mg BID) for synergistic neuroprotection against glutamate excitotoxicity"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "74F presenting with 2-year insidious, progressive impairment in short-term episodic memory, topographic disorientation, and functional decline in Instrumental Activities of Daily Living (IADLs), diagnostic of Major Neurocognitive Disorder (Dementia).",
+    "objective": "Vitals: HR 72, BP 130/80. Neurological exam reveals normal cranial nerves, normal motor strength, normal bulk, normal reflexes without pathological signs, and a smooth, steady gait without shuffling, rigidity, or tremor (excluding Parkinsonian/Lewy Body dementia). Standardized Cognitive Assessment: Montreal Cognitive Assessment (MoCA) score is 17/30 (scores <26 indicate impairment; patient loses points on delayed word recall 0/5, cube drawing, clock drawing hands placement, and orientation to date/day of week). Mini-Mental State Examination (MMSE) score is 20/30 (Moderate Dementia). Reversible Dementia Laboratory Workup: Complete Blood Count, Comprehensive Metabolic Panel, Serum TSH (1.8 uIU/mL), and Serum Vitamin B12 (540 pg/mL) are all completely NORMAL (excluding hypothyroidism, B12 deficiency, kidney/liver failure, or severe anemia). Brain MRI without contrast demonstrates moderate generalized cerebral atrophy with prominent, symmetric disproportionate volume loss and atrophy of the bilateral medial temporal lobes and Hippocampi (Scheltens Grade 3), without acute infarctions, subdural hematoma, or normal pressure hydrocephalus.",
+    "assessment": "Major Neurocognitive Disorder due to Alzheimer Disease, Moderate Stage (characterized by prominent hippocampal short-term memory loss and IADL impairment).",
+    "plan": "Comprehensive Family Medicine Dementia and Caregiver management plan: 1. Pharmacotherapy: initiate first-line Acetylcholinesterase Inhibitor therapy: Donepezil (Aricept) starting at 5 mg PO QHS for 4 weeks, then titrating to 10 mg QHS (or Rivastigmine/Galantamine) to stabilize acetylcholine levels and modestly slow cognitive/behavioral decline. Since patient has moderate dementia (MMSE <20), co-prescribe Memantine (NMDA receptor antagonist, starting 5 mg daily titrating to 10 mg BID) for synergistic neuroprotection against glutamate excitotoxicity. 2. Safety & Functional mandates: immediate driving cessation counseling (file medical report with DMV given episode of getting lost and MoCA 17); recommend adult child assume Durable Power of Attorney for Healthcare and Finances immediately; install stove auto-shutoff safety switches and medication lockboxes/blister packs managed by daughter. 3. Caregiver support: refer daughter to local Alzheimer's Association support groups and arrange social work evaluation for home health aide supervision or adult daycare transition."
+  },
+  "learning_objectives": [
+    "Administer and interpret validated cognitive screening tools (Montreal Cognitive Assessment MoCA and Mini-Mental State Examination MMSE) to quantify objective cognitive deficits across episodic memory, executive function, and visuospatial domains",
+    "Execute the essential primary care laboratory workup to exclude reversible causes of cognitive impairment and dementia phenocopies (Serum TSH to rule out hypothyroidism, Vitamin B12 and Folate to rule out neurosyphilis/deficiencies, CMP for hepatic/renal encephalopathy, and structural brain MRI/CT to rule out subdural hematoma, tumors, or normal pressure hydrocephalus)",
+    "Differentiate Alzheimer Disease (insidious progressive short-term memory loss, hippocampal atrophy) from Vascular Dementia (sudden step-wise decline associated with stroke/infarcts on MRI) and Dementia with Lewy Bodies (early visual hallucinations, fluctuating cognition, and Parkinsonian motor rigidity)",
+    "Prescribe evidence-based pharmacotherapy combining Acetylcholinesterase Inhibitors (Donepezil/Rivastigmine) with NMDA receptor antagonists (Memantine) for moderate-to-severe Alzheimer disease, and coordinate critical caregiver safety interventions (driving cessation, financial power of attorney, home safety audits)"
+  ],
+  "teaching": {
+    "diagnosis": "Major Neurocognitive Disorder due to Alzheimer's Disease",
+    "one_liner": "A slow, progressive decline in memory and daily functioning — repeating questions, getting lost in familiar places, and struggling with finances — that the patient herself often minimizes, while family witnesses the real impact.",
+    "differentials": [
+      "Vascular dementia (would have stepwise decline)",
+      "Depression (pseudodementia)",
+      "Normal age-related forgetfulness"
+    ],
+    "red_flags": [
+      "Getting lost while driving — an immediate safety issue requiring prompt action, not just monitoring"
+    ],
+    "must_ask": [
+      {
+        "objective": "Memory symptoms",
+        "say": "Has she been asking the same question repeatedly, even shortly after being answered?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "repeating questions"
+        ]
+      },
+      {
+        "objective": "Getting lost",
+        "say": "Has she gotten lost anywhere familiar, like her usual grocery store?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lost",
+          "driving"
+        ]
+      },
+      {
+        "objective": "Functional decline",
+        "say": "Has she had trouble managing bills or her checkbook?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bills",
+          "finances"
+        ]
+      },
+      {
+        "objective": "Duration and progression",
+        "say": "How many years has this been gradually getting worse?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Family's safety concerns",
+        "say": "What worries you most about her living alone?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "stove",
+          "safety"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,236 @@
+{
+  "id": "followup_mental_health_002",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "mental_health_checkin",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Ms. Sarah Mitchell",
+  "age": 29,
+  "gender": "female",
+  "visit_title": "Depression medication follow-up four weeks after starting sertraline",
+  "follow_up_reason": "Four-week check-in after initiating sertraline for major depressive disorder",
+  "clinician_brief": {
+    "prior_note": "Diagnosed with major depressive disorder four weeks ago with a baseline PHQ-9 of 18, and started on sertraline 50 mg daily along with a psychotherapy referral.",
+    "active_problems": [
+      "Major depressive disorder",
+      "Generalized anxiety symptoms"
+    ],
+    "current_medications": [
+      "Sertraline 50 mg once daily"
+    ],
+    "previous_plan": [
+      "Reassess PHQ-9 and suicidal ideation at this visit",
+      "Monitor for early sertraline side effects",
+      "Confirm psychotherapy intake appointment",
+      "Consider dose increase if response is partial"
+    ],
+    "results_and_observations": [
+      "PHQ-9 today 12, down from 18 at diagnosis",
+      "No documented suicidal ideation at the prior visit"
+    ],
+    "today_tasks": [
+      "Readminister the PHQ-9 and explicitly screen for suicidal ideation",
+      "Review side effects, including any sexual or gastrointestinal symptoms",
+      "Discuss whether to increase the sertraline dose or continue at the current dose",
+      "Confirm psychotherapy referral status",
+      "Update or create a safety plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Mood is somewhat better and sleep has improved, but she still has low-energy days and describes her improvement as 'maybe forty percent better, not all the way.'",
+    "adherence": "Has taken the sertraline every day as prescribed.",
+    "treatment_response": "Nausea during the first week has completely resolved; overall mood and motivation are gradually improving.",
+    "side_effects": "Ongoing decreased libido and delayed orgasm, which she finds embarrassing to bring up.",
+    "new_symptoms_and_red_flags": "Denies current suicidal ideation, intent, or plan; denies hopelessness beyond her baseline low mood; no self-harm.",
+    "agenda": "Wants to know if the medication is 'working enough' or if something needs to change.",
+    "concern": "Has not called the therapist's office yet because she felt too low-energy to make the call.",
+    "preference": "Open to increasing the dose if that helps her feel more like herself, but worried about more side effects."
+  },
+  "clinical_knowledge": {
+    "topic": "Deciding between a sertraline dose increase and continued observation at four weeks, given a PHQ-9 drop from 18 to 12, an unresolved sexual side effect, and a stalled psychotherapy referral",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "SSRIs like sertraline typically show initial improvement by 2-4 weeks, with full effect often taking 6-8 weeks; a PHQ-9 drop from 18 to 12 at four weeks is a genuine partial response that supports either staying the course a bit longer or increasing the dose, not a treatment failure requiring a medication switch.",
+      "Sexual dysfunction (decreased libido, delayed orgasm) is one of the most common and most under-reported SSRI side effects, and unlike early GI symptoms such as nausea, it frequently persists rather than resolving with time, so it needs to be actively asked about rather than left for the patient to volunteer.",
+      "A PHQ-9 of 12 still falls in the moderate range, meaning the current dose has helped but has not achieved remission (typically defined as PHQ-9 <5); the decision to increase sertraline (commonly in 50 mg increments, if tolerated) versus wait another few weeks is a discussion of trade-offs, not a fixed rule.",
+      "Guideline-concordant depression care pairs pharmacotherapy with psychotherapy; an incomplete psychotherapy referral at four weeks is a modifiable gap in her care that should be proactively addressed as part of this visit, not deferred."
+    ],
+    "diagnostic_clues": [
+      "PHQ-9 improving from 18 (baseline, severe range) to 12 (moderate range) at four weeks demonstrates a clear treatment signal and argues against nonresponse, but the score is still above what would be considered adequate response.",
+      "Complete resolution of first-week nausea is consistent with the typical time course of SSRI GI side effects, which usually improve within 1-2 weeks as tolerance develops.",
+      "Persistent sexual side effects at four weeks, in contrast, follow the typical pattern of SSRI sexual dysfunction, which tends not to resolve spontaneously and often requires an active management conversation (dose adjustment, timing changes, or an alternative agent) rather than reassurance to 'wait it out.'",
+      "Her own framing of being 'maybe forty percent better, not all the way' is a patient-generated severity estimate that roughly tracks the objective PHQ-9 change and should be validated as clinically meaningful information, not dismissed as vague."
+    ],
+    "common_misconceptions": [
+      "Sarah's concern about whether the medication is 'working enough' reflects a common misunderstanding that antidepressants either work completely or not at all by a fixed deadline, rather than showing graded, cumulative improvement over weeks.",
+      "Assuming her embarrassment about discussing sexual side effects means the topic should be left for her to bring up, when routine, direct, nonjudgmental screening is the guideline-recommended approach precisely because patients underreport this.",
+      "Believing that not having called the therapist yet reflects a lack of motivation rather than recognizing low energy and low motivation are themselves core depression symptoms that create a barrier to completing the referral — the barrier is a symptom of the illness, not a character flaw.",
+      "Assuming a PHQ-9 score improvement alone rules out ongoing suicide risk, when partial responders can still have residual risk and must be explicitly and directly screened at every visit regardless of apparent improvement."
+    ],
+    "dangerous_errors": [
+      "Skipping an explicit, direct suicidal ideation screen because her PHQ-9 has improved and she 'seems better' — improvement trajectories do not eliminate the need to ask directly at every depression follow-up.",
+      "Increasing the sertraline dose without first asking about the sexual side effect, since a dose increase could plausibly worsen the very side effect that is already bothering her, changing the risk-benefit calculation she should be part of.",
+      "Treating the incomplete psychotherapy referral as a minor scheduling detail rather than actively problem-solving the low-energy barrier that is preventing her from making the call.",
+      "Failing to ask about anxiety symptoms specifically (she has documented generalized anxiety symptoms) when adjusting an SSRI, since dose changes can transiently affect anxiety differently than depressive symptoms."
+    ],
+    "management_principles": [
+      "Explicitly and directly re-screen for suicidal ideation, intent, and plan regardless of the reassuring PHQ-9 trend.",
+      "Present the choice between increasing the sertraline dose and continuing the current dose for a few more weeks as a shared decision, weighing her partial response against her concern about additional side effects.",
+      "Proactively ask about the sexual side effect rather than waiting for her to raise it, and discuss it as a legitimate, common, and manageable issue.",
+      "Problem-solve the specific barrier to completing psychotherapy intake (low energy limiting phone calls) with a concrete solution — for example, help with scheduling, an alternative contact method, or involving a support person — rather than simply repeating the referral instruction."
+    ],
+    "boundaries_and_exceptions": [
+      "If she reports any suicidal ideation, intent, or plan at this or a future visit, this becomes an urgent safety issue that overrides routine dose-titration planning and requires an immediate safety plan and likely more frequent follow-up.",
+      "If she is or becomes pregnant or is breastfeeding, sertraline dosing decisions must be reconsidered in that context, as should any medication changes.",
+      "In older adults or those on interacting medications (e.g., NSAIDs, other serotonergic drugs), SSRI dose increases carry additional bleeding or serotonin syndrome considerations not directly relevant to this otherwise healthy 29-year-old."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guideline for the Treatment of Patients with Major Depressive Disorder",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the agenda and readminister the PHQ-9 to track symptom trend",
+    "Explicitly and directly screen for suicidal ideation, intent, and plan",
+    "Review medication side effects, including sensitive sexual side effects, without judgment",
+    "Discuss the risks and benefits of increasing the sertraline dose versus continuing to wait",
+    "Address the incomplete psychotherapy referral and problem-solve the barrier",
+    "Explain expected antidepressant timelines and what 'working enough' looks like",
+    "Update the safety plan and confirm understanding of when to seek urgent help"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the agenda and readminister the PHQ-9 to track symptom trend",
+      "category": "Agenda",
+      "question": "Since starting the sertraline four weeks ago, how would you say your mood has been overall?"
+    },
+    {
+      "objective": "Explicitly and directly screen for suicidal ideation, intent, and plan",
+      "category": "Safety",
+      "question": "I ask everyone this directly — have you had any thoughts of harming yourself or that life isn't worth living?"
+    },
+    {
+      "objective": "Review medication side effects, including sensitive sexual side effects, without judgment",
+      "category": "Side effects",
+      "question": "Have you noticed any side effects, including changes in sleep, appetite, or your sex life?"
+    },
+    {
+      "objective": "Discuss the risks and benefits of increasing the sertraline dose versus continuing to wait",
+      "category": "Plan",
+      "question": "Given you're about forty percent better, shall we talk about increasing the dose or giving the current dose more time?"
+    },
+    {
+      "objective": "Address the incomplete psychotherapy referral and problem-solve the barrier",
+      "category": "Referral",
+      "question": "You mentioned you haven't called the therapist yet — what's gotten in the way?"
+    },
+    {
+      "objective": "Explain expected antidepressant timelines and what 'working enough' looks like",
+      "category": "Education",
+      "question": "Can I explain what to typically expect from this medication over the next several weeks?"
+    },
+    {
+      "objective": "Update the safety plan and confirm understanding of when to seek urgent help",
+      "category": "Understanding & follow-up",
+      "question": "Let's make sure you know exactly who to call or where to go if things feel unsafe before our next visit."
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the agenda and readminister the PHQ-9 to track symptom trend",
+      "keywords": [
+        "mood",
+        "phq-9",
+        "phq9",
+        "since starting",
+        "how have you been",
+        "better",
+        "worse"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explicitly and directly screen for suicidal ideation, intent, and plan",
+      "keywords": [
+        "suicidal",
+        "harm yourself",
+        "harming yourself",
+        "life isn't worth",
+        "safety",
+        "self-harm"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Review medication side effects, including sensitive sexual side effects, without judgment",
+      "keywords": [
+        "side effects",
+        "sexual",
+        "libido",
+        "nausea",
+        "sleep",
+        "appetite"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Discuss the risks and benefits of increasing the sertraline dose versus continuing to wait",
+      "keywords": [
+        "increase the dose",
+        "higher dose",
+        "sertraline",
+        "wait",
+        "continue"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address the incomplete psychotherapy referral and problem-solve the barrier",
+      "keywords": [
+        "therapist",
+        "psychotherapy",
+        "counseling",
+        "referral",
+        "called"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain expected antidepressant timelines and what 'working enough' looks like",
+      "keywords": [
+        "expect",
+        "timeline",
+        "weeks",
+        "how long",
+        "working"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Update the safety plan and confirm understanding of when to seek urgent help",
+      "keywords": [
+        "safety plan",
+        "urgent help",
+        "crisis",
+        "who to call",
+        "emergency"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "29F four weeks into sertraline 50mg for MDD. PHQ-9 improved from 18 to 12. Initial nausea resolved; ongoing sexual side effects. Denies current suicidal ideation, intent, or plan. Has not yet completed psychotherapy intake due to low energy.",
+    "objective": "PHQ-9 12 today (was 18 at diagnosis). No suicidal ideation elicited.",
+    "assessment": "Partial response to first-line SSRI therapy for major depressive disorder at four weeks, with a resolved early side effect, an ongoing sexual side effect, and an incomplete psychotherapy referral.",
+    "plan": "explicitly reassess suicidal ideation, review the PHQ-9 trend to confirm partial response, address the now-resolved nausea and ongoing sexual side effects, discuss increasing the sertraline dose versus allowing more time at the current dose, confirm psychotherapy referral status, and update the safety plan."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Depression medication follow-up four weeks after starting sertraline",
+    "one_liner": "Clinical scenario for evaluation and management of Depression medication follow-up four weeks after starting sertraline."
+  }
+}

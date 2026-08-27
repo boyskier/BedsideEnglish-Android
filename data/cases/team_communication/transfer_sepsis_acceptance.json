@@ -1,0 +1,49 @@
+{
+  "id": "transfer_sepsis_acceptance",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Transfer",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "transfer_handover",
+  "patient_name": "Transfer request — septic shock",
+  "chief_complaint": "Request acceptance at a higher-level center and close the transport loop",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Transfer request: septic shock",
+    "task": "Transfer",
+    "urgency": "urgent",
+    "patient": "Ms. Laura King, 61-year-old woman",
+    "location": "Small hospital without ICU or overnight urology",
+    "situation": "Septic shock from an obstructed infected kidney; she needs ICU support and urologic source control.",
+    "background": ["CT shows an 8 mm obstructing ureteric stone with hydronephrosis."],
+    "current_status": ["Norepinephrine 0.08 mcg/kg/min through a peripheral line after 2 L crystalloid.", "BP 92/58, lactate improved from 5.0 to 3.8, SpO2 95% on 2 L nasal cannula."],
+    "key_data": ["Ongoing vasopressor requirement and obstructed infection require higher-level care."],
+    "treatments": ["Piperacillin-tazobactam and 2 L crystalloid given.", "Confirm whether urology has been informed and how transport will be monitored."],
+    "your_request": "Request acceptance, destination, monitored transport plan, and clear responsibility during transfer.",
+    "must_include": ["Reason local care is insufficient.", "Current vasopressor support, response, and source-control need.", "Acceptance, bed destination, transport monitoring, and escalation contact."]
+  },
+  "kickoff_text": "This is Dr. Bennett at the regional ICU. Tell me why your patient needs transfer.",
+  "persona_override": "You are Dr. Bennett, an ICU attending at a regional referral center. The caller works at a small hospital without an ICU. The patient is Ms. Laura King, 61, with obstructed infected kidney and septic shock. She is on norepinephrine through a peripheral line at 0.08 mcg/kg/min after 2 L crystalloid; BP is 92/58, lactate fell from 5.0 to 3.8, oxygen saturation is 95% on 2 L nasal cannula. Piperacillin-tazobactam was given; CT shows an 8 mm obstructing ureteric stone with hydronephrosis. Ask why local care is insufficient, whether urology knows, and how transport will be monitored. Accept the transfer once the learner gives a structured handover and explicitly requests acceptance. Confirm bed destination and responsibility during transport.",
+  "learning_objectives": [
+    "state the urgent transfer request and reason for higher-level care",
+    "summarize hemodynamic status, treatment, response, and source control need",
+    "explain the referring hospital's capability limitation",
+    "confirm acceptance, destination, transport monitoring, and interim responsibility"
+  ],
+  "suggested_questions": [
+    "I'm requesting urgent transfer for ICU support and urologic source control.",
+    "We do not have an ICU or overnight urology service at this hospital.",
+    "Can you confirm acceptance, the receiving unit, and who I should update if she deteriorates in transit?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Interfacility transfer request for septic shock requiring ICU and urologic source control",
+    "core_concepts": ["A transfer call must explain both the patient's clinical need and the referring site's capability gap.", "Transfer of responsibility is incomplete until acceptance, destination, transport, monitoring, and interim ownership are confirmed."],
+    "diagnostic_clues": ["Vasopressor-dependent hypotension indicates ongoing shock.", "An obstructed infected collecting system creates a time-sensitive source-control need."],
+    "common_misconceptions": ["A clinical summary alone constitutes a transfer request.", "Acceptance automatically defines transport responsibility and the receiving location."],
+    "dangerous_errors": ["Omitting vasopressor support, response to treatment, or source-control need.", "Moving the patient without explicit acceptance and a monitored transport plan."],
+    "management_principles": ["Continue time-critical sepsis treatment and reassessment while arranging higher-level care.", "Use a structured handoff and closed loop at every transition of accountability."],
+    "boundaries_and_exceptions": ["Transfer eligibility, stabilization, transport staffing, legal obligations, and source-control timing depend on local and regional systems."],
+    "source_refs": [{"title": "AHRQ TeamSTEPPS Handoff Guidance", "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/teach/two-day.html"}, {"title": "Surviving Sepsis Campaign Adult Guidelines 2026", "url": "https://www.sccm.org/survivingsepsiscampaign/guidelines-and-resources/surviving-sepsis-campaign-adult-guidelines"}]
+  }
+}

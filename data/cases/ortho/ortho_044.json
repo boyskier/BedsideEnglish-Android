@@ -1,0 +1,148 @@
+{
+  "id": "ortho_044",
+  "system": "ortho",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Walker",
+  "age": 74,
+  "gender": "female",
+  "chief_complaint": "sudden hot, red, swollen knee joint with severe pain",
+  "hpi_details": "A 74-year-old female presents to the clinic with sudden hot, red, swollen knee joint with severe pain. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to gout_knee",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [{
+    "id": "urgent_hot_joint_aspiration",
+    "title": "Urgent synovial-fluid analysis",
+    "order_terms": ["arthrocentesis", "joint aspiration", "synovial fluid", "crystal analysis", "Gram stain"],
+    "availability_message": "Immediate synovial-fluid cell count, crystal analysis, and Gram stain are now available; final culture remains pending.",
+    "results": [
+      {"id": "synovial_cell_count", "test": "Synovial-fluid cell count", "value": "28500 WBC/uL; 82% neutrophils", "flag": "high", "specimen": "Right-knee synovial fluid"},
+      {"id": "crystal_analysis", "test": "Polarized-light crystal analysis", "value": "Numerous needle-shaped, strongly negatively birefringent monosodium urate crystals", "flag": "abnormal"},
+      {"id": "gram_stain", "test": "Synovial-fluid Gram stain", "value": "No organisms seen", "flag": "normal", "note": "A negative Gram stain does not definitively exclude infection; culture is pending."}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Gout flare of the knee evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Gout flare of the knee is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Gout Flare knee: Joint aspiration to rule out sepsis, start Indomethacin, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden hot, red, swollen knee joint with severe pain",
+      "Key HPI features: A 74-year-old female presents to the clinic with sudden hot, red, swollen knee joint with severe pain. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Gout Flare knee.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Gout flare of the knee.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis (must be excluded) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or systemic illness would raise concern for septic arthritis requiring joint aspiration before treatment."
+    ],
+    "management_principles": [
+      "Plan for Gout Flare knee: Joint aspiration to rule out sepsis, start Indomethacin",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden hot, red, swollen knee joint with severe pain. HPI: monosodium urate crystal arthritis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Gout Flare knee.",
+    "assessment": "Condition highly suspicious for Gout Flare knee.",
+    "plan": "Urgently aspirate the joint for cell count, crystal analysis, Gram stain, and culture when septic arthritis is a concern; do not let crystals alone exclude concomitant infection. If infection is suspected, arrange urgent orthopedic assessment and antimicrobial treatment per local protocol. Once infection has been reasonably excluded, treat the flare with an anti-inflammatory selected for the patient's renal, gastrointestinal, cardiovascular, and drug-interaction risk profile."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Gout Flare knee",
+    "Select appropriate diagnostic workup for Gout Flare knee",
+    "Implement evidence-based management plan: Joint aspiration to rule out sepsis, start Indomethacin"
+  ],
+  "teaching": {
+    "diagnosis": "Gout flare of the knee",
+    "one_liner": "Patient with sudden hot, red, swollen knee joint and severe pain, from monosodium urate crystal arthritis.",
+    "differentials": [
+      "Septic arthritis (must be excluded)",
+      "Pseudogout",
+      "Reactive arthritis"
+    ],
+    "red_flags": [
+      "Fever or systemic illness would raise concern for septic arthritis requiring joint aspiration before treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Screen for fever to rule out septic arthritis",
+        "say": "Do you have any fever or chills along with the joint pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever screen",
+          "septic arthritis"
+        ]
+      },
+      {
+        "objective": "Ask about prior gout attacks",
+        "say": "Have you had episodes like this before, in this or other joints?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "prior gout attacks"
+        ]
+      },
+      {
+        "objective": "Ask about dietary and alcohol triggers",
+        "say": "Have you had a lot of red meat, seafood, or alcohol recently?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "dietary triggers",
+          "alcohol"
+        ]
+      },
+      {
+        "objective": "Characterize the onset speed",
+        "say": "How quickly did the joint become red and swollen — hours or days?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "rapid onset"
+        ]
+      },
+      {
+        "objective": "Explain the aspiration and treatment plan",
+        "say": "We need to draw fluid from the joint first to rule out infection, then start anti-inflammatory medication.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "joint aspiration",
+          "indomethacin"
+        ]
+      }
+    ]
+  }
+}

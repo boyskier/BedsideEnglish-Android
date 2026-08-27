@@ -1,0 +1,133 @@
+{
+  "id": "nephro_043",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. King",
+  "age": 71,
+  "gender": "male",
+  "chief_complaint": "dark red-brown urine and muscle pain after trauma",
+  "hpi_details": "A 71-year-old male presents to the clinic with dark red-brown urine and muscle pain after trauma. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "wonders if the dark urine is connected to the fall and being unable to move afterward",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_traumatic_rhabdomyolysis_workup",
+      "title": "Emergency rhabdomyolysis and electrolyte assessment",
+      "order_terms": ["CK", "creatine kinase", "creatinine", "renal function", "potassium", "electrolytes", "urinalysis"],
+      "availability_message": "STAT muscle injury, kidney function, electrolyte, and urinalysis results are now available. IV fluid resuscitation and treatment of dangerous electrolyte abnormalities should not be delayed.",
+      "results": [
+        {"id": "creatine_kinase", "test": "Creatine kinase", "value": "45000", "unit": "U/L", "reference_range": "30-200", "flag": "critical"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "2.4", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "high", "note": "Estimated baseline was 1.0 mg/dL."},
+        {"id": "potassium", "test": "Serum potassium", "value": "5.8", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "high"},
+        {"id": "urinalysis", "test": "Urinalysis with microscopy", "value": "Dipstick strongly positive for blood with only rare RBCs on microscopy", "flag": "abnormal", "note": "Pattern is consistent with myoglobinuria."}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Rhabdomyolysis-induced Acute Kidney Injury evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Rhabdomyolysis-induced Acute Kidney Injury is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt aggressive isotonic IV fluid resuscitation, serial monitoring of CK and electrolytes (particularly potassium), and urgent treatment of any dangerous electrolyte derangements, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: dark red-brown urine and muscle pain after trauma",
+      "Key HPI features: A 71-year-old male presents to the clinic with dark red-brown urine and muscle pain after trauma. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: BP 108/68, HR 102, afebrile. Tender, swollen muscles of both lower extremities at the site of a crush injury; decreased distal pulses on the affected side. Labs: CK 45,000 U/L (markedly elevated), creatinine 2.4 mg/dL (up from an estimated baseline of 1.0 mg/dL), potassium 5.8 mEq/L, urinalysis dipstick strongly positive for blood but only rare RBCs on microscopy (myoglobinuria), calcium 7.2 mg/dL (low), phosphate 5.8 mg/dL (elevated).",
+      "Relevant background/PMH: Unremarkable; found after a fall with several hours of immobilization"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Rhabdomyolysis-induced Acute Kidney Injury.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hemolysis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Muscle weakness or palpitations — hyperkalemia risk."
+    ],
+    "management_principles": [
+      "Start aggressive isotonic IV fluid resuscitation immediately, titrated to maintain adequate urine output",
+      "Check serial CK, creatinine, potassium, calcium, phosphate, and bicarbonate; treat hyperkalemia urgently given the arrhythmia risk",
+      "Involve nephrology early and consider dialysis if refractory hyperkalemia, oliguric AKI, or volume overload develops"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: dark red-brown urine and muscle pain after trauma\n\nA 71-year-old male presents about 12 hours after a fall with prolonged immobilization, with severe bilateral leg pain, swelling, and dark tea-colored urine. Reports minimal oral intake since the fall.",
+    "objective": "Vitals: BP 108/68, HR 102, afebrile. Tender, swollen muscles of both lower extremities at the site of a crush injury; decreased distal pulses on the affected side. Labs: CK 45,000 U/L (markedly elevated), creatinine 2.4 mg/dL (up from an estimated baseline of 1.0 mg/dL), potassium 5.8 mEq/L, urinalysis dipstick strongly positive for blood but only rare RBCs on microscopy (myoglobinuria), calcium 7.2 mg/dL (low), phosphate 5.8 mg/dL (elevated).",
+    "assessment": "Rhabdomyolysis-induced acute kidney injury following prolonged immobilization after a fall, evidenced by markedly elevated CK, myoglobinuria, rising creatinine, and hyperkalemia.",
+    "plan": "Start prompt isotonic IV fluid resuscitation with close monitoring of urine output and volume status. Measure serial CK, creatinine, potassium, calcium, phosphate, and bicarbonate, and treat dangerous electrolyte abnormalities. Do not use urine alkalinization routinely; involve nephrology and consider dialysis for standard refractory indications."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Rhabdomyolysis AKI",
+    "Select appropriate diagnostic workup for Rhabdomyolysis AKI",
+    "Implement evidence-based management plan: Aggressive IV hydration with Normal Saline, check CK and urine pH"
+  ],
+  "teaching": {
+    "diagnosis": "Rhabdomyolysis-induced Acute Kidney Injury",
+    "one_liner": "Muscle injury from trauma releases myoglobin into the bloodstream, which is directly toxic to the kidney tubules, causing dark red-brown urine and elevated CK.",
+    "differentials": [
+      "Hemolysis",
+      "Direct traumatic kidney injury"
+    ],
+    "red_flags": [
+      "Muscle weakness or palpitations — hyperkalemia risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Trauma history",
+        "say": "What happened — can you describe the injury?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Muscle pain",
+        "say": "How severe is the muscle pain, and where?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Urine color",
+        "say": "What color is your urine?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Hydration since injury",
+        "say": "How much have you been drinking since the injury?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Any muscle weakness or palpitations?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

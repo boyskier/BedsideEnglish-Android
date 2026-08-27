@@ -1,0 +1,126 @@
+{
+  "id": "endo_014",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Robinson",
+  "age": 48,
+  "gender": "male",
+  "chief_complaint": "episodic pounding headaches, sweating, and rapid heartbeat",
+  "hpi_details": "48M reporting sudden severe episodes of throbbing headache, drenching diaphoresis, and BP spikes up to 200/110. High plasma metanephrines.",
+  "ideas": "thinks this is related to pheochromocytoma paroxysmal attack",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {"id":"plasma_normetanephrine","test":"Plasma free normetanephrine","value":"3.8","unit":"nmol/L","reference_range":"<0.90","flag":"critical","specimen":"Blood"},
+    {"id":"plasma_metanephrine","test":"Plasma free metanephrine","value":"2.1","unit":"nmol/L","reference_range":"<0.50","flag":"critical","specimen":"Blood"},
+    {"id":"urine_metanephrines","test":"24-hour urine fractionated metanephrines","value":"1940","unit":"ug/24 h","reference_range":"<900","flag":"critical","specimen":"Urine"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Pheochromocytoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pheochromocytoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes biochemical confirmation with plasma or urinary metanephrines followed by adrenal imaging and preoperative alpha-blockade, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodic pounding headaches, sweating, and rapid heartbeat",
+      "Key HPI features: 48M reporting sudden severe episodes of throbbing headache, drenching diaphoresis, and BP spikes up to 200/110. High plasma metanephrines.",
+      "Objective/Exam findings: Vitals (between episodes): HR 82, BP 148/90; during episodes BP spikes to 200/110. Physical exam normal between attacks. Lab screening: Plasma free metanephrines markedly elevated; 24-hour urinary fractionated metanephrines and catecholamines elevated.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pheochromocytoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Panic disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe blood pressure spikes."
+    ],
+    "management_principles": [
+      "Order CT or MRI of abdomen/adrenals with adrenal protocol after biochemical confirmation",
+      "Initiate mandatory preoperative alpha-adrenergic blockade with Phenoxybenzamine (or Doxazosin) for 10-14 days BEFORE initiating any beta-blocker (to prevent hypertensive crisis), then surgical consultation for adrenalectomy",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Pheochromocytoma and Paraganglioma",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/pheochromocytoma"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "48M reporting sudden severe episodes of throbbing headache, drenching diaphoresis, and BP spikes up to 200/110, with markedly elevated plasma metanephrines.",
+    "objective": "Vitals (between episodes): HR 82, BP 148/90; during episodes BP spikes to 200/110. Physical exam normal between attacks. Lab screening: Plasma free metanephrines markedly elevated; 24-hour urinary fractionated metanephrines and catecholamines elevated.",
+    "assessment": "Pheochromocytoma (catecholamine-secreting adrenal medullary tumor).",
+    "plan": "Order CT or MRI of abdomen/adrenals with adrenal protocol. Initiate mandatory preoperative alpha-adrenergic blockade with Phenoxybenzamine (or Doxazosin) for 10-14 days BEFORE initiating any beta-blocker (to prevent hypertensive crisis). Surgical consultation for adrenalectomy."
+  },
+  "learning_objectives": [
+    "Identify the classic symptom triad of pheochromocytoma (headache, sweating, tachycardia)",
+    "Select appropriate biochemical screening tests (plasma free or 24-hour urinary metanephrines)",
+    "Explain the absolute critical rule of alpha-blockade before beta-blockade in pheochromocytoma",
+    "Outline perioperative hemodynamic management goals"
+  ],
+  "teaching": {
+    "diagnosis": "Pheochromocytoma",
+    "one_liner": "A catecholamine-secreting adrenal tumor causing episodic headache, sweating, and severe blood pressure spikes, confirmed by elevated plasma metanephrines.",
+    "differentials": [
+      "Panic disorder",
+      "Essential hypertension"
+    ],
+    "red_flags": [
+      "Severe blood pressure spikes"
+    ],
+    "must_ask": [
+      {
+        "objective": "Episode character",
+        "say": "What happens during an episode — headache, sweating, racing heart?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Frequency",
+        "say": "How often do these episodes happen?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Blood pressure during episodes",
+        "say": "How high does your blood pressure go?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Trigger",
+        "say": "Does anything trigger these?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Any family history of similar episodes?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

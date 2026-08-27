@@ -1,0 +1,161 @@
+{
+  "id": "ortho_002",
+  "system": "orthopedics",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "progressive bilateral leg weakness, saddle anesthesia, and urinary retention for 24 hours",
+  "hpi_details": "45F with history of chronic low back pain presents with sudden worsening after heavy lifting. Reports acute bilateral leg numbness and weakness, inability to feel toilet paper when wiping (saddle anesthesia), and inability to void urine for 14 hours despite full bladder sensation.",
+  "ideas": "thinks she slipped a disc that pinched a nerve in her spine",
+  "concerns": "terrified of permanent paralysis and bladder incontinence",
+  "expectations": "wants immediate MRI and surgery to restore her bladder control and leg strength",
+  "pmh": "Chronic L4-L5 herniated disc treated conservatively with physical therapy",
+  "medications": "Naproxen 500mg BID, Cyclobenzaprine 10mg QHS",
+  "social_hx": "Accountant, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_bladder_scan",
+      "title": "Emergency bedside bladder scan",
+      "order_terms": ["post-void residual", "bladder scan", "bladder volume"],
+      "availability_message": "The bedside bladder-scan result is now available. Bladder decompression should proceed without waiting for MRI.",
+      "results": [
+        {"id": "post_void_residual", "test": "Bedside bladder scan", "value": "650", "unit": "mL", "reference_range": "<100", "flag": "critical"}
+      ]
+    },
+    {
+      "id": "stat_lumbar_mri",
+      "title": "Emergency lumbar-spine MRI",
+      "order_terms": ["MRI lumbar", "lumbar MRI", "MRI spine"],
+      "availability_message": "The emergency lumbar MRI result is now available. Immediate spine-surgical consultation should continue.",
+      "results": [
+        {"id": "lumbar_mri", "test": "Lumbar spine MRI", "value": "Large central L4-L5 disc extrusion causing severe thecal-sac compression and compression of the cauda equina nerve roots", "flag": "critical"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Cauda equina syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cauda equina syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes obtaining a STAT emergent MRI of the lumbar spine without contrast for suspected disc-related cauda equina syndrome; add contrast when infection, tumor, or another alternative pathology is suspected, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive bilateral leg weakness, saddle anesthesia, and urinary retention for 24 hours",
+      "Key HPI features: 45F with history of chronic low back pain presents with sudden worsening after heavy lifting. Reports acute bilateral leg numbness and weakness, inability to feel toilet paper when wiping (saddle anesthesia), and inability to void urine for 14 hours despite full bladder sensation.",
+      "Objective/Exam findings: Vitals: HR 88, BP 130/80. Lumbar paraspinal muscle spasm. Neurological exam reveals decreased sensation in S3-S5 dermatomes (perianal and perineal saddle distribution). Bilateral patellar (2+) and Achilles (0/1+) reflexes diminished. Anal sphincter tone markedly lax on rectal exam. Post-void residual ultrasound reveals 650 mL of retained urine.",
+      "Relevant background/PMH: Chronic L4-L5 herniated disc treated conservatively with physical therapy",
+      "Current medications: Naproxen 500mg BID, Cyclobenzaprine 10mg QHS"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cauda equina syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple lumbar disc herniation without cauda equina without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Saddle anesthesia."
+    ],
+    "management_principles": [
+      "Obtain a STAT emergent MRI of the lumbar spine without contrast (add contrast if infection, tumor, or another alternative pathology is suspected)",
+      "Place Foley catheter for bladder decompression",
+      "Immediate neurosurgical/orthopedics spine surgical consultation for emergent decompressive lumbar laminectomy and discectomy within 24 hours to maximize neurological recovery"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45F presenting with acute neurological emergencies: bilateral lower extremity radiculopathy, perineal saddle anesthesia, and acute urinary retention following axial back strain.",
+    "objective": "Vitals: HR 88, BP 130/80. Lumbar paraspinal muscle spasm. Neurological exam reveals decreased sensation in S3-S5 dermatomes (perianal and perineal saddle distribution). Bilateral patellar (2+) and Achilles (0/1+) reflexes diminished. Anal sphincter tone markedly lax on rectal exam. Post-void residual ultrasound reveals 650 mL of retained urine.",
+    "assessment": "Cauda Equina Syndrome secondary to acute central lumbar disc herniation (likely L4-S1).",
+    "plan": "Obtain a STAT emergent MRI of the lumbar spine without contrast (add contrast if infection, tumor, or another alternative pathology is suspected). Place Foley catheter for bladder decompression. Immediate neurosurgical/orthopedics spine surgical consultation for emergent decompressive lumbar laminectomy and discectomy within 24 hours to maximize neurological recovery."
+  },
+  "learning_objectives": [
+    "Identify red flag clinical triad of Cauda Equina Syndrome (saddle anesthesia, bowel/bladder dysfunction, bilateral leg weakness)",
+    "Interpret bladder post-void residual volume as an objective marker of urinary retention",
+    "Differentiate conus medullaris syndrome from cauda equina syndrome clinically",
+    "Explain the critical time-sensitive necessity of emergent surgical decompression (<24-48 hours)"
+  ],
+  "teaching": {
+    "diagnosis": "Cauda equina syndrome",
+    "one_liner": "45F with chronic back pain, now with bilateral leg weakness, saddle anesthesia, and urinary retention after heavy lifting.",
+    "differentials": [
+      "Simple lumbar disc herniation without cauda equina",
+      "Conus medullaris syndrome",
+      "Spinal epidural abscess",
+      "Spinal cord compression from tumor"
+    ],
+    "red_flags": [
+      "Saddle anesthesia",
+      "Bowel/bladder dysfunction",
+      "Bilateral leg weakness",
+      "Urinary retention"
+    ],
+    "must_ask": [
+      {
+        "objective": "Screen for saddle anesthesia specifically",
+        "say": "Have you noticed numbness in the area you'd sit on a saddle—your inner thighs, genitals, or bottom?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "saddle anesthesia"
+        ]
+      },
+      {
+        "objective": "Ask about bladder function directly",
+        "say": "Have you had any trouble urinating, or not felt when your bladder was full?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urinary retention"
+        ]
+      },
+      {
+        "objective": "Ask about bowel function",
+        "say": "Have you had any loss of control over your bowels?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bowel dysfunction"
+        ]
+      },
+      {
+        "objective": "Characterize the leg weakness",
+        "say": "Is the weakness in both legs, and how severe is it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bilateral leg weakness"
+        ]
+      },
+      {
+        "objective": "Explain the emergency nature and need for urgent surgery",
+        "say": "These symptoms need emergency assessment. We need an urgent MRI and immediate spine-surgery review; treatment will depend on the findings.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "emergent MRI",
+          "emergent decompression"
+        ]
+      }
+    ]
+  }
+}

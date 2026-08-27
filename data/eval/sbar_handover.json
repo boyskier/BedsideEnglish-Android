@@ -1,0 +1,46 @@
+{
+  "name": "SBAR Handover",
+  "description": "Evaluates a handover to another healthcare professional using the Situation, Background, Assessment, Recommendation framework.",
+  "metrics": {
+    "fluency": {
+      "label": "Language & Fluency",
+      "anchors": {
+        "80-100": "Clear, fluent, near-native phrasing.",
+        "50-70": "Understandable but occasional hesitations or grammar errors.",
+        "10-40": "Frequent errors that impede understanding."
+      }
+    },
+    "medical_accuracy": {
+      "label": "Medical Terminology & Accuracy",
+      "anchors": {
+        "80-100": "Uses appropriate terminology naturally.",
+        "50-70": "Mostly accurate, some colloquialisms instead of professional terms.",
+        "10-40": "Misuses terms in ways that could cause clinical errors."
+      }
+    },
+    "sbar_completeness": {
+      "label": "SBAR Completeness",
+      "anchors": {
+        "80-100": "Clearly articulates Situation, Background, Assessment, and Recommendation.",
+        "50-70": "Misses one component or jumbles the order.",
+        "10-40": "Missing multiple components or highly disorganized."
+      }
+    },
+    "professionalism": {
+      "label": "Professionalism & Communication",
+      "anchors": {
+        "80-100": "Respectful, concise, and handles questions gracefully.",
+        "50-70": "Mostly respectful but may get flustered.",
+        "10-40": "Rude, defensive, or overly verbose without getting to the point."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Stated the Situation (who, where, why)", "required": true},
+    {"item": "Provided relevant Background (PMH, events leading up)", "required": true},
+    {"item": "Gave a clear Assessment (suspected diagnosis or clinical status)", "required": true},
+    {"item": "Made a specific Recommendation (admit, review, prescribe)", "required": true},
+    {"item": "Confirmed the receiving clinician understood or accepted the plan", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "summary"]
+}

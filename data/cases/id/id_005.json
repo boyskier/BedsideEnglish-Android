@@ -1,0 +1,175 @@
+{
+  "id": "id_005",
+  "system": "infectious_disease",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lopez",
+  "age": 38,
+  "gender": "male",
+  "chief_complaint": "progressive severe headache, confusion, fever, and neck stiffness in HIV patient",
+  "hpi_details": "38M with untreated HIV (CD4 35) presenting with subacute headache and lethargy. High opening pressure on LP, India ink smear positive for encapsulated yeast, positive Cryptococcal antigen.",
+  "ideas": "thinks this is related to disseminated cryptococcal meningitis in aids",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "cd4_count",
+      "test": "CD4 T-cell count",
+      "value": "35",
+      "unit": "cells/mcL",
+      "reference_range": "500-1500",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "csf_opening_pressure",
+      "test": "CSF opening pressure",
+      "value": "320",
+      "unit": "mmH2O",
+      "reference_range": "60-200",
+      "flag": "critical",
+      "specimen": "CSF"
+    },
+    {
+      "id": "csf_india_ink",
+      "test": "CSF India ink preparation",
+      "value": "Encapsulated budding yeast seen",
+      "reference_range": "No organisms seen",
+      "flag": "critical",
+      "specimen": "CSF"
+    },
+    {
+      "id": "cryptococcal_antigen",
+      "test": "CSF cryptococcal antigen",
+      "value": "Positive, titer 1:2048",
+      "reference_range": "Negative",
+      "flag": "critical",
+      "specimen": "CSF"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Disseminated Cryptococcal Meningitis in AIDS evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Disseminated Cryptococcal Meningitis in AIDS is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes induction antifungal therapy with liposomal amphotericin B plus flucytosine combined with aggressive control of elevated intracranial pressure via serial therapeutic lumbar punctures, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive severe headache, confusion, fever, and neck stiffness in HIV patient",
+      "Key HPI features: 38M with untreated HIV (CD4 35) presenting with subacute headache and lethargy. High opening pressure on LP, India ink smear positive for encapsulated yeast, positive Cryptococcal antigen.",
+      "Objective/Exam findings: Vitals: Temp 38.1C, HR 92, BP 112/70, RR 16. Lethargic but oriented, mild nuchal rigidity, papilledema on fundoscopy, oral thrush; no focal neurological deficits. Bloods: CD4 35 cells/uL, HIV viral load markedly elevated. Lumbar puncture: Opening pressure markedly elevated at 320 mmH2O; CSF WBC mildly elevated at 18 /uL (lymphocyte-predominant); CSF protein 65 mg/dL; CSF glucose 42 mg/dL. India ink smear positive for encapsulated budding yeast; serum/CSF Cryptococcal antigen (CrAg) positive at high titer (1:2048).",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Disseminated Cryptococcal Meningitis in AIDS.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bacterial meningitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rising intracranial pressure symptoms (worsening headache, vision changes) — needs therapeutic lumbar punctures."
+    ],
+    "management_principles": [
+      "Start induction therapy with IV Liposomal Amphotericin B (3-4 mg/kg/day) plus oral Flucytosine (25 mg/kg PO q6h) for a minimum of 2 weeks",
+      "Aggressively manage elevated intracranial pressure with serial large-volume therapeutic lumbar punctures, aiming to reduce opening pressure below 20 cmH2O or by at least 50%",
+      "Transition to consolidation therapy with oral Fluconazole 400mg daily for 8 weeks, followed by maintenance/secondary prophylaxis Fluconazole 200mg daily until CD4 > 100 cells/uL for >3 months on suppressive ART",
+      "Defer ART initiation for 4-6 weeks after starting antifungal therapy to reduce the risk of immune reconstitution inflammatory syndrome (IRIS)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: progressive severe headache, confusion, fever, and neck stiffness in HIV patient\n\n38M with untreated HIV (CD4 35) presenting with subacute headache and lethargy. High opening pressure on LP, India ink smear positive for encapsulated yeast, positive Cryptococcal antigen.",
+    "objective": "Vitals: Temp 38.1C, HR 92, BP 112/70, RR 16. Lethargic but oriented, mild nuchal rigidity, papilledema on fundoscopy, oral thrush; no focal neurological deficits. Bloods: CD4 35 cells/uL, HIV viral load markedly elevated. Lumbar puncture: Opening pressure markedly elevated at 320 mmH2O; CSF WBC mildly elevated at 18 /uL (lymphocyte-predominant); CSF protein 65 mg/dL; CSF glucose 42 mg/dL. India ink smear positive for encapsulated budding yeast; serum/CSF Cryptococcal antigen (CrAg) positive at high titer (1:2048).",
+    "assessment": "Disseminated Cryptococcal Meningitis (Cryptococcus neoformans) in AIDS (CD4 35) with markedly elevated intracranial pressure.",
+    "plan": "1. Start induction therapy with IV Liposomal Amphotericin B (3-4 mg/kg/day) plus oral Flucytosine (25 mg/kg PO q6h) for a minimum of 2 weeks. 2. Aggressively manage elevated intracranial pressure with serial large-volume therapeutic lumbar punctures, aiming to reduce opening pressure below 20 cmH2O or by at least 50%. 3. Transition to consolidation therapy with oral Fluconazole 400mg daily for 8 weeks, followed by maintenance/secondary prophylaxis Fluconazole 200mg daily until CD4 > 100 cells/uL for >3 months on suppressive ART. 4. Defer ART initiation for 4-6 weeks after starting antifungal therapy to reduce the risk of immune reconstitution inflammatory syndrome (IRIS)."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Disseminated Cryptococcal Meningitis in AIDS",
+    "Formulate prioritized differential diagnosis for progressive severe headache, confusion, fever, and neck stiffness in HIV patient",
+    "Select appropriate laboratory and imaging studies for infectious_disease",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Disseminated Cryptococcal Meningitis in AIDS",
+    "one_liner": "An opportunistic fungal infection of the meninges in advanced, untreated HIV (CD4 <50), presenting subacutely with headache and lethargy and diagnosed by a very high spinal fluid opening pressure.",
+    "differentials": [
+      "Bacterial meningitis",
+      "Tuberculous meningitis",
+      "CNS toxoplasmosis"
+    ],
+    "red_flags": [
+      "Rising intracranial pressure symptoms (worsening headache, vision changes) — needs therapeutic lumbar punctures"
+    ],
+    "must_ask": [
+      {
+        "objective": "HIV status and CD4 count",
+        "say": "Do you know your HIV status, and are you on antiretroviral treatment?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "HIV",
+          "CD4",
+          "ART"
+        ]
+      },
+      {
+        "objective": "Headache character and progression",
+        "say": "How has the headache changed over the past days or weeks?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "subacute",
+          "worsening"
+        ]
+      },
+      {
+        "objective": "Mental status",
+        "say": "Have you felt more lethargic or had trouble concentrating?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lethargy",
+          "confusion"
+        ]
+      },
+      {
+        "objective": "Fever and neck stiffness",
+        "say": "Have you had fever or neck stiffness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Vision changes",
+        "say": "Any changes in your vision?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vision"
+        ]
+      }
+    ]
+  }
+}

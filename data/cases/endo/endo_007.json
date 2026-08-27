@@ -1,0 +1,130 @@
+{
+  "id": "endo_007",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Green",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "episodic pounding headaches, sweating, and severe heart racing for 4 months",
+  "hpi_details": "50F describes 4-month history of sudden, unprovoked episodes lasting 15-30 minutes characterized by throbbing headache, drenching sweats, severe palpitations, and extreme panic. Episodes occur 2-3 times per week.",
+  "ideas": "thinks she is having panic attacks or early menopause flashes",
+  "concerns": "alarmed by how high her blood pressure spikes during these attacks (up to 210/120)",
+  "expectations": "wants medication to stop these terrifying spells",
+  "pmh": "Paroxysmal hypertension resistant to standard therapy",
+  "medications": "Lisinopril 20mg, Amlodipine 10mg",
+  "social_hx": "High school principal, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Pheochromocytoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pheochromocytoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Order CT or MRI of abdomen/adrenals with adrenal protocol, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: episodic pounding headaches, sweating, and severe heart racing for 4 months",
+      "Key HPI features: 50F describes 4-month history of sudden, unprovoked episodes lasting 15-30 minutes characterized by throbbing headache, drenching sweats, severe palpitations, and extreme panic. Episodes occur 2-3 times per week.",
+      "Objective/Exam findings: Vitals (between episodes): HR 76, BP 142/88. Physical exam normal between attacks. Lab screening: Plasma free metanephrines elevated >4x upper limit of normal; 24-hour urinary fractionated metanephrines and catecholamines markedly elevated.",
+      "Relevant background/PMH: Paroxysmal hypertension resistant to standard therapy",
+      "Current medications: Lisinopril 20mg, Amlodipine 10mg"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pheochromocytoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Panic disorder without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Blood pressure spikes above 200 systolic during episodes — needs urgent evaluation and careful pre-treatment before any intervention."
+    ],
+    "management_principles": [
+      "Order CT or MRI of abdomen/adrenals with adrenal protocol",
+      "Initiate mandatory preoperative alpha-adrenergic blockade with Phenoxybenzamine (or Doxazosin) for 10-14 days BEFORE initiating any beta-blocker (to prevent hypertensive crisis)",
+      "Surgical consultation for adrenalectomy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Pheochromocytoma and Paraganglioma",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/pheochromocytoma"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "50F presenting with classic paroxysmal triad of pheochromocytoma: episodic headache, diaphoresis, and tachycardia with severe hypertension.",
+    "objective": "Vitals (between episodes): HR 76, BP 142/88. Physical exam normal between attacks. Lab screening: Plasma free metanephrines elevated >4x upper limit of normal; 24-hour urinary fractionated metanephrines and catecholamines markedly elevated.",
+    "assessment": "Pheochromocytoma (catecholamine-secreting adrenal medullary tumor).",
+    "plan": "Order CT or MRI of abdomen/adrenals with adrenal protocol. Initiate mandatory preoperative alpha-adrenergic blockade with Phenoxybenzamine (or Doxazosin) for 10-14 days BEFORE initiating any beta-blocker (to prevent hypertensive crisis). Surgical consultation for adrenalectomy."
+  },
+  "learning_objectives": [
+    "Identify the classic symptom triad of pheochromocytoma (headache, sweating, tachycardia)",
+    "Select appropriate biochemical screening tests (plasma free or 24-hour urinary metanephrines)",
+    "Explain the absolute critical rule of alpha-blockade before beta-blockade in pheochromocytoma",
+    "Outline perioperative hemodynamic management goals"
+  ],
+  "teaching": {
+    "diagnosis": "Pheochromocytoma",
+    "one_liner": "A catecholamine-secreting adrenal tumor causing episodic spells of pounding headache, sweating, and severe blood pressure spikes — before surgery, alpha-blockade must be started well before any beta-blocker to avoid a hypertensive crisis.",
+    "differentials": [
+      "Panic disorder",
+      "Essential (primary) hypertension",
+      "Hyperthyroidism"
+    ],
+    "red_flags": [
+      "Blood pressure spikes above 200 systolic during episodes — needs urgent evaluation and careful pre-treatment before any intervention"
+    ],
+    "must_ask": [
+      {
+        "objective": "Episode character",
+        "say": "Can you describe what happens during one of these spells — headache, sweating, racing heart?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "headache",
+          "sweating",
+          "palpitations"
+        ]
+      },
+      {
+        "objective": "Frequency and duration",
+        "say": "How often do these episodes happen, and how long do they last?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Blood pressure during episodes",
+        "say": "How high does your blood pressure go during these spells?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "blood pressure spike"
+        ]
+      },
+      {
+        "objective": "Trigger",
+        "say": "Does anything seem to trigger these episodes?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does anyone in your family have similar episodes or endocrine tumors?",
+        "domains": [
+          "family_hx"
+        ]
+      }
+    ]
+  }
+}

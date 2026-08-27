@@ -1,0 +1,156 @@
+{
+  "id": "hemato_005",
+  "system": "hematology_oncology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Nguyen",
+  "age": 22,
+  "gender": "male",
+  "chief_complaint": "excruciating pain and rapid swelling in right knee after minor twist",
+  "hpi_details": "22M with known severe Hemophilia A (<1% Factor VIII) presenting with acute tense knee hemarthrosis requiring immediate Factor VIII infusion before X-rays.",
+  "ideas": "thinks this is related to hemophilia a acute hemarthrosis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "factor_viii_activity",
+      "test": "Factor VIII activity",
+      "value": "<1",
+      "unit": "%",
+      "reference_range": "50-150",
+      "flag": "critical",
+      "specimen": "Blood",
+      "note": "Known severe hemophilia A; factor replacement must precede imaging"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hemophilia A — Acute Hemarthrosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hemophilia A — Acute Hemarthrosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate Factor VIII replacement before imaging or further workup, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: excruciating pain and rapid swelling in right knee after minor twist",
+      "Key HPI features: 22M with known severe Hemophilia A (<1% Factor VIII) presenting with acute tense knee hemarthrosis requiring immediate Factor VIII infusion before X-rays.",
+      "Objective/Exam findings: Vitals: HR 92, BP 122/78, afebrile. Right knee markedly swollen, warm, tense on palpation, and held in flexion with severely limited range of motion due to pain; no overlying skin breach or erythema tracking. Bloods: Factor VIII activity <1%, PTT markedly prolonged, PT/INR normal, platelet count normal.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hemophilia A — Acute Hemarthrosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any head, neck, or abdominal trauma in a known hemophiliac — always treat first, image second."
+    ],
+    "management_principles": [
+      "Immediate Factor VIII replacement (target 50-100% activity, e.g. 50 IU/kg IV) before X-rays or further workup — 'treat first, image second'",
+      "RICE therapy (rest, ice, compression, elevation) and analgesia with acetaminophen; avoid NSAIDs/aspirin and IM injections due to bleeding risk",
+      "Avoid arthrocentesis unless compartment syndrome or septic arthritis is strongly suspected",
+      "Hematology consultation for factor level confirmation, inhibitor screening, and physical therapy referral once the acute bleed resolves"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "22M with known severe Hemophilia A (<1% Factor VIII) presenting with excruciating pain and rapid swelling in the right knee after a minor twist, consistent with acute tense hemarthrosis requiring immediate Factor VIII infusion before X-rays.",
+    "objective": "Vitals: HR 92, BP 122/78, afebrile. Right knee markedly swollen, warm, tense on palpation, and held in flexion with severely limited range of motion due to pain; no overlying skin breach or erythema tracking. Bloods: Factor VIII activity <1%, PTT markedly prolonged, PT/INR normal, platelet count normal.",
+    "assessment": "Acute hemarthrosis of the right knee in a patient with severe Hemophilia A (<1% Factor VIII).",
+    "plan": "1. Immediate Factor VIII replacement (target 50-100% activity, e.g. 50 IU/kg IV) before X-rays or further workup — 'treat first, image second'. 2. RICE therapy (rest, ice, compression, elevation) and acetaminophen for analgesia; avoid NSAIDs/aspirin and IM injections. 3. Avoid arthrocentesis unless compartment syndrome or septic arthritis is strongly suspected. 4. Hematology consultation for factor level confirmation, inhibitor screening, and physical therapy referral once the acute bleed resolves."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hemophilia A Acute Hemarthrosis",
+    "Formulate prioritized differential diagnosis for excruciating pain and rapid swelling in right knee after minor twist",
+    "Select appropriate laboratory studies to confirm hemophilic hemarthrosis, including Factor VIII activity and PTT",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Hemophilia A — Acute Hemarthrosis",
+    "one_liner": "Severe Factor VIII deficiency means even minor trauma causes bleeding into a joint space, producing rapid painful swelling — treated with immediate Factor VIII replacement before any imaging.",
+    "differentials": [
+      "Septic arthritis",
+      "Traumatic ligament injury without hemophilia",
+      "Gout"
+    ],
+    "red_flags": [
+      "Any head, neck, or abdominal trauma in a known hemophiliac — always treat first, image second"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism of injury",
+        "say": "What exactly happened to your knee — how did you twist it?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "twist",
+          "injury"
+        ]
+      },
+      {
+        "objective": "Known bleeding disorder",
+        "say": "You have hemophilia A — do you know your factor level, and when was your last infusion?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "hemophilia",
+          "factor viii",
+          "infusion"
+        ]
+      },
+      {
+        "objective": "Swelling onset and speed",
+        "say": "How quickly did the knee swell up after the twist?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "swelling",
+          "quickly"
+        ]
+      },
+      {
+        "objective": "Pain severity and joint tightness",
+        "say": "How severe is the pain, and does the joint feel tight or hot?",
+        "domains": [
+          "severity",
+          "character"
+        ],
+        "keywords": [
+          "tight",
+          "hot"
+        ]
+      },
+      {
+        "objective": "Prior joint bleeds",
+        "say": "Has this same joint bled before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "before",
+          "same joint"
+        ]
+      }
+    ]
+  }
+}

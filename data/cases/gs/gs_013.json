@@ -1,0 +1,167 @@
+{
+  "id": "gs_013",
+  "system": "general_surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Allen",
+  "age": 45,
+  "gender": "male",
+  "chief_complaint": "right lower quadrant abdominal pain and fever",
+  "hpi_details": "45M presents with 12 hours of periumbilical pain that has now migrated to the right lower quadrant, accompanied by nausea, one episode of vomiting, and subjective fever.",
+  "ideas": "thinks it might be appendicitis",
+  "concerns": "worried about needing emergency surgery",
+  "expectations": "wants pain relief and a CT scan",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Non-smoker, drinks occasionally",
+  "investigation_events": [
+    {
+      "id": "urgent_appendicitis_workup",
+      "title": "Urgent appendicitis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "white blood cell count",
+        "ct abdomen",
+        "ct abdomen and pelvis"
+      ],
+      "availability_message": "The urgent appendicitis results are now available; IV fluids, analgesia, antibiotics, and surgical consultation should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "14.9",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        },
+        {
+          "id": "ct_appendix",
+          "test": "CT abdomen and pelvis with IV contrast",
+          "value": "Dilated appendix measuring 10 mm with periappendiceal fat stranding; no abscess, perforation, or free air",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Appendicitis",
+    "core_concepts": [
+      "Classic presentation is periumbilical pain migrating to RLQ.",
+      "Diagnosis is often confirmed with CT scan in adults.",
+      "Treatment is appendectomy."
+    ],
+    "diagnostic_clues": [
+      "RLQ pain",
+      "Nausea/vomiting",
+      "Fever"
+    ],
+    "common_misconceptions": [
+      "Assuming all RLQ pain is appendicitis."
+    ],
+    "dangerous_errors": [
+      "Discharging patient with classic migrating pain without imaging or observation."
+    ],
+    "management_principles": [
+      "NPO, IV fluids, analgesia, antibiotics, surgery consultation."
+    ],
+    "boundaries_and_exceptions": [
+      "Atypical presentations are common."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "45M with migrating RLQ pain, nausea, and fever.",
+    "objective": "T 38.2C, RLQ tenderness with guarding (McBurney's point).",
+    "assessment": "Acute appendicitis.",
+    "plan": "CT abdomen/pelvis, NPO, IV fluids, surgery consult."
+  },
+  "learning_objectives": [
+    "Recognize typical appendicitis.",
+    "Order appropriate imaging."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Appendicitis",
+    "one_liner": "Classic acute appendicitis presenting with migrating RLQ pain, fever, and nausea.",
+    "differentials": [
+      "Gastroenteritis",
+      "Renal colic",
+      "Mesenteric adenitis"
+    ],
+    "red_flags": [
+      "Rigidity indicating perforation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Migration of pain",
+        "say": "Did the pain start around your belly button and then move to your lower right side?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "migrate",
+          "moved",
+          "belly button",
+          "right side"
+        ]
+      },
+      {
+        "objective": "Onset and duration",
+        "say": "When exactly did the pain start, and how has it changed since then?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "hours",
+          "started"
+        ]
+      },
+      {
+        "objective": "Associated GI symptoms",
+        "say": "Have you lost your appetite, felt nauseated, or vomited?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "appetite",
+          "nausea",
+          "vomit"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fever or chills?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills"
+        ]
+      },
+      {
+        "objective": "Aggravating movement",
+        "say": "Does moving, coughing, or pressing on your belly make the pain worse?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "moving",
+          "coughing",
+          "worse"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,180 @@
+{
+  "id": "urology_021",
+  "system": "urology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Park",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "difficulty urinating, weak urine stream, and waking up 4 times at night",
+  "hpi_details": "65M reports 1 year of progressive difficulty starting his urine stream (hesitancy), a weak and spraying stream, feeling that his bladder is not completely empty, and needing to wake up 4 times nightly to urinate.",
+  "ideas": "thinks it is a normal prostate enlargement of aging",
+  "concerns": "worried about prostate cancer",
+  "expectations": "wants prostate check and medication",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine 5mg daily",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "bph_urinalysis",
+      "title": "Urinalysis",
+      "order_terms": ["urinalysis", "urine dip", "urine test", "ua"],
+      "availability_message": "The urinalysis result is now available.",
+      "results": [
+        {"id": "urine_leukocyte_esterase", "test": "Leukocyte esterase", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_nitrite", "test": "Nitrite", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_blood", "test": "Blood", "value": "Negative", "flag": "normal", "specimen": "Urine"}
+      ]
+    },
+    {
+      "id": "bph_post_void_residual",
+      "title": "Post-void residual bladder scan",
+      "order_terms": ["post void residual", "pvr", "bladder scan", "residual urine"],
+      "availability_message": "The post-void residual measurement is now available.",
+      "results": [
+        {"id": "post_void_residual", "test": "Post-void residual", "value": "164", "unit": "mL", "reference_range": "<100", "flag": "high"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Benign Prostatic Hyperplasia (BPH) evaluation and management",
+    "core_concepts": [
+      "BPH is a common cause of male lower urinary tract symptoms, but symptoms do not establish prostate enlargement or exclude cancer, stricture, infection, bladder dysfunction, or medication effects.",
+      "Assess symptom severity and bother (for example, IPSS), fluid/caffeine intake, nocturia contributors, hematuria, dysuria, neurologic symptoms, constipation, and drugs that can worsen retention; perform abdominal examination and DRE.",
+      "Urinalysis is part of the initial assessment; use post-void residual, uroflowmetry, renal function testing, PSA, imaging, or cystoscopy selectively when results will change management or complications are suspected.",
+      "Shared treatment choices include watchful waiting and lifestyle measures, alpha-blocker therapy for prompt symptom relief, and a 5-alpha-reductase inhibitor for men with demonstrable enlargement who accept delayed benefit and sexual adverse effects."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: difficulty urinating, weak urine stream, and waking up 4 times at night",
+      "Key HPI features: 65M reports 1 year of progressive difficulty starting his urine stream (hesitancy), a weak and spraying stream, feeling that his bladder is not completely empty, and needing to wake up 4 times nightly to urinate.",
+      "Objective/Exam findings: Obtain vital signs; assess for palpable bladder, neurologic deficits, and DRE findings; obtain urinalysis. Measure post-void residual and creatinine when retention, recurrent UTI, stones, hematuria, or renal impairment is suspected.",
+      "Relevant background/PMH: Hypertension",
+      "Current medications: Amlodipine 5mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Benign Prostatic Hyperplasia (BPH).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Prostate adenocarcinoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Missing acute urinary retention, fever/systemic illness, severe suprapubic pain, or an obstructed infected urinary tract; these need urgent assessment and bladder drainage when indicated.",
+      "Overlooking gross hematuria, recurrent infection, stones, hydronephrosis, renal dysfunction, abnormal DRE, bone pain, or neurologic deficits that warrant urgent/specialist evaluation.",
+      "Starting an alpha-blocker without counseling about dizziness, orthostatic hypotension, syncope, falls, and interaction with antihypertensives or PDE5 inhibitors; Mr. Park takes amlodipine.",
+      "Failing to ask about planned cataract surgery before tamsulosin, or to counsel on 5-alpha-reductase-inhibitor sexual/mood adverse effects and PSA suppression."
+    ],
+    "management_principles": [
+      "Stratify by symptom bother, IPSS, complications, DRE, urinalysis, and selective PVR/renal function; discuss PSA only after shared decision-making because it informs cancer risk and can guide 5-ARI use.",
+      "For nonbothersome uncomplicated symptoms, offer fluid timing, reduced evening alcohol/caffeine, constipation management, and follow-up rather than mandatory medication.",
+      "If medication is chosen, review blood pressure and fall risk before an alpha-blocker; consider combination therapy only when prostate enlargement and progression risk justify it.",
+      "Refer to urology for recurrent retention, recurrent UTI, gross hematuria, bladder stones, hydronephrosis/renal impairment, suspected cancer/stricture, refractory symptoms, or procedural discussion."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Benign Prostatic Hyperplasia (BPH) causing bladder outlet obstruction. difficulty urinating, weak urine stream, and waking up 4 times at night. 65M reports 1 year of progressive difficulty starting his urine stream (hesitancy), a weak and spraying stream, feeling that his bladder is not completely empty, and needing to wake up 4 times nightly to urinate.",
+    "objective": "Obtain vital signs, abdominal examination for a distended bladder, focused neurologic examination and DRE; obtain urinalysis. Check PVR and renal function if retention or complications are suspected; use PSA and further testing selectively after counseling.",
+    "assessment": "Clinical presentation highly suggestive of Benign Prostatic Hyperplasia (BPH) causing bladder outlet obstruction.",
+    "plan": "Quantify symptoms and exclude infection/complications. Discuss lifestyle changes and shared medication options. If an alpha-blocker is appropriate, counsel Mr. Park about orthostatic symptoms and additive blood-pressure lowering with amlodipine; ask about cataract surgery. Arrange urology review for complicated, refractory, or suspicious findings, and seek urgent care for inability to void, fever/systemic illness, severe pain, or hematuria."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Benign Prostatic Hyperplasia (BPH) causing bladder outlet obstruction.",
+    "Formulate prioritized differential diagnosis for difficulty urinating, weak urine stream, and waking up 4 times at night",
+    "Select appropriate laboratory and imaging studies for urology",
+    "Implement evidence-based acute and long-term management strategies for Benign Prostatic Hyperplasia (BPH) causing bladder outlet obstruction."
+  ],
+  "teaching": {
+    "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
+    "one_liner": "Non-malignant enlargement of the prostate gland leading to lower urinary tract symptoms (LUTS) and urinary retention.",
+    "differentials": [
+      "Prostate adenocarcinoma",
+      "Urethral stricture",
+      "Neurogenic bladder"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Hydronephrosis with renal failure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Voiding symptoms - Hesitancy and weak stream",
+        "say": "Do you have to wait or strain before urine starts coming out, and is the stream weak?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "strain",
+          "stream",
+          "weak",
+          "hesitancy",
+          "dribbling"
+        ]
+      },
+      {
+        "objective": "Storage symptoms - Nocturia and frequency",
+        "say": "How many times do you wake up at night to urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "urinate",
+          "nocturia",
+          "frequency",
+          "waking"
+        ]
+      },
+      {
+        "objective": "Sensation of incomplete emptying",
+        "say": "After finishing urination, do you still feel like your bladder is not completely empty?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "empty",
+          "bladder",
+          "incomplete",
+          "residual",
+          "emptying"
+        ]
+      },
+      {
+        "objective": "Urgency and urge incontinence",
+        "say": "Do you get sudden powerful urges to urinate that are hard to hold?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urges",
+          "hold",
+          "urgency",
+          "urgent",
+          "leakage"
+        ]
+      },
+      {
+        "objective": "Current BPH medication screening",
+        "say": "Are you taking medications like tamsulosin or finasteride for your prostate?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "tamsulosin",
+          "finasteride",
+          "prostate",
+          "medications",
+          "pills"
+        ]
+      }
+    ]
+  }
+}

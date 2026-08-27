@@ -1,0 +1,177 @@
+{
+  "id": "ent_001",
+  "system": "otolaryngology (ent)",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 48,
+  "gender": "male",
+  "chief_complaint": "severe right-sided facial paralysis, agonizing ear pain, vesicular rash inside ear canal, and vertigo (Ramsay Hunt Syndrome)",
+  "hpi_details": "48M presents with 3-day history of excruciating, deep burning pain deep inside his right ear accompanied by severe spinning vertigo and hearing loss. Yesterday morning woke up with complete paralysis of the right side of his face (`I can't close my right eye or smile on that side`). Noticed painful fluid-filled blisters inside his right ear canal and on the roof of his mouth.",
+  "ideas": "terrified he had a major stroke because half his face is drooped and paralyzed",
+  "concerns": "in agonizing ear pain and unable to close right eyelid leading to dry burning eye",
+  "expectations": "wants immediate stroke evaluation, antiviral therapy, and eye protection",
+  "pmh": "No prior chronic medical history, history of chickenpox in childhood",
+  "medications": "None",
+  "social_hx": "High school teacher, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_audiogram",
+      "title": "Urgent audiogram",
+      "order_terms": [
+        "audiogram",
+        "audiometry",
+        "hearing test",
+        "hearing assessment"
+      ],
+      "availability_message": "The urgent audiogram is now available; antiviral therapy, corticosteroid therapy, and eye protection should not be delayed while hearing is assessed.",
+      "results": [
+        {
+          "id": "right_pure_tone_average",
+          "test": "Right-ear pure-tone average",
+          "value": "55",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "high",
+          "collected_at": "During urgent ENT assessment",
+          "note": "Moderately severe sensorineural hearing loss"
+        },
+        {
+          "id": "right_word_recognition",
+          "test": "Right-ear word recognition score",
+          "value": "68",
+          "unit": "%",
+          "reference_range": ">=90",
+          "flag": "low",
+          "collected_at": "During urgent ENT assessment"
+        },
+        {
+          "id": "left_pure_tone_average",
+          "test": "Left-ear pure-tone average",
+          "value": "15",
+          "unit": "dB HL",
+          "reference_range": "<=25",
+          "flag": "normal",
+          "collected_at": "During urgent ENT assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ramsay Hunt Syndrome (Herpes Zoster Oticus) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ramsay Hunt Syndrome (Herpes Zoster Oticus) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt combination antiviral/steroid therapy plus ocular protection, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe right-sided facial paralysis, agonizing ear pain, vesicular rash inside ear canal, and vertigo (Ramsay Hunt Syndrome)",
+      "Key HPI features: 48M presents with 3-day history of excruciating, deep burning pain deep inside his right ear accompanied by severe spinning vertigo and hearing loss. Yesterday morning woke up with complete paralysis of the right side of his face (`I can't close my right eye or smile on that side`). Noticed painful fluid-filled blisters inside his right ear canal and on the roof of his mouth.",
+      "Objective/Exam findings: Vitals: HR 82, BP 130/80. Neurological exam reveals complete right lower motor neuron facial nerve (CN VII) palsy involving both upper and lower facial musculature (unable to wrinkle forehead, raise eyebrow, or close right eyelid; House-Brackmann Grade V/VI). Right ear examination demonstrates grouped erythematous vesicles and ulcerations involving the conchal bowl and external auditory canal, with red bulging tympanic membrane. Audiogram/tuning fork confirms right sensorineural hearing loss (CN VIII involvement) and spontaneous horizontal nystagmus with vertigo.",
+      "Relevant background/PMH: No prior chronic medical history, history of chickenpox in childhood"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ramsay Hunt Syndrome (Herpes Zoster Oticus).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bell's palsy (no vesicles, no hearing loss) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inability to close the eye — needs urgent eye protection to prevent corneal damage."
+    ],
+    "management_principles": [
+      "STAT combination pharmacotherapy: initiate high-dose Oral Valacyclovir 1000 mg PO TID for 7-10 days PLUS high-dose Oral Prednisone (60 mg daily for 5 days, then tapering over 10 days) started within 72 hours of onset to maximize facial nerve recovery rates",
+      "Critical ocular protection: prescribe preservative-free artificial tear drops during the day, lubricating eye ointment at night, and tape right eyelid shut at bedtime (or place moisture chamber goggles) to prevent exposure keratopathy and corneal ulceration from incomplete lid closure (lagophthalmos)",
+      "ENT and Ophthalmology follow-up"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "48M presenting with acute otalgia, ipsilateral lower motor neuron facial nerve paralysis, vesicular eruption of the external auditory canal, and vestibulocochlear dysfunction pathognomonic for Ramsay Hunt Syndrome (Herpes Zoster Oticus).",
+    "objective": "Vitals: HR 82, BP 130/80. Neurological exam reveals complete right lower motor neuron facial nerve (CN VII) palsy involving both upper and lower facial musculature (unable to wrinkle forehead, raise eyebrow, or close right eyelid; House-Brackmann Grade V/VI). Right ear examination demonstrates grouped erythematous vesicles and ulcerations involving the conchal bowl and external auditory canal, with red bulging tympanic membrane. Audiogram/tuning fork confirms right sensorineural hearing loss (CN VIII involvement) and spontaneous horizontal nystagmus with vertigo.",
+    "assessment": "Ramsay Hunt Syndrome (Herpes Zoster Oticus with CN VII and CN VIII polyneuropathy) secondary to Varicella-Zoster Virus reactivation in the geniculate ganglion.",
+    "plan": "1. STAT combination pharmacotherapy: initiate high-dose Oral Valacyclovir 1000 mg PO TID for 7-10 days PLUS high-dose Oral Prednisone (60 mg daily for 5 days, then tapering over 10 days) started within 72 hours of onset to maximize facial nerve recovery rates. 2. Critical ocular protection: prescribe preservative-free artificial tear drops during the day, lubricating eye ointment at night, and tape right eyelid shut at bedtime (or place moisture chamber goggles) to prevent exposure keratopathy and corneal ulceration from incomplete lid closure (lagophthalmos). ENT and Ophthalmology follow-up."
+  },
+  "learning_objectives": [
+    "Differentiate lower motor neuron facial palsy (Bell palsy / Ramsay Hunt syndrome involving entire upper and lower hemiface due to peripheral CN VII lesion) from upper motor neuron facial palsy (stroke involving lower hemiface only while sparing forehead wrinkling due to bilateral cortical innervation of forehead)",
+    "Recognize clinical triad of Ramsay Hunt Syndrome (severe otalgia, ipsilateral LMN facial paralysis, and erythematous vesicular eruption in external ear canal/concha or hard palate)",
+    "Understand the therapeutic priority of initiating combination high-dose antiviral (Valacyclovir) and systemic corticosteroid (Prednisone) within the first 72 hours of symptom onset",
+    "Implement aggressive eye care protocols (lubricating ointment, taping lid shut at night) to prevent blinding exposure keratopathy secondary to lagophthalmos"
+  ],
+  "teaching": {
+    "diagnosis": "Ramsay Hunt Syndrome (Herpes Zoster Oticus)",
+    "one_liner": "Reactivation of varicella-zoster virus in the geniculate ganglion causes severe ear pain, facial paralysis, and vesicles in the ear canal — unlike a stroke, it also affects hearing/balance, and antivirals plus steroids within 72 hours give the best chance of facial nerve recovery.",
+    "differentials": [
+      "Bell's palsy (no vesicles, no hearing loss)",
+      "Stroke (would spare the forehead)",
+      "Otitis media with facial nerve involvement"
+    ],
+    "red_flags": [
+      "Inability to close the eye — needs urgent eye protection to prevent corneal damage"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ear pain and vesicles",
+        "say": "How severe is the deep ear pain, and have you seen blisters inside your ear or mouth?",
+        "domains": [
+          "severity",
+          "character"
+        ],
+        "keywords": [
+          "ear pain",
+          "vesicles",
+          "blisters"
+        ]
+      },
+      {
+        "objective": "Facial weakness pattern",
+        "say": "Can you close your eye and smile on that side, including raising your eyebrow?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "forehead",
+          "close eye"
+        ]
+      },
+      {
+        "objective": "Hearing and balance",
+        "say": "Has your hearing changed, or do you feel like the room is spinning?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "hearing loss",
+          "vertigo"
+        ]
+      },
+      {
+        "objective": "Onset timing",
+        "say": "How many days ago did the ear pain start, and when did the face droop?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Chickenpox history",
+        "say": "Did you have chickenpox as a child?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

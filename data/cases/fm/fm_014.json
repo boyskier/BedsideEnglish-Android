@@ -1,0 +1,147 @@
+{
+  "id": "fm_014",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Miller",
+  "age": 52,
+  "gender": "male",
+  "chief_complaint": "fever, productive cough with rust-colored sputum, shortness of breath, and focal right lower lobe crackles/infiltrate on chest X-ray",
+  "hpi_details": "52M presents with 3 days of fever, shaking chills, and a productive cough now bringing up rust-colored sputum, with progressively worsening shortness of breath on exertion. Reports right-sided pleuritic chest pain worse with deep breathing. Denies confusion, hemoptysis, recent travel, or sick contacts. No prior episodes of pneumonia.",
+  "ideas": "thinks this is related to community acquired pneumonia outpatient treatment",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "urgent_chest_xray",
+      "title": "Urgent chest radiograph",
+      "order_terms": [
+        "chest x ray",
+        "chest x-ray",
+        "chest radiograph",
+        "cxr"
+      ],
+      "availability_message": "The urgent chest radiograph is now available.",
+      "results": [
+        {
+          "id": "right_lower_lobe_infiltrate",
+          "test": "Chest radiograph, PA and lateral",
+          "value": "Focal right lower-lobe air-space opacity with air bronchograms, consistent with lobar pneumonia; no pleural effusion",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Community-Acquired Pneumonia (outpatient, low severity) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Community-Acquired Pneumonia (outpatient, low severity) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard outpatient management for low-severity CAP (CURB-65 0-1) in a patient with stable comorbidities (hypertension, dyslipidemia) emphasizes combination therapy with a beta-lactam plus a macrolide (or a respiratory fluoroquinolone alone), per IDSA/ATS guidelines, since comorbidities broaden the expected pathogens beyond what amoxicillin monotherapy reliably covers.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, productive cough with rust-colored sputum, shortness of breath, and focal right lower lobe crackles/infiltrate on chest X-ray",
+      "Key HPI features: 52M presents with 3 days of fever, shaking chills, and a productive cough now bringing up rust-colored sputum, with progressively worsening shortness of breath on exertion. Reports right-sided pleuritic chest pain worse with deep breathing. Denies confusion, hemoptysis, recent travel, or sick contacts. No prior episodes of pneumonia.",
+      "Objective/Exam findings: Vitals: Temp 38.9C, HR 102, RR 22, BP 128/82, SpO2 94% on room air. CURB-65 score: 0 (no confusion, normal renal function, RR <30, BP >90/60, age <65) — low severity, appropriate for outpatient management. Lung exam reveals focal crackles and dullness to percussion over the right lower lobe, with increased tactile fremitus and egophony ('E to A' changes) consistent with lobar consolidation. No signs of respiratory distress or accessory muscle use. Chest X-ray (PA/lateral) confirms a focal right lower lobe infiltrate consistent with lobar pneumonia.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Community-Acquired Pneumonia (outpatient, low severity).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute bronchitis (no focal infiltrate) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion, low blood pressure, or high respiratory rate — would raise the CURB-65 score and require admission."
+    ],
+    "management_principles": [
+      "Calculate the CURB-65 score (Confusion, elevated Urea/BUN, Respiratory rate >=30, Blood pressure <90/60, age >=65) to determine site of care; a score of 0-1 supports safe outpatient management.",
+      "Since the patient has comorbidities (hypertension, dyslipidemia), initiate combination outpatient therapy per IDSA/ATS guidelines: a beta-lactam (Amoxicillin/clavulanate 875 mg BID or high-dose Amoxicillin 1g TID) PLUS a macrolide (Azithromycin 500 mg day 1 then 250 mg daily) or Doxycycline 100 mg BID, OR a respiratory fluoroquinolone (Levofloxacin 750 mg daily) alone, for 5-7 days.",
+      "Counsel on symptomatic care (antipyretics, hydration, rest) and safety-net instructions to return immediately for worsening dyspnea, confusion, or persistent high fever, which would raise the CURB-65 score and warrant hospitalization.",
+      "Arrange follow-up in 48-72 hours to confirm clinical improvement, and schedule a repeat chest X-ray in 6-8 weeks for patients over 50 or with smoking history to exclude an underlying obstructing lesion once symptoms resolve."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "52M with hypertension and mild dyslipidemia presenting with 3 days of fever, productive cough with rust-colored sputum, pleuritic chest pain, and progressive exertional dyspnea, without confusion, consistent with Community-Acquired Pneumonia.",
+    "objective": "Vitals: Temp 38.9C, HR 102, RR 22, BP 128/82, SpO2 94% on room air. CURB-65 score: 0 (no confusion, normal renal function, RR <30, BP >90/60, age <65) — low severity, appropriate for outpatient management. Lung exam reveals focal crackles and dullness to percussion over the right lower lobe, with increased tactile fremitus and egophony ('E to A' changes) consistent with lobar consolidation. No signs of respiratory distress or accessory muscle use. Chest X-ray (PA/lateral) confirms a focal right lower lobe infiltrate consistent with lobar pneumonia.",
+    "assessment": "Community-Acquired Pneumonia, Right Lower Lobe (CURB-65 score 0, low severity), appropriate for outpatient management given stable comorbidities.",
+    "plan": "1. CURB-65 score of 0 supports outpatient management. 2. Given comorbidities (hypertension, dyslipidemia), initiate combination therapy: high-dose Amoxicillin 1g PO TID plus a macrolide (Azithromycin 500 mg day 1 then 250 mg daily) or Doxycycline 100 mg BID for 5-7 days (alternative: Levofloxacin 750 mg daily alone). 3. Symptomatic care: antipyretics, hydration, rest; continue home Lisinopril. 4. Safety-net counseling to return immediately for worsening shortness of breath, confusion, or persistent high fever. 5. Follow-up in 48-72 hours to confirm improvement; obtain a repeat chest X-ray in 6-8 weeks to confirm resolution and exclude an underlying obstructing lesion."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Community Acquired Pneumonia Outpatient Treatment",
+    "Formulate prioritized differential diagnosis for fever, productive cough with rust-colored sputum, shortness of breath, and focal right lower lobe crackles/infiltrate on chest X-ray",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Community-Acquired Pneumonia (outpatient, low severity)",
+    "one_liner": "A lung infection causing fever, rust-colored sputum, and a focal infiltrate on X-ray — the CURB-65 score determines that this healthy patient can be safely treated at home with oral antibiotics rather than admitted.",
+    "differentials": [
+      "Acute bronchitis (no focal infiltrate)",
+      "Influenza",
+      "Pulmonary embolism"
+    ],
+    "red_flags": [
+      "Confusion, low blood pressure, or high respiratory rate — would raise the CURB-65 score and require admission"
+    ],
+    "must_ask": [
+      {
+        "objective": "Cough and sputum character",
+        "say": "What color is the sputum you're coughing up?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "rust-colored"
+        ]
+      },
+      {
+        "objective": "Fever and breathing",
+        "say": "How high has your fever been, and are you short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Severity markers (CURB-65)",
+        "say": "Have you felt confused, and how has your breathing rate felt?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many days have you had these symptoms?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Baseline health",
+        "say": "Do you have any other lung or heart conditions?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

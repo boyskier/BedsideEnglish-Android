@@ -1,0 +1,138 @@
+{
+  "id": "cs_043",
+  "system": "cs",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martin",
+  "age": 17,
+  "gender": "male",
+  "chief_complaint": "sunken chest appearance causing exertional dyspnea in teen",
+  "hpi_details": "A 17-year-old male presents with a sunken chest appearance and exertional dyspnea. The deformity has become more noticeable during adolescence.",
+  "ideas": "thinks it might be related to pectus excavatum",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "No tobacco, alcohol, or drug use; high school student, plays on the soccer team.",
+  "investigation_events": [
+    {
+      "id": "pectus_severity_ct",
+      "title": "Chest CT for pectus severity",
+      "order_terms": ["chest CT", "CT chest", "Haller index", "pectus imaging"],
+      "availability_message": "The pectus chest CT report is now available.",
+      "results": [
+        {
+          "id": "ct_pectus_haller_index",
+          "test": "Chest CT",
+          "value": "Haller index 3.9 with mild right-ventricular compression",
+          "unit": "",
+          "reference_range": "Haller index <2.5",
+          "flag": "abnormal",
+          "collected_at": "Chest-wall assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Pectus Excavatum evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pectus Excavatum is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Assessment includes chest-wall imaging to characterize severity and selective cardiopulmonary testing for symptomatic patients; surgical repair is considered for significant physiologic impairment or substantial symptoms after specialist evaluation.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sunken chest appearance causing exertional dyspnea in teen",
+      "Key HPI features: A 17-year-old male presents with a sunken chest appearance and exertional dyspnea, with increased prominence during adolescence.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pectus Excavatum.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pectus Excavatum.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Anxiety-related exercise intolerance without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Palpitations or chest pain with exertion."
+    ],
+    "management_principles": [
+      "Characterize deformity severity with appropriate imaging and selectively assess cardiopulmonary impact; refer to chest-wall surgery to discuss repair when physiologic impairment or substantial symptoms are present",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sunken chest appearance causing exertional dyspnea in teen\n\nA 17-year-old male presents with a sunken chest appearance and exertional dyspnea. The deformity has become more noticeable during adolescence.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pectus Excavatum.",
+    "assessment": "Condition highly suspicious for Pectus Excavatum.",
+    "plan": "Characterize deformity severity with appropriate imaging and selectively assess cardiopulmonary impact. Refer to chest-wall surgery to discuss repair when physiologic impairment or substantial symptoms are present."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pectus Excavatum",
+    "Select appropriate diagnostic workup for Pectus Excavatum",
+    "Implement evidence-based management plan: Characterize severity, assess cardiopulmonary impact when indicated, and discuss surgical repair for significant symptoms or physiologic impairment"
+  ],
+  "teaching": {
+    "diagnosis": "Pectus Excavatum",
+    "one_liner": "A congenital chest wall deformity with a sunken sternum, causing exertional breathlessness in a teenager when severe enough to compress the heart or lungs.",
+    "differentials": [
+      "Anxiety-related exercise intolerance",
+      "Asthma"
+    ],
+    "red_flags": [
+      "Palpitations or chest pain with exertion"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and progression",
+        "say": "When did you first notice the sunken chest, and has it gotten worse?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ]
+      },
+      {
+        "objective": "Exercise tolerance",
+        "say": "How does this affect your breathing during sports?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Any palpitations or chest pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Psychological impact",
+        "say": "How does this make you feel about your appearance?",
+        "domains": [
+          "concerns"
+        ]
+      },
+      {
+        "objective": "Expectations",
+        "say": "What are you hoping the surgery will change?",
+        "domains": [
+          "expectations"
+        ]
+      }
+    ]
+  }
+}

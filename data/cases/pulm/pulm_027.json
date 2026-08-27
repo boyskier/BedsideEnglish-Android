@@ -1,0 +1,159 @@
+{
+  "id": "pulm_027",
+  "system": "pulm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Campbell",
+  "age": 68,
+  "gender": "male",
+  "chief_complaint": "progressive dyspnea, increased sputum volume, and coughing",
+  "hpi_details": "68-year-old male with severe baseline COPD (GOLD Stage 3) presents to the ED with a 3-day history of progressively worsening shortness of breath at rest, increased cough frequency, and a change in sputum from clear to thick, yellow-green. He is using his albuterol inhaler every 2 hours without relief.",
+  "ideas": "thinks it might be related to copd",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Severe COPD (GOLD stage 3)",
+  "medications": "Albuterol inhaler as needed; maintenance inhaler not documented",
+  "social_hx": "Former smoker; alcohol use not documented",
+  "investigation_events": [{"id":"copd_ed_results","title":"Urgent COPD exacerbation results","order_terms":["abg","arterial blood gas","chest x ray","chest x-ray","cxr"],"availability_message":"The urgent results are now available; controlled oxygen and bronchodilator treatment should not be delayed.","results":[{"id":"arterial_blood_gas","test":"Arterial blood gas on room air","value":"pH 7.33; PaCO2 55 mmHg; PaO2 57 mmHg; HCO3 28 mEq/L","flag":"critical","specimen":"Arterial blood","collected_at":"At emergency presentation"},{"id":"chest_xray","test":"Chest radiograph","value":"Hyperinflation without focal consolidation or pneumothorax","flag":"abnormal","collected_at":"During emergency assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Acute Exacerbation of COPD evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Exacerbation of COPD is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for COPD Exacerbation: Inhaled bronchodilators, oral steroids, antibiotics if purulent, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive dyspnea, increased sputum volume, and coughing",
+      "Key HPI features: 68-year-old man with severe baseline COPD has 3 days of worsening dyspnoea at rest, increased cough, and new thick yellow-green sputum despite using albuterol every 2 hours.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for COPD Exacerbation.",
+      "Relevant background/PMH: Severe COPD (GOLD stage 3)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Exacerbation of COPD.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Congestive heart failure exacerbation without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute hypercapnic respiratory failure (pH < 7.35, PaCO2 > 45)."
+    ],
+    "management_principles": [
+      "Plan for COPD Exacerbation: Inhaled bronchodilators, oral steroids, antibiotics if purulent",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease (GOLD) 2026 Report",
+        "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68M with severe COPD presenting with acute worsening of dyspnea, increased sputum purulence, and increased sputum volume.",
+    "objective": "Vitals: HR 110, RR 26, SpO2 88% on room air, Temp 37.8C. Exam reveals accessory muscle use, barrel chest, and diffuse expiratory wheezing with prolonged expiratory phase. CXR shows hyperinflation but no focal consolidation.",
+    "assessment": "Acute Exacerbation of COPD (AECOPD), cardinal symptom presentation.",
+    "plan": "Urgently assess blood gas, mental status, work of breathing, and response to initial therapy; involve senior/critical-care support if respiratory failure is suspected. Give controlled oxygen, generally targeting SpO2 88-92% pending blood gases, and short-acting bronchodilators according to local protocol. A clinician should prescribe systemic corticosteroids when appropriate and decide on antibiotics based on purulence plus clinical severity, pneumonia assessment, allergies, QT risk, renal function, and local guidance rather than automatically using broad-spectrum therapy. Consider non-invasive ventilation for acute hypercapnic respiratory acidosis when appropriate, with escalation for deterioration."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of COPD Exacerbation",
+    "Select appropriate diagnostic workup for COPD Exacerbation",
+    "Implement evidence-based management plan: Inhaled bronchodilators, oral steroids, antibiotics if purulent"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Exacerbation of COPD",
+    "one_liner": "Acute worsening of respiratory symptoms beyond normal day-to-day variations in a patient with underlying COPD, triggered by infection or air pollution.",
+    "differentials": [
+      "Congestive heart failure exacerbation",
+      "Pulmonary embolism",
+      "Pneumonia"
+    ],
+    "red_flags": [
+      "Acute hypercapnic respiratory failure (pH < 7.35, PaCO2 > 45)",
+      "Use of accessory muscles at rest"
+    ],
+    "must_ask": [
+      {
+        "objective": "Anthonisen criteria - Sputum purulence and volume",
+        "say": "Have you noticed your phlegm becoming thicker, greener, or increasing in amount?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "phlegm",
+          "sputum",
+          "thicker",
+          "green",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Exertional dyspnea and orthopnea",
+        "say": "Are you getting short of breath even while resting or propping up on extra pillows at night?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "shortness",
+          "breath",
+          "pillows",
+          "resting",
+          "propping"
+        ]
+      },
+      {
+        "objective": "Rescue inhaler responsiveness",
+        "say": "Is your quick-relief salbutamol inhaler working as well as usual or failing to give relief?",
+        "domains": [
+          "medications",
+          "relieving"
+        ],
+        "keywords": [
+          "inhaler",
+          "salbutamol",
+          "relief",
+          "working",
+          "reliever"
+        ]
+      },
+      {
+        "objective": "Smoking history quantifying",
+        "say": "How many packs of cigarettes did you smoke per day and for how long?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "packs",
+          "cigarettes",
+          "smoking",
+          "tobacco",
+          "smoker"
+        ]
+      },
+      {
+        "objective": "Prior intubation or NIV history",
+        "say": "Have you ever been admitted to the ICU or placed on a breathing machine for your lungs?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "machine",
+          "bipap",
+          "intubated",
+          "ventilation",
+          "intensive"
+        ]
+      }
+    ]
+  }
+}

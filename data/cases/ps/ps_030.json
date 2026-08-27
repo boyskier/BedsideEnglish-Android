@@ -1,0 +1,156 @@
+{
+  "id": "ps_030",
+  "system": "ps",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Walker",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "painful blisters on palm after grease spill",
+  "hpi_details": "A 32-year-old woman presents soon after a grease spill with painful blisters on her palm. The burn needs in-person assessment of depth, extent, sensation, circulation, and hand function.",
+  "ideas": "thinks this is a hand burn",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Thermal Burn Injury evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Thermal Burn Injury is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management is guided by burn depth, extent, neurovascular status, tetanus status, and hand function; hand burns merit burn-specialist input.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painful blisters on palm after grease spill",
+      "Key HPI features: A 32-year-old woman presents soon after a grease spill with painful blisters on her palm. The burn needs in-person assessment of depth, extent, sensation, circulation, and hand function.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Partial-Thickness Burn hand.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Thermal Burn Injury.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chemical burn without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Inhalation injury (soot in mouth, hoarseness)."
+    ],
+    "management_principles": [
+      "Cool the burn with running water if still within a useful early window; do not apply ice. Assess depth, extent, circulation, sensation, and tetanus status.",
+      "Use clinician-selected analgesia and nonadherent dressings; blister management depends on location, depth, contamination, and local protocol.",
+      "Obtain burn-specialist input for a hand burn and urgently escalate numbness, pale or cool digits, severe swelling, infection, or breathing symptoms."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presents soon after a grease spill with painful blisters on the palm.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Partial-Thickness Burn hand.",
+    "assessment": "Thermal hand burn; depth and neurovascular status require in-person assessment before confirming partial-thickness injury.",
+    "plan": "Cool with running water if appropriate; do not apply ice. Assess burn depth, extent, circulation, sensation, tetanus status, and hand function. Use clinician-selected analgesia and dressings and obtain burn-specialist input because the hand is involved. Urgently reassess numbness, pale or cool digits, severe swelling, infection, or breathing symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Partial-Thickness Burn hand",
+    "Select appropriate diagnostic workup for Partial-Thickness Burn hand",
+    "Implement evidence-based management plan: Debride blisters, apply topical antimicrobial, occupational therapy"
+  ],
+  "teaching": {
+    "diagnosis": "Thermal Burn Injury",
+    "one_liner": "Tissue injury caused by heat exposure, requiring assessment of total body surface area (TBSA), depth, and airway involvement.",
+    "differentials": [
+      "Chemical burn",
+      "Electrical burn",
+      "Stevens-Johnson syndrome"
+    ],
+    "red_flags": [
+      "Inhalation injury (soot in mouth, hoarseness)",
+      "Circumferential chest/limb burns"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism and thermal agent",
+        "say": "What caused the burn — open flame, hot liquid, steam, or chemicals?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "flame",
+          "liquid",
+          "steam",
+          "scald",
+          "heat"
+        ]
+      },
+      {
+        "objective": "Inhalation injury screen",
+        "say": "Were you trapped in an enclosed space, and do you have hoarseness or black soot in your cough?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "enclosed",
+          "trapped",
+          "hoarseness",
+          "soot",
+          "singed"
+        ]
+      },
+      {
+        "objective": "Estimated body surface area",
+        "say": "Which body parts were burned — face, chest, arms, or legs?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "chest",
+          "face",
+          "arms",
+          "legs",
+          "body"
+        ]
+      },
+      {
+        "objective": "Pain and depth assessment",
+        "say": "Are the burned areas extremely painful and blistered, or numb and white?",
+        "domains": [
+          "character",
+          "severity"
+        ],
+        "keywords": [
+          "blistered",
+          "blisters",
+          "painful",
+          "white",
+          "numb"
+        ]
+      },
+      {
+        "objective": "First aid fluid resuscitation status",
+        "say": "Did you cool the burn with clean tap water and have you received IV fluids?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "water",
+          "cooling",
+          "fluids",
+          "cool",
+          "saline"
+        ]
+      }
+    ]
+  }
+}

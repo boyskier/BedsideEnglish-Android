@@ -1,0 +1,131 @@
+{
+  "id": "hemato_039",
+  "system": "hemato",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Perez",
+  "age": 59,
+  "gender": "male",
+  "chief_complaint": "fever of 38.8C and ANC <500 after chemotherapy",
+  "hpi_details": "A 59-year-old male presents to the clinic with fever of 38.8c and anc <500 after chemotherapy. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to neutropenic_fever",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "absolute_neutrophil_count",
+      "test": "Absolute neutrophil count",
+      "value": "0.3",
+      "unit": "x10^3/mcL",
+      "reference_range": "1.5-8.0",
+      "flag": "critical",
+      "specimen": "Blood",
+      "collected_at": "Before current encounter",
+      "note": "Empiric antipseudomonal antibiotics must not be delayed for repeat testing"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Neutropenic Fever evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Neutropenic Fever is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for Neutropenic Fever emphasizes STAT blood cultures and immediate IV cefepime within 1 hour, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever of 38.8C and ANC <500 after chemotherapy",
+      "Key HPI features: A 59-year-old male presents to the clinic with fever of 38.8c and anc <500 after chemotherapy. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Neutropenic Fever.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Neutropenic Fever.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Drug fever without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any fever ≥38.3°C with ANC <500 — treat as an emergency."
+    ],
+    "management_principles": [
+      "Plan for Neutropenic Fever: STAT blood cultures, immediate IV Cefepime within 1 hour",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of fever of 38.8C and ANC <500 after chemotherapy. A 59-year-old male presents to the clinic with fever of 38.8c and anc <500 after chemotherapy. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Neutropenic Fever.",
+    "assessment": "Condition highly suspicious for Neutropenic Fever.",
+    "plan": "Plan for Neutropenic Fever: STAT blood cultures, immediate IV Cefepime within 1 hour. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Neutropenic Fever",
+    "Select appropriate diagnostic workup for Neutropenic Fever",
+    "Implement evidence-based management plan: STAT blood cultures, immediate IV Cefepime within 1 hour"
+  ],
+  "teaching": {
+    "diagnosis": "Neutropenic Fever",
+    "one_liner": "Fever occurring when the absolute neutrophil count is critically low after chemotherapy — treated as a medical emergency because normal signs of infection may be blunted.",
+    "differentials": [
+      "Drug fever",
+      "Tumor fever"
+    ],
+    "red_flags": [
+      "Any fever ≥38.3°C with ANC <500 — treat as an emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to chemotherapy",
+        "say": "When was your last chemotherapy treatment?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fever character",
+        "say": "How high is your temperature?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Localizing symptoms",
+        "say": "Any cough, pain when urinating, or areas of redness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "General wellbeing",
+        "say": "How unwell do you feel overall?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Recent blood counts",
+        "say": "Do you know your most recent white blood cell count?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

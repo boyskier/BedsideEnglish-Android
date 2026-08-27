@@ -1,0 +1,151 @@
+{
+  "id": "peds_024",
+  "system": "pediatrics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Master Yoon",
+  "age": 7,
+  "gender": "male",
+  "chief_complaint": "coughing spells, wheezing, and chest tightness worsening at night for 1 month",
+  "hpi_details": "7-year-old boy reports 1 month of dry, hacking cough on four days each week that worsens at night and when running outdoors. He wakes with cough about twice a month. Mother noticed audible wheezing sounds and child complaining of chest tightness during gym class.",
+  "ideas": "mother worried child has asthma",
+  "concerns": "worried about inhaler safety and side effects",
+  "expectations": "wants asthma evaluation and inhaler",
+  "pmh": "Eczema, Allergic rhinitis",
+  "medications": "None",
+  "social_hx": "2nd grade student, fully vaccinated",
+  "investigation_events": [{
+    "id": "asthma_spirometry",
+    "title": "Office spirometry with bronchodilator response",
+    "order_terms": ["spirometry", "pulmonary function test", "PFT", "bronchodilator response"],
+    "availability_message": "The spirometry and bronchodilator-response results are now available.",
+    "results": [
+      {"id": "pre_bronchodilator_fev1", "test": "Pre-bronchodilator FEV1", "value": "78", "unit": "% predicted", "reference_range": ">=80", "flag": "low"},
+      {"id": "pre_bronchodilator_ratio", "test": "Pre-bronchodilator FEV1/FVC", "value": "0.72", "reference_range": ">=0.85 for age", "flag": "low"},
+      {"id": "bronchodilator_response", "test": "FEV1 response after albuterol", "value": "+15", "unit": "% from baseline", "reference_range": ">=12 supports reversible obstruction", "flag": "abnormal"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Mild persistent asthma (with atopic triad) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mild persistent asthma (with atopic triad) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: coughing spells, wheezing, and chest tightness worsening at night for 1 month",
+      "Key HPI features: 7-year-old boy reports 1 month of dry, hacking cough on four days each week that worsens at night and when running outdoors. He wakes with cough about twice a month. Mother noticed audible wheezing sounds and child complaining of chest tightness during gym class.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma).",
+      "Relevant background/PMH: Eczema, Allergic rhinitis"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mild persistent asthma (with atopic triad).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vocal cord dysfunction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Nocturnal symptoms suggest persistent rather than intermittent asthma."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma)",
+      ": Perform spirometry or peak flow testing",
+      "Prescribe daily low-dose inhaled corticosteroid (ICS) controller and Albuterol rescue inhaler"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Asthma (GINA) 2025 Strategy",
+        "url": "https://ginasthma.org/gina-reports/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma). coughing spells, wheezing, and chest tightness worsening at night for 1 month. 7-year-old boy reports 1 month of dry, hacking cough on four days each week that worsens at night and when running outdoors. He wakes with cough about twice a month. Mother noticed audible wheezing sounds and child complaining of chest tightness during gym class.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma).",
+    "assessment": "Clinical presentation highly suggestive of Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma).",
+    "plan": "Evidence-based diagnostic and therapeutic protocol for Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma). Perform spirometry or peak flow testing. Prescribe daily low-dose inhaled corticosteroid (ICS) controller and Albuterol rescue inhaler. Provide asthma action plan. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma).",
+    "Formulate prioritized differential diagnosis for coughing spells, wheezing, and chest tightness worsening at night for 1 month",
+    "Select appropriate laboratory and imaging studies for pediatrics",
+    "Implement evidence-based acute and long-term management strategies for Mild Persistent Asthma, presenting with classic atopic triad (eczema, allergic rhinitis, asthma)."
+  ],
+  "teaching": {
+    "diagnosis": "Mild persistent asthma (with atopic triad)",
+    "one_liner": "7-year-old boy with 1 month of nocturnal cough, exercise-induced wheeze, and chest tightness, with a history of eczema and allergic rhinitis.",
+    "differentials": [
+      "Vocal cord dysfunction",
+      "Exercise-induced bronchoconstriction alone",
+      "Recurrent viral bronchitis"
+    ],
+    "red_flags": [
+      "Nocturnal symptoms suggest persistent rather than intermittent asthma",
+      "Severe breathlessness, difficulty speaking, blue lips, drowsiness, or poor response to rescue medication requires emergency care"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the cough and wheeze timing",
+        "say": "Does the cough get worse at night or when he's running around outside?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nocturnal cough",
+          "exercise-induced"
+        ]
+      },
+      {
+        "objective": "Ask about the atopic history",
+        "say": "Does he have eczema or seasonal allergies?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "eczema",
+          "allergic rhinitis"
+        ]
+      },
+      {
+        "objective": "Ask about frequency of symptoms",
+        "say": "How many days a week does he have these symptoms?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "symptom frequency"
+        ]
+      },
+      {
+        "objective": "Address parental concern about inhaler safety",
+        "say": "I understand you're worried about inhaler side effects — let me explain how these medications work safely in children.",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "inhaler safety reassurance"
+        ]
+      },
+      {
+        "objective": "Explain the controller and rescue inhaler plan",
+        "say": "We'll start a daily low-dose controller inhaler along with a rescue inhaler for quick relief, plus an action plan.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "inhaled corticosteroid",
+          "albuterol",
+          "asthma action plan"
+        ]
+      }
+    ]
+  }
+}

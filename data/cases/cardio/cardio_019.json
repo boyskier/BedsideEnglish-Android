@@ -1,0 +1,230 @@
+{
+  "id": "cardio_019",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Yamamoto",
+  "age": 63,
+  "gender": "female",
+  "chief_complaint": "crushing chest pain, sweating, and difficulty breathing 3 hours after husband's sudden death",
+  "hpi_details": "Presents via emergency ambulance with acute, severe, crushing substernal chest pain 9/10 radiating to her neck and left shoulder, accompanied by acute shortness of breath, diaphoresis, and nausea. Symptoms began abruptly 3 hours after she witnessed her husband of 40 years collapse and die suddenly from a cardiac arrest at home. She has no prior personal history of heart disease, hypertension, or diabetes.",
+  "ideas": "thinks the shock and heartbreak literally broke her heart into pieces",
+  "concerns": "terrified she is having a fatal heart attack on the same day her husband died",
+  "expectations": "wants whatever emergency heart treatment can save her life so she can be there for her grieving children",
+  "pmh": "mild generalized anxiety, zero cardiovascular risk factors or prior angina",
+  "medications": "none regular",
+  "social_hx": "non-smoker, zero alcohol, retired music teacher, newly bereaved",
+  "investigation_events": [
+    {
+      "id": "takotsubo_initial_acs_tests",
+      "title": "Initial ECG and cardiac biomarkers",
+      "order_terms": ["ECG", "EKG", "12-lead", "troponin", "cardiac biomarkers"],
+      "availability_message": "The initial ECG and high-sensitivity troponin are now available.",
+      "results": [
+        {
+          "id": "ecg_takotsubo_initial",
+          "test": "12-lead ECG",
+          "value": "ST-segment elevation in V2-V6 with QTc 512 ms",
+          "unit": "",
+          "reference_range": "No ST elevation; QTc <460 ms",
+          "flag": "critical",
+          "collected_at": "On arrival"
+        },
+        {
+          "id": "troponin_t_takotsubo",
+          "test": "High-sensitivity troponin T",
+          "value": "0.084",
+          "unit": "ng/mL",
+          "reference_range": "<0.014",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "On arrival"
+        }
+      ]
+    },
+    {
+      "id": "takotsubo_coronary_and_lv_imaging",
+      "title": "Emergency coronary angiography and left ventriculogram",
+      "order_terms": ["coronary angiography", "coronary angiogram", "cardiac catheterization", "left ventriculogram"],
+      "availability_message": "The coronary angiography and ventriculogram reports are now available.",
+      "results": [
+        {
+          "id": "coronary_angiography_takotsubo",
+          "test": "Coronary angiography",
+          "value": "Patent epicardial coronary arteries with no obstructive coronary disease",
+          "unit": "",
+          "reference_range": "No obstructive disease",
+          "flag": "normal",
+          "collected_at": "Emergency angiography"
+        },
+        {
+          "id": "lv_gram_apical_ballooning",
+          "test": "Left ventriculogram",
+          "value": "Mid-to-apical akinesia with apical ballooning and hyperdynamic basal segments; LVEF 35%",
+          "unit": "",
+          "reference_range": "LVEF 50-70%",
+          "flag": "abnormal",
+          "collected_at": "Emergency angiography"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Takotsubo (Stress) Cardiomyopathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Takotsubo (Stress) Cardiomyopathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes that initial management mirrors acute coronary syndrome until emergency coronary angiography rules out obstructive epicardial coronary artery disease, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: crushing chest pain, sweating, and difficulty breathing 3 hours after husband's sudden death",
+      "Key HPI features: Presents via emergency ambulance with acute, severe, crushing substernal chest pain 9/10 radiating to her neck and left shoulder, accompanied by acute shortness of breath, diaphoresis, and nausea. Symptoms began abruptly 3 hours after she witnessed her husband of 40 years collapse and die suddenly from a cardiac arrest at home. She has no prior personal history of heart disease, hypertension, or diabetes.",
+      "Objective/Exam findings: Vitals: HR 112, BP 105/65, O2 sat 93% on air. 12-lead ECG: prominent ST-segment elevation across anterior and precordial leads (V1-V6) mimicking anterior STEMI, plus QT prolongation. Bloods: high-sensitivity troponin mildly/moderately elevated (typically lower than expected for the extensive degree of ECG/echocardiographic wall motion abnormality), BNP elevated. Emergency coronary angiography: reveals completely normal, patent epicardial coronary arteries without plaque or thrombus. Left ventriculogram and Echocardiogram: demonstrates characteristic apical ballooning with severe akinesia/dyskinesia of the mid and apical left ventricle and hyperkinesia of the basal segments (resembling a Japanese octopus trap - takotsubo).",
+      "Relevant background/PMH: mild generalized anxiety, zero cardiovascular risk factors or prior angina",
+      "Current medications: none regular"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Takotsubo (Stress) Cardiomyopathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to ST-elevation myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: It is indistinguishable from a myocardial infarction on presentation — treat as ACS."
+    ],
+    "management_principles": [
+      "Initial management mirrors acute coronary syndrome until emergency coronary angiography rules out obstructive epicardial coronary artery disease",
+      "Once confirmed: inpatient cardiac monitoring for arrhythmias (long QT / torsades de pointes risk) and cardiogenic shock",
+      "Initiate supportive heart failure medical therapy (ACE inhibitor/ARB and beta-blocker) to aid left ventricular recovery and blunt catecholamine surge"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "63F postmenopausal female presents with acute severe crushing chest pain, dyspnoea, and diaphoresis immediately following severe acute emotional distress (bereavement).",
+    "objective": "Vitals: HR 112, BP 105/65, O2 sat 93% on air. 12-lead ECG: prominent ST-segment elevation across anterior and precordial leads (V1-V6) mimicking anterior STEMI, plus QT prolongation. Bloods: high-sensitivity troponin mildly/moderately elevated (typically lower than expected for the extensive degree of ECG/echocardiographic wall motion abnormality), BNP elevated. Emergency coronary angiography: reveals completely normal, patent epicardial coronary arteries without plaque or thrombus. Left ventriculogram and Echocardiogram: demonstrates characteristic apical ballooning with severe akinesia/dyskinesia of the mid and apical left ventricle and hyperkinesia of the basal segments (resembling a Japanese octopus trap - takotsubo).",
+    "assessment": "Takotsubo Cardiomyopathy (Broken Heart Syndrome / Stress-Induced Cardiomyopathy). DDx: acute anterior ST-elevation myocardial infarction due to plaque rupture, coronary artery spasm (Prinzmetal), acute myocarditis, phaeochromocytoma crisis.",
+    "plan": "Initial management mirrors acute coronary syndrome until emergency coronary angiography rules out obstructive epicardial coronary artery disease. Once confirmed: inpatient cardiac monitoring for arrhythmias (long QT / torsades de pointes risk) and cardiogenic shock. Initiate supportive heart failure medical therapy (ACE inhibitor/ARB and beta-blocker) to aid left ventricular recovery and blunt catecholamine surge. Provide specialized psychological and bereavement counseling. Reassure patient that left ventricular function typically recovers completely within 4 to 8 weeks with supportive care."
+  },
+  "learning_objectives": [
+    "Recognise the classic epidemiological and emotional triggers of Takotsubo cardiomyopathy: postmenopausal female experiencing profound acute emotional/physical stress",
+    "Identify the clinical paradox: STEMI-like ECG and extensive apical ballooning akinesia in the presence of completely normal angiographic coronary arteries",
+    "Explain the pathophysiological mechanism of catecholamine surge toxicity affecting beta-adrenoceptor density at the left ventricular apex",
+    "Formulate compassionate, empathetic communication bridging emergency acute cardiac stabilization with bereavement support"
+  ],
+  "teaching": {
+    "diagnosis": "Takotsubo (Stress) Cardiomyopathy",
+    "one_liner": "Severe emotional stress stuns the left ventricle, mimicking a heart attack exactly — the history of a preceding shock is the clue.",
+    "differentials": [
+      "ST-elevation myocardial infarction",
+      "Myocarditis",
+      "Panic attack"
+    ],
+    "red_flags": [
+      "It is indistinguishable from a myocardial infarction on presentation — treat as ACS"
+    ],
+    "must_ask": [
+      {
+        "objective": "Preceding emotional or physical stressor",
+        "say": "Did anything very stressful happen just before this started?",
+        "domains": [
+          "onset_duration",
+          "living_work"
+        ],
+        "keywords": [
+          "stress",
+          "died",
+          "death",
+          "shock",
+          "argument",
+          "bereave"
+        ]
+      },
+      {
+        "objective": "Site and radiation of the pain",
+        "say": "Where exactly is the pain, and does it move anywhere else?",
+        "domains": [
+          "location",
+          "radiation"
+        ],
+        "keywords": [
+          "arm",
+          "jaw",
+          "shoulder",
+          "spread",
+          "radiate",
+          "travel"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "How would you describe it — sharp, crushing, burning, tight?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "sharp",
+          "crushing",
+          "burning",
+          "tight",
+          "pressure",
+          "heavy"
+        ]
+      },
+      {
+        "objective": "Associated autonomic symptoms",
+        "say": "Along with the pain, did you feel sweaty, sick, or short of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweat",
+          "nausea",
+          "sick",
+          "vomit",
+          "breath",
+          "clammy"
+        ]
+      },
+      {
+        "objective": "Cardiac risk factors — often absent here",
+        "say": "Do you have any heart problems, high blood pressure or diabetes?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "heart",
+          "diabetes",
+          "cholesterol",
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Support and mental health",
+        "say": "How are you coping, and who do you have around you?",
+        "domains": [
+          "living_work",
+          "concerns"
+        ],
+        "keywords": [
+          "coping",
+          "support",
+          "family",
+          "alone"
+        ]
+      }
+    ]
+  }
+}

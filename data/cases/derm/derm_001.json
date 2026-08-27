@@ -1,0 +1,160 @@
+{
+  "id": "derm_001",
+  "system": "dermatology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "rapid onset of painful skin peeling, mucosal erosions across mouth and eyes, and targetoid rash 2 weeks after starting Allopurinol",
+  "hpi_details": "42M presents to emergency department in acute distress with a 3-day history of high fever, flu-like malaise, and burning skin pain. Today developed extensive, painful, sloughing blisters across his face, trunk, and arms. Reports severe burning pain when swallowing with raw, bleeding sores inside his mouth, eyes, and genitals. Started taking Allopurinol 300 mg daily for gout 14 days ago.",
+  "ideas": "in severe agony with raw burning skin and mouth erosions",
+  "concerns": "terrified by rapid skin peeling off like a severe burn",
+  "expectations": "wants immediate pain relief, burn dressings, and emergency hospitalization",
+  "pmh": "Gout, Hypertension",
+  "medications": "Allopurinol 300mg daily (started 2 weeks ago), Lisinopril 10mg daily",
+  "social_hx": "Postal worker, non-smoker",
+  "investigation_events": [
+    {
+      "id": "initial_severity_labs",
+      "title": "Initial SJS/TEN severity laboratory results",
+      "order_terms": ["blood tests", "blood work", "metabolic panel", "electrolytes", "renal function", "bun", "bicarbonate", "glucose", "scorten"],
+      "availability_message": "The initial SJS/TEN severity laboratory results are now available.",
+      "results": [
+        {"id": "bun_initial", "test": "Blood urea nitrogen", "value": "26", "unit": "mg/dL", "reference_range": "7-20", "flag": "high", "specimen": "Blood", "collected_at": "At emergency presentation"},
+        {"id": "bicarbonate_initial", "test": "Serum bicarbonate", "value": "21", "unit": "mmol/L", "reference_range": "22-29", "flag": "low", "specimen": "Blood", "collected_at": "At emergency presentation"},
+        {"id": "glucose_initial", "test": "Serum glucose", "value": "148", "unit": "mg/dL", "reference_range": "70-140", "flag": "high", "specimen": "Blood", "collected_at": "At emergency presentation"},
+        {"id": "creatinine_initial", "test": "Serum creatinine", "value": "1.3", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "normal", "specimen": "Blood", "collected_at": "At emergency presentation"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis Overlap evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis Overlap is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate discontinuation of the culprit drug and transfer to a Burn Intensive Care Unit for barrier nursing, ophthalmology co-management, and multidisciplinary supportive care, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: rapid onset of painful skin peeling, mucosal erosions across mouth and eyes, and targetoid rash 2 weeks after starting Allopurinol",
+      "Key HPI features: 42M presents to emergency department in acute distress with a 3-day history of high fever, flu-like malaise, and burning skin pain. Today developed extensive, painful, sloughing blisters across his face, trunk, and arms. Reports severe burning pain when swallowing with raw, bleeding sores inside his mouth, eyes, and genitals. Started taking Allopurinol 300 mg daily for gout 14 days ago.",
+      "Objective/Exam findings: Vitals: HR 122, BP 105/65, Temp 39.1C. Skin examination reveals dusky, violaceous, atypical targetoid macules coalescing over the trunk and extremities. Positive Nikolsky sign (gentle lateral finger pressure on uninvolved skin causes immediate shearing and detachment of the upper epidermis forming a blister). Epidermal detachment currently involves ~18% Total Body Surface Area (TBSA). Severe hemorrhagic crusting and painful erosions involve three mucous membranes: lips/oropharynx, bilateral conjunctivae (severe keratoconjunctivitis), and urethral meatus.",
+      "Relevant background/PMH: Gout, Hypertension",
+      "Current medications: Allopurinol 300mg daily (started 2 weeks ago), Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis Overlap.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Staphylococcal scalded skin syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Eye involvement — risk of permanent blindness without urgent ophthalmology care."
+    ],
+    "management_principles": [
+      "STAT dermatological and burn emergency",
+      "Immediately discontinue Allopurinol (and all other non-essential drugs)",
+      "Transfer immediately to a verified Burn Intensive Care Unit for specialized barrier nursing, sterile non-adherent dressings, and fluid/electrolyte resuscitation calculated like thermal burns"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: rapid onset of painful skin peeling, mucosal erosions across mouth and eyes, and targetoid rash 2 weeks after starting Allopurinol\n\n42M presents to emergency department in acute distress with a 3-day history of high fever, flu-like malaise, and burning skin pain. Today developed extensive, painful, sloughing blisters across his face, trunk, and arms. Reports severe burning pain when swallowing with raw, bleeding sores inside his mouth, eyes, and genitals. Started taking Allopurinol 300 mg daily for gout 14 days ago.",
+    "objective": "Vitals: HR 122, BP 105/65, Temp 39.1C. Skin examination reveals dusky, violaceous, atypical targetoid macules coalescing over the trunk and extremities. Positive Nikolsky sign (gentle lateral finger pressure on uninvolved skin causes immediate shearing and detachment of the upper epidermis forming a blister). Epidermal detachment currently involves ~18% Total Body Surface Area (TBSA). Severe hemorrhagic crusting and painful erosions involve three mucous membranes: lips/oropharynx, bilateral conjunctivae (severe keratoconjunctivitis), and urethral meatus.",
+    "assessment": "Steven-Johnson Syndrome / Toxic Epidermal Necrolysis Overlap (SJS/TEN Overlap, involving 18% TBSA detachment), secondary to Allopurinol hypersensitivity.",
+    "plan": "STAT dermatological and burn emergency: 1. Immediately discontinue Allopurinol (and all other non-essential drugs). 2. Transfer immediately to a verified Burn Intensive Care Unit for specialized barrier nursing, sterile non-adherent dressings, and fluid/electrolyte resuscitation calculated like thermal burns. 3. Immediate ophthalmology consultation for daily amniotic membrane placement and lubricating drops to prevent permanent blindness/symblepharon. 4. Multidisciplinary supportive care (pain management with opioids, enteral nutrition via NG tube). Consider short-course high-dose IVIG or cyclosporine/etanercept in consultation with specialist."
+  },
+  "learning_objectives": [
+    "Classify severe cutaneous adverse reactions by epidermal detachment percentage (SJS <10% TBSA, SJS/TEN overlap 10-30% TBSA, TEN >30% TBSA)",
+    "Identify high-risk offending pharmacotherapies (Allopurinol, Lamotrigine, Carbamazepine, Phenytoin, Sulfonamides, NSAIDs) and typical latency windows (1-4 weeks)",
+    "Perform and interpret the clinical Nikolsky sign and evaluate mucosal surface involvement (ocular, oral, anogenital)",
+    "Outline emergency burn-unit level supportive resuscitation protocols and urgent ophthalmology consultation mandates to prevent blinding ocular sequelae"
+  ],
+  "teaching": {
+    "diagnosis": "Stevens-Johnson Syndrome / Toxic Epidermal Necrolysis Overlap",
+    "one_liner": "A severe drug-induced mucocutaneous emergency — here from allopurinol — causing skin sloughing and mucosal erosions in the mouth, eyes, and genitals; the drug must be stopped immediately and the patient managed like a burn victim.",
+    "differentials": [
+      "Staphylococcal scalded skin syndrome",
+      "Erythema multiforme major",
+      "Drug-induced linear IgA disease"
+    ],
+    "red_flags": [
+      "Eye involvement — risk of permanent blindness without urgent ophthalmology care",
+      "Any skin detachment (positive Nikolsky sign)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Causative drug and timeline",
+        "say": "What new medication did you start, and how many days ago?",
+        "domains": [
+          "onset_duration",
+          "medications"
+        ],
+        "keywords": [
+          "allopurinol",
+          "14 days",
+          "started"
+        ]
+      },
+      {
+        "objective": "Mucosal involvement",
+        "say": "Do you have sores in your mouth, eyes, or genital area?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mouth",
+          "eyes",
+          "genitals"
+        ]
+      },
+      {
+        "objective": "Skin detachment",
+        "say": "Is your skin peeling or blistering anywhere?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "peeling",
+          "sloughing",
+          "blisters"
+        ]
+      },
+      {
+        "objective": "Fever and prodrome",
+        "say": "Did you have a fever or feel flu-like before the rash appeared?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "malaise"
+        ]
+      },
+      {
+        "objective": "Pain severity",
+        "say": "How painful is your skin — like a burn?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "burning",
+          "pain"
+        ]
+      }
+    ]
+  }
+}

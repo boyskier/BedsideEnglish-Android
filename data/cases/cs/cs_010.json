@@ -1,0 +1,157 @@
+{
+  "id": "cs_010",
+  "system": "cardiothoracic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rodriguez",
+  "age": 61,
+  "gender": "male",
+  "chief_complaint": "persistent cough with blood-streaked sputum and 4 cm RLL mass in long-term smoker",
+  "hpi_details": "61M presenting with hemoptysis, weight loss, and PET-positive right lower lobe squamous cell carcinoma undergoing VATS right lower lobectomy and lymph node dissection.",
+  "ideas": "thinks this is lung cancer from years of smoking and worries surgery is the only option",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Long-term smoker; activity level not documented",
+  "available_results": [
+    {
+      "id": "biopsy_rll_squamous_cancer",
+      "test": "Bronchoscopic biopsy",
+      "value": "Squamous cell carcinoma",
+      "unit": "",
+      "reference_range": "No malignancy",
+      "flag": "positive",
+      "specimen": "Right lower lobe mass",
+      "collected_at": "Before surgical consultation"
+    },
+    {
+      "id": "pet_ct_rll_node_negative",
+      "test": "PET-CT",
+      "value": "FDG-avid 4.0 cm right-lower-lobe mass with no avid mediastinal nodes or distant metastases",
+      "unit": "",
+      "reference_range": "No FDG-avid malignancy",
+      "flag": "abnormal",
+      "collected_at": "Preoperative staging"
+    },
+    {
+      "id": "pft_rll_lobectomy",
+      "test": "Pulmonary function tests",
+      "value": "FEV1 82% predicted; DLCO 75% predicted",
+      "unit": "",
+      "reference_range": "FEV1 and DLCO >=80% predicted generally preserved",
+      "flag": "normal",
+      "collected_at": "Preoperative assessment"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Bronchogenic Carcinoma (Right Lower Lobe, Squamous Cell) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Bronchogenic Carcinoma (Right Lower Lobe, Squamous Cell) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for resectable right lower lobe squamous cell carcinoma emphasizes tissue diagnosis via bronchoscopy or CT-guided biopsy, formal invasive mediastinal staging (EBUS-TBNA or mediastinoscopy), and, when staging confirms no nodal or distant spread, anatomical VATS right lower lobectomy with systematic mediastinal lymph node dissection, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: persistent cough with blood-streaked sputum and 4 cm RLL mass in long-term smoker",
+      "Key HPI features: 61M presenting with hemoptysis, weight loss, and PET-positive right lower lobe squamous cell carcinoma undergoing VATS right lower lobectomy and lymph node dissection.",
+      "Objective/Exam findings: Vitals: HR 88, BP 138/84, SpO2 95% on room air. Decreased breath sounds at the right lower lung base; mild digital clubbing. Chest CT confirms a 4 cm right lower lobe mass without chest wall invasion. Bronchoscopy with biopsy confirms squamous cell carcinoma. PET-CT shows FDG-avid uptake confined to the RLL mass without mediastinal nodal or distant uptake. Pulmonary function tests show adequate reserve for lobectomy (FEV1 82% predicted, DLCO 75% predicted).",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Bronchogenic Carcinoma (Right Lower Lobe, Squamous Cell).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pulmonary tuberculosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Significant hemoptysis — risk of airway compromise."
+    ],
+    "management_principles": [
+      "Confirm tissue diagnosis and complete invasive mediastinal staging (EBUS-TBNA or mediastinoscopy) before committing to surgery",
+      "Proceed with VATS right lower lobectomy and systematic mediastinal lymph node dissection once staging confirms resectable, node-negative disease",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "61M long-term smoker presenting with persistent cough, blood-streaked sputum, and weight loss, with a 4 cm right lower lobe mass found to be PET-positive squamous cell carcinoma undergoing workup for VATS right lower lobectomy and lymph node dissection.",
+    "objective": "Vitals: HR 88, BP 138/84, SpO2 95% on room air. Decreased breath sounds at the right lower lung base; mild digital clubbing. Chest CT confirms a 4 cm right lower lobe mass without chest wall invasion. Bronchoscopy with biopsy confirms squamous cell carcinoma. PET-CT shows FDG-avid uptake confined to the RLL mass without mediastinal nodal or distant uptake. Pulmonary function tests show adequate reserve for lobectomy (FEV1 82% predicted, DLCO 75% predicted).",
+    "assessment": "Resectable clinical Stage IB (cT2aN0M0) right lower lobe squamous cell carcinoma in a long-term smoker with hemoptysis.",
+    "plan": "Confirm tissue diagnosis and complete invasive mediastinal staging (EBUS-TBNA or mediastinoscopy) before committing to surgery. Proceed with VATS right lower lobectomy and systematic mediastinal lymph node dissection once staging confirms resectable, node-negative disease."
+  },
+  "learning_objectives": [
+    "Recognize clinical features suggestive of bronchogenic carcinoma (hemoptysis, weight loss, persistent cough) in a long-term smoker",
+    "Formulate a prioritized differential diagnosis for a smoker with hemoptysis and a lung mass, including tuberculosis, lung abscess, and benign mass",
+    "Select appropriate staging studies (PET-CT, bronchoscopy with biopsy, invasive mediastinal staging, pulmonary function tests) before lobectomy",
+    "Outline the surgical approach and rationale for VATS right lower lobectomy with mediastinal lymph node dissection in resectable disease"
+  ],
+  "teaching": {
+    "diagnosis": "Bronchogenic Carcinoma (Right Lower Lobe, Squamous Cell)",
+    "one_liner": "A lung cancer in a long-term smoker causing hemoptysis and weight loss, confirmed by PET-positive imaging and planned for surgical lobectomy with lymph node dissection.",
+    "differentials": [
+      "Pulmonary tuberculosis",
+      "Lung abscess",
+      "Benign lung mass"
+    ],
+    "red_flags": [
+      "Significant hemoptysis — risk of airway compromise"
+    ],
+    "must_ask": [
+      {
+        "objective": "Hemoptysis",
+        "say": "How much blood have you been coughing up, and for how long?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "hemoptysis",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "How long and how much have you smoked?",
+        "domains": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Cough character",
+        "say": "Has your cough changed recently?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Functional status",
+        "say": "How is your breathing with daily activities?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "id": "endo_034",
+  "system": "endo",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lopez",
+  "age": 44,
+  "gender": "female",
+  "chief_complaint": "abdominal obesity, moon face, purple striae, and muscle weakness",
+  "hpi_details": "A 44-year-old female presents to the clinic with abdominal obesity, moon face, purple striae, and muscle weakness. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to cushing",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Cushing Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cushing Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Initial evaluation requires biochemical confirmation with accepted screening tests such as late-night salivary cortisol, 24-hour urinary free cortisol, or low-dose dexamethasone suppression; ACTH measurement and directed imaging follow only after hypercortisolism is confirmed.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: abdominal obesity, moon face, purple striae, and muscle weakness",
+      "Key HPI features: A 44-year-old female presents to the clinic with abdominal obesity, moon face, purple striae, and muscle weakness. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Cushing Syndrome.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cushing Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple obesity without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: severe hypertension, hypokalaemia, rapidly progressive new-onset diabetes, rapid onset of symptoms over weeks rather than months, signs of adrenal crisis (hypotension, severe weakness, or vomiting) if steroids are withdrawn abruptly."
+    ],
+    "management_principles": [
+      "Confirm hypercortisolism with appropriate screening tests, then measure ACTH and obtain directed pituitary or adrenal imaging only after biochemical confirmation",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Treatment of Cushing's Syndrome",
+        "url": "https://academic.oup.com/jcem/article/100/8/2807/2836065"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of abdominal obesity, moon face, purple striae, and muscle weakness. HPI: excess cortisol production.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Cushing Syndrome.",
+    "assessment": "Condition highly suspicious for Cushing Syndrome.",
+    "plan": "Confirm hypercortisolism with appropriate screening tests, then measure ACTH and obtain directed pituitary or adrenal imaging only after biochemical confirmation."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Cushing Syndrome",
+    "Select appropriate diagnostic workup for Cushing Syndrome",
+    "Implement evidence-based management plan: Confirm hypercortisolism biochemically, then use ACTH-directed imaging to determine the source"
+  ],
+  "teaching": {
+    "diagnosis": "Cushing Syndrome",
+    "one_liner": "Excess cortisol causing abdominal obesity, moon face, purple striae, and muscle weakness.",
+    "differentials": [
+      "Simple obesity"
+    ],
+    "red_flags": [
+      "Severe hypertension, hypokalaemia, or rapidly progressive new-onset diabetes — suggests ectopic ACTH secretion (e.g., small cell lung cancer) rather than a pituitary adenoma",
+      "Rapid onset of symptoms over weeks rather than months — raises concern for an adrenal or ectopic malignancy",
+      "Signs of adrenal crisis (hypotension, severe weakness, vomiting) if steroids are withdrawn abruptly — a medical emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Fat distribution",
+        "say": "Where is the weight gain concentrated?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Skin changes",
+        "say": "Any stretch marks?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Muscle weakness",
+        "say": "Is it hard to get up from sitting?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this developed?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Steroid use",
+        "say": "Have you used steroid medications?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "peds_045",
+  "system": "peds",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Torres",
+  "age": 6,
+  "gender": "male",
+  "chief_complaint": "limping and hip pain after viral cold in child",
+  "hpi_details": "6-year-old boy is brought to the clinic by his mother because he woke up this morning limping and complaining of right hip and thigh pain. He refuses to bear weight fully on the right leg. He had a mild viral upper respiratory infection about one week ago. No history of trauma.",
+  "ideas": "thinks it might be related to toxic_synovitis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Lives with his mother or guardian and attends school.",
+  "investigation_events": [
+    {
+      "id": "painful_hip_inflammatory_screen",
+      "title": "Urgent inflammatory assessment for painful hip",
+      "order_terms": ["CBC", "complete blood count", "WBC", "ESR", "CRP", "inflammatory markers"],
+      "availability_message": "The inflammatory-marker results are now available. Interpret them with the child's appearance, fever, weight-bearing status, and imaging; low values do not independently exclude septic arthritis.",
+      "results": [
+        {"id": "wbc", "test": "White blood cell count", "value": "8.9", "unit": "x10^3/uL", "reference_range": "5.0-14.5", "flag": "normal"},
+        {"id": "esr", "test": "Erythrocyte sedimentation rate", "value": "14", "unit": "mm/hr", "reference_range": "0-20", "flag": "normal"},
+        {"id": "crp", "test": "C-reactive protein", "value": "0.6", "unit": "mg/dL", "reference_range": "<0.5", "flag": "high"}
+      ]
+    },
+    {
+      "id": "painful_hip_ultrasound",
+      "title": "Urgent hip ultrasound",
+      "order_terms": ["hip ultrasound", "ultrasound of the hip", "joint ultrasound"],
+      "availability_message": "The hip ultrasound result is now available. Aspiration and orthopedic consultation remain necessary if clinical concern for septic arthritis is substantial.",
+      "results": [{"id": "hip_ultrasound", "test": "Right hip ultrasound", "value": "Small simple joint effusion measuring 5 mm without internal debris", "flag": "abnormal"}]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Transient synovitis of the hip evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Transient synovitis of the hip is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes excluding septic arthritis before supportive treatment; if appropriate, use weight-based ibuprofen, relative rest, and close follow-up.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: limping and hip pain after viral cold in child",
+      "Key HPI features: A 6-year-old boy presents to the clinic with limping and right hip/thigh pain that began this morning, refusing to fully bear weight on the right leg, about one week after a mild viral upper respiratory infection. No history of trauma.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Transient Synovitis of hip.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Transient synovitis of the hip.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Septic arthritis (must be excluded) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or inability to bear weight at all would suggest septic arthritis requiring urgent workup."
+    ],
+    "management_principles": [
+      "Exclude septic arthritis before supportive treatment; if appropriate, use weight-based ibuprofen, relative rest, and close follow-up",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "6M presenting with acute onset limp and right hip pain following a recent viral illness.",
+    "objective": "Vitals: Afebrile. Child is non-toxic appearing. Antalgic gait favoring the right leg. Right hip shows limited internal rotation and abduction due to pain. No erythema or severe swelling. Knee exam is normal.",
+    "assessment": "Transient Synovitis of the hip (Toxic Synovitis).",
+    "plan": "Promptly assess for septic arthritis, including examination, inflammatory markers, and imaging/orthopedic consultation as indicated; inability to bear weight, fever, toxic appearance, or worsening pain requires urgent evaluation. If septic arthritis is reasonably excluded, use weight-based ibuprofen, relative rest, and close follow-up."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Transient Synovitis of hip",
+    "Select appropriate diagnostic workup for Transient Synovitis of hip",
+    "Implement evidence-based management plan: Oral Ibuprofen, bed rest, reassure parents (resolves in 1 week)"
+  ],
+  "teaching": {
+    "diagnosis": "Transient synovitis of the hip",
+    "one_liner": "Child with limping and hip pain following a recent viral cold.",
+    "differentials": [
+      "Septic arthritis (must be excluded)",
+      "Legg-Calve-Perthes disease",
+      "Slipped capital femoral epiphysis"
+    ],
+    "red_flags": [
+      "Fever or inability to bear weight at all would suggest septic arthritis requiring urgent workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "Ask about recent viral illness",
+        "say": "Did he have a cold or virus in the past week or two?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "recent viral illness"
+        ]
+      },
+      {
+        "objective": "Assess weight-bearing ability",
+        "say": "Is he able to walk or put weight on that leg at all?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight-bearing ability"
+        ]
+      },
+      {
+        "objective": "Screen for fever to rule out septic arthritis",
+        "say": "Does he have any fever along with the limping?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever screen"
+        ]
+      },
+      {
+        "objective": "Characterize the limp and pain",
+        "say": "When did the limping start, and how bad is the pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "limp onset",
+          "pain severity"
+        ]
+      },
+      {
+        "objective": "Reassure about the expected resolution",
+        "say": "This typically resolves on its own within about a week with rest and anti-inflammatory medicine.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "reassurance",
+          "self-limited"
+        ]
+      }
+    ]
+  }
+}

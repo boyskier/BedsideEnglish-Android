@@ -1,0 +1,118 @@
+{
+  "id": "em_029",
+  "system": "em",
+  "difficulty": "beginner",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Hall",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "bumped head in basketball, mild headache, no LOC",
+  "hpi_details": "A 29-year-old male presents to the clinic with bumped head in basketball, mild headache, no loc. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to a concussion",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Concussion (Mild Traumatic Brain Injury) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Concussion (Mild Traumatic Brain Injury) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Concussion Head Injury: Apply Canadian CT Head Rule (not indicated), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: bumped head in basketball, mild headache, no LOC",
+      "Key HPI features: A 29-year-old male presents to the clinic with bumped head in basketball, mild headache, no loc. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Concussion Head Injury.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Concussion (Mild Traumatic Brain Injury).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Intracranial hemorrhage without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Worsening symptoms."
+    ],
+    "management_principles": [
+      "Plan for concussion: perform neurologic assessment and apply the Canadian CT Head Rule only after confirming eligibility and all high- and medium-risk features",
+      "Symptom rest",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: bumped head in basketball, mild headache, no LOC\n\nA 29-year-old male presents to the clinic with bumped head in basketball, mild headache, no loc. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Concussion Head Injury.",
+    "assessment": "Condition highly suspicious for Concussion Head Injury.",
+    "plan": "Perform neurologic assessment and apply the Canadian CT Head Rule only after confirming eligibility and all high- and medium-risk features; obtain CT if indicated. Provide written return precautions for worsening headache, repeated vomiting, seizure, confusion, focal weakness, or drowsiness. Recommend 24-48 hours of relative rest followed by a graded return to activity; no same-day return to sport."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Concussion Head Injury",
+    "Select appropriate diagnostic workup for Concussion Head Injury",
+    "Implement evidence-based management plan: Apply Canadian CT Head Rule (not indicated). Symptom rest"
+  ],
+  "teaching": {
+    "diagnosis": "Concussion (Mild Traumatic Brain Injury)",
+    "one_liner": "A head injury causing mild headache and disorientation without loss of consciousness, assessed with the Canadian CT Head Rule.",
+    "differentials": [
+      "Intracranial hemorrhage"
+    ],
+    "red_flags": [
+      "Worsening symptoms"
+    ],
+    "must_ask": [
+      {
+        "objective": "Loss of consciousness",
+        "say": "Did you lose consciousness?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Symptoms",
+        "say": "How is your headache?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Memory",
+        "say": "Do you remember what happened?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Vomiting",
+        "say": "Have you vomited?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior concussions",
+        "say": "Have you had a concussion before?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

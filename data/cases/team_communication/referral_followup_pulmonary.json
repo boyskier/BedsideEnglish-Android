@@ -1,0 +1,49 @@
+{
+  "id": "referral_followup_pulmonary",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Consult / referral",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "consult_referral",
+  "patient_name": "Outpatient pulmonary referral",
+  "chief_complaint": "Give a concise verbal referral and negotiate appropriate timing",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Outpatient pulmonary referral",
+    "task": "Consult / referral",
+    "urgency": "routine",
+    "patient": "Mr. Daniel Wu, 59-year-old man",
+    "location": "Outpatient referral",
+    "situation": "Eight weeks of persistent dry cough and exertional dyspnea; request assessment for possible interstitial lung disease.",
+    "background": ["No ACE inhibitor use and no fever."],
+    "current_status": ["SpO2 96% at rest, falling to 91% after a corridor walk."],
+    "key_data": ["Chest radiograph shows bilateral reticular opacities."],
+    "treatments": ["Clarify which records and tests are available to send."],
+    "your_request": "Request an appropriate appointment timeframe and confirm what records must accompany the referral.",
+    "must_include": ["Symptoms, relevant negatives, imaging, and exertional desaturation.", "Possible ILD and the desired timeframe.", "Appointment timing, records, and red-flag safety net."]
+  },
+  "kickoff_text": "Pulmonary clinic triage. What is the reason for referral?",
+  "persona_override": "You are the pulmonary clinic triage clinician. The referral is for Mr. Daniel Wu, 59, with eight weeks of persistent dry cough and exertional dyspnea. Chest radiograph shows bilateral reticular opacities. He is stable at rest with oxygen saturation 96%, falling to 91% after a corridor walk. He takes no ACE inhibitor and has no fever. The learner should request assessment for possible interstitial lung disease and state the desired timeframe. Ask what testing is already available and whether there are red flags requiring emergency care. Offer an appointment within two weeks after a clear referral, and state what records should accompany it.",
+  "learning_objectives": [
+    "state the referral reason and desired timeframe",
+    "summarize symptoms, relevant negatives, imaging, and exertional oxygen change",
+    "ask for evaluation of possible interstitial lung disease",
+    "confirm appointment timing and records to send"
+  ],
+  "suggested_questions": [
+    "I'm referring him for assessment of possible interstitial lung disease.",
+    "He is stable at rest but desaturates to 91% with walking.",
+    "Would review within two weeks be appropriate, and which records should I send?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Diagnosis-focused outpatient pulmonary referral for suspected interstitial lung disease",
+    "core_concepts": ["A referral should align the referring and consulting clinicians on the suspected problem, question, urgency, and expected outcome.", "Symptoms, functional oxygen change, relevant imaging, and red flags help pulmonary triage determine timing."],
+    "diagnostic_clues": ["Persistent dry cough, exertional dyspnea, and bilateral reticular opacities raise concern for interstitial lung disease.", "Exertional desaturation adds functional severity information even when resting saturation is preserved."],
+    "common_misconceptions": ["The words 'abnormal chest X-ray' are enough for triage.", "A routine referral needs no requested timeframe or safety-net plan."],
+    "dangerous_errors": ["Omitting exertional desaturation or signs that would require more urgent assessment.", "Failing to specify the clinical question and records being transferred."],
+    "management_principles": ["Provide the symptom course, relevant exposures and medication context, imaging summary, oxygen data, and specific diagnostic question.", "Confirm triage timing, records, pending tests, and escalation instructions."],
+    "boundaries_and_exceptions": ["Definitive ILD testing and urgency depend on the complete history, imaging pattern, physiology, trajectory, and local specialist access."],
+    "source_refs": [{"title": "AHRQ TeamSTEPPS Diagnosis-Focused Referral", "url": "https://www.ahrq.gov/sites/default/files/wysiwyg/teamstepps-program/dx-improvement/module3-presenters-notes.pdf"}, {"title": "American Thoracic Society Interstitial Lung Disease Official Documents", "url": "https://www.thoracic.org/statements/insterstitial-lung-disease.php"}]
+  }
+}

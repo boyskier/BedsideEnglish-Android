@@ -1,0 +1,290 @@
+{
+  "id": "followup_results_003",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "results_review",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Victor Vance",
+  "age": 58,
+  "gender": "male",
+  "visit_title": "Lung CT scan results review",
+  "follow_up_reason": "Discuss incidental chest CT scan findings",
+  "clinician_brief": {
+    "prior_note": "Chest CT ordered 3 weeks ago for persistent post-viral cough. Cough has resolved.",
+    "active_problems": [
+      "Incidental pulmonary nodule",
+      "Former smoker (15 pack-years, quit 10 years ago)"
+    ],
+    "current_medications": [
+      "None"
+    ],
+    "previous_plan": [
+      "High-resolution chest CT scan",
+      "Return to review radiologist report"
+    ],
+    "results_and_observations": [
+      "CT Chest: 5 mm solid nodule in right upper lobe, smooth margins, no lymphadenopathy, no pleural effusion",
+      "Radiologist recommendation: 12-month repeat CT per Fleischner guidelines"
+    ],
+    "today_tasks": [
+      "Explain the 5mm pulmonary nodule finding in plain language",
+      "Provide Fleischner criteria risk context (low risk, small size)",
+      "Address fear of lung cancer empathetically",
+      "Screen for B-symptoms (hemoptysis, weight loss, night sweats)",
+      "Agree on 12-month surveillance CT scanning plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Cough has completely resolved. Feels healthy.",
+    "adherence": "Not applicable.",
+    "treatment_response": "Not applicable.",
+    "side_effects": "None.",
+    "new_symptoms_and_red_flags": "No coughing up blood, night sweats, unexplained weight loss, or shortness of breath.",
+    "agenda": "Wants to know if the nodule is cancer and whether it needs to be cut out immediately.",
+    "concern": "His uncle died of lung cancer, so any spot on his lungs terrifies him.",
+    "preference": "Prefers monitoring over risky invasive biopsy if safe."
+  },
+  "clinical_knowledge": {
+    "topic": "Applying Fleischner criteria to a 5 mm solid nodule in a former smoker to explain why 12-month surveillance, not biopsy, is the guideline-correct next step",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Fleischner Society criteria stratify incidental solid pulmonary nodules mainly by size and patient risk: for a single solid nodule under 6 mm in a low-to-moderate risk patient, no routine follow-up CT may even be needed, and for higher-risk patients (like a former smoker) an optional CT around 12 months is reasonable — either way, immediate biopsy or aggressive intervention is not indicated for a nodule this small.",
+      "Smooth margins and the absence of lymphadenopathy or pleural effusion are reassuring morphologic features; malignant nodules more often show spiculated or irregular margins, larger size, or associated nodal/pleural findings.",
+      "Even in a former smoker with a real cumulative risk (15 pack-years, quit 10 years ago — a risk that decreases over time since quitting), the absolute probability that a 5 mm solid nodule represents cancer is low; nodule size is one of the strongest predictors of malignancy risk, and small nodules carry a small fraction of the risk of larger ones.",
+      "Biopsy of a nodule this small carries a real risk of pneumothorax, non-diagnostic sampling, and unnecessary invasive intervention that outweighs its benefit at this size — surveillance imaging is the guideline-preferred approach specifically to avoid over-intervention on low-risk findings."
+    ],
+    "diagnostic_clues": [
+      "A 5 mm size places this nodule at the small end of the size spectrum used in Fleischner risk stratification, where malignancy probability is low regardless of smoking history.",
+      "Smooth margins on CT are a reassuring morphologic feature, in contrast to the spiculated, irregular, or lobulated margins more typical of malignant nodules.",
+      "No lymphadenopathy or pleural effusion is reassuring against locally advanced or metastatic disease, which would be expected to show these associated findings if this incidental nodule were something more concerning.",
+      "Complete resolution of the cough that originally prompted the CT confirms the nodule was an incidental finding unrelated to his presenting symptom, not something actively causing symptoms now."
+    ],
+    "common_misconceptions": [
+      "Victor's fear that any lung nodule requires immediate excision, when the guideline-appropriate response to a small, smooth, incidentally found nodule is surveillance, not surgery.",
+      "Assuming his uncle's lung cancer death means his own nodule carries a similarly high risk, when family history of lung cancer without a known hereditary syndrome does not substantially change the size- and morphology-based risk assessment used here.",
+      "Believing that 'watching and waiting' means nothing is being done or that the clinician is being complacent, rather than understanding that surveillance imaging is itself the recommended, evidence-based management strategy for this size and risk category.",
+      "Assuming that because he was a smoker, his risk is now equivalent to a current smoker's, when risk declines progressively with years since quitting, which is why his exact smoking history (pack-years and time since quitting) matters for risk calculation."
+    ],
+    "dangerous_errors": [
+      "Recommending or agreeing to biopsy for a small, smooth 5 mm nodule, which exposes him to procedural risk disproportionate to the low likelihood of malignancy at this size.",
+      "Failing to screen explicitly for hemoptysis, weight loss, night sweats, or new dyspnea, which would change the risk calculus and potentially warrant more urgent evaluation regardless of nodule size.",
+      "Giving vague reassurance ('it's probably nothing') without explaining the actual guideline basis for the 12-month plan, which risks him not returning for the follow-up scan because he assumes there is nothing to monitor.",
+      "Not clearly documenting or communicating the specific date for the follow-up CT, since nodule surveillance protocols depend on the patient actually returning for the scheduled scan."
+    ],
+    "management_principles": [
+      "Explain, using plain language and the actual size (about the size of a small pea), why a 5 mm smooth nodule carries a low probability of malignancy.",
+      "Walk through why guidelines recommend surveillance imaging rather than immediate biopsy or surgery for a nodule this size, framing it as the evidence-based standard of care rather than a wait-and-see compromise.",
+      "Set a concrete 12-month follow-up low-dose CT date, and explain what would happen if the nodule grows or changes (closer surveillance or biopsy at that point).",
+      "Directly acknowledge his fear stemming from his uncle's history, and use that empathetic opening to explain why this specific finding is different and lower-risk."
+    ],
+    "boundaries_and_exceptions": [
+      "If a follow-up CT shows nodule growth, new suspicious morphology, or the nodule becoming part-solid, the management plan would shift toward closer interval imaging or biopsy per Fleischner guidance for growing nodules.",
+      "In a patient with a strong hereditary lung cancer syndrome or much heavier ongoing smoking exposure, risk stratification and follow-up intervals could be adjusted to be more intensive.",
+      "Multiple nodules, a nodule with ground-glass or part-solid components, or a nodule found in a patient with a known active malignancy elsewhere would follow different, more intensive Fleischner surveillance pathways than the single solid nodule seen here."
+    ],
+    "source_refs": [
+      {
+        "title": "Fleischner Society Guidelines for Management of Incidental Pulmonary Nodules",
+        "url": "https://pubs.rsna.org/doi/10.1148/radiol.2017161659"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the agenda for reviewing chest CT scan results",
+    "Explain a 5 mm solitary pulmonary nodule finding in non-alarmist plain English",
+    "Explain Fleischner risk context and surveillance options for a former smoker",
+    "Screen for respiratory red flags and constitutional symptoms",
+    "Address lung cancer anxiety and family history concerns empathetically",
+    "Explain why invasive biopsy or immediate surgery is not appropriate for this small nodule",
+    "Agree on a 12-month follow-up repeat CT scan schedule"
+  ],
+  "evaluation_checklist": [
+    {
+      "item": "Confirms the reason for follow-up and the patient's agenda",
+      "required": true
+    },
+    {
+      "item": "Links the visit to the previous assessment and investigation plan",
+      "required": true
+    },
+    {
+      "item": "Assesses interval improvement, persistence or deterioration",
+      "required": true
+    },
+    {
+      "item": "Reviews adherence using nonjudgmental language",
+      "required": false,
+      "applicable": false,
+      "not_applicable_reason": "No medication prescribed"
+    },
+    {
+      "item": "Checks treatment tolerance and adverse effects",
+      "required": false,
+      "applicable": false,
+      "not_applicable_reason": "No medication prescribed"
+    },
+    {
+      "item": "Screens for case-relevant new symptoms and red flags",
+      "required": true
+    },
+    {
+      "item": "Explains the imaging results in plain English",
+      "required": true
+    },
+    {
+      "item": "Elicits concerns, questions and treatment preferences",
+      "required": true
+    },
+    {
+      "item": "Agrees on a concrete monitoring plan",
+      "required": true
+    },
+    {
+      "item": "Provides follow-up timing and safety-net advice",
+      "required": true
+    },
+    {
+      "item": "Uses teach-back or another understanding check",
+      "required": true
+    }
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the agenda for reviewing chest CT scan results",
+      "category": "Agenda",
+      "question": "Before we go through the radiologist's CT report today, what questions are on your mind?"
+    },
+    {
+      "objective": "Explain a 5 mm solitary pulmonary nodule finding in non-alarmist plain English",
+      "category": "Results",
+      "question": "Would it be okay if I explained what a tiny 5-millimeter nodule actually is?"
+    },
+    {
+      "objective": "Explain low risk and surveillance guidelines (Fleischner criteria)",
+      "category": "Clinical guidelines",
+      "question": "Can I share why medical guidelines recommend simply rechecking small nodules in 12 months?"
+    },
+    {
+      "objective": "Screen for respiratory red flags and constitutional symptoms",
+      "category": "Safety",
+      "question": "Have you experienced any coughing up blood, night sweats, fever, or unexplained weight loss?"
+    },
+    {
+      "objective": "Address lung cancer anxiety and family history concerns empathetically",
+      "category": "Concerns",
+      "question": "What worries you most when you hear the word nodule, especially given your family history?"
+    },
+    {
+      "objective": "Reassure why invasive biopsy or immediate surgery is unnecessary for low-risk small nodules",
+      "category": "Reassurance",
+      "question": "Would it help to discuss why doing a biopsy on such a tiny spot carries more risk than benefit?"
+    },
+    {
+      "objective": "Agree on a 12-month follow-up repeat CT scan schedule",
+      "category": "Shared plan",
+      "question": "Shall we agree to schedule a follow-up low-dose CT scan in one year to ensure it stays unchanged?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the agenda for reviewing chest CT scan results",
+      "keywords": [
+        "ct scan",
+        "results",
+        "chest ct",
+        "today",
+        "agenda",
+        "report"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain a 5 mm solitary pulmonary nodule finding in non-alarmist plain English",
+      "keywords": [
+        "nodule",
+        "5 mm",
+        "spot",
+        "freckle",
+        "tiny",
+        "small",
+        "lung"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain low risk and surveillance guidelines (Fleischner criteria)",
+      "keywords": [
+        "low risk",
+        "guidelines",
+        "surveillance",
+        "12 months",
+        "fleischner",
+        "recheck"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for respiratory red flags and constitutional symptoms",
+      "keywords": [
+        "coughing blood",
+        "hemoptysis",
+        "night sweats",
+        "weight loss",
+        "fever",
+        "shortness of breath"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address lung cancer anxiety and family history concerns empathetically",
+      "keywords": [
+        "cancer",
+        "uncle",
+        "worry",
+        "worried",
+        "anxious",
+        "family history",
+        "understandable"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Reassure why invasive biopsy or immediate surgery is unnecessary for low-risk small nodules",
+      "keywords": [
+        "biopsy",
+        "surgery",
+        "unnecessary",
+        "invasive",
+        "more risk",
+        "reassure"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on a 12-month follow-up repeat CT scan schedule",
+      "keywords": [
+        "12 months",
+        "one year",
+        "repeat ct",
+        "scan",
+        "agree",
+        "plan",
+        "surveillance"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "58M former smoker returns for chest CT results. Prior cough resolved. Asks if 5mm nodule is cancer and needs immediate biopsy or surgery due to uncle's lung cancer history.",
+    "objective": "Chest CT: 5mm smooth solid right upper lobe nodule without lymphadenopathy. Physical exam normal.",
+    "assessment": "Incidental 5 mm solitary pulmonary nodule in a former smoker; low absolute probability of malignancy, with surveillance individualized using Fleischner criteria.",
+    "plan": "Explain the low absolute malignancy probability of a 5 mm smooth nodule, avoid invasive biopsy, and consider a 12-month low-dose CT based on smoking risk and shared decision-making."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Lung CT scan results review",
+    "one_liner": "Clinical scenario for evaluation and management of Lung CT scan results review."
+  }
+}

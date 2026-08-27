@@ -1,0 +1,176 @@
+{
+  "id": "urology_026",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Brown",
+  "age": 72,
+  "gender": "male",
+  "chief_complaint": "hesitancy, weak urine stream, nocturia in elderly male",
+  "hpi_details": "A 72-year-old male presents to the clinic with hesitancy, weak urine stream, and nocturia. The patient states the symptoms started recently and have been gradually worsening.",
+  "ideas": "thinks it might be related to bph",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "male_luts_urinalysis",
+      "title": "Urinalysis",
+      "order_terms": ["urinalysis", "urine dip", "urine test", "ua"],
+      "availability_message": "The urinalysis result is now available.",
+      "results": [
+        {"id": "urine_leukocyte_esterase", "test": "Leukocyte esterase", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_nitrite", "test": "Nitrite", "value": "Negative", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_blood", "test": "Blood", "value": "Negative", "flag": "normal", "specimen": "Urine"}
+      ]
+    },
+    {
+      "id": "male_luts_post_void_residual",
+      "title": "Post-void residual bladder scan",
+      "order_terms": ["post void residual", "pvr", "bladder scan", "residual urine"],
+      "availability_message": "The post-void residual measurement is now available.",
+      "results": [
+        {"id": "post_void_residual", "test": "Post-void residual", "value": "118", "unit": "mL", "reference_range": "<100", "flag": "high"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Benign Prostatic Hyperplasia (BPH) evaluation and management",
+    "core_concepts": [
+      "New or progressive male LUTS require assessment for infection, retention, malignancy, stricture, neurologic disease, medication effects, and nocturnal polyuria as well as BPH.",
+      "Use symptom/bother assessment, urinalysis, abdominal examination, DRE, and selective PVR, renal function, uroflowmetry, PSA, imaging, or cystoscopy when findings would change management.",
+      "Tamsulosin may improve voiding symptoms but does not establish the diagnosis; counsel on dizziness, orthostatic hypotension, syncope, ejaculatory effects, and planned cataract surgery.",
+      "Urgently evaluate inability to void, fever/systemic illness, gross hematuria, renal impairment, hydronephrosis, recurrent infection/stones, neurologic deficits, or cancer concern."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: hesitancy, weak urine stream, nocturia in elderly male",
+      "Key HPI features: A 72-year-old male presents to the clinic with hesitancy, weak urine stream, and nocturia. The patient states the symptoms started recently and have been gradually worsening.",
+      "Objective/Exam findings: Obtain vital signs, abdominal examination for palpable bladder, neurologic examination, DRE, and urinalysis; measure PVR and renal function if retention or complications are suspected.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Benign Prostatic Hyperplasia (BPH).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Prostate adenocarcinoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Missing acute retention or an infected obstructed urinary tract requiring urgent assessment and drainage.",
+      "Dismissing hematuria, renal dysfunction, hydronephrosis, recurrent UTI/stones, abnormal DRE, bone pain, or neurologic symptoms.",
+      "Starting an alpha-blocker without blood-pressure/fall-risk assessment or without counseling about orthostasis and cataract-surgery implications."
+    ],
+    "management_principles": [
+      "Quantify symptoms and identify complications before selecting watchful waiting, lifestyle measures, medication, or procedure.",
+      "Offer fluid/caffeine/alcohol timing and constipation management for uncomplicated symptoms; use alpha-blocker therapy only after shared safety counseling.",
+      "Refer to urology for complications, suspected cancer/stricture, persistent bothersome symptoms, or procedural discussion."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of hesitancy, weak urine stream, nocturia in elderly male.",
+    "objective": "Obtain vitals, abdominal and focused neurologic examination, DRE, and urinalysis; selectively obtain PVR, creatinine, PSA, uroflowmetry, or imaging based on complications and management decisions.",
+    "assessment": "Condition highly suspicious for Benign Prostatic Hyperplasia.",
+    "plan": "Assess symptom burden and exclude infection, retention, malignancy, and neurologic causes. For uncomplicated symptoms, discuss lifestyle measures and shared alpha-blocker therapy with orthostasis/fall and cataract-surgery counseling. Refer to urology for complications or refractory symptoms; seek urgent care for inability to void, fever/systemic illness, gross hematuria, or renal impairment."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Benign Prostatic Hyperplasia",
+    "Select appropriate diagnostic workup for Benign Prostatic Hyperplasia",
+    "Implement evidence-based management plan: Tamsulosin alpha-blocker, monitor PSA/post-void residual"
+  ],
+  "teaching": {
+    "diagnosis": "Benign Prostatic Hyperplasia (BPH)",
+    "one_liner": "Non-malignant enlargement of the prostate gland leading to lower urinary tract symptoms (LUTS) and urinary retention.",
+    "differentials": [
+      "Prostate adenocarcinoma",
+      "Urethral stricture",
+      "Neurogenic bladder"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Hydronephrosis with renal failure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Voiding symptoms - Hesitancy and weak stream",
+        "say": "Do you have to wait or strain before urine starts coming out, and is the stream weak?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "strain",
+          "stream",
+          "weak",
+          "hesitancy",
+          "dribbling"
+        ]
+      },
+      {
+        "objective": "Storage symptoms - Nocturia and frequency",
+        "say": "How many times do you wake up at night to urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "night",
+          "urinate",
+          "nocturia",
+          "frequency",
+          "waking"
+        ]
+      },
+      {
+        "objective": "Sensation of incomplete emptying",
+        "say": "After finishing urination, do you still feel like your bladder is not completely empty?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "empty",
+          "bladder",
+          "incomplete",
+          "residual",
+          "emptying"
+        ]
+      },
+      {
+        "objective": "Urgency and urge incontinence",
+        "say": "Do you get sudden powerful urges to urinate that are hard to hold?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urges",
+          "hold",
+          "urgency",
+          "urgent",
+          "leakage"
+        ]
+      },
+      {
+        "objective": "Current BPH medication screening",
+        "say": "Are you taking medications like tamsulosin or finasteride for your prostate?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "tamsulosin",
+          "finasteride",
+          "prostate",
+          "medications",
+          "pills"
+        ]
+      }
+    ]
+  }
+}

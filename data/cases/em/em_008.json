@@ -1,0 +1,216 @@
+{
+  "id": "em_008",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mrs. Harris",
+  "age": 38,
+  "gender": "female",
+  "chief_complaint": "high fever, headache, nuchal rigidity, petechial/purpuric skin rash, and photophobia (Meningococcal Meningitis / Sepsis)",
+  "hpi_details": "38F brought to ED by husband due to 12-hour rapid onset of pounding headache, high fever (39.8C), severe neck stiffness, and confusion. Over the past 3 hours, husband noticed a rapidly spreading dark red/purple spotted rash across her lower legs, torso, and wrists that does not blanch or fade when pressed. Patient is lethargic, moaning when bright lights are turned on (photophobia), and vomiting.",
+  "ideas": "lethargic, confused, and distressed by severe head and neck pain",
+  "concerns": "husband terrified by the rapidly spreading purple skin spots and confusion",
+  "expectations": "wants immediate emergency brain infection treatment and ICU care",
+  "pmh": "Unremarkable medical history",
+  "medications": "None",
+  "social_hx": "Elementary school teacher, non-smoker",
+  "investigation_events": [
+    {
+      "id": "noncontrast_head_ct",
+      "title": "Non-contrast CT head",
+      "order_terms": [
+        "noncontrast head ct",
+        "non-contrast head ct",
+        "ct head",
+        "head ct",
+        "brain ct"
+      ],
+      "availability_message": "The non-contrast head CT report is now available.",
+      "results": [
+        {
+          "id": "head_ct_report",
+          "test": "Non-contrast CT head",
+          "value": "No mass lesion, mass effect, hydrocephalus, or imaging evidence of impending herniation",
+          "collected_at": "Emergency scan"
+        }
+      ]
+    },
+    {
+      "id": "csf_analysis",
+      "title": "Lumbar puncture and CSF analysis",
+      "order_terms": [
+        "lumbar puncture",
+        "spinal tap",
+        "csf analysis",
+        "csf studies",
+        "lp"
+      ],
+      "availability_message": "The lumbar puncture and CSF results are now available. Antibiotics were not delayed for testing.",
+      "results": [
+        {
+          "id": "csf_opening_pressure",
+          "test": "CSF opening pressure",
+          "value": "280",
+          "unit": "mm H2O",
+          "reference_range": "60-250",
+          "flag": "high",
+          "specimen": "CSF",
+          "collected_at": "Initial lumbar puncture"
+        },
+        {
+          "id": "csf_wbc",
+          "test": "CSF white blood cells",
+          "value": "4,200 (92% neutrophils)",
+          "unit": "/µL",
+          "reference_range": "0-5",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "Initial lumbar puncture"
+        },
+        {
+          "id": "csf_protein",
+          "test": "CSF protein",
+          "value": "220",
+          "unit": "mg/dL",
+          "reference_range": "15-45",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "Initial lumbar puncture"
+        },
+        {
+          "id": "csf_glucose",
+          "test": "CSF glucose",
+          "value": "<10",
+          "unit": "mg/dL",
+          "reference_range": "45-80",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "Initial lumbar puncture"
+        },
+        {
+          "id": "csf_gram_stain",
+          "test": "CSF Gram stain",
+          "value": "Gram-negative intracellular and extracellular kidney-bean-shaped diplococci",
+          "flag": "critical",
+          "specimen": "CSF",
+          "collected_at": "Initial lumbar puncture"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Meningococcal Meningitis and Meningococcemia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Meningococcal Meningitis and Meningococcemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes STAT emergency anti-infective and resuscitation protocol (CRITICAL MANDATE: NEVER delay empirical IV antibiotic administration to perform a lumbar puncture or head CT if delays occur) via STAT empirical IV antibiotics plus dexamethasone before or with the first dose, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever, headache, nuchal rigidity, petechial/purpuric skin rash, and photophobia (Meningococcal Meningitis / Sepsis)",
+      "Key HPI features: 38F brought to ED by husband due to 12-hour rapid onset of pounding headache, high fever (39.8C), severe neck stiffness, and confusion. Over the past 3 hours, husband noticed a rapidly spreading dark red/purple spotted rash across her lower legs, torso, and wrists that does not blanch or fade when pressed. Patient is lethargic, moaning when bright lights are turned on (photophobia), and vomiting.",
+      "Objective/Exam findings: Vitals: HR 132, BP 88/54 (septic shock), Temp 39.9C, RR 24. Neurological exam reveals somnolence, disorientation, and positive meningeal signs: positive Kernig sign (resistance and pain on knee extension with flexed hip) and positive Brudzinski sign (spontaneous involuntary hip/knee flexion when examiner flexes patient's neck). Skin examination demonstrates widespread non-blanching petechiae coalescing into dark purpuric and ecchymotic plaques (Purpura Fulminans) over the lower extremities and trunk. STAT blood cultures drawn. Head CT normal (no mass effect or herniation risk). STAT Lumbar Puncture CSF analysis: Opening pressure 280 mm H2O, WBC 4,200/uL (92% neutrophils), Protein 220 mg/dL, Glucose <10 mg/dL (serum glucose 110 mg/dL). CSF Gram stain shows Gram-negative intracellular and extracellular kidney-bean shaped diplococci.",
+      "Relevant background/PMH: Unremarkable medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Meningococcal Meningitis and Meningococcemia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral meningitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Non-blanching (does not fade with pressure) purple rash — this alone justifies immediate empiric antibiotics."
+    ],
+    "management_principles": [
+      "STAT emergency anti-infective and resuscitation protocol (CRITICAL MANDATE: NEVER delay empirical IV antibiotic administration to perform a lumbar puncture or head CT if delays occur)",
+      "Administer STAT empirical IV bactericidal therapy: IV Ceftriaxone 2 g q12h PLUS IV Vancomycin (PLUS IV Ampicillin if patient >50 years or immunocompromised for Listeria)",
+      "Administer IV Dexamethasone (10 mg IV) exactly 15-20 minutes BEFORE or simultaneously with the first dose of antibiotics to attenuate inflammatory cytokine burst and prevent neurological/audiological sequelae"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "38F presenting with acute febrile encephalopathy, nuchal rigidity, photophobia, and rapidly expanding non-blanching petechial/purpuric rash, pathognomonic for Neisseria meningitidis bacterial meningitis and meningococcemia.",
+    "objective": "Vitals: HR 132, BP 88/54 (septic shock), Temp 39.9C, RR 24. Neurological exam reveals somnolence, disorientation, and positive meningeal signs: positive Kernig sign (resistance and pain on knee extension with flexed hip) and positive Brudzinski sign (spontaneous involuntary hip/knee flexion when examiner flexes patient's neck). Skin examination demonstrates widespread non-blanching petechiae coalescing into dark purpuric and ecchymotic plaques (Purpura Fulminans) over the lower extremities and trunk. STAT blood cultures drawn. Head CT normal (no mass effect or herniation risk). STAT Lumbar Puncture CSF analysis: Opening pressure 280 mm H2O, WBC 4,200/uL (92% neutrophils), Protein 220 mg/dL, Glucose <10 mg/dL (serum glucose 110 mg/dL). CSF Gram stain shows Gram-negative intracellular and extracellular kidney-bean shaped diplococci.",
+    "assessment": "Acute Bacterial Meningococcal Meningitis and Meningococcemia (Neisseria meningitidis) with Purpura Fulminans and Septic Shock.",
+    "plan": "STAT emergency anti-infective and resuscitation protocol (CRITICAL MANDATE: NEVER delay empirical IV antibiotic administration to perform a lumbar puncture or head CT if delays occur): 1. Administer STAT empirical IV bactericidal therapy: IV Ceftriaxone 2 g q12h PLUS IV Vancomycin (PLUS IV Ampicillin if patient >50 years or immunocompromised for Listeria). 2. Administer IV Dexamethasone (10 mg IV) exactly 15-20 minutes BEFORE or simultaneously with the first dose of antibiotics to attenuate inflammatory cytokine burst and prevent neurological/audiological sequelae. 3. Aggressive septic shock fluid resuscitation and norepinephrine vasopressor support. 4. Immediate droplet isolation precautions and mandatory post-exposure antimicrobial prophylaxis (Oral Ciprofloxacin 500 mg single dose or Rifampin) for all close household/medical contacts."
+  },
+  "learning_objectives": [
+    "Recognize the classic clinical presentation of Meningococcal Meningitis / Meningococcemia (fever, severe headache, nuchal rigidity, photophobia, and pathognomonic rapidly spreading non-blanching petechial/purpuric rash)",
+    "Understand the strict clinical mandate: if lumbar puncture or neuroimaging (head CT) is delayed in a patient with suspected acute bacterial meningitis, empirical bactericidal IV antibiotics (Ceftriaxone + Vancomycin) and IV Dexamethasone MUST be administered immediately after drawing blood cultures without delay",
+    "Interpret CSF fluid analysis differentiating bacterial meningitis (elevated opening pressure, marked neutrophilic pleocytosis >1000/uL, high protein >100 mg/dL, low glucose <40 mg/dL or CSF:serum glucose ratio <0.4) from viral aseptics",
+    "Coordinate mandatory public health droplet precautions and prescribe immediate post-exposure antimicrobial prophylaxis (Ciprofloxacin, Rifampin, or Ceftriaxone) for all close contacts"
+  ],
+  "teaching": {
+    "diagnosis": "Meningococcal Meningitis and Meningococcemia",
+    "one_liner": "A rapidly fatal bacterial infection causing meningitis (headache, neck stiffness, photophobia) together with bloodstream invasion producing a non-blanching purple rash — antibiotics must never be delayed for a lumbar puncture or CT scan.",
+    "differentials": [
+      "Viral meningitis",
+      "Idiopathic thrombocytopenic purpura",
+      "Toxic shock syndrome"
+    ],
+    "red_flags": [
+      "Non-blanching (does not fade with pressure) purple rash — this alone justifies immediate empiric antibiotics"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset speed",
+        "say": "How quickly did the headache, fever, and neck stiffness come on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "hours",
+          "rapid"
+        ]
+      },
+      {
+        "objective": "Rash appearance",
+        "say": "Does the rash fade when you press on it, or stay the same?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "non-blanching",
+          "purple"
+        ]
+      },
+      {
+        "objective": "Mental status",
+        "say": "How confused has she become?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confusion"
+        ]
+      },
+      {
+        "objective": "Photophobia",
+        "say": "Does light bother her eyes?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Recent contacts",
+        "say": "Has she been around anyone else who was sick?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

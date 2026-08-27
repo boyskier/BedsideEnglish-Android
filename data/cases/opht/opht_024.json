@@ -1,0 +1,145 @@
+{
+  "id": "opht_024",
+  "system": "ophthalmology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Yoon",
+  "age": 32,
+  "gender": "male",
+  "chief_complaint": "severe eye pain, watering, and light sensitivity after being poked in the eye",
+  "hpi_details": "32M presents with severe right eye pain, constant tearing, and photophobia that started immediately after his 2-year-old toddler accidentally poked him in the right eye with a finger.",
+  "ideas": "thinks his eye is scratched or damaged",
+  "concerns": "in significant discomfort with eye squinted shut",
+  "expectations": "wants pain drops and eye examination",
+  "pmh": "No significant history",
+  "medications": "None",
+  "social_hx": "Office manager, non-smoker",
+  "investigation_events": [{
+    "id": "same_day_corneal_abrasion_exam",
+    "title": "Fluorescein corneal examination",
+    "order_terms": ["fluorescein", "cobalt blue", "corneal stain", "corneal exam"],
+    "availability_message": "The fluorescein examination result is now available after assessment excluded an open-globe injury.",
+    "results": [{"id": "fluorescein", "test": "Fluorescein examination, right eye", "value": "4 x 2 mm linear epithelial defect with bright fluorescein uptake; no stromal infiltrate and negative Seidel test", "flag": "abnormal"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Corneal abrasion evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Corneal abrasion is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Corneal Abrasion of the right eye, superficial epithelial defect, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe eye pain, watering, and light sensitivity after being poked in the eye",
+      "Key HPI features: 32M presents with severe right eye pain, constant tearing, and photophobia that started immediately after his 2-year-old toddler accidentally poked him in the right eye with a finger.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Corneal Abrasion of the right eye, superficial epithelial defect.",
+      "Relevant background/PMH: No significant history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Corneal abrasion.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Corneal foreign body without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any whitish infiltrate under the defect would suggest infection rather than simple abrasion."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Corneal Abrasion of the right eye, superficial epithelial defect",
+      "Perform fluorescein staining under cobalt blue light (visualize green epithelial scratch, confirm no infiltrate)",
+      "Provide topical erythromycin ointment and oral analgesia; consider a short-course cycloplegic only for clinically significant traumatic iritis or photophobia"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Corneal Abrasion of the right eye, superficial epithelial defect. severe eye pain, watering, and light sensitivity after being poked in the eye. 32M presents with severe right eye pain, constant tearing, and photophobia that started immediately after his 2-year-old toddler accidentally poked him in the right eye with a finger.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Corneal Abrasion of the right eye, superficial epithelial defect.",
+    "assessment": "Clinical presentation highly suggestive of Corneal Abrasion of the right eye, superficial epithelial defect.",
+    "plan": "Check visual acuity, pupil shape/reactivity, and fluorescein staining under cobalt-blue light to identify an epithelial defect and exclude an infiltrate. Provide topical erythromycin ointment and oral analgesia; consider a short-course cycloplegic only for clinically significant traumatic iritis or photophobia. Do not patch. Urgently refer for reduced vision, an irregular pupil, hyphema, suspected penetrating injury, or an infiltrate."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Corneal Abrasion of the right eye, superficial epithelial defect.",
+    "Formulate prioritized differential diagnosis for severe eye pain, watering, and light sensitivity after being poked in the eye",
+    "Select appropriate laboratory and imaging studies for ophthalmology",
+    "Implement evidence-based acute and long-term management strategies for Corneal Abrasion of the right eye, superficial epithelial defect."
+  ],
+  "teaching": {
+    "diagnosis": "Corneal abrasion",
+    "one_liner": "32M with sudden severe eye pain, tearing, and photophobia immediately after his toddler poked him in the eye.",
+    "differentials": [
+      "Corneal foreign body",
+      "Traumatic iritis",
+      "Corneal ulcer"
+    ],
+    "red_flags": [
+      "Any whitish infiltrate under the defect would suggest infection rather than simple abrasion",
+      "Reduced vision, an irregular pupil, hyphema, or suspected penetrating injury requires urgent ophthalmology assessment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the mechanism of injury",
+        "say": "Can you describe exactly what touched your eye and how?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mechanism of injury"
+        ]
+      },
+      {
+        "objective": "Assess pain and photophobia severity",
+        "say": "How bad is the pain, and does light make it worse?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pain",
+          "photophobia"
+        ]
+      },
+      {
+        "objective": "Screen for vision change",
+        "say": "Has your vision been affected at all?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vision change"
+        ]
+      },
+      {
+        "objective": "Ask about foreign body sensation",
+        "say": "Does it feel like something is still stuck in your eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "foreign body sensation"
+        ]
+      },
+      {
+        "objective": "Explain fluorescein staining and treatment",
+        "say": "We'll use a dye to check for a scratch on your cornea, then treat with antibiotic ointment — no patching needed.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "fluorescein stain",
+          "no patching"
+        ]
+      }
+    ]
+  }
+}

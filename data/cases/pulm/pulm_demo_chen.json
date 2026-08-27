@@ -1,0 +1,156 @@
+{
+  "id": "pulm_demo_chen",
+  "system": "pulmonology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Chen",
+  "age": 45,
+  "gender": "female",
+  "chief_complaint": "progressive shortness of breath for 3 days",
+  "hpi_details": "breathless on exertion (stairs, walking fast), orthopnoea (hard to sleep lying flat), started with a mild cough now productive of yellowish sputum, bilateral chest tightness/pressure worse on deep inspiration, no haemoptysis",
+  "ideas": "thought it was just a cold at first",
+  "concerns": "scared it's something with her heart again — was hospitalised with pneumonia five years ago and worries this is similar or cardiac",
+  "expectations": "wants to know when the results will be back and reassurance about her heart",
+  "pmh": "hospitalised with pneumonia about five years ago",
+  "medications": "amlodipine for blood pressure, on it for two years, no known allergies",
+  "social_hx": "ex-smoker (quit about ten years ago), worked in a textile factory for nearly fifteen years, husband encouraged her to come in sooner",
+  "clinical_knowledge": {
+    "topic": "Community-acquired pneumonia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of community-acquired pneumonia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Evaluate oxygenation and severity promptly, investigate pneumonia and competing cardiac or thromboembolic causes, and consider antibiotics only when clinically indicated after assessment.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: progressive shortness of breath for 3 days",
+      "Key HPI features: breathless on exertion (stairs, walking fast), orthopnoea (hard to sleep lying flat), started with a mild cough now productive of yellowish sputum, bilateral chest tightness/pressure worse on deep inspiration, no haemoptysis",
+      "Objective/Exam findings: O2 saturation, RR, HR, temperature, chest auscultation, CXR, FBC, CRP; consider BNP/ECG given cardiac concern.",
+      "Relevant background/PMH: hospitalised with pneumonia about five years ago",
+      "Current medications: amlodipine for blood pressure, on it for two years, no known allergies"
+    ],
+    "common_misconceptions": [
+      "Assuming that the absence of a high fever rules out community-acquired pneumonia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Congestive heart failure exacerbation without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as hypoxaemia, respiratory distress, or sepsis."
+    ],
+    "management_principles": [
+      "Obtain clinician-directed chest imaging and investigations, including ECG and cardiac testing when indicated by orthopnoea or chest pressure.",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Use antibiotic, oxygen, and other treatments only when clinically indicated and clinician-directed.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": []
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: progressive shortness of breath for 3 days\n\nbreathless on exertion (stairs, walking fast), orthopnoea (hard to sleep lying flat), started with a mild cough now productive of yellowish sputum, bilateral chest tightness/pressure worse on deep inspiration, no haemoptysis",
+    "objective": "O2 saturation, RR, HR, temperature, chest auscultation, CXR, FBC, CRP; consider BNP/ECG given cardiac concern.",
+    "assessment": "Likely community-acquired pneumonia / lower respiratory tract infection. DDx: heart failure exacerbation, COPD/asthma exacerbation, PE, occupational lung disease.",
+    "plan": "Arrange prompt clinician-directed chest imaging, oxygenation assessment, and blood tests; obtain ECG and cardiac testing when indicated by orthopnoea or chest pressure, and assess PE risk. Consider antibiotics only when clinically indicated after severity assessment. Seek emergency care for hypoxemia, respiratory distress, sepsis features, syncope, or chest pressure concerning for ACS or PE."
+  },
+  "learning_objectives": [
+    "Characterise dyspnoea systematically: onset, triggers, orthopnoea, exertional tolerance",
+    "Screen for cardiac vs respiratory vs occupational causes",
+    "Elicit occupational exposure history relevant to lung disease",
+    "Address the patient's ICE — specifically her fear of a cardiac cause"
+  ],
+  "teaching": {
+    "diagnosis": "Community-acquired pneumonia",
+    "one_liner": "An acute lower respiratory infection causing cough with purulent sputum, pleuritic chest discomfort, and breathlessness; assess severity and alternative cardiopulmonary causes.",
+    "differentials": [
+      "Congestive heart failure exacerbation",
+      "Pulmonary embolism",
+      "COPD or asthma exacerbation"
+    ],
+    "red_flags": [
+      "Hypoxaemia, respiratory distress, or sepsis",
+      "Use of accessory muscles at rest",
+      "Syncope or chest pressure concerning for acute coronary syndrome or pulmonary embolism"
+    ],
+    "must_ask": [
+      {
+        "objective": "Sputum characteristics and infective symptoms",
+        "say": "Have you noticed your phlegm becoming thicker, greener, or increasing in amount?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "phlegm",
+          "sputum",
+          "thicker",
+          "green",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Exertional dyspnea and orthopnea",
+        "say": "Are you getting short of breath even while resting or propping up on extra pillows at night?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "shortness",
+          "breath",
+          "pillows",
+          "resting",
+          "propping"
+        ]
+      },
+      {
+        "objective": "Fever and systemic symptoms",
+        "say": "Have you had a fever, chills, sweats, or felt generally unwell?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "sweats",
+          "unwell",
+          "temperature"
+        ]
+      },
+      {
+        "objective": "Smoking history quantifying",
+        "say": "How many packs of cigarettes did you smoke per day and for how long?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "packs",
+          "cigarettes",
+          "smoking",
+          "tobacco",
+          "smoker"
+        ]
+      },
+      {
+        "objective": "Aspiration and infection risk factors",
+        "say": "Have you recently been in hospital, had problems swallowing, or been exposed to anyone with a respiratory infection?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hospital",
+          "swallowing",
+          "aspiration",
+          "infection",
+          "exposure"
+        ]
+      }
+    ]
+  }
+}

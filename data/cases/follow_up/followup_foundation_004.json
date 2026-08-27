@@ -1,0 +1,266 @@
+{
+  "id": "followup_foundation_004",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "results_review",
+  "difficulty": "beginner",
+  "eval_template": "foundations_followup",
+  "learner_level": "preclinical",
+  "coaching_mode": true,
+  "patient_name": "Mr. David Kim",
+  "age": 45,
+  "gender": "male",
+  "visit_title": "Cholesterol test results check-in",
+  "follow_up_reason": "Two-week check-in to review a routine cholesterol blood test",
+  "clinician_brief": {
+    "prior_note": "Two weeks ago, Mr. Kim had a routine cholesterol blood test as part of a workplace health check. He had no symptoms at the time and was not taking any regular medicine. He was told to continue his usual diet and exercise until the results were ready.",
+    "active_problems": [
+      "Mildly high cholesterol (newly found)"
+    ],
+    "current_medications": [
+      "None"
+    ],
+    "previous_plan": [
+      "Routine fasting cholesterol blood test",
+      "Continue usual diet and exercise",
+      "Return today to go over the results"
+    ],
+    "results_and_observations": [
+      "Total cholesterol: 215 mg/dL (mildly above target)",
+      "LDL (\"bad\") cholesterol: 130 mg/dL",
+      "HDL (\"good\") cholesterol: 50 mg/dL",
+      "Blood sugar and other tests normal"
+    ],
+    "today_tasks": [
+      "Ask if he has any symptoms before giving the results",
+      "Explain the cholesterol numbers in plain language",
+      "Ask about his diet and exercise habits",
+      "Ask about family history of heart disease",
+      "Screen for chest pain or breathlessness",
+      "Answer his questions and agree on a plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Feels completely well; only came in because his workplace offered a free health check.",
+    "adherence": "No medicine has been started yet, so there is nothing to take.",
+    "treatment_response": "Not applicable — no treatment has been tried yet.",
+    "side_effects": "None, since no medicine has been started.",
+    "new_symptoms_and_red_flags": "No chest pain, no shortness of breath when climbing stairs, no leg pain when walking.",
+    "agenda": "Wants to know if his cholesterol number is dangerous.",
+    "concern": "His father had a heart attack at age 50, and he is worried about having the same problem.",
+    "preference": "Would like to try diet and exercise changes before starting any medicine, if possible."
+  },
+  "clinical_knowledge": {
+    "topic": "Explaining a mildly elevated cholesterol panel (total 215, LDL 130, HDL 50) and deciding lifestyle-first versus statin therapy",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "A total cholesterol of 215 mg/dL with LDL 130 mg/dL is mildly elevated, not a medical emergency, and in an asymptomatic 45-year-old man the first-line response is typically a structured trial of diet and exercise with risk reassessment, not immediate medication.",
+      "The treatment decision should be framed around estimated 10-year cardiovascular risk (which combines cholesterol with age, blood pressure, smoking status, and family history), not the cholesterol number in isolation.",
+      "An HDL of 50 mg/dL is in a favorable range and partially offsets the LDL elevation, which is worth explaining explicitly since patients often only hear 'high cholesterol' and miss the fuller picture.",
+      "A father's heart attack at age 50 counts as a premature family history of coronary disease, which should raise (not lower) the threshold for how seriously this result is taken, even though today's exam is reassuring."
+    ],
+    "diagnostic_clues": [
+      "Total cholesterol 215 mg/dL and LDL 130 mg/dL are both only mildly above target, supporting a lifestyle-first trial rather than urgent pharmacologic therapy in an otherwise asymptomatic patient.",
+      "HDL 50 mg/dL is a protective finding that should be explained alongside the LDL number so he understands his overall lipid profile, not just the 'bad' number.",
+      "Normal blood sugar and other tests reduce the likelihood of undiagnosed diabetes or metabolic syndrome driving the lipid abnormality.",
+      "A father's heart attack at age 50 is a premature-onset family history that meaningfully raises his own cardiovascular risk estimate and should factor into the risk discussion.",
+      "No chest pain, breathlessness on exertion, or leg pain with walking argues against current symptomatic coronary or peripheral artery disease."
+    ],
+    "common_misconceptions": [
+      "Wants to know if his cholesterol number is dangerous — a single mildly elevated number is not itself dangerous; what matters is the trend over time and the overall cardiovascular risk profile, which is worth explaining plainly.",
+      "His father had a heart attack at age 50, and he is worried about having the same problem — this fear is a reasonable prompt for risk discussion, but family history is one input among several, not a guarantee of the same outcome, especially if modifiable risk factors are addressed now.",
+      "Would like to try diet and exercise changes before starting any medicine, if possible — a reasonable and often appropriate first step for mild elevations, but worth pairing with a concrete recheck timeframe rather than an open-ended trial.",
+      "Assuming that because he feels completely well, his cholesterol result cannot reflect real risk — cholesterol-related cardiovascular risk is typically silent for years before symptoms appear, which is exactly why screening exists."
+    ],
+    "dangerous_errors": [
+      "Telling him the number is 'not a big deal' without factoring in his father's premature coronary history, which changes his overall risk category.",
+      "Starting a statin reflexively without first calculating an actual risk estimate or discussing a reasonable lifestyle-first trial, when guidelines support shared decision-making at this risk level.",
+      "Failing to screen for exertional chest pain, breathlessness, or claudication before reassuring him that no further workup is needed today.",
+      "Not setting a concrete recheck interval, leaving an open-ended 'try lifestyle changes' plan with no way to know whether it worked."
+    ],
+    "management_principles": [
+      "Explain the total cholesterol, LDL, and HDL numbers in plain language, including why the HDL of 50 is a favorable finding.",
+      "Discuss diet (reducing saturated fat, increasing fiber) and exercise as the first step, matching his stated preference, while being honest about when medication would become appropriate.",
+      "Take the family history of premature heart attack seriously in the risk discussion, even though today's exam is reassuring.",
+      "Agree on a specific recheck interval (commonly around three months) to reassess the lipid panel and confirm whether lifestyle changes are working before revisiting medication."
+    ],
+    "boundaries_and_exceptions": [
+      "If his 10-year cardiovascular risk estimate turns out to be higher once formally calculated (accounting for blood pressure, smoking, and family history), guideline thresholds may favor starting a statin now rather than waiting on a lifestyle trial alone.",
+      "This lifestyle-first approach applies to a mild, isolated LDL elevation in an asymptomatic adult; a markedly higher LDL, diabetes, chronic kidney disease, or existing vascular disease would lower the threshold for starting medication immediately."
+    ],
+    "source_refs": [
+      {
+        "title": "2018 ACC/AHA Guideline on the Management of Blood Cholesterol",
+        "url": "https://professional.heart.org/en/guidelines-statements/prevention-guidelines"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Confirm the reason for today's visit and ask about symptoms before giving results",
+    "Explain the cholesterol results in plain, simple language",
+    "Ask about his current diet and exercise habits",
+    "Ask about family history of heart disease",
+    "Screen for symptoms of heart disease such as chest pain or breathlessness",
+    "Invite and answer his questions about his risk",
+    "Agree on a clear next step, such as lifestyle changes or a repeat test"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Confirm the reason for today's visit and ask about symptoms before giving results",
+      "category": "Opening",
+      "question": "Before we go over your results, have you noticed any new symptoms?"
+    },
+    {
+      "objective": "Explain the cholesterol results in plain, simple language",
+      "category": "Results",
+      "question": "Your cholesterol came back a little higher than we'd like — can I walk you through the numbers?"
+    },
+    {
+      "objective": "Ask about his current diet and exercise habits",
+      "category": "Lifestyle",
+      "question": "Tell me about your usual diet and how much exercise you get in a week."
+    },
+    {
+      "objective": "Ask about family history of heart disease",
+      "category": "Family history",
+      "question": "Does anyone in your family have heart disease or high cholesterol?"
+    },
+    {
+      "objective": "Screen for symptoms of heart disease such as chest pain or breathlessness",
+      "category": "Safety",
+      "question": "Have you had any chest pain, shortness of breath, or pain in your legs when walking?"
+    },
+    {
+      "objective": "Invite and answer his questions about his risk",
+      "category": "Concerns",
+      "question": "Is there anything about these results you'd like to ask me?"
+    },
+    {
+      "objective": "Agree on a clear next step, such as lifestyle changes or a repeat test",
+      "category": "Wrap up",
+      "question": "Let's agree on a plan — shall we try diet and exercise first and recheck in a few months?"
+    }
+  ],
+  "objective_cues": [
+    {
+      "objective": "Confirm the reason for today's visit and ask about symptoms before giving results",
+      "say": "Before we go over your results, have you had any new symptoms?"
+    },
+    {
+      "objective": "Explain the cholesterol results in plain, simple language",
+      "say": "Your cholesterol came back a little higher than we'd like."
+    },
+    {
+      "objective": "Ask about his current diet and exercise habits",
+      "say": "Tell me about your usual diet and exercise."
+    },
+    {
+      "objective": "Ask about family history of heart disease",
+      "say": "Does anyone in your family have heart disease?"
+    },
+    {
+      "objective": "Screen for symptoms of heart disease such as chest pain or breathlessness",
+      "say": "Have you had any chest pain or shortness of breath?"
+    },
+    {
+      "objective": "Invite and answer his questions about his risk",
+      "say": "Is there anything about these results you'd like to ask me?"
+    },
+    {
+      "objective": "Agree on a clear next step, such as lifestyle changes or a repeat test",
+      "say": "Let's agree on a plan and when to recheck your levels."
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Confirm the reason for today's visit and ask about symptoms before giving results",
+      "keywords": [
+        "today",
+        "symptoms",
+        "before we",
+        "since your",
+        "blood test",
+        "any new"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain the cholesterol results in plain, simple language",
+      "keywords": [
+        "cholesterol",
+        "results",
+        "numbers",
+        "level",
+        "higher",
+        "explain"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Ask about his current diet and exercise habits",
+      "keywords": [
+        "diet",
+        "eating",
+        "exercise",
+        "activity",
+        "walking",
+        "food"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Ask about family history of heart disease",
+      "keywords": [
+        "family",
+        "father",
+        "mother",
+        "heart disease",
+        "heart attack",
+        "history"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for symptoms of heart disease such as chest pain or breathlessness",
+      "keywords": [
+        "chest pain",
+        "shortness of breath",
+        "breathless",
+        "leg pain",
+        "walking",
+        "dizzy"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Invite and answer his questions about his risk",
+      "keywords": [
+        "concern",
+        "concerns",
+        "worried",
+        "worry",
+        "risk",
+        "anything else"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on a clear next step, such as lifestyle changes or a repeat test",
+      "keywords": [
+        "next step",
+        "plan",
+        "diet and exercise",
+        "recheck",
+        "repeat test",
+        "follow up"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Cholesterol test results check-in",
+    "one_liner": "Clinical scenario for evaluation and management of Cholesterol test results check-in."
+  }
+}

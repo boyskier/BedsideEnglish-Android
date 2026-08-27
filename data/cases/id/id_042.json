@@ -1,0 +1,129 @@
+{
+  "id": "id_042",
+  "system": "id",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Sanchez",
+  "age": 25,
+  "gender": "male",
+  "chief_complaint": "mononucleosis-like syndrome with fever, sore throat, and rash",
+  "hpi_details": "25-year-old male presents with a 1-week history of fever, severe sore throat, profound fatigue, and a diffuse maculopapular rash on his trunk. He reports having unprotected sex with a new male partner 3 weeks ago. Monospot test is negative.",
+  "ideas": "thinks it might be related to hiv",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "heterophile_antibody",
+      "test": "Heterophile antibody test",
+      "value": "Negative",
+      "reference_range": "Negative",
+      "flag": "normal",
+      "specimen": "Blood",
+      "collected_at": "Before current encounter"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Primary HIV Infection (Acute Retroviral Syndrome) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary HIV Infection (Acute Retroviral Syndrome) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Primary HIV Infection: HIV RNA PCR test (viral load), consult ID for early ART start, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: mononucleosis-like syndrome with fever, sore throat, and rash",
+      "Key HPI features: 25-year-old male presents with a 1-week history of fever, severe sore throat, profound fatigue, and a diffuse maculopapular rash on his trunk. He reports having unprotected sex with a new male partner 3 weeks ago. Monospot test is negative.",
+      "Objective/Exam findings: Temp 38.2C. Pharyngeal erythema without exudates. Tender cervical and axillary lymphadenopathy. Diffuse faint erythematous maculopapular rash across the chest and back.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary HIV Infection (Acute Retroviral Syndrome).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Infectious mononucleosis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recent high-risk exposure — needs urgent HIV RNA testing."
+    ],
+    "management_principles": [
+      "Plan for Primary HIV Infection: HIV RNA PCR test (viral load), consult ID for early ART start",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: mononucleosis-like syndrome with fever, sore throat, and rash\n\n25-year-old male presents with a 1-week history of fever, severe sore throat, profound fatigue, and a diffuse maculopapular rash on his trunk. He reports having unprotected sex with a new male partner 3 weeks ago. Monospot test is negative.",
+    "objective": "Temp 38.2C. Pharyngeal erythema without exudates. Tender cervical and axillary lymphadenopathy. Diffuse faint erythematous maculopapular rash across the chest and back.",
+    "assessment": "Primary HIV Infection (Acute Retroviral Syndrome).",
+    "plan": "Order HIV-1/HIV-2 fourth-generation antigen/antibody combination assay and HIV RNA PCR viral load. Order comprehensive STI panel. Counsel patient and arrange urgent Infectious Disease follow-up if positive for initiation of antiretroviral therapy (ART)."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Primary HIV Infection",
+    "Select appropriate diagnostic workup for Primary HIV Infection",
+    "Implement evidence-based management plan: HIV RNA PCR test (viral load), consult ID for early ART start"
+  ],
+  "teaching": {
+    "diagnosis": "Primary HIV Infection (Acute Retroviral Syndrome)",
+    "one_liner": "A mononucleosis-like illness occurring shortly after HIV acquisition, with fever, sore throat, and rash, best confirmed by HIV RNA testing since the antibody test may not yet be positive.",
+    "differentials": [
+      "Infectious mononucleosis",
+      "Secondary syphilis"
+    ],
+    "red_flags": [
+      "Recent high-risk exposure — needs urgent HIV RNA testing"
+    ],
+    "must_ask": [
+      {
+        "objective": "Recent exposure",
+        "say": "Was there a recent exposure you're concerned about?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Symptom cluster",
+        "say": "Do you have fever, sore throat, and a rash together?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Timing",
+        "say": "How many weeks after the exposure did symptoms start?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Prior testing",
+        "say": "Have you been tested for HIV before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Lymph nodes",
+        "say": "Have you noticed swollen glands?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

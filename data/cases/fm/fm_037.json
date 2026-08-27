@@ -1,0 +1,120 @@
+{
+  "id": "fm_037",
+  "system": "fm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. King",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "lower back pain post-lifting, negative SLR, no red flags",
+  "hpi_details": "42-year-old male construction worker presents to the primary care clinic with acute, localized lower back pain that started 2 days ago immediately after lifting a heavy box using poor form. He denies any radiating pain down his legs, numbness, tingling, or bowel/bladder incontinence.",
+  "ideas": "thinks it might be related to lumbar_strain_fm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Acute Lumbar Strain evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Lumbar Strain is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes avoiding early imaging in the absence of red flags (Choosing Wisely), adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: lower back pain post-lifting, negative SLR, no red flags",
+      "Key HPI features: A 42-year-old male presents to the clinic with lower back pain post-lifting, negative SLR, and no red flags. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Normal vitals, bilateral lumbar paraspinal muscle spasm and tenderness, negative straight leg raise bilaterally, normal lower-extremity strength/sensation/reflexes.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Lumbar Strain.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Disc herniation without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: saddle anesthesia, bladder/bowel incontinence, or bilateral leg weakness — suggests cauda equina syndrome and needs emergent imaging and surgical referral."
+    ],
+    "management_principles": [
+      "Choosing Wisely: avoid early imaging in the absence of red flags",
+      "Reassure, NSAIDs, stay active",
+      "Consult specialist if symptoms worsen"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "42M presenting with acute, non-radiating lower back pain following a known lifting injury.",
+    "objective": "Vitals normal. Exam reveals bilateral lumbar paraspinal muscle spasm and tenderness. Straight Leg Raise (SLR) test is negative bilaterally. Neurological exam (strength, sensation, reflexes) in the lower extremities is entirely normal.",
+    "assessment": "Acute Lumbar Strain (Mechanical back pain).",
+    "plan": "Reassurance that mechanical back pain is benign and self-limiting. Avoid bed rest; advise returning to normal activities as tolerated. Prescribe oral NSAIDs (Naproxen) on a scheduled basis. Recommend superficial heat application and back strengthening exercises."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Lumbar Strain FM",
+    "Select appropriate diagnostic workup for Acute Lumbar Strain FM",
+    "Implement evidence-based management plan: Choosing Wisely: avoid early imaging. Reassure, NSAIDs, stay active"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Lumbar Strain",
+    "one_liner": "Mechanical back pain after lifting, without red flags, managed with reassurance and staying active rather than imaging.",
+    "differentials": [
+      "Disc herniation"
+    ],
+    "red_flags": [
+      "Saddle anesthesia, bladder/bowel incontinence, or bilateral leg weakness — suggests cauda equina syndrome, a surgical emergency",
+      "Fever, IV drug use, or recent spinal procedure — raises concern for spinal epidural abscess",
+      "History of cancer or unexplained weight loss — raises concern for spinal metastasis",
+      "Age over 50 with significant trauma or osteoporosis — raises concern for vertebral compression fracture"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism",
+        "say": "Did this start after lifting something?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Radiation",
+        "say": "Does it go down your leg?",
+        "domains": [
+          "radiation"
+        ]
+      },
+      {
+        "objective": "Neuro symptoms",
+        "say": "Any numbness or weakness?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Bladder/bowel",
+        "say": "Any changes in bladder or bowel control?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about this pain?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

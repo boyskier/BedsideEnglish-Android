@@ -1,0 +1,158 @@
+{
+  "id": "pulm_001",
+  "system": "pulmonology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Roberts",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "worsening shortness of breath and productive cough for 5 days",
+  "hpi_details": "baseline dyspnoea (GOLD 2 COPD), acutely worse over 5 days, increased sputum (yellow-green, increased volume), low-grade fever 37.8°C, no haemoptysis, using rescue inhaler every 2 hours",
+  "ideas": "thinks it is another chest infection like he gets every winter",
+  "concerns": "worried he might need to go to hospital as he lives alone",
+  "expectations": "wants antibiotics and something to help him breathe",
+  "pmh": "COPD diagnosed 5 years ago, previous smoker, no hospitalisation for COPD in 2 years",
+  "medications": "tiotropium 18mcg OD, salmeterol/fluticasone 50/500mcg BD, salbutamol 100mcg PRN",
+  "social_hx": "ex-smoker (quit 5 years ago, 40 pack-years), retired plumber, lives alone, no pets",
+  "clinical_knowledge": {
+    "topic": "Acute exacerbation of COPD",
+    "core_concepts": [
+      "A COPD exacerbation is an acute worsening of respiratory symptoms, but pneumonia, pulmonary embolism, pneumothorax, and acute heart failure can mimic or aggravate it.",
+      "If the patient is hypoxemic, oxygen should be controlled and the response monitored rather than given without a target or reassessment.",
+      "Short-acting bronchodilators and a short course of systemic corticosteroid are common treatments; antibiotics are selected for clinical indications rather than every exacerbation automatically.",
+      "Increased work of breathing or impaired gas exchange should prompt assessment for ventilatory support, including non-invasive ventilation when appropriate."
+    ],
+    "diagnostic_clues": [
+      "Known COPD with worsening breathlessness, cough, and sputum",
+      "Substantial smoking exposure",
+      "Acute change from baseline symptoms",
+      "Features suggesting an infective trigger while still requiring assessment for mimics"
+    ],
+    "common_misconceptions": [
+      "More oxygen is not always better in a patient at risk of hypercapnic respiratory failure.",
+      "Purulent sputum does not remove the need to assess severity and alternative diagnoses.",
+      "Antibiotics are not automatic for every COPD exacerbation."
+    ],
+    "dangerous_errors": [
+      "Giving uncontrolled oxygen without monitoring in a patient at risk of carbon-dioxide retention",
+      "Missing impending ventilatory failure or delaying escalation despite worsening work of breathing",
+      "Assuming all acute breathlessness in COPD is an exacerbation and ignoring a dangerous mimic"
+    ],
+    "management_principles": [
+      "Assess severity, oxygenation, work of breathing, gas exchange, comorbidities, and need for hospital monitoring.",
+      "Use controlled oxygen when hypoxemic and reassess with appropriate clinical and laboratory measurements.",
+      "Use bronchodilators, corticosteroids, antibiotics, and ventilatory support according to severity and clinical indications."
+    ],
+    "boundaries_and_exceptions": [
+      "Exact oxygen targets, antibiotic selection, steroid regimen, and admission criteria depend on blood gases, comorbidities, allergies, local resistance, and local protocol.",
+      "A patient without hypoxemia does not receive oxygen solely because COPD is present."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease 2026 Report",
+        "url": "https://goldcopd.org/2026-gold-report-and-pocket-guide/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "65M with known COPD, 5-day acute exacerbation with increased dyspnoea, purulent sputum, and low-grade fever. Using rescue inhaler Q2h.",
+    "objective": "O2 saturation, RR, HR, CXR, FEV1 if able, sputum culture, ABG if severe, FBC, CRP.",
+    "assessment": "Acute exacerbation of COPD (AECOPD), likely infective trigger. DDx: pneumonia, pneumothorax, PE, decompensated heart failure.",
+    "plan": "Urgently assess severity and need for hospital monitoring. If hypoxemic, provide clinician-directed controlled oxygen with a documented target and reassessment; use bronchodilators and consider systemic corticosteroids or antibiotics only when clinically indicated after examination, blood gases, imaging, and local guidance. Escalate promptly for respiratory distress, worsening gas exchange, or concern for pneumonia, PE, pneumothorax, or cardiac ischemia."
+  },
+  "learning_objectives": [
+    "Assess AECOPD severity using clinical markers",
+    "Distinguish AECOPD from pneumonia, PE, cardiac failure",
+    "Review inhaler technique and adherence",
+    "Incorporate social circumstances into management plan"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Exacerbation of COPD",
+    "one_liner": "Acute worsening of respiratory symptoms beyond normal day-to-day variations in a patient with underlying COPD, triggered by infection or air pollution.",
+    "differentials": [
+      "Congestive heart failure exacerbation",
+      "Pulmonary embolism",
+      "Pneumonia"
+    ],
+    "red_flags": [
+      "Acute hypercapnic respiratory failure (pH < 7.35, PaCO2 > 45)",
+      "Use of accessory muscles at rest or severe breathlessness at rest",
+      "New chest pain, syncope, haemoptysis, unilateral leg swelling, or sudden deterioration suggesting PE, ACS, pneumothorax, or another emergency"
+    ],
+    "must_ask": [
+      {
+        "objective": "Anthonisen criteria - Sputum purulence and volume",
+        "say": "Have you noticed your phlegm becoming thicker, greener, or increasing in amount?",
+        "domains": [
+          "character",
+          "progression"
+        ],
+        "keywords": [
+          "phlegm",
+          "sputum",
+          "thicker",
+          "green",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Exertional dyspnea and orthopnea",
+        "say": "Are you getting short of breath even while resting or propping up on extra pillows at night?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "shortness",
+          "breath",
+          "pillows",
+          "resting",
+          "propping"
+        ]
+      },
+      {
+        "objective": "Rescue inhaler responsiveness",
+        "say": "Is your quick-relief salbutamol inhaler working as well as usual or failing to give relief?",
+        "domains": [
+          "medications",
+          "relieving"
+        ],
+        "keywords": [
+          "inhaler",
+          "salbutamol",
+          "relief",
+          "working",
+          "reliever"
+        ]
+      },
+      {
+        "objective": "Smoking history quantifying",
+        "say": "How many packs of cigarettes did you smoke per day and for how long?",
+        "domains": [
+          "smoking"
+        ],
+        "keywords": [
+          "packs",
+          "cigarettes",
+          "smoking",
+          "tobacco",
+          "smoker"
+        ]
+      },
+      {
+        "objective": "Prior intubation or NIV history",
+        "say": "Have you ever been admitted to the ICU or placed on a breathing machine for your lungs?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "machine",
+          "bipap",
+          "intubated",
+          "ventilation",
+          "intensive"
+        ]
+      }
+    ]
+  }
+}

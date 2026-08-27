@@ -1,0 +1,93 @@
+{
+  "id": "family_update_improving_pneumonia",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Family communication",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "plain_language_drill",
+  "patient_name": "Family update — improving pneumonia, plain-language explanation",
+  "chief_complaint": "Give an anxious but not-distressed family member a clear, jargon-free update on an improving patient",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Reassuring family update: pneumonia responding well to treatment",
+    "task": "Family communication",
+    "urgency": "routine",
+    "patient": "Mr. Samuel Okafor, 70-year-old man, admitted two days ago with pneumonia",
+    "location": "Ward corridor outside the patient's room; his adult son has just arrived to visit",
+    "situation": "The patient is improving on treatment, and his son wants a plain update on how he is doing and what happens next.",
+    "background": [
+      "Admitted two days ago with pneumonia; started on antibiotics and oxygen support.",
+      "Type 2 diabetes, well controlled; no other major medical problems."
+    ],
+    "current_status": [
+      "Fever has resolved, breathing is easier, and oxygen support has been reduced from a face mask to a small amount of oxygen by nasal tube.",
+      "Eating and drinking a little more today and alert and talking normally."
+    ],
+    "key_data": [
+      "Blood tests this morning show his infection markers trending down.",
+      "The team expects him to keep improving over the next few days if this trend continues."
+    ],
+    "treatments": [
+      "Continuing antibiotics through a vein, a small amount of extra oxygen, and encouragement to sit up and move a little each day."
+    ],
+    "your_request": "Explain how his father is doing, in plain, jargon-free language, and check that the son has understood before he goes in to visit.",
+    "must_include": [
+      "A plain-language explanation of the diagnosis and current status, avoiding unexplained medical jargon.",
+      "The specific signs of improvement: fever resolved, easier breathing, less oxygen needed.",
+      "A simple explanation of what happens next.",
+      "A check of the son's understanding before ending the conversation."
+    ]
+  },
+  "kickoff_text": "Hi, I'm Samuel's son — I just got here. How is he doing? The nurse mentioned pneumonia but I don't really understand what that means for him.",
+  "persona_override": "You are Marcus, the anxious but calm adult son of Mr. Okafor, arriving to visit and wanting a clear update in plain language. You are not medically trained and do not know technical terms. If the learner explains the diagnosis and current status in plain, everyday language (avoiding unexplained jargon like 'infiltrate,' 'desaturating,' or 'afebrile' without explanation), and clearly states that your father is improving with specific reasons why (fever gone, breathing easier, less oxygen needed), respond with relief and ask one simple follow-up question, such as 'So does that mean he'll be able to come home soon?' If the learner uses unexplained medical jargon or gives a vague answer without specific signs of improvement, express confusion: 'Sorry, what does that mean exactly?' so the learner has to practice rephrasing in plain language. At the end, if the learner checks your understanding (for example, asking you to summarize what you've understood, or asking if anything is unclear), confirm you understand and thank them.",
+  "learning_objectives": [
+    "explain a clinical diagnosis and status update using plain, jargon-free language",
+    "state specific, concrete signs of improvement rather than a vague reassurance",
+    "explain the plan and what to expect next in terms a family member can follow",
+    "check the listener's understanding before ending the conversation",
+    "maintain a warm, reassuring tone appropriate for good news rather than a clinical, detached register"
+  ],
+  "suggested_questions": [
+    "Your father has an infection in his lungs called pneumonia, and the good news is he's responding well to the antibiotics we've started.",
+    "His fever has gone away, he's breathing more easily, and he needs much less extra oxygen than when he came in — those are all signs he's improving.",
+    "Does that make sense so far, or is there anything you'd like me to explain differently before you go in and see him?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Plain-language family update on an improving pneumonia admission, checking understanding before ending the conversation",
+    "review_status": "grounded in AHRQ health literacy universal precautions and plain-language communication principles; local visiting and information-sharing policies apply",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "A good-news update still needs plain language and specific detail; vague reassurance ('he's doing fine') is less useful to a family member than concrete signs of improvement.",
+      "Checking understanding at the end of a conversation, even a reassuring one, confirms the message actually landed rather than assuming it did."
+    ],
+    "diagnostic_clues": [
+      "Resolved fever, reduced oxygen requirement, improved alertness, and trending-down infection markers together indicate a patient responding well to pneumonia treatment."
+    ],
+    "common_misconceptions": [
+      "Good news does not need to be explained carefully because the family member will simply be relieved.",
+      "Using a few medical terms is fine as long as the overall message is positive."
+    ],
+    "dangerous_errors": [
+      "Giving a vague update without specific evidence of improvement, leaving the family member uncertain about what is actually happening.",
+      "Ending the conversation without checking whether the family member has understood, especially when medical terms were used."
+    ],
+    "management_principles": [
+      "Translate clinical findings into plain, concrete language a layperson can act on and understand.",
+      "Close every family update, positive or difficult, by checking the listener's understanding."
+    ],
+    "boundaries_and_exceptions": [
+      "The exact amount of clinical detail shared depends on the patient's own preferences for privacy and who is authorized to receive updates."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Health Literacy Universal Precautions Toolkit",
+        "url": "https://www.ahrq.gov/health-literacy/improve/precautions/index.html"
+      },
+      {
+        "title": "ATS/IDSA Community-Acquired Pneumonia in Adults Guidelines",
+        "url": "https://www.thoracic.org/statements/resources/mtpi/idsaats-cap.pdf"
+      }
+    ]
+  }
+}

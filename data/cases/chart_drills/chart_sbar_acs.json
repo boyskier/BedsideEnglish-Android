@@ -1,0 +1,171 @@
+{
+  "id": "chart_sbar_acs",
+  "system": "chart_drills",
+  "session_mode": "team_communication",
+  "communication_task": "Handover / escalation",
+  "difficulty": "intermediate",
+  "eval_template": "chart_speech_drill",
+  "patient_name": "Mr. Robert Lee",
+  "chief_complaint": "ED chest pain chart handoff",
+  "station_minutes": 4,
+  "kickoff_text": "Dr. Patel here. Give me a focused SBAR from the chart, then tell me what you need.",
+  "persona_override": "You are Dr. Anita Patel, the senior resident covering the emergency department. The learner is an IMG medical student calling with a chart-based SBAR handoff. Be brisk but professional. Ask them to start with Situation, then Background, Assessment, and Recommendation. If they miss a key abnormal result, ask one focused follow-up. Do not read the chart to them; they can see it.",
+  "chart_task": {
+    "mode": "team_handoff",
+    "title": "SBAR to senior resident: possible ACS",
+    "audience": "senior resident",
+    "student_goal": "Give a 45-60 second SBAR using the visible ED chart, then make a specific recommendation.",
+    "must_say": [
+      "62-year-old man in ED bay 4 with crushing chest pain",
+      "risk factors: hypertension, type 2 diabetes, smoker",
+      "ECG shows ST depressions in V4-V6",
+      "troponin I is elevated at 0.08 ng/mL",
+      "recommend ACS pathway, aspirin already given, repeat troponin, cardiology review"
+    ]
+  },
+  "clinical_chart": {
+    "patient": {
+      "name": "Mr. Robert Lee",
+      "age": 62,
+      "sex": "male",
+      "location": "ED bay 4"
+    },
+    "chief_complaint": "Crushing substernal chest pain for 90 minutes",
+    "triage_note": "Pain began while walking to the bus. Radiates to left arm. Diaphoretic on arrival. PMH: HTN, T2DM. Smokes 1 pack/day.",
+    "vitals": [
+      {
+        "label": "BP",
+        "value": "158/94 mmHg",
+        "flag": "high"
+      },
+      {
+        "label": "HR",
+        "value": "104/min",
+        "flag": "high"
+      },
+      {
+        "label": "RR",
+        "value": "22/min"
+      },
+      {
+        "label": "SpO2",
+        "value": "96% on room air"
+      },
+      {
+        "label": "Temp",
+        "value": "36.8 C"
+      }
+    ],
+    "labs": [
+      {
+        "test": "Troponin I",
+        "value": "0.08 ng/mL",
+        "range": "<0.04",
+        "flag": "high"
+      },
+      {
+        "test": "Glucose",
+        "value": "224 mg/dL",
+        "flag": "high"
+      },
+      {
+        "test": "Creatinine",
+        "value": "1.0 mg/dL"
+      }
+    ],
+    "studies": [
+      "ECG: ST depressions in V4-V6, no ST elevation",
+      "CXR: no acute cardiopulmonary process"
+    ],
+    "orders": [
+      "Aspirin 325 mg given",
+      "IV access established",
+      "Repeat troponin in 3 hours",
+      "Cardiology consult pending"
+    ]
+  },
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "SBAR to senior resident: possible ACS",
+    "task": "Handover / escalation",
+    "urgency": "urgent",
+    "patient": "Mr. Robert Lee, 62-year-old man",
+    "location": "ED bay 4",
+    "situation": "Crushing substernal chest pain for 90 minutes with features concerning for ACS.",
+    "background": ["Hypertension, type 2 diabetes, and smokes one pack per day.", "Pain began while walking, radiates to the left arm, and he was diaphoretic on arrival."],
+    "current_status": ["BP 158/94, HR 104, RR 22, SpO2 96% on room air, temperature 36.8 C."],
+    "key_data": ["Troponin I 0.08 ng/mL (reference <0.04).", "ECG: ST depressions in V4-V6; no ST elevation.", "CXR: no acute cardiopulmonary process."],
+    "treatments": ["Aspirin 325 mg given and IV access established.", "Repeat troponin is due in 3 hours; cardiology consult is pending."],
+    "your_request": "Give a 45–60 second SBAR and request ACS-pathway management with urgent cardiology review.",
+    "must_include": ["Identity, location, and crushing chest pain.", "Risk factors, ECG, and elevated troponin.", "What has already been done and your specific request."]
+  },
+  "phrase_categories": [
+    {
+      "name": "SBAR openings",
+      "phrases": [
+        "Situation: I'm calling about Mr. Lee, a 62-year-old man in ED bay 4 with crushing chest pain.",
+        "Background: He has hypertension, type 2 diabetes, and a smoking history.",
+        "Assessment: I'm concerned about acute coronary syndrome.",
+        "Recommendation: I'd like to start the ACS pathway and have cardiology review him urgently."
+      ]
+    },
+    {
+      "name": "Number reading",
+      "phrases": [
+        "His blood pressure is one fifty-eight over ninety-four.",
+        "His troponin I is zero point zero eight, above the reference range.",
+        "His oxygen saturation is ninety-six percent on room air."
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "ED chest pain chart handoff evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of ED chest pain chart handoff is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Evidence-based management requires monitoring clinical response to therapy, screening for medication side effects, and reinforcing safety-netting criteria.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: ED chest pain chart handoff",
+      "Clinical presentation and history characteristic of ED chest pain chart handoff"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out ED chest pain chart handoff.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions."
+    ],
+    "management_principles": [
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines.",
+      "Provide clear patient education, address patient concerns, and establish explicit follow-up and safety-netting instructions."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Convert ED chart data into a concise SBAR handoff",
+    "Read vitals and troponin values clearly",
+    "State a specific recommendation instead of only describing findings"
+  ],
+  "hpi_details": "",
+  "gender": "male",
+  "age": 62,
+  "teaching": {
+    "diagnosis": "possible ACS",
+    "one_liner": "Clinical scenario for evaluation and management of possible ACS."
+  }
+}

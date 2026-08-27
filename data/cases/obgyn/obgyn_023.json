@@ -1,0 +1,151 @@
+{
+  "id": "obgyn_023",
+  "system": "obstetrics & gynecology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lim",
+  "age": 24,
+  "gender": "female",
+  "chief_complaint": "sudden left-sided pelvic pain, mild nausea, and history of ovarian cyst",
+  "hpi_details": "24F reports sudden, sharp pain in her left lower abdomen that started 4 hours ago. Pain is constant, accompanied by mild nausea. Denies vaginal bleeding. Missed her period 2 weeks ago.",
+  "ideas": "thinks she has a ruptured ovarian cyst or appendicitis",
+  "concerns": "worried about internal bleeding",
+  "expectations": "wants pelvic ultrasound and scan",
+  "pmh": "Left ovarian cyst diagnosed on ultrasound 1 year ago",
+  "medications": "None",
+  "social_hx": "Student, non-smoker",
+  "investigation_events": [{
+    "id": "urgent_acute_pelvic_pain_workup",
+    "title": "Urgent pregnancy test and pelvic ultrasound",
+    "order_terms": ["pregnancy test", "urine hCG", "beta hCG", "pelvic ultrasound", "transvaginal ultrasound", "TVUS", "ovarian Doppler"],
+    "availability_message": "Point-of-care pregnancy testing and urgent pelvic ultrasound results are now available.",
+    "results": [
+      {"id": "urine_hcg", "test": "Point-of-care urine beta-hCG", "value": "Negative", "flag": "normal"},
+      {"id": "tvus", "test": "Transvaginal ultrasound with Doppler", "value": "4.6 cm left ovarian hemorrhagic cyst with reticular internal echoes and small-volume pelvic free fluid; preserved arterial and venous ovarian flow", "flag": "abnormal", "note": "No adnexal torsion is demonstrated at the time of imaging."}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Hemorrhagic ovarian cyst or ruptured ovarian cyst (r/o ectopic pregnancy) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hemorrhagic ovarian cyst or ruptured ovarian cyst (r/o ectopic pregnancy) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Hemorrhagic Ovarian Cyst or Ovarian Cyst Rupture, differential includes ectopic pregnancy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden left-sided pelvic pain, mild nausea, and history of ovarian cyst",
+      "Key HPI features: 24F reports sudden, sharp pain in her left lower abdomen that started 4 hours ago. Pain is constant, accompanied by mild nausea. Denies vaginal bleeding. Missed her period 2 weeks ago.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Hemorrhagic Ovarian Cyst or Ovarian Cyst Rupture, differential includes ectopic pregnancy.",
+      "Relevant background/PMH: Left ovarian cyst diagnosed on ultrasound 1 year ago"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hemorrhagic ovarian cyst or ruptured ovarian cyst (r/o ectopic pregnancy).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ectopic pregnancy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Missed period (rule out pregnancy)."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Hemorrhagic Ovarian Cyst or Ovarian Cyst Rupture, differential includes ectopic pregnancy",
+      "Perform urine pregnancy test to evaluate for ectopic pregnancy, order pelvic ultrasound (evaluate for free pelvic fluid, adnexal mass)",
+      "Manage pain supportively if hemodynamically stable"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletins and Clinical Management Guidelines",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden left-sided pelvic pain, mild nausea, and history of ovarian cyst\n\n24F reports sudden, sharp pain in her left lower abdomen that started 4 hours ago. Pain is constant, accompanied by mild nausea. Denies vaginal bleeding. Missed her period 2 weeks ago.",
+    "objective": "Complete vital signs and focused physical examination. Evaluate for pertinent signs.",
+    "assessment": "Acute pelvic pain with possible ovarian-cyst complication; urgently exclude ectopic pregnancy and ovarian torsion before making a definitive diagnosis.",
+    "plan": "Perform urine pregnancy test to evaluate for ectopic pregnancy, order pelvic ultrasound (evaluate for free pelvic fluid, adnexal mass). Manage pain supportively if hemodynamically stable. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hemorrhagic Ovarian Cyst or Ovarian Cyst Rupture, differential includes ectopic pregnancy.",
+    "Formulate prioritized differential diagnosis for sudden left-sided pelvic pain, mild nausea, and history of ovarian cyst",
+    "Select appropriate laboratory and imaging studies for obstetrics & gynecology",
+    "Implement evidence-based acute and long-term management strategies for Hemorrhagic Ovarian Cyst or Ovarian Cyst Rupture, differential includes ectopic pregnancy."
+  ],
+  "teaching": {
+    "diagnosis": "Acute pelvic pain: rule out ectopic pregnancy, ovarian torsion, and ovarian-cyst complication",
+    "one_liner": "24F with sudden sharp left pelvic pain, mild nausea, a known ovarian cyst, and a missed period 2 weeks ago.",
+    "differentials": [
+      "Ectopic pregnancy",
+      "Ovarian torsion",
+      "Appendicitis",
+      "Pelvic inflammatory disease"
+    ],
+    "red_flags": [
+      "Missed period (rule out pregnancy)",
+      "Sudden severe onset",
+      "Signs of hemodynamic instability"
+    ],
+    "must_ask": [
+      {
+        "objective": "Rule out pregnancy first",
+        "say": "When was your last period, and could you be pregnant?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "LMP",
+          "pregnancy test"
+        ]
+      },
+      {
+        "objective": "Characterize the pain onset and quality",
+        "say": "Did the pain start suddenly, and how would you describe it?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sudden onset",
+          "pain quality"
+        ]
+      },
+      {
+        "objective": "Confirm known ovarian cyst history",
+        "say": "You mentioned a cyst before — do you know which side and how large it was?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "ovarian cyst history"
+        ]
+      },
+      {
+        "objective": "Screen for hemodynamic symptoms",
+        "say": "Have you felt dizzy or faint since the pain started?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizziness",
+          "syncope"
+        ]
+      },
+      {
+        "objective": "Ask about vaginal bleeding",
+        "say": "Have you had any vaginal bleeding or spotting?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vaginal bleeding"
+        ]
+      }
+    ]
+  }
+}

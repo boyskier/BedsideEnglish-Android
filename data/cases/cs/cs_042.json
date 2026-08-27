@@ -1,0 +1,135 @@
+{
+  "id": "cs_042",
+  "system": "cs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Garcia",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "incidental anterior mediastinal mass on CT, myasthenia history",
+  "hpi_details": "A 68-year-old female presents to the clinic with incidental anterior mediastinal mass on ct, myasthenia history. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to thymoma",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Myasthenia gravis",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "ct_anterior_mediastinal_thymoma",
+      "test": "Contrast CT chest",
+      "value": "4.6 cm well-circumscribed anterior mediastinal mass without vascular invasion or enlarged nodes, consistent with thymoma",
+      "unit": "",
+      "reference_range": "No anterior mediastinal mass",
+      "flag": "abnormal",
+      "collected_at": "Incidental CT finding"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Thymoma evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Thymoma is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Thymoma: Surgical resection (thymectomy), monitor for myasthenia crisis, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incidental anterior mediastinal mass on CT, myasthenia history",
+      "Key HPI features: A 68-year-old female presents to the clinic with incidental anterior mediastinal mass on ct, myasthenia history. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Thymoma.",
+      "Relevant background/PMH: Myasthenia gravis"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Thymoma.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Lymphoma without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Muscle weakness or breathing difficulty — suggests associated myasthenia gravis."
+    ],
+    "management_principles": [
+      "Plan for Thymoma: Surgical resection (thymectomy), monitor for myasthenia crisis",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of incidental anterior mediastinal mass on CT, myasthenia history. HPI: epithelial tumor of the thymus.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Thymoma.",
+    "assessment": "Condition highly suspicious for Thymoma.",
+    "plan": "Plan for Thymoma: Surgical resection (thymectomy), monitor for myasthenia crisis. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Thymoma",
+    "Select appropriate diagnostic workup for Thymoma",
+    "Implement evidence-based management plan: Surgical resection (thymectomy), monitor for myasthenia crisis"
+  ],
+  "teaching": {
+    "diagnosis": "Thymoma",
+    "one_liner": "An epithelial tumor of the thymus gland found incidentally as an anterior mediastinal mass, often associated with myasthenia gravis — treated with surgical thymectomy.",
+    "differentials": [
+      "Lymphoma",
+      "Germ cell tumor",
+      "Thymic cyst"
+    ],
+    "red_flags": [
+      "Muscle weakness or breathing difficulty — suggests associated myasthenia gravis"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "How was this mass discovered?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Myasthenia symptoms",
+        "say": "Have you had any drooping eyelids, double vision, or muscle weakness?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ptosis",
+          "diplopia",
+          "weakness"
+        ]
+      },
+      {
+        "objective": "Breathing or swallowing difficulty",
+        "say": "Any trouble breathing or swallowing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Chest symptoms",
+        "say": "Any chest pain or cough?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you about this diagnosis?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

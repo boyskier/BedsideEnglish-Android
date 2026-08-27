@@ -1,0 +1,218 @@
+{
+  "id": "nephro_008",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Garcia",
+  "age": 58,
+  "gender": "female",
+  "chief_complaint": "severe lethargy, metallic taste, nausea, and itching in advanced kidney disease",
+  "hpi_details": "58F with CKD Stage 5 presenting with intractable nausea, metallic taste, severe pruritus, and a two-component uremic pericardial friction rub requiring urgent hemodialysis.",
+  "ideas": "thinks this is related to uremic syndrome eskd pericarditis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "investigation_events": [
+    {
+      "id": "stat_uremia_workup",
+      "title": "STAT uremia and pericarditis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "renal function",
+        "creatinine",
+        "bun",
+        "urea",
+        "electrolytes",
+        "metabolic panel",
+        "bicarbonate",
+        "ecg",
+        "ekg",
+        "electrocardiogram",
+        "echocardiogram",
+        "echo"
+      ],
+      "availability_message": "The STAT uremia and pericarditis results are now available; urgent hemodialysis should not be delayed.",
+      "results": [
+        {
+          "id": "blood_urea_nitrogen",
+          "test": "Blood urea nitrogen",
+          "value": "128",
+          "unit": "mg/dL",
+          "reference_range": "7-20",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "9.6",
+          "unit": "mg/dL",
+          "reference_range": "0.6-1.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "5.6",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "bicarbonate",
+          "test": "Serum bicarbonate",
+          "value": "16",
+          "unit": "mEq/L",
+          "reference_range": "22-29",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "ecg",
+          "test": "12-lead ECG",
+          "value": "Diffuse ST-segment elevation with PR-segment depression",
+          "flag": "critical",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "echocardiogram",
+          "test": "Transthoracic echocardiogram",
+          "value": "Small circumferential pericardial effusion without right-sided chamber collapse or tamponade physiology",
+          "flag": "abnormal",
+          "collected_at": "During emergency assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Uremic Syndrome (End-Stage Kidney Disease with Uremic Pericarditis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Uremic Syndrome (End-Stage Kidney Disease with Uremic Pericarditis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent hemodialysis, since uremic pericarditis is an absolute indication for dialysis regardless of GFR, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe lethargy, metallic taste, nausea, and itching in advanced kidney disease",
+      "Key HPI features: 58F with CKD Stage 5 presenting with intractable nausea, metallic taste, severe pruritus, and a two-component uremic pericardial friction rub requiring urgent hemodialysis.",
+      "Objective/Exam findings: Vitals: BP 168/94, HR 96, RR 20, Temp 37.1C. Two-component pericardial friction rub on cardiac auscultation, diffuse skin excoriations from scratching, conjunctival pallor, mild asterixis. Bloods: BUN 128 mg/dL, Creatinine 9.6 mg/dL (eGFR <10 mL/min), K+ 5.6 mEq/L, HCO3 16 mEq/L, Hemoglobin 8.9 g/dL. ECG shows diffuse ST elevation with PR depression; echocardiogram pending to assess for effusion.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Uremic Syndrome (End-Stage Kidney Disease with Uremic Pericarditis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral pericarditis (unrelated to kidney disease) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain that worsens lying down and improves sitting forward — suggests pericarditis, needing urgent dialysis to prevent tamponade."
+    ],
+    "management_principles": [
+      "Urgent/emergent hemodialysis — uremic pericarditis is an absolute indication for dialysis regardless of GFR",
+      "Echocardiogram to assess for pericardial effusion and tamponade physiology; avoid anticoagulation given bleeding risk with pericarditis",
+      "Correct hyperkalemia and metabolic acidosis; treat pruritus symptomatically (antihistamines, emollients) pending dialysis",
+      "Arrange nephrology consultation for permanent dialysis access planning"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "58F with CKD Stage 5 presents with several days of intractable nausea, a metallic taste in her mouth, worsening whole-body itching, and new positional chest pain.",
+    "objective": "Vitals: BP 168/94, HR 96, RR 20, Temp 37.1C. Two-component pericardial friction rub on cardiac auscultation, diffuse skin excoriations from scratching, conjunctival pallor, mild asterixis. Bloods: BUN 128 mg/dL, Creatinine 9.6 mg/dL (eGFR <10 mL/min), K+ 5.6 mEq/L, HCO3 16 mEq/L, Hemoglobin 8.9 g/dL. ECG shows diffuse ST elevation with PR depression; echocardiogram pending to assess for effusion.",
+    "assessment": "Uremic Syndrome with Uremic Pericarditis in a patient with CKD Stage 5 (End-Stage Kidney Disease), requiring urgent dialysis.",
+    "plan": "Urgent/emergent hemodialysis — uremic pericarditis is an absolute indication for dialysis regardless of GFR. Echocardiogram to assess for pericardial effusion and tamponade physiology; avoid anticoagulation given bleeding risk with pericarditis. Correct hyperkalemia and metabolic acidosis; treat pruritus symptomatically (antihistamines, emollients) pending dialysis. Arrange nephrology consultation for permanent dialysis access planning."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Uremic Syndrome ESKD Pericarditis",
+    "Formulate prioritized differential diagnosis for severe lethargy, metallic taste, nausea, and itching in advanced kidney disease",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Uremic Syndrome (End-Stage Kidney Disease with Uremic Pericarditis)",
+    "one_liner": "Accumulated toxins from failing kidneys in end-stage kidney disease cause nausea, a metallic taste, and itching, and when inflammation reaches the pericardium it produces a friction rub — an indication for urgent dialysis.",
+    "differentials": [
+      "Viral pericarditis (unrelated to kidney disease)",
+      "Volume overload heart failure",
+      "Medication side effect"
+    ],
+    "red_flags": [
+      "Chest pain that worsens lying down and improves sitting forward — suggests pericarditis, needing urgent dialysis to prevent tamponade"
+    ],
+    "must_ask": [
+      {
+        "objective": "Known kidney disease stage",
+        "say": "What stage of kidney disease do you have, and are you on dialysis?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "CKD",
+          "stage 5",
+          "dialysis"
+        ]
+      },
+      {
+        "objective": "Uremic symptoms",
+        "say": "Have you had a metallic taste in your mouth or lost your appetite?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "metallic taste",
+          "appetite"
+        ]
+      },
+      {
+        "objective": "Itching",
+        "say": "How severe is the itching, and where is it?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "pruritus",
+          "itching"
+        ]
+      },
+      {
+        "objective": "Chest pain related to position",
+        "say": "Do you have any chest pain that changes when you lean forward or lie down?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chest pain",
+          "lean forward"
+        ]
+      },
+      {
+        "objective": "Fatigue and confusion",
+        "say": "How is your energy and concentration?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

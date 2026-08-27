@@ -1,0 +1,162 @@
+{
+  "id": "peds_004",
+  "system": "pediatrics",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Master Davis",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "projectile, non-bilious vomiting immediately after every feeding in a 5-week-old male infant with olive mass (Pyloric Stenosis)",
+  "hpi_details": "5-week-old first-born male infant brought by parents due to 1-week history of progressively worsening vomiting. Initially regurgitated small amounts, but over the past 4 days has developed forceful, projectile vomiting immediately after every formula bottle feeding. Vomit shoots across the crib and consists purely of curdled milk without any green/yellow bile. Immediately after vomiting, the baby appears ravenously hungry and demands to feed again. Infant has had decreasing wet diapers and weight loss over the past week.",
+  "ideas": "parents distressed watching baby forcefully projectile vomit all nourishment and lose weight",
+  "concerns": "parents worried baby is starving and severely dehydrated",
+  "expectations": "want immediate IV fluids and surgery to open up his stomach passage",
+  "pmh": "First-born male infant, born at term without complications. Mother received oral Erythromycin during late pregnancy for bronchitis",
+  "medications": "None",
+  "social_hx": "5-week-old infant",
+  "investigation_events": [
+    {
+      "id": "pyloric_stenosis_stabilization_labs",
+      "title": "Urgent electrolyte and acid-base assessment",
+      "order_terms": ["electrolytes", "basic metabolic panel", "BMP", "venous blood gas", "VBG", "blood gas"],
+      "availability_message": "The urgent electrolyte and venous blood-gas results are now available. Correct dehydration, chloride, and potassium before anesthesia.",
+      "results": [
+        {"id": "venous_ph", "test": "Venous pH", "value": "7.52", "reference_range": "7.31-7.41", "flag": "high"},
+        {"id": "bicarbonate", "test": "Serum bicarbonate", "value": "32", "unit": "mEq/L", "reference_range": "22-29", "flag": "high"},
+        {"id": "chloride", "test": "Serum chloride", "value": "86", "unit": "mEq/L", "reference_range": "98-107", "flag": "low"},
+        {"id": "potassium", "test": "Serum potassium", "value": "3.1", "unit": "mEq/L", "reference_range": "3.5-5.0", "flag": "low"}
+      ]
+    },
+    {
+      "id": "pyloric_ultrasound",
+      "title": "Urgent pyloric ultrasound",
+      "order_terms": ["pyloric ultrasound", "abdominal ultrasound", "ultrasound for pyloric stenosis"],
+      "availability_message": "The pyloric ultrasound result is now available. Continue metabolic stabilization before pyloromyotomy.",
+      "results": [{"id": "pyloric_ultrasound", "test": "Pyloric ultrasound", "value": "Pyloric muscle thickness 4.8 mm and channel length 19 mm, with failure of gastric contents to pass", "flag": "abnormal"}]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hypertrophic pyloric stenosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hypertrophic pyloric stenosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes CRITICAL RULE: Pyloric stenosis is a MEDICAL emergency first, NOT an immediate surgical emergency, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: projectile, non-bilious vomiting immediately after every feeding in a 5-week-old male infant with olive mass (Pyloric Stenosis)",
+      "Key HPI features: 5-week-old first-born male infant brought by parents due to 1-week history of progressively worsening vomiting. Initially regurgitated small amounts, but over the past 4 days has developed forceful, projectile vomiting immediately after every formula bottle feeding. Vomit shoots across the crib and consists purely of curdled milk without any green/yellow bile. Immediately after vomiting, the baby appears ravenously hungry and demands to feed again. Infant has had decreasing wet diapers and weight loss over the past week.",
+      "Objective/Exam findings: Vitals: HR 162, RR 36, Temp 36.8C, Weight 3.6 kg (down 300g from birth weight). Infant appears dehydrated with depressed anterior fontanelle, dry mucous membranes, and loss of skin turgor. Abdominal palpation during feeding while the infant is quiet/sucking reveals a firm, 2 x 1.5 cm mobile, olive-shaped mass palpable in the right upper quadrant / epigastrium. Visible gastric peristaltic waves travel across the upper abdomen from left to right prior to emesis. Labs confirm hypochloremic, hypokalemic metabolic alkalosis: pH 7.52, HCO3 32 mEq/L, Chloride 86 mEq/L, Potassium 3.1 mEq/L. Abdominal ultrasound confirms Hypertrophic Pyloric Stenosis: pyloric muscle thickness 4.8 mm (diagnostic >3-4 mm) and pyloric channel length 19 mm (diagnostic >14-16 mm).",
+      "Relevant background/PMH: First-born male infant, born at term without complications. Mother received oral Erythromycin during late pregnancy for bronchitis"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hypertrophic pyloric stenosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastroesophageal reflux without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Projectile non-bilious vomiting."
+    ],
+    "management_principles": [
+      "CRITICAL RULE: Pyloric stenosis is a MEDICAL emergency first, NOT an immediate surgical emergency",
+      "NPO immediately and place nasogastric tube to decompression",
+      "Correct dehydration and electrolyte imbalance before surgery with isotonic IV fluid; add dextrose and potassium only after adequate urine output, and recheck electrolytes and acid-base status before anesthesia",
+      "Proceed to pyloromyotomy only after adequate resuscitation and correction of clinically significant alkalosis and electrolyte abnormalities"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Pyloric stenosis - MedlinePlus Medical Encyclopedia",
+        "url": "https://medlineplus.gov/ency/article/000970.htm"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "5-week-old first-born male presenting with progressive, forceful non-bilious projectile vomiting, ravenous hunger post-emesis, and failure to thrive.",
+    "objective": "Vitals: HR 162, RR 36, Temp 36.8C, Weight 3.6 kg (down 300g from birth weight). Infant appears dehydrated with depressed anterior fontanelle, dry mucous membranes, and loss of skin turgor. Abdominal palpation during feeding while the infant is quiet/sucking reveals a firm, 2 x 1.5 cm mobile, olive-shaped mass palpable in the right upper quadrant / epigastrium. Visible gastric peristaltic waves travel across the upper abdomen from left to right prior to emesis. Labs confirm hypochloremic, hypokalemic metabolic alkalosis: pH 7.52, HCO3 32 mEq/L, Chloride 86 mEq/L, Potassium 3.1 mEq/L. Abdominal ultrasound confirms Hypertrophic Pyloric Stenosis: pyloric muscle thickness 4.8 mm (diagnostic >3-4 mm) and pyloric channel length 19 mm (diagnostic >14-16 mm).",
+    "assessment": "Hypertrophic Pyloric Stenosis complicated by severe Hypochloremic Hypokalemic Metabolic Alkalosis and dehydration.",
+    "plan": "Pyloric stenosis requires medical stabilization before, rather than immediate, surgery. 1. Keep the infant NPO; use gastric decompression if clinically indicated. 2. Correct dehydration and electrolyte abnormalities with isotonic IV fluid; add dextrose and potassium only after urine output is established, with serial electrolyte and acid-base reassessment. 3. Once adequately resuscitated and metabolically stable for anesthesia, proceed to laparoscopic or open Ramstedt extramucosal pyloromyotomy."
+  },
+  "learning_objectives": [
+    "Identify clinical hallmarks of Hypertrophic Pyloric Stenosis (3-8 week old male, non-bilious projectile vomiting, ravenous hunger post-emesis, palpable olive-shaped epigastric mass)",
+    "Explain the pathophysiology of hypochloremic, hypokalemic metabolic alkalosis secondary to persistent loss of gastric hydrochloric acid and renal potassium wasting",
+    "Understand the critical mandate that preoperative correction of metabolic alkalosis and electrolyte deficits takes absolute priority over surgical intervention before general anesthesia",
+    "Interpret abdominal ultrasound diagnostic criteria (pyloric muscle thickness >3-4 mm, channel length >14-16 mm) and outline Ramstedt pyloromyotomy technique"
+  ],
+  "teaching": {
+    "diagnosis": "Hypertrophic pyloric stenosis",
+    "one_liner": "5-week-old first-born male with progressive non-bilious projectile vomiting after every feed, ravenous hunger after vomiting, and weight loss.",
+    "differentials": [
+      "Gastroesophageal reflux",
+      "Malrotation with volvulus (bilious vomiting would suggest this)",
+      "Formula intolerance"
+    ],
+    "red_flags": [
+      "Projectile non-bilious vomiting",
+      "Weight loss and decreased wet diapers",
+      "Ravenous hunger immediately after vomiting"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the vomiting as projectile and non-bilious",
+        "say": "Does the vomit shoot out forcefully, and is it just milk without any green or yellow color?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "projectile vomiting",
+          "non-bilious"
+        ]
+      },
+      {
+        "objective": "Ask about hunger after vomiting",
+        "say": "Does he seem very hungry and want to feed again right after vomiting?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ravenous hunger"
+        ]
+      },
+      {
+        "objective": "Assess hydration status through wet diapers",
+        "say": "How many wet diapers is he having per day compared to before?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "decreased wet diapers",
+          "dehydration"
+        ]
+      },
+      {
+        "objective": "Track the timeline of symptom progression",
+        "say": "When did the vomiting start, and has it gotten worse over the past week?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "progression timeline"
+        ]
+      },
+      {
+        "objective": "Explain that fluid correction comes before surgery",
+        "say": "Before any surgery, we first need to correct his fluids and electrolytes with an IV — this comes first, even though he'll need an operation eventually.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "IV fluid correction first",
+          "pyloromyotomy"
+        ]
+      }
+    ]
+  }
+}

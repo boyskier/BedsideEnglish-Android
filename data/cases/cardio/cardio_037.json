@@ -1,0 +1,181 @@
+{
+  "id": "cardio_037",
+  "system": "cardio",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martin",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "sudden severe tearing back pain, chest pain, and blood pressure discrepancy",
+  "hpi_details": "A 53-year-old male presents to the clinic with sudden severe tearing back pain, chest pain, and blood pressure discrepancy. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to aortic_dissection",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "type_a_dissection_cta",
+      "title": "Emergency CT angiography of the aorta",
+      "order_terms": ["CT angiography", "CTA", "aortic CT", "aortic angiography"],
+      "availability_message": "The emergency aortic CT angiography report is now available.",
+      "results": [
+        {
+          "id": "cta_type_a_dissection",
+          "test": "CT angiography of the aorta",
+          "value": "Intimal flap begins in the ascending aorta and extends through the arch into the descending thoracic aorta; no rupture",
+          "unit": "",
+          "reference_range": "No aortic dissection",
+          "flag": "critical",
+          "collected_at": "Emergency imaging"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Type A Aortic Dissection evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Type A Aortic Dissection is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Acute Stanford Type A Dissection: Start IV Esmolol, target HR <60, SBP 100-120, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden severe tearing back pain, chest pain, and blood pressure discrepancy",
+      "Key HPI features: A 53-year-old male presents to the clinic with sudden severe tearing back pain, chest pain, and blood pressure discrepancy. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Acute Stanford Type A Dissection.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Type A Aortic Dissection.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pulse or blood pressure difference between arms; new neurological signs."
+    ],
+    "management_principles": [
+      "Plan for Acute Stanford Type A Dissection: Start IV Esmolol, target HR <60, SBP 100-120",
+      "Emergent CT angiography (or transesophageal echocardiography if unstable), with immediate cardiothoracic surgical consultation"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 ACC/AHA Guideline for the Diagnosis and Management of Aortic Disease",
+        "url": "https://www.ahajournals.org/doi/10.1161/CIR.0000000000001106"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden severe tearing back pain, chest pain, and blood pressure discrepancy. HPI: intimal tear in ascending aorta.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Acute Stanford Type A Dissection.",
+    "assessment": "Condition highly suspicious for Acute Stanford Type A Dissection.",
+    "plan": "Start IV beta-blockade and reduce SBP to 100-120 mm Hg while maintaining organ perfusion. Obtain emergent CT angiography (or transesophageal echocardiography if unstable) and obtain immediate cardiothoracic surgical consultation for Type A dissection."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Acute Stanford Type A Dissection",
+    "Select appropriate diagnostic workup for Acute Stanford Type A Dissection",
+    "Implement evidence-based management plan: Start IV beta-blockade with anti-impulse blood-pressure control, obtain emergent definitive imaging, and obtain immediate cardiothoracic surgical consultation"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Type A Aortic Dissection",
+    "one_liner": "A tear in the aortic wall. Sudden, maximal, tearing pain moving through to the back — minutes matter.",
+    "differentials": [
+      "Myocardial infarction",
+      "Pulmonary embolism",
+      "Acute pancreatitis"
+    ],
+    "red_flags": [
+      "Pulse or blood pressure difference between arms; new neurological signs"
+    ],
+    "must_ask": [
+      {
+        "objective": "Maximal at onset",
+        "say": "Was it at its worst right from the first second?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "worst",
+          "instantly",
+          "first",
+          "sudden",
+          "moment"
+        ]
+      },
+      {
+        "objective": "Tearing or ripping quality",
+        "say": "What did the pain feel like — tearing, ripping?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "tearing",
+          "ripping",
+          "sharp"
+        ]
+      },
+      {
+        "objective": "Radiation through to the back",
+        "say": "Did it go through to your back or between your shoulder blades?",
+        "domains": [
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder",
+          "between",
+          "through"
+        ]
+      },
+      {
+        "objective": "Neurological or limb symptoms",
+        "say": "Any weakness, numbness, or a cold or painful limb?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weakness",
+          "numb",
+          "cold",
+          "leg",
+          "arm",
+          "speech"
+        ]
+      },
+      {
+        "objective": "Hypertension",
+        "say": "Do you have high blood pressure?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "blood",
+          "pressure",
+          "hypertension"
+        ]
+      },
+      {
+        "objective": "Connective tissue and family history",
+        "say": "Any family history of aortic aneurysm or Marfan syndrome?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "aneurysm",
+          "marfan",
+          "aorta"
+        ]
+      }
+    ]
+  }
+}

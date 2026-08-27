@@ -1,0 +1,134 @@
+{
+  "id": "allergy_017",
+  "system": "allergy_immunology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Baby Leo",
+  "age": 0.5,
+  "gender": "male",
+  "chief_complaint": "persistent oral thrush, chronic diarrhea, and failure to thrive since birth",
+  "hpi_details": "6-month-old male infant brought in by mother for recurrent severe infections, including Pneumocystis jirovecii pneumonia (PJP), chronic intractable diarrhea, and oral candidiasis that does not respond to antifungals. The infant has fallen off the growth curve (failure to thrive).",
+  "ideas": "mother thinks the baby just has a weak stomach and needs different formula",
+  "concerns": "mother is devastated because the baby is not growing and is always sick",
+  "expectations": "wants a stronger antifungal for the mouth and a better formula",
+  "pmh": "Multiple hospitalizations for pneumonia and sepsis",
+  "medications": "Nystatin oral drops",
+  "social_hx": "Lives with parents, no sick contacts",
+  "investigation_events": [{
+    "id": "lymphocyte_subsets", "title": "Lymphocyte subset panel",
+    "order_terms": ["lymphocyte subsets", "lymphocyte subset panel", "t cell count", "b cell count", "nk cell count", "flow cytometry"],
+    "availability_message": "The lymphocyte subset panel is now available.",
+    "results": [
+      {"id": "absolute_lymphocyte_count", "test": "Absolute lymphocyte count", "value": "420", "unit": "cells/uL", "reference_range": "4,000-10,500 (age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "cd3_t_cells", "test": "CD3+ T cells", "value": "120", "unit": "cells/uL", "reference_range": "2,500-5,500 (age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "cd19_b_cells", "test": "CD19+ B cells", "value": "45", "unit": "cells/uL", "reference_range": "600-3,000 (age-adjusted)", "flag": "critical", "specimen": "Blood", "collected_at": "Initial sample"},
+      {"id": "cd16_56_nk_cells", "test": "CD16/56+ NK cells", "value": "90", "unit": "cells/uL", "reference_range": "170-1,100 (age-adjusted)", "flag": "low", "specimen": "Blood", "collected_at": "Initial sample"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Severe Combined Immunodeficiency (SCID)",
+    "core_concepts": [
+      "SCID is a pediatric emergency characterized by profound T-cell deficiency with markedly impaired B-cell function; circulating B-cell numbers vary by genetic subtype.",
+      "Classic presentation includes failure to thrive, chronic diarrhea, and severe opportunistic infections (PJP, severe candidiasis) in the first months of life.",
+      "Live vaccines (e.g., Rotavirus) are strictly contraindicated and can cause fatal systemic infection.",
+      "Curative treatment requires hematopoietic stem cell transplantation (HSCT)."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: persistent oral thrush, chronic diarrhea, and failure to thrive since birth",
+      "Key HPI features: Infant with opportunistic infection (PJP), refractory thrush, and failure to thrive.",
+      "Objective/Exam findings: Cachectic infant. Profuse oral candidiasis. Absence of tonsils or lymph nodes on exam.",
+      "Relevant background/PMH: Recurrent severe infections",
+      "Current medications: Ineffective antifungals"
+    ],
+    "common_misconceptions": [
+      "Treating recurrent severe infections in an infant simply as 'bad luck' or day-care exposure.",
+      "Administering live vaccines to infants without checking newborn screening results for SCID (TRECs)."
+    ],
+    "dangerous_errors": [
+      "Giving live attenuated vaccines (e.g., rotavirus, MMR) which can cause fatal vaccine-strain disease.",
+      "Transfusing non-irradiated blood products, leading to fatal Transfusion-Associated Graft-versus-Host Disease (TA-GVHD)."
+    ],
+    "management_principles": [
+      "Immediate isolation (protective environment).",
+      "Prophylactic antibiotics, antivirals, and antifungals.",
+      "Urgent referral to pediatric immunology for HSCT evaluation.",
+      "Strict avoidance of live vaccines and use ONLY irradiated, leukocyte-reduced, CMV-negative blood products."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "MedlinePlus Genetics: Severe Combined Immunodeficiency (SCID)",
+        "url": "https://medlineplus.gov/genetics/condition/severe-combined-immunodeficiency/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "6-month-old male presenting with failure to thrive, chronic diarrhea, refractory oral candidiasis, and a history of PJP pneumonia.",
+    "objective": "Cachectic appearance. Severe oral thrush. Lymph nodes and tonsillar tissue absent. Lung exam reveals mild crackles.",
+    "assessment": "Severe Combined Immunodeficiency (SCID) highly suspected.",
+    "plan": "1. Admit to hospital under strict protective isolation. 2. Stat Pediatric Immunology consult. 3. Check lymphocyte subsets (T, B, NK cell counts). 4. Initiate broad-spectrum antimicrobial prophylaxis. 5. DO NOT administer live vaccines. 6. Ensure any required blood products are irradiated."
+  },
+  "learning_objectives": [
+    "Recognize the classic triad of SCID: failure to thrive, chronic diarrhea, and opportunistic infections",
+    "Identify the absolute contraindication of live vaccines and non-irradiated blood in SCID",
+    "Understand the urgency of HSCT referral"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Combined Immunodeficiency (SCID)",
+    "one_liner": "A fatal pediatric immunodeficiency with profound T-cell defect causing severe opportunistic infections and failure to thrive.",
+    "differentials": [
+      "HIV/AIDS (vertical transmission)",
+      "DiGeorge Syndrome (22q11.2 deletion)",
+      "Wiskott-Aldrich Syndrome"
+    ],
+    "red_flags": [
+      "Opportunistic infections like Pneumocystis jirovecii",
+      "Absent lymphoid tissue on physical exam"
+    ],
+    "must_ask": [
+      {
+        "objective": "Determine severity and chronicity of infections",
+        "say": "How many times has he been hospitalized for infections since birth?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hospitalized",
+          "hospital",
+          "admitted",
+          "pneumonia",
+          "sepsis"
+        ]
+      },
+      {
+        "objective": "Assess growth and failure to thrive",
+        "say": "Has he been gaining weight normally according to his pediatrician?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "gain",
+          "growing",
+          "curve"
+        ]
+      },
+      {
+        "objective": "Check vaccine history (live vaccine risk)",
+        "say": "Has he received any live vaccines like the rotavirus vaccine recently?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "vaccines",
+          "shots",
+          "rotavirus",
+          "live"
+        ]
+      }
+    ]
+  }
+}

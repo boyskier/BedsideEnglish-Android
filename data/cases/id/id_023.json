@@ -1,0 +1,175 @@
+{
+  "id": "id_023",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Sim",
+  "age": 75,
+  "gender": "female",
+  "chief_complaint": "fever, productive cough with rust-colored spit, and shortness of breath",
+  "hpi_details": "75F presents with 3 days of shaking chills, fever, a deep cough producing thick rust-colored sputum, and mild shortness of breath. Her family noticed she has been slightly confused today.",
+  "ideas": "family worried she has pneumonia or a bad case of the flu",
+  "concerns": "worried about hospitalization in the elderly",
+  "expectations": "wants chest X-ray and antibiotics",
+  "pmh": "Hypertension, COPD",
+  "medications": "Lisinopril 10mg daily, Albuterol inhaler PRN",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_pneumonia_workup",
+      "title": "Urgent pneumonia severity results",
+      "order_terms": [
+        "chest x ray",
+        "chest x-ray",
+        "chest radiograph",
+        "cxr",
+        "blood tests",
+        "blood work",
+        "metabolic panel",
+        "bun",
+        "urea"
+      ],
+      "availability_message": "The urgent chest radiograph and severity results are now available; oxygen and empiric antibiotics should not be delayed.",
+      "results": [
+        {
+          "id": "chest_xray",
+          "test": "Chest radiograph",
+          "value": "Focal right lower-lobe air-space consolidation with air bronchograms; no pleural effusion",
+          "flag": "abnormal",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "blood_urea_nitrogen",
+          "test": "Blood urea nitrogen",
+          "value": "24",
+          "unit": "mg/dL",
+          "reference_range": "7-20",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Community-Acquired Pneumonia (elderly) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Community-Acquired Pneumonia (elderly) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "CURB-65 (Confusion, Urea >7mmol/L, Respiratory rate >=30, Blood pressure <90/60, Age >=65) guides the admission decision; a score of 2 typically warrants a short inpatient stay or closely supervised outpatient treatment.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, productive cough with rust-colored spit, and shortness of breath",
+      "Key HPI features: 75F presents with 3 days of shaking chills, fever, a deep cough producing thick rust-colored sputum, and mild shortness of breath. Her family noticed she has been slightly confused today.",
+      "Objective/Exam findings: Vitals: Temp 38.9C, HR 106, RR 24, BP 128/78, SpO2 92% on room air. New disorientation to time (confusion). Crackles and bronchial breath sounds over the right lower lung field with dullness to percussion. CURB-65 = 2 (confusion + age >=65).",
+      "Relevant background/PMH: Hypertension, COPD",
+      "Current medications: Lisinopril 10mg daily, Albuterol inhaler PRN"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Community-Acquired Pneumonia (elderly).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Influenza without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New confusion in an elderly patient — one of the CURB-65 criteria, raises severity/admission risk."
+    ],
+    "management_principles": [
+      "Order chest X-ray, CBC, BMP (including BUN for CURB-65), blood cultures, and pulse oximetry.",
+      "Calculate CURB-65 to guide admission decision (confusion, uremia, RR, BP, age); a score of 2 supports inpatient admission, especially with COPD and hypoxia.",
+      "Start empiric antibiotic therapy per CAP guidelines (e.g., Ceftriaxone plus Azithromycin) and provide supplemental oxygen to maintain SpO2 >=92%."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "75F with COPD and hypertension, 3 days of shaking chills, fever, rust-colored productive cough, and mild dyspnea, with new confusion noted by family today.",
+    "objective": "T 38.9C, HR 106, RR 24, BP 128/78, SpO2 92% on room air. New disorientation to time. Crackles and bronchial breath sounds with dullness to percussion over the right lower lung field. CURB-65 = 2.",
+    "assessment": "Community-Acquired Pneumonia in an elderly patient with COPD, CURB-65 score 2, supporting inpatient admission.",
+    "plan": "1. Chest X-ray, CBC, BMP (including BUN), blood cultures, and pulse oximetry. 2. Admit given CURB-65 = 2 and comorbid COPD. 3. Start empiric IV antibiotics (Ceftriaxone plus Azithromycin) per CAP guidelines. 4. Supplemental oxygen to maintain SpO2 >=92%; monitor confusion and respiratory status closely."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Community-Acquired Pneumonia (CAP) in an elderly patient (CURB-65 score 2).",
+    "Formulate prioritized differential diagnosis for fever, productive cough with rust-colored spit, and shortness of breath",
+    "Select appropriate laboratory and imaging studies for infectious disease",
+    "Implement evidence-based acute and long-term management strategies for Community-Acquired Pneumonia (CAP) in an elderly patient (CURB-65 score 2)."
+  ],
+  "teaching": {
+    "diagnosis": "Community-Acquired Pneumonia (elderly)",
+    "one_liner": "A lung infection causing fever, productive cough with rust-colored sputum, and breathlessness — in elderly patients, new confusion can be the most prominent sign, and severity is assessed with CURB-65.",
+    "differentials": [
+      "Influenza",
+      "COPD exacerbation",
+      "Heart failure exacerbation"
+    ],
+    "red_flags": [
+      "New confusion in an elderly patient — one of the CURB-65 criteria, raises severity/admission risk"
+    ],
+    "must_ask": [
+      {
+        "objective": "Cough character",
+        "say": "What does the sputum look like — is it rust-colored or thick?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "rust-colored",
+          "sputum"
+        ]
+      },
+      {
+        "objective": "Fever and chills",
+        "say": "Have you had shaking chills with the fever?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chills",
+          "fever"
+        ]
+      },
+      {
+        "objective": "Confusion (CURB-65)",
+        "say": "Has your family noticed you seeming more confused than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confusion"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "Are you more short of breath than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breathless"
+        ]
+      },
+      {
+        "objective": "Background lung disease",
+        "say": "Do you have COPD or another lung condition?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "COPD"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,205 @@
+{
+  "id": "cardio_016",
+  "system": "cardiology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. O'Donnell",
+  "age": 49,
+  "gender": "male",
+  "chief_complaint": "gradual swelling of the belly and legs and extreme breathlessness over 4 months",
+  "hpi_details": "4-month history of insidious, progressive shortness of breath, now occurring on minimal exertion and walking from room to room. Accompanied by significant bilateral leg and scrotal oedema, abdominal swelling (ascites), right upper quadrant abdominal fullness, and chronic fatigue. Has experienced a dry night-time cough and orthopnoea requiring two pillows. Reports a 20-year history of heavy daily alcohol consumption (approx 12-15 pints of beer or 350ml spirits daily).",
+  "ideas": "thinks his beer drinking has damaged his liver and made water pool in his stomach and legs",
+  "concerns": "worried his heart is failing because his legs feel as heavy as lead blocks",
+  "expectations": "wants strong water pills to flush out the fluid and advice on whether his heart can recover if he quits drinking",
+  "pmh": "hypertension, gout, no prior heart attacks or angina",
+  "medications": "allopurinol 100mg OD, multivitamin OD",
+  "social_hx": "chronic heavy alcohol consumption (approx 80-100g/day for 20 years), smokes 15 cigarettes/day, former pub manager",
+  "investigation_events": [
+    {
+      "id": "heart_failure_bloods",
+      "title": "Heart failure blood results",
+      "order_terms": ["NT-proBNP", "BNP", "natriuretic peptide"],
+      "availability_message": "The NT-proBNP result is now available.",
+      "results": [
+        {
+          "id": "nt_probnp_initial",
+          "test": "NT-proBNP",
+          "value": "4820",
+          "unit": "pg/mL",
+          "reference_range": "<125",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "Initial sample"
+        }
+      ]
+    },
+    {
+      "id": "dilated_cardiomyopathy_echo",
+      "title": "Transthoracic echocardiogram",
+      "order_terms": ["echocardiogram", "echo", "TTE"],
+      "availability_message": "The transthoracic echocardiogram report is now available.",
+      "results": [
+        {
+          "id": "tte_dilated_cardiomyopathy",
+          "test": "Transthoracic echocardiogram",
+          "value": "Severe four-chamber dilatation with global hypokinesia; LVEF 25%; no primary valvular lesion",
+          "unit": "",
+          "reference_range": "LVEF 50-70%",
+          "flag": "critical",
+          "collected_at": "During today's assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Alcoholic Dilated Cardiomyopathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Alcoholic Dilated Cardiomyopathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes explaining to the patient that alcoholic cardiomyopathy is unique in that significant or complete recovery of ejection fraction can occur with absolute total alcohol abstinence, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: gradual swelling of the belly and legs and extreme breathlessness over 4 months",
+      "Key HPI features: 4-month history of insidious, progressive shortness of breath, now occurring on minimal exertion and walking from room to room. Accompanied by significant bilateral leg and scrotal oedema, abdominal swelling (ascites), right upper quadrant abdominal fullness, and chronic fatigue. Has experienced a dry night-time cough and orthopnoea requiring two pillows. Reports a 20-year history of heavy daily alcohol consumption (approx 12-15 pints of beer or 350ml spirits daily).",
+      "Objective/Exam findings: Examine JVP (+5 cm H2O elevation with positive hepatojugular reflux). Auscultation: displaced PMI laterally to 6th intercostal space, S3 gallop, functional mitral and tricuspid regurgitation murmurs. Abdominal exam: tender hepatomegaly (congestive hepatopathy) and shifting dullness. Bloods: NT-proBNP markedly elevated, LFTs (congestive pattern vs alcoholic liver injury), FBC (macrocytosis MCV >100 typical of alcohol), U&Es. ECG: sinus tachycardia, non-specific T wave changes, poor R wave progression. Transthoracic echocardiogram (TTE: four-chamber dilatation, global hypokinesia with severely reduced left ventricular ejection fraction <30%, normal valve morphology).",
+      "Relevant background/PMH: hypertension, gout, no prior heart attacks or angina",
+      "Current medications: allopurinol 100mg OD, multivitamin OD"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Alcoholic Dilated Cardiomyopathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ischaemic cardiomyopathy without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Breathlessness at rest, or signs of alcohol withdrawal."
+    ],
+    "management_principles": [
+      "Explain to patient that alcoholic cardiomyopathy is unique in that significant or complete recovery of ejection fraction can occur with absolute total alcohol abstinence",
+      "Refer to addiction services and provide medically supervised alcohol detoxification if risk of withdrawal",
+      "Treat congestion with a loop diuretic and initiate or optimize guideline-directed HFrEF therapy (ACEi/ARNI, evidence-based beta-blocker, MRA, and SGLT2 inhibitor) once clinically stable and as tolerated"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2022 AHA/ACC/HFSA Guideline for the Management of Heart Failure",
+        "url": "https://professional.heart.org/en/guidelines-statements/2022-ahaacchfsa-guideline-for-the-management-of-heart-failure-a-report-of-thecir0000000000001063"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "49M heavy alcohol drinker presents with progressive biventricular failure over 4 months: dyspnoea, orthopnoea, marked peripheral oedema, ascites, and tender hepatomegaly.",
+    "objective": "Examine JVP (+5 cm H2O elevation with positive hepatojugular reflux). Auscultation: displaced PMI laterally to 6th intercostal space, S3 gallop, functional mitral and tricuspid regurgitation murmurs. Abdominal exam: tender hepatomegaly (congestive hepatopathy) and shifting dullness. Bloods: NT-proBNP markedly elevated, LFTs (congestive pattern vs alcoholic liver injury), FBC (macrocytosis MCV >100 typical of alcohol), U&Es. ECG: sinus tachycardia, non-specific T wave changes, poor R wave progression. Transthoracic echocardiogram (TTE: four-chamber dilatation, global hypokinesia with severely reduced left ventricular ejection fraction <30%, normal valve morphology).",
+    "assessment": "Dilated Cardiomyopathy secondary to chronic alcohol toxicity (Alcoholic Cardiomyopathy) causing decompensated biventricular heart failure. DDx: alcoholic liver cirrhosis with ascites and secondary fluid overload (often co-exists; check hepatojugular reflux to confirm cardiac etiology), ischaemic cardiomyopathy, viral myocarditis, thiamine deficiency (Beriberi high-output heart failure).",
+    "plan": "Explain to patient that alcoholic cardiomyopathy is unique in that significant or complete recovery of ejection fraction can occur with absolute total alcohol abstinence. Refer to addiction services and provide medically supervised alcohol detoxification if risk of withdrawal. Treat congestion with a loop diuretic and initiate or optimize guideline-directed HFrEF therapy (ACEi/ARNI, evidence-based beta-blocker, MRA, and SGLT2 inhibitor) once clinically stable and as tolerated. Thiamine and B-complex supplementation. Cardiology consultation."
+  },
+  "learning_objectives": [
+    "Differentiate cardiac ascites/oedema from cirrhotic ascites using hepatojugular reflux and JVP evaluation",
+    "Recognise chronic heavy alcohol consumption as a reversible cause of non-ischaemic dilated cardiomyopathy",
+    "Communicate the positive prognostic potential of ejection fraction recovery contingent upon total alcohol abstinence",
+    "Formulate concurrent management of heart failure guideline-directed medical therapy alongside addiction support"
+  ],
+  "teaching": {
+    "diagnosis": "Alcoholic Dilated Cardiomyopathy",
+    "one_liner": "Chronic alcohol stretches and weakens the heart muscle, producing heart failure — and it can partly reverse if drinking stops.",
+    "differentials": [
+      "Ischaemic cardiomyopathy",
+      "Liver cirrhosis with ascites",
+      "Nephrotic syndrome"
+    ],
+    "red_flags": [
+      "Breathlessness at rest, or signs of alcohol withdrawal"
+    ],
+    "must_ask": [
+      {
+        "objective": "Alcohol quantity and duration",
+        "say": "How many drinks do you have in a typical week, and for how many years?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "drink",
+          "alcohol",
+          "beer",
+          "soju",
+          "wine",
+          "bottle"
+        ]
+      },
+      {
+        "objective": "Abdominal and leg swelling",
+        "say": "When did the swelling in your belly and legs start?",
+        "domains": [
+          "onset_duration",
+          "location"
+        ],
+        "keywords": [
+          "belly",
+          "abdomen",
+          "swelling",
+          "leg",
+          "stomach"
+        ]
+      },
+      {
+        "objective": "Orthopnoea and exertional breathlessness",
+        "say": "Are you short of breath lying flat or when you walk?",
+        "domains": [
+          "associated_symptoms",
+          "aggravating"
+        ],
+        "keywords": [
+          "breath",
+          "flat",
+          "lie",
+          "walk",
+          "pillow"
+        ]
+      },
+      {
+        "objective": "Attempts to cut down",
+        "say": "Have you ever tried to cut down, and what happened?",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "cut",
+          "down",
+          "quit"
+        ]
+      },
+      {
+        "objective": "Nutrition and weight",
+        "say": "How has your appetite been, and has your weight changed?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "appetite",
+          "eating",
+          "weight",
+          "meals"
+        ]
+      },
+      {
+        "objective": "Liver disease features",
+        "say": "Have you had jaundice, or been told about your liver?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "jaundice",
+          "liver",
+          "yellow"
+        ]
+      }
+    ]
+  }
+}

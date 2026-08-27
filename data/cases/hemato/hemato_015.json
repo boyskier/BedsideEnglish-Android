@@ -1,0 +1,158 @@
+{
+  "id": "hemato_015",
+  "system": "hematology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Diaz",
+  "age": 68,
+  "gender": "female",
+  "chief_complaint": "severe back pain, fatigue, and frequent infections",
+  "hpi_details": "68F presents with 3 months of worsening lower back pain, profound fatigue, and two episodes of pneumonia requiring antibiotics. Labs show a new normocytic anemia, elevated creatinine, and hypercalcemia.",
+  "ideas": "thinks she strained her back",
+  "concerns": "worried about her kidneys",
+  "expectations": "wants back pain relief",
+  "pmh": "Hypertension",
+  "medications": "Amlodipine",
+  "social_hx": "Retired",
+  "available_results": [
+    {
+      "id": "hemoglobin",
+      "test": "Hemoglobin",
+      "value": "9.5",
+      "unit": "g/dL",
+      "reference_range": "12.0-16.0",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "1.8",
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.2",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "calcium",
+      "test": "Total serum calcium",
+      "value": "11.2",
+      "unit": "mg/dL",
+      "reference_range": "8.6-10.2",
+      "flag": "high",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Multiple Myeloma",
+    "core_concepts": [
+      "CRAB criteria: Calcium elevation, Renal insufficiency, Anemia, Bone lesions."
+    ],
+    "diagnostic_clues": [
+      "Bone pain",
+      "Anemia",
+      "Renal failure",
+      "Hypercalcemia"
+    ],
+    "common_misconceptions": [
+      "Attributing back pain in elderly solely to osteoarthritis when there are systemic red flags."
+    ],
+    "dangerous_errors": [
+      "Missing impending spinal cord compression from a vertebral body lesion."
+    ],
+    "management_principles": [
+      "SPEP/UPEP, skeletal survey, bone marrow biopsy, oncology referral."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "68F with chronic severe back pain, recurrent infections, and fatigue.",
+    "objective": "Pale conjunctiva, midline lumbar spine tenderness. Labs show Ca 11.2, Cr 1.8, Hgb 9.5.",
+    "assessment": "Suspected Multiple Myeloma (CRAB criteria met).",
+    "plan": "SPEP with immunofixation, skeletal survey, nephrology and hematology consults."
+  },
+  "learning_objectives": [
+    "Identify the CRAB criteria for multiple myeloma."
+  ],
+  "teaching": {
+    "diagnosis": "Multiple Myeloma",
+    "one_liner": "An elderly patient with bone pain, anemia, renal dysfunction, and hypercalcemia (CRAB criteria).",
+    "differentials": [
+      "Bone metastases from solid tumor",
+      "Primary hyperparathyroidism"
+    ],
+    "red_flags": [
+      "New bone pain in elderly with anemia/hypercalcemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Bone pain characteristics",
+        "say": "Where exactly is the back pain, and has it been getting worse over the past months?",
+        "domains": [
+          "location",
+          "progression"
+        ],
+        "keywords": [
+          "back",
+          "bone pain",
+          "months"
+        ]
+      },
+      {
+        "objective": "Infection history",
+        "say": "Have you been getting infections more often than usual recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "infections",
+          "frequent"
+        ]
+      },
+      {
+        "objective": "Renal and hydration symptoms",
+        "say": "Have you noticed less urine output, or symptoms of feeling thirsty or confused?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "urine",
+          "thirst",
+          "confusion"
+        ]
+      },
+      {
+        "objective": "Neurological red flags",
+        "say": "Have you had any weakness in your legs, numbness, or trouble controlling your bladder or bowels?",
+        "domains": [
+          "red_flags"
+        ],
+        "keywords": [
+          "weakness",
+          "numbness",
+          "bladder"
+        ]
+      },
+      {
+        "objective": "Fatigue and functional impact",
+        "say": "How is the fatigue affecting your usual daily activities?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "fatigue",
+          "weakness"
+        ]
+      }
+    ]
+  }
+}

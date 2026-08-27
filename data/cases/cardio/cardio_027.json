@@ -1,0 +1,203 @@
+{
+  "id": "cardio_027",
+  "system": "cardio",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Nelson",
+  "age": 23,
+  "gender": "male",
+  "chief_complaint": "elevated cholesterol levels and high LDL on routine health check",
+  "hpi_details": "A 23-year-old male presents to the clinic with elevated cholesterol levels and high LDL found incidentally on a routine health check. He is entirely asymptomatic and denies chest pain, calf pain, or visual symptoms.",
+  "ideas": "thinks it might be related to dyslipidemia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "total_cholesterol_screening",
+      "test": "Total cholesterol",
+      "value": "298",
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "flag": "high",
+      "specimen": "Blood",
+      "collected_at": "Routine health check"
+    },
+    {
+      "id": "ldl_cholesterol_screening",
+      "test": "LDL cholesterol",
+      "value": "226",
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "flag": "high",
+      "specimen": "Blood",
+      "collected_at": "Routine health check"
+    },
+    {
+      "id": "hdl_cholesterol_screening",
+      "test": "HDL cholesterol",
+      "value": "48",
+      "unit": "mg/dL",
+      "reference_range": ">=40",
+      "flag": "normal",
+      "specimen": "Blood",
+      "collected_at": "Routine health check"
+    },
+    {
+      "id": "triglycerides_screening",
+      "test": "Triglycerides",
+      "value": "120",
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "flag": "normal",
+      "specimen": "Blood",
+      "collected_at": "Routine health check"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Dyslipidaemia evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Mixed Dyslipidaemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes confirming the complete lipid profile, assessing lifetime cardiovascular risk and secondary/familial causes, and initiating lifestyle therapy; statin intensity depends on LDL level and overall risk, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: elevated cholesterol levels and high LDL on routine health check",
+      "Key HPI features: A 23-year-old male presents to the clinic with elevated cholesterol levels and high LDL found incidentally on a routine health check. He is entirely asymptomatic and denies chest pain, calf pain, or visual symptoms.",
+      "Objective/Exam findings: Examine for tendon xanthomas, xanthelasma, and corneal arcus (suggestive of familial hypercholesterolaemia); record BMI and waist circumference. Fasting lipid profile to classify the dyslipidaemia; TSH, HbA1c, and renal function to exclude secondary causes.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Mixed Dyslipidaemia.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Familial hypercholesterolaemia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Tendon xanthomas or a family history of heart attack under 55 — consider a familial cause."
+    ],
+    "management_principles": [
+      "Confirm the complete lipid profile and assess lifetime cardiovascular risk, secondary causes, and familial hypercholesterolaemia; recommend Mediterranean-style diet and regular exercise",
+      "Select statin therapy and intensity according to LDL level, confirmed diagnosis, and overall cardiovascular risk",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2018 AHA/ACC/AACVPR/AAPA/ABC/ACPM/ADA/AGS/APhA/ASPC/NLA/PCNA Guideline on the Management of Blood Cholesterol",
+        "url": "https://professional.heart.org/en/guidelines-statements/2018-ahaaccaacvpraapaabcacpmadaagsaphaaspcnlapcna-guideline-on-the-managementcircd0000625"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of elevated cholesterol levels and high LDL on routine health check. HPI: dietary factors, genetics.",
+    "objective": "Examine for tendon xanthomas, xanthelasma, and corneal arcus (suggestive of familial hypercholesterolaemia); record BMI and waist circumference. Fasting lipid profile to classify the dyslipidaemia; TSH, HbA1c, and renal function to exclude secondary causes.",
+    "assessment": "Dyslipidaemia with elevated LDL reported; obtain the complete lipid profile before classifying the dyslipidaemia or selecting therapy.",
+    "plan": "Confirm the complete lipid profile and assess lifetime cardiovascular risk, secondary causes, and familial hypercholesterolaemia; recommend Mediterranean-style diet and regular exercise. Select statin therapy and intensity according to LDL level, confirmed diagnosis, and overall cardiovascular risk. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Mixed Dyslipidemia",
+    "Select appropriate diagnostic workup for Mixed Dyslipidemia",
+    "Implement evidence-based management plan: assess lipid values and cardiovascular risk, address lifestyle, and select statin therapy when indicated"
+  ],
+  "teaching": {
+    "diagnosis": "Dyslipidaemia",
+    "one_liner": "Raised LDL cholesterol and triglycerides together — no symptoms at all, but a direct driver of future heart attack and stroke.",
+    "differentials": [
+      "Familial hypercholesterolaemia",
+      "Hypothyroidism",
+      "Poorly controlled diabetes"
+    ],
+    "red_flags": [
+      "Tendon xanthomas or a family history of heart attack under 55 — consider a familial cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diet and alcohol",
+        "say": "Walk me through what you eat in a typical day, and how much you drink.",
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "eat",
+          "diet",
+          "fried",
+          "alcohol",
+          "drink",
+          "meal"
+        ]
+      },
+      {
+        "objective": "Physical activity",
+        "say": "How much exercise do you get in a week?",
+        "keywords": [
+          "exercise",
+          "walk",
+          "gym",
+          "active",
+          "sport"
+        ]
+      },
+      {
+        "objective": "Family history of early cardiovascular disease",
+        "say": "Has anyone in your family had a heart attack or stroke before the age of 55?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "heart",
+          "attack",
+          "stroke",
+          "young",
+          "father"
+        ]
+      },
+      {
+        "objective": "Secondary causes",
+        "say": "Do you have diabetes, kidney or thyroid problems?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes",
+          "kidney",
+          "thyroid",
+          "liver"
+        ]
+      },
+      {
+        "objective": "Previous lipid results and statin history",
+        "say": "Have you taken cholesterol tablets before, and how did you get on with them?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "statin",
+          "cholesterol",
+          "tablet",
+          "side",
+          "effect",
+          "muscle"
+        ]
+      },
+      {
+        "objective": "What the patient understands about the risk",
+        "say": "What do you already know about what high cholesterol does?",
+        "domains": [
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

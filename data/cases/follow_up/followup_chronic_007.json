@@ -1,0 +1,257 @@
+{
+  "id": "followup_chronic_007",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "chronic_disease",
+  "difficulty": "advanced",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. Robert Diaz",
+  "age": 68,
+  "gender": "male",
+  "visit_title": "Multimorbid diabetes, CKD, and heart failure review",
+  "follow_up_reason": "Six-week review of type 2 diabetes, stage 3b CKD, and heart failure with reduced ejection fraction",
+  "clinician_brief": {
+    "prior_note": "Established patient with type 2 diabetes, stage 3b chronic kidney disease, and heart failure with reduced ejection fraction, previously stable on current regimen with eGFR 42 mL/min/1.73m2.",
+    "active_problems": [
+      "Type 2 diabetes mellitus",
+      "Chronic kidney disease stage 3b",
+      "Heart failure with reduced ejection fraction",
+      "Hypertension"
+    ],
+    "current_medications": [
+      "Metformin 500 mg twice daily",
+      "Empagliflozin 10 mg once daily",
+      "Lisinopril 20 mg once daily",
+      "Carvedilol 12.5 mg twice daily",
+      "Furosemide 20 mg once daily",
+      "Atorvastatin 40 mg once daily"
+    ],
+    "previous_plan": [
+      "Recheck renal function and potassium at this visit",
+      "Avoid NSAIDs given CKD and ACE inhibitor use",
+      "Continue glycemic monitoring toward an individualized HbA1c target",
+      "Daily weight and leg swelling checks"
+    ],
+    "results_and_observations": [
+      "eGFR today 33 mL/min/1.73m2, down from 42 mL/min/1.73m2 six weeks ago",
+      "Potassium 5.4 mmol/L, up from 4.6 mmol/L",
+      "HbA1c 8.9%, up from 7.8%",
+      "Weight stable; no new leg swelling"
+    ],
+    "today_tasks": [
+      "Identify the cause of the acute renal function decline and hyperkalemia",
+      "Reconcile all medications, including any over-the-counter drugs",
+      "Provide a safe alternative analgesia plan",
+      "Reassess glycemic control and heart failure status",
+      "Agree on repeat labs and an explicit escalation plan"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Knee pain flared up about two weeks ago after doing yard work, so he has been taking over-the-counter ibuprofen most days since, on top of his usual pills.",
+    "adherence": "Takes all his prescribed medications as directed; did not think the ibuprofen counted as a 'real medication' since it is over the counter.",
+    "treatment_response": "Blood sugars have been running a little higher than usual, which he attributes to eating more over a family visit.",
+    "side_effects": "No swelling, no shortness of breath, no chest pain.",
+    "new_symptoms_and_red_flags": "Mild increased fatigue over the past week; denies decreased urine output, nausea, vomiting, palpitations, or muscle weakness.",
+    "agenda": "Wants his knee pain controlled and is not sure why the labs would have changed.",
+    "concern": "Worried that this means his kidneys are 'failing' and he will need dialysis soon.",
+    "preference": "Wants to understand exactly what he can safely take for pain going forward."
+  },
+  "clinical_knowledge": {
+    "topic": "Recognizing NSAID-triggered acute-on-chronic kidney injury and hyperkalemia in a triple-nephrotoxin-risk patient (ACE inhibitor + diuretic + CKD), and explaining why an over-the-counter pill caused it",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "NSAIDs, ACE inhibitors, and diuretics form the classic 'triple whammy' for acute kidney injury: NSAIDs constrict the afferent renal arteriole, ACE inhibitors dilate the efferent arteriole, and diuretics reduce renal perfusion — together they can sharply drop glomerular filtration, exactly as seen in his eGFR falling from 42 to 33 mL/min/1.73m2 here.",
+      "KDIGO CKD staging places an eGFR of 33 mL/min/1.73m2 at stage G4 (down from G3b at 42), and this magnitude of acute decline in someone already at reduced baseline function warrants urgent reassessment rather than routine follow-up.",
+      "Potassium 5.4 mmol/L is moderate hyperkalemia; in a patient on an ACE inhibitor with reduced renal clearance, an added NSAID blunts renal potassium excretion further, and this combination has a real risk of progressing to dangerous arrhythmia-level hyperkalemia if the NSAID continues.",
+      "For CKD patients needing analgesia, acetaminophen is the preferred first-line option because it is not nephrotoxic at recommended doses, whereas NSAIDs (including over-the-counter ibuprofen and naproxen) should generally be avoided in CKD stage 3 or worse.",
+      "The interval HbA1c rise from 7.8% to 8.9% is a separate, lower-acuity issue this visit, most plausibly explained by his reported dietary indiscretion during a family visit rather than a new medication effect, and should be addressed but not overshadow the urgent renal/potassium problem."
+    ],
+    "diagnostic_clues": [
+      "eGFR falling from 42 to 33 mL/min/1.73m2 over six weeks, temporally matching two weeks of daily ibuprofen use, is the clearest signal of an NSAID-triggered acute-on-chronic injury rather than natural CKD progression.",
+      "Potassium rising from 4.6 to 5.4 mmol/L in the same window reflects the same drug-interaction mechanism reducing renal potassium handling, reinforcing rather than being a separate finding from the creatinine change.",
+      "Mild increased fatigue over the past week is a nonspecific but plausible early symptom of both worsening renal function and hyperkalemia, and should prompt urgent labs rather than reassurance.",
+      "Absence of decreased urine output, nausea, vomiting, palpitations, or muscle weakness is reassuring against more severe uremia or dangerous hyperkalemia today, but does not rule out further deterioration if the NSAID is continued.",
+      "His statement that he 'did not think the ibuprofen counted as a real medication' is the key history clue explaining how a preventable drug interaction occurred despite otherwise excellent adherence to his prescribed regimen."
+    ],
+    "common_misconceptions": [
+      "His belief that over-the-counter ibuprofen 'doesn't count' as a real medication is precisely the misconception that caused this problem, and needs direct correction: OTC status has nothing to do with a drug's potential for serious interactions.",
+      "His fear that this means his kidneys are 'failing' and he will need dialysis soon should be addressed honestly but not catastrophized — this pattern is often reversible once the offending NSAID is stopped, though it does require prompt monitoring to confirm recovery.",
+      "Assuming his blood sugar rise must reflect his diabetes medications failing, when the more likely explanation given the timing is a temporary dietary change during his family visit rather than a need to intensify his diabetes regimen today.",
+      "Believing that because he 'takes all his prescribed medications as directed,' medication reconciliation is unnecessary — his adherence to prescribed drugs was excellent, but the gap was in a medication he didn't consider worth mentioning."
+    ],
+    "dangerous_errors": [
+      "Not asking specifically about over-the-counter and herbal products during medication reconciliation, since patients often filter these out unless asked directly, as happened here.",
+      "Continuing or increasing the ACE inhibitor dose before confirming the potassium and creatinine trend has reversed after stopping the NSAID, rather than holding steady and rechecking first.",
+      "Recommending another NSAID (or not warning against future NSAID use) for his knee pain without establishing a clear non-nephrotoxic alternative plan, setting up a recurrence.",
+      "Treating the HbA1c rise as urgent enough to adjust his diabetes regimen at this visit, potentially distracting from the more acute renal/potassium issue that needs same-visit action."
+    ],
+    "management_principles": [
+      "Stop the ibuprofen immediately and recheck a basic metabolic panel in the near term (days, not weeks) to confirm the potassium and creatinine trend is reversing.",
+      "Hold the ACE inhibitor dose steady for now, reducing or holding it only if hyperkalemia or renal function fails to improve after NSAID cessation, rather than making an immediate dose change today.",
+      "Provide a specific, safe non-NSAID analgesia plan for his knee — acetaminophen as first-line, with consideration of topical agents or physical therapy — so he has a concrete alternative rather than an open-ended instruction to 'avoid NSAIDs.'",
+      "Address the HbA1c rise with a lower-intensity conversation about the recent dietary context and reinforce routine glycemic self-management, deferring any regimen change until confirming it isn't a transient blip."
+    ],
+    "boundaries_and_exceptions": [
+      "This 'stop the NSAID and recheck' approach assumes he is hemodynamically stable and asymptomatic, as he is today; any symptoms of severe hyperkalemia (palpitations, profound weakness) or oliguria would instead need same-day urgent evaluation, possibly including an ECG and emergent treatment.",
+      "The preference for acetaminophen over NSAIDs in CKD is a general principle that itself needs re-checking against his liver function and total daily dose given his multiple comorbidities.",
+      "If renal function and potassium do not recover after stopping the NSAID, this shifts from a presumed reversible drug-interaction injury to needing broader nephrology workup, since intrinsic progression of his underlying CKD or another cause could instead be responsible."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for the Evaluation and Management of CKD",
+        "url": "https://kdigo.org/guidelines/ckd-evaluation-and-management/"
+      },
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Set the agenda and reconcile all medications, including over-the-counter drugs",
+    "Identify NSAID use as the likely cause of the renal function decline and hyperkalemia",
+    "Explain the interaction between NSAIDs, ACE inhibitors, and kidney function in plain language",
+    "Provide a safe, non-NSAID analgesia plan for his knee pain",
+    "Address the interval rise in HbA1c and reinforce glycemic self-management",
+    "Respond empathetically to his fear of needing dialysis",
+    "Agree on repeat labs, follow-up timing, and explicit safety-net instructions"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Set the agenda and reconcile all medications, including over-the-counter drugs",
+      "category": "Medication reconciliation",
+      "question": "Besides your regular pills, have you taken anything else recently, including anything over the counter for pain?"
+    },
+    {
+      "objective": "Identify NSAID use as the likely cause of the renal function decline and hyperkalemia",
+      "category": "Interval change",
+      "question": "How long have you been taking the ibuprofen, and how often?"
+    },
+    {
+      "objective": "Explain the interaction between NSAIDs, ACE inhibitors, and kidney function in plain language",
+      "category": "Results",
+      "question": "Can I explain how the ibuprofen, your blood pressure pill, and your kidneys interact?"
+    },
+    {
+      "objective": "Provide a safe, non-NSAID analgesia plan for his knee pain",
+      "category": "Plan",
+      "question": "Let's find a pain option for your knee that's safe for your kidneys — how does acetaminophen sound as a first step?"
+    },
+    {
+      "objective": "Address the interval rise in HbA1c and reinforce glycemic self-management",
+      "category": "Diabetes control",
+      "question": "Tell me about your blood sugar readings and eating pattern over the past few weeks."
+    },
+    {
+      "objective": "Respond empathetically to his fear of needing dialysis",
+      "category": "Concerns",
+      "question": "I can see this news about your kidney numbers is worrying — what's going through your mind?"
+    },
+    {
+      "objective": "Agree on repeat labs, follow-up timing, and explicit safety-net instructions",
+      "category": "Understanding & follow-up",
+      "question": "Can we agree on when to recheck your labs, and what symptoms should prompt you to call us sooner?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Set the agenda and reconcile all medications, including over-the-counter drugs",
+      "keywords": [
+        "medications",
+        "medicine",
+        "pills",
+        "over the counter",
+        "otc",
+        "ibuprofen",
+        "anything else",
+        "list"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Identify NSAID use as the likely cause of the renal function decline and hyperkalemia",
+      "keywords": [
+        "ibuprofen",
+        "nsaid",
+        "how long",
+        "how often",
+        "knee",
+        "pain reliever"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Explain the interaction between NSAIDs, ACE inhibitors, and kidney function in plain language",
+      "keywords": [
+        "kidney",
+        "kidneys",
+        "interact",
+        "lisinopril",
+        "blood pressure pill",
+        "potassium",
+        "creatinine"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Provide a safe, non-NSAID analgesia plan for his knee pain",
+      "keywords": [
+        "acetaminophen",
+        "tylenol",
+        "pain plan",
+        "avoid ibuprofen",
+        "physical therapy",
+        "safe"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address the interval rise in HbA1c and reinforce glycemic self-management",
+      "keywords": [
+        "blood sugar",
+        "a1c",
+        "diet",
+        "glucose",
+        "diabetes",
+        "readings"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Respond empathetically to his fear of needing dialysis",
+      "keywords": [
+        "dialysis",
+        "worried",
+        "scared",
+        "kidney failure",
+        "understand your concern",
+        "reassure"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Agree on repeat labs, follow-up timing, and explicit safety-net instructions",
+      "keywords": [
+        "repeat labs",
+        "recheck",
+        "follow up",
+        "call us",
+        "warning signs",
+        "come back"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "68M with T2DM, CKD stage 3b, and HFrEF returns for scheduled review. Two weeks of daily over-the-counter ibuprofen for knee pain, unrecognized as a medication interaction risk. Mildly increased fatigue; denies decreased urine output, chest pain, dyspnea, or palpitations. Interval HbA1c rise attributed to a family visit with dietary indiscretion.",
+    "objective": "eGFR 33 mL/min/1.73m2, down from 42; potassium 5.4 mmol/L, up from 4.6; HbA1c 8.9%, up from 7.8%. Weight stable, no peripheral edema reported.",
+    "assessment": "NSAID-precipitated acute-on-chronic kidney injury with hyperkalemia in a patient on an ACE inhibitor, with superimposed hyperglycemia.",
+    "plan": "stop the ibuprofen immediately, recheck a basic metabolic panel to confirm the potassium and creatinine trend, hold or reduce the ACE inhibitor only if hyperkalemia or renal function fails to improve, and provide a safe non-NSAID analgesia plan for his knee pain."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Multimorbid diabetes, CKD, and heart failure review",
+    "one_liner": "Clinical scenario for evaluation and management of Multimorbid diabetes, CKD, and heart failure review."
+  }
+}

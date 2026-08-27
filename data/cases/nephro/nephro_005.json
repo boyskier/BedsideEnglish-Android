@@ -1,0 +1,194 @@
+{
+  "id": "nephro_005",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Dixon",
+  "age": 34,
+  "gender": "male",
+  "chief_complaint": "coughing up blood, rapid reduction in urination, and severe weakness over two weeks",
+  "hpi_details": "34M presents with 2-week history of coughing up fresh blood (hemoptysis), shortness of breath, profound fatigue, and rapidly decreasing urine output over the past 5 days. No prior history of lung or kidney problems.",
+  "ideas": "thinks he has severe pneumonia and dehydration",
+  "concerns": "terrified by coughing up blood and his urine stopping completely today",
+  "expectations": "wants emergency treatment so he can breathe and urinate again",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Electrician, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_pulmonary_renal_workup",
+      "title": "STAT pulmonary-renal syndrome results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "renal function",
+        "creatinine",
+        "bun",
+        "urea",
+        "cbc",
+        "complete blood count",
+        "urinalysis",
+        "urine microscopy",
+        "urine sediment",
+        "chest x ray",
+        "chest x-ray",
+        "chest radiograph"
+      ],
+      "availability_message": "The STAT pulmonary-renal results are now available; oxygen, specialist involvement, and empiric life-saving treatment should not be delayed for antibody testing or biopsy.",
+      "results": [
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "6.8",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "8.2",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "urine_microscopy",
+          "test": "Urine sediment microscopy",
+          "value": "Numerous dysmorphic red blood cells and red blood cell casts",
+          "flag": "critical",
+          "specimen": "Urine",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "chest_xray",
+          "test": "Chest radiograph",
+          "value": "Diffuse bilateral alveolar air-space opacities consistent with pulmonary hemorrhage",
+          "flag": "critical",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Anti-GBM Disease (Goodpasture's Syndrome) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Anti-GBM Disease (Goodpasture's Syndrome) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes EMERGENCY ADMISSION to ICU, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: coughing up blood, rapid reduction in urination, and severe weakness over two weeks",
+      "Key HPI features: 34M presents with 2-week history of coughing up fresh blood (hemoptysis), shortness of breath, profound fatigue, and rapidly decreasing urine output over the past 5 days. No prior history of lung or kidney problems.",
+      "Objective/Exam findings: Vitals: BP 168/100, HR 104, RR 24, SpO2 89% on room air. Bilateral crackles on lung exam. Chest X-ray/CT shows bilateral alveolar infiltrates. Urinalysis: 3+ blood, 3+ protein, active sediment with RBC casts and dysmorphic RBCs. Bloods: Creatinine jumped to 6.8 mg/dL, BUN 88 mg/dL, Hb 8.2 g/dL. Serology confirms Anti-Glomerular Basement Membrane (Anti-GBM) antibodies positive (>100 U/mL); ANCA negative. Renal biopsy shows diffuse crescentic glomerulonephritis with linear IgG immunofluorescence."
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Anti-GBM Disease (Goodpasture's Syndrome).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to ANCA-associated vasculitis (granulomatosis with polyangiitis) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Anuria (no urine at all) — signals the kidney failure is critical."
+    ],
+    "management_principles": [
+      "EMERGENCY ADMISSION to ICU",
+      "Immediate daily Plasmapheresis (plasma exchange) to remove circulating anti-GBM antibodies",
+      "Initiate pulse IV Methylprednisolone 1g daily for 3 days followed by oral prednisone taper, plus oral/IV Cyclophosphamide"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "34M presenting with pulmonary-renal syndrome: acute alveolar hemorrhage (hemoptysis) and rapidly progressive glomerulonephritis (RPGN with oliguria).",
+    "objective": "Vitals: BP 168/100, HR 104, RR 24, SpO2 89% on room air. Bilateral crackles on lung exam. Chest X-ray/CT shows bilateral alveolar infiltrates. Urinalysis: 3+ blood, 3+ protein, active sediment with RBC casts and dysmorphic RBCs. Bloods: Creatinine jumped to 6.8 mg/dL, BUN 88 mg/dL, Hb 8.2 g/dL. Serology confirms Anti-Glomerular Basement Membrane (Anti-GBM) antibodies positive (>100 U/mL); ANCA negative. Renal biopsy shows diffuse crescentic glomerulonephritis with linear IgG immunofluorescence.",
+    "assessment": "Anti-GBM Disease (Goodpasture's Syndrome) manifesting as Rapidly Progressive Glomerulonephritis (RPGN) and pulmonary hemorrhage.",
+    "plan": "EMERGENCY ADMISSION to ICU. Immediate daily Plasmapheresis (plasma exchange) to remove circulating anti-GBM antibodies. Initiate pulse IV Methylprednisolone 1g daily for 3 days followed by oral prednisone taper, plus oral/IV Cyclophosphamide. Urgent nephrology and pulmonology evaluation; prepare for hemodialysis if anuric."
+  },
+  "learning_objectives": [
+    "Recognize clinical emergency of Pulmonary-Renal Syndrome (Goodpasture's, ANCA vasculitis, SLE)",
+    "Interpret linear immunofluorescence on renal biopsy and Anti-GBM serology confirmation",
+    "Execute emergency triple-therapy protocol: Plasmapheresis, high-dose steroids, and cyclophosphamide",
+    "Manage acute renal failure and hypoxic respiratory failure concurrently in an intensive care setting"
+  ],
+  "teaching": {
+    "diagnosis": "Anti-GBM Disease (Goodpasture's Syndrome)",
+    "one_liner": "Autoantibodies attack the basement membrane shared by lung alveoli and kidney glomeruli, causing the combination of coughing up blood and rapidly progressive kidney failure — a medical emergency treated with plasma exchange.",
+    "differentials": [
+      "ANCA-associated vasculitis (granulomatosis with polyangiitis)",
+      "Lupus nephritis with pulmonary involvement",
+      "Severe pneumonia with unrelated AKI"
+    ],
+    "red_flags": [
+      "Anuria (no urine at all) — signals the kidney failure is critical",
+      "Significant hemoptysis — risk of respiratory failure"
+    ],
+    "must_ask": [
+      {
+        "objective": "Hemoptysis",
+        "say": "How much blood have you been coughing up, and for how long?",
+        "domains": [
+          "onset_duration",
+          "severity"
+        ],
+        "keywords": [
+          "coughing up blood",
+          "hemoptysis"
+        ]
+      },
+      {
+        "objective": "Urine output change",
+        "say": "Has your urine output dropped, or stopped completely?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "urine",
+          "stopped",
+          "anuria"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "How is your breathing — has it gotten worse?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breathless",
+          "shortness of breath"
+        ]
+      },
+      {
+        "objective": "Onset and progression",
+        "say": "How quickly did all of this develop, over the two weeks?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Prior health",
+        "say": "Did you have any lung or kidney problems before this started?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

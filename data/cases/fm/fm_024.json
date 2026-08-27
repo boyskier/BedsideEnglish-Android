@@ -1,0 +1,151 @@
+{
+  "id": "fm_024",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Yoon",
+  "age": 26,
+  "gender": "male",
+  "chief_complaint": "acute burning urination and urinary frequency without fever or flank pain",
+  "hpi_details": "26M presents with 3 days of burning pain during urination and needing to urinate frequently. Denies fever, back pain, or penile discharge.",
+  "ideas": "thinks he has a bladder or urinary tract infection",
+  "concerns": "worried about kidney infection or STI",
+  "expectations": "wants urine test and antibiotic",
+  "pmh": "No prior history",
+  "medications": "None",
+  "social_hx": "Student, non-smoker",
+  "investigation_events": [
+    {
+      "id": "point_of_care_urinalysis",
+      "title": "Point-of-care urinalysis",
+      "order_terms": [
+        "urinalysis",
+        "urine dipstick",
+        "urine dip",
+        "urine test"
+      ],
+      "availability_message": "The point-of-care urinalysis is now available; the urine culture and STI testing remain pending beyond this encounter.",
+      "results": [
+        {
+          "id": "leukocyte_esterase",
+          "test": "Urine leukocyte esterase",
+          "value": "2+",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        },
+        {
+          "id": "nitrite",
+          "test": "Urine nitrite",
+          "value": "Positive",
+          "reference_range": "Negative",
+          "flag": "abnormal",
+          "specimen": "Urine",
+          "collected_at": "During clinic assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Cystitis (UTI) in a male evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Cystitis (UTI) in a male is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes investigating for a predisposing structural or sexually transmitted cause before treating a UTI in a young male as routine, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: acute burning urination and urinary frequency without fever or flank pain",
+      "Key HPI features: 26M presents with 3 days of burning pain during urination and needing to urinate frequently. Denies fever, back pain, or penile discharge.",
+      "Objective/Exam findings: Afebrile with normal vital signs; genital exam to check for urethral discharge or tenderness; no costovertebral angle tenderness.",
+      "Relevant background/PMH: No prior history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Cystitis (UTI) in a male.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Sexually transmitted urethritis (Chlamydia/Gonorrhea) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or flank pain — suggests ascending infection or prostatitis."
+    ],
+    "management_principles": [
+      "Check urine dipstick and culture",
+      "Screen for STIs (Chlamydia/Gonorrhea PCR)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Acute Cystitis (UTI) in a male host, requiring investigation for predisposing factors or STI. acute burning urination and urinary frequency without fever or flank pain. 26M presents with 3 days of burning pain during urination and needing to urinate frequently. Denies fever, back pain, or penile discharge.",
+    "objective": "Afebrile, vital signs normal. No urethral discharge on exam, no costovertebral angle tenderness.",
+    "assessment": "Acute cystitis (UTI) in a young male; warrants investigation for a predisposing cause or STI given the atypical demographic.",
+    "plan": "Obtain urinalysis and urine culture before antibiotics and evaluate for urethritis/STIs and predisposing factors. Select empiric treatment based on local resistance patterns, renal function, allergy history, and culture results; avoid nitrofurantoin when prostatitis is suspected because it has poor prostatic penetration. Reassess promptly for fever, flank pain, pelvic/perineal pain, or treatment failure."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Cystitis (UTI) in a male host, requiring investigation for predisposing factors or STI.",
+    "Formulate prioritized differential diagnosis for acute burning urination and urinary frequency without fever or flank pain",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies for Acute Cystitis (UTI) in a male host, requiring investigation for predisposing factors or STI."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Cystitis (UTI) in a male",
+    "one_liner": "A urinary infection in a young man, which is less common than in women and warrants a look for predisposing factors or a sexually transmitted infection rather than being treated as routine.",
+    "differentials": [
+      "Sexually transmitted urethritis (Chlamydia/Gonorrhea)",
+      "Prostatitis"
+    ],
+    "red_flags": [
+      "Fever or flank pain — suggests ascending infection or prostatitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dysuria",
+        "say": "Does it burn when you urinate?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Discharge",
+        "say": "Any discharge from the penis?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Sexual history",
+        "say": "Can you tell me about your recent sexual activity?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Fever/flank pain",
+        "say": "Any fever or back pain?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many days have you had this?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

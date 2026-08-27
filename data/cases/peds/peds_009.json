@@ -1,0 +1,154 @@
+{
+  "id": "peds_009",
+  "system": "pediatrics",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Baby Irwin",
+  "age": 0,
+  "gender": "male",
+  "chief_complaint": "newborn infant with yellow skin and scleral icterus on day 3 of life requiring bilirubin risk stratification",
+  "hpi_details": "3-day-old full-term male infant brought to outpatient pediatric clinic by parents for first routine newborn check. Born at 39 weeks via uncomplicated vaginal delivery, exclusively breastfed. Mother notes the baby's eyes and face turned yellow yesterday, and today the yellowness spread down to his chest and abdomen. Baby is feeding every 3 hours for 15 minutes per breast, producing 3 wet diapers and 2 yellow meconium-transition stools daily.",
+  "ideas": "parents concerned about skin yellowness and asking if baby needs sunlight exposure by the window",
+  "concerns": "mother worried her breast milk is causing liver disease or jaundice",
+  "expectations": "want blood test checked and clear guidance on whether phototherapy lights are needed",
+  "pmh": "Born at 39 weeks gestation, birth weight 3.5 kg, discharge weight 3.3 kg (6% weight loss)",
+  "medications": "Vitamin D drops",
+  "social_hx": "3-day-old newborn infant, blood type O positive (mother blood type O positive, Coombs negative)",
+  "investigation_events": [{
+    "id": "newborn_bilirubin_assessment",
+    "title": "Same-visit newborn bilirubin assessment",
+    "order_terms": ["transcutaneous bilirubin", "TcB", "total serum bilirubin", "serum bilirubin", "bilirubin level"],
+    "availability_message": "The bilirubin results are now available. Interpret the serum value by postnatal age, gestational age, and neurotoxicity risk factors.",
+    "results": [
+      {"id": "transcutaneous_bilirubin", "test": "Transcutaneous bilirubin", "value": "17.8", "unit": "mg/dL", "flag": "high"},
+      {"id": "total_serum_bilirubin", "test": "Total serum bilirubin", "value": "18.2", "unit": "mg/dL", "flag": "high", "note": "Measured at 72 hours of age."},
+      {"id": "direct_bilirubin", "test": "Direct bilirubin", "value": "0.6", "unit": "mg/dL", "reference_range": "0.0-0.6", "flag": "normal"}
+    ]
+  }],
+  "clinical_knowledge": {
+    "topic": "Neonatal unconjugated hyperbilirubinemia (breastfeeding/physiological jaundice) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Neonatal unconjugated hyperbilirubinemia (breastfeeding/physiological jaundice) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes age- and gestation-specific bilirubin risk stratification, feeding support, and phototherapy only when the applicable threshold is reached.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: newborn infant with yellow skin and scleral icterus on day 3 of life requiring bilirubin risk stratification",
+      "Key HPI features: 3-day-old full-term male infant brought to outpatient pediatric clinic by parents for first routine newborn check. Born at 39 weeks via uncomplicated vaginal delivery, exclusively breastfed. Mother notes the baby's eyes and face turned yellow yesterday, and today the yellowness spread down to his chest and abdomen. Baby is feeding every 3 hours for 15 minutes per breast, producing 3 wet diapers and 2 yellow meconium-transition stools daily.",
+      "Objective/Exam findings: Vitals: HR 142, RR 38, Temp 36.9C, Weight 3.28 kg (6.2% weight loss from birth, within normal limits). Physical exam reveals visible yellow discoloration of the sclerae, face, trunk, and abdomen down to the umbilicus (Kramer Zone 3), with normal pink extremities. Hepatosplenomegaly absent. Transcutaneous Bilirubin (TcB) screens at 17.8 mg/dL. STAT Total Serum Bilirubin (TSB) confirmed at 18.2 mg/dL (Indirect unconjugated fraction 17.6 mg/dL, Direct conjugated 0.6 mg/dL). Hemoglobin normal at 16.5 g/dL; reticulocyte count normal at 2% (excluding hemolysis). At 72 hours in this 39-week infant without neurotoxicity risk factors, the TSB is below the 2022 AAP phototherapy threshold but close enough to require timely repeat measurement.",
+      "Relevant background/PMH: Born at 39 weeks gestation, birth weight 3.5 kg, discharge weight 3.3 kg (6% weight loss)",
+      "Current medications: Vitamin D drops"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Neonatal unconjugated hyperbilirubinemia (breastfeeding/physiological jaundice).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hemolytic jaundice (ABO/Rh incompatibility) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Jaundice spreading below the chest."
+    ],
+    "management_principles": [
+      "Provide lactation support and encourage continued frequent breastfeeding (8-12 times per 24 hours)",
+      "Repeat the total serum bilirubin within 4-24 hours because the result is close to the treatment threshold",
+      "Start intensive phototherapy only if the repeat bilirubin reaches the applicable age- and gestation-specific threshold"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "3-day-old exclusively breastfed term infant presenting with cephalocaudal progression of jaundice.",
+    "objective": "Vitals: HR 142, RR 38, Temp 36.9C, Weight 3.28 kg (6.2% weight loss from birth, within normal limits). Physical exam reveals visible yellow discoloration of the sclerae, face, trunk, and abdomen down to the umbilicus (Kramer Zone 3), with normal pink extremities. Hepatosplenomegaly absent. Transcutaneous Bilirubin (TcB) screens at 17.8 mg/dL. STAT Total Serum Bilirubin (TSB) confirmed at 18.2 mg/dL (Indirect unconjugated fraction 17.6 mg/dL, Direct conjugated 0.6 mg/dL). Hemoglobin normal at 16.5 g/dL; reticulocyte count normal at 2% (excluding hemolysis). At 72 hours in this 39-week infant without neurotoxicity risk factors, the TSB is below the 2022 AAP phototherapy threshold but close enough to require timely repeat measurement.",
+    "assessment": "Neonatal unconjugated hyperbilirubinemia (breastfeeding/physiological jaundice exacerbation) below the 2022 AAP phototherapy threshold for a 39-week infant without neurotoxicity risk factors.",
+    "plan": "Provide lactation support and encourage continued frequent breastfeeding (8-12 times per 24 hours) to improve intake and stooling. Arrange repeat total serum bilirubin measurement within 4-24 hours because the value is close to the age-specific phototherapy threshold; initiate intensive phototherapy if the repeat value reaches the applicable threshold. Counsel against direct window sunlight exposure due to sunburn and hypothermia risks."
+  },
+  "learning_objectives": [
+    "Interpret the American Academy of Pediatrics (AAP) hour-specific nomogram to determine exact thresholds for phototherapy and exchange transfusion based on Total Serum Bilirubin (TSB), gestational age, and risk factors",
+    "Differentiate Physiological/Breastfeeding Jaundice (unconjugated, onset after 24 hours, peaks days 3-5 due to immature UDP-glucuronosyltransferase and enteral clearance) from Pathological/Hemolytic Jaundice (unconjugated, onset <24 hours, ABO/Rh incompatibility, positive Direct Coombs test) and Biliary Atresia (conjugated direct bilirubin >2.0 mg/dL, pale acholic stools)",
+    "Explain the mechanism of blue-light phototherapy (converting toxic unconjugated bilirubin via structural photo-isomerization into water-soluble lumirubin excreted directly in urine/bile without hepatic conjugation)",
+    "Recognize early clinical signs of Acute Bilirubin Encephalopathy / Kernicterus (lethargy, hypotonia, poor sucking progressing to hypertonia, retrocollis, opisthotonos, and high-pitched cry)"
+  ],
+  "teaching": {
+    "diagnosis": "Neonatal unconjugated hyperbilirubinemia (breastfeeding/physiological jaundice)",
+    "one_liner": "3-day-old breastfed male with jaundice spreading from face to chest/abdomen, 6% weight loss from birth.",
+    "differentials": [
+      "Hemolytic jaundice (ABO/Rh incompatibility)",
+      "Biliary atresia",
+      "Sepsis"
+    ],
+    "red_flags": [
+      "Jaundice spreading below the chest",
+      "Poor weight gain/excessive weight loss",
+      "Onset in first 24 hours would suggest pathologic cause"
+    ],
+    "must_ask": [
+      {
+        "objective": "Confirm the timing and spread of jaundice onset",
+        "say": "When did you first notice the yellow color, and has it spread down his body?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "jaundice onset",
+          "spread pattern"
+        ]
+      },
+      {
+        "objective": "Assess breastfeeding adequacy",
+        "say": "How often and how long does he breastfeed, and how many wet/dirty diapers does he have?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breastfeeding frequency",
+          "wet diapers"
+        ]
+      },
+      {
+        "objective": "Ask about maternal blood type and any known incompatibility",
+        "say": "Do you know your blood type, and was there any mention of blood type mismatch?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "maternal blood type",
+          "Rh/ABO incompatibility"
+        ]
+      },
+      {
+        "objective": "Address the parents' sunlight question directly",
+        "say": "I understand you were wondering about sunlight — let me explain why home window light isn't a safe substitute for phototherapy.",
+        "domains": [
+          "ideas"
+        ],
+        "keywords": [
+          "sunlight misconception",
+          "phototherapy explanation"
+        ]
+      },
+      {
+        "objective": "Explain the phototherapy plan and follow-up",
+        "say": "We will support feeding and recheck his bilirubin promptly; we will use special blue-light therapy if his repeat level reaches the treatment threshold.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "phototherapy",
+          "bilirubin recheck"
+        ]
+      }
+    ]
+  }
+}

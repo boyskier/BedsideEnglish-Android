@@ -1,0 +1,182 @@
+{
+  "id": "hemato_025",
+  "system": "hematology & oncology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Im",
+  "age": 31,
+  "gender": "female",
+  "chief_complaint": "severe bone and joint pain, fatigue, and hand swelling in known sickle cell patient",
+  "hpi_details": "31F with Sickle Cell Disease presents with excruciating, throbbing pain in her lower back, thighs, and knees for 24 hours. Reports having a mild cold 3 days ago. Pain is unresponsive to her home oral pain medications.",
+  "ideas": "knows she is having a sickle cell pain crisis",
+  "concerns": "worried about lung complications (acute chest syndrome)",
+  "expectations": "wants IV fluids and strong pain control",
+  "pmh": "Sickle Cell Disease (HbSS)",
+  "medications": "Hydroxyurea 1000mg daily, Folic acid 1mg daily",
+  "social_hx": "Unemployed, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_sickle_crisis_labs",
+      "title": "Urgent sickle cell crisis results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "hemoglobin",
+        "reticulocyte count",
+        "reticulocytes"
+      ],
+      "availability_message": "The urgent sickle cell crisis results are now available; individualized analgesia should not be delayed.",
+      "results": [
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "8.0",
+          "unit": "g/dL",
+          "reference_range": "12.0-16.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation",
+          "note": "Near documented baseline"
+        },
+        {
+          "id": "reticulocyte_count",
+          "test": "Reticulocyte count",
+          "value": "10.6",
+          "unit": "%",
+          "reference_range": "0.5-2.5",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At urgent presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Vaso-Occlusive Crisis (Sickle Cell Pain Crisis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Vaso-Occlusive Crisis (Sickle Cell Pain Crisis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management prioritizes rapid, individualized opioid analgesia, cautious hydration, and monitoring for evolving acute chest syndrome, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Known Sickle Cell Disease (HbSS) with acute, severe bone and joint pain",
+      "Pain unresponsive to home oral pain medications",
+      "Recent mild upper respiratory infection (cold) as a likely trigger",
+      "Currently on hydroxyurea and folic acid"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Vaso-Occlusive Crisis (Sickle Cell Pain Crisis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute chest syndrome (if respiratory symptoms present) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain, cough, or hypoxia — suggests evolving acute chest syndrome."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocol for Acute Vaso-occlusive Crisis (Sickle Cell Pain Crisis)",
+      "Provide rapid, individualized opioid analgesia (e.g., Morphine or Hydromorphone), assess oxygenation, and give IV or oral fluids only to correct dehydration while avoiding fluid overload",
+      "Monitor SpO2, and check CBC and reticulocyte count"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "31F with Sickle Cell Disease presents with excruciating, throbbing pain in her lower back, thighs, and knees for 24 hours. Reports having a mild cold 3 days ago. Pain is unresponsive to her home oral pain medications.",
+    "objective": "Diffuse tenderness to palpation over the lumbar spine, thighs, and knees without joint effusion, erythema, or warmth. Mild tachycardia; afebrile; SpO2 normal on room air. No focal neurologic deficits.",
+    "assessment": "Acute Vaso-occlusive Crisis (Sickle Cell Pain Crisis) in a patient with known HbSS, likely triggered by recent viral illness.",
+    "plan": "Provide rapid, individualized opioid analgesia using the patient’s established plan when available, assess oxygenation, and give IV or oral fluids only to correct dehydration while avoiding fluid overload. Check CBC and reticulocyte count and evaluate for infection, acute chest syndrome, severe anemia, or other complications."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acute Vaso-occlusive Crisis (Sickle Cell Pain Crisis).",
+    "Formulate prioritized differential diagnosis for severe bone and joint pain, fatigue, and hand swelling in known sickle cell patient",
+    "Select appropriate laboratory and imaging studies for hematology & oncology",
+    "Implement evidence-based acute and long-term management strategies for Acute Vaso-occlusive Crisis (Sickle Cell Pain Crisis)."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Vaso-Occlusive Crisis (Sickle Cell Pain Crisis)",
+    "one_liner": "Sickled red cells obstruct microvasculature, causing severe ischemic bone and joint pain, often triggered by infection, dehydration, or cold — managed with aggressive hydration and opioid analgesia.",
+    "differentials": [
+      "Acute chest syndrome (if respiratory symptoms present)",
+      "Osteomyelitis",
+      "Septic arthritis"
+    ],
+    "red_flags": [
+      "Chest pain, cough, or hypoxia — suggests evolving acute chest syndrome"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain location and comparison to usual crises",
+        "say": "Where is the pain, and does it feel like your usual sickle cell crises?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "usual",
+          "typical"
+        ]
+      },
+      {
+        "objective": "Possible trigger",
+        "say": "Did you have a cold, get dehydrated, or feel cold recently?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "cold",
+          "dehydration",
+          "trigger"
+        ]
+      },
+      {
+        "objective": "Response to home medications",
+        "say": "Have your usual pain medications helped at all?",
+        "domains": [
+          "relieving",
+          "medications"
+        ],
+        "keywords": [
+          "home medication",
+          "no relief"
+        ]
+      },
+      {
+        "objective": "Respiratory symptoms",
+        "say": "Any chest pain, cough, or trouble breathing?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "chest pain",
+          "cough",
+          "breathing"
+        ]
+      },
+      {
+        "objective": "Sickle cell disease details",
+        "say": "What type of sickle cell disease do you have?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "HbSS"
+        ]
+      }
+    ]
+  }
+}

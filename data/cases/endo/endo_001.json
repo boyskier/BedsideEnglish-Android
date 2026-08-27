@@ -1,0 +1,148 @@
+{
+  "id": "endo_001",
+  "system": "endocrinology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Adams",
+  "age": 24,
+  "gender": "male",
+  "chief_complaint": "nausea, vomiting, abdominal pain, and rapid breathing for 12 hours",
+  "hpi_details": "24M with type 1 diabetes presenting with 12-hour history of severe nausea, vomiting, diffuse abdominal pain, and Kussmaul breathing. Fruity acetone odor on breath. Fingerstick glucose HIGH (>500 mg/dL). Recently missed insulin doses due to gastroenteritis.",
+  "ideas": "thinks his stomach bug is getting worse",
+  "concerns": "worried because he feels confused and dizzy when standing",
+  "expectations": "wants IV fluids and nausea medicine immediately",
+  "pmh": "Type 1 Diabetes Mellitus (diagnosed age 14)",
+  "medications": "Insulin glargine 24 units QHS, insulin lispro sliding scale",
+  "social_hx": "College student, non-smoker, occasional alcohol",
+  "investigation_events": [
+    {
+      "id": "stat_dka_labs",
+      "title": "STAT diabetic ketoacidosis laboratory results",
+      "order_terms": ["blood tests", "blood work", "glucose", "electrolytes", "metabolic panel", "blood gas", "vbg", "venous blood gas", "ketones", "beta hydroxybutyrate", "dka labs"],
+      "availability_message": "The STAT diabetic ketoacidosis laboratory results are now available.",
+      "results": [
+        {"id":"glucose","test":"Serum glucose","value":"540","unit":"mg/dL","reference_range":"70-140","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"venous_ph","test":"Venous pH","value":"7.12","reference_range":"7.31-7.41","flag":"critical","specimen":"Venous blood","collected_at":"At emergency presentation"},
+        {"id":"bicarbonate","test":"Serum bicarbonate","value":"8","unit":"mEq/L","reference_range":"22-29","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"anion_gap","test":"Anion gap","value":"26","unit":"mEq/L","reference_range":"8-12","flag":"high","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"beta_hydroxybutyrate","test":"Beta-hydroxybutyrate","value":"6.8","unit":"mmol/L","reference_range":"<0.6","flag":"critical","specimen":"Blood","collected_at":"At emergency presentation"},
+        {"id":"potassium","test":"Serum potassium","value":"5.2","unit":"mEq/L","reference_range":"3.5-5.0","flag":"high","specimen":"Blood","collected_at":"At emergency presentation"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Severe Diabetic Ketoacidosis (DKA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Severe Diabetic Ketoacidosis (DKA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes aggressive IV normal saline resuscitation and continuous IV insulin infusion, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: nausea, vomiting, abdominal pain, and rapid breathing for 12 hours",
+      "Key HPI features: 24M with type 1 diabetes presenting with 12-hour history of severe nausea, vomiting, diffuse abdominal pain, and Kussmaul breathing. Fruity acetone odor on breath. Fingerstick glucose HIGH (>500 mg/dL). Recently missed insulin doses due to gastroenteritis.",
+      "Objective/Exam findings: Vitals: HR 122, BP 94/60, RR 28 (Kussmaul), Temp 37.2C. Dry mucous membranes. Bloods: Glucose 540 mg/dL, pH 7.12, HCO3 8 mEq/L, Anion gap 26, Serum ketones positive (+4), K+ 5.2 mEq/L.",
+      "Relevant background/PMH: Type 1 Diabetes Mellitus (diagnosed age 14)",
+      "Current medications: Insulin glargine 24 units QHS, insulin lispro sliding scale"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Severe Diabetic Ketoacidosis (DKA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gastroenteritis alone without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or dizziness on standing — severe dehydration and acidosis needing urgent fluid resuscitation."
+    ],
+    "management_principles": [
+      "Aggressive IV normal saline resuscitation, continuous IV insulin infusion (0.1 units/kg/hr), monitor and replenish potassium (add KCl once serum K+ < 5.0 mEq/L), serial ABG and basic metabolic panel q2h"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Diabetes Association (ADA) Standards of Care in Diabetes 2026",
+        "url": "https://diabetesjournals.org/care/issue/49/Supplement_1"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "24M T1DM presenting with classic diabetic ketoacidosis (DKA) symptoms: polyuria, polydipsia, vomiting, abdominal pain, and dyspnea post-gastroenteritis with missed insulin.",
+    "objective": "Vitals: HR 122, BP 94/60, RR 28 (Kussmaul), Temp 37.2C. Dry mucous membranes. Bloods: Glucose 540 mg/dL, pH 7.12, HCO3 8 mEq/L, Anion gap 26, Serum ketones positive (+4), K+ 5.2 mEq/L.",
+    "assessment": "Severe Diabetic Ketoacidosis (DKA) precipitated by intercurrent illness and insulin omission.",
+    "plan": "Aggressive IV normal saline resuscitation, continuous IV insulin infusion (0.1 units/kg/hr), monitor potassium closely; replace potassium as it falls, and hold insulin if K+ is <3.5 mEq/L until potassium is corrected, serial ABG and basic metabolic panel q2h. NPO until gap closes."
+  },
+  "learning_objectives": [
+    "Recognize classic signs and symptoms of Diabetic Ketoacidosis (DKA)",
+    "Explain the mechanism of anion gap metabolic acidosis and ketone production",
+    "Outline the protocol for fluid resuscitation and IV insulin administration",
+    "Understand the critical rules of potassium replacement prior to or during insulin infusion"
+  ],
+  "teaching": {
+    "diagnosis": "Severe Diabetic Ketoacidosis (DKA)",
+    "one_liner": "Insulin omission during an illness lets the body burn fat for fuel, producing ketoacids that cause deep rapid (Kussmaul) breathing, fruity breath, and severe abdominal pain in a Type 1 diabetic.",
+    "differentials": [
+      "Gastroenteritis alone",
+      "Acute appendicitis",
+      "Hyperosmolar hyperglycemic state"
+    ],
+    "red_flags": [
+      "Confusion or dizziness on standing — severe dehydration and acidosis needing urgent fluid resuscitation"
+    ],
+    "must_ask": [
+      {
+        "objective": "Insulin use during illness",
+        "say": "Have you been taking your insulin during this stomach illness?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "insulin",
+          "missed doses"
+        ]
+      },
+      {
+        "objective": "Breathing pattern",
+        "say": "Are you breathing faster or deeper than usual?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "kussmaul",
+          "deep breathing"
+        ]
+      },
+      {
+        "objective": "Abdominal pain",
+        "say": "Where is the pain, and how severe?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many hours has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Orthostatic symptoms",
+        "say": "Do you feel confused or dizzy when you stand up?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "confused",
+          "dizzy"
+        ]
+      }
+    ]
+  }
+}

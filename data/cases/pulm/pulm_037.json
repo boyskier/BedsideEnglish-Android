@@ -1,0 +1,154 @@
+{
+  "id": "pulm_037",
+  "system": "pulm",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Ramirez",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "chronic cough, night sweats, weight loss, and hemoptysis",
+  "hpi_details": "A 53-year-old male presents to the clinic with chronic cough, night sweats, weight loss, and hemoptysis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to tb",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Pulmonary Tuberculosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pulmonary Tuberculosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Suspected infectious pulmonary tuberculosis requires prompt airborne precautions, public-health-aware diagnostic testing, and specialist-directed treatment after assessment for drug resistance and contraindications.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic cough, night sweats, weight loss, and hemoptysis",
+      "Key HPI features: A 53-year-old male presents to the clinic with chronic cough, night sweats, weight loss, and hemoptysis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Active Tuberculosis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pulmonary Tuberculosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bronchiectasis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Massive hemoptysis (> 300 mL/24h)."
+    ],
+    "management_principles": [
+      "Use airborne precautions and arrange urgent evaluation with sputum testing, chest imaging, and public-health notification according to local protocols.",
+      "RIPE therapy is initiated and monitored by qualified clinicians after appropriate diagnostic evaluation and safety review.",
+      "Send for emergency care for massive hemoptysis, severe hypoxemia, respiratory distress, confusion, or hemodynamic instability."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": []
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of chronic cough, night sweats, weight loss, and hemoptysis. HPI: Mycobacterium tuberculosis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Active Tuberculosis.",
+    "assessment": "Condition highly suspicious for Active Tuberculosis.",
+    "plan": "Use airborne precautions and arrange urgent testing, imaging, and public-health-guided evaluation. RIPE therapy requires qualified clinician-directed initiation and monitoring. Send for emergency care for massive hemoptysis, severe hypoxemia, respiratory distress, confusion, or instability."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Active Tuberculosis",
+    "Select appropriate diagnostic workup for Active Tuberculosis",
+    "Describe airborne precautions, urgent diagnostic testing, and clinician-directed treatment for suspected pulmonary tuberculosis"
+  ],
+  "teaching": {
+    "diagnosis": "Pulmonary Tuberculosis",
+    "one_liner": "Mycobacterium tuberculosis infection causing chronic cough, fever, night sweats, weight loss, and hemoptysis.",
+    "differentials": [
+      "Bronchiectasis",
+      "Lung adenocarcinoma",
+      "Aspergilloma"
+    ],
+    "red_flags": [
+      "Massive hemoptysis (> 300 mL/24h)",
+      "Severe hypoxemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Chronic cough and hemoptysis duration",
+        "say": "How long have you had this cough, and are you coughing up blood streaks?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "coughing",
+          "blood",
+          "cough",
+          "streaks",
+          "hemoptysis"
+        ]
+      },
+      {
+        "objective": "Night sweats and B symptoms",
+        "say": "Do you wake up drenched in sweat at night or suffer from unexplained low-grade fevers?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "sweats",
+          "sweat",
+          "drenched",
+          "fevers",
+          "night"
+        ]
+      },
+      {
+        "objective": "Unintentional weight loss",
+        "say": "Have you lost weight rapidly without trying over recent months?",
+        "domains": [
+          "associated_symptoms",
+          "progression"
+        ],
+        "keywords": [
+          "weight",
+          "lost",
+          "slimming",
+          "unintentional",
+          "appetite"
+        ]
+      },
+      {
+        "objective": "Tuberculosis contact and travel history",
+        "say": "Have you been around anyone diagnosed with active tuberculosis or lived in endemic regions?",
+        "domains": [
+          "living_work",
+          "family_hx"
+        ],
+        "keywords": [
+          "tuberculosis",
+          "contact",
+          "endemic",
+          "exposure",
+          "regions"
+        ]
+      },
+      {
+        "objective": "Immunosuppression screen",
+        "say": "Do you have medical conditions or take immunosuppressive medications that lower immunity?",
+        "domains": [
+          "pmh",
+          "medications"
+        ],
+        "keywords": [
+          "steroids",
+          "immunosuppressed",
+          "immunity",
+          "hiv",
+          "diabetes"
+        ]
+      }
+    ]
+  }
+}

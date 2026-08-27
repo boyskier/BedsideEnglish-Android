@@ -1,0 +1,129 @@
+{
+  "id": "rheum_014",
+  "system": "rheumatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating pain in my right big toe",
+  "hpi_details": "55M presents with acute onset of severe pain, redness, and swelling in his right big toe that started at 3 AM. He cannot bear the weight of a bedsheet on it. He attended a steak and beer dinner last night.",
+  "ideas": "thinks he broke his toe",
+  "concerns": "worried about permanent damage",
+  "expectations": "wants strong pain meds",
+  "pmh": "Hypertension",
+  "medications": "Hydrochlorothiazide",
+  "social_hx": "Heavy alcohol use",
+  "clinical_knowledge": {
+    "topic": "Gout",
+    "core_concepts": [
+      "Monosodium urate crystal deposition causing acute monoarthritis, often at the first MTP joint (podagra).",
+      "Triggers include alcohol, purine-rich foods, and thiazide diuretics."
+    ],
+    "diagnostic_clues": [
+      "Podagra (1st MTP)",
+      "Nocturnal onset",
+      "Purine/alcohol trigger"
+    ],
+    "common_misconceptions": [
+      "Assuming urate-lowering therapy must never be started during a flare; when it is indicated, it can be initiated with anti-inflammatory treatment."
+    ],
+    "dangerous_errors": [
+      "Missing a septic joint (must tap if diagnosis is uncertain or if fever is present)."
+    ],
+    "management_principles": [
+      "For an acute flare, a clinician chooses an NSAID, colchicine, or glucocorticoid based on renal function, bleeding/ulcer risk, cardiovascular disease, infection, and drug interactions. Review diuretic therapy with the prescriber rather than stopping it independently; consider urate-lowering therapy for appropriate recurrent/high-risk disease."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M with acute, severe, spontaneous right first MTP pain and redness.",
+    "objective": "Right 1st MTP is erythematous, swollen, warm, and exquisitely tender.",
+    "assessment": "Acute Gout Flare (Podagra).",
+    "plan": "Confirm the diagnosis with aspiration/crystal analysis when uncertain and send culture urgently if fever or septic arthritis is possible. A clinician should select flare therapy after renal, gastrointestinal, cardiovascular, and interaction review. Counsel on alcohol/trigger reduction and arrange follow-up to review hydrochlorothiazide with the prescribing clinician and assess need for urate-lowering therapy."
+  },
+  "learning_objectives": [
+    "Identify the classic presentation of acute gout and its triggers."
+  ],
+  "teaching": {
+    "diagnosis": "Acute Gout (Podagra)",
+    "one_liner": "Acute, exquisite monoarticular pain at the first MTP joint following dietary triggers.",
+    "differentials": [
+      "Septic arthritis",
+      "Pseudogout",
+      "Cellulitis"
+    ],
+    "red_flags": [
+      "Fever (suggests septic joint)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and character",
+        "say": "Did this wake you up suddenly at night with a burning pain?",
+        "domains": [
+          "onset_duration",
+          "character"
+        ],
+        "keywords": [
+          "3 AM",
+          "sudden",
+          "burning"
+        ]
+      },
+      {
+        "objective": "Dietary and alcohol triggers",
+        "say": "Did you eat a lot of red meat or drink alcohol before this started?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "steak",
+          "beer"
+        ]
+      },
+      {
+        "objective": "Touch sensitivity",
+        "say": "Is the toe so tender that even a bedsheet touching it is painful?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "bedsheet",
+          "touch"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking a water pill like hydrochlorothiazide for your blood pressure?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "hydrochlorothiazide",
+          "diuretic"
+        ]
+      },
+      {
+        "objective": "Fever and prior episodes",
+        "say": "Have you had a fever, and has this happened to you before?",
+        "domains": [
+          "associated_symptoms",
+          "pmh"
+        ],
+        "keywords": [
+          "fever",
+          "before"
+        ]
+      }
+    ]
+  }
+}

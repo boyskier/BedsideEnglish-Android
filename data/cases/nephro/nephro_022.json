@@ -1,0 +1,144 @@
+{
+  "id": "nephro_022",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Lee",
+  "age": 65,
+  "gender": "female",
+  "chief_complaint": "generalized weakness, decreased urination, and nausea 4 days after severe diarrhea",
+  "hpi_details": "65F presents with severe exhaustion, nausea, and dark, sparse urine (oliguria) for the past 2 days. Had severe watery diarrhea 4 days ago after eating suspect seafood and could not keep fluids down.",
+  "ideas": "thinks she has persistent stomach flu or dehydration",
+  "concerns": "worried about permanent kidney damage",
+  "expectations": "wants IV fluids to flush kidneys",
+  "pmh": "Hypertension, Osteoarthritis",
+  "medications": "Lisinopril 20mg daily, Ibuprofen 400mg TID (taken for joint pain)",
+  "social_hx": "Retired, non-smoker",
+  "investigation_events": [
+    {
+      "id": "urgent_volume_depletion_aki_workup",
+      "title": "Urgent volume depletion and kidney injury assessment",
+      "order_terms": ["BMP", "basic metabolic panel", "renal function", "BUN", "creatinine", "urine sodium", "fractional excretion of sodium", "FeNa"],
+      "availability_message": "Urgent serum and urine renal indices are now available. Cautious IV rehydration should not be delayed in this clinically volume-depleted patient.",
+      "results": [
+        {"id": "bun", "test": "Blood urea nitrogen", "value": "55", "unit": "mg/dL", "reference_range": "7-20", "flag": "high"},
+        {"id": "creatinine", "test": "Serum creatinine", "value": "2.8", "unit": "mg/dL", "reference_range": "0.6-1.1", "flag": "high", "note": "Baseline creatinine is 1.0 mg/dL."},
+        {"id": "fena", "test": "Fractional excretion of sodium", "value": "0.6", "unit": "%", "reference_range": "<1% suggests sodium-avid physiology", "flag": "low"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Prerenal Acute Kidney Injury (volume depletion) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Prerenal Acute Kidney Injury (volume depletion) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management prioritizes immediately holding nephrotoxic and renin-angiotensin-blocking agents (ACE inhibitors, NSAIDs) that impair renal autoregulation during volume depletion, followed by cautious volume repletion guided by urine output and renal function trends.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: generalized weakness, decreased urination, and nausea 4 days after severe diarrhea",
+      "Key HPI features: 65F presents with severe exhaustion, nausea, and dark, sparse urine (oliguria) for the past 2 days. Had severe watery diarrhea 4 days ago after eating suspect seafood and could not keep fluids down.",
+      "Objective/Exam findings: Vitals: BP 98/62, HR 108, orthostatic drop of ~20 mmHg systolic on standing, afebrile. Dry mucous membranes, poor skin turgor. Labs: BUN 55 mg/dL, Creatinine 2.8 mg/dL (baseline 1.0), BUN:Cr ratio >20:1, FeNa <1%, urine sodium <20 mEq/L.",
+      "Relevant background/PMH: Hypertension, Osteoarthritis",
+      "Current medications: Lisinopril 20mg daily, Ibuprofen 400mg TID (taken for joint pain)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Prerenal Acute Kidney Injury (volume depletion).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute tubular necrosis (if prerenal injury persists untreated) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Confusion or very low blood pressure — suggests more severe volume depletion."
+    ],
+    "management_principles": [
+      "Check BUN, creatinine, electrolytes, and urine studies (FeNa, urine sodium) to confirm a prerenal etiology",
+      "Hold Lisinopril and Ibuprofen immediately",
+      "Administer cautious IV hydration"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: generalized weakness, decreased urination, and nausea 4 days after severe diarrhea\n\n65F presents with severe exhaustion, nausea, and dark, sparse urine (oliguria) for the past 2 days. Had severe watery diarrhea 4 days ago after eating suspect seafood and could not keep fluids down.",
+    "objective": "Vitals: BP 98/62, HR 108, orthostatic drop of ~20 mmHg systolic on standing, afebrile. Dry mucous membranes, poor skin turgor. Labs: BUN 55 mg/dL, Creatinine 2.8 mg/dL (baseline 1.0), BUN:Cr ratio >20:1, FeNa <1%, urine sodium <20 mEq/L.",
+    "assessment": "Prerenal AKI due to severe volume depletion from watery diarrhea, exacerbated by continued Lisinopril and NSAID use, which impair renal autoregulation in the setting of hypovolemia.",
+    "plan": "Hold Lisinopril and Ibuprofen immediately. Administer cautious IV hydration. Monitor creatinine, BUN, and urine output. Refer to specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Prerenal Acute Kidney Injury (AKI) exacerbated by Lisinopril and NSAID use in setting of volume depletion.",
+    "Formulate prioritized differential diagnosis for generalized weakness, decreased urination, and nausea 4 days after severe diarrhea",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies for Prerenal Acute Kidney Injury (AKI) exacerbated by Lisinopril and NSAID use in setting of volume depletion."
+  ],
+  "teaching": {
+    "diagnosis": "Prerenal Acute Kidney Injury (volume depletion)",
+    "one_liner": "Severe fluid loss from diarrhea reduces blood flow to the kidneys, and continuing an ACE inhibitor or NSAID during this state worsens the injury — treated by holding those drugs and cautious rehydration.",
+    "differentials": [
+      "Acute tubular necrosis (if prerenal injury persists untreated)",
+      "Sepsis-associated AKI"
+    ],
+    "red_flags": [
+      "Confusion or very low blood pressure — suggests more severe volume depletion"
+    ],
+    "must_ask": [
+      {
+        "objective": "Diarrhea history",
+        "say": "Tell me about the diarrhea — how severe, and what do you think caused it?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "diarrhea",
+          "seafood"
+        ]
+      },
+      {
+        "objective": "Fluid intake and tolerance",
+        "say": "Have you been able to keep fluids down?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Urine output",
+        "say": "How has your urination changed?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "oliguria"
+        ]
+      },
+      {
+        "objective": "Medications",
+        "say": "Are you taking any blood pressure pills or pain relievers?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "lisinopril",
+          "ibuprofen"
+        ]
+      },
+      {
+        "objective": "Weakness and dizziness",
+        "say": "Do you feel weak or dizzy, especially standing up?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "id": "urology_022",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Cho",
+  "age": 42,
+  "gender": "male",
+  "chief_complaint": "sudden excruciating flank pain radiating to groin and severe nausea",
+  "hpi_details": "42M presents with sudden, agonizing, sharp pain in his right flank that radiates down to his right groin. Pain occurs in waves, accompanied by vomiting. Noticed his urine looked slightly pink.",
+  "ideas": "thinks he is passing a kidney stone",
+  "concerns": "terrified by the extreme pain",
+  "expectations": "wants strong pain relief and stone analysis",
+  "pmh": "Gout",
+  "medications": "Allopurinol 100mg daily",
+  "social_hx": "Office manager, non-smoker",
+  "investigation_events": [
+    {
+      "id": "renal_colic_renal_function",
+      "title": "Renal function",
+      "order_terms": ["creatinine", "renal function", "kidney function", "bmp", "metabolic panel"],
+      "availability_message": "The renal-function result is now available.",
+      "results": [
+        {"id": "serum_creatinine", "test": "Creatinine", "value": "1.1", "unit": "mg/dL", "reference_range": "0.7-1.3", "flag": "normal", "specimen": "Blood"}
+      ]
+    },
+    {
+      "id": "renal_colic_urinalysis",
+      "title": "Urinalysis with microscopy",
+      "order_terms": ["urinalysis", "urine microscopy", "urine dip", "urine test", "ua"],
+      "availability_message": "The urinalysis result is now available.",
+      "results": [
+        {"id": "urine_rbc", "test": "Red blood cells", "value": "46", "unit": "/HPF", "reference_range": "0-2", "flag": "high", "specimen": "Urine"},
+        {"id": "urine_wbc", "test": "White blood cells", "value": "3", "unit": "/HPF", "reference_range": "0-5", "flag": "normal", "specimen": "Urine"},
+        {"id": "urine_nitrite", "test": "Nitrite", "value": "Negative", "flag": "normal", "specimen": "Urine"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ureteral Calculus (Renal Colic) evaluation and management",
+    "core_concepts": [
+      "Renal colic is a clinical syndrome; the immediate priority is to identify infected obstruction, renal failure/anuria, solitary kidney, uncontrolled symptoms, or an alternative surgical/vascular diagnosis.",
+      "Obtain vital signs, urinalysis with culture when infection is possible, creatinine/electrolytes, and pregnancy testing when relevant. Hematuria supports but does not prove a stone, and its absence does not exclude one.",
+      "Low-dose noncontrast CT is highly accurate in nonpregnant adults when imaging is needed; ultrasound is preferred when radiation avoidance is important and can detect hydronephrosis.",
+      "Stone size and location determine passage likelihood. Give a strainer and send a retrieved stone for analysis; recurrent/high-risk stone formers need metabolic prevention evaluation."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating flank pain radiating to groin and severe nausea",
+      "Key HPI features: 42M presents with sudden, agonizing, sharp pain in his right flank that radiates down to his right groin. Pain occurs in waves, accompanied by vomiting. Noticed his urine looked slightly pink.",
+      "Objective/Exam findings: Obtain vital signs, abdominal/CVA and genital examination, urinalysis with microscopy and culture if infection is possible, and renal function. Image urgently when diagnosis is uncertain or complications are possible.",
+      "Relevant background/PMH: Gout",
+      "Current medications: Allopurinol 100mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ureteral Calculus (Renal Colic).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute pyelonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Delaying urgent urologic decompression for suspected infected obstruction; fever, rigors, hypotension, tachycardia, or pyuria with obstruction is an emergency, not outpatient stone passage.",
+      "Missing anuria, acute kidney injury, bilateral obstruction, a solitary kidney, refractory vomiting/dehydration, or uncontrolled pain.",
+      "Using NSAIDs without checking renal function, dehydration, GI bleeding/ulcer risk, anticoagulants, or allergy; avoid or use alternatives when contraindicated.",
+      "Using opioids as routine first-line therapy or giving tamsulosin without counseling about dizziness/orthostasis and without considering stone size/location and concurrent antihypertensives."
+    ],
+    "management_principles": [
+      "Stabilize, provide antiemetic and NSAID analgesia when safe; use opioid rescue only for refractory pain and reassess hydration and oral tolerance.",
+      "Obtain urinalysis, culture when indicated, creatinine, and appropriate imaging. Start antibiotics and obtain urgent urology consultation if infection plus obstruction is suspected.",
+      "For an uncomplicated small ureteral stone, use expectant management with follow-up imaging/clinical confirmation of passage; do not force fluids during acute colic.",
+      "Consider an alpha-blocker selectively for a distal ureteral stone after discussing uncertain benefit and orthostasis; arrange urology care for large/proximal stones, persistent obstruction, complications, or failure to pass."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Nephrolithiasis (Ureteral Colic / Kidney Stone). sudden excruciating flank pain radiating to groin and severe nausea. 42M presents with sudden, agonizing, sharp pain in his right flank that radiates down to his right groin. Pain occurs in waves, accompanied by vomiting. Noticed his urine looked slightly pink.",
+    "objective": "Obtain vital signs, abdominal/CVA examination, urinalysis with culture if infection is possible, creatinine/electrolytes, and imaging appropriate to risk (low-dose noncontrast CT in most nonpregnant adults; ultrasound when radiation avoidance is important).",
+    "assessment": "Clinical presentation highly suggestive of Nephrolithiasis (Ureteral Colic / Kidney Stone).",
+    "plan": "Give NSAID analgesia and antiemetic if safe; use opioid rescue only if needed. Obtain urinalysis/culture when indicated, creatinine, and appropriate imaging. Suspected infected obstruction, anuria/AKI, solitary kidney, uncontrolled pain, or refractory vomiting requires urgent urologic assessment/decompression. For uncomplicated stones, use a strainer, normal hydration as tolerated, selective alpha-blocker counseling, and documented follow-up to confirm passage."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Nephrolithiasis (Ureteral Colic / Kidney Stone).",
+    "Formulate prioritized differential diagnosis for sudden excruciating flank pain radiating to groin and severe nausea",
+    "Select appropriate laboratory and imaging studies for urology",
+    "Implement evidence-based acute and long-term management strategies for Nephrolithiasis (Ureteral Colic / Kidney Stone)."
+  ],
+  "teaching": {
+    "diagnosis": "Ureteral Calculus (Renal Colic)",
+    "one_liner": "Acute obstruction of the ureter by a kidney stone, producing severe colicky flank pain radiating to the groin with hematuria.",
+    "differentials": [
+      "Acute pyelonephritis",
+      "Acute appendicitis",
+      "Ruptured abdominal aortic aneurysm"
+    ],
+    "red_flags": [
+      "Infected obstructed stone (fever, chills, urosepsis)",
+      "Anuria in solitary kidney"
+    ],
+    "must_ask": [
+      {
+        "objective": "Colicky flank pain character and radiation",
+        "say": "Does the excruciating flank pain come in severe waves and shoot down into your groin or labia?",
+        "domains": [
+          "location",
+          "radiation",
+          "character"
+        ],
+        "keywords": [
+          "flank",
+          "waves",
+          "groin",
+          "shoot",
+          "radiate"
+        ]
+      },
+      {
+        "objective": "Gross or microscopic hematuria",
+        "say": "Have you noticed pink, red, or tea-colored urine when you go to the bathroom?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "pink",
+          "red",
+          "urine",
+          "hematuria",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Associated severe nausea and retching",
+        "say": "Do you feel extremely nauseous or vomit when the pain peaks?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nauseous",
+          "vomit",
+          "nausea",
+          "retching",
+          "peaks"
+        ]
+      },
+      {
+        "objective": "Personal or family kidney stone history",
+        "say": "Have you or anyone in your family passed a kidney stone in the past?",
+        "domains": [
+          "pmh",
+          "family_hx"
+        ],
+        "keywords": [
+          "stone",
+          "kidney",
+          "passed",
+          "stones",
+          "calculus"
+        ]
+      },
+      {
+        "objective": "Complicated infection screening",
+        "say": "Do you have high fever, shaking chills, or confusion right now?",
+        "domains": [
+          "associated_symptoms",
+          "concerns"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "shaking",
+          "fevers",
+          "urosepsis"
+        ]
+      }
+    ]
+  }
+}

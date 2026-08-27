@@ -1,0 +1,227 @@
+{
+  "id": "hemato_001",
+  "system": "hematology_oncology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Kelly",
+  "age": 48,
+  "gender": "male",
+  "chief_complaint": "high fever, severe bleeding gums, and profound weakness over 5 days",
+  "hpi_details": "48M presents to ED with 5-day history of high spiking fevers up to 39.5C, severe gum bleeding when brushing teeth, spontaneous petechiae across both shins, and extreme fatigue. Denies cough, dysuria, or recent travel.",
+  "ideas": "thinks he caught a severe tropical flu with bleeding complications",
+  "concerns": "terrified by the purple spots spreading on his legs and uncontrollable gum bleeding",
+  "expectations": "wants immediate IV antibiotics and blood transfusions",
+  "pmh": "No prior chronic illness",
+  "medications": "None",
+  "social_hx": "Accountant, non-smoker",
+  "investigation_events": [
+    {
+      "id": "stat_acute_leukemia_workup",
+      "title": "STAT acute leukemia and bleeding-risk results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "peripheral smear",
+        "blood smear",
+        "coagulation studies",
+        "coagulation panel",
+        "fibrinogen"
+      ],
+      "availability_message": "The STAT acute leukemia and bleeding-risk results are now available; cultures, empiric antibiotics, transfusion support, and hematology admission should not be delayed.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "45.0",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "circulating_blasts",
+          "test": "Circulating blasts",
+          "value": "75",
+          "unit": "%",
+          "reference_range": "0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "hemoglobin",
+          "test": "Hemoglobin",
+          "value": "7.2",
+          "unit": "g/dL",
+          "reference_range": "13.5-17.5",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "platelets",
+          "test": "Platelet count",
+          "value": "14",
+          "unit": "x10^3/mcL",
+          "reference_range": "150-400",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "peripheral_smear",
+          "test": "Peripheral blood smear",
+          "value": "Numerous large myeloblasts with Auer rods",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "fibrinogen",
+          "test": "Fibrinogen",
+          "value": "120",
+          "unit": "mg/dL",
+          "reference_range": "200-400",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acute Myeloid Leukemia (AML) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acute Myeloid Leukemia (AML) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes EMERGENCY ADMISSION to hematology oncology unit, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: high fever, severe bleeding gums, and profound weakness over 5 days",
+      "Key HPI features: 48M presents to ED with 5-day history of high spiking fevers up to 39.5C, severe gum bleeding when brushing teeth, spontaneous petechiae across both shins, and extreme fatigue. Denies cough, dysuria, or recent travel.",
+      "Objective/Exam findings: Vitals: Temp 39.4C, HR 118, BP 104/64. Pallor, petechiae on lower extremities, oozing gingiva. Bloods: WBC 45,000 /uL with 75% circulating blasts, Hemoglobin 7.2 g/dL, Platelets 14,000 /uL. Peripheral blood smear reveals large myeloblasts containing distinct Auer rods. Coagulation screen: PT and PTT slightly elevated, Fibrinogen 120 mg/dL (mild DIC risk).",
+      "Relevant background/PMH: No prior chronic illness"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acute Myeloid Leukemia (AML).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Aplastic anemia without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: High fever with suspected low white count (neutropenic fever) — a hematologic emergency."
+    ],
+    "management_principles": [
+      "EMERGENCY ADMISSION to hematology oncology unit",
+      "Immediate broad-spectrum empiric IV antibiotics (Cefepime 2g q8h) after blood cultures for febrile neutropenia",
+      "Transfuse irradiated single-donor platelets (keep >20,000 due to bleeding) and packed RBCs"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: high fever, severe bleeding gums, and profound weakness over 5 days\n\n48M presents to ED with 5-day history of high spiking fevers up to 39.5C, severe gum bleeding when brushing teeth, spontaneous petechiae across both shins, and extreme fatigue. Denies cough, dysuria, or recent travel.",
+    "objective": "Vitals: Temp 39.4C, HR 118, BP 104/64. Pallor, petechiae on lower extremities, oozing gingiva. Bloods: WBC 45,000 /uL with 75% circulating blasts, Hemoglobin 7.2 g/dL, Platelets 14,000 /uL. Peripheral blood smear reveals large myeloblasts containing distinct Auer rods. Coagulation screen: PT and PTT slightly elevated, Fibrinogen 120 mg/dL (mild DIC risk).",
+    "assessment": "Acute Myeloid Leukemia (AML) presenting with febrile neutropenia and symptomatic cytopenias.",
+    "plan": "EMERGENCY ADMISSION to hematology oncology unit. 1. Immediate broad-spectrum empiric IV antibiotics (Cefepime 2g q8h) after blood cultures for febrile neutropenia. 2. Transfuse irradiated single-donor platelets (keep >20,000 due to bleeding) and packed RBCs. 3. Bone marrow aspiration and biopsy with flow cytometry/cytogenetics for AML subtyping. Prepare for induction chemotherapy (7+3 regimen: Cytarabine + Daunorubicin)."
+  },
+  "learning_objectives": [
+    "Recognize hematologic emergencies requiring immediate resuscitation (febrile neutropenia, acute bleeding)",
+    "Identify Auer rods on peripheral smear as diagnostic hallmark of myeloblasts in AML",
+    "Execute febrile neutropenia empiric antibiotic protocol within 60 minutes of arrival",
+    "Manage acute transfusion thresholds for thrombocytopenia and anemia in leukemia patients"
+  ],
+  "teaching": {
+    "diagnosis": "Acute Myeloid Leukemia (AML)",
+    "one_liner": "A bone-marrow cancer that crowds out normal blood cell production, causing the triad of infection risk (low white cells), bleeding (low platelets), and fatigue (low red cells) all at once.",
+    "differentials": [
+      "Aplastic anemia",
+      "Severe sepsis with DIC",
+      "Acute lymphoblastic leukemia"
+    ],
+    "red_flags": [
+      "High fever with suspected low white count (neutropenic fever) — a hematologic emergency",
+      "Spontaneous bleeding or widespread bruising"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and duration of symptoms",
+        "say": "How many days have you had the fever and bleeding gums?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "days",
+          "fever"
+        ]
+      },
+      {
+        "objective": "Bleeding symptoms",
+        "say": "Besides your gums, have you noticed any other unusual bleeding or bruising?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bruising",
+          "bleeding",
+          "petechiae"
+        ]
+      },
+      {
+        "objective": "Fever pattern",
+        "say": "How high has your fever been, and does it come and go?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "fever",
+          "high"
+        ]
+      },
+      {
+        "objective": "Fatigue and functional impact",
+        "say": "How is the extreme tiredness affecting your daily activities?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "fatigue",
+          "weakness"
+        ]
+      },
+      {
+        "objective": "Infection symptoms",
+        "say": "Any cough, pain when urinating, or other signs of infection?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "cough",
+          "dysuria"
+        ]
+      },
+      {
+        "objective": "The patient's fear",
+        "say": "What worries you most about these symptoms?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,500 @@
+{
+  "_schema_version": 1,
+  "_comment": "Scene-transition menus for 'Survival English — Advanced Beta' (docs/plans/SURVIVAL_ADVANCED_BETA_PLAN.md). Additive: nothing else reads this file, and the ordinary Survival mode never loads it. The beta system prompt injects the entries for the running scenario's category so the model proposes a move/time skip/new person/solo errand from THIS list instead of inventing an arbitrary one. 'errands' additionally carry fact_templates, which the app fills from fact_slots (no LLM) to build the relay card the learner has to report back.",
+  "fact_slots": {
+    "time": ["8:30 in the morning", "half past four", "quarter to six", "11:15", "seven in the evening"],
+    "day": ["Tuesday", "Wednesday", "next Monday", "this Friday", "the first of the month"],
+    "name": ["Ms. Alvarez", "Danny", "Mr. Okafor", "Priya", "Mr. Lindqvist"],
+    "number": ["two", "three", "five", "seven", "ten"],
+    "code": ["B4", "17C", "204", "9F", "31"],
+    "price": ["twelve fifty", "eight dollars", "twenty-two ninety", "forty dollars", "sixty-five"],
+    "wait": ["about ten minutes", "roughly half an hour", "at least an hour", "twenty minutes or so"]
+  },
+  "defaults": {
+    "moves": [
+      {
+        "id": "step_outside",
+        "place": "just outside",
+        "title": "Step outside to keep talking?",
+        "description": "The two of you step outside where it is quieter, still mid-conversation."
+      },
+      {
+        "id": "move_to_seats",
+        "place": "somewhere to sit down",
+        "title": "Find somewhere to sit?",
+        "description": "You both move to a place where you can sit down and keep the conversation going."
+      }
+    ],
+    "time_skips": [
+      {
+        "id": "later_same_day",
+        "title": "Skip to later the same day?",
+        "description": "A few hours have passed. You run into each other again later the same day and pick the thread back up."
+      },
+      {
+        "id": "next_week",
+        "title": "Skip to next week?",
+        "description": "A week has gone by. You meet again and refer back to what was left unresolved last time."
+      }
+    ],
+    "new_characters": [
+      {
+        "id": "someone_joins",
+        "role": "a second person who has just walked up",
+        "title": "Someone else joins in?",
+        "description": "A different person joins the scene and takes over the conversation with the user."
+      }
+    ],
+    "errands": [
+      {
+        "id": "go_and_ask",
+        "place": "the front desk",
+        "title": "Go and ask, then come back?",
+        "description": "The user goes off alone to ask, and comes back to report what they were told.",
+        "fact_templates": [
+          "The person at the desk was {name}.",
+          "They said to come back at {time}.",
+          "There are {number} forms to fill in first."
+        ]
+      }
+    ]
+  },
+  "categories": {
+    "Hospital Hallway": {
+      "moves": [
+        {
+          "id": "hallway_to_desk",
+          "place": "the information desk",
+          "title": "Walk to the information desk?",
+          "description": "You both walk over to the information desk in the main corridor and carry on talking there."
+        },
+        {
+          "id": "hallway_to_cafeteria",
+          "place": "the hospital cafeteria",
+          "title": "Head down to the cafeteria?",
+          "description": "You walk down to the hospital cafeteria together and keep talking over a coffee."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "after_shift",
+          "title": "Skip to the end of the shift?",
+          "description": "The shift has ended. You run into each other on the way out and pick the conversation back up."
+        },
+        {
+          "id": "next_rotation_week",
+          "title": "Skip to next week?",
+          "description": "A week of the rotation has gone by and you meet again in the same corridor."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "front_desk_staff",
+          "role": "front desk staff at the hospital information desk",
+          "title": "Talk to the front desk staff?",
+          "description": "The front desk staff member takes over and deals with the user directly."
+        },
+        {
+          "id": "ward_clerk",
+          "role": "a ward clerk who handles paperwork and scheduling",
+          "title": "Ask the ward clerk instead?",
+          "description": "A ward clerk steps in and handles the request from here."
+        }
+      ],
+      "errands": [
+        {
+          "id": "hallway_errand_desk",
+          "place": "the information desk",
+          "title": "Go ask at the desk and come back?",
+          "description": "The user goes alone to the information desk and returns to report what they were told.",
+          "fact_templates": [
+            "The clerk's name was {name}.",
+            "Visiting hours end at {time}.",
+            "You need to go to room {code} first.",
+            "The wait for the badge is {wait}."
+          ]
+        },
+        {
+          "id": "hallway_errand_pharmacy",
+          "place": "the hospital pharmacy window",
+          "title": "Check with the pharmacy and come back?",
+          "description": "The user walks to the pharmacy window alone and comes back to report the answer.",
+          "fact_templates": [
+            "The pharmacy closes at {time}.",
+            "They said it would take {wait}.",
+            "You have to bring {number} copies of the form.",
+            "Ask for {name} when you go back."
+          ]
+        }
+      ]
+    },
+    "Travel & Transit": {
+      "moves": [
+        {
+          "id": "transit_to_platform",
+          "place": "the platform",
+          "title": "Walk down to the platform?",
+          "description": "You both move down to the platform and keep talking while you wait."
+        },
+        {
+          "id": "transit_to_ticket_hall",
+          "place": "the ticket hall",
+          "title": "Go back to the ticket hall?",
+          "description": "You head back into the ticket hall together and continue from there."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "after_the_delay",
+          "title": "Skip past the delay?",
+          "description": "Forty minutes of delay have passed. You are still waiting together and pick the conversation back up."
+        },
+        {
+          "id": "on_the_way_back",
+          "title": "Skip to the trip back?",
+          "description": "Days later, you happen to be on the same route again and recognise each other."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "ticket_agent",
+          "role": "a ticket agent behind the counter",
+          "title": "Talk to the ticket agent?",
+          "description": "A ticket agent takes over and deals with the user's problem at the counter."
+        },
+        {
+          "id": "another_passenger",
+          "role": "another stranded passenger waiting nearby",
+          "title": "Talk to another passenger?",
+          "description": "Another passenger who overheard turns to the user and starts a fresh conversation."
+        }
+      ],
+      "errands": [
+        {
+          "id": "transit_errand_counter",
+          "place": "the ticket counter",
+          "title": "Go check at the counter and come back?",
+          "description": "The user goes to the ticket counter alone and returns to report what they found out.",
+          "fact_templates": [
+            "The next departure is at {time}.",
+            "It leaves from platform {code}.",
+            "The change of ticket costs {price}.",
+            "The agent said to ask for {name}."
+          ]
+        }
+      ]
+    },
+    "Shops & Services": {
+      "moves": [
+        {
+          "id": "shop_to_counter",
+          "place": "the service counter",
+          "title": "Move to the service counter?",
+          "description": "You move over to the service counter and continue the conversation there."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "come_back_later",
+          "title": "Skip to when you come back?",
+          "description": "You came back a few hours later, as agreed, and the conversation resumes from there."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "shop_manager",
+          "role": "the shop manager, called over to help",
+          "title": "Ask for the manager?",
+          "description": "The manager comes over and takes over the conversation with the user."
+        }
+      ],
+      "errands": [
+        {
+          "id": "shop_errand_backroom",
+          "place": "the returns desk at the back",
+          "title": "Go to the returns desk and come back?",
+          "description": "The user goes to the returns desk alone and comes back to report what they were told.",
+          "fact_templates": [
+            "They can only refund it until {day}.",
+            "The person there was {name}.",
+            "The refund is {price}.",
+            "You need {number} pieces of ID."
+          ]
+        }
+      ]
+    },
+    "Food & Drink": {
+      "moves": [
+        {
+          "id": "food_to_table",
+          "place": "a table by the window",
+          "title": "Move to a table?",
+          "description": "You take your things over to a table by the window and keep talking there."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "after_the_meal",
+          "title": "Skip to after the meal?",
+          "description": "The meal is finished and the plates are cleared. The conversation carries on over what is left of the drinks."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "server",
+          "role": "the server looking after this table",
+          "title": "Talk to the server?",
+          "description": "The server comes over and deals with the user directly."
+        }
+      ],
+      "errands": [
+        {
+          "id": "food_errand_counter",
+          "place": "the counter",
+          "title": "Go order at the counter and come back?",
+          "description": "The user goes to the counter alone and returns to report what they were told.",
+          "fact_templates": [
+            "The kitchen closes at {time}.",
+            "The order will be {wait}.",
+            "It comes to {price} for both.",
+            "They will call the name {name}."
+          ]
+        }
+      ]
+    },
+    "Campus & Lab": {
+      "moves": [
+        {
+          "id": "campus_to_office",
+          "place": "the department office",
+          "title": "Walk to the department office?",
+          "description": "You both walk over to the department office and continue the conversation there."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "after_the_seminar",
+          "title": "Skip to after the seminar?",
+          "description": "The seminar has finished. You catch each other on the way out and carry on."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "department_admin",
+          "role": "the department administrator who handles forms and rooms",
+          "title": "Ask the department admin?",
+          "description": "The department administrator takes over and handles the request."
+        }
+      ],
+      "errands": [
+        {
+          "id": "campus_errand_office",
+          "place": "the department office",
+          "title": "Go to the office and come back?",
+          "description": "The user goes to the department office alone and returns to report what they were told.",
+          "fact_templates": [
+            "The deadline is {day}.",
+            "The room is {code}.",
+            "You have to email {name} first.",
+            "There are {number} signatures needed."
+          ]
+        }
+      ]
+    },
+    "Housing & Daily Life": {
+      "moves": [
+        {
+          "id": "housing_to_hallway",
+          "place": "the shared hallway",
+          "title": "Step into the hallway?",
+          "description": "You step out into the shared hallway and keep talking there."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "a_few_days_later",
+          "title": "Skip a few days?",
+          "description": "A few days have passed and nothing has been fixed yet. You bring it up again."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "building_manager",
+          "role": "the building manager",
+          "title": "Talk to the building manager?",
+          "description": "The building manager takes over and deals with the user's problem."
+        }
+      ],
+      "errands": [
+        {
+          "id": "housing_errand_office",
+          "place": "the building office downstairs",
+          "title": "Go downstairs to ask and come back?",
+          "description": "The user goes down to the building office alone and returns to report what they were told.",
+          "fact_templates": [
+            "The repair is booked for {day}.",
+            "The person there was {name}.",
+            "Someone will come at {time}.",
+            "The call-out fee is {price}."
+          ]
+        }
+      ]
+    },
+    "Parties & Social": {
+      "moves": [
+        {
+          "id": "party_to_kitchen",
+          "place": "the kitchen, where it's quieter",
+          "title": "Move to the kitchen?",
+          "description": "You move into the kitchen where it is quieter and keep talking."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "later_in_the_night",
+          "title": "Skip to later in the night?",
+          "description": "It is much later and the party has thinned out. You find each other again and carry on."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "host",
+          "role": "the host of the party",
+          "title": "Talk to the host?",
+          "description": "The host comes over and starts a fresh conversation with the user."
+        }
+      ],
+      "errands": [
+        {
+          "id": "party_errand_ask_host",
+          "place": "the host in the other room",
+          "title": "Go ask the host and come back?",
+          "description": "The user goes to ask the host alone and comes back to report what they said.",
+          "fact_templates": [
+            "The host is called {name}.",
+            "People are heading out at {time}.",
+            "There are {number} more people coming.",
+            "The next place is on street {code}."
+          ]
+        }
+      ]
+    },
+    "Unexpected Moments": {
+      "moves": [
+        {
+          "id": "unexpected_to_side",
+          "place": "out of the way, to one side",
+          "title": "Step out of the way?",
+          "description": "You move to one side, out of everyone's way, and sort it out there."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "once_it_settles",
+          "title": "Skip to once it settles down?",
+          "description": "The commotion has died down. You are still together afterwards and talk it through."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "person_in_charge",
+          "role": "whoever is in charge here, who has just arrived",
+          "title": "Talk to whoever's in charge?",
+          "description": "The person in charge arrives and takes over the conversation with the user."
+        }
+      ],
+      "errands": [
+        {
+          "id": "unexpected_errand_report",
+          "place": "the desk to report it",
+          "title": "Go report it and come back?",
+          "description": "The user goes off alone to report it and comes back to say what happened.",
+          "fact_templates": [
+            "The reference number is {code}.",
+            "They will get back to you by {day}.",
+            "The person who took the report was {name}.",
+            "It took {wait}."
+          ]
+        }
+      ]
+    },
+    "Dating & Romance": {
+      "moves": [
+        {
+          "id": "dating_walk",
+          "place": "somewhere else, walking",
+          "title": "Go for a walk instead?",
+          "description": "You leave and walk somewhere else together, still talking."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "next_time_you_meet",
+          "title": "Skip to the next time you meet?",
+          "description": "Days have passed since then. You are meeting again and both remember how the last conversation ended."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "their_friend",
+          "role": "a close friend of the person the user was just talking to",
+          "title": "Their friend comes over?",
+          "description": "Their friend comes over and starts talking to the user while they are away."
+        }
+      ],
+      "errands": [
+        {
+          "id": "dating_errand_bar",
+          "place": "the bar to order",
+          "title": "Go order and come back?",
+          "description": "The user goes to order alone and comes back to report how it went.",
+          "fact_templates": [
+            "The kitchen stops at {time}.",
+            "The bartender's name was {name}.",
+            "The bill so far is {price}.",
+            "There is a {wait} wait on the food."
+          ]
+        }
+      ]
+    },
+    "Hangouts & Long Talks": {
+      "moves": [
+        {
+          "id": "hangout_move_on",
+          "place": "somewhere else nearby",
+          "title": "Move on somewhere else?",
+          "description": "You get up and move on to somewhere else nearby, still deep in the same conversation."
+        }
+      ],
+      "time_skips": [
+        {
+          "id": "hours_later",
+          "title": "Skip a couple of hours?",
+          "description": "A couple of hours have gone by. You are both still there, and the conversation has kept going."
+        }
+      ],
+      "new_characters": [
+        {
+          "id": "friend_arrives",
+          "role": "a friend who has just turned up to join you",
+          "title": "A friend turns up?",
+          "description": "A friend arrives, and the user ends up talking with them instead."
+        }
+      ],
+      "errands": [
+        {
+          "id": "hangout_errand_refill",
+          "place": "the counter to get refills",
+          "title": "Go get refills and come back?",
+          "description": "The user goes to get refills alone and comes back to report what happened on the way.",
+          "fact_templates": [
+            "They are closing at {time}.",
+            "The person behind the counter was {name}.",
+            "Two of them came to {price}.",
+            "There were {number} people in the queue."
+          ]
+        }
+      ]
+    }
+  }
+}

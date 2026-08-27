@@ -1,0 +1,135 @@
+{
+  "id": "id_036",
+  "system": "id",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Roberts",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "chronic cough, weight loss, night sweats, and hemoptysis",
+  "hpi_details": "A 50-year-old female presents to the clinic with chronic cough, weight loss, night sweats, and hemoptysis. The patient states the symptoms started about 6 weeks ago and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to tb",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "sputum_afb_smear",
+      "test": "Sputum acid-fast bacillus smear",
+      "value": "Positive, 3+ acid-fast bacilli",
+      "reference_range": "Negative",
+      "flag": "critical",
+      "specimen": "Sputum"
+    },
+    {
+      "id": "chest_xray",
+      "test": "Chest radiograph",
+      "value": "Right upper-lobe cavitary infiltrate",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Active Pulmonary Tuberculosis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Active Pulmonary Tuberculosis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Active Pulmonary Tuberculosis: Airborne isolation, RIPE therapy, report to public health, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic cough, weight loss, night sweats, and hemoptysis",
+      "Key HPI features: A 50-year-old female presents to the clinic with chronic cough, weight loss, night sweats, and hemoptysis. The patient states the symptoms started about 6 weeks ago and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals: Temp 38.1C (low-grade), HR 92, BP 108/68, weight down 6kg over 2 months. Cachectic appearance, post-tussive crackles in the right upper lobe. Sputum AFB smear positive; chest X-ray shows right upper lobe cavitary infiltrate.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Active Pulmonary Tuberculosis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Lung cancer without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Significant hemoptysis."
+    ],
+    "management_principles": [
+      "Plan for Active Pulmonary Tuberculosis: Airborne isolation, RIPE therapy, report to public health",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: chronic cough, weight loss, night sweats, and hemoptysis\n\nA 50-year-old female presents to the clinic with chronic cough, weight loss, night sweats, and hemoptysis. The patient states the symptoms started about 6 weeks ago and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Vitals: Temp 38.1C (low-grade), HR 92, BP 108/68, weight down 6kg over 2 months. Cachectic appearance, post-tussive crackles in the right upper lobe. Sputum AFB smear positive; chest X-ray shows right upper lobe cavitary infiltrate.",
+    "assessment": "Active Pulmonary Tuberculosis, sputum AFB smear-positive with right upper lobe cavitary disease on chest imaging.",
+    "plan": "Plan for Active Pulmonary Tuberculosis: Airborne isolation, RIPE therapy, report to public health. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Active Pulmonary Tuberculosis",
+    "Select appropriate diagnostic workup for Active Pulmonary Tuberculosis",
+    "Implement evidence-based management plan: Airborne isolation, RIPE therapy, report to public health"
+  ],
+  "teaching": {
+    "diagnosis": "Active Pulmonary Tuberculosis",
+    "one_liner": "Mycobacterium tuberculosis infection of the lungs causing chronic cough, weight loss, night sweats, and hemoptysis — requires airborne isolation and multi-drug (RIPE) therapy.",
+    "differentials": [
+      "Lung cancer",
+      "Bacterial pneumonia",
+      "Fungal lung infection"
+    ],
+    "red_flags": [
+      "Significant hemoptysis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Cough duration",
+        "say": "How many weeks or months have you had this cough?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "B symptoms",
+        "say": "Have you had night sweats, fever, or weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Hemoptysis",
+        "say": "Have you coughed up any blood?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "TB exposure/risk",
+        "say": "Have you been around anyone with tuberculosis, or traveled to a high-risk area?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Living situation",
+        "say": "Do you live in crowded conditions?",
+        "domains": [
+          "living_work"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "neuro_029",
+  "system": "neuro",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Roberts",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "sudden temporary weakness in right arm resolving in 30 minutes",
+  "hpi_details": "A 29-year-old male presents to the clinic with sudden temporary weakness in right arm resolving in 30 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to tia",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "stat_tia_pathway",
+      "title": "Emergency TIA imaging and rhythm assessment",
+      "order_terms": ["CT head", "CT brain", "CT angiography", "CTA", "ECG", "EKG", "blood glucose", "glucose"],
+      "availability_message": "Emergency brain imaging, ECG, and glucose results are now available. Stroke/TIA pathway management should proceed without delay.",
+      "results": [
+        {"id": "ct_head", "test": "Non-contrast CT head", "value": "No acute intracranial hemorrhage or established infarction", "flag": "normal"},
+        {"id": "cta_head_neck", "test": "CT angiography head and neck", "value": "No large-vessel occlusion; 35% stenosis of the left internal carotid artery", "flag": "abnormal"},
+        {"id": "ecg", "test": "12-lead ECG", "value": "Sinus rhythm; no atrial fibrillation on this tracing", "flag": "normal"},
+        {"id": "glucose", "test": "Point-of-care blood glucose", "value": "96", "unit": "mg/dL", "reference_range": "70-140", "flag": "normal"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Transient Ischemic Attack (TIA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Transient Ischemic Attack (TIA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Transient Ischemic Attack TIA: Antiplatelet therapy (Aspirin + Clopidogrel), carotid Doppler, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden temporary weakness in right arm resolving in 30 minutes",
+      "Key HPI features: A 29-year-old male presents to the clinic with sudden temporary weakness in right arm resolving in 30 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Transient Ischemic Attack TIA.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Transient Ischemic Attack (TIA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Seizure without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recurrence."
+    ],
+    "management_principles": [
+      "Plan for Transient Ischemic Attack TIA: Antiplatelet therapy (Aspirin + Clopidogrel), carotid Doppler",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of sudden temporary weakness in right arm resolving in 30 minutes. HPI: carotid stenosis, hypertension.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Transient Ischemic Attack TIA.",
+    "assessment": "Condition highly suspicious for Transient Ischemic Attack TIA.",
+    "plan": "Treat sudden focal weakness as a neurologic emergency and arrange immediate stroke/TIA evaluation with brain and vascular imaging, ECG, glucose, and risk-factor assessment. Start antiplatelet therapy only after intracranial hemorrhage and relevant mimics are assessed; short-course dual antiplatelet therapy is reserved for selected high-risk non-cardioembolic TIA/minor-stroke patients under protocol."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Transient Ischemic Attack TIA",
+    "Select appropriate diagnostic workup for Transient Ischemic Attack TIA",
+    "Implement evidence-based management plan: Antiplatelet therapy (Aspirin + Clopidogrel), carotid Doppler"
+  ],
+  "teaching": {
+    "diagnosis": "Transient Ischemic Attack (TIA)",
+    "one_liner": "Sudden temporary weakness resolving within 30 minutes, in a patient with carotid disease risk factors, needing urgent evaluation.",
+    "differentials": [
+      "Seizure",
+      "Migraine"
+    ],
+    "red_flags": [
+      "Recurrence"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptom and duration",
+        "say": "What happened, and how long did it last?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "First episode",
+        "say": "Has this happened before?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you have high blood pressure?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Associated symptoms",
+        "say": "Any headache with this?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Concerns",
+        "say": "What worries you most?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

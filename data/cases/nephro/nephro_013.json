@@ -1,0 +1,147 @@
+{
+  "id": "nephro_013",
+  "system": "nephrology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Smith",
+  "age": 57,
+  "gender": "male",
+  "chief_complaint": "rapidly rising creatinine and oliguria in patient with liver cirrhosis and ascites",
+  "hpi_details": "57M with decompensated alcoholic cirrhosis presenting with progressive oliguria and doubling of creatinine unresponsive to albumin and fluid challenges.",
+  "ideas": "thinks this is related to hepatorenal syndrome in cirrhosis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "creatinine_after_albumin",
+      "test": "Serum creatinine after albumin challenge and diuretic withdrawal",
+      "value": "2.8",
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3",
+      "flag": "high",
+      "note": "Baseline creatinine was 0.9 mg/dL; there was no improvement after 2 days of IV albumin."
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hepatorenal Syndrome evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hepatorenal Syndrome is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes a trial of IV albumin plus vasoconstrictor therapy to improve renal perfusion after excluding other causes of AKI, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: rapidly rising creatinine and oliguria in patient with liver cirrhosis and ascites",
+      "Key HPI features: 57M with decompensated alcoholic cirrhosis presenting with progressive oliguria and doubling of creatinine unresponsive to albumin and fluid challenges.",
+      "Objective/Exam findings: Vitals: BP 92/58, HR 98, Temp 37.0C. Tense ascites, spider angiomata, palmar erythema, scleral icterus, mild asterixis. Bloods: Creatinine doubled from baseline 0.9 to 2.8 mg/dL despite 2 days of IV albumin 1 g/kg/day and diuretic withdrawal; Bilirubin 4.2 mg/dL, INR 2.1, Albumin 2.4 g/dL. Urine sodium <10 mEq/L; urinalysis bland with no significant proteinuria, hematuria, or casts. Diagnostic paracentesis excludes spontaneous bacterial peritonitis.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hepatorenal Syndrome.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Prerenal AKI from volume depletion (would respond to fluids) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of spontaneous bacterial peritonitis (fever, abdominal pain) — a common trigger that needs treatment."
+    ],
+    "management_principles": [
+      "Discontinue diuretics and nephrotoxic agents; renal ultrasound and diagnostic paracentesis to exclude structural disease and spontaneous bacterial peritonitis",
+      "Trial of IV albumin (1 g/kg/day for 2 days) plus vasoconstrictor therapy (Terlipressin, or Midodrine + Octreotide + Albumin) to improve renal perfusion",
+      "Treat any precipitating infection promptly with empiric antibiotics",
+      "Refer urgently for liver transplant evaluation; renal replacement therapy may serve as a bridge"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "57M with decompensated alcoholic cirrhosis and known ascites presents with progressively decreasing urine output and rising creatinine over the past two weeks, unresponsive to albumin and fluid challenges.",
+    "objective": "Vitals: BP 92/58, HR 98, Temp 37.0C. Tense ascites, spider angiomata, palmar erythema, scleral icterus, mild asterixis. Bloods: Creatinine doubled from baseline 0.9 to 2.8 mg/dL despite 2 days of IV albumin 1 g/kg/day and diuretic withdrawal; Bilirubin 4.2 mg/dL, INR 2.1, Albumin 2.4 g/dL. Urine sodium <10 mEq/L; urinalysis bland with no significant proteinuria, hematuria, or casts. Diagnostic paracentesis excludes spontaneous bacterial peritonitis.",
+    "assessment": "Hepatorenal Syndrome - Acute Kidney Injury (HRS-AKI) in a patient with decompensated alcoholic cirrhosis, meeting ICA diagnostic criteria after exclusion of other causes.",
+    "plan": "Discontinue diuretics and nephrotoxic agents; renal ultrasound and diagnostic paracentesis to exclude structural disease and spontaneous bacterial peritonitis. Trial of IV albumin (1 g/kg/day for 2 days) plus vasoconstrictor therapy (Terlipressin, or Midodrine + Octreotide + Albumin) to improve renal perfusion. Treat any precipitating infection promptly with empiric antibiotics. Refer urgently for liver transplant evaluation; renal replacement therapy may serve as a bridge."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hepatorenal Syndrome in Cirrhosis",
+    "Formulate prioritized differential diagnosis for rapidly rising creatinine and oliguria in patient with liver cirrhosis and ascites",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Hepatorenal Syndrome",
+    "one_liner": "In decompensated liver cirrhosis, severe splanchnic vasodilation reduces effective blood flow to the kidneys, causing progressive kidney failure that does not improve with fluids or albumin.",
+    "differentials": [
+      "Prerenal AKI from volume depletion (would respond to fluids)",
+      "Acute tubular necrosis",
+      "Spontaneous bacterial peritonitis-associated AKI"
+    ],
+    "red_flags": [
+      "Signs of spontaneous bacterial peritonitis (fever, abdominal pain) — a common trigger that needs treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Known liver disease",
+        "say": "How long have you had liver cirrhosis, and what caused it?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "cirrhosis",
+          "alcohol"
+        ]
+      },
+      {
+        "objective": "Urine output trend",
+        "say": "How has your urine output changed recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "oliguria",
+          "decreased"
+        ]
+      },
+      {
+        "objective": "Abdominal swelling",
+        "say": "How has your belly swelling (ascites) changed?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "ascites"
+        ]
+      },
+      {
+        "objective": "Signs of infection",
+        "say": "Any fever or abdominal pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "abdominal pain"
+        ]
+      },
+      {
+        "objective": "Recent diuretic or medication use",
+        "say": "Have you been taking water pills, and has the dose changed recently?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

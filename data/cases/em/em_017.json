@@ -1,0 +1,151 @@
+{
+  "id": "em_017",
+  "system": "emergency medicine",
+  "difficulty": "intermediate",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Ms. Roberts",
+  "age": 22,
+  "gender": "female",
+  "chief_complaint": "ingestion of 25 extra-strength Tylenol tablets 6 hours ago with mild nausea and normal initial AST/ALT",
+  "hpi_details": "22F intentional overdose presenting 6 hours post-ingestion with serum acetaminophen level of 180 mcg/mL plotting above the Rumack-Matthew nomogram treatment line requiring immediate initiation of N-acetylcysteine (NAC) glutathione precursor to prevent acute liver failure.",
+  "ideas": "thinks this is related to acetaminophen toxicity overdose hepatotoxicity",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "acetaminophen_concentration",
+      "title": "Timed serum acetaminophen concentration",
+      "order_terms": [
+        "acetaminophen level",
+        "paracetamol level",
+        "tylenol level",
+        "acetaminophen concentration"
+      ],
+      "availability_message": "The timed serum acetaminophen concentration is now available.",
+      "results": [
+        {
+          "id": "acetaminophen_6_hour",
+          "test": "Serum acetaminophen (6 hours post-ingestion)",
+          "value": "180",
+          "unit": "µg/mL",
+          "reference_range": "Above the Rumack-Matthew treatment line at 6 hours",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "6 hours after ingestion"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Acetaminophen Toxicity (overdose) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Acetaminophen Toxicity (overdose) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Acetaminophen Toxicity Overdose Hepatotoxicity, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: ingestion of 25 extra-strength Tylenol tablets 6 hours ago with mild nausea and normal initial AST/ALT",
+      "Key HPI features: 22F intentional overdose presenting 6 hours post-ingestion with serum acetaminophen level of 180 mcg/mL plotting above the Rumack-Matthew nomogram treatment line requiring immediate initiation of N-acetylcysteine (NAC) glutathione precursor to prevent acute liver failure.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Acetaminophen Toxicity Overdose Hepatotoxicity.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Acetaminophen Toxicity (overdose).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Other co-ingested substance without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any intentional overdose — needs psychiatric safety evaluation regardless of the medical outcome."
+    ],
+    "management_principles": [
+      "Obtain a serum acetaminophen level at least 4 hours after a single acute ingestion, use the Rumack-Matthew nomogram when applicable, and start N-acetylcysteine promptly when indicated",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "ACEP Clinical Policies and Emergency Care Guidelines",
+        "url": "https://www.acep.org/patient-care/clinical-policies"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: ingestion of 25 extra-strength Tylenol tablets 6 hours ago with mild nausea and normal initial AST/ALT\n\n22F intentional overdose presenting 6 hours post-ingestion with serum acetaminophen level of 180 mcg/mL plotting above the Rumack-Matthew nomogram treatment line requiring immediate initiation of N-acetylcysteine (NAC) glutathione precursor to prevent acute liver failure.",
+    "objective": "Complete vital signs and focused physical examination. Evaluate for pertinent signs.",
+    "assessment": "Clinical presentation highly suggestive of Acetaminophen Toxicity Overdose Hepatotoxicity.",
+    "plan": "Start N-acetylcysteine immediately because the 6-hour acetaminophen concentration plots above the Rumack-Matthew treatment line. Obtain baseline and serial liver tests, INR, renal function, glucose, and acid-base status; continue therapy according to the treatment protocol and laboratory response. Obtain toxicology/poison-center guidance and complete psychiatric safety assessment after medical stabilization because this was an intentional ingestion."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Acetaminophen Toxicity Overdose Hepatotoxicity",
+    "Formulate prioritized differential diagnosis for ingestion of 25 extra-strength Tylenol tablets 6 hours ago with mild nausea and normal initial AST/ALT",
+    "Select appropriate laboratory and imaging studies for emergency medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Acetaminophen Toxicity (overdose)",
+    "one_liner": "A large acetaminophen overdose depletes the liver's glutathione stores, and the resulting toxic metabolite causes delayed liver failure — the Rumack-Matthew nomogram determines whether N-acetylcysteine is needed, and it works best started early, before liver enzymes even rise.",
+    "differentials": [
+      "Other co-ingested substance",
+      "Viral hepatitis (unrelated cause of elevated LFTs)",
+      "Alcoholic hepatitis"
+    ],
+    "red_flags": [
+      "Any intentional overdose — needs psychiatric safety evaluation regardless of the medical outcome"
+    ],
+    "must_ask": [
+      {
+        "objective": "Amount and timing of ingestion",
+        "say": "How many tablets did you take, and exactly when?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "tablets",
+          "when"
+        ]
+      },
+      {
+        "objective": "Intent",
+        "say": "Was this intentional, or an accident?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Other substances",
+        "say": "Did you take anything else along with the Tylenol, like alcohol or other pills?",
+        "domains": [
+          "medications"
+        ]
+      },
+      {
+        "objective": "Current symptoms",
+        "say": "Are you feeling nauseated, or any pain in your upper right belly?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior mental health history",
+        "say": "Have you had thoughts of hurting yourself before, or are you having them now?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

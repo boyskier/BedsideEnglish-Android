@@ -1,0 +1,158 @@
+{
+  "id": "nephro_014",
+  "system": "nephrology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Wright",
+  "age": 62,
+  "gender": "female",
+  "chief_complaint": "chronic kidney dysfunction and sterile pyuria in daily NSAID user",
+  "hpi_details": "62F taking high-dose ibuprofen daily for chronic lower back pain for 10 years presenting with elevated creatinine, sterile pyuria, and papillary necrosis.",
+  "ideas": "thinks this is related to analgesic nephropathy chronic interstitial nephritis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "1.9",
+      "unit": "mg/dL",
+      "reference_range": "0.6-1.1",
+      "flag": "high"
+    },
+    {
+      "id": "urine_microscopy_and_culture",
+      "test": "Urine microscopy and culture",
+      "value": "15-20 WBC/hpf; urine culture negative",
+      "flag": "abnormal",
+      "note": "Sterile pyuria with no significant proteinuria."
+    },
+    {
+      "id": "ct_urogram",
+      "test": "CT urogram",
+      "value": "Bilateral small kidneys with irregular scalloped contours and papillary calcifications",
+      "flag": "abnormal",
+      "note": "Appearance is consistent with renal papillary necrosis."
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Analgesic Nephropathy (Chronic Interstitial Nephritis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Analgesic Nephropathy (Chronic Interstitial Nephritis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate and permanent discontinuation of all NSAIDs, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic kidney dysfunction and sterile pyuria in daily NSAID user",
+      "Key HPI features: 62F taking high-dose ibuprofen daily for chronic lower back pain for 10 years presenting with elevated creatinine, sterile pyuria, and papillary necrosis.",
+      "Objective/Exam findings: Vitals: BP 148/88, HR 76. Mild bilateral flank/costovertebral angle tenderness; no edema. Urinalysis: sterile pyuria (WBC 15-20/hpf, negative urine culture), no significant proteinuria, occasional granular casts. Bloods: Creatinine 1.9 mg/dL (eGFR ~28), Hemoglobin 10.8 g/dL (normocytic anemia). CT urogram shows bilateral small kidneys with irregular, scalloped contours and papillary calcifications consistent with papillary necrosis.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Analgesic Nephropathy (Chronic Interstitial Nephritis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Chronic pyelonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Gross hematuria with flank pain — could indicate a sloughed renal papilla obstructing the ureter."
+    ],
+    "management_principles": [
+      "Immediate and permanent discontinuation of all NSAIDs and combination analgesics; switch to acetaminophen for pain control",
+      "Control blood pressure with an ACE inhibitor/ARB and monitor for CKD complications (anemia, mineral bone disease)",
+      "Increase fluid intake to maintain adequate urine output",
+      "Refer to urology promptly if gross hematuria, flank pain, or obstruction develops from a sloughed papilla"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "62F with a 10-year history of daily high-dose ibuprofen use for chronic lower back pain presents after routine labs revealed elevated creatinine and sterile pyuria.",
+    "objective": "Vitals: BP 148/88, HR 76. Mild bilateral flank/costovertebral angle tenderness; no edema. Urinalysis: sterile pyuria (WBC 15-20/hpf, negative urine culture), no significant proteinuria, occasional granular casts. Bloods: Creatinine 1.9 mg/dL (eGFR ~28), Hemoglobin 10.8 g/dL (normocytic anemia). CT urogram shows bilateral small kidneys with irregular, scalloped contours and papillary calcifications consistent with papillary necrosis.",
+    "assessment": "Analgesic Nephropathy (Chronic Interstitial Nephritis) with papillary necrosis secondary to a decade of chronic NSAID use.",
+    "plan": "Immediate and permanent discontinuation of all NSAIDs and combination analgesics; switch to acetaminophen for pain control. Control blood pressure with an ACE inhibitor/ARB and monitor for CKD complications (anemia, mineral bone disease). Increase fluid intake to maintain adequate urine output. Refer to urology promptly if gross hematuria, flank pain, or obstruction develops from a sloughed papilla."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Analgesic Nephropathy Chronic Interstitial Nephritis",
+    "Formulate prioritized differential diagnosis for chronic kidney dysfunction and sterile pyuria in daily NSAID user",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Analgesic Nephropathy (Chronic Interstitial Nephritis)",
+    "one_liner": "Years of heavy NSAID use damages the renal medulla and papillae, causing chronic kidney impairment, sterile pyuria, and papillary necrosis without an infection to explain the white cells in the urine.",
+    "differentials": [
+      "Chronic pyelonephritis",
+      "Urinary tract tuberculosis",
+      "Analgesic-unrelated CKD"
+    ],
+    "red_flags": [
+      "Gross hematuria with flank pain — could indicate a sloughed renal papilla obstructing the ureter"
+    ],
+    "must_ask": [
+      {
+        "objective": "Chronic NSAID use",
+        "say": "How long have you been taking ibuprofen or similar painkillers, and how much?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "ibuprofen",
+          "nsaid",
+          "years"
+        ]
+      },
+      {
+        "objective": "Reason for chronic pain medication",
+        "say": "What is the back pain from, that you've been treating for so long?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "back pain"
+        ]
+      },
+      {
+        "objective": "Urinary symptoms",
+        "say": "Have you had any burning with urination, even though tests show no infection?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dysuria",
+          "no infection"
+        ]
+      },
+      {
+        "objective": "Flank pain or blood in urine",
+        "say": "Any flank pain or visible blood in your urine?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Awareness of kidney risk",
+        "say": "Has anyone told you that long-term painkiller use can affect your kidneys?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "cs_006",
+  "system": "cardiothoracic surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Foster",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "chills, night sweats, weight loss, and new regurgitant heart murmur with mobile vegetation on echocardiogram",
+  "hpi_details": "53M with history of intravenous drug use presents with 3-week history of high fevers, drenching night sweats, 15-lb weight loss, generalized weakness, and painful reddish spots on the pads of his fingers. Over the past 3 days, developed worsening shortness of breath and ankle swelling.",
+  "ideas": "thinks he caught a severe flu or blood infection",
+  "concerns": "worried about the tender spots on his fingers and difficulty catching his breath",
+  "expectations": "wants strong IV antibiotics and hospitalization to cure the infection",
+  "pmh": "Hepatitis C, active IV heroin/fentanyl injection drug use",
+  "medications": "None",
+  "social_hx": "Unemployed, active IVDU",
+  "available_results": [
+    {
+      "id": "mssa_endocarditis_cultures",
+      "test": "Blood cultures",
+      "value": "Methicillin-susceptible Staphylococcus aureus isolated from all 3 sets",
+      "unit": "",
+      "reference_range": "No growth",
+      "flag": "positive",
+      "specimen": "Blood",
+      "collected_at": "Before antibiotics"
+    },
+    {
+      "id": "tee_destructive_aortic_endocarditis",
+      "test": "Transesophageal echocardiogram",
+      "value": "1.6 cm mobile aortic-valve vegetation with right-coronary cusp perforation, severe acute regurgitation, and a 1.2 cm aortic-root abscess",
+      "unit": "",
+      "reference_range": "No vegetation, leaflet destruction, or root abscess",
+      "flag": "critical",
+      "collected_at": "Before surgical consultation"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Infective Endocarditis of the Aortic Valve (IV drug use) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Infective Endocarditis of the Aortic Valve (IV drug use) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes targeted high-dose IV anti-staphylococcal therapy for MSSA, with regimen selection guided by microbiology, renal function, allergy history, and surgical planning, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chills, night sweats, weight loss, and new regurgitant heart murmur with mobile vegetation on echocardiogram",
+      "Key HPI features: 53M with history of intravenous drug use presents with 3-week history of high fevers, drenching night sweats, 15-lb weight loss, generalized weakness, and painful reddish spots on the pads of his fingers. Over the past 3 days, developed worsening shortness of breath and ankle swelling.",
+      "Objective/Exam findings: Vitals: HR 110, BP 105/50 (wide pulse pressure), Temp 39.1C. Splinter hemorrhages under nail beds, tender Osler nodes on finger pads, painless Janeway lesions on palms. Auscultation reveals a loud Grade 3/6 blowing diastolic murmur of aortic regurgitation at left sternal border. Three sets of blood cultures positive for Staphylococcus aureus (methicillin-sensitive MSSA). Transesophageal echocardiogram (TEE) reveals a 1.6 cm highly mobile, destructive vegetation attached to the aortic valve leaflets with perforation of the right coronary cusp causing severe acute aortic regurgitation and a 1.2 cm perivalvular aortic root abscess.",
+      "Relevant background/PMH: Hepatitis C, active IV heroin/fentanyl injection drug use"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Infective Endocarditis of the Aortic Valve (IV drug use).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Right-sided (tricuspid) endocarditis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: New heart failure symptoms (breathlessness, ankle swelling) with fever — suggests severe valve destruction needing urgent surgery."
+    ],
+    "management_principles": [
+      "Treat MSSA with targeted high-dose IV anti-staphylococcal therapy (e.g., nafcillin/oxacillin or cefazolin as appropriate); routine synergistic gentamicin is not recommended because nephrotoxicity outweighs unproven benefit",
+      "STAT emergency cardiothoracic surgery consultation for urgent operative intervention: aortic root reconstruction and aortic valve replacement with cryopreserved homograft or mechanical/bioprosthetic valve",
+      "Surgical indications present: severe acute AR with heart failure, perivalvular root abscess, and large mobile vegetation > 10 mm with embolization risk"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "53M active IV drug user presenting with prolonged fevers, peripheral stigmata of endocarditis, and acute left heart failure symptoms.",
+    "objective": "Vitals: HR 110, BP 105/50 (wide pulse pressure), Temp 39.1C. Splinter hemorrhages under nail beds, tender Osler nodes on finger pads, painless Janeway lesions on palms. Auscultation reveals a loud Grade 3/6 blowing diastolic murmur of aortic regurgitation at left sternal border. Three sets of blood cultures positive for Staphylococcus aureus (methicillin-sensitive MSSA). Transesophageal echocardiogram (TEE) reveals a 1.6 cm highly mobile, destructive vegetation attached to the aortic valve leaflets with perforation of the right coronary cusp causing severe acute aortic regurgitation and a 1.2 cm perivalvular aortic root abscess.",
+    "assessment": "Severe Infective Endocarditis of the Aortic Valve due to MSSA complicated by leaflet destruction, acute severe aortic regurgitation, and aortic root abscess.",
+    "plan": "Treat MSSA with targeted high-dose IV anti-staphylococcal therapy (e.g., nafcillin/oxacillin or cefazolin as appropriate); routine synergistic gentamicin is not recommended because nephrotoxicity outweighs unproven benefit. STAT emergency cardiothoracic surgery consultation for urgent operative intervention: aortic root reconstruction and aortic valve replacement with cryopreserved homograft or mechanical/bioprosthetic valve. Surgical indications present: severe acute AR with heart failure, perivalvular root abscess, and large mobile vegetation > 10 mm with embolization risk."
+  },
+  "learning_objectives": [
+    "Identify clinical criteria and peripheral immunological/embolic stigmata of Infective Endocarditis (Modified Duke criteria, Osler nodes, Janeway lesions, Roth spots)",
+    "Recognize critical indications for emergent/urgent cardiothoracic surgical valve replacement in endocarditis (refractory heart failure, perivalvular abscess/fistula, persistent bacteremia, large mobile vegetations >10-15 mm)",
+    "Compare prosthetic valve selection options (mechanical vs bioprosthetic vs homograft) in active endocarditis and IV drug use",
+    "Outline multidisciplinary management combining prolonged targeted IV antimicrobial therapy with complex root debridement/reconstruction"
+  ],
+  "teaching": {
+    "diagnosis": "Infective Endocarditis of the Aortic Valve (IV drug use)",
+    "one_liner": "Bacteria introduced through injection drug use seed the aortic valve, destroying the leaflets and causing severe regurgitation, heart failure symptoms, and peripheral immune stigmata like Osler's nodes.",
+    "differentials": [
+      "Right-sided (tricuspid) endocarditis",
+      "Sepsis from a skin/soft tissue source",
+      "Rheumatic heart disease"
+    ],
+    "red_flags": [
+      "New heart failure symptoms (breathlessness, ankle swelling) with fever — suggests severe valve destruction needing urgent surgery"
+    ],
+    "must_ask": [
+      {
+        "objective": "Injection drug use history",
+        "say": "Can you tell me about your drug use — what you use and how often you inject?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "injection",
+          "drug use",
+          "heroin"
+        ]
+      },
+      {
+        "objective": "Fever pattern and duration",
+        "say": "How long have you had fevers and night sweats?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks",
+          "night sweats"
+        ]
+      },
+      {
+        "objective": "Peripheral findings",
+        "say": "Have you noticed any tender spots on your fingertips?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fingers",
+          "tender spots"
+        ]
+      },
+      {
+        "objective": "Heart failure symptoms",
+        "say": "Have you had trouble breathing or swelling in your ankles?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "breathless",
+          "ankle swelling"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "How much weight have you lost?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

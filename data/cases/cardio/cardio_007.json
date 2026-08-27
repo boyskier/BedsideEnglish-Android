@@ -1,0 +1,171 @@
+{
+  "id": "cardio_007",
+  "system": "cardiology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Al-Mansoor",
+  "age": 22,
+  "gender": "male",
+  "chief_complaint": "chest tightness and lightheadedness while playing competitive football",
+  "hpi_details": "Presents after experiencing severe lightheadedness, tunnel vision, and central chest tightness during a competitive football match yesterday. Reports three similar episodes of exertional pre-syncope and shortness of breath over the past 6 months. Never fainted completely. Family history is notable: his paternal uncle died suddenly at age 26 while playing basketball (cause unexplained).",
+  "ideas": "thinks he is getting dehydrated and over-exerting himself during high-intensity matches",
+  "concerns": "terrified because of his uncle's sudden death at a similar age during sports",
+  "expectations": "wants a comprehensive heart screening to know if it is safe to continue playing football professionally",
+  "pmh": "mild childhood asthma, no prior cardiac investigations",
+  "medications": "salbutamol inhaler PRN before exercise",
+  "social_hx": "university student and semi-professional football player, non-smoker, zero alcohol",
+  "investigation_events": [{"id": "hocm_echocardiogram", "title": "Transthoracic echocardiogram", "order_terms": ["transthoracic echocardiogram", "transthoracic echo", "tte", "echocardiogram", "cardiac ultrasound"], "availability_message": "The transthoracic echocardiogram report is now available.", "results": [
+    {"id": "septal_thickness", "test": "Maximal interventricular septal thickness", "value": "21", "unit": "mm", "reference_range": "<15", "flag": "critical", "collected_at": "Today's echocardiogram"},
+    {"id": "lvot_gradient_rest", "test": "LV outflow tract gradient at rest", "value": "38", "unit": "mmHg", "reference_range": "<30", "flag": "high", "collected_at": "Today's echocardiogram"},
+    {"id": "lvot_gradient_valsalva", "test": "LV outflow tract gradient with Valsalva", "value": "82", "unit": "mmHg", "reference_range": "Obstructive: >=50", "flag": "critical", "collected_at": "Today's echocardiogram"},
+    {"id": "echo_sam", "test": "Mitral valve motion", "value": "Systolic anterior motion with moderate posteriorly directed mitral regurgitation", "flag": "abnormal", "collected_at": "Today's echocardiogram"}
+  ]}],
+  "clinical_knowledge": {
+    "topic": "Hypertrophic Obstructive Cardiomyopathy (HOCM) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hypertrophic Obstructive Cardiomyopathy (HOCM) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate restriction from competitive sports and high-intensity athletics pending specialist review, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chest tightness and lightheadedness while playing competitive football",
+      "Key HPI features: Presents after experiencing severe lightheadedness, tunnel vision, and central chest tightness during a competitive football match yesterday. Reports three similar episodes of exertional pre-syncope and shortness of breath over the past 6 months. Never fainted completely. Family history is notable: his paternal uncle died suddenly at age 26 while playing basketball (cause unexplained).",
+      "Objective/Exam findings: Cardiac auscultation: ejection systolic murmur at the left sternal border that characteristically INCREASES in intensity with Valsalva manoeuvre or standing up from squatting (due to decreased preload reducing left ventricular volume and increasing dynamic outflow tract obstruction), and decreases with squatting or passive leg raise. ECG: deep dagger-like Q waves in inferior and lateral leads, left ventricular hypertrophy with strain. Transthoracic echocardiogram (shows asymmetric septal hypertrophy >15mm, systolic anterior motion of the mitral valve - SAM).",
+      "Relevant background/PMH: mild childhood asthma, no prior cardiac investigations",
+      "Current medications: salbutamol inhaler PRN before exercise"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hypertrophic Obstructive Cardiomyopathy (HOCM).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Vasovagal syncope without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope during exercise, or a family member who died suddenly and young."
+    ],
+    "management_principles": [
+      "Immediate absolute restriction from competitive sports and high-intensity athletics pending specialist review",
+      "Consider beta-blocker therapy (e.g., bisoprolol or metoprolol) after specialist assessment to slow heart rate, improve diastolic filling, and reduce dynamic outflow obstruction"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "2024 AHA/ACC/AMSSM/HRS/PACES/SCMR Guideline for the Management of Hypertrophic Cardiomyopathy",
+        "url": "https://professional.heart.org/en/guidelines-statements/hypertrophic-cardiomyopathy-guideline"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: chest tightness and lightheadedness while playing competitive football\n\nPresents after experiencing severe lightheadedness, tunnel vision, and central chest tightness during a competitive football match yesterday. Reports three similar episodes of exertional pre-syncope and shortness of breath over the past 6 months. Never fainted completely. Family history is notable: his paternal uncle died suddenly at age 26 while playing basketball (cause unexplained).",
+    "objective": "Cardiac auscultation: ejection systolic murmur at the left sternal border that characteristically INCREASES in intensity with Valsalva manoeuvre or standing up from squatting (due to decreased preload reducing left ventricular volume and increasing dynamic outflow tract obstruction), and decreases with squatting or passive leg raise. ECG: deep dagger-like Q waves in inferior and lateral leads, left ventricular hypertrophy with strain. Transthoracic echocardiogram (shows asymmetric septal hypertrophy >15mm, systolic anterior motion of the mitral valve - SAM).",
+    "assessment": "Hypertrophic Obstructive Cardiomyopathy (HOCM). DDx: exercise-induced asthma, anomalous origin of coronary arteries, arrhythmogenic right ventricular cardiomyopathy (ARVC), ion channelopathy (Long QT syndrome).",
+    "plan": "Immediate restriction from competitive sports and high-intensity athletics pending specialist review. Consider beta-blocker therapy (e.g., bisoprolol or metoprolol) after specialist assessment to slow heart rate, improve diastolic filling, and reduce dynamic outflow obstruction. Avoid unnecessary preload reduction with diuretics or nitrates in obstructive physiology. Urgent referral for cardiac MRI, 48-hour Holter monitoring to detect non-sustained ventricular tachycardia, and clinical genetic testing/counselling for first-degree relatives. Assess for Implantable Cardioverter Defibrillator (ICD) primary prevention."
+  },
+  "learning_objectives": [
+    "Correlate exertional syncope in young athletes with hereditary structural/electrical heart disease (HOCM, ARVC, Long QT)",
+    "Demonstrate understanding of dynamic auscultation: why HOCM murmur louder on Valsalva/standing and softer on squatting",
+    "Explain the physiological rationale for beta-blockers and the need to avoid unnecessary preload reduction in obstructive HCM",
+    "Perform comprehensive family history screening for sudden unexplained cardiac death under age 40"
+  ],
+  "teaching": {
+    "diagnosis": "Hypertrophic Obstructive Cardiomyopathy (HOCM)",
+    "one_liner": "A genetically thickened heart muscle obstructs outflow during exercise — the classic cause of collapse in a young athlete.",
+    "differentials": [
+      "Vasovagal syncope",
+      "Arrhythmogenic right ventricular cardiomyopathy",
+      "Long QT syndrome"
+    ],
+    "red_flags": [
+      "Syncope during exercise, or a family member who died suddenly and young"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptoms during rather than after exercise",
+        "say": "Did this happen while you were actually playing, or afterwards?",
+        "domains": [
+          "aggravating",
+          "onset_duration"
+        ],
+        "keywords": [
+          "playing",
+          "exercise",
+          "sport"
+        ]
+      },
+      {
+        "objective": "Family history of sudden death",
+        "say": "Has anyone in your family died suddenly and unexpectedly, especially young?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "family",
+          "died",
+          "sudden",
+          "young",
+          "death"
+        ]
+      },
+      {
+        "objective": "Lightheadedness and syncope",
+        "say": "Have you felt lightheaded or actually blacked out?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "lightheaded",
+          "dizzy",
+          "black",
+          "out",
+          "faint"
+        ]
+      },
+      {
+        "objective": "Chest tightness on exertion",
+        "say": "Do you get chest tightness when you push yourself hard?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "tight",
+          "chest",
+          "push"
+        ]
+      },
+      {
+        "objective": "Palpitations",
+        "say": "Does your heart ever race or thump on its own?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "racing",
+          "thump",
+          "pounding",
+          "palpitation"
+        ]
+      },
+      {
+        "objective": "Level and intensity of sport",
+        "say": "What sport do you play, and how many hours a week?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "sport",
+          "training",
+          "hours",
+          "team",
+          "play"
+        ]
+      }
+    ]
+  }
+}

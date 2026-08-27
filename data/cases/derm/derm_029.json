@@ -1,0 +1,131 @@
+{
+  "id": "derm_029",
+  "system": "derm",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Smith",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "annular scaly red patch with active scaling border",
+  "hpi_details": "A 29-year-old male presents to the clinic with annular scaly red patch with active scaling border. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to ringworm",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "lesion_koh_prep",
+      "title": "KOH preparation of the active border",
+      "order_terms": ["koh", "potassium hydroxide", "skin scraping", "fungal scraping", "fungal test"],
+      "availability_message": "The KOH preparation result is now available.",
+      "results": [
+        {"id": "tinea_corporis_koh", "test": "Potassium hydroxide preparation", "value": "Branching septate hyphae seen", "flag": "abnormal", "specimen": "Scale from active lesion border"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Tinea Corporis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Tinea Corporis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Tinea Corporis: Topical Terbinafine cream BID for 2 weeks, avoid steroids, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: annular scaly red patch with active scaling border",
+      "Key HPI features: A 29-year-old male presents to the clinic with annular scaly red patch with active scaling border. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Tinea Corporis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Tinea Corporis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Nummular eczema without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly spreading lesion with fever or systemic illness — consider deeper fungal infection or bacterial superinfection."
+    ],
+    "management_principles": [
+      "Plan for Tinea Corporis: Topical Terbinafine cream BID for 2 weeks, avoid steroids",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: annular scaly red patch with active scaling border\n\nA 29-year-old male presents with a single annular, scaly, red patch with an actively scaling, expanding border that has been gradually worsening.",
+    "objective": "Well-demarcated, annular erythematous plaque with a raised, scaling active border and mild central clearing. No satellite lesions, nail involvement, or systemic signs of infection noted.",
+    "assessment": "Tinea Corporis.",
+    "plan": "Plan for Tinea Corporis: Topical Terbinafine cream BID for 2 weeks, avoid steroids. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Tinea Corporis",
+    "Select appropriate diagnostic workup for Tinea Corporis",
+    "Implement evidence-based management plan: Topical Terbinafine cream BID for 2 weeks, avoid steroids"
+  ],
+  "teaching": {
+    "diagnosis": "Tinea Corporis",
+    "one_liner": "A dermatophyte fungal infection causing an expanding annular patch with an active scaling border.",
+    "differentials": [
+      "Nummular eczema",
+      "Pityriasis rosea"
+    ],
+    "red_flags": [
+      "Rapidly spreading lesion with fever or systemic illness — consider deeper fungal infection or bacterial superinfection",
+      "Widespread or atypical lesions in an immunocompromised patient — risk of Majocchi granuloma or disseminated infection",
+      "No improvement (or worsening) after a full course of topical antifungal — reconsider the diagnosis before escalating treatment"
+    ],
+    "must_ask": [
+      {
+        "objective": "Border appearance",
+        "say": "Does it have a scaling, active border?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Growth",
+        "say": "Is it expanding?",
+        "domains": [
+          "progression"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Exposure",
+        "say": "Any contact with gyms or animals?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Itching",
+        "say": "Is it itchy?",
+        "domains": [
+          "character"
+        ]
+      }
+    ]
+  }
+}

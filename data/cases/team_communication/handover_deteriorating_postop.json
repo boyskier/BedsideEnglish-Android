@@ -1,0 +1,94 @@
+{
+  "id": "handover_deteriorating_postop",
+  "system": "team_communication",
+  "session_mode": "team_communication",
+  "communication_task": "Handover / escalation",
+  "urgency": "urgent",
+  "difficulty": "intermediate",
+  "eval_template": "sbar_handover",
+  "patient_name": "Handover — deteriorating post-operative patient",
+  "chief_complaint": "Escalate a deteriorating post-operative patient to the covering senior using a structured SBAR call",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Escalation call: possible internal bleeding after abdominal surgery",
+    "task": "Handover / escalation",
+    "urgency": "urgent",
+    "patient": "Mr. Victor Alonso, 45-year-old man, post-op day 1 from open splenectomy after trauma",
+    "location": "Surgical ward, overnight, you are the covering intern",
+    "situation": "Increasing heart rate, falling blood pressure, and falling urine output over the last two hours; you are concerned about ongoing internal bleeding.",
+    "background": [
+      "Open splenectomy yesterday for a traumatic splenic injury; estimated intraoperative blood loss 600 mL, one unit of packed red cells given intraoperatively.",
+      "No known bleeding disorder; not on anticoagulation."
+    ],
+    "current_status": [
+      "Two hours ago: HR 92, BP 118/74, urine output 40 mL/hr.",
+      "Now: HR 128, BP 88/54, urine output 10 mL/hr over the last hour.",
+      "Abdominal drain output has increased from 20 mL to 150 mL of frank blood in the last two hours."
+    ],
+    "key_data": [
+      "Hemoglobin six hours ago was 9.8 g/dL; no repeat sent yet.",
+      "Patient is pale, diaphoretic, and mildly confused compared to two hours ago."
+    ],
+    "treatments": [
+      "Two large-bore IVs in place; 500 mL crystalloid bolus given with only transient response.",
+      "You have not yet ordered a repeat hemoglobin, type and crossmatch, or notified the operating surgeon."
+    ],
+    "your_request": "Call the covering senior surgical resident, give a structured SBAR, and get clear direction on blood products, urgent labs, and whether the patient needs to return to the operating room.",
+    "must_include": [
+      "Who you are, the patient, and why you are calling now (Situation).",
+      "The surgery, relevant background, and the trend in vitals, drain output, and mental status (Background).",
+      "Your concern for ongoing intra-abdominal bleeding and hypovolemic shock (Assessment).",
+      "A specific, actionable request: bedside review, blood products, repeat labs, and possible return to theatre (Recommendation)."
+    ]
+  },
+  "kickoff_text": "This is the surgical senior on call. Go ahead, what's going on?",
+  "persona_override": "You are Dr. Patel, the covering senior surgical resident receiving an overnight phone call. The caller is the intern covering Mr. Victor Alonso, post-op day 1 from an open splenectomy, now with rising heart rate (128), falling blood pressure (88/54), falling urine output (10 mL/hr), increasing bloody drain output (150 mL in two hours, up from 20 mL), and new mild confusion, concerning for ongoing intra-abdominal hemorrhage. If the learner gives a clear, structured Situation-Background-Assessment-Recommendation handover that includes the vital sign trend, drain output, and an explicit recommendation, respond by agreeing to come assess the patient immediately, ordering a stat repeat hemoglobin and type-and-crossmatch, and telling the learner to start a second fluid bolus and prepare for possible transfusion and return to the operating room. If the handover is vague, disorganized, or omits the vital trend or an explicit recommendation, ask pointed clarifying questions ('What exactly are the vitals now versus two hours ago? What do you want me to do?') before agreeing to come in, so the learner experiences the cost of an unclear handover. Stay professional and appropriately urgent throughout.",
+  "learning_objectives": [
+    "state the situation clearly and immediately, including the reason for the urgent call",
+    "summarize the operative background and the trend in vitals, drain output, and mental status",
+    "give an explicit clinical assessment of the likely cause of deterioration",
+    "make a specific, actionable recommendation rather than only describing the problem",
+    "confirm the senior's plan and next steps before ending the call"
+  ],
+  "suggested_questions": [
+    "This is the surgical intern calling about Mr. Alonso, post-op day 1 from splenectomy — he's deteriorating and I'm worried about ongoing bleeding.",
+    "His heart rate has gone from 92 to 128, his blood pressure has dropped from 118/74 to 88/54, and his drain output has gone from 20 to 150 milliliters of blood in two hours.",
+    "I'm concerned this is ongoing intra-abdominal hemorrhage. I'd like you to come assess him now, and I want to send a stat hemoglobin and type-and-crossmatch — can you confirm that plan?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Structured SBAR escalation for suspected postoperative hemorrhage and evolving hypovolemic shock",
+    "core_concepts": [
+      "A deteriorating post-operative patient requires a handover that names the trend, not just a single snapshot of vital signs.",
+      "SBAR structure (Situation, Background, Assessment, Recommendation) prevents a critical call from turning into an unfocused narrative."
+    ],
+    "diagnostic_clues": [
+      "Rising heart rate with falling blood pressure and falling urine output together indicate evolving hypovolemic shock.",
+      "Increasing bloody drain output after an operation on a solid organ is a red flag for ongoing surgical bleeding."
+    ],
+    "common_misconceptions": [
+      "Describing all the findings in detail is the same as making a clear recommendation.",
+      "Waiting for a repeat hemoglobin result before escalating a clinically deteriorating patient."
+    ],
+    "dangerous_errors": [
+      "Delaying the escalation call while continuing to reassess without notifying a senior.",
+      "Ending the call without a specific, agreed next step and a plan for reassessment."
+    ],
+    "management_principles": [
+      "Escalate early with a structured SBAR call whenever a postoperative patient shows a worsening vital-sign or output trend.",
+      "Pair the call with concrete safety actions already in progress: IV access, fluids, and sending urgent labs."
+    ],
+    "boundaries_and_exceptions": [
+      "The exact transfusion trigger, fluid strategy, and threshold for returning to the operating room depend on local massive transfusion and damage-control protocols."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS SBAR Technique",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html"
+      },
+      {
+        "title": "ACS Advanced Trauma Life Support Program",
+        "url": "https://www.facs.org/quality-programs/trauma/education/atls/"
+      }
+    ]
+  }
+}

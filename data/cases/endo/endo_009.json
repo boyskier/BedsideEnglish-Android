@@ -1,0 +1,132 @@
+{
+  "id": "endo_009",
+  "system": "endocrinology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Irwin",
+  "age": 55,
+  "gender": "female",
+  "chief_complaint": "resistant hypertension, severe muscle cramps, and weakness for 6 months",
+  "hpi_details": "55F with hypertension taking 3 antihypertensive drugs (including diuretic) reports persistent high blood pressure accompanied by severe muscle cramps, polyuria, and episodes of profound lower extremity weakness.",
+  "ideas": "thinks her blood pressure pills are causing her weakness and cramps",
+  "concerns": "worried she might have a stroke because her top number is always around 160",
+  "expectations": "wants her blood pressure controlled without causing severe muscle spasms",
+  "pmh": "Resistant hypertension for 4 years",
+  "medications": "Amlodipine 10mg, Olmesartan 40mg, Hydrochlorothiazide 25mg",
+  "social_hx": "Office manager, non-smoker",
+  "clinical_knowledge": {
+    "topic": "Primary Aldosteronism (Conn's Syndrome) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Primary Aldosteronism (Conn's Syndrome) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Correct hypokalemia with oral potassium chloride and hold potassium-wasting diuretics, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: resistant hypertension, severe muscle cramps, and weakness for 6 months",
+      "Key HPI features: 55F with hypertension taking 3 antihypertensive drugs (including diuretic) reports persistent high blood pressure accompanied by severe muscle cramps, polyuria, and episodes of profound lower extremity weakness.",
+      "Objective/Exam findings: Vitals: HR 74, BP 164/100. Neurological exam reveals 4/5 motor strength in lower extremities. Bloods: K+ 2.8 mEq/L, HCO3 30 mEq/L (metabolic alkalosis), Na 145 mEq/L. Plasma Aldosterone Concentration (PAC) elevated (>20 ng/dL) with suppressed Plasma Renin Activity (PRA < 0.5 ng/mL/hr); ARR ratio > 40.",
+      "Relevant background/PMH: Resistant hypertension for 4 years",
+      "Current medications: Amlodipine 10mg, Olmesartan 40mg, Hydrochlorothiazide 25mg"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Primary Aldosteronism (Conn's Syndrome).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Secondary hyperaldosteronism (renal artery stenosis) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Severe muscle weakness — dangerously low potassium can cause cardiac arrhythmia."
+    ],
+    "management_principles": [
+      "Correct hypokalemia with oral potassium chloride and hold potassium-wasting diuretics",
+      "Perform confirmatory saline infusion test",
+      "Order adrenal CT scan and consider adrenal vein sampling (AVS) to differentiate unilateral adenoma (laparoscopic adrenalectomy) vs bilateral hyperplasia (mineralocorticoid receptor antagonist like Spironolactone/Eplerenone)"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Primary Aldosteronism",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/primary-aldosteronism"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55F with resistant hypertension on triple therapy presenting with hypokalemic symptoms (muscle cramps, polyuria, weakness).",
+    "objective": "Vitals: HR 74, BP 164/100. Neurological exam reveals 4/5 motor strength in lower extremities. Bloods: K+ 2.8 mEq/L, HCO3 30 mEq/L (metabolic alkalosis), Na 145 mEq/L. Plasma Aldosterone Concentration (PAC) elevated (>20 ng/dL) with suppressed Plasma Renin Activity (PRA < 0.5 ng/mL/hr); ARR ratio > 40.",
+    "assessment": "Primary Aldosteronism (Conn's Syndrome), likely aldosterone-producing adrenal adenoma or bilateral hyperplasia.",
+    "plan": "Correct hypokalemia with oral potassium chloride and hold potassium-wasting diuretics. Perform confirmatory saline infusion test. Order adrenal CT scan and consider adrenal vein sampling (AVS) to differentiate unilateral adenoma (laparoscopic adrenalectomy) vs bilateral hyperplasia (mineralocorticoid receptor antagonist like Spironolactone/Eplerenone)."
+  },
+  "learning_objectives": [
+    "Recognize clinical clues for primary aldosteronism (resistant hypertension with hypokalemia)",
+    "Calculate and interpret Plasma Aldosterone to Renin Ratio (ARR)",
+    "Explain the role of adrenal vein sampling (AVS) prior to surgical intervention",
+    "Differentiate medical versus surgical management based on laterality"
+  ],
+  "teaching": {
+    "diagnosis": "Primary Aldosteronism (Conn's Syndrome)",
+    "one_liner": "Excess aldosterone from an adrenal adenoma or bilateral hyperplasia causes resistant hypertension with low potassium — the muscle cramps and weakness come from the hypokalemia, not from the blood pressure medications themselves.",
+    "differentials": [
+      "Secondary hyperaldosteronism (renal artery stenosis)",
+      "Diuretic-induced hypokalemia alone",
+      "Renal tubular acidosis"
+    ],
+    "red_flags": [
+      "Severe muscle weakness — dangerously low potassium can cause cardiac arrhythmia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Blood pressure control despite medications",
+        "say": "How many blood pressure medications are you taking, and is it still hard to control?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "three drugs",
+          "resistant"
+        ]
+      },
+      {
+        "objective": "Muscle symptoms",
+        "say": "Where are the cramps, and how severe is the weakness?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Urination",
+        "say": "Are you urinating more than usual?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "polyuria"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "months"
+        ]
+      },
+      {
+        "objective": "The patient's own theory",
+        "say": "What do you think is causing your cramps and weakness?",
+        "domains": [
+          "ideas"
+        ]
+      }
+    ]
+  }
+}

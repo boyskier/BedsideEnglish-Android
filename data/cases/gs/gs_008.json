@@ -1,0 +1,157 @@
+{
+  "id": "gs_008",
+  "system": "general_surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rivera",
+  "age": 52,
+  "gender": "female",
+  "chief_complaint": "painless hard irregular lump in breast with dimpling of overlying skin",
+  "hpi_details": "52F presenting with a 3cm hard, fixed, non-tender right breast mass with skin retraction (peau d'orange) and axillary lymphadenopathy. Core needle biopsy confirms invasive ductal carcinoma.",
+  "ideas": "thinks this is related to invasive ductal carcinoma breast mass",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "breast_core_biopsy",
+      "test": "Right breast core needle biopsy",
+      "value": "Invasive ductal carcinoma",
+      "flag": "critical",
+      "specimen": "Breast mass core biopsy",
+      "note": "Hormone-receptor and HER2 testing remain pending"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Invasive Ductal Carcinoma of the Breast evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Invasive Ductal Carcinoma of the Breast is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes multidisciplinary oncologic evaluation - including staging workup, hormone receptor and HER2 testing, and coordinated surgical, medical, and radiation oncology input - adapted to individual patient risk factors and tumor characteristics.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: painless hard irregular lump in breast with dimpling of overlying skin",
+      "Key HPI features: 52F presenting with a 3cm hard, fixed, non-tender right breast mass with skin retraction (peau d'orange) and axillary lymphadenopathy. Core needle biopsy confirms invasive ductal carcinoma.",
+      "Objective/Exam findings: 3cm hard, fixed, non-tender right breast mass with skin retraction (peau d'orange) and palpable axillary lymphadenopathy on exam. Core needle biopsy confirms invasive ductal carcinoma; mammography/ultrasound and hormone receptor/HER2 status pending to guide staging.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Invasive Ductal Carcinoma of the Breast.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Fibroadenoma (benign, mobile, younger patients) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fixed, hard mass with skin dimpling."
+    ],
+    "management_principles": [
+      "Complete staging workup (bilateral mammography, breast MRI as indicated, chest/abdomen imaging, and hormone receptor/HER2 testing on the biopsy specimen)",
+      "Refer promptly to a multidisciplinary breast oncology team (surgical, medical, and radiation oncology) for treatment planning",
+      "Discuss surgical options (lumpectomy with radiation vs. mastectomy) with axillary staging given palpable nodes, and consider neoadjuvant or adjuvant systemic therapy based on receptor status"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: painless hard irregular lump in breast with dimpling of overlying skin\n\n52F presenting with a 3cm hard, fixed, non-tender right breast mass with skin retraction (peau d'orange) and axillary lymphadenopathy. Core needle biopsy confirms invasive ductal carcinoma.",
+    "objective": "3cm hard, fixed, non-tender right breast mass with skin retraction (peau d'orange) and palpable axillary lymphadenopathy. Core needle biopsy confirms invasive ductal carcinoma.",
+    "assessment": "Invasive Ductal Carcinoma of the Breast, clinically node-positive (palpable axillary lymphadenopathy) - staging workup and multidisciplinary oncology referral required.",
+    "plan": "1. Complete staging workup (bilateral mammography, breast MRI as indicated, chest/abdomen imaging, and hormone receptor/HER2 testing). 2. Refer to multidisciplinary breast oncology team (surgical, medical, radiation oncology). 3. Discuss surgical options (lumpectomy with radiation vs. mastectomy) with axillary staging, and consider neoadjuvant/adjuvant systemic therapy based on receptor status."
+  },
+  "learning_objectives": [
+    "Recognize red-flag breast exam findings (fixed hard mass, skin dimpling, axillary lymphadenopathy) suggestive of malignancy",
+    "Distinguish suspicious findings from benign causes such as fibroadenoma or cyst",
+    "Outline the staging workup, including receptor testing, needed before treatment planning",
+    "Describe the role of multidisciplinary breast oncology referral and surgical options"
+  ],
+  "teaching": {
+    "diagnosis": "Invasive Ductal Carcinoma of the Breast",
+    "one_liner": "The most common type of breast cancer, presenting as a hard, fixed, painless lump often with skin dimpling (peau d'orange) or nipple retraction from tumor infiltration into surrounding tissue.",
+    "differentials": [
+      "Fibroadenoma (benign, mobile, younger patients)",
+      "Breast cyst",
+      "Fat necrosis"
+    ],
+    "red_flags": [
+      "Fixed, hard mass with skin dimpling",
+      "Palpable axillary lymph nodes"
+    ],
+    "must_ask": [
+      {
+        "objective": "Onset and how it was found",
+        "say": "When did you first notice the lump, and how did you find it?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Character of the lump",
+        "say": "Is the lump hard or soft, and does it move when you press it?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "hard",
+          "fixed",
+          "mobile"
+        ]
+      },
+      {
+        "objective": "Skin and nipple changes",
+        "say": "Have you noticed any dimpling of the skin, or changes to your nipple?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dimpling",
+          "nipple",
+          "skin changes"
+        ]
+      },
+      {
+        "objective": "Axillary lymph nodes",
+        "say": "Have you felt any lumps in your armpit?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "armpit",
+          "lymph node"
+        ]
+      },
+      {
+        "objective": "Family and personal history",
+        "say": "Does breast or ovarian cancer run in your family?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "breast cancer",
+          "family"
+        ]
+      },
+      {
+        "objective": "The patient's own worry",
+        "say": "What is your biggest worry about this lump?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

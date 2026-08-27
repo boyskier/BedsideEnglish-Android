@@ -1,0 +1,120 @@
+{
+  "id": "rheum_026",
+  "system": "rheumatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Thomas",
+  "age": 20,
+  "gender": "female",
+  "chief_complaint": "chronic aching knee pain worsening with walking",
+  "hpi_details": "A 20-year-old female presents to the clinic with chronic aching knee pain worsening with walking. The pain has persisted for several months and has been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to osteoarthritis",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Chronic knee pain in a young adult (atypical for osteoarthritis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition that osteoarthritis is atypical in a 20-year-old is essential for guiding a broadened diagnostic workup rather than premature closure on a degenerative diagnosis.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes broadening the differential (inflammatory arthritis, overuse/mechanical injury, referred pain) before assuming osteoarthritis in a young adult, since primary OA is atypical at this age, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: chronic aching knee pain worsening with walking",
+      "Key HPI features: A 20-year-old female presents to the clinic with chronic aching knee pain worsening with walking. The pain has persisted for several months and has been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Vitals normal. Knee exam for effusion, warmth, joint line tenderness, and range of motion; screen other joints for synovitis given the atypical age for OA. Assess gait and hip exam for referred pain. No hot/swollen joint or fever today.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming a young patient's knee pain is osteoarthritis without excluding inflammatory arthritis, overuse injury, or referred pain.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to any single cause without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Sudden severe swelling."
+    ],
+    "management_principles": [
+      "Do not assume osteoarthritis in a 20-year-old; perform a focused exam and evaluate for inflammatory arthritis, overuse/mechanical injury, infection, and referred pain",
+      "Obtain targeted labs (inflammatory markers, RF/anti-CCP if inflammatory features present) and imaging based on exam findings",
+      "A hot/swollen joint, fever, inability to bear weight, or systemic illness needs urgent assessment for septic arthritis",
+      "If mechanical/degenerative changes are confirmed, manage with weight optimization, physical therapy, and topical NSAIDs after a clinician reviews contraindications."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of chronic aching knee pain worsening with walking. HPI: degenerative cartilage wear-and-tear.",
+    "objective": "Vitals normal. Knee exam for effusion, warmth, joint line tenderness, and range of motion; other joints screened for synovitis. Gait and hip exam performed to assess for referred pain. No hot/swollen joint or fever today.",
+    "assessment": "Chronic knee pain in a young adult; osteoarthritis is atypical at this age, so the differential must include inflammatory arthritis, overuse/mechanical injury, and referred pain pending further evaluation.",
+    "plan": "This presentation is not sufficient to confirm osteoarthritis in a 20-year-old. Perform a focused knee and hip examination and assess for inflammatory arthritis, trauma/overuse, infection, and referred pain; obtain targeted tests or imaging based on findings. A hot/swollen joint, fever, inability to bear weight, or systemic illness needs urgent assessment for septic arthritis. A clinician should review renal, gastrointestinal, cardiovascular, anticoagulant, and pregnancy risks before recommending NSAIDs."
+  },
+  "learning_objectives": [
+    "Recognize that osteoarthritis is atypical in a 20-year-old and broaden the differential to inflammatory arthritis, overuse injury, and referred pain",
+    "Select appropriate diagnostic workup (exam, inflammatory markers/serology, imaging) for atypical young-adult knee pain",
+    "Implement evidence-based management once a diagnosis is confirmed, including septic-arthritis red-flag screening"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Knee Pain in a Young Adult (Osteoarthritis Atypical)",
+    "one_liner": "Chronic aching knee pain in a 20-year-old — osteoarthritis is atypical at this age, so the presentation warrants evaluation for inflammatory arthritis, overuse injury, or referred pain rather than assuming degenerative disease.",
+    "differentials": [
+      "Rheumatoid arthritis or other inflammatory arthritis",
+      "Meniscal or overuse injury",
+      "Referred hip pathology"
+    ],
+    "red_flags": [
+      "Sudden severe swelling"
+    ],
+    "must_ask": [
+      {
+        "objective": "Pain with walking",
+        "say": "Does the pain get worse the more you walk?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Morning stiffness",
+        "say": "How long does morning stiffness last?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has this been going on?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Swelling",
+        "say": "Is the knee swollen?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Impact on function",
+        "say": "How is this affecting your daily activities?",
+        "domains": [
+          "severity"
+        ]
+      }
+    ]
+  }
+}

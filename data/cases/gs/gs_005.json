@@ -1,0 +1,153 @@
+{
+  "id": "gs_005",
+  "system": "general_surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. King",
+  "age": 61,
+  "gender": "male",
+  "chief_complaint": "severe colicky abdominal cramps, vomiting, abdominal distension, and inability to pass gas or stool",
+  "hpi_details": "61M with history of open colon surgery presenting with progressive abdominal distension, feculent vomiting, and high-pitched tinkling bowel sounds. CT shows dilated loops with air-fluid levels.",
+  "ideas": "thinks this is related to small bowel obstruction due to adhesions",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "History of open colon surgery; no other significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "ct_small_bowel_obstruction",
+      "test": "CT abdomen and pelvis with IV contrast",
+      "value": "Dilated small-bowel loops up to 4.2 cm with multiple air-fluid levels and a transition point adjacent to the prior operative site; no pneumatosis or free air",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Small Bowel Obstruction due to Adhesions evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Small Bowel Obstruction due to Adhesions is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes bowel rest with nasogastric decompression and IV fluid resuscitation, with surgical intervention reserved for signs of strangulation or failure of nonoperative management, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe colicky abdominal cramps, vomiting, abdominal distension, and inability to pass gas or stool",
+      "Key HPI features: 61M with history of open colon surgery presenting with progressive abdominal distension, feculent vomiting, and high-pitched tinkling bowel sounds. CT shows dilated loops with air-fluid levels.",
+      "Objective/Exam findings: Abdomen distended and tympanic with high-pitched, tinkling bowel sounds. No peritoneal signs at rest. CT abdomen/pelvis shows dilated small bowel loops with air-fluid levels and a transition point, consistent with adhesive obstruction.",
+      "Relevant background/PMH: History of open colon surgery; no other significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Small Bowel Obstruction due to Adhesions.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Ileus (functional, no mechanical block) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or peritoneal signs — suggests strangulation and bowel ischemia."
+    ],
+    "management_principles": [
+      "Keep patient NPO, place a nasogastric tube for decompression, and initiate IV fluid resuscitation with electrolyte correction",
+      "Perform serial abdominal exams and monitor for fever, tachycardia, or peritoneal signs suggesting strangulation",
+      "Obtain urgent General Surgery consultation; proceed to surgical exploration if there is evidence of strangulation, peritonitis, or failure of nonoperative management within 24-48 hours"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Small Bowel Obstruction due to Adhesions: severe colicky abdominal cramps, vomiting, abdominal distension, and inability to pass gas or stool. 61M with history of open colon surgery presenting with progressive abdominal distension, feculent vomiting, and high-pitched tinkling bowel sounds. CT shows dilated loops with air-fluid levels.",
+    "objective": "Abdomen distended and tympanic with high-pitched, tinkling bowel sounds. No peritoneal signs at rest. CT abdomen/pelvis shows dilated small bowel loops with air-fluid levels and a transition point, consistent with adhesive obstruction.",
+    "assessment": "Small Bowel Obstruction due to Adhesions, uncomplicated (no current signs of strangulation).",
+    "plan": "1. NPO, nasogastric tube decompression, and IV fluid resuscitation with electrolyte correction. 2. Serial abdominal exams monitoring for signs of strangulation. 3. Urgent General Surgery consultation; proceed to surgery if strangulation, peritonitis, or failure of nonoperative management."
+  },
+  "learning_objectives": [
+    "Recognize the classic obstructive triad of colicky pain, distension, and inability to pass gas or stool",
+    "Link prior abdominal surgery to adhesions as the leading cause of small bowel obstruction",
+    "Identify signs suggesting strangulation that mandate urgent surgical intervention",
+    "Execute nonoperative management with NG decompression and fluid resuscitation"
+  ],
+  "teaching": {
+    "diagnosis": "Small Bowel Obstruction due to Adhesions",
+    "one_liner": "Scar tissue from prior abdominal surgery kinks or narrows the small bowel, causing colicky pain, distension, vomiting, and inability to pass gas or stool.",
+    "differentials": [
+      "Ileus (functional, no mechanical block)",
+      "Large bowel obstruction",
+      "Volvulus"
+    ],
+    "red_flags": [
+      "Fever or peritoneal signs — suggests strangulation and bowel ischemia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Prior abdominal surgery",
+        "say": "Have you had abdominal surgery before, like a colon operation?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "surgery",
+          "colon",
+          "operation"
+        ]
+      },
+      {
+        "objective": "Character of the pain",
+        "say": "Does the pain come in waves, like cramping?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cramp",
+          "colicky",
+          "waves"
+        ]
+      },
+      {
+        "objective": "Passing gas or stool",
+        "say": "Are you able to pass any gas or have a bowel movement?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "gas",
+          "stool",
+          "bowel movement"
+        ]
+      },
+      {
+        "objective": "Vomiting character",
+        "say": "What does the vomit look like — is it green, or does it smell foul?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "vomit",
+          "green",
+          "feculent"
+        ]
+      },
+      {
+        "objective": "Distension progression",
+        "say": "Has your belly been getting more swollen?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "distension",
+          "swollen",
+          "bloated"
+        ]
+      }
+    ]
+  }
+}

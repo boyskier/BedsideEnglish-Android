@@ -1,0 +1,144 @@
+{
+  "id": "fm_019",
+  "system": "family medicine",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Walker",
+  "age": 64,
+  "gender": "male",
+  "chief_complaint": "routine lab work shows eGFR 48 mL/min/1.73m2 and persistent microalbuminuria in chronic hypertensive diabetic",
+  "hpi_details": "64M presenting with CKD Stage 3a where primary care nephroprotection mandates optimizing ACE inhibitor/ARB therapy, adding an SGLT2 inhibitor (Dapagliflozin), strict blood pressure control <130/80, avoiding nephrotoxic NSAIDs, and monitoring calcium/phosphorus/PTH.",
+  "ideas": "thinks this is related to chronic kidney disease ckd stage 3 management",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, Type 2 diabetes mellitus",
+  "medications": "ACE inhibitor",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "egfr",
+      "test": "Estimated glomerular filtration rate",
+      "value": "48",
+      "unit": "mL/min/1.73 m2",
+      "reference_range": ">=60",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "urine_albumin_creatinine_ratio",
+      "test": "Urine albumin-to-creatinine ratio",
+      "value": "78",
+      "unit": "mg/g",
+      "reference_range": "<30",
+      "flag": "high",
+      "specimen": "Spot urine",
+      "note": "Persistently elevated on repeat testing"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Chronic Kidney Disease, Stage 3a evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Chronic Kidney Disease, Stage 3a is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes nephroprotection through blood pressure control, ACE inhibitor/ARB optimization, and avoidance of nephrotoxic agents, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: routine lab work shows eGFR 48 mL/min/1.73m2 and persistent microalbuminuria in chronic hypertensive diabetic",
+      "Key HPI features: 64M presenting with CKD Stage 3a where primary care nephroprotection mandates optimizing ACE inhibitor/ARB therapy, adding an SGLT2 inhibitor (Dapagliflozin), strict blood pressure control <130/80, avoiding nephrotoxic NSAIDs, and monitoring calcium/phosphorus/PTH.",
+      "Objective/Exam findings: Blood pressure often elevated; may have mild peripheral edema. eGFR 48 mL/min/1.73m2 and persistent microalbuminuria on labs.",
+      "Relevant background/PMH: Hypertension, Type 2 diabetes mellitus"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Chronic Kidney Disease, Stage 3a.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute kidney injury (would be a sudden change) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly worsening kidney function — would need urgent nephrology referral."
+    ],
+    "management_principles": [
+      "Optimize ACE inhibitor/ARB therapy and blood pressure control to a target <130/80, adding an SGLT2 inhibitor when indicated",
+      "Refer to nephrology if eGFR is rapidly declining, if stage progresses beyond 3b, or if uncertainty remains about etiology; otherwise manage in primary care with regular monitoring",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Chronic Kidney Disease CKD Stage 3 Management: routine lab work shows eGFR 48 mL/min/1.73m2 and persistent microalbuminuria in chronic hypertensive diabetic. 64M presenting with CKD Stage 3a where primary care nephroprotection mandates optimizing ACE inhibitor/ARB therapy, adding an SGLT2 inhibitor (Dapagliflozin), strict blood pressure control <130/80, avoiding nephrotoxic NSAIDs, and monitoring calcium/phosphorus/PTH.",
+    "objective": "Blood pressure mildly elevated, no significant peripheral edema. Labs: eGFR 48 mL/min/1.73m2, persistent microalbuminuria.",
+    "assessment": "Chronic kidney disease, Stage 3a, in the setting of long-standing hypertension and type 2 diabetes.",
+    "plan": "Confirm chronicity and stage with eGFR and urine albumin-creatinine ratio, optimize blood-pressure control and ACE inhibitor/ARB therapy when albuminuria or another indication is present, and avoid nephrotoxic NSAIDs. Consider an SGLT2 inhibitor when indicated by eGFR, albuminuria, diabetes, heart failure, and contraindications rather than automatically for every patient. Monitor kidney function, potassium, anemia, and mineral-bone parameters as appropriate."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Chronic Kidney Disease CKD Stage 3 Management",
+    "Formulate prioritized differential diagnosis for routine lab work shows eGFR 48 mL/min/1.73m2 and persistent microalbuminuria in chronic hypertensive diabetic",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Chronic Kidney Disease, Stage 3a",
+    "one_liner": "Reduced kidney filtration found on routine labs in a patient with hypertension and diabetes, with protein leaking into the urine (microalbuminuria) — managed with ACE inhibitor/ARB optimization and avoiding nephrotoxic drugs.",
+    "differentials": [
+      "Acute kidney injury (would be a sudden change)",
+      "Diabetic nephropathy specifically"
+    ],
+    "red_flags": [
+      "Rapidly worsening kidney function — would need urgent nephrology referral"
+    ],
+    "must_ask": [
+      {
+        "objective": "How the finding was made",
+        "say": "Was this found on routine blood work?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Underlying conditions",
+        "say": "How long have you had high blood pressure or diabetes, and how controlled have they been?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Medication use",
+        "say": "Do you regularly take pain relievers like ibuprofen?",
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "nsaid"
+        ]
+      },
+      {
+        "objective": "Symptoms",
+        "say": "Any swelling in your legs or changes in your urine?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Fatigue",
+        "say": "How is your energy level?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

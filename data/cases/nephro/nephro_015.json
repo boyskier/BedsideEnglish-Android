@@ -1,0 +1,141 @@
+{
+  "id": "nephro_015",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Baker",
+  "age": 54,
+  "gender": "male",
+  "chief_complaint": "cloudy dialysis drainage bags, abdominal pain, and fever",
+  "hpi_details": "54M on chronic CAPD presenting with cloudy peritoneal effluent, diffuse abdominal tenderness, and fluid cell count >100 WBCs/uL with >50% neutrophils.",
+  "ideas": "thinks this is related to peritoneal dialysis bacterial peritonitis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "peritoneal_fluid_cell_count",
+      "test": "Peritoneal dialysis effluent cell count",
+      "value": "480 WBC/uL; 78% neutrophils",
+      "reference_range": "<100 WBC/uL and <50% neutrophils",
+      "flag": "high",
+      "specimen": "Cloudy peritoneal dialysis effluent",
+      "note": "Gram stain and culture are pending; empiric intraperitoneal antibiotics should not be delayed."
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Peritoneal Dialysis-Associated Bacterial Peritonitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Peritoneal Dialysis-Associated Bacterial Peritonitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt empiric intraperitoneal antibiotics covering both gram-positive and gram-negative organisms, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: cloudy dialysis drainage bags, abdominal pain, and fever",
+      "Key HPI features: 54M on chronic CAPD presenting with cloudy peritoneal effluent, diffuse abdominal tenderness, and fluid cell count >100 WBCs/uL with >50% neutrophils.",
+      "Objective/Exam findings: Vitals: BP 118/76, HR 92, Temp 38.1C. Diffuse abdominal tenderness with mild rebound, no rigidity. Catheter exit site clean, no erythema or discharge. Peritoneal fluid analysis: cloudy effluent, cell count 480 WBC/uL with 78% neutrophils; Gram stain pending. Bloods: WBC 13,200/uL, CRP elevated.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Peritoneal Dialysis-Associated Bacterial Peritonitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Exit-site or tunnel infection without peritonitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of sepsis (fever, hypotension) — needs urgent intraperitoneal antibiotics."
+    ],
+    "management_principles": [
+      "Send peritoneal fluid for cell count, Gram stain, and culture; start empiric intraperitoneal antibiotics covering gram-positive and gram-negative organisms (e.g., intraperitoneal Cefazolin plus Ceftazidime) without delay per ISPD guidelines",
+      "Add heparin to dialysate exchanges to prevent fibrin clot formation and catheter obstruction",
+      "Narrow antibiotic therapy once culture and sensitivity results are available",
+      "Consider catheter removal if no clinical improvement within 5 days or if fungal peritonitis is identified"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "54M on chronic CAPD presents with two days of cloudy dialysate bags, diffuse abdominal pain, and fever.",
+    "objective": "Vitals: BP 118/76, HR 92, Temp 38.1C. Diffuse abdominal tenderness with mild rebound, no rigidity. Catheter exit site clean, no erythema or discharge. Peritoneal fluid analysis: cloudy effluent, cell count 480 WBC/uL with 78% neutrophils; Gram stain pending. Bloods: WBC 13,200/uL, CRP elevated.",
+    "assessment": "Peritoneal Dialysis-Associated Bacterial Peritonitis (PD peritonitis) meeting ISPD diagnostic criteria.",
+    "plan": "Send peritoneal fluid for cell count, Gram stain, and culture; start empiric intraperitoneal antibiotics covering gram-positive and gram-negative organisms (e.g., intraperitoneal Cefazolin plus Ceftazidime) without delay per ISPD guidelines. Add heparin to dialysate exchanges to prevent fibrin clot/catheter obstruction. Narrow antibiotic therapy once culture results return; consider catheter removal if no improvement within 5 days or fungal peritonitis identified."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Peritoneal Dialysis Bacterial Peritonitis",
+    "Formulate prioritized differential diagnosis for cloudy dialysis drainage bags, abdominal pain, and fever",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Peritoneal Dialysis-Associated Bacterial Peritonitis",
+    "one_liner": "Bacteria enter the peritoneal cavity through the dialysis catheter, causing cloudy dialysate, diffuse abdominal pain, and fever — diagnosed by a peritoneal fluid white cell count over 100/uL with predominant neutrophils.",
+    "differentials": [
+      "Exit-site or tunnel infection without peritonitis",
+      "Sterile (chemical) peritonitis",
+      "Intra-abdominal surgical emergency"
+    ],
+    "red_flags": [
+      "Signs of sepsis (fever, hypotension) — needs urgent intraperitoneal antibiotics"
+    ],
+    "must_ask": [
+      {
+        "objective": "Dialysate appearance",
+        "say": "Has the fluid draining from your dialysis bag looked cloudy?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "cloudy",
+          "effluent"
+        ]
+      },
+      {
+        "objective": "Abdominal pain",
+        "say": "Where is the abdominal pain, and how severe is it?",
+        "domains": [
+          "location",
+          "severity"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Catheter site",
+        "say": "Has the skin around your catheter looked red or had any discharge?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "catheter site",
+          "redness"
+        ]
+      },
+      {
+        "objective": "Technique breach",
+        "say": "Have you noticed any breaks in your usual sterile technique when doing your exchanges?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

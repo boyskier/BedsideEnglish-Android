@@ -1,0 +1,136 @@
+{
+  "id": "id_037",
+  "system": "id",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Lee",
+  "age": 53,
+  "gender": "male",
+  "chief_complaint": "positive IGRA blood test, normal chest X-ray",
+  "hpi_details": "A 53-year-old male presents to the clinic after a routine occupational health screening showed a positive IGRA (interferon-gamma release assay) blood test for tuberculosis. He is entirely asymptomatic, denying cough, fever, night sweats, or weight loss. A chest X-ray obtained afterward was read as normal.",
+  "ideas": "thinks it might be related to ltbi",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {
+      "id": "igra",
+      "test": "Interferon-gamma release assay",
+      "value": "Positive",
+      "reference_range": "Negative",
+      "flag": "abnormal",
+      "specimen": "Blood",
+      "collected_at": "Before current encounter"
+    },
+    {
+      "id": "chest_xray",
+      "test": "Chest radiograph",
+      "value": "No focal infiltrate, cavitation, or hilar lymphadenopathy",
+      "flag": "normal",
+      "collected_at": "Before current encounter"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Latent Tuberculosis Infection (LTBI) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Latent Tuberculosis Infection (LTBI) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Plan for Latent TB Infection: Oral Rifampin daily for 4 months or Isoniazid for 9 months, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: positive IGRA blood test, normal chest X-ray",
+      "Key HPI features: A 53-year-old male presents to the clinic after a routine occupational health screening showed a positive IGRA blood test for tuberculosis. He is entirely asymptomatic, denying cough, fever, night sweats, or weight loss. A chest X-ray obtained afterward was read as normal.",
+      "Objective/Exam findings: Vitals: Temp 36.8C, HR 72, BP 118/76, well-appearing, no acute distress. Lungs clear to auscultation bilaterally, no lymphadenopathy. Chest X-ray: no infiltrate, cavitation, or hilar lymphadenopathy -- normal. IGRA (interferon-gamma release assay) positive.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Latent Tuberculosis Infection (LTBI).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Active tuberculosis (would have symptoms/abnormal imaging) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Any cough, fever, or weight loss — would suggest progression to active disease instead."
+    ],
+    "management_principles": [
+      "Plan for Latent TB Infection: Oral Rifampin daily for 4 months or Isoniazid for 9 months",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: positive IGRA blood test, normal chest X-ray\n\nA 53-year-old male presents to the clinic after a routine occupational health screening showed a positive IGRA blood test for tuberculosis. He is entirely asymptomatic, denying cough, fever, night sweats, or weight loss. A chest X-ray obtained afterward was read as normal.",
+    "objective": "Vitals: Temp 36.8C, HR 72, BP 118/76, well-appearing, no acute distress. Lungs clear to auscultation bilaterally, no lymphadenopathy. Chest X-ray: no infiltrate, cavitation, or hilar lymphadenopathy -- normal. IGRA (interferon-gamma release assay) positive.",
+    "assessment": "Latent Tuberculosis Infection (LTBI): positive IGRA in an asymptomatic patient with a normal chest X-ray and no clinical or radiographic evidence of active disease.",
+    "plan": "Plan for Latent TB Infection: Oral Rifampin daily for 4 months or Isoniazid for 9 months. Consult specialist if symptoms worsen. Counsel patient."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Latent TB Infection",
+    "Select appropriate diagnostic workup for Latent TB Infection",
+    "Implement evidence-based management plan: Oral Rifampin daily for 4 months or Isoniazid for 9 months"
+  ],
+  "teaching": {
+    "diagnosis": "Latent Tuberculosis Infection (LTBI)",
+    "one_liner": "A positive TB blood test (IGRA) with a normal chest X-ray and no symptoms — the immune system has contained the bacteria, but treatment prevents future reactivation.",
+    "differentials": [
+      "Active tuberculosis (would have symptoms/abnormal imaging)",
+      "False-positive IGRA"
+    ],
+    "red_flags": [
+      "Any cough, fever, or weight loss — would suggest progression to active disease instead"
+    ],
+    "must_ask": [
+      {
+        "objective": "Symptoms (to rule out active TB)",
+        "say": "Do you have any cough, fever, or weight loss?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Exposure history",
+        "say": "Have you been around anyone with active tuberculosis?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "How the test was found",
+        "say": "How did you come to get this blood test done?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you have any condition that weakens your immune system?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "The patient's concern",
+        "say": "What worries you about this diagnosis?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

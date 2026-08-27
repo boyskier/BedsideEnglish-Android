@@ -1,0 +1,179 @@
+{
+  "id": "nephro_011",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Rodriguez",
+  "age": 65,
+  "gender": "male",
+  "chief_complaint": "sudden refractory high blood pressure and flash pulmonary edema",
+  "hpi_details": "65M with peripheral vascular disease presenting with flash pulmonary edema and acute worsening of hypertension upon starting ACE inhibitor therapy.",
+  "ideas": "thinks this is related to renal artery stenosis renovascular htn",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "investigation_events": [
+    {
+      "id": "stat_renovascular_hypertension_workup",
+      "title": "Urgent renal function and renal artery assessment",
+      "order_terms": [
+        "creatinine",
+        "renal function",
+        "electrolytes",
+        "potassium",
+        "renal duplex",
+        "renal artery ultrasound"
+      ],
+      "availability_message": "Urgent renal blood tests and renal duplex results are now available. Stabilization of the flash pulmonary edema and discontinuation of the ACE inhibitor should not be delayed while awaiting imaging.",
+      "results": [
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "2.4",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "high",
+          "note": "Baseline creatinine was 1.1 mg/dL before ACE inhibitor therapy."
+        },
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "5.2",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "high"
+        },
+        {
+          "id": "renal_duplex",
+          "test": "Renal artery duplex ultrasound",
+          "value": "Hemodynamically significant bilateral renal artery stenosis",
+          "flag": "abnormal",
+          "note": "Markedly elevated peak systolic velocities are present in both renal arteries."
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Renal Artery Stenosis (Renovascular Hypertension) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Renal Artery Stenosis (Renovascular Hypertension) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes discontinuing the ACE inhibitor/ARB immediately given the acute creatinine rise, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden refractory high blood pressure and flash pulmonary edema",
+      "Key HPI features: 65M with peripheral vascular disease presenting with flash pulmonary edema and acute worsening of hypertension upon starting ACE inhibitor therapy.",
+      "Objective/Exam findings: Vitals: BP 210/118, HR 102, RR 26, SpO2 88% on room air. Bilateral crackles to mid-lung fields, JVD, S4 gallop. Abdominal bruit audible in the epigastric region. Bloods: Creatinine rose from baseline 1.1 to 2.4 mg/dL after starting the ACE inhibitor, K+ 5.2 mEq/L. Renal duplex ultrasound shows bilateral renal artery stenosis with elevated peak systolic velocities.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Renal Artery Stenosis (Renovascular Hypertension).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Primary (essential) hypertension without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Recurrent flash pulmonary edema with normal heart function — a classic clue to bilateral renal artery stenosis."
+    ],
+    "management_principles": [
+      "Discontinue ACE inhibitor/ARB immediately given the acute creatinine rise — a hallmark of bilateral (or solitary-kidney) renal artery stenosis",
+      "Manage flash pulmonary edema acutely with IV loop diuretics, oxygen, and blood pressure control using agents other than ACEi/ARB (e.g., calcium channel blocker)",
+      "Confirm diagnosis with renal duplex ultrasound or CT/MR angiography; refer for renal artery revascularization (angioplasty +/- stenting) if severe stenosis confirmed"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "65M with peripheral vascular disease presents with sudden shortness of breath and markedly elevated blood pressure shortly after starting an ACE inhibitor for hypertension.",
+    "objective": "Vitals: BP 210/118, HR 102, RR 26, SpO2 88% on room air. Bilateral crackles to mid-lung fields, JVD, S4 gallop. Abdominal bruit audible in the epigastric region. Bloods: Creatinine rose from baseline 1.1 to 2.4 mg/dL after starting the ACE inhibitor, K+ 5.2 mEq/L. Renal duplex ultrasound shows bilateral renal artery stenosis with elevated peak systolic velocities.",
+    "assessment": "Renovascular Hypertension due to (likely bilateral) Renal Artery Stenosis, complicated by flash pulmonary edema and ACE-inhibitor-induced acute kidney injury.",
+    "plan": "Discontinue ACE inhibitor/ARB immediately given the acute creatinine rise. Manage flash pulmonary edema acutely with IV loop diuretics, oxygen, and blood pressure control using agents other than ACEi/ARB (e.g., calcium channel blocker). Confirm diagnosis with renal duplex ultrasound or CT/MR angiography; refer for renal artery revascularization (angioplasty +/- stenting) if severe stenosis confirmed."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Renal Artery Stenosis Renovascular HTN",
+    "Formulate prioritized differential diagnosis for sudden refractory high blood pressure and flash pulmonary edema",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Renal Artery Stenosis (Renovascular Hypertension)",
+    "one_liner": "Narrowing of the artery supplying the kidney activates the renin-angiotensin system, causing severe hypertension and — classically — sudden flash pulmonary edema and worsening kidney function when an ACE inhibitor is started.",
+    "differentials": [
+      "Primary (essential) hypertension",
+      "Acute decompensated heart failure alone",
+      "Pheochromocytoma"
+    ],
+    "red_flags": [
+      "Recurrent flash pulmonary edema with normal heart function — a classic clue to bilateral renal artery stenosis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to ACE inhibitor",
+        "say": "Did your blood pressure or breathing get worse after starting a new blood pressure medication?",
+        "domains": [
+          "onset_duration",
+          "medications"
+        ],
+        "keywords": [
+          "ACE inhibitor",
+          "started",
+          "worse"
+        ]
+      },
+      {
+        "objective": "Breathlessness episodes",
+        "say": "Have you had sudden episodes of severe shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "flash",
+          "sudden",
+          "breathless"
+        ]
+      },
+      {
+        "objective": "Vascular disease history",
+        "say": "Do you have any history of blocked arteries elsewhere, like in your legs or heart?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "peripheral vascular disease"
+        ]
+      },
+      {
+        "objective": "Blood pressure control history",
+        "say": "How difficult has it been to control your blood pressure with medications?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "resistant",
+          "difficult to control"
+        ]
+      },
+      {
+        "objective": "Smoking history",
+        "say": "Do you smoke, or have you smoked?",
+        "domains": [
+          "smoking"
+        ]
+      }
+    ]
+  }
+}

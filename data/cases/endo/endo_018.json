@@ -1,0 +1,171 @@
+{
+  "id": "endo_018",
+  "system": "endocrinology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Torres",
+  "age": 35,
+  "gender": "female",
+  "chief_complaint": "severe neck pain radiating to jaw and fever after viral infection",
+  "hpi_details": "35F with painful, exquisite anterior neck tenderness, low-grade fever, and transient thyrotoxicosis 3 weeks post-URI. High ESR, low RAIU.",
+  "ideas": "thinks this is related to de quervain subacute thyroiditis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "esr",
+      "test": "Erythrocyte sedimentation rate",
+      "value": "78",
+      "unit": "mm/h",
+      "reference_range": "0-20",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "tsh",
+      "test": "TSH",
+      "value": "0.03",
+      "unit": "mIU/L",
+      "reference_range": "0.4-4.0",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "free_t4",
+      "test": "Free T4",
+      "value": "2.2",
+      "unit": "ng/dL",
+      "reference_range": "0.8-1.8",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "radioactive_iodine_uptake",
+      "test": "24-hour radioactive iodine uptake",
+      "value": "2",
+      "unit": "%",
+      "reference_range": "10-30",
+      "flag": "low"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "De Quervain (Subacute) Thyroiditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of De Quervain (Subacute) Thyroiditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes treating thyroid pain with NSAIDs or glucocorticoids and controlling thyrotoxic symptoms with a beta-blocker, while avoiding antithyroid drugs since hormone release is from destructive thyroiditis rather than overproduction, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe neck pain radiating to jaw and fever after viral infection",
+      "Key HPI features: 35F with painful, exquisite anterior neck tenderness, low-grade fever, and transient thyrotoxicosis 3 weeks post-URI. High ESR, low RAIU.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for De Quervain Subacute Thyroiditis.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out De Quervain (Subacute) Thyroiditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Graves' disease without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: High fever with severe systemic toxicity — would suggest bacterial thyroiditis instead."
+    ],
+    "management_principles": [
+      "Treat thyroid pain and inflammation with an NSAID or, if severe or unresponsive, glucocorticoids; use a beta-blocker for thyrotoxic symptoms, but do not use antithyroid drugs because hormone release is from destructive thyroiditis",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Thyroid Association (ATA) Guidelines for Diagnosis and Management of Hyperthyroidism and Other Causes of Thyrotoxicosis",
+        "url": "https://www.thyroid.org/professionals/ata-professional-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of De Quervain Subacute Thyroiditis: severe neck pain radiating to jaw and fever after viral infection. 35F with painful, exquisite anterior neck tenderness, low-grade fever, and transient thyrotoxicosis 3 weeks post-URI. High ESR, low RAIU.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for De Quervain Subacute Thyroiditis.",
+    "assessment": "Clinical presentation highly suggestive of De Quervain Subacute Thyroiditis.",
+    "plan": "Treat pain and inflammation with an NSAID; use glucocorticoids if pain is severe or does not respond. Use a beta-blocker for troublesome palpitations or tremor. Do not prescribe antithyroid drugs because the transient thyrotoxicosis is due to release of preformed hormone. Monitor thyroid function for a hypothyroid phase and recovery."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of De Quervain Subacute Thyroiditis",
+    "Formulate prioritized differential diagnosis for severe neck pain radiating to jaw and fever after viral infection",
+    "Select appropriate laboratory and imaging studies for endocrinology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "De Quervain (Subacute) Thyroiditis",
+    "one_liner": "A viral-triggered inflammation of the thyroid causing exquisite neck tenderness and transient thyrotoxicosis weeks after a respiratory infection — self-limited, distinguished from Graves' by a low radioactive iodine uptake.",
+    "differentials": [
+      "Graves' disease",
+      "Acute suppurative thyroiditis (bacterial, more toxic-appearing)",
+      "Hashimoto's thyroiditis with transient thyrotoxicosis"
+    ],
+    "red_flags": [
+      "High fever with severe systemic toxicity — would suggest bacterial thyroiditis instead"
+    ],
+    "must_ask": [
+      {
+        "objective": "Neck pain character",
+        "say": "Is your neck very tender to touch, and does the pain move to your jaw or ear?",
+        "domains": [
+          "character",
+          "radiation"
+        ],
+        "keywords": [
+          "tender",
+          "jaw"
+        ]
+      },
+      {
+        "objective": "Preceding viral illness",
+        "say": "Did you have a cold or viral infection a few weeks ago?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "viral",
+          "weeks ago"
+        ]
+      },
+      {
+        "objective": "Thyrotoxic symptoms",
+        "say": "Have you felt your heart racing or unusually anxious?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "palpitations"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long has the neck pain lasted?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

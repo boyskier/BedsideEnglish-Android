@@ -1,0 +1,170 @@
+{
+  "id": "gs_002",
+  "system": "general_surgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mrs. Jenkins",
+  "age": 71,
+  "gender": "female",
+  "chief_complaint": "sudden excruciating abdominal pain radiating to back, pulsatile abdominal mass, and fainting in older woman",
+  "hpi_details": "71F with history of hypertension and 50 pack-year smoking history brought in by EMS after experiencing sudden onset of tearing, agonizing pain in her mid-abdomen and lower back while walking in the garden, followed by a brief syncopal episode (fainting). Arrives pale, clammy, and complaining of severe throbbing back and belly pain.",
+  "ideas": "family thinks she had a massive heart attack or her spine collapsed",
+  "concerns": "family terrified by her pale clammy skin, low blood pressure, and extreme agony",
+  "expectations": "wants immediate resuscitation and surgical intervention to save her life",
+  "pmh": "Hypertension, coronary artery disease, COPD",
+  "medications": "Amlodipine 10mg, Atorvastatin 40mg",
+  "social_hx": "Retired factory worker, current smoker (1 pack/day)",
+  "investigation_events": [
+    {
+      "id": "bedside_aortic_ultrasound",
+      "title": "Bedside aortic ultrasound",
+      "order_terms": [
+        "bedside ultrasound",
+        "point of care ultrasound",
+        "pocus",
+        "aortic ultrasound",
+        "abdominal ultrasound",
+        "efast"
+      ],
+      "availability_message": "The bedside aortic ultrasound result is now available; permissive hypotension, massive transfusion activation, and immediate operative transfer should not be delayed for formal CT.",
+      "results": [
+        {
+          "id": "ruptured_abdominal_aortic_aneurysm",
+          "test": "Bedside aortic ultrasound",
+          "value": "8.2 cm infrarenal abdominal aortic aneurysm with surrounding retroperitoneal hematoma",
+          "flag": "critical",
+          "collected_at": "During emergency bedside assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Ruptured Abdominal Aortic Aneurysm (AAA) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Ruptured Abdominal Aortic Aneurysm (AAA) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes SURGICAL EMERGENCY - TIME TO OPERATING ROOM IS CRITICAL, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden excruciating abdominal pain radiating to back, pulsatile abdominal mass, and fainting in older woman",
+      "Key HPI features: 71F with history of hypertension and 50 pack-year smoking history brought in by EMS after experiencing sudden onset of tearing, agonizing pain in her mid-abdomen and lower back while walking in the garden, followed by a brief syncopal episode (fainting). Arrives pale, clammy, and complaining of severe throbbing back and belly pain.",
+      "Objective/Exam findings: Vitals: BP 80/48 (hypotensive shock), HR 126 (tachycardic), SpO2 94%, Temp 36.1C. Skin pale, cool, diaphoretic. Abdominal exam reveals a tender, expansile, pulsatile abdominal mass palpable in the epigastrium above the umbilicus. Femoral pulses weak bilaterally. Bedside Point-of-Care Ultrasound (POCUS / eFAST) immediately identifies an 8.2 cm abdominal aortic aneurysm with retroperitoneal free fluid/hematoma.",
+      "Relevant background/PMH: Hypertension, coronary artery disease, COPD",
+      "Current medications: Amlodipine 10mg, Atorvastatin 40mg"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Ruptured Abdominal Aortic Aneurysm (AAA).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute myocardial infarction without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Syncope with abdominal/back pain in an older smoker — assume AAA until proven otherwise."
+    ],
+    "management_principles": [
+      "SURGICAL EMERGENCY - TIME TO OPERATING ROOM IS CRITICAL",
+      "CRITICAL RULE: Implement Permissive Hypotension (maintain systolic BP between 80-90 mmHg; do NOT over-resuscitate with large volume crystalloids as high BP will disrupt blood clots and exacerbate active retroperitoneal bleeding)",
+      "Activate Massive Transfusion Protocol (MTP: 1:1:1 ratio of packed RBCs, FFP, and platelets) ready in OR"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "SAGES & ACS Evidence-Based Surgical Practice Guidelines",
+        "url": "https://www.facs.org/quality-programs/about-quality/evidence-based-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "71F heavy smoker presenting with classic triad of Ruptured Abdominal Aortic Aneurysm (AAA): sudden severe abdominal/back pain, pulsatile abdominal mass, and hypotension/syncope.",
+    "objective": "Vitals: BP 80/48 (hypotensive shock), HR 126 (tachycardic), SpO2 94%, Temp 36.1C. Skin pale, cool, diaphoretic. Abdominal exam reveals a tender, expansile, pulsatile abdominal mass palpable in the epigastrium above the umbilicus. Femoral pulses weak bilaterally. Bedside Point-of-Care Ultrasound (POCUS / eFAST) immediately identifies an 8.2 cm abdominal aortic aneurysm with retroperitoneal free fluid/hematoma.",
+    "assessment": "Ruptured Abdominal Aortic Aneurysm (AAA) with hemorrhagic shock - an immediate surgical emergency.",
+    "plan": "SURGICAL EMERGENCY - TIME TO OPERATING ROOM IS CRITICAL. 1. CRITICAL RULE: Implement Permissive Hypotension (maintain systolic BP between 80-90 mmHg; do NOT over-resuscitate with large volume crystalloids as high BP will disrupt blood clots and exacerbate active retroperitoneal bleeding). 2. Activate Massive Transfusion Protocol (MTP: 1:1:1 ratio of packed RBCs, FFP, and platelets) ready in OR. 3. Immediate STAT transfer directly to Operating Room for emergent Open AAA Repair or Endovascular Aneurysm Repair (EVAR) by Vascular/General Surgery team without delaying for formal CT scan."
+  },
+  "learning_objectives": [
+    "Identify clinical triad of ruptured abdominal aortic aneurysm (sudden abdominal/back pain, pulsatile mass, hypotension)",
+    "Enforce the critical resuscitation principle of Permissive Hypotension prior to vascular control in ruptured AAA",
+    "Execute immediate Point-of-Care Ultrasound (POCUS) verification to bypass time-consuming CT imaging in unstable patients",
+    "Coordinate immediate Massive Transfusion Protocol and direct Operating Room transfer for emergency aortic repair"
+  ],
+  "teaching": {
+    "diagnosis": "Ruptured Abdominal Aortic Aneurysm (AAA)",
+    "one_liner": "A catastrophic tear in a weakened aortic wall causing sudden tearing abdominal/back pain, a pulsatile mass, and hemorrhagic shock — a true surgical emergency measured in minutes.",
+    "differentials": [
+      "Acute myocardial infarction",
+      "Renal colic (kidney stone)",
+      "Aortic dissection"
+    ],
+    "red_flags": [
+      "Syncope with abdominal/back pain in an older smoker — assume AAA until proven otherwise",
+      "Hypotension and pallor"
+    ],
+    "must_ask": [
+      {
+        "objective": "Character and location of the pain",
+        "say": "Where exactly is the pain, and does it feel like it's tearing through to your back?",
+        "domains": [
+          "location",
+          "character"
+        ],
+        "keywords": [
+          "tearing",
+          "back",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Onset",
+        "say": "Did the pain start suddenly, all at once?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "sudden",
+          "all at once"
+        ]
+      },
+      {
+        "objective": "Syncope or near-fainting",
+        "say": "Did you feel faint or actually pass out?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "faint",
+          "syncope",
+          "passed out"
+        ]
+      },
+      {
+        "objective": "Cardiovascular risk factors",
+        "say": "Do you have high blood pressure, and have you smoked?",
+        "domains": [
+          "pmh",
+          "smoking"
+        ],
+        "keywords": [
+          "hypertension",
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Family history of aneurysm",
+        "say": "Has anyone in your family had an aortic aneurysm?",
+        "domains": [
+          "family_hx"
+        ],
+        "keywords": [
+          "aneurysm",
+          "family"
+        ]
+      }
+    ]
+  }
+}

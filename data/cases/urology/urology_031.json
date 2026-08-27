@@ -1,0 +1,155 @@
+{
+  "id": "urology_031",
+  "system": "urology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Hall",
+  "age": 65,
+  "gender": "female",
+  "chief_complaint": "sudden urge to urinate with leakage, frequency",
+  "hpi_details": "65-year-old female presents with frequent, sudden, and overwhelming urges to urinate, often resulting in urinary leakage before she can reach the bathroom. She voids more than 10 times a day. Denies dysuria or hematuria.",
+  "ideas": "thinks it might be related to oab",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "oab_urinalysis", "test": "Urinalysis", "value": "Nitrite negative; leukocyte esterase negative; blood negative", "flag": "normal", "specimen": "Urine"},
+    {"id": "oab_post_void_residual", "test": "Post-void residual", "value": "32", "unit": "mL", "reference_range": "<50", "flag": "normal", "collected_at": "During clinic assessment"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Overactive Bladder evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Overactive Bladder is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "First-line management is bladder training, fluid and caffeine modification, and pelvic-floor therapy; medication is considered only if these measures are insufficient and after reviewing contraindications.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden urge to urinate with leakage, frequency",
+      "Key HPI features: a 65-year-old woman has urinary urgency, frequency, and urge leakage without dysuria or hematuria.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Overactive Bladder.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Overactive Bladder.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Acute total urinary retention."
+    ],
+    "management_principles": [
+      "Start with bladder training, fluid and caffeine modification, and pelvic-floor exercises; consider an antimuscarinic or beta-3 agonist after checking post-void residual, blood pressure, cognition, constipation, and relevant contraindications.",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: sudden urge to urinate with leakage, frequency\n\n65-year-old female presents with frequent, sudden, and overwhelming urges to urinate, often resulting in urinary leakage before she can reach the bathroom. She voids more than 10 times a day. Denies dysuria or hematuria.",
+    "objective": "Pelvic exam reveals normal vaginal mucosa without significant pelvic organ prolapse. Urinalysis is negative for nitrites, leukocyte esterase, and blood. Post-void residual is minimal (<50 mL).",
+    "assessment": "Overactive Bladder (OAB) / Urge Incontinence.",
+    "plan": "Recommend behavioral modifications (timed voiding, fluid management, pelvic floor exercises). Prescribe an anticholinergic (Oxybutynin) or a beta-3 agonist (Mirabegron). Follow up in 6 weeks."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Overactive Bladder",
+    "Select appropriate diagnostic workup for Overactive Bladder",
+    "Implement evidence-based management plan: Bladder training, limit caffeine, Oxybutynin or Mirabegron"
+  ],
+  "teaching": {
+    "diagnosis": "Overactive Bladder",
+    "one_liner": "Urology evaluation for patient presenting with sudden urge to urinate with leakage, frequency.",
+    "differentials": [
+      "Urinary tract infection",
+      "Stress urinary incontinence",
+      "Polyuria from diabetes or excess fluid intake"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Urosepsis with high fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Urgency and frequency pattern",
+        "say": "How many times a day do you feel a sudden, overwhelming urge to urinate, and does it ever cause leaking before you reach the toilet?",
+        "domains": [
+          "character",
+          "onset_duration"
+        ],
+        "keywords": [
+          "urgency",
+          "frequency",
+          "leak",
+          "toilet",
+          "overwhelming"
+        ]
+      },
+      {
+        "objective": "Nocturia",
+        "say": "How many times do you wake up at night to urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nocturia",
+          "night",
+          "wake up"
+        ]
+      },
+      {
+        "objective": "Exclude infection - dysuria, hematuria",
+        "say": "Do you have any burning with urination or blood in your urine?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "dysuria",
+          "burning",
+          "hematuria",
+          "blood"
+        ]
+      },
+      {
+        "objective": "Fluid and caffeine intake",
+        "say": "How much coffee, tea, or fluids do you drink during the day?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "caffeine",
+          "fluids",
+          "intake",
+          "coffee"
+        ]
+      },
+      {
+        "objective": "Impact on quality of life",
+        "say": "How is this affecting your daily routine and sleep?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "quality of life",
+          "routine",
+          "sleep",
+          "impact"
+        ]
+      }
+    ]
+  }
+}

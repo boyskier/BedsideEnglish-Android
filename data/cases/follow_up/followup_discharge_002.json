@@ -1,0 +1,251 @@
+{
+  "id": "followup_discharge_002",
+  "system": "follow_up",
+  "encounter_type": "follow_up",
+  "follow_up_type": "post_discharge",
+  "difficulty": "intermediate",
+  "eval_template": "follow_up",
+  "patient_name": "Mr. James Walker",
+  "age": 60,
+  "gender": "male",
+  "visit_title": "Post-stent cardiac discharge review",
+  "follow_up_reason": "One-week post-PCI hospital discharge review",
+  "clinician_brief": {
+    "prior_note": "Discharged 7 days ago after drug-eluting stent placement to LAD for NSTEMI. Dual Antiplatelet Therapy (DAPT: Aspirin + Ticagrelor) was initiated.",
+    "active_problems": [
+      "CAD s/p PCI to LAD",
+      "NSTEMI",
+      "Hypertension",
+      "Hypercholesterolemia"
+    ],
+    "current_medications": [
+      "Aspirin 81 mg once daily",
+      "Ticagrelor 90 mg twice daily",
+      "Atorvastatin 80 mg once daily",
+      "Metoprolol succinate 50 mg once daily",
+      "Lisinopril 10 mg once daily"
+    ],
+    "previous_plan": [
+      "Strict DAPT adherence (do not discontinue without cardiologist approval)",
+      "Right femoral puncture site care",
+      "Cardiac rehabilitation enrollment",
+      "Cardiology review in 1 week"
+    ],
+    "results_and_observations": [
+      "Discharge LVEF 55%",
+      "Creatinine 0.9 mg/dL",
+      "Femoral puncture site clean at discharge"
+    ],
+    "today_tasks": [
+      "Examine groin puncture site for hematoma, pseudoaneurysm, or infection",
+      "Reinforce critical DAPT adherence and consequences of sudden cessation (stent thrombosis)",
+      "Assess exertional chest pain, shortness of breath, and cardiac red flags",
+      "Check for bleeding side effects (easy bruising, minor gum bleeding)",
+      "Confirm cardiac rehabilitation schedule and follow-up"
+    ]
+  },
+  "patient_private": {
+    "interval_history": "Walking around the house comfortably. Groin site has a minor yellowish bruise but no lump.",
+    "adherence": "Takes aspirin every morning and ticagrelor at 8 AM and 8 PM.",
+    "treatment_response": "No chest pain since stent placement.",
+    "side_effects": "Noticed minor bruising on right thigh and slight dyspnea on taking deep breaths.",
+    "new_symptoms_and_red_flags": "No recurrent angina, heavy bleeding, expanding groin mass, or syncope.",
+    "agenda": "Wants to know when he can return to driving and light work.",
+    "concern": "Terrified that skipping one ticagrelor pill will cause a sudden heart attack.",
+    "preference": "Eager to start cardiac rehab to rebuild his physical confidence."
+  },
+  "clinical_knowledge": {
+    "topic": "Confirming uncomplicated recovery one week after LAD drug-eluting stent placement for NSTEMI, and directly answering his fear that one missed ticagrelor dose could trigger a heart attack",
+    "review_status": "guideline-grounded sample; clinician review still recommended before release",
+    "reviewed_at": "2026-08-13",
+    "core_concepts": [
+      "Dual antiplatelet therapy (aspirin plus a P2Y12 inhibitor like ticagrelor) after drug-eluting stent placement for an acute coronary syndrome is generally continued for at least 12 months to prevent stent thrombosis, a rare but often catastrophic event where a clot forms on the still-endothelializing stent surface.",
+      "Stent thrombosis risk is highest in the first weeks after PCI and falls over time as the stent endothelializes, which is exactly why his current strict adherence matters most right now, one week out, even more than it will a year from now.",
+      "A single inadvertently missed dose is not equivalent to purposeful early discontinuation — the danger guidelines warn about is stopping DAPT altogether (especially both agents, or premature permanent cessation), not an isolated missed dose, which is an important distinction for calming his specific fear.",
+      "Femoral access-site complications (hematoma, pseudoaneurysm, retroperitoneal bleed) are the main procedural risks to actively screen for in the first 1-2 weeks post-PCI, distinct from the separate ongoing risk of stent thrombosis from DAPT interruption.",
+      "Driving restrictions and return-to-work timing after uncomplicated PCI are typically brief (often days, per local/regional licensing rules) when there is no ongoing chest pain, arrhythmia, or reduced ejection fraction, unlike the longer restrictions after some other cardiac events."
+    ],
+    "diagnostic_clues": [
+      "No chest pain since stent placement, with comfortable ambulation around the house, is reassuring against recurrent ischemia or early stent thrombosis.",
+      "A minor yellowish (resolving) groin bruise without a palpable lump or expanding mass is consistent with a normal healing hematoma rather than a pseudoaneurysm needing ultrasound.",
+      "BP 118/74 and HR 62 with a clean, non-bruit femoral site on exam objectively confirms there is no vascular complication requiring further workup today.",
+      "Mild dyspnea on deep breaths alone, without exertional dyspnea, chest pain, or orthopnea, is more consistent with post-procedural chest wall discomfort than a new cardiac or pulmonary complication, but should be specifically characterized.",
+      "Discharge LVEF of 55% (normal/preserved) is a favorable prognostic marker distinguishing his risk profile from a post-MI patient with reduced ejection fraction, relevant to how quickly he can safely return to activity."
+    ],
+    "common_misconceptions": [
+      "His fear that skipping one ticagrelor dose 'will cause a sudden heart attack' overstates the risk of a single missed dose while underselling the real danger of intentionally stopping DAPT altogether — the message should be reassurance about isolated lapses paired with firm counseling against ever discontinuing the regimen without cardiology input.",
+      "Assuming that feeling well and having no chest pain means the stent has 'healed' and antiplatelet therapy could be relaxed early, when the prescribed duration is based on population-level stent endothelialization timelines, not on how a given patient currently feels.",
+      "Believing minor bruising at the groin site necessarily signals a bleeding problem from the antiplatelet therapy that should prompt stopping a drug, when a small, non-expanding bruise is an expected and self-limited part of femoral access recovery.",
+      "Assuming return to driving and light work is either fully forbidden or fully unrestricted, when in reality it is usually time-limited and tied to specific criteria (no arrhythmia, adequate LVEF, no ongoing chest pain) that can be explicitly reviewed today."
+    ],
+    "dangerous_errors": [
+      "Failing to explicitly and clearly reinforce that DAPT must not be stopped without cardiology approval — a message so critical to stent thrombosis prevention that it should never be assumed already understood.",
+      "Not examining the groin site directly (visual inspection and palpation for a pulsatile mass or bruit) before verbally reassuring him it is healing normally.",
+      "Overlooking a targeted history for bleeding side effects (melena, hematuria, excessive bruising) that would need dose or duration reassessment, since DAPT bleeding risk is the main tradeoff against its ischemic benefit.",
+      "Giving generic driving/return-to-work advice without checking local licensing authority rules specific to recent PCI, since these requirements vary by jurisdiction."
+    ],
+    "management_principles": [
+      "Reinforce uninterrupted DAPT for the planned duration (commonly around 12 months after an ACS-related stent, per the treating cardiologist's plan), explicitly separating the danger of stopping therapy from the near-harmlessness of an isolated missed dose.",
+      "Examine the groin puncture site directly and document its benign appearance to close the loop on his vascular-complication risk.",
+      "Confirm local driving-restriction guidance and clear him for a graded return to light work given his stable exam and normal LVEF.",
+      "Confirm his cardiac rehabilitation enrollment and next cardiology follow-up date before ending the visit."
+    ],
+    "boundaries_and_exceptions": [
+      "DAPT duration recommendations shift for patients with high bleeding risk, upcoming surgery, or specific stent/anatomic factors — those scenarios need individualized cardiology-directed duration rather than the standard 12-month default assumed here.",
+      "Any new or worsening chest pain, an expanding or pulsatile groin mass, or significant bleeding at any point would override this reassurance and require urgent evaluation rather than routine follow-up.",
+      "Driving and occupational restrictions differ for commercial drivers or safety-critical occupations, which would require separate, stricter clearance criteria than the general guidance given here."
+    ],
+    "source_refs": [
+      {
+        "title": "2025 ACC/AHA/ACEP/NAEMSP/SCAI Guideline for the Management of Patients with Acute Coronary Syndromes",
+        "url": "https://professional.heart.org/en/guidelines-statements/2025-accahaacepnaemspscai-guideline-for-the-management-of-patients-with-acutecir0000000000001309"
+      }
+    ]
+  },
+  "learning_objectives": [
+    "Confirm the post-cardiac discharge agenda",
+    "Examine groin access site and screen for vascular complications (hematoma, pseudoaneurysm)",
+    "Emphasize strict Dual Antiplatelet Therapy (DAPT) adherence and warn against premature stoppage",
+    "Screen for recurrent angina, dyspnea, and cardiac red flags",
+    "Assess antiplatelet bleeding side effects (bruising, epistaxis)",
+    "Address stent fears and advise on driving and work resumption",
+    "Confirm cardiac rehabilitation enrollment and cardiology follow-up"
+  ],
+  "follow_up_hints": [
+    {
+      "objective": "Confirm the post-cardiac discharge agenda",
+      "category": "Agenda",
+      "question": "Since leaving the hospital after your stent procedure last week, what would you most like to review today?"
+    },
+    {
+      "objective": "Examine groin access site and screen for vascular complications (hematoma, pseudoaneurysm)",
+      "category": "Physical check",
+      "question": "How is your groin incision healing, and have you noticed any swelling, lump, or warmth there?"
+    },
+    {
+      "objective": "Emphasize strict Dual Antiplatelet Therapy (DAPT) adherence and warn against premature stoppage",
+      "category": "Critical medication",
+      "question": "How consistently are you taking your blood thinners aspirin and ticagrelor, and do you know why stopping them is dangerous?"
+    },
+    {
+      "objective": "Screen for recurrent angina, dyspnea, and cardiac red flags",
+      "category": "Safety",
+      "question": "Have you had any chest tightness, shortness of breath, dizziness, or heart palpitations?"
+    },
+    {
+      "objective": "Assess antiplatelet bleeding side effects (bruising, epistaxis)",
+      "category": "Tolerance",
+      "question": "Have you noticed easy bruising, nosebleeds, or bleeding when brushing your teeth?"
+    },
+    {
+      "objective": "Address stent fears and advise on driving and work resumption",
+      "category": "Concerns",
+      "question": "What questions do you have about returning to driving, work, or activities with your new stent?"
+    },
+    {
+      "objective": "Confirm cardiac rehabilitation enrollment and cardiology follow-up",
+      "category": "Shared plan",
+      "question": "Shall we confirm your cardiac rehab appointment and schedule your next heart clinic visit?"
+    }
+  ],
+  "objective_rules": [
+    {
+      "objective": "Confirm the post-cardiac discharge agenda",
+      "keywords": [
+        "discharge",
+        "stent",
+        "hospital",
+        "one week",
+        "agenda",
+        "today"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Examine groin access site and screen for vascular complications (hematoma, pseudoaneurysm)",
+      "keywords": [
+        "groin",
+        "puncture site",
+        "lump",
+        "swelling",
+        "hematoma",
+        "healing",
+        "bruise"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Emphasize strict Dual Antiplatelet Therapy (DAPT) adherence and warn against premature stoppage",
+      "keywords": [
+        "dapt",
+        "ticagrelor",
+        "aspirin",
+        "blood thinner",
+        "never stop",
+        "stent clot",
+        "adherence"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Screen for recurrent angina, dyspnea, and cardiac red flags",
+      "keywords": [
+        "chest pain",
+        "angina",
+        "shortness of breath",
+        "dizziness",
+        "palpitations",
+        "red flags"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Assess antiplatelet bleeding side effects (bruising, epistaxis)",
+      "keywords": [
+        "bruising",
+        "bleeding",
+        "gums",
+        "nosebleeds",
+        "side effects"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Address stent fears and advise on driving and work resumption",
+      "keywords": [
+        "driving",
+        "work",
+        "activity",
+        "stent",
+        "worry",
+        "worried",
+        "safe"
+      ],
+      "min_keywords": 2
+    },
+    {
+      "objective": "Confirm cardiac rehabilitation enrollment and cardiology follow-up",
+      "category": "Shared plan",
+      "keywords": [
+        "cardiac rehab",
+        "rehabilitation",
+        "cardiologist",
+        "clinic",
+        "agree",
+        "plan"
+      ],
+      "min_keywords": 2
+    }
+  ],
+  "reference_soap": {
+    "subjective": "60M s/p LAD stent for NSTEMI returns at 1 week post-discharge. No recurrent angina. Takes DAPT (aspirin + ticagrelor BID) faithfully. Reports minor groin bruising. Seeking clearance for driving and cardiac rehab.",
+    "objective": "BP 118/74, HR 62. Right groin puncture site clean without mass or bruit.",
+    "assessment": "Uncomplicated 1-week post-PCI recovery on LAD DES with DAPT compliance.",
+    "plan": "Reinforce uninterrupted DAPT (typically 12 months after ACS unless the cardiology team changes the plan), assess bleeding and ischemic symptoms, confirm driving restrictions under local rules, arrange cardiac rehabilitation, and ensure cardiology follow-up."
+  },
+  "hpi_details": "",
+  "teaching": {
+    "diagnosis": "Post-stent cardiac discharge review",
+    "one_liner": "Clinical scenario for evaluation and management of Post-stent cardiac discharge review."
+  }
+}

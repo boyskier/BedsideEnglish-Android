@@ -1,0 +1,167 @@
+{
+  "id": "fm_011",
+  "system": "family medicine",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Moore",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "routine cholesterol screening reveals LDL 168 mg/dL and 10-year ASCVD risk of 12.5% in 55-year-old smoker",
+  "hpi_details": "55M presents for review of cholesterol labs drawn at his annual physical. He feels entirely well and denies chest pain, dyspnea, or leg pain with walking. He has smoked about one pack of cigarettes per day for the past 30 years and has tried to quit twice without success. He eats a diet high in red meat and fried food, exercises only occasionally, and drinks socially. His father had a heart attack at age 60. He has never taken cholesterol medication before.",
+  "ideas": "assumed his cholesterol was fine since he has never had any symptoms",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Current smoker (1 pack/day for 30 years, has attempted to quit twice), sedentary lifestyle, occasional alcohol use",
+  "available_results": [
+    {
+      "id": "total_cholesterol",
+      "test": "Total cholesterol",
+      "value": "248",
+      "unit": "mg/dL",
+      "reference_range": "<200",
+      "flag": "high",
+      "specimen": "Fasting blood"
+    },
+    {
+      "id": "ldl_cholesterol",
+      "test": "LDL cholesterol",
+      "value": "168",
+      "unit": "mg/dL",
+      "reference_range": "<100",
+      "flag": "high",
+      "specimen": "Fasting blood"
+    },
+    {
+      "id": "hdl_cholesterol",
+      "test": "HDL cholesterol",
+      "value": "38",
+      "unit": "mg/dL",
+      "reference_range": ">=40",
+      "flag": "low",
+      "specimen": "Fasting blood"
+    },
+    {
+      "id": "triglycerides",
+      "test": "Triglycerides",
+      "value": "165",
+      "unit": "mg/dL",
+      "reference_range": "<150",
+      "flag": "high",
+      "specimen": "Fasting blood"
+    },
+    {
+      "id": "ascvd_risk",
+      "test": "Calculated 10-year ASCVD risk",
+      "value": "12.5",
+      "unit": "%",
+      "reference_range": "<7.5",
+      "flag": "high",
+      "collected_at": "Calculated before counseling"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Hyperlipidemia with elevated ASCVD risk evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Hyperlipidemia with elevated ASCVD risk is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management for intermediate ASCVD risk (10-year risk 7.5-19.9%) emphasizes shared decision-making about initiating moderate-to-high intensity statin therapy, incorporating risk-enhancing factors such as smoking and family history alongside lifestyle counseling, per ACC/AHA cholesterol guidelines.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: routine cholesterol screening reveals LDL 168 mg/dL and 10-year ASCVD risk of 12.5% in 55-year-old smoker",
+      "Key HPI features: 55M presents for review of cholesterol labs drawn at his annual physical. He feels entirely well and denies chest pain, dyspnea, or leg pain with walking. He has smoked about one pack of cigarettes per day for the past 30 years and has tried to quit twice without success. He eats a diet high in red meat and fried food, exercises only occasionally, and drinks socially. His father had a heart attack at age 60. He has never taken cholesterol medication before.",
+      "Objective/Exam findings: Vitals: BP 132/84, HR 78, BMI 27.6 kg/m2. Cardiovascular exam: regular rate and rhythm, no murmurs, no carotid bruits, peripheral pulses 2+ and symmetric bilaterally (no evidence of peripheral arterial disease). No xanthomas, xanthelasma, or corneal arcus on exam. Fasting Lipid Panel: Total Cholesterol 248 mg/dL, LDL 168 mg/dL, HDL 38 mg/dL, Triglycerides 165 mg/dL. Calculated 10-year ASCVD (Pooled Cohort Equations) risk score: 12.5% (intermediate risk).",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Hyperlipidemia with elevated ASCVD risk.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Familial hypercholesterolemia (if very high LDL or early family history) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Chest pain or exertional symptoms — would suggest existing coronary disease needing urgent workup."
+    ],
+    "management_principles": [
+      "Calculate the 10-year ASCVD risk using the Pooled Cohort Equations (or a newer validated calculator); at intermediate risk (7.5-19.9%), engage in shared decision-making about statin initiation, factoring in risk-enhancing factors such as smoking and family history of premature coronary disease.",
+      "Initiate moderate-intensity statin therapy (Atorvastatin 20 mg or Rosuvastatin 10 mg daily) targeting a 30-49% LDL reduction; consider a high-intensity statin (Atorvastatin 40-80 mg) given the additional risk-enhancing factor of current smoking.",
+      "Strongly counsel and offer pharmacologic support (varenicline, nicotine replacement therapy, or bupropion) for smoking cessation, since continued smoking is a major modifiable ASCVD risk factor independent of statin therapy.",
+      "Recommend a Mediterranean-style diet and regular aerobic exercise, and recheck a fasting lipid panel in 4-12 weeks after starting therapy to assess response and adherence."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "55M presenting for review of an elevated LDL (168 mg/dL) found on routine screening, with an intermediate calculated 10-year ASCVD risk of 12.5%. Currently asymptomatic without chest pain, dyspnea, or claudication; significant smoking history (1 pack/day x 30 years).",
+    "objective": "Vitals: BP 132/84, HR 78, BMI 27.6 kg/m2. Cardiovascular exam: regular rate and rhythm, no murmurs, no carotid bruits, peripheral pulses 2+ and symmetric bilaterally (no evidence of peripheral arterial disease). No xanthomas, xanthelasma, or corneal arcus on exam. Fasting Lipid Panel: Total Cholesterol 248 mg/dL, LDL 168 mg/dL, HDL 38 mg/dL, Triglycerides 165 mg/dL. Calculated 10-year ASCVD (Pooled Cohort Equations) risk score: 12.5% (intermediate risk).",
+    "assessment": "Hyperlipidemia (LDL 168 mg/dL) with Intermediate 10-Year ASCVD Risk (12.5%), risk-enhanced by current tobacco use.",
+    "plan": "1. Shared decision-making regarding statin initiation given intermediate ASCVD risk plus the risk-enhancing factor of current smoking: start moderate-to-high intensity statin therapy (Atorvastatin 20-40 mg PO daily), targeting at least a 30-49% LDL reduction. 2. Strongly recommend smoking cessation with pharmacologic support (varenicline, nicotine replacement therapy, or bupropion) and counseling/quitline referral. 3. Lifestyle counseling: Mediterranean-style diet, reducing saturated fat and red meat intake, and at least 150 minutes/week of aerobic exercise. 4. Recheck fasting lipid panel and liver function in 4-12 weeks to assess response and tolerability; screen for statin-associated muscle symptoms."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Hyperlipidemia Statin Risk Assessment",
+    "Formulate prioritized differential diagnosis for routine cholesterol screening reveals LDL 168 mg/dL and 10-year ASCVD risk of 12.5% in 55-year-old smoker",
+    "Select appropriate laboratory and imaging studies for family medicine",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Hyperlipidemia with elevated ASCVD risk",
+    "one_liner": "Elevated LDL cholesterol found on routine screening in a smoker, where the decision to start a statin is guided by the calculated 10-year cardiovascular risk score, not the cholesterol number alone.",
+    "differentials": [
+      "Familial hypercholesterolemia (if very high LDL or early family history)",
+      "Secondary dyslipidemia (hypothyroidism, diabetes)"
+    ],
+    "red_flags": [
+      "Chest pain or exertional symptoms — would suggest existing coronary disease needing urgent workup"
+    ],
+    "must_ask": [
+      {
+        "objective": "Smoking history",
+        "say": "How much and how long have you smoked?",
+        "domains": [
+          "smoking"
+        ]
+      },
+      {
+        "objective": "Symptom check",
+        "say": "Any chest pain or shortness of breath?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Family history",
+        "say": "Does heart disease or high cholesterol run in your family?",
+        "domains": [
+          "family_hx"
+        ]
+      },
+      {
+        "objective": "Diet",
+        "say": "What does your typical diet look like?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Concerns about statins",
+        "say": "What have you heard about statins that concerns you?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

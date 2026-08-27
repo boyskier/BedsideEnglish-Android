@@ -1,0 +1,214 @@
+{
+  "id": "id_008",
+  "system": "infectious_disease",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Perez",
+  "age": 55,
+  "gender": "male",
+  "chief_complaint": "rapidly spreading dusky purple skin infection with severe pain out of proportion to exam and skin crackling",
+  "hpi_details": "55M diabetic presenting with rapidly advancing leg erythema, bullae, crepitus, and excruciating pain. Requires immediate surgical debridement and broad-spectrum antibiotics.",
+  "ideas": "thinks this is related to necrotizing fasciitis gas gangrene emergency",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Type 2 diabetes mellitus, hypertension, mild dyslipidemia",
+  "medications": "Metformin 1000mg BID, Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "investigation_events": [
+    {
+      "id": "stat_necrotizing_infection_labs",
+      "title": "STAT necrotizing soft-tissue infection severity results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "cbc",
+        "complete blood count",
+        "lactate",
+        "metabolic panel",
+        "electrolytes",
+        "glucose",
+        "renal function",
+        "creatinine"
+      ],
+      "availability_message": "The STAT severity results are now available; broad-spectrum antibiotics, resuscitation, and immediate operative exploration must not be delayed for laboratory testing or imaging.",
+      "results": [
+        {
+          "id": "white_blood_cell_count",
+          "test": "White blood cell count",
+          "value": "22.0",
+          "unit": "x10^3/mcL",
+          "reference_range": "4.0-11.0",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "lactate",
+          "test": "Serum lactate",
+          "value": "4.2",
+          "unit": "mmol/L",
+          "reference_range": "0.5-2.2",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "sodium",
+          "test": "Serum sodium",
+          "value": "131",
+          "unit": "mEq/L",
+          "reference_range": "135-145",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "1.9",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        },
+        {
+          "id": "glucose",
+          "test": "Serum glucose",
+          "value": "310",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "flag": "critical",
+          "specimen": "Blood",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Necrotizing Fasciitis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Necrotizing Fasciitis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes emergent surgical debridement performed without delay for imaging, combined with broad-spectrum antibiotics covering gram-positive, gram-negative, and anaerobic organisms, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: rapidly spreading dusky purple skin infection with severe pain out of proportion to exam and skin crackling",
+      "Key HPI features: 55M diabetic presenting with rapidly advancing leg erythema, bullae, crepitus, and excruciating pain. Requires immediate surgical debridement and broad-spectrum antibiotics.",
+      "Objective/Exam findings: Vitals: Temp 38.7C, HR 128, BP 92/58, RR 24, SpO2 94% on room air (septic physiology). Rapidly advancing dusky-purple discoloration of the leg with hemorrhagic bullae, palpable crepitus, tense woody edema extending beyond the visible erythema, patchy skin anesthesia, and pain grossly out of proportion to exam. Bloods: WBC 22,000 /uL with left shift, CRP > 150 mg/L, Hemoglobin 10.8 g/dL, Sodium 131 mmol/L, Creatinine 1.9 mg/dL, Glucose 310 mg/dL, Lactate 4.2 mmol/L — LRINEC score >= 8 (high risk). Plain radiograph/CT of the leg shows soft tissue gas tracking along the fascial planes.",
+      "Relevant background/PMH: Type 2 diabetes mellitus, hypertension, mild dyslipidemia",
+      "Current medications: Metformin 1000mg BID, Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Necrotizing Fasciitis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Simple cellulitis (less pain, slower progression) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Pain out of proportion to the exam — the classic warning sign."
+    ],
+    "management_principles": [
+      "Obtain emergent surgical consultation for immediate operative exploration and debridement — do not delay surgery for imaging when clinical suspicion is high; expect need for repeat debridement within 24 hours",
+      "Start broad-spectrum empiric IV antibiotics immediately: Vancomycin + Piperacillin-Tazobactam + Clindamycin (Clindamycin adds antitoxin effect against toxin-producing Group A Streptococcus/Clostridium)",
+      "Begin aggressive IV fluid resuscitation and vasopressor support for septic shock, with strict glycemic control given underlying diabetes",
+      "Admit to ICU for hemodynamic monitoring and serial wound reassessment; consider IVIG if streptococcal toxic shock syndrome is suspected"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Necrotizing Fasciitis Gas Gangrene Emergency: rapidly spreading dusky purple skin infection with severe pain out of proportion to exam and skin crackling. 55M diabetic presenting with rapidly advancing leg erythema, bullae, crepitus, and excruciating pain. Requires immediate surgical debridement and broad-spectrum antibiotics.",
+    "objective": "Vitals: Temp 38.7C, HR 128, BP 92/58, RR 24, SpO2 94% on room air (septic physiology). Rapidly advancing dusky-purple discoloration of the leg with hemorrhagic bullae, palpable crepitus, tense woody edema extending beyond the visible erythema, patchy skin anesthesia, and pain grossly out of proportion to exam. Bloods: WBC 22,000 /uL with left shift, CRP > 150 mg/L, Hemoglobin 10.8 g/dL, Sodium 131 mmol/L, Creatinine 1.9 mg/dL, Glucose 310 mg/dL, Lactate 4.2 mmol/L — LRINEC score >= 8 (high risk). Plain radiograph/CT of the leg shows soft tissue gas tracking along the fascial planes.",
+    "assessment": "Necrotizing fasciitis of the left leg with septic shock in a patient with poorly controlled type 2 diabetes — a surgical emergency.",
+    "plan": "1. Obtain emergent surgical consultation for immediate operative exploration and debridement — do not delay surgery for imaging when clinical suspicion is high; expect need for repeat debridement within 24 hours. 2. Start broad-spectrum empiric IV antibiotics immediately: Vancomycin + Piperacillin-Tazobactam + Clindamycin (Clindamycin adds antitoxin effect against toxin-producing Group A Streptococcus/Clostridium). 3. Begin aggressive IV fluid resuscitation and vasopressor support for septic shock, with strict glycemic control given underlying diabetes. 4. Admit to ICU for hemodynamic monitoring and serial wound reassessment; consider IVIG if streptococcal toxic shock syndrome is suspected."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Necrotizing Fasciitis Gas Gangrene Emergency",
+    "Formulate prioritized differential diagnosis for rapidly spreading dusky purple skin infection with severe pain out of proportion to exam and skin crackling",
+    "Select appropriate laboratory and imaging studies for infectious_disease",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Necrotizing Fasciitis",
+    "one_liner": "A rapidly spreading, life-threatening soft tissue infection destroying fascia and skin, marked by pain dramatically out of proportion to visible findings, skin crepitus, and rapid progression — needs emergency surgical debridement.",
+    "differentials": [
+      "Simple cellulitis (less pain, slower progression)",
+      "Gas gangrene (clostridial myonecrosis)",
+      "Deep vein thrombosis"
+    ],
+    "red_flags": [
+      "Pain out of proportion to the exam — the classic warning sign",
+      "Skin crepitus (crackling) or rapidly advancing discoloration"
+    ],
+    "must_ask": [
+      {
+        "objective": "Speed of spread",
+        "say": "How quickly has the redness been spreading — over hours?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "rapidly",
+          "hours",
+          "spreading"
+        ]
+      },
+      {
+        "objective": "Pain severity versus appearance",
+        "say": "How severe is the pain compared to how the skin looks?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "out of proportion",
+          "severe"
+        ]
+      },
+      {
+        "objective": "Skin sensation changes",
+        "say": "Do you feel any crackling under the skin, or has the area gone numb?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "crepitus",
+          "numb"
+        ]
+      },
+      {
+        "objective": "Risk factors",
+        "say": "Do you have diabetes or any condition affecting your immune system?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "diabetes"
+        ]
+      },
+      {
+        "objective": "Portal of entry",
+        "say": "Was there any wound, cut, or injury where this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "wound",
+          "injury"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "id": "gi_027",
+  "system": "gi",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Thompson",
+  "age": 23,
+  "gender": "male",
+  "chief_complaint": "dull upper stomach pain and feeling bloated after eating greasy food",
+  "hpi_details": "23-year-old male presents with recurrent episodes of dull right upper quadrant abdominal pain and bloating that typically occur 30 to 60 minutes after consuming fatty meals. The episodes last for a few hours before gradually subsiding. Denies fever, chills, or jaundice.",
+  "ideas": "thinks it might be related to biliary colic",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Biliary Colic evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Biliary Colic is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes ordering an abdominal ultrasound, advising a low-fat diet, and consulting general surgery, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: dull upper stomach pain and feeling bloated after eating greasy food",
+      "Key HPI features: 23M presents with recurrent dull RUQ pain and bloating 30-60 minutes after fatty meals, lasting a few hours before resolving. No fever or jaundice.",
+      "Objective/Exam findings: Vitals stable, afebrile. Abdomen is soft with mild tenderness in the right upper quadrant. Negative Murphy's sign.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Biliary Colic.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Acute cholecystitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever or pain that doesn't settle after several hours — would suggest cholecystitis."
+    ],
+    "management_principles": [
+      "Order right upper quadrant abdominal ultrasound to identify gallstones.",
+      "Advise a strict low-fat diet to prevent further symptomatic episodes.",
+      "Refer for elective outpatient general surgery consultation for consideration of cholecystectomy."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "23-year-old male presents with recurrent episodes of dull right upper quadrant abdominal pain and bloating that typically occur 30 to 60 minutes after consuming fatty meals. The episodes last for a few hours before gradually subsiding. Denies fever, chills, or jaundice.",
+    "objective": "Vitals: HR 76, BP 120/80, Temp 37.0C, SpO2 99%. Abdomen: Soft, non-distended. Mild tenderness to deep palpation in the right upper quadrant. Negative Murphy's sign. No rebound or guarding. No scleral icterus or jaundice.",
+    "assessment": "Biliary Colic.",
+    "plan": "1. Order RUQ abdominal ultrasound to confirm cholelithiasis. 2. Educate patient on a strict low-fat diet. 3. Refer to general surgery for elective cholecystectomy evaluation. 4. Return precautions for fever, intractable vomiting, or unremitting pain."
+  },
+  "learning_objectives": [
+    "Recognize the classic presentation of Biliary Colic (postprandial RUQ pain, absence of fever/jaundice).",
+    "Differentiate Biliary Colic from Acute Cholecystitis using history and physical exam findings (e.g., Murphy's sign).",
+    "Implement an evidence-based management plan including ultrasound, dietary modification, and surgical referral."
+  ],
+  "teaching": {
+    "diagnosis": "Biliary Colic",
+    "one_liner": "A gallstone temporarily blocks the gallbladder outlet after fatty food, causing dull right-upper-quadrant pain and bloating that eventually settles.",
+    "differentials": [
+      "Acute cholecystitis",
+      "Peptic ulcer disease",
+      "Functional dyspepsia"
+    ],
+    "red_flags": [
+      "Fever or pain that doesn't settle after several hours — would suggest cholecystitis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Relation to fatty meals",
+        "say": "Does the pain come on after eating fatty food?",
+        "domains": [
+          "onset_duration",
+          "aggravating"
+        ],
+        "keywords": [
+          "fatty",
+          "greasy",
+          "meals",
+          "eating"
+        ]
+      },
+      {
+        "objective": "Bloating and fullness",
+        "say": "Do you feel bloated or overly full along with the pain?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bloating",
+          "bloated",
+          "full",
+          "distended"
+        ]
+      },
+      {
+        "objective": "Radiation to shoulder",
+        "say": "Does the pain spread to your shoulder blade?",
+        "domains": [
+          "radiation"
+        ],
+        "keywords": [
+          "shoulder",
+          "blade",
+          "spread"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had any fevers or chills?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "fever",
+          "chills"
+        ]
+      },
+      {
+        "objective": "Jaundice",
+        "say": "Have you noticed any yellowing of your skin or eyes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "yellow",
+          "jaundice"
+        ]
+      },
+      {
+        "objective": "Known gallstones",
+        "say": "Has anyone told you before that you have gallstones?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "gallstones",
+          "gallbladder",
+          "diagnosed"
+        ]
+      }
+    ]
+  }
+}

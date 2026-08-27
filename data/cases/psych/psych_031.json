@@ -1,0 +1,158 @@
+{
+  "id": "psych_031",
+  "system": "psych",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Green",
+  "age": 35,
+  "gender": "male",
+  "chief_complaint": "severe depressive episode with history of hypomania",
+  "hpi_details": "A 35-year-old male presents to the clinic with severe depressive episode with history of hypomania. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to bipolar_depression",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "clinical_knowledge": {
+    "topic": "Bipolar II depression evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Bipolar II depression is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes psychiatric assessment for an appropriate mood stabilizer or atypical antipsychotic (for example, lamotrigine or quetiapine); avoid antidepressant monotherapy and tailor treatment to individual risk factors and severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: severe depressive episode with history of hypomania",
+      "Key HPI features: A 35-year-old male presents to the clinic with severe depressive episode with history of hypomania. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Bipolar II depression.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Bipolar II depression.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Bipolar depression without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Active suicidal ideation with plan."
+    ],
+    "management_principles": [
+      "Urgently assess suicide risk, including intent, plan, means, and ability to remain safe; arrange emergency psychiatric evaluation when risk is imminent.",
+      "A qualified prescriber should select and monitor an appropriate mood stabilizer or atypical antipsychotic; avoid antidepressant monotherapy.",
+      "Arrange timely psychiatric follow-up and provide safety planning and counselling."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Psychiatric Association (APA) Practice Guidelines",
+        "url": "https://www.psychiatry.org/psychiatrists/practice/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: severe depressive episode with history of hypomania\n\nA 35-year-old male presents to the clinic with severe depressive episode with history of hypomania. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Bipolar II depression.",
+    "assessment": "Condition highly suspicious for Bipolar II depression.",
+    "plan": "Assess suicide risk, intent, plan, means, and immediate safety; obtain emergency psychiatric evaluation if risk is imminent. A qualified prescriber should select and monitor an appropriate mood stabilizer or atypical antipsychotic, and antidepressant monotherapy should be avoided. Arrange timely psychiatric follow-up, safety planning, and counselling."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Bipolar II depression",
+    "Select appropriate diagnostic workup for Bipolar II depression",
+    "Implement a safety-conscious, evidence-based management plan and avoid antidepressant monotherapy"
+  ],
+  "teaching": {
+    "diagnosis": "Bipolar II disorder, current depressive episode",
+    "one_liner": "A depressive episode in a patient with a history of hypomania is consistent with bipolar II disorder; antidepressant monotherapy should be avoided.",
+    "differentials": [
+      "Major depressive disorder (unipolar)",
+      "Bipolar I disorder",
+      "Cyclothymic disorder",
+      "Borderline personality disorder",
+      "Substance-induced mood disorder"
+    ],
+    "red_flags": [
+      "Active suicidal ideation with plan",
+      "Psychotic features (delusions of guilt)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Current depressive symptoms",
+        "say": "How has your mood, sleep, and energy been recently?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "mood",
+          "sleep",
+          "energy",
+          "recently",
+          "depressed"
+        ]
+      },
+      {
+        "objective": "Hypomania screening",
+        "say": "Have you ever had a period of elevated mood, less need for sleep, or being unusually productive for several days?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "elevated",
+          "hypomania",
+          "productive",
+          "energy",
+          "sleep"
+        ]
+      },
+      {
+        "objective": "Recent triggers and timeline",
+        "say": "Did anything happen recently that made your mood worse?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "trigger",
+          "recently",
+          "worse",
+          "started",
+          "timeline"
+        ]
+      },
+      {
+        "objective": "Suicidality screen",
+        "say": "Have you had thoughts of harming yourself?",
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "suicidal",
+          "harm",
+          "thoughts",
+          "safety",
+          "ending"
+        ]
+      },
+      {
+        "objective": "Antidepressant response history",
+        "say": "Have you ever been treated with an antidepressant alone, and did that cause any unusual reaction like increased energy?",
+        "domains": [
+          "medications",
+          "pmh"
+        ],
+        "keywords": [
+          "antidepressant",
+          "reaction",
+          "increased energy",
+          "treatment",
+          "switch"
+        ]
+      }
+    ]
+  }
+}

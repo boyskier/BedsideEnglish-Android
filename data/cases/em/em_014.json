@@ -1,0 +1,151 @@
+{
+  "id": "em_014",
+  "system": "emergency medicine",
+  "difficulty": "advanced",
+  "eval_template": "emergency_encounter",
+  "care_setting": "emergency_department",
+  "patient_name": "Mr. Walker",
+  "age": 31,
+  "gender": "male",
+  "chief_complaint": "continuous, unremitting generalized tonic-clonic convulsive seizure lasting >5 minutes without recovery of consciousness",
+  "hpi_details": "31M with epilepsy brought by ambulance actively seizing for 8 minutes requiring immediate airway protection and stepwise anti-seizure protocol: IV Lorazepam/Midazolam boluses followed by second-line IV Levetiracetam, Fosphenytoin, or Valproic acid loading.",
+  "ideas": "unresponsive and actively seizing, unable to communicate",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Epilepsy",
+  "medications": "Antiseizure medication (details not documented)",
+  "social_hx": "Non-smoker, active lifestyle",
+  "investigation_events": [
+    {
+      "id": "point_of_care_glucose",
+      "title": "Point-of-care blood glucose",
+      "order_terms": [
+        "fingerstick glucose",
+        "blood glucose",
+        "glucose check",
+        "capillary glucose"
+      ],
+      "availability_message": "The point-of-care glucose result is now available.",
+      "results": [
+        {
+          "id": "capillary_glucose",
+          "test": "Capillary blood glucose",
+          "value": "104",
+          "unit": "mg/dL",
+          "reference_range": "70-140",
+          "specimen": "Capillary blood",
+          "collected_at": "On arrival"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Status Epilepticus evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Status Epilepticus is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes immediate airway protection and a stepwise anti-seizure medication protocol, starting with a benzodiazepine and escalating to a second-line agent if seizures persist, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: continuous, unremitting generalized tonic-clonic convulsive seizure lasting >5 minutes without recovery of consciousness",
+      "Key HPI features: 31M with epilepsy brought by ambulance actively seizing for 8 minutes requiring immediate airway protection and stepwise anti-seizure protocol: IV Lorazepam/Midazolam boluses followed by second-line IV Levetiracetam, Fosphenytoin, or Valproic acid loading.",
+      "Objective/Exam findings: Vitals: HR 138, BP 158/94, RR 22 (irregular during convulsions), Temp 38.1C, SpO2 88% on room air. Patient is actively convulsing with generalized tonic-clonic movements, eyes deviated upward, and no purposeful response to voice or pain. Oral trauma noted with blood-tinged secretions; patient is cyanotic around the lips. Fingerstick glucose 104 mg/dL (normal, ruling out hypoglycemic seizure). No focal neurological deficit apparent between convulsive movements.",
+      "Relevant background/PMH: Epilepsy",
+      "Current medications: Antiseizure medication (details not documented)"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Status Epilepticus.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Pseudoseizure (psychogenic non-epileptic seizure) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Ongoing seizure activity beyond 5 minutes — treat as status epilepticus, do not wait for it to stop on its own."
+    ],
+    "management_principles": [
+      "STAT emergency status epilepticus protocol",
+      "Immediate airway protection and supportive care: position patient laterally, provide supplemental oxygen, and check fingerstick glucose to exclude hypoglycemia as a seizure trigger",
+      "First-line therapy: administer IV Lorazepam 0.1 mg/kg (or IM Midazolam if no IV access) as an initial benzodiazepine bolus; repeat once if seizure continues after 5 minutes",
+      "Second-line therapy for seizures persisting beyond first-line benzodiazepine dosing: load with IV Levetiracetam, Fosphenytoin, or Valproic acid; if seizures continue despite second-line therapy, proceed to third-line continuous infusion anesthetic agents (e.g., Propofol or Midazolam infusion) with ICU admission and continuous EEG monitoring"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "AAN Practice Guidelines for Neurological Disorders",
+        "url": "https://www.aan.com/Guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "31M with known epilepsy brought by ambulance with a continuous, unremitting generalized tonic-clonic convulsive seizure lasting over 8 minutes without recovery of consciousness, diagnostic of Status Epilepticus.",
+    "objective": "Vitals: HR 138, BP 158/94, RR 22 (irregular during convulsions), Temp 38.1C, SpO2 88% on room air. Patient is actively convulsing with generalized tonic-clonic movements, eyes deviated upward, and no purposeful response to voice or pain. Oral trauma noted with blood-tinged secretions; patient is cyanotic around the lips. Fingerstick glucose 104 mg/dL (normal, ruling out hypoglycemic seizure). No focal neurological deficit apparent between convulsive movements.",
+    "assessment": "Generalized Convulsive Status Epilepticus in a patient with known epilepsy.",
+    "plan": "STAT emergency status epilepticus protocol: 1. Immediate airway protection and supportive care: position patient laterally, provide supplemental oxygen, and check fingerstick glucose to exclude hypoglycemia as a seizure trigger. 2. First-line therapy: administer IV Lorazepam 0.1 mg/kg (or IM Midazolam if no IV access) as an initial benzodiazepine bolus; repeat once if seizure continues after 5 minutes. 3. Second-line therapy for seizures persisting beyond first-line benzodiazepine dosing: load with IV Levetiracetam, Fosphenytoin, or Valproic acid; if seizures continue despite second-line therapy, proceed to third-line continuous infusion anesthetic agents (e.g., Propofol or Midazolam infusion) with ICU admission and continuous EEG monitoring."
+  },
+  "learning_objectives": [
+    "Recognize status epilepticus as a continuous seizure lasting more than 5 minutes, or recurrent seizures without recovery of consciousness between them, requiring immediate treatment rather than watchful waiting",
+    "Execute the stepwise medication cascade: first-line benzodiazepine (IV Lorazepam or IM Midazolam), then second-line agents (Levetiracetam, Fosphenytoin, or Valproic acid) if seizures persist",
+    "Check fingerstick glucose early to exclude hypoglycemia as a reversible seizure cause, and protect the airway throughout ongoing convulsions",
+    "Recognize refractory status epilepticus requiring third-line continuous infusion anesthetics and ICU-level continuous EEG monitoring"
+  ],
+  "teaching": {
+    "diagnosis": "Status Epilepticus",
+    "one_liner": "A continuous seizure lasting more than five minutes, or repeated seizures without recovery of consciousness between them — a neurological emergency requiring stepwise medication (benzodiazepine first, then a second-line anti-seizure drug) to prevent brain injury.",
+    "differentials": [
+      "Pseudoseizure (psychogenic non-epileptic seizure)",
+      "Hypoglycemia-induced seizure",
+      "Eclampsia (if pregnant)"
+    ],
+    "red_flags": [
+      "Ongoing seizure activity beyond 5 minutes — treat as status epilepticus, do not wait for it to stop on its own"
+    ],
+    "must_ask": [
+      {
+        "objective": "Duration of the seizure",
+        "say": "How long has he been seizing?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "minutes"
+        ]
+      },
+      {
+        "objective": "Known epilepsy and medication adherence",
+        "say": "Does he have epilepsy, and has he been taking his anti-seizure medication?",
+        "domains": [
+          "pmh",
+          "medications"
+        ]
+      },
+      {
+        "objective": "Prior seizure pattern",
+        "say": "Is this seizure different from his usual seizures?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Trigger",
+        "say": "Was there any illness, missed medication, or sleep deprivation before this?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Injury during the seizure",
+        "say": "Did he hit his head or injure himself during the seizure?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

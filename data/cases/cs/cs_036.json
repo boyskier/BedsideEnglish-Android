@@ -1,0 +1,139 @@
+{
+  "id": "cs_036",
+  "system": "cs",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Hill",
+  "age": 50,
+  "gender": "female",
+  "chief_complaint": "fever, shortness of breath, and fluid on chest X-ray",
+  "hpi_details": "A 50-year-old female presents to the clinic with fever, shortness of breath, and fluid on chest x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "thinks it might be related to fluid around the lung",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "investigation_events": [
+    {
+      "id": "parapneumonic_pleural_fluid",
+      "title": "Pleural fluid analysis",
+      "order_terms": ["thoracentesis", "pleural tap", "pleural fluid analysis", "pleural aspiration"],
+      "availability_message": "The pleural fluid analysis is now available.",
+      "results": [
+        {
+          "id": "pleural_fluid_complicated_effusion",
+          "test": "Pleural fluid analysis",
+          "value": "Cloudy fluid; pH 7.12; glucose 38 mg/dL; LDH 1260 U/L; Gram stain negative",
+          "unit": "",
+          "reference_range": "pH >7.20; glucose >60 mg/dL",
+          "flag": "critical",
+          "specimen": "Pleural fluid",
+          "collected_at": "Ultrasound-guided thoracentesis"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Parapneumonic Pleural Effusion evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Parapneumonic Pleural Effusion is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Management includes prompt treatment of the associated pneumonia, ultrasound-guided diagnostic sampling of a significant or loculated effusion, pleural-fluid analysis, and chest-tube drainage when infection is complicated or purulent.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: fever, shortness of breath, and fluid on chest X-ray",
+      "Key HPI features: A 50-year-old female presents to the clinic with fever, shortness of breath, and fluid on chest x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Parapneumonic Effusion.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Parapneumonic Pleural Effusion.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Empyema (complicated effusion) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: High fever persisting despite antibiotics — suggests progression to empyema."
+    ],
+    "management_principles": [
+      "Start appropriate antimicrobial therapy, perform ultrasound-guided diagnostic thoracentesis for a significant or loculated effusion, analyze pleural fluid, and place a chest tube when the effusion is complicated or purulent",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of fever, shortness of breath, and fluid on chest X-ray. HPI: fluid accumulation secondary to pneumonia.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Parapneumonic Effusion.",
+    "assessment": "Condition highly suspicious for Parapneumonic Effusion.",
+    "plan": "Start appropriate antimicrobial therapy, perform ultrasound-guided diagnostic thoracentesis for a significant or loculated effusion, analyze pleural fluid, and place a chest tube when the effusion is complicated or purulent."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Parapneumonic Effusion",
+    "Select appropriate diagnostic workup for Parapneumonic Effusion",
+    "Implement evidence-based management plan: Treat the associated pneumonia, sample and analyze significant effusions, and drain complicated or purulent pleural infection"
+  ],
+  "teaching": {
+    "diagnosis": "Parapneumonic Pleural Effusion",
+    "one_liner": "Fluid accumulates in the pleural space as a reaction to adjacent pneumonia, causing fever and breathlessness — needs diagnostic thoracentesis to check if it is complicated (needing a chest tube).",
+    "differentials": [
+      "Empyema (complicated effusion)",
+      "Malignant effusion",
+      "Heart failure-related effusion"
+    ],
+    "red_flags": [
+      "High fever persisting despite antibiotics — suggests progression to empyema"
+    ],
+    "must_ask": [
+      {
+        "objective": "Preceding pneumonia",
+        "say": "Did this start after you had pneumonia?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Breathlessness",
+        "say": "How short of breath are you?",
+        "domains": [
+          "severity"
+        ]
+      },
+      {
+        "objective": "Chest pain",
+        "say": "Any chest pain, especially with breathing?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Antibiotic treatment so far",
+        "say": "Have you been on antibiotics, and are you improving?",
+        "domains": [
+          "medications"
+        ]
+      }
+    ]
+  }
+}

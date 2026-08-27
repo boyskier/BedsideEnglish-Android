@@ -1,0 +1,171 @@
+{
+  "id": "endo_016",
+  "system": "endocrinology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Jones",
+  "age": 32,
+  "gender": "female",
+  "chief_complaint": "inability to breastfeed and profound fatigue since childbirth",
+  "hpi_details": "32F post-severe postpartum hemorrhage 3 months ago presenting with agalactia, amenorrhea, secondary hypothyroidism, and low cortisol.",
+  "ideas": "thinks this is related to sheehan syndrome postpartum hypopituitarism",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "morning_cortisol",
+      "test": "8 AM serum cortisol",
+      "value": "2.1",
+      "unit": "mcg/dL",
+      "reference_range": "5-25",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "free_t4",
+      "test": "Free T4",
+      "value": "0.42",
+      "unit": "ng/dL",
+      "reference_range": "0.8-1.8",
+      "flag": "low",
+      "specimen": "Blood"
+    },
+    {
+      "id": "tsh",
+      "test": "TSH",
+      "value": "1.1",
+      "unit": "mIU/L",
+      "reference_range": "0.4-4.0",
+      "flag": "normal",
+      "specimen": "Blood"
+    },
+    {
+      "id": "prolactin",
+      "test": "Serum prolactin",
+      "value": "1.8",
+      "unit": "ng/mL",
+      "reference_range": "4.8-23.3",
+      "flag": "low",
+      "specimen": "Blood"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Sheehan Syndrome (Postpartum Hypopituitarism) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Sheehan Syndrome (Postpartum Hypopituitarism) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes assessing and replacing glucocorticoid deficiency before starting levothyroxine, since thyroid hormone can precipitate adrenal crisis in untreated central adrenal insufficiency, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: inability to breastfeed and profound fatigue since childbirth",
+      "Key HPI features: 32F post-severe postpartum hemorrhage 3 months ago presenting with agalactia, amenorrhea, secondary hypothyroidism, and low cortisol.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Sheehan Syndrome Postpartum Hypopituitarism.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Sheehan Syndrome (Postpartum Hypopituitarism).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Postpartum thyroiditis (isolated thyroid dysfunction) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of adrenal crisis (fainting, low blood pressure) — the cortisol deficiency component can be life-threatening."
+    ],
+    "management_principles": [
+      "Assess all pituitary axes and replace glucocorticoid deficiency before starting levothyroxine, because thyroid hormone can precipitate adrenal crisis in untreated central adrenal insufficiency",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Endocrine Society Clinical Practice Guideline: Hormonal Replacement in Hypopituitarism in Adults",
+        "url": "https://www.endocrine.org/clinical-practice-guidelines/hypopituitarism"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Sheehan Syndrome Postpartum Hypopituitarism: inability to breastfeed and profound fatigue since childbirth. 32F post-severe postpartum hemorrhage 3 months ago presenting with agalactia, amenorrhea, secondary hypothyroidism, and low cortisol.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Sheehan Syndrome Postpartum Hypopituitarism.",
+    "assessment": "Clinical presentation highly suggestive of Sheehan Syndrome Postpartum Hypopituitarism.",
+    "plan": "Urgently assess for adrenal insufficiency and adrenal crisis. Obtain pituitary-axis testing and pituitary MRI as appropriate, but give stress-dose hydrocortisone immediately if adrenal crisis is suspected. Replace glucocorticoid deficiency before initiating levothyroxine for central hypothyroidism. Arrange urgent Endocrinology follow-up for ongoing hormone replacement and reproductive counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Sheehan Syndrome Postpartum Hypopituitarism",
+    "Formulate prioritized differential diagnosis for inability to breastfeed and profound fatigue since childbirth",
+    "Select appropriate laboratory and imaging studies for endocrinology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Sheehan Syndrome (Postpartum Hypopituitarism)",
+    "one_liner": "Severe blood loss during delivery can cause the pituitary gland to infarct, leading to failure of multiple hormone axes — inability to breastfeed (no prolactin), absent periods, and low thyroid/cortisol hormones.",
+    "differentials": [
+      "Postpartum thyroiditis (isolated thyroid dysfunction)",
+      "Postpartum depression",
+      "Lymphocytic hypophysitis"
+    ],
+    "red_flags": [
+      "Signs of adrenal crisis (fainting, low blood pressure) — the cortisol deficiency component can be life-threatening"
+    ],
+    "must_ask": [
+      {
+        "objective": "Delivery complications",
+        "say": "Did you have severe bleeding or need a blood transfusion during delivery?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "postpartum hemorrhage",
+          "blood loss"
+        ]
+      },
+      {
+        "objective": "Breastfeeding difficulty",
+        "say": "Have you been unable to produce breast milk?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "agalactia",
+          "no milk"
+        ]
+      },
+      {
+        "objective": "Menstrual return",
+        "say": "Have your periods returned since delivery?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "amenorrhea"
+        ]
+      },
+      {
+        "objective": "Fatigue and cold intolerance",
+        "say": "How is your energy, and do you feel cold often?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Timing since delivery",
+        "say": "How many months ago did you deliver?",
+        "domains": [
+          "onset_duration"
+        ]
+      }
+    ]
+  }
+}

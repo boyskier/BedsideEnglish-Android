@@ -1,0 +1,133 @@
+{
+  "id": "ns_017",
+  "system": "neurosurgery",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Scott",
+  "age": 29,
+  "gender": "male",
+  "chief_complaint": "profound coma immediately following high-speed motor vehicle collision with normal initial head CT",
+  "hpi_details": "29M post-MVC in deep coma (GCS 4) with normal initial CT but gradient-echo (GRE/SWI) MRI demonstrating punctate microhemorrhages at grey-white junction and corpus callosum.",
+  "ideas": "thinks this is related to diffuse axonal injury dai high-energy trauma",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "initial_ct_head", "test": "Initial non-contrast CT head", "value": "No acute hemorrhage or mass effect", "flag": "normal"},
+    {"id": "brain_mri_swi", "test": "Brain MRI with susceptibility-weighted imaging", "value": "Numerous punctate microhemorrhages at the gray-white junction and within the corpus callosum", "flag": "critical", "note": "Pattern is consistent with severe diffuse axonal injury."}
+  ],
+  "clinical_knowledge": {
+    "topic": "Diffuse Axonal Injury (DAI) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Diffuse Axonal Injury (DAI) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes evidence-based diagnostic and therapeutic protocols for diffuse axonal injury, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: profound coma immediately following high-speed motor vehicle collision with normal initial head CT",
+      "Key HPI features: 29M post-MVC in deep coma (GCS 4) with normal initial CT but gradient-echo (GRE/SWI) MRI demonstrating punctate microhemorrhages at grey-white junction and corpus callosum.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for diffuse axonal injury.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Diffuse Axonal Injury (DAI).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Epidural/subdural hematoma (would show on initial CT) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as deep coma (very low GCS) with a normal initial CT; this mismatch itself is a clue to DAI."
+    ],
+    "management_principles": [
+      "Evidence-based diagnostic and therapeutic protocols for diffuse axonal injury",
+      "Refer to specialty team and provide comprehensive patient counseling",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with profound coma immediately following a high-speed motor vehicle collision with a normal initial head CT. He is post-MVC in deep coma (GCS 4); GRE/SWI MRI demonstrates punctate microhemorrhages at the gray-white junction and corpus callosum.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for diffuse axonal injury.",
+    "assessment": "Clinical presentation highly suggestive of diffuse axonal injury.",
+    "plan": "Use evidence-based diagnostic and therapeutic protocols for diffuse axonal injury. Refer to the specialty team and provide comprehensive patient counseling."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of diffuse axonal injury",
+    "Formulate prioritized differential diagnosis for profound coma immediately following high-speed motor vehicle collision with normal initial head CT",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Diffuse Axonal Injury (DAI)",
+    "one_liner": "High-energy rotational forces from a crash shear brain axons throughout the white matter, causing deep coma despite a normal-looking initial CT scan; special MRI sequences can reveal the microscopic damage.",
+    "differentials": [
+      "Epidural/subdural hematoma (would show on initial CT)",
+      "Hypoxic brain injury",
+      "Diffuse cerebral edema"
+    ],
+    "red_flags": [
+      "Deep coma (very low GCS) with a normal initial CT; this mismatch itself is a clue to DAI"
+    ],
+    "must_ask": [
+      {
+        "objective": "Mechanism of injury",
+        "say": "For a witness: can you describe the accident, including the speed and type of impact?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "high-speed",
+          "collision"
+        ]
+      },
+      {
+        "objective": "Level of consciousness",
+        "say": "How responsive has he been since the accident?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "coma",
+          "GCS"
+        ]
+      },
+      {
+        "objective": "Duration since injury",
+        "say": "How long has he been unconscious?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Other injuries",
+        "say": "What other injuries did he sustain in the crash?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Family's understanding",
+        "say": "What have you been told so far about his condition?",
+        "domains": [
+          "concerns"
+        ]
+      }
+    ]
+  }
+}

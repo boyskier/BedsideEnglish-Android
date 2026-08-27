@@ -1,0 +1,138 @@
+{
+  "id": "ns_015",
+  "system": "neurosurgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Taylor",
+  "age": 66,
+  "gender": "male",
+  "chief_complaint": "clumsy hands when buttoning shirts, stiff spastic gait, and electric shocks down spine with neck flexion",
+  "hpi_details": "66M presenting with positive Lhermitte sign, Hoffman sign, hyperreflexia, and MRI showing C5-C7 spinal cord compression with T2 cord signal changes.",
+  "ideas": "thinks this is related to cervical spondylotic myelopathy",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [{
+    "id": "cervical_mri",
+    "test": "Cervical spine MRI",
+    "value": "Severe C5-C7 degenerative canal stenosis with spinal cord compression and intramedullary T2 hyperintensity",
+    "flag": "abnormal"
+  }],
+  "clinical_knowledge": {
+    "topic": "Cervical Spondylotic Myelopathy evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cervical Spondylotic Myelopathy is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes Evidence-based diagnostic and therapeutic protocol for Cervical Spondylotic Myelopathy, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: clumsy hands when buttoning shirts, stiff spastic gait, and electric shocks down spine with neck flexion",
+      "Key HPI features: 66M presenting with positive Lhermitte sign, Hoffman sign, hyperreflexia, and MRI showing C5-C7 spinal cord compression with T2 cord signal changes.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Cervical Spondylotic Myelopathy.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cervical Spondylotic Myelopathy.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Amyotrophic lateral sclerosis (no sensory signs) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly worsening gait or bladder symptoms — signals urgent need for surgical decompression."
+    ],
+    "management_principles": [
+      "Refer promptly to spine surgery for clinical myelopathy, especially with progressive symptoms or cord signal change on MRI.",
+      "Use MRI findings, neurologic examination, alignment, and number of affected levels to plan anterior or posterior decompression, with fusion when indicated.",
+      "Counsel that surgery is intended chiefly to prevent further neurologic decline; recovery of established deficits may be incomplete.",
+      "Give urgent return precautions for rapidly worsening gait, new hand weakness, falls, or new bladder or bowel dysfunction."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Cervical Spondylotic Myelopathy: clumsy hands when buttoning shirts, stiff spastic gait, and electric shocks down spine with neck flexion. 66M presenting with positive Lhermitte sign, Hoffman sign, hyperreflexia, and MRI showing C5-C7 spinal cord compression with T2 cord signal changes.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Cervical Spondylotic Myelopathy.",
+    "assessment": "Clinical presentation highly suggestive of Cervical Spondylotic Myelopathy.",
+    "plan": "Refer promptly to spine surgery for clinical myelopathy, especially with progressive symptoms or cord signal change on MRI. Use MRI findings, neurologic examination, alignment, and number of affected levels to plan anterior or posterior decompression, with fusion when indicated. Counsel that surgery is intended chiefly to prevent further neurologic decline; recovery of established deficits may be incomplete. Give urgent return precautions for rapidly worsening gait, new hand weakness, falls, or new bladder or bowel dysfunction."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Cervical Spondylotic Myelopathy",
+    "Formulate prioritized differential diagnosis for clumsy hands when buttoning shirts, stiff spastic gait, and electric shocks down spine with neck flexion",
+    "Select appropriate laboratory and imaging studies for neurosurgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Cervical Spondylotic Myelopathy",
+    "one_liner": "Degenerative narrowing of the cervical spine compresses the spinal cord itself, causing hand clumsiness, a stiff spastic gait, and an electric shock sensation down the spine when bending the neck (Lhermitte's sign) — needs prompt evaluation since cord damage can be irreversible.",
+    "differentials": [
+      "Amyotrophic lateral sclerosis (no sensory signs)",
+      "Multiple sclerosis",
+      "B12 deficiency (subacute combined degeneration)"
+    ],
+    "red_flags": [
+      "Rapidly worsening gait or bladder symptoms — signals urgent need for surgical decompression"
+    ],
+    "must_ask": [
+      {
+        "objective": "Hand clumsiness",
+        "say": "Have you had trouble with fine tasks, like buttoning shirts?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "buttoning",
+          "clumsy"
+        ]
+      },
+      {
+        "objective": "Gait changes",
+        "say": "Has your walking become stiff or unsteady?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "spastic",
+          "unstable"
+        ]
+      },
+      {
+        "objective": "Lhermitte's sign",
+        "say": "Do you feel an electric shock down your spine when you bend your neck forward?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "electric shock"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How many months has this been progressing?",
+        "domains": [
+          "onset_duration"
+        ]
+      },
+      {
+        "objective": "Bladder symptoms",
+        "say": "Any changes in bladder control?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

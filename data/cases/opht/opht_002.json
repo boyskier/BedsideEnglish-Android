@@ -1,0 +1,150 @@
+{
+  "id": "opht_002",
+  "system": "ophthalmology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Baker",
+  "age": 58,
+  "gender": "female",
+  "chief_complaint": "sudden painless dark curtain pulling across vision accompanied by flashes of light and floaters (Retinal Detachment)",
+  "hpi_details": "58F highly myopic (nearsighted) woman presents with sudden onset of numerous new black floaters (`like a swarm of gnats`) and bright electrical flashes of light (photopsias) in the temporal visual field of her right eye starting yesterday afternoon. This morning, woke up to find a dark, opaque shadow/curtain spreading from the bottom right corner over her central line of sight, blocking half her right eye vision completely. Zero eye pain or redness.",
+  "ideas": "terrified that she is going permanently blind in her right eye",
+  "concerns": "worried because the dark shadow is creeping across the center of her eye right now",
+  "expectations": "wants emergency retinal evaluation and laser/surgery to reattach her vision",
+  "pmh": "High Myopia (-8.00 diopters bilaterally), status post uncomplicated cataract surgery right eye 2 years ago",
+  "medications": "None",
+  "social_hx": "Graphic designer, non-smoker",
+  "investigation_events": [{
+    "id": "stat_dilated_retinal_exam",
+    "title": "Emergency dilated retinal examination",
+    "order_terms": ["dilated fundus exam", "dilated retinal exam", "ophthalmoscopy", "scleral depression"],
+    "availability_message": "The emergency dilated retinal examination is now available. Retina-specialist transfer should proceed immediately.",
+    "results": [{"id": "fundus_exam", "test": "Dilated indirect ophthalmoscopy with scleral depression", "value": "Large macula-off rhegmatogenous retinal detachment in the superior-temporal quadrant with a horseshoe tear at 11 o'clock and positive Shafer sign", "flag": "critical"}]
+  }],
+  "clinical_knowledge": {
+    "topic": "Rhegmatogenous retinal detachment evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Rhegmatogenous retinal detachment is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes emergency retinal consultation, eye protection, and surgeon-directed positioning while definitive repair is arranged, adapted to the retinal-break configuration and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden painless dark curtain pulling across vision accompanied by flashes of light and floaters (Retinal Detachment)",
+      "Key HPI features: 58F highly myopic (nearsighted) woman presents with sudden onset of numerous new black floaters (`like a swarm of gnats`) and bright electrical flashes of light (photopsias) in the temporal visual field of her right eye starting yesterday afternoon. This morning, woke up to find a dark, opaque shadow/curtain spreading from the bottom right corner over her central line of sight, blocking half her right eye vision completely. Zero eye pain or redness.",
+      "Objective/Exam findings: Vitals: HR 76, BP 130/82. External eye exam completely normal without redness (painless white eye). Visual acuity: Right eye 20/200 (down from 20/20 baseline); Left eye 20/20. Confrontation visual field testing demonstrates complete loss of superior and nasal visual fields in the right eye. Relative Afferent Pupillary Defect (RAPD / Marcus Gunn pupil) is POSITIVE in the right eye. Dilated indirect ophthalmoscopy with scleral depression confirms a large, elevated, corrugated, mobile gray-white membrane (detached neurosensory retina) involving the superior temporal quadrant and extending through the macula ('macula-off' retinal detachment), driven by a horseshoe-shaped retinal tear at the 11 o'clock peripheral lattice degeneration site. Shafer sign positive (tobacco dust / pigmented cells floating in anterior vitreous).",
+      "Relevant background/PMH: High Myopia (-8.00 diopters bilaterally), status post uncomplicated cataract surgery right eye 2 years ago"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Rhegmatogenous retinal detachment.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Posterior vitreous detachment (without tear) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Dark curtain/shadow progressing across vision."
+    ],
+    "management_principles": [
+      "STAT emergency retinal consultation; protect the eye and follow vitreoretinal-surgeon-directed positioning based on the retinal-break configuration",
+      "Urgent transfer to vitreoretinal surgeon for operative repair within 24 hours via Pars Plana Vitrectomy (PPV) with gas/silicone oil tamponade and endolaser retinopexy, OR Scleral Buckle procedure, OR Pneumatic Retinopexy"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "58F highly myopic pseudophakic patient presenting with acute photopsias, shower of floaters, and progressive visual field shadow classic for Rhegmatogenous Retinal Detachment.",
+    "objective": "Vitals: HR 76, BP 130/82. External eye exam completely normal without redness (painless white eye). Visual acuity: Right eye 20/200 (down from 20/20 baseline); Left eye 20/20. Confrontation visual field testing demonstrates complete loss of superior and nasal visual fields in the right eye. Relative Afferent Pupillary Defect (RAPD / Marcus Gunn pupil) is POSITIVE in the right eye. Dilated indirect ophthalmoscopy with scleral depression confirms a large, elevated, corrugated, mobile gray-white membrane (detached neurosensory retina) involving the superior temporal quadrant and extending through the macula ('macula-off' retinal detachment), driven by a horseshoe-shaped retinal tear at the 11 o'clock peripheral lattice degeneration site. Shafer sign positive (tobacco dust / pigmented cells floating in anterior vitreous).",
+    "assessment": "Rhegmatogenous Retinal Detachment of the Right Eye (`Macula-Off` with horseshoe tear at 11 o'clock).",
+    "plan": "STAT emergency retinal consultation. Protect the eye and follow positioning instructions individualized by the vitreoretinal surgeon to the retinal-break configuration. Urgent transfer for operative repair via pars plana vitrectomy with gas/silicone oil tamponade and endolaser retinopexy, scleral buckle, or pneumatic retinopexy, as clinically appropriate."
+  },
+  "learning_objectives": [
+    "Identify the classic warning symptoms of impending/active Retinal Detachment (photopsias/flashes indicating vitreoretinal traction, acute shower of floaters indicating retinal tear/hemorrhage, and progressive dark curtain shadow)",
+    "Correlate predisposing risk factors for rhegmatogenous retinal detachment (high myopia, prior cataract surgery/pseudophakia, lattice degeneration, ocular trauma)",
+    "Differentiate the particularly time-sensitive macula-on detachment from macula-off detachment; both require urgent vitreoretinal-surgeon assessment and procedure timing individualized to the clinical findings",
+    "Interpret dilated fundus exam findings (corrugated mobile grey retina, horseshoe tears) and Shafer sign (vitreous pigment cells)"
+  ],
+  "teaching": {
+    "diagnosis": "Rhegmatogenous retinal detachment",
+    "one_liner": "58F highly myopic with sudden floaters, flashes, and a dark curtain spreading across her right visual field, painless.",
+    "differentials": [
+      "Posterior vitreous detachment (without tear)",
+      "Vitreous hemorrhage",
+      "Migraine aura",
+      "Retinal vein occlusion"
+    ],
+    "red_flags": [
+      "Dark curtain/shadow progressing across vision",
+      "Sudden shower of new floaters",
+      "Flashes of light (photopsia)",
+      "High myopia"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the visual field defect",
+        "say": "Can you describe the shadow? Where did it start, and is it spreading?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "curtain",
+          "visual field defect"
+        ]
+      },
+      {
+        "objective": "Ask about floaters and flashes",
+        "say": "Did you notice new floaters or flashes of light before the shadow appeared?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "floaters",
+          "flashes",
+          "photopsia"
+        ]
+      },
+      {
+        "objective": "Confirm absence of pain",
+        "say": "Is there any pain or redness in the eye?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "painless"
+        ]
+      },
+      {
+        "objective": "Ask about risk factors: myopia and prior eye surgery",
+        "say": "Are you very nearsighted, and have you had any eye surgery like cataract surgery?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "high myopia",
+          "prior cataract surgery"
+        ]
+      },
+      {
+        "objective": "Explain urgency and positioning instructions",
+        "say": "This is an emergency. Please protect the eye and follow the retina specialist's individualized positioning instructions during transfer.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "head positioning",
+          "urgent referral"
+        ]
+      }
+    ]
+  }
+}

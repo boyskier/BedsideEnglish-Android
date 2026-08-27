@@ -1,0 +1,214 @@
+{
+  "id": "nephro_007",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Martinez",
+  "age": 31,
+  "gender": "male",
+  "chief_complaint": "extreme muscle soreness and dark tea-colored urine after ultramarathon",
+  "hpi_details": "31M post-marathon presenting with severe myalgia, dark brown urine (myoglobinuria), CK >40,000 U/L, hyperkalemia, and acute renal failure.",
+  "ideas": "thinks this is related to rhabdomyolysis acute kidney injury",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "creatine_kinase",
+      "test": "Creatine kinase",
+      "value": "42000",
+      "unit": "U/L",
+      "reference_range": "30-200",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "potassium",
+      "test": "Serum potassium",
+      "value": "6.2",
+      "unit": "mEq/L",
+      "reference_range": "3.5-5.0",
+      "flag": "critical",
+      "specimen": "Blood"
+    },
+    {
+      "id": "creatinine",
+      "test": "Serum creatinine",
+      "value": "3.2",
+      "unit": "mg/dL",
+      "reference_range": "0.7-1.3",
+      "flag": "critical",
+      "specimen": "Blood",
+      "note": "Baseline 0.9 mg/dL"
+    },
+    {
+      "id": "phosphate",
+      "test": "Serum phosphate",
+      "value": "5.8",
+      "unit": "mg/dL",
+      "reference_range": "2.5-4.5",
+      "flag": "high",
+      "specimen": "Blood"
+    },
+    {
+      "id": "calcium",
+      "test": "Total serum calcium",
+      "value": "7.6",
+      "unit": "mg/dL",
+      "reference_range": "8.6-10.2",
+      "flag": "low",
+      "specimen": "Blood"
+    }
+  ],
+  "investigation_events": [
+    {
+      "id": "stat_ecg",
+      "title": "STAT 12-lead ECG",
+      "order_terms": [
+        "ecg",
+        "ekg",
+        "electrocardiogram",
+        "12 lead ecg",
+        "12-lead ecg"
+      ],
+      "availability_message": "The STAT ECG is now available; IV calcium and hyperkalemia treatment should not be delayed.",
+      "results": [
+        {
+          "id": "hyperkalemia_ecg",
+          "test": "12-lead ECG",
+          "value": "Tall peaked T waves without QRS widening or sine-wave morphology",
+          "flag": "critical",
+          "collected_at": "At emergency presentation"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Rhabdomyolysis with Acute Kidney Injury evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Rhabdomyolysis with Acute Kidney Injury is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes aggressive IV isotonic saline hydration to prevent myoglobin cast formation in renal tubules, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: extreme muscle soreness and dark tea-colored urine after ultramarathon",
+      "Key HPI features: 31M post-marathon presenting with severe myalgia, dark brown urine (myoglobinuria), CK >40,000 U/L, hyperkalemia, and acute renal failure.",
+      "Objective/Exam findings: Vitals: BP 108/68, HR 102, Temp 37.8C. Diffuse severe tenderness and mild swelling of bilateral thighs and calves; decreased urine output. Urinalysis: dipstick strongly positive for blood but few/no RBCs on microscopy (myoglobinuria). Bloods: CK 42,000 U/L, Creatinine 3.2 mg/dL (baseline 0.9), K+ 6.2 mEq/L, Phosphate 5.8 mg/dL, Calcium 7.6 mg/dL, Uric acid elevated. ECG shows peaked T waves.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Rhabdomyolysis with Acute Kidney Injury.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Hemolysis (also causes dark urine, but different lab picture) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Palpitations or muscle weakness — suggests dangerous hyperkalemia from muscle breakdown."
+    ],
+    "management_principles": [
+      "Aggressive IV isotonic saline hydration (target urine output >200-300 mL/hr) to prevent myoglobin cast formation in renal tubules",
+      "Treat hyperkalemia emergently given K+ 6.2 mEq/L: IV calcium gluconate, insulin/dextrose, and consider hemodialysis if refractory or ECG worsens",
+      "Monitor serial CK, creatinine, and electrolytes (K+, phosphate, calcium) every 6-12 hours",
+      "Avoid nephrotoxic agents (NSAIDs, IV contrast) until renal function recovers"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "31M presents after completing an ultramarathon with severe bilateral leg myalgia and dark tea-colored urine beginning several hours after the race.",
+    "objective": "Vitals: BP 108/68, HR 102, Temp 37.8C. Diffuse severe tenderness and mild swelling of bilateral thighs and calves; decreased urine output. Urinalysis: dipstick strongly positive for blood but few/no RBCs on microscopy (myoglobinuria). Bloods: CK 42,000 U/L, Creatinine 3.2 mg/dL (baseline 0.9), K+ 6.2 mEq/L, Phosphate 5.8 mg/dL, Calcium 7.6 mg/dL, Uric acid elevated. ECG shows peaked T waves.",
+    "assessment": "Rhabdomyolysis with Acute Kidney Injury (myoglobin cast nephropathy) secondary to extreme exertion.",
+    "plan": "Aggressive IV isotonic saline hydration (target urine output >200-300 mL/hr) to prevent myoglobin cast formation in renal tubules. Treat hyperkalemia emergently given K+ 6.2 mEq/L: IV calcium gluconate, insulin/dextrose, and consider hemodialysis if refractory or ECG worsens. Monitor serial CK, creatinine, and electrolytes every 6-12 hours. Avoid nephrotoxic agents (NSAIDs, IV contrast) until renal function recovers."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Rhabdomyolysis Acute Kidney Injury",
+    "Formulate prioritized differential diagnosis for extreme muscle soreness and dark tea-colored urine after ultramarathon",
+    "Select appropriate laboratory and imaging studies for nephrology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Rhabdomyolysis with Acute Kidney Injury",
+    "one_liner": "Extreme muscle breakdown — here from an ultramarathon — releases myoglobin into the blood, which is directly toxic to kidney tubules, causing dark tea-colored urine and a markedly elevated CK.",
+    "differentials": [
+      "Hemolysis (also causes dark urine, but different lab picture)",
+      "Acute glomerulonephritis",
+      "Simple dehydration"
+    ],
+    "red_flags": [
+      "Palpitations or muscle weakness — suggests dangerous hyperkalemia from muscle breakdown"
+    ],
+    "must_ask": [
+      {
+        "objective": "Exertion history",
+        "say": "What kind of intense exercise did you do recently — how long or far?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "marathon",
+          "exercise",
+          "exertion"
+        ]
+      },
+      {
+        "objective": "Muscle pain severity",
+        "say": "How severe is the muscle soreness compared to normal post-exercise soreness?",
+        "domains": [
+          "severity"
+        ],
+        "keywords": [
+          "myalgia",
+          "severe"
+        ]
+      },
+      {
+        "objective": "Urine color",
+        "say": "What color is your urine — dark brown or tea-colored?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "dark",
+          "brown",
+          "tea colored"
+        ]
+      },
+      {
+        "objective": "Hydration during exercise",
+        "say": "How much fluid were you drinking during the event?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "hydration",
+          "fluids"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms (hyperkalemia)",
+        "say": "Any muscle weakness, cramps, or heart palpitations?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weakness",
+          "palpitations"
+        ]
+      }
+    ]
+  }
+}

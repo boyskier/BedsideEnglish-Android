@@ -1,0 +1,136 @@
+{
+  "id": "peds_041",
+  "system": "peds",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Lucas Rivera",
+  "age": 3,
+  "gender": "male",
+  "chief_complaint": "paroxysmal coughing fits followed by high-pitched whooping sound",
+  "hpi_details": "3-year-old boy is brought in by his parent with 2 weeks of worsening paroxysmal cough followed by an inspiratory whoop and occasional post-tussive vomiting. He attends daycare.",
+  "ideas": "thinks it might be related to whooping_cough",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Attends daycare; household includes an infant sibling.",
+  "clinical_knowledge": {
+    "topic": "Pertussis (whooping cough) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pertussis (whooping cough) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes azithromycin, checking DTaP status, and postexposure prophylaxis for eligible close contacts.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: paroxysmal coughing fits followed by high-pitched whooping sound",
+      "Key HPI features: A 3-year-old boy presents with 2 weeks of worsening paroxysmal cough followed by an inspiratory whoop and occasional post-tussive vomiting.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Pertussis.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pertussis (whooping cough).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Viral bronchitis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Apnea or cyanosis during coughing fits in infants is especially dangerous."
+    ],
+    "management_principles": [
+      "Azithromycin, check DTaP status, and postexposure prophylaxis for eligible close contacts",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American Academy of Pediatrics (AAP) Clinical Practice Guidelines",
+        "url": "https://publications.aap.org/pediatrics/pages/guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of paroxysmal coughing fits followed by high-pitched whooping sound. HPI: pertussis.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Pertussis.",
+    "assessment": "Condition highly suspicious for Pertussis.",
+    "plan": "Collect a nasopharyngeal specimen for pertussis testing and start azithromycin when clinical suspicion is high. Check DTaP status, notify public health as required, and arrange postexposure prophylaxis for eligible close contacts."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Pertussis",
+    "Select appropriate diagnostic workup for Pertussis",
+    "Implement evidence-based management plan: Azithromycin, check DTaP status, and provide postexposure prophylaxis for eligible close contacts"
+  ],
+  "teaching": {
+    "diagnosis": "Pertussis (whooping cough)",
+    "one_liner": "Patient with paroxysmal coughing fits followed by a high-pitched whooping sound.",
+    "differentials": [
+      "Viral bronchitis",
+      "Asthma",
+      "Foreign body aspiration"
+    ],
+    "red_flags": [
+      "Apnea or cyanosis during coughing fits in infants is especially dangerous"
+    ],
+    "must_ask": [
+      {
+        "objective": "Characterize the coughing fits",
+        "say": "Can you describe the coughing spells — do they come in bursts followed by a whooping sound?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "paroxysmal cough",
+          "whoop"
+        ]
+      },
+      {
+        "objective": "Ask about post-coughing vomiting",
+        "say": "Does he vomit after the coughing fits?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "post-tussive vomiting"
+        ]
+      },
+      {
+        "objective": "Confirm the DTaP vaccination status",
+        "say": "Is he up to date on his DTaP vaccine?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "DTaP vaccination status"
+        ]
+      },
+      {
+        "objective": "Ask about close contacts and exposure",
+        "say": "Has anyone at home or daycare had a similar prolonged cough?",
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "sick contacts"
+        ]
+      },
+      {
+        "objective": "Explain the antibiotic and contact treatment plan",
+        "say": "We'll start an antibiotic course, and eligible close contacts may need preventive antibiotics to reduce spread.",
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "azithromycin",
+          "contact treatment"
+        ]
+      }
+    ]
+  }
+}

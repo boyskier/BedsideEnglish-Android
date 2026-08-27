@@ -1,0 +1,128 @@
+{
+  "id": "rheum_019",
+  "system": "rheumatology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Gomez",
+  "age": 32,
+  "gender": "male",
+  "chief_complaint": "swollen knee, heel pain, and painful urination",
+  "hpi_details": "32M presents with a very swollen, painful left knee and right heel pain (Achilles tendon area). He also reports painful urination and redness in his left eye starting a week ago. He recently recovered from a severe diarrheal illness.",
+  "ideas": "thinks it's a sports injury",
+  "concerns": "worried about his knee",
+  "expectations": "wants knee drained",
+  "pmh": "None",
+  "medications": "None",
+  "social_hx": "Sexually active",
+  "clinical_knowledge": {
+    "topic": "Reactive Arthritis",
+    "core_concepts": [
+      "Classic triad (often incomplete): Urethritis, Conjunctivitis, Arthritis ('Can't see, can't pee, can't climb a tree').",
+      "Typically follows a GI (Salmonella/Campylobacter) or GU (Chlamydia) infection."
+    ],
+    "diagnostic_clues": [
+      "Oligoarthritis",
+      "Enthesitis (heel pain)",
+      "Recent GI/GU infection"
+    ],
+    "common_misconceptions": [
+      "Thinking antibiotics will cure the arthritis (it's an autoimmune reaction, not an active joint infection)."
+    ],
+    "dangerous_errors": [
+      "Failing to test for Chlamydia in a young sexually active patient with these symptoms."
+    ],
+    "management_principles": [
+      "Urgently aspirate an acutely swollen joint to exclude septic arthritis before treating it as reactive arthritis. Test for Chlamydia and gonorrhea and treat proven active infection per local guidance; use NSAIDs only after renal, gastrointestinal, cardiovascular, anticoagulant, and pregnancy-risk review. Same-day ophthalmology assessment is needed for a painful, photophobic red eye or visual symptoms suggestive of uveitis."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "32M with asymmetric oligoarthritis, enthesitis, dysuria, and conjunctivitis following a GI illness.",
+    "objective": "Large left knee effusion. Tender right Achilles insertion. Conjunctival injection.",
+    "assessment": "Reactive Arthritis.",
+    "plan": "Perform urgent arthrocentesis with synovial studies to exclude septic arthritis. Obtain urine NAAT for chlamydia/gonorrhea and treat any confirmed infection. Use an NSAID only if appropriate after contraindication review; arrange same-day ophthalmology assessment if eye pain, photophobia, or visual change is present."
+  },
+  "learning_objectives": [
+    "Recognize the classic triad and triggers of reactive arthritis."
+  ],
+  "teaching": {
+    "diagnosis": "Reactive Arthritis",
+    "one_liner": "Asymmetric arthritis, urethritis, and conjunctivitis following a recent GI or GU infection.",
+    "differentials": [
+      "Disseminated gonococcal infection",
+      "Septic arthritis",
+      "Psoriatic arthritis"
+    ],
+    "red_flags": [
+      "Septic joint (must rule out)"
+    ],
+    "must_ask": [
+      {
+        "objective": "Preceding infection",
+        "say": "Did you have diarrhea or a stomach illness in the weeks before this started?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "diarrhea",
+          "recent infection"
+        ]
+      },
+      {
+        "objective": "Joint pattern",
+        "say": "Which joints are swollen and painful — is it just the knee and heel?",
+        "domains": [
+          "location"
+        ],
+        "keywords": [
+          "knee",
+          "heel",
+          "Achilles"
+        ]
+      },
+      {
+        "objective": "Urinary and genital symptoms",
+        "say": "Have you had any burning or pain when you urinate?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dysuria",
+          "urethritis"
+        ]
+      },
+      {
+        "objective": "Eye involvement",
+        "say": "Have you had eye redness with pain, light sensitivity, or any change in vision?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "red eye",
+          "conjunctivitis",
+          "photophobia",
+          "vision change"
+        ]
+      },
+      {
+        "objective": "Sexual history for STI risk",
+        "say": "Have you had any new sexual partners recently?",
+        "domains": [
+          "social_hx"
+        ],
+        "keywords": [
+          "sexual history"
+        ]
+      }
+    ]
+  }
+}

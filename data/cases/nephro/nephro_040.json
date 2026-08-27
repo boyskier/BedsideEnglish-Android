@@ -1,0 +1,126 @@
+{
+  "id": "nephro_040",
+  "system": "nephrology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Scott",
+  "age": 22,
+  "gender": "female",
+  "chief_complaint": "proteinuria, hematuria, and facial rash in young female",
+  "hpi_details": "A 22-year-old female presents to the clinic with proteinuria, hematuria, and a facial rash. The symptoms started recently and have gradually worsened.",
+  "ideas": "thinks it might be lupus, since her aunt has the same condition",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker",
+  "available_results": [
+    {"id": "urinalysis", "test": "Urinalysis with microscopy", "value": "3+ protein with dysmorphic RBCs and red blood cell casts", "flag": "abnormal"},
+    {"id": "urine_protein_24h", "test": "24-hour urine protein", "value": "3.5", "unit": "g/day", "reference_range": "<0.15", "flag": "high"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Lupus Nephritis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Lupus Nephritis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes prompt renal biopsy to classify disease severity, followed by induction immunosuppression (systemic corticosteroids plus mycophenolate mofetil or cyclophosphamide) tailored to the biopsy class, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: proteinuria, hematuria, and facial rash in young female",
+      "Key HPI features: A 22-year-old female presents to the clinic with proteinuria, hematuria, and a facial rash. The symptoms started recently and have gradually worsened.",
+      "Objective/Exam findings: Vitals: BP 142/90, HR 88, low-grade fever 37.8C. Malar (butterfly) rash across the cheeks and nasal bridge, sparing the nasolabial folds; mild bilateral ankle edema; no active synovitis. Labs: Urinalysis with 3+ protein, dysmorphic RBCs and RBC casts; 24-hour urine protein 3.5 g; serum creatinine 1.1 mg/dL; low C3/C4 complement; positive ANA (high titer) and anti-dsDNA antibodies.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Lupus Nephritis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Other primary glomerulonephritis without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Rapidly rising creatinine — suggests aggressive (proliferative) lupus nephritis needing urgent biopsy."
+    ],
+    "management_principles": [
+      "Obtain a renal biopsy promptly to classify lupus nephritis (ISN/RPS class) and guide immunosuppression",
+      "Start induction immunosuppression per biopsy class -- typically high-dose corticosteroids plus mycophenolate mofetil or cyclophosphamide for proliferative (Class III/IV) disease",
+      "Add hydroxychloroquine (renal-protective in all SLE patients) and an ACE inhibitor/ARB for proteinuria; refer to rheumatology and nephrology for combined management"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "KDIGO 2024 Clinical Practice Guideline for Kidney Disease",
+        "url": "https://kdigo.org/guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Chief Complaint: proteinuria, hematuria, and facial rash in young female\n\nA 22-year-old female presents with several weeks of foamy, dark urine and a facial rash across her cheeks that worsens with sun exposure. Also reports mild joint aches and fatigue. Denies fever, chest pain, or shortness of breath.",
+    "objective": "Vitals: BP 142/90, HR 88, low-grade fever 37.8C. Malar (butterfly) rash across the cheeks and nasal bridge, sparing the nasolabial folds; mild bilateral ankle edema; no active synovitis. Labs: Urinalysis with 3+ protein, dysmorphic RBCs and RBC casts; 24-hour urine protein 3.5 g; serum creatinine 1.1 mg/dL; low C3/C4 complement; positive ANA (high titer) and anti-dsDNA antibodies.",
+    "assessment": "Lupus nephritis (likely proliferative, ISN/RPS Class III/IV) in a patient with new systemic lupus erythematosus, based on the malar rash, active urine sediment, heavy proteinuria, low complement, and positive ANA/anti-dsDNA.",
+    "plan": "1. Obtain a renal biopsy promptly to classify lupus nephritis and guide immunosuppression. 2. Start induction therapy with high-dose corticosteroids plus mycophenolate mofetil (or cyclophosphamide) based on the biopsy class. 3. Add hydroxychloroquine and an ACE inhibitor/ARB for proteinuria. 4. Refer to rheumatology and nephrology for combined management and monitor renal function, complement, and anti-dsDNA titers."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Lupus Nephritis",
+    "Select appropriate diagnostic workup for Lupus Nephritis",
+    "Implement evidence-based management plan: Renal biopsy, systemic corticosteroids, Mycophenolate Mofetil"
+  ],
+  "teaching": {
+    "diagnosis": "Lupus Nephritis",
+    "one_liner": "Kidney involvement in systemic lupus erythematosus, where immune complexes deposit in the glomeruli, causing proteinuria and hematuria, often alongside the classic facial rash.",
+    "differentials": [
+      "Other primary glomerulonephritis",
+      "Drug-induced lupus"
+    ],
+    "red_flags": [
+      "Rapidly rising creatinine — suggests aggressive (proliferative) lupus nephritis needing urgent biopsy"
+    ],
+    "must_ask": [
+      {
+        "objective": "Facial rash",
+        "say": "Have you had a rash across your cheeks and nose?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "malar rash",
+          "butterfly"
+        ]
+      },
+      {
+        "objective": "Joint symptoms",
+        "say": "Any joint pain or swelling?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Urine changes",
+        "say": "Have you noticed blood or foam in your urine?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Sun sensitivity",
+        "say": "Does sunlight make your rash worse?",
+        "domains": [
+          "aggravating"
+        ]
+      },
+      {
+        "objective": "Fatigue and fever",
+        "say": "Any fatigue or unexplained fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      }
+    ]
+  }
+}

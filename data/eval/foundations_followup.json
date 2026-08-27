@@ -1,0 +1,84 @@
+{
+  "name": "Foundations — Follow-up Visit Basics",
+  "learner_level": "preclinical",
+  "_note": "For pre-clinical (MS1-2) IMGs with no prior patient experience, practising the established-patient review loop for the first time. Scores LANGUAGE and COMMUNICATION, never advanced clinical reasoning — metric keys are kept identical to the standard follow_up rubric so scores/DB columns keep working, only the labels/anchors are re-pitched for a beginner reading a simple one-problem chart. The live checklist always comes from the case's own `learning_objectives` (see FollowUpEvaluation.canonicalChecklist), so the `checklist` below is a fallback only.",
+  "output_sections": [
+    "scores",
+    "checklist",
+    "follow_up_completeness",
+    "shared_plan",
+    "ice_empathy",
+    "corrections",
+    "anki_cards",
+    "summary"
+  ],
+  "metrics": {
+    "grammar": {
+      "label": "Grammar & Sentences",
+      "anchors": {
+        "90-100": "Clear, well-formed questions and sentences throughout",
+        "70-80": "Occasional minor errors; meaning always clear",
+        "50-60": "Some errors in tense/articles/word order, but understandable",
+        "30-40": "Frequent errors; the patient must work to understand",
+        "10-20": "Errors make most sentences hard to follow"
+      }
+    },
+    "medical_accuracy": {
+      "label": "Follow-up Vocabulary",
+      "anchors": {
+        "90-100": "Correct, natural everyday words for symptoms, side effects and taking medicine",
+        "70-80": "Mostly correct vocabulary; minor slips",
+        "50-60": "Uses vague words where a simple clinical term would help, or small misuses",
+        "30-40": "Often reaches for the wrong word or cannot find the term",
+        "10-20": "Vocabulary gaps regularly block communication"
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Following the Story",
+      "anchors": {
+        "90-100": "Clearly links today's visit to what happened before and reaches a simple, sensible next step",
+        "70-80": "Reviews the prior plan and interval change with only minor gaps",
+        "50-60": "Asks some follow-up questions but the link to the previous visit is unclear or incomplete",
+        "30-40": "Visit does not meaningfully check back on the prior plan",
+        "10-20": "No coherent follow-up reasoning is demonstrated"
+      }
+    },
+    "communication_fluency": {
+      "label": "Fluency & Pronunciation",
+      "anchors": {
+        "90-100": "Smooth, steady pace; clearly understandable pronunciation",
+        "70-80": "Occasional hesitation; pronunciation rarely impedes understanding",
+        "50-60": "Noticeable pauses or pronunciation that needs listener effort",
+        "30-40": "Frequent stops; pronunciation often unclear",
+        "10-20": "Halting delivery or pronunciation that blocks understanding"
+      }
+    },
+    "professionalism": {
+      "label": "Empathy & Nonjudgmental Tone",
+      "anchors": {
+        "90-100": "Warm and nonjudgmental throughout, especially when asking about missed doses or difficulty following the plan",
+        "70-80": "Good empathy; asks about adherence and side effects without blame",
+        "50-60": "Adequate but mechanical; tone occasionally sounds like an interrogation",
+        "30-40": "Little warmth; questions about adherence sound judgmental",
+        "10-20": "Dismissive or unprofessional; patient is made to feel blamed"
+      }
+    }
+  },
+  "checklist": [
+    { "item": "greeted the patient and confirmed the reason for today's follow-up", "required": true },
+    { "item": "asked an open-ended question about how things have been since the last visit", "required": true },
+    { "item": "asked whether the treatment or plan is working", "required": true },
+    { "item": "asked about taking the medicine or plan as directed, using neutral, nonjudgmental language", "required": true },
+    { "item": "asked about side effects or new symptoms", "required": true },
+    { "item": "invited the patient's questions or concerns", "required": true },
+    { "item": "agreed on a clear, simple next step (what happens now, or when to return)", "required": true },
+    { "item": "closed the conversation politely", "required": false }
+  ],
+  "empathy_markers": [
+    "used neutral, nonjudgmental language when asking about missed doses or difficulty following the plan",
+    "acknowledged the effort or difficulty of ongoing treatment",
+    "invited the patient's questions and preferences",
+    "checked the patient's understanding of the updated plan"
+  ],
+  "reference_output_type": "none"
+}

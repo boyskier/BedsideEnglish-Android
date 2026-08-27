@@ -1,0 +1,158 @@
+{
+  "id": "urology_019",
+  "system": "urology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Young",
+  "age": 39,
+  "gender": "male",
+  "chief_complaint": "incontinence, urinary tract infections, and autonomic dysreflexia in paraplegic patient with high bladder pressures",
+  "hpi_details": "39M with T6 paraplegia presenting with urinary leakage between self-catheterizations where urodynamics reveal detrusor-sphincter dyssynergia, poor bladder compliance, and elevated detrusor storage pressures (>40 cmH2O) requiring intradetrusor OnabotulinumtoxinA injections.",
+  "ideas": "thinks this is related to neurogenic bladder spinal cord injury",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "T6 spinal cord injury with paraplegia",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {"id": "urodynamic_storage_pressure", "test": "Maximum detrusor storage pressure", "value": "48", "unit": "cm H2O", "reference_range": "<40", "flag": "high", "collected_at": "Recent urodynamic study"},
+    {"id": "urodynamic_compliance", "test": "Bladder compliance", "value": "12", "unit": "mL/cm H2O", "reference_range": ">20", "flag": "low", "collected_at": "Recent urodynamic study"}
+  ],
+  "clinical_knowledge": {
+    "topic": "Neurogenic Bladder Spinal Cord Injury evaluation and management",
+    "core_concepts": [
+      "High detrusor storage pressures and poor compliance can cause reflux, hydronephrosis, recurrent infection, and renal deterioration.",
+      "In people with spinal cord injury at or above T6, autonomic dysreflexia is a hypertensive emergency; sit the patient upright, remove tight clothing, identify and relieve triggers such as bladder obstruction, and seek emergency care.",
+      "Use urinalysis and culture only when symptoms or systemic features suggest infection; bacteriuria or cloudy urine alone is common with catheterization and should not prompt antibiotics.",
+      "Clean intermittent catheterization and pressure-lowering therapy are individualized. Botulinum toxin can improve storage but may worsen retention, so ability to catheterize and follow-up are essential."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: incontinence, urinary tract infections, and autonomic dysreflexia in paraplegic patient with high bladder pressures",
+      "T6 paraplegia, detrusor-sphincter dyssynergia, poor compliance, and storage pressure above 40 cm H2O place upper tracts at risk.",
+      "Measure blood pressure during symptoms, assess catheter patency and residuals, renal function, and upper-tract surveillance.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Neurogenic Bladder Spinal Cord Injury.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Urinary tract infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Missing autonomic dysreflexia, severe hypertension, retention, pyelonephritis/urosepsis, or acute kidney injury.",
+      "Treating asymptomatic bacteriuria with antibiotics.",
+      "Giving botulinum toxin without confirming a safe catheterization plan and renal-aware follow-up."
+    ],
+    "management_principles": [
+      "Urgently assess and treat autonomic dysreflexia or sepsis; check drainage immediately when bladder distension is suspected.",
+      "Refer to neuro-urology for pressure-lowering strategy, catheterization review, renal ultrasound/creatinine surveillance, and repeat urodynamics when indicated.",
+      "Culture and treat symptomatic infection based on results, renal function, and local guidance; avoid routine suppressive antibiotics."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Neurogenic Bladder Spinal Cord Injury: incontinence, urinary tract infections, and autonomic dysreflexia in paraplegic patient with high bladder pressures. 39M with T6 paraplegia presenting with urinary leakage between self-catheterizations where urodynamics reveal detrusor-sphincter dyssynergia, poor bladder compliance, and elevated detrusor storage pressures (>40 cmH2O) requiring intradetrusor OnabotulinumtoxinA injections.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Neurogenic Bladder Spinal Cord Injury.",
+    "assessment": "High-risk neurogenic lower urinary tract dysfunction from T6 injury with dangerous storage pressures and autonomic dysreflexia risk.",
+    "plan": "Check blood pressure and bladder drainage now if dysreflexia symptoms occur; arrange urgent neuro-urology management to protect renal function. Treat only symptomatic, culture-supported infection and individualize pressure-lowering treatment."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Neurogenic Bladder Spinal Cord Injury",
+    "Formulate prioritized differential diagnosis for incontinence, urinary tract infections, and autonomic dysreflexia in paraplegic patient with high bladder pressures",
+    "Select appropriate laboratory and imaging studies for urology",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "High-risk neurogenic bladder due to spinal cord injury",
+    "one_liner": "A man with T6 paraplegia has dyssynergia, poor compliance, and high storage pressures, creating renal and autonomic dysreflexia risk.",
+    "differentials": [
+      "Urinary tract infection",
+      "Bladder outlet obstruction from catheter malposition",
+      "Autonomic dysreflexia from another trigger (bowel impaction, skin ulcer)"
+    ],
+    "red_flags": [
+      "Acute total urinary retention",
+      "Urosepsis with high fever"
+    ],
+    "must_ask": [
+      {
+        "objective": "Catheterization routine and technique",
+        "say": "How often do you self-catheterize each day, and has that schedule changed recently?",
+        "domains": [
+          "pmh",
+          "onset_duration"
+        ],
+        "keywords": [
+          "catheterize",
+          "schedule",
+          "frequency",
+          "technique"
+        ]
+      },
+      {
+        "objective": "Autonomic dysreflexia symptoms",
+        "say": "Do you get pounding headaches, sweating, or flushing above your level of injury when your bladder is full?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "headache",
+          "sweating",
+          "flushing",
+          "dysreflexia",
+          "blood pressure"
+        ]
+      },
+      {
+        "objective": "Leakage between catheterizations",
+        "say": "Are you leaking urine between catheterizations, and how much?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "leaking",
+          "between",
+          "incontinence",
+          "amount"
+        ]
+      },
+      {
+        "objective": "Recurrent UTI symptoms and fever",
+        "say": "Have you had repeated bladder infections, cloudy urine, or fevers?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "uti",
+          "cloudy",
+          "fever",
+          "recurrent",
+          "infection"
+        ]
+      },
+      {
+        "objective": "Level and completeness of spinal cord injury",
+        "say": "Can you remind me the level of your spinal cord injury and whether it's complete or incomplete?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "level",
+          "spinal cord",
+          "complete",
+          "incomplete",
+          "injury"
+        ]
+      }
+    ]
+  }
+}

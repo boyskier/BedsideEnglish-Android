@@ -1,0 +1,181 @@
+{
+  "id": "ps_004",
+  "system": "plastic surgery",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Davis",
+  "age": 48,
+  "gender": "female",
+  "chief_complaint": "stage IV ischial pressure ulcer with exposed bone in paraplegic patient requiring rotational muscle flap coverage",
+  "hpi_details": "48F with T10 paraplegia from a motor vehicle accident 12 years ago presents with a chronic, foul-smelling, deep Stage IV pressure ulcer over the right ischial tuberosity. Developed after sitting in her wheelchair for 16 hours daily without pressure-relief cushions during a 3-week illness. Reports low-grade fevers and increased spasticity.",
+  "ideas": "thinks the sore is getting deeper because bone is visible inside the cavity",
+  "concerns": "worried about serious bone infection (osteomyelitis) and sepsis",
+  "expectations": "wants surgical debridement and skin/muscle flap closure so she can sit safely again after healing",
+  "pmh": "T10 Paraplegia, Neurogenic bladder on intermittent self-catheterization, Chronic muscle spasms",
+  "medications": "Baclofen 20mg TID, Oxybutynin 5mg BID",
+  "social_hx": "Former accountant, wheelchair-bound, non-smoker, albumin 3.2 g/dL",
+  "investigation_events": [
+    {
+      "id": "pressure_ulcer_pelvic_mri",
+      "title": "Urgent pelvic MRI for osteomyelitis extent",
+      "order_terms": ["pelvic MRI", "MRI pelvis", "MRI for osteomyelitis", "ischial MRI"],
+      "availability_message": "The pelvic MRI result is now available. Definitive antibiotics should be based on deep bone sampling rather than a superficial wound culture.",
+      "results": [{"id": "pelvic_mri", "test": "Contrast-enhanced pelvic MRI", "value": "Marrow edema, enhancement, and cortical erosion of the right ischial tuberosity contiguous with the ulcer, consistent with acute-on-chronic osteomyelitis; no drainable deep abscess", "flag": "critical"}]
+    },
+    {
+      "id": "pressure_ulcer_nutrition_markers",
+      "title": "Nutritional assessment before reconstruction",
+      "order_terms": ["albumin", "prealbumin", "nutrition labs", "nutritional assessment"],
+      "availability_message": "The nutritional markers are now available for multidisciplinary optimization before reconstruction.",
+      "results": [
+        {"id": "albumin", "test": "Serum albumin", "value": "3.2", "unit": "g/dL", "reference_range": "3.5-5.0", "flag": "low"},
+        {"id": "prealbumin", "test": "Serum prealbumin", "value": "14", "unit": "mg/dL", "reference_range": "18-45", "flag": "low"}
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Stage IV Right Ischial Tuberosity Pressure Ulcer with underlying Osteomyelitis in a paraplegic host evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Stage IV Right Ischial Tuberosity Pressure Ulcer with underlying Osteomyelitis in a paraplegic host is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes multidisciplinary optimization (nutrition, pressure offloading, targeted antibiotics) followed by radical debridement and vascularized flap reconstruction, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: stage IV ischial pressure ulcer with exposed bone in paraplegic patient requiring rotational muscle flap coverage",
+      "Key HPI features: 48F with T10 paraplegia from a motor vehicle accident 12 years ago presents with a chronic, foul-smelling, deep Stage IV pressure ulcer over the right ischial tuberosity. Developed after sitting in her wheelchair for 16 hours daily without pressure-relief cushions during a 3-week illness. Reports low-grade fevers and increased spasticity.",
+      "Objective/Exam findings: Vitals: HR 94, BP 110/70, Temp 38.1C. Right ischial region reveals a 6 x 5 cm Stage IV pressure ulcer with undermining margins and necrotic slough at base. Probe-to-bone test is strongly positive with bone directly visible and palpable at the ischial tuberosity. Pelvic MRI with contrast confirms underlying acute and chronic osteomyelitis of the right ischial tuberosity. Nutritional assessment shows mild protein-calorie malnutrition (prealbumin 14 mg/dL).",
+      "Relevant background/PMH: T10 Paraplegia, Neurogenic bladder on intermittent self-catheterization, Chronic muscle spasms",
+      "Current medications: Baclofen 20mg TID, Oxybutynin 5mg BID"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Stage IV Right Ischial Tuberosity Pressure Ulcer with underlying Osteomyelitis in a paraplegic host.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Soft tissue infection without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Flap ischemia or tissue necrosis."
+    ],
+    "management_principles": [
+      "Multidisciplinary three-stage management: optimize the patient, surgically debride the wound, and reconstruct with a vascularized flap.",
+      "Optimization: aggressive nutritional repletion (high protein supplements to target prealbumin > 20), strict bed rest on Clinitron air-fluidized bed with zero sitting pressure, and targeted IV antibiotic therapy based on deep bone biopsy cultures",
+      "Surgery: Radical surgical debridement including partial ischiectomy (removal of infected bursa and prominent ischial bone spur), followed by reconstruction using a regional vascularized pedicled muscle/myocutaneous flap (Gluteus Maximus rotation flap or Hamstring V-Y advancement flap) to fill the dead space and provide durable padding"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "48F paraplegic presenting with deep Stage IV right ischial decubitus ulcer with exposed bone and systemic inflammatory signs.",
+    "objective": "Vitals: HR 94, BP 110/70, Temp 38.1C. Right ischial region reveals a 6 x 5 cm Stage IV pressure ulcer with undermining margins and necrotic slough at base. Probe-to-bone test is strongly positive with bone directly visible and palpable at the ischial tuberosity. Pelvic MRI with contrast confirms underlying acute and chronic osteomyelitis of the right ischial tuberosity. Nutritional assessment shows mild protein-calorie malnutrition (prealbumin 14 mg/dL).",
+    "assessment": "Stage IV Right Ischial Tuberosity Pressure Ulcer with underlying Osteomyelitis in a paraplegic host.",
+    "plan": "Multidisciplinary three-stage management: 1. Optimization: aggressive nutritional repletion (high protein supplements to target prealbumin > 20), strict bed rest on Clinitron air-fluidized bed with zero sitting pressure, and targeted IV antibiotic therapy based on deep bone biopsy cultures. 2. Surgery: Radical surgical debridement including partial ischiectomy (removal of infected bursa and prominent ischial bone spur), followed by reconstruction using a regional vascularized pedicled muscle/myocutaneous flap (Gluteus Maximus rotation flap or Hamstring V-Y advancement flap) to fill the dead space and provide durable padding. 3. Post-op: strict flat bed rest for 4-6 weeks before gradual progressive seating protocol."
+  },
+  "learning_objectives": [
+    "Staging of pressure ulcers (National Pressure Injury Advisory Panel Grades I through IV and Unstageable)",
+    "Interpret the probe-to-bone clinical test and MRI findings in diagnosing contiguous osteomyelitis beneath decubitus ulcers",
+    "Understand mandatory pre-operative optimization prerequisites (nutritional markers prealbumin/albumin, eradication of infection, relief of spasticity, pressure redistribution beds)",
+    "Select appropriate vascularized regional muscle/myocutaneous flaps for sacral (gluteal), ischial (hamstring/gluteal), and trochanteric (tensor fascia lata) reconstruction"
+  ],
+  "teaching": {
+    "diagnosis": "Stage IV Right Ischial Tuberosity Pressure Ulcer with underlying Osteomyelitis in a paraplegic host.",
+    "one_liner": "Plastic and reconstructive surgical case presenting with stage IV ischial pressure ulcer with exposed bone in paraplegic patient requiring rotational muscle flap coverage.",
+    "differentials": [
+      "Untreated stage III pressure ulcer without bone involvement",
+      "Necrotizing soft tissue infection",
+      "Perianal or perirectal abscess",
+      "Malignant (Marjolin) degeneration of a chronic wound"
+    ],
+    "red_flags": [
+      "Fever, spreading redness, foul drainage, or systemic illness suggesting deep infection",
+      "New wound deterioration or exposed bone despite pressure relief"
+    ],
+    "must_ask": [
+      {
+        "objective": "Turning and pressure-relief schedule",
+        "say": "How often are you repositioned or do you shift your weight in the wheelchair each day?",
+        "domains": [
+          "living_work",
+          "social_hx"
+        ],
+        "keywords": [
+          "turning",
+          "reposition",
+          "wheelchair",
+          "cushion",
+          "pressure"
+        ]
+      },
+      {
+        "objective": "Wound duration and depth progression",
+        "say": "How long has this sore been open, and has it gotten deeper or wider?",
+        "domains": [
+          "onset_duration",
+          "progression"
+        ],
+        "keywords": [
+          "wound",
+          "duration",
+          "deeper",
+          "ulcer",
+          "weeks"
+        ]
+      },
+      {
+        "objective": "Systemic infection symptoms",
+        "say": "Have you had any fevers, chills, or increased muscle spasms recently?",
+        "domains": [
+          "associated_symptoms",
+          "severity"
+        ],
+        "keywords": [
+          "fever",
+          "chills",
+          "spasms",
+          "infection",
+          "systemic"
+        ]
+      },
+      {
+        "objective": "Nutritional status",
+        "say": "How has your appetite and weight been over the past few months?",
+        "domains": [
+          "pmh",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "nutrition",
+          "appetite",
+          "weight",
+          "protein",
+          "albumin"
+        ]
+      },
+      {
+        "objective": "Prior wound care and debridement history",
+        "say": "Have you had this wound treated or debrided before?",
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "debridement",
+          "treated",
+          "prior",
+          "wound care",
+          "surgery"
+        ]
+      }
+    ]
+  }
+}

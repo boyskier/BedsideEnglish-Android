@@ -1,0 +1,128 @@
+{
+  "id": "rheum_010",
+  "system": "rheumatology",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Anderson",
+  "age": 76,
+  "gender": "male",
+  "chief_complaint": "sudden painful swelling and warmth of right knee in elderly patient",
+  "hpi_details": "76M presenting with 2 days of sudden painful swelling, warmth, and redness of the right knee, with associated low-grade fever.",
+  "ideas": "thinks this is related to pseudogout cppd acute knee monoarthritis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "investigation_events": [{"id":"acute_knee_aspiration","title":"Urgent synovial-fluid results","order_terms":["arthrocentesis","joint aspiration","aspirate the knee","synovial fluid","crystal analysis"],"availability_message":"The immediate synovial-fluid microscopy is now available; final culture remains pending.","results":[{"id":"synovial_cell_count","test":"Synovial-fluid leukocyte count","value":"28,000","unit":"cells/uL","reference_range":"<200","flag":"critical","specimen":"Synovial fluid","collected_at":"During urgent assessment"},{"id":"synovial_crystals","test":"Synovial-fluid crystal analysis","value":"Rhomboid-shaped, weakly positively birefringent calcium pyrophosphate crystals","flag":"abnormal","specimen":"Synovial fluid","collected_at":"During urgent assessment"},{"id":"gram_stain","test":"Synovial-fluid Gram stain","value":"No organisms seen","flag":"normal","specimen":"Synovial fluid","collected_at":"During urgent assessment"}]}],
+  "clinical_knowledge": {
+    "topic": "Pseudogout (CPPD Arthritis) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Pseudogout (CPPD Arthritis) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes urgent arthrocentesis to exclude septic arthritis before confirming and treating CPPD, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: sudden painful swelling and warmth of right knee in elderly patient",
+      "Key HPI features: 76M presenting with 2 days of sudden painful swelling, warmth, and redness of the right knee, with associated low-grade fever.",
+      "Objective/Exam findings: Temperature mildly elevated. Knee exam shows a moderate effusion, warmth, erythema, and severely restricted range of motion due to pain. No overlying skin break or cellulitis. Other joints normal. No tophi.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Pseudogout (CPPD Arthritis).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Gout without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Fever with joint swelling — must exclude septic arthritis."
+    ],
+    "management_principles": [
+      "Exclude septic arthritis first with urgent arthrocentesis (cell count, Gram stain/culture) before attributing acute monoarthritis to CPPD, especially with fever present",
+      "Confirm CPPD with polarized light microscopy showing rhomboid, positively birefringent crystals, and radiographs for chondrocalcinosis",
+      "Treat the acute flare with NSAIDs, colchicine, or intra-articular corticosteroid injection, individualized by renal function, comorbidities, and infection risk",
+      "Screen for underlying metabolic causes (hyperparathyroidism, hemochromatosis, hypomagnesemia) if recurrent or occurring at an atypical age."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Rheumatology (ACR) Clinical Guidance",
+        "url": "https://rheumatology.org/clinical-guidance"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "76M presenting with 2 days of sudden painful swelling, warmth, and redness of the right knee, with associated low-grade fever.",
+    "objective": "Temperature mildly elevated. Knee exam shows a moderate effusion, warmth, erythema, and severely restricted range of motion due to pain. No overlying skin break or cellulitis. Other joints normal.",
+    "assessment": "Acute right knee monoarthritis in an elderly patient; septic arthritis must be excluded before attributing to CPPD (pseudogout) or gout.",
+    "plan": "Perform urgent arthrocentesis with synovial fluid cell count, Gram stain/culture, and polarized light microscopy for crystals before starting treatment; send blood cultures if infection is suspected. If CPPD is confirmed without infection, treat the flare with NSAIDs, colchicine, or intra-articular corticosteroid injection individualized to comorbidities, obtain knee radiographs for chondrocalcinosis, and screen for underlying metabolic causes given the presentation."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Pseudogout CPPD Acute Knee Monoarthritis",
+    "Formulate prioritized differential diagnosis for sudden painful swelling and warmth of right knee in elderly patient",
+    "Select appropriate arthrocentesis studies (cell count, Gram stain/culture, polarized microscopy) to distinguish septic arthritis, gout, and CPPD",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Pseudogout (CPPD Arthritis)",
+    "one_liner": "Deposition of calcium pyrophosphate crystals in a joint — most often the knee in older adults — causing acute painful synovitis, distinguished from gout by rhomboid, positively birefringent crystals and chondrocalcinosis on X-ray.",
+    "differentials": [
+      "Gout",
+      "Septic arthritis",
+      "Osteoarthritis flare"
+    ],
+    "red_flags": [
+      "Fever with joint swelling — must exclude septic arthritis"
+    ],
+    "must_ask": [
+      {
+        "objective": "Joint location and onset",
+        "say": "Which joint is affected, and how suddenly did it start?",
+        "domains": [
+          "location",
+          "onset_duration"
+        ],
+        "keywords": [
+          "knee",
+          "sudden"
+        ]
+      },
+      {
+        "objective": "Character of swelling",
+        "say": "How swollen and warm is the joint?",
+        "domains": [
+          "character"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Prior similar episodes",
+        "say": "Has this happened before, in this or another joint?",
+        "domains": [
+          "pmh"
+        ]
+      },
+      {
+        "objective": "Age and risk factors",
+        "say": "Do you have any other joint or metabolic conditions?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "id": "cs_017",
+  "system": "cardiothoracic surgery",
+  "difficulty": "beginner",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Rodriguez",
+  "age": 63,
+  "gender": "female",
+  "chief_complaint": "pleuritic chest pain, low-grade fever, and pericardial friction rub 3 weeks after heart bypass surgery",
+  "hpi_details": "63F post-CABG 3 weeks ago presenting with autoimmune pericarditis, elevated inflammatory markers, and moderate pericardial effusion responsive to high-dose Aspirin and Colchicine.",
+  "ideas": "thinks this is related to postpericardiotomy syndrome dressler",
+  "concerns": "worried about serious complications and prolonged recovery",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "No significant chronic medical history",
+  "medications": "None",
+  "social_hx": "Non-smoker, active lifestyle",
+  "available_results": [
+    {
+      "id": "crp_postpericardiotomy",
+      "test": "C-reactive protein",
+      "value": "68",
+      "unit": "mg/L",
+      "reference_range": "<5",
+      "flag": "high",
+      "specimen": "Blood",
+      "collected_at": "Current admission"
+    },
+    {
+      "id": "echo_postpericardiotomy_effusion",
+      "test": "Transthoracic echocardiogram",
+      "value": "Moderate circumferential pericardial effusion measuring 14 mm, without chamber collapse or tamponade physiology",
+      "unit": "",
+      "reference_range": "No pericardial effusion",
+      "flag": "abnormal",
+      "collected_at": "Current admission"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Postpericardiotomy Syndrome (Dressler-type) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Postpericardiotomy Syndrome (Dressler-type) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management is high-dose NSAIDs (e.g., aspirin) plus colchicine for several weeks, with close monitoring for progression to tamponade via serial exam and echocardiography.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: pleuritic chest pain, low-grade fever, and pericardial friction rub 3 weeks after heart bypass surgery",
+      "Key HPI features: 63F post-CABG 3 weeks ago presenting with autoimmune pericarditis, elevated inflammatory markers, and moderate pericardial effusion responsive to high-dose Aspirin and Colchicine.",
+      "Objective/Exam findings: Complete vital signs and focused physical examination required. Diagnostic workup tailored for Postpericardiotomy Syndrome Dressler.",
+      "Relevant background/PMH: No significant chronic medical history"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Postpericardiotomy Syndrome (Dressler-type).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Postoperative infection (mediastinitis) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Signs of tamponade (hypotension, muffled heart sounds) — the pericardial effusion can occasionally become large enough to compress the heart."
+    ],
+    "management_principles": [
+      "Treat with high-dose aspirin/NSAIDs plus colchicine; obtain echocardiogram to assess effusion size and rule out tamponade",
+      "Refer to cardiology if effusion is large, symptoms fail to improve, or tamponade physiology develops",
+      "Assess clinical stability, monitor vital parameters, and perform targeted diagnostic investigations.",
+      "Implement targeted therapeutic interventions per evidence-based clinical practice guidelines."
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "UpToDate & National Evidence-Based Clinical Practice Guidelines 2026",
+        "url": "https://www.uptodate.com/contents/table-of-contents/clinical-practice-guidelines"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Postpericardiotomy Syndrome Dressler: pleuritic chest pain, low-grade fever, and pericardial friction rub 3 weeks after heart bypass surgery. 63F post-CABG 3 weeks ago presenting with autoimmune pericarditis, elevated inflammatory markers, and moderate pericardial effusion responsive to high-dose Aspirin and Colchicine.",
+    "objective": "Complete vital signs and focused physical examination required. Diagnostic workup tailored for Postpericardiotomy Syndrome Dressler.",
+    "assessment": "Findings consistent with postpericardiotomy (Dressler-type) syndrome following recent CABG.",
+    "plan": "Start high-dose aspirin plus colchicine; obtain echocardiogram to size the effusion and exclude tamponade; refer to cardiology if effusion enlarges or symptoms fail to improve."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Postpericardiotomy Syndrome Dressler",
+    "Formulate prioritized differential diagnosis for pleuritic chest pain, low-grade fever, and pericardial friction rub 3 weeks after heart bypass surgery",
+    "Select appropriate laboratory and imaging studies for cardiothoracic surgery",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Postpericardiotomy Syndrome (Dressler-type)",
+    "one_liner": "An autoimmune inflammatory reaction to cardiac surgery, occurring weeks afterward, causing pleuritic chest pain, low-grade fever, and a pericardial friction rub — usually responsive to NSAIDs and colchicine.",
+    "differentials": [
+      "Postoperative infection (mediastinitis)",
+      "Pulmonary embolism",
+      "Recurrent cardiac ischemia"
+    ],
+    "red_flags": [
+      "Signs of tamponade (hypotension, muffled heart sounds) — the pericardial effusion can occasionally become large enough to compress the heart"
+    ],
+    "must_ask": [
+      {
+        "objective": "Timing relative to surgery",
+        "say": "How many weeks ago was your bypass surgery?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks ago"
+        ]
+      },
+      {
+        "objective": "Pain character and position",
+        "say": "Does the pain improve when you sit up and lean forward?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "sitting forward"
+        ]
+      },
+      {
+        "objective": "Fever",
+        "say": "Have you had a low-grade fever?",
+        "domains": [
+          "associated_symptoms"
+        ]
+      },
+      {
+        "objective": "Breathing effect on pain",
+        "say": "Does the pain get worse with deep breaths?",
+        "domains": [
+          "aggravating"
+        ],
+        "keywords": [
+          "pleuritic"
+        ]
+      },
+      {
+        "objective": "Wound healing",
+        "say": "Has your surgical incision been healing normally?",
+        "domains": [
+          "pmh"
+        ]
+      }
+    ]
+  }
+}

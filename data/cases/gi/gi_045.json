@@ -1,0 +1,200 @@
+{
+  "id": "gi_045",
+  "system": "gi",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Hall",
+  "age": 77,
+  "gender": "male",
+  "chief_complaint": "recurrent nausea, vomiting, and abdominal pain relieved by hot showers",
+  "hpi_details": "A 77-year-old male with long-term frequent cannabis use presents with recurrent nausea, vomiting, and abdominal pain relieved by hot showers. The episodes have gradually worsened.",
+  "ideas": "thinks it might be related to cannabinoid hyperemesis syndrome",
+  "concerns": "worried about potential complications and long term recovery",
+  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "pmh": "Unremarkable",
+  "medications": "None",
+  "social_hx": "Non-smoker, social drinker, long-term frequent cannabis use",
+  "investigation_events": [
+    {
+      "id": "point_of_care_dehydration_labs",
+      "title": "Point-of-care dehydration and electrolyte results",
+      "order_terms": [
+        "blood tests",
+        "blood work",
+        "electrolytes",
+        "metabolic panel",
+        "potassium",
+        "renal function",
+        "creatinine"
+      ],
+      "availability_message": "The point-of-care dehydration and electrolyte results are now available; antiemetic care and rehydration should not be delayed.",
+      "results": [
+        {
+          "id": "potassium",
+          "test": "Serum potassium",
+          "value": "3.1",
+          "unit": "mEq/L",
+          "reference_range": "3.5-5.0",
+          "flag": "low",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        },
+        {
+          "id": "creatinine",
+          "test": "Serum creatinine",
+          "value": "1.5",
+          "unit": "mg/dL",
+          "reference_range": "0.7-1.3",
+          "flag": "high",
+          "specimen": "Blood",
+          "collected_at": "During urgent assessment"
+        }
+      ]
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Cannabinoid Hyperemesis Syndrome (CHS) evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Cannabinoid Hyperemesis Syndrome (CHS) is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes counseling on complete cessation of cannabis and using capsaicin cream for acute relief, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: recurrent nausea, vomiting, and abdominal pain relieved by hot showers",
+      "Key HPI features: A 77-year-old male with long-term frequent cannabis use presents with recurrent nausea, vomiting, and abdominal pain relieved by hot showers. The episodes have gradually worsened.",
+      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Cannabinoid Hyperemesis Syndrome.",
+      "Relevant background/PMH: Unremarkable"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Cannabinoid Hyperemesis Syndrome (CHS).",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cyclical vomiting syndrome without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: persistent vomiting despite hot showers and cannabis cessation, signs of dehydration or acute kidney injury from prolonged vomiting, or new presentation at advanced age without a long personal history of heavy cannabis use."
+    ],
+    "management_principles": [
+      "Counsel on complete cessation of cannabis, capsaicin cream for acute relief",
+      "Consult specialist if symptoms worsen",
+      "Counsel patient"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "American College of Gastroenterology (ACG) Clinical Guidelines",
+        "url": "https://gi.org/clinical-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with chief complaint of recurrent nausea, vomiting, and abdominal pain relieved by hot showers. HPI: heavy chronic cannabis use.",
+    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Cannabinoid Hyperemesis Syndrome.",
+    "assessment": "Condition highly suspicious for Cannabinoid Hyperemesis Syndrome.",
+    "plan": "Counsel on complete cessation of cannabis as the only definitive treatment, and offer topical capsaicin cream for acute symptom relief. Ensure hydration and correct any electrolyte abnormalities from prolonged vomiting. Consult gastroenterology if symptoms persist despite cannabis cessation."
+  },
+  "learning_objectives": [
+    "Recognize clinical presentation and diagnostic markers of Cannabinoid Hyperemesis Syndrome",
+    "Select appropriate diagnostic workup for Cannabinoid Hyperemesis Syndrome",
+    "Implement evidence-based management plan: Counsel on complete cessation of cannabis, capsaicin cream for acute relief"
+  ],
+  "teaching": {
+    "diagnosis": "Cannabinoid Hyperemesis Syndrome (CHS)",
+    "one_liner": "Heavy, long-term cannabis use paradoxically triggers cyclical bouts of severe nausea, vomiting, and abdominal pain that are classically relieved by hot showers or baths.",
+    "differentials": [
+      "Cyclical vomiting syndrome",
+      "Gastroparesis",
+      "Peptic ulcer disease"
+    ],
+    "red_flags": [
+      "Persistent vomiting despite hot showers and cannabis cessation — atypical for CHS and warrants workup for another cause (e.g., bowel obstruction, pancreatitis)",
+      "Signs of dehydration or acute kidney injury from prolonged vomiting",
+      "New presentation at advanced age without a long personal history of heavy cannabis use — raises suspicion for an alternate diagnosis (malignancy, gastroparesis) rather than CHS"
+    ],
+    "must_ask": [
+      {
+        "objective": "Cannabis use pattern",
+        "say": "How much cannabis do you use, and how often, and for how long have you been using it?",
+        "domains": [
+          "substances"
+        ],
+        "keywords": [
+          "cannabis",
+          "marijuana",
+          "weed",
+          "using"
+        ]
+      },
+      {
+        "objective": "Relief with hot showers",
+        "say": "Do hot showers or baths seem to ease the nausea?",
+        "domains": [
+          "relieving"
+        ],
+        "keywords": [
+          "shower",
+          "hot",
+          "bath",
+          "ease"
+        ]
+      },
+      {
+        "objective": "Cyclical pattern",
+        "say": "Do these episodes come in cycles, with periods where you feel completely fine in between?",
+        "domains": [
+          "progression"
+        ],
+        "keywords": [
+          "cycles",
+          "episodes",
+          "recurring"
+        ]
+      },
+      {
+        "objective": "Vomiting and pain severity",
+        "say": "How severe is the vomiting, and do you have abdominal pain with it?",
+        "domains": [
+          "severity",
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "vomiting",
+          "severe",
+          "abdominal",
+          "pain"
+        ]
+      },
+      {
+        "objective": "Weight loss",
+        "say": "Have you lost any weight because of these episodes?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "weight",
+          "lost"
+        ]
+      },
+      {
+        "objective": "Other substance use",
+        "say": "Do you use any other recreational drugs or drink alcohol?",
+        "domains": [
+          "substances",
+          "alcohol"
+        ],
+        "keywords": [
+          "drugs",
+          "alcohol",
+          "recreational"
+        ]
+      }
+    ]
+  }
+}

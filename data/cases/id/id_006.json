@@ -1,0 +1,152 @@
+{
+  "id": "id_006",
+  "system": "infectious_disease",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Torres",
+  "age": 33,
+  "gender": "male",
+  "chief_complaint": "expanding bullseye skin rash, fever, and feeling dizzy/fainting post-tick bite",
+  "hpi_details": "33M presenting with 12cm annular erythema migrans rash on thigh 2 weeks after camping, fever, arthralgias, and new-onset 2nd degree AV block on ECG.",
+  "ideas": "thinks this is related to lyme disease erythema migrans and carditis",
+  "concerns": "worried about serious complications and prolonged illness",
+  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "pmh": "Hypertension, mild dyslipidemia",
+  "medications": "Lisinopril 10mg daily",
+  "social_hx": "Non-smoker, social drinker, employed full-time",
+  "available_results": [
+    {
+      "id": "ecg",
+      "test": "12-lead ECG",
+      "value": "Second-degree atrioventricular block, Mobitz I (Wenckebach), with ventricular rate 46 bpm",
+      "flag": "critical"
+    }
+  ],
+  "clinical_knowledge": {
+    "topic": "Lyme Disease with Carditis evaluation and management",
+    "core_concepts": [
+      "Prompt recognition and structured assessment of Lyme Disease with Carditis is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
+      "Standard management emphasizes hospital admission with continuous cardiac telemetry and IV antibiotic therapy for Lyme carditis with AV block, transitioning to oral doxycycline once the block resolves, adapted to individual patient risk factors and clinical severity.",
+      "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: expanding bullseye skin rash, fever, and feeling dizzy/fainting post-tick bite",
+      "Key HPI features: 33M presenting with 12cm annular erythema migrans rash on thigh 2 weeks after camping, fever, arthralgias, and new-onset 2nd degree AV block on ECG.",
+      "Objective/Exam findings: Vitals: Temp 38.0C, HR 46 (bradycardic, irregular), BP 108/68, RR 16. 12cm annular erythema migrans lesion with central clearing on the thigh; mild cervical lymphadenopathy; mild arthralgias without joint effusion; no meningismus. ECG: new 2nd degree AV block (Mobitz I/Wenckebach pattern). Bloods: two-tier Lyme serology positive (ELISA reactive, confirmatory IgM/IgG Western blot positive); ESR and CRP mildly elevated.",
+      "Relevant background/PMH: Hypertension, mild dyslipidemia",
+      "Current medications: Lisinopril 10mg daily"
+    ],
+    "common_misconceptions": [
+      "Assuming that an atypical or mild presentation rules out Lyme Disease with Carditis.",
+      "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
+      "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
+      "Misattributing symptoms exclusively to Cellulitis (non-migrating, tender) without completing a comprehensive diagnostic workup."
+    ],
+    "dangerous_errors": [
+      "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
+      "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
+      "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
+      "Ignoring critical warning signs such as: Dizziness, fainting, or an irregular heartbeat — suggests Lyme carditis and heart block."
+    ],
+    "management_principles": [
+      "Admit for continuous cardiac telemetry monitoring given the AV block, with temporary pacing available if the block is high-grade or the patient becomes hemodynamically unstable",
+      "Start IV Ceftriaxone 2g once daily (or IV Penicillin G) for Lyme carditis with AV block; transition to oral Doxycycline 100mg BID once the block resolves or improves, to complete a 14-21 day total course",
+      "Avoid permanent pacemaker placement — Lyme-associated AV block is typically reversible with antibiotic therapy and usually resolves within days to weeks",
+      "Counsel on tick-bite prevention; note that follow-up serology is not useful for monitoring treatment response, since antibody titers can remain positive for years"
+    ],
+    "boundaries_and_exceptions": [
+      "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
+      "Atypical presentations in elderly, pediatric, or immunocompromised patients may require lower thresholds for inpatient monitoring and specialist consultation."
+    ],
+    "source_refs": [
+      {
+        "title": "Infectious Diseases Society of America (IDSA) Clinical Practice Guidelines",
+        "url": "https://www.idsociety.org/practice-guideline/practice-guidelines/"
+      }
+    ]
+  },
+  "reference_soap": {
+    "subjective": "Patient presenting with symptoms of Lyme Disease Erythema Migrans and Carditis: expanding bullseye skin rash, fever, and feeling dizzy/fainting post-tick bite. 33M presenting with 12cm annular erythema migrans rash on thigh 2 weeks after camping, fever, arthralgias, and new-onset 2nd degree AV block on ECG.",
+    "objective": "Vitals: Temp 38.0C, HR 46 (bradycardic, irregular), BP 108/68, RR 16. 12cm annular erythema migrans lesion with central clearing on the thigh; mild cervical lymphadenopathy; mild arthralgias without joint effusion; no meningismus. ECG: new 2nd degree AV block (Mobitz I/Wenckebach pattern). Bloods: two-tier Lyme serology positive (ELISA reactive, confirmatory IgM/IgG Western blot positive); ESR and CRP mildly elevated.",
+    "assessment": "Lyme disease (Borrelia burgdorferi) with erythema migrans and early disseminated Lyme carditis presenting as symptomatic 2nd degree AV block.",
+    "plan": "1. Admit for continuous cardiac telemetry monitoring given the AV block, with temporary pacing available if the block is high-grade or the patient becomes hemodynamically unstable. 2. Start IV Ceftriaxone 2g once daily (or IV Penicillin G) for Lyme carditis with AV block; transition to oral Doxycycline 100mg BID once the block resolves or improves, to complete a 14-21 day total course. 3. Avoid permanent pacemaker placement — Lyme-associated AV block is typically reversible with antibiotic therapy and usually resolves within days to weeks. 4. Counsel on tick-bite prevention; note that follow-up serology is not useful for monitoring treatment response, since antibody titers can remain positive for years."
+  },
+  "learning_objectives": [
+    "Recognize clinical features and diagnostic criteria of Lyme Disease Erythema Migrans and Carditis",
+    "Formulate prioritized differential diagnosis for expanding bullseye skin rash, fever, and feeling dizzy/fainting post-tick bite",
+    "Select appropriate laboratory and imaging studies for infectious_disease",
+    "Implement evidence-based acute and long-term management strategies"
+  ],
+  "teaching": {
+    "diagnosis": "Lyme Disease with Carditis",
+    "one_liner": "A tick-borne Borrelia burgdorferi infection causing an expanding bullseye rash (erythema migrans), and when it spreads to the heart, can cause conduction block requiring cardiac monitoring.",
+    "differentials": [
+      "Cellulitis (non-migrating, tender)",
+      "Tinea corporis (ringworm)",
+      "Southern tick-associated rash illness (STARI)"
+    ],
+    "red_flags": [
+      "Dizziness, fainting, or an irregular heartbeat — suggests Lyme carditis and heart block"
+    ],
+    "must_ask": [
+      {
+        "objective": "Tick or outdoor exposure",
+        "say": "Have you been camping, hiking, or in wooded areas recently, and did you notice a tick bite?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "camping",
+          "tick",
+          "woods"
+        ]
+      },
+      {
+        "objective": "Rash character",
+        "say": "Does the rash look like an expanding red ring, like a bullseye?",
+        "domains": [
+          "character"
+        ],
+        "keywords": [
+          "bullseye",
+          "expanding",
+          "ring"
+        ]
+      },
+      {
+        "objective": "Cardiac symptoms",
+        "say": "Have you felt dizzy, faint, or noticed your heart beating irregularly?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "dizzy",
+          "faint",
+          "irregular"
+        ]
+      },
+      {
+        "objective": "Joint and flu-like symptoms",
+        "say": "Any joint pain or flu-like symptoms?",
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "joint pain",
+          "arthralgia"
+        ]
+      },
+      {
+        "objective": "Duration",
+        "say": "How long ago did the rash appear?",
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "weeks"
+        ]
+      }
+    ]
+  }
+}
