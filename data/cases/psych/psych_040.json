@@ -6,11 +6,11 @@
   "patient_name": "Ms. Robinson",
   "age": 62,
   "gender": "female",
-  "chief_complaint": "BMI 14.8, restricts calories to 500 daily, amenorrhea",
-  "hpi_details": "A 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, amenorrhea. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to anorexia",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "chief_complaint": "BMI 14.8, restricts calories to 500 daily, cold intolerance and bradycardia",
+  "hpi_details": "A 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, cold intolerance and bradycardia. She says the food restriction began about a year ago after a bereavement and has tightened steadily since, with progressive weight loss and generalized fatigue.",
+  "ideas": "She thinks her body became hypersensitive after her bereavement and that strictly limiting food is necessary to keep her digestion clean and disciplined.",
+  "concerns": "She is terrified of being forced to eat high-calorie meals that will make her gain weight and lose control of her body.",
+  "expectations": "She hopes to receive vitamins or a metabolic supplement to warm her up and boost her energy without being told to eat more food.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -37,8 +37,8 @@
       "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
     ],
     "diagnostic_clues": [
-      "Chief Complaint: BMI 14.8, restricts calories to 500 daily, amenorrhea",
-      "Key HPI features: A 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, amenorrhea. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Chief Complaint: BMI 14.8, restricts calories to 500 daily, cold intolerance and bradycardia",
+      "Key HPI features: A 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, cold intolerance and bradycardia. She says the food restriction began about a year ago after a bereavement and has tightened steadily since, with progressive weight loss and generalized fatigue.",
       "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Anorexia Nervosa restrictive.",
       "Relevant background/PMH: Unremarkable"
     ],
@@ -71,7 +71,7 @@
     ]
   },
   "reference_soap": {
-    "subjective": "Chief Complaint: BMI 14.8, restricts calories to 500 daily, amenorrhea\n\nA 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, amenorrhea. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+    "subjective": "Chief Complaint: BMI 14.8, restricts calories to 500 daily, cold intolerance and bradycardia\n\nA 62-year-old female presents to the clinic with bmi 14.8, restricts calories to 500 daily, cold intolerance and bradycardia. She says the food restriction began about a year ago after a bereavement and has tightened steadily since, with progressive weight loss and generalized fatigue.",
     "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Anorexia Nervosa restrictive.",
     "assessment": "Condition highly suspicious for Anorexia Nervosa restrictive.",
     "plan": "Urgently assess vital signs, ECG, electrolytes, glucose, hydration, and suicide risk. Given the very low BMI and severe restriction, arrange same-day specialist medical evaluation to determine need for monitored admission and supervised nutritional rehabilitation; do not initiate unsupervised refeeding."
@@ -83,7 +83,7 @@
   ],
   "teaching": {
     "diagnosis": "Anorexia Nervosa restrictive",
-    "one_liner": "Psychiatric evaluation for patient presenting with BMI 14.8, restricts calories to 500 daily, amenorrhea.",
+    "one_liner": "Psychiatric evaluation for patient presenting with BMI 14.8, restricts calories to 500 daily, cold intolerance and bradycardia.",
     "differentials": [
       "Bulimia nervosa",
       "Avoidant/restrictive food intake disorder (ARFID)",
@@ -166,6 +166,215 @@
           "bones",
           "weak"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "88/56",
+      "hr": 46,
+      "rr": 14,
+      "spo2": 98,
+      "temp_c": 35.8
+    },
+    "history": [
+      {
+        "answer": "I have lost a dangerous amount of weight over the past year, and I feel freezing cold and weak all the time.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I have lost about 21 kilograms over the past twelve months, going from 60 kilos down to 39 kilos, and all my clothes hang loosely on me.",
+        "topic": "Weight loss amount and timeline"
+      },
+      {
+        "answer": "Yes, I strictly cut down my eating on purpose after my husband passed away a year ago, and I have kept tightening it since.",
+        "topic": "Intentionality of weight loss"
+      },
+      {
+        "answer": "I strictly limit myself to around 500 calories a day, mostly having black coffee, clear vegetable broth, and plain lettuce leaves.",
+        "topic": "Dietary restriction pattern"
+      },
+      {
+        "answer": "I'm terrified that people will try to force me to eat heavy food and make me gain weight.",
+        "topic": "Body image and fear of weight"
+      },
+      {
+        "answer": "I used to feel hungry, but now I ignore the hunger pangs and feel anxious if I eat anything outside my routine.",
+        "topic": "Appetite and hunger changes"
+      },
+      {
+        "answer": "No, I have never forced myself to vomit, and I do not take laxatives or water pills.",
+        "topic": "Purging and compensatory behaviors"
+      },
+      {
+        "answer": "I push myself to pace and walk for two to three hours every day to burn off calories, even when I feel faint.",
+        "topic": "Compulsive exercise routine"
+      },
+      {
+        "answer": "No, I do not have any trouble swallowing or pain when swallowing.",
+        "topic": "Swallowing difficulty"
+      },
+      {
+        "answer": "I do not have heartburn or stomach pain, but I feel full almost immediately after taking just two bites.",
+        "topic": "Heartburn and early satiety"
+      },
+      {
+        "answer": "I am very constipated and pass hard pellets only once every five or six days, but there has never been any blood or black tarry stool.",
+        "topic": "Bowel habits and stool color"
+      },
+      {
+        "answer": "No, I do not have diarrhea, loose stools, or greasy foul-smelling stools.",
+        "topic": "Diarrhea and oily stool"
+      },
+      {
+        "answer": "I feel freezing cold constantly and have to wear multiple sweaters indoors, and I often feel dizzy when I stand up.",
+        "topic": "Cold intolerance and dizziness"
+      },
+      {
+        "answer": "No, my heart feels like it beats very slowly, not fast or pounding, and I cannot stand heat at all.",
+        "topic": "Palpitations and heat intolerance"
+      },
+      {
+        "answer": "No, I am not excessively thirsty, and I do not urinate unusually often.",
+        "topic": "Excessive thirst and urination"
+      },
+      {
+        "answer": "No, I have not had any fevers, chills, or drenching night sweats.",
+        "topic": "Fever and night sweats"
+      },
+      {
+        "answer": "No, I do not have any cough, phlegm, or coughing up blood.",
+        "topic": "Cough and chest symptoms"
+      },
+      {
+        "answer": "No, I have not felt any swollen glands or lumps in my neck, armpits, or groin.",
+        "topic": "Lumps and swollen glands"
+      },
+      {
+        "answer": "I felt profound grief after my husband died last year, and controlling my food became the only way I felt in control, but I have no wish to harm myself.",
+        "topic": "Mood and grief reaction"
+      },
+      {
+        "answer": "I wake up very early every morning and cannot get back to sleep because I keep thinking about food numbers.",
+        "topic": "Sleep patterns"
+      },
+      {
+        "answer": "My arms and legs feel so weak that climbing a flight of stairs takes all my energy, though I have not had any broken bones or falls.",
+        "topic": "Muscle weakness and bone pain"
+      },
+      {
+        "answer": "I live by myself and can afford food, but I avoid keeping food in the house and prefer eating alone.",
+        "topic": "Living situation and meal access"
+      },
+      {
+        "answer": "I had a routine checkup three years ago, including a normal stomach endoscopy, normal colonoscopy, and normal mammogram.",
+        "topic": "Past cancer screenings"
+      },
+      {
+        "answer": "No, I have never had tuberculosis and have not been around anyone sick with it.",
+        "topic": "Tuberculosis exposure"
+      },
+      {
+        "answer": "Ever since my loss, my stomach just can't tolerate heavy meals, so I feel I have to keep my food intake extremely clean and minimal.",
+        "topic": "Patient ideas and beliefs"
+      },
+      {
+        "answer": "I'm terrified that people will try to force me to eat heavy food and make me gain weight.",
+        "topic": "Patient concerns and fears"
+      },
+      {
+        "answer": "I was hoping you could give me a tonic or some vitamins to fix the constant chills and tiredness without making me change the way I eat.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I have never had high blood pressure, diabetes, thyroid disease, or any chronic illness.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any operations or stayed overnight in a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I do not take any prescription medicines, over-the-counter pills, or vitamins.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medicines or foods.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes, and I only have a small sip of wine on very rare social occasions.",
+        "topic": "Smoking and alcohol"
+      },
+      {
+        "answer": "I am retired from clerical work and live alone since my husband passed away last year.",
+        "topic": "Occupation and social support"
+      },
+      {
+        "answer": "There is no family history of eating disorders, thyroid disorders, or cancer.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Severely emaciated elderly female with marked temporal wasting and sunken eyes, dressed in multiple heavy sweaters.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 88/56 mmHg, pulse 46 beats per minute, respiratory rate 14 breaths per minute, body temperature 35.8 °C, SpO2 98% on room air, BMI 14.8 kg/m².",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Pale palpebral conjunctivae bilaterally; anicteric sclerae.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Dry oral mucous membranes, normal dentition without enamel erosion, and no oral ulcers.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical or supraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and smooth without palpable nodules.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without crackles or wheezes.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Marked sinus bradycardia with regular rhythm; normal S1 and S2; no murmurs, rubs, or gallops.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Scaphoid abdomen, soft, non-tender throughout, with no palpable masses or organomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Dry, flaky skin with fine lanugo-like hair on the forearms and back; no calluses on the knuckles or petechiae.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial or ankle edema bilaterally; prominent bony landmarks.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "No resting, postural, or action tremor in the outstretched hands.",
+        "maneuver": "tremor_observation",
+        "response": "none"
       }
     ]
   }

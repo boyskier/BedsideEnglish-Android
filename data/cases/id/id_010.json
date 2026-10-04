@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "fever, chest pain, and coughing up blood in leukemia patient during prolonged low white cell count",
   "hpi_details": "50M with AML undergoing induction chemotherapy with prolonged neutropenia presenting with pleuritic chest pain, hemoptysis, and halo sign / crescent sign on chest CT. Serum galactomannan positive.",
-  "ideas": "thinks this is related to invasive pulmonary aspergillosis in neutropenia",
-  "concerns": "worried about serious complications and prolonged illness",
-  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "ideas": "He thinks the intense chemotherapy treatments damaged his lung tissue or that he picked up a regular chest cold from a visitor.",
+  "concerns": "He is worried that coughing up blood means his leukemia has spread to his lungs and his cancer treatment is failing.",
+  "expectations": "He hopes to get a chest X-ray and medicine to stop the bleeding so his upcoming chemotherapy cycle will not be delayed.",
   "pmh": "Hypertension, mild dyslipidemia",
   "medications": "Lisinopril 10mg daily",
   "social_hx": "Non-smoker, social drinker, employed full-time",
@@ -150,6 +150,199 @@
         "domains": [
           "onset_duration"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "108/68",
+      "hr": 112,
+      "rr": 24,
+      "spo2": 91,
+      "temp_c": 39.2
+    },
+    "history": [
+      {
+        "answer": "I have been running a high fever and coughing up blood, and my right chest hurts terribly every time I breathe in.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The fever started about three days ago and has stayed high ever since.",
+        "topic": "Fever onset and duration"
+      },
+      {
+        "answer": "It has stayed continuously high around 39 degrees, and I have been having severe shaking chills.",
+        "topic": "Fever pattern and chills"
+      },
+      {
+        "answer": "I took acetaminophen, but it barely brought the temperature down and the fever came right back.",
+        "topic": "Fever medications"
+      },
+      {
+        "answer": "It is a sharp, stabbing pain on the right side of my chest that gets much worse when I take a deep breath or cough.",
+        "topic": "Chest pain character"
+      },
+      {
+        "answer": "I started coughing up bright red blood yesterday, about a teaspoonful each time.",
+        "topic": "Hemoptysis character"
+      },
+      {
+        "answer": "I have had a dry, hacking cough for three days, and I feel short of breath even walking across the room.",
+        "topic": "Cough and shortness of breath"
+      },
+      {
+        "answer": "I have no burning when I urinate, no need to go frequently, and no flank pain.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "My stomach feels fine, with no abdominal pain, nausea, vomiting, or diarrhea.",
+        "topic": "Gastrointestinal symptoms"
+      },
+      {
+        "answer": "I do not have any severe headache, and my neck moves freely without stiffness.",
+        "topic": "Headache and neck stiffness"
+      },
+      {
+        "answer": "I have not seen any skin rashes, strange bug bites, or swollen joints.",
+        "topic": "Rashes or joint pain"
+      },
+      {
+        "answer": "I have had drenching night sweats over the past few nights and have lost around three kilograms since starting chemo.",
+        "topic": "Night sweats and weight loss"
+      },
+      {
+        "answer": "I have not noticed any lumps or swollen lymph nodes in my neck, armpits, or groin.",
+        "topic": "Swollen lymph nodes"
+      },
+      {
+        "answer": "I have not traveled anywhere recently, and I have stayed indoors away from woods, soil, or animals.",
+        "topic": "Travel and outdoor exposures"
+      },
+      {
+        "answer": "No one around me has been sick; my family wears masks and follows strict hygiene precautions.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "I was diagnosed with acute myeloid leukemia and finished induction chemotherapy two weeks ago; the doctors told me my white blood cell count is essentially zero.",
+        "topic": "Chemotherapy and neutropenia"
+      },
+      {
+        "answer": "I do not have any heart murmurs or artificial valves, and I have not had any dental procedures recently.",
+        "topic": "Heart disease or dental procedures"
+      },
+      {
+        "answer": "I have not started any new prescription medicines at home, just the treatments given in the hospital.",
+        "topic": "Recent new medications"
+      },
+      {
+        "answer": "I do not use any illicit drugs or needles, and I have only been sexually active with my wife.",
+        "topic": "High-risk exposures"
+      },
+      {
+        "answer": "I have had high blood pressure and mild high cholesterol for five years, in addition to the leukemia diagnosed last month.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries, and this leukemia treatment is my only hospital stay.",
+        "topic": "Past surgeries or hospitalizations"
+      },
+      {
+        "answer": "I take lisinopril 10 milligrams daily for my blood pressure.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known drug or food allergies.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only had a glass of beer socially in the past, but I have not had any alcohol since my leukemia diagnosis.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work in an office as an accountant, and I live in an apartment with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had hypertension, but there is no family history of blood cancers or serious lung diseases.",
+        "topic": "Family history"
+      },
+      {
+        "answer": "Since my chemotherapy wiped out my immune defenses, I thought the drugs might have irritated my lungs or I caught a bad cold from someone visiting me.",
+        "topic": "Patient's ideas"
+      },
+      {
+        "answer": "Seeing blood when I cough terrified me because I'm scared the leukemia has spread to my lungs and the chemo isn't working.",
+        "topic": "Patient's concerns"
+      },
+      {
+        "answer": "I hope you can check my chest and give me something to stop this coughing so my next round of chemo doesn't get delayed.",
+        "topic": "Patient's expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 108/68 mmHg, pulse 112 bpm, temperature 39.2°C, respiratory rate 24 breaths/min, and oxygen saturation 91% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Marked conjunctival pallor bilaterally; sclerae are anicteric without injection.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Oral mucosa is pale and dry; posterior pharynx is clear without exudate, erythema, or ulceration.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, supraclavicular, or submandibular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Tenderness to palpation over the right anterior chest wall with associated respiratory splinting; no chest wall deformity or crepitus.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "Dullness to percussion over the right mid-to-lower lung fields; normal resonance over the left hemithorax.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Decreased breath sounds with faint inspiratory crackles over the right lung field; clear breath sounds over the left lung.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic regular rhythm; normal S1 and S2 without murmurs, gallops, or pericardial friction rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-tender, and non-distended without hepatomegaly or splenomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness on either side.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Marked generalized skin pallor without rash, petechiae, purpura, or necrotic eschars.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Supple neck with full active flexion; negative Kernig and Brudzinski signs.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
       }
     ]
   }

@@ -1,0 +1,105 @@
+{
+  "id": "nursing_bedside_pain_reassessment",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["uk_au", "us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_bedside_care",
+  "patient_name": "Bedside pain reassessment — post-operative patient who says the painkiller 'didn't really work'",
+  "chief_complaint": "Reassess a post-operative patient's pain after analgesia and decide, within nursing scope, what to do next",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Pain reassessment: post-op patient, analgesia given an hour ago",
+    "task": "Bedside care",
+    "urgency": "routine",
+    "patient": "Mr. Tomas Reyes, 34-year-old man, day 1 after an appendicectomy",
+    "location": "Surgical ward, mid-afternoon; you gave his regular analgesia about an hour ago and have come back to reassess",
+    "situation": "When you ask how he is, he says the painkiller 'didn't really work'. He is lying very still and has not got out of bed today.",
+    "background": [
+      "Laparoscopic appendicectomy yesterday; the operation was uncomplicated.",
+      "He is on regular oral analgesia with something additional available if needed.",
+      "He is a first-language Spanish speaker but converses comfortably in English."
+    ],
+    "current_status": [
+      "Observations are within his normal range and he is afebrile.",
+      "He is lying still, guarding his abdomen, and has not mobilized or used his incentive spirometer today.",
+      "He says he did not want to bother anyone by asking again."
+    ],
+    "key_data": [
+      "You do not yet know where the pain is, what it feels like, how severe it is, whether it has changed since yesterday, or what makes it better or worse.",
+      "There is additional analgesia available on his chart if his reassessment supports giving it.",
+      "Whether this is expected post-operative pain or something new is exactly what your assessment needs to establish."
+    ],
+    "treatments": [
+      "Regular oral analgesia given an hour ago; additional analgesia available as prescribed."
+    ],
+    "your_request": "Reassess his pain properly, decide within your scope what to do next, and tell him what will happen and when.",
+    "must_include": [
+      "Introduce yourself and say what you have come to do.",
+      "Open with a broad question before narrowing to specifics.",
+      "Establish site, character, severity, timing, and what makes it better or worse.",
+      "Acknowledge that he did not want to bother anyone, and address it directly.",
+      "Tell him in plain English what you will do next and roughly when you will be back."
+    ]
+  },
+  "kickoff_text": "Oh — hi. Yeah, I'm okay. That tablet didn't really work, but it's fine, don't worry about it.",
+  "persona_override": "You are Tomas Reyes, 34, day 1 after a laparoscopic appendicectomy. You are polite, understated, and reluctant to complain — you were raised not to make a fuss, and you keep saying 'it's fine' and 'don't worry about it'. Ground truth about your pain, which you will give up gradually and only in response to specific questions: it is around your incision sites, sharp when you move or cough and a dull ache when you lie still, bad enough that you have not got out of bed or used the breathing device today, no worse than yesterday but no better either, and eased slightly by lying completely still. You have no fever, no nausea, and nothing that feels new or different from yesterday. If the nurse only asks 'is the pain bad?' or 'on a scale of one to ten?', give a low number that understates it — say 'maybe a four' — because you do not want to be trouble. If the nurse asks what you have been able to do today, or why you have not been out of bed, admit that moving hurts too much to try. If the nurse acknowledges that you did not want to bother anyone, relax and become more forthcoming. Do not volunteer the full picture unprompted, and do not name any medication or dose — you do not know what you were given.",
+  "learning_objectives": [
+    "open a bedside assessment with an introduction and a stated purpose",
+    "use an open question before narrowing to specifics",
+    "assess pain by function and character, not by a number alone",
+    "recognize when a stoic patient's self-report understates the problem",
+    "acknowledge a patient's reluctance to ask for help and address it explicitly",
+    "close the interaction by stating the next step and a time frame, within nursing scope"
+  ],
+  "suggested_questions": [
+    "Hi Mr. Reyes, I'm Danny, one of the nurses looking after you — I've come back to see how that painkiller went. Tell me how it's been since I saw you.",
+    "Can you show me where it hurts, and tell me what kind of pain it is — sharp, dull, cramping?",
+    "What have you been able to do today? Have you been up out of bed at all, or used the breathing device?",
+    "You said you didn't want to bother anyone — I want you to know that asking is exactly what we're here for, and pain that stops you moving is something we need to fix.",
+    "Here's what I'll do: I'll check what else is written up for you and come back within about twenty minutes."
+  ],
+  "clinical_knowledge": {
+    "topic": "Nursing pain reassessment after analgesia in a stoic post-operative patient",
+    "review_status": "grounded in general post-operative nursing assessment and pain-management communication principles; analgesia decisions must follow the prescription, local protocol, and the patient's own chart",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "A numeric pain score alone is unreliable in a patient who is reluctant to complain; functional impact — what the pain is stopping them doing — is often the more truthful measure.",
+      "Uncontrolled post-operative pain has direct consequences: it prevents mobilization and deep breathing, which raises the risk of respiratory and thromboembolic complications.",
+      "Naming a patient's reluctance to ask for help ('you said you didn't want to bother anyone') is an intervention, not small talk — it changes what they tell you next."
+    ],
+    "diagnostic_clues": [
+      "A patient who has not mobilized or used incentive spirometry on day 1 is reporting their pain through behaviour, whatever number they give.",
+      "Pain that is unchanged in character and site since surgery, without fever or new symptoms, points toward inadequately controlled expected pain rather than a new complication.",
+      "Pain that has changed in character, migrated, or comes with fever or systemic signs is a different problem and warrants escalation, not just more analgesia."
+    ],
+    "common_misconceptions": [
+      "A low self-reported pain score rules out a pain problem.",
+      "'Are you in pain?' is an adequate reassessment.",
+      "A stoic patient who says they are fine does not need further assessment."
+    ],
+    "dangerous_errors": [
+      "Accepting 'it's fine' at face value and leaving without assessing site, character, and functional impact.",
+      "Treating a changed or migrating pain as simply under-treated pain rather than reassessing for a new complication.",
+      "Leaving the bedside without telling the patient what will happen next, so they do not ask again."
+    ],
+    "management_principles": [
+      "Reassess systematically after every analgesic intervention, not only when the patient complains.",
+      "Ask what the pain is preventing, not only how bad it is.",
+      "Act within nursing scope, be explicit about what needs a prescriber's decision, and always close with a stated next step and time frame."
+    ],
+    "boundaries_and_exceptions": [
+      "What a nurse may give without a further prescriber decision depends entirely on the individual chart and local policy.",
+      "This scenario practises assessment and communication; it is not a source of analgesic selection or dosing guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Patient Safety Network: Nursing and Patient Safety",
+        "url": "https://psnet.ahrq.gov/primer/nursing-and-patient-safety"
+      }
+    ]
+  }
+}

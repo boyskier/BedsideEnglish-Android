@@ -1,0 +1,66 @@
+{
+  "name": "Nurse Job Interview (US / UK / Australia)",
+  "description": "Evaluates an internationally educated nurse answering a hospital, recruiter, or staffing-agency interview in English: structured behavioural answers, clinical-scenario answers within nursing scope, and motivation for working abroad.",
+  "assessment_framework": "rubric",
+  "metrics": {
+    "fluency": {
+      "label": "Fluency & Delivery",
+      "anchors": {
+        "80-100": "Answers flow naturally at a steady pace; pauses sound like thinking, not word-searching.",
+        "50-70": "Understandable, with hesitations or restarts that interrupt longer answers.",
+        "10-40": "Frequent breakdowns; the interviewer has to prompt to get a complete answer."
+      }
+    },
+    "grammar": {
+      "label": "Grammar & Professional Vocabulary",
+      "anchors": {
+        "80-100": "Accurate past-tense narration and professional nursing vocabulary; errors are rare and minor.",
+        "50-70": "Mostly accurate; tense or article errors are noticeable but meaning is clear.",
+        "10-40": "Errors regularly obscure what the candidate did or would do."
+      }
+    },
+    "answer_structure": {
+      "label": "Answer Structure (STAR)",
+      "anchors": {
+        "80-100": "Behavioural answers name a specific Situation and Task, spend most of the time on the candidate's own Actions, and end with a Result and what they learned.",
+        "50-70": "A real example, but the actions are vague ('we did') or the result is missing.",
+        "10-40": "Hypothetical or generic answers ('I always...') where a specific example was asked for."
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Clinical Judgement & Safety",
+      "anchors": {
+        "80-100": "Clinical-scenario answers prioritise safety (assess, intervene within scope, escalate, document) in a clear order, using the ABC/prioritisation logic an employer expects.",
+        "50-70": "Safe overall but the order of priorities is unclear, or escalation is left implicit.",
+        "10-40": "Unsafe, out of scope, or no escalation for a deteriorating patient."
+      }
+    },
+    "professionalism": {
+      "label": "Motivation, Fit & Professional Presence",
+      "anchors": {
+        "80-100": "Specific, credible reasons for this role and country; confident without overclaiming; asks a thoughtful question when invited.",
+        "50-70": "Positive but generic motivation; modest to the point of underselling real experience.",
+        "10-40": "No clear motivation, negative about previous employers, or unprofessional."
+      }
+    },
+    "medical_accuracy": {
+      "label": "Accuracy of Clinical Content",
+      "anchors": {
+        "80-100": "Clinical details mentioned in answers are accurate and use the target country's terminology.",
+        "50-70": "Mostly accurate; some home-country terms or abbreviations left unexplained.",
+        "10-40": "Clinical statements are inaccurate in ways an employer would notice."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Opened with a concise professional introduction (current role, experience, specialty)", "required": true},
+    {"item": "Answered at least one behavioural question with a specific example in Situation-Task-Action-Result order", "required": true},
+    {"item": "Described their own actions in the first person rather than 'we'", "required": true},
+    {"item": "Gave a clinical-scenario answer that assessed, acted within scope, and escalated", "required": false},
+    {"item": "Gave specific, credible motivation for this role and country", "required": true},
+    {"item": "Asked the interviewer a relevant question when invited", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "anki_cards", "summary"],
+  "empathy_markers": [],
+  "reference_output_type": null
+}

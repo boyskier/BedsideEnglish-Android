@@ -1,6 +1,8 @@
 package com.example.medvoicetrainer.export
 
 import com.example.medvoicetrainer.analysis.ScoreDomains
+import com.example.medvoicetrainer.ui.formatSoapSubjective
+import com.example.medvoicetrainer.ui.notElicitedRanges
 import org.json.JSONObject
 import java.io.File
 import java.io.FileOutputStream
@@ -89,6 +91,20 @@ object DocxExporter {
     }
 
     private fun coloredRun(text: String, colorHex: String) = run(text, colorHex = colorHex)
+
+    /** Runs for [text] with every "Not elicited" marker in red — see SoapNoteText for the UI twin. */
+    private fun notElicitedAwareRuns(text: String): String {
+        val runs = StringBuilder()
+        var cursor = 0
+        for (range in notElicitedRanges(text)) {
+            if (range.first < cursor) continue
+            if (range.first > cursor) runs.append(run(text.substring(cursor, range.first)))
+            runs.append(coloredRun(text.substring(range.first, range.last + 1), "CC0000"))
+            cursor = range.last + 1
+        }
+        if (cursor < text.length) runs.append(run(text.substring(cursor)))
+        return runs.toString()
+    }
 
     private fun fmtScore(value: Double?, plusSign: Boolean = false): String {
         if (value == null) return "N/A"
@@ -211,7 +227,14 @@ object DocxExporter {
             val sections = listOf("subjective" to "S — Subjective", "objective" to "O — Objective", "assessment" to "A — Assessment", "plan" to "P — Plan")
             for ((key, label) in sections) {
                 body.append(heading(label, 3))
-                body.append(paragraphText(soap.optString(key, "")))
+                if (key == "subjective") {
+                    // The Subjective section carries the six history-taking subsections; the
+                    // "Not elicited" marker is coloured here rather than in the model output so
+                    // an unasked question stays visually distinct from a patient's denial.
+                    body.append(paragraph(notElicitedAwareRuns(formatSoapSubjective(soap.opt(key)))))
+                } else {
+                    body.append(paragraphText(soap.optString(key, "")))
+                }
             }
 
             var refSoapStr = session["reference_soap"] as? String

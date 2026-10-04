@@ -1,0 +1,67 @@
+{
+  "name": "OET-style Nursing Speaking Role-play",
+  "description": "Evaluates a nurse in a five-minute OET-style role-play with a patient, relative, or carer, using the structure of the published OET Speaking criteria: four linguistic criteria (0-6) and five clinical communication criteria (0-3). This is a practice estimate, not an official OET result.",
+  "assessment_framework": "oet",
+  "metrics": {
+    "fluency": {
+      "label": "Fluency (OET linguistic, 0-6)",
+      "anchors": {
+        "6 / 90-100": "Speech flows at a natural rate; hesitation only while choosing what to say, never while searching for words.",
+        "5 / 75-85": "Minor hesitation or repetition that does not strain the listener.",
+        "4 / 60-70": "Noticeable pauses, false starts, or self-corrections, but the message keeps moving.",
+        "3 / 45-55": "Frequent pausing and reformulation; the listener has to wait for meaning.",
+        "0-2 / 10-40": "Fragmented, slow speech that repeatedly breaks down."
+      }
+    },
+    "grammar": {
+      "label": "Resources of Grammar & Expression (OET linguistic, 0-6)",
+      "anchors": {
+        "6 / 90-100": "Wide range of accurate structures and vocabulary used flexibly to explain, reassure, and negotiate.",
+        "5 / 75-85": "Good range with occasional errors that never obscure meaning.",
+        "4 / 60-70": "Adequate range for the task; errors are noticeable but meaning stays clear.",
+        "3 / 45-55": "Limited range; errors sometimes make the listener work to follow.",
+        "0-2 / 10-40": "Very limited range; errors often block meaning."
+      }
+    },
+    "professionalism": {
+      "label": "Relationship-building & patient perspective (OET clinical communication, 0-3)",
+      "anchors": {
+        "3 / 85-100": "Opens appropriately, stays respectful and non-judgmental, shows empathy in words, explores the patient's ideas, concerns and expectations, and picks up their cues.",
+        "2 / 60-80": "Warm and respectful, but explores the patient's perspective only partly or responds to cues late.",
+        "1 / 30-55": "Polite but task-focused; concerns are noticed but not explored, or empathy is formulaic.",
+        "0 / 0-25": "Dismissive, judgmental, or ignores the patient's stated concern."
+      }
+    },
+    "clinical_reasoning": {
+      "label": "Providing structure & information-gathering (OET clinical communication, 0-3)",
+      "anchors": {
+        "3 / 85-100": "Sequences the conversation logically, signposts topic changes, moves from open to closed questions, avoids compound or leading questions, and summarises.",
+        "2 / 60-80": "Generally organised, with some abrupt topic changes or a compound question.",
+        "1 / 30-55": "Loosely organised; questions are mostly closed or leading.",
+        "0 / 0-25": "No discernible structure; the patient cannot tell where the conversation is going."
+      }
+    },
+    "medical_accuracy": {
+      "label": "Information-giving & appropriateness of language",
+      "anchors": {
+        "90-100": "Finds out what the patient already knows, gives information in small chunks in lay language, pauses, checks understanding, and the information is accurate and safe.",
+        "70-80": "Accurate, mostly lay language; understanding checked once or chunking uneven.",
+        "50-60": "Some jargon left unexplained or information delivered in a long block.",
+        "30-40": "Frequent jargon, or information incomplete for the task.",
+        "10-20": "Inaccurate or unsafe information, or the patient is left unable to act on it."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Greeted the patient/relative, introduced self and role, and confirmed who they are", "required": true},
+    {"item": "Found out what the patient/relative already knows or is worried about before explaining", "required": true},
+    {"item": "Acknowledged the patient's/relative's concern or emotion explicitly", "required": true},
+    {"item": "Covered every task on the role-play card", "required": true},
+    {"item": "Explained in lay language, in small chunks, without unexplained jargon", "required": true},
+    {"item": "Checked understanding (teach-back or an open check), not just 'Do you understand?'", "required": false},
+    {"item": "Signposted and closed the conversation with a brief summary and next step", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "anki_cards", "summary"],
+  "empathy_markers": [],
+  "reference_output_type": null
+}

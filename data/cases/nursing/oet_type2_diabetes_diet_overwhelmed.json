@@ -1,0 +1,114 @@
+{
+  "id": "nursing_oet_type2_diabetes_diet_overwhelmed",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — newly diagnosed type 2 diabetes, overwhelmed by dietary advice",
+  "chief_complaint": "Help an overwhelmed van driver newly diagnosed with type 2 diabetes choose realistic first dietary changes, and address his fear of complications",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "Type 2 diabetes: first dietary steps for an overwhelmed delivery driver",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Mr Tomasz Nowak, 54-year-old delivery van driver, diagnosed with type 2 diabetes two weeks ago",
+    "location": "Community health clinic; you are the community nurse and you are seeing Mr Nowak for his first diabetes appointment after diagnosis",
+    "situation": "Mr Nowak was diagnosed with type 2 diabetes after a routine blood test and the GP has started him on metformin. He has been reading about diabetes online and says he feels overwhelmed by all the foods he has been told to avoid.",
+    "background": [
+      "Works long shifts as a delivery driver; usually buys lunch at petrol stations and drinks two or three cans of sugary fizzy drink a day.",
+      "His wife cooks the evening meal, often with large portions of potatoes or bread.",
+      "He is overweight and does little exercise outside work. His father had diabetes."
+    ],
+    "current_status": [
+      "Feels well physically; has no symptoms at present.",
+      "Taking metformin as prescribed with meals; mild stomach upset in the first week, now settling."
+    ],
+    "key_data": [
+      "There is no special 'diabetic diet': the advice is a balanced diet that anyone would benefit from, with small, lasting changes.",
+      "Useful first steps: swap sugary drinks for water or sugar-free drinks; smaller portions of starchy foods such as potatoes, bread and rice; plan or bring a simple lunch; half the plate vegetables.",
+      "Whole fruit is fine as part of a balanced diet; fruit juice and smoothies are better kept small.",
+      "Keeping blood glucose, blood pressure and cholesterol well controlled greatly reduces the risk of complications such as foot, eye and kidney problems.",
+      "Support available: a group diabetes education course, referral to a dietitian, yearly foot and eye checks, and regular blood-test reviews at the clinic."
+    ],
+    "treatments": [
+      "Already done: diagnosis confirmed by the GP; metformin started.",
+      "Pending: diabetes education course place; dietitian referral if he agrees; foot check and eye screening appointments."
+    ],
+    "your_request": "Find out what is worrying Mr Nowak, and help him agree on two or three realistic first changes to his diet.",
+    "must_include": [
+      "Find out what Mr Nowak already knows about his diagnosis and what is worrying him most, and respond to his concern.",
+      "Reassure him that he does not need to change everything at once or follow a special 'diabetic' diet.",
+      "Advise him on two or three realistic first changes to his diet that suit his working day.",
+      "Explain the support available (education course, dietitian, regular checks)."
+    ]
+  },
+  "kickoff_text": "Honestly, I don't know where to start. I've read so much online — no bread, no rice, no potatoes, no fruit. What am I supposed to eat?",
+  "persona_override": "You are Tomasz Nowak, a 54-year-old delivery van driver diagnosed with type 2 diabetes two weeks ago. You are friendly but overwhelmed, a bit frustrated, and you feel like your life is about to change completely. You have read contradictory lists online and now believe you must cut out all carbohydrates and all fruit. Your hidden worry, which you only reveal if the nurse asks what worries you most or asks about your family: your father had diabetes, needed insulin injections, and had part of his leg amputated in his sixties. You are frightened that the same thing will happen to you and that you will lose your job if you cannot drive. Ground truth: you work 10-hour shifts, buy lunch at petrol stations (usually a pastry or sandwich and crisps), drink two or three cans of sugary fizzy drink a day, and your wife cooks dinner with lots of potatoes or bread. You do not smoke. You take metformin with meals; it upset your stomach in the first week but is better now. You have no symptoms. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words like 'carbohydrates', 'glycaemic', 'HbA1c', 'neuropathy', 'retinopathy' or 'complications' without explaining them, ask what they mean. If the nurse launches into a long list of dietary rules without first asking how you feel or what worries you, say 'This is exactly what I mean — it's too much,' and later bring up your father more anxiously: 'My dad ended up losing his leg. Is that going to happen to me?' If the nurse acknowledges your worry and explains that good control greatly lowers the risk and that regular foot and eye checks catch problems early, calm down gradually. If the nurse suggests small, specific changes that fit your working day, respond positively to one ('I could probably swap the cans for the diet ones') but raise a practical obstacle to another ('There's nothing healthy at petrol stations'). Do not agree to everything at once. If asked to summarise what you will do, name the changes in your own words. Never coach the nurse or mention scoring. Near five minutes, wrap up naturally: say this feels more manageable and ask when the education course is.",
+  "learning_objectives": [
+    "ask how the patient feels about the diagnosis before giving dietary advice",
+    "find out what worries him most and respond to his fear of complications",
+    "reassure that there is no special diabetic diet and change can be gradual",
+    "agree on two or three realistic diet changes that fit his working day",
+    "explain the support available such as the education course, dietitian and regular foot and eye checks",
+    "use plain words like 'blood sugar' and 'starchy foods' instead of medical terms"
+  ],
+  "suggested_questions": [
+    "It sounds like you've been given a lot of information all at once. Before we talk about food, can I ask what's worrying you most about the diagnosis?",
+    "I'm sorry about your dad — I can see why that's on your mind. The good news is that keeping your blood sugar, blood pressure and cholesterol under control really lowers the risk, and we'll check your feet and eyes every year so we catch anything early.",
+    "You don't need to cut out bread or potatoes completely. What would be one or two small changes you think you could actually manage on a work day?",
+    "So we're on the same page, could you tell me the changes you're going to try this week?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Supporting dietary change after a new diagnosis of type 2 diabetes",
+    "review_status": "grounded in NICE NG28 (type 2 diabetes in adults), CDC diabetes self-management education and support principles, and ADA nutrition guidance; individual dietary targets and medicines follow the diabetes team and local structured-education programmes",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Newly diagnosed patients are often overwhelmed; information overload blocks behaviour change, so the nurse should prioritise a few achievable steps.",
+      "There is no special 'diabetic diet'; a balanced, portion-aware diet with fewer sugary drinks and refined carbohydrates is the foundation.",
+      "Family experience of complications is a common, powerful hidden fear that shapes engagement."
+    ],
+    "diagnostic_clues": [
+      "Statements like 'I can't eat anything any more' signal overwhelm and all-or-nothing thinking.",
+      "Mention of a parent's diabetes is a cue to explore fear of complications."
+    ],
+    "common_misconceptions": [
+      "People with type 2 diabetes must cut out all carbohydrates and all fruit.",
+      "Taking metformin means diet no longer matters.",
+      "Complications are inevitable if a parent had them."
+    ],
+    "dangerous_errors": [
+      "Telling the patient that complications will not happen to him, or that he will never need insulin.",
+      "Recommending an extreme or very-low-calorie diet without dietitian or medical input.",
+      "Advising him to stop or change his metformin because of side effects rather than discussing it with the prescriber."
+    ],
+    "management_principles": [
+      "Explore feelings, knowledge and fears before giving advice (ideas, concerns, expectations).",
+      "Agree on two or three specific, realistic goals that fit the patient's daily routine.",
+      "Link the patient to structured education, dietitian support and routine monitoring."
+    ],
+    "boundaries_and_exceptions": [
+      "Glucose, blood pressure and weight targets are individual and set by the diabetes team.",
+      "Structured education programmes, dietitian access and screening schedules vary by country and service.",
+      "Driving rules for people with diabetes depend on the country and on treatment; the patient should check with the licensing authority and his doctor if his treatment changes."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE NG28: Type 2 diabetes in adults — management",
+        "url": "https://www.nice.org.uk/guidance/ng28"
+      },
+      {
+        "title": "CDC: Diabetes",
+        "url": "https://www.cdc.gov/diabetes/"
+      },
+      {
+        "title": "American Diabetes Association",
+        "url": "https://diabetes.org/"
+      }
+    ]
+  }
+}

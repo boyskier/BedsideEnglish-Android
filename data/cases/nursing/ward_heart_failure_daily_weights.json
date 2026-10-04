@@ -1,0 +1,118 @@
+{
+  "id": "nursing_ward_heart_failure_daily_weights",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Patient education",
+  "nursing_pathways": ["us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_patient_education",
+  "station_minutes": 7,
+  "patient_name": "Heart failure discharge teaching — daily weights and when to call",
+  "chief_complaint": "Teach a patient going home after a heart failure admission to weigh himself daily, recognize fluid build-up, and know exactly when to call, using teach-back",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Discharge teaching: heart failure patient who thinks weight gain means eating too much",
+    "task": "Patient education",
+    "urgency": "routine",
+    "patient": "Mr. Luis Ortega, 71-year-old man, going home this afternoon after four days on the unit with a heart failure exacerbation",
+    "location": "Med-surg unit, late morning on the day of discharge; you are his nurse and you are sitting with him to go over his discharge instructions",
+    "situation": "He came in short of breath with swollen legs and lost about 9 pounds of fluid with IV diuretics. He is keen to go home and has told you he 'already knows all this'. His wife does the cooking but is not here right now.",
+    "background": [
+      "Known heart failure with a reduced pumping function; this is his second admission this year for fluid overload.",
+      "He was not weighing himself at home before this admission and does not remember being told to.",
+      "He takes an oral diuretic (furosemide) every morning, which is continuing at home.",
+      "He has a bathroom scale at home that he 'hardly ever uses'."
+    ],
+    "current_status": [
+      "Breathing comfortably on room air; ankle swelling has much improved.",
+      "His discharge weight this morning was 182 pounds.",
+      "Alert, oriented, reads English well, and is in a hurry to leave."
+    ],
+    "key_data": [
+      "His cardiologist's written discharge instructions say: call the heart failure clinic if your weight goes up more than 2 pounds in one day or more than 5 pounds in one week. Use the numbers on his instructions — the call threshold is set by each provider.",
+      "Other warning signs to call about: more short of breath than usual, needing more pillows or sleeping in a chair to breathe, new or worse swelling in the feet, ankles, legs, or belly, or a new cough that won't go away.",
+      "Call 911 for severe shortness of breath at rest, chest pain, fainting, or coughing up pink, frothy mucus.",
+      "His instructions include a low-salt diet and a fluid limit of 2 liters a day (a little over 8 cups, or about 68 ounces), as written by his cardiologist."
+    ],
+    "treatments": [
+      "Done: IV diuretics during the admission; home medications reconciled by the provider; a follow-up appointment at the heart failure clinic within 7 days is booked.",
+      "Pending: your teaching and his written discharge packet, including a weight log sheet."
+    ],
+    "your_request": "Teach him how and when to weigh himself, the exact weight-gain rule for calling, the other warning signs, and the basics of salt and fluid, and confirm it with teach-back before he leaves.",
+    "must_include": [
+      "Find out what he already knows about why daily weights matter before you start teaching.",
+      "Explain in plain words that quick weight gain means fluid building up, not fat — and correct his belief that he should just eat less.",
+      "Teach how to weigh: every morning, after using the bathroom, before breakfast, same scale, similar clothes, and write it down.",
+      "Give the exact call rule from his instructions (more than 2 pounds in a day or 5 pounds in a week) and the other warning signs, including when to call 911.",
+      "Cover the salt and fluid limits in practical, everyday terms.",
+      "Use teach-back: have him tell you when he weighs himself and exactly when he would call."
+    ]
+  },
+  "kickoff_text": "They keep telling me to weigh myself every day. I've been a little heavy my whole life — nobody ever cared before. What's the big deal?",
+  "persona_override": "You are Luis Ortega, a 71-year-old retired mechanic going home today after a heart failure admission. You are friendly, a bit impatient to leave, and you think you already understand everything. Your real misconception, which you will say out loud if the nurse asks what you would do if the scale went up: 'If I put on a couple of pounds, I'll just cut back on dinner.' You genuinely believe weight gain means you are eating too much. Ground truth: you have heart failure with a weak pump; this is your second admission this year; you lost about 9 pounds of fluid in hospital; your discharge weight is 182 pounds; you take furosemide every morning; you have a bathroom scale you rarely use; your wife Carmen cooks and likes canned soups and adds salt at the table; you drink a lot of coffee and iced tea in the summer. You do not know the 2-pound / 5-pound rule, and you do not know that needing extra pillows at night is a warning sign — you have been sleeping propped up for weeks and thought it was just your back. If the nurse asks what you already know first, answer honestly and mention the 'eat less' idea. If the nurse starts lecturing without asking, nod along and say 'yeah, yeah, I got it' without really engaging. If the nurse uses words like 'edema', 'exacerbation', 'sodium restriction', or 'fluid overload' without explaining them, ask 'what does that mean in normal words?' If the nurse explains that the weight is water, accept it with mild surprise ('huh — so it's water, not the tacos'). If the nurse asks you to say the plan back, do it naturally but make one real mistake: say you'd weigh yourself 'whenever, maybe after dinner' OR say you'd call if you gained 'five pounds in a day', so there is a gap to correct. If corrected kindly, repeat it correctly. Ask one practical question if it fits: 'Does coffee count as fluid?' Never quote numbers the nurse has not given you. Keep your turns short and conversational.",
+  "learning_objectives": [
+    "ask what the patient already knows about daily weights before teaching",
+    "explain that sudden weight gain means fluid, not fat, in plain words",
+    "teach how to weigh every morning after the bathroom and before breakfast and write it down",
+    "state the exact call rule from the provider's instructions and the warning signs of fluid build-up",
+    "give practical salt and fluid limit advice for everyday meals and drinks",
+    "check understanding with teach-back and correct the gap without blaming"
+  ],
+  "suggested_questions": [
+    "Before I go through anything, can you tell me what you've been told about weighing yourself, and what you'd do if the number went up?",
+    "Here's the thing — when your weight jumps quickly, it's almost never fat. It's water your heart can't keep up with, and it's the first sign you're getting overloaded again.",
+    "So every morning, right after you use the bathroom and before breakfast, step on the same scale and write the number on this sheet.",
+    "Your cardiologist wants a call if you're up more than 2 pounds in one day or 5 pounds in a week — or if you need more pillows to breathe, or your ankles swell up again.",
+    "Just so I know I explained it well — can you walk me through when you'll weigh yourself and when you'd pick up the phone?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Heart failure discharge teaching on daily weights, symptom monitoring, and salt and fluid limits, confirmed with teach-back",
+    "review_status": "grounded in AHA heart failure self-care patient guidance and AHRQ teach-back guidance; the weight-gain call threshold, fluid limit, sodium advice, and diuretic plan are provider-specific and set by the patient's own cardiology team; local protocols apply",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Daily weights are the earliest objective sign of fluid build-up in heart failure; weight often rises before breathlessness or swelling become obvious.",
+      "Weight change over a day or a few days reflects fluid, not body fat, which is why a short-term rise is a reason to call rather than to diet.",
+      "Consistent technique (same time, after voiding, before eating, same scale, similar clothing) is what makes day-to-day comparisons meaningful.",
+      "Teach-back is how the nurse confirms the patient can act on the plan at home, rather than just having heard it."
+    ],
+    "diagnostic_clues": [
+      "Needing more pillows or sleeping in a chair to breathe, new ankle or belly swelling, a persistent cough, and reduced exercise tolerance are common patient-reportable signs of worsening heart failure.",
+      "A patient who says 'I'll just eat less' has misread fluid gain as fat gain — a cue to re-explain the purpose of daily weights."
+    ],
+    "common_misconceptions": [
+      "Handing over a written discharge packet is the same as teaching the patient.",
+      "The call threshold for weight gain is a universal number the nurse can quote from memory rather than the provider's written instruction.",
+      "Asking 'do you have any questions?' is enough to confirm the patient understands.",
+      "Fluid limits only apply to water, not coffee, soup, or ice cream."
+    ],
+    "dangerous_errors": [
+      "Telling the patient to cut back on food, or to take an extra diuretic dose on their own, if their weight goes up, instead of calling the clinic.",
+      "Quoting a different weight-gain threshold from the one on the patient's discharge instructions.",
+      "Omitting the red-flag symptoms that need 911, such as severe breathlessness at rest or chest pain.",
+      "Accepting 'yeah, I got it' as confirmation without teach-back."
+    ],
+    "management_principles": [
+      "Assess what the patient knows and believes first, then correct the specific misconception.",
+      "Teach the action (how and when to weigh), the trigger (the provider's call rule and symptoms), and the response (who to call, and when to call 911) as separate, signposted chunks.",
+      "Translate salt and fluid limits into the patient's real meals and drinks, and involve the person who cooks where possible.",
+      "Close with teach-back, correct gaps without blame, and make sure the patient knows the clinic number and follow-up date."
+    ],
+    "boundaries_and_exceptions": [
+      "Weight-gain call thresholds (often around 2-3 pounds in a day or about 5 pounds in a week), fluid limits, and sodium advice vary by provider, guideline, and patient; always teach the numbers on the patient's own discharge instructions.",
+      "Some heart failure programs use flexible diuretic plans where the patient adjusts a dose themselves; that is only appropriate when the provider has written such a plan.",
+      "This scenario practises discharge teaching communication; it is not a source of heart failure treatment guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "American Heart Association: Heart Failure",
+        "url": "https://www.heart.org/en/health-topics/heart-failure"
+      },
+      {
+        "title": "AHRQ Health Literacy Universal Precautions Toolkit: Use the Teach-Back Method",
+        "url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html"
+      }
+    ]
+  }
+}

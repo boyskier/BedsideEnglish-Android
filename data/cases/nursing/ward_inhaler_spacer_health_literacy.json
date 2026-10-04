@@ -1,0 +1,120 @@
+{
+  "id": "nursing_ward_inhaler_spacer_health_literacy",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Patient education",
+  "nursing_pathways": ["us", "uk_au"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_patient_education",
+  "station_minutes": 7,
+  "patient_name": "Inhaler and spacer teaching — patient who nods along but cannot show you",
+  "chief_complaint": "Teach a patient with limited health literacy to use her reliever inhaler with a spacer before discharge, and find out through a return demonstration that 'yes, I understand' is not true yet",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Inhaler teaching: 'Yes, I understand' — but she can't show you",
+    "task": "Patient education",
+    "urgency": "routine",
+    "patient": "Mrs. Darlene Hooper, 64-year-old woman with COPD, going home later today after a flare-up treated in hospital",
+    "location": "Medical ward (unit), mid-morning before discharge; you are her nurse and you have brought her new reliever inhaler and a spacer to the bedside",
+    "situation": "Earlier today you gave her the printed inhaler leaflet and she said she would 'read it later'. When the doctor asked if she knew how to use her inhaler, she nodded and said yes. She has never used a spacer before.",
+    "background": [
+      "COPD for several years; admitted three days ago with a flare-up and treated with nebulizers, oral steroids, and antibiotics.",
+      "She left school early and has worked most of her life as a cleaner; she tends to say 'yes' to keep things moving.",
+      "At home she has been using an older reliever inhaler without a spacer, and says it 'never did much'.",
+      "She lives with her adult granddaughter, who usually helps with letters and forms."
+    ],
+    "current_status": [
+      "Breathing much better, comfortable at rest on room air, ready for discharge once teaching is done.",
+      "She has a new reliever inhaler (albuterol — called salbutamol in the UK and Australia) and a new spacer on the table.",
+      "The printed leaflet is folded under her water cup, unopened."
+    ],
+    "key_data": [
+      "Core spacer steps: remove the cap and shake the inhaler; fit it into the spacer; breathe out gently away from the mouthpiece; seal lips around the mouthpiece; press the inhaler once; breathe in slowly and deeply and hold for up to 10 seconds (or take 4-5 normal breaths in and out through the spacer). One puff at a time; wait about 30 seconds and shake again before the next puff.",
+      "The number of puffs and how often she may use it are on her prescription label — use those, not a remembered number.",
+      "Warning signs to act on: needing the reliever much more often than usual, or it not helping, means contact her doctor or clinic the same day. Severe breathlessness, being unable to finish a sentence, blue or grey lips, or drowsiness means call the emergency number (911 in the US, 999 in the UK, 000 in Australia).",
+      "She has a follow-up with her primary care team within a week of discharge."
+    ],
+    "treatments": [
+      "Done: flare-up treated; oral steroid course and antibiotics to finish at home as prescribed.",
+      "Pending: your inhaler teaching, a return demonstration, and her discharge paperwork."
+    ],
+    "your_request": "Teach her to use the reliever inhaler with the spacer, in plain words, and do not accept 'yes' — have her show you, and correct her technique until she can do it.",
+    "must_include": [
+      "Find out how she has been using her inhaler at home and what she finds hard, without making her feel tested.",
+      "Offer help with reading in a respectful, non-shaming way (for example, that many people find the leaflets hard to follow).",
+      "Explain and demonstrate the spacer steps one small step at a time, in everyday words.",
+      "Ask her to show you (a return demonstration), not just to say she understands, and correct each error kindly.",
+      "Tell her the warning signs that mean calling her doctor, and the signs that mean calling the emergency number.",
+      "Involve her granddaughter or arrange a picture-based handout so she has support at home."
+    ]
+  },
+  "kickoff_text": "Oh, is that the new inhaler? Yes, I know how to use those, dear. I've had one for years.",
+  "persona_override": "You are Darlene Hooper, a 64-year-old retired cleaner with COPD, going home today. You are warm, polite, and eager to please, and you are quietly embarrassed that you do not read well. You cope by nodding and saying 'yes, I understand' and 'I'll read it at home'. Ground truth: you left school at 14; you have used a reliever inhaler for years without a spacer and think it 'never did much'; your real technique is poor — you do not shake it, you press it before your lips are sealed, you breathe in fast and sharp, and you press it twice in a row for two puffs; you have never used a spacer; your granddaughter Kayla (26) lives with you and reads your letters for you; you get muddled by words like 'actuate', 'inhale', 'canister', 'exacerbation', and 'bronchodilator'. You do not know the warning signs that mean you should get help. Behaviour: if the nurse asks 'do you understand?' or 'does that make sense?', always say 'yes, that's fine' whether or not it is. If the nurse just explains all the steps in one go, say 'yes, that's great' and change the subject. If the nurse hands you the leaflet and asks you to read a part, say you have left your glasses somewhere. If the nurse gently and without judgement says many people find the leaflets hard to read and offers to go through it together, admit quietly, 'I'm not much of a reader, to be honest — Kayla does all that.' If the nurse asks you to show them, try it and make at least two real mistakes (for example, no shake and breathing in too fast, or pressing two puffs at once); if corrected kindly one step at a time, improve on the next try. If the nurse corrects you in a way that feels like a telling-off or talks down to you, go quiet and say 'I'm not stupid, you know.' Accept a picture handout or the idea of teaching Kayla gladly. Never coach the nurse and never volunteer your reading difficulty unless offered help respectfully. Keep your turns short.",
+  "learning_objectives": [
+    "ask how the patient uses her inhaler at home before teaching",
+    "offer help with reading in a respectful, non-shaming way",
+    "teach the spacer steps one at a time in plain words",
+    "ask the patient to show me with a return demonstration instead of asking do you understand",
+    "correct inhaler technique kindly, one error at a time",
+    "safety-net with when to call the doctor and when to call the emergency number"
+  ],
+  "suggested_questions": [
+    "Before we start, could you show me how you've been using your old inhaler at home? I just want to see what you're used to.",
+    "A lot of people tell me these leaflets are really hard to follow — would it help if we went through it together, and I made you a simple picture sheet to take home?",
+    "Okay — first, cap off and give it a good shake. Then pop it into the end of the spacer. That's step one. Ready for the next bit?",
+    "Now, rather than me asking if it makes sense — could you show me how you'd do it at home, from the start?",
+    "If you find you need it a lot more than usual, or it isn't helping, call your doctor that day. If you can't finish a sentence or your lips look blue, call an ambulance right away."
+  ],
+  "clinical_knowledge": {
+    "topic": "Teaching reliever inhaler technique with a spacer to a patient with limited health literacy, confirmed by return demonstration",
+    "review_status": "grounded in AHRQ Health Literacy Universal Precautions (teach-back and show-me) and GOLD COPD patient-education principles on inhaler technique; exact dosing, device type, and spacer technique follow the prescription, the device instructions, and local respiratory-service policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Poor inhaler technique is very common and is a major reason inhaled medicines fail; a spacer improves delivery to the lungs for many patients using a metered-dose inhaler.",
+      "Limited health literacy is often hidden: patients nod, say 'yes', or defer reading to later to avoid embarrassment.",
+      "A return demonstration ('show me') is the teach-back for a skill; the verbal 'do you understand?' does not reveal technique errors.",
+      "Universal precautions mean teaching every patient in plain language rather than first trying to guess who has low literacy."
+    ],
+    "diagnostic_clues": [
+      "Saying 'I'll read it later', 'I left my glasses', or asking a relative to handle paperwork can be cues to limited literacy.",
+      "An inhaler that 'never did much' is often a technique problem rather than a drug problem.",
+      "Common errors to watch for: not shaking, pressing before a lip seal, breathing in too fast, and firing two puffs at once."
+    ],
+    "common_misconceptions": [
+      "A patient who has used an inhaler for years must be using it correctly.",
+      "A printed leaflet covers the teaching.",
+      "Asking 'does that make sense?' checks understanding.",
+      "Asking directly 'can you read?' is the best way to find out about literacy."
+    ],
+    "dangerous_errors": [
+      "Discharging a patient with a new device without watching her use it.",
+      "Shaming the patient about reading or technique, so she hides further difficulties.",
+      "Quoting a number of puffs or frequency from memory that differs from the prescription.",
+      "Leaving out the emergency warning signs of a severe flare-up."
+    ],
+    "management_principles": [
+      "Start by watching or asking about current technique; teach one step at a time with a physical demonstration.",
+      "Use 'show me' and correct errors specifically and kindly, then have her try again.",
+      "Offer reading support universally and respectfully, and use pictures and a named family helper where the patient agrees.",
+      "Separate the skill teaching from the safety net, and confirm both before discharge."
+    ],
+    "boundaries_and_exceptions": [
+      "Spacer technique (single breath and hold versus several tidal breaths), mask use, cleaning, and device choice vary by device, patient, and local respiratory service.",
+      "The reliever drug name differs by country (albuterol in the US, salbutamol in the UK and Australia); dosing and frequency are set by the prescriber.",
+      "Emergency numbers and follow-up routes differ between the US, UK, and Australia.",
+      "This scenario practises teaching and health-literacy communication; it is not a source of COPD treatment guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Health Literacy Universal Precautions Toolkit",
+        "url": "https://www.ahrq.gov/health-literacy/improve/precautions/index.html"
+      },
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease (GOLD)",
+        "url": "https://goldcopd.org/"
+      }
+    ]
+  }
+}

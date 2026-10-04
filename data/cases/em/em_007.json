@@ -175,7 +175,7 @@
     "subjective": "21M Type 1 Diabetic presenting with severe nausea/vomiting, abdominal pain, polyuria, polydipsia, and insulin omission during acute viral gastroenteritis, diagnostic of Diabetic Ketoacidosis.",
     "objective": "Vitals: HR 122, BP 102/64, Temp 37.1C, RR 28 (deep, sighing, rapid Kussmaul respirations). Breath has a strong, distinctive sweet/fruity acetone odor. Mucous membranes extremely dry, skin turgor poor. Abdomen exhibits diffuse tenderness without rebound or guarding. STAT Point-of-Care Blood Glucose: 488 mg/dL. STAT Arterial Blood Gas (ABG): pH 7.12, PaCO2 22 mmHg (respiratory compensation), HCO3 8 mEq/L. Serum chemistry reveals Anion Gap of 24 mEq/L (normal 8-12), Potassium 5.2 mEq/L (despite profound whole-body intracellular potassium depletion), BUN 38 mg/dL, Creatinine 1.5 mg/dL (prerenal azotemia). Beta-hydroxybutyrate markedly elevated at 6.8 mmol/L; Urinalysis shows 4+ ketones and 4+ glucose.",
     "assessment": "Severe Diabetic Ketoacidosis (DKA) with High Anion Gap Metabolic Acidosis and Severe Dehydration, precipitated by insulin omission during acute viral illness.",
-    "plan": "STAT ED medical resuscitation following ADA DKA guidelines: 1. Fluid resuscitation: start rapid IV Normal Saline (0.9% NaCl) at 1000 mL/hr for the first 1-2 hours to restore intravascular volume and renal perfusion. 2. Potassium management (CRITICAL CHECKPOINT): check serum potassium BEFORE starting insulin. Since initial potassium is 5.2 mEq/L (between 3.5 and 5.0), initiate Potassium Chloride (KCl 10-20 mEq/L infusion) simultaneously with insulin (if baseline K+ was <3.5, insulin MUST be held until K+ is replaced >3.5 to prevent hypokalemic cardiac arrest). 3. Insulin therapy: start continuous IV regular insulin at 0.1 units/kg/hr to halt ketogenesis and close anion gap; a routine IV insulin bolus is not required. 4. Glucose monitoring: when blood glucose drops to 200-250 mg/dL, add 5% Dextrose (D5W) to the IV fluids while continuing insulin infusion until ketoacidosis completely clears (anion gap normalizes <=12 and HCO3 >=18)."
+    "plan": "STAT ED medical resuscitation following ADA DKA guidelines: 1. Fluid resuscitation: start rapid IV Normal Saline (0.9% NaCl) at 1000 mL/hr for the first 1-2 hours to restore intravascular volume and renal perfusion. 2. Potassium management (CRITICAL CHECKPOINT): check serum potassium BEFORE starting insulin. Since initial potassium is 5.2 mEq/L (ABOVE 5.0), WITHHOLD potassium replacement at this stage, start insulin and fluids, and recheck serum potassium every 2 hours; begin Potassium Chloride (KCl 20-30 mEq/L infusion) only once K+ falls below 5.0 mEq/L, because insulin drives a large intracellular potassium shift (if baseline K+ had been <3.5, insulin MUST be held until K+ is replaced >3.5 to prevent hypokalemic cardiac arrest). 3. Insulin therapy: start continuous IV regular insulin at 0.1 units/kg/hr to halt ketogenesis and close anion gap; a routine IV insulin bolus is not required. 4. Glucose monitoring: when blood glucose drops to 200-250 mg/dL, add 5% Dextrose (D5W) to the IV fluids while continuing insulin infusion until ketoacidosis completely clears (anion gap normalizes <=12 and HCO3 >=18)."
   },
   "learning_objectives": [
     "Identify clinical and biochemical criteria for Diabetic Ketoacidosis (hyperglycemia >250 mg/dL, arterial pH <7.30, serum bicarbonate <18 mEq/L, elevated beta-hydroxybutyrate, and high anion gap metabolic acidosis)",
@@ -249,5 +249,203 @@
       }
     ]
   },
-  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.5 mEq/L, replace potassium and hold insulin until it is corrected."
+  "clinical_safety_note": "In DKA, monitor potassium closely; if K+ is <3.5 mEq/L, replace potassium and hold insulin until it is corrected.",
+  "sp_script": {
+    "vitals": {
+      "bp": "102/64",
+      "hr": 122,
+      "rr": 28,
+      "spo2": 98,
+      "temp_c": 37.1
+    },
+    "history": [
+      {
+        "answer": "My stomach has been cramping and hurting really badly, and I've been throwing up all day.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The intense stomach cramps started early this morning, and the pain has steadily worsened over the course of the day.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "It hurts all over my entire belly, and the cramping hasn't moved to any specific spot.",
+        "topic": "Pain location"
+      },
+      {
+        "answer": "No, the pain stays in my stomach and doesn't shoot to my back, shoulders, or groin.",
+        "topic": "Radiation of pain"
+      },
+      {
+        "answer": "It is a constant, severe, agonizing cramp that keeps tightening across my belly.",
+        "topic": "Pain character"
+      },
+      {
+        "answer": "It is an 8 or 9 out of 10 right now. It started milder this morning and has become almost unbearable.",
+        "topic": "Pain severity"
+      },
+      {
+        "answer": "Nothing makes it feel any better, and trying to move around or throwing up just makes the cramping hurt worse.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "I have had bad stomach aches before when my sugar was high, but never pain this intense.",
+        "topic": "Previous similar pain"
+      },
+      {
+        "answer": "I've thrown up five or six times since this morning. It's mostly stomach fluid and dry heaving, with no blood or coffee grounds.",
+        "topic": "Nausea and vomiting"
+      },
+      {
+        "answer": "I had some loose watery diarrhea two days ago when my stomach bug started, but I haven't had a bowel movement today.",
+        "topic": "Bowel habits and diarrhea"
+      },
+      {
+        "answer": "I felt mildly feverish a few days ago when the stomach virus hit, but I don't feel hot or have chills today.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "No, my eyes haven't turned yellow, and my bowel movements haven't looked pale or white.",
+        "topic": "Jaundice and pale stools"
+      },
+      {
+        "answer": "I am peeing constantly every hour, and my mouth is so parched that drinking water doesn't quench my thirst at all.",
+        "topic": "Urinary symptoms and thirst"
+      },
+      {
+        "answer": "Yes, I feel very dizzy and lightheaded whenever I try to sit up, and my whole body feels completely drained.",
+        "topic": "Dizziness and weakness"
+      },
+      {
+        "answer": "I don't have chest pain, but I feel short of breath and notice I've been breathing really fast and deep.",
+        "topic": "Breathing and chest symptoms"
+      },
+      {
+        "answer": "I haven't eaten any solid food for the past two days because of nausea, and I definitely haven't had any alcohol.",
+        "topic": "Recent food and alcohol"
+      },
+      {
+        "answer": "No, I haven't taken any ibuprofen, aspirin, or any other pain relievers.",
+        "topic": "Pain medications and aspirin"
+      },
+      {
+        "answer": "No, I don't have any heart rhythm problems or vascular issues, though my heart is racing right now.",
+        "topic": "Cardiovascular history"
+      },
+      {
+        "answer": "I came down with a stomach flu three days ago with nausea and mild diarrhea that was going around my dorm.",
+        "topic": "Preceding illness"
+      },
+      {
+        "answer": "I stopped taking my daily long-acting and mealtime insulin two days ago because I wasn't eating solid food and thought I shouldn't take it.",
+        "topic": "Insulin use during illness"
+      },
+      {
+        "answer": "I'm terrified I might have appendicitis or really bad food poisoning with how awful my stomach feels.",
+        "topic": "Ideas and concerns"
+      },
+      {
+        "answer": "I'm hoping to get IV fluids for hydration, something for the nausea, and help getting my insulin and sugars back on track.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I have type 1 diabetes, which was diagnosed when I was 12 years old.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I was hospitalized for a few days when I was first diagnosed at 12, but I have never had any surgeries.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I take long-acting Lantus every night and Humalog before meals, but I haven't taken any doses for the last two days.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "No, I don't have any allergies to medications that I know of.",
+        "topic": "Allergies to medications"
+      },
+      {
+        "answer": "No, I have never smoked cigarettes or used vape products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I don't drink alcohol, and I don't use any recreational drugs.",
+        "topic": "Alcohol and recreational drugs"
+      },
+      {
+        "answer": "I'm a 21-year-old college student, and I live in an apartment off-campus with two roommates.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My mother has thyroid disease, but no one in my immediate family has diabetes.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Tachycardia at 122 beats per minute, blood pressure 102/64 mmHg, temperature 37.1°C, and tachypneic at 28 breaths per minute with deep, rapid respirations.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Visibly ill and exhausted young man lying in bed, breathing deeply and rapidly while groaning and holding his abdomen.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Noticeable sweet and fruity acetone odor on the breath, with markedly dry oral mucous membranes.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Poor skin turgor with tenting and dry skin.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally with marked deep, rapid sighing respirations and no wheezes or crackles.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic regular rhythm with normal heart sounds and no murmurs or rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is flat and symmetric without surgical scars, discoloration, or distension.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Hypoactive bowel sounds heard in all four quadrants.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Diffuse tenderness on palpation across all quadrants without involuntary guarding or abdominal wall rigidity.",
+        "maneuver": "abdominal_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "No rebound tenderness elicited in any abdominal quadrant.",
+        "maneuver": "rebound_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Negative McBurney point tenderness, negative Rovsing sign, and negative psoas sign.",
+        "maneuver": "appendicitis_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Negative Murphy sign with no focal right upper quadrant tenderness or arrest of inspiration.",
+        "maneuver": "murphy_sign",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      }
+    ]
+  }
 }

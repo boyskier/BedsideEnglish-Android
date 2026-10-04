@@ -69,6 +69,11 @@ class VoiceManager(
      * on screen even if that connect needs a reconnect to complete.
      */
     private val onSceneCharacterChangedCallback: (String?) -> Unit = {},
+    /**
+     * Free Talk only (null everywhere else): watches each finished partner turn and, when one
+     * runs long, seeds a hidden brevity note into the live context without prompting a reply.
+     */
+    private val brevityGuard: com.example.medvoicetrainer.analysis.FreeTalk.BrevityGuard? = null,
 ) : VoiceClientListener {
 
     val usesLiveMicrophone = shouldStartLiveMicrophone(isMock, apiKey)
@@ -76,7 +81,10 @@ class VoiceManager(
     private fun newClient(): VoiceClient = if (!usesLiveMicrophone) {
         MockVoiceClient(mode = mode, caseId = caseId, caseJson = caseJson)
     } else if (provider == "openai") {
-        OpenAIRealtimeClient(apiKey)
+        OpenAIRealtimeClient(
+            apiKey,
+            transcriptionLanguage = if (mode == com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE) "ko" else "",
+        )
     } else {
         GeminiLiveClient(apiKey)
     }
@@ -852,6 +860,16 @@ class VoiceManager(
             // learnerSpokeSinceProposal). Partial transcripts deliberately do not count — a call
             // made mid-utterance is answering something nobody finished saying.
             if (role == "user" || role == "doctor") learnerSpokeSinceProposal.set(true)
+            if (usesLiveMicrophone && role != "user" && role != "doctor" &&
+                role != SceneTransitionProtocol.NARRATOR_ROLE
+            ) {
+                brevityGuard?.onPartnerTurn(text)?.let { note ->
+                    val target = client
+                    coroutineScope.launch {
+                        runCatching { target.seedHistory(listOf(SceneTransitionProtocol.NARRATOR_ROLE to note)) }
+                    }
+                }
+            }
         }
         onTranscriptCallback(role, text, isFinal, learnerPcm)
     }

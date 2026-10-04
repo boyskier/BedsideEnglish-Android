@@ -1,0 +1,55 @@
+{
+  "id": "weight_loss",
+  "title": "살이 빠졌어요",
+  "english_title": "Unintentional weight loss",
+  "category": "전신·내분비",
+  "kmle_item": "체중 감소",
+  "door_complaint": "살이 빠졌다고",
+  "differential_groups": [
+    {"key": "malignancy", "label": "악성 종양", "examples": ["위암", "대장암", "췌장암", "폐암", "식도암", "림프종"]},
+    {"key": "endocrine", "label": "내분비", "examples": ["갑상샘기능항진증", "당뇨병(새로 발생, 조절 불량)", "부신기능저하증"]},
+    {"key": "gi", "label": "위장관·흡수장애", "examples": ["소화성궤양", "염증성 장질환", "셀리악병", "만성 췌장염"]},
+    {"key": "infection", "label": "만성 감염", "examples": ["결핵", "HIV 감염", "감염성 심내막염"]},
+    {"key": "psychosocial", "label": "정신·사회", "examples": ["우울증", "섭식장애", "치매", "독거·경제적 어려움"]}
+  ],
+  "history": [
+    {"id": "amount_period", "text": "감소한 체중과 기간(체중 기록, 옷이 헐거워짐)", "say": "몇 kg이나, 얼마 동안 빠지셨어요? 옷이 헐렁해지셨나요?"},
+    {"id": "intentional", "text": "의도적인 체중 감량 여부(식이 조절, 운동)", "say": "혹시 일부러 살을 빼려고 식사를 줄이거나 운동을 하셨나요?"},
+    {"id": "appetite_intake", "text": "식욕과 식사량 변화(식욕 증가 여부 포함)", "say": "입맛은 어떠세요? 드시는 양이 줄었나요, 오히려 늘었나요?", "tags": ["malignancy", "endocrine", "psychosocial"]},
+    {"id": "dysphagia", "text": "삼킴 곤란, 삼킬 때 통증", "say": "음식을 삼키기 어렵거나 걸리는 느낌이 드세요?", "tags": ["malignancy", "gi"], "key": true},
+    {"id": "upper_gi", "text": "속쓰림, 조기 포만감, 복통, 구토", "say": "속이 쓰리거나 조금만 먹어도 배가 부르세요? 배가 아프거나 토하지는 않나요?", "tags": ["malignancy", "gi"]},
+    {"id": "bowel_blood", "text": "배변 습관 변화, 혈변·흑색변", "say": "대변 보는 게 달라졌거나 피가 섞이거나 까맣게 나오지는 않나요?", "tags": ["malignancy", "gi"], "key": true},
+    {"id": "diarrhea_greasy", "text": "설사, 기름진 변", "say": "설사를 하거나 변에 기름기가 뜨지는 않으세요?", "tags": ["gi"]},
+    {"id": "hyperthyroid", "text": "두근거림, 더위 탐, 손떨림", "say": "가슴이 두근거리거나 더위를 많이 타고 손이 떨리지는 않으세요?", "tags": ["endocrine"]},
+    {"id": "diabetes", "text": "다음, 다뇨, 다식", "say": "목이 자주 마르고 소변을 자주 보세요?", "tags": ["endocrine"]},
+    {"id": "fever_sweats", "text": "발열, 야간 발한", "say": "열이 나거나 밤에 식은땀을 흠뻑 흘리지는 않으세요?", "tags": ["infection", "malignancy"], "key": true},
+    {"id": "respiratory", "text": "기침, 가래, 객혈", "say": "기침이나 가래가 오래가거나 피가 섞여 나오지는 않나요?", "tags": ["malignancy", "infection"]},
+    {"id": "lumps", "text": "몸에서 만져지는 멍울", "say": "목이나 겨드랑이 등에 멍울이 만져지지는 않으세요?", "tags": ["malignancy"]},
+    {"id": "mood", "text": "우울감, 흥미 저하, 수면 변화", "say": "요즘 기분이 가라앉거나 잠을 잘 못 주무시지는 않으세요?", "tags": ["psychosocial"]},
+    {"id": "eating_attitude", "text": "민감한 질문임을 양해 구한 뒤 체중 증가에 대한 두려움, 폭식 후 구토", "say": "모든 분께 여쭤보는 질문이에요. 살찌는 게 많이 걱정되시거나 먹고 나서 일부러 토한 적이 있나요?", "tags": ["psychosocial"], "conditional": true},
+    {"id": "living_situation", "text": "식사 준비 여건, 독거, 경제 사정, 치아 문제", "say": "식사는 누가 챙겨 주세요? 이가 불편해서 드시기 힘들지는 않으세요?", "tags": ["psychosocial"]},
+    {"id": "cancer_screening", "text": "최근 위·대장내시경과 건강검진 결과", "say": "최근에 건강검진이나 위·대장내시경을 받아 보셨어요?", "tags": ["malignancy"]},
+    {"id": "tb_contact", "text": "결핵 환자 접촉, 결핵 과거력", "say": "주변에 결핵 환자가 있었거나 전에 결핵을 앓으신 적이 있나요?", "tags": ["infection"]}
+  ],
+  "physical_exam": [
+    {"id": "weight_vitals", "text": "키와 체중 측정 후 이전 기록과 비교, 활력징후", "say": "먼저 키와 몸무게, 혈압과 맥박을 재 보겠습니다."},
+    {"id": "general", "text": "결막 창백, 공막 황달, 구강(치아, 궤양) 확인", "say": "눈과 입안을 잠깐 보겠습니다.", "tags": ["malignancy", "psychosocial"]},
+    {"id": "thyroid_tremor", "text": "갑상샘 촉진, 손떨림, 안구 돌출", "say": "목 앞쪽을 만져 보고, 두 손을 앞으로 뻗어 보세요.", "tags": ["endocrine"]},
+    {"id": "lymph_nodes", "text": "경부, 쇄골 위, 겨드랑이 림프절 촉진", "say": "목과 쇄골 위, 겨드랑이에 멍울이 있는지 만져 보겠습니다.", "tags": ["malignancy", "infection"]},
+    {"id": "chest_abdomen", "text": "폐 청진, 복부 종괴와 간비대 촉진", "say": "가슴에 청진기를 대 보고 배를 눌러 보겠습니다.", "tags": ["malignancy", "infection"]},
+    {"id": "rectal_exam", "text": "필요하면 직장수지검사", "say": "필요하면 항문 진찰을 추가로 하겠습니다.", "tags": ["malignancy"], "conditional": true}
+  ],
+  "education": [
+    {"id": "nutrition", "text": "열량과 단백질이 충분한 식사를 조금씩 자주 하도록 안내", "say": "한 번에 많이 드시기 어려우면 영양가 있는 음식을 조금씩 자주 드세요."},
+    {"id": "weight_diary", "text": "체중을 정기적으로 재서 기록하도록 안내", "say": "일주일에 한 번 같은 시간에 몸무게를 재서 적어 오세요."},
+    {"id": "warning_signs", "text": "토혈·흑색변, 삼킴 곤란 악화, 고열, 계속되는 체중 감소 시 빨리 오도록 안내", "say": "변이 까맣게 나오거나 삼키기가 더 힘들어지거나 살이 계속 빠지면 바로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "6~12개월 사이에 평소 체중의 5% 이상이 의도하지 않게 줄었으면 의미 있는 체중 감소로 보고 원인을 찾는다.",
+    "기본 검사로 혈구검사, 혈당·당화혈색소, 갑상샘기능, 간·신기능, 전해질, CRP, 소변검사, 흉부 X선을 시행한다.",
+    "소화기 증상이나 빈혈이 있거나 검진 시기가 지났으면 위·대장내시경을 시행하고, 나이에 맞는 암 검진 여부를 확인한다.",
+    "우울증, 섭식장애, 결핵 같은 비종양성 원인도 함께 평가하고, 초기 검사에서 이상이 없으면 짧은 간격으로 체중을 추적 관찰한다.",
+    "원인 치료와 함께 영양 상태를 평가하고 필요하면 영양 상담을 연결한다."
+  ],
+  "case_ids": ["gi_028", "pulm_039", "endo_031", "endo_027", "gs_039"]
+}

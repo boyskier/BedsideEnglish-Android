@@ -9,7 +9,7 @@ object ScoreDomains {
     )
 
     private val EVERYDAY_MODES = setOf("survival", "lounge")
-    private val EVERYDAY_EVAL_NAMES = setOf("survival english eval", "free english lounge eval")
+    private val EVERYDAY_EVAL_NAMES = setOf("survival english eval", "free english lounge eval", "free talk eval")
 
     fun isSurvivalCase(caseData: Map<String, Any?>?): Boolean {
         val c = caseData ?: emptyMap()
@@ -79,6 +79,11 @@ object ScoreDomains {
         mode: String? = null,
         evalTemplate: String? = null
     ): String {
+        // Korean CPX sessions are graded in Korean on medical content only. Their own domain keeps
+        // them out of every English aggregate (dashboards, SRS, clinical session queries).
+        if (mode?.trim() == KmleCpx.SESSION_MODE || (caseData != null && KmleCpx.isKmleCase(caseData))) {
+            return KmleCpx.ANALYSIS_DOMAIN
+        }
         val eData = evalData ?: emptyMap()
         val metricsRaw = eData["metrics"] as? Map<*, *> ?: emptyMap<Any, Any>()
         val metricKeys = metricsRaw.keys.map { it.toString() }.toSet()

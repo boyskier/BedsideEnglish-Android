@@ -42,6 +42,7 @@ import com.example.medvoicetrainer.analysis.SessionFeeling
 import com.example.medvoicetrainer.ui.EvaluationResult
 import com.example.medvoicetrainer.ui.LocalTranslate
 import com.example.medvoicetrainer.ui.MainViewModel
+import com.example.medvoicetrainer.ui.SoapNoteText
 import com.example.medvoicetrainer.ui.formatSoapForDisplay
 import kotlinx.coroutines.launch
 import org.json.JSONArray
@@ -159,6 +160,10 @@ fun FeedbackScreen(
     }
     var csvExportStatus by remember { mutableStateOf<String?>(null) }
     var selfAssessmentSaved by rememberSaveable(evaluation) { mutableStateOf(false) }
+    // Kept beside `selfAssessmentSaved`: the Reflect card is a collapsible lazy item, so state
+    // held inside it was dropped on collapse/scroll while "Self-assessment saved." stayed shown.
+    val selfAssessmentValues = remember(evaluation, everyday) { mutableStateMapOf<String, Float>() }
+    var selfAssessmentDelta by remember(evaluation) { mutableStateOf<Map<String, Double>>(emptyMap()) }
     var soapSaved by rememberSaveable(evaluation) { mutableStateOf(false) }
     var showAiReportDialog by rememberSaveable(evaluation) { mutableStateOf(false) }
 
@@ -474,6 +479,9 @@ fun FeedbackScreen(
                 ) {
                     when (section) {
                         FeedbackSection.OVERVIEW -> {
+                            if (!evaluation.evaluationLocked) {
+                                NursingScorecardContent(evaluation.nursingScorecardJson)
+                            }
                             SummaryFeedbackContent(
                                 evaluation, everyday, cardCount, acceptedCorrections
                             )
@@ -565,6 +573,9 @@ fun FeedbackScreen(
                                 everyday = everyday,
                                 saved = selfAssessmentSaved,
                                 onSavedChange = { selfAssessmentSaved = it },
+                                values = selfAssessmentValues,
+                                delta = selfAssessmentDelta,
+                                onDeltaChange = { selfAssessmentDelta = it },
                                 expandLabel = expandLabel,
                                 collapseLabel = collapseLabel
                             )
@@ -1071,6 +1082,31 @@ internal fun ScoresContent(evaluation: EvaluationResult, everyday: Boolean) {
             t("Comprehension & Repair") to evaluation.clinicalReasoning,
             t("Fluency") to evaluation.fluencyScore
         ).forEach { (label, score) -> ScoreMetric(t(label), score) }
+    } else if (evaluation.nursingScorecardJson.contains("\"framework\"")) {
+        // Nursing re-scopes the clinical keys (see NursingTrack.SCORING_NOTE), so the physician
+        // labels — and the "context only" framing — would describe something that wasn't scored.
+        Text(
+            t("How you communicated in English"),
+            style = MaterialTheme.typography.labelMedium,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary
+        )
+        listOf(
+            t("Grammar & Expression") to evaluation.grammarScore,
+            t("Fluency") to evaluation.fluencyScore,
+            t("Rapport & Professionalism") to evaluation.professionalism
+        ).forEach { (label, score) -> ScoreMetric(t(label), score) }
+        HorizontalDivider(modifier = Modifier.padding(vertical = 4.dp))
+        Text(
+            t("How you did the nursing task"),
+            style = MaterialTheme.typography.labelMedium,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary
+        )
+        listOf(
+            t("Accuracy of what you conveyed") to evaluation.medicalAccuracy,
+            t("Nursing judgement & structure") to evaluation.clinicalReasoning
+        ).forEach { (label, score) -> ScoreMetric(t(label), score) }
     } else {
         // English-first: the language metrics ARE the grade and lead the card; the two clinical
         // metrics follow as clearly-labeled realism context, so the learner doesn't read this as
@@ -1098,7 +1134,9 @@ internal fun ScoresContent(evaluation: EvaluationResult, everyday: Boolean) {
             t("Clinical Reasoning") to evaluation.clinicalReasoning
         ).forEach { (label, score) -> ScoreMetric(t(label), score) }
     }
-    val evidenceConfidence = when (evaluation.reliability.uppercase()) {
+    // Same source order as the Overview badge and headline, so the three never disagree.
+    val confidenceLevel = (evaluation.reliabilityBadge?.get("confidence") as? String) ?: evaluation.reliability
+    val evidenceConfidence = when (confidenceLevel.uppercase()) {
         "HIGH" -> t("feedback.evidence_confidence_high")
         "LOW" -> t("feedback.evidence_confidence_low")
         else -> t("feedback.evidence_confidence_medium")
@@ -1134,6 +1172,9 @@ private fun SelfAssessmentBlock(
     everyday: Boolean,
     saved: Boolean,
     onSavedChange: (Boolean) -> Unit,
+    values: androidx.compose.runtime.snapshots.SnapshotStateMap<String, Float>,
+    delta: Map<String, Double>,
+    onDeltaChange: (Map<String, Double>) -> Unit,
     expandLabel: String,
     collapseLabel: String
 ) {
@@ -1152,7 +1193,10 @@ private fun SelfAssessmentBlock(
             evaluation = evaluation,
             everyday = everyday,
             saved = saved,
-            onSavedChange = onSavedChange
+            onSavedChange = onSavedChange,
+            values = values,
+            delta = delta,
+            onDeltaChange = onDeltaChange
         )
     }
 }
@@ -1163,7 +1207,10 @@ private fun SelfAssessmentContent(
     evaluation: EvaluationResult,
     everyday: Boolean,
     saved: Boolean,
-    onSavedChange: (Boolean) -> Unit
+    onSavedChange: (Boolean) -> Unit,
+    values: androidx.compose.runtime.snapshots.SnapshotStateMap<String, Float>,
+    delta: Map<String, Double>,
+    onDeltaChange: (Map<String, Double>) -> Unit
 ) {
     val t = LocalTranslate.current
     val metrics = remember(everyday) {
@@ -1205,11 +1252,8 @@ private fun SelfAssessmentContent(
             )
         }
     }
-    val values = remember(evaluation, everyday) {
-        mutableStateMapOf<String, Float>().apply { metrics.forEach { put(it.key, 50f) } }
-    }
-    // Per-metric AI − self delta, computed on submit (empty until then, or when locked).
-    var delta by remember(evaluation) { mutableStateOf<Map<String, Double>>(emptyMap()) }
+    // `values` holds only the metrics the learner has moved (others read as the 50 default);
+    // `delta` is the per-metric AI − self gap, computed on submit (empty until then, or when locked).
     val labelForKey = remember(metrics) { metrics.associate { it.key to it.label } }
 
     Text(t("feedback.self_assessment_q"), fontWeight = FontWeight.SemiBold)
@@ -1248,13 +1292,15 @@ private fun SelfAssessmentContent(
     }
     Button(
         onClick = {
-            val selfScores = values.mapValues { (_, value) -> value.toDouble() }
+            val selfScores = metrics.associate { it.key to (values[it.key] ?: 50f).toDouble() }
             viewModel.saveSelfAssessment(selfScores, everyday)
-            delta = if (evaluation.evaluationLocked) {
-                emptyMap()
-            } else {
-                com.example.medvoicetrainer.analysis.FeedbackEngine.computeSelfDelta(aiScores, selfScores)
-            }
+            onDeltaChange(
+                if (evaluation.evaluationLocked) {
+                    emptyMap()
+                } else {
+                    com.example.medvoicetrainer.analysis.FeedbackEngine.computeSelfDelta(aiScores, selfScores)
+                }
+            )
             onSavedChange(true)
         },
         modifier = Modifier.fillMaxWidth()
@@ -1276,7 +1322,7 @@ private fun SelfAssessmentContent(
             SelfDeltaRow(
                 label = labelForKey[key] ?: key,
                 ai = aiScores[key] ?: 0.0,
-                self = values[key]?.toDouble() ?: 0.0,
+                self = (values[key] ?: 50f).toDouble(),
                 delta = d
             )
         }
@@ -2088,6 +2134,7 @@ internal fun FluencyContent(evaluation: EvaluationResult) {
     OfflineMetric(t("Words"), fm.userWordCount.toString())
     OfflineMetric(t("Turns"), fm.userTurnCount.toString())
     OfflineMetric(t("Average words / turn"), String.format(Locale.US, "%.1f", fm.avgTurnLength))
+    OfflineMetric(t("Your share of the talk"), "${(fm.talkTimeRatio * 100).roundToInt()}%")
     Text(
         "You're ${fm.confidenceBand}. " + t("These are deterministic measurements from your real words."),
         style = MaterialTheme.typography.bodySmall,
@@ -2463,7 +2510,7 @@ private fun MisconceptionFindingCard(
             )
             AssistChip(onClick = {}, label = { Text(t("feedback.severity_${finding.severity}")) })
         }
-        Text(t("feedback.you_said"), fontWeight = FontWeight.SemiBold)
+        Text(t("feedback.shadowing_you_said"), fontWeight = FontWeight.SemiBold)
         Text("“${finding.learnerClaim}”")
         Text(t("feedback.correct_concept"), fontWeight = FontWeight.SemiBold)
         Text(finding.correctConcept)
@@ -2618,7 +2665,12 @@ private fun SoapContent(
         return
     }
     Text(t("AI-generated SOAP"), fontWeight = FontWeight.Bold)
-    Text(formatSoapForDisplay(evaluation.soapNote).ifBlank { t("feedback.no_soap") })
+    SoapNoteText(formatSoapForDisplay(evaluation.soapNote).ifBlank { t("feedback.no_soap") })
+    Text(
+        t("feedback.soap_not_elicited_legend"),
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.onSurfaceVariant
+    )
     HorizontalDivider()
     Text(t("feedback.soap_reference"), fontWeight = FontWeight.Bold)
     Text(evaluation.referenceSoap.ifBlank { t("feedback.soap_na") })

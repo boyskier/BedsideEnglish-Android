@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "throat pain, high fever, fatigue, tonsil exudates",
   "hpi_details": "A 29-year-old male presents to the clinic with throat pain, high fever, fatigue, tonsil exudates. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to mononucleosis (mono) pharyngitis",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks he contracted a severe case of strep throat from sharing drinks with an unwell coworker.",
+  "concerns": "He is worried that his throat will swell shut to the point where he cannot swallow liquids or breathe comfortably.",
+  "expectations": "He hopes the doctor will perform a throat swab and prescribe strong antibiotics or a steroid shot to knock out the infection fast.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -146,6 +146,166 @@
         "domains": [
           "character"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "118/76",
+      "hr": 98,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 38.8
+    },
+    "history": [
+      {
+        "answer": "My throat hurts terribly, I've had a high fever for the past few days, and I feel completely exhausted.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started about four days ago with a mild scratchy throat and low energy, and it has become much worse since then.",
+        "topic": "Onset and course"
+      },
+      {
+        "answer": "The pain is severe, around an 8 out of 10, and it feels equally intense on both sides of my throat.",
+        "topic": "Pain severity and laterality"
+      },
+      {
+        "answer": "Swallowing anything solid hurts badly, but I can still swallow water and I am not drooling.",
+        "topic": "Pain with swallowing and drooling"
+      },
+      {
+        "answer": "My breathing is completely normal, with no noisy sounds, and my voice sounds the same as usual.",
+        "topic": "Breathing difficulty and voice changes"
+      },
+      {
+        "answer": "No, I can open my mouth all the way without any stiffness or spasm in my jaw.",
+        "topic": "Difficulty opening mouth"
+      },
+      {
+        "answer": "I have had a high fever reaching around 39 degrees Celsius and frequent chills since this began.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "No, I haven't had any cough, runny nose, stuffy nose, or red eyes.",
+        "topic": "Cough and cold symptoms"
+      },
+      {
+        "answer": "Yes, I noticed tender, swollen lumps on both sides of my neck, particularly toward the back of my neck.",
+        "topic": "Neck swelling and lymph nodes"
+      },
+      {
+        "answer": "No, I haven't seen any rash or rough skin anywhere on my body.",
+        "topic": "Skin rash"
+      },
+      {
+        "answer": "I feel totally drained and have barely been able to get out of bed, but I don't have any pain in my upper left belly.",
+        "topic": "Severe fatigue and abdominal pain"
+      },
+      {
+        "answer": "No, the pain stays right in my throat and does not radiate up into my ears.",
+        "topic": "Referred ear pain"
+      },
+      {
+        "answer": "A coworker had a bad sore throat a couple of weeks ago, but no one at home is sick.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "I rarely ever get sick and have not had a sore throat or tonsil infection like this since high school.",
+        "topic": "Previous episodes of pharyngitis"
+      },
+      {
+        "answer": "No, I don't suffer from heartburn, acid reflux, or a constant urge to clear my throat.",
+        "topic": "Heartburn and acid reflux"
+      },
+      {
+        "answer": "I checked in the mirror with my phone flashlight and saw my tonsils look swollen, bright red, and covered in white patches.",
+        "topic": "Tonsil appearance"
+      },
+      {
+        "answer": "I thought I must have caught a severe case of strep throat after sharing a drink with a sick friend over the weekend.",
+        "topic": "Ideas on cause"
+      },
+      {
+        "answer": "The pain is so unbearable that I'm terrified my throat will swell shut and I won't even be able to breathe or drink water.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "No, I don't have any immune deficiency, HIV, or chronic medical conditions that weaken my immune system.",
+        "topic": "Immunocompromised status"
+      },
+      {
+        "answer": "My past medical history is completely unremarkable.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and I have never been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I only took some over-the-counter acetaminophen for the fever, which brought it down just a little.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any drug allergies, and I've taken penicillin antibiotics in the past without problems.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink alcohol socially, perhaps one or two beers on the weekend.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office accountant and live alone in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "I am in a monogamous relationship with my partner for the past six months and have no new sexual partners.",
+        "topic": "Sexual history"
+      },
+      {
+        "answer": "There is no significant family history of chronic illness or recurrent infections; my parents are both healthy.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Temperature 38.8°C, heart rate 98 beats per minute, respiratory rate 18 breaths per minute, blood pressure 118/76 mmHg, oxygen saturation 98% on ambient air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient appears fatigued and acutely ill with flushed cheeks, but is alert, sitting upright, and in no respiratory distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral tonsils are markedly enlarged and erythematous with thick white exudates; uvula is midline without soft palate asymmetry.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Tender, enlarged bilateral posterior and anterior cervical lymphadenopathy, mobile and without overlying erythema.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "pain"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender throughout, with no involuntary guarding or rebound tenderness.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Mild splenomegaly with a palpable splenic edge 1 cm below the left costal margin on deep inspiration; liver edge is not palpable.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No maculopapular rash, petechiae, or sandpapery skin lesions are observed on the trunk or extremities.",
+        "maneuver": "skin_exam",
+        "response": "none"
       }
     ]
   }

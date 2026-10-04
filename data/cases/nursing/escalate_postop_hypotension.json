@@ -1,0 +1,109 @@
+{
+  "id": "nursing_escalate_postop_hypotension",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Handover & escalation",
+  "nursing_pathways": ["uk_au"],
+  "counterpart": "physician",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "nursing_sbar_escalation",
+  "patient_name": "Night-shift escalation — post-operative patient with a falling blood pressure",
+  "chief_complaint": "Call the on-call physician overnight about a post-operative patient whose blood pressure is falling and heart rate is climbing",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Escalation: post-op day 1 patient, falling BP and rising heart rate at 02:00",
+    "task": "Handover & escalation",
+    "urgency": "urgent",
+    "patient": "Mr. Daniel Whitfield, 68-year-old man, post-operative day 1 after an open bowel resection",
+    "location": "Surgical ward, 02:00; you are the night nurse and you are paging the on-call physician",
+    "situation": "His blood pressure has dropped across your last three sets of observations and his heart rate has risen. He is awake but pale, cool, and less talkative than he was at the start of your shift.",
+    "background": [
+      "Open bowel resection yesterday morning; the operation was described as uncomplicated.",
+      "He has hypertension and takes a regular antihypertensive at home, which was withheld this morning.",
+      "He has an abdominal drain and a urinary catheter in place."
+    ],
+    "current_status": [
+      "Blood pressure has fallen steadily over the last three sets of observations, and his heart rate is now clearly higher than his baseline.",
+      "He is alert but pale and cool to touch, and his hands are noticeably cold.",
+      "Urine output over the last two hours is well below what you would expect for his weight."
+    ],
+    "key_data": [
+      "Drain output has increased since the evening round and is more blood-stained than earlier.",
+      "His abdomen is tense and he reports the pain is worse than it was this evening despite his regular analgesia.",
+      "He is afebrile. No new medication has been given in the last four hours."
+    ],
+    "treatments": [
+      "You have repeated the observations, sat him flat, and started a fluid challenge under the ward's standing protocol.",
+      "You have not yet given any additional analgesia beyond his regular prescription."
+    ],
+    "your_request": "Page the on-call physician and give a clear SBAR that gets them to the bedside now — not after their current task.",
+    "must_include": [
+      "Who you are, which ward you are calling from, and which patient (Situation).",
+      "Why you are calling right now: the falling blood pressure and rising heart rate trend, not a single reading.",
+      "The operation, the day post-op, and the relevant history (Background).",
+      "Your assessment that he may be bleeding or becoming septic, with the objective findings that support it (Assessment).",
+      "A specific request: that they come and review him now, and how soon you need them (Recommendation).",
+      "What you have already done, so they do not repeat it."
+    ]
+  },
+  "kickoff_text": "On-call, go ahead. I'm in the middle of something on another ward — what's the problem?",
+  "persona_override": "You are Dr. Priya Raman, the on-call physician covering several wards overnight, taking a page from a surgical ward nurse. You are busy, tired, and slightly clipped, but not hostile — you respond well to a nurse who gets to the point. Ground truth: Mr. Whitfield is post-op day 1 from an open bowel resection with a downward blood-pressure trend, rising heart rate, cool peripheries, low urine output, increasing blood-stained drain output, and a tense, more painful abdomen. If the learner opens with a clear Situation and immediately names the trend and their concern, say you are coming now, ask one or two focused questions (most recent set of observations, drain output, what fluid has been given), and confirm the plan before ending. If the learner buries the reason for the call under a long background or gives a single reading without the trend, interrupt once with 'Sorry — what's your actual concern, and do you need me now or can this wait?' so the learner experiences why urgency has to come first. If the learner never makes an explicit request, ask 'So what are you asking me to do?' before agreeing to anything. Do not volunteer the diagnosis; make the learner tell you why they are worried. Stay on the phone — this is a telephone escalation, not a bedside conversation.",
+  "learning_objectives": [
+    "open a telephone escalation by identifying self, ward, and patient before anything else",
+    "lead with the reason for the call and the urgency, not with the background",
+    "report a trend across observations rather than a single number",
+    "state a nursing assessment and concern explicitly, within scope, without diagnosing",
+    "make a specific, time-bound request of the physician",
+    "state what has already been done so the physician does not duplicate it"
+  ],
+  "suggested_questions": [
+    "Hi Dr. Raman, this is Daniel from the surgical ward — I'm calling about Mr. Whitfield in bed 12, post-op day 1 from a bowel resection, and I need you to come and see him now.",
+    "His blood pressure has been dropping over my last three sets of obs and his heart rate has climbed; he's pale, cold, and his urine output has dropped right off.",
+    "His drain output has gone up and it's more blood-stained than it was this evening, and his abdomen is tense and more painful.",
+    "I'm worried he might be bleeding — I've started a fluid challenge under the protocol and repeated his obs. How soon can you get here?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Nurse-initiated telephone escalation of a deteriorating post-operative patient using SBAR",
+    "review_status": "grounded in AHRQ TeamSTEPPS SBAR principles, Joint Commission hand-off communication standards, and general early-warning-score escalation practice; local escalation protocols and trigger thresholds apply",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "The single most common failure in telephone escalation is burying the reason for the call: the receiving clinician's first need is to know how sick the patient is and how soon they are needed.",
+      "A trend across serial observations carries far more information than any single reading, and is what justifies escalation.",
+      "Nursing scope includes stating a concern and a specific request; it does not require, or permit, making the diagnosis."
+    ],
+    "diagnostic_clues": [
+      "A falling blood pressure with a rising heart rate, cool peripheries, and reduced urine output is a pattern of inadequate perfusion, whatever the cause.",
+      "Increasing blood-stained drain output with a tense, increasingly painful abdomen after abdominal surgery raises concern for post-operative bleeding."
+    ],
+    "common_misconceptions": [
+      "A nurse should present all the background first so the physician has full context before the concern.",
+      "Escalating without a confirmed cause is overstepping; better to wait for one more set of observations.",
+      "Saying the patient 'doesn't look right' is enough on its own without objective findings."
+    ],
+    "dangerous_errors": [
+      "Reporting a single blood-pressure reading without the trend, so the physician judges it a one-off.",
+      "Ending the call without a specific request or a time frame, leaving the response open-ended.",
+      "Delaying escalation to complete another set of observations in a patient already showing a clear downward trend."
+    ],
+    "management_principles": [
+      "Open with identification and the reason for the call, then background, assessment, and an explicit request.",
+      "State the urgency in words the receiving clinician cannot misread — 'I need you now' rather than 'when you get a chance'.",
+      "Say what has already been done so the receiving clinician can build on it rather than repeat it."
+    ],
+    "boundaries_and_exceptions": [
+      "Escalation triggers, early-warning-score thresholds, and who is called first vary by institution and country.",
+      "Fluid challenges and other nurse-initiated interventions are only appropriate where a local standing protocol authorizes them."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS SBAR Technique",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html"
+      },
+      {
+        "title": "The Joint Commission: Hand-off Communications Standards",
+        "url": "https://www.jointcommission.org/"
+      }
+    ]
+  }
+}

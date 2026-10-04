@@ -1,0 +1,117 @@
+{
+  "id": "nursing_us_pharmacy_med_rec_discrepancy",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Handover & escalation",
+  "nursing_pathways": ["us"],
+  "counterpart": "pharmacist",
+  "urgency": "semi-urgent",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_sbar_escalation",
+  "station_minutes": 6,
+  "patient_name": "Calling pharmacy about a home-dose discrepancy — levetiracetam",
+  "chief_complaint": "Call the inpatient pharmacist about a mismatch between a patient's home levetiracetam dose and the admission order, agree who will fix it, and close the loop before the next dose is due",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Medication reconciliation: levetiracetam ordered at half the home dose",
+    "task": "Handover & escalation",
+    "urgency": "semi-urgent",
+    "patient": "Mr. Victor Almeida, 49-year-old man (DOB 12/15/1976), room 309, admitted this afternoon with a kidney infection (pyelonephritis)",
+    "location": "3 West med-surg unit, 19:45. You are his night RN. You are calling the inpatient pharmacy; the pharmacist on duty, Mei Chen, answers.",
+    "situation": "While completing his admission medication history, you found that his home levetiracetam dose is 1,000 mg twice a day, but the admission order is 500 mg twice a day. His next dose is due at 21:00.",
+    "background": [
+      "Epilepsy for 10 years; seizure-free for 3 years on levetiracetam. His last seizure happened after missed doses.",
+      "Admitted with pyelonephritis; on IV antibiotics. Creatinine 0.9 mg/dL today, his baseline.",
+      "The ED home medication list, taken from him while he had a high fever, says 'levetiracetam 500 mg twice daily'."
+    ],
+    "current_status": [
+      "Alert and oriented, temp 100.2 F, other vital signs normal. No seizure activity.",
+      "Last home dose: 1,000 mg at 08:00 this morning. He has not missed a dose yet."
+    ],
+    "key_data": [
+      "His wife brought in his pill bottle: 'Levetiracetam 500 mg tablets — take 2 tablets (1,000 mg) by mouth twice daily', filled three weeks ago.",
+      "He confirms: 'Two pills in the morning, two at night.'",
+      "Admission order in the EHR: levetiracetam 500 mg by mouth twice daily, first dose due at 21:00.",
+      "His home bottle has gone home with his wife; unit policy does not allow patients' own medications to be given without pharmacy verification."
+    ],
+    "treatments": [
+      "Pending: the 21:00 levetiracetam dose; the order has not been changed."
+    ],
+    "your_request": "Give the pharmacist a clear SBAR about the discrepancy, agree who will clarify it with the provider and what to do about the 21:00 dose, and close the loop with a call-back time.",
+    "must_include": [
+      "Identify yourself, your unit, and the patient with two identifiers (name and date of birth), and say you are calling about a home-medication discrepancy.",
+      "State the discrepancy exactly: home dose 1,000 mg twice daily (two 500 mg tablets) versus ordered 500 mg twice daily.",
+      "Give the source of the home dose (bottle label, fill date, the patient's own report) and the relevant background: seizure history, kidney function, last dose.",
+      "Say why it matters and how urgent it is: risk of a breakthrough seizure, and the next dose is due at 21:00.",
+      "Ask a specific question: who will contact the provider, and what you should do about the 21:00 dose.",
+      "Read back the plan and agree a time for a call-back — and what you will do if you have not heard by then."
+    ]
+  },
+  "kickoff_text": "Inpatient pharmacy, this is Mei. How can I help?",
+  "persona_override": "You are Mei Chen, PharmD, the evening inpatient pharmacist. You are friendly, careful, and busy verifying orders. Ground truth: Mr. Victor Almeida, 49, DOB 12/15/1976, room 309 on 3 West, admitted this afternoon with pyelonephritis; epilepsy for 10 years, seizure-free for 3 years, last seizure after missed doses; creatinine 0.9, his baseline; home bottle reads 'levetiracetam 500 mg tablets, take 2 tablets (1,000 mg) by mouth twice daily', filled three weeks ago; the patient confirms two pills morning and night; last home dose 1,000 mg at 08:00; the ED list (taken while he was febrile) says 500 mg twice daily; admission order is 500 mg PO twice daily, first dose due 21:00. His outpatient fill history, when you check it, matches the bottle. Behaviour: If the learner does not give two identifiers, ask 'Can I get his name and date of birth?' If the learner says only 'the dose is wrong', ask 'Which dose — what's he taking at home, and what's ordered?' Push back once, reasonably: 'The ED list says 500 twice a day, and levetiracetam does get reduced for kidney function — could the lower dose be intentional?' If the learner answers with the bottle label, the fill date, the patient's own report, and his normal creatinine, agree: 'Okay — that sounds like a transcription error. The bottle is 500 mg tablets, two tablets.' Then give the plan in one go: 'I'll check his outpatient fill history and call the admitting hospitalist to get the order changed to 1,000 twice daily. Don't give the 500 at 21:00 — wait until you see the updated order. I'll call you back by 20:30.' If the learner reads the plan back, confirm it. If the learner asks what to do if the order is not updated in time, say 'If you haven't heard from me by 20:30, page the hospitalist directly so the dose isn't late.' Do not raise that yourself. If the learner suggests giving his own pills from home, say pharmacy would have to verify them first and it shouldn't be necessary. Never coach the learner. Keep turns short.",
+  "learning_objectives": [
+    "identify the patient with name and date of birth when calling pharmacy",
+    "state the discrepancy: home dose versus ordered dose, in milligrams and tablets",
+    "give the source: the pill bottle label, the fill date, and the patient's own report",
+    "say the next dose is due at 21:00 and the risk of a breakthrough seizure",
+    "ask who will contact the provider and what to do about the 21:00 dose",
+    "read back the plan and agree a call-back time"
+  ],
+  "suggested_questions": [
+    "Hi Mei, this is Eun-ji, the RN on 3 West. I'm calling about Victor Almeida in 309, date of birth December 15, 1976 — I've found a discrepancy in his home levetiracetam dose.",
+    "His bottle says 500-milligram tablets, take two tablets twice a day — so 1,000 milligrams twice daily — but he's ordered 500 milligrams twice daily. He confirms he takes two pills morning and night.",
+    "His creatinine is 0.9, which is his baseline, and he's had a seizure before when he missed doses. His next dose is due at 21:00.",
+    "So just to confirm: you'll check his fill history and call the hospitalist, I'll wait for the updated order before I give the 21:00 dose, and if I haven't heard from you by 20:30 I'll page the hospitalist myself. Is that right?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Resolving a medication reconciliation discrepancy with the inpatient pharmacist and closing the loop",
+    "review_status": "grounded in Joint Commission patient-safety requirements on medication reconciliation, AHRQ PSNet guidance on medication reconciliation, and ISMP safe-practice principles; antiseizure dosing, renal dose adjustment, and who changes the order follow the prescriber, pharmacy and local policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Medication reconciliation compares what the patient actually takes at home with what is ordered on admission; transitions of care are where most unintended discrepancies happen.",
+      "Tablet strength is not the same as dose: '500 mg tablets, take 2' is 1,000 mg — a classic transcription trap.",
+      "The best possible medication history uses more than one source: the patient, the bottle, the family, and the outpatient pharmacy fill history.",
+      "Closing the loop means agreeing who does what, by when, and what happens if it doesn't happen."
+    ],
+    "diagnostic_clues": [
+      "A home list taken from a febrile, unwell patient in the ED is a weaker source than the bottle and the fill history.",
+      "Normal kidney function argues against an intentional renal dose reduction.",
+      "A history of seizures after missed doses makes under-dosing an antiseizure medication clinically important."
+    ],
+    "common_misconceptions": [
+      "The ED list is the verified home medication list.",
+      "The nurse can simply give the home dose from the patient's own bottle.",
+      "Reporting the discrepancy is enough; the pharmacist will take it from there."
+    ],
+    "dangerous_errors": [
+      "Giving 500 mg without flagging the difference, so the patient is under-dosed overnight.",
+      "Changing the dose yourself, or giving the patient's own tablets without verification.",
+      "Saying 'the dose is wrong' without stating both doses and the source.",
+      "Ending the call without a plan for the 21:00 dose or a time to follow up."
+    ],
+    "management_principles": [
+      "Verify with two or more sources before calling; state both doses exactly, in milligrams and in tablets.",
+      "Use SBAR with the pharmacist: who you are, which patient, the discrepancy, the source, the relevant history, and what you need.",
+      "Agree who contacts the prescriber, what to do with the next dose, and a call-back time; escalate to the prescriber if that time passes.",
+      "Update the home medication list in the EHR and document the conversation."
+    ],
+    "boundaries_and_exceptions": [
+      "Antiseizure dosing, renal dose adjustment, and whether a dose is held, given as ordered, or re-timed while awaiting clarification are decided by the prescriber and pharmacist under local policy; the doses here are illustrative.",
+      "Hospitals differ in whether pharmacists, pharmacy technicians or nurses take the admission medication history, and in whether pharmacists may change orders under protocol."
+    ],
+    "source_refs": [
+      {
+        "title": "The Joint Commission (patient safety standards and goals)",
+        "url": "https://www.jointcommission.org/"
+      },
+      {
+        "title": "AHRQ Patient Safety Network: Medication Reconciliation",
+        "url": "https://psnet.ahrq.gov/primer/medication-reconciliation"
+      },
+      {
+        "title": "Institute for Safe Medication Practices (ISMP)",
+        "url": "https://www.ismp.org/"
+      }
+    ]
+  }
+}

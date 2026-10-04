@@ -9,8 +9,8 @@
   "chief_complaint": "elevated blood pressure 160/98 discovered on routine checkup without headache or vision changes",
   "hpi_details": "48M presents for a routine visit after his blood pressure was found elevated on today's check-in vitals: 160/98 mmHg, confirmed on a repeat reading after 10 minutes of quiet rest. He reports feeling entirely well and denies headache, chest pain, shortness of breath, or visual changes. He admits to a high-sodium diet (frequent fast food, adds salt to most meals) and exercises only occasionally. He has never been told his blood pressure was high before and has never taken blood pressure medication.",
   "ideas": "assumed his blood pressure was fine since he has never had symptoms",
-  "concerns": "worried about serious complications and prolonged recovery",
-  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "concerns": "He is worried that having numbers this high means he will have to take prescription medication every single day for the rest of his life.",
+  "expectations": "He hopes the doctor will let him try cutting down on salty foods and exercising before prescribing any pills.",
   "pmh": "No prior diagnoses (presenting for first evaluation of elevated blood pressure)",
   "medications": "None",
   "social_hx": "Non-smoker, active lifestyle",
@@ -115,6 +115,189 @@
         "domains": [
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "160/98",
+      "hr": 76,
+      "rr": 16,
+      "spo2": 99,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "I came in today because the nurse took my blood pressure during my routine checkup and told me it was high, around 160 over 98.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The nurse checked it first when I arrived and got 160 over 98, then let me sit quietly for about ten minutes and rechecked it, but it was still 158 over 96.",
+        "topic": "Circumstances of discovery"
+      },
+      {
+        "answer": "I had a checkup a couple of years ago and my blood pressure was completely normal. No doctor or nurse has ever told me it was high before today.",
+        "topic": "Comparison with past checkups"
+      },
+      {
+        "answer": "I followed the fasting instructions for the blood tests, did not feel unusually anxious, and had no coffee, cigarettes, or cold medicine this morning. I did not do any heavy exercise today either.",
+        "topic": "Measurement conditions"
+      },
+      {
+        "answer": "I do not have a blood pressure monitor at home and have not checked it anywhere else recently.",
+        "topic": "Home blood pressure monitoring"
+      },
+      {
+        "answer": "I feel completely fine overall. I have not had any headaches, daytime exhaustion, excessive thirst, or increased urination.",
+        "topic": "General symptoms"
+      },
+      {
+        "answer": "No, I have not had any chest tightness, heart fluttering, or shortness of breath even when walking up stairs.",
+        "topic": "Chest pain or shortness of breath"
+      },
+      {
+        "answer": "My vision has been completely clear with no blurring or blind spots, and I have not had any weakness, numbness, or trouble talking.",
+        "topic": "Vision changes and neurologic symptoms"
+      },
+      {
+        "answer": "I have not noticed any blood or foam in my urine, and I have had no swelling in my legs, ankles, or face.",
+        "topic": "Kidney and urinary symptoms"
+      },
+      {
+        "answer": "No kidney stones, bone aches, constipation, or feeling unusually cold or sluggish.",
+        "topic": "Endocrine and systemic symptoms"
+      },
+      {
+        "answer": "No fever, chills, night sweats, unexpected weight loss, swollen glands, or coughing up blood.",
+        "topic": "Constitutional and red flag symptoms"
+      },
+      {
+        "answer": "I do not have any burning, difficulty starting urination, or weak stream, and I have never had prostate infections. I also did not ride a bicycle or engage in sexual activity right before the exam.",
+        "topic": "Urinary and prostate history"
+      },
+      {
+        "answer": "I do not get sudden spells of sweating, pounding heartbeats, or severe trembling. I also do not snore heavily, wake up gasping for air, or feel weak in my muscles.",
+        "topic": "Secondary hypertension clues"
+      },
+      {
+        "answer": "I do not take any over-the-counter pain relievers like ibuprofen, nasal decongestants, cold syrups, or steroid medications.",
+        "topic": "Medications affecting blood pressure"
+      },
+      {
+        "answer": "I eat fast food several times a week and tend to add salt to most of my meals. I also drink regular sodas a few times a week.",
+        "topic": "Dietary habits"
+      },
+      {
+        "answer": "I sit at a desk all day for work and only go for occasional walks, so I do not get much regular exercise. I have also gained about ten pounds over the last few years.",
+        "topic": "Exercise and weight changes"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco products, and I have never been exposed to industrial dust or asbestos at work.",
+        "topic": "Smoking and occupational exposure"
+      },
+      {
+        "answer": "I have never broken any bones or noticed myself getting shorter, and I have never taken steroid pills.",
+        "topic": "Bone health and fracture history"
+      },
+      {
+        "answer": "I have never had tuberculosis, do not know anyone with active tuberculosis, and do not take any immune-suppressing drugs.",
+        "topic": "Tuberculosis and immune status"
+      },
+      {
+        "answer": "My father had high blood pressure and suffered a heart attack in his late sixties, but no one in my family had heart disease at a young age, stroke, kidney failure, or early cancer.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "I assumed my blood pressure was perfectly fine because I feel healthy and have never had any symptoms at all.",
+        "topic": "Patient ideas and perspective"
+      },
+      {
+        "answer": "I'm worried that this means I'll be stuck taking blood pressure pills every single day for the rest of my life.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I was hoping we could just focus on diet and exercise changes first before putting me on any medication.",
+        "topic": "Expectations of the visit"
+      },
+      {
+        "answer": "I am open to whatever is necessary, but I do wonder if starting blood pressure medication means I will have to take pills every day for the rest of my life.",
+        "topic": "Concerns about medication"
+      },
+      {
+        "answer": "I have never had any chronic medical conditions, high blood pressure, diabetes, or high cholesterol before.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgical operations and have never been hospitalized.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, regular over-the-counter medicines, vitamins, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to medications, foods, or environmental triggers.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I drink alcohol only socially, perhaps one or two bottles of beer once or twice a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office manager sitting at a computer all day, and I live with my wife and our two teenage children.",
+        "topic": "Occupation and living situation"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 160/98 mmHg in the right arm and 158/96 mmHg in the left arm; heart rate 76 beats per minute, respiratory rate 16 breaths per minute, body mass index 29.4 kg/m2.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Fundoscopic examination reveals sharp optic disc margins with no papilledema, arteriovenous nicking, hemorrhages, or exudates.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No cervical, supraclavicular, or submandibular lymphadenopathy is palpable.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, smooth, and non-tender without nodules or audible bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, S3 or S4 gallops, or carotid bruits.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal active bowel sounds heard throughout; no renal artery or abdominal aortic bruits.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender; no hepatomegaly, splenomegaly, or palpable masses.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Radial, femoral, dorsalis pedis, and posterior tibial pulses are 2+ and symmetric bilaterally with no radiofemoral delay.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Normal spinal alignment without thoracic kyphosis or midline spinous process tenderness.",
+        "maneuver": "spine_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pitting edema or calf swelling in either lower extremity.",
+        "maneuver": "extremity_edema",
+        "response": "none"
       }
     ]
   }

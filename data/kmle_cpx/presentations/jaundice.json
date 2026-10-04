@@ -1,0 +1,53 @@
+{
+  "id": "jaundice",
+  "title": "눈이 노래졌어요",
+  "english_title": "Yellow eyes (jaundice)",
+  "category": "소화기",
+  "kmle_item": "황달",
+  "door_complaint": "눈이 노래졌다고",
+  "differential_groups": [
+    {"key": "prehepatic", "label": "간전성(용혈·빌리루빈 대사)", "examples": ["용혈성 빈혈", "길버트 증후군", "신생아 황달"]},
+    {"key": "hepatocellular", "label": "간세포성", "examples": ["급성 바이러스 간염", "알코올 간염", "약물·한약 유발 간손상", "자가면역 간염", "간경변"]},
+    {"key": "obstructive", "label": "폐쇄성(담도)", "examples": ["총담관결석", "급성 담관염", "췌장암", "담관암"]}
+  ],
+  "history": [
+    {"id": "onset_course", "text": "시작 시기와 진행 속도", "say": "언제부터 눈이 노래졌어요? 점점 심해지고 있나요?"},
+    {"id": "urine_color", "text": "소변 색(콜라색, 진한 갈색)", "say": "소변 색이 진해졌나요?", "tags": ["hepatocellular", "obstructive"]},
+    {"id": "stool_color", "text": "대변 색(회백색)", "say": "대변 색이 하얗거나 회색으로 변하지는 않았나요?", "tags": ["obstructive"]},
+    {"id": "pruritus", "text": "피부 가려움", "say": "몸이 가렵지는 않으세요?", "tags": ["obstructive"]},
+    {"id": "abdominal_pain", "text": "오른쪽 윗배 통증, 식후 통증 발작", "say": "배가 아프세요? 특히 오른쪽 윗배가 아프지는 않나요?", "tags": ["obstructive", "hepatocellular"]},
+    {"id": "fever_chills", "text": "발열, 오한", "say": "열이 나거나 춥고 떨리지는 않으세요?", "tags": ["obstructive", "hepatocellular"], "key": true},
+    {"id": "liver_failure_signs", "text": "의식 변화, 잠이 많아짐, 쉽게 드는 멍이나 출혈", "say": "정신이 흐려지거나 멍이 잘 들고 피가 잘 멈추지 않지는 않나요?", "tags": ["hepatocellular"], "key": true},
+    {"id": "constitutional", "text": "식욕 저하, 메스꺼움, 피로", "say": "입맛이 없거나 속이 메스껍고 피곤하지는 않으세요?", "tags": ["hepatocellular"]},
+    {"id": "weight_loss", "text": "의도하지 않은 체중 감소", "say": "최근에 살이 빠지셨어요?", "tags": ["obstructive"], "key": true},
+    {"id": "anemia_symptoms", "text": "어지러움, 숨참, 창백", "say": "어지럽거나 조금만 움직여도 숨이 차지는 않으세요?", "tags": ["prehepatic"]},
+    {"id": "alcohol", "text": "음주량과 음주 기간", "say": "술은 얼마나 자주, 몇 년 동안 드셨어요?", "tags": ["hepatocellular"]},
+    {"id": "drugs_herbs", "text": "최근 먹은 약, 한약, 건강보조식품", "say": "최근에 드신 약이나 한약, 건강식품이 있나요?", "tags": ["hepatocellular"]},
+    {"id": "viral_exposure", "text": "날음식(조개류) 섭취, 주변 황달 환자 접촉", "say": "최근에 날 조개를 드셨거나 주변에 황달이 생긴 사람이 있나요?", "tags": ["hepatocellular"]},
+    {"id": "blood_borne_risk", "text": "민감한 질문임을 양해 구한 뒤 B형·C형 간염 보유, 수혈, 문신, 주사기 공유, 성접촉", "say": "조금 민감한 질문이지만 모두에게 여쭤봅니다. 간염이 있다는 말을 들었거나 수혈, 문신을 받은 적 있으세요?", "tags": ["hepatocellular"]},
+    {"id": "gallstone_history", "text": "담석, 담도 수술 이력", "say": "전에 담석이 있다거나 담낭 수술을 받은 적이 있으세요?", "tags": ["obstructive"]},
+    {"id": "distension_edema", "text": "배가 불러옴, 다리 부종", "say": "배가 불러오거나 다리가 붓지는 않으세요?", "tags": ["hepatocellular"]},
+    {"id": "newborn_feeding", "text": "신생아의 생후 일수, 수유 방법과 양, 소변·대변 횟수", "say": "아기가 태어난 지 며칠 됐어요? 젖은 잘 먹고 기저귀는 하루에 몇 번 갈아요?", "tags": ["prehepatic"], "applies": "child", "conditional": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온, 혈압, 맥박 확인(담관염·패혈증 평가)", "say": "먼저 체온과 혈압을 재 보겠습니다."},
+    {"id": "sclera", "text": "밝은 곳에서 공막 황달과 결막 창백 확인", "say": "밝은 쪽을 보시고 눈 흰자를 확인하겠습니다."},
+    {"id": "liver_stigmata", "text": "거미혈관종, 손바닥 홍반, 긁은 자국, 퍼덕떨림", "say": "손바닥과 피부를 보고, 두 팔을 앞으로 쭉 뻗어 보세요.", "tags": ["hepatocellular"]},
+    {"id": "abdomen", "text": "우상복부 압통, 머피 징후, 간·비장 크기, 만져지는 담낭", "say": "편하게 누우세요. 배를 눌러 간과 비장 크기를 확인하겠습니다.", "tags": ["obstructive", "hepatocellular", "prehepatic"]},
+    {"id": "ascites", "text": "이동둔탁음으로 복수 확인", "say": "배를 두드려서 물이 찼는지 보겠습니다.", "tags": ["hepatocellular"], "conditional": true}
+  ],
+  "education": [
+    {"id": "alcohol_herbs", "text": "금주하고 한약, 건강식품, 불필요한 약을 중단하도록 안내", "say": "간이 회복될 때까지 술은 끊으시고, 한약이나 건강식품도 드시지 마세요.", "tags": ["hepatocellular"]},
+    {"id": "hygiene_vaccine", "text": "A형 간염이면 손 씻기와 가족 예방접종 안내", "say": "옮을 수 있는 간염이면 손을 자주 씻으시고, 가족분들도 예방접종을 확인해 보세요.", "tags": ["hepatocellular"], "conditional": true},
+    {"id": "warning_signs", "text": "고열·오한, 심한 복통, 의식 흐려짐, 출혈이 생기면 즉시 오도록 안내", "say": "열이 나고 떨리거나 배가 심하게 아프거나 정신이 흐려지면 바로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "간기능검사(총·직접 빌리루빈, AST·ALT, ALP, GGT), 혈구검사, 프로트롬빈시간(INR), 알부민으로 용혈성·간세포성·폐쇄성 황달을 구분한다.",
+    "복부 초음파를 먼저 시행해 담관 확장을 확인하고, 확장이 있으면 CT나 MRCP로 원인을 찾는다.",
+    "간세포성 손상이면 바이러스 간염 표지자(A형 IgM 항체, B형 표면항원, C형 항체), 약물·한약 복용력, 자가면역 항체를 확인한다.",
+    "발열, 우상복부 통증, 황달이 함께 있으면 급성 담관염으로 보고 혈액배양, 항생제, 내시경적 담도 배액(ERCP)을 서두른다.",
+    "INR 상승과 의식 변화가 있으면 급성 간부전을 의심해 즉시 간이식이 가능한 전문 센터로 의뢰한다.",
+    "신생아 황달은 출생 후 시간별 빌리루빈 수치와 위험 요인으로 광선요법 여부를 결정한다."
+  ],
+  "case_ids": ["gi_009", "gi_033", "gs_017", "hemato_011", "gi_022", "peds_009"]
+}

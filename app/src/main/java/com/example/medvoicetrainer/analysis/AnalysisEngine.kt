@@ -95,6 +95,33 @@ object AnalysisEngine {
     }
 
     /**
+     * Run an analysis whose prompts the caller built itself — the Korean CPX grader, which has its
+     * own Korean rubric and JSON contract instead of the English clinical/everyday schemas. Same
+     * timeout and transient-retry behaviour as [evaluateSessionWithUsage]; Gemini goes through the
+     * same model-fallback chain with JSON validation.
+     */
+    suspend fun evaluatePromptsWithUsage(
+        backend: String,
+        apiKey: String,
+        model: String,
+        systemPrompt: String,
+        userPrompt: String,
+        maxOutputTokens: Int = 8192,
+    ): Pair<String, LlmUsage> {
+        val cleanUser = sanitizeInstruction(userPrompt) ?: ""
+        val cleanSystem = sanitizeInstruction(systemPrompt) ?: ""
+        return withTimeoutOrNull(SESSION_ANALYSIS_TIMEOUT_MS) {
+            withTransientRetry {
+                when (backend) {
+                    "claude" -> ClaudeService.generateContentWithUsage(apiKey, model, cleanUser, cleanSystem, maxTokens = maxOutputTokens)
+                    "openai" -> OpenAIService.generateContentWithUsage(apiKey, model, cleanUser, cleanSystem)
+                    else -> GeminiService.evaluatePromptsWithUsage(apiKey, model, cleanSystem, cleanUser)
+                }
+            }
+        } ?: throw Exception("Analysis timed out after two minutes. Your transcript is saved; please retry from History.")
+    }
+
+    /**
      * Same as [evaluateSession] but also returns normalized token usage, matching
      * app/analysis/analysis_providers.py's `call_analysis(...) -> (raw_text, usage)` contract.
      * Lets CostTracker.kt price a session from exact provider-reported counts instead of the

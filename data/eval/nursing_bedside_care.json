@@ -1,0 +1,56 @@
+{
+  "name": "Nursing Bedside Care & Assessment",
+  "description": "Evaluates a nurse's spoken English at the bedside: assessing a symptom, orienting a confused or distressed patient, and keeping the patient informed during routine care.",
+  "metrics": {
+    "fluency": {
+      "label": "Language & Fluency",
+      "anchors": {
+        "80-100": "Clear, fluent, unhurried phrasing; the patient is never left waiting for a word.",
+        "50-70": "Understandable but occasional hesitations or grammar errors.",
+        "10-40": "Frequent errors that impede understanding at the bedside."
+      }
+    },
+    "assessment_completeness": {
+      "label": "Assessment Completeness",
+      "anchors": {
+        "80-100": "Elicits the specific information the situation requires, using open questions first and closing in on specifics.",
+        "50-70": "Covers most of what is needed but relies on closed questions or misses one important dimension.",
+        "10-40": "Assessment is thin or leading; the nurse would not be able to report or act on what was gathered."
+      }
+    },
+    "plain_language": {
+      "label": "Plain Language & Orientation",
+      "anchors": {
+        "80-100": "Explains who they are, what they are about to do, and why, in everyday words, before doing it.",
+        "50-70": "Explains some actions but performs others without narrating them.",
+        "10-40": "Acts without explanation, or explains in clinical register the patient cannot follow."
+      }
+    },
+    "empathy": {
+      "label": "Empathy & Comfort",
+      "anchors": {
+        "80-100": "Names and validates the patient's feeling before problem-solving; the patient is treated as a person, not a task.",
+        "50-70": "Polite and kind but moves to the task before acknowledging the distress.",
+        "10-40": "Ignores or minimizes clearly expressed distress."
+      }
+    },
+    "professionalism": {
+      "label": "Professionalism & Boundaries",
+      "anchors": {
+        "80-100": "Stays within nursing scope, is honest about what they can and cannot decide, and says what happens next.",
+        "50-70": "Mostly appropriate but over-promises or gives a vague 'I'll see what I can do'.",
+        "10-40": "Makes medical decisions or promises outside nursing scope, or leaves without a next step."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Introduced self and role, and said what they were there to do", "required": true},
+    {"item": "Used an open question before narrowing to specifics", "required": true},
+    {"item": "Gathered the specific information the situation requires", "required": true},
+    {"item": "Acknowledged the patient's feeling in words before moving to the task", "required": true},
+    {"item": "Explained in plain English what will happen next and roughly when", "required": true},
+    {"item": "Stayed within nursing scope and was honest about what needed a doctor's decision", "required": false},
+    {"item": "Checked before leaving whether the patient needed anything else", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "summary"]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "fatigue",
+  "title": "피곤해요",
+  "english_title": "Fatigue",
+  "category": "전신·내분비",
+  "kmle_item": "피로",
+  "door_complaint": "피곤하다고",
+  "differential_groups": [
+    {"key": "hematologic", "label": "혈액", "examples": ["철결핍빈혈", "비타민 B12 결핍", "백혈병"]},
+    {"key": "endocrine_metabolic", "label": "내분비·대사", "examples": ["갑상샘기능저하증", "당뇨병", "부신기능저하증", "만성콩팥병", "만성 간질환"]},
+    {"key": "psych_sleep", "label": "정신·수면", "examples": ["우울증", "불안장애", "폐쇄성 수면무호흡증", "불면증"]},
+    {"key": "other", "label": "기타 만성 질환", "examples": ["심부전", "악성 종양", "만성 감염", "약물 부작용", "섬유근육통"]}
+  ],
+  "history": [
+    {"id": "meaning", "text": "피로의 의미(졸림, 기운 없음, 근력 약화, 숨참)", "say": "피곤하다는 게 어떤 느낌이세요? 졸린 건가요, 기운이 없는 건가요?", "tags": ["psych_sleep", "other"]},
+    {"id": "onset_trigger", "text": "시작 시기, 기간, 계기가 된 사건", "say": "언제부터 그러셨어요? 그 무렵에 특별한 일이 있었나요?"},
+    {"id": "daily_impact", "text": "일상생활 지장, 쉬면 회복되는지", "say": "일이나 집안일에 지장이 있으세요? 쉬면 좀 나아지나요?"},
+    {"id": "diurnal", "text": "하루 중 언제 더 심한지", "say": "아침에 일어날 때부터 피곤하세요, 오후로 갈수록 심해지세요?", "tags": ["psych_sleep"]},
+    {"id": "sleep", "text": "수면 시간과 질, 코골이, 자다가 숨을 멈춤", "say": "잠은 몇 시간 주무세요? 코를 골거나 자다가 숨을 멈춘다는 말을 들으세요?", "tags": ["psych_sleep"]},
+    {"id": "mood_suicide", "text": "우울감, 흥미 저하, 자살 생각", "say": "요즘 기분이 가라앉거나 즐거운 일이 없으세요? 혹시 죽고 싶다는 생각이 드신 적이 있나요?", "tags": ["psych_sleep"], "key": true},
+    {"id": "anemia_bleeding", "text": "어지러움, 숨참, 흑색변·혈변", "say": "어지럽거나 숨이 차세요? 변이 까맣거나 피가 섞여 나오지는 않나요?", "tags": ["hematologic"], "key": true},
+    {"id": "menorrhagia", "text": "월경량과 월경 기간", "say": "생리 양이 많거나 오래 하는 편이세요?", "tags": ["hematologic"], "applies": "female"},
+    {"id": "bruising", "text": "쉽게 드는 멍, 잇몸 출혈", "say": "멍이 쉽게 들거나 잇몸에서 피가 나지는 않나요?", "tags": ["hematologic"]},
+    {"id": "paresthesia", "text": "손발 저림", "say": "손발이 저리거나 감각이 둔해지지는 않으세요?", "tags": ["hematologic", "endocrine_metabolic"]},
+    {"id": "hypothyroid", "text": "추위 탐, 체중 증가, 변비, 피부 건조", "say": "추위를 많이 타거나 살이 찌고 변비가 생기지는 않았나요?", "tags": ["endocrine_metabolic"]},
+    {"id": "diabetes", "text": "다음, 다뇨", "say": "목이 자주 마르거나 소변을 자주 보세요?", "tags": ["endocrine_metabolic"]},
+    {"id": "adrenal", "text": "피부가 검어짐, 일어설 때 어지러움, 식욕 저하", "say": "피부가 검게 변하거나 일어설 때 핑 돌지는 않으세요?", "tags": ["endocrine_metabolic"]},
+    {"id": "uremic", "text": "피부 가려움, 입맛 변화, 소변량 변화", "say": "몸이 가렵거나 입맛이 변하고 소변 양이 달라지지는 않았나요?", "tags": ["endocrine_metabolic"]},
+    {"id": "weight_fever_sweats", "text": "체중 감소, 발열, 야간 발한", "say": "살이 빠지거나 열이 나고 밤에 식은땀을 흘리지는 않으세요?", "tags": ["other", "hematologic"], "key": true},
+    {"id": "cardiopulmonary", "text": "활동 시 숨참, 다리 부종", "say": "조금만 움직여도 숨이 차거나 다리가 붓지는 않으세요?", "tags": ["other"]},
+    {"id": "work_stress_caffeine", "text": "업무량, 스트레스, 카페인·음주", "say": "요즘 일이 많거나 스트레스를 받으세요? 커피나 술은 얼마나 드세요?", "tags": ["psych_sleep"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals_weight", "text": "혈압(기립성 변화), 맥박, 체온, 체중", "say": "먼저 혈압과 맥박, 체온, 몸무게를 재 보겠습니다."},
+    {"id": "conjunctiva", "text": "결막 창백, 공막 황달 확인", "say": "눈 아래쪽과 흰자를 보겠습니다.", "tags": ["hematologic", "endocrine_metabolic"]},
+    {"id": "thyroid", "text": "갑상샘 촉진", "say": "목 앞쪽을 만져 볼게요. 침을 한번 삼켜 보세요.", "tags": ["endocrine_metabolic"]},
+    {"id": "lymph_nodes", "text": "경부, 겨드랑이 림프절 촉진", "say": "목과 겨드랑이에 멍울이 있는지 만져 보겠습니다.", "tags": ["hematologic", "other"]},
+    {"id": "heart_lung_edema", "text": "심폐 청진, 하지 부종 확인", "say": "가슴에 청진기를 대 보고 다리가 붓는지 눌러 보겠습니다.", "tags": ["other"]}
+  ],
+  "education": [
+    {"id": "sleep_lifestyle", "text": "규칙적인 수면, 카페인·음주 줄이기, 규칙적 운동", "say": "매일 비슷한 시간에 주무시고, 커피와 술은 줄이고 가볍게 운동을 해 보세요."},
+    {"id": "mental_support", "text": "우울이 의심되면 상담이나 정신건강 치료 연계를 안내", "say": "마음이 힘드신 것도 치료가 됩니다. 전문 상담을 같이 받아 보시면 좋겠습니다.", "tags": ["psych_sleep"], "conditional": true},
+    {"id": "warning_signs", "text": "체중 감소, 발열, 출혈, 숨참, 자살 생각이 생기면 바로 연락하도록 안내", "say": "살이 계속 빠지거나 피가 나거나 극단적인 생각이 들면 바로 연락 주세요.", "key": true}
+  ],
+  "grader_notes": [
+    "자세한 병력과 진찰이 원인을 찾는 핵심이며, 기본 검사로 혈구검사, 혈당(당화혈색소), 갑상샘자극호르몬, 간·신기능, 전해질을 시행한다.",
+    "빈혈이 있으면 페리틴 등 철 검사로 원인을 구분하고, 철결핍이면 월경 과다나 위장관 출혈 같은 출혈원을 찾으며, 남성과 폐경 여성의 철결핍빈혈은 위·대장내시경이 필요하다.",
+    "우울증 선별검사(PHQ-9 등)와 자살 위험 평가를 하고, 코골이와 주간 졸림이 있으면 수면다원검사를 고려한다.",
+    "체중 감소, 발열, 야간 발한, 림프절 비대 같은 경고 증상이 있으면 악성 종양이나 만성 감염을 적극적으로 찾는다.",
+    "원인에 맞춰 치료하고, 뚜렷한 원인이 없으면 수면·운동 등 생활 교정과 정기적인 추적 관찰을 한다."
+  ],
+  "case_ids": ["endo_004", "hemato_021", "fm_044", "hemato_027", "endo_035", "nephro_024", "pulm_033", "psych_026", "gi_040"]
+}

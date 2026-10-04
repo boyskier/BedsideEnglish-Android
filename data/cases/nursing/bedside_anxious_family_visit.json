@@ -1,0 +1,104 @@
+{
+  "id": "nursing_bedside_anxious_family_visit",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["uk_au", "us"],
+  "counterpart": "relative",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_bedside_care",
+  "patient_name": "Anxious daughter at the bedside asking questions you cannot answer",
+  "chief_complaint": "Handle a worried family member's questions at the bedside, staying honest and within nursing scope without dismissing her",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Family at the bedside: daughter wants answers the medical team has not given yet",
+    "task": "Bedside care",
+    "urgency": "routine",
+    "patient": "Mrs. Eileen Novak, 79-year-old woman, admitted two days ago after a fall at home; her daughter Sarah is at the bedside",
+    "location": "Medical ward, early evening; Sarah has just arrived after work and has stopped you as you pass",
+    "situation": "Sarah wants to know what is wrong with her mother, whether she will be able to go home, and why nobody has spoken to her. The medical team's plan is not finalized and the scan report is still pending.",
+    "background": [
+      "Mrs. Novak was admitted two days ago after a fall at home and has been under investigation since.",
+      "Sarah lives an hour away, works full time, and has not been able to be present on any ward round.",
+      "Mrs. Novak was managing at home alone before the fall, with Sarah visiting at weekends."
+    ],
+    "current_status": [
+      "Mrs. Novak is comfortable, eating, and sitting out in the chair; she is dozing while Sarah talks to you.",
+      "She is being helped to walk with a frame and one person assisting, which is new for her.",
+      "Nothing about her condition has changed today."
+    ],
+    "key_data": [
+      "A scan was done and the report is still pending — you genuinely do not have the result.",
+      "The discharge plan depends on that result and on a physiotherapy assessment that has not happened yet, so no date exists to give.",
+      "The medical team does a ward round each morning, and a family meeting can be requested through them."
+    ],
+    "treatments": [
+      "Investigation of the fall, assisted mobilization with a frame, and falls-prevention measures on the ward."
+    ],
+    "your_request": "Respond to Sarah honestly, stay within what you can properly tell her, and leave her with a concrete next step rather than a brush-off.",
+    "must_include": [
+      "Acknowledge her worry and her frustration at not having spoken to anyone.",
+      "Tell her clearly what you do know and can share about her mother's day-to-day condition.",
+      "Be honest about what you do not know and what is not yours to answer, without hiding behind it.",
+      "Offer a concrete next step — how a conversation with the medical team can actually be arranged.",
+      "Check what her biggest worry is, rather than assuming it is the diagnosis."
+    ]
+  },
+  "kickoff_text": "Excuse me — are you looking after my mum? Nobody has told me anything. What's actually wrong with her, and when is she coming home?",
+  "persona_override": "You are Sarah Novak, daughter of a 79-year-old woman admitted two days ago after a fall. You have just arrived after a full day at work and an hour's drive. You are worried and frustrated — not aggressive, but insistent — because you have not managed to speak to a doctor since the admission. Your real fear, which you will only say if the nurse asks what worries you most, is not the diagnosis: it is that your mother will not be able to go back to living alone, and that you cannot take her in. Ground truth: you do not know the scan result, and neither does the nurse. If the nurse acknowledges your frustration and is honest that the scan report is not back, you accept it and calm down. If the nurse gives you a vague brush-off ('the doctors will talk to you') without offering a way to actually make that happen, push back once: 'That's what I was told yesterday.' If the nurse guesses at a diagnosis or a discharge date to keep you happy, seize on it and repeat it back as a promise — 'so she'll be home by the weekend?' — so the learner sees the cost of over-promising. If the nurse asks about your mother's situation at home, tell them she was managing alone and that you visit at weekends. Do not ask for clinical detail the nurse could not know, and do not become hostile.",
+  "learning_objectives": [
+    "acknowledge a family member's emotion and frustration before giving information",
+    "distinguish what a nurse can properly share from what belongs to the medical team",
+    "be honest about not knowing without using it as a brush-off",
+    "avoid over-promising a diagnosis or a discharge date to defuse distress",
+    "elicit the family member's actual underlying concern",
+    "convert a complaint into a concrete, arranged next step"
+  ],
+  "suggested_questions": [
+    "You've had two days of not being able to speak to anyone — that would frustrate me too. Let me tell you what I can.",
+    "What I can tell you is how she's been on the ward today: she's comfortable, she's eating, she's been sitting out, and she's walking with a frame and one of us helping.",
+    "What I honestly can't tell you is the scan result — it isn't back yet — and I don't want to guess at something that important.",
+    "Can I ask what's worrying you most? Is it what caused the fall, or what happens after she leaves here?",
+    "Here's what I'll do: I'll leave a note for the team that you'd like to speak to them, and I can tell you when the round usually reaches her so you can be here."
+  ],
+  "clinical_knowledge": {
+    "topic": "Nursing communication with an anxious family member when the clinical picture and plan are still unresolved",
+    "review_status": "grounded in general patient- and family-centred care and nursing scope-of-practice communication principles; what a nurse may disclose, and to whom, is governed by local policy and privacy law",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "A family member's stated question is often not their real question; the underlying fear is frequently about what happens after discharge, not about the diagnosis.",
+      "Honest uncertainty delivered with a concrete next step is received far better than a vague reassurance, and does not undermine the team.",
+      "Nursing scope allows a nurse to describe the patient's observed day-to-day condition and care while deferring diagnosis, prognosis, and discharge dates to the medical team."
+    ],
+    "diagnostic_clues": [
+      "A previously independent older person who now needs a frame and one-person assistance has a changed functional baseline, which is usually the family's real concern.",
+      "Repeated requests to 'speak to someone' after several days indicate a failure of scheduled family communication, not simply an anxious relative."
+    ],
+    "common_misconceptions": [
+      "Saying 'the doctors will speak to you' is a satisfactory answer on its own.",
+      "Admitting you do not know a result undermines the family's confidence in the team.",
+      "Giving a likely discharge date is kind when the family is distressed."
+    ],
+    "dangerous_errors": [
+      "Guessing at a diagnosis, a scan result, or a discharge date, which the family will reasonably treat as a promise.",
+      "Deflecting entirely and leaving the family member with no arranged route to a conversation.",
+      "Discussing clinical details with a family member without regard to the patient's own consent and local privacy policy."
+    ],
+    "management_principles": [
+      "Acknowledge the emotion, share what is legitimately yours to share, name honestly what is not, and end with an arranged next step.",
+      "Ask what the family member is most worried about rather than assuming.",
+      "Document and escalate an unmet family-communication need so it is scheduled rather than left to chance."
+    ],
+    "boundaries_and_exceptions": [
+      "What may be disclosed to a relative depends on the patient's capacity and consent and on local privacy law and institutional policy.",
+      "Who arranges family meetings, and how, varies by institution."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Guide to Patient and Family Engagement in Hospital Quality and Safety",
+        "url": "https://www.ahrq.gov/patient-safety/patients-families/engagingfamilies/index.html"
+      }
+    ]
+  }
+}

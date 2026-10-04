@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "incidental painless lump in neck on ultrasound",
   "hpi_details": "A 41-year-old male presents to the clinic with incidental painless lump in neck on ultrasound. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to thyroid_nodule",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks the lump might just be an inflamed lymph node left over from a cold he had a few weeks ago.",
+  "concerns": "He is worried that the neck lump might turn out to be throat cancer like his uncle had.",
+  "expectations": "He hopes to find out whether he needs a needle biopsy or if he can safely monitor it with another ultrasound.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -120,6 +120,176 @@
         "domains": [
           "family_hx"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "120/80",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I was told I have a lump in my neck during a routine checkup ultrasound a couple of weeks ago, and lately I've also been feeling quite fatigued.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I didn't feel anything myself. It was picked up incidentally on a routine health screening ultrasound two weeks ago, and I haven't noticed any sudden growth since then.",
+        "topic": "Discovery and growth"
+      },
+      {
+        "answer": "The clinic doctor told me it is located on the lower right side of the front of my neck.",
+        "topic": "Lump location"
+      },
+      {
+        "answer": "As far as I know, there is just that single spot in my neck. I haven't noticed any swollen bumps in my armpits or groin.",
+        "topic": "Number and other lumps"
+      },
+      {
+        "answer": "No, it does not hurt at all, even when I touch or press on it.",
+        "topic": "Pain or tenderness"
+      },
+      {
+        "answer": "I haven't noticed it catching, but the screening doctor said neck lumps can move when you swallow or stick your tongue out.",
+        "topic": "Movement with swallowing"
+      },
+      {
+        "answer": "No, eating meals doesn't cause any swelling, tightness, or pain around my neck or jaw.",
+        "topic": "Meals and swelling"
+      },
+      {
+        "answer": "No, I haven't had a recent cold, sore throat, dental problem, or any skin infections.",
+        "topic": "Recent infections"
+      },
+      {
+        "answer": "No, I haven't had any fevers, chills, or night sweats.",
+        "topic": "Fever or night sweats"
+      },
+      {
+        "answer": "I've felt gradually more worn out and fatigued recently, but my body weight has stayed completely the same.",
+        "topic": "Fatigue and weight"
+      },
+      {
+        "answer": "No, my voice has been completely normal with no hoarseness or vocal changes.",
+        "topic": "Voice change or hoarseness"
+      },
+      {
+        "answer": "No, I can swallow food and liquids normally, and I haven't had any trouble breathing or feeling short of breath.",
+        "topic": "Swallowing and breathing"
+      },
+      {
+        "answer": "No, I don't have ear pain, a blocked nose, nosebleeds, or pain when I swallow.",
+        "topic": "Ear and nose symptoms"
+      },
+      {
+        "answer": "No heart palpitations, no shakiness in my hands, and no problems handling heat or cold.",
+        "topic": "Thyroid hormone symptoms"
+      },
+      {
+        "answer": "No, I have never had tuberculosis, and I haven't been in contact with anyone sick with it.",
+        "topic": "Tuberculosis history"
+      },
+      {
+        "answer": "No, I never had any radiation treatments to my head or neck when I was a child.",
+        "topic": "Childhood radiation exposure"
+      },
+      {
+        "answer": "No, I don't keep pets and haven't had any scratches or contact with cats or other animals.",
+        "topic": "Animal contact"
+      },
+      {
+        "answer": "I don't have any chronic medical conditions like diabetes, hypertension, or thyroid disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I've never had any operations and have never been admitted to a hospital.",
+        "topic": "Past surgeries or hospitalizations"
+      },
+      {
+        "answer": "I'm not taking any medications, over-the-counter pills, or supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "No, I don't have any allergies to medications or anything else.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink socially, maybe one beer once or twice a month at dinner with coworkers.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office accountant and live with my wife and our son.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has had thyroid cancer, thyroid nodules, or any endocrine diseases.",
+        "topic": "Family history"
+      },
+      {
+        "answer": "I was wondering if it's just a swollen lymph node from a bad cold I had a couple of weeks ago.",
+        "topic": "Patient ideas"
+      },
+      {
+        "answer": "I'm terrified that this could be cancer, because my uncle had a neck growth that turned out to be malignant.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I hope you can tell me if I need a needle test on this lump or if we can just keep an eye on it.",
+        "topic": "Patient expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 120/80 mmHg, heart rate 72 beats per minute, respiratory rate 14 breaths per minute, temperature 36.6 degrees Celsius, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Well-developed, alert male in no acute distress; no obvious neck asymmetry or visible mass on casual inspection.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "No exophthalmos, lid lag, or conjunctival pallor; extraocular movements are full.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Oral mucosa is pink and moist; pharynx and tonsils are clear without erythema, exudates, or mucosal lesions.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, submandibular, submental, or supraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "A discrete, non-tender, firm nodule measuring approximately 1.5 to 2 cm is palpable in the lower right thyroid lobe that moves upward smoothly upon swallowing; no bruit auscultated.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, gallops, or friction rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without wheezes, crackles, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "No postural or resting tremor noted with outstretched hands.",
+        "maneuver": "tremor_observation",
+        "response": "none"
       }
     ]
   }

@@ -1,0 +1,52 @@
+{
+  "id": "insomnia",
+  "title": "잠을 못 자요",
+  "english_title": "Trouble sleeping (insomnia)",
+  "category": "정신",
+  "kmle_item": "수면장애",
+  "door_complaint": "잠을 못 잔다고",
+  "differential_groups": [
+    {"key": "insomnia_disorder", "label": "불면장애(행동·조건화)", "examples": ["만성 불면장애", "단기(급성) 불면"]},
+    {"key": "psych", "label": "정신질환", "examples": ["우울장애", "불안장애", "양극성장애"]},
+    {"key": "sleep_disorder", "label": "다른 수면장애", "examples": ["폐쇄수면무호흡", "하지불안증후군", "일주기리듬 수면장애(교대근무, 수면위상 지연)"]},
+    {"key": "medical_substance", "label": "신체 질환/약물", "examples": ["만성 통증", "야간뇨", "위식도역류", "갑상샘기능항진증", "카페인·알코올", "약물(스테로이드, 기관지확장제 등)"]}
+  ],
+  "history": [
+    {"id": "insomnia_type", "text": "잠들기 어려움, 자주 깸, 새벽에 일찍 깸 중 어떤 양상인지", "say": "잠들기가 어려우세요, 자다가 자주 깨세요, 아니면 새벽에 너무 일찍 깨세요?", "tags": ["insomnia_disorder", "psych"]},
+    {"id": "onset_frequency", "text": "시작 시기, 일주일에 며칠, 지속 기간(3개월 이상인지)", "say": "언제부터 그러셨어요? 일주일에 며칠 정도 잠을 못 주무세요?", "tags": ["insomnia_disorder"]},
+    {"id": "trigger", "text": "시작 계기(스트레스, 사건, 환경 변화)", "say": "잠을 못 자기 시작할 무렵 특별한 일이나 스트레스가 있었어요?", "tags": ["insomnia_disorder"]},
+    {"id": "sleep_schedule", "text": "잠자리에 드는 시간, 실제 잠드는 데 걸리는 시간, 기상 시간, 주말 차이", "say": "보통 몇 시에 누우시고, 잠드는 데 얼마나 걸려요? 아침엔 몇 시에 일어나세요?", "tags": ["insomnia_disorder", "sleep_disorder"]},
+    {"id": "daytime_impact", "text": "낮 피로·졸림, 집중력 저하, 졸음운전", "say": "낮에 많이 졸리거나 피곤하세요? 운전하다가 졸린 적도 있으세요?", "tags": ["sleep_disorder"], "key": true},
+    {"id": "bedtime_habits", "text": "낮잠, 침대에서 휴대폰·TV, 시계 확인, 못 잘까 봐 걱정", "say": "낮잠을 주무세요? 침대에서 휴대폰이나 TV를 보시나요? 누워서 시계를 자꾸 보세요?", "tags": ["insomnia_disorder"]},
+    {"id": "caffeine_alcohol", "text": "카페인(오후 이후), 잠들려고 마시는 술, 흡연", "say": "커피는 하루에 몇 잔, 몇 시까지 드세요? 잠이 안 와서 술을 드시기도 하나요?", "tags": ["medical_substance"]},
+    {"id": "snoring_apnea", "text": "심한 코골이, 자다가 숨이 멈추는 것을 목격했는지, 아침 두통", "say": "코를 심하게 골거나 자다가 숨이 멈춘다는 말을 들으신 적 있으세요? 아침에 머리가 아프지는요?", "tags": ["sleep_disorder"], "key": true},
+    {"id": "restless_legs", "text": "저녁·밤에 다리가 불편해 움직이고 싶고 움직이면 나아지는지", "say": "밤에 누우면 다리가 근질거리거나 불편해서 자꾸 움직이고 싶으세요?", "tags": ["sleep_disorder"]},
+    {"id": "shift_work", "text": "교대근무, 잠자는 시간대의 변화", "say": "밤 근무나 교대 근무를 하세요?", "tags": ["sleep_disorder"]},
+    {"id": "mood_anxiety", "text": "우울감, 흥미 저하, 걱정이 많은지", "say": "요즘 기분이 가라앉거나 걱정이 많아서 잠이 안 오세요?", "tags": ["psych"]},
+    {"id": "suicidal_ideation", "text": "죽고 싶은 생각", "say": "많이 힘드실 것 같은데, 혹시 죽고 싶다는 생각이 드신 적 있으세요?", "tags": ["psych"], "key": true},
+    {"id": "mania", "text": "잠을 거의 안 자도 피곤하지 않고 기분이 들뜬 시기", "say": "잠을 거의 안 자도 전혀 피곤하지 않고 기분이 들떴던 때가 있었어요?", "tags": ["psych"]},
+    {"id": "physical_symptoms", "text": "통증, 야간뇨, 속쓰림, 기침·숨참, 두근거림", "say": "밤에 아프거나 소변 때문에 깨세요? 속쓰림이나 기침 때문에 깨지는 않으세요?", "tags": ["medical_substance"]},
+    {"id": "sleep_medication", "text": "수면제·수면유도제(일반약 포함) 사용과 효과, 다른 복용약", "say": "잠을 자려고 드시는 약이 있으세요? 약국에서 산 수면유도제도요. 효과는 어떠세요?", "tags": ["medical_substance"]},
+    {"id": "environment", "text": "침실 환경(소음, 빛, 온도), 함께 자는 사람", "say": "침실이 시끄럽거나 밝거나 덥지는 않으세요?", "tags": ["insomnia_disorder"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals_body", "text": "혈압, 체중·BMI, 목둘레 측정", "say": "혈압과 몸무게, 목둘레를 재 보겠습니다."},
+    {"id": "oropharynx", "text": "구강·인두 시진(편도 비대, 좁은 기도)", "say": "입을 크게 벌려 보세요. 목 안쪽을 보겠습니다.", "conditional": true},
+    {"id": "thyroid", "text": "갑상샘 촉진", "say": "목 앞쪽을 만져 볼게요. 침을 한 번 삼켜 보세요.", "conditional": true},
+    {"id": "mental_status", "text": "기분과 정동, 불안 정도 관찰", "say": "요즘 기분을 0점부터 10점 중에 말씀해 주시겠어요?"}
+  ],
+  "education": [
+    {"id": "sleep_hygiene", "text": "매일 같은 시간에 일어나기, 오후 카페인 피하기, 자기 전 음주·휴대폰 피하기, 낮잠 줄이기", "say": "주말에도 같은 시간에 일어나시고, 오후에는 커피를 드시지 마세요. 자기 전 휴대폰과 술은 피하세요."},
+    {"id": "stimulus_control", "text": "졸릴 때만 눕고, 20분쯤 지나도 잠이 안 오면 일어났다가 다시 눕기, 침대는 잠자는 데만 쓰기", "say": "졸릴 때만 누우시고, 20분쯤 지나도 잠이 안 오면 거실에 나가 조용히 있다가 졸릴 때 다시 누우세요."},
+    {"id": "hypnotic_caution", "text": "수면제는 단기간만, 고령자는 수면유도제(항히스타민제)를 피하도록 교육", "say": "수면제는 짧게만 쓰는 게 좋고, 약국 수면유도제는 어르신께 넘어짐이나 기억력 저하를 일으킬 수 있어요.", "conditional": true},
+    {"id": "drowsy_driving", "text": "낮에 졸리면 운전이나 위험한 작업을 피하도록 안내", "say": "낮에 졸리실 때는 운전이나 위험한 작업은 하지 마세요.", "key": true}
+  ],
+  "grader_notes": [
+    "만성 불면장애(주 3회 이상, 3개월 이상)의 1차 치료는 수면제가 아니라 불면증 인지행동치료(자극 조절, 수면 제한, 수면 위생, 인지 재구성)이다.",
+    "1–2주 수면 일기로 수면 양상을 평가하며, 불면만으로 수면다원검사를 할 필요는 없다.",
+    "심한 코골이, 목격된 무호흡, 낮 졸림이 있으면 폐쇄수면무호흡을 의심해 수면다원검사를 한다.",
+    "우울·불안 등 동반 정신질환, 통증, 야간뇨, 카페인·알코올·약물 등 원인 요인을 찾아 함께 치료한다.",
+    "수면제는 가장 낮은 용량으로 짧게 쓰며, 고령자는 벤조디아제핀과 항히스타민 수면유도제를 낙상과 인지 저하 위험 때문에 피한다."
+  ],
+  "case_ids": ["psych_020", "psych_024", "psych_029", "fm_045"]
+}

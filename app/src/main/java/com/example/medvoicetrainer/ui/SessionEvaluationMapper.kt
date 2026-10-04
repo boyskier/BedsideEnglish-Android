@@ -258,5 +258,11 @@ fun SessionEntity.toEvaluationResult(): EvaluationResult {
         reliabilityBadge = reliabilityBadge,
         followUpFeedbackJson = followUpFeedbackJson,
         misconceptionReviewJson = misconceptionReviewJson,
+        // Rebuilt, not stored: the same inputs the live finish used, so History shows the same card.
+        nursingScorecardJson = if (everyday) "{}" else com.example.medvoicetrainer.analysis.NursingScorecard.buildJson(
+            rawCaseJson,
+            rawEvalJson,
+            transcriptMaps.map { it["role"]?.toString().orEmpty() to it["text"]?.toString().orEmpty() },
+        ),
     )
 }

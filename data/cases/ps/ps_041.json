@@ -6,11 +6,11 @@
   "patient_name": "Mr. Ramirez",
   "age": 65,
   "gender": "male",
-  "chief_complaint": "desire for breast reconstruction after breast cancer surgery",
+  "chief_complaint": "desire for chest-wall reconstruction after mastectomy for male breast cancer",
   "hpi_details": "A 65-year-old man seeks reconstruction after mastectomy for breast cancer and wants to discuss timing and reconstructive options in coordination with his oncology team.",
-  "ideas": "thinks it might be related to breast_reconstruction",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks plastic surgeons can place a simple implant or tissue pad to fill out the hollow left behind by his cancer surgery.",
+  "concerns": "He is worried that having another operation on his chest might disturb the area and cause his cancer to return.",
+  "expectations": "He hopes to find out if rebuilding his chest is realistic and when his oncology team will clear him for surgery.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -19,11 +19,11 @@
     "core_concepts": [
       "Prompt recognition and structured assessment of Post-Mastectomy Reconstruction is essential for guiding targeted diagnostic workup and clinical decision-making.",
       "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
-      "Standard management emphasizes Plan for Post-Mastectomy Reconstruction: Discuss reconstruction options: tissue expander/implants vs DIEP flap, adapted to individual patient risk factors and clinical severity.",
+      "Standard management emphasizes Plan for Post-Mastectomy Reconstruction: Discuss male chest-wall reconstruction options: scar revision and chest-wall contouring, autologous fat grafting for contour deficits, nipple-areola reconstruction or tattooing, and regional or free flap coverage only for a large or irradiated chest-wall defect (breast-mound reconstruction with tissue expanders/implants or a DIEP flap is not the goal in a male chest), adapted to individual patient risk factors and clinical severity.",
       "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
     ],
     "diagnostic_clues": [
-      "Chief Complaint: desire for breast reconstruction after breast cancer surgery",
+      "Chief Complaint: desire for chest-wall reconstruction after mastectomy for male breast cancer",
       "Key HPI features: A 65-year-old man seeks reconstruction after mastectomy for breast cancer and needs coordinated oncologic and surgical planning.",
       "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Post-Mastectomy Reconstruction.",
       "Relevant background/PMH: Unremarkable"
@@ -41,7 +41,7 @@
       "Proceeding without coordinating with oncology or optimizing factors that increase reconstructive risk."
     ],
     "management_principles": [
-      "Plan for Post-Mastectomy Reconstruction: Discuss reconstruction options: tissue expander/implants vs DIEP flap",
+      "Plan for Post-Mastectomy Reconstruction: Discuss male chest-wall reconstruction options: scar revision and chest-wall contouring, autologous fat grafting for contour deficits, nipple-areola reconstruction or tattooing, and regional or free flap coverage only for a large or irradiated chest-wall defect (breast-mound reconstruction with tissue expanders/implants or a DIEP flap is not the goal in a male chest)",
       "Consult specialist if symptoms worsen",
       "Counsel patient"
     ],
@@ -57,19 +57,19 @@
     ]
   },
   "reference_soap": {
-    "subjective": "Patient presenting with chief complaint of desire for breast reconstruction after breast cancer surgery. HPI: post-mastectomy tissue deficit.",
+    "subjective": "Patient presenting with chief complaint of desire for chest-wall reconstruction after mastectomy for male breast cancer. HPI: post-mastectomy tissue deficit.",
     "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Post-Mastectomy Reconstruction.",
     "assessment": "Condition highly suspicious for Post-Mastectomy Reconstruction.",
-    "plan": "Plan for Post-Mastectomy Reconstruction: Discuss reconstruction options: tissue expander/implants vs DIEP flap. Consult specialist if symptoms worsen. Counsel patient."
+    "plan": "Plan for Post-Mastectomy Reconstruction: Discuss male chest-wall reconstruction options: scar revision and chest-wall contouring, autologous fat grafting for contour deficits, nipple-areola reconstruction or tattooing, and regional or free flap coverage only for a large or irradiated chest-wall defect (breast-mound reconstruction with tissue expanders/implants or a DIEP flap is not the goal in a male chest). Consult specialist if symptoms worsen. Counsel patient."
   },
   "learning_objectives": [
     "Recognize clinical presentation and diagnostic markers of Post-Mastectomy Reconstruction",
     "Select appropriate diagnostic workup for Post-Mastectomy Reconstruction",
-    "Implement evidence-based management plan: Discuss reconstruction options: tissue expander/implants vs DIEP flap"
+    "Implement evidence-based management plan: Discuss male chest-wall reconstruction options: scar revision and chest-wall contouring, autologous fat grafting for contour deficits, nipple-areola reconstruction or tattooing, and regional or free flap coverage only for a large or irradiated chest-wall defect (breast-mound reconstruction with tissue expanders/implants or a DIEP flap is not the goal in a male chest)"
   ],
   "teaching": {
     "diagnosis": "Post-Mastectomy Reconstruction",
-    "one_liner": "Plastic and reconstructive surgical case presenting with desire for breast reconstruction after breast cancer surgery.",
+    "one_liner": "Plastic and reconstructive surgical case presenting with desire for chest-wall reconstruction after mastectomy for male breast cancer.",
     "differentials": [
       "Recurrent breast cancer requiring oncologic workup before reconstruction",
       "Chest wall radiation fibrosis limiting reconstructive options",
@@ -153,6 +153,171 @@
           "body image",
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "122/76",
+      "hr": 70,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I had surgery for breast cancer on my right chest about eight months ago, and I came in today to discuss reconstructing my chest wall.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The cancer surgery was eight months ago, and I started thinking seriously about rebuilding my chest wall over the last two months once everything felt healed.",
+        "topic": "Onset and timing"
+      },
+      {
+        "answer": "The issue is entirely on the right side of my chest where the breast tissue and nipple were removed.",
+        "topic": "Location of chest defect"
+      },
+      {
+        "answer": "There is a flat, indented scar where my right breast and nipple used to be, leaving an asymmetrical hollow compared to my left chest.",
+        "topic": "Nature of chest defect"
+      },
+      {
+        "answer": "The surgical scar has healed well and the tightness has improved, but the hollow contour has stayed the same.",
+        "topic": "Changes over time"
+      },
+      {
+        "answer": "Stretching my right arm makes the skin feel a little tight, but nothing really changes the appearance of the hollow.",
+        "topic": "Aggravating or relieving factors"
+      },
+      {
+        "answer": "I don't have any pain, fluid leakage, swelling, or numbness down my right arm.",
+        "topic": "Associated symptoms"
+      },
+      {
+        "answer": "No fever, chills, unexplained weight loss, night sweats, or any new lumps around the scar or my armpit.",
+        "topic": "Red flag symptoms"
+      },
+      {
+        "answer": "I had a right total mastectomy eight months ago for early-stage breast cancer, followed by hormone therapy pills, but I did not need radiation.",
+        "topic": "Previous cancer treatments"
+      },
+      {
+        "answer": "I have just kept the scar clean and used plain moisturizing lotion to keep the skin soft.",
+        "topic": "Self care or attempted remedies"
+      },
+      {
+        "answer": "No unusual exposures, chemical contacts, or work hazards.",
+        "topic": "Triggering factors or exposures"
+      },
+      {
+        "answer": "It does not restrict my daily activities, but I feel self-conscious when changing clothes at the gym or going swimming.",
+        "topic": "Impact on daily life"
+      },
+      {
+        "answer": "I underwent a right total mastectomy eight months ago, and my surgical oncologist told me the margins and sentinel lymph nodes were clear.",
+        "topic": "Timing and type of mastectomy"
+      },
+      {
+        "answer": "I did not need radiation therapy or intravenous chemotherapy because the cancer was caught very early.",
+        "topic": "Radiation and chemotherapy history"
+      },
+      {
+        "answer": "I hope you can tell me what the options are for rebuilding my chest and when my oncologists would allow it.",
+        "topic": "Reconstruction preferences and goals"
+      },
+      {
+        "answer": "I thought the doctors might be able to put in a simple silicone pad or implant to even out the deep hollow on my chest.",
+        "topic": "Ideas about reconstruction"
+      },
+      {
+        "answer": "My biggest worry is that opening up my chest again might somehow disturb things and make the cancer come back.",
+        "topic": "Concerns about complications and recovery"
+      },
+      {
+        "answer": "I hope you can tell me what the options are for rebuilding my chest and when my oncologists would allow it.",
+        "topic": "Expectations for today's visit"
+      },
+      {
+        "answer": "My biggest worry is that opening up my chest again might somehow disturb things and make the cancer come back.",
+        "topic": "Psychosocial impact and concerns"
+      },
+      {
+        "answer": "My left breast feels completely normal, and I haven't noticed any lumps, skin dimpling, or nipple discharge on that side.",
+        "topic": "Contralateral breast symptoms"
+      },
+      {
+        "answer": "I have no chronic medical conditions like diabetes, high blood pressure, heart disease, or kidney problems.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "Aside from the right mastectomy eight months ago, I have never had any other surgeries or hospitalizations.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I take tamoxifen once daily prescribed by my oncologist, and I do not take any over-the-counter medications or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications, foods, or latex.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco or nicotine products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink a glass of wine or beer once or twice a week socially.",
+        "topic": "Alcohol use"
+      },
+      {
+        "answer": "I am a retired high school teacher living comfortably at home with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My mother had breast cancer in her late sixties, but no one else in my immediate family has had cancer or genetic conditions.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 122/76 mmHg, heart rate 70 beats per minute, respiratory rate 14 breaths per minute, body temperature 36.6 degrees Celsius, oxygen saturation 99% on ambient air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Well-nourished, comfortable 65-year-old man in no acute distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Right anterior chest wall displays a well-healed horizontal mastectomy scar without erythema, dehiscence, or drainage; palpable contour hollow over the pectoralis region without masses or tenderness; left breast is normal with no masses or nipple discharge; no axillary lymphadenopathy bilaterally.",
+        "maneuver": "breast_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Symmetric chest wall excursion without tenderness or crepitus; pectoralis major muscle intact beneath the right mastectomy scar.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable anterior or posterior cervical, supraclavicular, or infraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally with normal vesicular breathing and no wheezing, rales, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2, and no murmurs, rubs, or gallops heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Chest wall skin is supple, mobile, and without radiation changes, hyperpigmentation, induration, or suspicious lesions.",
+        "maneuver": "skin_exam",
+        "response": "none"
       }
     ]
   }

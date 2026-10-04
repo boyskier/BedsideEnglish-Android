@@ -43,7 +43,8 @@ fun EverydayDashboardScreen(
 
     LazyColumn(
         modifier = Modifier.fillMaxSize(),
-        contentPadding = PaddingValues(horizontal = 18.dp, vertical = 18.dp),
+        // Bottom room for the Home coach FAB, as on the clinical Home (DashboardScreen).
+        contentPadding = PaddingValues(start = 18.dp, top = 18.dp, end = 18.dp, bottom = 96.dp),
         verticalArrangement = Arrangement.spacedBy(14.dp)
     ) {
         item {
@@ -127,6 +128,14 @@ fun EverydayDashboardScreen(
                 title = t("Listening Lab"),
                 body = t("Train accents, numbers, times, and the details people say quickly."),
                 onClick = { onOpenPracticeMode("listening") }
+            )
+        }
+        item {
+            EverydayFeatureCard(
+                icon = Icons.Default.Forum,
+                title = t("tab.free_talk"),
+                body = t("Talk about anything you like. Your partner keeps every reply to one short line, so you do most of the talking."),
+                onClick = { onOpenPracticeMode("free_talk") }
             )
         }
         item {

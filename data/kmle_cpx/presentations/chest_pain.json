@@ -1,0 +1,57 @@
+{
+  "id": "chest_pain",
+  "title": "가슴이 아파요",
+  "english_title": "Chest pain",
+  "category": "순환기",
+  "kmle_item": "가슴통증",
+  "door_complaint": "가슴이 아프다고",
+  "differential_groups": [
+    {"key": "cardiac", "label": "심장", "examples": ["급성 관상동맥증후군", "안정형 협심증", "변이형(혈관연축) 협심증", "급성 심낭염", "대동맥판협착"]},
+    {"key": "vascular", "label": "대혈관·폐혈관", "examples": ["대동맥박리", "폐색전증"]},
+    {"key": "pulmonary", "label": "폐·흉막", "examples": ["기흉", "폐렴·흉막염"]},
+    {"key": "gi", "label": "위장관", "examples": ["위식도역류질환", "식도 경련", "소화성 궤양", "식도 파열"]},
+    {"key": "msk_psych", "label": "근골격·피부·심인성", "examples": ["늑연골염", "대상포진", "공황장애"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "발생 시각과 양상(갑자기, 서서히), 통증이 시작될 때 하던 일", "say": "언제부터 아프셨어요? 갑자기 아팠나요? 그때 뭘 하고 계셨어요?", "tags": ["cardiac", "vascular", "pulmonary"], "key": true},
+    {"id": "location", "text": "통증 위치(가슴 한가운데, 한쪽, 손가락으로 짚을 수 있는지)", "say": "어디가 아프세요? 손으로 한번 짚어 보시겠어요?", "tags": ["cardiac", "msk_psych"]},
+    {"id": "character", "text": "통증 양상(쥐어짜는, 찢어지는, 찌르는, 타는 듯한)", "say": "어떻게 아프세요? 조이는 느낌인가요, 찢어지거나 찌르는 느낌인가요?", "tags": ["cardiac", "vascular", "gi"]},
+    {"id": "radiation", "text": "방사통(왼팔, 턱, 등, 어깨뼈 사이)", "say": "아픈 게 팔이나 턱, 등 쪽으로 뻗치나요?", "tags": ["cardiac", "vascular"]},
+    {"id": "duration", "text": "한 번 아플 때 지속 시간(수초, 수분, 수시간 이상)과 반복 여부", "say": "한 번 아프면 얼마나 가요? 계속 아프세요, 아니면 왔다 갔다 하세요?", "tags": ["cardiac", "msk_psych"]},
+    {"id": "severity", "text": "통증 강도(0~10)와 변화", "say": "가장 아팠을 때를 10점이라고 하면 지금은 몇 점 정도예요?"},
+    {"id": "exertion", "text": "운동하면 심해지고 쉬면 좋아지는지, 쉬거나 자는 중에도 오는지", "say": "걷거나 계단 오를 때 심해지고 쉬면 좋아지나요? 가만히 있을 때도 아프세요?", "tags": ["cardiac"]},
+    {"id": "position_breath", "text": "숨 쉬거나 기침할 때, 자세(눕거나 앞으로 숙임)에 따른 변화, 누를 때 아픈지", "say": "숨을 깊이 쉬거나 누우면 더 아프세요? 앞으로 숙이면 좀 나아지나요?", "tags": ["cardiac", "pulmonary", "msk_psych"]},
+    {"id": "food_relation", "text": "식사와의 관련, 누우면 악화, 신물 역류, 삼킬 때 통증", "say": "식사하고 나서 심해지거나 신물이 올라오나요?", "tags": ["gi"]},
+    {"id": "associated", "text": "동반 증상(식은땀, 메스꺼움·구토, 숨참, 어지러움·실신)", "say": "아플 때 식은땀이 나거나 숨이 차고 어지럽지는 않았어요?", "tags": ["cardiac", "vascular", "pulmonary"], "key": true},
+    {"id": "fever_cough", "text": "발열, 기침, 가래", "say": "열이 나거나 기침, 가래가 있으세요?", "tags": ["pulmonary", "cardiac"]},
+    {"id": "recent_viral", "text": "최근 감기·몸살 같은 바이러스 질환", "say": "최근에 감기나 몸살을 앓으셨어요?", "tags": ["cardiac"]},
+    {"id": "vte_risk", "text": "한쪽 다리 부종·통증, 최근 수술·장거리 비행·장기 부동", "say": "최근에 수술을 받았거나 오래 비행기를 타셨나요? 한쪽 다리가 붓지는 않나요?", "tags": ["vascular"], "key": true},
+    {"id": "rash", "text": "통증 부위의 피부 발진·물집", "say": "아픈 자리에 뭐가 나거나 물집이 생기진 않았어요?", "tags": ["msk_psych"]},
+    {"id": "anxiety", "text": "심한 불안, 죽을 것 같은 두려움, 손발 저림", "say": "아플 때 너무 불안하거나 손발이 저리지는 않으세요?", "tags": ["msk_psych"]},
+    {"id": "cv_risk", "text": "심혈관 위험 요인(고혈압, 당뇨, 이상지질혈증, 흡연, 조기 심질환 가족력)", "say": "고혈압, 당뇨, 고지혈증이 있으세요? 가족 중에 젊어서 심장병을 앓은 분은요?", "tags": ["cardiac", "vascular"], "key": true},
+    {"id": "prior_cardiac", "text": "이전의 같은 통증, 심장 검사·시술(스텐트) 경험", "say": "전에도 이렇게 아픈 적이 있었어요? 심장 검사나 시술을 받으신 적은요?", "tags": ["cardiac"]},
+    {"id": "trauma_strain", "text": "최근 가슴 외상, 무리한 운동이나 반복 동작", "say": "최근에 가슴을 부딪혔거나 무리하게 운동하신 적이 있나요?", "tags": ["msk_psych"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "양팔 혈압, 맥박, 호흡수, 산소포화도, 체온 측정", "say": "양쪽 팔 혈압을 모두 재 보겠습니다.", "tags": ["vascular"], "key": true},
+    {"id": "inspection", "text": "식은땀·창백, 목정맥 확장, 통증 부위 피부 병변 관찰", "say": "안색과 목, 아프신 부위 피부를 먼저 보겠습니다."},
+    {"id": "chest_wall", "text": "흉벽을 눌러 압통과 통증 재현 여부 확인", "say": "가슴을 눌러 볼게요. 아픈 곳과 같은 통증이면 말씀해 주세요.", "tags": ["msk_psych"]},
+    {"id": "heart_auscultation", "text": "심장 청진(심잡음, 심낭 마찰음)", "say": "심장 소리를 들어 보겠습니다.", "tags": ["cardiac"]},
+    {"id": "lung_exam", "text": "폐 타진과 청진(좌우 호흡음 차이, 수포음)", "say": "숨을 크게 쉬어 보세요. 폐 소리를 들어 보겠습니다.", "tags": ["pulmonary"]},
+    {"id": "abdomen_legs", "text": "상복부 압통과 다리 부종·종아리 압통 확인", "say": "배를 눌러 보고 다리도 확인하겠습니다.", "tags": ["gi", "vascular"]}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "통증이 다시 생겨 20분 이상 지속되거나 식은땀·숨참이 동반되면 직접 운전하지 말고 119를 부르도록 안내", "say": "가슴 통증이 20분 넘게 계속되면 직접 운전하지 마시고 바로 119를 부르세요.", "key": true},
+    {"id": "risk_factor_control", "text": "금연, 혈압·혈당·콜레스테롤 관리, 규칙적인 운동", "say": "담배를 끊으시고 혈압, 혈당, 콜레스테롤을 꾸준히 관리하셔야 합니다.", "tags": ["cardiac"], "conditional": true},
+    {"id": "nitroglycerin", "text": "처방된 경우 니트로글리세린 설하정 사용법과 효과가 없을 때 119 연락", "say": "가슴이 아프면 이 약을 혀 밑에 넣으시고, 5분이 지나도 안 나으면 바로 119를 부르세요.", "tags": ["cardiac"], "conditional": true},
+    {"id": "reflux_lifestyle", "text": "위식도역류가 의심되면 과식·야식을 피하고 식후 바로 눕지 않기", "say": "밤늦게 드시거나 과식하지 마시고, 식사 후 두세 시간은 눕지 마세요.", "tags": ["gi"], "conditional": true}
+  ],
+  "grader_notes": [
+    "급성 흉통은 도착 10분 안에 12유도 심전도를 찍고, 고감도 트로포닌을 반복 측정해 급성 관상동맥증후군을 먼저 배제한다.",
+    "ST 분절 상승 심근경색이면 즉시 재관류 치료(일차 관상동맥중재술)를 준비하고, 금기가 없으면 아스피린을 투여한다.",
+    "찢어지는 통증, 등으로 뻗는 통증, 양팔 혈압 차이가 있으면 대동맥박리를 의심해 CT 혈관조영술을 시행하며, 이때 항혈전제를 먼저 주지 않는다.",
+    "흉부 X선은 기흉, 폐렴, 종격동 확장을 확인하는 기본 검사이고, 폐색전증은 임상 확률에 따라 D-dimer나 CT 폐혈관조영술로 평가한다.",
+    "운동 시 반복되는 안정형 협심증은 부하검사나 관상동맥 CT로 평가하고, 위험 요인 조절과 항협심증 약물을 시작한다."
+  ],
+  "case_ids": ["cardio_001", "cardio_005", "cardio_013", "cardio_018", "cardio_022", "fm_016", "pulm_005", "cardio_041"]
+}

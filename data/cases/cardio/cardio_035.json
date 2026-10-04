@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "left calf swelling, warmth, and throbbing pain after knee surgery",
   "hpi_details": "A 47-year-old male presents to the clinic with left calf swelling, warmth, and throbbing pain after knee surgery. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to dvt",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks his calf pain and swelling are just a severe muscle strain from pushing too hard in physical therapy.",
+  "concerns": "He is worried that an infection has spread into his new knee joint and will require another operation.",
+  "expectations": "He hopes to get an ultrasound to make sure the joint is intact and a temporary prescription for anti-swelling medication.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -175,6 +175,203 @@
         "domains": [
           "onset_duration"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "125/80",
+      "hr": 78,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "My left calf has been swollen, warm, and throbbing with pain after my knee surgery.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The swelling is only in my left calf and lower leg; my right leg, face, and belly look completely normal.",
+        "topic": "Location of swelling"
+      },
+      {
+        "answer": "It started about three days ago and has been gradually getting more swollen and painful each day.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "No, it stays swollen and throbbing all day and night without going down in the morning.",
+        "topic": "Diurnal variation"
+      },
+      {
+        "answer": "Yes, when I press my finger on my left shin or take my sock off, it leaves a noticeable indentation.",
+        "topic": "Pitting edema and sock marks"
+      },
+      {
+        "answer": "No, my body weight has stayed the same over the past few weeks.",
+        "topic": "Recent weight change"
+      },
+      {
+        "answer": "Yes, my left calf has a constant throbbing ache, feels hot to the touch, and looks slightly pinkish.",
+        "topic": "Calf pain and warmth"
+      },
+      {
+        "answer": "No, I have not had any shortness of breath, and I can lie flat comfortably at night.",
+        "topic": "Shortness of breath"
+      },
+      {
+        "answer": "No, I don't have any chest pain, and I haven't coughed up any blood.",
+        "topic": "Chest pain and hemoptysis"
+      },
+      {
+        "answer": "My urine looks clear and normal, with no bubbles, blood, or change in how much I produce.",
+        "topic": "Urinary changes"
+      },
+      {
+        "answer": "No, my abdomen is not bloated, my eyes and skin are not yellow, and I haven't noticed easy bruising.",
+        "topic": "Abdominal distension and jaundice"
+      },
+      {
+        "answer": "No, I haven't had a sore throat, runny nose, or skin cut recently.",
+        "topic": "Recent sore throat or infection"
+      },
+      {
+        "answer": "I have felt unusually tired over the last few days, but I don't feel sensitive to the cold and my skin isn't dry.",
+        "topic": "Fatigue and cold intolerance"
+      },
+      {
+        "answer": "My appetite has been normal, I have had no diarrhea, and I haven't lost weight.",
+        "topic": "Diet and weight loss"
+      },
+      {
+        "answer": "I had arthroscopic surgery on my left knee two weeks ago and have stayed mostly resting on the couch since then.",
+        "topic": "Recent surgery and immobility"
+      },
+      {
+        "answer": "No, I have never had a blood clot before, and I don't have cancer.",
+        "topic": "Blood clot and cancer history"
+      },
+      {
+        "answer": "I took some prescribed pain relievers for the first three days after surgery, but I am not taking any medications now.",
+        "topic": "Edema inducing medications"
+      },
+      {
+        "answer": "No, I have never had hepatitis or liver problems, and I rarely drink alcohol.",
+        "topic": "Hepatitis and liver disease"
+      },
+      {
+        "answer": "No, I have never been diagnosed with high blood pressure, diabetes, or heart disease.",
+        "topic": "Diabetes and hypertension"
+      },
+      {
+        "answer": "I eat normal home-cooked meals without extra salt, and I haven't been on any long car or airplane trips.",
+        "topic": "Dietary salt and prolonged travel"
+      },
+      {
+        "answer": "I figured my calf was just swollen and sore because my physical therapist pushed me too hard yesterday.",
+        "topic": "Patient ideas on cause"
+      },
+      {
+        "answer": "I'm really worried that my surgical site got infected and they'll have to reopen my knee to fix it.",
+        "topic": "Patient concerns and worries"
+      },
+      {
+        "answer": "I'm hoping to get an ultrasound to make sure everything is healing right and something to bring down the swelling.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I have always been healthy and have no chronic medical conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "Aside from the left knee arthroscopy two weeks ago, I have never had surgery or stayed in the hospital.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I am not taking any prescription drugs, over-the-counter pills, or health supplements.",
+        "topic": "Current medications and supplements"
+      },
+      {
+        "answer": "I do not have any known allergies to medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, maybe a beer or two once or twice a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office manager and live with my wife and son in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of blood clots, clotting disorders, heart disease, or kidney failure.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 125/80 mmHg, pulse 78 beats/min, respiratory rate 16 breaths/min, temperature 36.8°C, oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Left calf is noticeably swollen with circumference 3.5 cm greater than the right, warm to touch, and tender to deep palpation.",
+        "maneuver": "calf_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Two-plus pitting edema noted over the left lower leg and medial malleolus; no edema on the right leg.",
+        "maneuver": "extremity_edema",
+        "response": "pain"
+      },
+      {
+        "finding": "Healing surgical incision over the left anterior knee without effusion, with left calf pain elicited upon passive ankle dorsiflexion.",
+        "maneuver": "joint_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Dorsalis pedis and posterior tibial pulses are palpable and symmetric bilaterally.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without crackles, wheezes, or pleural friction rubs.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal first and second heart sounds; no murmurs, gallops, or third heart sound.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Jugular venous pulsation is not elevated and there is no jugular venous distension.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, flat, and non-tender with no hepatomegaly, splenomegaly, or shifting dullness.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are normal pink and sclerae are non-icteric without periorbital edema.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Erythema and warmth confined to the left calf without skin breakdown, petechiae, or spider angiomas.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and smooth with no nodules or thrills.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
       }
     ]
   }

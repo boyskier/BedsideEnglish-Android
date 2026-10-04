@@ -1,0 +1,52 @@
+{
+  "id": "bloody_stool",
+  "title": "변에 피가 나와요",
+  "english_title": "Blood in stool (hematochezia and melena)",
+  "category": "소화기",
+  "kmle_item": "혈변",
+  "door_complaint": "변에 피가 나온다고",
+  "differential_groups": [
+    {"key": "upper_gi", "label": "상부위장관 출혈", "examples": ["소화성궤양 출혈", "정맥류 출혈"]},
+    {"key": "anorectal", "label": "항문 질환", "examples": ["치핵", "치열"]},
+    {"key": "colonic", "label": "대장 질환", "examples": ["대장암", "게실 출혈", "허혈성 대장염", "염증성 장질환", "감염성 장염"]},
+    {"key": "mimic", "label": "출혈이 아닌 변색", "examples": ["철분제·비스무트 복용", "붉거나 검은 음식 섭취"]}
+  ],
+  "history": [
+    {"id": "color", "text": "피 색깔(선홍색, 검붉은색, 짜장처럼 검은 변)", "say": "피 색깔이 어땠어요? 새빨갰나요, 검붉거나 까만색이었나요?", "tags": ["upper_gi", "anorectal", "colonic"]},
+    {"id": "pattern", "text": "피가 나오는 양상(휴지에 묻음, 변기에 떨어짐, 변에 섞임)", "say": "피가 휴지에만 묻었나요, 변기에 뚝뚝 떨어졌나요, 아니면 변에 섞여 나왔나요?", "tags": ["anorectal", "colonic"]},
+    {"id": "onset_amount", "text": "시작 시기, 횟수, 출혈량", "say": "언제부터 몇 번이나 그러셨어요? 양은 얼마나 됐어요?"},
+    {"id": "defecation_pain", "text": "배변 시 항문 통증", "say": "대변볼 때 항문이 찢어지듯 아프세요?", "tags": ["anorectal"]},
+    {"id": "anal_mass_itch", "text": "항문 덩어리 돌출, 가려움", "say": "항문에 뭔가 튀어나오거나 가렵지는 않으세요?", "tags": ["anorectal"]},
+    {"id": "constipation_straining", "text": "변비, 오래 힘주는 배변 습관", "say": "평소 변비가 있어서 오래 힘을 주는 편이세요?", "tags": ["anorectal"]},
+    {"id": "bowel_habit_change", "text": "배변 습관 변화, 변이 가늘어짐, 잔변감", "say": "대변 보는 습관이 바뀌었나요? 변이 가늘어지거나 보고 나서도 남은 느낌이 드세요?", "tags": ["colonic"], "key": true},
+    {"id": "abdominal_pain", "text": "복통 위치와 양상", "say": "배도 아프세요? 어디가 어떻게 아프세요?", "tags": ["colonic", "upper_gi"]},
+    {"id": "diarrhea_mucus_fever", "text": "설사, 점액변, 발열", "say": "설사나 콧물 같은 점액이 같이 나오나요? 열은 없으세요?", "tags": ["colonic"]},
+    {"id": "hemodynamic", "text": "어지러움, 실신, 두근거림", "say": "어지럽거나 쓰러질 것 같은 적이 있으세요?", "tags": ["upper_gi", "colonic"], "key": true},
+    {"id": "weight_loss_fatigue", "text": "체중 감소, 피로", "say": "최근에 살이 빠지거나 많이 피곤하지는 않으세요?", "tags": ["colonic"], "key": true},
+    {"id": "upper_symptoms", "text": "명치 통증, 속쓰림, 토혈", "say": "속이 쓰리거나 피를 토한 적은 없으세요?", "tags": ["upper_gi"]},
+    {"id": "liver_alcohol", "text": "간질환, 음주", "say": "간이 안 좋다는 말을 들은 적 있으세요? 술은 얼마나 드세요?", "tags": ["upper_gi"]},
+    {"id": "medications", "text": "아스피린, 항응고제, 진통소염제, 철분제 복용", "say": "아스피린이나 피를 묽게 하는 약, 진통제, 철분제를 드시나요?", "tags": ["upper_gi", "mimic"]},
+    {"id": "food", "text": "색이 진한 음식 섭취(선지, 블루베리, 비트 등)", "say": "혹시 선지나 색이 진한 음식을 최근에 드셨어요?", "tags": ["mimic"]},
+    {"id": "colonoscopy_family", "text": "이전 대장내시경 결과, 대장암 가족력", "say": "대장내시경을 받아 보셨어요? 가족 중에 대장암인 분은 없으세요?", "tags": ["colonic"]}
+  ],
+  "physical_exam": [
+    {"id": "orthostatic_vitals", "text": "혈압, 맥박과 기립성 변화로 출혈량 평가", "say": "누운 자세와 앉은 자세에서 혈압과 맥박을 재 보겠습니다.", "key": true},
+    {"id": "pallor", "text": "결막 창백 확인", "say": "눈 아래쪽이 창백한지 보겠습니다."},
+    {"id": "abdomen", "text": "복부 압통, 만져지는 덩어리 확인", "say": "편하게 누우세요. 배를 눌러 볼 테니 아프면 말씀해 주세요.", "tags": ["colonic"]},
+    {"id": "anal_inspection", "text": "항문 주위 시진(치핵, 치열, 피부꼬리)", "say": "옆으로 누우시면 항문 주위를 살펴보겠습니다. 바로 가려 드릴게요.", "tags": ["anorectal"]},
+    {"id": "digital_rectal", "text": "직장수지검사로 종괴와 변 색깔 확인", "say": "항문에 손가락을 넣어 덩어리가 있는지, 변 색깔이 어떤지 확인하겠습니다.", "tags": ["anorectal", "colonic", "upper_gi"]}
+  ],
+  "education": [
+    {"id": "bowel_care", "text": "섬유질·수분 섭취, 오래 힘주지 않기, 좌욕", "say": "채소와 물을 충분히 드시고, 화장실에서 오래 힘주지 마세요. 따뜻한 물로 좌욕하시면 도움이 됩니다.", "tags": ["anorectal"], "conditional": true},
+    {"id": "anticoagulant", "text": "항응고제·항혈소판제는 임의로 끊지 말고 상의하도록 안내", "say": "피를 묽게 하는 약은 마음대로 끊지 마시고 먼저 상의해 주세요.", "conditional": true},
+    {"id": "warning_signs", "text": "출혈량이 늘거나, 어지럽거나, 검은 변이 나오면 즉시 응급실로 오도록 안내", "say": "피가 많이 나오거나 어지럽거나 변이 까맣게 나오면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "활력징후와 혈색소로 출혈 정도를 먼저 평가하고, 불안정하면 수액과 수혈로 소생한다.",
+    "흑색변이나 혈역학적으로 불안정한 다량의 혈변은 상부위장관 출혈일 수 있어 상부위장관 내시경을 먼저 고려한다.",
+    "항문 시진과 직장수지검사는 기본이며, 항문 질환이 보여도 나이와 경고 증상(배변 습관 변화, 체중 감소, 빈혈, 가족력)에 따라 대장내시경으로 대장암을 배제한다.",
+    "치핵과 치열은 섬유질·수분 섭취, 좌욕, 변 완화제 등 보존적 치료가 우선이다.",
+    "활동성 하부위장관 출혈로 불안정하면 CT 혈관조영술로 출혈 부위를 찾을 수 있다."
+  ],
+  "case_ids": ["gi_001", "gi_038", "gs_019", "gi_024", "gi_012"]
+}

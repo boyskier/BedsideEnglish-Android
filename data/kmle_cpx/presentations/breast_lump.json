@@ -1,0 +1,54 @@
+{
+  "id": "breast_lump",
+  "title": "유방에 멍울이 만져져요",
+  "english_title": "Breast lump",
+  "category": "여성",
+  "kmle_item": "유방통/유방덩이",
+  "door_complaint": "유방에 멍울이 만져진다고",
+  "differential_groups": [
+    {"key": "benign", "label": "양성 종괴", "examples": ["섬유선종", "유방 낭종", "섬유낭성 변화", "관내유두종", "지방괴사"]},
+    {"key": "malignant", "label": "악성", "examples": ["유방암(침윤성 관암)", "염증성 유방암", "유두 파제트병", "남성 유방암"]},
+    {"key": "inflammatory", "label": "감염/염증", "examples": ["수유 유방염", "유방 농양", "육아종성 유방염"]},
+    {"key": "hormonal", "label": "호르몬/생리적", "examples": ["주기성 유방통", "고프로락틴혈증", "여성형 유방"]}
+  ],
+  "history": [
+    {"id": "onset_discovery", "text": "처음 알게 된 시기와 계기", "say": "언제, 어떻게 처음 만져지셨어요?"},
+    {"id": "location_size", "text": "위치, 크기, 개수, 양쪽인지", "say": "어느 쪽 어디쯤에 만져지세요? 크기는 어느 정도이고, 하나예요, 여러 개예요?", "tags": ["benign", "malignant"]},
+    {"id": "growth_cycle", "text": "크기 변화와 생리 주기에 따른 변화", "say": "처음보다 커졌나요? 생리 전후로 커졌다 작아졌다 하나요?", "tags": ["benign", "hormonal", "malignant"]},
+    {"id": "pain", "text": "통증 여부와 주기성", "say": "아프세요? 생리 때마다 아픈가요, 아니면 계속 아파요?", "tags": ["hormonal", "inflammatory"]},
+    {"id": "skin_nipple_change", "text": "피부 변화(움푹 들어감, 귤껍질 모양, 붉어짐), 유두 함몰·습진", "say": "유방 피부가 움푹 들어가거나 귤껍질처럼 변했어요? 유두가 안으로 들어가거나 헐지는 않았나요?", "tags": ["malignant"], "key": true},
+    {"id": "nipple_discharge", "text": "유두 분비물(한쪽/양쪽, 저절로 나오는지, 색, 피가 섞였는지)", "say": "유두에서 뭐가 나오나요? 짜지 않아도 저절로 나와요? 피가 섞여 있나요?", "tags": ["malignant", "benign", "hormonal"], "key": true},
+    {"id": "axillary_lump", "text": "겨드랑이 멍울", "say": "겨드랑이에도 멍울이 만져지나요?", "tags": ["malignant", "inflammatory"]},
+    {"id": "fever_redness", "text": "발열, 유방이 붉게 붓고 뜨거운지", "say": "열이 나거나 유방이 빨갛게 붓고 뜨겁지는 않나요?", "tags": ["inflammatory", "malignant"]},
+    {"id": "breastfeeding", "text": "수유 여부, 젖 뭉침, 유두 상처", "say": "지금 모유 수유 중이세요? 젖이 뭉치거나 유두에 상처가 났나요?", "tags": ["inflammatory"], "applies": "female", "conditional": true},
+    {"id": "systemic", "text": "체중 감소, 뼈 통증, 기침·숨참", "say": "최근에 이유 없이 살이 빠지거나 뼈가 아프고, 기침이나 숨찬 증상은 없으세요?", "tags": ["malignant"]},
+    {"id": "trauma", "text": "유방 외상이나 시술", "say": "가슴을 부딪히거나 시술을 받은 적 있으세요?", "tags": ["benign"], "conditional": true},
+    {"id": "prior_breast", "text": "이전 유방 질환, 조직검사, 가슴 방사선 치료", "say": "전에 유방에 혹이 있었거나 조직검사, 가슴 쪽 방사선 치료를 받으신 적 있으세요?", "tags": ["malignant"]},
+    {"id": "family_breast_ovary", "text": "유방암·난소암 가족력(가까운 가족, 젊은 나이 발병)", "say": "어머니나 자매 중에 유방암이나 난소암을 앓은 분이 계세요? 몇 살 때였어요?", "tags": ["malignant"], "key": true},
+    {"id": "reproductive_risk", "text": "초경·폐경 나이, 출산·수유 경험, 폐경 후 호르몬 치료", "say": "초경은 몇 살에 하셨고, 출산이나 수유 경험은 있으세요? 폐경 후 호르몬제를 드셨나요?", "tags": ["malignant"], "applies": "female"},
+    {"id": "hormone_drugs", "text": "경구피임약, 호르몬제, 프로락틴을 올리는 약", "say": "피임약이나 호르몬제, 위장약이나 정신과 약을 드시는 게 있나요?", "tags": ["hormonal"]},
+    {"id": "screening", "text": "최근 유방촬영·초음파 검진 결과", "say": "최근에 유방 검진을 받으셨어요? 결과는 어땠어요?", "tags": ["malignant"], "applies": "female"},
+    {"id": "male_causes", "text": "남성에서 약물(스테로이드, 항안드로겐 등), 음주·간질환, 고환 이상, 성욕 저하", "say": "근육 늘리는 약이나 호르몬 약을 드셨어요? 술은 얼마나 드시고, 고환에 이상이 있거나 성욕이 줄지는 않았나요?", "tags": ["hormonal", "malignant"], "applies": "male"}
+  ],
+  "physical_exam": [
+    {"id": "inspection", "text": "앉은 자세에서 팔을 내리고, 올리고, 허리에 손을 짚게 해 양쪽 유방 비교 시진", "say": "앉으신 상태에서 유방을 보겠습니다. 팔을 머리 위로 올려 보시고, 이번엔 허리를 손으로 눌러 보세요.", "tags": ["malignant"]},
+    {"id": "palpation", "text": "누운 자세에서 양쪽 유방 전체 촉진(종괴 크기, 경도, 경계, 움직임, 압통)", "say": "누워서 팔을 머리 위로 올려 주세요. 양쪽 유방을 차례로 만져 보겠습니다.", "key": true},
+    {"id": "nipple", "text": "유두 시진과 분비물 확인", "say": "유두도 살펴보고 분비물이 있는지 확인하겠습니다."},
+    {"id": "lymph_nodes", "text": "겨드랑이와 쇄골 위 림프절 촉진", "say": "겨드랑이와 쇄골 위쪽 림프샘도 만져 보겠습니다.", "tags": ["malignant"]},
+    {"id": "vitals", "text": "체온 측정(유방염·농양 의심 시)", "say": "열이 있는지 체온을 재 보겠습니다.", "tags": ["inflammatory"], "conditional": true},
+    {"id": "male_exam", "text": "남성 유방 비대면 고환 촉진과 간질환 징후 확인", "say": "원인을 찾기 위해 고환과 배도 진찰해 보겠습니다.", "tags": ["hormonal"], "applies": "male", "conditional": true}
+  ],
+  "education": [
+    {"id": "triple_assessment", "text": "진찰, 영상검사, 필요 시 조직검사까지 해야 확실히 알 수 있다고 설명하고 결과 확인을 꼭 하도록 안내", "say": "만져 보는 것만으로는 확실하지 않아서 초음파 같은 영상검사와 필요하면 조직검사를 해야 합니다. 결과는 꼭 확인하러 오세요.", "key": true},
+    {"id": "mastitis_care", "text": "유방염이면 수유를 계속해 젖을 잘 비우고, 열이 계속되거나 말랑한 멍울이 생기면 다시 오도록 안내", "say": "수유는 계속하시면서 젖을 잘 비워 주세요. 열이 안 떨어지거나 말랑한 멍울이 생기면 다시 오세요.", "tags": ["inflammatory"], "conditional": true},
+    {"id": "screening_awareness", "text": "나이에 맞는 정기 유방 검진과 새 멍울·피부 변화가 생기면 진료받도록 안내", "say": "나이에 맞게 정기 유방 검진을 받으시고, 새로 멍울이 생기거나 피부가 변하면 바로 오세요."}
+  ],
+  "grader_notes": [
+    "유방 종괴는 신체진찰, 영상검사, 조직검사의 3중 평가로 진단한다.",
+    "영상검사는 젊은 여성(대개 30세 미만)은 유방 초음파를 먼저 하고, 그 이상은 유방촬영술과 초음파를 함께 한다. 의심 소견이 있으면 초음파 유도 중심부 바늘생검을 한다.",
+    "수유 유방염은 수유(젖 비우기)를 계속하면서 진통제와 냉찜질을 하고 필요하면 항생제를 쓰며, 농양이 의심되면 초음파 후 흡인이나 배농을 한다. 수유하지 않는 여성의 붉은 부종이 항생제에 반응하지 않으면 염증성 유방암을 배제한다.",
+    "한쪽에서 저절로 나오거나 피가 섞인 유두 분비물은 병적 분비물로 보고 영상검사를 하며, 양쪽의 젖 같은 분비물은 임신, 프로락틴, 약물을 확인한다.",
+    "남성 유방 비대는 약물, 간·신장·갑상샘 질환, 고환 원인을 확인하고, 한쪽의 단단한 편심성 종괴는 남성 유방암을 배제하기 위해 영상검사를 한다."
+  ],
+  "case_ids": []
+}

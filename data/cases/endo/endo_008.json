@@ -44,7 +44,7 @@
     "management_principles": [
       "Pituitary MRI with gadolinium",
       "Urgent neurosurgery referral for transsphenoidal tumor resection",
-      "Consider medical therapy (somatostatin analogs like Octreotide or Pegvisomant) if residual tumor post-op"
+      "Consider medical therapy if residual tumor post-op: a somatostatin analog such as Octreotide or Lanreotide first-line, or the growth hormone receptor antagonist Pegvisomant when IGF-1 remains uncontrolled"
     ],
     "boundaries_and_exceptions": [
       "Specific drug dosages, monitoring protocols, and referral criteria must be tailored to organ function, comorbidities, and local hospital pathways.",
@@ -61,7 +61,7 @@
     "subjective": "48M presenting with chronic progressive acral enlargement, facial coarsening, prognathism, hyperhidrosis, headache, and bitemporal visual field defects over 3 years.",
     "objective": "Vitals: HR 72, BP 148/92. Prominent supraorbital ridges, macroglossia, spade-like hands, prognathism. Confrontation visual field exam confirms bitemporal hemianopsia. Bloods: Serum IGF-1 elevated (>3x normal for age). 75g Oral Glucose Tolerance Test (OGTT) fails to suppress Growth Hormone (<1 ng/mL).",
     "assessment": "Acromegaly secondary to GH-secreting pituitary macroadenoma with optic chiasm compression.",
-    "plan": "Pituitary MRI with gadolinium. Urgent neurosurgery referral for transsphenoidal tumor resection. Consider medical therapy (somatostatin analogs like Octreotide or Pegvisomant) if residual tumor post-op."
+    "plan": "Pituitary MRI with gadolinium. Urgent neurosurgery referral for transsphenoidal tumor resection. Consider medical therapy if residual tumor post-op: a somatostatin analog such as Octreotide or Lanreotide first-line, or the growth hormone receptor antagonist Pegvisomant when IGF-1 remains uncontrolled."
   },
   "learning_objectives": [
     "Recognize subtle chronic somatic changes characteristic of acromegaly",
@@ -131,6 +131,215 @@
           "sleep apnea",
           "joint pain"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "148/92",
+      "hr": 72,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "Over the past three years, my hands and feet have been getting bigger, and my face looks like it is changing shape.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started very gradually about three years ago, so slowly that I barely noticed until my shoes and ring stopped fitting.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "The changes are in my face, forehead, lower jaw, hands, and both of my feet.",
+        "topic": "Location of physical changes"
+      },
+      {
+        "answer": "My shoe size went up from size ten to size twelve, and my jaw has pushed forward so my teeth do not line up right anymore.",
+        "topic": "Severity and character"
+      },
+      {
+        "answer": "It has been continuously getting worse year after year without ever pausing or reversing.",
+        "topic": "Duration and progression over time"
+      },
+      {
+        "answer": "Nothing seems to make the swelling better or worse; it just stays enlarged all day and night.",
+        "topic": "Aggravating or relieving factors"
+      },
+      {
+        "answer": "I have dull headaches across my forehead, deep aches in my knees and fingers, and I sweat heavily even when it is cool.",
+        "topic": "Associated symptoms"
+      },
+      {
+        "answer": "No fever, no unexpected weight loss, and no chest pain or shortness of breath.",
+        "topic": "Red flag symptoms"
+      },
+      {
+        "answer": "I have never had body changes like this before, and no doctor has evaluated this issue yet.",
+        "topic": "Previous episodes and workup"
+      },
+      {
+        "answer": "I tried taking over-the-counter ibuprofen for my joint aches and headaches, which dulls the pain for a few hours but does not change the swelling.",
+        "topic": "Self-management and pain relievers"
+      },
+      {
+        "answer": "No unusual chemical exposures, new supplements, recent travel, or changes in my diet.",
+        "topic": "Triggers and exposures"
+      },
+      {
+        "answer": "My loud snoring and daytime tiredness make work harder, and my hands feel clumsy when I handle small tools at construction sites.",
+        "topic": "Impact on daily life and sleep"
+      },
+      {
+        "answer": "I had to stop wearing my wedding ring two years ago because it was cutting off circulation, and none of my old work boots fit.",
+        "topic": "Change in ring and shoe size"
+      },
+      {
+        "answer": "My forehead ridge feels much thicker, my lower jaw sticks out, and people have remarked that my face looks coarser and wider.",
+        "topic": "Facial and jaw changes"
+      },
+      {
+        "answer": "For the past few months, things on the outer edges of my vision have seemed blurry, like I am losing my side vision.",
+        "topic": "Vision changes"
+      },
+      {
+        "answer": "I get persistent, dull frontal headaches almost every week that throb across my brow.",
+        "topic": "Headache characteristics"
+      },
+      {
+        "answer": "My wife says my snoring has become unbearable and that I sometimes stop breathing, plus my knees ache constantly.",
+        "topic": "Sleep apnea and joint symptoms"
+      },
+      {
+        "answer": "My voice has definitely gotten deeper and more hollow sounding over the past couple of years.",
+        "topic": "Voice changes"
+      },
+      {
+        "answer": "I sweat excessively day and night, drenching through my work shirts even in air-conditioned rooms.",
+        "topic": "Excessive sweating"
+      },
+      {
+        "answer": "I have had carpal tunnel-like numbness and tingling in both hands, mostly in my thumbs and index fingers.",
+        "topic": "Numbness and tingling in hands"
+      },
+      {
+        "answer": "I feel chronically fatigued and sluggish, though my muscle strength itself feels mostly intact.",
+        "topic": "Fatigue and muscle weakness"
+      },
+      {
+        "answer": "No cold intolerance, though I definitely cannot tolerate heat because of how heavily I sweat.",
+        "topic": "Temperature sensitivity"
+      },
+      {
+        "answer": "My sex drive has dropped noticeably over the last year or two, which is unusual for me.",
+        "topic": "Libido and sexual function"
+      },
+      {
+        "answer": "I assumed I was just gaining weight, getting older, and developing regular arthritis.",
+        "topic": "Patient thoughts on cause"
+      },
+      {
+        "answer": "I am really worried about why my side vision is blurring and why these headaches will not go away.",
+        "topic": "Main concerns"
+      },
+      {
+        "answer": "I want to understand what is causing my facial bones and body structure to change so drastically.",
+        "topic": "Expectations for the visit"
+      },
+      {
+        "answer": "I have obstructive sleep apnea, high blood pressure, and my primary doctor said I have borderline high blood sugar.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or hospital admissions.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I take losartan fifty milligrams once daily in the morning for my high blood pressure.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known drug allergies.",
+        "topic": "Medication allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any nicotine products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink two or three beers on the weekend with friends, but nothing during the work week.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as a construction manager, and I live at home with my wife and two teenage kids.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had hypertension and a stroke in his seventies, and my mother has type two diabetes, but nobody had hormonal or growth problems.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 148/92 mmHg, pulse 72 beats per minute, respiratory rate 16 breaths per minute, temperature 36.8 C, oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Coarsened facial features with prominent supraorbital ridges, broad nose, thickened lips, and obvious prognathism.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Confrontation visual field testing demonstrates bitemporal hemianopsia, while visual acuity is preserved.",
+        "maneuver": "cranial_nerves",
+        "response": "none"
+      },
+      {
+        "finding": "Pupils are equal, round, and reactive to light, with normal extraocular movements and no papilledema on funduscopy.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Marked macroglossia with lateral teeth imprints, widened interdental spaces, and soft tissue crowding of the oropharynx.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size and texture, without palpable nodules, bruits, or tenderness.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal heart sounds S1 and S2, without murmurs, rubs, or gallops.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Lungs are clear to auscultation bilaterally with vesicular breath sounds and no crackles or wheezes.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-distended, and non-tender without palpable organomegaly or masses.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Hands are enlarged and spade-like with widened fingers, showing mild crepitus in the knees bilaterally without synovial effusion or redness.",
+        "maneuver": "joint_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Marked enlargement of both feet with heel pad thickening, but no pitting edema or calf tenderness.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Skin feels thick, oily, and doughy with noticeable generalized moistness from hyperhidrosis, but no skin tags or rashes.",
+        "maneuver": "skin_exam",
+        "response": "none"
       }
     ]
   }

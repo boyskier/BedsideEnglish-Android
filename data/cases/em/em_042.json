@@ -7,11 +7,11 @@
   "patient_name": "Ms. Sanchez",
   "age": 68,
   "gender": "female",
-  "chief_complaint": "continuous convulsive seizure lasting 8 minutes",
-  "hpi_details": "A 68-year-old female presents to the clinic with continuous convulsive seizure lasting 8 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to status epilepticus",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "chief_complaint": "witnessed continuous convulsive seizure lasting 8 minutes, now post-ictal",
+  "hpi_details": "A 68-year-old woman is brought to the emergency department after a witnessed generalized convulsive seizure that continued for 8 minutes without recovery in between and was terminated by paramedics with IM midazolam en route. She is now post-ictal: drowsy, slow to answer, and confused about what happened, but rousable and able to give a limited history, with her daughter at the bedside filling in the details. Her daughter reports she has felt generally unwell and fatigued for the past few days.",
+  "ideas": "does not remember the seizure and keeps asking why she is in hospital",
+  "concerns": "She is worried that blacking out and losing her memory means she is developing dementia and will lose her ability to live on her own.",
+  "expectations": "She hopes to receive intravenous fluids to regain her energy and be discharged home with her daughter today.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -50,9 +50,9 @@
       "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
     ],
     "diagnostic_clues": [
-      "Chief Complaint: continuous convulsive seizure lasting 8 minutes",
-      "Key HPI features: A 68-year-old female presents to the clinic with continuous convulsive seizure lasting 8 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-      "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Status Epilepticus.",
+      "Chief Complaint: witnessed continuous convulsive seizure lasting 8 minutes, now post-ictal",
+      "Key HPI features: A 68-year-old woman is brought to the emergency department after a witnessed generalized convulsive seizure that continued for 8 minutes without recovery in between and was terminated by paramedics with IM midazolam en route. She is now post-ictal: drowsy, slow to answer, and confused about what happened, but rousable and able to give a limited history, with her daughter at the bedside filling in the details. Her daughter reports she has felt generally unwell and fatigued for the past few days.",
+      "Objective/Exam findings: Post-ictal but rousable, with no ongoing convulsive activity; airway patent, vital signs and continuous cardiorespiratory monitoring in place, and level of consciousness improving. Point-of-care glucose, electrolytes, calcium, and antiseizure drug levels; urgent CT head and EEG if consciousness does not recover as expected.",
       "Relevant background/PMH: Unremarkable"
     ],
     "common_misconceptions": [
@@ -68,7 +68,7 @@
       "Ignoring critical warning signs such as: Ongoing seizure beyond 5 minutes."
     ],
     "management_principles": [
-      "Plan for Status Epilepticus: IV Lorazepam boluses, second-line IV Levetiracetam loading",
+      "Plan for Status Epilepticus: secure the airway, IV access, and continuous monitoring; repeat an IV Lorazepam bolus immediately if convulsive activity recurs (a benzodiazepine has already been given prehospital), and load second-line IV Levetiracetam now to prevent recurrence",
       "Consult specialist if symptoms worsen",
       "Counsel patient"
     ],
@@ -84,15 +84,15 @@
     ]
   },
   "reference_soap": {
-    "subjective": "Patient presenting with chief complaint of continuous convulsive seizure lasting 8 minutes. HPI: status epilepticus.",
-    "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Status Epilepticus.",
+    "subjective": "Patient presenting with chief complaint of witnessed continuous convulsive seizure lasting 8 minutes, now post-ictal. HPI: status epilepticus.",
+    "objective": "Post-ictal but rousable, with no ongoing convulsive activity; airway patent, vital signs and continuous cardiorespiratory monitoring in place, and level of consciousness improving. Point-of-care glucose, electrolytes, calcium, and antiseizure drug levels; urgent CT head and EEG if consciousness does not recover as expected.",
     "assessment": "Condition highly suspicious for Status Epilepticus.",
-    "plan": "Plan for Status Epilepticus: IV Lorazepam boluses, second-line IV Levetiracetam loading. Consult specialist if symptoms worsen. Counsel patient."
+    "plan": "Plan for Status Epilepticus: secure the airway, IV access, and continuous monitoring; repeat an IV Lorazepam bolus immediately if convulsive activity recurs (a benzodiazepine has already been given prehospital), and load second-line IV Levetiracetam now to prevent recurrence. Consult neurology urgently and search for the precipitant. Counsel the patient and her daughter once she is fully alert."
   },
   "learning_objectives": [
     "Recognize clinical presentation and diagnostic markers of Status Epilepticus",
     "Select appropriate diagnostic workup for Status Epilepticus",
-    "Implement evidence-based management plan: IV Lorazepam boluses, second-line IV Levetiracetam loading"
+    "Implement evidence-based management plan: repeat IV Lorazepam if convulsive activity recurs, then load second-line IV Levetiracetam"
   ],
   "teaching": {
     "diagnosis": "Status Epilepticus",
@@ -138,6 +138,181 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "136/82",
+      "hr": 88,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "I honestly don't know what happened or why I am here in the hospital. My daughter says I had a terrible convulsive shaking spell at home.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "My daughter said my whole body suddenly went stiff, then both my arms and legs shook violently and my eyes rolled up.",
+        "topic": "Seizure semiology and eyewitness account"
+      },
+      {
+        "answer": "She said the convulsion went on without stopping for about eight minutes until the paramedics arrived and gave me an injection.",
+        "topic": "Duration and continuous seizure activity"
+      },
+      {
+        "answer": "I didn't notice any funny smells, metallic tastes, or strange feelings rising from my stomach before it happened. I just felt tired and then blacked out.",
+        "topic": "Aura and preceding symptoms"
+      },
+      {
+        "answer": "My daughter told me the shaking started all over at the same time, not starting in just one hand or turning my head to one side.",
+        "topic": "Focal onset or head deviation"
+      },
+      {
+        "answer": "My tongue feels painful on the side where I bit it, and my daughter noticed that I had wet myself during the episode.",
+        "topic": "Tongue biting and urinary incontinence"
+      },
+      {
+        "answer": "I still feel very drowsy, my head hurts, and my muscles ache all over, but my arms and legs don't feel paralyzed.",
+        "topic": "Post-ictal symptoms and weakness"
+      },
+      {
+        "answer": "My daughter was right beside me and lowered me to the floor, so I didn't hit my head or hurt my shoulders.",
+        "topic": "Injuries sustained during seizure"
+      },
+      {
+        "answer": "This is the very first time in my life I have ever had a seizure, and I've never had blackouts, staring spells, or morning jerks.",
+        "topic": "Previous seizures or staring spells"
+      },
+      {
+        "answer": "I haven't had any high fever, severe stiff neck, or chills, just feeling fatigued and run-down for the past two or three days.",
+        "topic": "Fever and infection symptoms"
+      },
+      {
+        "answer": "I haven't had any chronic worsening headaches over the past weeks, personality changes, or progressive arm or leg weakness.",
+        "topic": "Preceding headaches and neurological changes"
+      },
+      {
+        "answer": "I haven't been sleep-deprived, unusually stressed, or exposed to flashing lights or strobe effects.",
+        "topic": "Seizure triggers"
+      },
+      {
+        "answer": "I only have an occasional glass of wine with dinner once or twice a month, and I've never used recreational drugs.",
+        "topic": "Alcohol use and withdrawal"
+      },
+      {
+        "answer": "I don't have diabetes and do not take insulin or any blood sugar medications. I've been eating normally with no vomiting or diarrhea.",
+        "topic": "Diabetes medications and oral intake"
+      },
+      {
+        "answer": "I've never had a stroke, a serious head injury, brain surgery, or an infection of the brain like meningitis.",
+        "topic": "Past head trauma and neurological conditions"
+      },
+      {
+        "answer": "I do not take any antiseizure medications or daily prescriptions, so there were no missed doses.",
+        "topic": "Medication adherence"
+      },
+      {
+        "answer": "I have a driver's license and drive for local errands, but I am retired and do not work with heavy machinery or at heights.",
+        "topic": "Driving and safety risks"
+      },
+      {
+        "answer": "I have always been healthy and have no chronic medical conditions like high blood pressure, diabetes, or heart disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had my gallbladder removed about twenty years ago without any complications, but no other operations or hospital stays.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I don't take any regular prescription medicines, over-the-counter pills, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications, foods, or materials.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink maybe one glass of wine every few weeks at social gatherings, and nothing more.",
+        "topic": "Alcohol history"
+      },
+      {
+        "answer": "I am a retired teacher and live with my husband, and our adult daughter lives just ten minutes away.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has ever had epilepsy, recurrent seizures, or febrile convulsions as children.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "I really don't understand how this could happen out of nowhere, and I keep wondering what made my body do that.",
+        "topic": "Patient ideas and thoughts"
+      },
+      {
+        "answer": "I'm worried that my mind is slipping away and my daughter will think I can't live safely by myself anymore.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping you can just give me some fluids to help me perk up and let me go home to rest in my own bed today.",
+        "topic": "Patient expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 136/82 mmHg, heart rate 88 beats per minute and regular, respiratory rate 18 breaths per minute, temperature 36.8°C, oxygen saturation 98% on room air, and point-of-care glucose is 108 mg/dL.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Elderly female resting in the hospital bed, drowsy and slow to respond but rousable, with no ongoing convulsive movements.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Rousable and cooperative, oriented to person and hospital but confused regarding time and date; speech is slow but clear.",
+        "maneuver": "mental_status",
+        "response": "none"
+      },
+      {
+        "finding": "Pupils are equal, round, and reactive to light at 3 mm bilaterally; no conjugate gaze deviation or nystagmus.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Small shallow laceration noted on the left lateral border of the tongue with no active bleeding; airway is clear.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Neck is supple with full passive flexion; Kernig and Brudzinski signs are negative.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Normal S1 and S2 with a regular rhythm and no audible murmurs or gallops.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Muscle tone is normal and strength is 5/5 in all four extremities symmetrically, with no focal weakness or Todd paralysis.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Deep tendon reflexes are 2+ and symmetric bilaterally; plantar responses are flexor bilaterally.",
+        "maneuver": "reflexes",
+        "response": "none"
+      },
+      {
+        "finding": "No contusions, scalp hematomas, or signs of head or shoulder trauma; skin is warm and dry without rashes.",
+        "maneuver": "skin_exam",
+        "response": "none"
       }
     ]
   }

@@ -9,9 +9,9 @@
   "gender": "male",
   "chief_complaint": "respiratory distress, trachea deviated, low BP post-trauma",
   "hpi_details": "A 47-year-old male presents to the clinic with respiratory distress, trachea deviated, low bp post-trauma. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to a tension pneumothorax",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks a cracked rib from the impact is puncturing his chest wall and knocking the wind out of him.",
+  "concerns": "He is terrified that his windpipe is shutting down completely and that he will suffocate before anyone can open his airway.",
+  "expectations": "He hopes the emergency team can immediately relieve whatever pressure is crushing his chest so he can breathe again.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -112,6 +112,192 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "80/50",
+      "hr": 124,
+      "rr": 32,
+      "spo2": 86,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "I was hit hard in the chest during an accident a little while ago, and now I can barely catch my breath.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "A heavy steel beam swung into the right side of my chest at the construction site about two hours ago.",
+        "topic": "Mechanism of injury"
+      },
+      {
+        "answer": "The shortness of breath started shortly after the blow to my chest and has become rapidly worse over the last two hours.",
+        "topic": "Onset and course"
+      },
+      {
+        "answer": "I feel like I am suffocating even while sitting completely still.",
+        "topic": "Severity of breathlessness"
+      },
+      {
+        "answer": "It has been constant and steadily worsening since the impact; I have never felt anything like this before.",
+        "topic": "Course and previous episodes"
+      },
+      {
+        "answer": "I have severe, sharp pain on the right side of my chest that stabs worse whenever I try to take a breath.",
+        "topic": "Chest pain characteristics"
+      },
+      {
+        "answer": "It is exhausting to speak; I can only say a few words at a time before running out of air.",
+        "topic": "Speaking difficulty"
+      },
+      {
+        "answer": "My throat feels tight and my neck veins feel swollen and bulging.",
+        "topic": "Neck symptoms"
+      },
+      {
+        "answer": "I cannot lie flat at all because I feel like I will completely suffocate.",
+        "topic": "Orthopnea and nocturnal symptoms"
+      },
+      {
+        "answer": "Taking a deep breath makes the stabbing chest pain and air hunger much worse.",
+        "topic": "Aggravating factors"
+      },
+      {
+        "answer": "No, I haven't heard any high-pitched wheezing sounds when I breathe.",
+        "topic": "Wheezing"
+      },
+      {
+        "answer": "No cough, no phlegm, and I have not had any fever or chills.",
+        "topic": "Cough, sputum, and fever"
+      },
+      {
+        "answer": "My heart is racing very fast in my chest, and I feel lightheaded and faint.",
+        "topic": "Palpitations and dizziness"
+      },
+      {
+        "answer": "No, I haven't coughed up any blood.",
+        "topic": "Hemoptysis"
+      },
+      {
+        "answer": "No, my legs and feet are not swollen at all, and my weight hasn't changed.",
+        "topic": "Leg swelling and weight changes"
+      },
+      {
+        "answer": "No, neither leg is swollen or sore, and I haven't been on any long flights or had surgery.",
+        "topic": "DVT risk factors"
+      },
+      {
+        "answer": "I feel extremely weak, exhausted, and pale right now, but I have had no black stools or bleeding.",
+        "topic": "Fatigue and bleeding"
+      },
+      {
+        "answer": "My fingertips feel slightly numb, and I feel a terrible sense of panic because I can't breathe.",
+        "topic": "Numbness and anxiety"
+      },
+      {
+        "answer": "No, I do not have a history of heart attacks, asthma, or chronic lung disease, and I do not use inhalers.",
+        "topic": "Underlying cardiopulmonary history"
+      },
+      {
+        "answer": "No, I don't take beta-blockers, aspirin, pain relievers, or chemotherapy drugs.",
+        "topic": "Medication triggers"
+      },
+      {
+        "answer": "I work in construction, but I have not had chronic exposure to asbestos, bird droppings, or toxic fumes.",
+        "topic": "Occupational and environmental exposures"
+      },
+      {
+        "answer": "I took a hard blow to the ribs, so I thought a cracked rib was pressing into my chest and knocking my breath out.",
+        "topic": "Ideas on cause"
+      },
+      {
+        "answer": "It feels like my throat is getting twisted shut, and I am terrified I am going to suffocate right here.",
+        "topic": "Concerns and worries"
+      },
+      {
+        "answer": "I just need you to relieve whatever is squeezing my chest so I can take a full breath.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I have always been healthy and have no chronic medical conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or hospital admissions before today.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I am not taking any prescription medications, over-the-counter pills, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to medications, foods, or latex.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink a beer socially once or twice a month, but none today.",
+        "topic": "Alcohol intake"
+      },
+      {
+        "answer": "I work as a site supervisor in construction and live with my wife and son.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of heart disease, lung conditions, or sudden unexplained death.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Marked respiratory distress with tachypnea, accessory muscle use, central cyanosis, and diaphoresis.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 80/50 mmHg, pulse 124 beats/min, respiratory rate 32 breaths/min, temperature 36.7°C, SpO2 86% on ambient air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Marked jugular venous distension visible bilaterally.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Ecchymosis and subcutaneous crepitus over the right chest wall with palpable tracheal deviation to the left.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "Marked hyperresonance to percussion across the entire right hemithorax; normal resonance on the left.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Completely absent breath sounds throughout the right hemithorax; vesicular breath sounds present on the left without adventitious sounds.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic rhythm with distant, muffled heart sounds; no murmurs or pericardial friction rub.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "No pitting edema in either lower extremity.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Calves are soft, symmetric, and non-tender bilaterally without signs of deep vein thrombosis.",
+        "maneuver": "calf_exam",
+        "response": "none"
       }
     ]
   }

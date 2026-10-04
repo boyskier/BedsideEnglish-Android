@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "sudden fever, severe body aches, sore throat, and cough",
   "hpi_details": "A 35-year-old male presents to the clinic with sudden fever, severe body aches, sore throat, and cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to flu",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks he caught a severe strain of COVID-19 or got pneumonia from getting drenched during a rainy commute.",
+  "concerns": "He is worried that he will pass the illness to his pregnant wife who has asthma.",
+  "expectations": "He hopes to get a rapid swab test to know what it is and a medical sick note for his employer for the rest of the week.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -144,6 +144,199 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "118/76",
+      "hr": 96,
+      "rr": 18,
+      "spo2": 97,
+      "temp_c": 39
+    },
+    "history": [
+      {
+        "answer": "I suddenly came down with a high fever, severe body aches, a sore throat, and a cough yesterday.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The fever started very abruptly yesterday morning, about thirty hours ago, and it has stayed high since.",
+        "topic": "Onset and duration of fever"
+      },
+      {
+        "answer": "I measured thirty-nine degrees Celsius at home, and I have been shivering with intense chills.",
+        "topic": "Peak temperature and chills"
+      },
+      {
+        "answer": "I took two acetaminophen pills last night, but my fever only dropped a little bit for a few hours before spiking back up.",
+        "topic": "Response to fever reducers"
+      },
+      {
+        "answer": "I have a dry, hacking cough and a raw sore throat, but I haven't coughed up any phlegm.",
+        "topic": "Cough and sore throat"
+      },
+      {
+        "answer": "No, I am not short of breath, and I don't feel any chest pain when I breathe in.",
+        "topic": "Shortness of breath"
+      },
+      {
+        "answer": "No, I don't have any pain or burning when I urinate, and I am not urinating more often.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "No, I haven't had any stomach pain, nausea, vomiting, or diarrhea.",
+        "topic": "Gastrointestinal symptoms"
+      },
+      {
+        "answer": "I have a generalized dull headache from the high fever, but my neck doesn't feel stiff at all.",
+        "topic": "Headache and neck stiffness"
+      },
+      {
+        "answer": "My muscles and back ache severely all over, but I have not had any joint swelling, rash, or bug bites.",
+        "topic": "Muscle aches and skin changes"
+      },
+      {
+        "answer": "I sweat when the fever fluctuates, but I have not had chronic night sweats or any unexplained weight loss.",
+        "topic": "Night sweats and weight loss"
+      },
+      {
+        "answer": "I noticed a couple of small, slightly tender lumps along the sides of my neck this morning, but none in my armpits or groin.",
+        "topic": "Swollen lymph nodes"
+      },
+      {
+        "answer": "No, I haven't traveled overseas recently, haven't been hiking or doing farm work, and haven't touched any animals.",
+        "topic": "Travel and outdoor exposure"
+      },
+      {
+        "answer": "A couple of my coworkers at my office came down with influenza earlier this week.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "No, I have never had cancer treatment, taken steroids, or taken medications that suppress the immune system.",
+        "topic": "History of immunosuppression"
+      },
+      {
+        "answer": "No, I don't have any heart disease or artificial valves, and I haven't had any dental procedures recently.",
+        "topic": "Heart condition and dental work"
+      },
+      {
+        "answer": "No, I haven't started any new prescription medications or supplements lately.",
+        "topic": "Recently started medications"
+      },
+      {
+        "answer": "I am married in a monogamous relationship, and I have never used injection drugs.",
+        "topic": "Sexual history and drug use"
+      },
+      {
+        "answer": "No, I haven't gotten the seasonal influenza vaccine this year.",
+        "topic": "Influenza vaccination status"
+      },
+      {
+        "answer": "Since my fever started just yesterday, I wanted to see a doctor quickly to see if there is antiviral medicine I can take.",
+        "topic": "Timing for antiviral treatment"
+      },
+      {
+        "answer": "I thought maybe I caught COVID-19 or came down with pneumonia after walking home in the freezing rain.",
+        "topic": "Patient ideas about illness"
+      },
+      {
+        "answer": "I'm really worried that I might pass this terrible fever and cough to my pregnant wife, especially since she has asthma.",
+        "topic": "Patient concerns and complications"
+      },
+      {
+        "answer": "I have always been healthy, with no chronic conditions like diabetes, hypertension, or asthma.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "None, I have never had any surgeries or been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "None, I don't take any regular daily medications.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "No, I don't have any known allergies to medications.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, having a beer once or twice a month at most.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office worker and live with my wife in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "Both of my parents are alive and healthy, and there are no major diseases in my family.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 118/76 mmHg, pulse 96 bpm, respiratory rate 18 breaths/min, temperature 39.0°C, oxygen saturation 97% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient appears acutely ill, febrile, and fatigued, but is alert and in no acute respiratory distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Erythematous posterior pharynx without tonsillar enlargement, exudate, or petechiae.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Both tympanic membranes are pearly gray, translucent, and intact with normal light reflexes.",
+        "maneuver": "ear_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Mild bilateral anterior cervical lymphadenopathy with slight tenderness on palpation; no posterior cervical or supraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "pain"
+      },
+      {
+        "finding": "Clear to auscultation bilaterally with normal vesicular breath sounds and no crackles, wheezes, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, rubs, or gallops heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, flat, and non-tender without voluntary guarding or muscular rigidity.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No hepatomegaly or splenomegaly palpated below the costal margins.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness elicited on gentle percussion bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Skin is warm and flushed without rash, petechiae, purpura, or tick bites.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Neck is supple with full range of motion; negative Kernig and Brudzinski signs.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
       }
     ]
   }

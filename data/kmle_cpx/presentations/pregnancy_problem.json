@@ -1,0 +1,52 @@
+{
+  "id": "pregnancy_problem",
+  "title": "임신 중인데 이상이 있어요",
+  "english_title": "Problem in pregnancy",
+  "category": "여성",
+  "door_complaint": "임신 중인데 이상이 있다고",
+  "differential_groups": [
+    {"key": "early", "label": "임신 초기 출혈", "examples": ["절박유산·유산", "자궁외임신", "포상기태"]},
+    {"key": "late_bleeding", "label": "임신 후반기 출혈", "examples": ["전치태반", "태반조기박리", "조기진통에 따른 출혈"]},
+    {"key": "membranes_labor", "label": "양막·분만", "examples": ["조기양막파수", "조기진통", "자궁경부무력증", "제대탈출", "견갑난산"]},
+    {"key": "maternal", "label": "모체 합병증", "examples": ["임신성 고혈압·전자간증", "헬프증후군", "임신당뇨병"]},
+    {"key": "postpartum", "label": "산후", "examples": ["자궁이완에 의한 산후출혈", "태반 잔류", "산도 손상", "응고장애"]}
+  ],
+  "history": [
+    {"id": "gestational_age", "text": "임신 주수와 분만예정일, 산전 진찰을 받아 왔는지", "say": "지금 임신 몇 주째세요? 병원에서 정기적으로 검진을 받아 오셨어요?"},
+    {"id": "onset_trigger", "text": "증상이 시작된 시점과 계기(성관계, 넘어짐·배 외상, 무리한 활동)", "say": "언제부터 그러셨어요? 그 전에 넘어지시거나 배를 부딪친 일, 성관계가 있으셨나요?", "tags": ["late_bleeding", "membranes_labor", "early"]},
+    {"id": "bleeding", "text": "출혈의 양(패드 개수), 색, 핏덩이나 조직이 나왔는지", "say": "피가 얼마나 나와요? 패드를 몇 개 적셨어요? 덩어리 같은 게 나오지는 않았어요?", "tags": ["early", "late_bleeding", "postpartum"]},
+    {"id": "pain_contractions", "text": "배 통증이나 자궁 수축의 양상과 간격, 배가 계속 딱딱하게 뭉치는지", "say": "배가 아프세요? 규칙적으로 뭉쳤다 풀리나요, 아니면 계속 딱딱하고 아프세요?", "tags": ["late_bleeding", "membranes_labor", "early"]},
+    {"id": "fluid_leak", "text": "질에서 물이 흐르는지, 양과 색, 냄새", "say": "질에서 물 같은 게 흐르나요? 양은 얼마나 되고 색이나 냄새는 어때요?", "tags": ["membranes_labor"]},
+    {"id": "fetal_movement", "text": "태동 감소나 소실", "say": "아기 움직임은 평소처럼 느껴지세요? 줄지는 않았어요?", "tags": ["late_bleeding", "maternal", "membranes_labor"], "key": true},
+    {"id": "preeclampsia_symptoms", "text": "심한 두통, 시야 이상, 명치나 오른쪽 윗배 통증, 갑자기 심해진 부종", "say": "머리가 심하게 아프거나 눈앞이 번쩍거리세요? 명치 쪽이 아프거나 얼굴과 손이 갑자기 붓지는 않았어요?", "tags": ["maternal"], "key": true},
+    {"id": "hemodynamic", "text": "어지럼, 실신, 가슴 두근거림, 숨참(출혈량 가늠)", "say": "어지럽거나 쓰러질 것 같으세요? 가슴이 뛰거나 숨이 차지는 않으세요?", "tags": ["late_bleeding", "early", "postpartum"], "key": true},
+    {"id": "fever_infection", "text": "발열, 냄새나는 분비물, 배 압통", "say": "열이 나거나 냄새나는 분비물이 있으세요?", "tags": ["membranes_labor", "postpartum"]},
+    {"id": "ultrasound_findings", "text": "이전 초음파 결과(태반 위치, 자궁경부 길이, 다태임신, 아기 크기)", "say": "전에 초음파 볼 때 태반이 아래쪽에 있다거나 자궁경부가 짧다는 말을 들으셨어요?", "tags": ["late_bleeding", "membranes_labor"]},
+    {"id": "antenatal_results", "text": "산전 검사 결과(혈압, 임신성 당 검사, 혈액형·Rh, 소변 단백)", "say": "산전 검사에서 혈압이나 당 수치, 혈액형 관련해서 들으신 이야기가 있으세요?", "tags": ["maternal"]},
+    {"id": "gdm_symptoms", "text": "갈증·다뇨, 식습관과 임신 중 체중 증가", "say": "물을 많이 마시거나 소변을 자주 보세요? 임신 후 체중은 얼마나 늘었어요?", "tags": ["maternal"], "conditional": true},
+    {"id": "obstetric_history", "text": "이전 임신·분만력(제왕절개, 유산·조산, 전자간증·임신당뇨병)", "say": "전에 임신하신 적이 있으세요? 그때 제왕절개를 하셨거나 유산, 조산, 혈압 문제가 있었나요?", "tags": ["late_bleeding", "membranes_labor", "maternal"]},
+    {"id": "delivery_details", "text": "산후라면 분만 방식과 진통 시간, 아기 체중, 태반이 다 나왔는지", "say": "분만은 어떻게 하셨어요? 진통은 얼마나 길었고 아기는 몇 kg이었어요?", "tags": ["postpartum"], "conditional": true},
+    {"id": "risk_factors", "text": "흡연·약물 사용, 다태임신, 만성 고혈압·당뇨병", "say": "혹시 담배를 피우시거나 쌍둥이 임신이세요? 원래 혈압이나 당뇨가 있으셨나요?", "tags": ["late_bleeding", "maternal"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압(전자간증)과 맥박·혈압으로 출혈에 따른 쇼크 평가", "say": "먼저 혈압과 맥박을 재 보겠습니다.", "key": true},
+    {"id": "abdominal_uterus", "text": "자궁저 높이, 자궁 압통·경직, 수축 확인(산후라면 자궁이 단단하게 수축했는지)", "say": "배를 만져서 자궁 크기와 단단한 정도를 확인하겠습니다. 아프면 말씀하세요."},
+    {"id": "fetal_heart", "text": "태아 심음 확인 또는 태아 심박동 감시", "say": "아기 심장 소리를 들어 보겠습니다."},
+    {"id": "speculum_no_digital", "text": "초음파로 전치태반을 배제하기 전에는 손가락 내진을 하지 않고, 질경으로 출혈·양수를 확인", "say": "태반 위치를 확인하기 전에는 손으로 하는 내진은 하지 않고, 기구로 출혈이나 양수가 있는지만 보겠습니다.", "conditional": true},
+    {"id": "edema_reflex", "text": "부종과 심부건반사 확인", "say": "다리가 부었는지 보고 무릎 반사를 확인하겠습니다.", "tags": ["maternal"], "conditional": true}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "출혈 증가, 물이 흐름, 규칙적인 배 뭉침, 태동 감소, 심한 두통·시야 이상이 생기면 즉시 분만실로 오도록 안내", "say": "피가 늘거나 물이 흐르고, 배가 규칙적으로 뭉치거나 아기 움직임이 줄면 바로 분만실로 오세요.", "key": true},
+    {"id": "fetal_movement_count", "text": "태동을 매일 확인하는 방법", "say": "하루 중 편한 시간에 누워서 아기가 움직이는 걸 세어 보시고, 평소보다 확 줄면 바로 연락 주세요.", "conditional": true},
+    {"id": "self_monitoring", "text": "혈압·혈당 자가측정과 식사 조절, 정기 산전 진찰", "say": "집에서 혈압이나 혈당을 재서 기록해 오시고, 정해진 날짜에 꼭 검진 받으세요.", "tags": ["maternal"], "conditional": true}
+  ],
+  "grader_notes": [
+    "임신 20주 이후 출혈은 초음파로 태반 위치를 확인하기 전까지 손가락 내진을 하지 않으며, 활력징후, 혈구검사, 혈액형·교차시험, 응고검사와 태아 심박동 감시를 하고 Rh 음성이면 항D 면역글로불린을 준다.",
+    "임신 초기 출혈은 hCG와 질식 초음파로 자궁내 임신을 확인해 자궁외임신을 배제한다.",
+    "임신 20주 이후 혈압이 140/90 이상이면 단백뇨와 혈소판·간·신장 기능을 확인하고, 중증 소견(160/110 이상, 두통·시야 이상, 명치 통증)이 있으면 황산마그네슘과 강압제를 쓰며 분만 시기를 정한다.",
+    "34주 전 조기진통이나 조기양막파수에는 태아 폐성숙을 위해 스테로이드를 주고, 조기양막파수에는 예방적 항생제를 쓰며, 32주 전이면 태아 신경 보호를 위해 황산마그네슘을 고려한다.",
+    "산후출혈은 즉시 도움을 요청하고 자궁 마사지와 옥시토신 등 자궁수축제, 수액·수혈을 시작하며, 트라넥삼산을 분만 3시간 이내에 쓰고 원인(자궁이완, 산도 손상, 태반 잔류, 응고장애)을 찾는다.",
+    "임신당뇨병은 식사 조절과 혈당 자가측정이 기본이고, 목표 혈당에 이르지 못하면 인슐린을 쓴다."
+  ],
+  "case_ids": []
+}

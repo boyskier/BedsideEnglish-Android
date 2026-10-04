@@ -1,0 +1,54 @@
+{
+  "id": "skin_mass",
+  "title": "피부에 혹이나 점이 생겼어요",
+  "english_title": "Skin lump or changing mole",
+  "category": "피부·외과",
+  "door_complaint": "피부에 혹이 생겼다고",
+  "differential_groups": [
+    {"key": "benign", "label": "양성 종괴", "examples": ["표피낭종", "지방종", "결절종", "피부섬유종", "지루각화증", "화농성 육아종"]},
+    {"key": "infection", "label": "감염/염증", "examples": ["피부 농양(종기)", "감염된 표피낭종", "모소동 농양"]},
+    {"key": "malignant", "label": "악성 종양", "examples": ["흑색종", "기저세포암", "편평세포암", "연부조직 육종"]},
+    {"key": "scar", "label": "흉터 이상", "examples": ["켈로이드", "비대흉터"]}
+  ],
+  "history": [
+    {"id": "onset_duration", "text": "처음 알게 된 시기와 기간", "say": "언제 처음 생긴 걸 아셨어요?"},
+    {"id": "location", "text": "위치(얼굴·두피 등 햇빛 노출 부위, 손목·관절 주위, 등)", "say": "어디에 생겼어요? 얼굴이나 손처럼 햇빛을 많이 받는 곳인가요?", "tags": ["malignant", "benign"]},
+    {"id": "growth", "text": "크기 변화와 커지는 속도", "say": "처음보다 커졌나요? 얼마나 빨리 커졌어요?", "tags": ["malignant", "benign"], "key": true},
+    {"id": "size_number", "text": "크기와 개수, 다른 부위에도 있는지", "say": "크기는 어느 정도예요? 다른 곳에도 비슷한 게 있나요?", "tags": ["benign", "malignant"]},
+    {"id": "consistency", "text": "말랑한지 딱딱한지, 밀면 움직이는지", "say": "만져 보면 말랑해요, 딱딱해요? 밀면 움직이나요?", "tags": ["benign", "malignant"]},
+    {"id": "pain", "text": "통증과 누를 때 아픈지", "say": "아프거나 누르면 아프세요?", "tags": ["infection", "benign"]},
+    {"id": "mole_change", "text": "점의 모양, 경계, 색이 변하거나 새로 생긴 점", "say": "점의 모양이나 색이 변했어요? 가장자리가 울퉁불퉁해졌거나 여러 색이 섞였나요?", "tags": ["malignant"], "key": true},
+    {"id": "bleeding_nonhealing", "text": "피가 나거나 딱지가 반복되고 낫지 않는지", "say": "피가 나거나 딱지가 앉았다 떨어졌다 하면서 안 낫나요?", "tags": ["malignant"], "key": true},
+    {"id": "inflammation", "text": "붉어짐, 열감, 고름, 냄새 나는 분비물", "say": "빨갛게 붓고 뜨겁거나, 고름이나 냄새 나는 게 나오나요?", "tags": ["infection"]},
+    {"id": "punctum_content", "text": "가운데 구멍이나 짜면 나오는 비지 같은 내용물", "say": "가운데 작은 구멍이 있거나, 짜면 하얀 비지 같은 게 나오나요?", "tags": ["benign", "infection"]},
+    {"id": "size_fluctuation", "text": "크기가 커졌다 작아졌다 하는지, 쓰면 커지는지", "say": "혹의 크기가 커졌다 작아졌다 하나요? 손을 많이 쓰면 커지나요?", "tags": ["benign"]},
+    {"id": "trauma_scar", "text": "그 자리의 이전 상처, 수술, 피어싱, 여드름", "say": "그 자리에 전에 상처가 나거나 수술, 귀 뚫은 적이 있나요?", "tags": ["scar"]},
+    {"id": "systemic", "text": "발열, 체중 감소, 다른 부위 멍울", "say": "열이 나거나 최근 살이 빠졌나요? 다른 곳에 멍울이 만져지지는 않나요?", "tags": ["infection", "malignant"]},
+    {"id": "sun_exposure", "text": "햇빛 노출 정도, 심한 일광화상 경험", "say": "야외에서 햇빛을 많이 받으시는 편이에요? 햇볕에 심하게 탄 적 있으세요?", "tags": ["malignant"]},
+    {"id": "skin_cancer_history", "text": "본인·가족의 피부암이나 흑색종, 점이 많은지", "say": "본인이나 가족 중에 피부암을 앓은 분이 계세요? 몸에 점이 많은 편이세요?", "tags": ["malignant"]},
+    {"id": "immunosuppression", "text": "면역억제제 복용, 장기이식, 당뇨병", "say": "면역을 떨어뜨리는 약을 드시거나 당뇨병이 있으세요?", "tags": ["malignant", "infection"]},
+    {"id": "prior_treatment", "text": "직접 짜거나 치료받은 적, 제거 후 재발", "say": "직접 짜 보셨거나 치료받은 적이 있나요? 없앤 뒤 다시 생긴 적은요?", "tags": ["benign", "scar"]}
+  ],
+  "physical_exam": [
+    {"id": "inspection", "text": "병변의 위치, 크기, 색, 모양, 표면(궤양, 딱지, 모세혈관 확장) 시진", "say": "혹이 있는 곳을 자세히 보겠습니다. 자로 크기도 재 보겠습니다."},
+    {"id": "abcde", "text": "색소 병변은 비대칭, 경계, 색, 크기, 변화(ABCDE) 확인", "say": "점의 모양과 가장자리, 색깔을 확대해서 살펴보겠습니다.", "tags": ["malignant"], "key": true},
+    {"id": "palpation", "text": "경도, 압통, 파동, 움직임, 아래 조직과 고정 여부 촉진", "say": "살짝 눌러 보고 움직이는지 만져 보겠습니다. 아프면 말씀해 주세요.", "key": true},
+    {"id": "transillumination", "text": "필요하면 불빛을 비춰 투광 여부 확인", "say": "불빛을 비춰서 안에 물이 차 있는지 보겠습니다.", "tags": ["benign"], "conditional": true},
+    {"id": "regional_nodes", "text": "주변 림프절 촉진", "say": "근처 림프샘이 부었는지 만져 보겠습니다.", "tags": ["malignant", "infection"]},
+    {"id": "full_skin", "text": "다른 부위 피부 전체 확인", "say": "다른 곳에도 비슷한 게 있는지 피부 전체를 보겠습니다.", "tags": ["malignant"]}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "빨리 커지거나 모양·색이 변하고 피가 나면 바로 진료받도록 안내", "say": "혹이나 점이 빨리 커지거나, 모양과 색이 변하거나, 피가 나면 바로 오세요.", "key": true},
+    {"id": "sun_protection", "text": "자외선 차단과 스스로 피부를 정기적으로 살피도록 교육", "say": "자외선 차단제와 모자를 쓰시고, 한 달에 한 번쯤 몸의 점을 살펴보세요.", "tags": ["malignant"]},
+    {"id": "no_squeeze", "text": "혹을 직접 짜거나 째지 않도록 안내", "say": "집에서 혹을 짜거나 바늘로 터뜨리시면 염증이 생길 수 있으니 하지 마세요.", "tags": ["benign", "infection"]},
+    {"id": "keloid_prevention", "text": "켈로이드가 잘 생기면 피어싱이나 불필요한 시술을 피하도록 안내", "say": "흉터가 잘 커지는 체질이라 귀 뚫기나 불필요한 시술은 피하시는 게 좋아요.", "tags": ["scar"], "conditional": true}
+  ],
+  "grader_notes": [
+    "흑색종이 의심되는 색소 병변(ABCDE, 새로 생기거나 변하는 점)은 좁은 여유를 둔 전체 절제생검으로 진단하며, 레이저 등으로 조직 확인 없이 없애지 않는다.",
+    "낫지 않거나 피가 나는 진주빛 결절이나 각화성 병변은 기저세포암이나 편평세포암을 의심해 생검한다.",
+    "표피낭종, 지방종 같은 전형적인 양성 종괴는 임상적으로 진단하고 증상이나 미용 문제가 있으면 절제한다. 5 cm가 넘거나 깊고 단단하며 빠르게 커지는 연부조직 종괴는 육종을 배제하기 위해 MRI 등 영상검사 후 조직검사를 한다.",
+    "파동이 있는 피부 농양은 절개배농이 주 치료이며, 주위 봉와직염, 전신 증상, 면역저하가 있으면 항생제를 더한다.",
+    "결절종은 증상이 없으면 경과관찰할 수 있고, 통증이나 기능 장애가 있으면 흡인이나 절제를 한다. 켈로이드는 병변 내 스테로이드 주사, 압박, 실리콘 등을 쓰며 단순 절제만 하면 재발이 흔하다."
+  ],
+  "case_ids": []
+}

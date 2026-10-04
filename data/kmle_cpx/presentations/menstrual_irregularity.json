@@ -1,0 +1,56 @@
+{
+  "id": "menstrual_irregularity",
+  "title": "생리가 불규칙해요",
+  "english_title": "Irregular or abnormal menstrual bleeding",
+  "category": "여성",
+  "kmle_item": "월경이상/월경통",
+  "door_complaint": "생리가 불규칙하다고",
+  "differential_groups": [
+    {"key": "pregnancy", "label": "임신 관련", "examples": ["임신", "자연유산", "자궁외임신"]},
+    {"key": "ovulatory", "label": "배란 장애(호르몬)", "examples": ["다낭성난소증후군", "갑상샘기능이상", "고프로락틴혈증", "폐경이행기", "체중 변화·스트레스·과도한 운동"]},
+    {"key": "structural", "label": "자궁의 구조적 원인", "examples": ["자궁근종", "자궁선근증", "자궁내막 용종", "자궁내막증식증·자궁내막암", "자궁경부 병변"]},
+    {"key": "coagulation", "label": "출혈 경향/약물", "examples": ["폰빌레브란트병", "혈소판 감소", "항응고제", "호르몬제·자궁내장치"]}
+  ],
+  "history": [
+    {"id": "cycle_pattern", "text": "평소 월경 주기와 최근 변화(주기 간격, 규칙성)", "say": "원래 생리 주기가 며칠이었어요? 요즘은 어떻게 달라졌어요?"},
+    {"id": "amount", "text": "월경량(패드 개수, 핏덩어리, 새는지)", "say": "생리량은 어때요? 하루에 패드를 몇 개 쓰시고, 덩어리가 나오거나 옷에 샐 정도인가요?", "tags": ["structural", "coagulation"]},
+    {"id": "duration", "text": "월경 기간(7일 넘게 지속되는지)", "say": "생리를 한 번 하면 며칠 동안 해요?", "tags": ["structural", "coagulation"]},
+    {"id": "missed_periods", "text": "월경이 없었던 기간(몇 달째인지)", "say": "생리를 안 한 달이 있었어요? 가장 길게는 몇 달 동안 없었어요?", "tags": ["ovulatory", "pregnancy"]},
+    {"id": "intermenstrual_postcoital", "text": "월경 사이 출혈, 성관계 후 출혈", "say": "생리 기간이 아닌데 피가 비치거나 성관계 후에 피가 나지는 않으세요?", "tags": ["structural"], "key": true},
+    {"id": "anemia_symptoms", "text": "어지러움, 숨참, 두근거림, 심한 피로", "say": "어지럽거나 숨이 차거나 많이 피곤하지는 않으세요?", "tags": ["structural", "coagulation"], "key": true},
+    {"id": "pelvic_pain_pressure", "text": "생리통, 아랫배 통증·압박감, 빈뇨", "say": "생리통이나 아랫배가 묵직하게 누르는 느낌이 있으세요? 소변이 자주 마렵지는 않으세요?", "tags": ["structural"]},
+    {"id": "hyperandrogen", "text": "여드름, 털이 많아짐, 체중 증가", "say": "여드름이 늘거나 턱이나 배에 털이 많아지지는 않았어요? 체중은 늘었어요?", "tags": ["ovulatory"]},
+    {"id": "thyroid_symptoms", "text": "더위·추위를 못 참음, 체중 변화, 두근거림", "say": "예전보다 더위나 추위를 많이 타세요? 가슴이 두근거리지는 않으세요?", "tags": ["ovulatory"]},
+    {"id": "galactorrhea_headache", "text": "젖 분비, 두통, 시야 이상", "say": "임신이나 수유 중이 아닌데 가슴에서 젖 같은 게 나오거나, 두통이나 시야가 좁아지는 느낌은요?", "tags": ["ovulatory"]},
+    {"id": "weight_stress_exercise", "text": "최근 체중 변화, 스트레스, 과도한 운동이나 식사 제한", "say": "최근에 살이 많이 빠지거나 찌셨어요? 스트레스가 심하거나 운동을 무리하게 하셨어요?", "tags": ["ovulatory"]},
+    {"id": "bleeding_tendency", "text": "코피, 잇몸 출혈, 쉽게 드는 멍, 발치·수술 후 과다 출혈, 초경부터 많았는지", "say": "코피나 잇몸 피가 잘 나거나 멍이 쉽게 드세요? 이를 뽑았을 때 피가 오래 났거나, 처음 생리할 때부터 양이 많았어요?", "tags": ["coagulation"]},
+    {"id": "hormones_drugs", "text": "피임약·호르몬제, 자궁내장치, 항응고제, 항정신병약", "say": "피임약이나 호르몬제를 드시거나 자궁 안에 피임 장치가 있으세요? 피를 묽게 하는 약은요?", "tags": ["coagulation", "ovulatory"]},
+    {"id": "sexual_contraception", "text": "민감한 질문임을 양해 구한 뒤 성관계 여부와 피임 방법", "say": "진료에 꼭 필요해서 여쭤보는데요, 성관계를 하시나요? 피임은 어떻게 하세요?", "tags": ["pregnancy"]},
+    {"id": "fertility", "text": "출산력, 현재 임신 계획이나 난임", "say": "출산하신 적 있으세요? 지금 임신을 계획하고 계세요?", "tags": ["ovulatory"]},
+    {"id": "menopause_symptoms", "text": "얼굴 달아오름, 식은땀 등 폐경 증상", "say": "얼굴이 확 달아오르거나 밤에 식은땀이 나지는 않으세요?", "tags": ["ovulatory"], "applies": "female_over_45"},
+    {"id": "endometrial_risk", "text": "자궁내막암 위험 요인(비만, 당뇨병, 오래된 무배란)과 자궁경부암 검진력", "say": "당뇨병이 있으세요? 자궁경부암 검사는 언제 마지막으로 받으셨어요?", "tags": ["structural"], "key": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압, 맥박 확인(출혈량과 빈혈 평가)", "say": "혈압과 맥박을 먼저 재 보겠습니다."},
+    {"id": "anemia_signs", "text": "결막 창백 확인", "say": "눈 밑을 살짝 내려서 보겠습니다."},
+    {"id": "body_skin", "text": "키·체중(BMI), 다모증, 여드름, 흑색가시세포증 확인", "say": "키와 몸무게를 재고, 얼굴과 목 피부를 보겠습니다."},
+    {"id": "thyroid", "text": "갑상샘 촉진", "say": "목 앞쪽을 만져 볼게요. 침을 한번 삼켜 보세요."},
+    {"id": "abdomen", "text": "복부 촉진으로 커진 자궁이나 골반 종괴 확인", "say": "누우세요. 아랫배를 만져 보겠습니다."},
+    {"id": "pelvic_exam", "text": "골반 진찰(질경 검사, 양손 진찰)이 필요하다고 설명", "say": "출혈 부위와 자궁 크기를 확인하려면 내진이 필요합니다. 여성 직원이 함께 있을 거예요.", "key": true}
+  ],
+  "education": [
+    {"id": "menstrual_diary", "text": "월경 일지(시작일, 기간, 양, 패드 수) 작성 권유", "say": "생리 시작한 날과 끝난 날, 패드를 몇 개 썼는지 달력에 적어 오세요."},
+    {"id": "warning_signs", "text": "1시간에 패드 한 장 이상 젖는 출혈, 어지러움·실신이 있으면 바로 오도록 안내", "say": "한 시간에 패드 한 장이 흠뻑 젖을 만큼 나오거나 어지러우면 바로 응급실로 오세요.", "key": true},
+    {"id": "weight_lifestyle", "text": "다낭성난소증후군이면 체중 감량과 규칙적 운동 권고", "say": "체중을 조금만 줄여도 생리가 규칙적으로 돌아오는 데 도움이 됩니다.", "conditional": true},
+    {"id": "cervical_screening", "text": "자궁경부암 검진을 받지 않았다면 받도록 권고", "say": "자궁경부암 검사를 오래 안 하셨으면 이번에 같이 받으시는 게 좋겠어요.", "conditional": true}
+  ],
+  "grader_notes": [
+    "가임기 여성의 비정상 자궁출혈은 먼저 소변 또는 혈청 hCG 검사로 임신을 배제한다.",
+    "기본 검사로 혈색소(빈혈), TSH, 프로락틴을 확인하고, 다낭성난소증후군이 의심되면 테스토스테론 등 안드로겐과 혈당·지질 같은 대사 평가를 한다.",
+    "초경부터 월경과다가 있었거나 출혈 경향이 있으면 폰빌레브란트병 등 응고장애 검사를 한다.",
+    "자궁의 구조적 원인은 골반(질식) 초음파로 평가하고, 45세 이상이거나 비만·오래 지속된 무배란 등 위험 요인이 있으면 자궁내막 조직검사를 한다.",
+    "다낭성난소증후군의 무배란 출혈은 복합경구피임약이나 주기적 프로게스틴으로 자궁내막을 보호하고 체중 감량을 권한다.",
+    "혈역학적으로 불안정한 급성 대량 출혈은 수액과 수혈 등 응급 처치가 우선이다."
+  ],
+  "case_ids": ["obgyn_009", "endo_041", "obgyn_034", "obgyn_045", "obgyn_027", "obgyn_022", "obgyn_011", "hemato_007", "endo_038"]
+}

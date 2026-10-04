@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "fever, new heart murmur, and vascular skin lesions",
   "hpi_details": "A 74-year-old female presents to the clinic with fever, new heart murmur, and vascular skin lesions. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to endocarditis",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks she has a lingering, stubborn strain of the flu or picked up a bug bite while working in her flower garden.",
+  "concerns": "She is worried that her worsening exhaustion will make it impossible to care for herself at home and force her to move into an assisted living facility.",
+  "expectations": "She hopes to have blood tests done and leave with a prescription for antibiotics to finally shake off the fever.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -112,6 +112,194 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "108/64",
+      "hr": 110,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 38.6
+    },
+    "history": [
+      {
+        "answer": "I have had a high fever for the past few weeks that will not go away, and I feel completely exhausted.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The fever started about two to three weeks ago and has been gradually getting worse.",
+        "topic": "Onset and duration"
+      },
+      {
+        "answer": "My temperature has reached around 38.6 degrees Celsius at home, and I get shaking chills and drenching sweats.",
+        "topic": "Fever pattern and chills"
+      },
+      {
+        "answer": "I tried taking acetaminophen, but it only brings my temperature down for an hour or two before the fever spikes back up.",
+        "topic": "Fever medication response"
+      },
+      {
+        "answer": "No, I haven't had any cough, sore throat, or runny nose, though I get winded more easily when climbing stairs.",
+        "topic": "Cough and shortness of breath"
+      },
+      {
+        "answer": "I haven't had any chest pain, but at times my heart feels like it is pounding or racing in my chest.",
+        "topic": "Chest pain and palpitations"
+      },
+      {
+        "answer": "No burning or pain when I pass urine, no need to go more often, and no pain in my lower back.",
+        "topic": "Urinary symptoms and flank pain"
+      },
+      {
+        "answer": "No nausea, vomiting, diarrhea, or stomach cramps, though I really haven't had much of an appetite.",
+        "topic": "Digestive symptoms"
+      },
+      {
+        "answer": "I have a mild headache whenever the fever goes up, but my neck doesn't feel stiff and I haven't felt confused.",
+        "topic": "Headache and neck stiffness"
+      },
+      {
+        "answer": "A few days ago I noticed painful red bumps on my fingertips, flat red spots on my palms, and little dark lines under my fingernails.",
+        "topic": "Skin lesions and spots"
+      },
+      {
+        "answer": "Yes, I have been waking up drenched in sweat almost every night, and I have lost about three kilograms without trying.",
+        "topic": "Night sweats and weight loss"
+      },
+      {
+        "answer": "No, I haven't noticed any swollen glands or lumps in my neck, armpits, or groin.",
+        "topic": "Swollen lymph nodes"
+      },
+      {
+        "answer": "I have not traveled outside the country, spent time in the woods, or been around animals.",
+        "topic": "Travel and outdoor activities"
+      },
+      {
+        "answer": "No one in my family or close circle has been sick with a fever or any infection.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "No, I have never had cancer treatments, chemotherapy, or taken steroid medications.",
+        "topic": "Chemotherapy and steroid use"
+      },
+      {
+        "answer": "I had a tooth pulled and a deep dental cleaning about a month ago, but as far as I know I've never had heart valve problems.",
+        "topic": "Dental work and heart history"
+      },
+      {
+        "answer": "No, I haven't started taking any new prescription pills or over-the-counter supplements.",
+        "topic": "Recently started medications"
+      },
+      {
+        "answer": "I have never used injected street drugs or shared needles, and I am not currently sexually active.",
+        "topic": "Substance use and sexual history"
+      },
+      {
+        "answer": "I have had overwhelming fatigue that makes even simple household tasks feel exhausting.",
+        "topic": "Fatigue and daily energy"
+      },
+      {
+        "answer": "I thought I just caught a terrible, lingering flu bug or maybe got bitten by an insect while out in my flower garden.",
+        "topic": "Thoughts on cause"
+      },
+      {
+        "answer": "I'm really worried that this exhaustion will keep getting worse until I can no longer live on my own and have to move into a nursing home.",
+        "topic": "Main concerns"
+      },
+      {
+        "answer": "I was hoping to get some blood work done and get a prescription for antibiotics to finally knock out this fever.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I have generally been very healthy and have never been diagnosed with high blood pressure, diabetes, or heart problems.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had surgery or stayed in the hospital, other than delivering my children many years ago.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I do not take any regular prescription medications at all.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any allergies to medications, foods, or anything else.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink an occasional glass of wine at family gatherings, maybe once a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I am retired and live at home with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My parents lived into their eighties with no history of early heart disease or genetic conditions.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 108/64 mmHg, heart rate 110 beats per minute, respiratory rate 18 breaths per minute, temperature 38.6°C, and oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient appears fatigued and flushed, but is alert, oriented, and in no acute distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Sclerae are anicteric, with small petechial hemorrhages visible on the palpebral conjunctivae.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "No cervical, submandibular, or supraclavicular lymphadenopathy is palpable.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Breath sounds are clear and equal bilaterally, with no wheezes, crackles, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic regular rhythm with a new grade 3/6 holosystolic murmur heard best at the apex radiating to the left axilla.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-distended, and non-tender throughout without guarding or rigidity.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Mild splenomegaly is palpable just beneath the left costal margin; no hepatomegaly is noted.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness is elicited on either side.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Tender erythematous nodules on the finger pads, non-tender erythematous macules on the palms, and splinter hemorrhages in the nail beds.",
+        "maneuver": "skin_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Neck is supple with full passive range of motion; negative Kernig and Brudzinski signs.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
       }
     ]
   }

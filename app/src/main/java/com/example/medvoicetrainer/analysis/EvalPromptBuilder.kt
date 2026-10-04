@@ -19,7 +19,7 @@ object EvalPromptBuilder {
 
     const val DOMAIN_CLINICAL = "clinical"
     const val DOMAIN_EVERYDAY = "everyday"
-    const val PROMPT_VERSION = "gec-evidence-v5-multilingual-l1"
+    const val PROMPT_VERSION = "gec-evidence-v6-subjective-subsections"
 
     private val CLINICAL_SYSTEM_HEADER = """
         You are an expert medical educator, communication evaluator, and senior attending physician.
@@ -55,7 +55,14 @@ object EvalPromptBuilder {
           },
           "empathy_markers_found": ["short marker or transcript quote"],
           "soap_note": {
-            "subjective": "what the learner actually elicited",
+            "subjective": {
+              "cc": "chief complaint as the patient gave it, or exactly Not elicited",
+              "hpi": "story of the present illness the learner actually drew out, or exactly Not elicited",
+              "pmhx": "past medical history including medications, allergies and past surgery when asked, or exactly Not elicited",
+              "fhx": "family history the learner actually asked about, or exactly Not elicited",
+              "shx": "social history (smoking, alcohol, occupation, living situation, …) the learner actually asked about, or exactly Not elicited",
+              "ros": "review of systems the learner actually asked about, or exactly Not elicited"
+            },
             "objective": "objective information supported by the case/transcript",
             "assessment": "assessment supported by the encounter",
             "plan": "plan supported by the encounter"
@@ -162,6 +169,36 @@ object EvalPromptBuilder {
         }
     """.trimIndent()
 
+    /**
+     * The history-taking contract for `soap_note.subjective`.
+     *
+     * The note is a teaching artefact, so its whole value is that it reports what the learner
+     * actually got out of the patient. The two rules that matter most — never borrow from the case
+     * ground truth, and never let an unasked question read like an answered "no" — are stated
+     * explicitly because a model that knows the case will otherwise write the complete history it
+     * knows rather than the partial one the learner took. Clinical sessions only: an everyday
+     * conversation is never scored on a SOAP note.
+     */
+    private val CLINICAL_SUBJECTIVE_RULES = """
+        SUBJECTIVE / HISTORY-TAKING RULES (clinical encounters only — treat these as strict):
+        - soap_note.subjective must always contain exactly these six keys, in this order:
+          cc, hpi, pmhx, fhx, shx, ros. Never rename, merge, split, add or drop one.
+        - Each subsection records ONLY what the learner elicited in THIS transcript. The CASE GROUND TRUTH block is the answer key for scoring; it is NOT a source for the note.
+          Never copy a fact into the note that the learner did not actually obtain from the patient.
+        - When the learner never asked about an area and the patient never volunteered it, write the
+          exact string "Not elicited" and nothing else for that subsection. Do not soften it
+          ("unknown", "not documented", "N/A") and do not explain it.
+        - A denial is not a gap. If the learner asked and the patient denied it, record the denial
+          ("denies smoking", "no family history of MI") — that is elicited information. Only a
+          question that was never asked becomes "Not elicited".
+        - Partially covered area: record what was actually elicited, then append
+          "; remainder not elicited". Never pad the covered part with case facts.
+        - Fold medications, allergies and past surgical history into pmhx when the learner elicited
+          them; do not create extra subsections for them.
+        - Write plain text only. No markdown, colour, emphasis, emoji or bracketed annotations —
+          the app styles the "Not elicited" marker itself.
+    """.trimIndent()
+
     fun isEverydayDomain(domain: String?): Boolean =
         (domain ?: DOMAIN_CLINICAL).lowercase() == DOMAIN_EVERYDAY
 
@@ -188,6 +225,7 @@ object EvalPromptBuilder {
         val header = if (everyday) EVERYDAY_SYSTEM_HEADER else CLINICAL_SYSTEM_HEADER
         val schema = if (everyday) EVERYDAY_SCHEMA else CLINICAL_SCHEMA
         val contextLabel = if (everyday) "EVERYDAY SESSION CONTEXT" else "CASE GROUND TRUTH"
+        val subjectiveRules = if (everyday) "" else "$CLINICAL_SUBJECTIVE_RULES\n"
 
         val systemPrompt = """
             $header
@@ -213,6 +251,7 @@ object EvalPromptBuilder {
             - Return no more than 12 validated corrections. The app chooses a smaller teaching set;
               do not hide repeated evidence merely to reduce cognitive load.
 
+            $subjectiveRules
             CLINICAL MISCONCEPTION RULES (clinical encounters only):
             - misconception_review explains concrete medical-accuracy or clinical-reasoning deductions.
             - Include only a clinical claim the learner actually made. learner_claim must be an exact

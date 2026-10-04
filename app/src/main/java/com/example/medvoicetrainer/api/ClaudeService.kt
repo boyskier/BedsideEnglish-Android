@@ -74,7 +74,8 @@ object ClaudeService {
         apiKey: String,
         model: String,
         prompt: String,
-        systemPrompt: String? = null
+        systemPrompt: String? = null,
+        maxTokens: Int = DEFAULT_MAX_TOKENS,
     ): Pair<String, LlmUsage> = withContext(Dispatchers.IO) {
         if (apiKey.trim().isEmpty()) {
             throw IllegalArgumentException("Claude API key is empty.")
@@ -89,7 +90,7 @@ object ClaudeService {
         conn.doOutput = true
         configureTimeouts(conn)
 
-        val payload = buildPayload(model, prompt, systemPrompt, temperature = 0.1)
+        val payload = buildPayload(model, prompt, systemPrompt, temperature = 0.1, maxTokens = maxTokens)
         val writer = OutputStreamWriter(conn.outputStream)
 
         OutputStreamWriter(conn.outputStream).use { it.write(payload.toString()) }
@@ -145,15 +146,22 @@ object ClaudeService {
         return generateContentWithUsage(apiKey, model, promptText, systemPrompt)
     }
 
+    /**
+     * The long-standing output cap. Korean CPX grading asks for a verdict on ~40 checklist lines
+     * in Korean, which runs well past it, so that one caller passes a larger cap explicitly.
+     */
+    const val DEFAULT_MAX_TOKENS = 4096
+
     internal fun buildPayload(
         model: String,
         prompt: String,
         systemPrompt: String?,
-        temperature: Double? = null
+        temperature: Double? = null,
+        maxTokens: Int = DEFAULT_MAX_TOKENS,
     ): JSONObject {
         val payload = JSONObject()
         payload.put("model", model)
-        payload.put("max_tokens", 4096)
+        payload.put("max_tokens", maxTokens)
         temperature?.let { payload.put("temperature", it.coerceIn(0.0, 1.0)) }
         if (!systemPrompt.isNullOrBlank()) {
             payload.put("system", systemPrompt)

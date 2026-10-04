@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "throbbing neck pulses, wide pulse pressure, diastolic murmur",
   "hpi_details": "A 32-year-old female presents to the clinic with throbbing neck pulses, wide pulse pressure, diastolic murmur. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to aortic_regurgitation",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks the pounding sensation in her neck is caused by intense workplace stress and drinking too many energy drinks while working late.",
+  "concerns": "She is worried that one of the throbbing blood vessels in her neck might burst or cause a sudden stroke while she is home alone.",
+  "expectations": "She hopes the doctor can prescribe a calming heart-slowing pill so her neck stops visibly pulsating.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -131,6 +131,188 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "146/52",
+      "hr": 76,
+      "rr": 16,
+      "spo2": 99,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "I came in because I've been feeling a strong, pounding pulsation in my neck recently.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It feels like a heavy, forceful pounding rather than a fast racing beat, and I can actually see my neck vessels throbbing in the mirror.",
+        "topic": "Palpitation character"
+      },
+      {
+        "answer": "It beats at a regular rhythm, just pounding much harder than it used to.",
+        "topic": "Rhythm and regularity"
+      },
+      {
+        "answer": "It came on gradually over the past several weeks and seems to be there almost constantly now.",
+        "topic": "Onset and offset"
+      },
+      {
+        "answer": "I first noticed it about a month ago, and it has been getting progressively stronger and more bothersome.",
+        "topic": "Duration and course"
+      },
+      {
+        "answer": "The pounding is more noticeable when I exert myself or when I lie down flat on my left side at night.",
+        "topic": "Aggravating factors"
+      },
+      {
+        "answer": "Nothing really makes it stop, though resting quietly makes me feel a little more comfortable.",
+        "topic": "Relieving factors"
+      },
+      {
+        "answer": "No, I have never fainted or felt like I was going to black out.",
+        "topic": "Syncope or presyncope"
+      },
+      {
+        "answer": "No, I haven't had any chest pain, tightness, or pressure.",
+        "topic": "Chest pain"
+      },
+      {
+        "answer": "I get mildly winded when I climb two flights of stairs, which used to be easy for me.",
+        "topic": "Shortness of breath"
+      },
+      {
+        "answer": "Yes, I've been feeling unusually worn out and fatigued lately, even after a full night's rest.",
+        "topic": "Fatigue and stamina"
+      },
+      {
+        "answer": "No, I don't have heat intolerance, excess sweating, or unexpected weight loss.",
+        "topic": "Heat intolerance and sweating"
+      },
+      {
+        "answer": "No, my hands don't tremble and I don't feel jittery.",
+        "topic": "Tremors or nervousness"
+      },
+      {
+        "answer": "No dizziness, my menstrual periods have been normal, and I haven't noticed any dark or black stools.",
+        "topic": "Dizziness and bleeding"
+      },
+      {
+        "answer": "No pounding headaches, sudden cold sweats, or episodes of turning pale.",
+        "topic": "Headache and diaphoresis"
+      },
+      {
+        "answer": "No, I haven't had any panic attacks, hyperventilation, or sudden feelings of impending doom.",
+        "topic": "Anxiety and panic symptoms"
+      },
+      {
+        "answer": "No, I haven't had any fever, sore throat, or recent viral illness.",
+        "topic": "Recent infection or fever"
+      },
+      {
+        "answer": "I drink one cup of coffee in the morning and never drink energy drinks.",
+        "topic": "Caffeine intake"
+      },
+      {
+        "answer": "I only have an occasional glass of wine when out with friends on weekends.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I don't take any prescription drugs, over-the-counter cold medicines, diet pills, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have never been diagnosed with high blood pressure, a heart murmur, or any heart problem before.",
+        "topic": "Prior cardiac history"
+      },
+      {
+        "answer": "No one in my family died suddenly at a young age or had heart failure, cardiomyopathy, or arrhythmias.",
+        "topic": "Family cardiac history"
+      },
+      {
+        "answer": "My past medical history has been completely unremarkable.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I do not have any allergies to medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I work as an office manager and live with my husband in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My last menstrual period was two weeks ago, my cycles are regular every 28 days, and I am not pregnant.",
+        "topic": "Menstrual and pregnancy history"
+      },
+      {
+        "answer": "I thought the pounding in my neck was just from extreme stress and drinking too many energy drinks during my night shifts.",
+        "topic": "Patient ideas"
+      },
+      {
+        "answer": "I'm terrified that one of the pulsing veins in my neck might burst and cause a sudden stroke while I'm alone in the house.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping to get a medication today that will calm my racing heart and stop my neck from visibly throbbing.",
+        "topic": "Patient expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 146/52 mmHg with wide pulse pressure, heart rate 76 beats per minute and regular, respiratory rate 16 breaths per minute, body temperature 36.7 °C, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Prominent visible carotid pulsations in the neck and a hyperdynamic apical impulse displaced slightly inferolaterally.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are pink without pallor, and sclerae are clear and anicteric.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and smooth without palpable nodules or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No resting or postural tremor noted in the outstretched fingers.",
+        "maneuver": "tremor_observation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; high-pitched, blowing early diastolic decrescendo murmur heard best at the left third intercostal space with the patient sitting upright and leaning forward in full expiration.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Lungs are clear to auscultation bilaterally with normal vesicular breath sounds and no crackles or wheezes.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Bounding, rapidly rising and collapsing peripheral pulses present bilaterally in the radial and carotid arteries.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "No pitting edema noted over the pretibial areas or ankles bilaterally.",
+        "maneuver": "extremity_edema",
+        "response": "none"
       }
     ]
   }

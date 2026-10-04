@@ -9,8 +9,8 @@
   "chief_complaint": "constipation, fatigue, and elevated calcium level",
   "hpi_details": "A 50-year-old female presents to the clinic with constipation, fatigue, and elevated calcium level. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
   "ideas": "isn't sure why her calcium would be high, but wonders if it's connected to her constipation",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "concerns": "She is worried that the persistent fatigue and abnormal blood test mean she has developed colon cancer like her mother had.",
+  "expectations": "She hopes to receive a prescription laxative to relieve the constipation and a referral for a colonoscopy to check for growths.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -116,6 +116,199 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "128/82",
+      "hr": 84,
+      "rr": 16,
+      "spo2": 99,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "I've been feeling very tired and severely constipated for the past few weeks, and a routine health checkup showed my blood calcium was high.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I used to go once every morning, but lately I only pass hard, pebble-like stool once every four or five days with heavy straining.",
+        "topic": "Bowel frequency and stool consistency"
+      },
+      {
+        "answer": "The constipation and tiredness started about three or four weeks ago and have been getting progressively worse.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "I constantly feel like I haven't completely emptied my bowels, but I haven't had to push with my fingers to get stool out.",
+        "topic": "Incomplete evacuation and manual maneuvers"
+      },
+      {
+        "answer": "The stool has become small, hard pellets, but I haven't seen thin or pencil-like ribbons of stool.",
+        "topic": "Stool caliber changes"
+      },
+      {
+        "answer": "No, I haven't seen any red blood, streaks on the toilet paper, or black, tarry stools.",
+        "topic": "Blood in stool"
+      },
+      {
+        "answer": "My belly feels slightly bloated and heavy, but there is no sharp pain, and passing a bowel movement doesn't really relieve the fullness.",
+        "topic": "Abdominal pain and bloating"
+      },
+      {
+        "answer": "No, it has only been severe constipation. I haven't had any loose stools or diarrhea.",
+        "topic": "Alternating diarrhea"
+      },
+      {
+        "answer": "I can still pass gas, and I haven't had any nausea or vomiting.",
+        "topic": "Obstipation and vomiting"
+      },
+      {
+        "answer": "No, I don't have any pain or tearing around my anus when I go, so I'm not avoiding the bathroom because of pain.",
+        "topic": "Anal pain and withholding"
+      },
+      {
+        "answer": "I haven't noticed feeling sensitive to cold or gaining weight, though my skin does feel a bit dry along with this tiredness.",
+        "topic": "Cold intolerance and weight changes"
+      },
+      {
+        "answer": "Actually, yes, I've noticed I am constantly thirsty lately and getting up to urinate much more often than usual.",
+        "topic": "Thirst and increased urination"
+      },
+      {
+        "answer": "I tried an over-the-counter stool softener a few times last week, but it barely helped. I don't take any pain pills or iron supplements.",
+        "topic": "Laxative and medication use"
+      },
+      {
+        "answer": "I try to drink water and eat vegetables regularly, though with this fatigue I haven't been as active as I normally am.",
+        "topic": "Diet, fluid intake, and activity"
+      },
+      {
+        "answer": "No, I go to the bathroom as soon as I feel the urge, and there haven't been any big life changes or unusual stress.",
+        "topic": "Withholding urges and stress"
+      },
+      {
+        "answer": "I had a routine screening colonoscopy two years ago, and they told me everything looked completely normal.",
+        "topic": "Prior colonoscopy"
+      },
+      {
+        "answer": "I've been feeling worn out and low on energy, but my thinking is clear and I haven't been confused or depressed.",
+        "topic": "Mental status and mood"
+      },
+      {
+        "answer": "I've never had cancer, and no one in my family has had colon cancer, breast cancer, or any other tumors.",
+        "topic": "Personal and family cancer history"
+      },
+      {
+        "answer": "No, I've never had kidney stones or severe side or back pain.",
+        "topic": "Kidney stones and flank pain"
+      },
+      {
+        "answer": "I have noticed some vague, generalized aches in my muscles and joints, but no severe bone pain or broken bones.",
+        "topic": "Bone and muscle aches"
+      },
+      {
+        "answer": "I'm really worried that this constant fatigue and bowel trouble mean I have colon cancer, which my mother passed away from.",
+        "topic": "Ideas and concerns"
+      },
+      {
+        "answer": "I've been healthy all my life with no chronic conditions like high blood pressure, diabetes, or thyroid problems.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I've never had any major surgeries or hospital stays.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I don't take any prescription medications, vitamins, or calcium supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to medications, foods, or latex.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have an occasional glass of wine when dining out with friends, maybe once or twice a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work an administrative desk job and live with my husband; home life is stable.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My parents are in their seventies with high blood pressure, but no endocrine disorders, kidney disease, or cancers.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "My periods stopped about a year ago, so I've gone through menopause. I'm definitely not pregnant.",
+        "topic": "Menstrual and reproductive history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 128/82 mmHg, heart rate 84 beats/min, respiratory rate 16 breaths/min, body temperature 36.7°C, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Appears mildly fatigued but alert, comfortable, and in no acute distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Oral mucous membranes are mildly dry; no mucosal lesions or pharyngeal erythema.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, with no palpable nodules or goiter.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, supraclavicular, or axillary lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is mildly distended with no surgical scars, rashes, or visible peristalsis.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Decreased bowel sounds heard in all four quadrants; no abdominal bruits.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and mildly distended with no tenderness, guarding, palpable masses, or organomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal sphincter tone; no external hemorrhoids, anal fissures, or rectal masses; small amount of hard stool in the rectal vault.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Skin is slightly dry with mild loss of turgor; no rashes, jaundice, or suspicious lesions.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Deep tendon reflexes are 2+ and symmetric at the patellar and Achilles tendons with normal relaxation phase.",
+        "maneuver": "reflexes",
+        "response": "none"
+      },
+      {
+        "finding": "Alert and fully oriented to person, place, and time; clear speech with intact memory and normal concentration.",
+        "maneuver": "mental_status",
+        "response": "none"
       }
     ]
   }

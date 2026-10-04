@@ -6,6 +6,9 @@ __pycache__/
 # ── Case review orchestration scratch (transient, merged into tools/case_review_progress.json) ──
 tools/.progress_shards/
 
+# AGY critical-audit responses, logs, and resumable run state
+reports/agy_critical_audit/runs/
+
 
 # ── Runtime user data (never commit; also keeps Gradle's data/ asset merge clean) ──
 data/custom/
@@ -48,3 +51,8 @@ local.properties
 captures/
 .externalNativeBuild/
 .kotlin/
+
+# KMLE sp_script generator staging (AGY responses, logs, workspace)
+reports/kmle_sp_script/
+reports/kmle_new_cases/
+reports/kmle_ice/

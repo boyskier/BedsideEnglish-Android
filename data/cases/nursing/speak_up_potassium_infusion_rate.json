@@ -1,0 +1,110 @@
+{
+  "id": "nursing_speak_up_potassium_infusion_rate",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Speak up for safety",
+  "nursing_pathways": ["uk_au"],
+  "counterpart": "physician",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "nursing_speak_up",
+  "patient_name": "Questioning an intravenous potassium infusion ordered faster than ward policy allows",
+  "chief_complaint": "Challenge a senior doctor's order to run an intravenous potassium infusion faster than the ward's peripheral limit, and hold the position under pushback",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Speak up: potassium infusion ordered above the ward's peripheral rate limit",
+    "task": "Speak up for safety",
+    "urgency": "urgent",
+    "patient": "Mr. Robert Nkemelu, 66-year-old man on the medical ward, being treated for a low potassium level",
+    "location": "Medical ward, late afternoon; the registrar has written the order and is already walking away",
+    "situation": "The infusion has been ordered to run at a rate faster than your ward's maximum for peripheral administration, through the peripheral cannula he already has. You are the nurse who would be setting it up.",
+    "background": [
+      "He was admitted with vomiting and poor oral intake and has a low potassium level that needs replacing.",
+      "He has a single peripheral cannula in his right forearm; there is no central line.",
+      "He is on a general medical ward without continuous cardiac monitoring."
+    ],
+    "current_status": [
+      "He is clinically stable, alert, and not symptomatic from the low potassium at present.",
+      "The cannula is patent but the site is slightly uncomfortable when flushed.",
+      "No cardiac monitoring is in place at the bedside."
+    ],
+    "key_data": [
+      "Your ward has a written maximum rate for peripheral potassium administration, and this order exceeds it.",
+      "Faster peripheral potassium administration risks vein irritation and phlebitis, and rapid intravenous potassium carries a risk of dangerous cardiac arrhythmia.",
+      "Higher rates in your institution require central access and continuous cardiac monitoring, neither of which this patient has."
+    ],
+    "treatments": [
+      "Intravenous potassium replacement as ordered; nothing has been started yet."
+    ],
+    "your_request": "Stop the registrar before you set this up, name the discrepancy and the risk, and do not start the infusion until the order or the setting is changed.",
+    "must_include": [
+      "Raise it now, before hanging the infusion — not afterwards.",
+      "Name the specific discrepancy: the ordered rate against your ward's peripheral maximum.",
+      "Name the specific patient risk, not just that it is against policy.",
+      "Escalate your wording in steps if you are dismissed, rather than deferring.",
+      "State clearly that you are not able to start it as written, and what would make it safe.",
+      "Confirm and read back whatever the order is changed to."
+    ]
+  },
+  "kickoff_text": "It's all written up, just get it running — his potassium is low and I've got three other patients to see.",
+  "persona_override": "You are Dr. Alan Hughes, a busy medical registrar who has just written up an intravenous potassium infusion and is trying to leave the ward. You are not a bully, but you are rushed, confident, and initially dismissive of being questioned by a nurse — your first instinct is 'it's fine, I've done it a hundred times.' Ground truth: the rate you have written does exceed the ward's peripheral maximum, the patient has only a peripheral cannula and no cardiac monitoring, and you are in the wrong. You do not know that yet. Escalate your response to how the nurse handles it. If the nurse only hedges ('are you sure about this?'), wave it off — 'yes, I'm sure' — and start to walk away. If the nurse names the specific discrepancy and the specific patient risk, stop and engage, but push back once — 'that limit is very conservative, he needs the potassium' — to test whether they hold. If the nurse holds the position and states clearly that they cannot start it as written, concede genuinely: acknowledge they are right, and either reduce the rate to within the peripheral limit or say you will arrange central access and monitoring. If the nurse backs down at any point, accept it, say 'good, thanks' and leave, so the learner experiences the consequence of deferring. Never volunteer that you are wrong before the nurse names the risk. Do not quote specific numeric rates or concentrations; refer to 'the rate I've written' and 'your ward limit'.",
+  "learning_objectives": [
+    "raise a safety concern before carrying out the questioned action, not after",
+    "name a specific discrepancy rather than expressing vague discomfort",
+    "articulate the patient risk, not only the policy breach",
+    "use graded assertiveness, escalating the wording when initially dismissed",
+    "hold a position under pushback from a more senior clinician",
+    "close the loop by confirming and reading back the corrected order"
+  ],
+  "suggested_questions": [
+    "Dr. Hughes, before you go — can I check the rate on this potassium? I think it's above what we can run peripherally on this ward.",
+    "The rate you've written is faster than our peripheral maximum, and he's only got the one cannula in his forearm with no cardiac monitoring.",
+    "My concern is the arrhythmia risk at that rate without monitoring, and the vein at that site is already a bit uncomfortable.",
+    "I'm not able to start it as written. Either we bring the rate within our peripheral limit, or he needs central access and monitoring first — which would you like to do?",
+    "So just to confirm — you're changing it to run within the peripheral limit, and I'll start it once the order's updated. Is that right?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Nurse challenging an unsafe medication administration order using graded assertiveness",
+    "review_status": "grounded in AHRQ TeamSTEPPS graded-assertiveness and two-challenge principles and general intravenous potassium safety practice; actual maximum peripheral rates, concentration limits, and monitoring requirements are set by institutional policy and vary widely",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "The administering nurse is the last barrier before a medication error reaches the patient; declining to proceed until a discrepancy is resolved is a core professional responsibility, not insubordination.",
+      "Graded assertiveness works because it escalates in defined steps — ask, state the concern, state the risk, state that you cannot proceed — each of which is harder to wave away than the last.",
+      "A concern framed around the patient's risk is much harder to dismiss than one framed around policy or personal discomfort."
+    ],
+    "diagnostic_clues": [
+      "Peripheral access with no central line and no continuous cardiac monitoring are the two facts that make an elevated potassium infusion rate unsafe in this setting.",
+      "An already uncomfortable cannula site is an additional sign that the vein will not tolerate a faster or more concentrated infusion."
+    ],
+    "common_misconceptions": [
+      "A written order from a senior clinician removes the administering nurse's responsibility for the administration.",
+      "Raising a concern once and being overruled discharges the nurse's duty.",
+      "Being non-native in English is a reason to soften a safety concern into a hint."
+    ],
+    "dangerous_errors": [
+      "Starting the infusion and raising the concern afterwards.",
+      "Hedging so indirectly that the concern is heard as reluctance rather than as a safety issue.",
+      "Deferring to seniority after a single dismissal, when the discrepancy is unresolved.",
+      "Accepting a verbal 'it's fine' without the written order being corrected."
+    ],
+    "management_principles": [
+      "Escalate in graded steps, and if the second challenge is also dismissed, escalate to the charge nurse or the institution's chain of command rather than proceeding.",
+      "Anchor every step to the specific patient in front of you and the specific harm.",
+      "Close the loop: confirm the corrected order in writing and read it back before acting on it."
+    ],
+    "boundaries_and_exceptions": [
+      "Maximum peripheral potassium infusion rates, concentration limits, monitoring requirements, and when central access is mandated are set by local policy and differ between institutions and countries.",
+      "This scenario practises the communication of a safety challenge; it is not a source of potassium administration guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS: Mutual Support and Advocacy (CUS / Two-Challenge Rule)",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/mutual/index.html"
+      },
+      {
+        "title": "AHRQ Patient Safety Network: Medication Errors and Adverse Drug Events",
+        "url": "https://psnet.ahrq.gov/primer/medication-errors-and-adverse-drug-events"
+      }
+    ]
+  }
+}

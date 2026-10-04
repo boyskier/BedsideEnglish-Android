@@ -9,8 +9,8 @@
   "chief_complaint": "asymptomatic elevated potassium 5.6 on routine check",
   "hpi_details": "A 41-year-old male presents to the clinic with asymptomatic elevated potassium 5.6 on routine check. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
   "ideas": "wonders if it's related to his blood pressure medication or his diet",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "concerns": "He is worried that having high potassium could trigger a sudden fatal heart attack while he is driving his delivery truck.",
+  "expectations": "He hopes to find out whether he should switch blood pressure pills and get a clear list of foods he needs to avoid.",
   "pmh": "Hypertension, mild CKD",
   "medications": "Lisinopril 20 mg daily",
   "social_hx": "Non-smoker, social drinker",
@@ -131,6 +131,182 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "148/90",
+      "hr": 76,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "I came in because my routine health checkup showed a high potassium level of 5.6, and they told me to see a doctor to get it checked.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I had a routine annual blood test three days ago, and the clinic called me yesterday saying my blood potassium came back elevated at 5.6.",
+        "topic": "Lab finding details"
+      },
+      {
+        "answer": "My potassium level was normal on my routine checkup last year, though my doctor mentioned my kidney numbers were slightly borderline.",
+        "topic": "Previous checkup results"
+      },
+      {
+        "answer": "I was fasting overnight as instructed, didn't do any strenuous workouts beforehand, and felt completely relaxed during the blood draw.",
+        "topic": "Testing conditions"
+      },
+      {
+        "answer": "I check my blood pressure at home sometimes and it usually runs in the 140s over 80s, but I don't check blood sugar at home.",
+        "topic": "Home measurements"
+      },
+      {
+        "answer": "I have been feeling somewhat tired and fatigued over the past couple of weeks, but I haven't had headaches or dizziness.",
+        "topic": "Fatigue and general symptoms"
+      },
+      {
+        "answer": "No, I haven't noticed any muscle weakness, numbness, tingling, or cramping in my arms or legs.",
+        "topic": "Muscle weakness or cramps"
+      },
+      {
+        "answer": "No, I haven't had any heart fluttering, racing heartbeat, or skipped beats.",
+        "topic": "Palpitations or chest symptoms"
+      },
+      {
+        "answer": "No, I have not had any chest pain, shortness of breath, vision changes, or facial numbness.",
+        "topic": "Complication symptoms"
+      },
+      {
+        "answer": "No, I haven't seen any swelling in my legs, ankles, or around my eyes, and my urine volume seems normal without any foam or blood.",
+        "topic": "Edema and urine changes"
+      },
+      {
+        "answer": "No, I don't have any difficulty urinating, weak stream, pain when peeing, or waking up multiple times at night to urinate.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "No fever, chills, night sweats, unexpected weight loss, or lumps anywhere.",
+        "topic": "Constitutional symptoms"
+      },
+      {
+        "answer": "No, no nausea, vomiting, diarrhea, abdominal pain, or constipation.",
+        "topic": "Gastrointestinal symptoms"
+      },
+      {
+        "answer": "Over the past few weeks I started eating lots of bananas, oranges, and tomatoes every day to try to eat healthier.",
+        "topic": "Dietary habits"
+      },
+      {
+        "answer": "A couple of years ago my doctor said my kidney filtration numbers were slightly low, but they told me it was mild and just needed regular monitoring.",
+        "topic": "Kidney function history"
+      },
+      {
+        "answer": "I only take my prescribed lisinopril; I don't take any pain relievers like ibuprofen, no steroids, no herbal supplements, and no salt substitutes.",
+        "topic": "Over-the-counter medications and supplements"
+      },
+      {
+        "answer": "I wonder if my blood pressure medicine or all the fruit I have been eating lately might be pushing my potassium up.",
+        "topic": "Patient ideas"
+      },
+      {
+        "answer": "I read that high potassium can stop your heart, and I'm scared I might have a sudden cardiac arrest while behind the wheel of my truck.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping you can tell me if my blood pressure pill needs changing and give me a clear list of foods I should avoid.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I have had high blood pressure for about five years and mild chronic kidney disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had an appendectomy when I was in college, but I have had no other surgeries or hospitalizations.",
+        "topic": "Past surgery and hospitalizations"
+      },
+      {
+        "answer": "I take lisinopril 20 mg once a day in the morning for my blood pressure.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, maybe one or two beers once or twice a month, and I have had no recent heavy drinking.",
+        "topic": "Alcohol intake"
+      },
+      {
+        "answer": "I work as an office manager and live with my wife and two children; my job doesn't involve chemicals or heavy dust.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father has high blood pressure, but there is no family history of early heart disease, stroke, kidney failure, or dialysis.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 148/90 mmHg, heart rate 76 beats per minute and regular, respiratory rate 16 breaths per minute, body temperature 36.7 degrees Celsius.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Alert, well-appearing male in no acute distress; body mass index is 24.5 kg/m2 with normal waist circumference.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, gallops, rubs, or carotid bruits.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal vesicular breath sounds bilaterally without crackles, wheezes, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Soft, non-tender, non-distended abdomen with normal bowel sounds; no hepatomegaly, splenomegaly, or abdominal bruits.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial pitting edema or swelling in either lower extremity.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral radial, posterior tibial, and dorsalis pedis pulses are 2+ and symmetric.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Normal thyroid gland on palpation; no enlargement, nodules, or neck lymphadenopathy.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Normal muscle bulk and tone; motor strength is 5/5 in all muscle groups of upper and lower extremities.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Biceps, brachioradialis, and patellar deep tendon reflexes are 2+ and symmetric bilaterally; normal sensation.",
+        "maneuver": "reflexes",
+        "response": "none"
       }
     ]
   }

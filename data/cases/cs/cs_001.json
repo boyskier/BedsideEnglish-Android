@@ -44,7 +44,7 @@
     "diagnostic_clues": [
       "Chief Complaint: sudden excruciating tearing chest pain radiating to mid-back between shoulder blades accompanied by right arm numbness",
       "Key HPI features: 59M with poorly controlled hypertension experiences abrupt onset of agonizing 10/10 'tearing and ripping' anterior chest pain radiating directly through to his thoracic spine between his scapulae. Accompanied by diaphoresis, dizziness, and numbness/weakness in right arm. Arrives in ED looking pale and diaphoretic.",
-      "Objective/Exam findings: Vitals: HR 112, BP Right Arm 188/104 mmHg, BP Left Arm 132/76 mmHg (significant >20 mmHg inter-arm discrepancy), RR 24. Palpable right radial pulse markedly weaker than left. Early diastolic murmur of aortic regurgitation audible at right upper sternal border. ECG shows left ventricular hypertrophy without acute ST-elevation. STAT CT Angiography (CTA) of chest/abdomen confirms Acute Stanford Type A (DeBakey Type I) Aortic Dissection originating in the ascending aorta just above the sinotubular junction, extending across the aortic arch into the descending thoracic aorta with involvement of the brachiocephalic trunk and right coronary ostium.",
+      "Objective/Exam findings: Vitals: HR 112, BP Left Arm 188/104 mmHg, BP Right Arm 132/76 mmHg (significant >20 mmHg inter-arm discrepancy, with the lower pressure on the malperfused right side), RR 24. Palpable right radial pulse markedly weaker than left. Early diastolic murmur of aortic regurgitation audible at right upper sternal border. ECG shows left ventricular hypertrophy without acute ST-elevation. STAT CT Angiography (CTA) of chest/abdomen confirms Acute Stanford Type A (DeBakey Type I) Aortic Dissection originating in the ascending aorta just above the sinotubular junction, extending across the aortic arch into the descending thoracic aorta with involvement of the brachiocephalic trunk and right coronary ostium.",
       "Relevant background/PMH: Hypertension for 15 years, Dyslipidemia",
       "Current medications: Amlodipine 10mg daily (non-adherent)"
     ],
@@ -78,7 +78,7 @@
   },
   "reference_soap": {
     "subjective": "Chief Complaint: sudden excruciating tearing chest pain radiating to mid-back between shoulder blades accompanied by right arm numbness\n\n59M with poorly controlled hypertension experiences abrupt onset of agonizing 10/10 'tearing and ripping' anterior chest pain radiating directly through to his thoracic spine between his scapulae. Accompanied by diaphoresis, dizziness, and numbness/weakness in right arm. Arrives in ED looking pale and diaphoretic.",
-    "objective": "Vitals: HR 112, BP Right Arm 188/104 mmHg, BP Left Arm 132/76 mmHg (significant >20 mmHg inter-arm discrepancy), RR 24. Palpable right radial pulse markedly weaker than left. Early diastolic murmur of aortic regurgitation audible at right upper sternal border. ECG shows left ventricular hypertrophy without acute ST-elevation. STAT CT Angiography (CTA) of chest/abdomen confirms Acute Stanford Type A (DeBakey Type I) Aortic Dissection originating in the ascending aorta just above the sinotubular junction, extending across the aortic arch into the descending thoracic aorta with involvement of the brachiocephalic trunk and right coronary ostium.",
+    "objective": "Vitals: HR 112, BP Left Arm 188/104 mmHg, BP Right Arm 132/76 mmHg (significant >20 mmHg inter-arm discrepancy, with the lower pressure on the malperfused right side), RR 24. Palpable right radial pulse markedly weaker than left. Early diastolic murmur of aortic regurgitation audible at right upper sternal border. ECG shows left ventricular hypertrophy without acute ST-elevation. STAT CT Angiography (CTA) of chest/abdomen confirms Acute Stanford Type A (DeBakey Type I) Aortic Dissection originating in the ascending aorta just above the sinotubular junction, extending across the aortic arch into the descending thoracic aorta with involvement of the brachiocephalic trunk and right coronary ostium.",
     "assessment": "Acute Stanford Type A Aortic Dissection complicated by severe hypertension and right brachiocephalic malperfusion.",
     "plan": "STAT surgical emergency: immediate cardiothoracic surgery operating room transfer for emergency median sternotomy, ascending aortic replacement with synthetic graft, and aortic valve resuspension/replacement. Prior to OR: initiate continuous IV Esmolol infusion to lower heart rate (<60 bpm) and dP/dt FIRST, then add IV Nicardipine/Nitroprusside to lower systolic BP (<120 mmHg). Place an invasive arterial line in a limb with reliable perfusion, without delaying definitive surgical management."
   },
@@ -156,6 +156,203 @@
           "diaphoresis",
           "dizzy"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "188/104",
+      "hr": 112,
+      "rr": 24,
+      "spo2": 98,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "Doctor, please help me! I suddenly got this unbearable, tearing pain in my chest and back about two hours ago, and my right arm feels numb.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started completely out of the blue about two hours ago while I was sitting in my truck taking a break.",
+        "topic": "Onset and initial activity"
+      },
+      {
+        "answer": "The pain is right in the center of my chest behind my breastbone, and it goes straight through to the center of my upper back.",
+        "topic": "Location of chest pain"
+      },
+      {
+        "answer": "It feels like something is literally ripping and tearing open inside my chest.",
+        "topic": "Character of pain"
+      },
+      {
+        "answer": "Yes, it shoots straight through from my chest into my back, right between my shoulder blades.",
+        "topic": "Radiation of pain"
+      },
+      {
+        "answer": "It reached maximum agonizing intensity the instant it started, and it has stayed constant without letting up for two hours.",
+        "topic": "Duration and progression"
+      },
+      {
+        "answer": "It is definitely a ten out of ten; this is the worst, most agonizing pain I have ever experienced.",
+        "topic": "Severity of pain"
+      },
+      {
+        "answer": "Resting hasn't helped at all; it started while I was sitting down, and nothing I do makes it feel any better.",
+        "topic": "Exertion and rest"
+      },
+      {
+        "answer": "Taking a deep breath, coughing, or changing my posture does not change the pain at all.",
+        "topic": "Positional and breathing changes"
+      },
+      {
+        "answer": "No, it is not related to eating, and I haven't had any heartburn, acid reflux, or difficulty swallowing.",
+        "topic": "Meals and acid reflux"
+      },
+      {
+        "answer": "Yes, I broke out in a heavy cold sweat immediately, and I've been feeling dizzy and lightheaded since the pain hit.",
+        "topic": "Sweating and dizziness"
+      },
+      {
+        "answer": "I feel short of breath because the pain is so intense, and a bit nauseous, but I haven't vomited.",
+        "topic": "Shortness of breath and nausea"
+      },
+      {
+        "answer": "Right when the chest pain started, my right arm went numb, tingling, and felt weak.",
+        "topic": "Right arm numbness and weakness"
+      },
+      {
+        "answer": "No, I haven't had any fever, chills, cough, or phlegm.",
+        "topic": "Fever, cough, and sputum"
+      },
+      {
+        "answer": "No, I haven't had any cold, flu, sore throat, or illness recently.",
+        "topic": "Recent viral illness"
+      },
+      {
+        "answer": "No, neither of my legs is swollen or painful, and I haven't had any surgery, long flights, or bed rest.",
+        "topic": "Leg swelling and immobilization"
+      },
+      {
+        "answer": "No, there are no rashes, blisters, or skin changes anywhere on my chest or back.",
+        "topic": "Chest rash or blisters"
+      },
+      {
+        "answer": "I am terrified that I am having a massive heart attack and that I'm going to die right here.",
+        "topic": "Feelings of impending doom"
+      },
+      {
+        "answer": "The triage nurse said my blood pressure was much lower in my right arm than my left, and that really frightens me.",
+        "topic": "Blood pressure discrepancy concern"
+      },
+      {
+        "answer": "No, I have never felt anything like this pain before in my life.",
+        "topic": "Previous chest pain episodes"
+      },
+      {
+        "answer": "I have never had any heart tests, angiograms, or stents placed.",
+        "topic": "Previous cardiac evaluations"
+      },
+      {
+        "answer": "No, I haven't had any falls, car accidents, chest trauma, or heavy lifting.",
+        "topic": "Recent chest trauma"
+      },
+      {
+        "answer": "I have had high blood pressure for about fifteen years, and my doctor told me I also have high cholesterol.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I am prescribed amlodipine ten milligrams once a day for my blood pressure, but I often forget to take it.",
+        "topic": "Current medications and adherence"
+      },
+      {
+        "answer": "I have no known allergies to any medications.",
+        "topic": "Medication allergies"
+      },
+      {
+        "answer": "I have smoked about a pack of cigarettes a day for forty years.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I might drink a beer or two on weekends when I'm not driving my truck, but nothing heavy.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as a long-haul truck driver and live at home with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had high blood pressure and passed away from a stroke in his sixties; no one had heart attacks or aneurysms that I know of.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "I need something strong to stop this terrible pain right now, and I need emergency treatment to fix my heart.",
+        "topic": "Expectations for visit"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "The patient appears acutely distressed, pale, and profusely diaphoretic, clutching his chest.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure is 188/104 mmHg in the left arm and 132/76 mmHg in the right arm; heart rate is 112 bpm, respiratory rate is 24 breaths/min, oxygen saturation is 98% on room air, and temperature is 36.8°C.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "No jugular venous distension noted; internal jugular venous pulsation is not elevated.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "No chest wall deformity, ecchymosis, or reproducible tenderness on palpation of the sternum, ribs, or costochondral junctions.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Resonant to percussion bilaterally with symmetric diaphragmatic excursion.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally with symmetric air entry and no wheezes, crackles, or pleural friction rubs.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic regular rhythm with an early diastolic decrescendo murmur audible at the right upper sternal border; no gallop or pericardial friction rub.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Right radial pulse is markedly diminished and weak compared to a bounding left radial pulse; femoral and posterior tibial pulses are intact bilaterally.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-distended, and non-tender without guarding, rigidity, or palpable pulsatile masses.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Calves are symmetric, non-swollen, and non-tender bilaterally with negative Homan sign; no lower extremity edema.",
+        "maneuver": "calf_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Motor strength is reduced to 4/5 in the right upper extremity, but 5/5 in the left upper extremity and both lower extremities.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Decreased sensation to light touch and pinprick throughout the right upper extremity, with intact sensation in all other limbs.",
+        "maneuver": "sensory_exam",
+        "response": "none"
       }
     ]
   }

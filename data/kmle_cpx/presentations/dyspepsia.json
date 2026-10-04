@@ -1,0 +1,55 @@
+{
+  "id": "dyspepsia",
+  "title": "소화가 안 돼요",
+  "english_title": "Indigestion (dyspepsia)",
+  "category": "소화기",
+  "kmle_item": "소화불량",
+  "door_complaint": "소화가 안 된다고",
+  "differential_groups": [
+    {"key": "acid_peptic", "label": "위산·점막 질환", "examples": ["기능성 소화불량", "소화성궤양", "위식도역류질환", "약물(NSAID) 유발 위염"]},
+    {"key": "malignancy", "label": "종양", "examples": ["위암", "식도암", "췌장암"]},
+    {"key": "biliary_pancreatic", "label": "담도·췌장", "examples": ["담석증(담석산통)", "만성 췌장염"]},
+    {"key": "other", "label": "운동·전신 질환", "examples": ["당뇨병성 위마비", "갑상샘 질환", "협심증(비전형 증상)"]}
+  ],
+  "history": [
+    {"id": "symptom_type", "text": "불편감의 양상(속쓰림, 더부룩함, 명치 통증)", "say": "소화가 안 된다는 게 어떤 느낌이세요? 속이 쓰리세요, 아니면 더부룩하세요?", "tags": ["acid_peptic", "other"]},
+    {"id": "location", "text": "불편한 위치와 방사(등, 가슴)", "say": "어디가 제일 불편하세요? 등이나 가슴 쪽으로 뻗치지는 않나요?", "tags": ["biliary_pancreatic", "other"]},
+    {"id": "onset_course", "text": "시작 시기, 지속 기간, 점점 심해지는지", "say": "언제부터 그러셨어요? 점점 심해지고 있나요?", "tags": ["malignancy"]},
+    {"id": "meal_relation", "text": "식사와의 관계(식후 악화, 공복 시 악화·식사 후 완화)", "say": "식사하고 나서 더 불편하세요, 아니면 배고플 때 더 쓰리세요?", "tags": ["acid_peptic", "biliary_pancreatic"]},
+    {"id": "night_pain", "text": "야간 통증으로 잠을 깨는지", "say": "밤에 속이 쓰려서 깬 적이 있으세요?", "tags": ["acid_peptic"]},
+    {"id": "reflux", "text": "가슴쓰림, 신물 역류, 누우면 악화", "say": "가슴이 타는 듯하거나 신물이 올라오세요? 누우면 더 심해지나요?", "tags": ["acid_peptic"]},
+    {"id": "early_satiety", "text": "조기 포만감", "say": "조금만 먹어도 금방 배가 부르세요?", "tags": ["malignancy", "other"]},
+    {"id": "dysphagia", "text": "삼킴 곤란, 삼킬 때 통증", "say": "음식을 삼키기 어렵거나 걸리는 느낌이 드세요?", "tags": ["malignancy"], "key": true},
+    {"id": "weight_loss", "text": "의도하지 않은 체중 감소, 식욕 저하", "say": "일부러 빼지 않았는데 살이 빠지셨어요? 입맛은 어떠세요?", "tags": ["malignancy"], "key": true},
+    {"id": "gi_bleeding", "text": "토혈, 흑색변", "say": "피를 토하거나 변이 까맣게 나온 적이 있으세요?", "tags": ["acid_peptic", "malignancy"], "key": true},
+    {"id": "vomiting", "text": "반복되는 구토", "say": "자주 토하세요?", "tags": ["malignancy", "other"], "key": true},
+    {"id": "anemia_symptoms", "text": "어지러움, 쉽게 지침(빈혈 증상)", "say": "요즘 어지럽거나 쉽게 지치지는 않으세요?", "tags": ["malignancy", "acid_peptic"]},
+    {"id": "biliary_attack", "text": "기름진 음식 후 수 시간 지속되는 오른쪽 윗배 통증 발작", "say": "기름진 음식을 먹고 나서 오른쪽 윗배가 몇 시간씩 심하게 아픈 적이 있나요?", "tags": ["biliary_pancreatic"]},
+    {"id": "exertional", "text": "걷거나 힘쓸 때 악화되는지(협심증 감별)", "say": "걷거나 계단을 오를 때 더 불편해지나요?", "tags": ["other"]},
+    {"id": "nsaid_use", "text": "진통소염제, 아스피린 복용", "say": "진통제나 아스피린을 자주 드세요?", "tags": ["acid_peptic"]},
+    {"id": "diet_stress", "text": "식습관(과식, 야식, 매운 음식, 커피), 음주, 스트레스", "say": "식사가 불규칙하거나 늦게 드시는 편이에요? 요즘 스트레스는 많으세요?", "tags": ["acid_peptic"]},
+    {"id": "endoscopy_hpylori", "text": "최근 위내시경 결과, 헬리코박터 제균 치료 경험", "say": "최근에 위내시경을 받아 보셨어요? 헬리코박터균 치료를 받은 적은요?", "tags": ["acid_peptic", "malignancy"]},
+    {"id": "family_gastric_cancer", "text": "위암 가족력", "say": "가족 중에 위암에 걸린 분이 있으세요?", "tags": ["malignancy"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압, 맥박 등 활력징후 확인", "say": "먼저 혈압과 맥박을 재 보겠습니다."},
+    {"id": "conjunctiva_sclera", "text": "결막 창백(빈혈), 공막 황달 확인", "say": "눈 아래쪽과 흰자를 잠깐 보겠습니다.", "tags": ["malignancy", "biliary_pancreatic"]},
+    {"id": "abdominal_palpation", "text": "상복부 압통과 만져지는 덩어리 확인", "say": "편하게 누우세요. 배를 눌러 볼 테니 아프면 말씀해 주세요.", "tags": ["acid_peptic", "malignancy"]},
+    {"id": "murphy", "text": "우상복부 촉진과 머피 징후", "say": "오른쪽 윗배를 누른 채로 숨을 크게 들이쉬어 보세요.", "tags": ["biliary_pancreatic"]},
+    {"id": "supraclavicular_node", "text": "왼쪽 쇄골 위 림프절 촉진", "say": "목과 쇄골 위쪽에 멍울이 있는지 만져 보겠습니다.", "tags": ["malignancy"]}
+  ],
+  "education": [
+    {"id": "lifestyle", "text": "과식·야식 피하기, 식후 바로 눕지 않기, 금주·금연, 카페인 줄이기", "say": "밤늦게 드시거나 드시고 바로 눕는 건 피하시고, 술과 커피는 줄이세요."},
+    {"id": "nsaid_avoid", "text": "진통소염제는 줄이거나 의사와 상의 후 복용하도록 안내", "say": "진통제는 속을 상하게 할 수 있으니 드시기 전에 상의해 주세요.", "conditional": true},
+    {"id": "warning_signs", "text": "토혈, 검은 변, 체중 감소, 삼킴 곤란, 반복 구토가 생기면 바로 다시 오도록 안내", "say": "피를 토하거나 변이 까맣게 나오거나 살이 계속 빠지면 바로 다시 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "경고 증상(체중 감소, 삼킴 곤란, 위장관 출혈·빈혈, 반복 구토, 상복부 종괴)이 있거나 위암 발생률이 높은 우리나라에서 40세 이상이면 상부위장관 내시경을 우선 시행한다.",
+    "헬리코박터 파일로리 감염을 확인하고 양성이면 제균 치료를 한다.",
+    "경고 증상이 없는 전형적인 역류 증상은 양성자펌프억제제 경험적 치료와 생활습관 교정으로 시작할 수 있다.",
+    "NSAID와 관련되면 약을 중단하거나 줄이고 산분비억제제를 사용한다.",
+    "식후 우상복부 통증 발작이 있으면 복부 초음파로 담석을 확인하고, 활동 시 악화되면 심전도로 허혈성 심질환을 배제한다.",
+    "기질적 원인이 없으면 기능성 소화불량으로 보고 생활 교정과 함께 산분비억제제나 위장관운동촉진제로 치료한다."
+  ],
+  "case_ids": ["gi_004", "gi_036", "gi_013", "gi_003", "fm_028", "gi_027"]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "rhinorrhea",
+  "title": "콧물이 나고 코가 막혀요",
+  "english_title": "Runny nose and nasal obstruction",
+  "category": "이비인후",
+  "kmle_item": "콧물/코막힘",
+  "door_complaint": "콧물이 나고 코가 막힌다고",
+  "differential_groups": [
+    {"key": "infectious", "label": "감염", "examples": ["감기(급성 바이러스 비염)", "급성 세균성 비부비동염", "만성 비부비동염", "치성 상악동염"]},
+    {"key": "allergic", "label": "알레르기/비알레르기 비염", "examples": ["알레르기 비염", "혈관운동성 비염", "약물성 비염(코 분무제 남용)", "임신성 비염"]},
+    {"key": "structural", "label": "구조·종괴", "examples": ["비중격 만곡", "비용종", "아데노이드 비대(소아)", "비강 이물(소아)", "비강·부비동 종양", "비인두암"]},
+    {"key": "systemic", "label": "전신질환·기타", "examples": ["육아종증 다발혈관염", "뇌척수액 비루(외상 후)", "아스피린 악화 호흡기질환"]}
+  ],
+  "history": [
+    {"id": "onset_duration", "text": "시작 시기와 지속 기간(10일, 12주 기준)", "say": "언제부터 콧물이 나고 코가 막혔어요? 얼마나 오래됐어요?", "tags": ["infectious", "allergic"]},
+    {"id": "course", "text": "좋아지다가 다시 나빠졌는지", "say": "좀 좋아지는가 싶다가 다시 심해졌나요?", "tags": ["infectious"]},
+    {"id": "discharge_character", "text": "콧물 색과 양상(맑은, 누런·초록, 악취)", "say": "콧물은 맑은 물 같아요, 누렇고 끈적해요? 냄새가 나지는 않고요?", "tags": ["infectious", "structural"]},
+    {"id": "side_severity", "text": "한쪽인지 양쪽인지, 코막힘 정도와 번갈아 막히는지", "say": "양쪽 코가 다 막혀요, 한쪽만 막혀요? 늘 같은 쪽이에요?", "tags": ["structural", "allergic"]},
+    {"id": "bloody_unilateral", "text": "피 섞인 콧물·코피, 한쪽 코막힘의 진행, 얼굴 저림", "say": "콧물에 피가 섞이거나 코피가 나세요? 한쪽 코막힘이 점점 심해지거나 얼굴이 저리지는 않으세요?", "tags": ["structural", "systemic"], "key": true},
+    {"id": "sneeze_itch", "text": "재채기, 코·눈 가려움, 눈물", "say": "재채기가 연달아 나오거나 코나 눈이 가렵고 눈물이 나세요?", "tags": ["allergic"]},
+    {"id": "triggers_timing", "text": "계절·아침에 심한지, 먼지·꽃가루·동물·찬 공기 같은 유발 요인", "say": "특정 계절이나 아침에 더 심하세요? 먼지나 꽃가루, 동물 가까이 가면 심해지세요?", "tags": ["allergic"]},
+    {"id": "facial_pain", "text": "뺨·이마 통증이나 압박감, 고개 숙이면 심해짐, 윗니 통증", "say": "뺨이나 이마가 묵직하게 아프고 고개를 숙이면 더 심해지세요? 윗니가 아프지는 않고요?", "tags": ["infectious"]},
+    {"id": "smell", "text": "냄새를 잘 못 맡음", "say": "냄새를 전보다 잘 못 맡으세요?", "tags": ["infectious", "structural"]},
+    {"id": "fever", "text": "발열", "say": "열이 나세요? 몇 도까지 올랐어요?", "tags": ["infectious"]},
+    {"id": "orbital_intracranial", "text": "눈 주위 부기, 시력 저하·겹보임, 심한 두통, 목 뻣뻣함", "say": "눈 주위가 붓거나 잘 안 보이고 겹쳐 보이세요? 머리가 심하게 아프거나 목이 뻣뻣하지는 않으세요?", "tags": ["infectious"], "key": true},
+    {"id": "snoring", "text": "코골이, 입 벌리고 자기, 자다가 숨 멈춤", "say": "코를 골거나 입을 벌리고 주무세요? 자다가 숨을 멈춘다는 말을 들은 적은요?", "tags": ["structural"]},
+    {"id": "postnasal_cough", "text": "목 뒤로 넘어가는 콧물, 기침, 쌕쌕거림", "say": "콧물이 목 뒤로 넘어가거나 기침이 나고 숨이 쌕쌕거리지는 않으세요?", "tags": ["allergic", "infectious"]},
+    {"id": "nasal_spray", "text": "코 뿌리는 충혈제거제 사용 기간", "say": "코 뚫리는 스프레이를 쓰세요? 얼마나 오래 쓰셨어요?", "tags": ["allergic"]},
+    {"id": "aspirin_asthma", "text": "천식 여부, 아스피린·소염진통제 복용 뒤 숨참이나 코막힘 악화", "say": "천식이 있으세요? 아스피린이나 진통제를 드시고 숨이 차거나 코가 더 막힌 적이 있어요?", "tags": ["structural", "systemic"]},
+    {"id": "trauma_surgery", "text": "코 외상, 코·부비동 수술 과거력, 외상 뒤 맑은 물 같은 콧물", "say": "코를 다치거나 코 수술을 받으신 적이 있어요? 다친 뒤로 맑은 물이 계속 흐르지는 않고요?", "tags": ["structural", "systemic"]},
+    {"id": "dental", "text": "최근 치과 치료나 윗니 염증", "say": "최근에 윗니를 치료하셨거나 이가 아프셨어요?", "tags": ["infectious"], "conditional": true},
+    {"id": "atopy", "text": "아토피·천식·알레르기 비염 과거력이나 가족력", "say": "본인이나 가족 중에 비염, 천식, 아토피가 있는 분이 계세요?", "tags": ["allergic"]},
+    {"id": "child_foreign", "text": "(소아) 한쪽에서만 나는 악취 콧물, 코에 뭘 넣었을 가능성", "say": "아이가 한쪽 코에서만 냄새나는 콧물이 나나요? 코에 뭘 넣었을 수도 있을까요?", "tags": ["structural"], "applies": "child", "conditional": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온 확인", "say": "체온을 먼저 재 보겠습니다."},
+    {"id": "anterior_rhinoscopy", "text": "비경으로 점막 색(창백·부종, 발적), 분비물, 비용종, 비중격 확인", "say": "코 안을 불빛으로 들여다보겠습니다. 고개를 살짝 뒤로 젖혀 주세요.", "tags": ["infectious", "allergic", "structural"], "key": true},
+    {"id": "sinus_tenderness", "text": "뺨·이마를 눌러 부비동 압통 확인", "say": "뺨과 이마를 눌러 볼게요. 아프면 말씀해 주세요.", "tags": ["infectious"]},
+    {"id": "oropharynx", "text": "후비루, 편도·아데노이드 비대 징후 확인", "say": "입을 벌리고 '아' 해 보세요. 목 뒤로 콧물이 넘어가는지 보겠습니다.", "tags": ["infectious", "structural"]},
+    {"id": "eye_orbit", "text": "눈 주위 부기, 안구운동, 시력 확인", "say": "눈 주위를 보고, 제 손가락을 눈으로 따라와 보세요.", "tags": ["infectious"], "conditional": true}
+  ],
+  "education": [
+    {"id": "saline", "text": "생리식염수 코 세척과 충분한 수분 섭취", "say": "식염수로 코를 씻어 주시고 물을 충분히 드세요."},
+    {"id": "decongestant_limit", "text": "코 뿌리는 충혈제거제는 3일 넘게 쓰지 않도록 교육", "say": "코 뚫리는 스프레이는 3일 넘게 쓰면 오히려 더 막힐 수 있어요."},
+    {"id": "allergen_steroid", "text": "알레르겐 회피와 비강 스테로이드를 매일 꾸준히 쓰는 방법", "say": "먼지나 꽃가루를 피하시고, 코 스프레이 스테로이드는 좋아져도 매일 꾸준히 뿌리세요.", "conditional": true},
+    {"id": "warning_signs", "text": "눈 주위 부기, 시력 변화, 심한 두통, 고열이 생기면 즉시 오도록 안내", "say": "눈 주위가 붓거나 잘 안 보이고, 머리가 심하게 아프거나 열이 높으면 바로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "급성 비부비동염은 대부분 바이러스성이며, 증상이 10일 넘게 지속되거나, 고열과 누런 콧물·얼굴 통증이 처음부터 3~4일 이상 심하거나, 좋아지다 다시 나빠지면 세균성을 의심해 아목시실린(±클라불란산)을 고려한다.",
+    "합병증이 없는 급성 비부비동염에는 영상검사가 필요 없고, 눈·뇌 합병증이 의심되면 조영 CT를, 12주 넘게 지속되는 만성이면 비내시경과 부비동 CT로 평가한다.",
+    "알레르기 비염은 알레르겐 회피와 비강 스테로이드가 1차 치료이고 경증에는 2세대 경구 항히스타민제를 쓰며, 원인 확인을 위해 피부단자검사나 혈청 특이 IgE 검사를 한다.",
+    "한쪽 코막힘에 피 섞인 콧물, 얼굴 저림, 한쪽 삼출성 중이염이 있으면 비강·부비동 종양이나 비인두암을 의심해 비내시경과 조직검사를 한다.",
+    "코 충혈제거제 분무를 오래 쓰면 약물성 비염이 생기므로 중단하고 비강 스테로이드로 바꾼다."
+  ],
+  "case_ids": []
+}

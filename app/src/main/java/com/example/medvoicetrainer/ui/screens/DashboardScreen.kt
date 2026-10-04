@@ -259,6 +259,9 @@ fun DashboardScreen(
                 if (review != null) {
                     val (id, name, json) = review
                     onStartCase(id, name, json)
+                } else {
+                    // Too few review targets for a spoken review: the SRS queue still has them.
+                    onNavigateToTab(2)
                 }
             }
             tab == "interview" -> onNavigateToTab(1)
@@ -278,6 +281,8 @@ fun DashboardScreen(
                 }
                 if (jsonStr != null) {
                     onStartCase(caseId, title, jsonStr)
+                } else {
+                    onNavigateToTab(1)
                 }
             }
             else -> onNavigateToTab(1)
@@ -328,6 +333,8 @@ fun DashboardScreen(
                 }
                 if (jsonStr != null) {
                     onStartCase(route.caseId ?: step.key, step.title, jsonStr)
+                } else {
+                    onNavigateToTab(1)
                 }
             }
         }
@@ -481,8 +488,9 @@ fun DashboardScreen(
         contentPadding = PaddingValues(start = 16.dp, top = 16.dp, end = 16.dp, bottom = 96.dp),
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
-        item {
-            if (recoverableSession != null && stage != DashStage.DEMO) {
+        // Emitted only when shown: an always-present empty item still costs one 16 dp list gap.
+        if (recoverableSession != null && stage != DashStage.DEMO) {
+            item {
             Surface(
                 color = MaterialTheme.colorScheme.tertiary.copy(alpha = 0.18f),
                 shape = RoundedCornerShape(14.dp),
@@ -1048,6 +1056,7 @@ fun DashboardScreen(
                     )
                     Spacer(modifier = Modifier.height(8.dp))
                     Card(
+                        modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(16.dp),
                         colors = CardDefaults.cardColors(containerColor = MaterialTheme.colorScheme.surface),
                         elevation = CardDefaults.cardElevation(defaultElevation = 2.dp)

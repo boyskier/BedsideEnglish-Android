@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "recurrent gross hematuria following upper respiratory infection",
   "hpi_details": "A 29-year-old male presents with a third episode of gross, cola-colored hematuria in the past year, this time appearing within a day of developing a sore throat and nasal congestion. The hematuria resolves on its own after a few days between episodes, and he otherwise feels well, denying joint pain, rash, or abdominal pain.",
-  "ideas": "thinks it might be related to iga_nephropathy",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks the severe cold spread into his urinary tract or that coughing hard broke a blood vessel down there.",
+  "concerns": "He is worried he might have bladder cancer like his uncle did, especially with the dark blood returning multiple times.",
+  "expectations": "He hopes to get a urine test and some strong antibiotics today so this infection finally stops flaring up.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -123,6 +123,179 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "128/82",
+      "hr": 74,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "I caught a cold yesterday, and starting this morning my urine turned dark red like cola.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "This started earlier today. It's actually the third time this has happened over the past year, and the previous episodes went away on their own after three or four days.",
+        "topic": "Onset and previous episodes"
+      },
+      {
+        "answer": "It looks dark brown and cola-colored, not bright red, and I haven't seen any blood clots.",
+        "topic": "Urine color and clots"
+      },
+      {
+        "answer": "The dark color is present throughout the entire time I pee, from start to finish.",
+        "topic": "Timing in urine stream"
+      },
+      {
+        "answer": "No, I haven't felt any pain when the blood appears or while urinating.",
+        "topic": "Pain with hematuria"
+      },
+      {
+        "answer": "No, I don't have any pain in my flank, back, or groin area.",
+        "topic": "Flank or groin pain"
+      },
+      {
+        "answer": "No burning sensation when I urinate, and I am not going to the bathroom more frequently or urgently than usual.",
+        "topic": "Dysuria and urinary frequency"
+      },
+      {
+        "answer": "No, I haven't had any fever, chills, or night sweats.",
+        "topic": "Fever or chills"
+      },
+      {
+        "answer": "No, my stream is strong and normal, with no trouble starting or feeling like urine is left behind.",
+        "topic": "Hesitancy and weak stream"
+      },
+      {
+        "answer": "No swelling in my eyelids or legs, no frothy bubbles in the toilet, and the total amount of urine seems normal.",
+        "topic": "Swelling and urinary volume"
+      },
+      {
+        "answer": "My sore throat and runny nose started yesterday, and the cola-colored urine appeared within twenty-four hours. I haven't had any skin infections or sores.",
+        "topic": "Timing relative to infection"
+      },
+      {
+        "answer": "No rashes, no joint pain or swelling, and no cough or coughing up blood.",
+        "topic": "Rash, joint pain, or cough"
+      },
+      {
+        "answer": "No, my weight has been completely steady and I have not felt unusually fatigued.",
+        "topic": "Weight loss and fatigue"
+      },
+      {
+        "answer": "No nosebleeds, no bleeding gums, and I don't bruise easily.",
+        "topic": "Bleeding tendency or bruising"
+      },
+      {
+        "answer": "No, I do not take aspirin, blood thinners, or any medications that affect clotting.",
+        "topic": "Blood thinning medications"
+      },
+      {
+        "answer": "No intense workouts lately, no trauma or blows to my back, and I haven't eaten beets or taken rifampin.",
+        "topic": "Strenuous exercise, trauma, or foods"
+      },
+      {
+        "answer": "I work in an office, so I haven't had any exposure to industrial dyes, rubber, or toxic chemicals.",
+        "topic": "Occupational chemical exposure"
+      },
+      {
+        "answer": "Between these episodes I feel completely healthy and normal, and my urine clears up completely.",
+        "topic": "Health between episodes"
+      },
+      {
+        "answer": "My blood pressure has always been normal whenever I've had checkups.",
+        "topic": "Past blood pressure"
+      },
+      {
+        "answer": "I thought maybe this awful cold spread down to my bladder, or I strained so hard coughing that I burst a blood vessel.",
+        "topic": "Patient's thoughts on cause"
+      },
+      {
+        "answer": "I'm terrified this might actually be bladder cancer like my uncle had, since seeing that dark blood keep coming back really scares me.",
+        "topic": "Patient's main concern"
+      },
+      {
+        "answer": "I'm hoping you can check my urine and give me a course of strong antibiotics so this stops happening every time I catch a bug.",
+        "topic": "Patient's expectations"
+      },
+      {
+        "answer": "I have no history of chronic medical conditions, kidney disease, or kidney stones.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I am not taking any prescription drugs, over-the-counter pain relievers, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any known drug allergies.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, about one or two beers on occasion.",
+        "topic": "Alcohol intake"
+      },
+      {
+        "answer": "I work an office job in IT and live in an apartment with a roommate.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "Nobody in my family has kidney disease, kidney failure, dialysis, or early hearing problems.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 128/82 mmHg, heart rate 74 beats per minute, afebrile at 36.8°C.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Mild pharyngeal erythema without tonsillar exudate; nasal mucosa is mildly congested.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-tender throughout, with no palpable mass or suprapubic fullness.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial edema or periorbital puffiness noted.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "No purpura, petechiae, ecchymoses, or active rashes on the skin.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No swelling, warmth, tenderness, or limitation of motion in peripheral joints.",
+        "maneuver": "joint_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Prostate is normal in size, smooth, and non-tender without palpable nodules.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
       }
     ]
   }

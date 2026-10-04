@@ -1,0 +1,107 @@
+{
+  "id": "nursing_teach_discharge_anticoagulant",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Patient education",
+  "nursing_pathways": ["uk_au", "us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_patient_education",
+  "patient_name": "Discharge teaching — new oral anticoagulant after a DVT",
+  "chief_complaint": "Teach a patient going home on a new oral anticoagulant how to take it, what to watch for, and when to call",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Discharge teaching: first-time oral anticoagulant after a deep vein thrombosis",
+    "task": "Patient education",
+    "urgency": "routine",
+    "patient": "Mr. Kevin Brady, 58-year-old man, going home today after treatment for a deep vein thrombosis in his left leg",
+    "location": "Medical ward, mid-morning; his discharge paperwork is ready and his ride is coming at noon",
+    "situation": "He is starting an oral anticoagulant he has never taken before. He works as a delivery driver, lives with his partner, and has already told you he 'isn't really a pills person'.",
+    "background": [
+      "Admitted four days ago with a swollen, painful left calf and diagnosed with a deep vein thrombosis.",
+      "He has no previous experience with anticoagulants and no known bleeding problems.",
+      "He mentioned yesterday that he sometimes skips his blood-pressure tablet when he feels well."
+    ],
+    "current_status": [
+      "His leg is less swollen and much less painful; he is walking comfortably on the ward.",
+      "He is anxious about going back to driving and about 'being on a blood thinner forever'.",
+      "He has the medication in his hand and has not yet been told how to take it."
+    ],
+    "key_data": [
+      "The prescription is a fixed-dose oral anticoagulant taken on a set schedule; it does not need routine blood-test monitoring the way warfarin does.",
+      "The single most important thing for him is not missing doses, because the protective effect drops off quickly if he does.",
+      "He has a follow-up appointment booked, and the discharge paperwork lists a ward number he can call."
+    ],
+    "treatments": [
+      "Oral anticoagulant started in hospital, to continue at home; graduated compression as advised; mobilization encouraged."
+    ],
+    "your_request": "Teach him how to take it, what to watch for, and when to call — then have him tell it back to you in his own words before he leaves.",
+    "must_include": [
+      "Check what he already knows and what worries him before you start teaching.",
+      "In plain English: what the medication is for and why missing doses matters more than with his blood-pressure tablet.",
+      "Concretely what he must do — when to take it, and what to do if he misses a dose or is unsure.",
+      "The specific warning signs of bleeding that mean he should seek help, and which ones mean emergency care rather than a phone call.",
+      "A teach-back: ask him to tell you the plan in his own words, and correct any gap without blaming him."
+    ]
+  },
+  "kickoff_text": "So they said I can go home. This is the blood thinner, right? I just take it and that's it?",
+  "persona_override": "You are Kevin Brady, a 58-year-old delivery driver going home after a DVT, starting an oral anticoagulant for the first time. You are friendly, a bit impatient to leave, and honest that you are not good with medication — if the nurse asks, you admit you sometimes skip your blood-pressure tablet when you feel fine. You are worried about two things you will only mention if the nurse invites your questions: whether you can still drive for work, and whether you will be on this 'forever'. Ground truth you do not know yet: this medication needs to be taken on schedule, missing doses matters much more than with a blood-pressure tablet, and unusual bruising, blood in urine or stool, black stools, or a bad headache after a knock to the head are warning signs. If the nurse uses jargon ('anticoagulant', 'adherence', 'thromboembolic'), say 'sorry, what does that mean?' If the nurse asks you to repeat the plan back, do it — but naturally and imperfectly: get the timing right and leave out one warning sign, so the nurse has a real gap to correct. If the nurse never checks your understanding and just asks 'any questions?', say 'no, I think I'm good' and start gathering your bag, so the nurse experiences a false confirmation. Never quote a dose or a drug name — you do not know them. Stay warm and cooperative throughout.",
+  "learning_objectives": [
+    "check the patient's existing knowledge and concerns before delivering information",
+    "explain a medication's purpose and the consequence of missed doses in plain English",
+    "give concrete, actionable instructions rather than general advice",
+    "name specific warning signs and separate 'call us' from 'go to emergency'",
+    "use teach-back to confirm understanding, and correct a gap without blaming the patient",
+    "surface and address the patient's own worries, not only the clinical checklist"
+  ],
+  "suggested_questions": [
+    "Before I go through it — what have you been told so far about this medication, and is there anything about it that's worrying you?",
+    "This one stops new clots forming while your body clears the one in your leg. The big difference from your blood-pressure tablet is that if you skip a dose, the protection drops off quickly — so this is one you really don't want to miss.",
+    "The things I want you to watch for are bruising that appears without a reason, blood in your pee or your poo, black tarry stools, or a bad headache after any knock to the head.",
+    "Just so I know I've explained it properly — can you tell me back in your own words when you'll take it and what would make you call us?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Discharge teaching for a patient starting an oral anticoagulant for the first time",
+    "review_status": "grounded in AHRQ Health Literacy Universal Precautions and teach-back guidance and general anticoagulant patient-safety principles; the specific agent, schedule, missed-dose rule, and monitoring requirements vary by drug and must follow the actual prescription and local policy",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "Teach-back — asking the patient to restate the plan in their own words — is the only reliable bedside check of understanding; 'do you understand?' reliably produces a yes regardless of comprehension.",
+      "Anticoagulant education fails most often on adherence and on warning signs, not on the mechanism of the drug.",
+      "A patient's stated attitude to medication ('I'm not really a pills person') is clinically relevant information and should change how the teaching is framed."
+    ],
+    "diagnostic_clues": [
+      "A patient who reports skipping other regular medication when asymptomatic is at elevated risk of missing anticoagulant doses.",
+      "Unexplained bruising, blood in urine or stool, black tarry stools, and headache after head injury are the bleeding warning signs patients most need to recognize."
+    ],
+    "common_misconceptions": [
+      "Asking 'do you have any questions?' is an adequate check of understanding.",
+      "A patient who nods and says yes has understood.",
+      "Because a fixed-dose oral anticoagulant needs no routine blood monitoring, adherence matters less than with warfarin — the opposite is true."
+    ],
+    "dangerous_errors": [
+      "Discharging a patient on a new anticoagulant without naming specific bleeding warning signs.",
+      "Failing to distinguish signs that warrant a phone call from signs that warrant emergency assessment.",
+      "Teaching in clinical register and accepting a nod as confirmation."
+    ],
+    "management_principles": [
+      "Elicit first, then teach, then confirm with teach-back.",
+      "Chunk information and order it by what the patient must do first.",
+      "Correct a teach-back gap by blaming the explanation, not the patient ('I don't think I explained that part well')."
+    ],
+    "boundaries_and_exceptions": [
+      "Dosing schedules, missed-dose instructions, monitoring requirements, and driving or work advice depend on the specific agent, the indication, and local policy — they are not interchangeable between anticoagulants.",
+      "This scenario practises the communication of discharge teaching; it is not a source of prescribing or dosing guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Health Literacy Universal Precautions Toolkit: Use the Teach-Back Method",
+        "url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html"
+      },
+      {
+        "title": "AHRQ Patient Safety Network: Medication Errors and Adverse Drug Events",
+        "url": "https://psnet.ahrq.gov/primer/medication-errors-and-adverse-drug-events"
+      }
+    ]
+  }
+}

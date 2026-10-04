@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "watery diarrhea, fever, and abdominal cramps after chicken",
   "hpi_details": "A 62-year-old female presents to the clinic with watery diarrhea, fever, and abdominal cramps after chicken. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to gastroenteritis",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks she came down with acute food poisoning from an undercooked chicken breast she ate a couple of days ago.",
+  "concerns": "She is worried that the non-stop fluid loss will cause severe dehydration and force her to be admitted to the hospital on an IV drip.",
+  "expectations": "She hopes to get an injection or pill to stop the diarrhea immediately and medicine to calm her stomach cramps.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -117,6 +117,167 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "110/70",
+      "hr": 96,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 38.3
+    },
+    "history": [
+      {
+        "answer": "I have been having watery diarrhea and a fever, and my stomach has been cramping terribly.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started about two days ago, roughly a day after eating chicken, and has been getting steadily worse since yesterday.",
+        "topic": "Onset and duration"
+      },
+      {
+        "answer": "I have had watery bowel movements about five to six times today, with no greasy or foul-floating stool.",
+        "topic": "Stool frequency and character"
+      },
+      {
+        "answer": "No, I haven't seen any red blood or dark mucus in the toilet.",
+        "topic": "Blood or mucus in stool"
+      },
+      {
+        "answer": "Yes, I had to wake up twice during the night to rush to the bathroom.",
+        "topic": "Nocturnal diarrhea"
+      },
+      {
+        "answer": "I have cramping pain all over my stomach that eases slightly right after I go, but I don't feel a constant straining urge.",
+        "topic": "Abdominal pain and tenesmus"
+      },
+      {
+        "answer": "I have had chills and a fever since yesterday, but I haven't vomited, just felt slightly sick to my stomach.",
+        "topic": "Fever and vomiting"
+      },
+      {
+        "answer": "My mouth feels dry and I feel weak and lightheaded, though I can keep small sips of water down and I still produce urine.",
+        "topic": "Dehydration and fluid intake"
+      },
+      {
+        "answer": "I thought I just got bad food poisoning from a piece of chicken I had the other night that seemed slightly underdone.",
+        "topic": "Suspected food source"
+      },
+      {
+        "answer": "Yes, a friend who shared the chicken told me she developed diarrhea and an upset stomach as well.",
+        "topic": "Other people with symptoms"
+      },
+      {
+        "answer": "No, I haven't traveled out of town recently, nor have I gone camping or drank untreated water.",
+        "topic": "Recent travel or water exposure"
+      },
+      {
+        "answer": "No, I have not taken any antibiotics recently, and I have not stayed in a hospital.",
+        "topic": "Recent antibiotics and hospitalizations"
+      },
+      {
+        "answer": "No, my weight has been completely steady until this sudden stomach illness.",
+        "topic": "Unintentional weight loss"
+      },
+      {
+        "answer": "No, drinking milk or eating bread has never caused me stomach issues before.",
+        "topic": "Food triggers and dairy"
+      },
+      {
+        "answer": "No, my bowel habits are usually regular every single day, and this is not linked to stress.",
+        "topic": "Stress and alternating constipation"
+      },
+      {
+        "answer": "No, I don't have any aching joints, skin rash, mouth ulcers, or red eyes.",
+        "topic": "Joint pain and rashes"
+      },
+      {
+        "answer": "No, I haven't had a racing heart, hot flashes, or unusual trouble with heat.",
+        "topic": "Heat intolerance and palpitations"
+      },
+      {
+        "answer": "I thought I just got bad food poisoning from a piece of chicken I had the other night that seemed slightly underdone.",
+        "topic": "Thoughts on cause"
+      },
+      {
+        "answer": "I'm running to the bathroom every hour and getting dizzy, so I'm really worried I'll get dangerously dehydrated and have to be admitted to the hospital.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I have no chronic medical illnesses like high blood pressure, diabetes, or kidney trouble.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized.",
+        "topic": "Past surgeries and admissions"
+      },
+      {
+        "answer": "I am not taking any prescription medications, herbal remedies, or over-the-counter drugs.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medicines, foods, or materials.",
+        "topic": "Drug and food allergies"
+      },
+      {
+        "answer": "I have never smoked in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have a glass of beer or wine once in a while on social occasions.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office clerk and live at home with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of colon cancer, inflammatory bowel disease, or chronic gastrointestinal problems.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 110/70 mmHg, pulse is 96 beats per minute, respiratory rate is 18 breaths per minute, and body temperature is 38.3 degrees Celsius.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Oral mucous membranes are slightly dry; posterior pharynx is clear without erythema or tonsillar exudate.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Skin turgor is slightly decreased, with no rash, jaundice, or petechiae.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is flat and symmetric with no distension, visible peristalsis, or surgical scars.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Bowel sounds are hyperactive in all four quadrants; no abdominal bruits are heard.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Diffuse mild tenderness is elicited on palpation without muscular rigidity or involuntary guarding.",
+        "maneuver": "abdominal_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "No rebound tenderness is present in any quadrant.",
+        "maneuver": "rebound_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Normal anal sphincter tone with no palpable rectal masses, and no gross blood visible on the examining glove.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
       }
     ]
   }

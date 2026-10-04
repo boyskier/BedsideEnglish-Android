@@ -1,0 +1,432 @@
+{
+  "id": "fm_051",
+  "system": "family medicine",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Park",
+  "age": 52,
+  "gender": "male",
+  "care_setting": "outpatient_clinic",
+  "chief_complaint": "abnormal liver function tests on a recent health check",
+  "hpi_details": "52M sales manager presents to the outpatient clinic to review recent health check results which showed abnormal liver function tests (AST 68, ALT 45, GGT 180, MCV 101) and fatty liver on ultrasound. He admits to drinking 2 bottles of soju 4 nights a week with clients as part of his job. He specifically denies any morning drinking, shakes, withdrawal symptoms, or history of falls. His wife has been increasingly complaining about his drinking habits. Viral hepatitis panel (B and C) was negative.",
+  "ideas": "thinks his drinking is completely normal for someone in sales and believes that everyone in his profession drinks like this",
+  "concerns": "worried about his liver health after seeing the abnormal lab results but doesn't want to stop drinking entirely because of his job",
+  "expectations": "wants to know if he needs medication for his liver and expects advice on how to quickly fix the test results",
+  "pmh": "No prior formal diagnoses. Health check showed negative Hepatitis B and C.",
+  "medications": "None",
+  "social_hx": "Sales manager. Drinks 2 bottles of soju 4 nights a week with clients. No morning drinking. Lives with his wife.",
+  "available_results": [
+    {
+      "collected_at": "recent health check",
+      "flag": "high",
+      "id": "result_ast",
+      "reference_range": "0-40",
+      "specimen": "Serum",
+      "test": "Aspartate Aminotransferase (AST)",
+      "unit": "U/L",
+      "value": "68"
+    },
+    {
+      "collected_at": "recent health check",
+      "flag": "high",
+      "id": "result_alt",
+      "reference_range": "0-40",
+      "specimen": "Serum",
+      "test": "Alanine Aminotransferase (ALT)",
+      "unit": "U/L",
+      "value": "45"
+    },
+    {
+      "collected_at": "recent health check",
+      "flag": "high",
+      "id": "result_ggt",
+      "reference_range": "8-61",
+      "specimen": "Serum",
+      "test": "Gamma-Glutamyl Transferase (GGT)",
+      "unit": "U/L",
+      "value": "180"
+    },
+    {
+      "collected_at": "recent health check",
+      "flag": "high",
+      "id": "result_mcv",
+      "reference_range": "80-100",
+      "specimen": "Blood",
+      "test": "Mean Corpuscular Volume (MCV)",
+      "unit": "fL",
+      "value": "101"
+    },
+    {
+      "collected_at": "recent health check",
+      "flag": "abnormal",
+      "id": "result_us",
+      "reference_range": "Normal appearance",
+      "specimen": "Imaging",
+      "test": "Abdominal Ultrasound",
+      "unit": "",
+      "value": "Fatty liver (hepatic steatosis) without signs of cirrhosis"
+    },
+    {
+      "collected_at": "recent health check",
+      "flag": "normal",
+      "id": "result_hbsag",
+      "reference_range": "Negative",
+      "specimen": "Serum",
+      "test": "Hepatitis B Surface Antigen (HBsAg)",
+      "unit": "",
+      "value": "Negative"
+    },
+    {
+      "collected_at": "recent health check",
+      "flag": "normal",
+      "id": "result_hcv",
+      "reference_range": "Negative",
+      "specimen": "Serum",
+      "test": "Hepatitis C Antibody (Anti-HCV)",
+      "unit": "",
+      "value": "Negative"
+    }
+  ],
+  "clinical_knowledge": {
+    "boundaries_and_exceptions": [
+      "If signs of severe physical dependence or impending withdrawal (e.g., severe tremors, history of seizures) are identified during the assessment, outpatient brief intervention is insufficient and medically supervised detoxification may be necessary.",
+      "Patients who already have established cirrhosis or advanced liver disease require a recommendation for complete abstinence rather than mere harm reduction or moderate drinking goals."
+    ],
+    "common_misconceptions": [
+      "Assuming the patient is alcohol dependent solely based on his high consumption volume, without actively assessing for physiological withdrawal or tolerance.",
+      "Prescribing hepatoprotective agents (e.g., UDCA, silymarin) as the primary treatment without addressing and attempting to modify the underlying alcohol misuse.",
+      "Failing to explicitly and confidently connect the patient's abnormal liver function tests directly to his alcohol consumption during the explanation."
+    ],
+    "core_concepts": [
+      "Harmful or hazardous drinking involves a pattern of alcohol consumption that increases the risk of physical, psychological, or social harm, but does not yet meet criteria for dependence.",
+      "The Alcohol Use Disorders Identification Test (AUDIT) is a highly effective, evidence-based screening tool for detecting hazardous drinking and guiding the intervention level.",
+      "Elevated GGT and AST greater than ALT, along with macrocytosis (high MCV), are classic laboratory markers suggestive of excessive, chronic alcohol intake.",
+      "Brief interventions using motivational interviewing techniques can significantly reduce alcohol consumption in non-dependent hazardous drinkers in primary care settings."
+    ],
+    "dangerous_errors": [
+      "Overlooking the potential for disease progression to irreversible cirrhosis if his hazardous drinking behavior is not effectively modified now.",
+      "Using a confrontational, judgmental, or paternalistic approach rather than motivational interviewing, thereby causing patient resistance and disengagement.",
+      "Disregarding the psychosocial and relational impact of his drinking, such as the conflict it is causing with his wife."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: abnormal liver function tests on a recent health check",
+      "Key HPI features: 52M sales manager presenting with high alcohol intake (2 bottles of soju 4 nights a week), absence of physical withdrawal symptoms or morning drinking, and wife complaining about his habits.",
+      "Objective/Exam findings: Elevated AST (68 U/L), ALT (45 U/L), and notably disproportionate GGT (180 U/L), along with macrocytosis (MCV 101 fL) and ultrasound evidence of fatty liver.",
+      "Relevant background: Negative Hepatitis B and C serologies rule out common infectious causes of liver inflammation."
+    ],
+    "management_principles": [
+      "Administer a formalized screening tool like AUDIT or CAGE to accurately quantify the severity of alcohol misuse.",
+      "Deliver a brief intervention applying motivational interviewing principles (express empathy, develop discrepancy, roll with resistance, support self-efficacy).",
+      "Explicitly connect the abnormal laboratory results (elevated AST, GGT, MCV) and ultrasound findings (fatty liver) directly to his alcohol intake.",
+      "Negotiate a mutually agreed-upon drinking reduction goal and discuss safe drinking limits, aiming for harm reduction rather than immediate complete abstinence since he is not physically dependent.",
+      "Schedule follow-up laboratory tests (AST, ALT, GGT) in 4-8 weeks to monitor improvement and reinforce positive behavioral changes."
+    ],
+    "source_refs": [
+      {
+        "title": "Alcohol-use disorders: diagnosis, assessment and management of harmful drinking and alcohol dependence",
+        "url": "https://www.nice.org.uk/guidance/cg115"
+      },
+      {
+        "title": "Alcohol use disorder: Psychosocial treatment",
+        "url": "https://www.uptodate.com/contents/alcohol-use-disorder-psychosocial-treatment"
+      },
+      {
+        "title": "Brief intervention for unhealthy alcohol and other drug use: Goals and components",
+        "url": "https://www.uptodate.com/contents/brief-intervention-for-unhealthy-alcohol-and-other-drug-use-goals-and-components"
+      }
+    ],
+    "topic": "Harmful alcohol use with alcohol-related liver injury"
+  },
+  "reference_soap": {
+    "assessment": "1. Harmful alcohol use (hazardous drinking), not yet dependent. 2. Alcohol-related liver injury (steatosis and transaminitis).",
+    "objective": "General: Well-appearing male, no acute distress. Vitals: HR 76, BP 128/82. Abdomen: soft, non-tender, no hepatosplenomegaly or ascites. Labs (from health check): AST 68 U/L, ALT 45 U/L, GGT 180 U/L, MCV 101 fL. HBsAg and Anti-HCV negative. Ultrasound: Fatty liver.",
+    "plan": "1. Screened with AUDIT (score ~16, consistent with harmful use). 2. Conducted brief intervention using motivational interviewing. 3. Connected elevated GGT, AST, MCV, and fatty liver findings directly to alcohol consumption. 4. Patient agreed to reduce alcohol intake to 1 bottle, 2 nights a week as an initial goal. 5. Discussed standard safe drinking limits. 6. Ordered follow-up liver function tests in 4-6 weeks to reassess.",
+    "subjective": "52M sales manager presenting to discuss abnormal health check results. Reports feeling well without specific physical complaints. Admits to drinking 2 bottles of soju 4 nights a week for work. Denies morning drinking, shakes, or falls. Wife has expressed concern about his drinking. He feels his drinking is typical for his profession."
+  },
+  "learning_objectives": [
+    "Identify and interpret classic laboratory markers of chronic alcohol use, including elevated GGT, AST predominance, and macrocytosis.",
+    "Differentiate between harmful (hazardous) alcohol use and alcohol dependence by systematically screening for tolerance, withdrawal, and loss of control.",
+    "Effectively communicate the relationship between a patient's lifestyle habits and objective clinical findings by directly linking their alcohol intake to liver test abnormalities.",
+    "Apply motivational interviewing techniques to deliver a brief intervention and negotiate realistic, patient-centered goals for reducing alcohol consumption."
+  ],
+  "teaching": {
+    "diagnosis": "Harmful alcohol use with alcohol-related liver injury",
+    "differentials": [
+      "Non-alcoholic fatty liver disease (NAFLD)",
+      "Viral hepatitis",
+      "Alcohol dependence syndrome",
+      "Drug-induced liver injury (DILI)"
+    ],
+    "must_ask": [
+      {
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "amount",
+          "often",
+          "bottles"
+        ],
+        "objective": "Quantity and frequency of alcohol",
+        "say": "How much alcohol do you typically drink in a week?"
+      },
+      {
+        "domains": [
+          "alcohol"
+        ],
+        "keywords": [
+          "morning",
+          "wake",
+          "steady",
+          "nerves"
+        ],
+        "objective": "Screening for dependence (morning drinking)",
+        "say": "Have you ever felt the need to have a drink first thing in the morning to steady your nerves?"
+      },
+      {
+        "domains": [
+          "associated_symptoms",
+          "alcohol"
+        ],
+        "keywords": [
+          "shaky",
+          "sweaty",
+          "tremor"
+        ],
+        "objective": "Screening for dependence (withdrawal)",
+        "say": "Do you ever get shaky or sweaty when you stop drinking for a few days?"
+      },
+      {
+        "domains": [
+          "living_work",
+          "family_hx"
+        ],
+        "keywords": [
+          "wife",
+          "work",
+          "complain"
+        ],
+        "objective": "Social impact of drinking",
+        "say": "Has your drinking ever caused problems with your wife or at work?"
+      },
+      {
+        "domains": [
+          "ideas",
+          "summary_closing"
+        ],
+        "keywords": [
+          "liver",
+          "results",
+          "connected",
+          "alcohol"
+        ],
+        "objective": "Connecting habits to results",
+        "say": "Were you aware that your liver test results are likely connected to how much you drink?"
+      },
+      {
+        "domains": [
+          "expectations",
+          "summary_closing"
+        ],
+        "keywords": [
+          "reduce",
+          "cutting",
+          "goal",
+          "ready"
+        ],
+        "objective": "Readiness to change",
+        "say": "How do you feel about cutting back on your drinking to help your liver heal?"
+      }
+    ],
+    "one_liner": "A middle-aged man with culturally normalized heavy drinking presents with early signs of alcohol-related organ damage (high GGT, macrocytosis, fatty liver) without physical dependence, making him a prime candidate for a brief motivational intervention.",
+    "red_flags": [
+      "Morning drinking (eye-openers) to relieve withdrawal symptoms",
+      "History of withdrawal seizures or delirium tremens upon cessation",
+      "Frequent alcohol-related accidents, injuries, or falls"
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "128/82",
+      "hr": 76,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I came in because they told me my liver numbers were elevated on my recent routine health checkup.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "Seeing those abnormal lab numbers really worried me, so I wanted to find out why they are high and what I should do.",
+        "topic": "Reason for visit"
+      },
+      {
+        "answer": "I honestly thought the amount I drink is completely normal for someone in corporate sales.",
+        "topic": "Thoughts on drinking habits"
+      },
+      {
+        "answer": "I am worried about my liver health after seeing the test results, but I cannot stop drinking completely because entertaining clients is part of my job.",
+        "topic": "Main concerns"
+      },
+      {
+        "answer": "I was hoping you could prescribe some liver medication and give me advice on how to quickly fix my test results.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I usually drink about two bottles of soju a night, about four nights a week, when entertaining clients for work.",
+        "topic": "Alcohol quantity and frequency"
+      },
+      {
+        "answer": "Two bottles of soju is my usual amount at business dinners, though sometimes I might add a glass or two of beer.",
+        "topic": "Heavy episodic drinking"
+      },
+      {
+        "answer": "No, I never drink alcohol in the morning or feel like I need an eye-opener to start the day.",
+        "topic": "Morning drinking"
+      },
+      {
+        "answer": "I do not crave alcohol during the day, but once a dinner starts with clients, it is very hard for me to refuse drinks.",
+        "topic": "Craving and loss of control"
+      },
+      {
+        "answer": "No, I have never had shaky hands, cold sweats, extreme restlessness, or trouble sleeping when I do not drink.",
+        "topic": "Alcohol withdrawal symptoms"
+      },
+      {
+        "answer": "No, I have never had a seizure, hallucinations, or confusion after stopping alcohol.",
+        "topic": "Severe withdrawal or seizures"
+      },
+      {
+        "answer": "I have never blacked out, fallen, or injured myself while drinking, and I always take a taxi home.",
+        "topic": "Blackouts and accidents"
+      },
+      {
+        "answer": "My wife has been complaining more and more lately about how often I drink and come home late.",
+        "topic": "Social impact of drinking"
+      },
+      {
+        "answer": "I have never really tried to cut down before because I never thought my drinking was an actual problem until now.",
+        "topic": "Previous attempts to cut down"
+      },
+      {
+        "answer": "I suppose my drinking might be stressing my liver, though I did not realize it was causing real damage.",
+        "topic": "Connecting habits to results"
+      },
+      {
+        "answer": "Protecting my liver is an eight out of ten for me, but I would feel much more confident aiming to reduce my drinking rather than quitting entirely.",
+        "topic": "Readiness to change"
+      },
+      {
+        "answer": "Drinking is deeply rooted in my sales work, but at home my wife would be very relieved and supportive if I cut down.",
+        "topic": "Social support and drinking culture"
+      },
+      {
+        "answer": "No, I have not noticed any yellowing of my eyes, dark tea-colored urine, swelling in my belly, or abdominal pain.",
+        "topic": "Liver-related symptoms"
+      },
+      {
+        "answer": "No, I have not had any fever, chills, unexplained weight loss, or severe fatigue.",
+        "topic": "Fever and constitutional symptoms"
+      },
+      {
+        "answer": "No heartburn, nausea, vomiting, or dark black stools.",
+        "topic": "Gastrointestinal symptoms"
+      },
+      {
+        "answer": "Work can be stressful, but I do not feel depressed or anxious, and I have never had thoughts of harming myself.",
+        "topic": "Mood and stress"
+      },
+      {
+        "answer": "No, I do not take sleeping pills, sedatives, painkillers, or any recreational drugs.",
+        "topic": "Other substance use"
+      },
+      {
+        "answer": "I have never been diagnosed with any chronic medical conditions, and my health check showed I do not have hepatitis B or C.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "No, I have never had any surgeries and have never been hospitalized.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, over-the-counter medicines, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used electronic cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I work as a corporate sales manager, and I live with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "Both of my parents have high blood pressure, but there is no family history of liver problems or alcohol addiction.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Alert, well-appearing male in no acute distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 128/82 mmHg, heart rate 76 beats per minute, respiratory rate 16 breaths per minute, body temperature 36.6°C, oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Sclerae are anicteric and conjunctivae are pink without pallor.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "No spider angiomas, palmar erythema, jaundice, or ecchymoses noted.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is flat and symmetric without visible distension, caput medusae, or scars.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Normal active bowel sounds heard throughout all four quadrants without bruits.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender to light and deep palpation without guarding or rigidity.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No hepatomegaly or splenomegaly palpable below the costal margins.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No shifting dullness or fluid wave detected.",
+        "maneuver": "ascites_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial or pedal edema on either lower extremity.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "No resting tremor, postural tremor, or asterixis observed with hands extended.",
+        "maneuver": "tremor_observation",
+        "response": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "id": "numbness_weakness",
+  "title": "팔다리가 저리고 힘이 빠져요",
+  "english_title": "Limb numbness and weakness",
+  "category": "신경",
+  "kmle_item": "근력/감각 이상",
+  "door_complaint": "팔다리가 저리고 힘이 빠진다고",
+  "differential_groups": [
+    {"key": "brain", "label": "뇌", "examples": ["뇌경색", "일과성 허혈발작", "뇌내출혈", "뇌종양", "다발경화증"]},
+    {"key": "spinal_cord", "label": "척수", "examples": ["경추척수병증", "척수 압박(종양, 농양)", "횡단척수염"]},
+    {"key": "peripheral", "label": "신경근·말초신경", "examples": ["손목굴증후군", "팔꿈치 척골신경병증", "경추·요추 신경근병증", "당뇨병성 다발신경병증", "비타민 B12 결핍", "길랭-바레증후군"]},
+    {"key": "nmj_muscle", "label": "신경근접합부·근육·대사", "examples": ["중증근무력증", "염증성 근육병", "저칼륨혈증"]},
+    {"key": "motor_neuron", "label": "운동신경원 질환", "examples": ["근위축측삭경화증"]}
+  ],
+  "history": [
+    {"id": "symptom_type", "text": "증상의 종류(저림·감각 저하인지, 실제로 힘이 빠지는지, 둘 다인지)", "say": "저린 느낌인가요, 아니면 실제로 힘이 빠져서 잘 안 움직여지나요?"},
+    {"id": "distribution", "text": "부위와 분포(한쪽 팔다리, 양쪽 대칭, 손가락 일부, 장갑·양말 모양)", "say": "어디가 그러세요? 한쪽만 그런가요, 양쪽 다 그런가요? 손가락 중 어느 쪽인가요?", "tags": ["brain", "spinal_cord", "peripheral"]},
+    {"id": "onset_time", "text": "발생 양상(갑자기, 며칠에 걸쳐, 몇 달 서서히)과 마지막으로 정상이었던 시각", "say": "언제 처음 그러셨어요? 갑자기 그랬나요? 마지막으로 괜찮으셨던 게 몇 시쯤인가요?", "tags": ["brain", "peripheral"], "key": true},
+    {"id": "progression", "text": "경과(퍼지거나 심해지는지, 좋아졌는지, 반복되는지)", "say": "처음보다 퍼지거나 심해졌나요? 아니면 좋아졌다 나빠졌다 하나요?", "tags": ["peripheral", "brain"]},
+    {"id": "function", "text": "기능 장애(단추 채우기, 물건 떨어뜨림, 계단 오르기, 걸음걸이)", "say": "단추를 채우거나 물건을 잡기 힘든가요? 계단 오르거나 걷기는 어떠세요?", "tags": ["nmj_muscle", "spinal_cord", "motor_neuron"]},
+    {"id": "aggravating", "text": "악화 요인(밤에 심해짐, 손목 사용, 목 움직임, 오후로 갈수록 심해지는 피로)", "say": "밤에 더 심하거나 손을 많이 쓰면 심해지나요? 저녁이 되면 더 힘이 빠지나요?", "tags": ["peripheral", "nmj_muscle", "spinal_cord"]},
+    {"id": "neck_back_pain", "text": "목·허리 통증과 팔다리로 뻗치는 통증", "say": "목이나 허리가 아프고, 그 통증이 팔이나 다리로 뻗치나요?", "tags": ["spinal_cord", "peripheral"]},
+    {"id": "stroke_signs", "text": "말 어눌함, 얼굴 처짐, 시야 이상, 어지럼, 삼킴 곤란", "say": "말이 어눌해지거나 얼굴이 한쪽으로 처지지는 않았어요? 눈은 잘 보이세요?", "tags": ["brain"], "key": true},
+    {"id": "bladder_bowel", "text": "대소변 장애, 항문 주위(안장 부위) 감각 저하", "say": "소변이나 대변 보는 데 문제가 생기거나 엉덩이 주변 감각이 둔해지지는 않았어요?", "tags": ["spinal_cord"], "key": true},
+    {"id": "bulbar_respiratory", "text": "숨참, 삼킴·씹기 곤란, 눈꺼풀 처짐, 물체가 둘로 보임", "say": "숨이 차거나 음식을 삼키기 힘들지는 않으세요? 눈꺼풀이 처지거나 물체가 둘로 보이진 않나요?", "tags": ["nmj_muscle", "peripheral"], "key": true},
+    {"id": "fasciculation_atrophy", "text": "근육이 씰룩거림, 근육이 가늘어짐", "say": "근육이 저절로 씰룩거리거나 손 근육이 빠져서 가늘어진 것 같나요?", "tags": ["motor_neuron", "peripheral"]},
+    {"id": "preceding_illness", "text": "최근 설사·감기 등 선행 감염", "say": "증상 생기기 몇 주 전에 설사나 감기를 앓으셨어요?", "tags": ["peripheral"]},
+    {"id": "vascular_risk", "text": "고혈압, 당뇨, 이상지질혈증, 심방세동, 흡연 등 혈관 위험 요인", "say": "혈압이나 당뇨, 고지혈증이 있으세요? 부정맥이 있다는 말을 들으신 적은요?", "tags": ["brain"]},
+    {"id": "neuropathy_risk", "text": "당뇨 조절 상태, 음주량, 위절제술·채식 등 비타민 B12 결핍 위험", "say": "당뇨가 있으시면 조절은 잘 되세요? 위 수술을 받으셨거나 술을 자주 드세요?", "tags": ["peripheral"]},
+    {"id": "weakness_drugs", "text": "이뇨제, 항암제, 스테로이드 등 근력·신경에 영향을 주는 약", "say": "이뇨제나 항암제처럼 최근 드신 약이 있나요?", "tags": ["nmj_muscle", "peripheral"]},
+    {"id": "occupation", "text": "손목·팔꿈치를 반복해서 쓰는 일, 오래 쪼그려 앉기, 팔꿈치를 괴는 습관", "say": "손목을 많이 쓰거나 팔꿈치를 오래 구부리고 하는 일을 하세요?", "tags": ["peripheral"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals_glucose", "text": "혈압, 맥박 규칙성, 혈당 확인", "say": "혈압과 맥박을 재고, 손끝에서 혈당도 확인하겠습니다.", "tags": ["brain"]},
+    {"id": "stroke_screen", "text": "얼굴 대칭, 말, 팔 떨어짐 검사, 시야 등 뇌졸중 선별 진찰", "say": "웃어 보시고, 양팔을 앞으로 뻗은 채 눈을 감고 10초 동안 버텨 보세요.", "tags": ["brain"], "key": true},
+    {"id": "motor_exam", "text": "근력(좌우, 근위부·원위부 비교), 근위축, 근육 씰룩거림 관찰", "say": "제 손을 힘껏 밀어 보세요. 이번엔 당겨 보세요.", "tags": ["peripheral", "nmj_muscle", "motor_neuron"]},
+    {"id": "sensory_exam", "text": "촉각·통각·진동각으로 감각 저하 분포 확인", "say": "눈을 감으시고, 제가 만지는 느낌이 양쪽이 같은지 말씀해 주세요.", "tags": ["peripheral", "spinal_cord"]},
+    {"id": "reflexes", "text": "심부건반사와 바빈스키 징후", "say": "망치로 무릎과 팔을 가볍게 두드려 보겠습니다.", "tags": ["spinal_cord", "peripheral", "brain"]},
+    {"id": "provocative_tests", "text": "필요하면 팔렌·티넬 검사, 스펄링 검사, 하지직거상검사", "say": "양 손등을 맞대고 1분 동안 있어 보세요. 저리면 말씀해 주세요.", "tags": ["peripheral"], "conditional": true}
+  ],
+  "education": [
+    {"id": "stroke_warning", "text": "갑자기 한쪽 마비·말 어눌함·얼굴 처짐이 생기면 시각을 기억하고 즉시 119를 부르도록 안내", "say": "갑자기 한쪽에 힘이 빠지거나 말이 어눌해지면 시간을 기억하시고 바로 119를 부르세요.", "key": true},
+    {"id": "risk_control", "text": "혈압·혈당·콜레스테롤 관리와 금연", "say": "혈압, 당뇨, 콜레스테롤을 잘 관리하시고 담배는 끊으셔야 합니다.", "tags": ["brain"], "conditional": true},
+    {"id": "foot_care", "text": "당뇨병성 신경병증이면 매일 발 살피기, 맞는 신발 신기, 뜨거운 물 조심", "say": "발 감각이 둔하니 매일 발에 상처가 없는지 보시고, 뜨거운 물은 조심하세요.", "tags": ["peripheral"], "conditional": true},
+    {"id": "splint_activity", "text": "손목굴증후군이면 밤에 손목 보조기 착용과 손목 반복 사용 줄이기", "say": "밤에 손목 보조기를 차고 주무시고, 손목을 반복해서 쓰는 일은 줄여 보세요.", "tags": ["peripheral"], "conditional": true}
+  ],
+  "grader_notes": [
+    "갑자기 생긴 한쪽 마비·감각 저하·언어장애는 뇌졸중으로 보고 마지막 정상 시각을 확인한 뒤 즉시 혈당 확인과 뇌 CT 또는 MRI를 시행해 혈전용해술과 혈전제거술 적응증을 판단한다.",
+    "증상이 사라진 일과성 허혈발작도 조기 뇌졸중 위험이 높으므로 신속히 뇌·혈관 영상, 심전도, 혈액검사로 평가하고 항혈소판제와 위험 요인 조절을 시작한다.",
+    "양쪽 대칭으로 빠르게 올라오는 근력 저하와 반사 소실은 길랭-바레증후군을 의심해 입원시키고 폐활량 등 호흡 기능을 반복해서 확인한다.",
+    "양쪽 원위부의 감각 저하는 혈당·당화혈색소, 비타민 B12, 갑상샘기능, 신기능을 확인하고, 국소 신경병증이나 신경근병증은 신경전도검사·근전도로 확인한다.",
+    "대소변 장애나 척수 수준의 감각 소실이 있으면 척수 압박을 의심해 응급 MRI를 시행한다."
+  ],
+  "case_ids": ["neuro_001", "em_034", "neuro_009", "neuro_003", "neuro_041", "hemato_017", "neuro_019", "ns_037"]
+}

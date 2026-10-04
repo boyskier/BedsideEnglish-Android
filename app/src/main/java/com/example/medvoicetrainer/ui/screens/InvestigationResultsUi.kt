@@ -23,6 +23,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.IconButton
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.ModalBottomSheet
+import androidx.compose.material3.OutlinedButton
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.material3.TextButton
@@ -88,10 +89,16 @@ fun PreEncounterResultsScreen(
 @Composable
 fun InvestigationResultsSheet(
     availableResults: List<ClinicalResult>,
+    authoredEvents: List<InvestigationEvent>,
+    pendingEvents: List<InvestigationEvent>,
     revealedEvents: List<InvestigationEvent>,
+    onOrder: (String) -> Unit,
+    onViewResult: (String) -> Unit,
     onDismiss: () -> Unit,
 ) {
     val t = LocalTranslate.current
+    val activeIds = (pendingEvents + revealedEvents).mapTo(mutableSetOf()) { it.id }
+    val orderableEvents = authoredEvents.filter { it.id !in activeIds }
     ModalBottomSheet(onDismissRequest = onDismiss) {
         Column(
             modifier = Modifier.fillMaxWidth().verticalScroll(rememberScrollState()).padding(16.dp),
@@ -100,17 +107,70 @@ fun InvestigationResultsSheet(
             Row(verticalAlignment = Alignment.CenterVertically) {
                 Icon(Icons.Default.Science, contentDescription = null, tint = MaterialTheme.colorScheme.primary)
                 Spacer(Modifier.width(8.dp))
-                Text(t("Investigation results"), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
+                Text(t("Tests & results"), style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
             }
             if (availableResults.isNotEmpty()) {
                 Text(t("Available before encounter"), style = MaterialTheme.typography.labelLarge)
                 ClinicalResultsTable(availableResults)
+            }
+            if (orderableEvents.isNotEmpty()) {
+                Text(t("Order during encounter"), style = MaterialTheme.typography.labelLarge)
+                orderableEvents.forEach { event ->
+                    InvestigationOrderRow(
+                        event = event,
+                        actionLabel = t("Order"),
+                        onAction = { onOrder(event.id) },
+                    )
+                }
+            }
+            if (pendingEvents.isNotEmpty()) {
+                Text(t("Results available"), style = MaterialTheme.typography.labelLarge)
+                pendingEvents.forEach { event ->
+                    InvestigationOrderRow(
+                        event = event,
+                        actionLabel = t("View result"),
+                        onAction = { onViewResult(event.id) },
+                    )
+                }
+            }
+            if (revealedEvents.isNotEmpty()) {
+                Text(t("Reviewed results"), style = MaterialTheme.typography.labelLarge)
             }
             revealedEvents.forEach { event ->
                 Text(event.title, style = MaterialTheme.typography.labelLarge)
                 ClinicalResultsTable(event.results)
             }
             Spacer(Modifier.height(16.dp))
+        }
+    }
+}
+
+@Composable
+private fun InvestigationOrderRow(
+    event: InvestigationEvent,
+    actionLabel: String,
+    onAction: () -> Unit,
+) {
+    Card(
+        modifier = Modifier.fillMaxWidth(),
+        colors = CardDefaults.cardColors(
+            containerColor = MaterialTheme.colorScheme.surfaceVariant.copy(alpha = 0.42f),
+        ),
+    ) {
+        Row(
+            modifier = Modifier.fillMaxWidth().padding(horizontal = 12.dp, vertical = 8.dp),
+            verticalAlignment = Alignment.CenterVertically,
+            horizontalArrangement = Arrangement.spacedBy(12.dp),
+        ) {
+            Text(
+                event.title,
+                modifier = Modifier.weight(1f),
+                style = MaterialTheme.typography.bodyMedium,
+                fontWeight = FontWeight.SemiBold,
+            )
+            OutlinedButton(onClick = onAction) {
+                Text(actionLabel)
+            }
         }
     }
 }
@@ -137,15 +197,13 @@ fun InvestigationResultPrompt(
             )
             Column(modifier = Modifier.weight(1f)) {
                 Text(
-                    event.availabilityMessage.ifBlank {
-                        t("{test} result is available").replace("{test}", event.title)
-                    },
+                    t("Result available"),
                     style = MaterialTheme.typography.bodySmall,
                     fontWeight = FontWeight.Bold,
                     color = MaterialTheme.colorScheme.onTertiaryContainer,
                 )
                 Text(
-                    t("Would you like to view it?"),
+                    event.title,
                     style = MaterialTheme.typography.labelSmall,
                     color = MaterialTheme.colorScheme.onTertiaryContainer.copy(alpha = 0.8f),
                 )

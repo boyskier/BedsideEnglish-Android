@@ -1,0 +1,51 @@
+{
+  "id": "constipation",
+  "title": "변비가 있어요",
+  "english_title": "Constipation",
+  "category": "소화기",
+  "kmle_item": "배변 이상",
+  "door_complaint": "변비가 있다고",
+  "differential_groups": [
+    {"key": "functional", "label": "기능성", "examples": ["기능성 변비", "변비형 과민대장증후군", "배변 참기(소아)"]},
+    {"key": "structural", "label": "기질적 폐쇄", "examples": ["대장암", "대장 협착", "치열·치핵", "히르슈슈프룽병(신생아·영아)"]},
+    {"key": "systemic", "label": "전신 질환·약물", "examples": ["갑상샘기능저하증", "고칼슘혈증", "당뇨병", "파킨슨병", "약물(마약성 진통제, 철분제, 항콜린제)"]}
+  ],
+  "history": [
+    {"id": "definition", "text": "배변 횟수, 변의 굳기, 힘주기 정도", "say": "대변은 며칠에 한 번 보세요? 변이 딱딱해서 힘을 많이 줘야 하나요?", "tags": ["functional"]},
+    {"id": "onset", "text": "시작 시기, 최근에 새로 생겼는지", "say": "언제부터 그러셨어요? 전에는 괜찮으셨어요?", "tags": ["structural", "functional"]},
+    {"id": "incomplete_evacuation", "text": "잔변감, 손으로 도와야 배변이 되는지", "say": "보고 나서도 남은 느낌이 드세요? 손으로 도와야 나올 때도 있나요?", "tags": ["functional"]},
+    {"id": "stool_caliber", "text": "변 굵기 변화", "say": "변이 전보다 가늘어졌나요?", "tags": ["structural"]},
+    {"id": "blood", "text": "혈변, 흑색변", "say": "변에 피가 묻어 나오거나 까맣게 나온 적이 있으세요?", "tags": ["structural"], "key": true},
+    {"id": "pain_bloating", "text": "복통, 복부 팽만과 배변 후 완화 여부", "say": "배가 아프거나 더부룩하세요? 대변을 보면 나아지나요?", "tags": ["functional"]},
+    {"id": "alternating", "text": "설사와 변비가 번갈아 나타나는지", "say": "설사와 변비가 번갈아 오나요?", "tags": ["functional", "structural"]},
+    {"id": "obstipation", "text": "방귀도 안 나오는지, 구토", "say": "방귀도 안 나오고 토하지는 않으세요?", "tags": ["structural"], "key": true},
+    {"id": "weight_loss", "text": "의도하지 않은 체중 감소", "say": "최근에 일부러 빼지 않았는데 살이 빠지셨어요?", "tags": ["structural"], "key": true},
+    {"id": "defecation_pain", "text": "배변 시 항문 통증으로 참게 되는지", "say": "대변볼 때 항문이 아파서 참게 되나요?", "tags": ["structural", "functional"]},
+    {"id": "hypothyroid_symptoms", "text": "추위 탐, 체중 증가, 피로, 피부 건조", "say": "요즘 추위를 많이 타거나 살이 찌고 피곤하지는 않으세요?", "tags": ["systemic"]},
+    {"id": "thirst_polyuria", "text": "갈증, 다뇨(고칼슘혈증, 당뇨병)", "say": "목이 자주 마르거나 소변을 많이 보세요?", "tags": ["systemic"]},
+    {"id": "medications_laxatives", "text": "변비를 일으키는 약(마약성 진통제, 철분제, 칼슘제), 변비약 사용", "say": "진통제나 철분제 드시는 게 있나요? 변비약은 얼마나 자주 쓰세요?", "tags": ["systemic"]},
+    {"id": "diet_activity", "text": "식이섬유·수분 섭취, 활동량", "say": "채소나 물은 충분히 드세요? 운동은 하시는 편이에요?", "tags": ["functional"]},
+    {"id": "habits_stress", "text": "변의를 참는 습관, 생활 변화, 스트레스", "say": "변의가 있어도 참는 편이세요? 최근에 생활이 바뀌거나 스트레스가 있었나요?", "tags": ["functional"]},
+    {"id": "child_withholding", "text": "아이가 대변을 참는 행동, 배변 훈련 시기", "say": "아이가 대변을 참으려고 다리를 꼬거나 구석에 숨지는 않나요?", "tags": ["functional"], "applies": "child"},
+    {"id": "meconium", "text": "신생아기 태변 배출 시기", "say": "아기가 태어나서 첫 태변은 언제 봤어요?", "tags": ["structural"], "applies": "child", "conditional": true},
+    {"id": "colonoscopy_family", "text": "이전 대장내시경 결과, 대장암 가족력", "say": "대장내시경을 받아 보셨어요? 가족 중에 대장암인 분은 없으세요?", "tags": ["structural"]}
+  ],
+  "physical_exam": [
+    {"id": "abdomen", "text": "복부 팽만, 장음, 만져지는 변 덩어리나 종괴 확인", "say": "편하게 누우세요. 배를 보고 청진한 다음 눌러 보겠습니다.", "tags": ["structural", "functional"]},
+    {"id": "anorectal_exam", "text": "항문 시진(치열, 치핵)과 직장수지검사(분변매복, 종괴, 괄약근 긴장도)", "say": "옆으로 누우시면 항문을 살펴보고 손가락으로 확인하겠습니다. 바로 가려 드릴게요.", "tags": ["structural", "functional"]},
+    {"id": "thyroid_reflex", "text": "갑상샘 촉진, 피부 건조, 발목반사 확인", "say": "목을 만져 보고 발목 반사를 확인하겠습니다.", "tags": ["systemic"], "conditional": true}
+  ],
+  "education": [
+    {"id": "fiber_fluids_exercise", "text": "식이섬유와 수분 섭취, 규칙적인 운동", "say": "채소, 과일, 물을 충분히 드시고 꾸준히 걸으세요."},
+    {"id": "toilet_routine", "text": "식후 일정한 시간에 화장실에 가고 변의를 참지 않기", "say": "아침 식사 후처럼 정해진 시간에 화장실에 가시고, 변의가 오면 참지 마세요."},
+    {"id": "warning_signs", "text": "혈변, 체중 감소, 방귀가 안 나오며 구토·복부 팽만이 생기면 바로 오도록 안내", "say": "변에 피가 나오거나 배가 부풀고 방귀도 안 나오면 바로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "경고 증상(혈변, 체중 감소, 빈혈, 고령에서 새로 생긴 변비, 대장암 가족력)이 있으면 대장내시경을 시행한다.",
+    "필요하면 혈구검사, 갑상샘기능, 칼슘, 혈당을 확인하고, 변비를 일으키는 약물을 검토한다.",
+    "기능성 변비는 식이섬유·수분 섭취와 배변 습관 교정을 먼저 하고, 효과가 없으면 팽창성 또는 삼투성 완하제(폴리에틸렌글리콜, 락툴로오스 등)를 사용한다.",
+    "구토, 복부 팽만, 방귀 중단이 있으면 장폐색을 의심해 복부 X선을 먼저 시행한다.",
+    "소아 기능성 변비는 분변매복을 먼저 해소한 뒤 삼투성 완하제 유지와 규칙적인 배변 훈련을 하며, 신생아기부터의 변비와 태변 배출 지연은 히르슈슈프룽병을 의심한다."
+  ],
+  "case_ids": ["peds_036", "endo_022", "nephro_036", "gi_029", "peds_012"]
+}

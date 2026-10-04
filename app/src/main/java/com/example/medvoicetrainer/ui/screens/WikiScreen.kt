@@ -82,7 +82,11 @@ private val GUIDE_LANG_NAMES = mapOf(
     "de" to "Deutsch (de)",
     "id" to "Bahasa Indonesia (id)",
     "vi" to "Tiếng Việt (vi)",
-    "ru" to "Русский (ru)"
+    "ru" to "Русский (ru)",
+    "bn" to "বাংলা (bn)",
+    "it" to "Italiano (it)",
+    "th" to "ไทย (th)",
+    "tr" to "Türkçe (tr)"
 )
 
 /** Scans `assets/guides/` for `USER_GUIDE_<CODE>.md` files. Mirrors
@@ -192,13 +196,19 @@ fun WikiScreen(viewModel: MainViewModel, onNavigateBack: (() -> Unit)? = null) {
     // keystroke — the other half of the "typing in the guide search stutters" report. Debounced
     // and moved to a background dispatcher.
     var matches by remember { mutableStateOf<List<SearchMatch>>(emptyList()) }
+    // True while a typed query waits out the debounce, so the status line doesn't flash a red
+    // "0 results" (or the previous query's count) before the search has actually run.
+    var searchPending by remember { mutableStateOf(false) }
     LaunchedEffect(loadedBlocks, searchQuery) {
         if (searchQuery.isBlank()) {
             matches = emptyList()
+            searchPending = false
             return@LaunchedEffect
         }
+        searchPending = true
         delay(180)
         matches = withContext(Dispatchers.Default) { findSearchMatches(loadedBlocks, searchQuery) }
+        searchPending = false
     }
     // Per-block lookup so each rendered row can grab its own highlights in O(1) instead of the
     // whole list re-filtering `matches` (and rebuilding its AnnotatedString) for every item.
@@ -225,6 +235,11 @@ fun WikiScreen(viewModel: MainViewModel, onNavigateBack: (() -> Unit)? = null) {
             if (reducedMotion) listState.scrollToItem(index) else listState.animateScrollToItem(index)
         }
         flashedBlockIndex = index
+    }
+
+    // A new result list selects its first match; bring it on screen the way Prev/Next do.
+    LaunchedEffect(matches) {
+        matches.firstOrNull()?.let { jumpToBlock(it.blockIndex) }
     }
 
     fun openLink(url: String) {
@@ -344,7 +359,7 @@ fun WikiScreen(viewModel: MainViewModel, onNavigateBack: (() -> Unit)? = null) {
                             }
                         }
 
-                        if (searchQuery.isNotEmpty()) {
+                        if (searchQuery.isNotEmpty() && !searchPending) {
                             Text(
                                 text = if (matches.isEmpty()) {
                                     t("help_wiki.no_results")

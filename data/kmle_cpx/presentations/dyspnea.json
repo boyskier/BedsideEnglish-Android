@@ -1,0 +1,56 @@
+{
+  "id": "dyspnea",
+  "title": "숨이 차요",
+  "english_title": "Shortness of breath (dyspnea)",
+  "category": "호흡기",
+  "kmle_item": "호흡곤란",
+  "door_complaint": "숨이 차다고",
+  "differential_groups": [
+    {"key": "cardiac", "label": "심장", "examples": ["심부전", "허혈성 심질환", "판막질환(대동맥판협착, 승모판역류)", "부정맥", "심장눌림증"]},
+    {"key": "airway", "label": "기도", "examples": ["천식", "만성폐쇄폐질환", "아나필락시스"]},
+    {"key": "parenchyma_pleura", "label": "폐실질·흉막", "examples": ["폐렴", "간질성 폐질환", "흉막삼출", "기흉"]},
+    {"key": "pulmonary_vascular", "label": "폐혈관", "examples": ["폐색전증", "폐동맥고혈압"]},
+    {"key": "systemic", "label": "전신·기타", "examples": ["빈혈", "갑상샘항진증", "대사산증", "공황장애·과호흡"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "발생 양상(갑자기 vs 서서히)과 기간", "say": "언제부터 숨이 찼어요? 갑자기 그랬나요, 점점 심해졌나요?", "tags": ["pulmonary_vascular", "parenchyma_pleura"], "key": true},
+    {"id": "severity", "text": "숨찬 정도(얼마나 걸으면, 계단 몇 층에서, 가만히 있어도)", "say": "얼마나 걸으면 숨이 차세요? 가만히 있을 때도 차나요?"},
+    {"id": "pattern", "text": "계속되는지, 발작적으로 왔다 사라지는지, 이전의 비슷한 경험", "say": "숨찬 게 계속되나요, 아니면 왔다 갔다 하나요? 전에도 이런 적이 있으세요?", "tags": ["airway"]},
+    {"id": "orthopnea_pnd", "text": "누우면 숨참(베개 개수), 자다가 숨차서 깸", "say": "누우면 숨이 더 차세요? 자다가 숨이 차서 깬 적은요?", "tags": ["cardiac"]},
+    {"id": "aggravating", "text": "악화 요인(찬 공기, 운동, 먼지, 동물, 특정 음식·약물)", "say": "찬 바람이나 먼지, 동물 근처에서 더 심해지나요?", "tags": ["airway"]},
+    {"id": "wheeze", "text": "쌕쌕거리는 숨소리", "say": "숨쉴 때 쌕쌕 소리가 나세요?", "tags": ["airway"]},
+    {"id": "cough_sputum_fever", "text": "기침, 가래, 발열", "say": "기침이나 가래가 있으세요? 열은요?", "tags": ["parenchyma_pleura", "airway"]},
+    {"id": "chest_pain", "text": "가슴 통증(조이는 통증, 숨 쉴 때 찌르는 통증)", "say": "가슴이 아프세요? 조이는 느낌인가요, 숨 쉴 때 찌르나요?", "tags": ["cardiac", "pulmonary_vascular", "parenchyma_pleura"], "key": true},
+    {"id": "palpitation_syncope", "text": "두근거림, 어지러움, 실신", "say": "가슴이 두근거리거나 어지럽고 쓰러질 것 같은 적이 있나요?", "tags": ["cardiac", "pulmonary_vascular"], "key": true},
+    {"id": "hemoptysis", "text": "객혈", "say": "기침할 때 피가 나온 적 있으세요?", "tags": ["pulmonary_vascular", "parenchyma_pleura"]},
+    {"id": "edema_weight", "text": "다리 부종, 최근 체중 증가", "say": "다리가 붓거나 요즘 몸무게가 갑자기 늘었나요?", "tags": ["cardiac"]},
+    {"id": "vte_risk", "text": "한쪽 다리 부종·통증, 최근 수술·장기 부동·장거리 비행, 호르몬제 복용", "say": "최근에 수술을 받았거나 오래 비행기를 타셨나요? 한쪽 다리가 붓지는 않나요?", "tags": ["pulmonary_vascular"], "key": true},
+    {"id": "anemia_bleeding", "text": "피로, 창백, 출혈(검은 변, 월경 과다)", "say": "요즘 많이 피곤하세요? 변이 까맣게 나오거나 생리량이 많지는 않나요?", "tags": ["systemic"]},
+    {"id": "anxiety", "text": "숨찰 때 손발·입 주위 저림, 불안감, 스트레스 상황", "say": "숨찰 때 손발이 저리거나 많이 불안한 느낌이 드세요?", "tags": ["systemic"]},
+    {"id": "heart_lung_history", "text": "기존 심장·폐 질환(심근경색, 천식, 만성폐쇄폐질환)과 흡입기 사용·효과", "say": "천식이나 폐, 심장 병을 진단받은 적 있으세요? 흡입기를 쓰시면 효과가 있나요?", "tags": ["cardiac", "airway"]},
+    {"id": "smoking_amount", "text": "흡연량과 기간(갑년)", "say": "담배를 피우셨다면 하루 몇 갑씩 몇 년 정도 피우셨어요?", "tags": ["airway", "cardiac"]},
+    {"id": "exposures", "text": "직업·환경 노출(분진, 석면, 새, 곰팡이)", "say": "일하시는 곳이나 집에서 먼지, 석면, 새나 곰팡이에 노출되시나요?", "tags": ["parenchyma_pleura", "airway"]},
+    {"id": "dyspnea_drugs", "text": "숨참을 유발할 수 있는 약(베타차단제, 아스피린·소염진통제, 항암제, 아미오다론) 복용", "say": "최근에 새로 드시기 시작한 약이 있나요? 진통제나 혈압약은요?", "tags": ["airway", "parenchyma_pleura"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "호흡수, 산소포화도, 맥박, 혈압, 체온 확인", "say": "산소포화도랑 호흡수부터 확인하겠습니다.", "key": true},
+    {"id": "inspection", "text": "호흡 보조근 사용, 입술·손끝 청색증, 곤봉지, 목정맥 확장 관찰", "say": "숨 쉬는 모습과 입술, 손가락 끝, 목을 먼저 보겠습니다."},
+    {"id": "lung_exam", "text": "폐 타진과 청진(천명음, 수포음, 호흡음 감소)을 좌우 비교", "say": "등과 가슴을 두드려 보고 청진하겠습니다. 숨을 크게 쉬어 보세요.", "tags": ["airway", "parenchyma_pleura"]},
+    {"id": "heart_auscultation", "text": "심장 청진(심잡음, 제3심음, 불규칙 리듬)", "say": "이제 심장 소리를 들어 보겠습니다.", "tags": ["cardiac"]},
+    {"id": "leg_edema", "text": "양쪽 다리 오목부종과 한쪽 다리 부종·압통 확인", "say": "다리를 눌러서 부었는지 확인하겠습니다.", "tags": ["cardiac", "pulmonary_vascular"]}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "가만히 있어도 숨이 차거나 입술이 파래지거나 가슴 통증이 생기면 즉시 응급실로 오도록 안내", "say": "가만히 있어도 숨이 차거나 가슴이 아프면 바로 응급실로 오세요.", "key": true},
+    {"id": "inhaler_technique", "text": "흡입기 사용법을 설명하고 직접 해 보게 해서 확인", "say": "흡입기는 숨을 끝까지 내쉰 뒤에 천천히 깊게 들이마시고, 잠깐 숨을 참으세요.", "tags": ["airway"], "conditional": true},
+    {"id": "heart_failure_selfcare", "text": "심부전이면 싱겁게 먹기와 매일 체중 측정", "say": "음식은 싱겁게 드시고, 매일 아침 몸무게를 재서 갑자기 늘면 알려 주세요.", "tags": ["cardiac"], "conditional": true},
+    {"id": "smoking_cessation", "text": "금연과 백신 접종(인플루엔자, 폐렴구균) 권고", "say": "담배는 꼭 끊으시고, 독감과 폐렴 예방접종도 받으시는 게 좋습니다.", "tags": ["airway"], "conditional": true}
+  ],
+  "grader_notes": [
+    "먼저 산소포화도와 활력징후로 응급 여부를 판단하고, 저산소증이 있으면 산소를 주면서 원인 검사를 함께 진행한다.",
+    "기본 검사는 흉부 X선, 심전도, 혈액검사(혈색소 포함)이며, 심부전이 의심되면 BNP 또는 NT-proBNP와 심초음파를 시행한다.",
+    "천식·만성폐쇄폐질환은 기관지확장제 전후 폐활량검사로 진단하고, 급성 악화에는 속효성 기관지확장제와 전신 스테로이드를 쓴다.",
+    "폐색전증은 임상 확률(Wells 점수 등)에 따라 D-dimer 또는 CT 폐혈관조영술로 진단하고, 확진되면 항응고치료를 한다.",
+    "폐렴이 의심되면 흉부 X선으로 확인하고 중증도(CURB-65 등)를 평가해 외래 또는 입원 치료를 결정한다."
+  ],
+  "case_ids": ["cardio_012", "cardio_029", "cardio_009", "pulm_010", "pulm_025", "pulm_004", "pulm_008", "pulm_003", "pulm_demo_chen"]
+}

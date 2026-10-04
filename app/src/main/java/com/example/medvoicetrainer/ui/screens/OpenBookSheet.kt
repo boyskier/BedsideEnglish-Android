@@ -132,11 +132,7 @@ fun OpenBookSheet(
     LaunchedEffect(showingPhrases) { scrollState.scrollTo(0) }
     // A pre-visit preview already revealed the case context. Keep that fact separate from the
     // optional in-visit phrase view, which only changes what this sheet displays.
-    val visibleLevel = if (briefed && level.step < OpenBookLevel.CHECKLIST.step) {
-        OpenBookLevel.CHECKLIST
-    } else {
-        level
-    }
+    val visibleLevel = com.example.medvoicetrainer.analysis.OpenBookEngine.displayedLevel(level, briefed)
     ModalBottomSheet(onDismissRequest = onDismiss) {
         Column(
             modifier = Modifier

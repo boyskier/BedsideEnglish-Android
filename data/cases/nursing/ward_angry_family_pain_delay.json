@@ -1,0 +1,123 @@
+{
+  "id": "nursing_ward_angry_family_pain_delay",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["us", "uk_au"],
+  "counterpart": "relative",
+  "urgency": "semi-urgent",
+  "difficulty": "advanced",
+  "eval_template": "nursing_bedside_care",
+  "station_minutes": 6,
+  "patient_name": "De-escalating an angry son — late pain relief and 'nobody tells us anything'",
+  "chief_complaint": "Calm an angry family member whose mother has waited for pain relief and whose surgery was postponed without the family being told, then act on the pain and set up a real update",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Angry relative: 'She's been in agony for an hour and nobody tells us anything'",
+    "task": "Bedside care",
+    "urgency": "semi-urgent",
+    "patient": "Mrs. Loretta Bell, 81-year-old woman admitted yesterday with a broken hip after a fall at home, awaiting surgery; her son Marcus is visiting",
+    "location": "Orthopedic ward (unit), 19:10; you have just taken over as her nurse for the night shift, and her son has stopped you in the hallway (corridor) outside her room",
+    "situation": "Her son is loud and upset in front of other patients and visitors. He says his mother asked for pain medicine an hour ago, that her operation 'just didn't happen', and that nobody has told the family anything. You took report (handover) ten minutes ago.",
+    "background": [
+      "Broken hip from a fall at home yesterday; she was listed for surgery today and kept NPO / nil by mouth (nothing to eat or drink) from midnight.",
+      "At 14:00 her surgery was postponed to tomorrow because emergency cases took the operating room (theatre); the surgical team told Mrs. Bell, but she was drowsy and the family were not called.",
+      "She was allowed to eat again from 15:00; a meal tray was left but she did not eat much because of pain.",
+      "The day nurse was tied up with a deteriorating patient for the last hour of the shift.",
+      "Mrs. Bell has asked for her son to be kept informed about her care."
+    ],
+    "current_status": [
+      "At report you were told she had asked for pain relief at around 18:15; it has not been given yet.",
+      "Her last dose of as-needed (PRN) pain medication was at 14:30; the order (prescription) allows it every 4 hours, so she is due now.",
+      "Her son has not yet seen anyone from the surgical team today."
+    ],
+    "key_data": [
+      "You can give the prescribed as-needed pain medication yourself after assessing her pain and checking the chart; if it is not enough, the on-call doctor or provider needs to review her.",
+      "Her surgery is planned for tomorrow, but the exact time is not confirmed — the surgical team decides the list order in the morning.",
+      "The charge nurse (nurse in charge) is on the unit and can help arrange for the surgical team to update the family.",
+      "Hospital policy allows you to ask for help from colleagues or security if anyone becomes threatening; he is angry but has not threatened anyone."
+    ],
+    "treatments": [
+      "Done: regular pain relief and as-needed pain medication as prescribed; she was assessed by the surgical team this morning.",
+      "Pending: tonight's pain assessment and as-needed dose, and an update to the family about the new surgery plan."
+    ],
+    "your_request": "De-escalate her son, take immediate action on his mother's pain, give him honest information within your scope, and agree a clear plan for how the family will be kept updated.",
+    "must_include": [
+      "Stay calm, introduce yourself and your role, and suggest moving somewhere more private — without telling him to 'calm down'.",
+      "Acknowledge his frustration specifically and apologize for the wait and the lack of communication, without blaming colleagues or making excuses.",
+      "Ask what he has been told so far and what worries him most.",
+      "Act on the pain now: tell him you will assess his mother's pain and give her due pain medication straight away, and that you will get the doctor if it is not enough.",
+      "Explain honestly what you know about the postponed surgery, and what you cannot promise (the exact time).",
+      "Agree a concrete next step for updates: who will talk to him, and roughly when."
+    ]
+  },
+  "kickoff_text": "Are you her nurse? Finally. My mother has been lying in there in agony for an hour, her operation just didn't happen, and not one person has told us a single thing. What is going on here?",
+  "persona_override": "You are Marcus Bell, 48, son of Loretta Bell, an 81-year-old woman with a broken hip awaiting surgery. You came straight from work and found your mother in pain, hungry, and confused about why her operation didn't happen. You are angry, loud, and scared underneath — your father died in hospital two years ago after 'nobody told us anything until it was too late', and you will only say this if the nurse asks what is worrying you most. Ground truth you know: your mother pressed the call button about an hour ago for pain and was told 'the nurse will be along'; she was starved since midnight; she says 'they said something about tomorrow' but can't remember; nobody phoned you or your sister. Ground truth you do NOT know: the surgery was postponed at 14:00 because of emergency cases; she was allowed to eat from 15:00; the exact time tomorrow is not yet confirmed. Behaviour: start loud and interrupting. If the nurse says 'calm down', 'sir, lower your voice', or 'I understand' in a scripted way, get louder: 'Don't tell me to calm down.' If the nurse gets defensive, explains how busy the unit is, or blames the day staff or the surgeons, say 'That's not my problem — that's my mother in there' and demand the manager. If the nurse introduces themselves, acknowledges specifically what has gone wrong (the wait for pain relief and nobody calling the family), and apologizes without excuses, drop your volume noticeably. If the nurse then says they will go and give her pain relief now, agree but push back once: 'You'll go now? Not in another hour?' — if they give a clear time frame, accept it. If the nurse asks what you've been told, tell them. Ask directly: 'So when is the operation? First thing?' If the nurse guesses a time or promises 'first thing', hold them to it later ('Right — you said first thing'); if they are honest that the time isn't confirmed and say who will tell you and when, accept it grudgingly. If the nurse asks what you're most worried about, mention your father. By the end, if handled well, say something like 'Okay. Thank you. I'm sorry I shouted — I'm just worried about her.' Never become physically threatening. Do not coach the nurse. Keep turns to 1-3 short, emotional sentences.",
+  "learning_objectives": [
+    "introduce myself and move the conversation somewhere private without saying calm down",
+    "acknowledge the frustration and apologize for the wait without blaming colleagues",
+    "ask what the family has been told and what worries them most",
+    "assess her pain and give her due pain medication now with a clear time frame",
+    "explain honestly what I know and what I cannot promise about the surgery time",
+    "agree a concrete plan for family updates, who will call and when"
+  ],
+  "suggested_questions": [
+    "Mr. Bell, I'm Sam, I'm your mother's nurse tonight — I've just come on. Can we step in here for a moment so we can talk properly?",
+    "You're right to be upset. She's waited far too long for pain relief, and no one called you about the operation. I'm sorry — that shouldn't have happened.",
+    "Can you tell me what you've been told so far, and what's worrying you most?",
+    "The first thing I'm going to do is check her pain and give her the pain medicine she's due — that'll be in the next five minutes. If it's not enough, I'll call the doctor to see her.",
+    "What I know is that the surgery was moved to tomorrow because of emergency cases. I can't promise you a time yet, but I'll ask the nurse in charge to get the surgical team to speak with you, and I'll come back and tell you what they say before nine."
+  ],
+  "clinical_knowledge": {
+    "topic": "De-escalating an angry family member while acting on unrelieved pain and a communication failure",
+    "review_status": "grounded in NICE NG10 de-escalation principles, Joint Commission guidance on workplace violence prevention and pain assessment, and patient- and family-centered communication practice; local policies on escalation, security, and complaints apply",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Anger from families is usually fear plus a real grievance; de-escalation works by addressing both the emotion and the concrete problem.",
+      "Specific acknowledgement ('she waited too long for pain relief, and no one called you') lowers arousal far more than generic phrases like 'I understand' or 'calm down'.",
+      "Taking a visible, time-bound action on the grievance (assessing and treating the pain now) rebuilds trust faster than explanation.",
+      "Honesty about uncertainty is safer than a reassuring promise that may later be broken."
+    ],
+    "diagnostic_clues": [
+      "Loud, repetitive complaints about 'nobody telling us anything' signal a communication failure as much as a care failure.",
+      "Anger that softens after specific acknowledgement is a sign the approach is working; escalating threats or physical agitation are cues to get help.",
+      "A past bad hospital experience often sits behind a family member's anger and can be elicited by asking what worries them most."
+    ],
+    "common_misconceptions": [
+      "Explaining how busy the unit is will make the family more understanding.",
+      "Apologizing is admitting fault and should be avoided.",
+      "The nurse should defend colleagues by explaining why the day staff were late.",
+      "Telling an angry person to calm down helps them calm down."
+    ],
+    "dangerous_errors": [
+      "Delaying the pain assessment and due analgesia further while arguing in the hallway.",
+      "Promising a surgery time or a stronger drug that is outside nursing scope.",
+      "Blaming named colleagues in front of the family.",
+      "Continuing to engage alone if the relative becomes threatening, instead of getting help per policy."
+    ],
+    "management_principles": [
+      "Keep your own voice low and slow, stand at an angle with space, and move to a private area where possible.",
+      "Introduce yourself, acknowledge the specific grievance, and apologize for the experience without blaming others.",
+      "Explore what the family knows and fears, then act on the most urgent need with a stated time frame.",
+      "Give honest information within scope, say what you cannot promise, and agree who will update the family and when — then follow through.",
+      "Set a respectful limit and involve the charge nurse or security if the behavior becomes threatening."
+    ],
+    "boundaries_and_exceptions": [
+      "Pain medication choice, dose, and frequency are set by the prescriber; the nurse gives what is prescribed and escalates if it is inadequate.",
+      "Surgical scheduling is decided by the surgical and theatre/operating room teams, not the ward nurse.",
+      "What can be shared with a relative depends on the patient's consent and local confidentiality rules (for example HIPAA in the US or UK data-protection and consent rules).",
+      "Complaint routes and security procedures differ by institution and country.",
+      "This scenario practises de-escalation communication; it is not a source of analgesic prescribing guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE NG10: Violence and aggression — short-term management in mental health, health and community settings",
+        "url": "https://www.nice.org.uk/guidance/ng10"
+      },
+      {
+        "title": "The Joint Commission (workplace violence prevention)",
+        "url": "https://www.jointcommission.org/"
+      }
+    ]
+  }
+}

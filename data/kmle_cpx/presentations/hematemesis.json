@@ -1,0 +1,51 @@
+{
+  "id": "hematemesis",
+  "title": "피를 토했어요",
+  "english_title": "Vomiting blood (hematemesis)",
+  "category": "소화기",
+  "kmle_item": "토혈",
+  "door_complaint": "피를 토했다고",
+  "differential_groups": [
+    {"key": "peptic", "label": "소화성 질환", "examples": ["소화성궤양 출혈", "출혈성 위염", "미란성 식도염"]},
+    {"key": "variceal", "label": "간경변·문맥고혈압", "examples": ["식도정맥류 출혈", "위정맥류 출혈"]},
+    {"key": "tear_tumor", "label": "점막 손상·종양", "examples": ["말로리-바이스 증후군", "위암", "식도암"]},
+    {"key": "mimic", "label": "위장관 외 출혈", "examples": ["삼킨 코피", "객혈", "구강 출혈"]}
+  ],
+  "history": [
+    {"id": "confirm_source", "text": "토한 것인지 기침으로 나온 것인지, 코피 여부", "say": "피가 토하면서 나왔나요, 기침하면서 나왔나요? 코피가 나지는 않았어요?", "tags": ["mimic"]},
+    {"id": "color", "text": "피의 색(선홍색, 검붉은색, 커피 찌꺼기 모양)", "say": "피 색깔이 어땠어요? 새빨간 피였나요, 커피 찌꺼기 같았나요?", "tags": ["peptic", "variceal"]},
+    {"id": "amount_frequency", "text": "토한 피의 양과 횟수, 시작 시기", "say": "언제부터 몇 번이나 토하셨어요? 양은 어느 정도였나요?", "tags": ["variceal"]},
+    {"id": "preceding_retching", "text": "피가 나오기 전 반복된 헛구역질·구토 여부", "say": "처음부터 피가 나왔나요, 여러 번 토하다가 나중에 피가 섞였나요?", "tags": ["tear_tumor"]},
+    {"id": "melena", "text": "흑색변, 혈변", "say": "변이 까맣게 나오거나 피가 섞여 나오지는 않았나요?", "tags": ["peptic", "variceal"]},
+    {"id": "hemodynamic", "text": "어지러움, 실신, 두근거림, 식은땀", "say": "어지럽거나 쓰러질 것 같지는 않으세요? 가슴이 두근거리진 않나요?", "key": true},
+    {"id": "epigastric_pain", "text": "명치 통증, 속쓰림과 식사와의 관계", "say": "피 토하기 전에 명치가 아프거나 속이 쓰리셨어요?", "tags": ["peptic"]},
+    {"id": "post_vomit_chest_pain", "text": "구토 뒤 심한 가슴 통증(식도 파열 감별)", "say": "토하고 나서 가슴이 심하게 아프지는 않으세요?", "tags": ["tear_tumor"]},
+    {"id": "liver_disease", "text": "간질환·간경변 진단, 이전 정맥류 출혈", "say": "간이 안 좋다는 말 들으신 적 있으세요? 전에도 피를 토한 적이 있나요?", "tags": ["variceal"], "key": true},
+    {"id": "liver_signs", "text": "배가 불러옴, 황달, 쉽게 드는 멍", "say": "배가 불러오거나 눈이 노래지진 않았나요? 멍이 잘 드세요?", "tags": ["variceal"]},
+    {"id": "weight_dysphagia", "text": "체중 감소, 식욕 저하, 삼킴 곤란", "say": "최근에 살이 빠지거나 음식 삼키기 힘들지는 않으셨어요?", "tags": ["tear_tumor"]},
+    {"id": "antithrombotic_nsaid", "text": "진통소염제, 아스피린, 항혈소판제·항응고제 복용", "say": "진통제나 아스피린, 피를 묽게 하는 약을 드시는 게 있나요?", "tags": ["peptic"], "key": true},
+    {"id": "alcohol", "text": "평소 음주량과 최근 과음", "say": "술은 얼마나 드세요? 최근에 과음하신 적이 있나요?", "tags": ["variceal", "tear_tumor", "peptic"]},
+    {"id": "prior_ulcer", "text": "이전 위궤양 진단, 위내시경, 헬리코박터 치료", "say": "전에 위궤양 진단을 받았거나 위내시경을 받아 보신 적 있으세요?", "tags": ["peptic"]}
+  ],
+  "physical_exam": [
+    {"id": "orthostatic_vitals", "text": "혈압, 맥박과 기립성 변화로 출혈량 평가", "say": "누운 자세와 앉은 자세에서 혈압과 맥박을 재 보겠습니다.", "key": true},
+    {"id": "pallor", "text": "결막 창백 확인", "say": "눈 아래쪽이 창백한지 보겠습니다."},
+    {"id": "oral_nasal", "text": "입안과 코 안의 출혈 부위 확인", "say": "입안과 코 안을 먼저 살펴보겠습니다.", "tags": ["mimic"]},
+    {"id": "liver_stigmata", "text": "황달, 거미혈관종, 손바닥 홍반 등 만성 간질환 징후", "say": "피부와 손바닥을 좀 살펴보겠습니다.", "tags": ["variceal"]},
+    {"id": "abdomen", "text": "상복부 압통, 간비종대, 복수(이동둔탁음)", "say": "편하게 누우세요. 배를 눌러 보고 두드려 보겠습니다.", "tags": ["peptic", "variceal"]},
+    {"id": "rectal_exam", "text": "필요하면 직장수지검사로 흑색변 확인", "say": "변 색깔을 확인하려면 항문으로 손가락을 넣어 보는 검사가 필요할 수 있습니다.", "conditional": true}
+  ],
+  "education": [
+    {"id": "npo_admission", "text": "금식하고 입원해 내시경으로 출혈 부위를 확인해야 함을 안내", "say": "지금은 아무것도 드시지 말고, 입원해서 내시경으로 피 나는 곳을 확인해야 합니다."},
+    {"id": "alcohol_nsaid", "text": "금주, 진통소염제 중단 안내", "say": "술과 진통제는 출혈을 악화시킬 수 있어서 끊으셔야 합니다.", "conditional": true},
+    {"id": "warning_signs", "text": "다시 피를 토하거나, 어지럽거나, 검은 변이 나오면 즉시 알리도록 안내", "say": "다시 피를 토하거나 어지러우면 바로 말씀해 주세요.", "key": true}
+  ],
+  "grader_notes": [
+    "먼저 활력징후로 출혈량과 쇼크 여부를 평가하고, 굵은 정맥로 두 개를 확보해 수액 소생을 하며, 수혈은 대개 혈색소 7 g/dL 미만에서 시행한다(심혈관질환이 있으면 더 높게).",
+    "혈구검사, 혈액형·교차시험, 응고검사, 간기능, BUN·크레아티닌을 확인한다.",
+    "소생 후 24시간 이내에 상부위장관 내시경으로 출혈 부위를 찾고 지혈한다.",
+    "궤양 출혈이 의심되면 정맥 양성자펌프억제제를 투여하고, 헬리코박터 검사와 제균 치료를 한다.",
+    "간경변 환자의 정맥류 출혈이 의심되면 혈관수축제(테를리프레신 또는 옥트레오타이드)와 예방적 항생제를 투여하고 12시간 이내에 내시경 결찰술을 시행한다."
+  ],
+  "case_ids": ["gi_016", "gi_019", "em_018"]
+}

@@ -142,5 +142,185 @@
       "Mesenteric adenitis",
       "Urinary tract infection or renal colic"
     ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "126/82",
+      "hr": 98,
+      "rr": 18,
+      "spo2": 99,
+      "temp_c": 38.2
+    },
+    "history": [
+      {
+        "answer": "I have this severe pain in the right side of my lower belly that started last night, and it's been getting worse.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started gradually about twelve hours ago, around midnight last night, and it has steadily gotten worse.",
+        "topic": "Onset and course"
+      },
+      {
+        "answer": "At first it was a dull ache right around my belly button, but early this morning it shifted down to my lower right side.",
+        "topic": "Pain location and migration"
+      },
+      {
+        "answer": "No, the pain stays right in my lower right stomach and doesn't shoot to my back, shoulder, or groin.",
+        "topic": "Radiation of pain"
+      },
+      {
+        "answer": "It's a constant, sharp, aching pain now, not coming and going in waves.",
+        "topic": "Pain character"
+      },
+      {
+        "answer": "Right now it is about an 8 out of 10, whereas it started as a mild ache around a 3 or 4 last night.",
+        "topic": "Pain severity and progression"
+      },
+      {
+        "answer": "Coughing, walking, and sudden movements make it much worse, but curling up and walking hunched over eases it a little.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "No, I have never had abdominal pain like this before.",
+        "topic": "Previous similar episodes"
+      },
+      {
+        "answer": "I felt really nauseous this morning and threw up twice, just stomach fluid and some clear liquid.",
+        "topic": "Nausea and vomiting"
+      },
+      {
+        "answer": "I haven't had a bowel movement or passed any gas since the pain started last night, and no diarrhea or blood.",
+        "topic": "Bowel habits and flatus"
+      },
+      {
+        "answer": "Yes, I felt hot and feverish this morning, and when my wife took my temperature at home it was 38.2 degrees Celsius.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "No, my skin and eyes look normal, and my urine hasn't been unusually dark or stools pale.",
+        "topic": "Jaundice and stool changes"
+      },
+      {
+        "answer": "No pain or burning when I urinate, no blood, and I haven't been going more often than usual.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "No, I haven't passed out, felt dizzy, or felt lightheaded.",
+        "topic": "Dizziness or fainting"
+      },
+      {
+        "answer": "No chest tightness, palpitations, or shortness of breath at all.",
+        "topic": "Chest pain and breathlessness"
+      },
+      {
+        "answer": "I ate a regular sandwich for lunch yesterday, nothing particularly greasy or unusual, and I haven't eaten since.",
+        "topic": "Recent meals and greasy food"
+      },
+      {
+        "answer": "No, I haven't taken any pain medications, ibuprofen, or aspirin because I didn't want to upset my stomach.",
+        "topic": "Painkiller and aspirin use"
+      },
+      {
+        "answer": "No, I have never had an irregular heartbeat, atrial fibrillation, or blood vessel problems.",
+        "topic": "Heart rhythm and vascular history"
+      },
+      {
+        "answer": "I wonder if it could be my appendix, because my grandfather had his appendix taken out when he had pain like this.",
+        "topic": "Patient ideas and concerns"
+      },
+      {
+        "answer": "I'm really worried that my appendix might burst if we wait too long, so I hope we can treat it quickly.",
+        "topic": "Patient worries and expectations"
+      },
+      {
+        "answer": "I have always been healthy and have no chronic medical conditions like diabetes or high blood pressure.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, over-the-counter drugs, vitamins, or supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any known allergies to medications, foods, or anything else.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any nicotine products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have a beer or two occasionally on social occasions, and none in the past few days.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office accountant and live in an apartment with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My grandfather had an appendectomy when he was younger, but otherwise my parents and siblings are healthy.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Patient appears in acute distress, lying still on the examination couch with knees slightly flexed, grimacing with movement.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 126/82 mmHg, heart rate 98 bpm, respiratory rate 18 breaths/min, body temperature 38.2°C, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is flat with no surgical scars, rashes, distension, or visible peristalsis.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Hypoactive bowel sounds heard across all four quadrants; no bruits heard.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal tympany heard throughout; no dullness over the flanks.",
+        "maneuver": "abdominal_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Soft with focal tenderness and involuntary guarding in the right lower quadrant; other quadrants are soft and non-tender.",
+        "maneuver": "abdominal_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "Localized rebound tenderness present in the right lower quadrant, with no generalized peritonitis.",
+        "maneuver": "rebound_tenderness",
+        "response": "pain"
+      },
+      {
+        "finding": "Negative Murphy's sign; no tenderness or inspiratory arrest on palpation of the right upper quadrant.",
+        "maneuver": "murphy_sign",
+        "response": "none"
+      },
+      {
+        "finding": "Positive McBurney's point tenderness, positive Rovsing's sign with pain referred to the right lower quadrant, and positive psoas sign on the right.",
+        "maneuver": "appendicitis_signs",
+        "response": "pain"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "No masses felt; focal tenderness on the right side of the rectal vault; no blood on the glove.",
+        "maneuver": "digital_rectal_exam",
+        "response": "pain"
+      }
+    ]
   }
 }

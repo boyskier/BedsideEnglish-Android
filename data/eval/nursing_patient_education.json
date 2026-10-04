@@ -1,0 +1,64 @@
+{
+  "name": "Nursing Patient Education & Discharge Teaching",
+  "description": "Evaluates a nurse teaching a patient or family member about a medication, device, or discharge plan in plain English, and confirming understanding with a teach-back.",
+  "metrics": {
+    "fluency": {
+      "label": "Language & Fluency",
+      "anchors": {
+        "80-100": "Clear, fluent, unhurried phrasing at a pace a worried patient can follow.",
+        "50-70": "Understandable but occasional hesitations or grammar errors interrupt the explanation.",
+        "10-40": "Frequent errors that leave the patient unsure what they were told."
+      }
+    },
+    "plain_language": {
+      "label": "Plain Language",
+      "anchors": {
+        "80-100": "Replaces jargon with everyday words, or defines a term immediately when it must be used.",
+        "50-70": "Mixes plain language with unexplained clinical terms.",
+        "10-40": "Explains in clinical register the patient cannot be expected to understand."
+      }
+    },
+    "teaching_structure": {
+      "label": "Teaching Structure",
+      "anchors": {
+        "80-100": "Chunks the content, signposts each step, and orders it by what the patient must do first.",
+        "50-70": "Covers the content but in one long block, or in an order that follows the chart rather than the patient's day.",
+        "10-40": "Unstructured; key actions are scattered or never separated from background detail."
+      }
+    },
+    "teach_back": {
+      "label": "Teach-back & Checking Understanding",
+      "anchors": {
+        "80-100": "Asks the patient to say the plan back in their own words, and corrects gaps without blaming them.",
+        "50-70": "Asks 'do you understand?' or 'any questions?' but never has the patient demonstrate.",
+        "10-40": "Never checks understanding, or accepts a nod as confirmation."
+      }
+    },
+    "safety_netting": {
+      "label": "Safety Netting",
+      "anchors": {
+        "80-100": "Names the specific warning signs, what to do about each, and who to contact.",
+        "50-70": "Mentions warning signs generally ('if you feel unwell, call us').",
+        "10-40": "No safety net, or omits a warning sign the case makes essential."
+      }
+    },
+    "professionalism": {
+      "label": "Empathy & Professionalism",
+      "anchors": {
+        "80-100": "Acknowledges the patient's worry or difficulty, invites questions, and stays warm throughout.",
+        "50-70": "Polite but transactional; the patient's stated concern goes unaddressed.",
+        "10-40": "Rushed, dismissive, or condescending."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Checked what the patient already knows or is worried about before teaching", "required": true},
+    {"item": "Explained the key information in plain English, without unexplained jargon", "required": true},
+    {"item": "Stated concretely what the patient must do, and when", "required": true},
+    {"item": "Named the specific warning signs and what to do if they occur", "required": true},
+    {"item": "Asked the patient to repeat the plan back in their own words (teach-back)", "required": true},
+    {"item": "Corrected any gap in the teach-back without blaming the patient", "required": false},
+    {"item": "Invited questions and confirmed who to contact", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "summary"]
+}

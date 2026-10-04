@@ -1,0 +1,111 @@
+{
+  "id": "nursing_oet_gestational_diabetes_glucose_monitoring",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — pregnant woman newly diagnosed with gestational diabetes, worried about her baby and confused about glucose checks",
+  "chief_complaint": "Reassure a pregnant woman with newly diagnosed gestational diabetes and explain when and how to check her blood glucose at home",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "Gestational diabetes: a worried first-time mother learning to check her blood sugar",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Mrs Linh Pham, 31-year-old woman, 29 weeks pregnant with her first baby",
+    "location": "Antenatal clinic; you are the nurse in the diabetes-in-pregnancy clinic, seeing Mrs Pham for the first time since her diagnosis",
+    "situation": "Mrs Pham's glucose tolerance test last week showed mild gestational diabetes. The plan is to start with diet and activity changes and to check her blood glucose at home. She has been given a glucose meter but has not used it yet. She looks anxious.",
+    "background": [
+      "She is otherwise healthy and the pregnancy has been straightforward so far; the baby's growth on scans has been normal.",
+      "Her mother has type 2 diabetes.",
+      "She usually eats white rice with most meals and drinks fruit juice several times a day."
+    ],
+    "current_status": [
+      "Glucose tolerance test: mildly raised results, consistent with gestational diabetes.",
+      "No medicines needed at this stage."
+    ],
+    "key_data": [
+      "Gestational diabetes is common. Pregnancy hormones make it harder for the body to use insulin, so blood sugar rises. It is not caused by anything she did wrong, and it usually goes away after the baby is born. She will have a blood test after the birth to check, and regular checks in later years, because she has a higher chance of developing type 2 diabetes.",
+      "When blood sugar is kept within target, most women with gestational diabetes have healthy babies. If it stays high, the baby can grow larger than usual, which can make birth more difficult.",
+      "Home checks: wash and dry hands, prick the side of a fingertip (a quick, small sting — the side hurts less than the pad), put the drop of blood on the strip, and write the result in the diary. Check when she first wakes up (before eating) and one hour after each main meal.",
+      "Her clinic's targets, written in her diary (targets vary between clinics): below 5.3 mmol/L (about 95 mg/dL) on waking, and below 7.8 mmol/L (about 140 mg/dL) one hour after meals.",
+      "Diet and activity: regular meals, smaller portions of rice, swapping fruit juice for water, and a short walk after meals. If levels stay high, tablets or insulin may be added; this is common and is not a failure."
+    ],
+    "treatments": [
+      "Already done: glucose meter and diary given; referral to the dietitian.",
+      "Pending: dietitian appointment this week; clinic review of her readings in one to two weeks; extra growth scans."
+    ],
+    "your_request": "Find out Mrs Pham's understanding and worries, reassure her, and explain how and when to check her blood glucose.",
+    "must_include": [
+      "Find out what Mrs Pham already knows about gestational diabetes and what she is most worried about.",
+      "Reassure her about her baby and explain that gestational diabetes is common and not her fault.",
+      "Explain step by step how to check her blood glucose and when to do the checks.",
+      "Advise her on simple changes to diet and activity.",
+      "Explain the follow-up plan, including what happens if her levels stay high."
+    ]
+  },
+  "kickoff_text": "Hello. I'm sorry, I've been so worried since they rang me. Is my baby going to be okay?",
+  "persona_override": "You are Linh Pham, a 31-year-old office worker, 29 weeks pregnant with your first baby. You are gentle, polite and very anxious. Your specific worry: you think the diabetes will damage the baby or that the baby will 'be born with diabetes', and you feel guilty because you think you caused it by eating sweets and drinking fruit juice. You are also confused about the glucose meter: someone told you to test 'before and after meals' and you do not know when exactly, or what the numbers mean. Ground truth: first pregnancy; healthy so far; normal growth scans; your mother has type 2 diabetes and takes tablets; you eat white rice with most meals and drink fruit juice three or four times a day because you thought it was healthy; you walk to the bus stop but do little other exercise; you have the meter in its box and have not opened it; you are scared of needles but have had blood tests before. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words like 'GDM', 'glucose tolerance test', 'capillary blood glucose', 'postprandial', 'fasting', 'macrosomia', 'insulin resistance' or 'glycaemic control' without explaining them, ask gently what they mean. If the nurse goes straight to the meter without responding to your worry about the baby, follow along, then ask again more anxiously: 'Sorry — but will the baby be all right? Did I do this?' If the nurse reassures you that it is common, not your fault, and that most babies are healthy when sugar is controlled, relax a little and say 'Oh, thank goodness.' Then ask one follow-up, such as 'Will I have diabetes forever, like my mum?' When the meter is explained, ask about the finger prick ('Does it hurt?'). If asked to repeat when to check, repeat it with one small mistake (for example, saying you check one hour after waking instead of before breakfast) so there is something to correct. If diet is mentioned, be surprised that fruit juice is a problem ('But juice is healthy!'). If the nurse does not mention what happens next, ask near the end: 'What if the numbers are too high?' Never coach the nurse or mention scoring. Near five minutes, wrap up naturally: say you feel better, that you will start checking tomorrow morning, and thank the nurse.",
+  "learning_objectives": [
+    "find out what the patient knows and what worries her about the baby",
+    "reassure that gestational diabetes is common and not her fault",
+    "explain how to check blood glucose with a finger prick and record it in the diary",
+    "explain when to check: on waking before eating and one hour after each meal",
+    "advise simple diet and activity changes such as swapping juice for water and walking after meals",
+    "explain the follow-up plan and that tablets or insulin may be added if needed"
+  ],
+  "suggested_questions": [
+    "It's completely natural to be worried. Before I explain anything, can you tell me what you already know about gestational diabetes?",
+    "This is very common, and it isn't caused by anything you did. Pregnancy hormones make it harder for your body to control sugar, and when we keep your sugar levels in the target range, most babies are born healthy.",
+    "You'll check first thing when you wake up, before you eat or drink anything, and then one hour after each main meal.",
+    "Just so I know I've explained it clearly, can you tell me when you'll do your checks tomorrow?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Education and reassurance for a woman newly diagnosed with gestational diabetes",
+    "review_status": "grounded in NICE NG3 (diabetes in pregnancy) and NHS gestational diabetes information, consistent with ACOG targets; glucose targets, monitoring schedule and treatment thresholds follow local obstetric and diabetes team protocols",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Gestational diabetes results mainly from pregnancy-related insulin resistance; it is common and usually resolves after birth.",
+      "Good glucose control reduces risks such as a large baby, birth complications and neonatal low blood sugar.",
+      "Many women manage with diet and activity alone; medication is added if targets are not met, which is not a personal failure."
+    ],
+    "diagnostic_clues": [
+      "Guilt ('Did I do this?') and fear for the baby are common reactions that need to be addressed before teaching.",
+      "Frequent fruit juice and large portions of refined carbohydrates are common, easily changed contributors to high readings."
+    ],
+    "common_misconceptions": [
+      "The baby will be born with diabetes.",
+      "Fruit juice is a healthy drink in gestational diabetes.",
+      "Needing insulin means the mother has failed."
+    ],
+    "dangerous_errors": [
+      "Advising her to stop eating carbohydrates entirely or to diet to lose weight during pregnancy.",
+      "Giving incorrect testing times, which makes the readings impossible to interpret.",
+      "False reassurance that there are no risks, or alarming her with worst-case outcomes."
+    ],
+    "management_principles": [
+      "Explore understanding and emotions first, then reassure with accurate, balanced information.",
+      "Teach glucose monitoring step by step and check understanding with teach-back.",
+      "Give a few practical diet and activity changes, explain dietitian referral and follow-up, and explain when treatment may be escalated."
+    ],
+    "boundaries_and_exceptions": [
+      "Glucose targets (for example, 5.3 and 7.8 mmol/L, or 95 and 140 mg/dL) whether checks are one or two hours after meals, and whether that time is counted from the start or the end of the meal, vary between guidelines and local protocols.",
+      "Units differ between countries (mmol/L versus mg/dL); use the units on the patient's meter and diary.",
+      "Postnatal testing and long-term diabetes screening schedules follow local guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE NG3: Diabetes in pregnancy — management from preconception to the postnatal period",
+        "url": "https://www.nice.org.uk/guidance/ng3"
+      },
+      {
+        "title": "NHS: Gestational diabetes",
+        "url": "https://www.nhs.uk/conditions/gestational-diabetes/"
+      }
+    ]
+  }
+}

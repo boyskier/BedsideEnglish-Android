@@ -1,0 +1,50 @@
+{
+  "id": "facial_palsy",
+  "title": "얼굴 한쪽이 움직이지 않아요",
+  "english_title": "Facial weakness (facial palsy)",
+  "category": "신경",
+  "door_complaint": "얼굴 한쪽이 움직이지 않는다고",
+  "differential_groups": [
+    {"key": "peripheral", "label": "말초성(특발성·감염)", "examples": ["벨마비", "람세이헌트 증후군", "중이염 합병증", "라임병"]},
+    {"key": "central", "label": "중추성", "examples": ["뇌졸중", "뇌종양", "다발경화증"]},
+    {"key": "structural", "label": "종양·외상·수술", "examples": ["이하선 종양", "청신경초종", "측두골 골절", "이하선 수술 후 신경 손상"]},
+    {"key": "systemic", "label": "전신 질환", "examples": ["당뇨병성 신경병증", "길랭-바레 증후군", "사르코이드증"]}
+  ],
+  "history": [
+    {"id": "onset_progression", "text": "발생 시기와 속도(갑자기, 자고 일어나서, 수일간 진행, 수주 이상 서서히)", "say": "언제부터 그러셨어요? 갑자기 생겼어요, 아니면 몇 주에 걸쳐 서서히 심해졌어요?", "tags": ["peripheral", "central", "structural"], "key": true},
+    {"id": "forehead_eye", "text": "이마 주름을 지을 수 있는지, 눈이 완전히 감기는지", "say": "이마를 찡그릴 수 있으세요? 눈은 꼭 감기나요?", "tags": ["peripheral", "central"], "key": true},
+    {"id": "limb_speech", "text": "팔다리 힘 빠짐·저림, 말이 어눌함, 어지럼, 겹쳐 보임", "say": "팔다리에 힘이 빠지거나 저리고, 말이 어눌해지거나 물체가 두 개로 보이지는 않나요?", "tags": ["central"], "key": true},
+    {"id": "headache_vomiting", "text": "심한 두통, 구토, 의식 변화", "say": "머리가 심하게 아프거나 토하지는 않으셨어요?", "tags": ["central"]},
+    {"id": "ear_pain_vesicle", "text": "귀 통증, 귀나 입안의 물집", "say": "귀가 아프거나 귀 안이나 입안에 물집이 생기지는 않았나요?", "tags": ["peripheral"]},
+    {"id": "retroauricular_pain", "text": "마비 전 귀 뒤쪽 통증", "say": "얼굴이 굳기 전에 귀 뒤쪽이 아프지는 않으셨어요?", "tags": ["peripheral"]},
+    {"id": "hearing_vertigo", "text": "청력 저하, 이명, 빙빙 도는 어지럼", "say": "한쪽 귀가 잘 안 들리거나 소리가 나고, 빙빙 도는 어지럼이 있으세요?", "tags": ["peripheral", "structural"]},
+    {"id": "taste_sound", "text": "맛이 이상함, 소리가 크게 울림", "say": "음식 맛이 이상하거나 소리가 유난히 크게 울리지는 않나요?", "tags": ["peripheral"]},
+    {"id": "eye_dryness", "text": "눈이 마르거나 눈물이 흐름, 이물감", "say": "눈이 뻑뻑하거나 눈물이 계속 흐르세요?", "tags": ["peripheral"]},
+    {"id": "eating_drooling", "text": "침이 흐르거나 음식이 한쪽 볼에 고임", "say": "물을 마실 때 흘리거나 음식이 한쪽 볼에 고이나요?"},
+    {"id": "preceding_infection", "text": "최근 감기, 대상포진, 진드기 물림·발진", "say": "최근에 감기를 앓으셨거나 대상포진, 산에 다녀온 뒤 진드기에 물린 적이 있나요?", "tags": ["peripheral", "systemic"]},
+    {"id": "recurrence_bilateral", "text": "이전 같은 증상, 반대쪽 또는 양쪽 발생", "say": "전에도 이런 적이 있으셨어요? 반대쪽이나 양쪽 얼굴이 다 그런가요?", "tags": ["structural", "systemic"]},
+    {"id": "parotid_mass", "text": "귀 앞이나 아래의 혹", "say": "귀 앞이나 턱 아래에 혹이 만져지지는 않나요?", "tags": ["structural"]},
+    {"id": "trauma_surgery", "text": "머리 외상, 귀나 이하선 수술", "say": "최근에 머리를 다치셨거나 귀, 얼굴 쪽 수술을 받으셨어요?", "tags": ["structural"]},
+    {"id": "risk_conditions", "text": "당뇨병, 고혈압, 임신", "say": "당뇨병이나 고혈압이 있으세요?", "tags": ["systemic", "central"]}
+  ],
+  "physical_exam": [
+    {"id": "facial_motor", "text": "이마 주름 짓기, 눈 꼭 감기, 볼 부풀리기, 이 보이며 웃기로 양측 비교", "say": "이마를 위로 올려 보시고, 눈을 꼭 감아 보세요. 볼에 바람을 넣고, 이를 보이며 웃어 보세요.", "tags": ["peripheral", "central"], "key": true},
+    {"id": "eye_closure", "text": "눈 감김 정도와 각막 노출 확인", "say": "눈이 완전히 감기는지, 눈이 마르지 않았는지 보겠습니다.", "tags": ["peripheral"]},
+    {"id": "ear_exam", "text": "귓바퀴, 외이도, 고막 시진(물집, 중이염)", "say": "귀 안을 들여다보겠습니다.", "tags": ["peripheral"]},
+    {"id": "parotid_neck", "text": "이하선과 목 촉진", "say": "귀 앞과 턱 아래, 목을 만져 보겠습니다.", "tags": ["structural"]},
+    {"id": "neuro_exam", "text": "다른 뇌신경, 팔다리 근력·감각, 발음, 소뇌 기능 확인", "say": "눈을 움직여 보시고, 제 손을 꽉 잡아 보세요. 팔다리 힘과 감각도 확인하겠습니다.", "tags": ["central"], "key": true}
+  ],
+  "education": [
+    {"id": "eye_protection", "text": "인공눈물, 밤에는 안연고와 안대로 눈을 보호하도록 교육", "say": "눈이 잘 안 감기니까 낮에는 인공눈물을 넣고, 잘 때는 연고를 바르고 안대를 하세요.", "tags": ["peripheral"], "key": true},
+    {"id": "prognosis", "text": "대부분 수 주에서 수 개월에 걸쳐 회복되며 일찍 약을 시작하는 게 중요하다고 설명", "say": "대부분 몇 주에서 몇 달 사이에 좋아지고, 약을 빨리 시작할수록 회복에 도움이 됩니다.", "tags": ["peripheral"]},
+    {"id": "warning_signs", "text": "팔다리 힘 빠짐, 말 어눌함, 심한 두통이 생기거나 수 개월에 걸쳐 좋아지지 않으면 다시 오도록 안내", "say": "팔다리에 힘이 빠지거나 말이 어눌해지면 바로 오시고, 3~4개월이 지나도 나아지지 않으면 다시 검사를 받으세요."}
+  ],
+  "grader_notes": [
+    "이마까지 마비되는 말초성 마비인지 이마가 보존되는 중추성 마비인지 먼저 구분하고, 다른 신경학적 이상이 있으면 뇌졸중을 의심해 즉시 뇌영상검사를 한다.",
+    "전형적인 벨마비는 임상 진단이며 일상적인 혈액검사나 영상검사는 필요 없고, 발병 72시간 이내에 경구 스테로이드를 시작한다.",
+    "항바이러스제 단독 치료는 권고되지 않고 중증 마비에서 스테로이드와 병용을 고려할 수 있으며, 귀에 물집이 있는 람세이헌트 증후군은 스테로이드와 항바이러스제를 함께 쓴다.",
+    "눈이 완전히 감기지 않으면 인공눈물, 안연고, 안대로 각막을 보호한다.",
+    "서서히 진행하거나 재발하는 마비, 이하선 종괴, 다른 뇌신경 이상, 3~4개월이 지나도 회복이 없으면 조영 MRI나 CT로 종양 등 구조적 원인을 찾는다."
+  ],
+  "case_ids": []
+}

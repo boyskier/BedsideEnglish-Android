@@ -113,6 +113,13 @@ internal fun modeForGenericPracticeCase(caseId: String, caseJson: String): Strin
     return when {
         fieldEquals("encounter_type", "follow_up") -> "follow_up"
         fieldEquals("session_mode", "team_communication") -> "team_communication"
+        // Nursing sessions get their own stored mode so History can filter them and so the
+        // physician track's per-mode statistics are never diluted by a different profession's
+        // rubric. Everything downstream (analysis, SRS, export) is mode-agnostic.
+        fieldEquals("session_mode", "nursing") -> "nursing"
+        // Korean CPX: Korean-speaking patient and Korean grader, stored apart from English sessions.
+        fieldEquals("session_mode", com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE) ->
+            com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE
         fieldEquals("system", "presentation") || fieldEquals("eval_template", "case_presentation") -> "presentation"
         fieldEquals("system", "lounge") || fieldEquals("eval_template", "lounge") -> "lounge"
         fieldEquals("id", "custom_case") -> "custom"
@@ -242,6 +249,8 @@ fun MainAppScaffold(viewModel: MainViewModel) {
 
     val activeSession by viewModel.activeSession.collectAsStateWithLifecycle()
     val lastEvaluation by viewModel.lastEvaluation.collectAsStateWithLifecycle()
+    val lastKmleResult by viewModel.lastKmleResult.collectAsStateWithLifecycle()
+    val kmleMockState by viewModel.kmleMock.collectAsStateWithLifecycle()
     val lastPresentationLaunch by viewModel.lastCompletedPresentationLaunch.collectAsStateWithLifecycle()
     val apiKey by viewModel.geminiApiKey.collectAsStateWithLifecycle()
     val openAiApiKey by viewModel.openAiApiKey.collectAsStateWithLifecycle()
@@ -255,15 +264,26 @@ fun MainAppScaffold(viewModel: MainViewModel) {
     val historyNavigationRequests by viewModel.historyNavigationRequests.collectAsStateWithLifecycle()
     var experiencePromptDismissed by rememberSaveable { mutableStateOf(false) }
     val effectivePracticeExperience = practiceExperience ?: PracticeExperience.ALL_FEATURES
+    val koreanCpx = effectivePracticeExperience == PracticeExperience.KOREAN_CPX
+    // The Korean CPX track has two tabs of its own (stations, score history); if the learner
+    // switches into it from another tab, land on its home rather than an English screen.
+    LaunchedEffect(koreanCpx) {
+        if (koreanCpx && currentTab !in setOf(0, 3)) currentTab = 0
+    }
 
     LaunchedEffect(historyNavigationRequests) {
         if (historyNavigationRequests > 0L) currentTab = 3
     }
 
     // A share-sheet hand-off (Android ACTION_SEND from ChatGPT/Gemini/notes apps) should open the
-    // Import screen immediately rather than silently waiting for the learner to find it.
-    LaunchedEffect(pendingImportText) {
-        if (!pendingImportText.isNullOrBlank()) showImportScreen = true
+    // Import screen immediately rather than silently waiting for the learner to find it — but never
+    // over a live encounter or its just-finished feedback, which Import would otherwise cover (it
+    // outranks both below). The shared text waits and Import opens once neither is showing.
+    val feedbackPending = lastEvaluation != null
+    LaunchedEffect(pendingImportText, activeSession.isActive, feedbackPending) {
+        if (!pendingImportText.isNullOrBlank() && !activeSession.isActive && !feedbackPending) {
+            showImportScreen = true
+        }
     }
     // Once an import finishes analyzing, close this screen so the lastEvaluation != null branch
     // below can show the ordinary FeedbackScreen — otherwise this screen's own early return would
@@ -300,7 +320,13 @@ fun MainAppScaffold(viewModel: MainViewModel) {
     }
 
     if (!onboardingCompleted) {
-        OnboardingScreen(viewModel = viewModel, onComplete = {})
+        // The English tour is about practising medical English; a learner who picked the Korean
+        // CPX track gets a Korean first run that sets up the key (or skips it) and nothing else.
+        if (practiceExperience == PracticeExperience.KOREAN_CPX) {
+            com.example.medvoicetrainer.ui.screens.KmleOnboardingScreen(viewModel = viewModel)
+        } else {
+            OnboardingScreen(viewModel = viewModel, onComplete = {})
+        }
         return
     }
 
@@ -402,6 +428,31 @@ fun MainAppScaffold(viewModel: MainViewModel) {
             sessionSummary = "",
             standalone = true,
             onNavigateBack = { showStandaloneCoach = false }
+        )
+        return
+    }
+
+    // Korean CPX peer mode: two students role-play in person while the phone records.
+    val kmlePeer by viewModel.kmlePeerLaunch.collectAsStateWithLifecycle()
+    val peerLaunch = kmlePeer
+    if (peerLaunch != null && !activeSession.isActive && lastKmleResult == null) {
+        androidx.activity.compose.BackHandler { viewModel.closeKmlePeer() }
+        com.example.medvoicetrainer.ui.screens.KmlePeerScreen(
+            viewModel = viewModel,
+            launch = peerLaunch,
+            onClose = { viewModel.closeKmlePeer() },
+        )
+        return
+    }
+
+    // Korean CPX result card: its own screen, never the English FeedbackScreen.
+    val kmleResult = lastKmleResult
+    if (kmleResult != null && !activeSession.isActive) {
+        androidx.activity.compose.BackHandler { viewModel.dismissKmleResult() }
+        com.example.medvoicetrainer.ui.screens.KmleCpxResultScreen(
+            result = kmleResult,
+            onClose = { viewModel.dismissKmleResult() },
+            onOverride = { key, status -> viewModel.overrideKmleItem(kmleResult.sessionId, key, status) },
         )
         return
     }
@@ -673,7 +724,7 @@ fun MainAppScaffold(viewModel: MainViewModel) {
                                 }
                             }
                             Text(
-                                t("Bedside English"),
+                                if (koreanCpx) "CPX 연습" else t("Bedside English"),
                                 fontWeight = FontWeight.Black,
                                 letterSpacing = (-0.5).sp
                             )
@@ -717,11 +768,12 @@ fun MainAppScaffold(viewModel: MainViewModel) {
                         },
                         selected = currentTab == 0,
                         onClick = { currentTab = 0 },
-                        icon = { Icon(Icons.Default.Dashboard, contentDescription = t("Home")) },
-                        label = if (extremeFontScale) null else ({ Text(t("Home"), maxLines = 1, overflow = TextOverflow.Ellipsis) }),
+                        icon = { Icon(Icons.Default.Dashboard, contentDescription = if (koreanCpx) "CPX 스테이션" else t("Home")) },
+                        label = if (extremeFontScale) null else ({ Text(if (koreanCpx) "스테이션" else t("Home"), maxLines = 1, overflow = TextOverflow.Ellipsis) }),
                         alwaysShowLabel = !extremeFontScale
                     )
-                    NavigationBarItem(
+                    // The Korean CPX track has no English practice, pronunciation, or SRS tools.
+                    if (!koreanCpx) NavigationBarItem(
                         modifier = Modifier.onGloballyPositioned {
                             tutorialAnchors[com.example.medvoicetrainer.ui.screens.TutorialTarget.PRACTICE] = it.boundsInRoot()
                         },
@@ -733,7 +785,7 @@ fun MainAppScaffold(viewModel: MainViewModel) {
                     )
                     // Pronunciation Lab (screen index 4, reusing the slot the Guide vacated) sits
                     // third in the bar. Guide itself now lives in the top-bar "?" action.
-                    NavigationBarItem(
+                    if (!koreanCpx) NavigationBarItem(
                         modifier = Modifier.onGloballyPositioned {
                             tutorialAnchors[com.example.medvoicetrainer.ui.screens.TutorialTarget.PRON_LAB] = it.boundsInRoot()
                         },
@@ -743,7 +795,7 @@ fun MainAppScaffold(viewModel: MainViewModel) {
                         label = if (extremeFontScale) null else ({ Text(t("nav.pron_lab"), maxLines = 1, overflow = TextOverflow.Ellipsis) }),
                         alwaysShowLabel = !extremeFontScale
                     )
-                    NavigationBarItem(
+                    if (!koreanCpx) NavigationBarItem(
                         modifier = Modifier.onGloballyPositioned {
                             tutorialAnchors[com.example.medvoicetrainer.ui.screens.TutorialTarget.SRS] = it.boundsInRoot()
                         },
@@ -759,8 +811,8 @@ fun MainAppScaffold(viewModel: MainViewModel) {
                         },
                         selected = currentTab == 3,
                         onClick = { currentTab = 3 },
-                        icon = { Icon(Icons.Default.History, contentDescription = t("History")) },
-                        label = if (extremeFontScale) null else ({ Text(t("History"), maxLines = 1, overflow = TextOverflow.Ellipsis) }),
+                        icon = { Icon(Icons.Default.History, contentDescription = if (koreanCpx) "채점 기록" else t("History")) },
+                        label = if (extremeFontScale) null else ({ Text(if (koreanCpx) "기록" else t("History"), maxLines = 1, overflow = TextOverflow.Ellipsis) }),
                         alwaysShowLabel = !extremeFontScale
                     )
                 }
@@ -773,7 +825,7 @@ fun MainAppScaffold(viewModel: MainViewModel) {
             // during a live session (the active view owns the screen) and when there's no Gemini key
             // to generate replies (a keyless demo user would only hit errors). Scaffold
             // auto-positions it above the bottom nav bar.
-            if (currentTab == 0 && !activeSession.isActive && apiKey.isNotBlank()) {
+            if (currentTab == 0 && !activeSession.isActive && apiKey.isNotBlank() && !koreanCpx) {
                 FloatingActionButton(
                     onClick = { showStandaloneCoach = true },
                     containerColor = MaterialTheme.colorScheme.primary,
@@ -804,7 +856,38 @@ fun MainAppScaffold(viewModel: MainViewModel) {
         ) {
             // Screen contents
             when (currentTab) {
-                0 -> if (effectivePracticeExperience == PracticeExperience.EVERYDAY_ENGLISH) {
+                0 -> if (koreanCpx && kmleMockState != null) {
+                    com.example.medvoicetrainer.ui.screens.KmleMockExamScreen(
+                        viewModel = viewModel,
+                        mock = kmleMockState!!,
+                        onEnter = { launch ->
+                            startGated {
+                                viewModel.startSession(
+                                    com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE,
+                                    launch.caseId,
+                                    launch.title,
+                                    launch.caseJson,
+                                )
+                            }
+                        },
+                    )
+                } else if (koreanCpx) {
+                    com.example.medvoicetrainer.ui.screens.KmleCpxHomeScreen(
+                        viewModel = viewModel,
+                        onStart = { launch ->
+                            startGated {
+                                viewModel.startSession(
+                                    com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE,
+                                    launch.caseId,
+                                    launch.title,
+                                    launch.caseJson,
+                                )
+                            }
+                        },
+                        onOpenHistory = { currentTab = 3 },
+                        onOpenSettings = { showPreferences = true },
+                    )
+                } else if (effectivePracticeExperience == PracticeExperience.EVERYDAY_ENGLISH) {
                     EverydayDashboardScreen(
                         viewModel = viewModel,
                         onStartConversation = {
@@ -868,7 +951,9 @@ fun MainAppScaffold(viewModel: MainViewModel) {
                         }
                     },
                 )
-                3 -> HistoryScreen(
+                3 -> if (koreanCpx) {
+                    com.example.medvoicetrainer.ui.screens.KmleCpxHistoryScreen(viewModel = viewModel)
+                } else HistoryScreen(
                     viewModel = viewModel,
                     onNavigateToTab = { currentTab = it },
                     onStartCase = { id, name, json -> startGated { viewModel.startSession("presentation", id, name, json) } },
@@ -957,6 +1042,9 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
     // memory test, and any entry point that skips the review screen starts the learner blind.
     var showFollowUpChart by rememberSaveable(activeSession.caseId) { mutableStateOf(false) }
     var showInvestigationResults by rememberSaveable(activeSession.caseId) { mutableStateOf(false) }
+    val authoredInvestigationEvents = remember(activeSession.caseJson) {
+        com.example.medvoicetrainer.analysis.InvestigationResults.parseEvents(activeSession.caseJson)
+    }
     // Team calls are assessed on structure and prioritisation, not on memorising an invisible
     // patient chart. Keep the same learner brief reachable after the pre-call review.
     var showTeamBrief by rememberSaveable(activeSession.caseId) { mutableStateOf(false) }
@@ -1119,15 +1207,17 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
     LaunchedEffect(
         showOpenBook,
         openBookLevel,
+        openBookBriefed,
         openBookClosingLevel,
         openBookMicPolicy,
         usesLiveMic,
         openBookMicUnmanaged,
     ) {
         if (!usesLiveMic || openBookMicUnmanaged) return@LaunchedEffect
+        // Judged on the level the sheet shows: a briefed learner already sees the checklist.
         val hold = showOpenBook && com.example.medvoicetrainer.analysis.OpenBookEngine.shouldHoldMic(
             policy = openBookMicPolicy,
-            level = openBookLevel,
+            level = com.example.medvoicetrainer.analysis.OpenBookEngine.displayedLevel(openBookLevel, openBookBriefed),
             closingLevel = openBookClosingLevel,
         )
         if (hold != openBookHeldMic) {
@@ -1228,11 +1318,22 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
             "follow_up" -> listOf(t("DOCTOR (YOU)"), t("RETURNING PATIENT"), t("Review progress since the last visit…"), t("FINISH FOLLOW-UP & SCORE"))
             "presentation" -> listOf(t("PRESENTER (YOU)"), t("ATTENDING"), t("Present the case…"), t("FINISH PRESENTATION & SCORE"))
             "team_communication" -> listOf(t("CLINICIAN (YOU)"), t("TEAM MEMBER"), t("Give your structured message…"), t("FINISH & SCORE"))
+            // One counterpart label for all four nursing task families: across them the other
+            // voice may be a doctor, a nurse, a patient, or a relative, so a role-specific label
+            // would be wrong three times out of four.
+            "nursing" -> listOf(t("NURSE (YOU)"), t("THE OTHER PERSON"), t("Speak as the nurse…"), t("FINISH & SCORE"))
+            com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE -> listOf("학생의사 (나)", "환자", "환자에게 말하기…", "진료 종료 및 채점")
             "exam" -> listOf(t("CANDIDATE (YOU)"), t("EXAMINER / PATIENT"), t("Respond to the station…"), t("FINISH STATION & SCORE"))
             else -> listOf(t("DOCTOR (YOU)"), t("PATIENT"), t("Ask about symptoms, pain, concerns…"), t("FINISH ENCOUNTER & SCORE"))
         }
     }
     var elapsedSeconds by remember(activeSession.createdAt) { mutableIntStateOf(0) }
+    // Nursing scenarios with a station length (OET role-plays are 5 minutes) show it next to the
+    // clock, so the learner practises pacing the conversation the way the exam will time it.
+    val stationSeconds = remember(activeSession.caseJson, activeSession.mode) {
+        if (activeSession.mode != "nursing" && activeSession.mode != com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE) 0
+        else runCatching { org.json.JSONObject(activeSession.caseJson).optInt("station_minutes", 0) * 60 }.getOrDefault(0)
+    }
     LaunchedEffect(
         activeSession.createdAt,
         activeSession.pausedAtMillis,
@@ -1254,6 +1355,67 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
                 0
             }
             delay(1_000)
+        }
+    }
+
+    // Korean CPX station: the exam's "종료 2분 전" and "시험 종료" announcements, the problem sheet
+    // kept on the desk, and (as a study aid) the authored finding for each examination performed.
+    val isKmle = activeSession.mode == com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE
+    val kmleSession = remember(activeSession.caseJson, isKmle) {
+        if (isKmle) com.example.medvoicetrainer.analysis.KmleCpx.sessionCase(activeSession.caseJson) else null
+    }
+    val storedKmlePrefs by viewModel.kmlePrefs.collectAsStateWithLifecycle()
+    // A mock-exam station runs like the exam whatever the learner's practice settings: strict
+    // clock, no findings, no complaint hint — and the sheet opens on entry, since reading it is
+    // part of the 12 minutes.
+    val isMockStation = remember(activeSession.caseJson, isKmle) {
+        isKmle && com.example.medvoicetrainer.analysis.KmleCpx.mockExamId(activeSession.caseJson).isNotEmpty()
+    }
+    val kmlePrefs = if (isMockStation) {
+        storedKmlePrefs.copy(strictTimer = true, showFindings = false, showComplaint = false, showChecklistHint = false)
+    } else storedKmlePrefs
+    var showKmleSheet by rememberSaveable(activeSession.caseId) { mutableStateOf(isMockStation) }
+    var kmleAnnouncement by remember(activeSession.createdAt) { mutableStateOf<String?>(null) }
+    var kmleWarned by remember(activeSession.createdAt) { mutableStateOf(false) }
+    var kmleTimeUp by remember(activeSession.createdAt) { mutableStateOf(false) }
+    LaunchedEffect(isKmle, elapsedSeconds, stationSeconds) {
+        if (!isKmle || stationSeconds <= 0 || !activeSession.isActive || activeSession.isFinishing) return@LaunchedEffect
+        if (!kmleWarned && elapsedSeconds >= stationSeconds - 120 && elapsedSeconds < stationSeconds) {
+            kmleWarned = true
+            kmleAnnouncement = "종료 2분 전입니다. 진료를 마무리하세요."
+            com.example.medvoicetrainer.ui.StationChime.play(double = false)
+        }
+        if (!kmleTimeUp && elapsedSeconds >= stationSeconds) {
+            kmleTimeUp = true
+            com.example.medvoicetrainer.ui.StationChime.play(double = true)
+            if (kmlePrefs.strictTimer) {
+                kmleAnnouncement = "시험 종료. 채점을 시작합니다."
+                viewModel.finishSession()
+            } else {
+                kmleAnnouncement = "시험 종료 시간입니다. 실제 시험에서는 여기서 바로 나가야 합니다."
+            }
+        }
+    }
+    LaunchedEffect(kmleAnnouncement) {
+        if (kmleAnnouncement != null) {
+            delay(8_000)
+            kmleAnnouncement = null
+        }
+    }
+    val latestExamFinding = remember(activeSession.revealedExamManeuvers, kmleSession) {
+        val id = activeSession.revealedExamManeuvers.lastOrNull()
+        val script = kmleSession?.script
+        if (id == null || script == null) null
+        else com.example.medvoicetrainer.analysis.SpScript.findingsFor(script, listOf(id)).firstOrNull()
+    }
+    var visibleExamFinding by remember(activeSession.createdAt) {
+        mutableStateOf<com.example.medvoicetrainer.analysis.SpScript.Finding?>(null)
+    }
+    LaunchedEffect(latestExamFinding) {
+        visibleExamFinding = latestExamFinding
+        if (latestExamFinding != null) {
+            delay(10_000)
+            visibleExamFinding = null
         }
     }
 
@@ -1362,7 +1524,11 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
     if (showInvestigationResults) {
         InvestigationResultsSheet(
             availableResults = activeSession.availableResults,
+            authoredEvents = authoredInvestigationEvents,
+            pendingEvents = activeSession.pendingInvestigationEvents,
             revealedEvents = activeSession.revealedInvestigationEvents,
+            onOrder = viewModel::orderInvestigation,
+            onViewResult = viewModel::revealInvestigationResult,
             onDismiss = { showInvestigationResults = false },
         )
     }
@@ -1371,6 +1537,17 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
         TeamCommunicationBriefSheet(
             caseJson = activeSession.caseJson,
             onDismiss = { showTeamBrief = false },
+        )
+    }
+
+    if (showKmleSheet && kmleSession != null) {
+        com.example.medvoicetrainer.ui.screens.KmleStationSheet(
+            session = kmleSession,
+            revealedManeuvers = activeSession.revealedExamManeuvers,
+            showFindings = kmlePrefs.showFindings,
+            showComplaint = kmlePrefs.showComplaint,
+            showChecklistHint = kmlePrefs.showChecklistHint,
+            onDismiss = { showKmleSheet = false },
         )
     }
 
@@ -1500,12 +1677,17 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
                     verticalAlignment = Alignment.CenterVertically
                 ) {
                     Column(modifier = Modifier.weight(1f, fill = false)) {
+                        val overStation = stationSeconds > 0 && elapsedSeconds >= stationSeconds
+                        val lastTwoMinutes = isKmle && stationSeconds > 0 && !overStation && elapsedSeconds >= stationSeconds - 120
                         Text(
-                            text = "${activeSession.mode.uppercase()} · %02d:%02d".format(
+                            text = "${if (isKmle) "CPX" else activeSession.mode.uppercase()} · %02d:%02d".format(
                                 elapsedSeconds / 60, elapsedSeconds % 60
-                            ),
+                            ) + (if (stationSeconds > 0) " / %02d:00".format(stationSeconds / 60) else "") +
+                                (if (overStation) " · " + (if (isKmle) "시험 종료" else t("TIME — wrap up"))
+                                else if (lastTwoMinutes) " · 종료 2분 전" else ""),
                             fontWeight = FontWeight.Black,
-                            color = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.7f),
+                            color = if (overStation || lastTwoMinutes) Color(0xFFFFD54F)
+                            else MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.7f),
                             style = MaterialTheme.typography.labelSmall
                         )
                         Text(
@@ -1521,7 +1703,30 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
                         if (isSampleScenario) {
                             SampleScenarioBadge()
                         } else {
-                            TurnStateBadge(turnState)
+                            TurnStateBadge(
+                                turnState,
+                                partnerIsPatient = activeSession.mode !in setOf(
+                                    "interview", "teachback", "survival", "listening", "lounge",
+                                    "presentation", "team_communication", "nursing",
+                                ),
+                            )
+                        }
+                        if (kmleSession != null) {
+                            TextButton(onClick = { showKmleSheet = true }) {
+                                Icon(
+                                    Icons.Default.Description,
+                                    contentDescription = null,
+                                    tint = Color.White,
+                                    modifier = Modifier.size(18.dp),
+                                )
+                                Spacer(Modifier.width(4.dp))
+                                Text(
+                                    if (activeSession.revealedExamManeuvers.isEmpty() || !kmlePrefs.showFindings) "문제"
+                                    else "문제·소견 ${activeSession.revealedExamManeuvers.size}",
+                                    color = Color.White,
+                                    fontWeight = FontWeight.Bold,
+                                )
+                            }
                         }
                         if (activeSession.mode == "follow_up") {
                             IconButton(onClick = { showFollowUpChart = true }) {
@@ -1532,18 +1737,23 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
                                 )
                             }
                         }
-                        if (activeSession.availableResults.isNotEmpty() ||
+                        if (authoredInvestigationEvents.isNotEmpty() ||
+                            activeSession.availableResults.isNotEmpty() ||
+                            activeSession.pendingInvestigationEvents.isNotEmpty() ||
                             activeSession.revealedInvestigationEvents.isNotEmpty()
                         ) {
                             IconButton(onClick = { showInvestigationResults = true }) {
                                 Icon(
                                     Icons.Default.Science,
-                                    contentDescription = t("Investigation results"),
+                                    contentDescription = t("Tests & results"),
                                     tint = Color.White,
                                 )
                             }
                         }
-                        if (activeSession.mode == "team_communication") {
+                        // Nursing cases carry the same `team_brief` block, and the brief is
+                        // deliberately available *during* the session — these scenarios assess
+                        // structured communication, not memory of the chart.
+                        if (activeSession.mode == "team_communication" || activeSession.mode == "nursing") {
                             IconButton(onClick = { showTeamBrief = true }) {
                                 Icon(
                                     Icons.Default.Description,
@@ -1625,6 +1835,39 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
                         activeSession.status,
                         color = MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.85f),
                         style = MaterialTheme.typography.labelSmall
+                    )
+                }
+            }
+        }
+
+        kmleAnnouncement?.let { message ->
+            Surface(color = Color(0xFFFFE082), modifier = Modifier.fillMaxWidth()) {
+                Text(
+                    message,
+                    color = Color(0xFF3E2723),
+                    fontWeight = FontWeight.Bold,
+                    style = MaterialTheme.typography.bodyMedium,
+                    modifier = Modifier.padding(horizontal = 16.dp, vertical = 8.dp),
+                )
+            }
+        }
+        val examFinding = visibleExamFinding
+        if (examFinding != null && kmleSession != null && kmlePrefs.showFindings) {
+            Surface(
+                color = MaterialTheme.colorScheme.tertiaryContainer,
+                modifier = Modifier.fillMaxWidth().clickable { showKmleSheet = true },
+            ) {
+                Column(Modifier.padding(horizontal = 16.dp, vertical = 8.dp)) {
+                    Text(
+                        "진찰 소견 · ${kmleSession.maneuverKo(examFinding.maneuver)}" + if (examFinding.painful) " (통증 있음)" else "",
+                        style = MaterialTheme.typography.labelLarge,
+                        fontWeight = FontWeight.Bold,
+                        color = MaterialTheme.colorScheme.onTertiaryContainer,
+                    )
+                    Text(
+                        examFinding.finding,
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onTertiaryContainer,
                     )
                 }
             }
@@ -2061,7 +2304,8 @@ fun ActiveSessionView(viewModel: MainViewModel, activeSession: ActiveSessionStat
                         // suggestion then costs a glance rather than the whole feature's
                         // credibility. Other modes have no history model behind them and keep the
                         // single canned continuation line.
-                        if (activeSession.mode != "survival") {
+                        // The canned continuation lines are English; a Korean CPX station has none.
+                        if (activeSession.mode != "survival" && activeSession.mode != com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE) {
                             val hintOptions = activeSession.phaseHintOptions
                             AssistChip(
                             onClick = {
@@ -2657,12 +2901,16 @@ private fun SampleScenarioControls(
 
 /** Header pill for the §5 turn-state machine — one enum, one place, feeding badge + mic bar. */
 @Composable
-private fun TurnStateBadge(state: TurnState) {
+private fun TurnStateBadge(state: TurnState, partnerIsPatient: Boolean = true) {
     val t = com.example.medvoicetrainer.ui.LocalTranslate.current
     val (bg, fg, text) = when (state) {
         TurnState.CONNECTING -> Triple(AccentAmber.copy(alpha = 0.28f), Color.White, "… " + t("Connecting"))
         TurnState.YOUR_TURN -> Triple(SuccessGreen.copy(alpha = 0.22f), Color.White, "🟢 " + t("Your turn"))
-        TurnState.PATIENT_SPEAKING -> Triple(Color.White.copy(alpha = 0.22f), Color.White, "🔵 " + t("Patient speaking"))
+        TurnState.PATIENT_SPEAKING -> Triple(
+            Color.White.copy(alpha = 0.22f),
+            Color.White,
+            "🔵 " + t(if (partnerIsPatient) "Patient speaking" else "Partner speaking"),
+        )
         TurnState.MUTED -> Triple(Color.White.copy(alpha = 0.22f), Color.White, "🔇 " + t("Muted"))
         TurnState.USER_PAUSED -> Triple(AccentAmber.copy(alpha = 0.28f), Color.White, "⏸ " + t("Paused"))
         TurnState.PAUSED -> Triple(AccentAmber.copy(alpha = 0.28f), Color.White, "⟳ " + t("Reconnecting"))
@@ -3156,15 +3404,14 @@ private fun AnalyzingScreen(
                 AnalyzingStepRow(t("Transcript saved to your device"), done = true)
                 AnalyzingStepRow(t("Fluency metrics computed"), done = true)
                 AnalyzingStepRow(
-                    t("Clinical scoring & corrections…"),
+                    t("Scoring & corrections…"),
                     done = !hasError && activeSession.analysisStage == FeedbackAnalysisStage.BUILDING_CARDS,
                     inProgress = !hasError && activeSession.analysisStage == FeedbackAnalysisStage.SCORING
                 )
-                // SRS cards are derived from the evaluation result, so this work is queued while
-                // the scoring request is in flight. Keep its progress indicator visible instead
-                // of presenting a static pending marker throughout the analysis wait.
+                // The final stage serializes and saves the result (and, for clinical sessions, the
+                // SRS cards). Neutral wording: everyday and Korean CPX sessions have no SRS cards.
                 AnalyzingStepRow(
-                    t("Building your SRS cards"),
+                    t("Saving your results"),
                     done = false,
                     inProgress = !hasError && activeSession.analysisStage == FeedbackAnalysisStage.BUILDING_CARDS
                 )

@@ -177,10 +177,14 @@ object ModelsFetcher {
                     !lower.contains("live") &&
                     !lower.contains("tts") &&
                     !lower.contains("audio") &&
+                    !lower.contains("image") &&
+                    !lower.contains("transcribe") &&
+                    !lower.contains("omni") &&
+                    !lower.startsWith("gemini-2.0-") &&
                     (lower.contains("gemini") || lower.contains("gemma"))
                 }
                 val presets = listOf(
-                    "gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.5-pro", "gemini-3.1-pro",
+                    "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.1-pro-preview",
                     "gemini-2.5-pro", "gemini-3.1-flash-lite", "gemini-3.5-flash-lite", "gemini-2.5-flash-lite"
                 )
                 (presets + filtered).distinct()
@@ -222,9 +226,11 @@ object ModelsFetcher {
             "gemini" -> {
                 val filtered = allModels.filter { m ->
                     val lower = m.lowercase()
-                    lower.contains("live") || lower.contains("native-audio") || lower.contains("bidi") || lower.contains("realtime")
+                    (lower.contains("live") || lower.contains("native-audio") || lower.contains("bidi") || lower.contains("realtime")) &&
+                        !lower.contains("translate") && !lower.contains("transcribe") && !lower.contains("tts") &&
+                        !lower.startsWith("gemini-2.0-")
                 }
-                val presets = listOf("gemini-3.1-flash-live-preview", "gemini-2.0-flash-exp")
+                val presets = listOf("gemini-3.8-live", "gemini-3.8-live-extended-thinking", "gemini-3.1-flash-live-preview")
                 (presets + filtered).distinct()
             }
             "openai" -> {

@@ -1,0 +1,54 @@
+{
+  "id": "palpitation",
+  "title": "가슴이 두근거려요",
+  "english_title": "Palpitations",
+  "category": "순환기",
+  "kmle_item": "두근거림",
+  "door_complaint": "가슴이 두근거린다고",
+  "differential_groups": [
+    {"key": "arrhythmia", "label": "부정맥", "examples": ["발작성 상심실빈맥", "심방세동", "심방·심실 조기수축", "심실빈맥"]},
+    {"key": "structural", "label": "구조적 심질환", "examples": ["심근병증", "판막질환", "심근염"]},
+    {"key": "systemic", "label": "전신·대사", "examples": ["갑상샘항진증", "빈혈", "저혈당", "갈색세포종", "발열·탈수"]},
+    {"key": "drug_psych", "label": "약물·심인성", "examples": ["카페인·알코올", "약물(기관지확장제, 감기약, 갑상샘호르몬)", "공황장애", "불안장애"]}
+  ],
+  "history": [
+    {"id": "character", "text": "두근거림 양상(빠르게 뛰는지, 한 번씩 건너뛰는지, 불규칙한지)", "say": "심장이 어떻게 뛰는 느낌이에요? 빨리 뛰나요, 한 번씩 건너뛰나요?", "tags": ["arrhythmia"]},
+    {"id": "tap_rhythm", "text": "두근거릴 때의 박자를 손으로 두드려 보게 해 규칙성 확인", "say": "두근거릴 때 박자를 손으로 한번 두드려 보시겠어요?", "tags": ["arrhythmia"]},
+    {"id": "onset_offset", "text": "시작과 끝이 갑작스러운지, 서서히인지", "say": "두근거림이 갑자기 시작해서 갑자기 멈추나요, 아니면 서서히 그런가요?", "tags": ["arrhythmia", "drug_psych"]},
+    {"id": "duration_frequency", "text": "처음 시작한 시기, 한 번 지속 시간과 빈도", "say": "언제부터 그러셨어요? 한 번 두근거리면 얼마나 가고, 얼마나 자주 그러세요?"},
+    {"id": "triggers", "text": "유발 요인(운동, 카페인, 음주, 스트레스, 자세 변화)", "say": "커피를 마시거나 긴장할 때, 운동할 때 생기나요?", "tags": ["drug_psych", "arrhythmia"]},
+    {"id": "termination", "text": "멈추게 하는 방법(숨 참기, 찬물 마시기, 쉬기)", "say": "어떻게 하면 멈추나요? 숨을 참거나 하면 멎나요?", "tags": ["arrhythmia"]},
+    {"id": "syncope", "text": "실신하거나 실신할 것 같은 느낌, 운동 중 발생", "say": "두근거리면서 정신을 잃거나 쓰러질 것 같은 적이 있었나요?", "tags": ["arrhythmia", "structural"], "key": true},
+    {"id": "chest_pain_dyspnea", "text": "가슴 통증, 숨참", "say": "두근거릴 때 가슴이 아프거나 숨이 차지는 않나요?", "tags": ["structural", "arrhythmia"], "key": true},
+    {"id": "thyroid", "text": "더위를 못 참음, 땀, 체중 감소, 손 떨림", "say": "요즘 더위를 많이 타거나 땀이 많고 살이 빠지지는 않았어요?", "tags": ["systemic"]},
+    {"id": "anemia", "text": "피로, 어지러움, 출혈(월경 과다, 검은 변)", "say": "쉽게 피곤하거나 어지러우세요? 생리량이 많거나 변이 까맣지는 않나요?", "tags": ["systemic"]},
+    {"id": "episodic_adrenergic", "text": "두근거림과 함께 오는 두통·식은땀·창백, 공복 시 식은땀·손 떨림", "say": "두근거릴 때 머리가 아프거나 식은땀이 같이 나나요? 배고플 때 그러지는 않나요?", "tags": ["systemic"]},
+    {"id": "anxiety", "text": "강한 불안, 죽을 것 같은 두려움, 손발 저림, 과호흡", "say": "두근거릴 때 너무 무섭거나 불안한 느낌이 드세요?", "tags": ["drug_psych"]},
+    {"id": "recent_viral", "text": "최근 감기·몸살, 발열", "say": "최근에 감기나 몸살을 앓으셨어요?", "tags": ["structural", "systemic"]},
+    {"id": "caffeine_alcohol", "text": "커피·에너지음료 섭취량, 음주량", "say": "커피나 에너지음료는 하루에 얼마나 드세요? 술은요?", "tags": ["drug_psych"]},
+    {"id": "palpitation_drugs", "text": "두근거림을 일으킬 수 있는 약(감기약, 기관지확장제, 갑상샘호르몬, 다이어트약) 복용", "say": "감기약이나 다이어트약, 갑상샘약처럼 최근 드신 약이 있나요?", "tags": ["drug_psych", "systemic"]},
+    {"id": "heart_history", "text": "기존 심장병, 고혈압, 이전 심전도 이상", "say": "심장 병이 있다거나 심전도가 이상하다는 말을 들으신 적이 있나요?", "tags": ["structural"]},
+    {"id": "family_sudden_death", "text": "젊은 나이 돌연사, 부정맥·심근병증 가족력", "say": "가족 중에 젊은 나이에 갑자기 돌아가신 분이나 부정맥이 있는 분이 있나요?", "tags": ["arrhythmia", "structural"], "key": true}
+  ],
+  "physical_exam": [
+    {"id": "pulse", "text": "맥박 수와 규칙성을 충분히(30초~1분) 촉진", "say": "손목 맥박을 1분 정도 재 보겠습니다.", "tags": ["arrhythmia"], "key": true},
+    {"id": "vitals", "text": "혈압, 체온, 산소포화도 측정", "say": "혈압과 체온도 재 보겠습니다."},
+    {"id": "thyroid_exam", "text": "갑상샘 시진·촉진, 손 떨림과 눈 증상 확인", "say": "침을 한번 삼켜 보세요. 목 앞쪽을 만져 보겠습니다.", "tags": ["systemic"]},
+    {"id": "conjunctiva", "text": "결막 창백 확인", "say": "아래 눈꺼풀을 살짝 내려서 보겠습니다.", "tags": ["systemic"]},
+    {"id": "heart_auscultation", "text": "심장 청진(심잡음, 불규칙 리듬)", "say": "심장 소리를 들어 보겠습니다.", "tags": ["structural", "arrhythmia"]}
+  ],
+  "education": [
+    {"id": "trigger_avoidance", "text": "카페인·음주를 줄이고 충분한 수면과 스트레스 관리", "say": "커피와 술은 줄이시고 잠을 충분히 주무세요.", "tags": ["drug_psych"]},
+    {"id": "vagal_maneuver", "text": "발작성 상심실빈맥이면 미주신경 자극법(발살바 수기) 안내", "say": "다시 갑자기 빨리 뛰면 숨을 들이쉬고 배에 힘을 주듯 10초 정도 참아 보세요.", "tags": ["arrhythmia"], "conditional": true},
+    {"id": "symptom_record", "text": "증상 있을 때 시각과 상황을 기록하고, 가능하면 맥박이나 심전도를 기록해 오도록 안내", "say": "두근거릴 때 시간과 상황을 적어 두시고, 가능하면 그때 맥박을 재 두세요."},
+    {"id": "warning_signs", "text": "실신, 가슴 통증, 숨참이 동반되거나 두근거림이 멈추지 않으면 즉시 응급실로 오도록 안내", "say": "두근거리면서 쓰러질 것 같거나 가슴이 아프면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "모든 환자에게 12유도 심전도를 찍고, 증상이 있을 때의 리듬을 확인하는 것이 진단의 핵심이다.",
+    "증상 빈도에 따라 24~48시간 홀터 검사나 사건 기록기 같은 장기 심전도 모니터링을 선택한다.",
+    "기본 혈액검사로 혈색소, 갑상샘기능검사, 전해질을 확인하고, 구조적 심질환이 의심되면 심초음파를 시행한다.",
+    "심방세동이 확인되면 심박수 또는 리듬 조절과 함께 CHA2DS2-VASc 점수로 뇌졸중 위험을 평가해 항응고치료를 결정한다.",
+    "실신, 운동 중 증상, 돌연사 가족력, 구조적 심질환이 있으면 고위험으로 보고 빠르게 심장내과에 의뢰한다."
+  ],
+  "case_ids": ["cardio_003", "cardio_008", "cardio_017", "cardio_025", "cardio_032", "endo_003", "psych_005"]
+}

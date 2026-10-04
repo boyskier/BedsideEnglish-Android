@@ -1,0 +1,56 @@
+{
+  "name": "Nursing Speak-Up & Safety Challenge",
+  "description": "Evaluates a nurse raising a safety concern with a more senior clinician — questioning an order, flagging a missed check, or refusing to proceed until a discrepancy is resolved — assertively and respectfully in English.",
+  "metrics": {
+    "fluency": {
+      "label": "Language & Fluency",
+      "anchors": {
+        "80-100": "Clear, fluent phrasing under interpersonal pressure; the concern survives the stress intact.",
+        "50-70": "Understandable but hesitations or grammar errors weaken the message when pushed back on.",
+        "10-40": "Frequent errors that obscure what the safety concern actually is."
+      }
+    },
+    "concern_clarity": {
+      "label": "Clarity of the Concern",
+      "anchors": {
+        "80-100": "States the specific discrepancy and the specific patient risk in one clear sentence, early.",
+        "50-70": "Raises a concern but leaves the listener to work out what exactly is wrong.",
+        "10-40": "Hints at discomfort without ever naming the discrepancy or the risk."
+      }
+    },
+    "assertiveness": {
+      "label": "Graded Assertiveness",
+      "anchors": {
+        "80-100": "Escalates in steps — asks, states the concern, states the risk, then states that they cannot proceed — and holds the position under pushback.",
+        "50-70": "Raises the concern once, then defers as soon as the senior clinician pushes back.",
+        "10-40": "Backs down immediately, or jumps straight to confrontation without asking first."
+      }
+    },
+    "professionalism": {
+      "label": "Respect & Working Relationship",
+      "anchors": {
+        "80-100": "Frames the concern around the patient rather than the colleague; stays collegial while holding the line.",
+        "50-70": "Respectful but over-apologizes to the point of undercutting the concern.",
+        "10-40": "Accusatory, or so indirect that the concern reads as personal reluctance."
+      }
+    },
+    "closed_loop": {
+      "label": "Resolution & Closed Loop",
+      "anchors": {
+        "80-100": "Confirms the corrected order or plan explicitly, reads it back, and states what they will do next.",
+        "50-70": "Reaches a resolution but never confirms it in words.",
+        "10-40": "Leaves the discrepancy unresolved or ambiguous."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Raised the concern before carrying out the questioned action", "required": true},
+    {"item": "Named the specific discrepancy (what was ordered vs. what is expected)", "required": true},
+    {"item": "Named the specific patient risk, not just personal discomfort", "required": true},
+    {"item": "Used graded assertiveness — asked first, then escalated the wording if dismissed", "required": true},
+    {"item": "Held the position under pushback rather than deferring to seniority", "required": true},
+    {"item": "Framed the concern around patient safety, not the colleague's competence", "required": false},
+    {"item": "Confirmed and read back the corrected order or agreed plan", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "summary"]
+}

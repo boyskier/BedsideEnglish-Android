@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "incidental anterior mediastinal mass on CT, myasthenia history",
   "hpi_details": "A 68-year-old female presents to the clinic with incidental anterior mediastinal mass on ct, myasthenia history. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to thymoma",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks the lump is an inflamed lymph node or an immune-related swollen gland triggered by her myasthenia.",
+  "concerns": "She is worried that the chest mass is malignant and having to go through major chest surgery will trigger a life-threatening myasthenia crisis.",
+  "expectations": "She hopes the doctor can review her previous scans or order a biopsy to confirm whether it is safe to just leave it alone.",
   "pmh": "Myasthenia gravis",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -129,6 +129,182 @@
         "domains": [
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "124/78",
+      "hr": 72,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I came in because a recent chest CT scan showed a lump inside the front of my chest.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I had a routine health checkup about two weeks ago where they saw an abnormal shadow on my chest X-ray, so they sent me for a chest CT scan that found the lump.",
+        "topic": "Discovery of the mass"
+      },
+      {
+        "answer": "I first noticed feeling unusually worn out about a month ago, and the tiredness and muscle weakness have been slowly building up.",
+        "topic": "Onset and course of fatigue"
+      },
+      {
+        "answer": "I don't have sharp chest pain, but occasionally I feel a mild, vague heaviness behind my breastbone.",
+        "topic": "Chest discomfort"
+      },
+      {
+        "answer": "I feel significantly weaker and more exhausted in the late afternoon and evening, whereas I feel relatively refreshed after resting or sleeping.",
+        "topic": "Diurnal variation"
+      },
+      {
+        "answer": "Doing sustained household tasks or walking makes my fatigue much worse, but resting quietly helps me regain some strength.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "Toward the end of the day my eyelids feel heavy and droop slightly, and sometimes things look a little blurry or doubled.",
+        "topic": "Eye symptoms"
+      },
+      {
+        "answer": "I have not had any trouble chewing, swallowing liquids, or choking on solid food, and my voice does not sound nasal or hoarse.",
+        "topic": "Swallowing and speech difficulty"
+      },
+      {
+        "answer": "I have not felt short of breath, even when climbing stairs or lying completely flat in bed.",
+        "topic": "Breathing difficulty"
+      },
+      {
+        "answer": "No, my face, neck, and arms have not felt puffy, and my shirt collars still fit comfortably.",
+        "topic": "Facial or upper body swelling"
+      },
+      {
+        "answer": "No, I have not had any fever, chills, or sweating episodes at night.",
+        "topic": "Fever and night sweats"
+      },
+      {
+        "answer": "My appetite has been normal, and my weight has remained completely stable over the past several months.",
+        "topic": "Weight loss and appetite"
+      },
+      {
+        "answer": "I have not had a persistent cough, and I have never coughed up any blood.",
+        "topic": "Cough and hemoptysis"
+      },
+      {
+        "answer": "A few years ago a neurologist diagnosed me with mild myasthenia gravis, but my symptoms were very mild so I haven't been on regular therapy recently.",
+        "topic": "Previous myasthenia history"
+      },
+      {
+        "answer": "I haven't taken any special medications or home remedies for this; I just try to pace myself and take short rests during the day.",
+        "topic": "Self-treatment and remedies"
+      },
+      {
+        "answer": "It makes cleaning and shopping take longer because my arms and legs tire easily, but I can still handle my basic daily personal care.",
+        "topic": "Impact on daily activities"
+      },
+      {
+        "answer": "Because of my myasthenia, I figured my immune system was flaring up and caused a swollen lymph gland or cyst in my chest.",
+        "topic": "Patient thoughts and ideas"
+      },
+      {
+        "answer": "I'm really worried this mass is malignant and having to go through major chest surgery will trigger a severe myasthenia crisis.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping you can review my previous chest scans or order a needle biopsy to see if we can safely just watch it without surgery.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "Other than the mild myasthenia gravis, I do not have high blood pressure, diabetes, thyroid disease, or heart conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any major surgeries, and I have never been hospitalized.",
+        "topic": "Surgical and hospital history"
+      },
+      {
+        "answer": "I do not take any regular prescription medications right now, nor any over-the-counter supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications, foods, or CT contrast dye.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink half a glass of wine on rare social holidays, perhaps two or three times a year.",
+        "topic": "Alcohol intake"
+      },
+      {
+        "answer": "I am a retired elementary school teacher and live in an apartment with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of chest tumors, thymoma, lymphoma, or neuromuscular diseases.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 124/78 mmHg, heart rate 72 beats per minute, respiratory rate 16 breaths per minute, body temperature 36.6 °C, oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Alert, pleasant, and in no acute distress, with no facial plethora, cyanosis, or respiratory distress at rest.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Mild bilateral eyelid ptosis provoked after sustained upward gaze; pupils are equal, round, and reactive to light with intact extraocular movements.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, supraclavicular, or axillary lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Normal jugular venous pressure; no dilated collateral veins across the neck or anterior chest wall.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Chest wall is symmetric with no visible deformity, dilated superficial veins, or tenderness to sternal palpation.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Vesicular breath sounds clear bilaterally with no crackles, wheezes, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, gallops, or pericardial friction rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Facial movements are symmetric, soft palate elevates normally in the midline, and speech is clear without dysarthria.",
+        "maneuver": "cranial_nerves",
+        "response": "none"
+      },
+      {
+        "finding": "Normal muscle tone and bulk; bilateral proximal upper and lower extremity strength is 4/5 with mild fatigability on repetitive testing, while distal strength is 5/5.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No peripheral edema in the arms or legs; peripheral pulses are intact and symmetric.",
+        "maneuver": "extremity_edema",
+        "response": "none"
       }
     ]
   }

@@ -1,0 +1,54 @@
+{
+  "id": "easy_bruising",
+  "title": "멍이 잘 들어요",
+  "english_title": "Easy bruising",
+  "category": "전신·내분비",
+  "kmle_item": "쉽게 멍이 듦",
+  "door_complaint": "멍이 잘 든다고",
+  "differential_groups": [
+    {"key": "platelet_count", "label": "혈소판 감소", "examples": ["면역혈소판감소증", "약물 유발 혈소판감소증", "급성 백혈병·골수이형성증후군", "재생불량빈혈", "간경변에 따른 비장비대"]},
+    {"key": "platelet_function", "label": "혈소판 기능 이상·폰빌레브란트병", "examples": ["아스피린·항혈소판제", "소염진통제", "폰빌레브란트병", "요독증"]},
+    {"key": "coagulation", "label": "응고인자 이상", "examples": ["와파린·경구 항응고제", "비타민 K 결핍", "간질환", "혈우병", "파종혈관내응고"]},
+    {"key": "vascular", "label": "혈관·결합조직", "examples": ["노인성 자반", "장기간 스테로이드 사용·쿠싱증후군", "괴혈병(비타민 C 결핍)", "IgA 혈관염 등 혈관염"]},
+    {"key": "trauma", "label": "외상·폭력", "examples": ["반복되는 낙상", "가정폭력", "노인·아동 학대"]}
+  ],
+  "history": [
+    {"id": "bruise_pattern", "text": "멍이 생긴 시기, 부위, 크기와 개수, 부딪힌 기억 없이 생기는지", "say": "멍이 언제부터 잘 들었어요? 주로 어디에 생기고, 부딪힌 기억 없이도 생기나요?", "tags": ["platelet_count", "coagulation", "vascular", "trauma"]},
+    {"id": "bleeding_type", "text": "좁쌀 같은 붉은 점(점상출혈)인지, 넓은 멍인지, 근육·관절 속 출혈인지", "say": "피부에 붉은 좁쌀 같은 점이 생기나요, 아니면 넓게 퍼진 멍이 드나요? 관절이 붓고 아팠던 적도 있으세요?", "tags": ["platelet_count", "coagulation"]},
+    {"id": "mucosal_bleeding", "text": "잇몸 출혈, 잦은 코피, 작은 상처에서 피가 잘 멈추지 않음", "say": "양치할 때 잇몸에서 피가 나거나 코피가 자주 나세요? 작은 상처에서 피가 잘 안 멈추지는 않나요?", "tags": ["platelet_count", "platelet_function"]},
+    {"id": "heavy_menses", "text": "월경량 증가, 핏덩이, 월경 기간 연장", "say": "생리 양이 많아졌거나 핏덩이가 나오고, 생리 기간이 길어지지는 않았어요?", "tags": ["platelet_function", "platelet_count"], "applies": "female_reproductive_age"},
+    {"id": "serious_bleeding", "text": "위험한 출혈(검은 변·혈변, 피를 토함, 혈뇨, 갑작스러운 심한 두통·구토·시야 이상)", "say": "변이 까맣게 나오거나 피를 토하신 적 있으세요? 소변이 붉거나, 갑자기 머리가 심하게 아프지는 않으세요?", "tags": ["platelet_count", "coagulation"], "key": true},
+    {"id": "procedure_bleeding", "text": "이를 뽑거나 수술·출산 뒤 지혈이 오래 걸렸던 경험", "say": "이를 뽑거나 수술을 받으셨을 때 피가 잘 안 멈춘 적이 있으세요?", "tags": ["coagulation", "platelet_function"]},
+    {"id": "marrow_symptoms", "text": "골수 질환 단서(발열, 잦은 감염, 심한 피로·창백, 숨참, 뼈 통증, 체중 감소, 식은땀)", "say": "요즘 열이 자주 나거나 감기에 잘 걸리세요? 많이 피곤하고 숨이 차거나, 살이 빠지고 밤에 땀이 나지는 않으세요?", "tags": ["platelet_count"], "key": true},
+    {"id": "bleeding_drugs", "text": "출혈을 늘리는 약(아스피린, 항혈소판제, 와파린·경구 항응고제, 소염진통제, 스테로이드, 은행잎·오메가3 등 보조제)", "say": "아스피린이나 피를 묽게 하는 약, 진통제, 스테로이드를 드세요? 은행잎이나 오메가3 같은 영양제는요?", "tags": ["platelet_function", "coagulation", "vascular"], "key": true},
+    {"id": "recent_trigger", "text": "최근 바이러스 감염이나 새로 시작한 약(항생제 등), 헤파린 투여", "say": "멍이 들기 몇 주 전에 감기를 앓았거나 새로 드시기 시작한 약이 있으세요?", "tags": ["platelet_count"]},
+    {"id": "liver_alcohol", "text": "간질환, 음주량, 황달, 배가 불러옴", "say": "간이 안 좋다는 말을 들으셨거나 술을 많이 드시나요? 눈이 노래지거나 배가 불러오지는 않았어요?", "tags": ["coagulation", "platelet_count"]},
+    {"id": "nutrition_absorption", "text": "편식·식사량 감소, 채소·과일 부족, 오래가는 설사·흡수장애, 장기간 항생제 사용", "say": "식사는 골고루 하세요? 채소나 과일을 거의 안 드시거나 설사가 오래가지는 않나요?", "tags": ["coagulation", "vascular"]},
+    {"id": "vasculitis_clues", "text": "다리에 만져지는 붉은 반점과 관절통·복통", "say": "다리에 만지면 볼록한 붉은 반점이 생기면서 관절이나 배가 아프지는 않았어요?", "tags": ["vascular"], "conditional": true},
+    {"id": "family_bleeding", "text": "가족 중 출혈 경향, 혈우병이나 폰빌레브란트병", "say": "가족 중에 피가 잘 안 멈추거나 멍이 잘 드는 분이 있으세요?", "tags": ["coagulation", "platelet_function"]},
+    {"id": "injury_safety", "text": "양해를 구한 뒤 누군가에게 맞거나 다쳐서 생긴 멍인지, 집에서 안전한지 확인", "say": "누구에게나 여쭤보는 질문이에요. 혹시 누군가에게 맞거나 다쳐서 생긴 멍은 아닌가요? 집에서는 안전하세요?", "tags": ["trauma"], "key": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "활력징후(맥박·혈압으로 출혈 정도, 체온으로 발열 확인)", "say": "먼저 혈압과 맥박, 체온을 재 보겠습니다."},
+    {"id": "skin_inspection", "text": "멍·점상출혈·자반의 분포와 크기, 만져지는 자반인지, 서로 다른 시기의 멍인지 관찰", "say": "멍이 있는 곳을 보여 주시겠어요? 크기와 색을 보고 살짝 만져 보겠습니다.", "tags": ["platelet_count", "vascular", "trauma"]},
+    {"id": "oral_conjunctiva", "text": "입안 점막의 피물집·잇몸 출혈, 결막 창백과 황달", "say": "입안과 잇몸을 보고, 아래 눈꺼풀을 살짝 내려 보겠습니다.", "tags": ["platelet_count", "coagulation"]},
+    {"id": "lymph_spleen_liver", "text": "림프절 촉진과 간·비장 비대 확인", "say": "목과 겨드랑이의 멍울을 만져 보고, 누우신 뒤 배를 눌러 간과 비장을 확인하겠습니다.", "tags": ["platelet_count", "coagulation"]},
+    {"id": "liver_stigmata", "text": "간질환 징후(거미혈관종, 손바닥 홍반, 복수)", "say": "가슴과 손바닥 피부를 보고, 배에 물이 찼는지 확인하겠습니다.", "tags": ["coagulation"], "conditional": true},
+    {"id": "joints", "text": "관절 부종과 열감(관절 속 출혈)", "say": "붓거나 아팠던 관절을 살펴보고 천천히 움직여 보겠습니다.", "tags": ["coagulation"], "conditional": true}
+  ],
+  "education": [
+    {"id": "avoid_bleeding_drugs", "text": "원인이 확인될 때까지 아스피린·소염진통제를 피하고, 진통제가 필요하면 아세트아미노펜 사용", "say": "검사 결과가 나올 때까지 아스피린이나 소염진통제는 피하시고, 아프시면 아세트아미노펜을 드세요."},
+    {"id": "anticoagulant_no_stop", "text": "항응고제·항혈소판제는 스스로 끊지 말고 처방한 의사와 상의", "say": "피를 묽게 하는 약을 혼자 끊으시면 혈전이 생길 수 있어요. 처방하신 선생님과 상의해서 조절하겠습니다.", "conditional": true},
+    {"id": "injury_prevention", "text": "부딪히거나 넘어지지 않게 주의, 부드러운 칫솔 사용, 몸이 부딪히는 운동 피하기", "say": "검사 결과가 나올 때까지는 몸이 부딪히는 운동은 피하시고, 부드러운 칫솔을 쓰세요."},
+    {"id": "bleeding_warning", "text": "검은 변, 피를 토함, 갑작스러운 심한 두통, 멈추지 않는 코피가 생기면 바로 응급실로 오도록 안내", "say": "변이 까맣거나 피를 토하시고, 갑자기 머리가 심하게 아프거나 코피가 멈추지 않으면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "첫 검사는 말초혈액도말을 포함한 일반혈액검사(혈소판 수), PT(INR), aPTT이며, 필요하면 피브리노겐과 간·신장 기능을 함께 본다.",
+    "혈소판 감소만 있으면 말초혈액도말로 가성혈소판감소(EDTA 응집)를 배제하고, 다른 원인이 없으면 면역혈소판감소증을 생각한다. 빈혈·백혈구 이상이나 모세포가 함께 있으면 골수검사를 한다.",
+    "PT 연장은 와파린, 비타민 K 결핍, 간질환을, aPTT 단독 연장은 혈우병이나 헤파린을 시사하며 혼합검사로 인자 결핍과 억제인자를 구별한다. 선별검사가 정상인데 점막 출혈이 있으면 폰빌레브란트병과 혈소판 기능 검사를 한다.",
+    "면역혈소판감소증은 출혈이 있거나 혈소판이 3만/μL 미만이면 스테로이드를 1차로 쓰고, 생명을 위협하는 출혈에는 정맥 면역글로불린과 혈소판 수혈을 함께 한다.",
+    "와파린 복용 중 INR이 높으면 출혈 정도에 따라 약을 쉬거나 비타민 K를 주고, 심한 출혈에는 프로트롬빈 복합체 농축제(없으면 신선동결혈장)로 즉시 교정한다.",
+    "설명과 맞지 않거나 시기가 서로 다른 멍이 여러 개 있으면 폭력 가능성을 안전한 환경에서 확인하고 기록하며, 필요하면 보호기관과 연계한다."
+  ],
+  "case_ids": []
+}

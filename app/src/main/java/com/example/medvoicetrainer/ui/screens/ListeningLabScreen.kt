@@ -158,6 +158,8 @@ fun ListeningLabScreen(
 
     val answers = remember { mutableStateMapOf<String, String>() }
     var hasSubmitted by remember { mutableStateOf(false) }
+    // Set synchronously on commit; hasSubmitted only flips once the saved row id comes back.
+    var isCommitting by remember { mutableStateOf(false) }
     var scoreResult by remember { mutableStateOf<Map<String, Any?>?>(null) }
     var replayCount by remember { mutableStateOf(0) }
     var cleanReplayCount by remember { mutableStateOf(0) }
@@ -256,7 +258,7 @@ fun ListeningLabScreen(
     }
 
     fun commit() {
-        if (hasSubmitted) return
+        if (hasSubmitted || isCommitting) return
         val answerDetails = detailsList.associate { detail ->
             val key = detail.optString("key")
             key to (answers[key]?.trim() ?: "")
@@ -276,6 +278,7 @@ fun ListeningLabScreen(
         val correct = (score["details_correct"] as? Int) ?: 0
         val total = (score["details_total"] as? Int) ?: 0
         statusText = ""
+        isCommitting = true
         viewModel.saveListeningAttempt(
             drillId = drillId,
             category = category,

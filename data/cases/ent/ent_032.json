@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "severe ear pain, vesicles in canal, facial nerve palsy",
   "hpi_details": "A 38-year-old female presents to the clinic with severe ear pain, vesicles in canal, facial nerve palsy. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to ramsay_hunt",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks she might have had a mini-stroke or caught a cold draft that inflamed the nerves in her face.",
+  "concerns": "She is terrified that the paralysis in her face will be permanent and leave her smile permanently crooked.",
+  "expectations": "She hopes to receive strong nerve medicine or steroids immediately to reverse the facial drooping before it becomes permanent.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -112,6 +112,185 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "120/78",
+      "hr": 76,
+      "rr": 16,
+      "spo2": 99,
+      "temp_c": 37.1
+    },
+    "history": [
+      {
+        "answer": "My right ear has been hurting terribly, and since yesterday the right side of my face has gone limp and I cannot close my right eye properly.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The deep burning ear pain started about 4 days ago, then small bumps showed up 2 days ago, and yesterday morning my face started drooping.",
+        "topic": "Onset and course"
+      },
+      {
+        "answer": "It is a severe, deep, burning and stabbing ache inside my right ear, around an 8 out of 10, and it throbs continuously both day and night.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "Touching my outer ear or pressing the flap hurts because of the tender sores, but chewing food does not change the deep pain inside.",
+        "topic": "Tragus and pinna manipulation"
+      },
+      {
+        "answer": "There is no foul smell or thick pus, just a tiny bit of clear yellowish fluid oozing from the blisters in my ear canal.",
+        "topic": "Ear discharge"
+      },
+      {
+        "answer": "My right ear feels clogged and muffled, and hearing on that side seems slightly reduced compared to my left ear.",
+        "topic": "Hearing loss and ear fullness"
+      },
+      {
+        "answer": "I have a faint ringing noise in my right ear and feel slightly off-balance when I walk, but the room is not spinning around me.",
+        "topic": "Tinnitus and dizziness"
+      },
+      {
+        "answer": "Yes, two days ago I noticed a painful cluster of tiny red blisters inside my right ear canal and near the opening.",
+        "topic": "Rash and blisters"
+      },
+      {
+        "answer": "Yesterday morning water leaked from the right side of my mouth while brushing my teeth, and I cannot shut my right eye tightly or move the right side of my forehead.",
+        "topic": "Facial weakness"
+      },
+      {
+        "answer": "There is no swelling or redness behind my ear, and I have not had any severe headache or stiff neck.",
+        "topic": "Mastoid swelling and neck stiffness"
+      },
+      {
+        "answer": "I felt worn out and slightly feverish with chills when the ear pain started, but I do not have a high fever, runny nose, or cough.",
+        "topic": "Fever and cold symptoms"
+      },
+      {
+        "answer": "No, I have not been swimming, had water trapped in my ear, or suffered any hit to the head or loud blast.",
+        "topic": "Water exposure and trauma"
+      },
+      {
+        "answer": "I gently dabbed the ear opening with a cotton swab when it felt itchy, but I did not dig deep and there is no bug or object inside.",
+        "topic": "Ear cleaning and foreign body"
+      },
+      {
+        "answer": "No, I have not flown on a plane or gone diving recently.",
+        "topic": "Barotrauma"
+      },
+      {
+        "answer": "I have no tooth pain, and my jaw does not ache, click, or lock when I chew.",
+        "topic": "Dental and jaw symptoms"
+      },
+      {
+        "answer": "My throat feels fine, with no pain when swallowing, no voice changes, and no lumps in my neck.",
+        "topic": "Throat and neck symptoms"
+      },
+      {
+        "answer": "I have never had recurring ear infections, a ruptured eardrum, or any ear operations.",
+        "topic": "Past ear problems"
+      },
+      {
+        "answer": "Yes, I had chickenpox when I was around seven years old in elementary school.",
+        "topic": "Chickenpox history"
+      },
+      {
+        "answer": "I have always been healthy and have never been diagnosed with high blood pressure, diabetes, or any immune deficiency.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never undergone any surgical operations or been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I took two over-the-counter ibuprofen tablets yesterday, but they barely helped; I do not take any prescribed medications.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medicines, foods, or materials.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any nicotine products.",
+        "topic": "Smoking"
+      },
+      {
+        "answer": "I only drink one glass of wine socially once or twice a month, and I have had nothing to drink recently.",
+        "topic": "Alcohol"
+      },
+      {
+        "answer": "I work as an office accountant and live with my husband; work has been unusually exhausting and stressful lately.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has had facial paralysis, neurological conditions, or chronic ear disorders.",
+        "topic": "Family history"
+      },
+      {
+        "answer": "My last period started two weeks ago, my monthly cycles are regular, and there is no chance that I could be pregnant.",
+        "topic": "Last menstrual period and pregnancy"
+      },
+      {
+        "answer": "I was terrified I might have had a mini-stroke because my face suddenly started drooping, or maybe I caught a draft that inflamed my nerves.",
+        "topic": "Ideas about diagnosis"
+      },
+      {
+        "answer": "I'm terrified that my face is going to stay crooked like this and I'll never be able to smile normally again.",
+        "topic": "Patient concerns"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Temperature 37.1 C, blood pressure 120/78 mmHg, pulse 76 beats per minute, respiratory rate 16 breaths per minute, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Grouped erythematous vesicles and crusting present in the right external auditory canal and concha; right tympanic membrane is intact without redness or effusion; left external canal and tympanic membrane are completely normal.",
+        "maneuver": "ear_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Right peripheral facial nerve weakness with loss of right forehead wrinkles, inability to fully close the right eye, and right mouth droop; other cranial nerves intact.",
+        "maneuver": "cranial_nerves",
+        "response": "none"
+      },
+      {
+        "finding": "Whisper test shows mildly reduced acuity in the right ear; Weber test lateralizes to the normal left ear, and Rinne test shows air conduction greater than bone conduction bilaterally, consistent with mild right sensorineural hearing loss.",
+        "maneuver": "hearing_test",
+        "response": "none"
+      },
+      {
+        "finding": "Incomplete closure of the right eye with mild conjunctival injection due to corneal exposure; pupils are equal, round, and reactive to light with no corneal ulceration.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No spontaneous or gaze-evoked nystagmus; Dix-Hallpike maneuver is negative bilaterally; patient exhibits a slightly cautious gait without falling.",
+        "maneuver": "vertigo_maneuvers",
+        "response": "none"
+      },
+      {
+        "finding": "A small, tender right preauricular lymph node is palpable; no tenderness or swelling over the right mastoid process, and no cervical lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "pain"
+      },
+      {
+        "finding": "No tenderness or clicking over bilateral temporomandibular joints during jaw opening; full mandibular excursion.",
+        "maneuver": "joint_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Oral cavity and oropharynx are clear without mucosal ulcers, vesicles on the palate, or tonsillar exudate; dentition is intact without percussion pain.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Supple neck with full painless range of motion; negative Kernig and Brudzinski signs.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
       }
     ]
   }

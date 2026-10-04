@@ -1,0 +1,397 @@
+{
+  "id": "gi_046",
+  "system": "gastroenterology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Mr. Park",
+  "age": 58,
+  "gender": "male",
+  "care_setting": "outpatient_clinic",
+  "chief_complaint": "follow-up for endoscopy biopsy results",
+  "hpi_details": "The patient is a 58-year-old man who underwent a national screening endoscopy one week ago. He was found to have a 2.5 cm ulcerated lesion in the gastric antrum. He presents today to discuss the biopsy results, which confirm poorly cohesive (signet ring cell) adenocarcinoma. He currently attends the clinic alone. Staging CT has not yet been performed.",
+  "ideas": "thinks it was probably just an ulcer that needs medication",
+  "concerns": "worried about taking too much time off work from his restaurant",
+  "expectations": "wants to get a prescription for ulcer medication and get back to work",
+  "pmh": "undergoes regular national health screening, no major prior illnesses",
+  "medications": "none",
+  "social_hx": "runs a small restaurant, has two children at university, drinks occasionally, non-smoker",
+  "available_results": [
+    {
+      "collected_at": "1 week ago",
+      "flag": "critical",
+      "id": "res_01",
+      "reference_range": "",
+      "specimen": "Tissue",
+      "test": "Gastric biopsy",
+      "unit": "",
+      "value": "Poorly cohesive (signet ring cell) adenocarcinoma"
+    }
+  ],
+  "clinical_knowledge": {
+    "boundaries_and_exceptions": [
+      "Cultural contexts may influence how families prefer to handle cancer diagnoses, but the physician must first establish the patient's own preferences for information disclosure.",
+      "Although signet ring cell histology is generally associated with a poorer prognosis, management pathways depend entirely on the clinical stage determined by imaging."
+    ],
+    "common_misconceptions": [
+      "Delivering the diagnosis abruptly or using complex medical jargon like 'adenocarcinoma' without explicitly stating 'cancer'.",
+      "Launching into detailed discussions about treatment plans and surgery before the patient has processed the initial shock.",
+      "Feeling compelled to fill the silence after delivering the news, rather than giving the patient time to react.",
+      "Providing definitive survival estimates or treatment guarantees before the staging CT has been performed."
+    ],
+    "core_concepts": [
+      "Breaking bad news requires a structured approach such as the SPIKES protocol to ensure clear communication and support shared decision-making.",
+      "Signet ring cell adenocarcinoma is an aggressive histological subtype of gastric cancer requiring urgent staging to determine resectability.",
+      "Assessing the patient's baseline understanding and establishing what they want to know are critical first steps before disclosing a cancer diagnosis.",
+      "Pausing and allowing silence after the initial disclosure is essential to help the patient process the shock and express their emotions.",
+      "While localized gastric cancer has curative surgical options, definitive prognostication must be deferred until cross-sectional imaging is completed."
+    ],
+    "dangerous_errors": [
+      "Withholding the diagnosis or sugar-coating the truth, leaving the patient unaware of the serious nature of their condition.",
+      "Failing to arrange urgent cross-sectional staging imaging (CT scan) and multidisciplinary oncology referral.",
+      "Allowing the patient to leave the clinic alone and distressed without attempting to contact a support person or arranging early follow-up."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: follow-up for endoscopy biopsy results.",
+      "Endoscopy findings: 2.5 cm ulcerated lesion in the gastric antrum.",
+      "Biopsy result: poorly cohesive (signet ring cell) adenocarcinoma.",
+      "Patient context: unattended, assumes it is a benign ulcer, runs a small business."
+    ],
+    "management_principles": [
+      "Employ the SPIKES protocol: Setting, Perception, Invitation, Knowledge, Emotion, Strategy and Summary.",
+      "Ensure a private setting, deliver a warning shot, and provide a clear disclosure of the cancer diagnosis.",
+      "Respond to the patient's emotional reactions with empathy and validate their concerns.",
+      "Formulate an immediate plan including a staging CT of the chest, abdomen, and pelvis, followed by surgical and oncology referrals.",
+      "Arrange early follow-up and strongly encourage the patient to bring a family member to the next appointment."
+    ],
+    "source_refs": [
+      {
+        "title": "NCCN Clinical Practice Guidelines in Oncology: Gastric Cancer",
+        "url": "https://www.nccn.org/professionals/physician_gls/pdf/gastric.pdf"
+      }
+    ],
+    "topic": "Gastric Adenocarcinoma and Breaking Bad News"
+  },
+  "reference_soap": {
+    "assessment": "Newly diagnosed gastric adenocarcinoma (poorly cohesive, signet ring cell), clinical stage pending. Requires breaking bad news and urgent staging.",
+    "objective": "Vitals stable. Patient appears comfortable, alert, and unaware of the malignant diagnosis. Abdomen is soft, non-tender, with no palpable masses.",
+    "plan": "Disclosed cancer diagnosis utilizing the SPIKES protocol. Acknowledged emotions and provided empathetic support. Arranged urgent staging CT scan of the chest, abdomen, and pelvis. Initiated referral to surgical and medical oncology. Scheduled follow-up appointment in a few days and strongly advised bringing a support person.",
+    "subjective": "58M presenting for endoscopy biopsy results. National screening endoscopy 1 week ago showed a 2.5 cm ulcerated lesion in the gastric antrum. Currently asymptomatic. Patient attends alone, expecting a benign ulcer diagnosis and a prescription for medication. Worried about his restaurant business if he needs time off."
+  },
+  "learning_objectives": [
+    "Demonstrate breaking bad news using the SPIKES protocol.",
+    "Assess the patient's baseline knowledge and preferences for receiving medical information.",
+    "Respond empathetically to the patient's emotional reaction to a cancer diagnosis.",
+    "Formulate a safe and appropriate initial management plan for a newly diagnosed malignancy."
+  ],
+  "teaching": {
+    "diagnosis": "Gastric adenocarcinoma (signet ring cell)",
+    "differentials": [
+      "Benign gastric ulcer",
+      "Gastric lymphoma",
+      "Gastrointestinal stromal tumor (GIST)"
+    ],
+    "must_ask": [
+      {
+        "domains": [
+          "ideas"
+        ],
+        "keywords": [
+          "endoscopy",
+          "ulcer"
+        ],
+        "objective": "Assess baseline perception",
+        "say": "What did the doctor who performed the endoscopy tell you about the ulcer they found?"
+      },
+      {
+        "domains": [
+          "expectations"
+        ],
+        "keywords": [
+          "details",
+          "main",
+          "points",
+          "prefer"
+        ],
+        "objective": "Assess preference for information",
+        "say": "Are you the kind of person who likes to know all the details, or would you prefer I just give you the main points?"
+      },
+      {
+        "domains": [
+          "summary_closing"
+        ],
+        "keywords": [
+          "afraid",
+          "difficult",
+          "news",
+          "results"
+        ],
+        "objective": "Deliver the warning shot",
+        "say": "I am afraid I have some difficult news to share with you about the biopsy results."
+      },
+      {
+        "domains": [
+          "summary_closing"
+        ],
+        "keywords": [
+          "biopsy",
+          "stomach",
+          "cancer"
+        ],
+        "objective": "Clear disclosure of the diagnosis",
+        "say": "The biopsy showed that the ulcer in your stomach is actually a type of cancer."
+      },
+      {
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "shock"
+        ],
+        "objective": "Empathetic response",
+        "say": "I know this is a huge shock. Take as much time as you need."
+      },
+      {
+        "domains": [
+          "living_work",
+          "family_hx"
+        ],
+        "keywords": [
+          "yourself",
+          "alone",
+          "call"
+        ],
+        "objective": "Address the lack of support person",
+        "say": "Since you are here by yourself, is there someone we can call to be with you?"
+      },
+      {
+        "domains": [
+          "expectations",
+          "summary_closing"
+        ],
+        "keywords": [
+          "scan",
+          "where",
+          "treatment"
+        ],
+        "objective": "Discuss the immediate next step",
+        "say": "The next step is to arrange a CT scan to see exactly where the cancer is so we can plan the right treatment."
+      }
+    ],
+    "one_liner": "A malignant tumor in the stomach lining that requires careful disclosure to the patient, followed by prompt staging to determine if it has spread before deciding on surgery or chemotherapy.",
+    "red_flags": [
+      "New diagnosis of cancer requiring breaking bad news",
+      "Patient attending alone for a life-altering diagnosis"
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "120/78",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I came in today to hear the biopsy results from my stomach endoscopy last week.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I came by myself today because I thought it was just a quick follow-up to get ulcer medicine.",
+        "topic": "Accompanying person"
+      },
+      {
+        "answer": "I feel completely fine physically, though I felt a bit nervous during the week waiting for the results.",
+        "topic": "Current physical condition"
+      },
+      {
+        "answer": "I did not have any stomach trouble; it was just my regular biennial national health screening.",
+        "topic": "Reason for endoscopy"
+      },
+      {
+        "answer": "The doctor who did the scope mentioned a small ulcer in my stomach and said they took a small tissue sample.",
+        "topic": "Prior explanation from doctor"
+      },
+      {
+        "answer": "I assume it is just a routine ulcer that needs prescription medication, and my biggest worry is taking time off from my restaurant.",
+        "topic": "Expected results and concern"
+      },
+      {
+        "answer": "No, I haven't noticed any changes, pain, or discomfort since the endoscopy.",
+        "topic": "Changes in symptoms"
+      },
+      {
+        "answer": "I prefer to know the main conclusion and the big picture first, and then we can discuss the details.",
+        "topic": "Information preference"
+      },
+      {
+        "answer": "I share everything with my wife, and I would appreciate it if you could explain everything clearly to her as well.",
+        "topic": "Sharing results with family"
+      },
+      {
+        "answer": "Yes, I am ready to hear what the biopsy results showed.",
+        "topic": "Readiness to hear results"
+      },
+      {
+        "answer": "Wait, does that mean it's not just a benign ulcer? What did the test find, doctor?",
+        "topic": "Reaction to warning shot"
+      },
+      {
+        "answer": "Stomach cancer? Are you sure there is no mistake? I feel completely healthy and have no pain at all.",
+        "topic": "Reaction to cancer diagnosis"
+      },
+      {
+        "answer": "I am in total shock and don't know what to think. How am I going to tell my wife and keep the restaurant open?",
+        "topic": "Emotional response"
+      },
+      {
+        "answer": "Yes, I will definitely bring my wife with me for the next appointment so we can listen together.",
+        "topic": "Bringing support person"
+      },
+      {
+        "answer": "No, I do not have any stomachache, burning, or crampy pain.",
+        "topic": "Abdominal pain"
+      },
+      {
+        "answer": "No, I digest food normally and have not felt bloated or full too quickly.",
+        "topic": "Indigestion and early satiety"
+      },
+      {
+        "answer": "No, I have had no nausea, and I haven't thrown up at all.",
+        "topic": "Nausea and vomiting"
+      },
+      {
+        "answer": "No, food goes down easily without any sticking or pain in my chest.",
+        "topic": "Difficulty swallowing"
+      },
+      {
+        "answer": "My appetite has been good, and my weight has stayed the same at seventy kilograms.",
+        "topic": "Weight loss and appetite"
+      },
+      {
+        "answer": "No, my bowel movements are normal brown, with no black tarry stools or blood.",
+        "topic": "Stool color and bleeding"
+      },
+      {
+        "answer": "No, I feel energetic and haven't felt unusually tired or dizzy.",
+        "topic": "Fatigue or weakness"
+      },
+      {
+        "answer": "No, I haven't had any fever, chills, or night sweats.",
+        "topic": "Fever or chills"
+      },
+      {
+        "answer": "What do we need to do next? Will I need a CT scan or more testing to see how far it has spread?",
+        "topic": "Next steps and tests"
+      },
+      {
+        "answer": "Can this be cured with surgery or medicine, and how long would treatment take?",
+        "topic": "Treatment and surgery"
+      },
+      {
+        "answer": "I run a small neighborhood restaurant that supports my family and pays for my two kids' university tuition.",
+        "topic": "Family and economic role"
+      },
+      {
+        "answer": "My wife is my main support; we run the restaurant together every day and rely on each other.",
+        "topic": "Support person"
+      },
+      {
+        "answer": "Neither I nor my close family members have ever had cancer or any severe illness before.",
+        "topic": "Prior serious illness experience"
+      },
+      {
+        "answer": "I handle stress by going for walks or sleeping, and I have never had depression or anxiety problems.",
+        "topic": "Stress coping and mental health"
+      },
+      {
+        "answer": "My main focus is keeping the family business going until my children graduate from university; I don't follow any religion.",
+        "topic": "Life values and plans"
+      },
+      {
+        "answer": "I get regular national health checkups every two years, and I have never had high blood pressure, diabetes, or any other illness.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or hospital stays in my life.",
+        "topic": "Past surgeries or hospitalizations"
+      },
+      {
+        "answer": "I do not take any prescribed medications, over-the-counter drugs, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any known allergies to medicines or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink about half a bottle of soju once or twice a month with friends.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I own and operate a small restaurant, and I live with my wife while our two children live near their university.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no history of stomach cancer or any other cancers in my parents or siblings.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 120/78 mmHg, heart rate 72 beats per minute, respiratory rate 14 breaths per minute, temperature 36.6 degrees Celsius, and oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient is well-groomed, sitting comfortably, alert and oriented, with no signs of acute physical distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are pink without pallor; sclerae are anicteric.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "No lymphadenopathy is palpable in the cervical, submandibular, or left supraclavicular areas.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "The abdomen is flat, symmetrical, with no surgical scars, distension, or visible peristalsis.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Normoactive bowel sounds are present in all four quadrants; no vascular bruits are audible.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tympanitic notes are heard throughout the abdomen, with no shifting dullness or fluid wave.",
+        "maneuver": "abdominal_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "The abdomen is soft and non-tender throughout, with no guarding, rigidity, or palpable masses.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "The liver and spleen are not palpable below the costal margins, with no hepatosplenomegaly.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No peripheral edema is present on either lower extremity.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      }
+    ]
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "id": "fm_049",
+  "system": "family medicine",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Kim",
+  "age": 30,
+  "gender": "female",
+  "care_setting": "outpatient_clinic",
+  "chief_complaint": "planning pregnancy in 3 months and requires immunisation review",
+  "hpi_details": "30F kindergarten teacher presents for preconception counselling, planning to conceive in 3 months. She recently had a pre-marriage checkup which showed she is rubella IgG negative. She is unsure if she ever had chickenpox as a child. She is not currently pregnant; her last menstrual period was 1 week ago and she and her husband are consistently using condoms. She is seeking advice on required vaccinations and general preconception care.",
+  "ideas": "believes she needs some vaccines before getting pregnant because of her recent blood test results",
+  "concerns": "worried about catching infections from the children at her kindergarten and how it might affect a future baby",
+  "expectations": "wants to get all necessary vaccines today and advice on when it is safe to start trying to conceive",
+  "pmh": "Generally healthy. No chronic illnesses. Pre-marriage checkup showed rubella IgG negative. Unsure about childhood chickenpox history.",
+  "medications": "None. Not currently taking folic acid.",
+  "social_hx": "Works as a kindergarten teacher. Married, planning first pregnancy. No smoking, occasional alcohol (plans to stop). Uses condoms for contraception.",
+  "available_results": [
+    {
+      "collected_at": "recent pre-marriage check",
+      "flag": "abnormal",
+      "id": "res_01",
+      "reference_range": "Positive",
+      "specimen": "Serum",
+      "test": "Rubella IgG",
+      "unit": "",
+      "value": "Negative"
+    }
+  ],
+  "clinical_knowledge": {
+    "boundaries_and_exceptions": [
+      "Live attenuated vaccines like MMR and varicella are strictly contraindicated if the patient is already pregnant.",
+      "Inactivated vaccines like Tdap and influenza are safe during pregnancy and are generally scheduled later in the antenatal period rather than preconception."
+    ],
+    "common_misconceptions": [
+      "Assuming Tdap and influenza vaccines should also be given right now, rather than waiting until the patient is actually pregnant.",
+      "Advising a 3-month or 6-month wait after live vaccines, whereas current guidelines recommend avoiding pregnancy for just 1 month.",
+      "Forgetting to check varicella immunity or administering the vaccine without first confirming lack of immunity."
+    ],
+    "core_concepts": [
+      "Women of childbearing age should be screened for immunity to rubella and varicella prior to conception.",
+      "Live attenuated vaccines (such as MMR and varicella) are contraindicated during pregnancy due to theoretical risks to the developing fetus.",
+      "Pregnancy should be strictly avoided for at least 1 month after receiving live vaccines like MMR and varicella.",
+      "Preconception care also includes initiating folic acid supplementation (at least 400 mcg daily) to prevent neural tube defects and reviewing other vaccine statuses (e.g., Hepatitis B)."
+    ],
+    "dangerous_errors": [
+      "Administering live vaccines (MMR, varicella) to a patient who is already pregnant or not using reliable contraception.",
+      "Failing to clearly instruct the patient to strictly avoid pregnancy and continue contraception for 1 month post-vaccination.",
+      "Missing the opportunity to start folic acid supplementation well before conception occurs."
+    ],
+    "diagnostic_clues": [
+      "Patient is planning pregnancy in 3 months, which safely allows time for live vaccine administration and the required 1-month waiting period.",
+      "High-risk occupation as a kindergarten teacher significantly increases exposure to childhood infections, making varicella and rubella immunity crucial.",
+      "Confirmed non-pregnant state (LMP 1 week ago, consistent condom use) ensures it is safe to administer live vaccines today."
+    ],
+    "management_principles": [
+      "Administer the MMR vaccine today.",
+      "Check varicella serology (IgG) or administer the varicella vaccine if history of chickenpox is completely unknown/negative.",
+      "Advise strict continuation of contraception (condoms) to avoid pregnancy for at least 1 month following the administration of live vaccines.",
+      "Initiate prenatal vitamins containing at least 400 mcg of folic acid daily starting immediately.",
+      "Check Hepatitis B surface antibody/antigen status if not done during the pre-marriage checkup."
+    ],
+    "source_refs": [
+      {
+        "title": "CDC Guidelines for Vaccinating Pregnant Women",
+        "url": "https://www.cdc.gov/vaccines/pregnancy/hcp-guidelines.html"
+      }
+    ],
+    "topic": "Preconception Immunisation and Care"
+  },
+  "reference_soap": {
+    "assessment": "1. Preconception counseling. 2. Rubella non-immune. 3. Varicella immune status unknown. 4. High occupational exposure risk to childhood infections.",
+    "objective": "Vitals: stable and within normal limits. General: well-appearing female in no acute distress. Systemic exam: unremarkable. Lab review: Rubella IgG negative from recent external pre-marriage checkup.",
+    "plan": "1. Administer MMR vaccine today. 2. Draw varicella IgG titer today (or administer varicella vaccine if preferred per local protocol, given unknown history). 3. Educate patient to strictly use contraception and avoid pregnancy for 1 month post-vaccination. 4. Start daily folic acid supplementation (400-800 mcg) immediately. 5. Discuss receiving Tdap and influenza vaccines during future pregnancy. 6. Review Hepatitis B status from previous labs.",
+    "subjective": "30-year-old female kindergarten teacher planning to conceive in 3 months presents for preconception counseling. She reports a recent pre-marriage checkup showing lack of rubella immunity and is unsure of her childhood chickenpox history. Currently menstruating regularly (LMP 1 week ago) and using condoms. Denies any current medical issues."
+  },
+  "learning_objectives": [
+    "Identify the need for live attenuated vaccines (MMR, varicella) prior to conception in non-immune women.",
+    "Counsel patients on the required 1-month interval to avoid pregnancy after receiving live vaccines.",
+    "Formulate a comprehensive preconception care plan including folic acid supplementation and review of occupational risks.",
+    "Differentiate between vaccines that should be given preconception (live vaccines) versus those recommended during pregnancy (Tdap, influenza)."
+  ],
+  "teaching": {
+    "diagnosis": "Preconception immunisation requirement (MMR and varicella)",
+    "differentials": [
+      "Routine prenatal visit (already pregnant)",
+      "Infertility evaluation",
+      "Occupational health screening"
+    ],
+    "must_ask": [
+      {
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "last",
+          "menstrual",
+          "period",
+          "contraception"
+        ],
+        "objective": "Determine current pregnancy status",
+        "say": "When was your last menstrual period, and are you using contraception?"
+      },
+      {
+        "domains": [
+          "onset_duration"
+        ],
+        "keywords": [
+          "when",
+          "planning",
+          "pregnant"
+        ],
+        "objective": "Establish the timeline for conception",
+        "say": "When are you planning to start trying to get pregnant?"
+      },
+      {
+        "domains": [
+          "pmh"
+        ],
+        "keywords": [
+          "had",
+          "chickenpox",
+          "child"
+        ],
+        "objective": "Check childhood infection history",
+        "say": "Do you know if you ever had chickenpox as a child?"
+      },
+      {
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "what",
+          "occupation",
+          "exposed",
+          "children"
+        ],
+        "objective": "Identify occupational risks",
+        "say": "What is your occupation, and are you exposed to children?"
+      },
+      {
+        "domains": [
+          "medications"
+        ],
+        "keywords": [
+          "taking",
+          "supplements",
+          "folic",
+          "acid"
+        ],
+        "objective": "Current preconception care",
+        "say": "Are you taking any supplements like folic acid right now?"
+      },
+      {
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "specific",
+          "concerns",
+          "health",
+          "pregnant"
+        ],
+        "objective": "Explore patient concerns",
+        "say": "Do you have any specific concerns about your health before getting pregnant?"
+      }
+    ],
+    "one_liner": "A kindergarten teacher planning pregnancy needs live vaccines like MMR and varicella before conceiving, requiring strict contraception for one month post-vaccination to prevent fetal risk.",
+    "red_flags": [
+      "Unprotected intercourse or possibility of current pregnancy before giving live vaccines.",
+      "Lack of folic acid supplementation in early neural tube development."
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "118/76",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I am planning to try for a baby in about three months, and I came in to find out which vaccinations I need before getting pregnant.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I recently had a pre-marriage health screening, and the doctor told me my blood test showed I do not have immunity against rubella.",
+        "topic": "Reason for vaccination review"
+      },
+      {
+        "answer": "I brought my pre-marriage screening report showing rubella IgG negative, but I could not find my childhood vaccination records.",
+        "topic": "Previous vaccination records"
+      },
+      {
+        "answer": "I feel completely fine today with no fever, chills, cough, sore throat, or fatigue.",
+        "topic": "Current symptoms and wellness"
+      },
+      {
+        "answer": "No, I have never had any severe reactions, breathing problems, hives, or swelling after any shot in the past.",
+        "topic": "Previous vaccine reactions"
+      },
+      {
+        "answer": "I do not have any allergies to eggs, gelatin, neomycin, antibiotics, or latex.",
+        "topic": "Allergies to vaccine components"
+      },
+      {
+        "answer": "No, I do not have cancer, HIV, or any autoimmune disease, and I have never taken steroids or immunosuppressive medications.",
+        "topic": "Immunosuppressive conditions"
+      },
+      {
+        "answer": "No, I am definitely not pregnant right now, and we are planning to wait at least three months before we start trying.",
+        "topic": "Current pregnancy and timeline"
+      },
+      {
+        "answer": "My last menstrual period started exactly one week ago, and my cycles have always been regular every twenty-eight days.",
+        "topic": "Last menstrual period"
+      },
+      {
+        "answer": "My husband and I have been using condoms every single time without any slips or breaks.",
+        "topic": "Contraceptive use"
+      },
+      {
+        "answer": "No, I have never received a blood transfusion, plasma, or any immunoglobulin injections.",
+        "topic": "Recent blood transfusion or immunoglobulin"
+      },
+      {
+        "answer": "No, I have never had seizures, epilepsy, nerve disorders, or Guillain-Barre syndrome.",
+        "topic": "Neurological disorders and seizures"
+      },
+      {
+        "answer": "No, I do not have any bleeding tendencies or low platelets, and I do not take blood thinners.",
+        "topic": "Bleeding tendencies and anticoagulants"
+      },
+      {
+        "answer": "I do not have any chronic medical conditions like asthma, diabetes, heart disease, kidney issues, or liver disease, and I still have my spleen.",
+        "topic": "Chronic medical conditions"
+      },
+      {
+        "answer": "I work as a kindergarten teacher, so I spend all day around young children who frequently catch childhood viruses.",
+        "topic": "Occupation and occupational risks"
+      },
+      {
+        "answer": "No, I do not have any upcoming international travel planned.",
+        "topic": "Travel plans"
+      },
+      {
+        "answer": "I live with my husband; we do not have any newborns, pregnant women, or immunocompromised individuals living with us.",
+        "topic": "Household contacts"
+      },
+      {
+        "answer": "I am worried about accidentally catching rubella or chickenpox from the children at kindergarten while pregnant and hurting my baby.",
+        "topic": "Concerns about infections"
+      },
+      {
+        "answer": "I wondered if getting multiple vaccines today is safe, and I want to be certain how long I must wait after the shots before trying to conceive.",
+        "topic": "Vaccine safety and timing concerns"
+      },
+      {
+        "answer": "I am not sure if I ever had chickenpox when I was a child, and my mother could not remember either.",
+        "topic": "Childhood chickenpox history"
+      },
+      {
+        "answer": "I have not started taking folic acid or any prenatal multivitamins yet, but I want to start whatever is recommended.",
+        "topic": "Folic acid supplementation"
+      },
+      {
+        "answer": "I have always been healthy and have never been diagnosed with any chronic illnesses or hospitalised for serious medical conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or inpatient hospital stays.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, over-the-counter drugs, or herbal supplements right now.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications or food.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco or vaping products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink a glass of wine on special occasions once or twice a month, but I am ready to stop drinking completely.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "There is no family history of genetic disorders, recurrent pregnancy complications, or chronic medical diseases.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 118/76 mmHg, heart rate 72 beats per minute, respiratory rate 14 breaths per minute, body temperature 36.6°C, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Alert, comfortable, well-nourished, and in no acute distress; no signs of dehydration or respiratory difficulty.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Posterior oropharynx is clear without erythema or exudate; tonsils are normal size.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without wheezing, crackles, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, gallops, or friction rubs heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Both deltoid areas and upper arms show healthy skin with no redness, rashes, swelling, lesions, or active infection.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      }
+    ]
+  }
+}

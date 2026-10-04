@@ -1,0 +1,112 @@
+{
+  "id": "nursing_oet_appendicectomy_discharge_gym",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — discharge after keyhole appendix surgery, personal trainer wants to return to the gym early",
+  "chief_complaint": "Give wound-care and warning-sign advice to a personal trainer going home after a laparoscopic appendicectomy, and persuade him not to return to heavy training too early",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "Post-appendicectomy discharge: personal trainer planning to lift weights next week",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Mr Kofi Mensah, 29-year-old self-employed personal trainer, day 1 after a laparoscopic (keyhole) appendicectomy",
+    "location": "Surgical ward, on the morning of discharge; you are the ward nurse giving discharge advice to Mr Mensah",
+    "situation": "Mr Mensah had his appendix removed by keyhole surgery yesterday for uncomplicated appendicitis and is going home today. While you were preparing his discharge letter he mentioned that he plans to be back training clients and lifting weights on Monday, in four days' time.",
+    "background": [
+      "Previously fit and well; no other medical conditions.",
+      "Self-employed; he runs one-to-one sessions in a gym, which involve demonstrating exercises and lifting equipment.",
+      "Lives with his partner, who is collecting him."
+    ],
+    "current_status": [
+      "Three small wounds on his abdomen, closed and covered with dressings; clean and dry this morning.",
+      "Pain is controlled with regular paracetamol and ibuprofen. He is eating, drinking, walking and has passed urine."
+    ],
+    "key_data": [
+      "Wound care: keep the wounds clean and dry; he may shower as advised on his discharge letter and should pat the wounds dry; no baths or swimming until the wounds have healed.",
+      "Surgeon's advice: gentle walking every day is encouraged; no heavy lifting or strenuous exercise for about two to four weeks; return to light work when comfortable.",
+      "Lifting or straining too early can cause pain, slow healing and increase the risk of a hernia at a wound site.",
+      "Seek help (ward telephone number or GP; emergency department if severe) for: fever or shivering; a wound that is red, hot, swollen, oozing or opening; abdominal pain that is getting worse; repeated vomiting; a swollen abdomen; pain or swelling in the calf. Sudden breathlessness or chest pain needs an emergency ambulance.",
+      "Driving: only when he can do an emergency stop comfortably and is not taking medicines that make him drowsy; he should check his insurance."
+    ],
+    "treatments": [
+      "Already done: surgery, post-operative observation, first mobilisation.",
+      "Pending: discharge letter and a supply of analgesia; wound check by the practice nurse if needed."
+    ],
+    "your_request": "Give Mr Mensah his discharge advice and persuade him to follow the advice on lifting and strenuous exercise.",
+    "must_include": [
+      "Find out what Mr Mensah is planning for his return to work and exercise, and why.",
+      "Explain how to care for his wounds at home.",
+      "Advise him on the warning signs of infection or other complications and what to do if they occur.",
+      "Persuade him to avoid heavy lifting and strenuous exercise for now, explaining the reasons.",
+      "Suggest ways he could return to work safely in stages."
+    ]
+  },
+  "kickoff_text": "Great, I'm finally going home. It was only keyhole, so I'll be back at the gym on Monday — I've got clients booked all week.",
+  "persona_override": "You are Kofi Mensah, a 29-year-old self-employed personal trainer who had a keyhole appendicectomy yesterday and is going home today. You are cheerful, confident, and a bit impatient; you see yourself as very fit and think 'keyhole' means almost no recovery time. Your real concern, which you only explain if the nurse asks why you want to go back so soon: you are self-employed, you do not get sick pay, and you are afraid that if you cancel sessions your clients will move to another trainer. Ground truth: you have three small wounds with dressings; pain is about 3 out of 10 with regular paracetamol and ibuprofen; you are eating, drinking and walking; you drive to the gym; your partner is collecting you today. You demonstrate lifts and move heavy equipment in sessions. You have not been told about wound care or warning signs yet. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words like 'incisional hernia', 'port site', 'laparoscopic', 'pyrexia' or 'analgesia' without explaining them, ask what they mean. If the nurse simply tells you 'no gym for four weeks' without asking why you want to go back or explaining why, push back: 'Four weeks? I'm fitter than most people — I'll be fine.' If the nurse never asks about your work situation, bring it up with more frustration: 'You don't get it, I don't get paid if I don't work.' Once the nurse acknowledges the money worry, explains the hernia risk in plain words, and suggests a middle way (for example, online or light coaching sessions without demonstrating heavy lifts, shorter days, gradual return), accept gradually: first 'So I could still coach, just not lift?', then agree. Ask one practical question along the way: 'When can I drive?' If the nurse gives all the warning signs in one long block, say 'Hang on, what were the ones I need to worry about?' If asked to repeat the warning signs back, remember the wound signs but forget the calf pain or breathlessness. Never coach the nurse or mention scoring. Near five minutes, wrap up naturally: say you will message your clients about lighter sessions and thank the nurse.",
+  "learning_objectives": [
+    "find out the patient's plans for work and exercise and the reason behind them",
+    "explain wound care at home in plain words: keep clean and dry, pat dry, no baths or swimming",
+    "advise on warning signs of infection and complications and who to contact",
+    "persuade the patient to avoid heavy lifting by explaining the hernia risk",
+    "negotiate a staged return to work that addresses his financial concern",
+    "check understanding by asking him to repeat the warning signs"
+  ],
+  "suggested_questions": [
+    "Before we go through your discharge advice, can I ask what your plans are for work next week — and what makes it important to go back so soon?",
+    "I understand — if you're self-employed, cancelling clients is a real worry. The problem is that heavy lifting in the first few weeks can put pressure on the small wounds and cause a hernia, which could keep you off work much longer.",
+    "Would it be possible to coach clients without demonstrating the heavy lifts yourself for the first couple of weeks?",
+    "Just to check I've been clear, which signs would make you call the ward or see a doctor?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Discharge education after laparoscopic appendicectomy: wound care, warning signs, and return to activity",
+    "review_status": "grounded in NICE NG125 (surgical site infections) principles and NHS appendicitis recovery information; wound-care instructions and activity restrictions follow the operating surgeon's advice and local discharge policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Young, fit patients often underestimate recovery after keyhole surgery because the wounds are small; the risk from early heavy lifting is to the deeper layers, not just the skin.",
+      "Resistance to activity restrictions usually has a practical cause (income, commitments) that must be explored before persuasion will work.",
+      "Warning-sign education should cover wound infection, intra-abdominal complications, and venous thromboembolism."
+    ],
+    "diagnostic_clues": [
+      "Fever, increasing wound redness, swelling or discharge suggests wound infection.",
+      "Worsening abdominal pain, repeated vomiting or abdominal swelling after discharge may indicate an intra-abdominal complication and needs urgent review.",
+      "Calf pain or swelling, or new breathlessness, may indicate a blood clot."
+    ],
+    "common_misconceptions": [
+      "Keyhole surgery needs no recovery period.",
+      "Being very fit protects against wound complications.",
+      "Pain is the only guide to when heavy exercise is safe."
+    ],
+    "dangerous_errors": [
+      "Telling the patient he can return to heavy lifting as soon as the pain settles.",
+      "Omitting warning signs of blood clots or worsening abdominal pain, or not making clear that sudden breathlessness or chest pain is an emergency.",
+      "Giving a fixed return-to-sport date that contradicts the surgeon's instructions."
+    ],
+    "management_principles": [
+      "Explore the patient's plans and reasons first, then negotiate a realistic, staged return.",
+      "Give wound-care and warning-sign information in small chunks and check with teach-back.",
+      "Make sure the patient knows who to contact and when to seek urgent help."
+    ],
+    "boundaries_and_exceptions": [
+      "Timelines for showering, dressing removal, lifting, exercise and driving vary by surgeon, procedure and hospital; follow the discharge letter.",
+      "Complicated appendicitis (for example, perforation) usually needs a longer, more cautious recovery.",
+      "Driving advice also depends on national licensing rules and the patient's insurer."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE NG125: Surgical site infections — prevention and treatment",
+        "url": "https://www.nice.org.uk/guidance/ng125"
+      },
+      {
+        "title": "NHS: Appendicitis",
+        "url": "https://www.nhs.uk/conditions/appendicitis/"
+      }
+    ]
+  }
+}

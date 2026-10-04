@@ -198,12 +198,12 @@ fun AudioPreflightDialog(onProceed: () -> Unit, onCancel: () -> Unit) {
                                     },
                                     onError = { message ->
                                         isMetering = false
-                                        micStatus = "${t("preflight.mic_error")} $message"
+                                        micStatus = t("preflight.mic_error").replace("{err}", message)
                                     },
                                 )
                                 recording.onFailure { error ->
                                     isMetering = false
-                                    micStatus = "${t("preflight.mic_error")} ${error.message ?: error.javaClass.simpleName}"
+                                    micStatus = t("preflight.mic_error").replace("{err}", error.message ?: error.javaClass.simpleName)
                                 }
                             }
                         }

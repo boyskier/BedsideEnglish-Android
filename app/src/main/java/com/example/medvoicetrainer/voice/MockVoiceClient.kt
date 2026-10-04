@@ -189,6 +189,18 @@ class MockVoiceClient(
             "Thank you doctor. I appreciate you explaining everything to me."
         )
 
+        // ── Korean CPX track: a short Korean scripted patient so the track runs offline too ──
+        private val MOCK_KMLE_PATIENT_LINES = listOf(
+            "안녕하세요.",
+            "소변볼 때 아파서 왔어요.",
+            "이틀 전부터요.",
+            "화끈거리고 따가워요. 끝날 때 더 아파요.",
+            "네, 자주 마려워요.",
+            "아니요, 열은 없었어요.",
+            "혹시 콩팥까지 번진 건 아닌가 걱정돼요.",
+            "네, 알겠습니다. 감사합니다."
+        )
+
         // ── Interview mode (residency match) ──
         private val MOCK_INTERVIEW_LINES = listOf(
             "Thank you for coming in today. Before we start formally, can I ask — how are you feeling?",
@@ -289,6 +301,16 @@ class MockVoiceClient(
         internal fun loungeScript(caseJson: String): List<String> {
             val case = try { JSONObject(caseJson) } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) { JSONObject() }
             return when (case.optString("scenario_type", "casual")) {
+                // Free Talk's partner speaks one short line per turn; the offline demo keeps to
+                // the same brief so the mode feels the same without a key.
+                "free_talk" -> listOf(
+                    "Hey! So, what's on your mind today?",
+                    "Oh, nice. Tell me more?",
+                    "Really? Why's that?",
+                    "Ha, I see. And then what?",
+                    "How did that feel?",
+                    "Interesting. Anything else?"
+                )
                 "debate" -> listOf(
                     "All right, I’ll take the other side. What is your strongest reason for your view?",
                     "But does that still hold if the situation affects people very differently?",
@@ -332,6 +354,7 @@ class MockVoiceClient(
                 mode == "interview" -> MOCK_INTERVIEW_LINES
                 mode == "survival" -> survivalScript(caseJson, systemPrompt)
                 mode == "lounge" -> loungeScript(caseJson)
+                mode == com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE -> MOCK_KMLE_PATIENT_LINES
                 else -> {
                     val demoCaseId = DemoTour.demoCaseIdForRealCaseId(caseId) ?: "chest_pain"
                     DEMO_PATIENT_LINES[demoCaseId] ?: MOCK_PATIENT_LINES

@@ -1,0 +1,55 @@
+{
+  "id": "fever",
+  "title": "열이 나요",
+  "english_title": "Fever",
+  "category": "전신·내분비",
+  "kmle_item": "발열",
+  "door_complaint": "열이 난다고",
+  "differential_groups": [
+    {"key": "localized", "label": "국소 감염", "examples": ["인플루엔자", "폐렴", "급성 신우신염", "급성 담관염", "뇌수막염", "연조직염"]},
+    {"key": "systemic_infection", "label": "전신 감염·여행·진드기", "examples": ["감염성 심내막염", "쯔쯔가무시병·리케차 감염", "말라리아", "장티푸스", "돌발진"]},
+    {"key": "noninfectious", "label": "비감염성", "examples": ["림프종", "백혈병", "성인 스틸병", "가와사키병", "약물열", "갑상샘중독증"]},
+    {"key": "immunocompromised", "label": "면역저하 숙주", "examples": ["호중구감소성 발열(항암치료 중)", "HIV 감염", "면역억제제 복용"]}
+  ],
+  "history": [
+    {"id": "onset_duration", "text": "발열 시작 시기와 지속 기간", "say": "언제부터 열이 났어요? 계속 나나요?", "tags": ["noninfectious", "systemic_infection"]},
+    {"id": "height_pattern", "text": "최고 체온, 열 양상(지속, 간헐, 주기적), 오한", "say": "몇 도까지 올라갔어요? 열이 났다 내렸다 하나요? 춥고 떨리지는 않았어요?", "tags": ["systemic_infection"]},
+    {"id": "antipyretic", "text": "해열제 복용과 반응", "say": "해열제를 드셨어요? 먹으면 열이 내리나요?"},
+    {"id": "respiratory", "text": "기침, 가래, 인후통, 호흡곤란", "say": "기침이나 가래, 목 아픈 건 없으세요? 숨이 차지는 않나요?", "tags": ["localized"]},
+    {"id": "urinary", "text": "배뇨통, 빈뇨, 옆구리 통증", "say": "소변볼 때 아프거나 옆구리가 아프지는 않으세요?", "tags": ["localized"]},
+    {"id": "gi", "text": "복통, 설사, 구토", "say": "배가 아프거나 설사, 구토는 없으세요?", "tags": ["localized", "systemic_infection"]},
+    {"id": "neuro", "text": "심한 두통, 목 경직, 의식 변화", "say": "머리가 심하게 아프거나 목이 뻣뻣하지는 않으세요?", "tags": ["localized"], "key": true},
+    {"id": "rash_eschar", "text": "발진, 벌레 물린 뒤 생긴 검은 딱지, 관절통", "say": "몸에 발진이 있거나 벌레 물린 뒤 검은 딱지가 생긴 곳은 없나요? 관절은 아프지 않으세요?", "tags": ["systemic_infection", "noninfectious"]},
+    {"id": "night_sweats_weight", "text": "야간 발한, 체중 감소", "say": "밤에 식은땀을 흠뻑 흘리거나 살이 빠지지는 않으셨어요?", "tags": ["noninfectious", "systemic_infection"]},
+    {"id": "lymph_nodes", "text": "목, 겨드랑이, 사타구니 멍울", "say": "목이나 겨드랑이에 멍울이 만져지지는 않으세요?", "tags": ["noninfectious"]},
+    {"id": "travel_outdoor", "text": "해외 여행, 야외 활동(등산, 밭일), 동물 접촉", "say": "최근에 해외에 다녀오셨거나 등산, 밭일 같은 야외 활동을 하셨어요?", "tags": ["systemic_infection"]},
+    {"id": "sick_contacts", "text": "주변에 비슷한 증상의 환자", "say": "주변에 비슷하게 아픈 사람이 있나요?", "tags": ["localized"]},
+    {"id": "immunocompromise", "text": "항암치료, 스테로이드·면역억제제 복용", "say": "최근에 항암치료를 받으셨거나 면역을 떨어뜨리는 약을 드세요?", "tags": ["immunocompromised"], "key": true},
+    {"id": "valve_procedure", "text": "인공판막·심장 질환, 최근 치과 치료나 시술", "say": "심장 판막 수술을 받으셨거나 최근에 치과 치료나 시술을 받으셨어요?", "tags": ["systemic_infection"]},
+    {"id": "new_drug", "text": "최근 새로 시작한 약", "say": "열이 나기 전에 새로 드시기 시작한 약이 있나요?", "tags": ["noninfectious"]},
+    {"id": "sexual_injection", "text": "민감한 질문임을 양해 구한 뒤 새로운 성접촉, 주사 약물 사용", "say": "모든 분께 여쭤보는 질문이니 편하게 답해 주세요. 최근에 새로운 사람과 성관계를 하셨나요?", "tags": ["immunocompromised", "systemic_infection"], "conditional": true},
+    {"id": "child_activity", "text": "아이의 처짐, 수유·소변량, 열성 경련", "say": "아이가 많이 처지거나 잘 안 먹나요? 경련은 없었나요?", "applies": "child"}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온, 혈압, 맥박, 호흡수, 산소포화도로 패혈증 여부 평가", "say": "체온과 혈압, 맥박, 호흡, 산소포화도를 재 보겠습니다.", "key": true},
+    {"id": "head_neck", "text": "인두, 고막, 경부 림프절 확인", "say": "입을 크게 벌려 보시고, 귀와 목의 멍울을 보겠습니다.", "tags": ["localized", "noninfectious"]},
+    {"id": "heart_lungs", "text": "폐 청진과 심잡음 확인", "say": "가슴과 등에 청진기를 대 보겠습니다. 숨을 크게 쉬세요.", "tags": ["localized", "systemic_infection"]},
+    {"id": "abdomen_cva", "text": "복부 압통, 간비종대, 늑골척추각 압통", "say": "배를 눌러 보고 등을 두드려 볼게요. 아프면 말씀해 주세요.", "tags": ["localized", "noninfectious"]},
+    {"id": "skin", "text": "발진, 가피, 점상출혈, 상처 확인", "say": "피부에 발진이나 상처가 있는지 살펴보겠습니다.", "tags": ["systemic_infection", "noninfectious"]},
+    {"id": "meningeal", "text": "목 경직 등 수막자극징후", "say": "고개를 앞으로 숙여 턱을 가슴에 대 보세요.", "tags": ["localized"], "conditional": true}
+  ],
+  "education": [
+    {"id": "fluids_antipyretic", "text": "충분한 수분 섭취와 휴식, 해열제의 올바른 사용", "say": "물을 충분히 드시고 푹 쉬세요. 해열제는 정해진 간격을 지켜 드세요."},
+    {"id": "infection_control", "text": "호흡기 증상이 있으면 마스크 착용과 손 위생", "say": "기침이 있으면 마스크를 쓰시고 손을 자주 씻으세요.", "tags": ["localized"], "conditional": true},
+    {"id": "warning_signs", "text": "의식 변화, 호흡곤란, 심한 두통·목 경직, 반점 모양 발진, 열이 3일 넘게 지속되면 바로 오도록 안내", "say": "정신이 흐려지거나 숨이 차거나 열이 3일 넘게 계속되면 바로 다시 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "먼저 활력징후와 의식 상태로 패혈증 여부를 평가하고, 의심되면 혈액배양 2세트를 채취한 뒤 1시간 이내에 경험적 항생제를 투여한다.",
+    "국소 증상에 맞춰 혈구검사, CRP, 간·신기능, 소변검사·소변배양, 흉부 X선 등으로 감염 부위를 찾는다.",
+    "항암치료 중 발열은 호중구감소성 발열로 보고 즉시 혈액배양 후 광범위 항생제를 투여한다.",
+    "야외 활동 뒤 발열, 발진, 가피가 있으면 쯔쯔가무시병을 의심해 독시사이클린을 고려하고, 말라리아 유행 지역을 다녀온 뒤 발열이면 말라리아 검사를 한다.",
+    "지속되는 발열에 심잡음, 판막 질환, 최근 시술력이 있으면 혈액배양을 여러 번 시행하고 심장초음파로 심내막염을 확인한다.",
+    "가벼운 바이러스 감염은 항생제 없이 해열제와 수분 보충으로 대증 치료한다."
+  ],
+  "case_ids": ["id_031", "id_011", "id_007", "id_016", "cardio_006", "hemato_024", "urology_041", "hemato_001", "peds_031", "peds_003"]
+}

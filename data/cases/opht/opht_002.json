@@ -7,7 +7,7 @@
   "age": 58,
   "gender": "female",
   "chief_complaint": "sudden painless dark curtain pulling across vision accompanied by flashes of light and floaters (Retinal Detachment)",
-  "hpi_details": "58F highly myopic (nearsighted) woman presents with sudden onset of numerous new black floaters (`like a swarm of gnats`) and bright electrical flashes of light (photopsias) in the temporal visual field of her right eye starting yesterday afternoon. This morning, woke up to find a dark, opaque shadow/curtain spreading from the bottom right corner over her central line of sight, blocking half her right eye vision completely. Zero eye pain or redness.",
+  "hpi_details": "58F highly myopic (nearsighted) woman presents with sudden onset of numerous new black floaters (`like a swarm of gnats`) and bright electrical flashes of light (photopsias) in the periphery of her right eye starting yesterday afternoon. This morning, woke up to find a dark, opaque shadow/curtain rising from the bottom corner nearest her nose over her central line of sight, blocking half her right eye vision completely. Zero eye pain or redness.",
   "ideas": "terrified that she is going permanently blind in her right eye",
   "concerns": "worried because the dark shadow is creeping across the center of her eye right now",
   "expectations": "wants emergency retinal evaluation and laser/surgery to reattach her vision",
@@ -31,8 +31,8 @@
     ],
     "diagnostic_clues": [
       "Chief Complaint: sudden painless dark curtain pulling across vision accompanied by flashes of light and floaters (Retinal Detachment)",
-      "Key HPI features: 58F highly myopic (nearsighted) woman presents with sudden onset of numerous new black floaters (`like a swarm of gnats`) and bright electrical flashes of light (photopsias) in the temporal visual field of her right eye starting yesterday afternoon. This morning, woke up to find a dark, opaque shadow/curtain spreading from the bottom right corner over her central line of sight, blocking half her right eye vision completely. Zero eye pain or redness.",
-      "Objective/Exam findings: Vitals: HR 76, BP 130/82. External eye exam completely normal without redness (painless white eye). Visual acuity: Right eye 20/200 (down from 20/20 baseline); Left eye 20/20. Confrontation visual field testing demonstrates complete loss of superior and nasal visual fields in the right eye. Relative Afferent Pupillary Defect (RAPD / Marcus Gunn pupil) is POSITIVE in the right eye. Dilated indirect ophthalmoscopy with scleral depression confirms a large, elevated, corrugated, mobile gray-white membrane (detached neurosensory retina) involving the superior temporal quadrant and extending through the macula ('macula-off' retinal detachment), driven by a horseshoe-shaped retinal tear at the 11 o'clock peripheral lattice degeneration site. Shafer sign positive (tobacco dust / pigmented cells floating in anterior vitreous).",
+      "Key HPI features: 58F highly myopic (nearsighted) woman presents with sudden onset of numerous new black floaters (`like a swarm of gnats`) and bright electrical flashes of light (photopsias) in the periphery of her right eye starting yesterday afternoon. This morning, woke up to find a dark, opaque shadow/curtain rising from the bottom corner nearest her nose over her central line of sight, blocking half her right eye vision completely. Zero eye pain or redness.",
+      "Objective/Exam findings: Vitals: HR 76, BP 130/82. External eye exam completely normal without redness (painless white eye). Visual acuity: Right eye 20/200 (down from 20/20 baseline); Left eye 20/20. Confrontation visual field testing demonstrates dense loss of the inferior-nasal visual field in the right eye (the field defect projects opposite the detached superior-temporal retina). Relative Afferent Pupillary Defect (RAPD / Marcus Gunn pupil) is POSITIVE in the right eye. Dilated indirect ophthalmoscopy with scleral depression confirms a large, elevated, corrugated, mobile gray-white membrane (detached neurosensory retina) involving the superior temporal quadrant and extending through the macula ('macula-off' retinal detachment), driven by a horseshoe-shaped retinal tear at the 11 o'clock peripheral lattice degeneration site. Shafer sign positive (tobacco dust / pigmented cells floating in anterior vitreous).",
       "Relevant background/PMH: High Myopia (-8.00 diopters bilaterally), status post uncomplicated cataract surgery right eye 2 years ago"
     ],
     "common_misconceptions": [
@@ -64,7 +64,7 @@
   },
   "reference_soap": {
     "subjective": "58F highly myopic pseudophakic patient presenting with acute photopsias, shower of floaters, and progressive visual field shadow classic for Rhegmatogenous Retinal Detachment.",
-    "objective": "Vitals: HR 76, BP 130/82. External eye exam completely normal without redness (painless white eye). Visual acuity: Right eye 20/200 (down from 20/20 baseline); Left eye 20/20. Confrontation visual field testing demonstrates complete loss of superior and nasal visual fields in the right eye. Relative Afferent Pupillary Defect (RAPD / Marcus Gunn pupil) is POSITIVE in the right eye. Dilated indirect ophthalmoscopy with scleral depression confirms a large, elevated, corrugated, mobile gray-white membrane (detached neurosensory retina) involving the superior temporal quadrant and extending through the macula ('macula-off' retinal detachment), driven by a horseshoe-shaped retinal tear at the 11 o'clock peripheral lattice degeneration site. Shafer sign positive (tobacco dust / pigmented cells floating in anterior vitreous).",
+    "objective": "Vitals: HR 76, BP 130/82. External eye exam completely normal without redness (painless white eye). Visual acuity: Right eye 20/200 (down from 20/20 baseline); Left eye 20/20. Confrontation visual field testing demonstrates dense loss of the inferior-nasal visual field in the right eye (the field defect projects opposite the detached superior-temporal retina). Relative Afferent Pupillary Defect (RAPD / Marcus Gunn pupil) is POSITIVE in the right eye. Dilated indirect ophthalmoscopy with scleral depression confirms a large, elevated, corrugated, mobile gray-white membrane (detached neurosensory retina) involving the superior temporal quadrant and extending through the macula ('macula-off' retinal detachment), driven by a horseshoe-shaped retinal tear at the 11 o'clock peripheral lattice degeneration site. Shafer sign positive (tobacco dust / pigmented cells floating in anterior vitreous).",
     "assessment": "Rhegmatogenous Retinal Detachment of the Right Eye (`Macula-Off` with horseshoe tear at 11 o'clock).",
     "plan": "STAT emergency retinal consultation. Protect the eye and follow positioning instructions individualized by the vitreoretinal surgeon to the retinal-break configuration. Urgent transfer for operative repair via pars plana vitrectomy with gas/silicone oil tamponade and endolaser retinopexy, scleral buckle, or pneumatic retinopexy, as clinically appropriate."
   },
@@ -144,6 +144,169 @@
           "head positioning",
           "urgent referral"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "130/82",
+      "hr": 76,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "A dark shadow like a curtain suddenly rose from the bottom of my right eye this morning and is covering half my vision, and I'm terrified I'm going blind.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "Yesterday afternoon I suddenly saw lots of black specks and flashes of light, and then when I woke up this morning, the dark curtain appeared and has been creeping upward.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "It is only in my right eye; when I cover my right eye, my left eye sees completely fine.",
+        "topic": "Affected eye"
+      },
+      {
+        "answer": "No, it hasn't gone away at all; the dark shadow has stayed constant and has actually expanded since this morning.",
+        "topic": "Constancy of vision loss"
+      },
+      {
+        "answer": "It looks like an opaque dark curtain coming from the lower inside corner near my nose, blocking the lower half and center of my vision.",
+        "topic": "Pattern of visual defect"
+      },
+      {
+        "answer": "Both near and far are blocked in that eye because of the curtain, and I haven't changed my glasses prescription recently.",
+        "topic": "Near and distant vision"
+      },
+      {
+        "answer": "I haven't had any trouble with glare, halos around lights, or driving at night before this happened.",
+        "topic": "Glare and halos"
+      },
+      {
+        "answer": "Yes, yesterday afternoon I suddenly saw a whole swarm of black specks like gnats, along with bright electrical flashes in the outer corner of my right eye.",
+        "topic": "Floaters and flashes"
+      },
+      {
+        "answer": "No, I do not see double images at all.",
+        "topic": "Double vision"
+      },
+      {
+        "answer": "No, my eyelids are not drooping, and I have no trouble chewing, swallowing, or with muscles feeling weak in the evening.",
+        "topic": "Eyelid drooping and weakness"
+      },
+      {
+        "answer": "No, there is zero pain, no pain when I move my eye, and no redness at all.",
+        "topic": "Eye pain and redness"
+      },
+      {
+        "answer": "No, I have no headache, no tenderness in my temples, no pain when chewing, and no shoulder stiffness.",
+        "topic": "Headache and temple pain"
+      },
+      {
+        "answer": "No, I haven't had any numbness, arm or leg weakness, difficulty speaking, or dizziness.",
+        "topic": "Neurological symptoms"
+      },
+      {
+        "answer": "No, I haven't bumped my head or injured my eye recently.",
+        "topic": "Eye or head trauma"
+      },
+      {
+        "answer": "I don't have diabetes or high blood pressure, and my last routine eye checkup after cataract surgery was normal.",
+        "topic": "Diabetes and hypertension"
+      },
+      {
+        "answer": "No, I've never been told I have heart rhythm problems like atrial fibrillation or any blocked blood vessels in my neck.",
+        "topic": "Vascular risk factors"
+      },
+      {
+        "answer": "I've been very nearsighted all my life with minus eight diopter glasses, and I had cataract surgery on my right eye two years ago without complications.",
+        "topic": "Myopia and eye history"
+      },
+      {
+        "answer": "No, I don't take steroids, hydroxychloroquine, or any medications that could affect my eyes.",
+        "topic": "Medications affecting vision"
+      },
+      {
+        "answer": "No one in my family has had glaucoma, macular degeneration, or retinal detachment.",
+        "topic": "Family history of eye disease"
+      },
+      {
+        "answer": "I work as a graphic designer, so this has completely stopped me from working or driving, though thankfully I haven't fallen.",
+        "topic": "Impact on daily activities"
+      },
+      {
+        "answer": "I'm terrified that my retina has torn or detached and that I am going to go permanently blind in my right eye.",
+        "topic": "Patient thoughts and fears"
+      },
+      {
+        "answer": "I'm deeply worried because the dark shadow seems to be creeping further across the center of my eye even as we speak.",
+        "topic": "Patient concerns and urgency"
+      },
+      {
+        "answer": "I want an emergency evaluation by a retinal specialist right away to see if laser or surgery can reattach my retina and save my sight.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "Aside from severe nearsightedness, I have no chronic medical conditions like diabetes, hypertension, or heart disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had uncomplicated cataract surgery on my right eye two years ago, but no other surgeries or hospitalizations.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I don't take any prescription medications, over-the-counter drugs, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have an occasional glass of wine on social occasions, maybe once or twice a month.",
+        "topic": "Alcohol intake"
+      },
+      {
+        "answer": "I work as a graphic designer and live in an apartment with my husband.",
+        "topic": "Occupation and living situation"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 130/82 mmHg, heart rate is 76 beats per minute, respiratory rate is 14 breaths per minute, body temperature is 36.7 degrees Celsius, and oxygen saturation is 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient appears alert and mildly anxious, sitting comfortably without acute respiratory distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are clear without injection, discharge, or ciliary flush, and sclerae are white and non-icteric.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Visual acuity is 20/200 in the right eye and 20/20 in the left eye, with a positive right relative afferent pupillary defect, dense inferior-nasal visual field loss on confrontation, and indirect ophthalmoscopy revealing an elevated, corrugated, gray-white detached superior-temporal retina extending through the macula with a horseshoe tear at 11 o'clock and anterior vitreous pigment cells.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Extraocular eye movements are full and smooth bilaterally without nystagmus or diplopia, and there is no ptosis or facial asymmetry.",
+        "maneuver": "cranial_nerves",
+        "response": "none"
+      },
+      {
+        "finding": "Superficial temporal arteries are soft, symmetrically pulsatile, and non-tender bilaterally without thickening or nodularity.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
       }
     ]
   }

@@ -1,0 +1,122 @@
+{
+  "id": "nursing_ward_postop_delirium_reorientation",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["us", "uk_au"],
+  "counterpart": "patient",
+  "urgency": "urgent",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_bedside_care",
+  "station_minutes": 6,
+  "patient_name": "Post-operative delirium at 03:00 — reorienting a patient climbing out of bed",
+  "chief_complaint": "Calmly reorient an older post-operative patient with new confusion who is trying to get out of bed and pulling at his IV, find out what he needs, and keep him safe from a fall without restraining him",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Night confusion: post-op patient sitting on the edge of the bed, tugging at his IV",
+    "task": "Bedside care",
+    "urgency": "urgent",
+    "patient": "Mr. Samuel Okafor, 82-year-old man, second night after an elective total knee replacement",
+    "location": "Surgical ward (unit), 03:00; you are his night nurse and his bed alarm has just gone off",
+    "situation": "You find him sitting on the edge of the bed with his legs over the side, pulling at the tape on his IV cannula, saying he has to get home to let the dog out. He was fully oriented at 22:00 when you did his vital signs.",
+    "background": [
+      "Right total knee replacement two days ago; walking short distances with a walker (walking frame) and one staff member.",
+      "No history of dementia; his daughter says he is 'sharp as a tack' at home. He wears glasses for reading and distance.",
+      "He has been receiving an as-needed oral opioid for knee pain; last dose at 22:00.",
+      "He lives with his wife and their dog, Buster; his wife is at home tonight."
+    ],
+    "current_status": [
+      "Intermittently confused: at moments he knows he is in hospital, then drifts back to thinking he is at home.",
+      "Not aggressive, but restless and insistent on getting up; the bed is at its lowest height with the brakes on.",
+      "His IV is still running maintenance fluids; the dressing is intact but the tape is lifting.",
+      "His glasses are on the bedside table, out of reach."
+    ],
+    "key_data": [
+      "He last passed urine at about 21:00 and has had IV fluids running since; he has not used the urinal since then.",
+      "Vital signs at 22:00 were within his normal range; you have not yet rechecked them, including oxygen saturation and temperature.",
+      "He is a high fall risk: new knee replacement, age, opioid, and now confusion.",
+      "New confusion after surgery (acute change in mental status) needs to be reported to the on-call doctor or provider for review of possible causes."
+    ],
+    "treatments": [
+      "Done: fall-prevention measures in place — low bed, brakes on, bed alarm, non-slip socks, call bell (call light) in reach.",
+      "Pending: your reassessment, and a call to the on-call doctor or provider about the new confusion."
+    ],
+    "your_request": "Reorient him gently, find out what he is trying to do, meet that need safely, protect his IV without restraining him, and keep him from falling — then explain what you will do next.",
+    "must_include": [
+      "Approach calmly from the front, introduce yourself by name and role, and use his name.",
+      "Orient him simply — where he is, why, and the time of night — without arguing with him about his beliefs.",
+      "Ask an open question to find out what he needs or why he wants to get up, then help him with it safely rather than letting him walk alone.",
+      "Protect the IV and stop him pulling at it by explaining and redirecting, not by holding him down or tying his hands.",
+      "Check the simple causes you can assess now, such as pain, needing to pass urine, and his glasses, and say you will recheck his vital signs.",
+      "Tell him what happens next: that you will stay with him or check on him closely, and that you will let the doctor know."
+    ]
+  },
+  "kickoff_text": "Oh — good, you're here. Help me find my shoes, would you? Buster's been shut in all day, I've got to get home and let him out.",
+  "persona_override": "You are Samuel Okafor, an 82-year-old retired postal worker, on the second night after a right knee replacement. You are intermittently confused (post-operative delirium) — not aggressive, but restless, polite, and determined. Your confusion comes and goes: sometimes you believe you are at home and must let your dog Buster out; at other moments you look around and say 'Wait — is this the hospital? Did I have my knee done?' Ground truth: you urgently need to pass urine, which is the real reason you are trying to get up — but in your confusion you frame it as needing to 'go home' or 'get to the bathroom down the hall'; you will only say 'I need to pee, I've been needing to for ages' if the nurse asks an open question such as what you need or whether you need the toilet/bathroom. Your knee aches (about 5 out of 10) if asked. You cannot see well without your glasses. The IV tape itches and you don't know what the tube is. You do not know the time or the day. Behaviour: if the nurse argues with you ('You don't have a dog here', 'You're not going home, you have to stay in bed'), become more insistent and upset — 'Don't tell me what I can't do' — and try to stand, but never hit or threaten. If the nurse simply tells you to stay in bed and moves away, start getting up again. If the nurse approaches calmly, introduces themselves, uses your name, and gently orients you ('You're in the hospital, it's three in the morning, you had your knee replaced'), settle briefly and have a lucid moment. If the nurse acknowledges the dog kindly and reassures you that your wife is looking after Buster, relax noticeably. If the nurse explains what the IV is and offers to cover or re-tape it, stop pulling at it — but reach for it again once later if they do not redirect you. If the nurse hands you your glasses, say 'That's better.' If the nurse helps you use a urinal or commode with assistance, be very relieved and calmer afterwards. Drift back into confusion once mid-conversation ('Is it time for work?') so the nurse must reorient again patiently. Use short, simple sentences. Never coach the nurse.",
+  "learning_objectives": [
+    "introduce myself by name and role and use the patient's name when approaching a confused patient",
+    "orient the patient to place, time, and reason without arguing",
+    "ask an open question to find out what the patient needs, such as needing the toilet",
+    "prevent a fall by helping the patient safely instead of letting him walk alone",
+    "protect the IV by explaining and redirecting instead of restraining",
+    "check pain, glasses, and vital signs, and tell the patient I will let the doctor know"
+  ],
+  "suggested_questions": [
+    "Mr. Okafor, it's Mia, your nurse. I'm right here. Can I sit with you for a minute?",
+    "You're in the hospital — you had your knee replaced two days ago, and it's three o'clock in the morning. Your wife's at home with Buster tonight, so he's taken care of.",
+    "You look like you need something — what is it you're trying to get up for?",
+    "Let's not stand up on your own — your knee's still healing and I don't want you to fall. Let me get the urinal and help you right here.",
+    "That tube's giving you fluids to help you get better, so let's not pull it. I'll re-tape it so it doesn't itch. I'm going to check your blood pressure and oxygen, and then I'll let the doctor know you've been feeling a bit mixed up."
+  ],
+  "clinical_knowledge": {
+    "topic": "Bedside reorientation and fall prevention for an older patient with post-operative delirium",
+    "review_status": "grounded in NICE CG103 delirium guidance and the AHRQ hospital fall-prevention toolkit; delirium screening tools, restraint policy, bed-alarm use, and escalation pathways follow local protocols",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Delirium is an acute, fluctuating disturbance of attention and awareness; new confusion after surgery is a medical change that needs assessment, not just management of behavior.",
+      "Restless or 'wandering' behavior often has an unmet need behind it — pain, a full bladder, thirst, discomfort, or not being able to see.",
+      "Calm, simple, repeated orientation and redirection work better than confrontation; arguing with a confused person's beliefs increases agitation.",
+      "Physical restraints do not reliably prevent falls, can increase injury and agitation, and are a last resort governed by strict policy."
+    ],
+    "diagnostic_clues": [
+      "A patient who was oriented earlier and is now intermittently confused at night suggests delirium rather than baseline dementia.",
+      "Common contributing causes to screen for include pain, urinary retention, constipation, hypoxia, infection, dehydration, new medicines such as opioids, and sensory loss (missing glasses or hearing aids).",
+      "No urine output for several hours with IV fluids running raises the possibility of retention and an urgent need to void."
+    ],
+    "common_misconceptions": [
+      "An older patient who becomes confused at night is just 'sundowning' and does not need a medical review.",
+      "Correcting every false belief will bring the patient back to reality.",
+      "Telling a confused patient firmly to stay in bed is enough to keep them safe.",
+      "Tying the patient's hands or raising all bed rails is the safest way to protect an IV and prevent a fall."
+    ],
+    "dangerous_errors": [
+      "Leaving a confused, high-fall-risk patient alone after telling him to stay in bed.",
+      "Restraining the patient physically without an order and outside policy.",
+      "Treating the confusion as behavior only and not reporting a new change in mental status to the doctor or provider.",
+      "Giving a sedating medication on your own initiative to settle him."
+    ],
+    "management_principles": [
+      "Approach from the front, introduce yourself, use the patient's name, and speak in short, simple sentences.",
+      "Orient gently, validate feelings, and redirect rather than argue.",
+      "Find and meet the unmet need (toileting, pain, glasses) with assistance so he does not mobilize alone.",
+      "Keep fall-prevention measures in place and increase observation; recheck vital signs and screen for causes.",
+      "Escalate the acute change in mental status to the on-call doctor or provider and involve family where helpful."
+    ],
+    "boundaries_and_exceptions": [
+      "Delirium screening tools (for example CAM or 4AT), bed and chair alarms, one-to-one observation, and bladder-scanning protocols vary by institution and country.",
+      "Restraint use, including bed rails, is governed by law and local policy, which differ between the US, UK, and Australia.",
+      "Any medication to manage severe agitation is a prescriber's decision and is not part of this scenario.",
+      "This scenario practises bedside communication and safety; it is not a source of delirium treatment guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE CG103: Delirium — prevention, diagnosis and management in hospital and long-term care",
+        "url": "https://www.nice.org.uk/guidance/cg103"
+      },
+      {
+        "title": "AHRQ Preventing Falls in Hospitals: A Toolkit for Improving Quality of Care",
+        "url": "https://www.ahrq.gov/patient-safety/settings/hospital/fall-prevention/toolkit/index.html"
+      }
+    ]
+  }
+}

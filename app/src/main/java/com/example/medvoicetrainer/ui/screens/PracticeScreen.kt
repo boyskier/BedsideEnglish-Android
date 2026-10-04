@@ -30,6 +30,8 @@ import com.example.medvoicetrainer.BuildConfig
 import com.example.medvoicetrainer.analysis.ListeningDrillEngine
 import com.example.medvoicetrainer.analysis.EncounterCaseSearchIndex
 import com.example.medvoicetrainer.analysis.EncounterSearchDocument
+import com.example.medvoicetrainer.analysis.NursingScorecard
+import com.example.medvoicetrainer.analysis.NursingTrack
 import com.example.medvoicetrainer.analysis.SurvivalComposer
 import com.example.medvoicetrainer.analysis.toAnalysisMap
 import com.example.medvoicetrainer.analysis.toDeepMap
@@ -60,6 +62,8 @@ data class PracticeCase(
     val searchText: String = "",
     /** Bundled source loaded only when the learner opens this case. */
     val assetPath: String? = null,
+    /** Free-form filter tags; the Nursing picker stores each case's destination pathways here. */
+    val tags: List<String> = emptyList(),
 )
 
 private object BundledCaseCatalog {
@@ -146,11 +150,15 @@ private enum class PracticeTabKey(val translationKey: String) {
     FOUNDATIONS("enc.system_foundations"),
     SAYIT("tab.sayit"),
     LOUNGE("tab.lounge"),
+    FREE_TALK("tab.free_talk"),
     TEACHBACK("tab.teachback"),
     INTERVIEW("tab.interview"),
     EXAM("tab.exam"),
     LISTENING("listening_lab.title"),
-    CUSTOM("tab.custom")
+    CUSTOM("tab.custom"),
+    // Nursing track (MVP). Deliberately last in the enum and last on the grid: it is an entry
+    // point for a second profession, not another drill for the physician track above it.
+    NURSING("tab.nursing")
 }
 
 private data class PracticeTab(
@@ -160,7 +168,11 @@ private data class PracticeTab(
 )
 
 /** Spec §4 one-line tile descriptions, keyed by mode — mirrors the mockup copy exactly. */
-private fun practiceModeDescription(key: PracticeTabKey, everydayOnly: Boolean = false): String = when (key) {
+private fun practiceModeDescription(
+    key: PracticeTabKey,
+    everydayOnly: Boolean = false,
+    locked: Boolean = false,
+): String = when (key) {
     PracticeTabKey.ENCOUNTER -> "Full patient history, scored on a clinical checklist"
     PracticeTabKey.FOLLOW_UP -> "Read the prior chart, reassess progress, and agree on the next plan"
     PracticeTabKey.TEAM_COMMUNICATION -> "Present to a senior, hand over, request a consult, and transfer care"
@@ -173,11 +185,15 @@ private fun practiceModeDescription(key: PracticeTabKey, everydayOnly: Boolean =
     PracticeTabKey.SAYIT ->
         if (everydayOnly) "Listen & repeat everyday expressions" else "Listen & repeat key clinical phrases"
     PracticeTabKey.LOUNGE -> "Free talk: debate, article, casual"
+    PracticeTabKey.FREE_TALK -> "Chat about anything — the AI keeps its replies to one short line"
     PracticeTabKey.TEACHBACK -> "Explain a diagnosis in plain English"
     PracticeTabKey.INTERVIEW -> "Residency-match Q&A practice"
-    PracticeTabKey.EXAM -> "Unlocks after your first scored encounter"
+    PracticeTabKey.EXAM ->
+        if (locked) "Unlocks after your first scored encounter" else "Exam-style stations with AI-estimated practice scores"
     PracticeTabKey.LISTENING -> "Accent & detail-recall drills"
-    PracticeTabKey.CUSTOM -> "Unlocks after your first scored encounter"
+    PracticeTabKey.CUSTOM ->
+        if (locked) "Unlocks after your first scored encounter" else "Write your own scenario and partner persona"
+    PracticeTabKey.NURSING -> "OET Nursing role-plays, US & UK/AU ward English, job interviews"
 }
 
 /**
@@ -190,7 +206,21 @@ private val FEATURED_PRACTICE_MODES = setOf(
     PracticeTabKey.FOLLOW_UP,
     PracticeTabKey.TEAM_COMMUNICATION,
     PracticeTabKey.SURVIVAL,
+    // Full-width for the same reason as the two core loops: it is the door into a separate
+    // profession's track, not a peer of the half-tile drills. It sits last on the grid.
+    PracticeTabKey.NURSING,
 )
+
+/** Modes still proving their demand, flagged on the tile so the label sets expectations. */
+private val BETA_PRACTICE_MODES = setOf(PracticeTabKey.NURSING)
+
+/** Who a nursing case puts the learner opposite, as the card meta line reads it. */
+private fun nursingCounterpartPhrase(counterpart: String): String = when (counterpart) {
+    "physician" -> "with a doctor"
+    "nurse" -> "with a nurse colleague"
+    "interviewer" -> "with an interviewer"
+    else -> "with a $counterpart"
+}
 
 private enum class EncounterCaseFilter(val tag: EncounterCaseTag?) {
     ALL(null),
@@ -719,12 +749,31 @@ private fun PracticeModeGrid(
                                 modifier = Modifier.size(28.dp)
                             )
                             Column(modifier = Modifier.weight(1f), verticalArrangement = Arrangement.spacedBy(2.dp)) {
-                                Text(
-                                    tab.label,
-                                    fontWeight = FontWeight.Bold,
-                                    style = MaterialTheme.typography.titleMedium,
-                                    color = MaterialTheme.colorScheme.onPrimaryContainer
-                                )
+                                Row(
+                                    verticalAlignment = Alignment.CenterVertically,
+                                    horizontalArrangement = Arrangement.spacedBy(8.dp),
+                                ) {
+                                    Text(
+                                        tab.label,
+                                        fontWeight = FontWeight.Bold,
+                                        style = MaterialTheme.typography.titleMedium,
+                                        color = MaterialTheme.colorScheme.onPrimaryContainer
+                                    )
+                                    if (tab.key in BETA_PRACTICE_MODES) {
+                                        Surface(
+                                            shape = RoundedCornerShape(6.dp),
+                                            color = MaterialTheme.colorScheme.onPrimaryContainer.copy(alpha = 0.16f),
+                                        ) {
+                                            Text(
+                                                t("Beta"),
+                                                style = MaterialTheme.typography.labelSmall,
+                                                fontWeight = FontWeight.Bold,
+                                                color = MaterialTheme.colorScheme.onPrimaryContainer,
+                                                modifier = Modifier.padding(horizontal = 6.dp, vertical = 2.dp),
+                                            )
+                                        }
+                                    }
+                                }
                                 Text(
                                     t(practiceModeDescription(tab.key, everydayOnly)),
                                     style = MaterialTheme.typography.bodySmall,
@@ -749,7 +798,7 @@ private fun PracticeModeGrid(
                                 style = MaterialTheme.typography.bodyMedium
                             )
                             Text(
-                                t(practiceModeDescription(tab.key, everydayOnly)),
+                                t(practiceModeDescription(tab.key, everydayOnly, locked)),
                                 style = MaterialTheme.typography.labelSmall,
                                 color = MaterialTheme.colorScheme.onSurfaceVariant
                             )
@@ -796,6 +845,7 @@ fun PracticeScreen(
     var encounterResultsBriefingCase by remember { mutableStateOf<PracticeCase?>(null) }
     var followUpBriefingCase by remember { mutableStateOf<PracticeCase?>(null) }
     var teamBriefingCase by remember { mutableStateOf<PracticeCase?>(null) }
+    var nursingBriefingCase by remember { mutableStateOf<PracticeCase?>(null) }
     /** Which bank the Say It drill opens on, latched when a caller requests the tab. */
     var sayItStartsEveryday by remember { mutableStateOf(false) }
     var sayItSessionPhrases by remember {
@@ -811,12 +861,38 @@ fun PracticeScreen(
     var selectedEncounterCaseFilter by rememberSaveable { mutableStateOf(EncounterCaseFilter.ALL) }
     var encounterSearchQuery by rememberSaveable { mutableStateOf("") }
     var selectedCommunicationTask by remember { mutableStateOf<String?>(null) }
+    var selectedNursingTask by rememberSaveable { mutableStateOf<String?>(null) }
+    var selectedNursingPathway by rememberSaveable { mutableStateOf<String?>(null) }
+    var showNursingHelp by remember { mutableStateOf(false) }
     var encounterAccentKey by remember { mutableStateOf("us") }
     var encounterStyleKey by remember { mutableStateOf("clear") }
     var showTeamCommunicationHelp by remember { mutableStateOf(false) }
     val isUnlocked = recentSessionCostSamples.isNotEmpty()
     val t = com.example.medvoicetrainer.ui.LocalTranslate.current
     val completedSessions by viewModel.sessions.collectAsStateWithLifecycle()
+    // Nursing progress: rebuilt from stored sessions (the same scorecard History shows), only while
+    // the Nursing picker is open, off the main thread — a nurse's history is small, but not free.
+    val nursingAttempts by produceState(
+        initialValue = emptyList<NursingScorecard.Attempt>(),
+        completedSessions,
+    ) {
+        if (!BuildConfig.NURSING_TRACK_ENABLED) return@produceState
+        value = withContext(Dispatchers.Default) {
+            completedSessions.filter { it.mode == NursingTrack.SESSION_MODE && !it.caseId.isNullOrBlank() }.map { session ->
+                NursingScorecard.Attempt(
+                    caseId = session.caseId.orEmpty(),
+                    createdAt = session.createdAt,
+                    scorecardJson = NursingScorecard.buildJson(
+                        session.rawCaseJson,
+                        session.rawEvalJson,
+                        NursingScorecard.transcriptPairs(session.rawTranscript),
+                    ),
+                )
+            }
+        }
+    }
+    val nursingProgress = remember(nursingAttempts) { NursingScorecard.progressByCase(nursingAttempts) }
+    val recentOetEstimate = remember(nursingAttempts) { NursingScorecard.recentOetEstimate(nursingAttempts) }
     val encounterCaseTags by viewModel.encounterCaseTags.collectAsStateWithLifecycle()
     val latestPresentationLaunch = remember(completedSessions) {
         completedSessions.asSequence()
@@ -830,6 +906,7 @@ fun PracticeScreen(
     val isVoiceModeMock by viewModel.isVoiceModeMock.collectAsStateWithLifecycle()
     var showDemoIntro by remember { mutableStateOf(false) }
     var contentReportCase by remember { mutableStateOf<PracticeCase?>(null) }
+    var caseLaunchInFlight by remember { mutableStateOf(false) }
 
     // §Q1 cost anxiety (docs/DIFFERENTIATION_ANSWERS.md): shown on the mode-grid landing screen so
     // a learner sees a concrete number before ever starting a paid session, not just after. Free
@@ -861,6 +938,7 @@ fun PracticeScreen(
             t(PracticeTabKey.SURVIVAL.translationKey),
             if (everydayOnly) Icons.Default.Public else Icons.Default.LocalHospital
         ),
+        PracticeTab(PracticeTabKey.FREE_TALK, t(PracticeTabKey.FREE_TALK.translationKey), Icons.Default.Forum),
         PracticeTab(PracticeTabKey.DRILLS, t(PracticeTabKey.DRILLS.translationKey), Icons.Default.FitnessCenter),
         PracticeTab(PracticeTabKey.FOUNDATIONS, t(PracticeTabKey.FOUNDATIONS.translationKey), Icons.Default.School),
         PracticeTab(PracticeTabKey.SAYIT, t(PracticeTabKey.SAYIT.translationKey), Icons.Default.Hearing),
@@ -869,8 +947,14 @@ fun PracticeScreen(
         PracticeTab(PracticeTabKey.INTERVIEW, t(PracticeTabKey.INTERVIEW.translationKey), Icons.Default.Work),
         PracticeTab(PracticeTabKey.EXAM, t(PracticeTabKey.EXAM.translationKey), Icons.Default.FactCheck),
         PracticeTab(PracticeTabKey.LISTENING, t(PracticeTabKey.LISTENING.translationKey), Icons.Default.Headphones),
-        PracticeTab(PracticeTabKey.CUSTOM, t(PracticeTabKey.CUSTOM.translationKey), Icons.Default.Edit)
-    )
+        PracticeTab(PracticeTabKey.CUSTOM, t(PracticeTabKey.CUSTOM.translationKey), Icons.Default.Edit),
+        PracticeTab(PracticeTabKey.NURSING, t(PracticeTabKey.NURSING.translationKey), Icons.Default.MonitorHeart)
+    ).filter {
+        // The Nursing track ships dark: hidden in release until launch, visible in debug builds
+        // (see NURSING_TRACK in app/build.gradle.kts). It is last in the list, so removing it
+        // never shifts a saved selectedTabIndex onto a different mode.
+        it.key != PracticeTabKey.NURSING || BuildConfig.NURSING_TRACK_ENABLED
+    }
 
     // §4: only Exam & Custom are gated ("unlocks after your first scored encounter" — spelled
     // out on the tile itself); every other mode is reachable from session 1. Previously this
@@ -881,6 +965,7 @@ fun PracticeScreen(
         allTabs.filter {
             it.key in setOf(
                 PracticeTabKey.SURVIVAL,
+                PracticeTabKey.FREE_TALK,
                 PracticeTabKey.LOUNGE,
                 PracticeTabKey.LISTENING,
                 // The drill is bank-agnostic (see PhraseSource) and its everyday bank is the only
@@ -909,6 +994,7 @@ fun PracticeScreen(
             "survival", "survival_beta" -> PracticeTabKey.SURVIVAL
             "listening" -> PracticeTabKey.LISTENING
             "lounge" -> PracticeTabKey.LOUNGE
+            "free_talk" -> PracticeTabKey.FREE_TALK
             "sayit", "sayit_everyday", "sayit_session" -> PracticeTabKey.SAYIT
             else -> null
         }
@@ -989,6 +1075,11 @@ fun PracticeScreen(
         if (selectedTab.key != PracticeTabKey.ENCOUNTER) encounterResultsBriefingCase = null
         if (selectedTab.key != PracticeTabKey.FOLLOW_UP) followUpBriefingCase = null
         if (selectedTab.key != PracticeTabKey.TEAM_COMMUNICATION) teamBriefingCase = null
+        if (selectedTab.key != PracticeTabKey.NURSING) {
+            nursingBriefingCase = null
+            selectedNursingTask = null
+            selectedNursingPathway = null
+        }
         if (selectedTab.key != PracticeTabKey.ENCOUNTER) {
             selectedEncounterSystem = null
             selectedEncounterCategory = null
@@ -1004,6 +1095,7 @@ fun PracticeScreen(
                     PracticeTabKey.ENCOUNTER, PracticeTabKey.FOLLOW_UP,
                     PracticeTabKey.TEAM_COMMUNICATION, PracticeTabKey.DRILLS,
                     PracticeTabKey.FOUNDATIONS, PracticeTabKey.TEACHBACK,
+                    PracticeTabKey.NURSING,
                 )
             ) BundledCaseCatalog.load(viewModel) else emptyList()
 
@@ -1077,6 +1169,33 @@ fun PracticeScreen(
                                 category = "team_communication",
                                 system = if (catalogType == "skill_drill") "Skill drill" else task,
                                 assetPath = path,
+                            )
+                        )
+                    }
+                }
+                // Content-only by construction: the card list is derived entirely from catalog rows
+                // by NursingTrack, so adding a scenario is adding a JSON file and nothing else.
+                PracticeTabKey.NURSING -> {
+                    NursingTrack.cards(catalog).forEach { card ->
+                        // One scannable line of who/how-long before the scenario text, so a
+                        // learner can pick "a 5-minute OET card with a relative" at a glance.
+                        val meta = listOfNotNull(
+                            card.stationMinutes?.let { "$it min" },
+                            card.counterpart.takeIf(String::isNotBlank)?.let(::nursingCounterpartPhrase),
+                        ).joinToString(" · ")
+                        loadedCases.add(
+                            PracticeCase(
+                                id = card.id,
+                                title = card.title,
+                                description = if (meta.isEmpty()) card.description else "$meta — ${card.description}",
+                                jsonContent = "",
+                                category = "nursing",
+                                // `system` carries the task family so the shared filter and
+                                // context-label paths below need no nursing-specific field.
+                                system = card.taskFamily,
+                                difficulty = card.difficulty,
+                                assetPath = card.assetPath,
+                                tags = card.pathways,
                             )
                         )
                     }
@@ -1172,6 +1291,7 @@ fun PracticeScreen(
                 }
                 PracticeTabKey.SAYIT,
                 PracticeTabKey.LOUNGE,
+                PracticeTabKey.FREE_TALK,
                 PracticeTabKey.EXAM,
                 PracticeTabKey.CUSTOM -> Unit
             }
@@ -1179,6 +1299,19 @@ fun PracticeScreen(
         }
         cases = loadedCases
         isLoading = false
+    }
+
+    // System back steps out one level (briefing/drill -> list -> mode grid) before the shell's
+    // handler takes the learner Home.
+    androidx.activity.compose.BackHandler(enabled = !showModeGrid) {
+        when {
+            encounterResultsBriefingCase != null -> encounterResultsBriefingCase = null
+            followUpBriefingCase != null -> followUpBriefingCase = null
+            teamBriefingCase != null -> teamBriefingCase = null
+            nursingBriefingCase != null -> nursingBriefingCase = null
+            listeningLabCase != null -> listeningLabCase = null
+            else -> showModeGrid = true
+        }
     }
 
     lockedModeExplainer?.let { key ->
@@ -1228,6 +1361,8 @@ fun PracticeScreen(
         selectedEncounterCategory,
         selectedEncounterSystem,
         selectedCommunicationTask,
+        selectedNursingTask,
+        selectedNursingPathway,
     ) {
         when {
             selectedTab.key == PracticeTabKey.ENCOUNTER && selectedEncounterSystem != null ->
@@ -1241,6 +1376,11 @@ fun PracticeScreen(
             }
             selectedTab.key == PracticeTabKey.TEAM_COMMUNICATION && selectedCommunicationTask != null ->
                 cases.filter { it.system == selectedCommunicationTask }
+            selectedTab.key == PracticeTabKey.NURSING ->
+                cases.filter {
+                    (selectedNursingTask == null || it.system == selectedNursingTask) &&
+                        (selectedNursingPathway == null || selectedNursingPathway in it.tags)
+                }
             else -> cases
         }
     }
@@ -1297,10 +1437,11 @@ fun PracticeScreen(
         selectedTab.key == PracticeTabKey.ENCOUNTER && encounterResultsBriefingCase != null
     val followUpBriefingOpen = selectedTab.key == PracticeTabKey.FOLLOW_UP && followUpBriefingCase != null
     val teamBriefingOpen = selectedTab.key == PracticeTabKey.TEAM_COMMUNICATION && teamBriefingCase != null
+    val nursingBriefingOpen = selectedTab.key == PracticeTabKey.NURSING && nursingBriefingCase != null
 
     Column(modifier = Modifier.fillMaxSize()) {
         if (!listeningDrillOpen && !sayItDrillOpen && !encounterResultsBriefingOpen &&
-            !followUpBriefingOpen && !teamBriefingOpen
+            !followUpBriefingOpen && !teamBriefingOpen && !nursingBriefingOpen
         ) {
             Row(verticalAlignment = Alignment.CenterVertically, modifier = Modifier.padding(start = 4.dp, top = 4.dp)) {
                 IconButton(onClick = { showModeGrid = true }) {
@@ -1317,7 +1458,9 @@ fun PracticeScreen(
                 tabs.forEachIndexed { index, tab ->
                     Tab(
                         selected = selectedTabIndex == index,
-                        onClick = { selectedTabIndex = index },
+                        onClick = {
+                            if (tab.key in lockedModeKeys) lockedModeExplainer = tab.key else selectedTabIndex = index
+                        },
                         text = { Text(tab.label, fontWeight = FontWeight.Bold) },
                         icon = { Icon(tab.icon, contentDescription = tab.label) }
                     )
@@ -1488,7 +1631,7 @@ fun PracticeScreen(
                                 text = { Text(template) },
                                 onClick = {
                                     selectedEvalTemplate = template
-                                    customDomain = if (template in setOf("survival", "lounge")) {
+                                    customDomain = if (template in setOf("survival", "lounge", "free_talk")) {
                                         "everyday"
                                     } else {
                                         "clinical"
@@ -1584,6 +1727,10 @@ fun PracticeScreen(
                     viewModel.listAssets("cases/lounge").filter { it.endsWith(".json") }.sorted().mapNotNull { file ->
                         try {
                             val json = JSONObject(viewModel.loadAsset("cases/lounge/$file"))
+                            // Free Talk lives beside the lounge scenarios but has its own tab.
+                            if (json.optString("scenario_type") == com.example.medvoicetrainer.analysis.FreeTalk.SCENARIO_TYPE) {
+                                return@mapNotNull null
+                            }
                             LoungeScenario(
                                 name = json.optString("name", file.removeSuffix(".json")),
                                 description = json.optString("description", ""),
@@ -1733,6 +1880,12 @@ fun PracticeScreen(
                     Text(t("Start Lounge Session"))
                 }
             }
+        } else if (selectedTab.key == PracticeTabKey.FREE_TALK) {
+            FreeTalkPanel(
+                viewModel = viewModel,
+                phrasebookEnabled = phrasebookEnabled,
+                onStartCase = onStartCase,
+            )
         } else if (selectedTab.key == PracticeTabKey.EXAM) {
             // Ported from app/ui/exam_tab.py: pick an exam kind, then a scenario within it;
             // ExamMode.buildExamPrompt (already wired into PromptBuilder.buildSystemPrompt's
@@ -1988,6 +2141,26 @@ fun PracticeScreen(
                     onStartCase(selected.id, selected.title, selected.jsonContent)
                 },
             )
+        } else if (selectedTab.key == PracticeTabKey.NURSING && nursingBriefingCase != null) {
+            // Same brief sheet as Team Communication: nursing cases author the identical
+            // `team_brief` block, so the learner-visible source of truth needs no second renderer.
+            val selected = nursingBriefingCase!!
+            TeamCommunicationBriefSheet(
+                caseJson = selected.jsonContent,
+                // The keyless demo backend only knows its three scripted patients, so it cannot
+                // voice a nursing counterpart. Say so on the brief rather than starting a session
+                // that would never get a reply.
+                canStart = voiceBackend != "demo",
+                blockedReason = "Connect a voice backend in Settings to run this scenario.",
+                onDismiss = { nursingBriefingCase = null },
+                onStart = {
+                    com.example.medvoicetrainer.analysis.Telemetry.track(
+                        "nursing_started",
+                        mapOf("surface" to "practice", "task" to selected.system)
+                    )
+                    onStartCase(selected.id, selected.title, selected.jsonContent)
+                },
+            )
         } else if (voiceBackend == "demo" && selectedTab.key == PracticeTabKey.ENCOUNTER) {
             // Ported from app/ui/session_base.py's keyless-demo entry point: instead of browsing
             // the full case library (which needs a real voice backend), a "demo" voiceBackend
@@ -2145,6 +2318,86 @@ fun PracticeScreen(
                         }
                     }
                 }
+                if (selectedTab.key == PracticeTabKey.NURSING) {
+                    item {
+                        Row(verticalAlignment = Alignment.CenterVertically) {
+                            Column(modifier = Modifier.weight(1f)) {
+                                Text(t("Choose one nursing task"), fontWeight = FontWeight.Bold)
+                                Text(
+                                    t("OET role-plays, handover, patient teaching, bedside care, speaking up, and job interviews."),
+                                    style = MaterialTheme.typography.bodySmall,
+                                    color = MaterialTheme.colorScheme.onSurfaceVariant,
+                                )
+                                val done = nursingProgress.keys.count { id -> cases.any { it.id == id } }
+                                if (done > 0) {
+                                    Text(
+                                        t("Scenarios done: {done}/{total}")
+                                            .replace("{done}", done.toString())
+                                            .replace("{total}", cases.size.toString()) +
+                                            (recentOetEstimate?.let {
+                                                " · " + t("Recent OET estimate: {grade} ≈{score}")
+                                                    .replace("{grade}", NursingScorecard.oetGrade(it))
+                                                    .replace("{score}", it.toString())
+                                            } ?: ""),
+                                        style = MaterialTheme.typography.labelMedium,
+                                        fontWeight = FontWeight.SemiBold,
+                                        color = MaterialTheme.colorScheme.primary,
+                                    )
+                                }
+                            }
+                            IconButton(onClick = { showNursingHelp = true }) {
+                                Icon(Icons.Default.HelpOutline, contentDescription = t("What is this?"))
+                            }
+                        }
+                    }
+                    // Driven by what the catalog actually contains, in curriculum order: a family
+                    // with no cases yet never renders an empty chip, and a newly added case's
+                    // family appears on its own.
+                    // Goal first: an OET candidate and a nurse starting in a US hospital need
+                    // different scenarios, and a case can serve both.
+                    val nursingPathways = NursingTrack.PATHWAYS.filter { pathway -> cases.any { pathway in it.tags } }
+                    if (nursingPathways.size > 1) {
+                        item {
+                            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                // Changing goal clears the family chip: a family chosen under one
+                                // goal may have no cases under the next, leaving an empty list.
+                                FilterChip(
+                                    selected = selectedNursingPathway == null,
+                                    onClick = { selectedNursingPathway = null; selectedNursingTask = null },
+                                    label = { Text(t("All goals")) },
+                                )
+                                nursingPathways.forEach { pathway ->
+                                    FilterChip(
+                                        selected = selectedNursingPathway == pathway,
+                                        onClick = { selectedNursingPathway = pathway; selectedNursingTask = null },
+                                        label = { Text(t(NursingTrack.pathwayLabel(pathway))) },
+                                    )
+                                }
+                            }
+                        }
+                    }
+                    val nursingTasks = NursingTrack.orderedTaskFamilies(
+                        cases.filter { selectedNursingPathway == null || selectedNursingPathway in it.tags }.map { it.system }
+                    )
+                    if (nursingTasks.size > 1) {
+                        item {
+                            FlowRow(horizontalArrangement = Arrangement.spacedBy(8.dp)) {
+                                FilterChip(
+                                    selected = selectedNursingTask == null,
+                                    onClick = { selectedNursingTask = null },
+                                    label = { Text(t("All nursing tasks")) },
+                                )
+                                nursingTasks.forEach { task ->
+                                    FilterChip(
+                                        selected = selectedNursingTask == task,
+                                        onClick = { selectedNursingTask = task },
+                                        label = { Text(t(task)) },
+                                    )
+                                }
+                            }
+                        }
+                    }
+                }
                 if (selectedTab.key == PracticeTabKey.ENCOUNTER && visibleCases.isEmpty() && !isLoading) {
                     item {
                         Column(
@@ -2181,16 +2434,22 @@ fun PracticeScreen(
                 }
                 items(visibleCases, key = { it.id }) { case ->
                     val caseTags = encounterCaseTags[case.id].orEmpty()
+                    val progressLine = if (selectedTab.key == PracticeTabKey.NURSING) {
+                        nursingProgress[case.id]?.let { "✓ " + NursingScorecard.progressLabel(it) + "\n" }.orEmpty()
+                    } else ""
                     PracticeItemCard(
                         title = case.title,
-                        description = case.description,
+                        description = progressLine + case.description,
                         contextLabel = if (selectedTab.key == PracticeTabKey.ENCOUNTER) {
                             listOfNotNull(
                                 case.difficulty.takeIf(String::isNotBlank)?.let(::encounterDifficultyLabel)?.let(t),
                                 ENCOUNTER_SYSTEM_LABELS[case.system],
                                 case.diagnosis.takeIf { encounterSearchQuery.isNotBlank() && it.isNotBlank() },
                             ).joinToString(" • ").ifBlank { null }
-                        } else if (selectedTab.key == PracticeTabKey.TEAM_COMMUNICATION) {
+                        } else if (
+                            selectedTab.key == PracticeTabKey.TEAM_COMMUNICATION ||
+                            selectedTab.key == PracticeTabKey.NURSING
+                        ) {
                             listOfNotNull(
                                 case.system.takeIf(String::isNotBlank),
                                 case.difficulty.takeIf(String::isNotBlank)?.let(::encounterDifficultyLabel)?.let(t),
@@ -2203,7 +2462,10 @@ fun PracticeScreen(
                         } else null,
                         onReportContent = if (
                             BuildConfig.AI_REPORT_ENDPOINT.isNotBlank() &&
-                            selectedTab.key == PracticeTabKey.ENCOUNTER && case.assetPath != null
+                            (selectedTab.key == PracticeTabKey.ENCOUNTER ||
+                                // Beta content: the fastest signal that a nursing scenario is wrong
+                                // is the nurse reading it, so give them the same report affordance.
+                                selectedTab.key == PracticeTabKey.NURSING) && case.assetPath != null
                         ) {
                             { contentReportCase = case }
                         } else null,
@@ -2229,35 +2491,46 @@ fun PracticeScreen(
                                         adaptivePickMessage = t("No listening drills are available.")
                                     }
                                 }
-                                else -> coroutineScope.launch {
-                                    val selected = case.materialize(viewModel)
-                                    when {
-                                        selected.category == "survival" -> onStartSurvival(selected.id, selected.title, selected.jsonContent)
-                                        selected.category == "listening" -> listeningLabCase = selected
-                                        selected.category == "teachback" -> onStartTeachback(selected.id, selected.title, selected.jsonContent)
-                                        selected.category == "interview" -> onStartInterview(selected.id, selected.title, selected.jsonContent)
-                                        selected.category == "follow_up" -> followUpBriefingCase = selected
-                                        selectedTab.key == PracticeTabKey.TEAM_COMMUNICATION -> teamBriefingCase = selected
-                                        selectedTab.key == PracticeTabKey.ENCOUNTER -> {
-                                            val hasAvailableResults =
-                                                com.example.medvoicetrainer.analysis.InvestigationResults
-                                                    .parseAvailableResults(selected.jsonContent)
-                                                    .isNotEmpty()
-                                            if (hasAvailableResults) {
-                                                encounterResultsBriefingCase = selected
-                                            } else {
-                                                onStartCase(
-                                                    selected.id,
-                                                    selected.title,
-                                                    withEncounterOptions(
-                                                        selected.jsonContent,
-                                                        encounterAccentKey,
-                                                        encounterStyleKey,
-                                                    ),
-                                                )
+                                caseLaunchInFlight -> Unit
+                                else -> {
+                                    // One tap, one launch: loading the case suspends, and a second
+                                    // tap in that window would otherwise start a second session.
+                                    caseLaunchInFlight = true
+                                    coroutineScope.launch {
+                                        try {
+                                            val selected = case.materialize(viewModel)
+                                            when {
+                                                selected.category == "survival" -> onStartSurvival(selected.id, selected.title, selected.jsonContent)
+                                                selected.category == "listening" -> listeningLabCase = selected
+                                                selected.category == "teachback" -> onStartTeachback(selected.id, selected.title, selected.jsonContent)
+                                                selected.category == "interview" -> onStartInterview(selected.id, selected.title, selected.jsonContent)
+                                                selected.category == "follow_up" -> followUpBriefingCase = selected
+                                                selectedTab.key == PracticeTabKey.TEAM_COMMUNICATION -> teamBriefingCase = selected
+                                                selectedTab.key == PracticeTabKey.NURSING -> nursingBriefingCase = selected
+                                                selectedTab.key == PracticeTabKey.ENCOUNTER -> {
+                                                    val hasAvailableResults =
+                                                        com.example.medvoicetrainer.analysis.InvestigationResults
+                                                            .parseAvailableResults(selected.jsonContent)
+                                                            .isNotEmpty()
+                                                    if (hasAvailableResults) {
+                                                        encounterResultsBriefingCase = selected
+                                                    } else {
+                                                        onStartCase(
+                                                            selected.id,
+                                                            selected.title,
+                                                            withEncounterOptions(
+                                                                selected.jsonContent,
+                                                                encounterAccentKey,
+                                                                encounterStyleKey,
+                                                            ),
+                                                        )
+                                                    }
+                                                }
+                                                else -> onStartCase(selected.id, selected.title, selected.jsonContent)
                                             }
+                                        } finally {
+                                            caseLaunchInFlight = false
                                         }
-                                        else -> onStartCase(selected.id, selected.title, selected.jsonContent)
                                     }
                                 }
                             }
@@ -2284,6 +2557,22 @@ fun PracticeScreen(
         )
     }
 
+    if (showNursingHelp) {
+        AlertDialog(
+            onDismissRequest = { showNursingHelp = false },
+            confirmButton = {
+                TextButton(onClick = { showNursingHelp = false }) { Text(t("Got it")) }
+            },
+            icon = { Icon(Icons.Default.MonitorHeart, contentDescription = null) },
+            title = { Text(t("What is the Nursing track?")) },
+            text = {
+                Text(
+                    t("Spoken English for nurses heading abroad. OET role-plays are scored on the nine OET Speaking criteria with a practice grade estimate. Ward scenarios (US, UK, Australia) cover handover and escalation, patient teaching, bedside care and speaking up, each scored on a nursing rubric with your brief's tasks ticked off one by one. Job interviews practise the recruiter, manager and panel conversations that come before the job. Pick your goal at the top to see the scenarios for it.")
+                )
+            },
+        )
+    }
+
     adaptivePickMessage?.let { msg ->
         AlertDialog(
             onDismissRequest = { adaptivePickMessage = null },
@@ -2298,7 +2587,7 @@ fun PracticeScreen(
         ?.takeIf { BuildConfig.AI_REPORT_ENDPOINT.isNotBlank() }
         ?.let { case ->
         ContentIssueReportDialog(
-            contentType = "patient_case",
+            contentType = if (case.category == "nursing") "nursing_case" else "patient_case",
             contentId = case.id,
             contentTitle = case.title,
             surface = "practice_case_list",
@@ -3127,6 +3416,17 @@ fun PracticeItemCard(
                     }
                 }
             } else {
+                // Only encounter cards have a tag menu to hold the report item; the others (Nursing)
+                // get a button of their own.
+                if (onReportContent != null) {
+                    IconButton(onClick = onReportContent) {
+                        Icon(
+                            Icons.Default.Flag,
+                            contentDescription = t("content_report.action"),
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                        )
+                    }
+                }
                 Icon(
                     imageVector = Icons.Default.ChevronRight,
                     contentDescription = "Start",
@@ -3145,5 +3445,130 @@ private fun EncounterTagBadge(label: String, color: androidx.compose.ui.graphics
             modifier = Modifier.padding(horizontal = 8.dp, vertical = 3.dp),
             style = MaterialTheme.typography.labelSmall,
         )
+    }
+}
+
+/**
+ * Free Talk: pick (or type) today's topic and just talk. The partner is held to one short line per
+ * turn by [com.example.medvoicetrainer.analysis.FreeTalk]; the topic is optional so starting costs
+ * no more than one tap.
+ */
+@OptIn(ExperimentalLayoutApi::class)
+@Composable
+private fun FreeTalkPanel(
+    viewModel: MainViewModel,
+    phrasebookEnabled: Boolean,
+    onStartCase: (String, String, String) -> Unit,
+) {
+    val t = com.example.medvoicetrainer.ui.LocalTranslate.current
+    var scenario by remember { mutableStateOf<JSONObject?>(null) }
+    var topic by rememberSaveable { mutableStateOf("") }
+
+    LaunchedEffect(Unit) {
+        scenario = withContext(Dispatchers.IO) {
+            try {
+                JSONObject(viewModel.loadAsset("cases/lounge/free_talk.json"))
+            } catch (e: kotlinx.coroutines.CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                null
+            }
+        }
+    }
+
+    val suggestions = remember(scenario) {
+        val array = scenario?.optJSONArray("topic_suggestions")
+        if (array == null) emptyList()
+        else (0 until array.length()).mapNotNull { array.optString(it).trim().takeIf(String::isNotEmpty) }
+    }
+
+    Column(
+        modifier = Modifier
+            .fillMaxSize()
+            .verticalScroll(rememberScrollState())
+            .padding(16.dp),
+        verticalArrangement = Arrangement.spacedBy(12.dp)
+    ) {
+        Text(
+            text = t("tab.free_talk"),
+            style = MaterialTheme.typography.titleLarge,
+            fontWeight = FontWeight.Bold,
+            color = MaterialTheme.colorScheme.primary
+        )
+        Text(
+            text = t("Talk about anything you like. Your partner keeps every reply to one short line, so you do most of the talking."),
+            style = MaterialTheme.typography.bodyMedium,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+        OutlinedTextField(
+            value = topic,
+            onValueChange = { topic = it.take(200) },
+            modifier = Modifier.fillMaxWidth(),
+            label = { Text(t("Today's topic (optional)")) },
+            placeholder = { Text(t("e.g. What I did last weekend")) },
+            singleLine = true
+        )
+        if (suggestions.isNotEmpty()) {
+            Text(t("Or pick one"), style = MaterialTheme.typography.labelLarge)
+            FlowRow(
+                horizontalArrangement = Arrangement.spacedBy(8.dp),
+                verticalArrangement = Arrangement.spacedBy(4.dp)
+            ) {
+                FilterChip(
+                    selected = false,
+                    onClick = { topic = suggestions.filter { it != topic }.randomOrNull() ?: topic },
+                    label = { Text("🎲 " + t("Surprise me")) }
+                )
+                suggestions.forEach { suggestion ->
+                    FilterChip(
+                        selected = topic == suggestion,
+                        onClick = { topic = if (topic == suggestion) "" else suggestion },
+                        label = { Text(suggestion) }
+                    )
+                }
+            }
+        }
+        Text(
+            text = t("Scored on grammar, how much you develop your answers, how long you can keep talking, and how well you follow along."),
+            style = MaterialTheme.typography.bodySmall,
+            color = MaterialTheme.colorScheme.onSurfaceVariant
+        )
+
+        val preview = remember(scenario, phrasebookEnabled) {
+            viewModel.everydayPhrasePreview(scenario?.toString().orEmpty())
+        }
+        var previewOpened by remember(scenario) { mutableStateOf(false) }
+        val tts = if (preview.isEmpty()) null else rememberEnglishTts()
+        ScenePhrasesCard(
+            phrases = preview,
+            ttsReady = tts?.ready == true,
+            onListen = { tts?.speak(it) },
+            onOpened = { previewOpened = true },
+        )
+
+        Button(
+            onClick = start@{
+                val raw = scenario ?: return@start
+                val chosenTopic = topic.trim()
+                val map = mutableMapOf<String, Any?>()
+                raw.keys().forEach { key -> map[key] = raw.opt(key) }
+                val prompt = com.example.medvoicetrainer.analysis.FreeTalk.buildPrompt(map, chosenTopic)
+                val baseName = raw.optString("name", "Free Talk")
+                val caseName = if (chosenTopic.isEmpty()) baseName
+                    else "$baseName: " + chosenTopic.take(40).let { if (chosenTopic.length > 40) "$it…" else it }
+                val caseJson = JSONObject(raw.toString()).apply {
+                    put("persona_override", prompt)
+                    put("case_name", caseName)
+                    put(com.example.medvoicetrainer.analysis.FreeTalk.TOPIC_FIELD, chosenTopic)
+                }.toString().let { json ->
+                    if (previewOpened) com.example.medvoicetrainer.analysis.EverydayPhrasebook.markPreviewed(json) else json
+                }
+                onStartCase(raw.optString("id", com.example.medvoicetrainer.analysis.FreeTalk.CASE_ID), caseName, caseJson)
+            },
+            enabled = scenario != null,
+            modifier = Modifier.fillMaxWidth()
+        ) {
+            Text(t("Start Free Talk"))
+        }
     }
 }

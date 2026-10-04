@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "sore throat, high fever, tonsillar exudates, no cough",
   "hpi_details": "A 56-year-old female presents to the clinic with sore throat, high fever, tonsillar exudates, no cough. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to strep_throat",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks she caught a severe throat flu or picked up a bad viral ulcer from being worn down.",
+  "concerns": "She is worried her throat will swell shut so severely that she will suffocate or choke on her own saliva.",
+  "expectations": "She hopes to receive a numbing throat gargle and a course of antibiotics so she can swallow solid food again.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -144,6 +144,185 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "124/78",
+      "hr": 100,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 38.7
+    },
+    "history": [
+      {
+        "answer": "I've had a severe sore throat and a high fever for the past two days, and it feels like it's getting worse.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The pain started suddenly two days ago as a scratchy feeling, and by yesterday it became intensely painful and burning.",
+        "topic": "Onset and course"
+      },
+      {
+        "answer": "On a scale of one to ten, the pain is easily an eight, and it hurts evenly on both sides of my throat.",
+        "topic": "Pain severity and location"
+      },
+      {
+        "answer": "Swallowing food or liquids is excruciating, but I can still swallow my saliva and I'm not drooling.",
+        "topic": "Swallowing difficulty and drooling"
+      },
+      {
+        "answer": "No, my breathing is completely normal, and my voice hasn't changed or become muffled at all.",
+        "topic": "Breathing difficulty and voice changes"
+      },
+      {
+        "answer": "I can open my mouth normally, though stretching it wide makes the back of my throat ache.",
+        "topic": "Difficulty opening mouth"
+      },
+      {
+        "answer": "Yes, I developed a high fever yesterday that reached 38.7 degrees Celsius, along with shivering chills.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "No, I do not have any cough, runny nose, nasal congestion, or red eyes.",
+        "topic": "Cough and cold symptoms"
+      },
+      {
+        "answer": "Yes, the front of my neck right under my jaw is swollen and very sore when I touch it.",
+        "topic": "Neck swelling and tenderness"
+      },
+      {
+        "answer": "I looked in the bathroom mirror with a flashlight and saw my tonsils look bright red with white patches on them.",
+        "topic": "Tonsil appearance"
+      },
+      {
+        "answer": "No, I haven't noticed any skin rashes, redness, or rough sandpaper feelings anywhere.",
+        "topic": "Skin rash"
+      },
+      {
+        "answer": "I've been feeling completely exhausted and wiped out, but I don't have any belly pain or discomfort on my left side.",
+        "topic": "Fatigue and abdominal pain"
+      },
+      {
+        "answer": "No, the pain stays right in my throat and doesn't shoot up into either of my ears.",
+        "topic": "Ear pain"
+      },
+      {
+        "answer": "My seven-year-old grandson was diagnosed with strep throat last week, and I babysat him two days before this started.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "No, I rarely get sore throats or tonsil infections as an adult.",
+        "topic": "Previous pharyngitis episodes"
+      },
+      {
+        "answer": "No, I don't have acid reflux, heartburn, throat clearing, or feelings of a lump in my throat.",
+        "topic": "Heartburn and chronic throat symptoms"
+      },
+      {
+        "answer": "I have been in a monogamous marriage with my husband for thirty years, with no new partners or oral sexual exposures.",
+        "topic": "Sexual history"
+      },
+      {
+        "answer": "I don't have any chronic medical illnesses like diabetes, kidney problems, or immune system disorders.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had an uncomplicated appendectomy twenty years ago, and I have never had any other surgeries or hospitalizations.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I took acetaminophen 500 mg yesterday and this morning, which took the edge off my fever slightly, but nothing else.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any allergies to medications, foods, or latex, and I have taken penicillin in the past without problems.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink a glass of wine on social occasions once or twice a month, but no heavy alcohol.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an elementary school librarian and live at home with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My parents are both in their eighties with hypertension, but there is no family history of serious recurrent infections or heart disease.",
+        "topic": "Family history"
+      },
+      {
+        "answer": "I went through menopause five years ago, so I have not had a period since then and there is no chance of pregnancy.",
+        "topic": "Menstrual and reproductive history"
+      },
+      {
+        "answer": "I thought I just caught a really bad throat flu or that the white spots are ulcers from being run down.",
+        "topic": "Patient ideas"
+      },
+      {
+        "answer": "I'm terrified that my throat will swell completely shut and I won't even be able to breathe.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping to get some strong numbing spray and antibiotics today so I can finally swallow food without excruciating pain.",
+        "topic": "Patient expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 124/78 mmHg, heart rate 100 beats/min, respiratory rate 16 breaths/min, body temperature 38.7°C, SpO2 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Patient appears fatigued and flushed with acute discomfort from throat pain, but shows no respiratory distress, stridor, or drooling.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral tonsils are swollen and erythematous with yellow-white exudates; the uvula is midline without peritonsillar bulging or asymmetry.",
+        "maneuver": "nose_throat_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Tender, enlarged anterior cervical lymph nodes bilaterally; no posterior cervical, occipital, or supraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "pain"
+      },
+      {
+        "finding": "Both tympanic membranes are pearly gray, translucent, and intact with normal landmarks and no erythema.",
+        "maneuver": "ear_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without wheezing, crackles, rhonchi, or stridor.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic regular rhythm with normal S1 and S2; no murmurs, rubs, or gallops heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-tender throughout, and non-distended without guarding or rebound tenderness.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Spleen and liver are not palpable below the costal margins, with no left upper quadrant tenderness.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No scarlatiniform sandpaper rash, petechiae, or skin lesions noted anywhere on the body.",
+        "maneuver": "skin_exam",
+        "response": "none"
       }
     ]
   }

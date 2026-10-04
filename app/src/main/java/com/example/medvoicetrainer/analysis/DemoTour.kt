@@ -189,6 +189,13 @@ object DemoTour {
         return !(lastShown == today && lastChoice == "C")
     }
 
+    /** [shouldAutoShowDecision] over the settings that [markDecisionShown] records. */
+    fun shouldAutoShowDecision(getSetting: (String, String) -> String): Boolean =
+        shouldAutoShowDecision(
+            lastShown = getSetting(SETTING_DECISION_LAST_SHOWN, ""),
+            lastChoice = getSetting(SETTING_DECISION_LAST_CHOICE, ""),
+        )
+
     /** Aggregate words spoken/minutes across analyzed keyless-demo sessions for the tour's real-case pairings. */
     fun tourRecapStats(sessions: List<SessionEntity>): TourRecapStats {
         val realCaseIds = DEMO_CASE_PATIENT_FILE.values.map { it.second }.toSet()

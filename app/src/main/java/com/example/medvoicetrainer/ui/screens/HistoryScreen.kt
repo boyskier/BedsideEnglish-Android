@@ -35,6 +35,7 @@ import com.example.medvoicetrainer.ui.EvaluationResult
 import com.example.medvoicetrainer.ui.HistoryCorrectionRecord
 import com.example.medvoicetrainer.ui.MainViewModel
 import com.example.medvoicetrainer.ui.correctionDecisionOf
+import com.example.medvoicetrainer.ui.SoapNoteText
 import com.example.medvoicetrainer.ui.formatSoapForDisplay
 import com.example.medvoicetrainer.ui.parsedHistoryCorrections
 import com.example.medvoicetrainer.ui.toEvaluationResult
@@ -52,6 +53,7 @@ internal enum class HistoryModeFilter(val label: String, val modeKey: String?) {
     ENCOUNTER("Encounter", "encounter"),
     FOLLOW_UP("Follow-up", "follow_up"),
     TEAM_COMMUNICATION("Team communication", "team_communication"),
+    NURSING("Nursing", "nursing"),
     PRESENTATION("Presentation", "presentation"),
     EXAM("Exam", "exam"),
     SURVIVAL("Survival", "survival"),
@@ -115,13 +117,25 @@ internal fun filterHistorySessions(
  */
 internal fun isUnanalyzedSession(session: SessionEntity): Boolean = session.summaryFeedback.isNullOrBlank()
 
-internal fun averageSessionScore(session: SessionEntity): Double = listOf(
-    session.grammarScore,
-    session.medicalAccuracyScore,
-    session.clinicalReasoningScore,
-    session.professionalismScore,
-    session.fluencyScore
-).average()
+// Everyday rows keep naturalness/interaction/repair/fluency in the clinical-named columns and
+// mirror fluency into professionalism, so only four columns count — the same overall score
+// Feedback (overallScoreOf) and SessionReflection show for that session.
+internal fun averageSessionScore(session: SessionEntity): Double = if (session.analysisDomain == "everyday") {
+    listOf(
+        session.grammarScore,
+        session.medicalAccuracyScore,
+        session.clinicalReasoningScore,
+        session.fluencyScore
+    )
+} else {
+    listOf(
+        session.grammarScore,
+        session.medicalAccuracyScore,
+        session.clinicalReasoningScore,
+        session.professionalismScore,
+        session.fluencyScore
+    )
+}.average()
 
 internal fun trendDeltaOf(scores: List<Double>): Double {
     if (scores.size < 2) return 0.0
@@ -460,7 +474,10 @@ private fun HistoryFilterBar(
                     .horizontalScroll(rememberScrollState()),
                 horizontalArrangement = Arrangement.spacedBy(8.dp)
             ) {
-                HistoryModeFilter.entries.forEach { mode ->
+                HistoryModeFilter.entries.filter {
+                    // A Nursing chip in a release where the track is hidden would filter to nothing.
+                    it != HistoryModeFilter.NURSING || com.example.medvoicetrainer.BuildConfig.NURSING_TRACK_ENABLED
+                }.forEach { mode ->
                     FilterChip(
                         selected = selectedMode == mode,
                         onClick = { onModeChange(mode) },
@@ -752,13 +769,13 @@ fun SessionHistoryRow(
                 verticalAlignment = Alignment.CenterVertically
             ) {
                 if (!unanalyzed) {
-                    val avg = averageSessionScore(session)
+                    val avg = averageSessionScore(session).roundToInt()
                     Surface(
                         color = if (avg >= 85) MaterialTheme.colorScheme.primaryContainer else MaterialTheme.colorScheme.surfaceVariant,
                         shape = RoundedCornerShape(8.dp)
                     ) {
                         Text(
-                            text = "${avg.toInt()}%",
+                            text = "$avg%",
                             fontWeight = FontWeight.Bold,
                             modifier = Modifier.padding(horizontal = 12.dp, vertical = 6.dp),
                             color = if (avg >= 85) MaterialTheme.colorScheme.primary else MaterialTheme.colorScheme.onSurfaceVariant
@@ -808,10 +825,12 @@ fun SessionHistoryRow(
                         modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp)
                     )
                 }
-                TextButton(onClick = onRetryAnalysis) {
-                    Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
-                    Spacer(Modifier.width(4.dp))
-                    Text(t("Retry analysis"))
+                if (session.learnerTurnCount > 0) {
+                    TextButton(onClick = onRetryAnalysis) {
+                        Icon(Icons.Default.Refresh, contentDescription = null, modifier = Modifier.size(16.dp))
+                        Spacer(Modifier.width(4.dp))
+                        Text(t("Retry analysis"))
+                    }
                 }
             }
         }
@@ -1051,6 +1070,9 @@ fun SessionDetailScreen(
                 ) {
                     when (section) {
                         FeedbackSection.OVERVIEW -> {
+                            if (!evaluation.evaluationLocked) {
+                                NursingScorecardContent(evaluation.nursingScorecardJson)
+                            }
                             SummaryFeedbackContent(
                                 evaluation, everyday, acceptedCorrections.size, acceptedCorrections
                             )
@@ -1399,7 +1421,12 @@ private fun HistorySoapContent(session: SessionEntity, evaluation: EvaluationRes
         HorizontalDivider()
     }
     Text(t("AI-generated SOAP"), fontWeight = FontWeight.Bold)
-    Text(formatSoapForDisplay(evaluation.soapNote).ifBlank { t("feedback.no_soap") })
+    SoapNoteText(formatSoapForDisplay(evaluation.soapNote).ifBlank { t("feedback.no_soap") })
+    Text(
+        t("feedback.soap_not_elicited_legend"),
+        style = MaterialTheme.typography.bodySmall,
+        color = MaterialTheme.colorScheme.onSurfaceVariant
+    )
     HorizontalDivider()
     Text(t("feedback.soap_reference"), fontWeight = FontWeight.Bold)
     Text(evaluation.referenceSoap.ifBlank { t("feedback.soap_na") })

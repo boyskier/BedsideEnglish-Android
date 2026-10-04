@@ -10,6 +10,7 @@ import androidx.compose.foundation.verticalScroll
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.ChevronRight
 import androidx.compose.material.icons.filled.HealthAndSafety
+import androidx.compose.material.icons.filled.MedicalServices
 import androidx.compose.material.icons.filled.RecordVoiceOver
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -84,6 +85,17 @@ fun PracticeExperienceScreen(onSelect: (PracticeExperience) -> Unit) {
                 prominent = false,
                 onClick = { onSelect(PracticeExperience.EVERYDAY_ENGLISH) }
             )
+            Spacer(Modifier.height(14.dp))
+            // Written in Korean on purpose: this track exists only for Korean medical students.
+            ExperienceChoiceCard(
+                title = "한국 의사국시 CPX (한국어)",
+                badge = null,
+                description = "한국어 표준화 환자와 CPX 스테이션을 연습합니다. 병력청취, 신체진찰, 환자교육, 환자-의사 관계와 진단·계획을 채점합니다.",
+                supporting = "국시 실기를 준비하는 한국 의대생용입니다. 영어 연습 기능은 숨겨집니다.",
+                icon = { Icon(Icons.Default.MedicalServices, contentDescription = null) },
+                prominent = false,
+                onClick = { onSelect(PracticeExperience.KOREAN_CPX) }
+            )
             Spacer(Modifier.height(20.dp))
             Text(
                 text = "This only changes which features are shown. It never deletes your progress.",
@@ -141,6 +153,17 @@ fun PracticeExperiencePromptDialog(
                     prominent = false,
                     compact = true,
                     onClick = { onSelect(PracticeExperience.EVERYDAY_ENGLISH) }
+                )
+                Spacer(Modifier.height(10.dp))
+                ExperienceChoiceCard(
+                    title = "한국 의사국시 CPX (한국어)",
+                    badge = null,
+                    description = "한국어 표준화 환자와 CPX 스테이션 연습, 의학 내용 채점.",
+                    supporting = "국시 실기를 준비하는 한국 의대생용입니다.",
+                    icon = { Icon(Icons.Default.MedicalServices, contentDescription = null) },
+                    prominent = false,
+                    compact = true,
+                    onClick = { onSelect(PracticeExperience.KOREAN_CPX) }
                 )
                 TextButton(onClick = onNotNow, modifier = Modifier.align(Alignment.End)) {
                     Text(t("Not now"))

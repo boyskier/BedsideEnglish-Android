@@ -1,0 +1,57 @@
+{
+  "id": "hematuria",
+  "title": "소변이 붉게 나와요",
+  "english_title": "Blood in the urine (hematuria)",
+  "category": "비뇨·신장",
+  "kmle_item": "붉은색 소변",
+  "door_complaint": "소변이 붉게 나온다고",
+  "differential_groups": [
+    {"key": "infection", "label": "감염/염증", "examples": ["급성 방광염", "급성 신우신염", "급성 전립샘염"]},
+    {"key": "urologic", "label": "결석/전립샘", "examples": ["요로결석", "전립샘비대"]},
+    {"key": "tumor", "label": "종양", "examples": ["방광암", "신장암", "전립샘암"]},
+    {"key": "glomerular", "label": "사구체 질환", "examples": ["IgA 신병증", "연쇄상구균 감염 후 사구체신염", "루푸스 신염", "다낭신"]},
+    {"key": "systemic", "label": "출혈 경향/가성 혈뇨", "examples": ["항응고제 관련 출혈", "혈액응고장애", "횡문근융해증(근색소뇨)", "음식·약물에 의한 붉은 소변", "월경혈 혼입"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "시작 시기, 지속 또는 반복 여부, 이전의 같은 증상", "say": "언제부터 소변이 붉게 나왔어요? 전에도 이런 적이 있으세요?"},
+    {"id": "color_clots", "text": "소변 색(선홍색, 콜라색)과 핏덩어리 여부", "say": "소변 색이 선홍색이에요, 아니면 콜라처럼 진한 갈색이에요? 핏덩어리도 나오나요?", "tags": ["glomerular", "tumor", "urologic"]},
+    {"id": "stream_timing", "text": "소변 줄기 중 피가 보이는 시점(처음, 끝, 전체)", "say": "소변 볼 때 처음에만 붉어요, 끝날 때 붉어요, 아니면 처음부터 끝까지 붉어요?", "tags": ["tumor", "infection", "urologic"]},
+    {"id": "painless", "text": "통증 동반 여부(무통성 혈뇨인지)", "say": "소변이 붉을 때 아프거나 불편한 데가 있으세요, 아니면 전혀 안 아프세요?", "tags": ["tumor"], "key": true},
+    {"id": "flank_pain", "text": "옆구리 통증과 사타구니로 뻗치는지", "say": "옆구리가 아프거나 그 통증이 아랫배나 사타구니로 뻗치지는 않으세요?", "tags": ["urologic", "tumor", "infection"]},
+    {"id": "dysuria_frequency", "text": "배뇨통, 빈뇨, 절박뇨", "say": "소변볼 때 아프거나 자주 마렵지는 않으세요?", "tags": ["infection"]},
+    {"id": "fever_chills", "text": "발열, 오한", "say": "열이 나거나 몸이 으슬으슬 춥지는 않으세요?", "tags": ["infection"]},
+    {"id": "voiding_difficulty", "text": "배뇨 시작 어려움, 약한 소변 줄기, 잔뇨감", "say": "소변 줄기가 약해졌거나 보고 나서도 남은 느낌이 드세요?", "tags": ["urologic"]},
+    {"id": "edema_oliguria", "text": "얼굴·다리 부종, 거품뇨, 소변량 감소", "say": "얼굴이나 다리가 붓거나, 소변에 거품이 많거나 양이 줄지는 않았어요?", "tags": ["glomerular"], "key": true},
+    {"id": "recent_infection", "text": "최근 목감기·피부 감염과 혈뇨 사이의 간격", "say": "최근에 목감기나 피부 감염을 앓으셨어요? 그 뒤 며칠 만에 소변이 붉어졌어요?", "tags": ["glomerular"]},
+    {"id": "systemic_symptoms", "text": "발진, 관절통, 기침·객혈 등 전신 증상", "say": "피부 발진이나 관절 통증, 피 섞인 기침은 없으세요?", "tags": ["glomerular"]},
+    {"id": "weight_loss", "text": "체중 감소, 피로", "say": "최근에 살이 빠지거나 많이 피곤하지는 않으세요?", "tags": ["tumor"]},
+    {"id": "bleeding_tendency", "text": "코피, 잇몸 출혈, 쉽게 드는 멍", "say": "코피나 잇몸 피가 잘 나거나 멍이 쉽게 들지는 않으세요?", "tags": ["systemic"]},
+    {"id": "anticoagulant", "text": "항응고제·항혈소판제 복용", "say": "피를 묽게 하는 약이나 아스피린을 드세요?", "tags": ["systemic"]},
+    {"id": "exercise_food", "text": "격한 운동, 외상, 붉은 색 음식이나 약물 섭취", "say": "최근에 아주 심하게 운동하셨거나 다치신 적 있으세요? 비트 같은 붉은 음식이나 새로 드신 약은요?", "tags": ["systemic"]},
+    {"id": "menstruation", "text": "생리 중인지(월경혈 혼입 배제)", "say": "지금 생리 중이거나 생리가 끝난 지 얼마 안 되셨어요?", "tags": ["systemic"], "applies": "female_reproductive_age"},
+    {"id": "stone_history", "text": "요로결석, 콩팥병 과거력과 가족력", "say": "전에 요로결석이나 콩팥 병을 앓은 적 있으세요? 가족 중에 투석하시는 분은요?", "tags": ["urologic", "glomerular"]},
+    {"id": "smoking_exposure", "text": "흡연력과 염료·고무·화학물질 등 직업 노출", "say": "담배는 얼마나 오래, 하루에 얼마나 피우셨어요? 일하시면서 염료나 화학물질을 다루시나요?", "tags": ["tumor"], "key": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압과 체온 확인(사구체신염의 고혈압, 감염의 발열)", "say": "혈압과 체온을 먼저 재 보겠습니다."},
+    {"id": "edema", "text": "눈 주위와 정강이 부종 확인", "say": "눈 주위와 다리가 부었는지 눌러 보겠습니다."},
+    {"id": "abdominal_palpation", "text": "복부 촉진으로 종괴, 방광 팽창, 압통 확인", "say": "편하게 누우세요. 배를 만져 보겠습니다. 아프면 말씀해 주세요."},
+    {"id": "cva_tenderness", "text": "양쪽 늑골척추각 압통 확인", "say": "앉으세요. 등을 두드려 볼 테니 아프면 이야기하세요."},
+    {"id": "skin_check", "text": "피부의 멍, 점상출혈, 발진 확인", "say": "팔다리 피부에 멍이나 붉은 점이 있는지 보겠습니다.", "conditional": true},
+    {"id": "prostate_exam", "text": "남성에서 필요하면 직장수지검사로 전립샘 크기·결절 확인", "say": "전립샘 상태를 보려면 항문으로 손가락을 넣어 확인하는 검사가 필요할 수 있습니다.", "applies": "male", "conditional": true}
+  ],
+  "education": [
+    {"id": "complete_workup", "text": "혈뇨가 저절로 멈춰도 원인 검사를 끝까지 받아야 함을 설명", "say": "피가 멈추더라도 원인을 확인하는 검사는 꼭 끝까지 받으셔야 합니다.", "key": true},
+    {"id": "warning_signs", "text": "소변이 전혀 안 나오거나 핏덩어리로 막히는 느낌, 열, 심한 옆구리 통증이 생기면 바로 오도록 안내", "say": "소변이 아예 안 나오거나 열이 나고 옆구리가 심하게 아프면 바로 오세요."},
+    {"id": "smoking_cessation", "text": "흡연자에게 금연을 권고", "say": "담배는 방광암의 가장 큰 위험 요인이라 꼭 끊으시는 게 좋습니다.", "conditional": true}
+  ],
+  "grader_notes": [
+    "먼저 소변검사(요시험지와 현미경)로 적혈구를 확인하며, 잠혈 양성인데 적혈구가 없으면 근색소뇨나 혈색소뇨를 생각한다.",
+    "변형 적혈구, 적혈구 원주, 단백뇨, 고혈압, 신기능 저하가 있으면 사구체 원인으로 보고 혈청 크레아티닌, 요단백 정량, 보체 등을 검사하며 신장내과에 의뢰한다.",
+    "감염이 배제된 육안적 혈뇨, 특히 고령·흡연자의 무통성 혈뇨는 요로상피암을 배제하기 위해 방광내시경과 CT 요로조영술을 시행한다.",
+    "항응고제를 복용 중이어도 혈뇨를 약 탓으로만 돌리지 않고 같은 원인 평가를 한다.",
+    "옆구리 산통이 동반되면 비조영 CT로 결석을 확인하고, 발열을 동반한 폐쇄성 감염은 응급 배액이 필요하다.",
+    "요로감염이 원인으로 보이면 소변배양 후 치료하고, 치료가 끝난 뒤 소변검사로 혈뇨가 사라졌는지 확인한다."
+  ],
+  "case_ids": ["urology_004", "urology_037", "urology_036", "nephro_004", "nephro_029", "nephro_019", "nephro_023", "nephro_006"]
+}

@@ -138,7 +138,14 @@ private val onboardingLanguages = listOf(
     OnboardingLanguage("tl", "Filipino"),
     OnboardingLanguage("id", "Bahasa Indonesia"),
     OnboardingLanguage("ja", "日本語"),
-    OnboardingLanguage("vi", "Tiếng Việt")
+    OnboardingLanguage("vi", "Tiếng Việt"),
+    OnboardingLanguage("fr", "Français"),
+    OnboardingLanguage("de", "Deutsch"),
+    OnboardingLanguage("ru", "Русский"),
+    OnboardingLanguage("bn", "বাংলা"),
+    OnboardingLanguage("it", "Italiano"),
+    OnboardingLanguage("th", "ไทย"),
+    OnboardingLanguage("tr", "Türkçe")
 )
 
 // Every bundled locale has translations for the welcome screen, so expose each one here. Later
@@ -154,8 +161,22 @@ private val onboardingDisplayLanguages = listOf(
     OnboardingLanguage("tl", "Filipino"),
     OnboardingLanguage("id", "Bahasa Indonesia"),
     OnboardingLanguage("ja", "日本語"),
-    OnboardingLanguage("vi", "Tiếng Việt")
+    OnboardingLanguage("vi", "Tiếng Việt"),
+    OnboardingLanguage("fr", "Français"),
+    OnboardingLanguage("de", "Deutsch"),
+    OnboardingLanguage("ru", "Русский"),
+    OnboardingLanguage("bn", "বাংলা"),
+    OnboardingLanguage("it", "Italiano"),
+    OnboardingLanguage("th", "ไทย"),
+    OnboardingLanguage("tr", "Türkçe")
 )
+
+/** The wizard's starting display language: the device language when the picker offers it. */
+internal fun onboardingInitialDisplayLanguage(deviceLanguage: String, startAtConnect: Boolean): String {
+    if (startAtConnect) return "en"
+    val code = com.example.medvoicetrainer.ui.normalizeLanguageCode(deviceLanguage)
+    return if (onboardingDisplayLanguages.any { it.code == code }) code else "en"
+}
 
 /**
  * First-run journey for a learner who may never have heard the term "API key".
@@ -194,7 +215,11 @@ fun OnboardingScreen(
     }
     var tempL1 by rememberSaveable { mutableStateOf(currentL1) }
     // This value belongs only to the wizard.  The main app is intentionally English-only.
-    var tempUiLanguage by rememberSaveable { mutableStateOf("en") }
+    // First run opens in the device language, as display_language_body promises; the
+    // connect-only routes serve learners already using the English app, so they stay English.
+    var tempUiLanguage by rememberSaveable {
+        mutableStateOf(onboardingInitialDisplayLanguage(java.util.Locale.getDefault().language, startAtConnect))
+    }
     var translationRevision by remember { mutableStateOf(0) }
     val context = LocalContext.current
     val t: (String) -> String = { key ->
@@ -219,7 +244,7 @@ fun OnboardingScreen(
     val isVerified = verification?.status == ProviderStatus.VERIFIED
     val showSampleScenario = currentGeminiKey.isBlank() && normalizedKey.isBlank()
     val pageTitle = when (step) {
-        0 -> if (everydayOnly) "Speak more confidently in real life" else t("onboarding.v2.welcome_title")
+        0 -> if (everydayOnly) "Speak more confidently in real-life conversations" else t("onboarding.v2.welcome_title")
         1 -> if (everydayOnly) "Try an everyday conversation" else t("onboarding.v2.preview_title")
         else -> if (everydayOnly) "Connect live AI conversations" else t("onboarding.v2.connect_title")
     }

@@ -1,0 +1,114 @@
+{
+  "id": "nursing_oet_copd_inhaler_smoking",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "advanced",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — COPD review, poor inhaler technique and ambivalence about stopping smoking",
+  "chief_complaint": "Correct a COPD patient's inhaler technique, encourage spacer use, and explore his ambivalence about stopping smoking",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "COPD review: retired bricklayer with poor inhaler technique who says 'the damage is done'",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Mr Dennis Hughes, 67-year-old retired bricklayer with chronic obstructive pulmonary disease (COPD) diagnosed three years ago",
+    "location": "General practice; you are the practice nurse seeing Mr Hughes for his annual COPD review",
+    "situation": "Mr Hughes has had two chest infections this winter and says his reliever inhaler 'doesn't do much'. When you asked how he uses it, his technique sounded poor. He still smokes about 15 cigarettes a day.",
+    "background": [
+      "COPD diagnosed three years ago; breathless walking uphill and when carrying shopping.",
+      "Smoked since he was 16. Tried to stop once, without any support; felt irritable and put on weight, and started again after two weeks.",
+      "Widowed two years ago; lives alone."
+    ],
+    "current_status": [
+      "Uses a pressurised metered-dose (aerosol) reliever inhaler several times a day.",
+      "His described technique: he does not shake it, breathes in fast and then presses the canister, takes two puffs straight after each other, and does not hold his breath.",
+      "He was given a spacer last year but does not use it."
+    ],
+    "key_data": [
+      "Correct technique with a spacer: remove the cap, shake the inhaler, fit it into the spacer, breathe out gently, seal the lips around the mouthpiece, press once, then breathe in slowly and deeply and hold the breath for up to 10 seconds (or take several slow breaths); wait about 30 seconds, shake again before a second puff.",
+      "A spacer makes timing much easier and gets more medicine into the lungs and less in the mouth and throat. It is commonly used by adults.",
+      "Stopping smoking is the most effective way to slow the worsening of COPD at any stage, and can reduce flare-ups and chest infections.",
+      "People are much more likely to stop with support from a stop-smoking service combined with medication such as nicotine replacement, than by willpower alone. The GP or pharmacist can discuss stop-smoking medicines."
+    ],
+    "treatments": [
+      "Already done: annual review measurements; inhaler technique observed.",
+      "Pending: stop-smoking service referral if he agrees; GP review of his inhaled medicines, his frequent reliever use and his two chest infections after technique is corrected."
+    ],
+    "your_request": "Improve Mr Hughes's inhaler technique, and explore his views on smoking and encourage him to accept support to stop.",
+    "must_include": [
+      "Find out how Mr Hughes uses his inhaler, explain how to improve his technique, and encourage him to use the spacer.",
+      "Find out his views on his smoking and what makes stopping difficult for him.",
+      "Explain the benefits of stopping smoking, even after many years with COPD.",
+      "Persuade him to consider support to stop smoking, while respecting his decision."
+    ]
+  },
+  "kickoff_text": "I'll be honest with you, love — that blue puffer doesn't do much for me any more. And before you ask, yes, I'm still smoking.",
+  "persona_override": "You are Dennis Hughes, a 67-year-old retired bricklayer with COPD, at your annual review with the practice nurse. You are blunt, good-humoured, and a bit weary of being 'lectured'. You believe your inhaler has stopped working and that at your age 'the damage is done', so there is no point stopping smoking. You think the spacer 'is for kids' and looks daft. Your deeper feeling, which you only share if the nurse asks what smoking means to you or what makes stopping hard: since your wife died two years ago, cigarettes are your company in the evenings, and the last time you stopped you were irritable, put on weight, and felt alone. Ground truth: you smoke about 15 a day and have since age 16; you had two chest infections this winter; you get breathless going uphill and carrying shopping; you use the blue aerosol inhaler several times a day, never shake it, breathe in fast then press it, take two puffs one after the other, and do not hold your breath. You have the spacer in a kitchen drawer. You live alone and walk to the shops daily. You have never used a stop-smoking service or nicotine replacement. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words like 'COPD exacerbation', 'MDI', 'NRT', 'lung function decline', 'bronchodilator' or 'pharmacotherapy' without explaining them, ask what they mean. If the nurse starts telling you to stop smoking before asking what you think about it, say 'Here we go — the lecture,' and become less cooperative. If the nurse never asks why stopping is hard, repeat more stubbornly: 'I told you, the damage is done. What's the point at my age?' If the nurse explains your technique problem clearly and in small steps, accept it with some humour, and ask 'So it's not the puffer, it's me?' Resist the spacer once ('I'm not walking round with that thing') but agree to use it at home if the nurse explains why it helps and that adults use it. On smoking, soften only gradually and only if the nurse listens, acknowledges your loss and past experience, and explains that stopping helps even now: you will not promise to stop, but agree to 'have a chat' with the stop-smoking service or think about patches. If asked to repeat the inhaler steps back, get most right but forget to hold your breath. Never coach the nurse or mention scoring. Near five minutes, wrap up: say you will dig out the spacer and think about the stop-smoking chat.",
+  "learning_objectives": [
+    "find out how the patient uses his inhaler and correct the technique step by step",
+    "explain why a spacer helps and address the belief that it is only for children",
+    "explore his views on smoking and what makes stopping difficult without lecturing",
+    "explain that stopping smoking helps at any stage of COPD",
+    "offer stop-smoking support and nicotine replacement while respecting his decision",
+    "check understanding by asking him to talk through the inhaler steps"
+  ],
+  "suggested_questions": [
+    "Could you talk me through exactly what you do when you use your blue inhaler?",
+    "I don't think it's the inhaler that's the problem — it's more about timing. At the moment a lot of the medicine is ending up in your mouth instead of your lungs. With the spacer, you just press once, then breathe in slowly and hold your breath — it makes the timing much easier, and lots of adults use one.",
+    "I'm not here to lecture you. Can I ask what smoking means to you these days, and what made it hard last time you tried to stop?",
+    "Even after many years, stopping still slows down how fast your lungs get worse and can mean fewer chest infections. With support and something like nicotine patches, people are much more likely to succeed — would you be open to a chat with the stop-smoking service?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Inhaler technique correction and brief smoking-cessation intervention in COPD",
+    "review_status": "grounded in GOLD COPD strategy, NICE NG115 (COPD in over 16s) and NICE NG209 (tobacco: preventing uptake, promoting quitting and treating dependence); inhaler choice, devices and stop-smoking medicines follow the prescriber and local services",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Poor inhaler technique is common and is a frequent reason treatment seems not to work; it should be checked before concluding a medicine has failed.",
+      "Smoking cessation is the single most effective intervention to slow COPD progression at any stage.",
+      "Ambivalent smokers respond better to a non-judgemental, patient-centred approach that explores their reasons than to lecturing."
+    ],
+    "diagnostic_clues": [
+      "Pressing the canister after a fast breath in, no breath-hold, and back-to-back puffs indicate poor aerosol inhaler technique.",
+      "'The damage is done' and loneliness after bereavement are cues to explore beliefs and emotional reliance on smoking."
+    ],
+    "common_misconceptions": [
+      "There is no benefit to stopping smoking once COPD has developed.",
+      "Spacers are only for children.",
+      "If the reliever feels less effective, the inhaler must have stopped working."
+    ],
+    "dangerous_errors": [
+      "Recommending or changing medicines or doses outside nursing scope rather than referring to the prescriber.",
+      "Using a judgemental or blaming tone that ends the conversation about smoking.",
+      "Failing to recognise that increasing reliever use and repeated chest infections need review by the GP."
+    ],
+    "management_principles": [
+      "Ask the patient to describe or demonstrate technique, correct one step at a time, and confirm with teach-back.",
+      "Explore the patient's views and barriers before advising, then give clear advice that stopping helps and offer referral to support.",
+      "Respect autonomy, agree a small next step, and arrange follow-up."
+    ],
+    "boundaries_and_exceptions": [
+      "Inhaler devices and correct techniques differ (aerosol, soft-mist, dry-powder); follow the specific device instructions.",
+      "Availability of stop-smoking services and medicines, and who can prescribe them, varies by country.",
+      "Breath-hold duration and spacer breathing methods vary by device and local guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "Global Initiative for Chronic Obstructive Lung Disease (GOLD)",
+        "url": "https://goldcopd.org/"
+      },
+      {
+        "title": "NICE NG115: Chronic obstructive pulmonary disease in over 16s",
+        "url": "https://www.nice.org.uk/guidance/ng115"
+      },
+      {
+        "title": "NICE NG209: Tobacco — preventing uptake, promoting quitting and treating dependence",
+        "url": "https://www.nice.org.uk/guidance/ng209"
+      }
+    ]
+  }
+}

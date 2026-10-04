@@ -301,7 +301,7 @@ fun DebriefScreen(
                         ) {
                             Column(modifier = Modifier.padding(12.dp)) {
                                 Text(
-                                    text = if (isTutor) (if (everyday) t("ENGLISH COACH") else t("SPEAKING TUTOR")) else t("YOU"),
+                                    text = if (isTutor) (if (everyday || standalone) t("ENGLISH COACH") else t("SPEAKING TUTOR")) else t("YOU"),
                                     fontWeight = FontWeight.Bold,
                                     style = MaterialTheme.typography.labelSmall,
                                     color = if (isTutor) MaterialTheme.colorScheme.secondary else MaterialTheme.colorScheme.onPrimary.copy(alpha = 0.7f)

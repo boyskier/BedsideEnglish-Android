@@ -1,0 +1,116 @@
+{
+  "id": "nursing_us_telephone_order_potassium",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Handover & escalation",
+  "nursing_pathways": ["us"],
+  "counterpart": "physician",
+  "urgency": "semi-urgent",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_sbar_escalation",
+  "station_minutes": 5,
+  "patient_name": "Night page to the hospitalist — low potassium and a telephone order read-back",
+  "chief_complaint": "Page the night hospitalist about a low potassium result, take a telephone order, and read it back completely before hanging up",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Telephone order: potassium 3.0 at 23:20 on 3 East",
+    "task": "Handover & escalation",
+    "urgency": "semi-urgent",
+    "patient": "Ms. Rosa Delgado, 58-year-old woman (DOB 06/21/1968), room 327, admitted two days ago with dehydration from gastroenteritis",
+    "location": "3 East med-surg unit, 23:20. You are her night-shift RN. You paged the cross-cover hospitalist, Dr. Kevin Osei, and he is calling you back. He does not know this patient.",
+    "situation": "The repeat basic metabolic panel (BMP) drawn at 21:00 has come back with a potassium of 3.0 mEq/L, down from 3.5 this morning. She has no active potassium orders. The lab did not call it as a critical value, but you think it needs replacing tonight.",
+    "background": [
+      "Admitted with vomiting, diarrhea and dehydration; on IV normal saline at 100 mL/hr with no potassium added.",
+      "Vomiting stopped yesterday; she has kept down clear liquids and crackers since this afternoon. Two loose stools this evening.",
+      "No history of kidney or heart disease; not on diuretics or digoxin. No known drug allergies. Full code."
+    ],
+    "current_status": [
+      "Vital signs at 23:00: HR 84 and regular, BP 118/72, RR 16, SpO2 97% on room air, temp 98.6 F.",
+      "She reports mild cramping in her calves; no palpitations, chest pain or weakness.",
+      "She is not on telemetry."
+    ],
+    "key_data": [
+      "Potassium 3.0 mEq/L at 21:00 (3.5 this morning, 3.8 on admission).",
+      "Creatinine 0.8 mg/dL, her baseline. Urine output adequate.",
+      "No magnesium level has been checked this admission."
+    ],
+    "treatments": [
+      "Done: vital signs rechecked, patient assessed and asked about symptoms.",
+      "Not done: no potassium given; no magnesium ordered."
+    ],
+    "your_request": "Give Dr. Osei a concise SBAR, ask for an order to replace her potassium, and read the telephone order back completely before you hang up.",
+    "must_include": [
+      "Identify yourself, your unit, and the patient with two identifiers (name and date of birth).",
+      "Give the potassium result with the time drawn and the earlier values, plus the context that matters: ongoing diarrhea, tolerating oral intake, normal kidney function, symptoms, vital signs.",
+      "Make a clear request — for example, an order to replace her potassium.",
+      "Write the order down and read it back completely: drug, dose, route, and timing, plus any lab orders.",
+      "Clarify any number that could be misheard (for example, 'forty — four-zero').",
+      "Close the loop: confirm when you should call him back."
+    ]
+  },
+  "kickoff_text": "Hi, this is Dr. Osei returning a page from 3 East — who's this about?",
+  "persona_override": "You are Dr. Kevin Osei, the night cross-cover hospitalist. It is 23:20; you have several other pages waiting and you do not know this patient. You are polite and efficient, and you speak quickly, especially when giving orders. Ground truth: Ms. Rosa Delgado, 58, DOB 06/21/1968, room 327, admitted two days ago with dehydration from gastroenteritis; IV normal saline at 100 mL/hr, no potassium added; vomiting stopped yesterday, tolerating clear liquids and crackers since this afternoon, two loose stools this evening; potassium 3.0 at 21:00, 3.5 this morning, 3.8 on admission; creatinine 0.8, baseline; urine output adequate; no magnesium checked; HR 84 regular, BP 118/72, RR 16, SpO2 97% on room air, temp 98.6 F; mild calf cramps, no palpitations; not on telemetry; no diuretics or digoxin; no known drug allergies. Behaviour: If the learner says the potassium is 'low' without the number or the trend, ask 'What's the number, and what was it before?' Before ordering, ask whichever of these the learner has not already covered: 'Is her kidney function okay?', 'Is she keeping things down by mouth?', 'Any palpitations? Is she on tele?' Once you have enough, give the order quickly, in one breath: 'Okay — potassium chloride forty milliequivalents PO, one time, now. Add a magnesium on to tonight's blood if the lab still has it, otherwise draw one. And repeat a BMP with morning labs. Did you get that?' Ask 'Did you get that?' only once, ever. If the learner reads back all three parts correctly, say 'That's right. Put it in as a telephone order, read back, and I'll co-sign. Call me if the mag comes back low or she gets palpitations.' If the learner reads back 'fourteen' or any other wrong number, correct it clearly: 'No — forty. Four-zero.' If the learner reads back only part of the order, confirm the part they said ('Yep') and do not mention the missing part unless they ask. If the learner asks you to repeat or slow down, repeat the order once at a normal pace. If the learner only says 'yes', 'okay' or 'got it' without reading back, say 'Great, thanks' and start to wrap up — do not ask for a read-back again. If the learner asks whether to give liquid or tablets, say 'Whatever pharmacy sends is fine.' Never mention read-back rules or accreditation standards. Keep turns short.",
+  "learning_objectives": [
+    "identify the patient with name and date of birth on the phone",
+    "report the potassium result with the time drawn and the trend",
+    "give context: diarrhea, tolerating oral intake, normal creatinine, symptoms",
+    "request an order for potassium replacement",
+    "read back the telephone order: drug, dose, route, and timing",
+    "clarify sound-alike numbers such as forty and fourteen"
+  ],
+  "suggested_questions": [
+    "Hi Dr. Osei, this is Ji-hoon, the night nurse on 3 East. I'm calling about Rosa Delgado in 327, date of birth June 21, 1968 — her 21:00 potassium came back at 3.0.",
+    "It was 3.5 this morning. She came in with gastroenteritis — the vomiting's stopped and she's tolerating PO, but she's had two loose stools tonight. Creatinine is 0.8, vitals are stable, and she has some mild calf cramps.",
+    "She doesn't have any potassium ordered. Could I get an order to replace it?",
+    "Let me read that back: potassium chloride forty — four-zero — milliequivalents PO, one time, now; add on a magnesium to tonight's sample or draw a new one; and a repeat BMP with morning labs. Is that correct?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Reporting a lab result by phone and taking a telephone order with a complete read-back",
+    "review_status": "grounded in Joint Commission requirements that the receiver write down and read back the complete verbal or telephone order or critical result and the giver confirm it, CMS rules on authenticating verbal orders, ISMP safe-practice guidance on verbal orders, and AHRQ TeamSTEPPS SBAR; potassium replacement doses, routes, and lab thresholds follow the prescriber and local protocol",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Telephone orders are a well-known source of medication error because the prescriber writes nothing down; the receiving nurse writes the order as it is spoken, reads the complete order back, and the prescriber confirms it.",
+      "Numbers that sound alike — fifteen and fifty, forty and fourteen — are clarified by saying the digits ('four-zero').",
+      "A lab value is only useful with its context: when it was drawn, the trend, and the clinical picture (losses, intake, kidney function, symptoms)."
+    ],
+    "diagnostic_clues": [
+      "Ongoing diarrhea with no potassium in the IV fluids explains a falling potassium.",
+      "Normal kidney function and adequate urine output are what the prescriber needs to hear before ordering potassium.",
+      "Muscle cramps, weakness and palpitations are symptoms to ask about with a low potassium; a low magnesium often travels with it and makes it harder to correct."
+    ],
+    "common_misconceptions": [
+      "'Got it' or 'okay' is an acceptable confirmation of a telephone order.",
+      "A result the lab did not call as critical can wait until morning rounds.",
+      "Reading back only the drug name is enough if you wrote the rest down."
+    ],
+    "dangerous_errors": [
+      "Accepting a telephone order without reading back the dose, route and timing.",
+      "Mishearing 'forty' as 'fourteen' (or the reverse) and not clarifying the digits.",
+      "Giving oral potassium without confirming the patient is tolerating oral intake.",
+      "Reporting a potassium value without the trend or the kidney function."
+    ],
+    "management_principles": [
+      "Prepare before paging: result, trend, time drawn, vital signs, relevant history, current orders, and what you are asking for.",
+      "Write the order as it is spoken, read the complete order back, and wait for the prescriber to confirm.",
+      "Enter it as a telephone order per policy, and close the loop on when to call back."
+    ],
+    "boundaries_and_exceptions": [
+      "Potassium replacement doses, route, concentration and monitoring, and the thresholds for calling the provider, are set by the prescriber and local protocol; many hospitals have nurse-driven electrolyte protocols that change who is called. The numbers in this scenario are illustrative.",
+      "Critical-value thresholds differ between laboratories, and hospitals set their own policies on when telephone orders are allowed (many limit them to situations where the prescriber cannot enter the order electronically) and how, and how quickly, they are documented and co-signed."
+    ],
+    "source_refs": [
+      {
+        "title": "The Joint Commission (patient safety standards and goals)",
+        "url": "https://www.jointcommission.org/"
+      },
+      {
+        "title": "Institute for Safe Medication Practices (ISMP)",
+        "url": "https://www.ismp.org/"
+      },
+      {
+        "title": "AHRQ TeamSTEPPS SBAR Technique",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html"
+      }
+    ]
+  }
+}

@@ -9,8 +9,8 @@
   "chief_complaint": "cloudy peritoneal dialysate and diffuse abdominal pain",
   "hpi_details": "A 77-year-old male presents to the clinic with cloudy peritoneal dialysate and diffuse abdominal pain. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
   "ideas": "thinks it might be an infection in his dialysis fluid",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "concerns": "He is worried that his dialysis catheter will have to be permanently removed and he will be forced to switch to hemodialysis at a hospital center.",
+  "expectations": "He hopes the doctor can prescribe antibiotic medicine to put into his dialysis bags so he can clear it up without being admitted.",
   "pmh": "End-stage renal disease on peritoneal dialysis",
   "medications": "Standard PD exchange regimen (icodextrin/dextrose-based dialysate)",
   "social_hx": "Non-smoker, social drinker",
@@ -124,6 +124,193 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "108/64",
+      "hr": 104,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 38.2
+    },
+    "history": [
+      {
+        "answer": "My dialysis fluid came out cloudy during my last exchange, and my whole belly has been aching since yesterday.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started about a day ago and has been gradually getting worse over the course of today.",
+        "topic": "Onset and course"
+      },
+      {
+        "answer": "The pain is all over my entire belly, and it has stayed diffuse without moving to any particular spot.",
+        "topic": "Pain location and shifting"
+      },
+      {
+        "answer": "No, the pain stays in my stomach and does not spread to my back, shoulders, or groin.",
+        "topic": "Radiation of pain"
+      },
+      {
+        "answer": "It is a continuous, dull ache that feels tender all across my belly rather than sharp or cramping.",
+        "topic": "Pain character"
+      },
+      {
+        "answer": "It started around a 3 out of 10 yesterday, but right now it feels like a 5 or 6 out of 10.",
+        "topic": "Pain severity"
+      },
+      {
+        "answer": "Moving around or having fluid inside my belly makes it ache more, while lying completely still gives slight relief.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "No, I have never had cloudy fluid or abdominal pain like this before.",
+        "topic": "Previous similar pain"
+      },
+      {
+        "answer": "I have felt mildly nauseated since this morning, but I have not vomited.",
+        "topic": "Nausea and vomiting"
+      },
+      {
+        "answer": "I had a normal bowel movement this morning, with no diarrhea, constipation, or blood in my stool.",
+        "topic": "Bowel habits and stool"
+      },
+      {
+        "answer": "I have been feeling warm and somewhat feverish since last night, though I have not had severe shaking chills.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "No, my eyes and skin have not turned yellow, and my stool has not looked pale.",
+        "topic": "Jaundice and stool changes"
+      },
+      {
+        "answer": "I barely make any urine because of my kidney failure, but I do not have any pain or burning when I go.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "I feel unusually fatigued and worn out, but I have not had dizziness or fainting spells.",
+        "topic": "Dizziness and fainting"
+      },
+      {
+        "answer": "No, I have not had any chest pressure, heart racing, or shortness of breath.",
+        "topic": "Chest pain and breathlessness"
+      },
+      {
+        "answer": "I ate my usual light meals yesterday without anything greasy, and I have not had any alcohol recently.",
+        "topic": "Recent food and alcohol"
+      },
+      {
+        "answer": "No, my kidney specialist told me to avoid pain relievers like ibuprofen, so I have not taken any.",
+        "topic": "Pain relievers and NSAIDs"
+      },
+      {
+        "answer": "No, I have never been diagnosed with an irregular heart rhythm or blood vessel blockages.",
+        "topic": "Heart rhythm and vascular disease"
+      },
+      {
+        "answer": "When I drained my dialysis bag this morning, the fluid looked murky and cloudy like broth instead of completely clear.",
+        "topic": "Dialysate appearance"
+      },
+      {
+        "answer": "The skin around my tube looks clean and normal to me, with no redness, swelling, or crusting.",
+        "topic": "Catheter exit site"
+      },
+      {
+        "answer": "I always wear my mask and wash my hands thoroughly, and I am not aware of any slips in sterile technique.",
+        "topic": "Dialysis exchange technique"
+      },
+      {
+        "answer": "I suspect there might be an infection inside my dialysis fluid or my belly.",
+        "topic": "Thoughts on the cause"
+      },
+      {
+        "answer": "I'm terrified that this means my belly catheter will have to come out and I'll have to go to a clinic three times a week for machine dialysis.",
+        "topic": "Main concerns"
+      },
+      {
+        "answer": "I have end-stage renal disease and high blood pressure, and I have been on peritoneal dialysis for about two years.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had an operation two years ago to place my peritoneal dialysis catheter, but no other surgeries or hospital stays.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I use dextrose and icodextrin dialysis solutions for my regular exchanges, along with blood pressure pills and a phosphate binder.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "No, I do not have any known allergies to medications or other substances.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink a glass of wine on special occasions, and I have not had any alcohol in months.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I am retired and live at home with my wife, who helps me keep our dialysis supplies clean and organized.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had high blood pressure, but no one in my family had kidney failure or serious abdominal problems.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 108/64 mmHg, pulse 104 beats per minute, temperature 38.2°C, respiratory rate 18 breaths per minute, and oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "An elderly man in mild distress who appears fatigued, with a drainage bag showing visibly cloudy peritoneal dialysate.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "The abdomen is mildly distended with an intact peritoneal dialysis catheter, and the exit site is clean without erythema, tenderness, or purulent drainage.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Bowel sounds are hypoactive throughout all four quadrants, and no abdominal bruits are heard.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Diffuse tenderness is present throughout the entire abdomen on light and deep palpation, without involuntary abdominal wall rigidity.",
+        "maneuver": "abdominal_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "Mild diffuse rebound tenderness is elicited across all four quadrants of the abdomen.",
+        "maneuver": "rebound_tenderness",
+        "response": "pain"
+      },
+      {
+        "finding": "No inspiratory arrest is elicited during deep palpation of the right upper quadrant.",
+        "maneuver": "murphy_sign",
+        "response": "pain"
+      },
+      {
+        "finding": "McBurney point tenderness, psoas sign, and obturator sign are all negative.",
+        "maneuver": "appendicitis_signs",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness is elicited bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Normal sphincter tone with no rectal masses, no focal tenderness, and normal brown stool on the examining glove.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
       }
     ]
   }

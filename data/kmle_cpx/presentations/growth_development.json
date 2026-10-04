@@ -1,0 +1,55 @@
+{
+  "id": "growth_development",
+  "title": "아이 키나 발달이 걱정돼요",
+  "english_title": "Growth or developmental delay",
+  "category": "소아",
+  "kmle_item": "성장/발달 지연",
+  "door_complaint": "또래보다 키가 작거나 발달이 늦은 것 같다고",
+  "differential_groups": [
+    {"key": "normal_variant", "label": "정상 변이", "examples": ["가족성 저신장", "체질성 성장지연"]},
+    {"key": "nutrition_chronic", "label": "영양·만성질환·환경", "examples": ["영양 부족", "염증성 장질환 등 흡수장애", "만성콩팥병", "선천 심질환", "방임 등 사회심리적 박탈"]},
+    {"key": "endocrine", "label": "내분비", "examples": ["성장호르몬 결핍", "갑상샘기능저하증", "스테로이드에 의한 성장 억제·쿠싱증후군", "성조숙증"]},
+    {"key": "genetic_syndrome", "label": "유전·증후군", "examples": ["터너증후군", "다운증후군", "누난증후군", "골격 이형성증", "부당경량아의 따라잡기 성장 실패"]},
+    {"key": "neurodevelopmental", "label": "신경발달", "examples": ["청력 소실", "언어 발달 지연", "자폐스펙트럼장애", "지적장애·전반적 발달지연", "뇌성마비"]}
+  ],
+  "history": [
+    {"id": "main_concern", "text": "무엇이(키, 말, 걷기, 행동) 언제부터 걱정됐는지, 누가 먼저 알아챘는지(어린이집, 영유아 검진)", "say": "아이의 어떤 점이 언제부터 걱정되셨어요? 어린이집이나 검진에서 들으신 이야기가 있으세요?", "tags": ["normal_variant", "neurodevelopmental"]},
+    {"id": "growth_record", "text": "이전 키·몸무게 기록(영유아 건강검진, 수첩)과 1년에 자라는 정도", "say": "예전에 잰 키와 몸무게 기록이 있으세요? 1년에 몇 cm 정도 자라는 것 같아요?", "tags": ["normal_variant", "endocrine", "nutrition_chronic"], "key": true},
+    {"id": "birth_history", "text": "재태 주수, 출생 체중·키, 임신 중 문제(음주·흡연, 감염, 약), 신생아 때 입원", "say": "아이는 몇 주에 몇 kg으로 태어났어요? 임신 중이나 태어난 뒤에 문제는 없었나요?", "tags": ["genetic_syndrome", "neurodevelopmental"]},
+    {"id": "feeding_diet", "text": "먹는 양과 식습관, 편식, 수유 문제", "say": "아이가 밥은 잘 먹어요? 먹는 양이나 가리는 음식은 어때요?", "tags": ["nutrition_chronic"]},
+    {"id": "chronic_symptoms", "text": "만성 질환 단서(잦은 설사·복통, 혈변, 잦은 감염, 쉽게 숨참·청색증, 소변 이상, 피로)", "say": "배가 자주 아프거나 설사를 자주 하나요? 감기에 자주 걸리거나, 뛰면 금방 숨차 하지는 않아요?", "tags": ["nutrition_chronic"]},
+    {"id": "neuro_endocrine_redflags", "text": "뇌 병변 단서(두통, 구토, 시야 이상), 물을 많이 마시고 소변이 많음, 추위를 탐·변비·무기력", "say": "아이가 머리가 아프다고 하거나 토하고, 잘 안 보이는 것 같지는 않아요? 물을 유난히 많이 마시고 소변을 자주 보나요?", "tags": ["endocrine"], "key": true},
+    {"id": "puberty_signs", "text": "사춘기 징후(가슴 멍울, 음모, 고환 커짐)가 또래보다 이르거나 늦은지", "say": "가슴에 멍울이 생기거나 음모가 나는 것처럼 사춘기 변화가 시작됐나요?", "tags": ["endocrine", "normal_variant"], "conditional": true},
+    {"id": "motor_milestones", "text": "대근육·소근육 발달 시기(목 가누기, 혼자 앉기, 걷기, 숟가락질, 그리기)", "say": "목은 언제 가누고 몇 개월에 혼자 걸었어요? 숟가락질이나 그리기는 어때요?", "tags": ["neurodevelopmental"]},
+    {"id": "language_milestones", "text": "언어 발달(옹알이, 첫 단어, 두 단어 붙여 말하기, 말귀 알아듣기)", "say": "첫 단어는 언제 했어요? 지금은 두 단어를 붙여서 말하나요? 간단한 말은 알아듣고요?", "tags": ["neurodevelopmental"]},
+    {"id": "social_communication", "text": "사회성·의사소통(눈 맞춤, 이름을 부르면 반응, 손가락으로 가리키기, 흉내 내기, 반복 행동)", "say": "눈을 잘 맞추고 이름을 부르면 돌아보나요? 원하는 걸 손가락으로 가리키나요? 같은 행동을 계속 반복하지는 않아요?", "tags": ["neurodevelopmental"]},
+    {"id": "hearing_vision", "text": "소리에 대한 반응, 잦은 중이염, 신생아 청각선별검사 결과, 시력", "say": "소리에 잘 반응하나요? 중이염을 자주 앓았어요? 태어났을 때 청력 검사는 통과했나요?", "tags": ["neurodevelopmental"]},
+    {"id": "regression", "text": "할 줄 알던 말이나 기술을 잃어버림(발달 퇴행)", "say": "전에는 하던 말이나 행동을 지금은 못하게 된 게 있나요?", "tags": ["neurodevelopmental"], "key": true},
+    {"id": "family_growth", "text": "부모의 키와 사춘기 시기, 가족 중 저신장·발달 지연·유전 질환", "say": "부모님 키는 각각 어떻게 되세요? 두 분 중에 사춘기가 늦게 와서 늦게 크신 분이 있나요? 가족 중에 발달이 늦었던 분은요?", "tags": ["normal_variant", "genetic_syndrome"]},
+    {"id": "growth_drugs", "text": "성장에 영향을 주는 약(장기간 스테로이드, 주의력결핍 치료제)", "say": "아이가 오래 먹고 있는 약이 있나요? 스테로이드나 집중력 약 같은 거요.", "tags": ["endocrine"], "conditional": true},
+    {"id": "home_environment", "text": "양육 환경(주 양육자, 수면, 영상 시청 시간, 가정의 어려움)", "say": "주로 누가 아이를 돌보세요? 아이가 잠은 잘 자고, 영상은 하루에 얼마나 보나요? 집에 힘든 일은 없으세요?", "tags": ["nutrition_chronic", "neurodevelopmental"]}
+  ],
+  "physical_exam": [
+    {"id": "measurements", "text": "키(2세 미만은 누운 키), 몸무게, 머리둘레 측정", "say": "신발을 벗기고 키와 몸무게를 재고, 머리둘레도 재 보겠습니다.", "tags": ["normal_variant", "nutrition_chronic"]},
+    {"id": "growth_chart", "text": "소아청소년 성장도표에 표시해 백분위, 이전 기록 대비 성장 속도, 부모 키로 계산한 예상 키 범위와 비교", "say": "잰 값을 성장도표에 찍어서 또래와 비교하고, 예전 기록과 부모님 키도 함께 보겠습니다.", "tags": ["normal_variant", "endocrine", "nutrition_chronic"], "key": true},
+    {"id": "proportion_dysmorphism", "text": "몸의 비율(팔다리와 몸통), 이형 특징(목 물갈퀴, 넓은 가슴, 얼굴 특징)", "say": "팔다리와 몸통의 비율, 얼굴과 목 모양을 살펴보겠습니다.", "tags": ["genetic_syndrome"]},
+    {"id": "systemic_exam", "text": "영양 상태, 갑상샘, 심잡음, 복부 진찰", "say": "목을 만져 보고, 심장 소리를 듣고, 배를 눌러 보겠습니다.", "tags": ["nutrition_chronic", "endocrine"]},
+    {"id": "puberty_staging", "text": "사춘기 성숙도(태너 단계) 평가", "say": "사춘기 변화가 얼마나 진행됐는지 보호자분이 계신 자리에서 잠깐 확인하겠습니다.", "tags": ["endocrine"], "conditional": true},
+    {"id": "development_neuro", "text": "발달 관찰(걸음걸이, 손 사용, 말, 눈 맞춤, 이름 반응)과 근긴장도·반사", "say": "아이랑 잠깐 놀면서 걷는 모습, 손 쓰는 것, 말하고 눈 맞추는 걸 보고, 팔다리 힘과 반사도 확인하겠습니다.", "tags": ["neurodevelopmental"]}
+  ],
+  "education": [
+    {"id": "growth_explanation", "text": "성장도표 결과를 설명하고, 한 번 잰 키보다 성장 속도가 중요함을 안내", "say": "지금 키는 또래 100명 중 작은 쪽에서 ○번째 정도예요. 중요한 건 1년에 얼마나 자라는지라서, 몇 달 뒤 다시 재서 비교해 보겠습니다."},
+    {"id": "early_intervention", "text": "발달 지연이 의심되면 정밀 평가와 조기 치료(언어·작업·물리치료)를 빨리 시작할수록 좋음", "say": "발달이 늦은 경우에는 일찍 도와줄수록 효과가 좋아요. 전문 선생님께 정밀 평가를 받아 보시도록 연결해 드릴게요.", "conditional": true},
+    {"id": "daily_habits", "text": "균형 잡힌 식사, 충분한 수면, 신체 활동, 영상 시간을 줄이고 함께 대화·책 읽기, 효과가 확인되지 않은 키 크는 약·보조제 주의", "say": "골고루 먹고 푹 자고 뛰어노는 게 가장 중요해요. 영상 대신 아이와 이야기하고 책을 읽어 주세요. 키 크는 영양제는 효과가 확인되지 않은 게 많아요."},
+    {"id": "checkup_program", "text": "영유아 건강검진(발달 선별검사 포함)을 챙기고 다음 측정 시기 안내", "say": "영유아 건강검진 때 발달 검사도 함께 받으시고, 3~6개월 뒤에 키를 다시 재 보겠습니다."}
+  ],
+  "grader_notes": [
+    "정확히 잰 키(2세 미만은 누운 키)·몸무게·머리둘레를 소아청소년 성장도표에 연속으로 표시해 백분위와 성장 속도를 보고, 부모 키로 예상 성인 키 범위를 계산해 비교한다.",
+    "키가 3백분위수 미만이거나, 사춘기 전 학령기에 1년 성장이 4 cm 미만이거나, 백분위 곡선을 두 개 이상 가로질러 떨어지거나, 부모 키에 비해 지나치게 작으면 원인 검사를 한다.",
+    "기본 검사는 골연령(왼손 X선), 일반혈액·생화학검사, 갑상샘기능, IGF-1, 소변검사이며, 키가 작은 여아는 터너증후군을 배제하려고 염색체검사를 하고, 성장호르몬 결핍이 의심되면 자극검사와 뇌 MRI를 한다.",
+    "가족성 저신장(정상 성장 속도, 골연령이 나이와 비슷)과 체질성 성장지연(골연령 지연, 늦은 사춘기 가족력)은 치료 없이 추적하고, 성장호르몬 치료는 결핍증, 터너증후군, 만성콩팥병, 부당경량아 등 적응증에서 쓴다.",
+    "두통·구토·시야 이상이나 다음다뇨를 동반한 성장 둔화는 뇌종양(두개인두종 등)을 의심해 뇌 MRI를 한다.",
+    "발달 지연은 영역별(대근육, 소근육, 언어, 인지, 사회성)로 한국 영유아 발달선별검사(K-DST) 등으로 평가하고, 언어 지연이 있으면 반드시 청력검사를 하며, 퇴행이나 자폐 징후가 있으면 지체 없이 전문 평가와 조기중재로 연계한다."
+  ],
+  "case_ids": []
+}

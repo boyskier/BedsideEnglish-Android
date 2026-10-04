@@ -1,0 +1,52 @@
+{
+  "id": "oliguria",
+  "title": "소변량이 줄었어요",
+  "english_title": "Decreased urine output (oliguria)",
+  "category": "비뇨·신장",
+  "kmle_item": "소변량 변화",
+  "door_complaint": "소변량이 줄었다고",
+  "differential_groups": [
+    {"key": "prerenal", "label": "신전성", "examples": ["탈수(구토·설사)", "출혈", "심부전", "간신증후군", "패혈증", "약물(NSAID, ACE억제제·ARB)"]},
+    {"key": "renal", "label": "신성", "examples": ["급성 세뇨관 괴사", "조영제 신병증", "급성 간질성 신염", "급성 사구체신염", "횡문근융해증"]},
+    {"key": "postrenal", "label": "신후성", "examples": ["전립샘비대로 인한 요폐", "양측 요관 폐쇄(결석, 종양)", "신경인성 방광", "소변줄 막힘"]}
+  ],
+  "history": [
+    {"id": "onset_amount", "text": "시작 시기, 소변 횟수와 양의 변화, 전혀 나오지 않는지", "say": "언제부터 소변이 줄었어요? 하루에 몇 번, 얼마나 보세요? 아예 안 나오는 건가요?", "tags": ["prerenal", "postrenal"]},
+    {"id": "fluid_loss", "text": "구토, 설사, 땀, 출혈과 먹고 마신 양", "say": "최근에 토하거나 설사를 하셨어요? 물이나 음식은 잘 드셨어요? 피를 흘린 적은요?", "tags": ["prerenal"]},
+    {"id": "thirst_orthostasis", "text": "갈증, 입마름, 일어설 때 어지러움", "say": "목이 많이 마르거나 일어설 때 핑 도는 느낌이 있으세요?", "tags": ["prerenal"]},
+    {"id": "urine_appearance", "text": "소변 색(진함, 콜라색, 피), 거품", "say": "소변 색은 어때요? 아주 진하거나 콜라색, 붉은색인가요? 거품이 많이 나나요?", "tags": ["renal"]},
+    {"id": "voiding_symptoms", "text": "배뇨 곤란, 약한 소변 줄기, 아랫배가 차오르는 느낌", "say": "소변이 마려운데 잘 안 나오나요? 아랫배가 빵빵하게 차오르는 느낌은요?", "tags": ["postrenal"]},
+    {"id": "flank_pain", "text": "옆구리 통증, 결석 과거력", "say": "옆구리가 아프거나 전에 요로결석이 있었던 적 있으세요?", "tags": ["postrenal"]},
+    {"id": "edema_dyspnea", "text": "몸이 붓거나 체중이 늘고 숨이 참", "say": "몸이 붓거나 체중이 갑자기 늘었어요? 숨이 차거나 누우면 답답하세요?", "tags": ["renal", "prerenal"], "key": true},
+    {"id": "uremic_symptoms", "text": "메스꺼움, 식욕 저하, 가려움, 딸꾹질, 정신이 흐려짐", "say": "속이 메스껍고 입맛이 없거나, 몸이 가렵고 정신이 멍하지는 않으세요?", "tags": ["renal"], "key": true},
+    {"id": "hyperkalemia_symptoms", "text": "가슴 두근거림, 근력 저하", "say": "가슴이 두근거리거나 팔다리에 힘이 빠지지는 않나요?", "key": true},
+    {"id": "fever_rash_joint", "text": "발열, 발진, 관절통, 피 섞인 가래", "say": "열이 나거나 몸에 발진이 생기고, 관절이 아프거나 피 섞인 가래가 나오지는 않나요?", "tags": ["renal"]},
+    {"id": "recent_infection", "text": "최근 목감기나 피부 감염", "say": "몇 주 전에 목감기나 피부 염증을 앓으셨어요?", "tags": ["renal"]},
+    {"id": "muscle_injury", "text": "근육통, 심한 운동, 외상, 오래 쓰러져 있었는지", "say": "최근에 무리하게 운동하셨거나 다치셨어요? 근육이 심하게 아프지는 않나요?", "tags": ["renal"]},
+    {"id": "contrast_procedure", "text": "최근 조영제 CT나 혈관 시술, 수술", "say": "최근에 조영제를 쓰는 CT나 시술, 수술을 받으셨어요?", "tags": ["renal"]},
+    {"id": "nephrotoxic_drugs", "text": "진통소염제, 이뇨제, ACE억제제·ARB, 항생제, 한약·건강식품", "say": "최근에 진통제, 혈압약이나 이뇨제, 항생제, 한약을 새로 드시거나 늘리셨어요?", "tags": ["prerenal", "renal"]},
+    {"id": "heart_liver_kidney", "text": "심부전, 간경화, 기존 신장병", "say": "심장이나 간, 신장이 안 좋다는 말을 들은 적 있으세요?", "tags": ["prerenal"]},
+    {"id": "prostate_pelvic", "text": "전립샘 질환, 골반 쪽 암이나 방사선 치료", "say": "전립샘 문제나 골반 쪽 암으로 치료받으신 적 있으세요?", "tags": ["postrenal"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals_orthostatic", "text": "혈압, 맥박, 체온, 누웠다 일어설 때 혈압 변화", "say": "혈압과 맥박을 누워서 한 번, 일어나서 한 번 재 보겠습니다.", "tags": ["prerenal"], "key": true},
+    {"id": "volume_status", "text": "입안 점막, 피부 탄력, 목정맥 확인", "say": "입안이 마르지 않았는지, 목의 혈관도 보겠습니다.", "tags": ["prerenal"]},
+    {"id": "lung_edema", "text": "폐 청진(수포음)과 다리 부종 확인", "say": "숨을 크게 쉬어 보세요. 폐 소리를 듣고 다리가 부었는지 눌러 보겠습니다.", "tags": ["prerenal", "renal"]},
+    {"id": "bladder", "text": "치골 위 방광 팽만 촉진·타진", "say": "아랫배를 눌러서 방광에 소변이 차 있는지 보겠습니다.", "tags": ["postrenal"], "key": true},
+    {"id": "cva_prostate", "text": "늑골척추각 압통, 남성은 필요 시 직장수지검사", "say": "등을 두드려 보겠습니다. 필요하면 전립샘도 확인하겠습니다.", "tags": ["postrenal"], "conditional": true},
+    {"id": "skin_joint_muscle", "text": "발진, 관절 부기, 근육 압통 확인", "say": "피부에 발진이 있는지, 관절과 근육도 살펴보겠습니다.", "tags": ["renal"], "conditional": true}
+  ],
+  "education": [
+    {"id": "drug_avoidance", "text": "신장에 부담되는 약(진통소염제 등)과 처방 없는 약·한약을 피하도록 교육", "say": "당분간 진통소염제나 한약, 건강식품은 드시지 마시고, 약을 드시기 전에 꼭 물어보세요.", "tags": ["renal", "prerenal"]},
+    {"id": "warning_signs", "text": "소변이 전혀 안 나오거나 숨참, 부종, 두근거림, 정신이 흐려지면 바로 오도록 안내", "say": "소변이 아예 안 나오거나 숨이 차고 몸이 붓고, 가슴이 두근거리면 바로 응급실로 오세요.", "key": true},
+    {"id": "sick_day", "text": "구토·설사로 탈수될 때 이뇨제·혈압약 등을 조절해야 할 수 있음을 안내", "say": "설사나 구토로 못 드실 때는 이뇨제나 일부 혈압약을 잠시 멈춰야 할 수 있으니 미리 상의하세요.", "tags": ["prerenal"], "conditional": true}
+  ],
+  "grader_notes": [
+    "소변량 감소는 급성 신손상을 의심해 혈청 크레아티닌·BUN, 전해질(특히 칼륨), 산염기 상태, 현미경 검사를 포함한 소변검사를 한다.",
+    "방광 초음파나 도뇨로 요폐를 먼저 배제하고, 신장 초음파로 수신증 등 신후성 원인을 확인한다.",
+    "신전성이 의심되면 수액으로 순환 혈량을 교정하되 심부전이나 폐부종이 있으면 과도한 수액을 피하고, NSAID·조영제 등 신독성 물질은 피하며 ACE억제제·ARB·이뇨제는 일시 중단을 고려한다.",
+    "소변검사에서 적혈구 원주나 단백뇨가 있고 크레아티닌이 빠르게 오르면 급속진행 사구체신염을 의심해 신장내과 협진과 신장 조직검사를 고려한다.",
+    "치료에 반응하지 않는 고칼륨혈증, 심한 대사성 산증, 폐부종, 요독 증상(의식 변화, 심낭염)은 응급 투석의 적응증이다."
+  ],
+  "case_ids": []
+}

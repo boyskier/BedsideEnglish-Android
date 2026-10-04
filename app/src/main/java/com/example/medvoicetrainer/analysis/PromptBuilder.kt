@@ -8,7 +8,7 @@ object PromptBuilder {
     /** Modes that supply their own persona and never behave like a walk-in patient encounter. */
     private val NON_ENCOUNTER_MODES = setOf(
         "survival", "everyday", "interview", "exam", "lounge", "follow_up",
-        "presentation", "team_communication"
+        "presentation", "team_communication", "nursing", KmleCpx.SESSION_MODE
     )
 
     /**
@@ -44,6 +44,8 @@ object PromptBuilder {
                 "interview" -> buildInterviewPrompt(firstInterviewScenario(map))
                 "exam" -> ExamMode.buildExamPrompt(map)
                 "follow_up" -> buildFollowUpPatientPrompt(map)
+                // Korean CPX: a Korean-speaking standardized patient built from the same case.
+                KmleCpx.SESSION_MODE -> KmleCpx.buildPatientPrompt(caseJson)
                 "lounge" -> {
                     // Mirrors the persona_override check build_patient_prompt already does —
                     // the Lounge tab now builds the real build_lounge_prompt() result (scenario's
@@ -51,6 +53,10 @@ object PromptBuilder {
                     // falling back to this generic placeholder for any lounge case without one.
                     val override = (map["persona_override"] as? String)?.trim()
                     if (!override.isNullOrEmpty()) override
+                    // A Free Talk case that reaches here without its built prompt (a snapshot
+                    // restarted from elsewhere) must still get the brevity rules, not the
+                    // generic lounge partner who talks as much as the learner.
+                    else if (FreeTalk.isFreeTalk(map)) FreeTalk.buildPrompt(map, str(map[FreeTalk.TOPIC_FIELD]))
                     else "You are a casual conversation partner in a free English lounge. Discuss the topic: ${map["title"] ?: ""}."
                 }
                 else -> buildPatientPrompt(map)
@@ -92,6 +98,13 @@ object PromptBuilder {
                 .replace("{social_hx}", valueOr(scenario, "social_hx", "not provided"))
         }
 
+        // The case's authored standardized-patient script (sp_script) — the same one the Korean CPX
+        // patient reads — pins every answer to the case instead of leaving the model to improvise
+        // the pertinent negatives. Only the first-visit template has a hidden-information block.
+        if (override.isNullOrEmpty()) {
+            spScriptOf(scenario)?.let { prompt += "\n" + SpScript.englishPatientBlock(it) + "\n" }
+        }
+
         str(scenario["active_complexity_modifier"]).takeIf { it.isNotEmpty() }?.let {
             prompt += "\n\n$it\n"
         }
@@ -120,6 +133,11 @@ object PromptBuilder {
 
         if (booleanValue(scenario["coaching_mode"])) {
             prompt += COACHING_ADDENDUM
+        }
+
+        // Nursing personas are authored per case; these are the rules every one of them shares.
+        if (str(scenario["session_mode"]).equals(NursingTrack.SESSION_MODE, ignoreCase = true)) {
+            prompt += NursingTrack.liveRolePlayRules(str(scenario["counterpart"]), str(scenario["nursing_task"]))
         }
 
         if (scenario.containsKey("clinical_chart") || scenario.containsKey("chart_task")) {
@@ -420,6 +438,18 @@ You can call the function `propose_scene_transition` with type="return_to_previo
 
     private fun str(v: Any?): String = (v as? String) ?: ""
 
+    /** The case's `sp_script`, whether the scenario map holds it as a JSONObject or as a nested Map. */
+    private fun spScriptOf(scenario: Map<String, Any>): SpScript.Script? {
+        val raw = scenario[SpScript.CASE_KEY] ?: return null
+        val block = when (raw) {
+            is JSONObject -> raw
+            is Map<*, *> -> runCatching { JSONObject(raw) }.getOrNull()
+            is String -> runCatching { JSONObject(raw) }.getOrNull()
+            else -> null
+        } ?: return null
+        return SpScript.parse(JSONObject().put(SpScript.CASE_KEY, block))
+    }
+
     private fun valueOr(source: Map<String, Any>, key: String, fallback: String): String {
         val value = source[key] ?: return fallback
         return value.toString().takeIf { it.isNotEmpty() } ?: fallback
@@ -497,6 +527,25 @@ Behavioral guidelines:
 - If a question is unclear, ask for clarification as a patient would.
 - Respond only to what was actually asked — never narrate what the student "should" ask.
 - Session ends when the student says "I'd like to summarize what we've discussed."
+$PATIENT_BREVITY_RULES"""
+
+    /**
+     * How much a standard patient says per turn. A real patient answers the question in front of
+     * them and stops; the model's default is to recite the case (onset, character, radiation and
+     * three associated symptoms in reply to "What brings you in?"), which does the history for
+     * the learner. Shared by the first-visit and follow-up personas.
+     */
+    private const val PATIENT_BREVITY_RULES = """
+HOW MUCH TO SAY — answer like a real patient in a real clinic, not like a case summary:
+- Answer ONLY the question just asked, then stop and wait. Most answers are one short sentence, and many are just a few words ("About three days." "No." "Here, on the right side.").
+- A yes/no question gets yes or no plus a few words at most. A when / where / how long / how much question gets just that fact.
+- An open question ("What brings you in?", "Tell me more") gets only the main thing bothering you, in one or two plain sentences. Leave onset, character, radiation, associated symptoms, and your history for the doctor to ask.
+- Never list several symptoms or history items in one answer. "Anything else?" gets only what you actually have, one or two things — "No, that's about it." is a fine answer.
+- Keep your ideas, concerns, and expectations until the doctor asks about them or clearly invites them. Do not add explanations, background stories, or worries to an answer about something else.
+- If the doctor asks two questions at once, answer them the way a real person would — often only the last or the easier one — and let the doctor ask again.
+- Do not ask a question back or thank the doctor after every answer. A short answer followed by silence is normal.
+- Emotion shows in your tone and word choice, not in longer answers.
+- Exception: if a STANDARDIZED PATIENT STYLE below says you are talkative, follow that style instead.
 """
 
     private val FOLLOW_UP_PATIENT_SYSTEM_PROMPT = """You are {patient_name}, a {age}-year-old {gender} returning for a real outpatient follow-up visit.
@@ -512,8 +561,8 @@ Role and information boundaries:
 - Stay in character as the patient. Never become a tutor, examiner, narrator, or clinician.
 - This is an established follow-up, not a first visit. Do not retell your full medical history or act as if the prior plan is unknown.
 - Treat SHARED CLINICAL CONTEXT as mutually known. You may briefly confirm it, but do not quiz the clinician on facts already in the chart.
-- Do not volunteer the whole PATIENT-ONLY section at once. Answer the specific question asked in 1-3 natural spoken sentences.
-- If asked an open question such as "How have things been?", give the main interval change first, then wait for follow-up questions.
+- Do not volunteer the whole PATIENT-ONLY section at once. Answer only the specific question asked, usually in one short spoken sentence.
+- If asked an open question such as "How have things been?", give only the main interval change, then wait for follow-up questions.
 - Be honest about missed treatment, barriers, side effects, and concerns when asked. React positively to neutral, nonjudgmental wording and become mildly guarded if blamed.
 - Use ordinary patient language. Do not introduce medical facts, measurements, symptoms, diagnoses, or treatment recommendations absent from this case.
 - Results in the shared brief are known to the clinician. You may ask what they mean, but never interpret them yourself.
@@ -610,7 +659,7 @@ Guidelines:
 ENDING THE VISIT NATURALLY:
 - You are NOT in a hurry, and you must NEVER end the conversation or walk out on your own. The doctor decides when the visit is over.
 - Once the doctor has clearly covered the main interview and starts to wrap up, summarize, or explain a plan, you may gently show you're ready to finish — e.g. "Is that everything, doctor?", "Okay, that makes sense", or a small sign you're ready to go.
-- But if the doctor then asks anything else, raises a new question, or remembers something, drop the wrap-up completely and stay engaged — answer fully and naturally, exactly as before. A real patient is always willing to keep talking when the doctor isn't finished.
+- But if the doctor then asks anything else, raises a new question, or remembers something, drop the wrap-up completely and stay engaged — answer naturally, exactly as before (still only what was asked). A real patient is always willing to keep talking when the doctor isn't finished.
 - Never announce that the session is ending and never refer to this as practice.
 """
 

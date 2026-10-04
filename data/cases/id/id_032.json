@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "fever, cough with yellow sputum, and focal lung crackles",
   "hpi_details": "A 38-year-old female presents to the clinic with fever, cough with yellow sputum, and focal lung crackles. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to cap",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks a nasty head cold she caught from her coworker traveled into her chest and turned into severe acute bronchitis.",
+  "concerns": "She is worried that she will be admitted to the hospital, leaving nobody to care for her two young children as a single mother.",
+  "expectations": "She hopes to receive a chest X-ray and a prescription for oral antibiotics so she can recover safely at home.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -148,6 +148,194 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "122/78",
+      "hr": 102,
+      "rr": 20,
+      "spo2": 95,
+      "temp_c": 38.5
+    },
+    "history": [
+      {
+        "answer": "I have had a high fever and a bad cough with thick yellow phlegm for the past three days, and I feel completely exhausted.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The fever started about three days ago and has been gradually getting worse each day.",
+        "topic": "Onset and duration of fever"
+      },
+      {
+        "answer": "The highest reading was 38.5 degrees Celsius on my digital thermometer yesterday. The fever is constant throughout the day and comes with severe shaking chills.",
+        "topic": "Fever pattern and chills"
+      },
+      {
+        "answer": "I took acetaminophen yesterday evening. It brought the fever down slightly for a couple of hours, but then it spiked right back up.",
+        "topic": "Antipyretic response"
+      },
+      {
+        "answer": "I've been coughing frequently and bringing up thick, yellowish-green mucus, especially in the mornings.",
+        "topic": "Cough and sputum character"
+      },
+      {
+        "answer": "I feel slightly out of breath when I walk across the room or cough repeatedly, but I am not gasping for air when resting.",
+        "topic": "Shortness of breath"
+      },
+      {
+        "answer": "I feel a sharp, catching pain on the lower right side of my chest whenever I take a deep breath or cough hard.",
+        "topic": "Chest pain"
+      },
+      {
+        "answer": "No, I don't have a sore throat, runny nose, or stuffy nose.",
+        "topic": "Upper respiratory symptoms"
+      },
+      {
+        "answer": "No burning when I urinate, no frequent urination, and no flank or back pain.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "No nausea, vomiting, stomach cramps, or diarrhea.",
+        "topic": "Gastrointestinal symptoms"
+      },
+      {
+        "answer": "I have a mild, generalized headache from the fever, but my neck is not stiff and my thoughts are completely clear.",
+        "topic": "Neurological symptoms"
+      },
+      {
+        "answer": "No skin rashes, insect bites, black scabs, or joint swelling and pain.",
+        "topic": "Rash and joint symptoms"
+      },
+      {
+        "answer": "I sweat a lot when the fever temporarily dips, but I haven't had chronic drenching night sweats or any weight loss.",
+        "topic": "Night sweats and weight loss"
+      },
+      {
+        "answer": "No, I haven't noticed any lumps or swelling in my neck, armpits, or groin.",
+        "topic": "Lymph node swelling"
+      },
+      {
+        "answer": "I haven't traveled outside the country recently, haven't gone hiking or done farm work, and don't have contact with animals.",
+        "topic": "Travel and outdoor exposure"
+      },
+      {
+        "answer": "No one at my home or in my office has been sick with a cough or fever recently.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "No, I have never had cancer, never received chemotherapy, and don't take steroids or immunosuppressants.",
+        "topic": "Immunosuppressive conditions"
+      },
+      {
+        "answer": "No heart conditions, artificial heart valves, or recent dental cleanings or procedures.",
+        "topic": "Heart disease and dental history"
+      },
+      {
+        "answer": "No, I haven't started any new prescription medications recently.",
+        "topic": "Recent new medications"
+      },
+      {
+        "answer": "I am married and only sexually active with my husband, and I have never used intravenous or recreational drugs.",
+        "topic": "Sexual and substance history"
+      },
+      {
+        "answer": "I have always been healthy with no history of asthma, diabetes, hypertension, or other chronic illnesses.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized.",
+        "topic": "Surgical and hospital history"
+      },
+      {
+        "answer": "I don't take any regular prescription medications, vitamins, or herbal supplements, just the over-the-counter acetaminophen yesterday.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any known allergies to medications, foods, or seasonal allergens.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco or vaping products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have an occasional glass of wine at social dinners, maybe once or twice a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work in an office as an accountant and live with my husband in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "Both my parents and my older brother are alive and healthy with no history of chronic lung disease.",
+        "topic": "Family history"
+      },
+      {
+        "answer": "My last period started two weeks ago, my cycles are regular every 28 days, we use barrier contraception, and there is no chance I am pregnant.",
+        "topic": "Menstrual and pregnancy history"
+      },
+      {
+        "answer": "I thought maybe that bad cold going around my office just settled in my chest and turned into severe bronchitis. I'm really worried that I'll have to be admitted to the hospital when there's nobody else at home to look after my two young kids.",
+        "topic": "Patient ideas and concerns"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 122/78 mmHg, heart rate 102 beats per minute, respiratory rate 20 breaths per minute, temperature 38.5°C, oxygen saturation 95% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Pharyngeal mucosa is normal and pink without erythema, exudate, or tonsillar swelling.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral tympanic membranes are intact, translucent, and pearly gray without erythema or effusion.",
+        "maneuver": "ear_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, submental, or supraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Dullness to percussion over the right lower lung field; resonant over all other lung zones.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Focal inspiratory crackles over the right lower lung base; clear breath sounds bilaterally in upper and mid lung fields.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardia with regular rhythm; normal S1 and S2 with no murmurs, rubs, or gallops heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, flat, and non-tender without guarding, rebound tenderness, or organomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Warm and dry skin with no petechiae, rashes, purpura, or eschar.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Supple neck with full passive flexion; negative Kernig and Brudzinski signs.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
       }
     ]
   }

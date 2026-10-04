@@ -1,0 +1,110 @@
+{
+  "id": "nursing_interview_us_recruiter_screening_call",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Job interview",
+  "nursing_pathways": ["us"],
+  "counterpart": "interviewer",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_job_interview",
+  "station_minutes": 8,
+  "patient_name": "Recruiter screening call — fast-talking US staffing agency",
+  "chief_complaint": "Give a fast-talking US recruiter accurate facts about your NCLEX, credentials, experience, and plans, and ask her to explain the jargon you don't understand",
+  "team_brief": {
+    "case_type": "interview",
+    "title": "Job interview: recruiter screening call — status, experience, and 'Why the US?'",
+    "task": "Job interview",
+    "urgency": "routine",
+    "patient": "Interview: Registered Nurse (international hire), US nurse staffing agency",
+    "location": "Phone call to you in Korea; you are the candidate, and Tiffany Morales, a recruiter at a US international nurse staffing agency, is calling",
+    "situation": "The recruiter is doing a short screening call to decide whether to present you to hospital clients. She talks fast and uses everyday US hospital jargon. Give clear, accurate facts about yourself — and ask her to slow down or explain whenever you are not sure what she means.",
+    "background": [
+      "You have a BSN from a Korean university and 4 years of experience in a general hospital in Daegu: 3 years on an adult medical-surgical ward (about 12 patients per day shift) and 1 year on a cardiac monitoring unit.",
+      "You passed the NCLEX-RN in March 2026 and hold an active RN license issued in New York State.",
+      "Your IELTS Academic score is valid; your VisaScreen application with CGFNS has been submitted but is not yet complete.",
+      "You are willing to relocate anywhere in the US, would prefer a city with a Korean community, and can work nights. No US employer has sponsored your immigrant visa yet."
+    ],
+    "key_data": [
+      "The agency places nurses with client hospitals in several states, mostly on med-surg and telemetry units, and sponsors immigrant visas for its nurses.",
+      "A typical offer: full-time 'three 12s' (three 12-hour shifts a week), nights to start, a sign-on bonus paid in installments, relocation help, and a multi-year work commitment written into the contract.",
+      "Jargon you may hear: 'med-surg' (medical-surgical unit), 'tele' (telemetry — patients on continuous heart monitoring), 'step-down' (between ICU and a regular unit), 'nights', 'float' (working on other units), 'sign-on bonus', 'commitment' (how long you agree to stay), 'ratio' (patients per nurse)."
+    ],
+    "your_request": "Give the recruiter accurate, confident answers so she can match you to the right job, and make sure you understand what she tells you.",
+    "must_include": [
+      "Your NCLEX, license, English test, and VisaScreen status stated accurately — including what is still in progress.",
+      "Your years and type of experience described in US terms (for example med-surg or tele) with your usual patient load.",
+      "A clear answer about relocation and working nights.",
+      "A specific, personal reason why you want to work in the US.",
+      "Ask the recruiter to slow down, repeat, or explain at least one term you are not sure about.",
+      "One question about the contract, such as the length of the commitment or what happens to the sign-on bonus if you leave early."
+    ]
+  },
+  "kickoff_text": "Hi, is this a good time? Great — this is Tiffany calling from the agency, I got your profile from our website, so I just wanna run through a couple quick things to see where you're at. First off, have you taken your NCLEX yet, and what state are you licensed in?",
+  "persona_override": "You are Tiffany Morales, a recruiter at a US staffing agency that recruits internationally educated nurses for client hospitals, calling a Korean nurse for a first screening. You are upbeat, friendly, and busy — you have ten of these calls today — and you speak fast, in casual American English with contractions and filler ('so', 'like', 'gonna', 'wanna', 'where you're at'), using hospital jargon without explaining it: 'med-surg', 'tele', 'step-down', 'three twelves', 'nights', 'float', 'sign-on', 'commitment', 'ratios'. Your concern: you need accurate status facts, because presenting a nurse whose credentials are not ready wastes the client's time and hurts your reputation. Ground truth about the agency and offers: clients are community and teaching hospitals in several states, mainly in the South and Midwest; current openings are med-surg and tele, nights to start, three 12-hour shifts a week, ratios usually 1:5 to 1:6; the sign-on bonus is paid in installments over the commitment period and must be paid back in part if the nurse leaves early; the commitment is three years from the start date; the agency sponsors the immigrant visa and pays for relocation help; you cannot promise a visa date, because it depends on government processing and the visa bulletin; the agency does not charge the nurse any recruitment fee. Ask these questions one at a time, in order: (1) 'Have you taken your NCLEX yet, and what state are you licensed in?' (2) 'Okay, and where are you at with your VisaScreen and your English test?' (3) 'How many years of bedside do you have, and what kind of unit — are we talking med-surg, tele, ICU? What's your usual ratio?' (4) 'Are you open to relocating anywhere, and are you okay with nights?' (5) 'Cool, and last one — why the US?' Conditional behaviour: if the candidate asks you to slow down, repeat, or explain a word, do it — say it again more slowly in plain words, define the term briefly, and keep the slower pace for the rest of the call. If an answer clearly does not match the question (a sign they misunderstood), re-ask once more simply, without comment. If a status answer is vague ('almost', 'soon', 'I think'), ask 'Okay, so is it submitted, or is it approved?' or 'Do you have the actual certificate yet?' If the experience answer is vague, ask 'How many patients would you usually have on a day shift?' or 'Were the patients on heart monitors?' If the answer to 'why the US?' is only about money, ask 'Okay — anything else drawing you to the US?' Use at most one or two probes per question. After question 5, say 'That's all I need for now — any questions for me?' and answer truthfully from the ground truth; if asked about a detail not in the ground truth, say you will email it. Then close: say you will email the next steps and a profile form, thank them, and end. Use neutral acknowledgements only ('Got it', 'Okay', 'Cool, thanks'); never tell the candidate their answers were good or bad, never coach them on what to say, and never mention scoring. Keep turns short — one to three quick sentences.",
+  "learning_objectives": [
+    "state NCLEX, license, English test, and VisaScreen status accurately, including what is still pending",
+    "describe your experience in US terms such as med-surg or telemetry with your usual patient load",
+    "ask the recruiter to slow down or explain a term you don't understand",
+    "answer clearly about relocation and working nights",
+    "give a specific personal reason for working in the US",
+    "ask about the contract commitment and the sign-on bonus terms"
+  ],
+  "suggested_questions": [
+    "Sorry, could you say that a little more slowly? I want to make sure I understand — what do you mean by 'tele'?",
+    "I passed the NCLEX-RN in March, and I have an active RN license in New York. My VisaScreen application is submitted to CGFNS, but it isn't complete yet.",
+    "I have four years of experience — three years on an adult med-surg unit, usually about twelve patients on a day shift, and one year on a cardiac monitoring unit, so something like tele.",
+    "Can I ask about the contract — how long is the commitment, and what happens with the sign-on bonus if I have to leave early?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Recruiter screening calls for internationally educated nurses seeking US employment",
+    "review_status": "grounded in public information from NCSBN (NCLEX and licensure) and CGFNS (VisaScreen and credentials evaluation); immigration processes and contract terms vary by employer and change over time",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "A screening call checks eligibility facts first — NCLEX result, license state, English test, VisaScreen, years and type of experience, flexibility — before any clinical questions.",
+      "Status words matter: 'passed', 'issued', 'submitted', 'in process', and 'approved' mean different things, and recruiters need the exact one.",
+      "Korean ward names do not map automatically onto US unit types; describe the patient population, the monitoring, and the usual patient load so the recruiter can place you correctly.",
+      "Asking a fast speaker to slow down or define a term is normal and professional on a US phone call; pretending to understand is what causes problems.",
+      "Contract terms such as the length of the commitment and any repayment clause for bonuses or relocation are worth understanding clearly before signing."
+    ],
+    "diagnostic_clues": [
+      "'Where are you at with...?' asks for your current status, not a location.",
+      "'Three twelves' means three 12-hour shifts a week; 'nights to start' means the first assignment is on night shift.",
+      "'Commitment' in a recruiter's mouth means the contract length, often linked to bonus repayment.",
+      "A follow-up such as 'Is it submitted or approved?' means the first answer was too vague."
+    ],
+    "common_misconceptions": [
+      "It is polite to say 'yes' and keep going even when you did not catch a word.",
+      "Rounding up a status ('I have my VisaScreen' when it is only submitted) makes you a stronger candidate; it causes problems as soon as the client checks.",
+      "Any Korean inpatient ward counts as 'med-surg' without further explanation.",
+      "The recruiter's first offer cannot be questioned, so asking about contract terms looks ungrateful."
+    ],
+    "dangerous_errors": [
+      "Misrepresenting license, credential, or English-test status — it can end the application and damage trust with every client.",
+      "Claiming specialty experience you do not have (for example ICU), which can put you in an assignment you are not safe to take.",
+      "Speaking negatively about your current employer or colleagues in Korea.",
+      "Agreeing to contract terms you have not understood, such as a commitment or repayment clause."
+    ],
+    "management_principles": [
+      "Have your facts ready before the call: NCLEX date, license state, English test and date, VisaScreen stage, years and unit types, usual ratio.",
+      "Answer in short, factual sentences, and say plainly what is complete and what is still in progress.",
+      "Clarify jargon immediately ('Sorry, what do you mean by...?') rather than guessing.",
+      "End with one question about the contract and ask for the details in writing."
+    ],
+    "boundaries_and_exceptions": [
+      "Licensure rules for internationally educated nurses, VisaScreen requirements, accepted English tests, and immigrant-visa timelines differ by state and change over time — verify with the state board of nursing, NCSBN, and CGFNS.",
+      "Agency contracts vary widely; ethical international recruitment codes generally discourage charging nurses recruitment fees, and any contract should be read carefully (ideally with independent advice) before signing.",
+      "This scenario practises phone communication; it is not legal, immigration, or career advice."
+    ],
+    "source_refs": [
+      {
+        "title": "NCLEX — NCSBN",
+        "url": "https://www.nclex.com/"
+      },
+      {
+        "title": "CGFNS International",
+        "url": "https://www.cgfns.org/"
+      }
+    ]
+  }
+}

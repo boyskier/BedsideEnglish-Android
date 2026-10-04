@@ -1,0 +1,106 @@
+{
+  "id": "nursing_us_hipaa_phone_inquiry",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["us"],
+  "counterpart": "relative",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_bedside_care",
+  "station_minutes": 5,
+  "patient_name": "Phone call from a 'nephew' asking for test results — HIPAA-compliant handling",
+  "chief_complaint": "Handle a phone call from someone who says he is the patient's nephew and wants her CT results, protecting her privacy while staying kind and offering a real next step",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Privacy: a caller wants his aunt's CT results",
+    "task": "Bedside care",
+    "urgency": "routine",
+    "patient": "Mrs. Margaret O'Brien, 71-year-old woman, room 422, admitted two days ago for evaluation of weight loss and abdominal pain",
+    "location": "4 East med-surg unit, 11:00. You are Mrs. O'Brien's RN. The unit secretary has transferred an outside call to you.",
+    "situation": "The caller says he is Brian, Mrs. O'Brien's nephew, and he wants to know the results of her CT scan. Mrs. O'Brien is awake in her room; the hospitalist went over the CT results with her this morning.",
+    "background": [
+      "She is alert, oriented, and makes her own decisions.",
+      "On admission she chose a privacy code and named her daughter, Colleen, as the only person who may receive information by phone. Brian is not on her list.",
+      "She did not opt out of the hospital directory, so you may confirm that she is a patient on the unit — but not share medical details."
+    ],
+    "current_status": [
+      "She is in her room, comfortable, and able to take a call on her room phone."
+    ],
+    "key_data": [
+      "Unit policy: health information is given by phone only to a caller who gives the patient's privacy code and is on her contact list, or with the patient's own permission.",
+      "You cannot see or confirm who is really on the phone."
+    ],
+    "treatments": [
+      "None relevant to this call."
+    ],
+    "your_request": "Protect Mrs. O'Brien's privacy without being cold: check who is calling, explain the rule kindly, and offer Brian a real way to hear from her.",
+    "must_include": [
+      "Introduce yourself, ask who is calling and how he is related, and ask whether he has the patient's privacy code.",
+      "Acknowledge that he is worried before explaining the rules.",
+      "Explain in plain words that you cannot share test results or medical details by phone without her permission — without confirming or hinting at what the results are.",
+      "Offer a real next step: ask Mrs. O'Brien if she would like to talk to him, transfer the call to her room, or have her call him back.",
+      "Stay polite and calm when he pushes back, and end by saying what will happen next."
+    ]
+  },
+  "kickoff_text": "Hi, yeah — I'm calling about my aunt, Margaret O'Brien? I'm her nephew, Brian. She had a CT scan yesterday. Can you tell me what it showed?",
+  "persona_override": "You are Brian O'Brien, 45, Margaret O'Brien's nephew, calling from work on your lunch break. You really are her nephew and you care about her — you drive her to most of her appointments — but you are not on her contact list and you do not know her privacy code. You are worried because she sounded tired on the phone yesterday and mentioned 'a scan'. Ground truth: you do not know the results; you have never heard of a privacy code; you have not talked to your cousin Colleen (her daughter) today. Your cell number is 555-0142. Behaviour: If the nurse asks for the privacy code, say 'A code? I don't know anything about a code.' Push back twice, one at a time: first, 'Come on, I'm family — I take her to all her appointments. She'd want me to know.' Then, if the nurse holds, 'Can you at least tell me if it's good news or bad news?' If the nurse hints at the result in any way (for example 'You should come in soon', or 'It's not something to discuss on the phone' said gravely), take it as bad news: 'Oh God. So it's bad.' If the nurse shares any result or detail, thank them and say you'll call Colleen. If the nurse is curt or just says 'I can't tell you anything' with no alternative, get upset: 'Wow. Okay. Thanks for nothing.' If the nurse acknowledges your worry and offers to ask your aunt whether she'd like to talk to you, transfer you to her room, or have her call you back, calm down and accept gratefully: 'Yeah — yes, please. That'd be great.' Give your cell number if asked. Never coach the nurse. Keep turns short and natural.",
+  "learning_objectives": [
+    "ask who is calling, how they are related, and for the privacy code",
+    "acknowledge the caller's worry before explaining privacy rules",
+    "explain that you can't share test results without the patient's permission",
+    "avoid confirming or hinting at results",
+    "offer to connect the caller with the patient or have her call back"
+  ],
+  "suggested_questions": [
+    "Hi Brian, this is Hana, I'm your aunt's nurse today. I can hear you're worried about her. Do you have the privacy code she set up when she came in?",
+    "I'm sorry — to protect her privacy, I can't share test results or details about her care over the phone without her permission. That's the same for every patient here.",
+    "What I can do is go ask her if she'd like to talk to you — I can transfer you to her room phone, or she can call you back. Would that work?",
+    "Okay, I'll check with her right now. What's the best number to reach you if she wants to call you back?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Handling a phone request for patient information from a family member under HIPAA",
+    "review_status": "grounded in HHS Office for Civil Rights guidance on the HIPAA Privacy Rule, including sharing information with family members and others involved in a patient's care; privacy-code, directory and phone-disclosure procedures follow hospital policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Under the HIPAA Privacy Rule, a provider may share relevant information with family members involved in a patient's care when the patient agrees or does not object; when the patient is present and able to decide, the simplest safe step is to ask her.",
+      "On the phone you cannot verify identity, which is why many US hospitals use a patient-chosen privacy code or password and a contact list.",
+      "Protecting privacy and being kind are not in conflict: the caller should leave the call with a way to get the information — from the patient herself."
+    ],
+    "diagnostic_clues": [
+      "'Good news or bad news?' is a disclosure request; tone and hints disclose information as much as words do.",
+      "A caller's worry is real even when you cannot answer the question; acknowledging it lowers the pressure."
+    ],
+    "common_misconceptions": [
+      "HIPAA means a nurse can never talk to family members.",
+      "Family members, or the emergency contact, automatically have a right to test results.",
+      "It is kind to 'just hint' so the family can prepare."
+    ],
+    "dangerous_errors": [
+      "Sharing test results or a diagnosis with an unverified caller.",
+      "Hinting at bad news through tone or phrases like 'You should come in soon'.",
+      "Refusing coldly with no alternative, which damages trust and pushes the caller to try other staff.",
+      "Confirming that a patient is in the hospital when she has opted out of the directory."
+    ],
+    "management_principles": [
+      "Identify the caller, the relationship and the privacy code; check the patient's contact list and wishes.",
+      "Acknowledge the worry, explain the privacy rule briefly and neutrally, and do not confirm or deny results.",
+      "Offer to ask the patient, transfer the call, or arrange a call-back; results are best discussed by the provider or by the patient herself.",
+      "Document per policy if the patient adds a new contact."
+    ],
+    "boundaries_and_exceptions": [
+      "Privacy-code systems, directory opt-out, and phone-disclosure policies differ between hospitals; follow local policy.",
+      "Rules differ when the patient is incapacitated, has a legal health care agent, or is a minor, and some information has stricter protection than the general HIPAA rules — for example substance use disorder treatment records under federal 42 CFR Part 2, and mental health, HIV or reproductive health information under some state laws."
+    ],
+    "source_refs": [
+      {
+        "title": "HHS: The HIPAA Privacy Rule",
+        "url": "https://www.hhs.gov/hipaa/for-professionals/privacy/index.html"
+      },
+      {
+        "title": "HHS: Health Information Privacy (HIPAA)",
+        "url": "https://www.hhs.gov/hipaa/index.html"
+      }
+    ]
+  }
+}

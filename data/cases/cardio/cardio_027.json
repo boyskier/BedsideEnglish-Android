@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "elevated cholesterol levels and high LDL on routine health check",
   "hpi_details": "A 23-year-old male presents to the clinic with elevated cholesterol levels and high LDL found incidentally on a routine health check. He is entirely asymptomatic and denies chest pain, calf pain, or visual symptoms.",
-  "ideas": "thinks it might be related to dyslipidemia",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks the high numbers are simply because he ate a greasy double cheeseburger and fries late the evening before his morning blood draw.",
+  "concerns": "He is worried that his arteries are already clogging up and that he will suffer a sudden, fatal heart attack like his uncle did in his thirties.",
+  "expectations": "He hopes to get practical diet advice and be allowed to retest his blood in a few months before having to consider taking prescription medication.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -59,7 +59,7 @@
   "clinical_knowledge": {
     "topic": "Dyslipidaemia evaluation and management",
     "core_concepts": [
-      "Prompt recognition and structured assessment of Mixed Dyslipidaemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "Prompt recognition and structured assessment of severe isolated hypercholesterolaemia is essential for guiding targeted diagnostic workup and clinical decision-making.",
       "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
       "Standard management emphasizes confirming the complete lipid profile, assessing lifetime cardiovascular risk and secondary/familial causes, and initiating lifestyle therapy; statin intensity depends on LDL level and overall risk, adapted to individual patient risk factors and clinical severity.",
       "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
@@ -71,7 +71,7 @@
       "Relevant background/PMH: Unremarkable"
     ],
     "common_misconceptions": [
-      "Assuming that an atypical or mild presentation rules out Mixed Dyslipidaemia.",
+      "Assuming that an atypical or mild presentation rules out severe hypercholesterolaemia.",
       "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
       "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
       "Misattributing symptoms exclusively to Familial hypercholesterolaemia without completing a comprehensive diagnostic workup."
@@ -106,13 +106,13 @@
     "plan": "Confirm the complete lipid profile and assess lifetime cardiovascular risk, secondary causes, and familial hypercholesterolaemia; recommend Mediterranean-style diet and regular exercise. Select statin therapy and intensity according to LDL level, confirmed diagnosis, and overall cardiovascular risk. Counsel patient."
   },
   "learning_objectives": [
-    "Recognize clinical presentation and diagnostic markers of Mixed Dyslipidemia",
-    "Select appropriate diagnostic workup for Mixed Dyslipidemia",
+    "Recognize clinical presentation and diagnostic markers of severe isolated hypercholesterolemia (raised LDL with normal triglycerides)",
+    "Select appropriate diagnostic workup for severe isolated hypercholesterolemia",
     "Implement evidence-based management plan: assess lipid values and cardiovascular risk, address lifestyle, and select statin therapy when indicated"
   ],
   "teaching": {
     "diagnosis": "Dyslipidaemia",
-    "one_liner": "Raised LDL cholesterol and triglycerides together — no symptoms at all, but a direct driver of future heart attack and stroke.",
+    "one_liner": "Markedly raised LDL cholesterol with normal triglycerides — no symptoms at all, but a direct driver of future heart attack and stroke.",
     "differentials": [
       "Familial hypercholesterolaemia",
       "Hypothyroidism",
@@ -197,6 +197,172 @@
         "domains": [
           "ideas"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "118/76",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I had a routine health checkup recently, and they told me my cholesterol and bad LDL cholesterol were high, so I came in to get evaluated.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "They told me my total cholesterol was around 300 and the bad LDL was over 220, but the other numbers were mostly normal.",
+        "topic": "Lipid panel results"
+      },
+      {
+        "answer": "Yes, I fasted for over twelve hours before the blood draw, and I had a light dinner the evening before without any alcohol.",
+        "topic": "Fasting status before test"
+      },
+      {
+        "answer": "This was my very first time having a lipid panel checked, so I have never had abnormal numbers before or taken any cholesterol medicine.",
+        "topic": "Previous lipid screening"
+      },
+      {
+        "answer": "No, I never feel any chest tightness, chest pain, or shortness of breath, even when I jog or exercise hard.",
+        "topic": "Chest pain or shortness of breath"
+      },
+      {
+        "answer": "No, I have never experienced sudden numbness, weakness in my face or limbs, slurred speech, or vision loss in one eye.",
+        "topic": "Neurologic and vision symptoms"
+      },
+      {
+        "answer": "No, my calves never cramp or hurt when I walk, and my legs feel completely fine.",
+        "topic": "Calf pain and claudication"
+      },
+      {
+        "answer": "I don't have high blood pressure or diabetes, and I have never smoked cigarettes.",
+        "topic": "Cardiovascular risk factors"
+      },
+      {
+        "answer": "My father suffered a heart attack at age 48 and takes cholesterol pills, and my paternal uncle also has severely high cholesterol.",
+        "topic": "Family history of early heart disease"
+      },
+      {
+        "answer": "No, I haven't noticed any yellowish lumps on my eyelids, knuckles, or back of my ankles.",
+        "topic": "Yellow skin deposits or tendon lumps"
+      },
+      {
+        "answer": "No, I have not felt unusually sensitive to cold, and I haven't had weight gain, dry skin, constipation, or excessive fatigue.",
+        "topic": "Hypothyroidism symptoms"
+      },
+      {
+        "answer": "No swelling in my face or legs, no foamy urine, and my skin or eyes have never turned yellow or itchy.",
+        "topic": "Kidney and liver symptoms"
+      },
+      {
+        "answer": "No, I do not take steroids, water pills, acne medication, psychiatric drugs, or any immune-suppressing medications.",
+        "topic": "Medications affecting lipids"
+      },
+      {
+        "answer": "I eat out sometimes and eat meat, but I don't eat an excessive amount of fried food, fast food, or sweets.",
+        "topic": "Dietary habits"
+      },
+      {
+        "answer": "I jog and go to the gym about two or three times a week, and my weight and waistline have stayed steady.",
+        "topic": "Physical activity and weight"
+      },
+      {
+        "answer": "No, I have never had sudden severe upper stomach pain that went to my back, or bad nausea and vomiting.",
+        "topic": "Severe abdominal pain"
+      },
+      {
+        "answer": "I know that elevated bad cholesterol can clog up arteries over the years and raise the risk of heart attacks or strokes.",
+        "topic": "Patient understanding of risk"
+      },
+      {
+        "answer": "I'm scared that my arteries might already be clogging up and I could drop dead from a sudden heart attack like my uncle did at thirty-five.",
+        "topic": "Concerns and worries"
+      },
+      {
+        "answer": "I'm hoping you can just give me some straightforward advice on what to eat and give me a few months to fix it naturally before we even talk about pills.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I have never been diagnosed with any chronic medical conditions and have always been healthy.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, over-the-counter drugs, herbal remedies, or dietary supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications, foods, or other substances.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used electronic cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, usually two glasses of beer once or twice a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as a software engineer at an IT firm and live alone in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had a heart attack before age 50 and has high cholesterol, and my paternal uncle also has high cholesterol; my mother has no major health issues.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 118/76 mmHg, pulse 72 beats per minute, respiratory rate 14 breaths per minute, temperature 36.6°C, SpO2 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Alert, comfortable, and well-nourished; height 175 cm, weight 70 kg, BMI 22.9 kg/m², waist circumference 78 cm.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "No xanthelasma on eyelids; no corneal arcus observed.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, smooth, and without palpable nodules or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rhythm with normal S1 and S2; no heart murmurs, rubs, or gallops heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "No carotid bruits auscultated; radial, dorsalis pedis, and posterior tibial pulses are full and symmetric bilaterally.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-tender, non-distended, with no hepatosplenomegaly or palpable abdominal aortic enlargement.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No tendon xanthomas noted on the extensor tendons of the hands or Achilles tendons; no eruptive xanthomas.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial or ankle edema bilaterally.",
+        "maneuver": "extremity_edema",
+        "response": "none"
       }
     ]
   }

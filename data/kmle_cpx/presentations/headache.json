@@ -1,0 +1,57 @@
+{
+  "id": "headache",
+  "title": "머리가 아파요",
+  "english_title": "Headache",
+  "category": "신경",
+  "kmle_item": "두통",
+  "door_complaint": "머리가 아프다고",
+  "differential_groups": [
+    {"key": "primary", "label": "일차두통", "examples": ["편두통", "긴장형 두통", "군발두통", "약물과용두통"]},
+    {"key": "vascular_bleed", "label": "혈관·출혈", "examples": ["거미막밑출혈", "뇌내출혈", "경막하혈종", "거대세포동맥염", "고혈압 응급"]},
+    {"key": "infection", "label": "감염", "examples": ["세균성 수막염", "바이러스 수막염·뇌염", "부비동염"]},
+    {"key": "pressure", "label": "두개내압 변화·종양", "examples": ["뇌종양", "특발두개내압상승", "뇌척수액 저압 두통"]},
+    {"key": "other", "label": "기타", "examples": ["일산화탄소 중독", "급성 폐쇄각녹내장"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "발생 양상(갑자기 몇 초~1분 안에 최고조인지, 서서히인지)", "say": "두통이 갑자기 시작됐나요? 시작하자마자 가장 심했나요?", "tags": ["vascular_bleed"], "key": true},
+    {"id": "pattern_change", "text": "두통 기간과 빈도, 처음 겪는 두통인지, 평소 두통과 달라졌는지", "say": "언제부터 아프셨어요? 전에도 이런 두통이 있었나요? 평소 두통과 다른가요?", "tags": ["primary", "pressure"]},
+    {"id": "location", "text": "통증 위치(한쪽, 양쪽, 눈 주위, 뒷머리, 관자놀이)", "say": "머리 어디가 아프세요? 한쪽인가요, 양쪽인가요?", "tags": ["primary", "vascular_bleed"]},
+    {"id": "character_severity", "text": "통증 양상(욱신거림, 조이는 느낌, 찌르는 느낌)과 강도", "say": "어떻게 아프세요? 욱신거리나요, 꽉 조이는 느낌인가요? 얼마나 심하세요?", "tags": ["primary"]},
+    {"id": "duration_timing", "text": "한 번 아플 때 지속 시간, 하루 중 심한 때(아침에 깰 때, 밤중에 깸)", "say": "한 번 아프면 얼마나 가요? 아침에 일어날 때나 자다가 깰 정도로 아프세요?", "tags": ["primary", "pressure"]},
+    {"id": "aggravating", "text": "악화·완화 요인(움직임, 기침·힘주기, 누우면 좋아지거나 일어서면 나빠짐)", "say": "기침하거나 힘줄 때 더 아프세요? 누우면 좋아지거나 일어서면 심해지나요?", "tags": ["primary", "pressure"]},
+    {"id": "aura", "text": "두통 전 전조 증상(번쩍이는 빛, 시야가 일부 안 보임, 저림)", "say": "머리 아프기 전에 눈앞이 번쩍이거나 시야가 이상해지는 게 있나요?", "tags": ["primary"]},
+    {"id": "nausea_photophobia", "text": "메스꺼움·구토, 빛·소리에 예민함", "say": "아플 때 속이 메스껍거나 빛이나 소리가 거슬리세요?", "tags": ["primary", "infection"]},
+    {"id": "autonomic", "text": "같은 쪽 눈물·눈 충혈, 콧물, 눈꺼풀 처짐", "say": "아플 때 같은 쪽 눈에서 눈물이 나거나 콧물이 나나요?", "tags": ["primary"]},
+    {"id": "fever_neck", "text": "발열, 목이 뻣뻣함, 발진", "say": "열이 나거나 목이 뻣뻣하지는 않으세요?", "tags": ["infection", "vascular_bleed"], "key": true},
+    {"id": "neuro_deficit", "text": "마비·감각 이상, 말 어눌함, 의식 변화, 경련", "say": "팔다리에 힘이 빠지거나 말이 어눌해진 적은 없으세요?", "tags": ["vascular_bleed", "pressure"], "key": true},
+    {"id": "visual", "text": "시력 저하, 물체가 둘로 보임, 눈 통증·충혈", "say": "눈이 침침하거나 물체가 둘로 보이진 않으세요?", "tags": ["pressure", "other"]},
+    {"id": "gca_features", "text": "50세 이상에서 관자놀이 압통, 씹을 때 턱 통증, 어깨·골반 근육통", "say": "머리 빗을 때 관자놀이가 아프거나 음식을 씹을 때 턱이 아프세요?", "tags": ["vascular_bleed"], "conditional": true},
+    {"id": "head_trauma", "text": "최근 머리 외상", "say": "최근에 머리를 부딪힌 적이 있으세요?", "tags": ["vascular_bleed"]},
+    {"id": "analgesic_use", "text": "진통제 복용 빈도(한 달에 며칠)와 효과", "say": "진통제를 한 달에 며칠 정도 드세요? 효과는 있나요?", "tags": ["primary"]},
+    {"id": "triggers", "text": "유발 요인(수면 부족, 스트레스, 월경, 특정 음식, 음주)", "say": "잠을 못 자거나 스트레스를 받을 때, 생리 때 더 아프세요?", "tags": ["primary"]},
+    {"id": "bp_anticoagulant", "text": "고혈압과 혈압약 복용 여부, 항응고제 복용", "say": "혈압이 높으신가요? 약은 꾸준히 드세요? 피를 묽게 하는 약은요?", "tags": ["vascular_bleed"]},
+    {"id": "co_exposure", "text": "같은 공간에 있던 가족도 두통이 있는지, 난방기구 사용", "say": "같이 사는 가족도 머리가 아프다고 하나요? 난방기구를 쓰세요?", "tags": ["other"], "conditional": true},
+    {"id": "immune_cancer", "text": "암이나 면역저하(HIV, 면역억제제) 병력", "say": "암 치료를 받으셨거나 면역력이 떨어지는 병이나 약이 있으세요?", "tags": ["pressure", "infection"], "conditional": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압과 체온 측정", "say": "혈압과 체온을 먼저 재 보겠습니다."},
+    {"id": "meningeal_signs", "text": "목 경직 등 수막자극징후 확인", "say": "누운 상태에서 고개를 앞으로 숙여 보겠습니다. 아프면 말씀해 주세요.", "tags": ["infection", "vascular_bleed"], "key": true},
+    {"id": "neuro_exam", "text": "신경학적 진찰(뇌신경, 사지 근력·감각, 반사, 손가락-코 검사, 보행)", "say": "얼굴을 움직여 보시고, 팔다리 힘과 걸음걸이를 확인하겠습니다.", "tags": ["vascular_bleed", "pressure"]},
+    {"id": "eye_exam", "text": "안저검사(유두부종), 동공 반사, 시야 검사", "say": "눈에 불빛을 비춰서 눈 속을 보겠습니다. 한 곳을 보고 계세요.", "tags": ["pressure", "other"]},
+    {"id": "head_neck_palpation", "text": "관자놀이 동맥 압통, 부비동 압통, 목·어깨 근육 압통 확인", "say": "머리와 얼굴, 목 주변을 눌러 보겠습니다.", "tags": ["vascular_bleed", "infection", "primary"]}
+  ],
+  "education": [
+    {"id": "headache_diary", "text": "두통 일기(빈도, 유발 요인, 약 복용) 쓰기", "say": "머리가 아픈 날과 그날 상황, 드신 약을 적어 오시면 도움이 됩니다.", "tags": ["primary"]},
+    {"id": "analgesic_overuse", "text": "진통제를 자주(한 달에 10일 이상) 먹으면 오히려 두통이 늘 수 있음을 설명", "say": "진통제를 한 달에 열흘 넘게 드시면 오히려 두통이 더 잦아질 수 있어요.", "tags": ["primary"]},
+    {"id": "lifestyle", "text": "규칙적인 수면·식사, 스트레스 관리, 유발 요인 피하기", "say": "잠과 식사를 규칙적으로 하시고, 두통을 일으키는 걸 피해 보세요.", "tags": ["primary"]},
+    {"id": "warning_signs", "text": "갑작스러운 극심한 두통, 발열·목 경직, 마비·말 어눌함, 의식 변화가 생기면 즉시 응급실로 오도록 안내", "say": "갑자기 머리가 깨질 듯 아프거나 말이 어눌해지고 팔다리 힘이 빠지면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "위험 신호(벼락두통, 50세 이후 새로 생긴 두통, 신경학적 이상, 발열·목 경직, 유두부종, 면역저하·암, 외상 후 두통, 양상이 변한 두통)가 없고 전형적인 일차두통이면 뇌 영상검사가 필요 없다.",
+    "벼락두통은 즉시 비조영 뇌 CT를 찍고, 발병 6시간이 지났거나 CT가 정상이어도 의심이 남으면 요추천자나 CT 혈관조영술로 거미막밑출혈을 배제한다.",
+    "발열과 목 경직이 있으면 혈액배양 후 지체 없이 경험적 항생제를 시작하고 요추천자를 하며, 의식 저하·국소 신경학적 이상·유두부종이 있으면 요추천자 전에 CT를 찍는다.",
+    "50세 이상에서 관자놀이 통증·턱 파행·시력 증상이 있으면 거대세포동맥염을 의심해 ESR·CRP를 확인하고, 시력 보호를 위해 스테로이드를 바로 시작한다.",
+    "편두통 급성기에는 소염진통제나 트립탄을 쓰고, 발작이 잦거나 생활에 지장이 크면 예방약을 고려하며 진통제 과용을 피하도록 교육한다."
+  ],
+  "case_ids": ["neuro_002", "neuro_004", "neuro_025", "neuro_026", "neuro_023", "neuro_006", "cardio_011", "rheum_016", "neuro_016"]
+}

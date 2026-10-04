@@ -328,6 +328,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     @Volatile
     private var activeSessionAudioCapture: SessionAudioCapture? = null
 
+    // The evaluation coroutine of the session on the Analyzing screen, so "Skip analysis (keep
+    // transcript)" can stop it before it overwrites the learner's choice with `completed`.
+    private var finishingJob: Job? = null
+
     // --- Playback speed (app/voice/capabilities.py plan_playback_speed) ---
     private val _playbackSpeed = MutableStateFlow(1.0f)
     val playbackSpeed = _playbackSpeed.asStateFlow()
@@ -448,7 +452,15 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     // the current utterance; LAST_LINE_ONLY shows just the newest turn for users who find
     // reading while speaking distracting.
     // --- Database Streams ---
-    val sessions = repository.sessions.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+    // Korean CPX sessions are graded on a different scale in a different language, so every English
+    // surface reads [sessions] without them and the CPX screens read [kmleSessions].
+    private val englishSessionRows = repository.sessions.map { rows ->
+        rows.filterNot { com.example.medvoicetrainer.analysis.KmleCpx.isKmleSession(it.mode, it.analysisDomain) }
+    }
+    val sessions = englishSessionRows.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
+    val kmleSessions = repository.sessions.map { rows ->
+        rows.filter { com.example.medvoicetrainer.analysis.KmleCpx.isKmleSession(it.mode, it.analysisDomain) }
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
     val recentSessionCostSamples = repository.recentSessionCostSamples.stateIn(
         viewModelScope,
         SharingStarted.WhileSubscribed(5000),
@@ -463,7 +475,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     val listeningAttempts = repository.listeningAttempts.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
     val commitments = repository.commitments.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5000), emptyList())
     val dashboardAnalysis = combine(
-        repository.sessions,
+        englishSessionRows,
         repository.errorItems,
         repository.commitments,
     ) { sessionRows, errors, commitmentRows -> Triple(sessionRows, errors, commitmentRows) }
@@ -531,7 +543,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     private val _analysisModelsMap = MutableStateFlow<Map<String, List<String>>>(
         mapOf(
             "gemini" to listOf(
-                "gemini-3.5-flash", "gemini-3.6-flash", "gemini-3.5-pro", "gemini-3.1-pro",
+                "gemini-3.8-flash", "gemini-3.7-flash", "gemini-3.6-flash", "gemini-3.5-flash", "gemini-3.1-pro-preview",
                 "gemini-2.5-pro", "gemini-3.1-flash-lite", "gemini-3.5-flash-lite", "gemini-2.5-flash-lite"
             ),
             "openai" to listOf("gpt-5.1", "gpt-5.6-sol", "gpt-5.6-luna"),
@@ -542,7 +554,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
     private val _voiceModelsMap = MutableStateFlow<Map<String, List<String>>>(
         mapOf(
-            "gemini" to listOf("gemini-3.1-flash-live-preview", "gemini-2.0-flash-exp"),
+            "gemini" to listOf("gemini-3.8-live", "gemini-3.8-live-extended-thinking", "gemini-3.1-flash-live-preview"),
             "openai" to listOf("gpt-realtime-2.1", "gpt-4o-realtime-preview")
         )
     )
@@ -1141,6 +1153,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         speakerOrder: com.example.medvoicetrainer.analysis.ImportSpeakerOrder =
             com.example.medvoicetrainer.analysis.ImportSpeakerOrder.LEARNER_FIRST
     ) {
+        if (_importUiState.value.isAnalyzing) return
         val parsedTranscript = com.example.medvoicetrainer.analysis.TranscriptImportParser.parse(
             rawPastedText,
             speakerOrder
@@ -1238,6 +1251,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 ).let { base ->
                     listOf(
                         base,
+                        // Blank unless this is a Free Talk session: the partner was muted on
+                        // purpose, and the talk-share counts give the evaluator hard evidence.
+                        com.example.medvoicetrainer.analysis.FreeTalk.analysisNote(caseDataMap, pythonRoleTranscriptJson),
                         com.example.medvoicetrainer.analysis.CorrectionFeedbackMemory.promptNote(
                             repository.getSetting("correction_feedback_memory", "{}")
                         ),
@@ -1600,8 +1616,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     }
 
     fun updateGeminiModel(model: String) {
-        repository.saveGeminiModel(model)
-        _geminiModel.value = model
+        val normalized = com.example.medvoicetrainer.api.normalizeGeminiAnalysisModel(model)
+        repository.saveGeminiModel(normalized)
+        _geminiModel.value = normalized
     }
 
     fun updateNativeLanguage(langCode: String) {
@@ -2461,8 +2478,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         _lastCompletedAudioClips.value = emptyMap()
         _lastCompletedPresentationLaunch.value = null
         _micMuted.value = false
-        _playbackSpeed.value = _defaultPlaybackSpeed.value
-        _playbackSpeedExperimental.value = _defaultPlaybackSpeed.value > 1.5f
+        // A composed case may carry its own pace (the Survival "Playback pace" slider); every other
+        // session starts at the learner's saved default patient speed.
+        val startPlaybackSpeed = runCatching {
+            JSONObject(caseJson.ifBlank { "{}" }).optDouble("playback_speed", Double.NaN)
+        }.getOrDefault(Double.NaN).takeIf { !it.isNaN() }?.toFloat() ?: _defaultPlaybackSpeed.value
+        _playbackSpeed.value = startPlaybackSpeed
+        _playbackSpeedExperimental.value = startPlaybackSpeed > 1.5f
 
         // Start VoiceManager
         voiceManager?.stop()
@@ -2579,6 +2601,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                     updateChecklistCoverage(sessionGeneration)
                     if (mappedRole == "doctor") {
                         detectInvestigationOrders(normalizedText, sessionGeneration)
+                        detectExamManeuvers(normalizedText, sessionGeneration)
                     }
                 }
             },
@@ -2709,6 +2732,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 if (voiceSessionGeneration.get() != sessionGeneration) return@characterCallback
                 _sceneCharacter.value = role
             },
+            brevityGuard = com.example.medvoicetrainer.analysis.FreeTalk.brevityGuardFor(jsonObjectToMap(caseJson)),
         )
         voiceManager = manager
         viewModelScope.launch {
@@ -2783,7 +2807,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 if (manager.usesLiveMicrophone) {
                     VoiceSessionService.start(getApplication(), caseName)
                 }
-                if (_defaultPlaybackSpeed.value != 1.0f) manager.setSpeed(_defaultPlaybackSpeed.value)
+                if (startPlaybackSpeed != 1.0f) manager.setSpeed(startPlaybackSpeed)
             } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
                 if (openBookBriefingDecision === briefingDecision) {
                     openBookBriefingDecision = null
@@ -3332,6 +3356,13 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     fun cancelSession(endReason: String = SessionEndReason.DISCARDED) {
         val state = _activeSession.value
         val draftId = activeSessionId
+        // Skipping from the Analyzing screen: the running evaluation belongs to this session and
+        // must not later write `completed` over the learner's decision. A detached (background)
+        // analysis has already reset the active state, so it is never cancelled here.
+        if (state.isFinishing) {
+            finishingJob?.cancel()
+            finishingJob = null
+        }
         val audioCapture = activeSessionAudioCapture
         val endingGeneration = voiceSessionGeneration.get()
         val usage = synchronized(voiceUsageLock) {
@@ -3637,6 +3668,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
 
         updateChecklistCoverage(sessionGeneration)
         detectInvestigationOrders(normalizedText, sessionGeneration)
+        detectExamManeuvers(normalizedText, sessionGeneration)
 
         viewModelScope.launch {
             if (voiceSessionGeneration.get() != sessionGeneration) return@launch
@@ -3851,18 +3883,74 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             events = events,
             alreadyTriggeredIds = triggered,
         )
-        if (matches.isEmpty()) return
+        makeInvestigationResultsAvailable(matches, sessionGeneration, source = "voice")
+    }
+
+    /**
+     * Korean CPX: match a learner turn against the examination vocabulary embedded in the session
+     * snapshot. Local and deterministic like [detectInvestigationOrders]: the finding shown is the
+     * one authored in the case's `sp_script`, never one a model produced.
+     */
+    private fun detectExamManeuvers(
+        learnerTurn: String,
+        sessionGeneration: Long = voiceSessionGeneration.get(),
+    ) {
+        val current = _activeSession.value
+        if (!current.isActive || voiceSessionGeneration.get() != sessionGeneration) return
+        if (current.mode != com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE) return
+        val session = com.example.medvoicetrainer.analysis.KmleCpx.sessionCase(current.caseJson) ?: return
+        if (session.maneuvers.isEmpty()) return
+        val found = com.example.medvoicetrainer.analysis.SpScript.detect(learnerTurn, session.maneuvers.values, korean = true)
+        if (found.isEmpty()) return
         _activeSession.update { state ->
             if (!state.isActive || voiceSessionGeneration.get() != sessionGeneration) state
-            else state.copy(
-                pendingInvestigationEvents =
-                    (state.pendingInvestigationEvents + matches).distinctBy { it.id },
-            )
+            else {
+                val fresh = found.filterNot { it in state.revealedExamManeuvers }
+                if (fresh.isEmpty()) state else state.copy(revealedExamManeuvers = state.revealedExamManeuvers + fresh)
+            }
         }
-        matches.forEach { event ->
+    }
+
+    /**
+     * Manual fallback for learners whose spoken order was not transcribed or did not match an
+     * authored alias. The selectable tests still come exclusively from the active case's
+     * investigation_events, so the UI cannot request or reveal an invented result.
+     */
+    fun orderInvestigation(eventId: String) {
+        val sessionGeneration = voiceSessionGeneration.get()
+        val current = _activeSession.value
+        if (!current.isActive) return
+        val event = com.example.medvoicetrainer.analysis.InvestigationResults
+            .parseEvents(current.caseJson)
+            .firstOrNull { it.id == eventId }
+            ?: return
+        makeInvestigationResultsAvailable(listOf(event), sessionGeneration, source = "ui")
+    }
+
+    private fun makeInvestigationResultsAvailable(
+        candidates: List<com.example.medvoicetrainer.analysis.InvestigationEvent>,
+        sessionGeneration: Long,
+        source: String,
+    ) {
+        if (candidates.isEmpty()) return
+        var newlyAvailable = emptyList<com.example.medvoicetrainer.analysis.InvestigationEvent>()
+        _activeSession.update { state ->
+            if (!state.isActive || voiceSessionGeneration.get() != sessionGeneration) {
+                newlyAvailable = emptyList()
+                state
+            } else {
+                val existingIds = (state.pendingInvestigationEvents + state.revealedInvestigationEvents)
+                    .mapTo(mutableSetOf()) { it.id }
+                newlyAvailable = candidates.filter { it.id !in existingIds }.distinctBy { it.id }
+                if (newlyAvailable.isEmpty()) state else state.copy(
+                    pendingInvestigationEvents = state.pendingInvestigationEvents + newlyAvailable,
+                )
+            }
+        }
+        newlyAvailable.forEach { event ->
             recordLearningEvent(
                 "investigation_result_available",
-                mapOf("event_id" to event.id, "title" to event.title),
+                mapOf("event_id" to event.id, "title" to event.title, "source" to source),
             )
         }
     }
@@ -3962,7 +4050,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             var reason: com.example.medvoicetrainer.analysis.ReflectionPromptReason? = null
             if (existing == null) {
                 reason = reflection.automaticPromptReason(
-                    sessionsNewestFirst = repository.getAllSessionsList(),
+                    sessionsNewestFirst = repository.getAllSessionsList()
+                        .filterNot { com.example.medvoicetrainer.analysis.KmleCpx.isKmleSession(it.mode, it.analysisDomain) },
                     currentSessionId = sessionId,
                     lastAutoDateIso = repository.getSetting(reflection.LAST_AUTO_DATE_KEY, ""),
                     lastAutoSessionId = repository.getSetting(reflection.LAST_AUTO_SESSION_KEY, "0")
@@ -4009,6 +4098,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         if (evaluation.evaluationLocked || correction !in evaluation.corrections) return
         val key = correction.decisionKey()
         val previous = _correctionDecisions.value[key]
+        if (previous == decision) return
 
         val decisions = _correctionDecisions.value + (key to decision)
         _correctionDecisions.value = decisions
@@ -4352,6 +4442,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             handleUiException("reloading this session's transcript", e)
             return
         }
+        // Nothing the learner said means nothing to score. Re-finishing it would only strand an
+        // active session on finishSession's "say at least one response" error, with no microphone.
+        if (transcript.none { it.first == "doctor" && it.second.isNotBlank() }) return
         val sessionGeneration = voiceSessionGeneration.incrementAndGet()
         synchronized(voiceUsageLock) {
             activeVoiceUsageGeneration = sessionGeneration
@@ -4405,10 +4498,685 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     // already left, hours earlier in the worst case. Recovery is now one action — analyze what was
     // actually said — and starting a fresh conversation is what the Practice tab is for.
 
+    /** Provider-reported voice cost when available, otherwise the per-backend estimate. */
+    private fun sessionVoiceCost(
+        voiceUsage: VoiceApiUsage?,
+        state: ActiveSessionState,
+        durationSeconds: Int,
+        voiceBackend: String,
+    ): Double = voiceUsage?.let(CostTracker::computeVoiceCost) ?: run {
+        val patientChars = state.transcript
+            .filter { it.first == "patient" || it.first == "interviewer" }
+            .sumOf { it.second.length }
+        when (voiceBackend.lowercase()) {
+            // Live re-bills the whole session context on every turn, so the estimate
+            // has to walk the ordered turns rather than scale a character total.
+            "gemini" -> CostTracker.estimateGeminiLiveCost(
+                turns = state.transcript.map { CostTracker.VoiceTurn(it.first, it.second) },
+                durationSeconds = durationSeconds,
+                model = getVoiceModelForBackend(voiceBackend),
+                systemPromptChars = CostTracker.systemPromptCharsFor(state.caseJson),
+            ).costUsd
+            "openai" -> CostTracker.computeOpenaiVoiceCost(durationSeconds, patientChars)
+            else -> 0.0
+        }
+    }
+
+    // --- Korean CPX track ---
+
+    private val _lastKmleResult = MutableStateFlow<KmleCpxResult?>(null)
+    /** The Korean CPX result currently on screen (just finished, or opened from CPX history). */
+    val lastKmleResult = _lastKmleResult.asStateFlow()
+
+    fun dismissKmleResult() {
+        _lastKmleResult.value = null
+    }
+
+    // --- Korean CPX mock exam (모의고사) ---
+
+    /**
+     * A circuit of stations run back to back like exam day: each from a different official
+     * clinical presentation, full scope, strict clock, no study aids, and no feedback until the
+     * last station — then one summary with an estimated pass verdict.
+     */
+    data class KmleMockExam(
+        val id: String,
+        val launches: List<KmleCpxLaunch>,
+        /** Stations completed so far, in order (their session row ids). */
+        val sessionIds: List<Int> = emptyList(),
+    ) {
+        val index: Int get() = sessionIds.size
+        val finished: Boolean get() = sessionIds.size >= launches.size
+        val current: KmleCpxLaunch? get() = launches.getOrNull(index)
+    }
+
+    private val _kmleMock = MutableStateFlow<KmleMockExam?>(null)
+    val kmleMock = _kmleMock.asStateFlow()
+    private val _kmleMockPreparing = MutableStateFlow(false)
+    val kmleMockPreparing = _kmleMockPreparing.asStateFlow()
+
+    /** True while a circuit is in progress (not yet at its summary). */
+    val kmleMockRunning: Boolean get() = _kmleMock.value?.finished == false
+
+    fun startKmleMockExam(stationCount: Int, onNothingPrepared: () -> Unit = {}) {
+        if (_kmleMockPreparing.value) return
+        _kmleMockPreparing.value = true
+        viewModelScope.launch {
+            try {
+                val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+                val examId = "mock_" + System.currentTimeMillis()
+                val byItem = loadKmlePresentations().filter { it.kmleItem.isNotBlank() }.groupBy { it.kmleItem }
+                val launches = mutableListOf<KmleCpxLaunch>()
+                for (item in byItem.keys.shuffled()) {
+                    if (launches.size >= stationCount) break
+                    val station = byItem.getValue(item).random()
+                    val launch = prepareKmleCpxSession(station.id) ?: continue
+                    val scoped = kmle.withScope(launch.caseJson, kmle.SCOPE_FULL)
+                    launches += launch.copy(
+                        caseJson = kmle.withMockExam(scoped, examId, launches.size),
+                        title = "모의고사 ${launches.size + 1}번 · ${launch.title}",
+                        scope = kmle.SCOPE_FULL,
+                    )
+                }
+                _kmleMock.value = if (launches.isEmpty()) null else KmleMockExam(examId, launches)
+                if (launches.isEmpty()) onNothingPrepared()
+            } finally {
+                _kmleMockPreparing.value = false
+            }
+        }
+    }
+
+    fun abandonKmleMockExam() {
+        _kmleMock.value = null
+    }
+
+    /** Called when a mock-exam station's session is stored; returns true if it belonged to the running circuit. */
+    private fun recordKmleMockStation(caseJson: String, sessionId: Int): Boolean {
+        val mock = _kmleMock.value ?: return false
+        if (mock.finished || com.example.medvoicetrainer.analysis.KmleCpx.mockExamId(caseJson) != mock.id) return false
+        _kmleMock.value = mock.copy(sessionIds = mock.sessionIds + sessionId)
+        return true
+    }
+
+    // --- Korean CPX peer mode (친구와 역할극) ---
+
+    private val _kmlePeerLaunch = MutableStateFlow<KmleCpxLaunch?>(null)
+    /** The station two students are role-playing in person, while its screen is open. */
+    val kmlePeerLaunch = _kmlePeerLaunch.asStateFlow()
+
+    /** "transcribing" / "grading" while a recording is being processed, null otherwise. */
+    private val _kmlePeerStage = MutableStateFlow<String?>(null)
+    val kmlePeerStage = _kmlePeerStage.asStateFlow()
+    private val _kmlePeerError = MutableStateFlow<String?>(null)
+    val kmlePeerError = _kmlePeerError.asStateFlow()
+
+    fun openKmlePeer(launch: KmleCpxLaunch) {
+        _kmlePeerError.value = null
+        _kmlePeerLaunch.value = launch.copy(
+            caseJson = com.example.medvoicetrainer.analysis.KmlePeer.markPeer(launch.caseJson),
+            title = "[친구와] ${launch.title}",
+        )
+    }
+
+    fun closeKmlePeer() {
+        if (_kmlePeerStage.value != null) return
+        _kmlePeerLaunch.value = null
+        _kmlePeerError.value = null
+    }
+
+    /**
+     * Transcribe a recorded role-play with speaker labels (Gemini, audio in), then grade it with
+     * the station's normal checklist grader and store it like any CPX session. The recording is
+     * deleted only after the session row exists, so a failure can be retried from the same file.
+     */
+    fun gradeKmlePeerRecording(audio: java.io.File, durationSeconds: Int) {
+        val launch = _kmlePeerLaunch.value ?: return
+        if (_kmlePeerStage.value != null) return
+        viewModelScope.launch {
+            _kmlePeerError.value = null
+            _kmlePeerStage.value = "transcribing"
+            try {
+                val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+                val peer = com.example.medvoicetrainer.analysis.KmlePeer
+                val session = kmle.sessionCase(launch.caseJson)
+                    ?: throw IllegalStateException("이 스테이션의 채점표를 읽지 못했어요. 스테이션을 다시 골라 주세요.")
+                val geminiKey = repository.getGeminiApiKey()
+                if (geminiKey.isBlank()) {
+                    throw IllegalStateException("녹음을 받아 적으려면 Gemini API 키가 필요해요. 설정에서 무료 Gemini 키를 넣어 주세요.")
+                }
+                val bytes = withContext(Dispatchers.IO) { audio.readBytes() }
+                val rawTranscript = com.example.medvoicetrainer.api.GeminiService.generateContentWithAudioParts(
+                    apiKey = geminiKey,
+                    model = getModelForBackend("gemini"),
+                    audioParts = listOf(com.example.medvoicetrainer.api.GeminiService.InlineAudioPart(bytes, peer.AUDIO_MIME)),
+                    prompt = peer.transcriptionPrompt(session),
+                    responseSchema = peer.transcriptionSchema(),
+                    longForm = true,
+                )
+                val turns = peer.parseTranscript(rawTranscript)
+                if (turns.none { it.first == "doctor" }) {
+                    throw IllegalStateException("녹음에서 학생의사의 말을 찾지 못했어요. 휴대폰을 두 사람 사이에 두고 다시 녹음해 주세요.")
+                }
+
+                _kmlePeerStage.value = "grading"
+                var backend = _analysisBackend.value
+                var key = getApiKeyForBackend(backend)
+                if (key.isBlank()) {
+                    backend = "gemini"
+                    key = geminiKey
+                }
+                val model = getModelForBackend(backend)
+                val (system, user) = kmle.buildGradingPrompts(session, turns)
+                val (rawEval, usage) = com.example.medvoicetrainer.analysis.AnalysisEngine.evaluatePromptsWithUsage(
+                    backend = backend, apiKey = key, model = model, systemPrompt = system, userPrompt = user,
+                )
+                val root = com.example.medvoicetrainer.analysis.KmleCpxScorecard.parseModelJson(rawEval)
+                    ?: throw IllegalStateException("채점 결과를 읽지 못했어요. 다시 채점해 주세요.")
+                val card = com.example.medvoicetrainer.analysis.KmleCpxScorecard.build(session, root)
+                val analysisCost = CostTracker.computeAnalysisCost(
+                    backend, usage.inputTokens, usage.outputTokens, usage.cachedTokens, usage.modelUsed.ifBlank { model },
+                )
+                val transcriptJson = JSONArray().apply {
+                    turns.forEach { (role, text) -> put(JSONObject().put("role", role).put("text", text)) }
+                }.toString()
+                val createdAt = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss", Locale.US).format(Date())
+                val entity = SessionEntity(
+                    createdAt = createdAt,
+                    mode = kmle.SESSION_MODE,
+                    analysisDomain = kmle.ANALYSIS_DOMAIN,
+                    caseName = launch.title,
+                    caseId = launch.caseId,
+                    evalTemplate = kmle.SESSION_MODE,
+                    voiceBackend = "peer",
+                    voiceModel = null,
+                    analysisModel = usage.modelUsed.ifBlank { model },
+                    rawCaseJson = launch.caseJson,
+                    rawTranscript = transcriptJson,
+                    learnerTurnCount = turns.count { it.first == "doctor" },
+                    durationSeconds = durationSeconds,
+                    rawEvalJson = root.toString(),
+                    summaryFeedback = card.summary.ifBlank { card.overall?.let { "CPX ${it}점" } ?: "채점됨" },
+                    claudeInputTokens = usage.inputTokens,
+                    claudeOutputTokens = usage.outputTokens,
+                    claudeCachedTokens = usage.cachedTokens,
+                    claudeCostUsd = analysisCost,
+                    totalCostUsd = analysisCost,
+                    costEstimated = false,
+                    endReason = SessionEndReason.COMPLETED,
+                )
+                val id = repository.insertSession(entity).toInt()
+                withContext(Dispatchers.IO) { audio.delete() }
+                _kmlePeerLaunch.value = null
+                _lastKmleResult.value = KmleCpxResult(
+                    sessionId = id,
+                    caseName = launch.title,
+                    createdAt = createdAt,
+                    scorecard = card,
+                    transcript = turns,
+                    analyzed = true,
+                    examReview = kmle.examReview(session, turns),
+                )
+                com.example.medvoicetrainer.analysis.Telemetry.track(
+                    "kmle_cpx_peer_completed",
+                    mapOf("presentation" to session.presentation.id, "turns" to turns.size),
+                )
+            } catch (e: kotlinx.coroutines.CancellationException) {
+                throw e
+            } catch (e: Exception) {
+                _kmlePeerError.value = e.message ?: "채점하지 못했어요. 다시 시도해 주세요."
+            } finally {
+                _kmlePeerStage.value = null
+            }
+        }
+    }
+
+    @Volatile private var kmlePresentationCache: List<com.example.medvoicetrainer.analysis.KmleCpx.Presentation>? = null
+    @Volatile private var caseAssetPathCache: Map<String, String>? = null
+
+    /** Every CPX presentation shipped in `data/kmle_cpx/presentations/`, by category then title. */
+    suspend fun loadKmlePresentations(): List<com.example.medvoicetrainer.analysis.KmleCpx.Presentation> =
+        withContext(Dispatchers.IO) {
+            if (!kmlePrefsLoaded) readKmlePrefs()
+            kmlePresentationCache?.let { return@withContext it }
+            val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+            val loaded = repository.listAssetFiles(kmle.PRESENTATION_DIR)
+                .filter { it.endsWith(".json") }
+                .mapNotNull { name -> kmle.parsePresentation(repository.loadAssetFile("${kmle.PRESENTATION_DIR}/$name")) }
+                .sortedWith(compareBy({ it.category }, { it.title }))
+            kmlePresentationCache = loaded
+            loaded
+        }
+
+    @Volatile private var kmleCommonCache: com.example.medvoicetrainer.analysis.KmleCpx.Common? = null
+
+    /** The shared rubric (`data/kmle_cpx/common.json`), for the study sheets. */
+    suspend fun loadKmleCommon(): com.example.medvoicetrainer.analysis.KmleCpx.Common = withContext(Dispatchers.IO) {
+        kmleCommonCache ?: com.example.medvoicetrainer.analysis.KmleCpx.parseCommon(
+            repository.loadAssetFile(com.example.medvoicetrainer.analysis.KmleCpx.COMMON_ASSET)
+        ).also { kmleCommonCache = it }
+    }
+
+    /** The nine 기본진료술기 checklists (`data/kmle_cpx/osce/`), by group then title. */
+    suspend fun loadKmleOsceSkills(): List<com.example.medvoicetrainer.analysis.KmleOsce.Skill> = withContext(Dispatchers.IO) {
+        val osce = com.example.medvoicetrainer.analysis.KmleOsce
+        repository.listAssetFiles(osce.DIR)
+            .filter { it.endsWith(".json") }
+            .mapNotNull { osce.parse(repository.loadAssetFile("${osce.DIR}/$it")) }
+            .sortedWith(compareBy({ it.group }, { it.title }))
+    }
+
+    /** Case id → bundled asset path, from the build-generated catalog. */
+    private fun caseAssetPaths(): Map<String, String> {
+        caseAssetPathCache?.let { return it }
+        val map = runCatching {
+            val array = JSONArray(repository.loadAssetFile("case_catalog.json"))
+            (0 until array.length()).mapNotNull { i ->
+                val row = array.optJSONObject(i) ?: return@mapNotNull null
+                val id = row.optString("id")
+                val path = row.optString("asset_path")
+                if (id.isBlank() || path.isBlank()) null else id to path
+            }.toMap()
+        }.getOrDefault(emptyMap())
+        caseAssetPathCache = map
+        return map
+    }
+
+    data class KmleCpxLaunch(
+        val caseId: String,
+        val title: String,
+        val caseJson: String,
+        val doorNote: String,
+        val scope: String = com.example.medvoicetrainer.analysis.KmleCpx.SCOPE_FULL,
+    ) {
+        /** The problem sheet for this launch, as the session will store it. */
+        val situationCard: com.example.medvoicetrainer.analysis.KmleCpx.SituationCard?
+            get() = com.example.medvoicetrainer.analysis.KmleCpx.sessionCase(caseJson)?.situationCard
+    }
+
+    /**
+     * The learner's CPX practice settings: how far each station goes, whether the sheet shows the
+     * complaint (school-practice style; the national exam dropped it in 2026), whether the station
+     * clock ends the session at time like the exam, and whether performed examinations show their
+     * findings.
+     */
+    data class KmlePrefs(
+        val scope: String = com.example.medvoicetrainer.analysis.KmleCpx.SCOPE_FULL,
+        val showComplaint: Boolean = false,
+        val strictTimer: Boolean = false,
+        val showFindings: Boolean = true,
+        /** Beginner aid: the station's checklist, with model lines, in the in-station sheet. */
+        val showChecklistHint: Boolean = false,
+    )
+
+    private val _kmlePrefs = MutableStateFlow(KmlePrefs())
+    val kmlePrefs = _kmlePrefs.asStateFlow()
+    @Volatile private var kmlePrefsLoaded = false
+
+    private fun readKmlePrefs(): KmlePrefs {
+        val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+        return KmlePrefs(
+            scope = kmle.normalizeScope(repository.getSetting("kmle_cpx_scope", kmle.SCOPE_FULL)),
+            showComplaint = repository.getSetting("kmle_cpx_show_complaint", "false") == "true",
+            strictTimer = repository.getSetting("kmle_cpx_strict_timer", "false") == "true",
+            showFindings = repository.getSetting("kmle_cpx_show_findings", "true") == "true",
+            showChecklistHint = repository.getSetting("kmle_cpx_show_hint", "false") == "true",
+        ).also {
+            _kmlePrefs.value = it
+            kmlePrefsLoaded = true
+        }
+    }
+
+    private fun currentKmlePrefs(): KmlePrefs = if (kmlePrefsLoaded) _kmlePrefs.value else readKmlePrefs()
+
+    fun updateKmlePrefs(prefs: KmlePrefs) {
+        _kmlePrefs.value = prefs.copy(scope = com.example.medvoicetrainer.analysis.KmleCpx.normalizeScope(prefs.scope))
+        kmlePrefsLoaded = true
+        viewModelScope.launch(Dispatchers.IO) {
+            repository.setSetting("kmle_cpx_scope", _kmlePrefs.value.scope)
+            repository.setSetting("kmle_cpx_show_complaint", prefs.showComplaint.toString())
+            repository.setSetting("kmle_cpx_strict_timer", prefs.strictTimer.toString())
+            repository.setSetting("kmle_cpx_show_findings", prefs.showFindings.toString())
+            repository.setSetting("kmle_cpx_show_hint", prefs.showChecklistHint.toString())
+        }
+    }
+
+    /** The same launch with another practice scope (and that scope remembered for next time). */
+    fun rescopeKmleLaunch(launch: KmleCpxLaunch, scope: String): KmleCpxLaunch {
+        updateKmlePrefs(_kmlePrefs.value.copy(scope = scope))
+        return launch.copy(
+            caseJson = com.example.medvoicetrainer.analysis.KmleCpx.withScope(launch.caseJson, scope),
+            scope = com.example.medvoicetrainer.analysis.KmleCpx.normalizeScope(scope),
+        )
+    }
+
+    /** One row of the CPX "all cases" browser. Deliberately carries no diagnosis. */
+    data class KmleCaseRow(
+        val caseId: String,
+        val system: String,
+        val age: Int?,
+        val gender: String,
+        val difficulty: String,
+        val doorComplaint: String,
+        val presentationId: String,
+        val presentationTitle: String,
+    )
+
+    @Volatile private var kmleCaseIndexCache: Map<String, com.example.medvoicetrainer.analysis.KmleCpx.IndexEntry>? = null
+
+    private fun kmleCaseIndex(): Map<String, com.example.medvoicetrainer.analysis.KmleCpx.IndexEntry> {
+        kmleCaseIndexCache?.let { return it }
+        val index = com.example.medvoicetrainer.analysis.KmleCpx.parseCaseIndex(
+            repository.loadAssetFile(com.example.medvoicetrainer.analysis.KmleCpx.CASE_INDEX_ASSET)
+        )
+        kmleCaseIndexCache = index
+        return index
+    }
+
+    /** Every case a presentation can play: the ones its file lists plus every case the index files under it. */
+    suspend fun kmlePoolSizes(): Map<String, Int> = withContext(Dispatchers.IO) {
+        val index = kmleCaseIndex()
+        val paths = caseAssetPaths()
+        loadKmlePresentations().associate { p ->
+            p.id to com.example.medvoicetrainer.analysis.KmleCpx.casePool(p, index).count { it in paths }
+        }
+    }
+
+    /**
+     * Pick a case for [presentationId] and compose its Korean CPX session case. Cases the learner
+     * has not met yet for this presentation come first, so repeating a station rotates through
+     * its patients before any repeats. Null when the presentation or all its cases are missing.
+     */
+    suspend fun prepareKmleCpxSession(presentationId: String): KmleCpxLaunch? = withContext(Dispatchers.IO) {
+        val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+        val presentationText = repository.loadAssetFile("${kmle.PRESENTATION_DIR}/$presentationId.json")
+        val presentation = kmle.parsePresentation(presentationText) ?: return@withContext null
+        val index = kmleCaseIndex()
+        val paths = caseAssetPaths()
+        val candidates = kmle.casePool(presentation, index).filter { it in paths }
+        if (candidates.isEmpty()) return@withContext null
+        val playedKey = "kmle_cpx_played_$presentationId"
+        val played = repository.getSetting(playedKey, "").split(',').filter { it.isNotBlank() }.toSet()
+        val fresh = candidates.filterNot { it in played }
+        val caseId = (fresh.ifEmpty { candidates }).random()
+        val nextPlayed = if (fresh.isEmpty()) setOf(caseId) else played + caseId
+        repository.setSetting(playedKey, nextPlayed.joinToString(","))
+        // A case a station lists itself may be filed elsewhere in the index (its lead complaint
+        // fits another station better); its index door line then describes that other complaint.
+        val entry = index[caseId]?.takeIf { it.presentationId == presentation.id }
+        composeKmleLaunch(presentationText, presentation, caseId, entry?.doorComplaint.orEmpty(), entry?.speaker.orEmpty())
+    }
+
+    /** Compose a CPX session for one specific case, at the station the case index files it under. */
+    suspend fun prepareKmleCpxCase(caseId: String): KmleCpxLaunch? = withContext(Dispatchers.IO) {
+        val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+        val entry = kmleCaseIndex()[caseId]
+        val presentationId = entry?.presentationId ?: kmle.GENERAL_PRESENTATION
+        val presentationText = repository.loadAssetFile("${kmle.PRESENTATION_DIR}/$presentationId.json")
+        val presentation = kmle.parsePresentation(presentationText) ?: return@withContext null
+        composeKmleLaunch(presentationText, presentation, caseId, entry?.doorComplaint.orEmpty(), entry?.speaker.orEmpty())
+    }
+
+    private fun composeKmleLaunch(
+        presentationText: String,
+        presentation: com.example.medvoicetrainer.analysis.KmleCpx.Presentation,
+        caseId: String,
+        doorComplaint: String,
+        speaker: String,
+    ): KmleCpxLaunch? {
+        val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+        val path = caseAssetPaths()[caseId] ?: return null
+        val base = repository.loadAssetFile(path)
+        if (base.isBlank()) return null
+        val caseObj = runCatching { JSONObject(base) }.getOrNull() ?: return null
+        val age = kmle.ageOf(caseObj)
+        val gender = kmle.genderOf(caseObj)
+        val scope = currentKmlePrefs().scope
+        return KmleCpxLaunch(
+            caseId = caseId,
+            title = kmle.sessionTitle(presentation, age, gender, doorComplaint),
+            caseJson = kmle.composeCaseJson(
+                base, presentationText, repository.loadAssetFile(kmle.COMMON_ASSET), doorComplaint, speaker,
+                scope = scope,
+                maneuversJson = repository.loadAssetFile(com.example.medvoicetrainer.analysis.SpScript.MANEUVER_ASSET),
+            ),
+            doorNote = kmle.doorNote(presentation, age, gender, doorComplaint, kmle.isChild(age) || speaker == kmle.SPEAKER_GUARDIAN),
+            scope = scope,
+        )
+    }
+
+    /**
+     * Every case in the CPX index, for the "all cases" browser, in body-system then id order.
+     * Age, sex and difficulty come from the build-generated catalog, so no case file is opened.
+     */
+    suspend fun loadKmleCaseRows(): List<KmleCaseRow> = withContext(Dispatchers.IO) {
+        val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+        val titles = loadKmlePresentations().associate { it.id to it.title }
+        val catalog = runCatching {
+            val array = JSONArray(repository.loadAssetFile("case_catalog.json"))
+            (0 until array.length()).mapNotNull { array.optJSONObject(it) }.associateBy { it.optString("id") }
+        }.getOrDefault(emptyMap())
+        kmleCaseIndex().values.mapNotNull { entry ->
+            val row = catalog[entry.caseId] ?: return@mapNotNull null
+            KmleCaseRow(
+                caseId = entry.caseId,
+                system = row.optString("group"),
+                age = row.optString("age").trim().toDoubleOrNull()?.toInt(),
+                gender = when {
+                    row.optString("gender").trim().lowercase().startsWith("f") -> "female"
+                    row.optString("gender").trim().lowercase().startsWith("m") -> "male"
+                    else -> ""
+                },
+                difficulty = row.optString("difficulty").lowercase(),
+                doorComplaint = entry.doorComplaint,
+                presentationId = entry.presentationId,
+                presentationTitle = titles[entry.presentationId] ?: "기타 증상",
+            )
+        }.sortedWith(compareBy({ it.system }, { it.caseId }))
+    }
+
+    /** Re-open a stored CPX session's card; the scorecard is rebuilt from the stored case and reply. */
+    fun openKmleResult(session: com.example.medvoicetrainer.db.SessionEntity) {
+        val card = com.example.medvoicetrainer.analysis.KmleCpxScorecard.build(session.rawCaseJson, session.rawEvalJson)
+            ?: return
+        val turns = parseTranscriptTurns(session.rawTranscript)
+        _lastKmleResult.value = KmleCpxResult(
+            sessionId = session.id,
+            caseName = session.caseName,
+            createdAt = session.createdAt,
+            scorecard = card,
+            transcript = turns,
+            analyzed = !card.locked,
+            examReview = com.example.medvoicetrainer.analysis.KmleCpx.sessionCase(session.rawCaseJson)
+                ?.let { com.example.medvoicetrainer.analysis.KmleCpx.examReview(it, turns) }.orEmpty(),
+        )
+    }
+
+    /**
+     * The learner disputes one checklist verdict (speech recognition garbled a question they did
+     * ask, or the grader missed it). The correction is stored beside the grader's reply and the
+     * card is rebuilt, so every score, here and in History, reflects it.
+     */
+    fun overrideKmleItem(sessionId: Int, key: String, status: String) {
+        viewModelScope.launch {
+            try {
+                val scorecards = com.example.medvoicetrainer.analysis.KmleCpxScorecard
+                val session = withContext(Dispatchers.IO) { repository.getSessionById(sessionId) } ?: return@launch
+                val graderOnly = session.rawEvalJson?.let { raw ->
+                    scorecards.parseModelJson(raw)?.apply { remove(scorecards.OVERRIDES_KEY) }?.toString()
+                }
+                val graderStatus = scorecards.build(session.rawCaseJson, graderOnly)
+                    ?.sections?.flatMap { it.items }?.firstOrNull { it.key == key }?.status
+                val updated = scorecards.withOverride(session.rawEvalJson, key, status, graderStatus) ?: return@launch
+                val card = scorecards.build(session.rawCaseJson, updated)
+                withContext(Dispatchers.IO) { repository.updateSession(session.copy(rawEvalJson = updated)) }
+                val current = _lastKmleResult.value
+                if (current?.sessionId == sessionId && card != null) _lastKmleResult.value = current.copy(scorecard = card)
+            } catch (e: kotlinx.coroutines.CancellationException) { throw e } catch (e: Exception) {
+                handleUiException("saving your checklist correction", e)
+            }
+        }
+    }
+
+    fun deleteKmleSession(sessionId: Int) {
+        viewModelScope.launch {
+            repository.softDeleteSession(sessionId)
+            if (_lastKmleResult.value?.sessionId == sessionId) _lastKmleResult.value = null
+        }
+    }
+
+    private fun parseTranscriptTurns(rawTranscript: String): List<Pair<String, String>> = runCatching {
+        val turns = JSONArray(rawTranscript)
+        (0 until turns.length()).mapNotNull { i ->
+            val turn = turns.optJSONObject(i) ?: return@mapNotNull null
+            turn.optString("role") to turn.optString("text")
+        }
+    }.getOrDefault(emptyList())
+
+    /**
+     * Korean CPX completion: grade the transcript against the checklist embedded in the session's
+     * case snapshot, store it, and show the Korean card. Everything English-specific in
+     * [finishSession] (rubric context, pronunciation, fluency, corrections, SRS, commitments,
+     * milestones) is skipped. Throws on a failed or unreadable grading call so the caller marks
+     * the row ANALYSIS_FAILED and it can be re-graded from CPX history.
+     */
+    private suspend fun completeKmleCpxSession(
+        state: ActiveSessionState,
+        transcriptJson: String,
+        durationSeconds: Int,
+        analysisBackend: String,
+        analysisApiKey: String,
+        analysisModel: String,
+        voiceUsage: VoiceApiUsage?,
+        finishingVoiceBackend: String,
+        finishingDraftId: Int?,
+        finishingGeneration: Long,
+        audioCapture: SessionAudioCapture?,
+    ) {
+        val kmle = com.example.medvoicetrainer.analysis.KmleCpx
+        val scorecards = com.example.medvoicetrainer.analysis.KmleCpxScorecard
+        val session = kmle.sessionCase(state.caseJson)
+            ?: throw IllegalStateException("This CPX session is missing its checklist. Start the station again from the CPX screen.")
+
+        var analysisUsage: LlmUsage? = null
+        // A mock-exam station must not stall the circuit on a grading failure: it is stored
+        // ungraded (re-gradable from 기록) and the learner moves on to the next room.
+        val inMockCircuit = kmle.mockExamId(state.caseJson).let { it.isNotEmpty() && it == _kmleMock.value?.id }
+        val (rawEval, scorecard) = if (analysisApiKey.isBlank()) {
+            scorecards.lockedPlaceholder() to scorecards.build(session, null)
+        } else try {
+            val (system, user) = kmle.buildGradingPrompts(session, state.transcript)
+            val (raw, usage) = AnalysisEngine.evaluatePromptsWithUsage(
+                backend = analysisBackend,
+                apiKey = analysisApiKey,
+                model = analysisModel,
+                systemPrompt = system,
+                userPrompt = user,
+            )
+            analysisUsage = usage
+            val root = scorecards.parseModelJson(raw)
+                ?: throw Exception("The grader's reply could not be read. Your transcript is saved; retry grading from the CPX history.")
+            root.toString() to scorecards.build(session, root)
+        } catch (e: kotlinx.coroutines.CancellationException) {
+            throw e
+        } catch (e: Exception) {
+            if (!inMockCircuit) throw e
+            scorecards.lockedPlaceholder() to scorecards.build(session, null)
+        }
+
+        val analysisCost = analysisUsage?.let {
+            CostTracker.computeAnalysisCost(
+                analysisBackend,
+                it.inputTokens,
+                it.outputTokens,
+                it.cachedTokens,
+                it.modelUsed.ifBlank { analysisModel },
+            )
+        } ?: 0.0
+        val voiceCost = sessionVoiceCost(voiceUsage, state, durationSeconds, finishingVoiceBackend)
+        val completed = SessionEntity(
+            id = finishingDraftId ?: 0,
+            createdAt = state.createdAt,
+            mode = kmle.SESSION_MODE,
+            analysisDomain = kmle.ANALYSIS_DOMAIN,
+            caseName = state.caseName,
+            caseId = state.caseId,
+            evalTemplate = kmle.SESSION_MODE,
+            voiceBackend = finishingVoiceBackend,
+            voiceModel = voiceUsage?.model ?: getVoiceModelForBackend(finishingVoiceBackend),
+            analysisModel = analysisUsage?.modelUsed ?: analysisModel,
+            rawCaseJson = state.caseJson.ifBlank { "{}" },
+            rawTranscript = transcriptJson,
+            learnerTurnCount = state.transcript.count { it.first == "doctor" && it.second.isNotBlank() },
+            durationSeconds = durationSeconds,
+            rawEvalJson = rawEval,
+            // FeedbackCompletionWorker treats a blank summary as "still analysing", so never store one.
+            summaryFeedback = scorecard.summary.ifBlank {
+                scorecard.overall?.let { "CPX ${it}점" } ?: "채점되지 않음 (분석용 API 키 필요)"
+            },
+            claudeInputTokens = analysisUsage?.inputTokens ?: 0,
+            claudeOutputTokens = analysisUsage?.outputTokens ?: 0,
+            claudeCachedTokens = analysisUsage?.cachedTokens ?: 0,
+            claudeCostUsd = analysisCost,
+            voiceCostUsd = voiceCost,
+            totalCostUsd = analysisCost + voiceCost,
+            voiceInputTextTokens = voiceUsage?.inputTextTokens ?: 0,
+            voiceInputAudioTokens = voiceUsage?.inputAudioTokens ?: 0,
+            voiceOutputTextTokens = voiceUsage?.outputTextTokens ?: 0,
+            voiceOutputAudioTokens = voiceUsage?.outputAudioTokens ?: 0,
+            voiceCachedInputTextTokens = voiceUsage?.cachedInputTextTokens ?: 0,
+            voiceCachedInputAudioTokens = voiceUsage?.cachedInputAudioTokens ?: 0,
+            voiceThinkingTokens = voiceUsage?.thinkingTokens ?: 0,
+            voiceUsageExact = voiceUsage != null,
+            costEstimated = voiceUsage == null && finishingVoiceBackend in setOf("gemini", "openai"),
+            endReason = SessionEndReason.COMPLETED,
+        )
+        val completedSessionId = if (finishingDraftId != null) {
+            repository.updateSession(completed)
+            finishingDraftId
+        } else {
+            repository.insertSession(completed).toInt()
+        }
+
+        val stillOwnsUi = SessionCompletionOwnership.stillOwnsUi(finishingGeneration, voiceSessionGeneration.get())
+        val isDetachedAnalysis = detachedAnalysisGenerations.contains(finishingGeneration)
+        if (stillOwnsUi && activeSessionId == finishingDraftId) activeSessionId = null
+        audioCapture?.let { pronunciationAudioStore.cleanupSession(it.sessionId) }
+        // A mock-exam station moves on to the next room; its card waits for the circuit summary.
+        val mockStation = recordKmleMockStation(state.caseJson, completedSessionId)
+        if (stillOwnsUi && !isDetachedAnalysis && mockStation) {
+            if (activeSessionAudioCapture?.generation == finishingGeneration) activeSessionAudioCapture = null
+            _activeSession.value = ActiveSessionState()
+        } else if (stillOwnsUi && !isDetachedAnalysis) {
+            if (activeSessionAudioCapture?.generation == finishingGeneration) activeSessionAudioCapture = null
+            _lastKmleResult.value = KmleCpxResult(
+                sessionId = completedSessionId,
+                caseName = state.caseName,
+                createdAt = state.createdAt,
+                scorecard = scorecard,
+                transcript = state.transcript,
+                analyzed = analysisApiKey.isNotBlank(),
+                examReview = kmle.examReview(session, state.transcript),
+            )
+            _activeSession.value = ActiveSessionState()
+        }
+        if (isDetachedAnalysis) {
+            detachedAnalysisGenerations.remove(finishingGeneration)
+            finishingDraftId?.let { id -> _backgroundAnalysisSessionIds.value = _backgroundAnalysisSessionIds.value - id }
+            _feedbackReadyEvent.value = FeedbackReadyEvent(completedSessionId, state.caseName)
+        }
+        com.example.medvoicetrainer.analysis.Telemetry.track(
+            "kmle_cpx_completed",
+            mapOf("presentation" to session.presentation.id, "graded" to analysisApiKey.isNotBlank()),
+        )
+    }
+
     // --- Session Completion & Rubric Evaluation ---
     fun finishSession() {
         val initialState = _activeSession.value
         if (!initialState.isActive) return
+        // One run per finish: a second tap (or a KMLE time-up racing a manual finish) while the
+        // first run is still working must not start another. Only a failed run may be retried.
+        if (initialState.isFinishing && initialState.error == null) return
         if (initialState.transcript.none { it.first == "doctor" && it.second.isNotBlank() }) {
             _activeSession.value = initialState.copy(
                 error = "Say or type at least one response before finishing the session."
@@ -4442,7 +5210,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             )
         }
 
-        viewModelScope.launch {
+        finishingJob = viewModelScope.launch {
             // Declared out here so the failure path below can cancel a pronunciation pass that is
             // still in flight: once scoring has failed there is no evaluation to merge it into, and
             // letting it run on only spends the learner's audio quota on a discarded result.
@@ -4525,6 +5293,25 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                     } else current
                 }
 
+                // Korean CPX sessions have their own Korean grader and card; none of the English
+                // steps below (rubric context, pronunciation, corrections, SRS) apply to them.
+                if (state.mode == com.example.medvoicetrainer.analysis.KmleCpx.SESSION_MODE) {
+                    completeKmleCpxSession(
+                        state = state,
+                        transcriptJson = transcriptJson,
+                        durationSeconds = durationSeconds,
+                        analysisBackend = analysisBackendVal,
+                        analysisApiKey = analysisApiKey,
+                        analysisModel = analysisModel,
+                        voiceUsage = voiceUsage,
+                        finishingVoiceBackend = finishingVoiceBackend,
+                        finishingDraftId = finishingDraftId,
+                        finishingGeneration = finishingGeneration,
+                        audioCapture = audioCapture,
+                    )
+                    return@launch
+                }
+
                 // Ported from app/analysis/prompt_builder.py's build_analysis_prompt: a
                 // survival/lounge session must be scored on the everyday rubric, never the
                 // clinical one. Inferred from the case JSON snapshotted at session start plus
@@ -4578,6 +5365,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                 ).let { base ->
                     listOf(
                         base,
+                        // Blank unless this is a Free Talk session: the partner was muted on
+                        // purpose, and the talk-share counts give the evaluator hard evidence.
+                        com.example.medvoicetrainer.analysis.FreeTalk.analysisNote(caseDataMap, pythonRoleTranscriptJson),
                         com.example.medvoicetrainer.analysis.CorrectionFeedbackMemory.promptNote(
                             repository.getSetting("correction_feedback_memory", "{}")
                         ),
@@ -4766,23 +5556,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                         it.modelUsed.ifBlank { analysisModel },
                     )
                 } ?: 0.0
-                val voiceCost = voiceUsage?.let(CostTracker::computeVoiceCost) ?: run {
-                    val patientChars = state.transcript
-                        .filter { it.first == "patient" || it.first == "interviewer" }
-                        .sumOf { it.second.length }
-                    when (finishingVoiceBackend.lowercase()) {
-                        // Live re-bills the whole session context on every turn, so the estimate
-                        // has to walk the ordered turns rather than scale a character total.
-                        "gemini" -> CostTracker.estimateGeminiLiveCost(
-                            turns = state.transcript.map { CostTracker.VoiceTurn(it.first, it.second) },
-                            durationSeconds = durationSeconds,
-                            model = getVoiceModelForBackend(finishingVoiceBackend),
-                            systemPromptChars = CostTracker.systemPromptCharsFor(state.caseJson),
-                        ).costUsd
-                        "openai" -> CostTracker.computeOpenaiVoiceCost(durationSeconds, patientChars)
-                        else -> 0.0
-                    }
-                }
+                val voiceCost = sessionVoiceCost(voiceUsage, state, durationSeconds, finishingVoiceBackend)
 
                 // Fold the deterministic metrics into raw_claude_response so
                 // ProgressReportEngine.buildProgressReport (which reads
@@ -4931,7 +5705,11 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                     val (done, total) = com.example.medvoicetrainer.analysis.DemoTour.tourProgress(completed)
                     val tourComplete = com.example.medvoicetrainer.analysis.DemoTour.isTourComplete(completed)
                     val recap = com.example.medvoicetrainer.analysis.DemoTour.tourRecapStats(repository.getAllSessionsList())
-                    if (mayPresentFeedback()) {
+                    // Frequency guard: a same-day "decide later" suppresses the next automatic prompt.
+                    val showDecision = com.example.medvoicetrainer.analysis.DemoTour.shouldAutoShowDecision { key, default ->
+                        repository.getSetting(key, default)
+                    }
+                    if (mayPresentFeedback() && showDecision) {
                         _demoTourStatus.value = DemoTourStatus(
                             doneCount = done,
                             totalCount = total,
@@ -5060,6 +5838,18 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
                             mapOf("task" to task, "mode" to state.mode)
                         )
                     }
+                    // Its own event, not a third value on the one above: the Nursing track is a
+                    // beta whose whole purpose is a start/finish funnel per task family, and
+                    // folding it into team_communication_completed would make that unreadable.
+                    if (state.mode == com.example.medvoicetrainer.analysis.NursingTrack.SESSION_MODE) {
+                        val task = runCatching {
+                            JSONObject(state.caseJson).optString("nursing_task", state.mode)
+                        }.getOrDefault(state.mode)
+                        com.example.medvoicetrainer.analysis.Telemetry.track(
+                            "nursing_completed",
+                            mapOf("task" to task, "mode" to state.mode)
+                        )
+                    }
                 }
                 audioCapture?.let { pronunciationAudioStore.cleanupSession(it.sessionId) }
                 if (mayPresentFeedback()) {
@@ -5127,6 +5917,7 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
      */
     private suspend fun evaluatePostSessionMoments() {
         val freshSessions = repository.getAllSessionsList()
+            .filterNot { com.example.medvoicetrainer.analysis.KmleCpx.isKmleSession(it.mode, it.analysisDomain) }
         val freshErrorItems = repository.getAllErrorItemsList()
         val masteredCount = freshErrorItems.count { it.state == "mastered" }
         val stats = com.example.medvoicetrainer.analysis.LifetimeStatsEngine.computeLifetimeStats(freshSessions, masteredCount)
@@ -5222,17 +6013,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         else -> value
     }
 
-    private fun formatSoap(value: Any?): String {
-        if (value == null || value == JSONObject.NULL) return ""
-        if (value !is JSONObject) return value.toString().trim()
-        val preferred = listOf("subjective", "objective", "assessment", "plan")
-        val keys = preferred.filter { value.has(it) } +
-            value.keys().asSequence().filter { it !in preferred }.toList()
-        return keys.distinct().mapNotNull { key ->
-            val text = value.opt(key)?.takeUnless { it == JSONObject.NULL }?.toString()?.trim()
-            text?.takeIf { it.isNotEmpty() }?.let { "${key.uppercase(Locale.ROOT)}: $it" }
-        }.joinToString("\n")
-    }
+    // Lives in SoapNoteFormatter.kt with the display formatter it feeds, so the two halves of the
+    // note's shape stay together (and are unit-testable without a ViewModel).
+    private fun formatSoap(value: Any?): String = flattenSoapNote(value)
 
     private fun referenceSoapFromCase(caseJson: String): String = try {
         formatSoap(JSONObject(caseJson.ifBlank { "{}" }).opt("reference_soap"))
@@ -5245,7 +6028,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
         analysisDomain: String = "clinical",
         typedDemo: Boolean
     ): EvaluationResult {
-        val wordCount = state.transcript.filter { it.first == "doctor" }.sumOf { it.second.split(" ").size }
+        val wordCount = state.transcript.filter { it.first == "doctor" }
+            .sumOf { turn -> turn.second.split(Regex("\\s+")).count { it.isNotBlank() } }
         val checklistChecked = state.checklistCoverage.map { (k, v) -> k to v }
         val everyday = EvalPromptBuilder.isEverydayDomain(analysisDomain)
         val summary = if (typedDemo) {
@@ -5406,7 +6190,8 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             checklistChecked.addAll(state.checklistCoverage.map { it.key to it.value })
         }
 
-        val wordCount = state.transcript.filter { it.first == "doctor" }.sumOf { it.second.split(" ").size }
+        val wordCount = state.transcript.filter { it.first == "doctor" }
+            .sumOf { turn -> turn.second.split(Regex("\\s+")).count { it.isNotBlank() } }
         val everyday = EvalPromptBuilder.isEverydayDomain(analysisDomain)
         val misconceptionReviewJson = if (everyday) {
             "[]"
@@ -5551,6 +6336,10 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
             referenceSoap = referenceSoapFromCase(state.caseJson),
             followUpFeedbackJson = followUpFeedbackJson,
             misconceptionReviewJson = misconceptionReviewJson,
+            nursingScorecardJson = if (everyday) "{}" else {
+                com.example.medvoicetrainer.analysis.NursingScorecard.build(state.caseJson, root, state.transcript)
+                    ?.let { com.example.medvoicetrainer.analysis.NursingScorecard.toJson(it).toString() } ?: "{}"
+            },
         )
     }
 
@@ -5948,6 +6737,9 @@ class MainViewModel(application: Application) : AndroidViewModel(application) {
     /** Azure is preferred when configured; Gemini remains the automatic fallback. */
     fun isSpeakingJudgeAvailable(): Boolean =
         hasAzureSpeechCredentials() || getApiKeyForBackend("gemini").isNotBlank()
+
+    /** [judgeTransferAttempt] runs on Gemini only — Azure credentials cannot grade a transfer. */
+    fun isTransferJudgeAvailable(): Boolean = getApiKeyForBackend("gemini").isNotBlank()
 
     /**
      * Judge one recorded attempt at [targetText] for intelligibility (never accent — see
@@ -6466,6 +7258,11 @@ data class ActiveSessionState(
     val pendingInvestigationEvents: List<com.example.medvoicetrainer.analysis.InvestigationEvent> = emptyList(),
     /** Result bundles the learner opened; kept reachable from the chart button. */
     val revealedInvestigationEvents: List<com.example.medvoicetrainer.analysis.InvestigationEvent> = emptyList(),
+    /**
+     * Korean CPX: maneuver ids (`data/exam_maneuvers.json`) the learner has said they performed,
+     * in order. Their authored findings from the case's `sp_script` are shown as a study aid.
+     */
+    val revealedExamManeuvers: List<String> = emptyList(),
     // True from the moment finishSession() is called until either lastEvaluation is populated
     // (session resets) or the analysis step fails — drives the §5 "Analyzing" full-screen state
     // instead of the ordinary chat view. A non-null `error` while this is true is the retry state.
@@ -6645,6 +7442,19 @@ class SrsCorrection(
     }
 }
 
+/** A Korean CPX card on screen, either just graded or reopened from CPX history. */
+data class KmleCpxResult(
+    val sessionId: Int,
+    val caseName: String,
+    val createdAt: String,
+    val scorecard: com.example.medvoicetrainer.analysis.KmleCpxScorecard.Scorecard,
+    val transcript: List<Pair<String, String>>,
+    /** False when the session was saved without grading (no analysis key); it can be graded later. */
+    val analyzed: Boolean,
+    /** The case's scripted findings and whether the learner performed each examination. */
+    val examReview: List<com.example.medvoicetrainer.analysis.KmleCpx.ExamReviewRow> = emptyList(),
+)
+
 class EvaluationResult(
     grammarScore: Double,
     medicalAccuracy: Double,
@@ -6693,6 +7503,8 @@ class EvaluationResult(
     val isTypedDemo: Boolean = false,
     /** Transcript-grounded clinical claims that need concept repair; never used for everyday sessions. */
     misconceptionReviewJson: String = "[]",
+    /** Nursing-only feedback card (see analysis/NursingScorecard.kt); `{}` for all other modes. */
+    val nursingScorecardJson: String = "{}",
 ) {
     val wordCount: Int = run {
         require(wordCount >= 0) { "wordCount must not be negative" }
@@ -6771,6 +7583,7 @@ class EvaluationResult(
         followUpFeedbackJson: String = this.followUpFeedbackJson,
         isTypedDemo: Boolean = this.isTypedDemo,
         misconceptionReviewJson: String = this.misconceptionReviewJson,
+        nursingScorecardJson: String = this.nursingScorecardJson,
     ): EvaluationResult = EvaluationResult(
         grammarScore, medicalAccuracy, clinicalReasoning, professionalism, fluencyScore,
         summaryFeedback, soapNote, corrections, rawCorrectionsJson, wordCount, wpm,
@@ -6778,7 +7591,7 @@ class EvaluationResult(
         evaluationLocked, checklistResultsJson, historyCompleteness, iceElicited,
         empathyMarkersJson, ankiCardsJson, shadowingItemsJson, commitmentResultsJson,
         referenceSoap, fluencyMetrics, intelligibility, reliabilityBadge, followUpFeedbackJson, isTypedDemo,
-        misconceptionReviewJson,
+        misconceptionReviewJson, nursingScorecardJson,
     )
 
     operator fun component1(): Double = grammarScore
@@ -6812,6 +7625,7 @@ class EvaluationResult(
     operator fun component29(): String = followUpFeedbackJson
     operator fun component30(): Boolean = isTypedDemo
     operator fun component31(): String = misconceptionReviewJson
+    operator fun component32(): String = nursingScorecardJson
 
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
@@ -6846,7 +7660,8 @@ class EvaluationResult(
                 intelligibility == other.intelligibility &&
                 reliabilityBadge == other.reliabilityBadge &&
                 followUpFeedbackJson == other.followUpFeedbackJson &&
-                isTypedDemo == other.isTypedDemo
+                isTypedDemo == other.isTypedDemo &&
+                nursingScorecardJson == other.nursingScorecardJson
     }
 
     override fun hashCode(): Int {
@@ -6881,11 +7696,12 @@ class EvaluationResult(
         result = 31 * result + (reliabilityBadge?.hashCode() ?: 0)
         result = 31 * result + followUpFeedbackJson.hashCode()
         result = 31 * result + isTypedDemo.hashCode()
+        result = 31 * result + nursingScorecardJson.hashCode()
         return result
     }
 
     override fun toString(): String {
-        return "EvaluationResult(grammarScore=$grammarScore, medicalAccuracy=$medicalAccuracy, clinicalReasoning=$clinicalReasoning, professionalism=$professionalism, fluencyScore=$fluencyScore, summaryFeedback=$summaryFeedback, soapNote=$soapNote, corrections=$corrections, rawCorrectionsJson=$rawCorrectionsJson, wordCount=$wordCount, wpm=$wpm, fillerRate=$fillerRate, checklistChecked=$checklistChecked, reliability=$reliability, analysisDomain=$analysisDomain, caseName=$caseName, evaluationLocked=$evaluationLocked, checklistResultsJson=$checklistResultsJson, historyCompleteness=$historyCompleteness, iceElicited=$iceElicited, empathyMarkersJson=$empathyMarkersJson, ankiCardsJson=$ankiCardsJson, shadowingItemsJson=$shadowingItemsJson, commitmentResultsJson=$commitmentResultsJson, referenceSoap=$referenceSoap, misconceptionReviewJson=$misconceptionReviewJson, fluencyMetrics=$fluencyMetrics, intelligibility=$intelligibility, reliabilityBadge=$reliabilityBadge, followUpFeedbackJson=$followUpFeedbackJson, isTypedDemo=$isTypedDemo)"
+        return "EvaluationResult(grammarScore=$grammarScore, medicalAccuracy=$medicalAccuracy, clinicalReasoning=$clinicalReasoning, professionalism=$professionalism, fluencyScore=$fluencyScore, summaryFeedback=$summaryFeedback, soapNote=$soapNote, corrections=$corrections, rawCorrectionsJson=$rawCorrectionsJson, wordCount=$wordCount, wpm=$wpm, fillerRate=$fillerRate, checklistChecked=$checklistChecked, reliability=$reliability, analysisDomain=$analysisDomain, caseName=$caseName, evaluationLocked=$evaluationLocked, checklistResultsJson=$checklistResultsJson, historyCompleteness=$historyCompleteness, iceElicited=$iceElicited, empathyMarkersJson=$empathyMarkersJson, ankiCardsJson=$ankiCardsJson, shadowingItemsJson=$shadowingItemsJson, commitmentResultsJson=$commitmentResultsJson, referenceSoap=$referenceSoap, misconceptionReviewJson=$misconceptionReviewJson, fluencyMetrics=$fluencyMetrics, intelligibility=$intelligibility, reliabilityBadge=$reliabilityBadge, followUpFeedbackJson=$followUpFeedbackJson, isTypedDemo=$isTypedDemo, nursingScorecardJson=$nursingScorecardJson)"
     }
 }
 

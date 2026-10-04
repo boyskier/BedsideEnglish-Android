@@ -15,9 +15,9 @@
   "medications": "None",
   "social_hx": "Factory supervisor, non-smoker",
   "clinical_knowledge": {
-    "topic": "Thermal Burn Injury evaluation and management",
+    "topic": "Post-burn scar contracture evaluation and reconstructive management",
     "core_concepts": [
-      "Prompt recognition and structured assessment of Thermal Burn Injury is essential for guiding targeted diagnostic workup and clinical decision-making.",
+      "Prompt recognition and structured assessment of post-burn scar contracture is essential for guiding targeted diagnostic workup and clinical decision-making.",
       "A thorough clinical history, baseline risk assessment, and targeted objective testing must be synthesized rather than relying on any single symptom in isolation.",
       "Standard management emphasizes Schedule for surgical scar contracture release utilizing multiple Z-plasties (to reorient the scar vector by 90 degrees and recruit adjacent lax tissue) or thick split-thickness / full-thickness skin grafting if defect after complete incisional release is extensive, adapted to individual patient risk factors and clinical severity.",
       "Diagnostic workup and therapeutic decisions should adhere to established clinical guidelines while accounting for patient-specific comorbidities."
@@ -29,16 +29,16 @@
       "Relevant background/PMH: History of 20% TBSA burns healed with grafting"
     ],
     "common_misconceptions": [
-      "Assuming that an atypical or mild presentation rules out Thermal Burn Injury.",
+      "Assuming that an atypical or mild presentation rules out a functionally significant post-burn scar contracture.",
       "Relying solely on a single normal laboratory value or imaging result to prematurely exclude pathology.",
       "Equating temporary symptomatic relief with full resolution of the underlying condition without completing standard evaluation.",
-      "Misattributing symptoms exclusively to Chemical burn without completing a comprehensive diagnostic workup."
+      "Misattributing the restriction exclusively to hypertrophic scarring without assessing the functional contracture and reconstructive options."
     ],
     "dangerous_errors": [
       "Failing to recognize red-flag features and delaying urgent escalation or emergency intervention.",
       "Prematurely discharging or reassuring the patient before completing appropriate diagnostic assessment.",
       "Initiating empirical treatment without considering major patient contraindications or drug interactions.",
-      "Ignoring critical warning signs such as: Inhalation injury (soot in mouth, hoarseness)."
+      "Ignoring critical warning signs such as: new breathing or swallowing difficulty from neck tethering, or an anticipated difficult airway because cervical extension is mechanically restricted."
     ],
     "management_principles": [
       "Schedule for surgical scar contracture release utilizing multiple Z-plasties (to reorient the scar vector by 90 degrees and recruit adjacent lax tissue) or thick split-thickness / full-thickness skin grafting if defect after complete incisional release is extensive",
@@ -70,12 +70,12 @@
     "Outline options for reconstructive coverage after contracture excision (local transposition flaps vs full-thickness skin grafts vs free tissue transfer)"
   ],
   "teaching": {
-    "diagnosis": "Thermal Burn Injury",
-    "one_liner": "Tissue injury caused by heat exposure, requiring assessment of total body surface area (TBSA), depth, and airway involvement.",
+    "diagnosis": "Post-Burn Mentosternal Scar Contracture",
+    "one_liner": "A mature, tight scar band left by a healed deep burn that mechanically tethers the chin to the chest — an elective reconstructive problem, not acute burn care.",
     "differentials": [
-      "Chemical burn",
-      "Electrical burn",
-      "Stevens-Johnson syndrome"
+      "Hypertrophic scarring without functional contracture",
+      "Keloid scar",
+      "Post-radiation neck fibrosis"
     ],
     "red_flags": [
       "New breathing or swallowing difficulty from neck tethering",
@@ -111,6 +111,161 @@
         "say": "What activities are most limited, and do you smoke or have medical conditions that could affect healing?",
         "domains": ["social_history", "pmh"],
         "keywords": ["activities", "smoke", "healing", "diabetes"]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "130/82",
+      "hr": 76,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "A thick burn scar across my neck is pulling so tight that I can barely lift my chin or look up.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The scar started tightening about six months after my skin grafts healed, and it has gradually become thicker and stiffer over the past several months.",
+        "topic": "Onset of tightening"
+      },
+      {
+        "answer": "It runs right down the middle of my neck, from directly under my chin straight down to the top of my breastbone.",
+        "topic": "Location of scar band"
+      },
+      {
+        "answer": "It feels like a tight, rigid cable holding my head down, and I can only tilt my neck up a tiny bit before it stops me.",
+        "topic": "Severity of neck tightness"
+      },
+      {
+        "answer": "It progressively tightened over the last six months, but recently it feels like it has set in completely and stopped stretching at all.",
+        "topic": "Progression over time"
+      },
+      {
+        "answer": "Trying to look up, turning my head to check blind spots, or looking up at high machinery pulls painfully on my neck and lower lip.",
+        "topic": "Aggravating movements"
+      },
+      {
+        "answer": "Keeping my head tilted slightly downward eases the tension, but nothing really loosens or softens the tight band.",
+        "topic": "Relieving positions"
+      },
+      {
+        "answer": "I feel a tight, tugging sensation in my throat whenever I swallow large bites of solid food, but food does not get stuck.",
+        "topic": "Swallowing symptoms"
+      },
+      {
+        "answer": "No, my breathing is completely normal, and I don't feel short of breath or hear any wheezing.",
+        "topic": "Breathing difficulties"
+      },
+      {
+        "answer": "No, my voice sounds completely normal and I have not had any hoarseness.",
+        "topic": "Voice changes"
+      },
+      {
+        "answer": "It occasionally itches along the thick edges, and it aches when I try to stretch my neck, but there is no sharp pain at rest.",
+        "topic": "Pain and itching"
+      },
+      {
+        "answer": "No, there is no redness, swelling, warmth, pus, open sores, or fever.",
+        "topic": "Signs of infection"
+      },
+      {
+        "answer": "Exactly one year ago, a high-pressure steam pipe ruptured at my factory and burned my neck and upper chest.",
+        "topic": "Original burn injury"
+      },
+      {
+        "answer": "I was hospitalized at a burn center for four weeks and received split-thickness skin grafts on my neck and chest.",
+        "topic": "Prior burn treatments"
+      },
+      {
+        "answer": "I wore a neck collar and compression garment for six months and applied moisturizing silicone gel, but the tight band still formed.",
+        "topic": "Scar therapy and creams"
+      },
+      {
+        "answer": "No, I have never had any radiation treatments to my head or neck.",
+        "topic": "Radiation exposure"
+      },
+      {
+        "answer": "I cannot turn my head properly to check blind spots while driving, and at work I have to bend my entire back just to look up.",
+        "topic": "Impact on daily activities"
+      },
+      {
+        "answer": "I am worried that this thick cord is pulling my lower jaw and teeth permanently out of alignment.",
+        "topic": "Thoughts on the condition"
+      },
+      {
+        "answer": "I am terrified that it might eventually choke off my breathing or that my neck will be stuck pointing down permanently.",
+        "topic": "Fears and concerns"
+      },
+      {
+        "answer": "I want to have surgery to release this tight band and fix the scar so I can move my head freely again.",
+        "topic": "Expectations for this visit"
+      },
+      {
+        "answer": "I do not have any chronic medical conditions like diabetes, high blood pressure, or heart disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "Aside from the burn debridement and skin grafting surgeries one year ago, I have never had any other operations.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I am not taking any prescription medications, over-the-counter drugs, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications, foods, or latex.",
+        "topic": "Medication allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink one or two beers on weekend evenings, but nothing heavy.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as a factory supervisor and live at home with my wife and teenage son.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father has mild high blood pressure, but there is no family history of abnormal scarring or keloids.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 130/82 mmHg, heart rate is 76 beats per minute, respiratory rate is 16 breaths per minute, body temperature is 36.6°C, and oxygen saturation is 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Well-appearing adult male in no acute distress, sitting comfortably with his head held in slight forward neck flexion.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "A dense, linear, webbed hypertrophic scar contracture band spans from the submental region to the sternal manubrium, with surrounding skin blanching and downward distortion of the lower lip upon tension; underlying tracheal cartilage anatomy is palpable and intact without erythema or drainage.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Active and passive cervical extension is severely limited to 15 degrees past neutral due to firm soft tissue tethering, with moderate mechanical restriction during lateral rotation bilaterally.",
+        "maneuver": "joint_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Oral mucosa is moist and pink, uvula is midline, dentition is stable, and lower lip displays passive downward traction when extending the neck.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Breath sounds are clear and equal bilaterally with no stridor, wheezes, or crackles.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
       }
     ]
   }

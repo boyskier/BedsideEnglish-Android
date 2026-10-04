@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "elevated LDL 165, ASCVD risk 11.5% in smoker",
   "hpi_details": "A 23-year-old male presents to review screening labs showing an LDL of 165 mg/dL and a calculated 10-year ASCVD risk of 11.5%. He feels entirely well and denies chest pain, exertional dyspnea, or fatigue. He has smoked about a pack a day for the past 5 years.",
-  "ideas": "thinks it might be related to high cholesterol",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks his cholesterol is high simply because he eats too much greasy fast food on his late-night work shifts.",
+  "concerns": "He is worried that his arteries are already clogging up and that he will suffer a sudden early heart attack like his uncle who died in his thirties.",
+  "expectations": "He hopes to avoid taking lifelong prescription pills and be given a few months to lower his numbers naturally through diet and cutting back on smoking.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Current smoker (about 1 pack/day for 5 years), social drinker",
@@ -125,6 +125,181 @@
         "domains": [
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "118/76",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 98,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I recently had a routine health checkup for work, and they told me my cholesterol numbers came back high.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The report said my LDL cholesterol was 165, and they noted a calculated cardiovascular risk score of around 11 percent.",
+        "topic": "Details of test results"
+      },
+      {
+        "answer": "This was my very first routine checkup since starting my job, so I don't have any older cholesterol numbers to compare it to.",
+        "topic": "Previous screening results"
+      },
+      {
+        "answer": "I fasted for about twelve hours overnight before the blood draw; I was not sick, but I did smoke a cigarette a couple of hours before.",
+        "topic": "Circumstances during the test"
+      },
+      {
+        "answer": "No, I don't have a blood pressure cuff or glucose meter at home, so I haven't done any home testing.",
+        "topic": "Repeat measurements at home"
+      },
+      {
+        "answer": "No, I have been feeling completely fine with no headaches, unusual fatigue, excessive thirst, or sudden weight shifts.",
+        "topic": "Associated systemic symptoms"
+      },
+      {
+        "answer": "No, I have never had chest pain, pressure, or shortness of breath, even when taking the stairs quickly.",
+        "topic": "Chest pain or dyspnea"
+      },
+      {
+        "answer": "No, I have never had vision blurring, weakness in my face or limbs, or trouble speaking.",
+        "topic": "Neurological or visual changes"
+      },
+      {
+        "answer": "No, my urination is normal with no pain, blood, or foaming in the toilet water.",
+        "topic": "Urinary symptoms or foaming"
+      },
+      {
+        "answer": "No, I don't feel unusually cold, my skin hasn't been dry, and my bowel movements are regular.",
+        "topic": "Cold intolerance or constipation"
+      },
+      {
+        "answer": "No fever, night sweats, unexplained weight loss, enlarged glands, or coughing up blood.",
+        "topic": "Fever or constitutional symptoms"
+      },
+      {
+        "answer": "No heart racing, tremors, heavy sweating, muscle cramps, or loud snoring at night.",
+        "topic": "Palpitations, tremors, or snoring"
+      },
+      {
+        "answer": "I eat a lot of takeout like burgers, fried chicken, and pork belly, and I drink sugary soda a few times a week.",
+        "topic": "Dietary habits"
+      },
+      {
+        "answer": "I work at a desk all day and commute by subway, so I barely get any regular exercise.",
+        "topic": "Physical activity"
+      },
+      {
+        "answer": "I've smoked about a pack of cigarettes a day for the past 5 years.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I work in an office in tech support and have never been exposed to asbestos, dust, or toxic chemicals.",
+        "topic": "Occupational exposures"
+      },
+      {
+        "answer": "No, I have never broken any bones or lost height, and I have never taken steroid medications.",
+        "topic": "Bone fractures or steroid use"
+      },
+      {
+        "answer": "No, I have never had tuberculosis and have not been in contact with anyone who had it.",
+        "topic": "Tuberculosis exposure"
+      },
+      {
+        "answer": "I honestly think my numbers are only high because I've been eating burgers and greasy takeout almost every night during my late shifts.",
+        "topic": "Patient's ideas"
+      },
+      {
+        "answer": "My uncle had a sudden massive heart attack in his late thirties, and it scares me that my arteries might already be clogging up like his.",
+        "topic": "Patient's concerns"
+      },
+      {
+        "answer": "I'm really hoping I don't have to go on lifelong medication at twenty-three, and that you can give me a few months to fix this with diet and cutting down on cigarettes.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I don't have any chronic medical conditions like diabetes, high blood pressure, or kidney disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I'm not taking any prescription drugs, over-the-counter pain medicines, cold pills, or health supplements.",
+        "topic": "Current medications and supplements"
+      },
+      {
+        "answer": "I don't have any allergies to medications, foods, or anything else that I know of.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I drink socially once or twice a week, usually about two or three beers when hanging out with friends.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "My father was diagnosed with high cholesterol in his fifties, but nobody in my family had a heart attack or stroke young.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "I work as an office worker in IT and live by myself in an apartment.",
+        "topic": "Occupation and living situation"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 118/76 mmHg, pulse 72 beats per minute, respiratory rate 14 breaths per minute, temperature 36.6°C.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "No xanthelasma, arcus corneae, or conjunctival pallor; pupillary light reflexes are normal.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and mobile with no palpable nodules or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no cardiac murmurs, gallops, or rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally throughout all lung fields without wheezing, crackles, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal active bowel sounds; no audible carotid, renal, or abdominal aortic bruits.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender without palpable masses, hepatomegaly, or splenomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Radial, femoral, posterior tibial, and dorsalis pedis pulses are intact, symmetric, and normal in volume.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Skin is clear and intact without tendon xanthomas, tuberous xanthomas, eruptive lesions, or striae.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Normal spinal alignment without kyphosis, scoliosis, or midline spinal tenderness.",
+        "maneuver": "spine_exam",
+        "response": "none"
       }
     ]
   }

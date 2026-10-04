@@ -50,6 +50,17 @@ internal fun dueSrsItems(
     .sortedBy { it.dueAt }
 
 /**
+ * The mistakes shown in "All Mistakes" and exported as CSV: accepted clinical/everyday mistakes
+ * plus confirmed pronunciation items. A single pronunciation observation stays hidden (and out of
+ * the export) until it recurs in another session.
+ */
+internal fun trackedSrsItems(items: List<ErrorItemEntity>): List<ErrorItemEntity> = items.filter {
+    (it.domain in setOf("clinical", "everyday") ||
+        it.category.startsWith("pronunciation", ignoreCase = true)) &&
+        it.state != "observed"
+}
+
+/**
  * A single day's review deck is capped so a returning learner who let cards pile up meets a
  * finishable session, not an intimidating backlog (the classic SRS abandonment trap). The rest
  * stay due and surface again tomorrow. Oldest-due-first ordering means the cap never hides the
@@ -59,6 +70,16 @@ internal const val SRS_DAILY_CAP = 15
 
 /** A due card only offers a "focus round" once its pattern has at least this many due cards. */
 internal const val SRS_FOCUS_ROUND_MIN = 3
+
+/**
+ * Today's deck minus the cards already graded on this screen. A graded card moves its dueAt
+ * into the future, so it leaves the due list anyway once the DB update lands; dropping it at
+ * once lets the next card slide into the same slot instead of being skipped.
+ */
+internal fun srsRemainingDeck(
+    focusedDue: List<ErrorItemEntity>,
+    gradedKeys: Set<String>
+): List<ErrorItemEntity> = focusedDue.filter { it.key !in gradedKeys }
 
 /**
  * Group key for a card in the focus-round chips: pronunciation items collapse to "pronunciation",
@@ -132,9 +153,18 @@ fun SrsScreen(
     val scope = rememberCoroutineScope()
     var csvExportStatus by remember { mutableStateOf<String?>(null) }
     var speakingReviewMessage by remember { mutableStateOf<String?>(null) }
-    val startSpeakingReview: () -> Unit = {
+    // One build at a time: repeated taps while the review case is being built must not start a
+    // second session or stack a second dialog.
+    var speakingReviewBuilding by remember { mutableStateOf(false) }
+    val startSpeakingReview: () -> Unit = start@{
+        if (speakingReviewBuilding) return@start
+        speakingReviewBuilding = true
         scope.launch {
-            val review = viewModel.buildReviewSessionCase()
+            val review = try {
+                viewModel.buildReviewSessionCase()
+            } finally {
+                speakingReviewBuilding = false
+            }
             if (review == null) {
                 speakingReviewMessage = t(
                     "Not enough data yet — finish a few more practice sessions and I'll build a personalised drill from your specific mistakes."
@@ -172,7 +202,7 @@ fun SrsScreen(
             OutlinedButton(
                 onClick = {
                     scope.launch {
-                        val file = exportErrorItemsToCsvFile(context, errorItems)
+                        val file = exportErrorItemsToCsvFile(context, trackedSrsItems(errorItems))
                         if (file == null) {
                             csvExportStatus = t("srs.export_anki_none")
                             return@launch
@@ -277,8 +307,10 @@ private fun PracticeFlashcards(
     val focusedDue = remember(allDueItems, activeFocus) {
         if (activeFocus == null) allDueItems else allDueItems.filter { srsFocusCategory(it) == activeFocus }
     }
-    val dueItems = remember(focusedDue) { focusedDue.take(SRS_DAILY_CAP) }
-    val deferredCount = focusedDue.size - dueItems.size
+    var gradedKeys by remember { mutableStateOf(emptySet<String>()) }
+    val remainingDue = remember(focusedDue, gradedKeys) { srsRemainingDeck(focusedDue, gradedKeys) }
+    val dueItems = remember(remainingDue) { remainingDue.take(SRS_DAILY_CAP) }
+    val deferredCount = remainingDue.size - dueItems.size
     val weeklyPronunciation = remember(errorItems) { viewModel.pronunciationWeeklyProgress() }
     var currentIndex by remember { mutableStateOf(0) }
     var isRevealed by remember { mutableStateOf(false) }
@@ -334,7 +366,7 @@ private fun PracticeFlashcards(
             ) {
                 FilterChip(
                     selected = activeFocus == null,
-                    onClick = { categoryFocus = null },
+                    onClick = { categoryFocus = null; currentIndex = 0; isRevealed = false },
                     label = { Text(t("srs.focus_all")) }
                 )
                 focusCategories.forEach { (cat, count) ->
@@ -611,7 +643,8 @@ private fun PracticeFlashcards(
                                         viewModel.submitSrsAnswer(item, v.pass)
                                         verdict = null
                                         isRevealed = false
-                                        currentIndex = (safeIndex + 1) % dueItems.size
+                                        gradedKeys = gradedKeys + item.key
+                                        currentIndex = safeIndex
                                     },
                                     modifier = Modifier.fillMaxWidth()
                                 ) {
@@ -644,7 +677,7 @@ private fun PracticeFlashcards(
                     var verdict by remember {
                         mutableStateOf<com.example.medvoicetrainer.analysis.SpeakingJudgment?>(null)
                     }
-                    val judgeAvailable = remember { viewModel.isSpeakingJudgeAvailable() }
+                    val judgeAvailable = remember { viewModel.isTransferJudgeAvailable() }
                     Surface(
                         modifier = Modifier.fillMaxWidth(),
                         shape = RoundedCornerShape(12.dp),
@@ -693,7 +726,8 @@ private fun PracticeFlashcards(
                                         viewModel.submitSrsAnswer(item, v.pass)
                                         verdict = null
                                         isRevealed = false
-                                        currentIndex = (safeIndex + 1) % dueItems.size
+                                        gradedKeys = gradedKeys + item.key
+                                        currentIndex = safeIndex
                                     },
                                     modifier = Modifier.fillMaxWidth()
                                 ) {
@@ -720,7 +754,8 @@ private fun PracticeFlashcards(
                         onClick = {
                             viewModel.submitSrsAnswer(item, false)
                             isRevealed = false
-                            currentIndex = (safeIndex + 1) % dueItems.size
+                            gradedKeys = gradedKeys + item.key
+                            currentIndex = safeIndex
                         },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.error
@@ -733,7 +768,8 @@ private fun PracticeFlashcards(
                         onClick = {
                             viewModel.submitSrsAnswer(item, true)
                             isRevealed = false
-                            currentIndex = (safeIndex + 1) % dueItems.size
+                            gradedKeys = gradedKeys + item.key
+                            currentIndex = safeIndex
                         },
                         colors = ButtonDefaults.buttonColors(
                             containerColor = MaterialTheme.colorScheme.primary
@@ -809,13 +845,7 @@ private fun ErrorTrackerBrowser(
 ) {
     // Accepted clinical/everyday mistakes plus confirmed pronunciation items. A single
     // pronunciation observation remains hidden until it recurs in another session.
-    val trackedItems = remember(errorItems) {
-        errorItems.filter {
-            (it.domain in setOf("clinical", "everyday") ||
-                it.category.startsWith("pronunciation", ignoreCase = true)) &&
-                it.state != "observed"
-        }
-    }
+    val trackedItems = remember(errorItems) { trackedSrsItems(errorItems) }
     val stats = remember(trackedItems) { ErrorTrackerStats.stats(trackedItems) }
     val sortedItems = remember(trackedItems) { ErrorTrackerStats.sortedForDisplay(trackedItems) }
     val dueNow = remember(sortedItems) { sortedItems.count { ErrorTrackerStats.dueStr(it) == "due now" } }

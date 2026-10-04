@@ -1,0 +1,120 @@
+{
+  "id": "nursing_us_rapid_response_call",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Handover & escalation",
+  "nursing_pathways": ["us"],
+  "counterpart": "physician",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "nursing_sbar_escalation",
+  "station_minutes": 5,
+  "patient_name": "Rapid response call — med-surg patient with new confusion, fast breathing and low SpO2",
+  "chief_complaint": "Give the rapid response team leader a fast, complete SBAR by phone about a med-surg patient who has suddenly become confused, tachypneic and hypoxic, then read back the verbal orders",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Rapid response: new confusion, RR 28 and SpO2 87% on 4 West",
+    "task": "Handover & escalation",
+    "urgency": "urgent",
+    "patient": "Mrs. Evelyn Carter, 79-year-old woman (DOB 03/14/1947), room 412, admitted yesterday with right lower-leg cellulitis",
+    "location": "4 West med-surg unit, 15:40. You are her day-shift RN. You have just activated the rapid response team (RRT) through the operator, and the RRT hospitalist, Dr. Marcus Hale, is calling the unit phone while walking over.",
+    "situation": "At 14:00 she was alert, oriented x4 and chatting. Now she knows her name but not where she is, she is picking at her sheets, and she is breathing fast. Her SpO2 was 87% on room air when you checked it.",
+    "background": [
+      "Admitted yesterday afternoon from the ED with right lower-leg cellulitis; on IV cefazolin, last dose at 10:00.",
+      "History of type 2 diabetes and hypertension. Lives alone and is fully independent at home.",
+      "Code status in the EHR: full code. No known drug allergies.",
+      "No opioids, sedatives or sleep aids given today; her only PRN was oral acetaminophen for leg pain at 09:30."
+    ],
+    "current_status": [
+      "Vital signs now: RR 28 and labored, SpO2 87% on room air rising to 91% on 2 L nasal cannula, HR 118, BP 98/58, temp 101.3 F.",
+      "Vital signs at 14:00: RR 18, SpO2 96% on room air, HR 88, BP 132/76, temp 99.1 F.",
+      "New crackles at the right lung base. She is warm and flushed. The leg redness is unchanged, still inside the skin marking.",
+      "She has voided only about 150 mL since 08:00."
+    ],
+    "key_data": [
+      "Fingerstick glucose 164 mg/dL at 15:35.",
+      "One 20-gauge IV in the left forearm, patent and saline-locked.",
+      "Morning labs: WBC 13.8 (up from 11.2 on admission). No lactate or blood cultures have been drawn since admission."
+    ],
+    "treatments": [
+      "Done: 2 L nasal cannula per the unit oxygen protocol, head of bed raised, fingerstick glucose checked, charge nurse staying at the bedside, crash cart outside the room.",
+      "Not done yet: no new orders; no labs, cultures or imaging sent since this morning."
+    ],
+    "your_request": "In under a minute, give Dr. Hale a clear SBAR so the team arrives knowing how sick she is, then read back any verbal orders he gives.",
+    "must_include": [
+      "Identify yourself, the unit and room, and the patient with two identifiers (name and date of birth).",
+      "Lead with the acute change: new confusion compared with her baseline at 14:00, plus the current vital signs — not just 'she doesn't look good'.",
+      "Give the key background in one or two sentences: cellulitis on IV antibiotics, diabetes, full code.",
+      "State your assessment and concern in words — for example, that you are worried she may be becoming septic or has a new breathing problem — without making a diagnosis, and say what you need from the team.",
+      "Say what you have already done (oxygen, head of bed, glucose, IV access) so the team does not repeat it.",
+      "Read back any verbal orders before ending the call."
+    ]
+  },
+  "kickoff_text": "This is Dr. Hale with rapid response, I'm heading up to 4 West now. Give me the quick version — what's going on?",
+  "persona_override": "You are Dr. Marcus Hale, the hospitalist carrying the rapid response pager this afternoon. You are walking briskly to 4 West and calling the unit phone to get a thirty-second picture before you arrive. You are calm, fast and focused; you respect a nurse who gets to the point and you have no patience for a long story. Ground truth: Mrs. Evelyn Carter, 79, DOB 03/14/1947, room 412, admitted yesterday with right lower-leg cellulitis, on IV cefazolin (last dose 10:00); type 2 diabetes and hypertension; full code; no known drug allergies. At 14:00 she was alert and oriented x4 with RR 18, SpO2 96% on room air, HR 88, BP 132/76, temp 99.1 F. Now she is oriented to name only and picking at her sheets; RR 28 and labored; SpO2 87% on room air, 91% on 2 L nasal cannula; HR 118; BP 98/58; temp 101.3 F; new crackles at the right base; about 150 mL of urine since 08:00; fingerstick glucose 164; WBC 13.8 this morning; one 20-gauge IV in the left forearm; no opioids or sedatives today; charge nurse at the bedside. Behaviour: If the learner opens with who they are, the patient, and the acute change with numbers, say 'Okay, I'm two minutes out' and ask one or two focused questions, choosing from: 'Is she full code?', 'What was her sugar?', 'Has she had anything sedating today?', 'What IV access does she have?' If the learner says she is 'confused' or 'altered' without a baseline, ask 'Is that new? What was she like this morning?' If the learner starts with a long admission history before the vital signs, cut in once: 'Sorry — how sick is she right now? Give me her vitals.' If the learner gives an SpO2 on oxygen without saying what it was on room air, ask 'Is that on oxygen? What was she on room air?' If the learner gives numbers but no concern, ask 'So what do you think is going on?' If the learner never says what they need, ask 'What do you need from me?' Near the end, give verbal orders once, in one breath: 'Titrate her oxygen to keep her sats at 92 percent or above, draw two sets of blood cultures and a lactate, and get a stat portable chest x-ray — I'll put the orders in when I get there.' If the learner reads them back correctly, say 'That's right, see you in two.' If the learner reads back an error (for example the wrong saturation target or one set of cultures instead of two), correct it plainly. If the learner only says 'okay' or 'got it', do not ask for a read-back — say 'See you in two' and end the call. Never state the diagnosis yourself and never teach SBAR; this is a phone call, you are not at the bedside yet. Keep every turn to one or two short sentences.",
+  "learning_objectives": [
+    "open a rapid response call with your name, unit, room, and the patient's name and date of birth",
+    "lead with the acute change in mental status and the current vital signs",
+    "compare the new findings with the patient's baseline from earlier in the shift",
+    "give the SpO2 on room air and on oxygen",
+    "state a concern that the patient may be septic or deteriorating, within nursing scope",
+    "read back verbal orders before hanging up"
+  ],
+  "suggested_questions": [
+    "Dr. Hale, this is Min-ji, the RN on 4 West — I'm calling about Evelyn Carter in 412, date of birth March 14, 1947. She has new confusion, she's breathing 28 a minute, and her sat was 87 percent on room air.",
+    "At two o'clock she was alert and oriented times four; now she only knows her name. Heart rate's 118, pressure's 98 over 58, and she's febrile at 101.3.",
+    "She came in yesterday with cellulitis, she's on IV cefazolin, she's diabetic, and she's a full code. I'm worried she's getting septic or has something new going on in her lungs — she has new crackles at the right base.",
+    "I've put her on 2 liters and she's up to 91, head of bed's up, and her sugar is 164. Let me read that back: titrate oxygen to keep sats 92 or above, two sets of blood cultures, a lactate, and a stat portable chest x-ray."
+  ],
+  "clinical_knowledge": {
+    "topic": "Activating and briefing a rapid response team for an acutely deteriorating med-surg patient",
+    "review_status": "grounded in AHRQ TeamSTEPPS SBAR, AHRQ PSNet guidance on rapid response systems, and CDC hospital sepsis guidance; RRT activation criteria, oxygen targets, and sepsis workups follow local protocols",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Rapid response teams exist so bedside nurses can bring critical-care expertise to a patient before a cardiac arrest; in most US hospitals any staff member can activate one, and 'nurse is worried' is itself a calling criterion.",
+      "An acute change in mental status is one of the most important early signs of deterioration and is easily dismissed in an older patient as 'just confusion'.",
+      "The responding clinician needs severity first — what changed and the numbers — then only as much background as will change what they do."
+    ],
+    "diagnostic_clues": [
+      "New confusion with tachypnea, fever, a soft blood pressure, tachycardia and low urine output in a patient with a known infection is a pattern that should raise concern for sepsis.",
+      "Hypoxia with new crackles could reflect pneumonia, aspiration or fluid overload; the nurse reports the findings and the team works out the cause.",
+      "A fingerstick glucose that is not low and the absence of any sedating medication help the team quickly set aside two common reversible causes of acute confusion."
+    ],
+    "common_misconceptions": [
+      "An older patient who becomes confused in the afternoon is just 'sundowning' and can wait for the next set of vital signs.",
+      "You need a physician's permission, or the primary team's agreement, before calling the rapid response team.",
+      "The briefing should include the full admission history so the team has context before hearing the problem."
+    ],
+    "dangerous_errors": [
+      "Describing the patient as 'a little confused' without saying it is new or what her baseline was.",
+      "Reporting the SpO2 on oxygen without saying it was 87% on room air, which makes her sound less sick than she is.",
+      "Ending the call without reading back the verbal orders.",
+      "Delaying activation to repeat vital signs when RRT criteria are already met."
+    ],
+    "management_principles": [
+      "Activate early: meeting any RRT criterion, or being worried, is enough — you do not need to know the cause.",
+      "Situation first: who you are, who the patient is, what changed, and how sick she is now; then background, assessment, and a clear request.",
+      "Have code status, allergies, glucose, IV access and recent medications ready — these are the first questions the team asks.",
+      "Close the loop on verbal orders with a complete read-back, and document them per policy."
+    ],
+    "boundaries_and_exceptions": [
+      "RRT activation criteria (respiratory rate, SpO2, heart rate, blood pressure and mental-status thresholds), who responds, and how the team is paged vary by hospital.",
+      "Oxygen titration targets, blood culture and lactate practices, and whether nurses may start oxygen under a standing protocol are institution-specific; the numbers in this scenario are illustrative.",
+      "Verbal orders are discouraged outside urgent situations; local policy defines when they are accepted and how they are documented and co-signed."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS SBAR Technique",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html"
+      },
+      {
+        "title": "AHRQ Patient Safety Network: Rapid Response Systems",
+        "url": "https://psnet.ahrq.gov/primer/rapid-response-systems"
+      },
+      {
+        "title": "CDC: Sepsis",
+        "url": "https://www.cdc.gov/sepsis/index.html"
+      }
+    ]
+  }
+}

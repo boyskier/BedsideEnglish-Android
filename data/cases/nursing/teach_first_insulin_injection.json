@@ -1,0 +1,106 @@
+{
+  "id": "nursing_teach_first_insulin_injection",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Patient education",
+  "nursing_pathways": ["uk_au", "us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_patient_education",
+  "patient_name": "Teaching a newly diagnosed patient her first self-administered insulin injection",
+  "chief_complaint": "Coach an anxious, newly diagnosed patient through giving herself her first insulin injection and recognizing a low blood sugar",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "First insulin injection: newly diagnosed patient, needle-anxious",
+    "task": "Patient education",
+    "urgency": "routine",
+    "patient": "Ms. Grace Lim, 41-year-old woman, newly started on insulin during this admission",
+    "location": "Medical ward, before her evening meal; she is due to give her own injection for the first time with you supervising",
+    "situation": "She has watched you give the injections for two days and is due to do it herself tonight. She is visibly nervous and has just said she does not think she can do it.",
+    "background": [
+      "Newly diagnosed diabetes requiring insulin, started during this admission.",
+      "She has never given herself an injection and describes herself as frightened of needles.",
+      "She lives with her teenage son and does the family cooking."
+    ],
+    "current_status": [
+      "Clinically well, eating normally, and due to be discharged in the next few days once she can manage her own injections.",
+      "She is tearful and keeps saying 'I'll get it wrong'.",
+      "The insulin pen and everything she needs are on the table in front of her."
+    ],
+    "key_data": [
+      "The specific dose, timing, and device instructions are on her chart and in the manufacturer's leaflet — follow those, not a remembered number.",
+      "She has not yet been taught to recognize a low blood sugar, which is the single most important safety topic before discharge.",
+      "She has an appointment with the diabetes specialist nurse booked for after discharge."
+    ],
+    "treatments": [
+      "Insulin as prescribed on her chart, with blood-glucose monitoring as directed by the diabetes team."
+    ],
+    "your_request": "Get her through her first self-injection tonight, and make sure she can recognize and treat a low blood sugar before she goes home.",
+    "must_include": [
+      "Acknowledge how she is feeling in words before moving on to the task.",
+      "Find out what specifically she is afraid of, rather than reassuring her generally.",
+      "Break the injection into small, clearly signposted steps she can follow one at a time.",
+      "Teach the warning signs of a low blood sugar and exactly what she should do about it.",
+      "A teach-back: have her tell you back the steps and what she would do if she felt shaky and sweaty."
+    ]
+  },
+  "kickoff_text": "I've been watching you do it, but I really don't think I can stick a needle in myself. What if I do it wrong?",
+  "persona_override": "You are Grace Lim, a 41-year-old woman newly started on insulin, about to give yourself your first injection with the nurse supervising. You are frightened and close to tears, and you keep saying you will get it wrong. Your real fear, which you will only name if the nurse asks what specifically worries you, is not the needle itself — it is that you will give the wrong amount and hurt yourself, and that you will have to do this alone at home in front of your teenage son. Ground truth you do not know yet: what a low blood sugar feels like and what to do about it. If the nurse acknowledges your feelings first and breaks the task into small steps, you gradually calm down, ask one nervous question mid-way ('is that far enough in?'), and complete it. If the nurse jumps straight to instructions without acknowledging how you feel, stay stuck — say 'I just can't' and do not pick up the pen until they do acknowledge it. If the nurse gives you all the steps in one long block, say 'sorry, can you say that again? I've already lost it.' If the nurse asks you to repeat the steps back, do it naturally and imperfectly, leaving out one step so there is a real gap to correct. Never quote a dose or unit number — you do not know it and you would not guess. Do not become confident too quickly; this is your first time.",
+  "learning_objectives": [
+    "acknowledge and name a patient's fear before starting a procedural teaching task",
+    "elicit the specific fear rather than offering general reassurance",
+    "chunk a procedure into small, signposted steps a frightened patient can follow",
+    "teach hypoglycaemia recognition and response as a named safety topic",
+    "use teach-back on both the procedure and the safety information",
+    "coach without taking over the task from the patient"
+  ],
+  "suggested_questions": [
+    "It's completely normal to feel like that the first time — most people do. Can I ask what worries you most about it?",
+    "Let's do it in small steps and I'll stay right here. We'll do one step at a time and you tell me when you're ready for the next one.",
+    "The other thing I want you to know before you go home is what a low blood sugar feels like — shaky, sweaty, suddenly hungry or irritable — and what to do about it straight away.",
+    "So I know I've explained it clearly — can you talk me through the steps you'd do at home, and what you'd do if you felt shaky and sweaty?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Teaching a newly diagnosed, needle-anxious patient to self-administer insulin and recognize hypoglycaemia",
+    "review_status": "grounded in AHRQ teach-back guidance and general diabetes self-management education principles; the specific insulin, dose, device technique, and glucose targets must follow the prescription, the device instructions, and local diabetes-service policy",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "Procedural teaching to a frightened patient fails on the emotion before it fails on the content: unacknowledged fear blocks learning regardless of how clear the instructions are.",
+      "Chunking and signposting — one step at a time, with the patient controlling the pace — is what makes a first self-injection achievable.",
+      "Hypoglycaemia recognition is the highest-priority safety topic for a patient newly started on insulin, and is separate from injection technique."
+    ],
+    "diagnostic_clues": [
+      "Shakiness, sweating, sudden hunger, irritability, and difficulty concentrating are common early symptoms of a low blood sugar that patients can be taught to recognize."
+    ],
+    "common_misconceptions": [
+      "General reassurance ('you'll be fine, it doesn't hurt') addresses a patient's fear.",
+      "Demonstrating the injection well is sufficient teaching without the patient performing it under supervision.",
+      "Injection technique is the priority and hypoglycaemia education can wait for the specialist nurse."
+    ],
+    "dangerous_errors": [
+      "Discharging a patient newly started on insulin without teaching hypoglycaemia recognition and treatment.",
+      "Taking over and giving the injection because the patient is distressed, so they leave hospital having never done it themselves.",
+      "Confirming understanding by asking 'okay?' rather than having the patient demonstrate and restate."
+    ],
+    "management_principles": [
+      "Acknowledge the emotion, elicit the specific fear, then teach in small steps at the patient's pace.",
+      "Separate the procedural teaching from the safety teaching so neither is lost in the other.",
+      "Confirm both with teach-back before discharge, and arrange specialist follow-up."
+    ],
+    "boundaries_and_exceptions": [
+      "Insulin types, doses, injection technique, site rotation, storage, and glucose targets are individual to the prescription and the device, and are set by the diabetes team — not by this scenario.",
+      "This scenario practises the communication and coaching of insulin teaching; it is not a source of insulin dosing or technique guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ Health Literacy Universal Precautions Toolkit: Use the Teach-Back Method",
+        "url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html"
+      },
+      {
+        "title": "CDC Diabetes Self-Management Education and Support",
+        "url": "https://www.cdc.gov/diabetes/php/dsmes-toolkit/index.html"
+      }
+    ]
+  }
+}

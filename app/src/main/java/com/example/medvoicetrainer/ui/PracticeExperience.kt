@@ -6,7 +6,13 @@ package com.example.medvoicetrainer.ui
  */
 enum class PracticeExperience(val storageValue: String) {
     ALL_FEATURES("all_features"),
-    EVERYDAY_ENGLISH("everyday_english");
+    EVERYDAY_ENGLISH("everyday_english"),
+
+    /**
+     * 한국 의사국시 CPX (한국어): the Korean-language track. Home becomes the CPX station picker
+     * and History its own score history; the English tools are hidden, not removed.
+     */
+    KOREAN_CPX("korean_cpx");
 
     companion object {
         const val SETTING_KEY = "practice_experience"

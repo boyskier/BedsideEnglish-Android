@@ -13,7 +13,14 @@ import java.nio.ByteBuffer
 import java.nio.ByteOrder
 import java.nio.charset.StandardCharsets
 
-class OpenAIRealtimeClient(private val apiKey: String) : VoiceClient {
+class OpenAIRealtimeClient(
+    private val apiKey: String,
+    /**
+     * ISO-639-1 hint for the learner's speech transcription, or blank to let the model detect it.
+     * Only the Korean CPX track sets it ("ko"); every English mode leaves it blank, as before.
+     */
+    private val transcriptionLanguage: String = "",
+) : VoiceClient {
     private data class QueuedFrames(
         val frames: List<String>,
         val audioBytes: Int = 0,
@@ -240,7 +247,10 @@ class OpenAIRealtimeClient(private val apiKey: String) : VoiceClient {
                             put("type", "audio/pcm")
                             put("rate", OPENAI_SAMPLE_RATE)
                         })
-                        put("transcription", JSONObject().put("model", "gpt-4o-mini-transcribe"))
+                        put("transcription", JSONObject().apply {
+                            put("model", "gpt-4o-mini-transcribe")
+                            if (transcriptionLanguage.isNotBlank()) put("language", transcriptionLanguage)
+                        })
                         put("turn_detection", JSONObject().apply {
                             put("type", "server_vad")
                             put("threshold", 0.5)

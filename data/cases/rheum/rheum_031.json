@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "acute knee pain, swelling, and chondrocalcinosis on X-ray",
   "hpi_details": "A 35-year-old male presents to the clinic with acute knee pain, swelling, and chondrocalcinosis on x-ray. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to pseudogout",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks he tore his meniscus or damaged a knee ligament while jogging on hard pavement.",
+  "concerns": "He is worried that he will need knee surgery and be stuck on crutches, making his daily commute to work impossible.",
+  "expectations": "He hopes the doctor will drain the fluid from his swollen knee to relieve the pressure and provide a supportive brace.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -118,6 +118,169 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "122/76",
+      "hr": 76,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "My right knee suddenly swelled up and started hurting terribly two days ago, and it's been getting worse.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It's only in my right knee. None of my other joints have any pain or swelling.",
+        "topic": "Location and number of joints"
+      },
+      {
+        "answer": "It started suddenly two days ago without warning, and the swelling and pain have gradually intensified.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "It's a severe, throbbing deep ache. On a scale of one to ten, it's about an eight.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "Yes, the knee is noticeably swollen, reddish, and feels hot compared to my left knee.",
+        "topic": "Swelling, redness, and warmth"
+      },
+      {
+        "answer": "It feels stiff, especially when I wake up, but it really stays stiff and painful all day rather than loosening up.",
+        "topic": "Morning stiffness"
+      },
+      {
+        "answer": "Bending the knee or standing on it makes it much worse. Resting it elevated with an ice pack helps a little bit.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "I can barely put any weight on it and have to limp. Climbing stairs is impossible right now.",
+        "topic": "Weight bearing and mobility"
+      },
+      {
+        "answer": "No, I haven't had any high fevers or shaking chills at all.",
+        "topic": "Fever or chills"
+      },
+      {
+        "answer": "No, I didn't bump or twist it, there was no popping sound, and it hasn't caught or locked up.",
+        "topic": "Trauma and mechanical symptoms"
+      },
+      {
+        "answer": "No, I have never had a joint swell up or hurt like this before.",
+        "topic": "Prior joint episodes"
+      },
+      {
+        "answer": "I've felt unusually tired and worn down over the last couple of days, but I haven't lost any weight.",
+        "topic": "Fatigue and systemic symptoms"
+      },
+      {
+        "answer": "No, I don't have any skin rashes, scalp patches, mouth sores, or eye redness.",
+        "topic": "Rash and autoimmune symptoms"
+      },
+      {
+        "answer": "No, my back feels fine in the morning, and I don't have any heel pain or sausage-like swelling in my fingers or toes.",
+        "topic": "Back pain and heel pain"
+      },
+      {
+        "answer": "No, I haven't had diarrhea, burning when I urinate, penile discharge, or any sore throat.",
+        "topic": "Recent infections"
+      },
+      {
+        "answer": "I had a beer over the weekend, but I haven't had large amounts of alcohol, heavy meat, or seafood, and I don't take water pills.",
+        "topic": "Diet and alcohol triggers"
+      },
+      {
+        "answer": "No, I've never had any joint injections, knee surgeries, or prosthetic implants.",
+        "topic": "Joint injections and procedures"
+      },
+      {
+        "answer": "I have been in a monogamous relationship with my partner for three years, with no new partners.",
+        "topic": "Sexual history"
+      },
+      {
+        "answer": "No, I haven't been diagnosed with any thyroid conditions, high calcium, or iron storage problems.",
+        "topic": "Secondary metabolic conditions"
+      },
+      {
+        "answer": "I assumed I tore my meniscus or sprained a ligament in my knee while jogging the other day.",
+        "topic": "Patient's ideas"
+      },
+      {
+        "answer": "I'm worried that I'll end up needing knee surgery and have to be on crutches, which would make getting to work impossible.",
+        "topic": "Patient's concerns"
+      },
+      {
+        "answer": "I'm hoping you can drain the fluid to relieve this pressure and give me a sturdy knee brace.",
+        "topic": "Patient's expectations"
+      },
+      {
+        "answer": "My past medical history is completely unremarkable. I've always been healthy.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I've never had any surgeries or been admitted to a hospital.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I don't take any prescription medications. I tried an over-the-counter pain reliever yesterday, but it didn't help much.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any allergies to medications.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I am just a social drinker, having a beer or two occasionally on weekends.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office accountant and live with my partner in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has gout, rheumatoid arthritis, or early joint problems.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 122/76 mmHg, heart rate 76 beats per minute, respiratory rate 14 breaths per minute, temperature 36.8°C, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Alert and comfortable seated at rest, but visibly grimaces when shifting weight onto the right leg.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Right knee exhibits moderate effusion, erythema, marked warmth, and diffuse joint line tenderness with painful restriction of flexion, whereas the left knee and other joints show no swelling or tophi.",
+        "maneuver": "joint_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Antalgic gait with reluctance to bear full weight on the right lower extremity.",
+        "maneuver": "coordination_gait",
+        "response": "pain"
+      },
+      {
+        "finding": "No rashes, psoriatic plaques, tophi, or nail pitting on full body inspection.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Normal spinal alignment with no tenderness over the lumbar spine or sacroiliac joints.",
+        "maneuver": "spine_exam",
+        "response": "none"
       }
     ]
   }

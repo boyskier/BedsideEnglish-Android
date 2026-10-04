@@ -48,6 +48,9 @@ private data class TeamBrief(
     val treatments: List<String>,
     val request: String,
     val mustInclude: List<String>,
+    /** True for a Nursing-track case, whose brief is a nursing card rather than a team handoff. */
+    val nursing: Boolean = false,
+    val stationMinutes: Int? = null,
 )
 
 private fun JSONObject.stringList(key: String): List<String> {
@@ -72,6 +75,8 @@ private fun teamBriefFrom(caseJson: String): TeamBrief? = runCatching {
         treatments = brief.stringList("treatments"),
         request = brief.optString("your_request").trim(),
         mustInclude = brief.stringList("must_include"),
+        nursing = root.optString("session_mode") == "nursing",
+        stationMinutes = root.optInt("station_minutes", 0).takeIf { it > 0 },
     )
 }.getOrNull()
 
@@ -110,7 +115,15 @@ private fun TeamBriefCards(brief: TeamBrief) {
         TeamBriefSection("Key data", brief.keyData)
         TeamBriefSection("Already done / pending", brief.treatments)
         if (brief.request.isNotEmpty()) TeamBriefSection("Your task", listOf(brief.request))
-        TeamBriefSection("Include in your message", brief.mustInclude)
+        TeamBriefSection(
+            when (brief.caseType) {
+                // OET cards list tasks, and every one is scored — say so in the exam's own terms.
+                "oet_roleplay" -> "Tasks on your card (each one is scored)"
+                "interview" -> "What to show the interviewer"
+                else -> if (brief.nursing) "Tasks (each one is scored)" else "Include in your message"
+            },
+            brief.mustInclude,
+        )
     }
 }
 
@@ -120,6 +133,14 @@ fun TeamCommunicationBriefSheet(
     caseJson: String,
     onDismiss: () -> Unit,
     onStart: (() -> Unit)? = null,
+    /**
+     * False when the current voice backend cannot actually run this scenario — the keyless "demo"
+     * backend only knows its three scripted patients, so starting anything else from it produces a
+     * session with no counterpart. Mirrors FollowUpBriefingScreen's `canStart`.
+     */
+    canStart: Boolean = true,
+    /** Shown in place of the Start button's normal affordance when [canStart] is false. */
+    blockedReason: String? = null,
 ) {
     val t = LocalTranslate.current
     val brief = remember(caseJson) { teamBriefFrom(caseJson) }
@@ -131,8 +152,29 @@ fun TeamCommunicationBriefSheet(
             Row(horizontalArrangement = Arrangement.spacedBy(8.dp), verticalAlignment = Alignment.CenterVertically) {
                 Icon(Icons.Default.Groups, contentDescription = null)
                 Column {
-                    Text(if (brief?.caseType == "skill_drill") "Communication skill drill" else "Team handoff brief", style = MaterialTheme.typography.titleLarge, fontWeight = FontWeight.Bold)
-                    Text("Keep this brief open during the conversation.", style = MaterialTheme.typography.bodySmall, color = MaterialTheme.colorScheme.onSurfaceVariant)
+                    Text(
+                        t(
+                            when {
+                                brief?.caseType == "skill_drill" -> "Communication skill drill"
+                                brief?.caseType == "oet_roleplay" -> "OET role-play card"
+                                brief?.caseType == "interview" -> "Interview brief"
+                                brief?.nursing == true -> "Nursing scenario brief"
+                                else -> "Team handoff brief"
+                            }
+                        ),
+                        style = MaterialTheme.typography.titleLarge,
+                        fontWeight = FontWeight.Bold,
+                    )
+                    Text(
+                        when (brief?.caseType) {
+                            // OET gives 3 minutes to read the card; the role-play itself runs ~5.
+                            "oet_roleplay" -> t("Exam format: read the card for up to 3 minutes, then a {n}-minute role-play. The card stays open during the conversation.")
+                                .replace("{n}", (brief?.stationMinutes ?: 5).toString())
+                            else -> t("Keep this brief open during the conversation.")
+                        },
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.onSurfaceVariant,
+                    )
                 }
             }
             if (brief == null) {
@@ -141,7 +183,18 @@ fun TeamCommunicationBriefSheet(
                 TeamBriefCards(brief)
             }
             if (onStart != null) {
-                Button(onClick = { onStart() }, enabled = brief != null, modifier = Modifier.fillMaxWidth()) { Text(t("Start")) }
+                if (!canStart && blockedReason != null) {
+                    Text(
+                        t(blockedReason),
+                        style = MaterialTheme.typography.bodySmall,
+                        color = MaterialTheme.colorScheme.error,
+                    )
+                }
+                Button(
+                    onClick = { onStart() },
+                    enabled = brief != null && canStart,
+                    modifier = Modifier.fillMaxWidth(),
+                ) { Text(t("Start")) }
                 TextButton(onClick = onDismiss, modifier = Modifier.align(Alignment.End)) { Text(t("Back")) }
             }
         }

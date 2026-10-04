@@ -1,0 +1,53 @@
+{
+  "id": "hearing_loss",
+  "title": "귀가 잘 안 들려요",
+  "english_title": "Hearing loss",
+  "category": "이비인후",
+  "door_complaint": "귀가 잘 안 들린다고",
+  "differential_groups": [
+    {"key": "conductive", "label": "전음성", "examples": ["귀지 막힘", "삼출성 중이염", "고막 천공", "진주종", "이경화증"]},
+    {"key": "sensorineural", "label": "감각신경성", "examples": ["노인성 난청", "소음성 난청", "돌발성 감각신경성 난청", "메니에르병", "이독성 약물"]},
+    {"key": "retrocochlear", "label": "후미로·중추", "examples": ["청신경초종(전정신경초종)", "뇌간 뇌졸중", "다발경화증"]}
+  ],
+  "history": [
+    {"id": "onset_speed", "text": "시작 시기, 갑자기(수일 이내) 생겼는지 서서히 진행했는지", "say": "언제부터 잘 안 들리셨어요? 갑자기 그랬어요, 아니면 서서히 나빠졌어요?", "tags": ["sensorineural"], "key": true},
+    {"id": "laterality", "text": "한쪽인지 양쪽인지, 양쪽 차이", "say": "한쪽 귀가 그래요, 양쪽 다 그래요? 어느 쪽이 더 안 들리세요?", "tags": ["retrocochlear", "sensorineural"], "key": true},
+    {"id": "difficulty_pattern", "text": "어떤 상황에서 안 들리는지(시끄러운 곳 대화, 높은 소리), TV 소리 크기", "say": "어떨 때 특히 안 들리세요? 시끄러운 데서 대화하기 힘들거나 TV 소리를 크게 트세요?", "tags": ["sensorineural"]},
+    {"id": "fullness", "text": "귀 먹먹함, 막힌 느낌", "say": "귀가 꽉 막힌 것처럼 먹먹하세요?", "tags": ["conductive", "sensorineural"]},
+    {"id": "tinnitus", "text": "이명(한쪽인지, 맥박처럼 뛰는지)", "say": "귀에서 소리가 나세요? 한쪽에서만 나요, 맥박처럼 쿵쿵 뛰는 소리예요?", "tags": ["sensorineural", "retrocochlear"]},
+    {"id": "vertigo", "text": "빙빙 도는 어지럼과 지속 시간, 걸을 때 비틀거림", "say": "빙빙 도는 어지럼이 있으세요? 얼마나 오래 가요? 걸을 때 비틀거리지는 않으세요?", "tags": ["sensorineural", "retrocochlear"]},
+    {"id": "pain_discharge", "text": "귀 통증, 귀 분비물", "say": "귀가 아프거나 귀에서 뭐가 흘러나오지는 않으세요?", "tags": ["conductive"]},
+    {"id": "uri_pressure", "text": "최근 감기·코막힘, 비행기·다이빙", "say": "최근에 감기에 걸렸거나 코가 막혔나요? 비행기를 타거나 잠수를 하셨어요?", "tags": ["conductive"]},
+    {"id": "cleaning_water", "text": "면봉·귀이개 사용, 샤워·수영 뒤 발생", "say": "면봉으로 귀를 자주 파세요? 샤워나 수영하고 나서 그랬어요?", "tags": ["conductive"]},
+    {"id": "neuro_symptoms", "text": "얼굴 저림·마비, 두통, 팔다리 힘빠짐, 말 어눌함", "say": "얼굴이 저리거나 한쪽이 처지고, 팔다리에 힘이 빠지거나 말이 어눌해지지는 않으셨어요?", "tags": ["retrocochlear"], "key": true},
+    {"id": "noise", "text": "직업·취미 소음 노출(공장, 사격, 이어폰)", "say": "일하는 곳이 시끄럽거나 이어폰으로 음악을 크게 오래 들으세요?", "tags": ["sensorineural"]},
+    {"id": "ototoxic", "text": "이독성 약물(아미노글리코사이드, 시스플라틴, 고용량 아스피린, 루프이뇨제)", "say": "최근에 주사 항생제나 항암제를 맞으셨거나 아스피린을 많이 드셨어요?", "tags": ["sensorineural"]},
+    {"id": "trauma", "text": "머리·귀 외상", "say": "머리나 귀를 다친 적이 있으세요?", "tags": ["conductive", "sensorineural"]},
+    {"id": "prior_ear", "text": "반복되는 중이염, 귀 수술 과거력", "say": "어릴 때부터 중이염을 자주 앓았거나 귀 수술을 받으신 적이 있어요?", "tags": ["conductive"]},
+    {"id": "family_hearing", "text": "젊은 나이에 생긴 난청의 가족력", "say": "가족 중에 젊어서부터 귀가 잘 안 들린 분이 계세요?", "tags": ["sensorineural", "conductive"]},
+    {"id": "daily_impact", "text": "대화·전화의 어려움, 모임을 피하게 됨, 기분 변화", "say": "잘 안 들려서 대화나 전화가 힘들고 사람 만나기를 피하게 되지는 않으세요?", "tags": ["sensorineural"]},
+    {"id": "child_speech", "text": "(소아) 말이 늦음, 불러도 반응이 없음, 학교 생활", "say": "아이가 불러도 반응이 늦거나 또래보다 말이 늦나요? 학교에서 선생님 말을 잘 못 알아듣는다고 하나요?", "tags": ["conductive"], "applies": "child"}
+  ],
+  "physical_exam": [
+    {"id": "otoscopy", "text": "이경으로 귀지, 고막 천공, 고막 뒤 삼출액(기포·액체선) 확인", "say": "귀 안을 이경으로 들여다보겠습니다.", "tags": ["conductive"], "key": true},
+    {"id": "whisper", "text": "속삭임 검사로 대략적인 청력 확인", "say": "한쪽 귀를 막고, 제가 작게 말하는 숫자를 따라 말해 보세요.", "tags": ["conductive", "sensorineural"]},
+    {"id": "tuning_fork", "text": "소리굽쇠 검사(Weber, Rinne)로 전음성과 감각신경성 구분", "say": "소리굽쇠를 이마와 귀 뒤에 대 볼게요. 어느 쪽이 더 크게 들리는지 말씀해 주세요.", "tags": ["conductive", "sensorineural"], "key": true},
+    {"id": "cranial_nerves", "text": "얼굴 감각, 안면신경, 소뇌 기능 확인", "say": "얼굴을 만져 볼 테니 양쪽 느낌이 같은지 말씀하시고, 눈을 꼭 감고 웃어 보세요.", "tags": ["retrocochlear"], "conditional": true},
+    {"id": "vestibular", "text": "어지럼이 있으면 안진과 롬버그 검사", "say": "제 손가락을 눈으로 따라와 보세요. 이번에는 발을 모으고 눈을 감고 서 보세요.", "tags": ["sensorineural", "retrocochlear"], "conditional": true}
+  ],
+  "education": [
+    {"id": "no_cotton", "text": "면봉·귀이개로 귀를 파지 않도록 교육", "say": "귀지는 저절로 나오니까 면봉이나 귀이개로 파지 마세요."},
+    {"id": "noise_protection", "text": "큰 소음을 피하고 귀마개 사용, 이어폰 음량과 사용 시간 줄이기", "say": "시끄러운 곳에서는 귀마개를 쓰시고, 이어폰은 소리를 줄여서 짧게 쓰세요.", "conditional": true},
+    {"id": "hearing_rehab", "text": "보청기 등 청각재활이 의사소통과 인지 건강에 도움이 됨을 설명", "say": "보청기를 쓰시면 대화가 편해지고 기억력 같은 뇌 건강을 지키는 데도 도움이 돼요.", "conditional": true},
+    {"id": "warning_signs", "text": "갑자기 한쪽 청력이 떨어지면 바로 이비인후과로 오도록 안내", "say": "갑자기 한쪽 귀가 안 들리면 며칠 기다리지 마시고 바로 이비인후과로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "이경검사와 소리굽쇠검사(Weber, Rinne)로 전음성과 감각신경성 난청을 구분하고, 순음청력검사와 고막운동성검사로 확인한다.",
+    "3일 이내에 갑자기 생긴 감각신경성 난청은 돌발성 난청으로 보고 가능한 빨리 청력검사를 하고 전신 또는 고막 내 스테로이드 치료를 시작한다(발생 2주 이내 시작이 효과적이다).",
+    "비대칭 감각신경성 난청이나 한쪽 이명은 청신경초종을 배제하기 위해 내이도 조영 MRI를 한다.",
+    "귀지 막힘은 귀지 연화제 사용 후 세척이나 기구로 제거하며, 성인의 한쪽 삼출성 중이염이 지속되면 비인두암 배제를 위해 비인두 내시경을 한다.",
+    "노인성 난청은 보청기 등 청각재활로 치료하며, 난청 교정은 의사소통 개선과 인지 저하 위험 감소에 도움이 된다.",
+    "소아 삼출성 중이염은 대개 3개월 경과를 관찰하고, 지속되면서 청력 저하나 언어 지연이 있으면 환기관 삽입을 고려한다."
+  ],
+  "case_ids": []
+}

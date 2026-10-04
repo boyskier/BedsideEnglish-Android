@@ -1,0 +1,118 @@
+{
+  "id": "nursing_us_ipass_bedside_report",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Handover & escalation",
+  "nursing_pathways": ["us"],
+  "counterpart": "nurse",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_sbar_escalation",
+  "station_minutes": 7,
+  "patient_name": "Bedside shift report with I-PASS — telemetry patient with a pending lab and a new PRN",
+  "chief_complaint": "Give the oncoming night nurse a bedside I-PASS report on a telemetry patient with new atrial fibrillation, a pending potassium and magnesium, and a newly ordered PRN, then check and correct her synthesis",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Shift report: I-PASS at the bedside on 5 North telemetry",
+    "task": "Handover & escalation",
+    "urgency": "routine",
+    "patient": "Mr. Samuel Brooks, 67-year-old man (DOB 11/02/1958), room 518, admitted yesterday with new-onset atrial fibrillation with rapid ventricular response",
+    "location": "5 North telemetry unit, 19:00 shift change. You are the day-shift RN giving bedside report to Jenna Kowalski, the oncoming night RN, at Mr. Brooks's bedside. He is awake and has agreed to have report at the bedside.",
+    "situation": "Mr. Brooks is still in atrial fibrillation, but his heart rate has been controlled in the 80s-90s at rest on oral metoprolol. A potassium and magnesium recheck is pending, and cardiology added a new PRN this afternoon. You would call him a 'watcher'.",
+    "background": [
+      "Came in through the ED yesterday with palpitations and a heart rate in the 150s; new-onset atrial fibrillation.",
+      "History of hypertension and diet-controlled type 2 diabetes. No known drug allergies. Full code.",
+      "Started on oral metoprolol tartrate every 6 hours (last dose 16:00, next due 22:00) and oral apixaban twice daily (first dose 09:00 today)."
+    ],
+    "current_status": [
+      "Vital signs at 18:00: HR 88 irregular, BP 124/78, RR 16, SpO2 97% on room air, temp 98.4 F.",
+      "At 15:00 his heart rate went to the 130s while he walked to the bathroom; it came back to the 90s within 5 minutes of resting. He felt lightheaded but did not fall.",
+      "Telemetry box #12 on; rhythm atrial fibrillation. 20-gauge IV in the right forearm, saline-locked, site clean and dry.",
+      "High fall risk: bed alarm on, call light in reach, using a urinal at the bedside. No bleeding or new bruising since apixaban started."
+    ],
+    "key_data": [
+      "This morning: potassium 3.6 mEq/L and magnesium 1.8 mg/dL; both replaced orally at 10:00 per the unit electrolyte protocol.",
+      "Repeat potassium and magnesium drawn at 17:30 — results pending. The unit protocol targets potassium 4.0 or above and magnesium 2.0 or above for telemetry patients; low results are replaced per protocol, and the night hospitalist is paged for results outside the protocol range or any new rhythm change.",
+      "New PRN ordered at 16:30: IV metoprolol for a heart rate sustained above 120 for more than 10 minutes at rest; hold if systolic BP is below 100; may repeat every 6 hours as needed, per the MAR; page the night hospitalist if the heart rate stays above 120 after a dose. Not given yet.",
+      "Echocardiogram done this afternoon; report pending. Cardiology will see him in the morning."
+    ],
+    "treatments": [
+      "Done today: electrolyte replacement at 10:00, echo, first apixaban dose, bleeding-precaution teaching started.",
+      "Pending: repeat potassium and magnesium, echo report, 22:00 oral metoprolol."
+    ],
+    "your_request": "Give Jenna a bedside I-PASS report she can act on overnight, answer her questions, and make sure her synthesis is correct before you leave.",
+    "must_include": [
+      "Start with Illness severity — say he is a 'watcher' and why.",
+      "Patient summary: why he was admitted, key history, and current treatment (metoprolol, apixaban).",
+      "Action list with times: the pending potassium and magnesium (drawn 17:30), the 22:00 metoprolol, the echo report.",
+      "Situation awareness and contingency: what to do if the labs come back low, and exactly when the new PRN IV metoprolol can and cannot be given.",
+      "Include Mr. Brooks and do a quick bedside safety check together (telemetry on, IV site, bed alarm, call light).",
+      "Invite Jenna's synthesis and correct anything she gets wrong."
+    ]
+  },
+  "kickoff_text": "Hi, I'm Jenna, I've got 518 tonight. Hi, Mr. Brooks. Okay — go ahead whenever you're ready.",
+  "persona_override": "You are Jenna Kowalski, an experienced night-shift telemetry RN taking bedside report on Mr. Samuel Brooks in room 518 at 19:00. You are friendly, organized and thorough; your unit uses I-PASS and you expect it. You speak only as Jenna. Mr. Brooks is resting in bed; if the learner speaks to him, you may say briefly that he is nodding or giving a thumbs-up, but you never voice him. Ground truth: Mr. Brooks, 67, DOB 11/02/1958, admitted yesterday with new-onset atrial fibrillation with RVR (HR 150s in the ED); hypertension and diet-controlled type 2 diabetes; no known drug allergies; full code. Oral metoprolol tartrate every 6 hours, last dose 16:00, next 22:00; oral apixaban twice daily, first dose 09:00, no bleeding or bruising. Vital signs at 18:00: HR 88 irregular, BP 124/78, RR 16, SpO2 97% on room air, temp 98.4 F. HR went to the 130s walking to the bathroom at 15:00, back to the 90s within 5 minutes; lightheaded, no fall. Telemetry box #12; 20-gauge IV right forearm, saline-locked; high fall risk, bed alarm on, urinal at bedside. Morning potassium 3.6 and magnesium 1.8, replaced orally at 10:00; repeat drawn at 17:30, pending; protocol targets potassium 4.0 or above and magnesium 2.0 or above; low results replaced per protocol; night hospitalist paged for results outside the protocol range or a new rhythm change. New PRN at 16:30: IV metoprolol for HR sustained above 120 for more than 10 minutes at rest, hold if SBP below 100, may repeat every 6 hours PRN, page the night hospitalist if HR stays above 120 after a dose. Echo done, report pending; cardiology in the morning. Behaviour: Listen without interrupting while the report is organized. If the learner does not say how sick he is near the start, ask 'So is he stable, or would you call him a watcher?' If the learner says 'labs are pending' without detail, ask 'Which labs, and what time were they drawn?' If the learner mentions the new PRN without its parameters, ask 'What are the parameters on that PRN — when can I give it, and when do I hold it?' Ask one clarifying question of your own either way, choosing one the learner has not already answered: 'When did he last get his oral metoprolol?', 'Any bleeding or bruising since the apixaban?', or 'If the potassium comes back low, do I just replace it or call someone?' Toward the end — whether or not the learner asks for it — give your synthesis in two or three sentences and include exactly one error: say 'So I can give the IV metoprolol if his heart rate goes over 100.' If the learner corrects it (sustained above 120 for more than 10 minutes at rest; hold if systolic under 100), thank them and restate it correctly. If the learner does not catch it, finish with 'Great, I think I've got it' and let them go. Never point out your own error and never coach the learner on I-PASS. Keep each turn short and natural.",
+  "learning_objectives": [
+    "open with illness severity: stable, watcher, or unstable",
+    "give a short patient summary with the admission reason and current treatment",
+    "state the action list with times, including the pending potassium and magnesium",
+    "give contingency plans: if the heart rate is sustained above 120, if the labs come back low",
+    "include the patient and do a bedside safety check of telemetry, IV site, and bed alarm",
+    "ask the receiving nurse for a synthesis and correct any errors"
+  ],
+  "suggested_questions": [
+    "Jenna, this is Mr. Brooks — Mr. Brooks, Jenna's your nurse tonight. I'd call him a watcher: he's still in AFib and rate-controlled at rest, but he went up to the 130s walking to the bathroom this afternoon.",
+    "Action list: his repeat potassium and mag were drawn at 17:30 and aren't back yet, and his next oral metoprolol is due at 22:00. The echo report's still pending.",
+    "If his heart rate stays over 120 for more than 10 minutes at rest, there's a new PRN IV metoprolol — hold it if his systolic is under 100. If the labs come back low, replace per the protocol, and page the hospitalist if they're outside the range.",
+    "Can you give me a quick summary back so I know we're on the same page?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Nurse-to-nurse bedside shift report using I-PASS on a telemetry unit",
+    "review_status": "grounded in the I-PASS handoff framework, AHRQ guidance on nurse bedside shift report, and Joint Commission hand-off communication standards; electrolyte targets, PRN parameters, and handoff formats follow local unit policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "I-PASS stands for Illness severity, Patient summary, Action list, Situation awareness and contingency planning, and Synthesis by receiver. The synthesis step is what turns a one-way report into closed-loop communication.",
+      "Stating illness severity first ('stable', 'watcher', 'unstable') tells the receiving nurse how closely to watch the patient before any detail is heard.",
+      "Bedside shift report lets both nurses see the patient, lines and monitor together, and lets the patient correct errors and take part in their care."
+    ],
+    "diagnostic_clues": [
+      "A heart rate that spikes with exertion in atrial fibrillation and settles with rest is a reason to call the patient a 'watcher' and to plan for night-time bathroom trips.",
+      "Low potassium and magnesium raise arrhythmia risk, which is why telemetry units often replace them to higher targets.",
+      "A receiver's synthesis that gets a parameter wrong is a communication cue: it must be corrected before the giver leaves."
+    ],
+    "common_misconceptions": [
+      "Handoff is a one-way report; if the receiver doesn't ask questions, they understood.",
+      "'Labs are pending' is enough detail for the next shift.",
+      "Bedside report means discussing everything in front of the patient and visitors, including sensitive information."
+    ],
+    "dangerous_errors": [
+      "Handing over a PRN medication without its parameters and hold criteria.",
+      "Leaving without confirming the receiver's synthesis, so a wrong threshold carries into the night.",
+      "Not linking the new anticoagulant with the fall risk when handing over safety precautions."
+    ],
+    "management_principles": [
+      "Follow the I-PASS order; keep the patient summary short and make contingency plans specific ('if X, then Y').",
+      "Give times, not just tasks: what is due, what is pending, and when it was drawn or given.",
+      "Ask for the synthesis explicitly and correct it before you leave.",
+      "Do a quick joint safety check at the bedside: monitor, IV site, alarms, call light."
+    ],
+    "boundaries_and_exceptions": [
+      "Electrolyte replacement targets, PRN heart-rate and blood-pressure parameters, and who is notified for which results are set by unit protocol and the prescriber; the numbers here are illustrative.",
+      "Some hospitals use SBAR or other structured formats for nurse handoff instead of I-PASS; bedside report practice, and what is discussed in front of visitors, varies by institution."
+    ],
+    "source_refs": [
+      {
+        "title": "I-PASS Patient Safety Institute",
+        "url": "https://www.ipassinstitute.com/"
+      },
+      {
+        "title": "AHRQ Guide to Patient and Family Engagement: Strategy 3 — Nurse Bedside Shift Report",
+        "url": "https://www.ahrq.gov/patient-safety/patients-families/engagingfamilies/strategy3/index.html"
+      },
+      {
+        "title": "The Joint Commission (hand-off communication)",
+        "url": "https://www.jointcommission.org/"
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "name": "Nursing SBAR Handover & Escalation",
+  "description": "Evaluates a nurse handing over or escalating a patient to another nurse or to a physician, using the Situation, Background, Assessment, Recommendation framework within the nursing scope of practice.",
+  "metrics": {
+    "fluency": {
+      "label": "Language & Fluency",
+      "anchors": {
+        "80-100": "Clear, fluent, near-native phrasing; the receiving clinician never has to ask for a repeat.",
+        "50-70": "Understandable but occasional hesitations or grammar errors slow the handover.",
+        "10-40": "Frequent errors that impede understanding of a time-critical message."
+      }
+    },
+    "medical_accuracy": {
+      "label": "Clinical Terminology & Accuracy",
+      "anchors": {
+        "80-100": "Uses nursing and clinical terminology accurately; vitals, trends, and interventions are stated precisely.",
+        "50-70": "Mostly accurate, but vague quantifiers ('a bit low', 'not great') replace the actual observation.",
+        "10-40": "Misstates observations or terminology in ways that could mislead the receiving clinician."
+      }
+    },
+    "sbar_completeness": {
+      "label": "SBAR Completeness",
+      "anchors": {
+        "80-100": "Clearly articulates Situation, Background, Assessment, and Recommendation, and opens by identifying self, unit, and patient.",
+        "50-70": "Misses one component, or buries the reason for the call after a long background.",
+        "10-40": "Missing multiple components or highly disorganized; the listener cannot tell what is being asked."
+      }
+    },
+    "clinical_urgency": {
+      "label": "Urgency & Escalation Judgement",
+      "anchors": {
+        "80-100": "Conveys how sick the patient is in the first two sentences and states clearly how soon a response is needed.",
+        "50-70": "Communicates the facts but leaves the urgency for the listener to infer.",
+        "10-40": "Understates a deteriorating patient, or escalates without saying what response is needed and by when."
+      }
+    },
+    "professionalism": {
+      "label": "Professionalism & Closed-Loop Communication",
+      "anchors": {
+        "80-100": "Respectful and concise; reads back or confirms the plan and any new orders before ending the call.",
+        "50-70": "Mostly respectful but may get flustered, or ends without confirming what was agreed.",
+        "10-40": "Defensive, apologetic to the point of obscuring the message, or verbose without getting to the point."
+      }
+    }
+  },
+  "checklist": [
+    {"item": "Identified self, role, unit, and the patient at the start", "required": true},
+    {"item": "Stated the Situation — why this call is happening right now", "required": true},
+    {"item": "Provided relevant Background (admission reason, relevant history, what has already been done)", "required": true},
+    {"item": "Gave a clear Assessment, including objective observations (vitals, trends, exam findings)", "required": true},
+    {"item": "Made a specific Recommendation or request within the nursing scope (come and review, give an order, escalate further)", "required": true},
+    {"item": "Stated how urgently a response is needed", "required": false},
+    {"item": "Read back or confirmed the plan, orders, or outstanding tasks before ending", "required": false}
+  ],
+  "output_sections": ["scores", "checklist", "corrections", "summary"]
+}

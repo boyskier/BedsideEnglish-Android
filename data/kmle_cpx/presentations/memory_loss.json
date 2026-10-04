@@ -1,0 +1,55 @@
+{
+  "id": "memory_loss",
+  "title": "기억력이 떨어졌어요",
+  "english_title": "Memory loss",
+  "category": "신경",
+  "kmle_item": "기억력 저하",
+  "door_complaint": "기억력이 떨어졌다고",
+  "differential_groups": [
+    {"key": "neurodegenerative", "label": "퇴행성", "examples": ["알츠하이머병", "루이소체 치매", "전두측두엽 치매", "경도인지장애"]},
+    {"key": "vascular", "label": "혈관성", "examples": ["혈관성 치매", "뇌경색"]},
+    {"key": "reversible", "label": "치료 가능한 원인", "examples": ["갑상샘기능저하증", "비타민 B12 결핍", "정상압수두증", "만성 경막하혈종", "약물(항콜린제, 수면제)", "알코올 관련 인지장애"]},
+    {"key": "delirium_depression", "label": "섬망·우울증", "examples": ["섬망(감염, 약물, 대사 이상)", "우울증(가성치매)"]}
+  ],
+  "history": [
+    {"id": "informant", "text": "환자 동의를 얻어 함께 온 가족에게도 증상을 확인", "say": "같이 오신 분께도 평소 모습을 여쭤봐도 괜찮을까요?", "conditional": true},
+    {"id": "onset_course", "text": "시작 시기와 진행 양상(서서히 진행, 계단식 악화, 갑자기 시작)", "say": "언제부터 깜빡하는 게 느껴지셨어요? 점점 나빠졌나요, 어느 순간 갑자기 나빠졌나요?", "tags": ["neurodegenerative", "vascular", "delirium_depression"]},
+    {"id": "memory_examples", "text": "구체적인 기억 문제(최근 일을 잊음, 같은 질문 반복, 물건 둔 곳을 잊음)", "say": "주로 어떤 걸 잊으세요? 최근 일인가요, 같은 걸 여러 번 물어보시나요?", "tags": ["neurodegenerative"]},
+    {"id": "other_domains", "text": "다른 인지 영역(길을 잃음, 단어가 떠오르지 않음, 계산·돈 관리 어려움)", "say": "익숙한 길에서 헤매거나 말할 때 단어가 잘 안 떠오르세요?", "tags": ["neurodegenerative"]},
+    {"id": "daily_function", "text": "일상생활 능력 변화(요리, 약 챙기기, 운전, 대중교통 이용)", "say": "요리나 약 챙기기, 은행 일 같은 걸 예전처럼 혼자 하실 수 있나요?"},
+    {"id": "fluctuation", "text": "갑자기 나빠졌는지, 하루 중 정신이 맑았다 흐렸다 하는지", "say": "며칠 사이에 갑자기 헷갈려 하시거나, 하루에도 정신이 맑았다 흐렸다 하나요?", "tags": ["delirium_depression"], "key": true},
+    {"id": "behavior", "text": "성격·행동 변화, 헛것이 보임, 의심·망상", "say": "성격이 변했다거나, 없는 게 보인다고 하시거나 남을 의심하지는 않으세요?", "tags": ["neurodegenerative", "delirium_depression"]},
+    {"id": "mood", "text": "우울, 흥미 저하, 수면·식욕 변화", "say": "요즘 기분이 가라앉거나 예전에 즐기던 일에 흥미가 없어졌나요?", "tags": ["delirium_depression"]},
+    {"id": "gait_urinary", "text": "걸음이 느려지거나 끌림, 소변 실수", "say": "걸음걸이가 느려지거나 발을 끌고, 소변 실수를 하지는 않으세요?", "tags": ["reversible", "vascular"]},
+    {"id": "trauma_headache", "text": "최근 머리를 부딪힌 적, 새로 생긴 두통", "say": "최근에 넘어지거나 머리를 부딪히신 적이 있나요? 머리가 아프지는 않으세요?", "tags": ["reversible"], "key": true},
+    {"id": "focal_deficit", "text": "한쪽 팔다리 힘 빠짐, 말 어눌함", "say": "한쪽 팔다리에 힘이 빠지거나 말이 어눌해진 적이 있나요?", "tags": ["vascular"], "key": true},
+    {"id": "thyroid_b12", "text": "추위 탐, 변비, 체중 증가, 손발 저림", "say": "요즘 추위를 많이 타거나 변비가 생기고 손발이 저리지는 않으세요?", "tags": ["reversible"]},
+    {"id": "infection", "text": "발열, 배뇨 증상, 기침 등 감염 증상", "say": "열이 나거나 소변볼 때 불편하거나 기침을 하지는 않으세요?", "tags": ["delirium_depression"]},
+    {"id": "cognition_drugs", "text": "수면제, 항콜린제, 진통제 등 최근 추가된 약", "say": "최근에 수면제나 새로 드시기 시작한 약이 있나요?", "tags": ["reversible", "delirium_depression"]},
+    {"id": "alcohol", "text": "음주량과 기간", "say": "술은 얼마나 자주, 얼마나 드세요?", "tags": ["reversible"]},
+    {"id": "vascular_risk", "text": "고혈압, 당뇨, 이상지질혈증, 뇌졸중 병력", "say": "혈압이나 당뇨, 고지혈증이 있으세요? 뇌졸중을 앓으신 적은요?", "tags": ["vascular"]},
+    {"id": "safety", "text": "안전 문제(가스 불 켜 둠, 길을 잃음, 운전 중 사고)", "say": "가스 불을 켜 두고 잊거나 운전하다가 길을 잃은 적이 있나요?"},
+    {"id": "family_dementia", "text": "치매 가족력", "say": "가족 중에 치매를 앓으신 분이 있나요?", "tags": ["neurodegenerative"]}
+  ],
+  "physical_exam": [
+    {"id": "cognitive_screen", "text": "간이 인지선별검사(MMSE 또는 MoCA)로 지남력·기억력·주의력 평가", "say": "지금부터 기억력을 보는 간단한 질문을 몇 가지 드리겠습니다. 오늘이 몇 월 며칠이에요?", "key": true},
+    {"id": "vitals", "text": "활력징후와 체온", "say": "혈압과 체온을 재 보겠습니다.", "tags": ["delirium_depression"]},
+    {"id": "neuro_exam", "text": "신경학적 진찰(국소 신경학적 이상, 강직·서동 등 파킨슨 징후)", "say": "팔다리 힘과 움직임을 확인하겠습니다.", "tags": ["vascular", "neurodegenerative"]},
+    {"id": "gait", "text": "보행 관찰(보폭, 발 끌림, 균형)", "say": "저쪽까지 한번 걸어갔다가 돌아와 보세요.", "tags": ["reversible", "vascular"]},
+    {"id": "thyroid_exam", "text": "갑상샘 촉진과 피부·건반사 확인", "say": "목 앞쪽을 만져 보고 무릎 반사도 확인하겠습니다.", "tags": ["reversible"]}
+  ],
+  "education": [
+    {"id": "safety_plan", "text": "가스·운전·약 복용 등 안전 관리와 보호자의 도움", "say": "약이나 가스 불은 가족분이 함께 챙겨 주시면 좋겠습니다. 운전도 검사 후에 다시 상의해요."},
+    {"id": "brain_health", "text": "규칙적인 운동, 사회 활동, 혈압·혈당 관리", "say": "꾸준히 걷고 사람들과 자주 어울리시는 게 뇌 건강에 도움이 됩니다."},
+    {"id": "support_resources", "text": "치매안심센터 등 지역 지원 기관 안내", "say": "가까운 치매안심센터에서 검사와 돌봄 지원을 받으실 수 있어요."},
+    {"id": "warning_signs", "text": "갑자기 혼란이 심해지거나 한쪽 마비·두통이 생기면 즉시 병원에 오도록 안내", "say": "갑자기 많이 헷갈려 하시거나 한쪽 팔다리에 힘이 빠지면 바로 병원에 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "인지저하는 보호자 병력과 선별검사(MMSE, MoCA)로 객관적으로 확인하고, 갑자기 생기거나 변동이 심하면 섬망을 먼저 의심해 감염·약물·대사 이상 등 원인을 찾는다.",
+    "치료 가능한 원인을 배제하기 위해 갑상샘기능검사, 비타민 B12, 혈구·전해질·칼슘·혈당·간·신기능 검사를 시행한다.",
+    "뇌 영상(MRI 또는 CT)으로 혈관성 병변, 경막하혈종, 수두증, 종양을 확인한다.",
+    "우울증 선별을 함께 하고, 인지 기능을 떨어뜨리는 약(항콜린제, 벤조디아제핀)을 찾아 줄인다.",
+    "알츠하이머 치매로 진단되면 콜린에스테라제 억제제를 고려하고, 안전·운전·보호자 지원 계획을 함께 세운다."
+  ],
+  "case_ids": ["fm_008", "neuro_015", "neuro_032", "fm_038", "neuro_033", "ns_022"]
+}

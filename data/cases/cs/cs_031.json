@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "incidental 5.2 cm ascending aorta dilation on chest CT",
   "hpi_details": "A 35-year-old male presents to the clinic with an incidental 5.2 cm ascending aorta dilation found on a chest CT ordered for an unrelated reason. He is asymptomatic, denying any chest pain, back pain, or shortness of breath.",
-  "ideas": "thinks it might be related to an aortic aneurysm",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks the scan showed a stretched main blood vessel because he strained himself lifting excessively heavy weights at the gym.",
+  "concerns": "He is worried the enlarged artery will suddenly burst open like what happened to his uncle who died during a workout.",
+  "expectations": "He hopes the doctor will review the CT images and give him clear medical clearance so he can safely return to work on Monday.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -123,6 +123,190 @@
         "domains": [
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "124/78",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "I had a chest CT done recently, and the doctor told me they found an abnormality in my chest and that I should get it evaluated right away.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "They told me my main artery, the ascending aorta, was swollen to about 5.2 centimeters on the chest CT. I had the scan after a minor minor chest bump at work.",
+        "topic": "Test results and circumstances"
+      },
+      {
+        "answer": "This was my first chest CT, so I have never had this checked or mentioned before.",
+        "topic": "Previous checkup comparison"
+      },
+      {
+        "answer": "I had the CT done at an outpatient clinic a few days after the minor bump; I was not sick, stressed, or doing heavy exercise at that time.",
+        "topic": "Circumstances during the test"
+      },
+      {
+        "answer": "I check my blood pressure at the pharmacy machine sometimes, and it is usually normal, around 120 over 80.",
+        "topic": "Home blood pressure monitoring"
+      },
+      {
+        "answer": "I have felt a bit more tired than usual lately, but I have not had any headaches, excessive thirst, or sudden weight shifts.",
+        "topic": "General symptoms and fatigue"
+      },
+      {
+        "answer": "No, I have not had any chest pain, back pain, tearing sensations, or shortness of breath at all.",
+        "topic": "Chest pain and back pain"
+      },
+      {
+        "answer": "No trouble breathing when walking, no racing heartbeat, and no feeling dizzy or passing out.",
+        "topic": "Breathing and palpitations"
+      },
+      {
+        "answer": "No blurry vision, no double vision, and no weakness or numbness in my arms, legs, or face.",
+        "topic": "Neurological symptoms"
+      },
+      {
+        "answer": "No foamy urine, swollen legs, bone pain, constipation, or feeling unusually sensitive to cold.",
+        "topic": "Organ related symptoms"
+      },
+      {
+        "answer": "No fever, chills, night sweats, coughing up blood, or unexplained weight loss.",
+        "topic": "B symptoms and hemoptysis"
+      },
+      {
+        "answer": "No burning, pain, or difficulty when urinating, and no recent prostate or urinary tract problems.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "No muscle cramps, excessive sweating, flushing episodes, or severe snoring at night.",
+        "topic": "Secondary causes screening"
+      },
+      {
+        "answer": "I do not take any steroids, diuretics, pain medications, or decongestant cold remedies.",
+        "topic": "Medications affecting test results"
+      },
+      {
+        "answer": "I eat regular meals without too much salt or grease, and I do light jogging twice a week.",
+        "topic": "Diet and exercise habits"
+      },
+      {
+        "answer": "I work in an office setting and have never been exposed to asbestos, dust, or toxic fumes.",
+        "topic": "Occupational exposures"
+      },
+      {
+        "answer": "No history of bone fractures, height loss, dislocated lenses, or unusually flexible joints.",
+        "topic": "Joints and bone health"
+      },
+      {
+        "answer": "I have never had tuberculosis, nor have I been in contact with anyone who had it.",
+        "topic": "Tuberculosis and infection history"
+      },
+      {
+        "answer": "I thought the scan just caught a stretched blood vessel from when I strained myself lifting heavy weights at the gym.",
+        "topic": "Patient ideas about condition"
+      },
+      {
+        "answer": "I'm terrified that the widened artery will suddenly rip open like what happened to my uncle who died without warning.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping you can review the scan and tell me if I need urgent surgery or if I'm cleared to go back to work on Monday.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I have always been healthy, with no history of high blood pressure, diabetes, high cholesterol, or heart murmurs.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and I have never been admitted to a hospital.",
+        "topic": "Past surgery and hospitalization"
+      },
+      {
+        "answer": "I do not take any prescription medications, over-the-counter pills, or dietary supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medicines or foods.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have an occasional beer once or twice a month socially.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I live with my wife in an apartment and work as a software engineer.",
+        "topic": "Living situation and occupation"
+      },
+      {
+        "answer": "No one in my family has had an aortic aneurysm, dissection, sudden unexplained death, or early heart disease.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Alert, comfortable, well-nourished young male in no acute distress, with normal body habitus and no marfanoid features.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 124/78 mmHg equal in both arms, heart rate 72 bpm, respiratory rate 14 breaths/min, body temperature 36.8°C, SpO2 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, supraclavicular, or axillary lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and without palpable nodules or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without crackles, wheezes, or decreased sounds.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no murmurs, gallops, rubs, or diastolic clicks heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Radial, brachial, femoral, and dorsalis pedis pulses are 2+ bilaterally, symmetrical, and without radiofemoral delay.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Normal active bowel sounds present; no abdominal aortic, renal, or iliac bruits auscultated.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Soft, non-distended, and non-tender throughout; no palpable pulsatile abdominal mass detected.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Liver edge and spleen are not palpable below the costal margins.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal thoracic and lumbar curvature without kyphoscoliosis or midline spinal tenderness.",
+        "maneuver": "spine_exam",
+        "response": "none"
       }
     ]
   }

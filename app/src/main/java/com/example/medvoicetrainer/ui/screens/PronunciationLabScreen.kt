@@ -75,6 +75,11 @@ internal object PronunciationLab {
         "final_consonant" -> "final"
         "consonant_cluster" -> "cluster"
         "word_stress" -> "stress"
+        "sentence_stress" -> "sentence stress"
+        "rhythm" -> "rhythm"
+        "intonation" -> "intonation"
+        "linking_reduction" -> "linking"
+        "inserted_vowel" -> "extra vowel"
         "vowel" -> "vowel"
         else -> "other"
     }

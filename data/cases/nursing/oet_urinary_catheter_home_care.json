@@ -1,0 +1,111 @@
+{
+  "id": "nursing_oet_urinary_catheter_home_care",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — embarrassed man going home with an indwelling urinary catheter, worried about infection and daily life",
+  "chief_complaint": "Before discharge, address an embarrassed patient's worries about living with an indwelling urinary catheter, and teach catheter care and signs of infection or blockage",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "Urinary catheter at home: an embarrassed patient afraid of infection and being noticed",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Mr Ivan Petrov, 68-year-old retired engineer with an enlarged prostate, going home today with an indwelling urinary catheter",
+    "location": "Urology ward; you are the nurse preparing Mr Petrov for discharge",
+    "situation": "Mr Petrov was admitted three days ago because he could not pass urine. A catheter was put in, and a trial without it yesterday was not successful. He is going home with the catheter until his urology appointment in about four to six weeks. He seems embarrassed and has not looked at the catheter bag.",
+    "background": [
+      "His enlarged prostate is not cancer; the urology team will discuss treatment options, which may include medication or an operation, at his appointment.",
+      "His brother was admitted to hospital last year with a kidney infection after having a catheter.",
+      "He lives with his wife, sings in a men's choir twice a week, and likes swimming."
+    ],
+    "current_status": [
+      "Catheter draining clear, pale yellow urine into a leg bag.",
+      "No fever or pain. He has been given a supply of leg bags and night bags."
+    ],
+    "key_data": [
+      "Daily care: wash hands before and after touching the catheter or bag; wash around where the catheter enters the body once a day with mild soap and water; a daily shower is fine; he should check with the nursing team before having a bath or going swimming, as advice varies.",
+      "The leg bag is strapped to the thigh or calf, under normal trousers, and is not visible. Empty it when it is about half to two-thirds full. At night, a larger night bag is connected to the leg bag's tap without disconnecting the leg bag. Keep bags below the level of the bladder, keep the tubing free of kinks, and make sure the bag is supported so it does not pull.",
+      "To reduce infection: keep the system closed (do not disconnect the leg bag from the catheter except when changing it, usually weekly), drink plenty of fluids unless told otherwise, and avoid constipation.",
+      "Seek help urgently (community nursing team, doctor, or emergency service out of hours) for fever or shivering, pain in the lower back or side, new confusion, or feeling very unwell. Contact the community nursing team if no urine drains for one to two hours, especially with tummy pain or leaking, as the catheter may be blocked.",
+      "Cloudy or strong-smelling urine on its own is common with a catheter and is not always infection; drinking more often helps. Some blood in the urine or leaking around the catheter should be reported to the nursing team."
+    ],
+    "treatments": [
+      "Already done: catheter inserted; unsuccessful trial without catheter; supplies given.",
+      "Pending: referral to the community nursing team; urology appointment in four to six weeks."
+    ],
+    "your_request": "Find out Mr Petrov's concerns, teach him how to care for his catheter at home, and explain the signs of infection or blockage.",
+    "must_include": [
+      "Find out what Mr Petrov knows about his catheter and what is worrying him about going home.",
+      "Acknowledge his embarrassment and reassure him about how the catheter can fit into his daily life.",
+      "Explain how to look after the catheter and bags each day (hand washing, cleaning, emptying, night bag).",
+      "Advise him how to reduce the risk of infection.",
+      "Explain the warning signs of infection or blockage and who to contact."
+    ]
+  },
+  "kickoff_text": "So I'm going home with this... thing. I don't know how I'm supposed to live with it, to be honest.",
+  "persona_override": "You are Ivan Petrov, a 68-year-old retired engineer with an enlarged prostate, going home today with an indwelling urinary catheter. You are private, precise and dignified, and you find this whole situation deeply embarrassing; you speak quietly and avoid the word 'urine' at first. Your specific worry: that people at your choir will see the bag or smell urine, and that you will get an infection like your brother, who was very ill in hospital with a kidney infection after having a catheter. You are also unsure whether you can shower or go swimming. Ground truth: you could not pass urine three days ago and it was very painful; the trial without the catheter yesterday did not work; your urology appointment is in about four to six weeks; you live with your wife, who is supportive, but you do not want her to have to 'deal with it'; you sing in a men's choir twice a week and swim once a week; you drink about three cups of tea a day and not much water; you have not looked at the bag since it was put in. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words like 'indwelling', 'IDC', 'urethral', 'CAUTI', 'closed drainage system', 'bypassing' or 'retention' without explaining them, ask what they mean. If the nurse starts teaching the bag straight away without acknowledging how you feel, go quiet and give short answers, then say more anxiously: 'But what about when I'm out? What if someone notices?' If the nurse does not address infection, bring it up again, more worried: 'My brother nearly died from an infection with one of these. How do I stop that?' If the nurse acknowledges your embarrassment calmly and explains that the leg bag is hidden under trousers and that careful emptying prevents smells, relax gradually and start asking practical questions ('Can I still shower?', 'What about choir?'). If told to avoid swimming for now or to check with the nursing team first, be disappointed but accept it. If asked to repeat the warning signs, repeat most of them but miss one (for example, no urine draining) so there is something to correct. Never coach the nurse or mention scoring. Near five minutes, wrap up naturally: say you feel less worried, that you will start drinking more water, and thank the nurse.",
+  "learning_objectives": [
+    "find out what the patient knows and what worries him about the catheter at home",
+    "acknowledge his embarrassment and reassure him that the leg bag is hidden under clothes",
+    "explain daily catheter care: hand washing, cleaning, emptying the leg bag, connecting the night bag",
+    "advise how to reduce infection: keep the system closed, drink plenty, avoid constipation",
+    "explain warning signs of infection or blockage and who to contact",
+    "check understanding by asking him to repeat the warning signs"
+  ],
+  "suggested_questions": [
+    "Many people feel embarrassed at first, and that's completely understandable. Can you tell me what's worrying you most about going home with it?",
+    "The leg bag straps to your thigh or calf, under your normal trousers, so nobody will see it. Emptying it when it's about half full and keeping the tap clean helps prevent leaks and smells.",
+    "The most important things to prevent infection are washing your hands before and after touching it, keeping the bag connected, and drinking plenty of fluids.",
+    "If you get a fever or shivers, pain in your back or side, or no urine drains for an hour or two, contact the nursing team straight away. Could you tell me which signs you'd watch for?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Discharge education for a patient with a long-term indwelling urethral catheter",
+    "review_status": "grounded in NICE CG139 (healthcare-associated infections: prevention and control in primary and community care) and NHS urinary catheter information; catheter type, bag change intervals and community follow-up follow local continence and urology policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Catheter-associated urinary tract infection is the main risk of an indwelling catheter; hand hygiene, a closed drainage system and adequate fluid intake reduce this risk.",
+      "Embarrassment and fear of being noticed are common and can lead to poor self-care or social withdrawal; they should be explored and addressed practically.",
+      "Blockage and bypassing are common catheter problems that patients must know how to recognise and report."
+    ],
+    "diagnostic_clues": [
+      "A patient who has not looked at the bag and avoids the topic is likely embarrassed or anxious and needs a gentle, private approach.",
+      "Low water intake increases the risk of infection, blockage and constipation."
+    ],
+    "common_misconceptions": [
+      "Cloudy or smelly urine always means infection and needs antibiotics.",
+      "Disconnecting and changing the bag often keeps it cleaner.",
+      "Having a catheter means giving up all normal activities."
+    ],
+    "dangerous_errors": [
+      "Advising the patient to disconnect the leg bag every night or to raise the bag above bladder level.",
+      "Omitting systemic infection warning signs (fever, shivering, back pain, confusion) or what to do if the catheter stops draining.",
+      "Advising the patient to try to remove or adjust the catheter himself."
+    ],
+    "management_principles": [
+      "Acknowledge embarrassment and explore specific worries before teaching.",
+      "Teach daily care and infection prevention in small, practical steps, ideally with the equipment in front of the patient.",
+      "Give clear warning signs with contact details, arrange community nursing follow-up, and check understanding with teach-back."
+    ],
+    "boundaries_and_exceptions": [
+      "Leg bag change intervals, fluid intake advice (commonly about 1.5 to 2 litres a day), and when to empty the bag vary with local policy and the patient's other conditions, such as heart or kidney disease.",
+      "Advice on bathing, swimming and sexual activity with a catheter varies; the patient should follow local guidance and ask the team.",
+      "Who to contact out of hours, and the service that provides supplies, depend on the country and local health system."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE CG139: Healthcare-associated infections — prevention and control in primary and community care",
+        "url": "https://www.nice.org.uk/guidance/cg139"
+      },
+      {
+        "title": "NHS: Urinary catheters",
+        "url": "https://www.nhs.uk/conditions/urinary-catheters/"
+      }
+    ]
+  }
+}

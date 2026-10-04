@@ -96,7 +96,16 @@ object AnalysisPromptBuilder {
             )
         }
 
-        val emergencyEncounter = !everyday && (
+        // A nursing session is scored against the clinical schema (it is not everyday English), but
+        // the clinical schema's questions are a physician's. This re-scopes them; see
+        // NursingTrack.SCORING_NOTE for why the schema itself is left alone.
+        val nursing = !everyday && NursingTrack.isNursingCase(caseData)
+        if (nursing) {
+            parts.add("\n" + NursingTrack.scoringNote(caseData))
+        }
+        // The emergency note asks for a physician's acute workup; a nursing case set in an ED is
+        // still scored on the nursing task.
+        val emergencyEncounter = !everyday && !nursing && (
             str(caseData["care_setting"]) == "emergency_department" ||
                 str(caseData["eval_template"]) == "emergency_encounter" ||
                 str(caseData["system"]).contains("emergency", ignoreCase = true)
@@ -443,7 +452,10 @@ object AnalysisPromptBuilder {
         }
 
         val result = parts.joinToString("\n")
-        return if (result.length > 15_000) result.take(15_000) else result
+        val capped = if (result.length > 15_000) result.take(15_000) else result
+        // Outside the cap on purpose: a long clinical_knowledge block must never truncate away the
+        // output contract the nursing feedback card depends on.
+        return if (nursing) capped + "\n" + NursingTrack.assessmentContract(caseData, evalData) else capped
     }
 
     // ── helpers ─────────────────────────────────────────────────────────────

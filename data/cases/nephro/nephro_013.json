@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "rapidly rising creatinine and oliguria in patient with liver cirrhosis and ascites",
   "hpi_details": "57M with decompensated alcoholic cirrhosis presenting with progressive oliguria and doubling of creatinine unresponsive to albumin and fluid challenges.",
-  "ideas": "thinks this is related to hepatorenal syndrome in cirrhosis",
-  "concerns": "worried about serious complications and prolonged illness",
-  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "ideas": "He thinks the heavy fluid accumulating in his abdomen is pressing against his bladder and mechanically blocking his urine from coming out.",
+  "concerns": "He is worried that his liver has completely failed and that he will not survive long enough to attend his daughter's wedding next month.",
+  "expectations": "He hopes the doctor will drain the fluid from his belly with a needle so the pressure comes off and he can pass urine again.",
   "pmh": "No significant chronic medical history",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker, employed full-time",
@@ -141,6 +141,186 @@
         "domains": [
           "medications"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "92/58",
+      "hr": 98,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 37
+    },
+    "history": [
+      {
+        "answer": "My daily urine has dropped to almost nothing over the last couple of weeks, and the clinic told me my kidney numbers are getting dangerously worse.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It has been dwindling steadily for the past two weeks, and now I only pass a tiny trickle maybe twice a day, barely filling half a small cup.",
+        "topic": "Urine output trend"
+      },
+      {
+        "answer": "I have been drinking my usual amount of water, and I haven't had any vomiting, diarrhea, excessive sweating, or vomiting blood.",
+        "topic": "Fluid intake and fluid loss"
+      },
+      {
+        "answer": "My mouth feels a little dry and I get dizzy whenever I stand up quickly, but I do not feel intensely thirsty.",
+        "topic": "Thirst and lightheadedness"
+      },
+      {
+        "answer": "It is a dark amber color like strong tea, but I have not seen any bright red blood, cola color, or foaming bubbles.",
+        "topic": "Urine color and foaming"
+      },
+      {
+        "answer": "I do not feel pain or burning when I pee, no weak dribble, and my lower belly does not feel painfully full or blocked.",
+        "topic": "Urinary symptoms and retention"
+      },
+      {
+        "answer": "No, I haven't had any pain in my flanks or back, and I have never had kidney stones.",
+        "topic": "Flank pain and stones"
+      },
+      {
+        "answer": "My belly has been very bloated and tight with fluid, and my lower legs are swollen, but I am not short of breath at rest.",
+        "topic": "Swelling and breathing"
+      },
+      {
+        "answer": "My appetite has been poor and my skin feels itchy, but I have not had severe nausea, persistent hiccups, or confusion.",
+        "topic": "Nausea, itching, and mental clarity"
+      },
+      {
+        "answer": "My pulse feels a little fast sometimes, but no irregular fluttering, and I do not have severe muscle weakness.",
+        "topic": "Palpitations and muscle weakness"
+      },
+      {
+        "answer": "No, I have not had any fever, chills, skin rashes, joint aches, or coughing up blood.",
+        "topic": "Fever and systemic symptoms"
+      },
+      {
+        "answer": "No, I haven't had a sore throat, runny nose, or skin infection recently.",
+        "topic": "Recent infections"
+      },
+      {
+        "answer": "No unusual muscle soreness, no heavy workouts, and I haven't fallen or suffered any trauma.",
+        "topic": "Muscle pain and trauma"
+      },
+      {
+        "answer": "No, I have not had any CT scans with contrast dye, angiograms, or recent surgeries.",
+        "topic": "Contrast agents and recent procedures"
+      },
+      {
+        "answer": "My stomach is bloated and tight from fluid, but it has not been tender or painful to press on.",
+        "topic": "Abdominal pain and swelling"
+      },
+      {
+        "answer": "I was on water pills for the fluid in my belly, but the doctors stopped them two days ago and gave me albumin IV fluids, which didn't improve my urine.",
+        "topic": "Medications and diuretics"
+      },
+      {
+        "answer": "I have never had any prostate trouble, pelvic cancer, or radiation therapy.",
+        "topic": "Prostate and pelvic history"
+      },
+      {
+        "answer": "I thought all this fluid swelling up inside my belly was pressing down on my bladder and trapping my urine inside.",
+        "topic": "Patient's ideas"
+      },
+      {
+        "answer": "I'm scared that my liver has completely given out and that I won't live long enough to walk my daughter down the aisle next month.",
+        "topic": "Patient's concerns"
+      },
+      {
+        "answer": "I was hoping you could drain this fluid from my stomach with a tap so the pressure comes off and I can pee again.",
+        "topic": "Patient's expectations"
+      },
+      {
+        "answer": "I have decompensated liver cirrhosis with ascites, but no past history of high blood pressure, diabetes, or kidney trouble.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I was in the hospital recently to have fluid drained from my abdomen, but I have never had any surgeries.",
+        "topic": "Past surgical and hospital history"
+      },
+      {
+        "answer": "I am not taking any medications at home right now since they stopped my diuretics, and I don't take pain relievers or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I used to drink alcohol socially in the past, but I completely quit drinking after being diagnosed with liver cirrhosis.",
+        "topic": "Alcohol history"
+      },
+      {
+        "answer": "I work full-time in an office and live with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has a history of kidney disease or liver conditions.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 92/58 mmHg, heart rate is 98 beats/min, respiratory rate is 18 breaths/min, and body temperature is 37.0°C.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are normal without pallor, but sclerae show pronounced icteric discoloration.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Jugular venous pressure is low and not distended.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Breath sounds are vesicular and clear throughout both lung fields without crackles, wheezes, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is prominently distended and tense, with visible spider angiomata across the upper abdomen.",
+        "maneuver": "abdominal_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is tensely distended but soft, non-tender to light and deep palpation, without rebound tenderness, guarding, or a distended bladder over the suprapubic area.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Marked shifting dullness and a clear fluid wave are present, confirming tense ascites.",
+        "maneuver": "ascites_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness is elicited on either side.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral 2+ pitting edema is noted over the pretibial regions and ankles.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Prominent palmar erythema on both hands and scattered spider nevi over the chest and shoulders, with no petechiae or rash.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Mild asterixis with occasional flapping tremor is observed upon sustained wrist dorsiflexion.",
+        "maneuver": "tremor_observation",
+        "response": "none"
       }
     ]
   }

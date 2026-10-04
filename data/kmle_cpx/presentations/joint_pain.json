@@ -1,0 +1,55 @@
+{
+  "id": "joint_pain",
+  "title": "관절이 아파요",
+  "english_title": "Joint pain (arthralgia)",
+  "category": "근골격",
+  "kmle_item": "관절 통증/부기",
+  "door_complaint": "관절이 아프다고",
+  "differential_groups": [
+    {"key": "degenerative", "label": "퇴행성", "examples": ["골관절염"]},
+    {"key": "inflammatory", "label": "자가면역 염증", "examples": ["류마티스관절염", "전신홍반루푸스", "건선관절염", "강직척추염", "반응성 관절염"]},
+    {"key": "crystal", "label": "결정 유발", "examples": ["통풍", "가성통풍(칼슘피로인산염 침착병)"]},
+    {"key": "infection", "label": "감염", "examples": ["화농성 관절염", "임균 관절염", "바이러스 관절염"]},
+    {"key": "trauma", "label": "외상/기계적", "examples": ["인대 손상", "반월상연골 파열", "혈관절증"]}
+  ],
+  "history": [
+    {"id": "location_number", "text": "아픈 관절의 위치와 개수, 양쪽 대칭 여부", "say": "어느 관절이 아프세요? 한 군데예요, 여러 군데예요? 양쪽이 같이 아프세요?", "tags": ["inflammatory", "crystal", "infection", "degenerative"]},
+    {"id": "onset", "text": "발생 양상(갑자기/서서히)과 기간", "say": "언제부터 아프셨어요? 갑자기 아프기 시작했어요, 아니면 서서히 심해졌어요?", "tags": ["crystal", "infection", "degenerative"]},
+    {"id": "character_severity", "text": "통증 양상과 정도", "say": "어떻게 아프세요? 가장 심할 때를 10점이라고 하면 몇 점 정도예요?"},
+    {"id": "swelling_redness", "text": "관절 부기, 붉어짐, 열감", "say": "관절이 붓거나 빨개지거나 뜨겁지는 않으세요?", "tags": ["inflammatory", "crystal", "infection"]},
+    {"id": "morning_stiffness", "text": "아침 강직과 지속 시간", "say": "아침에 일어나면 관절이 뻣뻣하세요? 풀리는 데 얼마나 걸려요?", "tags": ["inflammatory", "degenerative"]},
+    {"id": "activity_pattern", "text": "움직이면 심해지는지, 쉬면 나아지는지", "say": "많이 쓰면 더 아프고 쉬면 나아지세요, 아니면 쉬고 난 뒤가 더 뻣뻣하세요?", "tags": ["degenerative", "inflammatory"]},
+    {"id": "function", "text": "걷기, 계단, 손 사용 등 기능 제한과 체중 부하 가능 여부", "say": "걷거나 계단 오를 때, 단추 채울 때 불편하세요? 그 다리로 설 수는 있으세요?"},
+    {"id": "fever_chills", "text": "발열, 오한", "say": "열이 나거나 몸이 으슬으슬 춥지는 않으세요?", "tags": ["infection"], "key": true},
+    {"id": "injury", "text": "외상, 비틀림, '뚝' 소리, 무릎이 걸리거나 빠지는 느낌", "say": "다치거나 삐끗한 적 있으세요? 그때 뚝 소리가 나거나 무릎이 걸리는 느낌이 있었나요?", "tags": ["trauma"]},
+    {"id": "prior_attacks", "text": "이전의 같은 관절 발작", "say": "전에도 이렇게 갑자기 관절이 붓고 아팠던 적이 있으세요?", "tags": ["crystal"]},
+    {"id": "systemic_symptoms", "text": "피로, 미열, 체중 감소", "say": "요즘 많이 피곤하거나 미열이 있거나 살이 빠지지는 않으세요?", "tags": ["inflammatory"]},
+    {"id": "extraarticular", "text": "피부 발진(얼굴, 건선), 입안 궤양, 탈모, 눈 충혈, 입·눈 마름", "say": "얼굴이나 몸에 발진이 있거나, 입안이 헐거나, 머리가 많이 빠지거나 눈이 충혈되지는 않으세요?", "tags": ["inflammatory"]},
+    {"id": "back_heel", "text": "아침에 심한 허리 통증, 발뒤꿈치 통증, 손발가락 전체 부기", "say": "허리가 아침에 특히 아프거나 발뒤꿈치가 아프진 않으세요? 손가락이 소시지처럼 통째로 붓지는요?", "tags": ["inflammatory"]},
+    {"id": "recent_infection", "text": "최근 설사, 배뇨통·요도 분비물, 목감기", "say": "최근 몇 주 사이에 설사를 하셨거나 소변볼 때 아프거나 목감기를 앓으셨어요?", "tags": ["inflammatory", "infection"]},
+    {"id": "gout_triggers", "text": "음주, 고기·해산물 과식, 이뇨제 복용", "say": "아프기 전에 술을 드셨거나 고기, 해산물을 많이 드셨어요? 이뇨제를 드시나요?", "tags": ["crystal"]},
+    {"id": "immune_joint_risk", "text": "면역억제제·스테로이드, 관절 주사·수술, 인공관절", "say": "면역을 떨어뜨리는 약이나 스테로이드를 드세요? 그 관절에 주사를 맞거나 수술받은 적은요?", "tags": ["infection"], "key": true},
+    {"id": "sexual_history", "text": "민감한 질문임을 양해 구한 뒤 최근 성관계, 새 파트너", "say": "진료에 필요해서 누구에게나 여쭤보는 질문인데요, 최근에 새로운 분과 성관계가 있으셨어요?", "tags": ["infection", "inflammatory"], "conditional": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온 등 활력징후 확인", "say": "체온을 먼저 재 보겠습니다."},
+    {"id": "inspection", "text": "양쪽 관절을 비교해 부기, 발적, 변형 확인", "say": "양쪽 관절을 비교해서 보겠습니다."},
+    {"id": "palpation", "text": "열감, 압통, 관절 삼출 촉진", "say": "관절을 만져 보겠습니다. 아프면 말씀해 주세요."},
+    {"id": "range_of_motion", "text": "능동·수동 관절가동범위와 움직일 때 통증", "say": "제가 관절을 천천히 움직여 보겠습니다. 아프면 바로 말씀하세요.", "key": true},
+    {"id": "other_joints_skin", "text": "다른 관절, 손발톱, 피부 발진, 통풍결절 확인", "say": "다른 관절과 손발톱, 피부도 함께 보겠습니다."},
+    {"id": "gait", "text": "하지 관절이면 보행 관찰", "say": "괜찮으시면 몇 걸음 걸어 보시겠어요?", "conditional": true}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "열이 나거나 관절이 갑자기 심하게 붓고 붉어지면 바로 오도록 안내", "say": "열이 나거나 관절이 갑자기 붓고 빨개지면 바로 다시 오세요.", "key": true},
+    {"id": "gout_lifestyle", "text": "통풍이면 절주, 고기·내장·단 음료 줄이기, 수분 섭취, 체중 관리", "say": "술과 고기, 단 음료를 줄이시고 물을 충분히 드세요.", "conditional": true},
+    {"id": "oa_lifestyle", "text": "골관절염이면 체중 감량, 허벅지 근력 운동, 활동 유지", "say": "체중을 조금만 줄여도 무릎 부담이 크게 줄어요. 허벅지 근육 운동을 꾸준히 하세요.", "conditional": true}
+  ],
+  "grader_notes": [
+    "열감과 부기가 있는 급성 단일관절염은 화농성 관절염을 배제하기 위해 관절천자로 활액 세포수, 그람염색·배양, 결정 검사를 한다.",
+    "화농성 관절염이 의심되면 혈액·활액 배양 후 즉시 정맥 항생제와 관절 배액을 시행한다.",
+    "통풍은 활액에서 음성 복굴절의 바늘 모양 결정으로 확진하며, 급성 발작 중에는 혈청 요산이 정상일 수 있다. 급성 발작은 NSAID, 콜히친, 스테로이드 중 하나로 치료한다.",
+    "대칭성 소관절 다발관절염과 1시간 이상 아침 강직은 류마티스관절염을 의심해 류마티스인자, 항CCP 항체, ESR·CRP, 손발 단순방사선을 검사하고 조기에 류마티스내과로 의뢰한다.",
+    "골관절염은 병력과 진찰로 진단할 수 있으며, 운동과 체중 감량이 기본 치료이고 필요하면 국소 또는 경구 NSAID를 쓴다."
+  ],
+  "case_ids": ["rheum_001", "rheum_022", "rheum_003", "ortho_004", "rheum_010", "fm_004", "rheum_024", "rheum_019", "rheum_032", "rheum_023"]
+}

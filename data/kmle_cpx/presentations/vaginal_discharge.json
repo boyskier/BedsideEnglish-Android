@@ -1,0 +1,52 @@
+{
+  "id": "vaginal_discharge",
+  "title": "질 분비물이 많아요",
+  "english_title": "Vaginal discharge",
+  "category": "여성",
+  "kmle_item": "질 분비물/질 출혈",
+  "door_complaint": "질 분비물이 많다고",
+  "differential_groups": [
+    {"key": "vaginitis", "label": "질염", "examples": ["칸디다 질염", "세균성 질증", "트리코모나스 질염"]},
+    {"key": "cervicitis", "label": "자궁경부염/골반염", "examples": ["클라미디아·임균 자궁경부염", "골반염증성질환"]},
+    {"key": "noninfectious", "label": "비감염/기타", "examples": ["생리적 분비물", "위축성 질염", "질 내 이물(탐폰)", "자극성 접촉피부염", "자궁경부암"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "시작 시기와 이전의 같은 증상, 치료 경험", "say": "언제부터 분비물이 많아졌어요? 전에도 이런 적이 있으셨어요?", "tags": ["vaginitis"]},
+    {"id": "color_consistency", "text": "분비물 색과 농도(흰 덩어리, 묽은 회색, 노란·초록 거품, 고름)", "say": "분비물 색이 어떤가요? 흰 치즈처럼 덩어리져요, 묽고 회색이에요, 아니면 노랗거나 초록색 거품이 있어요?", "tags": ["vaginitis", "cervicitis"]},
+    {"id": "odor", "text": "냄새(비린내), 성관계 후 심해지는지", "say": "냄새가 나세요? 비린내 같은 냄새가 성관계 후에 더 심해지나요?", "tags": ["vaginitis"]},
+    {"id": "itch_burn", "text": "외음부 가려움, 따가움, 부기", "say": "아래쪽이 가렵거나 따갑거나 붓지는 않으세요?", "tags": ["vaginitis", "noninfectious"]},
+    {"id": "cycle_relation", "text": "월경 주기와의 관계", "say": "생리 주기에 따라 분비물 양이 달라지나요? 생리 직전에 심해지세요?", "tags": ["vaginitis", "noninfectious"]},
+    {"id": "dysuria", "text": "배뇨통", "say": "소변볼 때 아프거나 따갑지는 않으세요?", "tags": ["vaginitis", "cervicitis"]},
+    {"id": "abnormal_bleeding", "text": "성관계 후 출혈, 월경 사이 출혈", "say": "성관계 후나 생리 기간이 아닐 때 피가 비치지는 않으세요?", "tags": ["cervicitis", "noninfectious"], "key": true},
+    {"id": "pelvic_pain_fever", "text": "아랫배 통증, 발열", "say": "아랫배가 아프거나 열이 나지는 않으세요?", "tags": ["cervicitis"], "key": true},
+    {"id": "dyspareunia", "text": "성교통", "say": "성관계할 때 아프지는 않으세요?", "tags": ["cervicitis", "noninfectious"]},
+    {"id": "sexual_history", "text": "민감한 질문임을 양해 구한 뒤 최근 성관계, 새 파트너나 여러 파트너, 콘돔 사용", "say": "누구에게나 여쭤보는 질문이니 편하게 대답해 주세요. 최근에 새로운 분과 성관계가 있으셨어요? 콘돔은 사용하셨어요?", "tags": ["cervicitis", "vaginitis"], "key": true},
+    {"id": "partner_symptoms", "text": "파트너의 증상(요도 분비물, 배뇨통)", "say": "상대방도 소변볼 때 아프거나 분비물이 있다고 하나요?", "tags": ["cervicitis", "vaginitis"]},
+    {"id": "predisposing", "text": "최근 항생제, 당뇨병, 스테로이드, 임신", "say": "최근에 항생제를 드셨어요? 당뇨병이 있거나 임신 중이신가요?", "tags": ["vaginitis"]},
+    {"id": "hygiene", "text": "질 세정, 세정제, 꽉 끼는 옷, 탐폰 사용", "say": "질 안까지 씻거나 세정제를 쓰세요? 탐폰을 쓰시다가 빼는 걸 잊으신 적은 없어요?", "tags": ["vaginitis", "noninfectious"]},
+    {"id": "contraception", "text": "피임 방법(피임약, 자궁내장치)", "say": "피임은 어떻게 하세요?", "tags": ["cervicitis"]},
+    {"id": "cervical_screening", "text": "자궁경부암 검진력, HPV 백신 접종", "say": "자궁경부암 검사는 언제 마지막으로 받으셨어요? 자궁경부암 예방주사는 맞으셨어요?", "tags": ["noninfectious"]},
+    {"id": "menopause", "text": "폐경 여부와 질 건조감", "say": "폐경이 되셨어요? 질이 건조한 느낌이 드세요?", "tags": ["noninfectious"], "applies": "female_over_45"}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온 등 활력징후 확인", "say": "체온을 먼저 재 보겠습니다."},
+    {"id": "abdomen", "text": "하복부 압통 확인", "say": "누우세요. 아랫배를 눌러 보겠습니다. 아프면 말씀해 주세요."},
+    {"id": "external_genitalia", "text": "외음부 시진(발적, 부종, 긁힌 자국, 궤양)", "say": "외부 생식기에 염증이나 상처가 있는지 먼저 보겠습니다."},
+    {"id": "speculum_exam", "text": "질경 검사로 분비물 성상과 자궁경부 모양을 보고 검체를 채취한다고 설명", "say": "질경이라는 기구를 넣어 분비물과 자궁 입구를 보고 검사물을 채취하겠습니다. 여성 직원이 함께 있을 거예요."},
+    {"id": "bimanual_exam", "text": "양손 진찰로 자궁경부 움직임 압통, 자궁·부속기 압통 확인", "say": "자궁과 난소 쪽을 눌러 보겠습니다. 아프면 바로 말씀하세요.", "key": true, "conditional": true}
+  ],
+  "education": [
+    {"id": "hygiene_advice", "text": "질 세정·향 제품 피하기, 통풍이 잘되는 면 속옷", "say": "질 안까지 씻거나 향이 있는 세정제는 쓰지 마시고, 통풍이 잘되는 면 속옷을 입으세요."},
+    {"id": "complete_treatment", "text": "증상이 좋아져도 처방대로 끝까지 치료, 메트로니다졸 복용 중 음주 금지", "say": "증상이 좋아져도 약은 끝까지 쓰시고, 이 약을 드시는 동안에는 술을 드시면 안 됩니다.", "conditional": true},
+    {"id": "partner_treatment", "text": "성매개감염이면 파트너 치료와 치료가 끝날 때까지 성관계 자제", "say": "성관계로 옮는 감염이라 상대방도 함께 치료받아야 하고, 치료가 끝날 때까지는 성관계를 피해 주세요.", "conditional": true},
+    {"id": "warning_signs", "text": "열, 아랫배 통증, 비정상 출혈이 생기면 바로 오도록 안내", "say": "열이 나거나 아랫배가 아프거나 피가 비치면 바로 다시 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "질 분비물은 질 pH, 생리식염수·KOH 현미경 검사(효모, 단서세포, 트리코모나스)와 아민 냄새 검사로 질염의 원인을 구분한다.",
+    "성매개감염 위험이 있거나 자궁경부 점액농성 분비물이 있으면 클라미디아·임균 핵산증폭검사를 하고, 자궁경부 움직임 압통이나 부속기 압통이 있으면 골반염증성질환으로 보고 경험적 항생제 치료를 시작한다.",
+    "칸디다 질염은 국소 또는 경구 아졸계 항진균제로, 세균성 질증과 트리코모나스 질염은 메트로니다졸로 치료한다.",
+    "트리코모나스, 클라미디아, 임균 감염은 성 파트너도 함께 치료하며, 세균성 질증과 칸디다 질염은 보통 파트너 치료가 필요 없다.",
+    "성관계 후 출혈이나 자궁경부 이상 소견이 있으면 자궁경부 세포검사와 질확대경 검사를 의뢰한다."
+  ],
+  "case_ids": ["obgyn_025", "obgyn_030", "obgyn_031"]
+}

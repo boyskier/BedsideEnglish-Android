@@ -4,13 +4,13 @@
   "difficulty": "intermediate",
   "eval_template": "history_taking",
   "patient_name": "Ms. Garcia",
-  "age": 56,
+  "age": 32,
   "gender": "female",
   "chief_complaint": "galactorrhea, amenorrhea, and headache",
-  "hpi_details": "A 56-year-old female presents to the clinic with galactorrhea, amenorrhea, and headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to prolactinoma",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "hpi_details": "A 32-year-old female presents to the clinic with galactorrhea, amenorrhea, and headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+  "ideas": "She thinks she might have an undetected early pregnancy or a severe hormonal disruption caused by stress.",
+  "concerns": "She is worried that her missed periods and breast discharge mean she has become permanently infertile.",
+  "expectations": "She hopes to get a definitive blood test and medicine to regulate her hormones so her menstrual cycle returns to normal.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -24,7 +24,7 @@
     ],
     "diagnostic_clues": [
       "Chief Complaint: galactorrhea, amenorrhea, and headache",
-      "Key HPI features: A 56-year-old female presents to the clinic with galactorrhea, amenorrhea, and headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
+      "Key HPI features: A 32-year-old female presents to the clinic with galactorrhea, amenorrhea, and headache. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
       "Objective/Exam findings: Focused physical exam and vital signs check. Tailored diagnostics for Prolactinoma.",
       "Relevant background/PMH: Unremarkable"
     ],
@@ -57,7 +57,7 @@
     ]
   },
   "reference_soap": {
-    "subjective": "56-year-old female presents with galactorrhea, amenorrhea, and headache. Symptoms started recently and have been gradually worsening, with associated generalized fatigue.",
+    "subjective": "32-year-old female presents with galactorrhea, amenorrhea, and headache. Symptoms started recently and have been gradually worsening, with associated generalized fatigue.",
     "objective": "Focused physical exam and vital signs check. Tailored diagnostics for Prolactinoma.",
     "assessment": "Condition highly suspicious for Prolactinoma.",
     "plan": "Measure prolactin and exclude pregnancy, medication effects, hypothyroidism, and renal disease. Obtain pituitary MRI for persistent unexplained elevation, then use dopamine-agonist therapy when indicated."
@@ -118,6 +118,184 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "118/76",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "My periods completely stopped about four months ago, and over the past few weeks, a milky fluid has started leaking from both of my breasts.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "My periods used to be very regular, arriving every twenty-eight days and lasting about five days each time.",
+        "topic": "Baseline menstrual cycle"
+      },
+      {
+        "answer": "It has been four full months since my last menstrual bleed; they stopped all of a sudden.",
+        "topic": "Duration of missed periods"
+      },
+      {
+        "answer": "Back when I was having periods, the bleeding was normal—about three to four pads a day with no large clots.",
+        "topic": "Prior menstrual flow and duration"
+      },
+      {
+        "answer": "No, I haven't noticed any bleeding between my cycles or any spotting after having sex.",
+        "topic": "Intermenstrual or postcoital bleeding"
+      },
+      {
+        "answer": "It's a thin, milky white liquid that comes out of both nipples, especially when my bra rubs against them or if I press on them.",
+        "topic": "Characteristics of breast discharge"
+      },
+      {
+        "answer": "I've had a dull, persistent ache in the front of my forehead for about two months, and it has been gradually getting worse.",
+        "topic": "Headache onset and severity"
+      },
+      {
+        "answer": "No, my vision seems normal; I haven't had any blind spots on the sides, blurriness, or double vision.",
+        "topic": "Visual field changes"
+      },
+      {
+        "answer": "Yes, I have been feeling unusually wiped out and exhausted over the past couple of months, even when I get plenty of sleep.",
+        "topic": "Fatigue and energy level"
+      },
+      {
+        "answer": "No, I haven't had any dizziness, shortness of breath, or racing heartbeats.",
+        "topic": "Dizziness and palpitations"
+      },
+      {
+        "answer": "No, I don't have any lower belly cramps, pelvic pressure, or burning when I urinate.",
+        "topic": "Pelvic or lower abdominal pain"
+      },
+      {
+        "answer": "No, my skin is clear without any sudden acne, and I haven't noticed any coarse dark hair growing on my face, chest, or belly.",
+        "topic": "Acne and abnormal hair growth"
+      },
+      {
+        "answer": "No, I don't feel unusually sensitive to cold or heat, and I haven't noticed my throat feeling full or swollen.",
+        "topic": "Cold or heat intolerance"
+      },
+      {
+        "answer": "My weight has been completely steady, and I haven't been on any crash diets or doing strenuous exercise.",
+        "topic": "Weight change and exercise habits"
+      },
+      {
+        "answer": "Work is steady, and while life can be busy, I haven't experienced any overwhelming stress recently.",
+        "topic": "Recent life stressors"
+      },
+      {
+        "answer": "No, I don't get frequent nosebleeds, bleeding gums, or easy bruising, and I've never bled excessively after dental procedures.",
+        "topic": "Bleeding tendencies"
+      },
+      {
+        "answer": "I took a home urine pregnancy test last month and repeated another one last week, and both were negative.",
+        "topic": "Pregnancy testing"
+      },
+      {
+        "answer": "I am sexually active only with my husband, and we rely on condoms consistently for birth control.",
+        "topic": "Sexual activity and contraception"
+      },
+      {
+        "answer": "I have never been pregnant. We were hoping to start trying for a baby soon, so missing my period makes me quite anxious.",
+        "topic": "Obstetric history and pregnancy plans"
+      },
+      {
+        "answer": "My last Pap smear was about a year ago and everything was normal, and I don't have diabetes or high blood sugar.",
+        "topic": "Cervical screening and cancer risks"
+      },
+      {
+        "answer": "I'm not taking any prescription pills, birth control, stomach medications, or antidepressants; I only take a daily multivitamin.",
+        "topic": "Current medications and supplements"
+      },
+      {
+        "answer": "I don't have any chronic illnesses like high blood pressure, thyroid disease, or kidney problems.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never undergone any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I don't have any known allergies to medications, foods, or latex.",
+        "topic": "Drug and food allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used electronic cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink occasionally, maybe one or two glasses of wine on a weekend dinner with friends.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an accountant in an office and live comfortably in an apartment with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has had pituitary tumors, hormone imbalances, or reproductive cancers.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "I honestly thought I might be pregnant despite the negative home tests, or that extreme stress messed up my hormones.",
+        "topic": "Patient's ideas"
+      },
+      {
+        "answer": "I'm terrified that this means I'll never be able to get pregnant and have children with my partner. I hope you can do a definitive blood test and give me something to regulate my hormones so my cycle gets back on track.",
+        "topic": "Patient's concerns and expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 118/76 mmHg, pulse 72 beats/min, respiratory rate 14 breaths/min, body temperature 36.6°C, and oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are pink without pallor, and sclerae are white and non-icteric.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Pupils are equal, round, and reactive to light, and visual fields are fully intact to confrontation with no bitemporal hemianopsia.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Cranial nerves II through XII are intact, including full extraocular movements without nystagmus or diplopia.",
+        "maneuver": "cranial_nerves",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, smooth, and non-tender, with no palpable nodules or bruit.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral breasts are symmetric with no palpable masses or skin changes; gentle manual expression yields bilateral milky white nipple discharge.",
+        "maneuver": "breast_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is flat, soft, and non-tender throughout, with no palpable pelvic mass or enlarged uterus.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No acne on face or back, no hirsutism along the chin or midline abdomen, and no acanthosis nigricans on the neck or axillae.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "External genitalia appear normal, vaginal mucosa is moist and pink, cervix is closed with no bleeding, and bimanual exam reveals a normal-sized, non-tender uterus without adnexal fullness.",
+        "maneuver": "pelvic_exam",
+        "response": "none"
       }
     ]
   }

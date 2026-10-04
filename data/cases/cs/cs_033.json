@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "incidental 1.2 cm solid lung nodule on chest CT, non-smoker",
   "hpi_details": "A 41-year-old male, lifelong non-smoker, presents to the clinic with an incidental 1.2 cm solid lung nodule found on a chest CT ordered for an unrelated reason. He is asymptomatic, denying cough, breathlessness, or weight loss.",
-  "ideas": "thinks it might be related to a lung nodule",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks the spot on his lung is just an old scar left behind from a bout of severe pneumonia he had during college.",
+  "concerns": "He is worried that despite never having smoked, this spot could turn out to be an aggressive tumor that will require removing part of his lung.",
+  "expectations": "He hopes the doctor will review previous chest images to confirm the spot is stable and reassure him that he does not need a painful biopsy.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -123,6 +123,194 @@
         "domains": [
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "120/78",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I came in because I was told they found a small spot or nodule on my lung during a CT scan.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I had a chest CT done two weeks ago as part of an executive checkup through my company, and the doctor told me there was a 1.2-centimeter solid nodule in my right lung.",
+        "topic": "Details of abnormal finding"
+      },
+      {
+        "answer": "I had a routine workplace chest X-ray about two years ago that was completely normal, but this was my first time getting a chest CT.",
+        "topic": "Prior imaging and comparison"
+      },
+      {
+        "answer": "I was fasting as instructed for the checkup, and I wasn't sick, stressed, or exercising heavily before the scan.",
+        "topic": "Circumstances of the test"
+      },
+      {
+        "answer": "I haven't had any other repeat scans or tests done since that CT report.",
+        "topic": "Home or repeat measurements"
+      },
+      {
+        "answer": "I have felt a little more tired than usual over the past couple of weeks, but I haven't had headaches, excess thirst, or frequent urination.",
+        "topic": "Fatigue or general symptoms"
+      },
+      {
+        "answer": "No, I haven't had any chest pain, chest tightness, or shortness of breath at all.",
+        "topic": "Chest pain or shortness of breath"
+      },
+      {
+        "answer": "I haven't had any cough, and I have definitely never coughed up any blood or phlegm.",
+        "topic": "Cough and hemoptysis"
+      },
+      {
+        "answer": "No fevers, chills, or night sweats.",
+        "topic": "Fever and night sweats"
+      },
+      {
+        "answer": "My weight has been completely steady at around 72 kilograms, with no unintentional weight loss.",
+        "topic": "Weight changes and appetite"
+      },
+      {
+        "answer": "No bone pain, joint aches, swollen neck glands, or change in bowel habits.",
+        "topic": "Bone pain and organ symptoms"
+      },
+      {
+        "answer": "No urinary problems, burning, difficulty urinating, or history of prostate trouble.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "No heart palpitations, heat intolerance, unusual muscle weakness, or tremors.",
+        "topic": "Secondary cause clues"
+      },
+      {
+        "answer": "I am not taking any prescription drugs, painkillers, steroids, or dietary supplements that might alter test results.",
+        "topic": "Medications affecting results"
+      },
+      {
+        "answer": "I eat regular balanced meals and exercise lightly on weekends; my weight has not changed recently.",
+        "topic": "Diet and exercise"
+      },
+      {
+        "answer": "I work at a desk in an IT office, and I have never been exposed to asbestos, dust, silica, or toxic industrial chemicals.",
+        "topic": "Occupational and environmental exposures"
+      },
+      {
+        "answer": "No history of broken bones, height loss, or long-term steroid use.",
+        "topic": "Fractures and steroid use"
+      },
+      {
+        "answer": "I have never had tuberculosis, and as far as I know, I haven't been in contact with anyone with active TB.",
+        "topic": "Tuberculosis and prior infections"
+      },
+      {
+        "answer": "I have never had pneumonia, fungal lung infections, or chronic respiratory illnesses.",
+        "topic": "History of lung infections"
+      },
+      {
+        "answer": "I'm really worried that even though I've never smoked, this could turn out to be cancer and I might lose part of my lung.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I thought the spot on my lung was probably just scar tissue left over from a bad bout of pneumonia I had in college.",
+        "topic": "Thoughts on the cause"
+      },
+      {
+        "answer": "I'm hoping you can check my old chest X-rays to confirm it hasn't changed and reassure me that I don't need a painful lung biopsy.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I have no chronic medical conditions like high blood pressure, diabetes, or kidney disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any regular prescription medications, over-the-counter medicines, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications, foods, or CT contrast dyes.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I am a lifelong non-smoker and have never smoked cigarettes or electronic cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have a beer or two socially once or twice a month, and I never drink heavily.",
+        "topic": "Alcohol use"
+      },
+      {
+        "answer": "I work as a software project manager in an office, and I live with my wife and two young children.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of lung cancer, early heart disease, stroke, or kidney disease.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Alert, comfortable, and well-nourished male in no acute respiratory distress; body habitus is normal.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 120/78 mmHg, pulse 72 beats per minute, respiratory rate 14 breaths per minute, temperature 36.6°C, oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical, supraclavicular, or axillary lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and moves freely with swallowing; no bruits or discrete nodules.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Chest wall is symmetric with normal chest expansion and no focal bony tenderness.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally throughout all lung fields with no wheezing, rhonchi, or crackles.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal S1 and S2 with regular rate and rhythm; no murmurs, gallops, or friction rubs appreciated.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Soft, non-tender, and non-distended without palpable hepatosplenomegaly or abdominal masses.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral radial, femoral, and dorsalis pedis pulses are intact and equal (2+); no carotid or femoral bruits.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Normal spine curvature without kyphosis; no midline or paraspinal tenderness along the spine.",
+        "maneuver": "spine_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Normal sphincter tone, smooth and symmetric non-tender prostate without palpable nodules or enlargement.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
       }
     ]
   }

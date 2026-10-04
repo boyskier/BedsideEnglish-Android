@@ -10,8 +10,8 @@
   "chief_complaint": "severe lower back pain, bilateral leg weakness, saddle anesthesia, and acute urinary retention / incontinence after lifting heavy weights",
   "hpi_details": "42M weightlifter presenting with bilateral sciatica, numbness in perianal saddle region, and post-void residual >400 mL where emergent lumbar spine MRI confirms massive central L4-L5 disc extrusion requiring STAT emergency neurosurgical decompression within 24-48 hours.",
   "ideas": "worried a slipped disc from lifting is pinching the nerves in his back",
-  "concerns": "worried about serious complications and prolonged recovery",
-  "expectations": "wants diagnostic certainty and immediate evidence-based management",
+  "concerns": "He is terrified that the numbness in his groin and legs means he will be permanently paralyzed.",
+  "expectations": "He hopes to get an emergency MRI scan and a muscle relaxant injection so he can empty his bladder.",
   "pmh": "No significant chronic medical history",
   "medications": "None",
   "social_hx": "Non-smoker, active lifestyle",
@@ -174,6 +174,176 @@
         "domains": [
           "severity"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "138/84",
+      "hr": 88,
+      "rr": 16,
+      "spo2": 99,
+      "temp_c": 36.9
+    },
+    "history": [
+      {
+        "answer": "My lower back is killing me, and both of my legs have suddenly become so weak and numb that I can barely stand.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The pain is right in the center of my lower back, and it shoots down through both of my buttocks into the backs of my legs and feet.",
+        "topic": "Pain location and radiation"
+      },
+      {
+        "answer": "It happened suddenly yesterday afternoon right after I was deadlifting heavy weights at the gym.",
+        "topic": "Onset and trigger"
+      },
+      {
+        "answer": "It is a severe, sharp, electric pain that feels like a 9 out of 10.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "Any slight movement, bending, coughing, or trying to stand makes the pain shoot down both legs, and lying flat gives no relief.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "I couldn't sleep at all last night because the throbbing pain kept me awake even when I was completely still.",
+        "topic": "Night pain or rest pain"
+      },
+      {
+        "answer": "My back muscles feel locked in tight spasms, but I do not have morning stiffness that loosens up with movement.",
+        "topic": "Morning stiffness"
+      },
+      {
+        "answer": "Both legs feel heavy, rubbery, and numb, and I can't lift my toes or feet properly when I try to step.",
+        "topic": "Leg numbness and weakness"
+      },
+      {
+        "answer": "The entire saddle area between my legs where I sit on a bike seat has gone completely numb.",
+        "topic": "Saddle numbness"
+      },
+      {
+        "answer": "I could not pee when I tried earlier, and then I noticed some urine leaked into my underwear without me feeling it.",
+        "topic": "Bowel and bladder changes"
+      },
+      {
+        "answer": "I cannot walk more than two or three steps because my knees buckle, and leaning forward does not help at all.",
+        "topic": "Walking tolerance and claudication"
+      },
+      {
+        "answer": "No, I have not had any fever, chills, night sweats, or weight loss.",
+        "topic": "Fever, weight loss, or chills"
+      },
+      {
+        "answer": "No, I have never had cancer or any tumors.",
+        "topic": "History of cancer"
+      },
+      {
+        "answer": "No, I have had no recent infections, no spinal injections or procedures, and I have never used intravenous drugs.",
+        "topic": "Recent infections or injections"
+      },
+      {
+        "answer": "No, I have never taken steroid pills, and I do not have osteoporosis or weak bones.",
+        "topic": "Steroid use or bone density"
+      },
+      {
+        "answer": "I do not have stomach pain or any pulsing heartbeat in my abdomen, just a full, uncomfortable pressure in my bladder.",
+        "topic": "Abdominal or urinary symptoms"
+      },
+      {
+        "answer": "No, I have no eye redness, heel pain, joint swelling, skin rashes, or chronic diarrhea.",
+        "topic": "Joint, eye, or skin symptoms"
+      },
+      {
+        "answer": "I took 800 milligrams of ibuprofen last night, but it did not help the pain at all.",
+        "topic": "Pain medications taken"
+      },
+      {
+        "answer": "I'm terrified that losing feeling down there means I'm going to end up paralyzed and never walk again.",
+        "topic": "Ideas and concerns"
+      },
+      {
+        "answer": "I hope you can do a scan to see what's pinched and give me something to relieve the pressure so I can empty my bladder.",
+        "topic": "Expectations for visit"
+      },
+      {
+        "answer": "I don't have any chronic medical conditions like high blood pressure or diabetes.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been hospitalized before.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, vitamins, or supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications or foods.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink an occasional beer socially once or twice a month.",
+        "topic": "Alcohol use"
+      },
+      {
+        "answer": "I work as an office consultant sitting at a desk, and I live with my wife in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of spine problems, arthritis, or nerve diseases.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 138/84 mmHg, heart rate 88 beats/min, respiratory rate 16 breaths/min, temperature 36.9°C, SpO2 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Severe midline tenderness over the L4-L5 lumbar spinous processes with marked paraspinal muscle spasm, and bilateral straight-leg raise test elicits sharp radicular pain at 30 degrees.",
+        "maneuver": "spine_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Bilateral lower extremity motor weakness with 3/5 strength in ankle dorsiflexion, extensor hallucis longus, and plantarflexion.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Significantly reduced sensation to light touch and pinprick in the perianal saddle distribution (S2-S5 dermatomes) and along the lateral aspects of both feet.",
+        "maneuver": "sensory_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral patellar reflexes are 1+, bilateral Achilles tendon reflexes are absent, and plantar responses are flexor bilaterally.",
+        "maneuver": "reflexes",
+        "response": "none"
+      },
+      {
+        "finding": "Markedly diminished anal sphincter tone with absent bulbocavernosus reflex.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Smooth, tender, distended suprapubic mass consistent with urinary retention; no pulsatile abdominal mass or generalized tenderness.",
+        "maneuver": "abdominal_palpation",
+        "response": "pain"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Unable to walk or bear weight independently due to severe leg weakness and pain.",
+        "maneuver": "coordination_gait",
+        "response": "pain"
       }
     ]
   }

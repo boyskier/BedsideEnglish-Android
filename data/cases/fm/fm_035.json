@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "excruciating pain, red swollen big toe, took hydrochlorothiazide",
   "hpi_details": "A 47-year-old male presents to the clinic with excruciating pain, red swollen big toe, took hydrochlorothiazide. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to gout_fm",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks he might have badly stubbed his toe in his sleep or gotten a nasty bug bite because it flared up hot and swollen out of nowhere.",
+  "concerns": "He is worried that he will not be able to put weight on his foot to stand through his work shifts this week.",
+  "expectations": "He hopes to get an X-ray to make sure nothing is broken and receive strong pain medication so he can put a shoe on.",
   "pmh": "Unremarkable",
   "medications": "Hydrochlorothiazide",
   "social_hx": "Non-smoker, social drinker",
@@ -111,6 +111,165 @@
         "domains": [
           "pmh"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "134/84",
+      "hr": 78,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "Doctor, my right big toe is swollen, bright red, and hurting terribly. Even having my bedsheet touch it is agonizing.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It is just the base of my right big toe. The other joints and my left foot feel completely fine.",
+        "topic": "Location and number of joints"
+      },
+      {
+        "answer": "It woke me up suddenly around three in the morning yesterday. The pain escalated quickly over a few hours and has stayed intense.",
+        "topic": "Onset and time course"
+      },
+      {
+        "answer": "It is a severe, throbbing, burning pain. I would rate it a nine out of ten.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "Yes, the joint is puffy, fiery red, and radiating heat.",
+        "topic": "Joint swelling, redness, and warmth"
+      },
+      {
+        "answer": "It feels stiff because bending it hurts so much, but it is not the kind of stiffness that loosens up after an hour of moving around.",
+        "topic": "Morning stiffness"
+      },
+      {
+        "answer": "Any pressure or movement makes it unbearable, even the weight of a sock. Keeping it still and elevated helps slightly, but the throbbing persists.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "I cannot bear weight on my forefoot at all. I had to limp in here putting all my weight on my heel.",
+        "topic": "Weight bearing and walking ability"
+      },
+      {
+        "answer": "No, I have not had any fever or chills.",
+        "topic": "Fever or chills"
+      },
+      {
+        "answer": "No, I have never had an episode like this before in any joint.",
+        "topic": "Prior joint episodes"
+      },
+      {
+        "answer": "No, I did not stub, twist, or injure my toe or foot in any way.",
+        "topic": "History of trauma"
+      },
+      {
+        "answer": "I went out for a steak dinner and had two beers with coworkers two nights ago, right before this flared up.",
+        "topic": "Dietary triggers and alcohol"
+      },
+      {
+        "answer": "I have been feeling quite tired and wiped out since this started, but no unexpected weight loss.",
+        "topic": "Fatigue and constitutional symptoms"
+      },
+      {
+        "answer": "No rashes on my face or body, no mouth sores, no eye irritation, and no hair loss.",
+        "topic": "Rash and systemic signs"
+      },
+      {
+        "answer": "No, my back and heels do not hurt, and none of my other toes or fingers are swollen like sausages.",
+        "topic": "Back pain and heel pain"
+      },
+      {
+        "answer": "No diarrhea, no burning when I urinate, and no sore throat or recent cold.",
+        "topic": "Recent infections and urinary symptoms"
+      },
+      {
+        "answer": "No, I have never had joint injections, joint surgeries, or artificial joints, and I do not take immune-suppressing medications.",
+        "topic": "Joint injections and surgeries"
+      },
+      {
+        "answer": "I have been married to my wife for twenty years and neither of us has any other partners.",
+        "topic": "Sexual history"
+      },
+      {
+        "answer": "I thought maybe I stubbed my toe in the middle of the night or got a spider bite, because it suddenly blew up red, hot, and throbbing.",
+        "topic": "Patient ideas on diagnosis"
+      },
+      {
+        "answer": "I'm really worried I won't be able to stand on my feet for my shifts at work this week.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping you can take an X-ray to check for a broken bone and give me some strong pain relief so I can actually walk.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I was diagnosed with high blood pressure about three months ago, but otherwise I have always been healthy.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or hospital admissions.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I take hydrochlorothiazide twenty-five milligrams every morning for my blood pressure. I took some Tylenol this morning for the toe, but it barely touched the pain.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink alcohol socially, usually a couple of beers on weekends or at dinners with colleagues.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office manager and live in a house with my wife and teenage son.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had high blood pressure and used to get painful gout attacks in his big toe as well.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 134/84 mmHg, heart rate 78 beats/min, respiratory rate 16 breaths/min, body temperature 36.7 C, oxygen saturation 98% on ambient air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Patient is alert and in moderate distress from pain, seated with the right shoe removed and protecting the right foot from contact.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Right first metatarsophalangeal joint is markedly swollen, erythematous, warm to touch, and exquisitely tender to light palpation with active and passive range of motion severely limited by pain.",
+        "maneuver": "joint_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Antalgic gait with complete inability to bear weight on the right forefoot; patient walks gingerly on the right heel.",
+        "maneuver": "coordination_gait",
+        "response": "pain"
+      },
+      {
+        "finding": "Taut, shiny, red skin over the right first MTP joint without ulceration or drainage; no tophi on the ears or extensor surfaces, and no psoriatic plaques.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Soft tissue swelling confined to the right first metatarsophalangeal joint; no bilateral lower extremity pitting edema or calf swelling.",
+        "maneuver": "extremity_edema",
+        "response": "none"
       }
     ]
   }

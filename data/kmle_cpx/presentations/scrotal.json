@@ -1,0 +1,56 @@
+{
+  "id": "scrotal",
+  "title": "음낭이 아프거나 부었어요",
+  "english_title": "Scrotal pain or swelling",
+  "category": "비뇨·신장",
+  "door_complaint": "음낭이 아프다고",
+  "differential_groups": [
+    {"key": "vascular", "label": "혈관성(응급)", "examples": ["고환 염전", "고환부속물 염전"]},
+    {"key": "infection", "label": "감염/염증", "examples": ["급성 부고환염", "볼거리 고환염", "푸르니에 괴저"]},
+    {"key": "benign_mass", "label": "양성 종괴·탈장", "examples": ["음낭수종", "정계정맥류", "정액류", "서혜부 탈장"]},
+    {"key": "neoplastic", "label": "종양", "examples": ["고환암(생식세포종양)"]},
+    {"key": "congenital", "label": "선천성", "examples": ["잠복고환", "퇴축고환"]}
+  ],
+  "history": [
+    {"id": "onset_speed", "text": "시작 시기와 발생 양상(갑자기인지 서서히인지, 자다가 깼는지)", "say": "언제부터 그러셨어요? 갑자기 아프기 시작했어요, 아니면 며칠에 걸쳐 서서히 심해졌어요?", "tags": ["vascular", "infection"], "key": true},
+    {"id": "location_side", "text": "위치(한쪽/양쪽, 고환 자체인지 위쪽인지, 사타구니까지인지)", "say": "어느 쪽이 아프세요? 고환 자체가 아파요, 아니면 그 위쪽이나 사타구니 쪽이에요?", "tags": ["vascular", "infection", "benign_mass"]},
+    {"id": "severity_character", "text": "통증 정도와 양상, 통증이 없는지", "say": "얼마나 아프세요? 10점 만점에 몇 점 정도예요? 아예 안 아프고 붓기만 한가요?", "tags": ["vascular", "neoplastic", "benign_mass"]},
+    {"id": "radiation", "text": "아랫배, 사타구니, 옆구리로 뻗치는 통증", "say": "아픈 게 아랫배나 옆구리 쪽으로 뻗치지는 않나요?", "tags": ["vascular"]},
+    {"id": "prior_episodes", "text": "비슷한 통증이 있다가 저절로 좋아진 적", "say": "전에도 이렇게 갑자기 아팠다가 저절로 풀린 적이 있으세요?", "tags": ["vascular"]},
+    {"id": "nausea_vomiting", "text": "메스꺼움, 구토", "say": "속이 메스껍거나 토하지는 않으셨어요?", "tags": ["vascular"]},
+    {"id": "swelling_change", "text": "붓기나 혹의 크기 변화, 서 있을 때와 누울 때의 차이", "say": "부은 게 점점 커지고 있어요? 서 있을 때랑 누웠을 때 크기가 달라지나요?", "tags": ["benign_mass", "neoplastic"]},
+    {"id": "heaviness", "text": "묵직한 느낌, 오래 서 있으면 심해지는지", "say": "음낭이 묵직하게 처지는 느낌이 있으세요? 오래 서 있으면 더 심해지나요?", "tags": ["benign_mass"]},
+    {"id": "painless_hard", "text": "통증 없이 딱딱하게 만져지는 혹", "say": "아프지는 않은데 고환에 딱딱한 게 만져지세요?", "tags": ["neoplastic"], "key": true},
+    {"id": "fever_urinary", "text": "발열, 배뇨통, 빈뇨, 요도 분비물", "say": "열이 나거나, 소변볼 때 아프거나, 요도에서 고름 같은 게 나오지는 않나요?", "tags": ["infection"]},
+    {"id": "skin_change", "text": "음낭 피부 색 변화(붉어짐, 검게 변함), 물집, 악취", "say": "음낭 피부가 빨갛게 되거나 검게 변했어요? 물집이 생기거나 냄새가 나지는 않나요?", "tags": ["infection"], "key": true},
+    {"id": "trauma_activity", "text": "외상, 운동이나 성관계 중 발생 여부", "say": "다치셨거나 운동하다가 아프기 시작했나요?", "tags": ["vascular"]},
+    {"id": "mumps", "text": "최근 귀밑(이하선) 부기나 볼거리", "say": "최근에 귀 밑이 붓거나 볼거리를 앓으셨어요?", "tags": ["infection"], "conditional": true},
+    {"id": "testis_history", "text": "고환이 원래 음낭에 있었는지, 잠복고환이나 고환 수술 과거력", "say": "어릴 때 고환이 내려오지 않았거나 고환 수술을 받은 적이 있나요?", "tags": ["congenital", "neoplastic"]},
+    {"id": "systemic_cancer", "text": "체중 감소, 허리 통증, 기침, 가슴이 커짐", "say": "최근에 살이 빠지거나 허리가 아프고, 기침이 나거나 가슴이 커지지는 않았어요?", "tags": ["neoplastic"]},
+    {"id": "sexual_history", "text": "민감한 질문임을 양해 구한 뒤 성관계, 새 파트너, 콘돔 사용", "say": "누구에게나 여쭤보는 질문이니 편하게 답해 주세요. 최근에 성관계가 있으셨어요? 콘돔은 쓰셨어요?", "tags": ["infection"], "applies": "adult"},
+    {"id": "instrumentation", "text": "최근 소변줄, 방광경, 전립샘 시술", "say": "최근에 소변줄을 끼웠거나 비뇨기 시술을 받으신 적 있나요?", "tags": ["infection"], "conditional": true},
+    {"id": "infertility_risk", "text": "임신 시도 중 어려움, 당뇨병 등 면역저하", "say": "아이를 가지려고 하는데 잘 안 되신 적 있으세요? 당뇨병은 없으세요?", "tags": ["benign_mass", "infection"], "applies": "adult"}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온, 혈압, 맥박 확인(발열, 패혈증 징후)", "say": "먼저 체온과 혈압을 재겠습니다."},
+    {"id": "inspection", "text": "서 있는 자세와 누운 자세에서 음낭 시진(비대칭, 고환 위치, 피부 색)", "say": "불편하시겠지만 음낭을 보겠습니다. 서 계신 상태에서 먼저 보고 누워서도 확인하겠습니다."},
+    {"id": "palpation", "text": "건강한 쪽부터 고환·부고환 촉진(압통 위치, 고환이 올라가 있거나 가로로 누웠는지, 딱딱한 혹)", "say": "안 아픈 쪽부터 살살 만져 보겠습니다. 아프면 바로 말씀해 주세요.", "key": true},
+    {"id": "cremasteric_reflex", "text": "허벅지 안쪽을 쓸어 거고근반사 확인", "say": "허벅지 안쪽을 가볍게 긁어서 고환이 올라가는지 보겠습니다.", "tags": ["vascular"], "key": true},
+    {"id": "transillumination", "text": "음낭 부기에 빛을 비춰 투광 여부 확인", "say": "부은 곳에 불빛을 비춰 물이 찬 것인지 보겠습니다.", "tags": ["benign_mass"], "conditional": true},
+    {"id": "valsalva_inguinal", "text": "서서 힘주게 해 정계정맥류·탈장 확인, 사타구니 림프절 촉진", "say": "서서 배에 힘을 한번 줘 보세요. 사타구니도 같이 만져 보겠습니다.", "tags": ["benign_mass"]}
+  ],
+  "education": [
+    {"id": "torsion_urgent", "text": "갑작스러운 심한 통증은 몇 시간 안에 수술해야 고환을 살릴 수 있어 바로 응급 진료가 필요함을 설명", "say": "고환이 꼬였을 수 있어서 몇 시간 안에 수술해야 고환을 살릴 수 있습니다. 바로 비뇨의학과 진료를 받으셔야 해요.", "tags": ["vascular"], "key": true},
+    {"id": "self_exam", "text": "고환 자가검진 방법과 딱딱한 혹이 만져지면 진료받도록 안내", "say": "샤워 후에 한 달에 한 번 고환을 만져 보시고, 딱딱한 게 만져지면 꼭 병원에 오세요."},
+    {"id": "supportive_care", "text": "감염이면 음낭 받쳐 주기, 냉찜질, 안정과 약을 끝까지 먹도록, 필요 시 파트너 치료 안내", "say": "음낭을 받쳐 주는 속옷을 입고 냉찜질을 하시면 덜 아프고, 약은 끝까지 드셔야 합니다.", "tags": ["infection"], "conditional": true}
+  ],
+  "grader_notes": [
+    "급성 음낭 통증은 고환 염전을 먼저 배제해야 하며, 염전이 강하게 의심되면 영상검사로 시간을 끌지 않고 즉시 비뇨의학과 수술적 탐색을 한다(발생 6시간 이내 교정 시 구제율이 높다).",
+    "진단이 애매하면 도플러 음낭 초음파로 고환 혈류를 확인한다.",
+    "부고환염은 소변검사·소변배양과 임균·클라미디아 핵산증폭검사를 하고, 성매개감염 위험이 있으면 이를 포함하는 항생제로, 고령이나 비뇨기 시술 후라면 장내세균을 겨냥한 항생제로 치료한다.",
+    "통증 없는 단단한 고환 종괴는 고환암을 의심해 음낭 초음파와 종양표지자(AFP, β-hCG, LDH)를 검사하고, 음낭을 통한 생검은 하지 않고 서혜부 고환절제술로 진단한다.",
+    "음낭·회음부 피부 괴사, 악취, 염발음과 전신 중독 소견은 푸르니에 괴저로 보고 수액, 광범위 항생제, 응급 괴사조직 제거술을 한다.",
+    "잠복고환은 생후 6개월이 지나도 내려오지 않으면 소아비뇨의학과로 의뢰해 대개 18개월 이전에 고환고정술을 한다."
+  ],
+  "case_ids": []
+}

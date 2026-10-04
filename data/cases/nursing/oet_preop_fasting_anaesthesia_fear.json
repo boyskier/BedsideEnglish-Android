@@ -1,0 +1,111 @@
+{
+  "id": "nursing_oet_preop_fasting_anaesthesia_fear",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — anxious patient the day before surgery, fasting instructions and fear of the anaesthetic",
+  "chief_complaint": "Explain fasting instructions to a woman having gallbladder surgery tomorrow and address her fear of waking up during the operation",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "Pre-operative fasting: anxious patient afraid of waking up during surgery",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Mrs Rosa Delgado, 61-year-old woman, having a planned keyhole gallbladder removal under general anaesthetic tomorrow morning",
+    "location": "Hospital pre-admission clinic, the afternoon before surgery; you are the nurse and you are going through tomorrow's instructions with Mrs Delgado",
+    "situation": "Mrs Delgado is booked for surgery tomorrow and must arrive at 07:00. She has been given a leaflet but has not read it. She seems nervous and has mentioned that she needs her morning coffee or she gets a headache.",
+    "background": [
+      "Recurrent gallstone pain over the past year; this is her first operation.",
+      "High blood pressure, treated with amlodipine, one tablet every morning.",
+      "Lives with her husband, who will drive her in and collect her."
+    ],
+    "current_status": [
+      "Well today; pre-operative blood tests and checks completed.",
+      "Visibly anxious; twisting the leaflet in her hands."
+    ],
+    "key_data": [
+      "Tomorrow's instructions from the anaesthetist: no food after 02:00, including milk, milky drinks and sweets. Clear fluids — water, or tea or coffee without milk — are allowed until 06:00. Nothing after 06:00.",
+      "The anaesthetist has asked her to take her usual amlodipine tablet at 06:00 with a small sip of water.",
+      "Why fasting matters: if the stomach is not empty, food or liquid can come back up and get into the lungs while she is asleep, which can cause serious harm.",
+      "During the operation an anaesthetist stays with her the whole time and continuously monitors her heart, breathing, oxygen level, blood pressure and how deeply asleep she is. Waking up during an operation is very rare.",
+      "She will meet the anaesthetist tomorrow morning before the operation and can ask any questions then."
+    ],
+    "treatments": [
+      "Already done: pre-operative assessment, blood tests, consent discussion with the surgeon.",
+      "Pending: anaesthetist review on the morning of surgery."
+    ],
+    "your_request": "Make sure Mrs Delgado knows exactly what to do before tomorrow's operation, and respond to her fear about the anaesthetic.",
+    "must_include": [
+      "Find out what Mrs Delgado already knows about preparing for tomorrow and what is worrying her.",
+      "Explain the fasting instructions clearly, including what she can drink and until what time.",
+      "Explain in simple terms why fasting is important for her safety.",
+      "Reassure her about the anaesthetic, including how she will be monitored throughout the operation.",
+      "Check her understanding of what to do tomorrow morning, including her blood pressure tablet."
+    ]
+  },
+  "kickoff_text": "So, tomorrow's the big day. I haven't read all that paperwork yet, to be honest. I can still have my coffee in the morning, can't I?",
+  "persona_override": "You are Rosa Delgado, a 61-year-old woman having keyhole gallbladder surgery under general anaesthetic tomorrow morning. This is your first operation. You are chatty on the surface but very anxious underneath. You always have a large milky coffee at 6 in the morning and get a headache without it, and you plan to have 'just a small one' tomorrow. Your real fear, which you only reveal if the nurse asks what is worrying you about tomorrow: your sister-in-law told you about a woman who woke up during her operation and could not move or speak, and you are terrified this will happen to you. You also worry a little that you will not wake up at all. Ground truth: arrival time 07:00; you take one blood pressure tablet (amlodipine) every morning and were not sure whether to take it tomorrow; your husband is driving you; you have not read the leaflet; you have no allergies; you ate normally today. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words such as 'nil by mouth', 'NBM', 'aspiration', 'clear fluids', 'general anaesthetic' or 'anaesthetist' without explaining them, ask what they mean (for example, 'Is black coffee a clear fluid?'). If the nurse only tells you the rules without explaining why, say 'But one small coffee can't hurt, surely?' If the nurse never asks what is worrying you, bring it up yourself, more anxiously: 'Can I ask you something... what if I wake up in the middle of it?' If the nurse acknowledges the fear and explains that an anaesthetist is with you the whole time watching you on monitors, and that you can talk to the anaesthetist in the morning, calm down gradually — do not become calm after one sentence; ask one more question such as 'But how do they know I'm properly asleep?' If asked to repeat the instructions back, get most of it right but make one error (for example, saying you can drink water until 7 o'clock, or forgetting the blood pressure tablet) so there is something to correct. Never coach the nurse or mention scoring. Near five minutes, wrap up: thank the nurse, say you will have your black coffee before six and write the times on the fridge.",
+  "learning_objectives": [
+    "find out what the patient knows and what is worrying her about the operation",
+    "explain the fasting instructions with clear times: no food after 02:00 and clear fluids until 06:00",
+    "explain why fasting matters in plain words: food or drink could come back up into the lungs",
+    "reassure that the anaesthetist monitors her throughout the operation",
+    "clarify taking the blood pressure tablet with a small sip of water",
+    "check understanding by asking her to repeat the morning plan"
+  ],
+  "suggested_questions": [
+    "Before I go through tomorrow's instructions, can I ask how you're feeling about the operation — is there anything in particular worrying you?",
+    "You can have something to eat until two in the morning. After that, no food and no milk — but you can have water, or black tea or coffee without milk, until six o'clock.",
+    "The reason is safety: while you're asleep, if there's anything in your stomach it can come back up and go into your lungs, and we want to avoid that.",
+    "That sounds like a frightening story to hear. The anaesthetist stays with you for the whole operation, watching monitors that show your heart, breathing and how deeply asleep you are — and you'll meet them in the morning to ask anything you like."
+  ],
+  "clinical_knowledge": {
+    "topic": "Pre-operative fasting education and addressing fear of anaesthesia",
+    "review_status": "grounded in Royal College of Anaesthetists patient information and NHS general anaesthesia guidance; fasting times, clear-fluid definitions and medication instructions follow the local anaesthetic department's protocol",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Pre-operative fasting reduces the risk of stomach contents entering the lungs under anaesthesia; patients adhere better when they understand the reason.",
+      "Milk and milky drinks count as food, not clear fluid; many protocols allow black tea or coffee as clear fluids until a set time.",
+      "Fear of awareness under anaesthesia is common; honest reassurance focuses on continuous monitoring and the chance to speak to the anaesthetist."
+    ],
+    "diagnostic_clues": [
+      "A patient who has not read the leaflet and plans a 'small' drink on the morning is at risk of cancellation or harm.",
+      "Chatty, rapid speech and fidgeting may mask significant anxiety that needs to be explored."
+    ],
+    "common_misconceptions": [
+      "A small milky drink does not count as breaking the fast.",
+      "All regular medicines must be stopped on the morning of surgery.",
+      "Longer fasting is always safer."
+    ],
+    "dangerous_errors": [
+      "Telling the patient that awareness under anaesthesia is impossible, or quoting figures the nurse cannot support.",
+      "Giving fasting times that differ from the anaesthetist's written instructions.",
+      "Advising her to stop or take regular medicines without following the pre-operative medication plan."
+    ],
+    "management_principles": [
+      "Explore knowledge and concerns before giving instructions.",
+      "Give fasting times as concrete clock times, explain the reason, and confirm with teach-back.",
+      "Acknowledge fear, give honest reassurance about monitoring, and direct detailed anaesthetic questions to the anaesthetist."
+    ],
+    "boundaries_and_exceptions": [
+      "Fasting times and what counts as a clear fluid vary between hospitals and countries; some units allow clear fluids closer to surgery.",
+      "Which regular medicines are taken or withheld on the morning of surgery is decided by the pre-operative team for each patient; some blood pressure medicines (for example, ACE inhibitors or diuretics) are often withheld, so this advice applies only to her individual plan.",
+      "Anaesthetic techniques and monitoring (including depth-of-anaesthesia monitoring) vary; the anaesthetist answers technical questions."
+    ],
+    "source_refs": [
+      {
+        "title": "Royal College of Anaesthetists: Patient information",
+        "url": "https://www.rcoa.ac.uk/patient-information"
+      },
+      {
+        "title": "NHS: General anaesthesia",
+        "url": "https://www.nhs.uk/conditions/general-anaesthesia/"
+      }
+    ]
+  }
+}

@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "progressive fatigue and elevated creatinine on routine lab",
   "hpi_details": "A 23-year-old male with no prior diagnosis of diabetes or hypertension presents after an elevated creatinine was found on routine bloodwork for a pre-employment physical. He reports feeling mildly more fatigued than usual over the past few months but otherwise feels well, denying edema, foamy urine, or gross hematuria.",
-  "ideas": "thinks it might be related to ckd",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks his elevated kidney level is simply from pushing himself too hard during heavy weightlifting workouts and consuming protein shakes.",
+  "concerns": "He is worried that this abnormal test result will disqualify him from passing his medical screening and cause his employer to revoke his job offer.",
+  "expectations": "He hopes to repeat the blood test after hydrating and resting so the doctor can sign his employment clearance form today.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -36,7 +36,7 @@
     "diagnostic_clues": [
       "Chief Complaint: progressive fatigue and elevated creatinine on routine lab",
       "Key HPI features: A 23-year-old male with no prior diagnosis of diabetes or hypertension presents after an elevated creatinine was found on routine bloodwork for a pre-employment physical. He reports feeling mildly more fatigued than usual over the past few months but otherwise feels well, denying edema, foamy urine, or gross hematuria.",
-      "Objective/Exam findings: Vitals: BP 148/92, HR 76, afebrile, BMI 27. No peripheral edema, no pallor. Labs: Creatinine 2.1 mg/dL, eGFR 38 mL/min/1.73m2, urinalysis with 1+ protein, no hematuria. Repeat creatinine one week later remains elevated (2.0 mg/dL), consistent with chronicity.",
+      "Objective/Exam findings: Vitals: BP 148/92, HR 76, afebrile, BMI 27. No peripheral edema, no pallor. Labs: Creatinine 2.1 mg/dL, eGFR 38 mL/min/1.73m2, urinalysis with 1+ protein, no hematuria. Repeat creatinine one week later remains elevated (2.0 mg/dL), confirming the abnormality is real rather than a transient laboratory error; chronicity is NOT yet established, because CKD requires kidney damage or reduced GFR persisting for at least 3 months, so prior records and repeat testing at 3 months are needed to separate CKD from acute kidney disease.",
       "Relevant background/PMH: Unremarkable"
     ],
     "common_misconceptions": [
@@ -69,7 +69,7 @@
   },
   "reference_soap": {
     "subjective": "23M with no prior diagnosis of diabetes or hypertension presents after an elevated creatinine was found on routine bloodwork for a pre-employment physical. He reports feeling mildly more fatigued than usual over the past few months but otherwise feels well, denying edema, foamy urine, or gross hematuria.",
-    "objective": "Vitals: BP 148/92, HR 76, afebrile, BMI 27. No peripheral edema, no pallor. Labs: Creatinine 2.1 mg/dL, eGFR 38 mL/min/1.73m2, urinalysis with 1+ protein, no hematuria. Repeat creatinine one week later remains elevated (2.0 mg/dL), consistent with chronicity.",
+    "objective": "Vitals: BP 148/92, HR 76, afebrile, BMI 27. No peripheral edema, no pallor. Labs: Creatinine 2.1 mg/dL, eGFR 38 mL/min/1.73m2, urinalysis with 1+ protein, no hematuria. Repeat creatinine one week later remains elevated (2.0 mg/dL), confirming the abnormality is real rather than a transient laboratory error; chronicity is NOT yet established, because CKD requires kidney damage or reduced GFR persisting for at least 3 months, so prior records and repeat testing at 3 months are needed to separate CKD from acute kidney disease.",
     "assessment": "Elevated creatinine requires evaluation; chronic kidney disease is defined by persistent kidney abnormality for at least 3 months and cannot be confirmed from a single routine laboratory result.",
     "plan": "Repeat kidney-function testing and obtain urinalysis/urine albumin-creatinine ratio to distinguish acute kidney injury from chronic kidney disease and establish chronicity. Optimize blood pressure control and use ACE inhibitor/ARB for albuminuria when indicated, with creatinine and potassium monitoring. Refer promptly for significant proteinuria, rapidly changing kidney function, or advanced disease."
   },
@@ -123,6 +123,197 @@
         "domains": [
           "character"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "148/92",
+      "hr": 76,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "I came in because they told me my kidney function number was high on my pre-employment health screening, and I've also been feeling more tired lately.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I did a pre-employment blood test about two weeks ago, and the clinic called to tell me that my kidney marker was higher than normal.",
+        "topic": "Screening test result details"
+      },
+      {
+        "answer": "I had a health checkup four years ago before entering college, and all my blood and urine tests were completely normal back then.",
+        "topic": "Prior health screening results"
+      },
+      {
+        "answer": "I fasted for twelve hours overnight, drank plenty of water, and didn't have any coffee, tobacco, or heavy exercise before the test.",
+        "topic": "Circumstances during the screening"
+      },
+      {
+        "answer": "I have never checked my blood pressure or blood sugar at home because I didn't think I had any health problems.",
+        "topic": "Home blood pressure or glucose"
+      },
+      {
+        "answer": "I've been feeling unusually tired and sluggish over the past couple of months, but I haven't had headaches, extreme thirst, or frequent urination.",
+        "topic": "Fatigue and systemic symptoms"
+      },
+      {
+        "answer": "I haven't had any chest pain, shortness of breath, blurred vision, or weakness or numbness on either side.",
+        "topic": "Cardiovascular and neurologic symptoms"
+      },
+      {
+        "answer": "My urine looks clear yellow without any blood or foam, and I don't have any pain in my sides or lower back.",
+        "topic": "Urine changes and flank pain"
+      },
+      {
+        "answer": "I haven't noticed any swelling in my legs, ankles, or around my eyes, and my weight has stayed the same.",
+        "topic": "Swelling and weight changes"
+      },
+      {
+        "answer": "No fevers, night sweats, unexpected weight loss, swollen glands, or coughing up blood at all.",
+        "topic": "Fever and constitutional symptoms"
+      },
+      {
+        "answer": "I don't have any pain or burning when I pee, no urinary hesitancy, and I haven't had prostate trouble, urinary infections, or recent bike rides.",
+        "topic": "Urinary symptoms and male factors"
+      },
+      {
+        "answer": "I haven't had muscle cramps, severe weakness, heart racing, excessive sweating, or loud snoring at night.",
+        "topic": "Secondary hypertension clues"
+      },
+      {
+        "answer": "I don't take pain medications like ibuprofen, steroid pills, decongestants, or any herbal supplements.",
+        "topic": "Medications and nephrotoxic exposures"
+      },
+      {
+        "answer": "I eat regular home-cooked meals with occasional takeout, and I try to go for light jogs on the weekend.",
+        "topic": "Diet and exercise habits"
+      },
+      {
+        "answer": "I have never broken any bones, haven't gotten shorter, and have never taken steroid medications.",
+        "topic": "Bone health and fracture history"
+      },
+      {
+        "answer": "I've never had tuberculosis, haven't been around anyone sick with it, and have no immune system disorders.",
+        "topic": "Tuberculosis and infection history"
+      },
+      {
+        "answer": "I thought the high kidney number was just because I've been working out really heavy at the gym and drinking high-protein shakes lately.",
+        "topic": "Patient thoughts on cause"
+      },
+      {
+        "answer": "I'm really worried that this test result is going to disqualify me and make the company pull back my job offer.",
+        "topic": "Patient main concern"
+      },
+      {
+        "answer": "I was hoping we could just re-run the blood test after I drink some water so you can sign off on my employment clearance form today.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I have never been diagnosed with high blood pressure, diabetes, kidney trouble, or any other medical conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I've never had any operations and I have never been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I'm not taking any prescription drugs, over-the-counter medicines, or vitamins right now.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I don't have any allergies to medications, foods, or anything else that I know of.",
+        "topic": "Drug and other allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used e-cigarettes in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, usually just one or two beers once or twice a month with friends.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I recently graduated from university, live with my parents, and I'm preparing to start an office job.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has kidney disease, early heart attacks, stroke, high blood pressure, or diabetes.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 148/92 mmHg, pulse 76 beats per minute, afebrile, respirations 14 breaths per minute, BMI 27 kg/m2.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Well-nourished young male in no acute distress; slightly overweight.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are pink without pallor; sclerae are anicteric.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "No cervical, submandibular, or supraclavicular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size and texture, with no nodules, tenderness, or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rhythm with normal S1 and S2; no murmurs, gallops, or friction rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Breath sounds are clear and equal bilaterally without crackles or wheezes.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normoactive bowel sounds; no abdominal aorta or renal artery bruits heard.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender; no hepatomegaly, splenomegaly, or abnormal masses.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness on either side.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Radial, femoral, and dorsalis pedis pulses are intact, 2+, and symmetric bilaterally.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Normal spinal curvature without kyphosis; no tenderness along the thoracic or lumbar spine.",
+        "maneuver": "spine_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial or pedal pitting edema on either lower extremity.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Normal sphincter tone; prostate is smooth, non-tender, and normal in size without nodules.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
       }
     ]
   }

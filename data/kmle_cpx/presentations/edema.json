@@ -1,0 +1,55 @@
+{
+  "id": "edema",
+  "title": "몸이 부었어요",
+  "english_title": "Swelling (edema)",
+  "category": "순환기",
+  "door_complaint": "몸이 부었다고",
+  "differential_groups": [
+    {"key": "cardiac", "label": "심장", "examples": ["심부전", "수축심낭염"]},
+    {"key": "renal", "label": "신장", "examples": ["신증후군", "급성 사구체신염", "만성콩팥병"]},
+    {"key": "hepatic_nutrition", "label": "간·영양", "examples": ["간경변", "영양실조(저알부민혈증)"]},
+    {"key": "local", "label": "국소 원인(정맥·림프·염증)", "examples": ["심부정맥혈전증", "봉와직염", "만성 정맥부전", "림프부종"]},
+    {"key": "drug_endocrine", "label": "약물·내분비", "examples": ["칼슘통로차단제", "소염진통제", "스테로이드", "갑상샘기능저하증(점액부종)"]}
+  ],
+  "history": [
+    {"id": "location", "text": "부은 부위(양쪽 다리, 한쪽 다리, 얼굴·눈 주위, 배, 온몸)", "say": "어디가 부으셨어요? 양쪽 다리인가요, 한쪽인가요? 얼굴도 붓나요?", "tags": ["local", "renal"]},
+    {"id": "onset_course", "text": "시작 시기와 진행 속도(갑자기, 서서히)", "say": "언제부터 부었어요? 갑자기 부었나요, 점점 심해졌나요?"},
+    {"id": "diurnal", "text": "하루 중 변화(아침에 눈 주위, 저녁에 다리)", "say": "아침에 얼굴이 더 붓나요, 저녁에 다리가 더 붓나요?", "tags": ["renal", "cardiac"]},
+    {"id": "pitting", "text": "눌렀을 때 자국이 남는지, 양말·반지 자국", "say": "부은 데를 누르면 자국이 오래 남나요? 양말 자국이 깊게 생기세요?"},
+    {"id": "weight_gain", "text": "최근 체중 증가", "say": "최근에 몸무게가 늘었나요? 얼마나요?"},
+    {"id": "unilateral_pain", "text": "한쪽 다리의 통증, 발적, 열감", "say": "부은 다리가 아프거나 빨갛고 뜨겁지는 않으세요?", "tags": ["local"], "key": true},
+    {"id": "dyspnea_orthopnea", "text": "숨참, 누우면 숨참, 자다가 숨차서 깸", "say": "숨이 차거나 누우면 숨이 더 차세요?", "tags": ["cardiac"], "key": true},
+    {"id": "urine_change", "text": "소변 거품, 콜라색 소변, 소변량 감소", "say": "소변에 거품이 많거나 색이 진해졌나요? 양이 줄지는 않았어요?", "tags": ["renal"], "key": true},
+    {"id": "abdomen_liver", "text": "배가 불러옴, 눈·피부 노래짐, 쉽게 멍들거나 피가 남", "say": "배가 불러오거나 눈이 노래지지는 않았어요? 멍이 잘 드시나요?", "tags": ["hepatic_nutrition"]},
+    {"id": "recent_infection", "text": "최근 인후통이나 피부 감염", "say": "최근 2~3주 사이에 목감기나 피부에 염증을 앓으셨어요?", "tags": ["renal"]},
+    {"id": "hypothyroid", "text": "추위를 탐, 변비, 피로, 피부 건조", "say": "요즘 추위를 많이 타거나 변비가 생기고 피부가 건조해졌나요?", "tags": ["drug_endocrine"]},
+    {"id": "nutrition", "text": "식사량 감소, 만성 설사, 체중 감소", "say": "요즘 식사는 잘 하세요? 설사가 오래가지는 않나요?", "tags": ["hepatic_nutrition"]},
+    {"id": "vte_risk", "text": "최근 수술, 장거리 비행·장기 부동, 암, 호르몬제 복용", "say": "최근에 수술을 받았거나 오래 비행기를 타셨나요?", "tags": ["local"]},
+    {"id": "edema_drugs", "text": "부종을 일으키는 약(암로디핀 같은 혈압약, 소염진통제, 스테로이드, 호르몬제) 복용", "say": "혈압약이나 진통제, 호르몬제를 드시나요? 약을 바꾼 뒤에 붓기 시작했나요?", "tags": ["drug_endocrine"]},
+    {"id": "alcohol_hepatitis", "text": "음주량과 간염 보유 여부", "say": "술은 얼마나 드세요? B형이나 C형 간염이 있다는 말을 들으신 적 있나요?", "tags": ["hepatic_nutrition"]},
+    {"id": "chronic_disease", "text": "당뇨·고혈압 유병 기간과 콩팥·심장 합병증 여부", "say": "당뇨나 고혈압이 있으시면 얼마나 되셨어요? 콩팥이나 심장이 안 좋다는 말은요?", "tags": ["renal", "cardiac"]},
+    {"id": "lifestyle", "text": "짠 음식 섭취, 오래 서 있거나 앉아 있는 생활", "say": "평소에 짜게 드시는 편이에요? 오래 서 있거나 앉아서 일하세요?", "tags": ["local", "cardiac"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals_weight", "text": "혈압, 맥박, 산소포화도, 체중 측정", "say": "혈압이랑 몸무게를 먼저 재 보겠습니다."},
+    {"id": "pitting_test", "text": "정강이·발등을 5초 이상 눌러 오목부종 여부와 범위, 좌우 대칭 확인", "say": "다리를 몇 초 동안 눌러 보겠습니다. 아프면 말씀해 주세요."},
+    {"id": "calf_exam", "text": "종아리 둘레 비교, 압통, 발적·열감 확인", "say": "양쪽 종아리 둘레를 재고 만져 보겠습니다.", "tags": ["local"]},
+    {"id": "jvp_heart_lung", "text": "목정맥 확장, 심장 청진(제3심음), 폐 기저부 수포음", "say": "목 혈관을 보고, 심장과 폐 소리를 들어 보겠습니다.", "tags": ["cardiac"]},
+    {"id": "abdomen", "text": "복부 팽만, 이동탁음(복수), 간비대, 황달·거미혈관종", "say": "배를 두드려 보고 만져 보겠습니다.", "tags": ["hepatic_nutrition"]},
+    {"id": "face_thyroid", "text": "눈 주위 부종 관찰과 갑상샘 촉진", "say": "얼굴이 부었는지 보고 목 앞쪽도 만져 보겠습니다.", "tags": ["renal", "drug_endocrine"]}
+  ],
+  "education": [
+    {"id": "salt_weight", "text": "싱겁게 먹기와 매일 같은 시간에 체중 재기", "say": "음식은 싱겁게 드시고, 매일 아침 같은 시간에 몸무게를 재 보세요."},
+    {"id": "leg_elevation", "text": "다리 올리기, 오래 서 있지 않기, 만성 정맥부전이면 압박 스타킹", "say": "쉴 때는 다리를 심장보다 높게 올려 두시고, 오래 서 있지 마세요.", "tags": ["local"], "conditional": true},
+    {"id": "avoid_drugs", "text": "부종을 악화시키는 소염진통제 등을 임의로 먹지 않도록 안내", "say": "진통제는 붓기를 심하게 할 수 있으니 임의로 드시지 마세요.", "tags": ["drug_endocrine", "renal"]},
+    {"id": "warning_signs", "text": "숨이 차거나 소변이 줄거나 한쪽 다리가 갑자기 붓고 아프면 바로 오도록 안내", "say": "숨이 차거나 소변이 확 줄거나, 한쪽 다리가 갑자기 붓고 아프면 바로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "양쪽 부종은 소변검사(단백뇨, 혈뇨), 혈청 크레아티닌·알부민, 간기능검사, 갑상샘기능검사로 신장·간·영양·내분비 원인을 확인한다.",
+    "숨참이나 목정맥 확장이 있으면 흉부 X선, BNP 또는 NT-proBNP, 심초음파로 심부전을 평가한다.",
+    "한쪽 다리의 급성 부종·통증은 Wells 점수로 심부정맥혈전증 확률을 평가해 D-dimer나 하지정맥 압박초음파를 시행하고, 확진되면 항응고치료를 한다.",
+    "신증후군이 의심되면 소변 단백/크레아티닌 비와 지질검사를 하고 신장내과에 의뢰해 신생검을 고려한다.",
+    "원인 치료가 우선이며, 이뇨제는 심부전·신증후군·간경변처럼 체액 과다가 있을 때 쓰고, 칼슘통로차단제 같은 약물성 부종은 약 변경을 고려한다."
+  ],
+  "case_ids": ["cardio_002", "cardio_023", "nephro_003", "nephro_017", "nephro_030", "gi_034", "hemato_022"]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "dysuria",
+  "title": "소변볼 때 아파요",
+  "english_title": "Painful urination (dysuria)",
+  "category": "비뇨·신장",
+  "kmle_item": "배뇨 이상",
+  "door_complaint": "소변볼 때 아프다고",
+  "differential_groups": [
+    {"key": "infection", "label": "감염/염증", "examples": ["급성 방광염", "급성 신우신염", "요도염", "질염", "급성 세균성 전립샘염"]},
+    {"key": "obstruction", "label": "폐쇄", "examples": ["요로결석", "전립샘비대"]},
+    {"key": "hormonal", "label": "호르몬", "examples": ["위축성 질염(폐경 후)"]}
+  ],
+  "history": [
+    {"id": "character", "text": "배뇨통의 양상(화끈거림, 따가움)", "say": "소변볼 때 어떻게 아프세요? 화끈거리거나 따가운가요?"},
+    {"id": "onset", "text": "시작 시기와 발생 양상, 이전의 같은 증상과 치료 경험", "say": "언제부터 그러셨어요? 전에도 이런 적이 있으셨어요?"},
+    {"id": "pain_timing", "text": "통증이 소변 시작할 때인지 끝날 때인지", "say": "소변 볼 때 처음에 아프세요, 아니면 끝날 때 더 아프세요?", "tags": ["infection"]},
+    {"id": "urine_appearance", "text": "소변 색, 혼탁, 피가 섞이는지", "say": "소변 색은 어떠세요? 붉거나 뿌옇지는 않나요?", "tags": ["infection", "obstruction"]},
+    {"id": "urine_odor", "text": "소변 냄새", "say": "소변에서 냄새가 심하게 나나요?", "tags": ["infection"]},
+    {"id": "frequency_urgency", "text": "빈뇨, 절박뇨, 야간뇨", "say": "소변이 자주 마렵거나 참기 힘드세요? 밤에도 깨서 보세요?", "tags": ["infection"]},
+    {"id": "voiding_difficulty", "text": "배뇨 시작 어려움, 약한 소변 줄기, 잔뇨감", "say": "소변보기 시작하기 어렵거나 줄기가 약해졌나요? 보고 나서도 남은 느낌이 드세요?", "tags": ["obstruction"]},
+    {"id": "fever_chills", "text": "발열, 오한", "say": "열이 나거나 몸이 으슬으슬 춥지는 않으세요?", "tags": ["infection"], "key": true},
+    {"id": "flank_pain", "text": "옆구리 통증", "say": "옆구리나 허리 쪽이 아프지는 않으세요?", "tags": ["infection", "obstruction"], "key": true},
+    {"id": "suprapubic_pain", "text": "아랫배(치골 위) 통증", "say": "아랫배가 아프거나 묵직하세요?", "tags": ["infection"]},
+    {"id": "nausea_vomiting", "text": "메스꺼움, 구토", "say": "속이 메스껍거나 토하지는 않으셨어요?", "tags": ["infection", "obstruction"]},
+    {"id": "discharge_itch", "text": "요도 또는 질 분비물, 가려움", "say": "요도나 질에서 분비물이 나오거나 가렵지는 않으세요?", "tags": ["infection"]},
+    {"id": "stone_history", "text": "요로결석이나 콩팥 질환 과거력", "say": "전에 요로결석이나 콩팥 병을 앓은 적이 있으세요?", "tags": ["obstruction"]},
+    {"id": "instrumentation", "text": "최근 요도관 삽입이나 비뇨기 시술", "say": "최근에 소변줄을 끼웠거나 비뇨기 시술을 받으신 적이 있나요?", "tags": ["infection"]},
+    {"id": "risk_conditions", "text": "당뇨병, 면역저하 등 복잡성 요로감염 위험 요인", "say": "당뇨병이 있거나 면역력이 떨어지는 약을 드시나요?", "tags": ["infection"]},
+    {"id": "sexual_history", "text": "민감한 질문임을 양해 구한 뒤 최근 성관계, 새 파트너, 피임법", "say": "누구에게나 여쭤보는 질문이니 너무 당황하지 마세요. 증상 생기기 전에 성관계가 있으셨어요?", "tags": ["infection"]},
+    {"id": "menopause", "text": "폐경 여부", "say": "폐경이 되셨어요?", "tags": ["hormonal"], "applies": "female_over_45"},
+    {"id": "habits", "text": "수분 섭취와 소변을 참는 습관", "say": "평소에 물은 충분히 드시는 편이에요? 소변을 자주 참으세요?", "tags": ["infection"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온 등 활력징후로 발열 여부 확인", "say": "체온을 먼저 재 보겠습니다."},
+    {"id": "suprapubic_palpation", "text": "아랫배(치골상부)를 촉진해 압통 확인", "say": "편하게 누우세요. 지금부터 배를 만져 보겠습니다. 아프면 말씀해 주세요."},
+    {"id": "bladder_palpation", "text": "방광이 만져지는지(요저류) 확인", "say": "아랫배에 방광이 차 있는지 확인하겠습니다."},
+    {"id": "cva_tenderness", "text": "앉힌 뒤 양쪽 늑골척추각을 두드려 압통 확인", "say": "앉으세요. 등을 두드려 볼 테니 아프면 이야기하세요.", "key": true},
+    {"id": "genital_exam", "text": "필요하면 외생식기 진찰(분비물, 병변)이 필요하다고 설명", "say": "필요하면 분비물이 있는지 외부 생식기 진찰을 하겠습니다.", "conditional": true},
+    {"id": "prostate_exam", "text": "남성에서 필요하면 직장수지검사로 전립샘 압통·부종 확인", "say": "전립샘 상태를 보려면 항문으로 손가락을 넣어 확인하는 검사가 필요할 수 있습니다.", "applies": "male", "conditional": true}
+  ],
+  "education": [
+    {"id": "fluids", "text": "물을 충분히 마시고 소변을 참지 않도록 교육", "say": "물을 충분히 드시고 소변은 참지 마세요."},
+    {"id": "warning_signs", "text": "발열, 옆구리 통증, 구토가 생기면 바로 다시 오도록 안내", "say": "열이 나거나 옆구리가 아프면 바로 다시 오세요.", "key": true},
+    {"id": "partner", "text": "성매개감염이 의심되면 파트너 검사·치료와 치료 중 성관계 자제를 안내", "say": "성관계로 옮는 감염일 수 있어서, 상대방도 검사를 받는 게 좋습니다.", "conditional": true}
+  ],
+  "grader_notes": [
+    "기본 검사는 소변검사(요시험지, 현미경)이며, 복잡성 감염·재발·남성·발열이 있으면 소변배양을 추가한다.",
+    "발열·옆구리 통증·늑골척추각 압통이 있으면 신우신염이나 폐쇄를 동반한 감염을 생각해 혈액검사와 영상검사를 고려한다.",
+    "가임기 여성은 임신 여부를 확인해야 항생제 선택과 영상검사가 안전하다.",
+    "요도 분비물이 있으면 임균·클라미디아 핵산증폭검사가 필요하고 파트너 치료를 안내한다.",
+    "건강한 비임신 여성의 단순 방광염은 짧은 경구 항생제로 치료하며, 남성의 요로감염은 복잡성으로 보고 더 오래 치료하거나 전립샘염을 고려한다."
+  ],
+  "case_ids": ["fm_017", "id_021", "id_026", "fm_024", "fm_029", "urology_042", "urology_023", "urology_039"]
+}

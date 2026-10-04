@@ -58,9 +58,13 @@ fun ImportTranscriptScreen(
 
     // A share-sheet hand-off (Android ACTION_SEND) lands here once, then is cleared so rotating
     // the screen or navigating away and back doesn't silently re-paste stale shared text.
+    // The banner keys off its own flag: prefillText is cleared on the very next recomposition,
+    // so keying the banner on it only flashed it.
+    var receivedFromShare by remember { mutableStateOf(false) }
     LaunchedEffect(prefillText) {
         if (!prefillText.isNullOrBlank()) {
             transcriptText = prefillText
+            receivedFromShare = true
             onConsumedPrefill()
         }
     }
@@ -98,7 +102,7 @@ fun ImportTranscriptScreen(
                 color = MaterialTheme.colorScheme.onSurfaceVariant
             )
 
-            if (!prefillText.isNullOrBlank()) {
+            if (receivedFromShare) {
                 Surface(
                     color = MaterialTheme.colorScheme.tertiaryContainer,
                     shape = RoundedCornerShape(12.dp)

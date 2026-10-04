@@ -9,8 +9,8 @@
   "chief_complaint": "mild kidney dysfunction and sterile pyuria on urinalysis",
   "hpi_details": "A 65-year-old male presents to the clinic with mild kidney dysfunction and sterile pyuria on urinalysis. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
   "ideas": "wonders if it's connected to the pain pills he's been taking for his back",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "concerns": "He is worried he will be told to stop taking ibuprofen and won't be able to cope with his chronic back pain.",
+  "expectations": "He hopes the doctor can reassure him his kidneys are safe and recommend a different painkiller for his back.",
   "pmh": "Chronic low back pain",
   "medications": "Ibuprofen 400-600mg, taken several times daily for years for back pain",
   "social_hx": "Non-smoker, social drinker",
@@ -116,6 +116,200 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "132/82",
+      "hr": 74,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "I came in because they told me after my routine checkup that my kidney function was down and that my urine showed some white blood cells.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The doctor said my kidney filter numbers were worse than before, with creatinine around 1.6, and that there were white blood cells in my urine without an obvious infection.",
+        "topic": "Details of abnormal findings"
+      },
+      {
+        "answer": "My kidney tests were always completely normal in the past, usually around 1.0, so this is the very first time an abnormal result came up.",
+        "topic": "Previous screening comparison"
+      },
+      {
+        "answer": "I fasted for about eight hours before the blood draw, and I didn't drink coffee, smoke, or do any heavy exercise beforehand.",
+        "topic": "Circumstances during testing"
+      },
+      {
+        "answer": "I don't have a way to test my kidneys at home, but I checked my blood pressure a couple of times and it was around 130 over 80.",
+        "topic": "Retesting at home"
+      },
+      {
+        "answer": "I have noticed that I feel worn out and more fatigued than usual over the last couple of weeks, but no bad headaches or excessive thirst.",
+        "topic": "Fatigue and systemic symptoms"
+      },
+      {
+        "answer": "No, I haven't had any chest pain, shortness of breath, blurred vision, or weakness on one side of my body.",
+        "topic": "Cardiovascular and neurologic symptoms"
+      },
+      {
+        "answer": "I haven't noticed any foamy urine, blood in my urine, or puffiness in my face or legs.",
+        "topic": "Urinary changes and swelling"
+      },
+      {
+        "answer": "No, I haven't had any fevers, chills, night sweats, coughing up blood, or unexpected weight loss.",
+        "topic": "Fever and constitutional symptoms"
+      },
+      {
+        "answer": "I don't have any pain or burning when I urinate, no sudden urgency, and no history of prostate infections.",
+        "topic": "Voiding symptoms and prostatitis"
+      },
+      {
+        "answer": "No, I have never had sharp side or back pain from kidney stones, or visible blood when I pee.",
+        "topic": "Flank pain or kidney stones"
+      },
+      {
+        "answer": "I haven't had muscle cramps, severe tremors, heart palpitations, or loud snoring that wakes me up gasping.",
+        "topic": "Secondary hypertension clues"
+      },
+      {
+        "answer": "I take ibuprofen regularly, about 400 to 600 milligrams two or three times a day, and I've been doing that for several years.",
+        "topic": "Pain medication and NSAID use"
+      },
+      {
+        "answer": "I have had chronic lower back pain for over ten years, and ibuprofen is the only thing that keeps me moving.",
+        "topic": "Reason for chronic pain medication"
+      },
+      {
+        "answer": "No, I do not take steroid pills, water pills, blood pressure drugs, or any herbal remedies.",
+        "topic": "Other medications and supplements"
+      },
+      {
+        "answer": "I eat regular home-cooked meals without adding extra salt, and I try to walk a little each day when my back allows.",
+        "topic": "Dietary habits and physical activity"
+      },
+      {
+        "answer": "I worked in retail store management before retiring, so I was never exposed to heavy dust, chemicals, or asbestos.",
+        "topic": "Occupational exposures"
+      },
+      {
+        "answer": "I haven't broken any bones, lost height, or taken long courses of prednisone or cortisone.",
+        "topic": "Bone fractures and steroid exposure"
+      },
+      {
+        "answer": "I have never had tuberculosis, haven't been around anyone sick with it, and my immune system has always been fine.",
+        "topic": "Tuberculosis and immune status"
+      },
+      {
+        "answer": "I've been wondering if taking so much ibuprofen for my back pain every day might have hurt my kidneys.",
+        "topic": "Patient thoughts on cause"
+      },
+      {
+        "answer": "I'm terrified that if you take away my ibuprofen, the back pain will get so agonizing that I won't even be able to get out of bed.",
+        "topic": "Patient main concern"
+      },
+      {
+        "answer": "I hope you can reassure me that my kidneys aren't ruined and tell me what else I can safely take for my back.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "Aside from my chronic lower back pain, I haven't had high blood pressure, diabetes, or any prior kidney conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I've never had any major surgeries, and I've never been admitted to the hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I do not have any known allergies to medications, foods, or anything else.",
+        "topic": "Medication allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have an occasional beer or glass of wine with dinner when socializing, maybe once or twice a month.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I am retired and live at home with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of kidney failure, early heart disease, stroke, or cancer.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 132/82 mmHg, heart rate 74 beats per minute, respiratory rate 16 breaths per minute, oxygen saturation 98% on room air, temperature 36.8 degrees Celsius.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Well-nourished, alert male in no acute distress; body mass index is 24.2 kg/m2 with normal body habitus.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "No lymphadenopathy palpable in the anterior or posterior cervical chains.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, and without palpable nodules or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2; no cardiac murmurs, gallops, or friction rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal active bowel sounds throughout; no abdominal aortic or renal artery bruits audible.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-distended, and non-tender without palpable masses or organomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Mild tenderness over the lower lumbar spine on palpation; no deformity or acute step-off, and straight leg raise test is negative bilaterally.",
+        "maneuver": "spine_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Normal anal sphincter tone; smooth, symmetric, normal-sized prostate without nodules or tenderness.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pitting edema over either tibia or ankle.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Normal skin turgor with no rash, purpura, livedo reticularis, or petechiae.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Radial, femoral, dorsalis pedis, and posterior tibial pulses are 2+ and symmetric bilaterally.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
       }
     ]
   }

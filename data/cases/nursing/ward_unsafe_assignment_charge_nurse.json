@@ -1,0 +1,125 @@
+{
+  "id": "nursing_ward_unsafe_assignment_charge_nurse",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Speak up for safety",
+  "nursing_pathways": ["us"],
+  "counterpart": "nurse",
+  "urgency": "semi-urgent",
+  "difficulty": "advanced",
+  "eval_template": "nursing_speak_up",
+  "station_minutes": 6,
+  "patient_name": "Raising an unsafe patient assignment with the charge nurse at the start of shift",
+  "chief_complaint": "Tell a stressed charge nurse that your assignment is unsafe, using objective acuity data, and hold out for a specific change rather than accepting a vague offer of help",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Speak up: six patients, a heparin drip, and a fresh post-op arriving at 09:30",
+    "task": "Speak up for safety",
+    "urgency": "semi-urgent",
+    "patient": "Your six-patient assignment on a med-surg unit, including Mrs. Janet Kowalczyk, 58, on a weight-based heparin infusion for a pulmonary embolism",
+    "location": "Med-surg unit, 07:25; you have just finished bedside report and you are at the nurses' station with the charge nurse, before starting your first rounds",
+    "situation": "Two nurses called out sick and the unit is full. Your assignment has more high-acuity patients than anyone else's, and several time-critical tasks fall at the same time this morning. The charge nurse is also carrying two patients herself.",
+    "background": [
+      "Standard assignment on this unit is five patients on a day shift; you have six.",
+      "Kevin, another RN, has five patients, three of whom are stable and expected to be discharged today.",
+      "A float nurse can sometimes be requested from the house supervisor (nursing supervisor) when staffing is short.",
+      "The hospital has a policy for raising assignment concerns through the chain of command and documenting them."
+    ],
+    "current_status": [
+      "Room 12 — Mrs. Kowalczyk, heparin infusion titrated by protocol; unit policy requires hourly pump and bleeding checks, and an anti-Xa level is due at 10:00 with a possible rate change.",
+      "Room 14 — post-op admission arriving from PACU around 09:30 after a bowel resection; post-op vital signs every 15 minutes for the first hour, then every 30 minutes.",
+      "Room 15 — COPD exacerbation on 4 liters nasal cannula, desaturating with exertion, needs frequent respiratory checks.",
+      "Room 16 — blood transfusion due to start at 10:00: two-person bedside check, then the RN stays close for the first 15 minutes, with vital signs per transfusion protocol.",
+      "Room 17 — confused patient, high fall risk, bed alarm, tried to get out of bed twice overnight.",
+      "Room 18 — stable, discharge today with teaching."
+    ],
+    "key_data": [
+      "Between 09:30 and 10:30 you would have the new post-op arrival, the anti-Xa result and possible heparin titration, and a transfusion start — all needing you at the bedside at once.",
+      "Your unit's acuity tool scores your assignment clearly higher than any other nurse's today.",
+      "The nursing assistant (CNA) cannot do post-op assessments, heparin titration, or transfusion checks — only an RN can."
+    ],
+    "treatments": [
+      "Nothing has been reassigned yet. You have not started any tasks beyond bedside report."
+    ],
+    "your_request": "Tell the charge nurse, before you start, that the assignment is unsafe, back it up with objective data, and ask for one specific change — and do not accept a vague offer of help that leaves the timing conflict in place.",
+    "must_include": [
+      "Raise it now, at the start of shift, before accepting the assignment by starting the work.",
+      "State the concern as a patient-safety risk, not as 'I'm overwhelmed' or a personal complaint.",
+      "Give objective data: the heparin infusion with hourly checks and the 10:00 level, the 09:30 post-op arrival, the 10:00 transfusion, and the acuity score.",
+      "Ask for a specific change (for example, reassigning the post-op admission or the transfusion to another RN, or requesting a float nurse).",
+      "Hold your position if the first offer does not fix the problem, and mention the next step in the chain of command if needed.",
+      "Close the loop: read back the agreed change and who is now responsible for what."
+    ]
+  },
+  "kickoff_text": "I know, I know — it's a rough one today. We're down two. Just do your best and grab me if you get stuck, okay?",
+  "persona_override": "You are Tanya Brooks, an experienced charge nurse on a busy med-surg unit, at 07:25 on a day when two nurses called out sick. You are stressed, carrying two patients yourself, and you have already had one argument about assignments this morning. You are fair-minded underneath, but your first instinct is to get everyone moving. Ground truth: the learner has six patients, including a heparin infusion needing hourly checks and an anti-Xa level at 10:00, a post-op admission arriving at 09:30, a 10:00 transfusion needing a two-person check and close RN monitoring for the first 15 minutes, a COPD patient desaturating with exertion, and a high-fall-risk confused patient; the acuity tool rates this assignment highest on the unit; Kevin has five patients, three stable and going home; you could take the post-op admission yourself or give it to Kevin, and you could call the house supervisor for a float nurse, though you'd rather not. Behaviour: if the learner speaks vaguely ('it's a lot', 'I'm really stressed', 'I don't think I can manage'), answer 'Everyone's heavy today. You've had six before — you'll be fine' and turn back to your screen. If the learner is accusatory ('you always give me the worst patients'), get defensive: 'That's not fair, I'm doing what I can with who I've got.' If the learner names the specific safety risk and gives objective data (the heparin checks and 10:00 level, the 09:30 post-op, the 10:00 transfusion, the acuity score), stop and engage: 'Okay. What do you need?' If the learner does not make a specific request, ask 'So what do you want me to do?' Then offer a partial fix that does not solve the timing problem — 'I'll have the CNA keep an eye on your fall-risk patient and your COPD patient' — to test whether they hold. If the learner explains that the CNA can't cover the RN-level tasks and restates a specific ask, agree: move the post-op admission to Kevin (or take it yourself) and say you'll call the house supervisor about a float. If the learner mentions escalating to the house supervisor or documenting the concern per policy in a calm, professional way, accept it without hostility. If the learner accepts your partial fix or backs down at any point, say 'Great, thanks — let me know if you need me' and end the conversation, so the learner experiences the consequence. If the learner reads back the agreed change, confirm it. Do not volunteer the solution before the learner asks for a specific change. Keep turns short and slightly clipped.",
+  "learning_objectives": [
+    "raise an unsafe assignment at the start of shift before starting the work",
+    "frame the concern as a patient safety risk rather than being overwhelmed",
+    "give objective data such as the heparin drip hourly checks, the post-op arrival time, and the acuity score",
+    "ask for a specific change such as reassigning the post-op admission or requesting a float nurse",
+    "hold my position when offered a partial fix and mention the chain of command",
+    "close the loop by reading back the agreed assignment change"
+  ],
+  "suggested_questions": [
+    "Tanya, before I start, I need two minutes about my assignment — I have a safety concern, not just a heavy load.",
+    "Between 9:30 and 10:30 I'd have a fresh post-op arriving on every-15-minute vitals, a 10 o'clock anti-Xa with a possible heparin titration, and a transfusion starting at 10 — I can't be at three bedsides at once.",
+    "Our acuity tool has my assignment highest on the unit today, and I've got the heparin drip on hourly checks on top of that.",
+    "I appreciate the CNA help, but the CNA can't do the post-op assessment, the heparin, or the transfusion checks. Could the post-op admission go to Kevin, or could we call the house supervisor for a float?",
+    "Okay, so to confirm: Kevin is taking the post-op admission in 14, I keep the other five, and you're calling the house supervisor about a float. Thank you."
+  ],
+  "clinical_knowledge": {
+    "topic": "Raising an unsafe patient assignment with the charge nurse using objective acuity data and a specific request",
+    "review_status": "grounded in AHRQ TeamSTEPPS mutual support and CUS principles, ANA position statements on safe nurse staffing, and ISMP guidance on high-alert medications such as heparin; staffing ratios, acuity tools, assignment-objection processes, and heparin monitoring policies vary by state, hospital, and union agreement; local protocols apply",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "A nurse has a professional duty to raise an assignment they believe is unsafe for patients, and the start of shift — before the work is accepted — is the most effective time to do it.",
+      "Objective, patient-specific data (time-critical tasks, high-alert infusions, acuity scores, conflicting timings) turns a complaint into a safety concern that is hard to dismiss.",
+      "A specific, feasible request gives the charge nurse something to say yes to; a vague request invites vague reassurance.",
+      "Heparin is a high-alert medication; titration by protocol and frequent monitoring for bleeding and infusion errors require RN time that cannot be delegated to unlicensed staff."
+    ],
+    "diagnostic_clues": [
+      "Several RN-only, time-critical tasks falling in the same hour is the clearest objective sign that an assignment cannot be delivered safely.",
+      "An offer of help that only covers tasks unlicensed staff can do leaves the core risk unchanged.",
+      "A charge nurse who says 'just do your best' has not yet heard a specific safety concern."
+    ],
+    "common_misconceptions": [
+      "Raising a concern about an assignment is unprofessional or makes the nurse look incapable.",
+      "Once the charge nurse has said no, the nurse has no further options.",
+      "Any offer of help, such as more CNA support, resolves the safety issue.",
+      "It is better to start the shift and raise concerns later if things go wrong."
+    ],
+    "dangerous_errors": [
+      "Accepting the assignment silently and then falling behind on time-critical heparin checks and post-op vital signs.",
+      "Framing the concern only as personal stress, so it is dismissed.",
+      "Being accusatory toward the charge nurse, which shifts the conversation from patient safety to conflict.",
+      "Walking off the unit or refusing all patients instead of using the chain of command and documenting per policy."
+    ],
+    "management_principles": [
+      "Raise it early, privately, and briefly, with the patient-safety risk stated first.",
+      "Back it with objective data and name one or two specific, workable changes.",
+      "If the first response does not remove the risk, restate the concern and, if still unresolved, escalate calmly through the chain of command (for example the house supervisor) and document per hospital policy.",
+      "Close the loop by reading back the agreed changes and responsibilities."
+    ],
+    "boundaries_and_exceptions": [
+      "Mandated nurse-to-patient ratios exist in some US states and not others; standard assignment sizes and acuity tools differ between hospitals.",
+      "Some hospitals and unions have formal 'assignment despite objection' or safe-staffing report forms; availability and process vary.",
+      "Heparin monitoring frequency, anti-Xa versus aPTT testing, titration protocols, post-op vital-sign schedules, and transfusion verification and monitoring requirements are institution-specific; the times here are illustrative.",
+      "This scenario practises speaking up about staffing; it is not a source of staffing rules or anticoagulation protocols."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS (Mutual Support: CUS and the Two-Challenge Rule)",
+        "url": "https://www.ahrq.gov/teamstepps-program/index.html"
+      },
+      {
+        "title": "American Nurses Association: Nurse Staffing",
+        "url": "https://www.nursingworld.org/practice-policy/nurse-staffing/"
+      },
+      {
+        "title": "ISMP: High-Alert Medications in Acute Care Settings",
+        "url": "https://www.ismp.org/recommendations/high-alert-medications-acute-list"
+      }
+    ]
+  }
+}

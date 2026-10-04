@@ -61,7 +61,7 @@
     "subjective": "34M presenting with acute mechanical non-specific low back pain secondary to lifting strain, with complete absence of neurological or systemic red flags.",
     "objective": "Vitals: HR 72, BP 120/78, Temp 36.7C. Lumbar spine exam reveals moderate bilateral paraspinal muscle spasm and tenderness across L3-L5 musculature. Range of motion is limited in forward flexion to 40 degrees by tight muscle spasm. CRITICAL NEUROLOGICAL CHECK: Straight Leg Raise (SLR) test is completely NEGATIVE bilaterally to 80 degrees (no sciatic nerve root tension). Lower extremity motor exam confirms 5/5 strength across all myotomes (hip flexion, knee extension, ankle dorsiflexion, toe extension, ankle plantarflexion). Reflexes 2+ and symmetric at patellar and Achilles tendons. Sensory intact across all L2-S1 dermatomes. Perianal sensation and anal sphincter tone normal (if checked).",
     "assessment": "Acute Non-Specific Mechanical Low Back Pain (Lumbar Strain / Sprain), without radiculopathy or red flags.",
-    "plan": "Evidence-based Choosing Wisely / Primary Care protocol: 1. Imaging decision (CRITICAL Choosing Wisely Guideline): STRICTLY WITHHOLD lumbar spine radiography (X-ray, CT, or MRI) at this initial visit. Diagnostic imaging within the first 6 weeks of acute non-specific low back pain without red flags does not improve clinical outcomes, exposes patients to unnecessary radiation, and frequently reveals coincidental, asymptomatic degenerative disc bulging that triggers unnecessary anxiety and invasive procedures. 2. Conservative pharmacotherapy: prescribe short-course first-line NSAIDs (Naproxen 500 mg PO BID with food or Ibuprofen 600 mg TID for 7-10 days) combined with short-term, non-sedating muscle relaxants if severe spasm persists (Cyclobenzaprine 5 mg QHS x 5 days). Strictly avoid opioid prescription. 3. Activity and reassurance counseling: strongly reassure patient that 90% of acute lumbar strains recover completely within 4 weeks regardless of treatment. STRICTLY COUNSEL AGAINST BED REST (prolonged bed rest weakens core musculature and delays recovery); advise patient to remain active, maintain normal daily activities within pain tolerance, use superficial heat packs, and return to work with temporary lifting restrictions (<15 pounds)."
+    "plan": "Evidence-based Choosing Wisely / Primary Care protocol: 1. Imaging decision (CRITICAL Choosing Wisely Guideline): STRICTLY WITHHOLD lumbar spine radiography (X-ray, CT, or MRI) at this initial visit. Diagnostic imaging within the first 6 weeks of acute non-specific low back pain without red flags does not improve clinical outcomes, exposes patients to unnecessary radiation, and frequently reveals coincidental, asymptomatic degenerative disc bulging that triggers unnecessary anxiety and invasive procedures. 2. Conservative pharmacotherapy: prescribe short-course first-line NSAIDs (Naproxen 500 mg PO BID with food or Ibuprofen 600 mg TID for 7-10 days) combined with a short course of a muscle relaxant if severe spasm persists (Cyclobenzaprine 5 mg QHS x 5 days, dosed at night and explicitly counselled about sedation, driving impairment, and additive CNS depression with alcohol or other sedatives). Strictly avoid opioid prescription. 3. Activity and reassurance counseling: strongly reassure patient that 90% of acute lumbar strains recover completely within 4 weeks regardless of treatment. STRICTLY COUNSEL AGAINST BED REST (prolonged bed rest weakens core musculature and delays recovery); advise patient to remain active, maintain normal daily activities within pain tolerance, use superficial heat packs, and return to work with temporary lifting restrictions (<15 pounds)."
   },
   "learning_objectives": [
     "Enforce the primary care Choosing Wisely clinical guideline: strictly avoid ordering routine lumbar spine imaging (X-ray, CT, or MRI) for acute low back pain (<6 weeks duration) in the absence of red flags",
@@ -127,6 +127,180 @@
           "coworker",
           "surgery"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "120/78",
+      "hr": 72,
+      "rr": 14,
+      "spo2": 99,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "My lower back has been hurting terribly for the past four days after I helped a friend move heavy living room furniture.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The pain is right across my lower back and sacrum, but it does not shoot down into my buttocks, thighs, or legs.",
+        "topic": "Pain location and radiation"
+      },
+      {
+        "answer": "It started four days ago, the morning right after I lifted and carried heavy couches and furniture all afternoon.",
+        "topic": "Onset and mechanism"
+      },
+      {
+        "answer": "It feels like a deep, aching soreness that tightens into sharp muscle spasms whenever I try to bend over or stand up quickly.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "Bending forward or standing up from a chair triggers sharp spasms, whereas lying down still on my side gives slight relief.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "It aches when I lie down, but it does not wake me up from sleep or feel worse during the middle of the night.",
+        "topic": "Night pain and rest"
+      },
+      {
+        "answer": "I feel a little stiff getting out of bed for a few minutes, but it does not stay stiff for half an hour or get better with intense exercise.",
+        "topic": "Morning stiffness"
+      },
+      {
+        "answer": "No, I have not had any tingling, numbness, or weakness in my legs or feet.",
+        "topic": "Numbness or leg weakness"
+      },
+      {
+        "answer": "No, my bowel and bladder habits are completely normal, with no incontinence, difficulty urinating, or loss of control.",
+        "topic": "Bowel and bladder function"
+      },
+      {
+        "answer": "No, I have normal feeling around my groin, buttocks, and private parts.",
+        "topic": "Saddle and perineal sensation"
+      },
+      {
+        "answer": "Walking is uncomfortable because my back feels tight, but my legs do not cramp or feel numb, and bending forward does not relieve my walking.",
+        "topic": "Walking and neurogenic claudication"
+      },
+      {
+        "answer": "No, I have had no fever, chills, night sweats, or unexplained weight loss.",
+        "topic": "Fever and systemic symptoms"
+      },
+      {
+        "answer": "No, I have never had cancer.",
+        "topic": "History of cancer"
+      },
+      {
+        "answer": "No, I have had no recent infections, skin boils, spinal injections, or procedures, and I do not use intravenous drugs.",
+        "topic": "Infections and spinal procedures"
+      },
+      {
+        "answer": "No, I have never used oral steroids, and I do not have osteoporosis or brittle bones.",
+        "topic": "Steroids and bone health"
+      },
+      {
+        "answer": "No, I have not had any belly pain, pulsing feeling in my stomach, or burning and blood in my urine.",
+        "topic": "Abdominal and urinary symptoms"
+      },
+      {
+        "answer": "No, I do not have red or painful eyes, heel pain, skin rashes, or persistent diarrhea.",
+        "topic": "Extraspinal joint and eye symptoms"
+      },
+      {
+        "answer": "I have been taking over-the-counter acetaminophen, but it has only given me minimal relief.",
+        "topic": "Medications tried and effect"
+      },
+      {
+        "answer": "I have been walking very stiffly and I am really worried that I might have permanently slipped or ruptured a disc in my spine.",
+        "topic": "Ideas about the diagnosis"
+      },
+      {
+        "answer": "A co-worker had back surgery after lifting boxes at work, so I am terrified that I might need surgery too.",
+        "topic": "Concerns about surgery and work"
+      },
+      {
+        "answer": "I was hoping to get an X-ray or MRI scan right away to see what is torn, and maybe a prescription for strong muscle relaxers or pain medicine.",
+        "topic": "Expectations for imaging and treatment"
+      },
+      {
+        "answer": "I have no chronic medical conditions and have always been healthy.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "Just the over-the-counter acetaminophen I started taking four days ago, and no other prescriptions or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I am a non-smoker and have never smoked.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink one or two beers on occasion during the weekend.",
+        "topic": "Alcohol use"
+      },
+      {
+        "answer": "I work as an accountant and sit at a desk for eight to ten hours every day, living in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "Both of my parents are healthy with no history of spinal disorders or chronic back conditions.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Patient is in moderate discomfort walking with a stiff, guarded gait and erect posture, but is alert and in no acute respiratory distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Blood pressure 120/78 mmHg, pulse 72 beats/min, respiratory rate 14 breaths/min, body temperature 36.7 C, and oxygen saturation 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Moderate bilateral lumbar paraspinal muscle spasm and tenderness across L3-L5 with no midline spinous process tenderness; lumbar forward flexion is limited to 40 degrees by muscle spasm, and bilateral straight leg raise testing is negative up to 80 degrees.",
+        "maneuver": "spine_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Full 5/5 motor strength bilaterally across all lower extremity myotomes including hip flexion, knee extension, ankle dorsiflexion, great toe extension, and plantarflexion.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Intact light touch and pinprick sensation bilaterally across L2 through S1 dermatomes, including intact sensation in the perineal region.",
+        "maneuver": "sensory_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Normal 2+ symmetric deep tendon reflexes at bilateral patellar and Achilles tendons, with downward plantar reflexes bilaterally.",
+        "maneuver": "reflexes",
+        "response": "none"
+      },
+      {
+        "finding": "Normal resting anal sphincter tone and voluntary sphincter contraction with no perianal numbness.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Soft, non-tender abdomen with no palpable pulsatile aortic mass or organomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
       }
     ]
   }

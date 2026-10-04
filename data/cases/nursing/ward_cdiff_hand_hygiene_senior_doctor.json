@@ -1,0 +1,120 @@
+{
+  "id": "nursing_ward_cdiff_hand_hygiene_senior_doctor",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Speak up for safety",
+  "nursing_pathways": ["us", "uk_au"],
+  "counterpart": "physician",
+  "urgency": "urgent",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_speak_up",
+  "station_minutes": 5,
+  "patient_name": "Stopping a senior doctor at the door of a C. difficile isolation room",
+  "chief_complaint": "Politely but firmly ask a senior doctor to put on a gown and gloves before examining a patient with C. difficile, and to wash with soap and water afterwards, when he says alcohol gel is enough",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Speak up: senior doctor about to enter a C. diff isolation room without a gown or gloves",
+    "task": "Speak up for safety",
+    "urgency": "urgent",
+    "patient": "Mrs. Joan Whitaker, 77-year-old woman in a single isolation room with confirmed Clostridioides difficile (C. diff) infection",
+    "location": "Medical unit (ward), 10:30 during morning rounds (the ward round); you are Mrs. Whitaker's nurse, standing outside her room as the senior doctor arrives with a medical student",
+    "situation": "The senior doctor has just rubbed alcohol gel into his hands and is reaching for the door, stethoscope around his neck, with no gown or gloves on. The isolation sign is on the door. His next patient on the round is in the room opposite and is recovering from chemotherapy.",
+    "background": [
+      "Mrs. Whitaker was diagnosed with C. difficile infection yesterday after several days of frequent loose stools; she is on the prescribed oral antibiotic for it.",
+      "She is in a single room on the hospital's C. diff precautions (called contact-plus or enteric contact precautions in many US hospitals, enteric precautions or source isolation in the UK and Australia): gown and gloves before entering, dedicated equipment, and hand washing with soap and water after leaving.",
+      "There is a dedicated stethoscope inside the room, and gowns, gloves, and a clinical hand-wash sink are right by the door."
+    ],
+    "current_status": [
+      "She is stable but still having loose stools; the room surfaces and bed rails are likely to be contaminated.",
+      "The doctor wants to listen to her chest and examine her abdomen.",
+      "A medical student is watching."
+    ],
+    "key_data": [
+      "C. difficile spores are not reliably killed by alcohol hand gel (alcohol-based hand sanitizer); hand washing with soap and water after contact is what physically removes them.",
+      "Spores survive on skin, clothing, and equipment and are spread to other patients on hands and stethoscopes.",
+      "The next patient on the round is immunocompromised after chemotherapy and would be at high risk if infected."
+    ],
+    "treatments": [
+      "Done: isolation and contact (enteric) precautions in place; treatment for C. difficile started as prescribed."
+    ],
+    "your_request": "Stop the doctor before he goes in, ask him respectfully to put on a gown and gloves and use the room's stethoscope, explain why gel is not enough, hold your position if he pushes back, and confirm he will wash with soap and water afterwards.",
+    "must_include": [
+      "Speak up before he enters the room, not after he has examined her.",
+      "Name the specific concern: C. diff precautions need a gown and gloves on entry, and alcohol gel does not kill C. diff spores.",
+      "Name the specific risk: spread to other patients, especially the immunocompromised patient he is seeing next.",
+      "Stay polite and respectful, but escalate your wording if he brushes you off, rather than letting it go.",
+      "Make it easy to comply: offer the gown, gloves, and the dedicated stethoscope, and point out the sink.",
+      "Close the loop: confirm he will wash his hands with soap and water when he comes out."
+    ]
+  },
+  "kickoff_text": "Morning. I'll just have a quick listen to her chest — I've already used the hand gel, I won't be a minute.",
+  "persona_override": "You are Dr. Richard Lawson, a senior doctor (an attending in the US, a consultant in the UK or Australia) with thirty years of experience, on a busy morning round with a medical student. You are courteous and charming, but hurried, and not used to being corrected by nurses, especially in front of a student. Ground truth: Mrs. Whitaker has confirmed C. difficile and is on contact (enteric) precautions; you have just used alcohol gel; you are not wearing a gown or gloves; your own stethoscope is around your neck; your next patient is immunocompromised after chemotherapy; gowns, gloves, a dedicated stethoscope, and a sink are right there. You know, if you stop to think, that alcohol gel does not kill C. diff spores — you have just got into a habit of cutting corners on busy rounds. Behaviour: if the nurse only hints or hedges ('Um, she's in isolation...'), smile and say 'Yes, I know, I'll be quick' and put your hand on the door. If the nurse clearly names the concern (gown and gloves for C. diff, and gel doesn't work on spores), pause but push back once: 'I'm only listening to her chest, I won't touch anything else — and I've used the gel.' If the nurse holds the position and names the risk to other patients, especially the chemotherapy patient next door, concede with a slightly embarrassed good grace: 'Fair point — quite right' — and turn it into a teaching moment for the student ('Good reminder, spores don't care about alcohol'). If the nurse is rude, sarcastic, or lectures you in front of the student, become stiff and say 'I don't need a lecture, thank you' — but still comply if the nurse stays on the patient-safety point. If the nurse offers the gown, gloves, and the room's stethoscope, accept them. If the nurse asks you to wash with soap and water when you come out, agree; if they do not mention it, walk toward the gel dispenser as you leave. If the nurse backs down at any point, go in without a gown or gloves and do not raise it again. Never coach the nurse or volunteer that you are wrong before the nurse names the risk. Keep turns short and natural.",
+  "learning_objectives": [
+    "speak up before the doctor enters the isolation room",
+    "name the concern that C. diff needs a gown and gloves and alcohol gel does not kill spores",
+    "explain the risk of spread to other patients, including the immunocompromised patient next",
+    "stay respectful but escalate my wording when brushed off",
+    "offer the gown, gloves, and dedicated stethoscope to make it easy to comply",
+    "close the loop by confirming hand washing with soap and water afterwards"
+  ],
+  "suggested_questions": [
+    "Dr. Lawson, sorry to stop you — before you go in, Mrs. Whitaker's on contact precautions for C. diff. Could you put on a gown and gloves first? They're right here.",
+    "I know you've used the gel, but it doesn't kill C. diff spores — it's gown and gloves going in, and soap and water coming out.",
+    "My worry is your next patient — he's just had chemo, and if it's carried across on hands or a stethoscope it could be really serious for him.",
+    "There's a stethoscope just for her room inside, so you don't need to take yours in.",
+    "Thanks so much. The sink's just here for when you come out — soap and water, please."
+  ],
+  "clinical_knowledge": {
+    "topic": "Nurse speaking up to a senior doctor about contact precautions and hand hygiene for Clostridioides difficile",
+    "review_status": "grounded in CDC guidance on C. difficile and infection control, WHO hand hygiene guidance, and AHRQ TeamSTEPPS CUS / two-challenge principles; isolation terminology, precaution bundles, and sporicidal cleaning products follow local infection prevention and control policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "C. difficile forms spores that survive on surfaces, hands, and equipment and are not reliably inactivated by alcohol-based hand rub; soap-and-water hand washing physically removes them.",
+      "Contact (enteric) precautions — gown and gloves on entry, dedicated equipment, and hand hygiene on exit — reduce transmission to other patients.",
+      "Every staff member, regardless of seniority, is responsible for infection control, and any team member can and should stop a breach before it happens.",
+      "Speaking up is most effective when it is early, specific, focused on the patient risk, and makes the correct action easy."
+    ],
+    "diagnostic_clues": [
+      "A clinician using gel only, with no gown or gloves, and carrying a personal stethoscope into a C. diff room is a clear transmission risk.",
+      "An immunocompromised next patient raises the stakes and is the strongest patient-centered argument.",
+      "'I'll be quick' and 'I won't touch anything' are common rationalizations that do not reduce spore transfer."
+    ],
+    "common_misconceptions": [
+      "Alcohol gel is as effective as soap and water for C. difficile.",
+      "A brief examination without touching much does not need a gown and gloves.",
+      "Senior doctors are not the nurse's responsibility when it comes to infection control.",
+      "Raising it after the examination is less confrontational and still effective."
+    ],
+    "dangerous_errors": [
+      "Staying silent, or hinting so gently that the doctor goes in without precautions.",
+      "Accepting 'I've used the gel' as adequate hand hygiene for C. diff.",
+      "Letting a personal stethoscope go in and out of the room without cleaning.",
+      "Challenging the doctor in a sarcastic or humiliating way that derails the conversation from patient safety."
+    ],
+    "management_principles": [
+      "Stop the action early, address the doctor by name, and state the precaution and the reason in one or two sentences.",
+      "If brushed off, restate the concern and name the specific patient risk (two-challenge rule), staying polite and firm.",
+      "Make compliance easy by offering the equipment and pointing to the sink.",
+      "Close the loop on hand washing after the examination, and escalate through the nurse in charge or infection prevention team if a breach continues."
+    ],
+    "boundaries_and_exceptions": [
+      "Terminology and practice vary: 'contact precautions', 'contact-plus' or 'enteric contact precautions' in the US, 'enteric precautions' or source isolation in the UK and Australia; many UK and Australian hospitals also apply a 'bare below the elbows' policy.",
+      "US guidance (CDC, SHEA/IDSA) treats gloves as the key barrier and prefers soap and water especially during outbreaks or high rates, while many US hospitals' C. diff signs and UK/Australian guidance require soap and water on leaving the room; whether gel is ever acceptable alongside hand washing, how long precautions stay in place, and which sporicidal cleaning products are used are set by local infection prevention and control teams.",
+      "This scenario practises speaking up to a senior colleague; it is not a source of C. difficile treatment guidance."
+    ],
+    "source_refs": [
+      {
+        "title": "CDC: C. diff (Clostridioides difficile)",
+        "url": "https://www.cdc.gov/c-diff/index.html"
+      },
+      {
+        "title": "WHO: Hand hygiene",
+        "url": "https://www.who.int/teams/integrated-health-services/infection-prevention-control/hand-hygiene"
+      },
+      {
+        "title": "AHRQ TeamSTEPPS (Mutual Support: CUS and the Two-Challenge Rule)",
+        "url": "https://www.ahrq.gov/teamstepps-program/index.html"
+      }
+    ]
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "id": "hemoptysis",
+  "title": "기침할 때 피가 나와요",
+  "english_title": "Coughing up blood (hemoptysis)",
+  "category": "호흡기",
+  "kmle_item": "객혈",
+  "door_complaint": "기침할 때 피가 나온다고",
+  "differential_groups": [
+    {"key": "infection", "label": "감염", "examples": ["폐결핵", "폐렴", "급성 기관지염", "폐농양", "침습성 폐아스페르길루스증"]},
+    {"key": "airway_tumor", "label": "기도 질환·종양", "examples": ["기관지확장증", "폐암"]},
+    {"key": "vascular", "label": "혈관·심장", "examples": ["폐색전증", "승모판협착증", "심부전(폐부종)", "폐동정맥기형"]},
+    {"key": "systemic", "label": "전신 질환·출혈 경향", "examples": ["육아종증다발혈관염", "항사구체기저막병(굿파스처증후군)", "항응고제 복용", "혈소판감소증"]},
+    {"key": "pseudo", "label": "가성객혈", "examples": ["코피(비출혈)", "토혈(상부위장관 출혈)", "잇몸·구강 출혈"]}
+  ],
+  "history": [
+    {"id": "source", "text": "피가 기침과 함께 나오는지, 토하거나 코·입에서 넘어온 것인지 구분", "say": "피가 기침할 때 나오나요, 아니면 토하거나 코피가 넘어온 건가요?", "tags": ["pseudo"]},
+    {"id": "amount", "text": "피의 양(가래에 줄처럼 섞인 정도인지, 한 컵 가까이 나왔는지)과 횟수", "say": "피가 얼마나 나왔어요? 가래에 조금 섞였나요, 아니면 피만 한 숟가락 넘게 나왔나요?", "key": true},
+    {"id": "color", "text": "피 색깔(선홍색, 거품 섞인 분홍색, 검붉은색)과 음식물 섞임 여부", "say": "피 색깔은 어땠어요? 선홍색이었나요, 거품 섞인 분홍색이었나요?", "tags": ["vascular", "pseudo"]},
+    {"id": "onset_recurrence", "text": "처음 피가 나온 시기, 처음인지 반복되는지", "say": "언제부터 피가 나왔어요? 전에도 이런 적이 있으세요?"},
+    {"id": "preceding_cough", "text": "피가 나오기 전부터 있던 기침·가래의 기간과 변화", "say": "피가 나오기 전에도 기침이나 가래가 계속 있었나요?", "tags": ["infection", "airway_tumor"]},
+    {"id": "purulent_sputum", "text": "매일 많은 양의 누런 가래, 악취 나는 가래, 잦은 폐렴", "say": "평소에 누런 가래가 매일 많이 나오거나 폐렴에 자주 걸리셨어요?", "tags": ["airway_tumor", "infection"]},
+    {"id": "fever_chills", "text": "발열, 오한", "say": "열이 나거나 오한이 있으세요?", "tags": ["infection"]},
+    {"id": "constitutional", "text": "체중 감소, 야간 발한, 피로", "say": "요즘 살이 빠지거나 밤에 식은땀을 흘리세요?", "tags": ["infection", "airway_tumor"], "key": true},
+    {"id": "dyspnea_pleuritic", "text": "갑작스러운 숨참, 숨 쉴 때 찌르는 가슴 통증", "say": "갑자기 숨이 차거나 숨 쉴 때 가슴이 찌르듯 아팠나요?", "tags": ["vascular"], "key": true},
+    {"id": "vte_risk", "text": "한쪽 다리 부종·통증, 최근 수술·장기 부동·장거리 여행, 암 치료", "say": "최근에 수술을 받았거나 오래 누워 계셨나요? 한쪽 다리가 붓지는 않나요?", "tags": ["vascular"]},
+    {"id": "orthopnea", "text": "누우면 숨참, 자다가 숨차서 깸, 다리 부종", "say": "누우면 숨이 차거나 자다가 숨이 차서 깬 적 있나요?", "tags": ["vascular"]},
+    {"id": "nasal_sinus", "text": "코피, 코 안 피딱지, 부비동 통증", "say": "코피가 나거나 코 안에 피딱지가 자주 생기세요?", "tags": ["systemic", "pseudo"]},
+    {"id": "renal_symptoms", "text": "소변 색 변화(콜라색), 소변량 감소, 부종", "say": "소변 색이 진해지거나 양이 줄지는 않았어요?", "tags": ["systemic"]},
+    {"id": "bleeding_tendency", "text": "다른 부위 출혈(잇몸, 멍), 항응고제·항혈소판제 복용", "say": "다른 데서도 피가 잘 나거나 멍이 잘 드세요? 피를 묽게 하는 약을 드시나요?", "tags": ["systemic"]},
+    {"id": "gi_symptoms", "text": "구역·구토, 속쓰림, 검은 변", "say": "속이 쓰리거나 토하신 적, 변이 까맣게 나온 적이 있나요?", "tags": ["pseudo"]},
+    {"id": "smoking_amount", "text": "흡연량과 기간(갑년)", "say": "담배를 피우셨다면 하루 몇 갑씩 몇 년 정도 피우셨어요?", "tags": ["airway_tumor"]},
+    {"id": "tb_history", "text": "결핵 과거력·치료 경험, 결핵 환자 접촉", "say": "결핵을 앓으셨거나 주변에 결핵 환자가 있었나요?", "tags": ["infection"], "key": true},
+    {"id": "travel_origin", "text": "결핵이 흔한 지역 거주·출신, 최근 해외여행, 직업", "say": "최근 해외에 다녀오셨거나 외국에서 지내신 적이 있으세요?", "tags": ["infection"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압, 맥박, 호흡수, 산소포화도, 체온으로 대량 출혈·저산소증 확인", "say": "혈압이랑 산소포화도부터 확인하겠습니다.", "key": true},
+    {"id": "nose_mouth", "text": "코와 입안을 관찰해 상기도 출혈 부위 확인", "say": "코랑 입안에서 피가 나는 곳이 있는지 보겠습니다.", "tags": ["pseudo"]},
+    {"id": "neck_nodes", "text": "목과 쇄골 위 림프절 촉진", "say": "목에 멍울이 있는지 만져 보겠습니다.", "tags": ["infection", "airway_tumor"]},
+    {"id": "lung_exam", "text": "흉부 타진과 폐 청진(수포음, 천명음, 국소적 호흡음 감소)", "say": "등과 가슴을 두드려 보고 청진하겠습니다. 숨을 크게 쉬어 보세요."},
+    {"id": "heart_exam", "text": "심장 청진(심잡음)과 목정맥 확인", "say": "심장 소리를 들어 보고 목 혈관도 보겠습니다.", "tags": ["vascular"]},
+    {"id": "clubbing_legs", "text": "곤봉지 확인, 한쪽 다리 부종·종아리 압통 확인", "say": "손가락 끝과 양쪽 다리를 비교해 보겠습니다.", "tags": ["airway_tumor", "vascular"]}
+  ],
+  "education": [
+    {"id": "tb_precaution", "text": "결핵이 배제될 때까지 마스크 착용과 가족 간 밀접 접촉 자제", "say": "결핵 검사 결과가 나올 때까지는 마스크를 쓰시고, 가족과도 가까이 붙어 있지 않는 게 좋습니다.", "tags": ["infection"], "conditional": true},
+    {"id": "smoking_cessation", "text": "흡연자에게 금연을 권고", "say": "폐 건강을 위해서 담배는 꼭 끊으시는 게 좋습니다.", "tags": ["airway_tumor"], "conditional": true},
+    {"id": "warning_signs", "text": "피가 많이 나오거나 숨이 차고 어지러우면 즉시 응급실로 오도록 안내", "say": "피가 한꺼번에 많이 나오거나 숨이 차고 어지러우면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "먼저 코·입안 출혈이나 토혈과 구분하고, 활력징후와 산소포화도로 대량 객혈과 호흡부전 여부를 판단한다.",
+    "대량 객혈이나 호흡곤란·저혈압이 있으면 기도 확보와 입원 치료가 우선이며, 기관지내시경이나 기관지동맥색전술을 고려한다.",
+    "기본 검사는 흉부 X선, 혈액검사(혈색소, 혈소판, 응고검사), 신기능과 소변검사이며, 원인이 불분명하거나 위험 요인이 있으면 흉부 CT를 시행한다.",
+    "결핵이 의심되면 객담 항산균 도말·배양·핵산증폭검사를 하고, 결과가 나올 때까지 공기 전파 주의를 한다.",
+    "40세 이상 흡연자나 흉부 X선 이상이 있으면 폐암을 배제하기 위해 흉부 CT와 기관지내시경을 고려한다.",
+    "폐색전증이 의심되면 임상 확률에 따라 D-dimer나 CT 폐혈관조영술을 시행하고, 객혈과 혈뇨·신기능 저하가 함께 있으면 폐-신 증후군을 의심해 ANCA와 항사구체기저막 항체를 검사한다."
+  ],
+  "case_ids": ["pulm_002", "pulm_007", "pulm_021", "pulm_022", "nephro_005", "id_036"]
+}

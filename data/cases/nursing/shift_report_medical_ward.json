@@ -1,0 +1,103 @@
+{
+  "id": "nursing_shift_report_medical_ward",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Handover & escalation",
+  "nursing_pathways": ["uk_au"],
+  "counterpart": "nurse",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_sbar_escalation",
+  "patient_name": "End-of-shift report — stable medical patient with one outstanding task",
+  "chief_complaint": "Give a routine nurse-to-nurse end-of-shift report on a stable pneumonia patient to the incoming night nurse",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Routine shift report: recovering pneumonia patient, one task outstanding",
+    "task": "Handover & escalation",
+    "urgency": "routine",
+    "patient": "Mrs. Anita Delgado, 74-year-old woman, day 3 of admission with community-acquired pneumonia",
+    "location": "Medical ward, 19:00; you are handing over to the incoming night nurse",
+    "situation": "She is improving and there is no active problem, but the night nurse needs a complete report because one task is still outstanding and one result is still pending.",
+    "background": [
+      "Admitted three days ago with community-acquired pneumonia; started on intravenous antibiotics on admission.",
+      "She lives alone and was quite deconditioned on admission; physiotherapy has been seeing her daily.",
+      "She has a peripheral IV cannula in her left forearm, sited on admission."
+    ],
+    "current_status": [
+      "Afebrile since yesterday morning; her oxygen requirement has come down and she is now on room air at rest.",
+      "Eating and drinking well; mobilizing to the bathroom with one person assisting.",
+      "No pain and no new symptoms during your shift."
+    ],
+    "key_data": [
+      "Her evening dose of intravenous antibiotic is due at 22:00 and has not yet been given.",
+      "A repeat chest X-ray was requested this afternoon and the report is still pending.",
+      "Her IV cannula is now on day 3 and the site should be reviewed against the ward's replacement policy overnight."
+    ],
+    "treatments": [
+      "Intravenous antibiotics, daily physiotherapy, and encouragement with fluids and mobilization."
+    ],
+    "your_request": "Give a structured, complete report so the night nurse knows she is low-concern but still knows the three things that need attention overnight.",
+    "must_include": [
+      "Who the patient is, why she is here, and that she is improving and low-concern (Situation).",
+      "The admission reason, the treatment she is on, and her social situation (Background).",
+      "Your assessment that she is stable with no active issues (Assessment).",
+      "The three outstanding items: the 22:00 antibiotic dose, the pending chest X-ray report, and the IV cannula review (Recommendation)."
+    ]
+  },
+  "kickoff_text": "Evening — I've just come on. Ready when you are, what have you got for me?",
+  "persona_override": "You are Grace Okonjo, an experienced night nurse receiving a routine end-of-shift report on a medical ward. You are friendly, unhurried, and take notes as you listen. Ground truth: Mrs. Delgado is day 3 with community-acquired pneumonia, improving, afebrile, now on room air at rest, mobilizing with one assist, with three outstanding items — the 22:00 IV antibiotic dose not yet given, a pending chest X-ray report, and an IV cannula on day 3 due for review. If the learner gives a clear, structured report that names her as low-concern and still lists all three outstanding items, acknowledge it warmly, confirm you have them, and ask if there is anything else. If the learner gives only a general reassurance ('she's doing fine, nothing to worry about') and omits outstanding items, ask directly: 'Anything due overnight, or anything I'm waiting on?' so the learner experiences why even a routine handover needs specific action items. If the learner lists items but never says how sick she actually is, ask 'And how is she in herself?' Stay warm and collegial throughout — this is nurse to nurse, not an escalation, so do not create urgency.",
+  "learning_objectives": [
+    "give a structured handover even when the patient is stable and low-concern",
+    "state who the patient is and why she is low-concern before the detail",
+    "summarize the admission and treatment course concisely",
+    "distinguish 'stable, nothing needed' from 'stable, but tasks outstanding'",
+    "name every outstanding task and pending result explicitly"
+  ],
+  "suggested_questions": [
+    "This is Mrs. Delgado in bed 6, day 3 with community-acquired pneumonia — she's improving, so this is a routine handover.",
+    "She came in three days ago and started on IV antibiotics; she lives alone and was quite deconditioned, so physio has been seeing her daily.",
+    "She's been afebrile since yesterday, she's on room air at rest now, and she's mobilizing to the bathroom with one of us.",
+    "Three things for you overnight: her 22:00 antibiotic isn't given yet, her repeat chest X-ray report is still pending, and her cannula is day 3 so it needs reviewing."
+  ],
+  "clinical_knowledge": {
+    "topic": "Structured nurse-to-nurse shift report for a stable, improving medical patient",
+    "review_status": "grounded in AHRQ TeamSTEPPS SBAR principles and Joint Commission hand-off communication standards; local handover tools and IV device policies apply",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "Most shift handovers describe a stable patient; the structure exists precisely so outstanding tasks are not lost between teams.",
+      "A complete report separates the patient's clinical state from the task list — the receiving nurse needs both, and neither substitutes for the other.",
+      "Pending results are handover items in their own right: someone must be waiting for them, or they are missed."
+    ],
+    "diagnostic_clues": [
+      "Defervescence, a falling oxygen requirement, and restored appetite and mobility together support an improving trajectory in pneumonia."
+    ],
+    "common_misconceptions": [
+      "A stable patient only needs a brief mention rather than a structured report.",
+      "'Nothing to worry about' is a complete handover even when scheduled tasks are still due.",
+      "Pending investigations do not need handing over because the result will appear in the chart anyway."
+    ],
+    "dangerous_errors": [
+      "Omitting a scheduled medication dose from the report because the patient otherwise seems uneventful.",
+      "Failing to hand over an indwelling device that is due for review, so it stays in past its policy interval.",
+      "Handing over a pending result without saying who is expected to act on it."
+    ],
+    "management_principles": [
+      "Use a consistent structure for every handover, including routine ones.",
+      "State the patient's overall trajectory before the task list, so the receiving nurse can prioritize.",
+      "Close the handover by inviting questions and confirming the receiving nurse has the outstanding items."
+    ],
+    "boundaries_and_exceptions": [
+      "Handover format (bedside, verbal, written, or electronic) and peripheral IV replacement intervals vary by institution and country."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS SBAR Technique",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html"
+      },
+      {
+        "title": "The Joint Commission: Hand-off Communications Standards",
+        "url": "https://www.jointcommission.org/"
+      }
+    ]
+  }
+}

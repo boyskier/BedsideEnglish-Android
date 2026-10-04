@@ -1,0 +1,54 @@
+{
+  "id": "sore_throat",
+  "title": "목이 아파요",
+  "english_title": "Sore throat",
+  "category": "이비인후",
+  "door_complaint": "목이 아프다고",
+  "differential_groups": [
+    {"key": "viral", "label": "바이러스 인두염", "examples": ["감기(바이러스 상기도감염)", "인플루엔자", "전염성 단핵구증", "급성 HIV 감염"]},
+    {"key": "bacterial", "label": "세균 인두염", "examples": ["A군 연쇄상구균 인두염", "성홍열", "임균 인두염"]},
+    {"key": "deep", "label": "심부 감염/기도 응급", "examples": ["편도주위농양", "급성 후두개염", "인두후농양", "루드비히 안기나"]},
+    {"key": "noninfectious", "label": "비감염", "examples": ["인후두 역류", "후비루(알레르기 비염)", "흡연·건조한 공기 자극"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "시작 시기와 경과", "say": "언제부터 목이 아프셨어요? 점점 심해지고 있어요?"},
+    {"id": "severity_side", "text": "통증 정도, 한쪽이 특히 심한지", "say": "얼마나 아프세요? 양쪽이 비슷하게 아파요, 한쪽이 특히 심해요?", "tags": ["deep"]},
+    {"id": "swallowing_drooling", "text": "삼킬 때 통증, 물·침도 못 삼키는지, 침 흘림", "say": "침이나 물을 삼키기도 힘드세요? 삼키지 못해서 침을 흘리시나요?", "tags": ["deep"], "key": true},
+    {"id": "breathing_voice", "text": "숨쉬기 힘듦, 숨쉴 때 나는 소리, 목소리 변화(웅얼거리는 목소리)", "say": "숨쉬기 힘들거나 숨쉴 때 쌕쌕 소리가 나세요? 목소리가 입에 뭘 물고 말하는 것처럼 변했어요?", "tags": ["deep"], "key": true},
+    {"id": "trismus", "text": "입 벌리기 어려움", "say": "입을 크게 벌리기 힘드세요?", "tags": ["deep"], "key": true},
+    {"id": "fever", "text": "발열", "say": "열이 나세요? 몇 도까지 올랐어요?", "tags": ["bacterial", "viral"]},
+    {"id": "cough_rhinorrhea", "text": "기침, 콧물, 코막힘, 결막염", "say": "기침이나 콧물, 코막힘도 있으세요?", "tags": ["viral", "bacterial"]},
+    {"id": "neck_swelling", "text": "목 림프절 부기와 통증", "say": "목 옆이 붓거나 만지면 아픈 데가 있으세요?", "tags": ["bacterial", "viral"]},
+    {"id": "rash", "text": "피부 발진(사포 같은 발진 등)", "say": "몸에 발진이 올라오지는 않았어요?", "tags": ["bacterial", "viral"]},
+    {"id": "fatigue_abdomen", "text": "심한 피로, 왼쪽 윗배 통증", "say": "많이 피곤하고 기운이 없으세요? 왼쪽 윗배가 아프지는 않으세요?", "tags": ["viral"]},
+    {"id": "ear_pain", "text": "귀로 뻗치는 통증", "say": "귀까지 아프지는 않으세요?", "tags": ["deep"]},
+    {"id": "sick_contacts", "text": "주변(가족, 학교, 직장)의 비슷한 환자", "say": "가족이나 학교, 직장에 비슷하게 아픈 사람이 있어요?", "tags": ["bacterial", "viral"]},
+    {"id": "prior_episodes", "text": "반복되는 인두염·편도염 횟수", "say": "1년에 이렇게 목이 심하게 아픈 게 몇 번 정도 있으세요?", "tags": ["bacterial"]},
+    {"id": "chronic_throat", "text": "속쓰림, 목 이물감, 헛기침(만성일 때)", "say": "속이 쓰리거나 목에 뭔가 걸린 느낌이 들고 헛기침을 자주 하세요?", "tags": ["noninfectious"]},
+    {"id": "sexual_history", "text": "민감한 질문임을 양해 구한 뒤 구강성교, 새 파트너", "say": "진료에 필요해서 누구에게나 여쭤보는 건데요, 최근에 새로운 분과 성관계나 구강성교가 있으셨어요?", "tags": ["viral", "bacterial"], "conditional": true},
+    {"id": "immune_vaccine", "text": "면역저하, 예방접종 여부(소아)", "say": "예방접종은 제때 다 맞았나요? 면역이 약해지는 병이나 약이 있나요?", "tags": ["deep"], "conditional": true},
+    {"id": "drug_allergy", "text": "약물 알레르기(특히 페니실린)", "say": "항생제나 다른 약에 알레르기가 있으세요?"}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온, 맥박, 호흡수, 산소포화도 확인", "say": "체온과 맥박, 호흡, 산소포화도를 먼저 확인하겠습니다."},
+    {"id": "oropharynx", "text": "설압자로 편도 비대·삼출물, 목젖 치우침, 연구개 부기 확인", "say": "입을 크게 벌리고 '아' 해 보세요. 혀를 살짝 누르고 목 안을 보겠습니다.", "key": true},
+    {"id": "airway_caution", "text": "후두개염이 의심되면 설압자 검사를 하지 않고 편한 자세를 유지시킨다", "say": "숨쉬기 편한 자세 그대로 앉아 계세요. 입 안을 억지로 보지 않겠습니다.", "conditional": true},
+    {"id": "neck_nodes", "text": "앞목·뒷목 림프절 촉진", "say": "목 옆 림프샘을 만져 보겠습니다."},
+    {"id": "skin", "text": "발진 확인", "say": "피부에 발진이 있는지 보겠습니다.", "conditional": true},
+    {"id": "spleen", "text": "비장 비대 촉진", "say": "누우세요. 왼쪽 윗배를 만져 보겠습니다.", "conditional": true}
+  ],
+  "education": [
+    {"id": "symptomatic", "text": "충분한 수분, 휴식, 해열진통제, 따뜻한 소금물 가글", "say": "물을 자주 드시고 푹 쉬세요. 아플 때는 해열진통제를 드시고 따뜻한 소금물로 가글하셔도 좋아요."},
+    {"id": "antibiotic_use", "text": "세균성이면 처방 항생제를 끝까지 복용, 바이러스성이면 항생제가 필요 없음을 설명", "say": "세균 때문이라면 항생제를 좋아져도 처방된 기간 동안 끝까지 드셔야 하고, 바이러스라면 항생제는 효과가 없습니다.", "conditional": true},
+    {"id": "mono_sports", "text": "전염성 단핵구증이면 수 주간 격한 운동·접촉 운동 피하기", "say": "비장이 커져 있을 수 있어서 몇 주 동안은 격한 운동이나 몸싸움하는 운동은 피하세요.", "conditional": true},
+    {"id": "warning_signs", "text": "숨쉬기 힘들거나 침을 못 삼키거나 입이 안 벌어지면 즉시 오도록 안내", "say": "숨쉬기 힘들거나 침도 못 삼키고 입이 잘 안 벌어지면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "Centor(McIsaac) 기준(발열, 기침 없음, 앞목 림프절 압통·부기, 편도 삼출물·부기, 나이)으로 연쇄상구균 인두염 가능성을 평가하고, 중간 이상이면 신속항원검사나 인후배양으로 확인한 뒤 항생제를 쓴다.",
+    "A군 연쇄상구균 인두염은 페니실린 또는 아목시실린 10일 복용이 1차 치료이며, 류마티스열 예방을 위해 끝까지 복용하게 한다.",
+    "전염성 단핵구증이 의심되면 혈구검사(림프구 증가, 이형 림프구), 간기능검사, 이종친화항체 또는 EBV 항체 검사를 하고, 아목시실린은 발진을 일으킬 수 있어 피한다.",
+    "침 흘림, 흡기 천명, 웅얼거리는 목소리, 개구 장애가 있으면 후두개염이나 편도주위농양을 의심해 기도 확보를 우선하고 이비인후과 응급 평가(농양 배농)를 한다.",
+    "고위험 성접촉 뒤 발열, 인두염, 발진이 있으면 급성 HIV 감염을 생각해 HIV 항원·항체 검사를 하고 필요하면 HIV RNA 검사를 추가한다."
+  ],
+  "case_ids": ["id_038", "peds_033", "ent_024", "id_020", "ent_002", "ent_033", "peds_001", "peds_039", "id_042"]
+}

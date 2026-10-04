@@ -1,0 +1,45 @@
+{
+  "name": "Free Talk Eval",
+  "learner_level": "intermediate",
+  "output_sections": ["scores", "corrections", "anki_cards", "summary"],
+  "metrics": {
+    "naturalness": {
+      "label": "Grammar & Natural Wording",
+      "anchors": {
+        "100": "Accurate grammar across long turns; wording sounds like a fluent speaker chatting, not a textbook.",
+        "70": "Minor slips that never block meaning; mostly natural wording with some translated-sounding phrases.",
+        "40": "Frequent errors or stiff, word-for-word phrasing that makes the listener work to follow.",
+        "10": "Errors so severe that most turns are hard to understand."
+      }
+    },
+    "interaction": {
+      "label": "Initiative & Elaboration",
+      "anchors": {
+        "100": "Carries the conversation: develops every answer with reasons, examples, or a short story, asks questions back, and moves the topic forward without being prompted.",
+        "70": "Answers with some detail and occasionally asks back or adds a new thread, but often waits for the partner's next question.",
+        "40": "Mostly minimal answers to the partner's questions; rarely adds detail, asks back, or brings anything new.",
+        "10": "One-to-three-word replies only; the conversation depends entirely on the partner."
+      }
+    },
+    "fluency": {
+      "label": "Sustained Speaking & Flow",
+      "anchors": {
+        "100": "Speaks in connected multi-sentence turns with natural linkers (because, so, but, actually, anyway) and few restarts.",
+        "70": "Can hold a turn for two or three sentences with some hesitation or restarts.",
+        "40": "Turns are short and choppy; long pauses or abandoned sentences are common.",
+        "10": "Cannot sustain more than a fragment at a time."
+      }
+    },
+    "comprehension_repair": {
+      "label": "Understanding & Repair",
+      "anchors": {
+        "100": "Understands each question, answers what was actually asked, and self-corrects or asks for clarification naturally when needed.",
+        "70": "Mostly follows and answers logically, with occasional missed nuance or weak repair.",
+        "40": "Often answers a different question or guesses instead of checking meaning.",
+        "10": "Cannot follow the exchange or build a coherent reply."
+      }
+    }
+  },
+  "checklist": [],
+  "empathy_markers": []
+}

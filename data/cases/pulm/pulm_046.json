@@ -1,0 +1,373 @@
+{
+  "id": "pulm_046",
+  "system": "pulmonology",
+  "difficulty": "advanced",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Lee",
+  "age": 66,
+  "gender": "female",
+  "care_setting": "outpatient_clinic",
+  "chief_complaint": "persistent cough for 2 months and abnormal CT results",
+  "hpi_details": "A 66-year-old never-smoker presents with her daughter to discuss recent biopsy results. She has had a persistent dry cough for 2 months. A recent CT scan showed a 4.5 cm right upper lobe mass, pleural effusion, and suspected bone metastases. Subsequent biopsy confirmed invasive adenocarcinoma. Molecular profiling returned positive for an EGFR exon 19 deletion, indicating stage IV disease. She is visibly anxious and directly asks 'Is it cancer? How long do I have?' upon the clinician entering the room.",
+  "ideas": "suspects the news is bad because the clinic requested she bring a family member to this appointment",
+  "concerns": "worried about how much time she has left and whether she will suffer or be a burden to her daughter",
+  "expectations": "wants honest answers about her diagnosis and to know if any treatments are available",
+  "pmh": "previously healthy, no history of lung disease or previous malignancies",
+  "medications": "none",
+  "social_hx": "never-smoker, retired school teacher, lives with her daughter",
+  "available_results": [
+    {
+      "collected_at": "1 week ago",
+      "flag": "abnormal",
+      "id": "res_01",
+      "reference_range": "",
+      "specimen": "imaging",
+      "test": "Chest and Abdomen CT",
+      "unit": "",
+      "value": "Right upper lobe mass (4.5 cm) with malignant-appearing pleural effusion and multiple osteolytic lesions in the thoracic spine."
+    },
+    {
+      "collected_at": "4 days ago",
+      "flag": "positive",
+      "id": "res_02",
+      "reference_range": "",
+      "specimen": "tissue",
+      "test": "Lung Biopsy Pathology",
+      "unit": "",
+      "value": "Invasive adenocarcinoma of the lung."
+    },
+    {
+      "collected_at": "2 days ago",
+      "flag": "positive",
+      "id": "res_03",
+      "reference_range": "",
+      "specimen": "tissue",
+      "test": "Molecular Testing (EGFR)",
+      "unit": "",
+      "value": "Exon 19 deletion detected."
+    }
+  ],
+  "clinical_knowledge": {
+    "boundaries_and_exceptions": [
+      "If the patient explicitly states they do not want to know the prognosis or exact diagnosis details, respect their wishes and ask who should receive the information.",
+      "Targeted therapy eligibility depends strictly on specific molecular profiling; not all non-smokers or adenocarcinomas will have actionable mutations."
+    ],
+    "common_misconceptions": [
+      "Assuming that a never-smoker cannot have lung cancer, leading to delayed diagnosis.",
+      "Believing that stage IV lung cancer always means an immediate, rapid decline without viable treatment options.",
+      "Giving a specific, rigid timeline (e.g., 'you have 6 months to live') without explaining the variability and the impact of targeted treatments."
+    ],
+    "core_concepts": [
+      "Breaking bad news requires a structured approach like the SPIKES protocol to assess the patient's readiness, provide information clearly, and respond to emotions.",
+      "Never-smokers, particularly East Asian females, have a higher incidence of EGFR mutations in non-small cell lung cancer (NSCLC), which fundamentally changes the treatment paradigm.",
+      "Stage IV NSCLC is generally considered incurable, but targeted therapies such as osimertinib can provide significant progression-free and overall survival benefits with a good quality of life.",
+      "Prognostication should be individualized, avoiding overly precise numbers early on, while acknowledging the uncertainty and focusing on manageable milestones."
+    ],
+    "dangerous_errors": [
+      "Delivering the diagnosis bluntly without assessing the patient's understanding or emotional state first.",
+      "Failing to mention the availability and high efficacy of targeted oral therapies like osimertinib, leaving the patient without appropriate hope.",
+      "Ignoring the daughter's presence or failing to incorporate the patient's support system into the discussion."
+    ],
+    "diagnostic_clues": [
+      "Persistent unexplained cough in a healthy never-smoker",
+      "CT showing primary lung mass with pleural effusion and osteolytic bone lesions (Stage IV)",
+      "Biopsy confirming adenocarcinoma with EGFR exon 19 deletion"
+    ],
+    "management_principles": [
+      "Use the SPIKES protocol (Setting, Perception, Invitation, Knowledge, Empathy, Strategy/Summary) to deliver the diagnosis.",
+      "Explain that while the cancer is not curable, it is highly treatable with oral targeted therapy (osimertinib) due to the specific mutation found.",
+      "Introduce the concept of early palliative care concurrently with active oncologic treatment to maximize symptom control and quality of life.",
+      "Arrange a prompt referral to medical oncology to initiate targeted therapy as soon as possible."
+    ],
+    "source_refs": [
+      {
+        "title": "NCCN Clinical Practice Guidelines in Oncology: Non-Small Cell Lung Cancer",
+        "url": "https://www.nccn.org/professionals/physician_gls/pdf/nscl.pdf"
+      },
+      {
+        "title": "ESMO Clinical Practice Guidelines: Metastatic Non-Small-Cell Lung Cancer",
+        "url": "https://www.esmo.org/guidelines/lung-and-chest-tumours/metastatic-non-small-cell-lung-cancer"
+      }
+    ],
+    "topic": "Breaking Bad News: Metastatic EGFR-mutant Lung Adenocarcinoma"
+  },
+  "reference_soap": {
+    "assessment": "Stage IV lung adenocarcinoma, EGFR exon 19 deletion positive. Patient is now aware of the diagnosis and the incurability, but understands it is highly treatable.",
+    "objective": "Vitals stable. Alert, oriented, visibly anxious. Decreased breath sounds at the right lung base consistent with known pleural effusion. Daughter supportive at bedside.",
+    "plan": "Disclosed diagnosis of metastatic lung cancer using the SPIKES framework. Discussed that while incurable, the EGFR mutation allows for highly effective oral targeted therapy (osimertinib). Addressed emotional distress with empathy. Deferred exact prognostic numbers, emphasizing treatment potential and variability. Arranged urgent medical oncology consultation this week and discussed concurrent palliative care.",
+    "subjective": "66-year-old female, never-smoker, presenting with her daughter for biopsy results after 2 months of persistent cough. Expressed significant anxiety, asking 'Is it cancer? How long do I have?'. Patient suspected bad news but was unaware of the exact diagnosis."
+  },
+  "learning_objectives": [
+    "Demonstrate breaking bad news using the SPIKES protocol",
+    "Explain the implications of a targetable mutation (EGFR) in advanced lung cancer in plain language",
+    "Address patient fears and prognostic questions empathetically without providing rigid timelines",
+    "Incorporate family members into difficult clinical conversations appropriately"
+  ],
+  "teaching": {
+    "diagnosis": "Metastatic EGFR-mutant Lung Adenocarcinoma",
+    "differentials": [
+      "Pulmonary tuberculosis",
+      "Metastatic malignancy from another primary site",
+      "Fungal pneumonia"
+    ],
+    "must_ask": [
+      {
+        "domains": [
+          "ideas",
+          "opening"
+        ],
+        "keywords": [
+          "understand",
+          "results",
+          "condition"
+        ],
+        "objective": "Assess patient's current understanding (SPIKES - Perception)",
+        "say": "Before we look at the results, could you tell me what you understand about your lung condition so far?"
+      },
+      {
+        "domains": [
+          "expectations",
+          "opening"
+        ],
+        "keywords": [
+          "details",
+          "picture",
+          "prefer",
+          "kind",
+          "person"
+        ],
+        "objective": "Determine information preferences (SPIKES - Invitation)",
+        "say": "Are you the kind of person who likes to know all the medical details, or would you prefer just the big picture?"
+      },
+      {
+        "domains": [
+          "concerns",
+          "expectations"
+        ],
+        "keywords": [
+          "exact",
+          "number",
+          "treatments",
+          "discussing"
+        ],
+        "objective": "Address the direct prognosis question empathetically",
+        "say": "You asked about time. While it is hard to give an exact number, are you open to discussing how our new treatments can help?"
+      },
+      {
+        "domains": [
+          "associated_symptoms",
+          "progression"
+        ],
+        "keywords": [
+          "pain",
+          "weight",
+          "loss",
+          "shortness"
+        ],
+        "objective": "Assess physical symptoms of the advanced disease",
+        "say": "Since your cough started, have you noticed any new back pain, shortness of breath, or unintended weight loss?"
+      },
+      {
+        "domains": [
+          "family_hx",
+          "living_work"
+        ],
+        "keywords": [
+          "daughter",
+          "family",
+          "coping",
+          "illness",
+          "glad"
+        ],
+        "objective": "Explore the patient's support system",
+        "say": "I am glad your daughter is here. How have you and your family been coping with your illness recently?"
+      }
+    ],
+    "one_liner": "A never-smoker presenting with advanced lung cancer carrying an EGFR mutation, requiring empathetic disclosure and an explanation of targeted therapy.",
+    "red_flags": [
+      "New onset localized back pain or neurologic deficits suggesting spinal cord compression from bone metastases.",
+      "Worsening shortness of breath suggesting expanding pleural effusion or pulmonary embolism.",
+      "Severe uncontrolled pain or rapid weight loss."
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "124/78",
+      "hr": 82,
+      "rr": 16,
+      "spo2": 97,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "Doctor, I'm here to get my lung biopsy results. Please be honest with me, is it cancer? How long do I have?",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "Yes, this is my daughter Sarah. I asked her to be here with me today so we can hear everything together.",
+        "topic": "Support person present"
+      },
+      {
+        "answer": "The waiting has been agonizing, and I haven't slept well at all. My stomach has been in knots thinking about what this could mean.",
+        "topic": "Waiting for results"
+      },
+      {
+        "answer": "About two months ago, I developed a persistent dry cough that wouldn't go away. My doctor ordered a chest CT scan, and they told me there was a spot on my lung that needed a needle biopsy.",
+        "topic": "Reason for biopsy"
+      },
+      {
+        "answer": "It has been a dry, hacking cough for about two months. I haven't coughed up any phlegm or blood.",
+        "topic": "Cough characteristics"
+      },
+      {
+        "answer": "The doctor who ordered the biopsy told me there was a four-centimeter spot in my right lung and some fluid, and that I needed a biopsy to know for sure. They didn't give me any definitive answers.",
+        "topic": "Previous doctor explanations"
+      },
+      {
+        "answer": "When your clinic called and asked me to bring a family member, my heart sank. I'm terrified that it's cancer and that I might not have much time left.",
+        "topic": "Suspicions and biggest fear"
+      },
+      {
+        "answer": "My cough is about the same, but over the last week or two, I've noticed a dull ache in my mid-back and I feel a little winded when climbing stairs.",
+        "topic": "Recent symptom changes"
+      },
+      {
+        "answer": "I've lost about five pounds over the past month because my appetite dropped from worrying so much.",
+        "topic": "Weight loss and appetite"
+      },
+      {
+        "answer": "I want the honest truth and the full picture, including whatever treatment options we have. You don't have to overwhelm me with tiny numbers right away, but please don't sugarcoat anything.",
+        "topic": "Information preference"
+      },
+      {
+        "answer": "I want to hear it directly with my daughter right now. She helps me manage my affairs, and we don't keep secrets from each other.",
+        "topic": "Sharing news with family"
+      },
+      {
+        "answer": "Yes, doctor. As terrifying as it is, not knowing is worse. I am ready to hear what the biopsy showed.",
+        "topic": "Readiness for results"
+      },
+      {
+        "answer": "My older sister passed away from breast cancer ten years ago, and watching her suffer through chemotherapy was heartbreaking. That memory really frightens me.",
+        "topic": "Past experience with serious illness"
+      },
+      {
+        "answer": "I am retired, so I don't work, and I have a modest pension and good health insurance. My daughter has her own life, and my biggest dread is becoming a heavy burden on her.",
+        "topic": "Caregiving and financial situation"
+      },
+      {
+        "answer": "My daughter is my main pillar of support, and my neighbors and church friends check in on me regularly.",
+        "topic": "Support system"
+      },
+      {
+        "answer": "I usually pray, tend to my garden, or talk to my daughter when I'm stressed. I've never been treated for depression or anxiety before, though right now I'm naturally quite anxious.",
+        "topic": "Stress coping and mental health"
+      },
+      {
+        "answer": "My faith is important to me, and more than anything, I want to maintain my dignity and quality of life. My grandson is graduating from high school next spring, and I desperately hope to be there.",
+        "topic": "Personal values and goals"
+      },
+      {
+        "answer": "I get slightly breathless if I walk up a steep hill or climb a flight of stairs, but resting quietly I breathe okay. I don't have sharp chest pain.",
+        "topic": "Shortness of breath"
+      },
+      {
+        "answer": "I have that dull ache in my mid-back, but my legs feel strong and I have no numbness, tingling, or trouble with my bladder or bowels.",
+        "topic": "Neurologic symptoms"
+      },
+      {
+        "answer": "No, I haven't had any fever, chills, or night sweats.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "I've been fortunate to be healthy my whole life. I've never had asthma, pneumonia, high blood pressure, or diabetes.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had an appendectomy when I was in college, but other than giving birth to my daughter, I've never been hospitalized.",
+        "topic": "Past surgeries"
+      },
+      {
+        "answer": "I don't take any prescription medications, just a daily multivitamin and vitamin D supplement.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications, foods, or latex.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked a single cigarette in my life, and my late husband didn't smoke either.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I might have half a glass of red wine on special occasions or holidays, and I've never used recreational drugs.",
+        "topic": "Alcohol and substance use"
+      },
+      {
+        "answer": "I was an elementary school teacher for thirty-five years before retiring. I now live in a quiet single-story home with my daughter.",
+        "topic": "Occupation and home life"
+      },
+      {
+        "answer": "My father died of a stroke in his late seventies, and my mother had arthritis. As I mentioned, my sister had breast cancer, but there is no lung cancer in our family.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 124/78 mmHg, heart rate 82 bpm, respiratory rate 16 breaths/min, temperature 36.6 C, oxygen saturation 97% on ambient air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Alert and oriented, sitting upright beside her daughter, appearing visibly anxious and tearful but in no acute distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable cervical or supraclavicular lymphadenopathy bilaterally.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Symmetric chest excursion without retractions; no anterior or lateral chest wall tenderness.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Dullness to percussion at the right lung base; resonant over all other lung fields.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Decreased breath sounds at the right lung base; clear vesicular breath sounds throughout the left lung and upper right lung.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rhythm and normal rate, normal S1 and S2, no audible murmurs or gallops.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Mild focal tenderness on percussion and palpation over the mid-thoracic spinous processes without deformity.",
+        "maneuver": "spine_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Normal 5/5 motor strength in all muscle groups of the bilateral upper and lower extremities.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Intact light touch and pinprick sensation across all dermatomes bilaterally.",
+        "maneuver": "sensory_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No pedal or pretibial edema bilaterally; calves are supple and non-tender.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      }
+    ]
+  }
+}

@@ -524,6 +524,14 @@ object OpenBookEngine {
     }
 
     /**
+     * The level the sheet actually shows. A pre-visit briefing already revealed the checklist, so a
+     * briefed session reads at least at [OpenBookLevel.CHECKLIST] — and the mic hold must be judged
+     * on that, not on the in-visit reveal level, or a briefed learner is muted while reading aloud.
+     */
+    fun displayedLevel(level: OpenBookLevel, briefed: Boolean): OpenBookLevel =
+        if (briefed && level.step < OpenBookLevel.CHECKLIST.step) OpenBookLevel.CHECKLIST else level
+
+    /**
      * Whether session setup must pause for the neutral practice-focus choice before starting a
      * live voice transport. The choice is offered before any diagnosis is rendered, so it is no
      * longer controlled by the old "brief every encounter" preference or by an intro-dialog flag.

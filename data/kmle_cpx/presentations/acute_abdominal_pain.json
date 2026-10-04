@@ -1,0 +1,57 @@
+{
+  "id": "acute_abdominal_pain",
+  "title": "배가 아파요",
+  "english_title": "Acute abdominal pain",
+  "category": "소화기",
+  "kmle_item": "복통",
+  "door_complaint": "배가 아프다고",
+  "differential_groups": [
+    {"key": "gi", "label": "위장관 염증/천공", "examples": ["급성 충수염", "급성 게실염", "소화성궤양 천공", "급성 위장관염"]},
+    {"key": "hepatobiliary", "label": "간담도·췌장", "examples": ["급성 담낭염", "담석산통", "급성 담관염", "급성 췌장염"]},
+    {"key": "vascular_obstruction", "label": "폐쇄·혈관", "examples": ["장폐색", "급성 장간막 허혈", "복부대동맥류 파열"]},
+    {"key": "gynecologic", "label": "산부인과", "examples": ["자궁외임신", "난소 염전", "골반염", "난소 낭종 파열"]},
+    {"key": "other", "label": "비뇨기·기타", "examples": ["요로결석", "급성 신우신염", "당뇨병케톤산증", "하벽 심근경색"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "시작 시기와 발생 양상(갑자기, 서서히)", "say": "언제부터 아프셨어요? 갑자기 아프기 시작했나요?", "tags": ["vascular_obstruction", "gi"]},
+    {"id": "location_migration", "text": "통증 위치와 처음 아픈 곳에서 옮겨 갔는지", "say": "어디가 제일 아프세요? 처음부터 그 자리가 아프셨어요?", "tags": ["gi", "hepatobiliary", "gynecologic"]},
+    {"id": "radiation", "text": "방사통(등, 어깨, 사타구니)", "say": "아픈 게 등이나 어깨, 사타구니 쪽으로 뻗치나요?", "tags": ["hepatobiliary", "vascular_obstruction", "other"]},
+    {"id": "character", "text": "통증 양상(지속통, 쥐어짜는 듯한 간헐통)", "say": "어떻게 아프세요? 계속 아프세요, 아니면 쥐어짜듯 아팠다 괜찮았다 하세요?", "tags": ["vascular_obstruction", "hepatobiliary"]},
+    {"id": "severity", "text": "통증 강도와 시간에 따른 변화", "say": "가장 아플 때를 10점이라 하면 지금은 몇 점이에요? 점점 심해지나요?"},
+    {"id": "modifiers", "text": "악화·완화 요인(식사, 움직임, 자세)", "say": "먹거나 움직이면 더 아프세요? 좀 편해지는 자세가 있나요?", "tags": ["hepatobiliary", "gi"]},
+    {"id": "prior_episodes", "text": "이전의 비슷한 통증", "say": "전에도 이렇게 아픈 적이 있으셨어요?", "tags": ["hepatobiliary"]},
+    {"id": "nausea_vomiting", "text": "메스꺼움, 구토와 구토물 양상(담즙, 피)", "say": "속이 메스껍거나 토하셨어요? 토한 건 어떤 색이었나요?", "tags": ["gi", "vascular_obstruction", "hepatobiliary"]},
+    {"id": "bowel_gas", "text": "배변·방귀 여부, 설사, 혈변", "say": "대변이나 방귀는 잘 나오세요? 설사를 하거나 피가 섞여 나오지는 않나요?", "tags": ["vascular_obstruction", "gi"], "key": true},
+    {"id": "fever_chills", "text": "발열, 오한", "say": "열이 나거나 몸이 춥고 떨리지는 않으세요?", "tags": ["gi", "hepatobiliary", "gynecologic"]},
+    {"id": "jaundice_urine", "text": "황달, 짙은 소변, 흰 대변", "say": "눈이나 피부가 노래지거나 소변 색이 진해지지 않았나요?", "tags": ["hepatobiliary"]},
+    {"id": "urinary", "text": "배뇨통, 빈뇨, 혈뇨", "say": "소변볼 때 아프거나 피가 섞여 나오지는 않나요?", "tags": ["other"]},
+    {"id": "syncope_dizziness", "text": "어지러움, 실신(복강 내 출혈 의심)", "say": "어지럽거나 정신을 잃을 것 같았던 적이 있으세요?", "tags": ["gynecologic", "vascular_obstruction"], "key": true},
+    {"id": "vaginal_symptoms", "text": "질출혈, 질 분비물", "say": "혹시 질에서 피가 비치거나 분비물이 늘지는 않았나요?", "tags": ["gynecologic"], "applies": "female", "key": true},
+    {"id": "chest_symptoms", "text": "가슴 통증, 호흡곤란(심근경색, 하엽 폐렴 감별)", "say": "가슴이 아프거나 숨이 차지는 않으세요?", "tags": ["other"]},
+    {"id": "meal_alcohol", "text": "아프기 전 먹은 음식(기름진 음식), 음주", "say": "아프기 전에 무엇을 드셨어요? 술은 드셨나요?", "tags": ["hepatobiliary", "gi"]},
+    {"id": "nsaid_use", "text": "진통소염제, 아스피린 복용", "say": "진통제나 아스피린을 자주 드시는 편이에요?", "tags": ["gi"]},
+    {"id": "vascular_risk", "text": "심방세동 등 부정맥, 혈관 질환(색전·허혈 위험)", "say": "심장이 불규칙하게 뛴다거나 혈관 병이 있다는 말을 들으신 적 있나요?", "tags": ["vascular_obstruction"], "conditional": true}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압, 맥박, 체온으로 쇼크와 발열 여부 확인", "say": "먼저 혈압, 맥박, 체온을 재 보겠습니다."},
+    {"id": "inspection_auscultation", "text": "복부 시진(팽만, 수술 흉터)과 장음 청진", "say": "편하게 누우세요. 배를 먼저 보고 청진기로 장 소리를 들어 보겠습니다."},
+    {"id": "palpation", "text": "아프지 않은 곳부터 얕게, 깊게 촉진해 압통 위치 확인", "say": "안 아픈 곳부터 천천히 눌러 볼게요. 아프면 말씀해 주세요."},
+    {"id": "peritoneal_signs", "text": "반발압통, 근육 강직 등 복막자극징후 확인", "say": "눌렀다가 손을 뗄 때 더 아프신지 보겠습니다.", "key": true},
+    {"id": "special_tests", "text": "의심 부위에 따라 머피 징후, 맥버니점 압통 등 특수 진찰", "say": "오른쪽 윗배를 누른 채로 숨을 크게 들이쉬어 보세요.", "tags": ["hepatobiliary", "gi"]},
+    {"id": "cva_tenderness", "text": "양쪽 늑골척추각 압통", "say": "앉으세요. 등을 두드려 볼 테니 아프면 말씀해 주세요.", "tags": ["other"]},
+    {"id": "pelvic_rectal", "text": "필요하면 골반 진찰 또는 직장수지검사가 필요하다고 설명", "say": "필요하면 골반 진찰이나 항문 진찰을 추가로 하겠습니다.", "tags": ["gynecologic", "gi"], "conditional": true}
+  ],
+  "education": [
+    {"id": "npo", "text": "원인이 확인될 때까지 금식하도록 안내", "say": "원인을 확인할 때까지는 물이나 음식을 드시지 않는 게 좋습니다."},
+    {"id": "possible_admission", "text": "결과에 따라 입원이나 수술이 필요할 수 있음을 미리 설명", "say": "검사 결과에 따라 입원이나 수술이 필요할 수도 있습니다.", "conditional": true},
+    {"id": "warning_signs", "text": "통증 악화, 고열, 계속되는 구토, 혈변, 어지러움이 생기면 즉시 알리도록 안내", "say": "통증이 심해지거나 열, 구토, 어지러움이 생기면 바로 말씀해 주세요.", "key": true}
+  ],
+  "grader_notes": [
+    "가임기 여성은 소변 또는 혈액 hCG로 임신 여부를 먼저 확인해 자궁외임신을 배제해야 한다.",
+    "기본 검사는 혈구검사, CRP, 전해질, 간기능, 리파아제(또는 아밀라아제), 소변검사이며, 상복부 통증이나 심혈관 위험이 있으면 심전도를 시행한다.",
+    "우상복부 통증은 복부 초음파를 먼저 하고, 충수염·게실염·천공·장폐색·장간막 허혈이 의심되면 복부 CT를 시행한다.",
+    "활력징후가 불안정하거나 복막자극징후가 있으면 금식, 수액 소생, 진통을 하면서 외과(또는 산부인과) 협진을 지체하지 않는다.",
+    "진통제 투여는 진단 정확도를 떨어뜨리지 않으므로 진단 전에도 통증을 적절히 조절한다."
+  ],
+  "case_ids": ["gs_021", "gi_005", "gs_022", "gi_032", "gi_006", "gs_038", "gi_014", "gi_017", "obgyn_002", "obgyn_023"]
+}

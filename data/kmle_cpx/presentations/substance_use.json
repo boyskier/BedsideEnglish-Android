@@ -1,0 +1,53 @@
+{
+  "id": "substance_use",
+  "title": "술이나 약을 끊고 싶어요",
+  "english_title": "Alcohol or drug use",
+  "category": "정신",
+  "kmle_item": "물질오남용",
+  "door_complaint": "술을 끊고 싶다고",
+  "differential_groups": [
+    {"key": "alcohol", "label": "알코올", "examples": ["위험 음주", "알코올 사용장애", "알코올 금단", "알코올성 간질환"]},
+    {"key": "opioid", "label": "아편유사제", "examples": ["아편유사제 사용장애", "아편유사제 금단", "과다복용"]},
+    {"key": "other_substance", "label": "기타 물질", "examples": ["진정수면제(벤조디아제핀) 의존", "필로폰 등 각성제", "대마", "니코틴"]},
+    {"key": "comorbid", "label": "동반 정신질환", "examples": ["우울증", "불안장애", "외상후스트레스장애"]}
+  ],
+  "history": [
+    {"id": "pattern", "text": "사용하는 물질의 종류, 한 번에 쓰는 양, 횟수, 사용 경로(주사 포함)", "say": "주로 어떤 걸 얼마나 자주 드세요? 한 번에 어느 정도 드시나요?", "tags": ["alcohol", "opioid", "other_substance"]},
+    {"id": "onset_progression", "text": "처음 시작한 시기와 양이 늘어난 경과(내성)", "say": "언제부터 드시기 시작했어요? 예전보다 양이 늘어야 같은 효과가 나나요?", "tags": ["alcohol", "opioid", "other_substance"]},
+    {"id": "last_use", "text": "마지막으로 사용한 시점", "say": "마지막으로 드신 게 언제예요?", "tags": ["alcohol", "opioid"], "key": true},
+    {"id": "loss_of_control", "text": "줄이려다 실패한 경험, 갈망, 생각보다 많이 사용함", "say": "줄이거나 끊으려고 해 보셨는데 잘 안 되셨어요? 참기 힘들 만큼 생각이 나세요?", "tags": ["alcohol", "opioid", "other_substance"]},
+    {"id": "cage", "text": "음주 선별 질문(줄여야 한다는 생각, 주변의 비난, 죄책감, 아침 해장술)", "say": "술을 줄여야겠다고 느끼신 적이 있어요? 주변에서 술 때문에 뭐라고 한 적은요? 아침에 해장술을 드시나요?", "tags": ["alcohol"]},
+    {"id": "consequences", "text": "직장·가정·경제·법적 문제, 음주운전 등 위험한 상황에서의 사용", "say": "술이나 약 때문에 일이나 가족 관계에 문제가 생긴 적 있으세요? 마시고 운전하신 적은요?", "tags": ["alcohol", "opioid", "other_substance"]},
+    {"id": "withdrawal_symptoms", "text": "금단 증상(손 떨림, 땀, 불면, 불안 / 근육통, 콧물·눈물, 설사, 소름)", "say": "안 드시면 손이 떨리거나 땀이 나고 잠을 못 주무세요? 온몸이 쑤시거나 콧물, 설사가 나나요?", "tags": ["alcohol", "opioid"]},
+    {"id": "severe_withdrawal", "text": "과거 금단 경련, 헛것이 보임, 섬망", "say": "전에 끊었을 때 경련을 하거나 헛것이 보인 적이 있으세요?", "tags": ["alcohol", "other_substance"], "key": true},
+    {"id": "overdose", "text": "과다복용이나 의식을 잃은 경험", "say": "너무 많이 써서 정신을 잃거나 응급실에 간 적이 있으세요?", "tags": ["opioid", "other_substance"], "key": true},
+    {"id": "injection_risk", "text": "주삿바늘 공유, 성매개감염 위험", "say": "누구에게나 여쭤보는 질문이에요. 주사로 쓰신 적이 있다면 바늘을 다른 사람과 같이 쓰신 적은요?", "tags": ["opioid", "other_substance"], "conditional": true},
+    {"id": "complications", "text": "음주 합병증 증상(황달, 토혈·검은 변, 윗배 통증, 손발 저림, 기억력 저하)", "say": "눈이 노래지거나 피를 토하거나 변이 검게 나온 적 있으세요? 손발이 저리지는 않으세요?", "tags": ["alcohol"]},
+    {"id": "polysubstance", "text": "다른 물질 병용(수면제, 진통제, 담배)", "say": "술 말고 수면제나 진통제, 담배도 함께 하세요?", "tags": ["other_substance"]},
+    {"id": "mood_suicide", "text": "우울·불안 증상과 자살 사고", "say": "요즘 기분은 어떠세요? 너무 힘들어서 죽고 싶다는 생각이 드신 적 있으세요?", "tags": ["comorbid"], "key": true},
+    {"id": "prior_treatment", "text": "이전의 금주·치료 시도, 약물치료, 자조모임 경험", "say": "전에 병원 치료를 받거나 금주 모임에 나가 보신 적이 있으세요?"},
+    {"id": "readiness", "text": "변화에 대한 준비 정도(끊고 싶은 이유, 중요도와 자신감)", "say": "끊고 싶다고 생각하신 이유가 뭐예요? 0부터 10까지라면 얼마나 끊을 자신이 있으세요?"},
+    {"id": "support", "text": "도와줄 가족·지지 체계와 생활 환경", "say": "끊는 데 도와줄 가족이나 친구가 있으세요?"}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "맥박·혈압·체온으로 금단에 따른 자율신경 항진 확인", "say": "혈압과 맥박, 체온을 먼저 재 보겠습니다."},
+    {"id": "withdrawal_signs", "text": "손 떨림, 땀, 동공 크기, 소름, 하품·콧물 관찰로 금단 중증도 평가", "say": "양손을 앞으로 쭉 뻗어 보시고, 눈도 한번 보겠습니다."},
+    {"id": "liver_signs", "text": "황달, 거미혈관종, 간비대, 복수 확인", "say": "눈 흰자를 보고, 누우신 뒤 배를 눌러 보겠습니다.", "tags": ["alcohol"], "conditional": true},
+    {"id": "injection_sites", "text": "주사 자국, 피부 감염, 심잡음 확인", "say": "팔에 주사 자국이나 염증이 있는지 보고 심장 소리를 들어 보겠습니다.", "tags": ["opioid"], "conditional": true},
+    {"id": "neuro_gait", "text": "안구운동과 걸음걸이, 지남력 확인", "say": "제 손가락을 눈으로 따라 보시고 일자로 걸어 보시겠어요?", "tags": ["alcohol"], "conditional": true}
+  ],
+  "education": [
+    {"id": "brief_intervention", "text": "현재 사용이 건강에 미친 영향을 환자의 결과와 연결해 알려 주고 구체적인 목표를 함께 정함", "say": "지금 드시는 양이면 간 수치나 기억력에 영향이 올 수 있어요. 언제부터 어떻게 줄일지 같이 정해 봐요."},
+    {"id": "no_abrupt_stop", "text": "많이 마시거나 수면제를 오래 쓴 경우 혼자 갑자기 끊지 말고 의료진 도움을 받도록 안내(금단 경련 위험)", "say": "혼자 갑자기 끊으면 경련 같은 위험한 금단 증상이 올 수 있어서, 병원에서 도움을 받으며 끊는 게 안전합니다.", "key": true},
+    {"id": "overdose_prevention", "text": "혼자 사용하지 않기, 끊은 뒤 내성이 떨어져 과다복용 위험이 커짐, 날록손 안내", "say": "한동안 끊었다가 다시 쓰면 같은 양에도 숨이 멎을 수 있어요. 절대 혼자 쓰지 마세요.", "tags": ["opioid"], "conditional": true},
+    {"id": "resources", "text": "중독관리통합지원센터, 단주 모임 같은 자조모임, 정신건강의학과 연계", "say": "지역 중독관리통합지원센터나 금주 모임에서도 도움을 받으실 수 있어요. 연결해 드릴게요."}
+  ],
+  "grader_notes": [
+    "AUDIT·AUDIT-C, CAGE 같은 선별 도구로 위험 음주를 찾고, 결과를 알려 주며 조언하고 목표를 함께 정하는 짧은 개입을 한다.",
+    "알코올 금단은 마지막 음주 후 6–24시간에 시작하며, 금단 경련이나 진전섬망 병력이 있으면 입원 해독을 고려하고, 증상에 따라 벤조디아제핀을 쓰며 티아민을 준다.",
+    "알코올 사용장애의 재발 방지에는 날트렉손, 아캄프로세이트 같은 약물과 정신사회적 치료를 함께 쓴다.",
+    "아편유사제 사용장애는 부프레노르핀이나 메타돈 유지 치료가 사망을 줄이는 1차 치료이며, 부프레노르핀은 유발 금단을 피하려고 중등도 이상의 금단 증상이 나타난 뒤 시작하고 날록손을 함께 안내한다.",
+    "간기능·혈구검사를 하고, 주사 사용자는 B·C형 간염과 HIV 검사를 권한다."
+  ],
+  "case_ids": []
+}

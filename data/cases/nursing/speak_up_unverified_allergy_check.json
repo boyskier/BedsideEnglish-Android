@@ -1,0 +1,110 @@
+{
+  "id": "nursing_speak_up_unverified_allergy_check",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Speak up for safety",
+  "nursing_pathways": ["uk_au", "us"],
+  "counterpart": "nurse",
+  "urgency": "urgent",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_speak_up",
+  "patient_name": "Stopping a colleague who is about to give an antibiotic with an unverified allergy record",
+  "chief_complaint": "Stop a more experienced nurse colleague from giving an antibiotic when the patient's allergy record is contradictory, and get it verified first",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Speak up: contradictory penicillin allergy record, antibiotic about to be given",
+    "task": "Speak up for safety",
+    "urgency": "urgent",
+    "patient": "Ms. Priya Anand, 52-year-old woman admitted overnight with a chest infection",
+    "location": "Medical ward, morning drug round; your colleague has the antibiotic drawn up and is at the bedside",
+    "situation": "The paper drug chart records no known allergies, but the admission note and the patient's wristband both flag a penicillin allergy. Your colleague is about to give a penicillin-class antibiotic.",
+    "background": [
+      "She was admitted overnight through the emergency department with a chest infection.",
+      "The admission note records a penicillin allergy; the wristband is an allergy-alert band.",
+      "The paper drug chart has the allergy box left blank and is marked 'NKDA'."
+    ],
+    "current_status": [
+      "She is stable, breathing comfortably, and fully alert and able to answer questions herself.",
+      "Nothing has been administered to her yet this morning.",
+      "Your colleague is an experienced nurse of many years and is running behind on the round."
+    ],
+    "key_data": [
+      "Two sources say allergic and one says not allergic — that is an unresolved discrepancy, not a majority vote.",
+      "The patient herself is alert and can be asked directly, which is the fastest available verification.",
+      "The nature of the reported reaction matters and is not recorded anywhere you can see."
+    ],
+    "treatments": [
+      "Antibiotic drawn up and ready to give; nothing administered yet."
+    ],
+    "your_request": "Stop the administration before it happens, name the discrepancy, and get it verified with the patient and the prescriber before anything is given.",
+    "must_include": [
+      "Intervene before the drug is given, clearly enough that your colleague actually stops.",
+      "Name the specific discrepancy between the chart, the admission note, and the wristband.",
+      "Name the specific risk of giving a penicillin-class antibiotic to a possibly allergic patient.",
+      "Stay collegial with a more experienced colleague while not backing down.",
+      "Propose the concrete resolution: ask the patient directly, then get the prescriber to confirm or change it.",
+      "Confirm out loud what has been agreed before the round moves on."
+    ]
+  },
+  "kickoff_text": "It's fine, the chart says NKDA — that band's probably left over from her last admission. We're already half an hour behind.",
+  "persona_override": "You are Marguerite Dubois, an experienced ward nurse of over twenty years, mid-drug-round and running late, with an antibiotic already drawn up at the bedside. You are warm and well-meaning, not aggressive, but you trust the drug chart and your own experience, and your first response to being questioned by a colleague is to explain it away: the band is probably from a previous admission, the chart says no known allergies, and you are behind. Ground truth: the admission note and the wristband both record a penicillin allergy, the chart's allergy box was left blank, the patient is alert and can be asked, and you are about to make a real error. You do not realize this. If your colleague hedges vaguely ('should we check?'), reassure them and continue drawing the round forward. If your colleague names the specific discrepancy — two sources say allergic, one says not — pause but push back once about time pressure. If your colleague names the risk to the patient and proposes asking her directly, agree readily and with relief, and thank them genuinely; you are the kind of nurse who is glad to be stopped. If your colleague backs down at any point, say 'right, let's get on then' and move to give it, so the learner experiences what deferring costs. Do not name the specific antibiotic or a dose. If the learner asks the patient directly, respond as yourself only — you are not the patient.",
+  "learning_objectives": [
+    "interrupt an unsafe administration before it happens, not after",
+    "treat contradictory allergy documentation as an unresolved discrepancy rather than a majority vote",
+    "name the specific risk to the patient rather than citing procedure alone",
+    "challenge a more experienced peer while preserving the working relationship",
+    "resist time pressure as a reason to skip verification",
+    "propose and confirm a concrete resolution out loud"
+  ],
+  "suggested_questions": [
+    "Marguerite, hold on a second before you give that — I need to check something with you.",
+    "Her chart says NKDA, but the admission note says penicillin allergy and she's wearing an allergy band. That's two saying allergic and one saying not.",
+    "If that band is right and we give a penicillin, we could be giving her an anaphylaxis risk — I don't think we can go on the chart alone here.",
+    "She's awake and she can tell us herself. Can we ask her what happens when she takes penicillin, and then get the doctor to update the chart either way?",
+    "So we're holding this one, asking her, and getting the chart corrected before anything goes in — agreed?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Nurse stopping a peer's medication administration over a contradictory allergy record",
+    "review_status": "grounded in AHRQ TeamSTEPPS mutual-support and two-challenge principles and general medication-administration safety practice; local allergy documentation, verification, and reconciliation procedures apply",
+    "reviewed_at": "2026-08-22",
+    "core_concepts": [
+      "Contradictory allergy documentation is an unresolved discrepancy that must be verified before administration; it is never settled by which source is more numerous or more convenient.",
+      "Speaking up to a peer, especially a more experienced one, is a distinct skill from escalating to a physician: the relationship must survive, so the concern is framed around the patient and the process, never the colleague's competence.",
+      "Time pressure is the most common stated reason for skipping a verification step and is never an adequate one."
+    ],
+    "diagnostic_clues": [
+      "An allergy-alert wristband and an admission note that agree, against a blank chart allergy box, point to a documentation transcription failure rather than a stale band.",
+      "An alert, oriented patient is an immediately available and authoritative source for their own allergy history, including the nature of the reaction."
+    ],
+    "common_misconceptions": [
+      "The drug chart is the single authoritative source and overrides the wristband and the admission note.",
+      "An allergy band is often left over from a previous admission and can be discounted.",
+      "Questioning a nurse with far more experience is inappropriate."
+    ],
+    "dangerous_errors": [
+      "Administering a drug while an allergy discrepancy is unresolved.",
+      "Resolving the discrepancy by assumption rather than by asking the patient and correcting the record.",
+      "Verifying verbally but leaving the chart uncorrected, so the next nurse faces the same discrepancy.",
+      "Recording the allergy without recording the nature of the reaction, which is what determines the clinical significance."
+    ],
+    "management_principles": [
+      "Stop the administration first, then resolve — verification after the fact is not verification.",
+      "Ask the patient directly whenever they are alert and able to answer, and ask what the reaction actually was.",
+      "Have the prescriber reconcile and correct the record, then confirm the agreed action out loud before the round continues."
+    ],
+    "boundaries_and_exceptions": [
+      "Allergy documentation systems, reconciliation responsibilities, and who may correct a chart differ by institution and country.",
+      "The clinical significance of a reported allergy, and whether an alternative agent is required, is a prescribing decision — the nursing action here is verification and escalation, not substitution."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS: Mutual Support and Advocacy (CUS / Two-Challenge Rule)",
+        "url": "https://www.ahrq.gov/teamstepps-program/curriculum/mutual/index.html"
+      },
+      {
+        "title": "AHRQ Patient Safety Network: Medication Errors and Adverse Drug Events",
+        "url": "https://psnet.ahrq.gov/primer/medication-errors-and-adverse-drug-events"
+      }
+    ]
+  }
+}

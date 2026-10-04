@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "sudden racing heartbeat, dizziness, and throat tightness for 15 minutes",
   "hpi_details": "A 35-year-old male presents to the clinic with sudden racing heartbeat, dizziness, and throat tightness for 15 minutes. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to psvt",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks he is having an acute allergic reaction to something he ate for lunch because his throat feels tight and his heart is pounding.",
+  "concerns": "He is terrified that his racing heart is going to suddenly give out and trigger a fatal cardiac arrest.",
+  "expectations": "He hopes to receive a quick injection or medication to slow his heart rate back down to normal.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -176,6 +176,182 @@
           "progression",
           "concerns"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "114/74",
+      "hr": 186,
+      "rr": 18,
+      "spo2": 98,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "My heart suddenly started racing about fifteen minutes ago, and I feel dizzy and tight in my throat.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "My heart feels like it is running away at an extremely fast, constant speed. It doesn't skip beats or jump around, it just beats furiously fast.",
+        "topic": "Palpitation character"
+      },
+      {
+        "answer": "I can tap it out like this—it is completely regular, like a very rapid machine gun tapping without any pauses.",
+        "topic": "Rhythm tapping and regularity"
+      },
+      {
+        "answer": "It started abruptly out of nowhere while I was sitting down, like flipping a light switch on. It hasn't stopped yet.",
+        "topic": "Onset and termination"
+      },
+      {
+        "answer": "I feel an intense fluttering and pounding sensation right at the base of my throat, which makes it feel tight.",
+        "topic": "Throat pounding and tightness"
+      },
+      {
+        "answer": "This episode has lasted fifteen minutes so far. I had a couple of brief racing flutters a few months ago, but they only lasted a minute and stopped on their own.",
+        "topic": "Duration and previous episodes"
+      },
+      {
+        "answer": "I was just sitting at my desk working when it kicked in. I haven't exercised, changed positions quickly, or had any major emotional stress today.",
+        "topic": "Triggering factors"
+      },
+      {
+        "answer": "I tried drinking cold water and taking deep breaths to calm down, but it didn't change anything. I haven't tried bearing down or holding my breath yet.",
+        "topic": "Relieving factors and vagal maneuvers"
+      },
+      {
+        "answer": "I feel quite lightheaded and woozy since it started, but I haven't passed out or lost consciousness.",
+        "topic": "Lightheadedness and near syncope"
+      },
+      {
+        "answer": "I don't have any sharp or squeezing chest pain, just that uncomfortable fullness in my chest and throat. My breathing feels a bit shallow because of how fast it's beating, but I'm not gasping for air.",
+        "topic": "Chest pain and breathlessness"
+      },
+      {
+        "answer": "No, I haven't had trouble with the heat, increased sweating, weight loss, or hand shaking before today.",
+        "topic": "Heat intolerance and thyroid symptoms"
+      },
+      {
+        "answer": "I do feel generally tired and washed out right now. But I haven't had black or bloody stools, unusual bruising, or chronic fatigue before this.",
+        "topic": "Fatigue and bleeding signs"
+      },
+      {
+        "answer": "No, I don't have a severe headache or profuse sweating, and I haven't had episodes where I suddenly turn pale with a racing heart.",
+        "topic": "Headache, sweating, and pallor"
+      },
+      {
+        "answer": "I felt startled and anxious when my heart suddenly took off, but I didn't have sudden overwhelming dread, tingling in my fingers, or a panic attack before it started.",
+        "topic": "Panic symptoms and numbness"
+      },
+      {
+        "answer": "No, I haven't had a cold, sore throat, cough, or any fever recently.",
+        "topic": "Recent infection and fever"
+      },
+      {
+        "answer": "I had one cup of regular coffee this morning around 8 AM, which is my usual routine. I don't drink energy drinks.",
+        "topic": "Caffeine and energy drinks"
+      },
+      {
+        "answer": "I thought maybe I was having a severe food allergy reaction from lunch, since my throat feels tight and my heart suddenly took off.",
+        "topic": "Patient's thoughts on cause"
+      },
+      {
+        "answer": "I'm terrified that my heart is beating so fast it's going to suddenly give out on me.",
+        "topic": "Patient's main concerns"
+      },
+      {
+        "answer": "I just want you to give me something right away to slow my heart back down to a normal pace.",
+        "topic": "Patient's expectations"
+      },
+      {
+        "answer": "I have no history of high blood pressure, diabetes, heart disease, or any thyroid trouble. Aside from those brief flutters, I've always been healthy.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I've never had any surgeries and I've never been hospitalized.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I am not taking any prescription medications, over-the-counter cold drugs, diet pills, or herbal supplements.",
+        "topic": "Current medications and supplements"
+      },
+      {
+        "answer": "I don't have any known allergies to medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco or vaping products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, maybe one or two beers on the weekend with friends, and I haven't had any alcohol in the past few days.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work as an office clerk, and I live with my wife in an apartment.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has had sudden unexplained death, early heart attacks, or known heart rhythm problems.",
+        "topic": "Family history of heart disease"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 114/74 mmHg, pulse is 186 beats per minute and regular, respiratory rate is 18 breaths per minute, oxygen saturation is 98% on room air, and temperature is 36.6°C.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient is alert, visibly anxious, mildly diaphoretic, and resting in no acute respiratory distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Radial and carotid pulses are extremely rapid, regular, and symmetric, with no pulse deficit.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "Regular tachycardia at approximately 186 beats per minute with normal S1 and S2; no murmurs, rubs, or gallops are heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Clear vesicular breath sounds throughout both lung fields without wheezes, crackles, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Jugular venous pulse shows rapid undulations without frank distension; jugular venous pressure is within normal limits.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are pink without pallor; sclerae are anicteric.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "No exophthalmos, lid lag, or conjunctival injection noted; pupils are equal, round, and reactive to light.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "The thyroid gland is normal in size and texture, without palpable nodules, tenderness, or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No fine postural tremor is observed when arms are extended.",
+        "maneuver": "tremor_observation",
+        "response": "none"
+      },
+      {
+        "finding": "No peripheral edema in the lower extremities; distal extremities are warm and well perfused.",
+        "maneuver": "extremity_edema",
+        "response": "none"
       }
     ]
   }

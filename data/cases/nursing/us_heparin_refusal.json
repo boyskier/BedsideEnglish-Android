@@ -1,0 +1,112 @@
+{
+  "id": "nursing_us_heparin_refusal",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "intermediate",
+  "eval_template": "nursing_bedside_care",
+  "station_minutes": 6,
+  "patient_name": "Patient refusing scheduled subcutaneous heparin — informed refusal",
+  "chief_complaint": "Explore why a patient is refusing his blood-clot-prevention heparin injection, educate him in plain language, respect his decision, and plan to notify the provider and document an informed refusal",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Informed refusal: 'I hate shots, I'm walking anyway'",
+    "task": "Bedside care",
+    "urgency": "routine",
+    "patient": "Mr. Darnell Price, 64-year-old man (DOB 04/30/1962), room 634, day 3 of an admission for a COPD exacerbation",
+    "location": "6 South med-surg unit, 14:00. You are his day-shift RN and have brought his scheduled subcutaneous heparin to the bedside.",
+    "situation": "Mr. Price is due his heparin injection for blood-clot prevention. As soon as he sees the syringe he says he doesn't want it. He has had every dose so far.",
+    "background": [
+      "Admitted three days ago with a COPD exacerbation; improving and now on room air.",
+      "Heparin subcutaneous injection every 8 hours for VTE (blood clot) prevention, as ordered on the MAR; he has had six doses, all in the abdomen.",
+      "He walks the hallway with physical therapy twice a day but spends most of the rest of the day in bed or the recliner."
+    ],
+    "current_status": [
+      "Vital signs normal this morning. He is alert, oriented, and able to make his own decisions.",
+      "There are several small-to-medium flat bruises around earlier injection sites on his abdomen; none is swollen, hard, or tender.",
+      "No leg swelling or pain; no new shortness of breath or chest pain."
+    ],
+    "key_data": [
+      "Platelet count this morning is normal and unchanged from admission; no signs of bleeding documented.",
+      "Patients have the right to refuse any medication. The nurse's job is to make sure the refusal is informed, notify the provider, and document it.",
+      "Other options for clot prevention (for example a different medication or leg compression devices) are provider decisions and need an order."
+    ],
+    "treatments": [
+      "Pending: today's 14:00 heparin dose; next dose due at 22:00."
+    ],
+    "your_request": "Find out why he is refusing, explain the purpose and risks in plain English, respect his decision, and tell him you will notify the provider and document it.",
+    "must_include": [
+      "Acknowledge his feelings and ask an open question to find out why he doesn't want the injection.",
+      "Look at the bruises and respond honestly to his specific concern, within your scope.",
+      "Explain in plain words why the injection is ordered — blood clots in the legs that can travel to the lungs — and why walking twice a day doesn't fully replace it.",
+      "Respect his right to refuse without pressure or threats, and tell him he can change his mind.",
+      "Tell him you will let the provider know and will document that he was informed and declined.",
+      "Teach him the warning signs of a clot to report right away (leg swelling or pain, sudden shortness of breath or chest pain)."
+    ]
+  },
+  "kickoff_text": "Oh, no, no — not another shot. I hate those things. I'm walking the halls every day, I don't need it.",
+  "persona_override": "You are Darnell Price, 64, a retired city bus driver in the hospital for a COPD flare-up and feeling much better. You are good-humored but stubborn, and today you have decided you are done with the belly shots. Your stated reason is 'I hate shots and I'm walking anyway.' Your real worry, which you share only if the nurse asks an open question about why (not just 'Are you sure?'): the bruises on your belly keep getting bigger and you are afraid it means you are 'bleeding inside', like your uncle who had a bad bleed on a blood thinner. You also honestly believe walking twice a day is plenty to prevent clots. Ground truth: the bruises are small-to-medium, flat, and not swollen, hard or tender — they only seem to be 'getting bigger' because there are more of them; platelets normal; no signs of bleeding; you are in bed or the recliner most of the day between walks; no leg swelling, no chest pain. Behaviour: If the nurse says 'You have to', 'It's doctor's orders', or implies you will get a clot and die, dig in: 'It's my body. I said no.' If the nurse just says 'Okay, no problem' and moves to leave without exploring or explaining, say 'Great, thanks' and let them go. If the nurse asks why and then looks at the bruises and explains honestly, relax a little: 'Okay. That makes me feel a bit better.' If the nurse explains in plain words why walking twice a day is not enough, say 'Huh. Nobody told me that.' Even after a good explanation, decline today's dose: 'I hear you, but not today. I want to talk to the doctor about whether there's something that isn't a shot.' Agree readily if the nurse offers to contact the provider. If the nurse uses jargon such as 'VTE', 'DVT', 'prophylaxis' or 'anticoagulant' without explaining it, ask 'What does that mean in plain English?' If asked to say back which warning signs to watch for, do it mostly right but leave one out. Never coach the nurse. Keep turns short.",
+  "learning_objectives": [
+    "ask an open question to find out why the patient is refusing the injection",
+    "look at the bruises and respond to the specific concern",
+    "explain blood clot prevention in plain words, not VTE prophylaxis",
+    "respect the right to refuse and say he can change his mind",
+    "notify the provider and document the informed refusal",
+    "teach the warning signs of a blood clot: leg swelling, sudden shortness of breath"
+  ],
+  "suggested_questions": [
+    "I can hear you're really fed up with these shots. Can you tell me a bit more about what's bothering you about them?",
+    "Would it be okay if I took a look at those bruises? ... Okay — these look like the bruising we often see where the shots go in, and your blood count this morning was normal. I'm glad you told me, and I'll let the provider know you're worried about them.",
+    "Walking is great, and I'm glad you're doing it. The thing is, you're still in bed or in the chair most of the day, and that's when clots can form in the legs and travel to the lungs.",
+    "It's completely your decision, and you can change your mind any time. I'll let the provider know you'd like to talk about other options, and I'll document that we talked and you decided not to have this dose."
+  ],
+  "clinical_knowledge": {
+    "topic": "Responding to a patient's refusal of VTE-prevention heparin: exploring reasons, education, and informed refusal",
+    "review_status": "grounded in AHRQ guidance on preventing hospital-acquired venous thromboembolism, CDC patient information on blood clots, and general informed-refusal principles; VTE prophylaxis choice, dosing and alternatives are prescriber decisions under local protocol",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Hospitalized medical patients have a raised risk of venous thromboembolism — clots in the leg veins that can travel to the lungs; short walks do not offset the many hours spent in bed or a chair.",
+      "A competent adult may refuse any medication. The nurse's responsibility is to make the refusal informed — the patient understands the reason and the risk — and to notify the provider and document it.",
+      "A refusal usually has a specific reason behind the stated one; exploring it often solves the real problem."
+    ],
+    "diagnostic_clues": [
+      "'I hate shots' plus attention to the bruises is a cue that the real concern may be fear of bleeding, not the needle.",
+      "Bruising at subcutaneous heparin sites is common; bleeding elsewhere, a falling platelet count, or a large, painful swelling are what the nurse would report."
+    ],
+    "common_misconceptions": [
+      "A nurse should keep insisting until the patient takes a prescribed medication.",
+      "If a patient is walking, clot prevention isn't needed.",
+      "A refusal only needs to be charted as 'refused' on the MAR."
+    ],
+    "dangerous_errors": [
+      "Pressuring or frightening the patient ('you'll get a clot and die') instead of informing him.",
+      "Dismissing the bruises without looking at them.",
+      "Promising a different medication or compression devices without a provider order.",
+      "Not notifying the provider, so a pattern of missed doses goes unnoticed."
+    ],
+    "management_principles": [
+      "Acknowledge, explore the reason with open questions, assess what the patient is worried about, and explain in plain words.",
+      "Offer realistic comfort measures within policy (for example rotating injection sites away from bruised areas) and involve the provider in any change of plan.",
+      "Respect the decision, notify the provider, and document the education given, the patient's understanding, and the refusal.",
+      "Leave the door open and teach the warning signs to report."
+    ],
+    "boundaries_and_exceptions": [
+      "Which patients receive VTE prophylaxis, which agent and dose, and whether mechanical devices are used are decided by the prescriber using local risk-assessment protocols.",
+      "Documentation requirements for refused medications (MAR codes, nursing notes, provider notification timeframes) vary by hospital; some use a signed informed-refusal form.",
+      "If there is doubt about the patient's decision-making capacity, the approach changes and the provider must be involved."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ: Preventing Hospital-Acquired Venous Thromboembolism",
+        "url": "https://www.ahrq.gov/patient-safety/resources/vtguide/index.html"
+      },
+      {
+        "title": "CDC: Blood Clots",
+        "url": "https://www.cdc.gov/blood-clots/index.html"
+      }
+    ]
+  }
+}

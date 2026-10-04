@@ -1,0 +1,56 @@
+{
+  "id": "voiding_difficulty",
+  "title": "소변보기가 힘들어요",
+  "english_title": "Difficulty voiding and urinary incontinence (lower urinary tract symptoms)",
+  "category": "비뇨·신장",
+  "kmle_item": "배뇨 이상",
+  "door_complaint": "소변보기가 힘들다고",
+  "differential_groups": [
+    {"key": "obstruction", "label": "하부요로 폐쇄", "examples": ["전립샘비대", "요도협착", "전립샘암", "골반장기탈출"]},
+    {"key": "storage", "label": "방광·요도 기능 이상(저장 장애)", "examples": ["과민성방광(절박성 요실금)", "복압성 요실금", "혼합성 요실금"]},
+    {"key": "neurogenic", "label": "신경인성", "examples": ["마미증후군", "당뇨병성 신경병증", "뇌졸중·파킨슨병", "척수 손상"]},
+    {"key": "infection", "label": "감염/염증", "examples": ["급성 전립샘염", "방광염"]},
+    {"key": "drug", "label": "약물/기타", "examples": ["항콜린제·감기약에 의한 요폐", "이뇨제", "변비"]}
+  ],
+  "history": [
+    {"id": "main_problem", "text": "주된 불편이 소변이 잘 안 나오는 것인지, 새는 것인지", "say": "소변이 잘 안 나오는 게 불편하세요, 아니면 소변이 새는 게 불편하세요?"},
+    {"id": "onset_course", "text": "시작 시기와 경과(갑자기/서서히)", "say": "언제부터 그러셨어요? 갑자기 생겼어요, 아니면 서서히 심해졌어요?"},
+    {"id": "hesitancy_stream", "text": "배뇨 지연, 약한 줄기, 끊기는 줄기, 힘을 줘야 나오는지", "say": "소변이 나오기까지 한참 걸리거나, 줄기가 약하고 중간에 끊기나요? 힘을 줘야 나오세요?", "tags": ["obstruction"]},
+    {"id": "incomplete_emptying", "text": "잔뇨감, 배뇨 후 소변이 방울져 떨어짐", "say": "보고 나서도 소변이 남은 느낌이 들거나 끝나고 조금씩 흘러나오나요?", "tags": ["obstruction"]},
+    {"id": "retention", "text": "소변이 전혀 안 나오는지, 아랫배가 부풀고 아픈지", "say": "지금 소변이 아예 안 나오거나 아랫배가 부풀어서 아프지는 않으세요?", "tags": ["obstruction", "neurogenic", "drug"], "key": true},
+    {"id": "frequency_nocturia", "text": "낮 배뇨 횟수와 야간뇨 횟수", "say": "하루에 소변을 몇 번 정도 보세요? 밤에는 몇 번 깨서 보세요?", "tags": ["storage", "obstruction"]},
+    {"id": "urgency_leak", "text": "갑자기 참기 힘든 요의와 화장실 가기 전에 새는지", "say": "갑자기 소변이 급해서 참기 힘들거나, 화장실 가기 전에 새기도 하나요?", "tags": ["storage"]},
+    {"id": "stress_leak", "text": "기침, 재채기, 웃음, 무거운 것을 들 때 새는지", "say": "기침하거나 웃거나 무거운 걸 들 때 소변이 새지는 않으세요?", "tags": ["storage"]},
+    {"id": "leak_severity", "text": "새는 양, 패드 사용, 일상생활 지장 정도", "say": "새는 양은 어느 정도예요? 패드를 하루에 몇 개 쓰세요? 생활에 불편이 크세요?", "tags": ["storage"]},
+    {"id": "dysuria_hematuria_fever", "text": "배뇨통, 혈뇨, 발열", "say": "소변볼 때 아프거나 피가 섞이지는 않나요? 열은요?", "tags": ["infection", "obstruction"], "key": true},
+    {"id": "neuro_symptoms", "text": "허리 통증, 다리 힘 빠짐·저림, 항문 주위 감각 저하, 대변 조절 문제", "say": "허리가 아프거나 다리에 힘이 빠지세요? 항문 주변 감각이 무뎌지거나 대변 조절이 어렵지는 않으세요?", "tags": ["neurogenic"], "key": true},
+    {"id": "bowel_habit", "text": "변비 여부", "say": "변은 잘 보세요? 변비가 있지는 않으세요?", "tags": ["drug"]},
+    {"id": "fluid_caffeine", "text": "수분, 카페인, 알코올 섭취량과 자기 전 수분 섭취", "say": "물이나 커피, 술은 하루에 얼마나 드세요? 자기 전에도 많이 드시나요?", "tags": ["storage"]},
+    {"id": "trigger_drugs", "text": "최근 복용한 감기약·콧물약, 항우울제, 이뇨제", "say": "최근에 감기약이나 콧물약, 이뇨제 같은 약을 새로 드셨어요?", "tags": ["drug"]},
+    {"id": "neuro_history", "text": "당뇨병, 뇌졸중, 파킨슨병, 척추 수술 과거력", "say": "당뇨병이나 뇌졸중, 파킨슨병이 있으시거나 허리 수술을 받으신 적 있으세요?", "tags": ["neurogenic"]},
+    {"id": "urethral_injury", "text": "회음부 외상, 요도 시술, 요도염 과거력", "say": "사타구니 쪽을 세게 부딪치거나 요도에 시술을 받은 적이 있으세요?", "tags": ["obstruction"], "applies": "male", "conditional": true},
+    {"id": "obstetric_history", "text": "출산력(질식분만 횟수), 골반 수술", "say": "자연분만은 몇 번 하셨어요? 자궁이나 골반 수술을 받으신 적 있으세요?", "tags": ["storage"], "applies": "female"},
+    {"id": "prolapse", "text": "질에서 무언가 빠져나오는 느낌", "say": "아래로 뭔가 빠져나오는 느낌이나 묵직한 느낌이 드세요?", "tags": ["obstruction"], "applies": "female", "conditional": true}
+  ],
+  "physical_exam": [
+    {"id": "bladder_palpation", "text": "아랫배를 촉진·타진해 방광 팽창(요저류) 확인", "say": "편하게 누우세요. 아랫배에 방광이 차 있는지 눌러 보고 두드려 보겠습니다.", "key": true},
+    {"id": "prostate_exam", "text": "남성에서 직장수지검사로 전립샘 크기, 경도, 결절, 압통 확인", "say": "전립샘 크기와 모양을 보려면 항문으로 손가락을 넣어 확인하는 검사가 필요합니다.", "applies": "male"},
+    {"id": "neuro_exam", "text": "하지 근력·감각·반사, 회음부 감각, 항문 괄약근 긴장도 확인", "say": "다리 힘과 감각, 항문 주변 감각을 확인하겠습니다.", "conditional": true},
+    {"id": "pelvic_exam", "text": "여성에서 골반 진찰로 장기 탈출, 위축, 기침 시 요 누출 확인", "say": "필요하면 골반 진찰을 하고 기침할 때 소변이 새는지 확인하겠습니다.", "applies": "female", "conditional": true}
+  ],
+  "education": [
+    {"id": "bladder_habits", "text": "카페인·알코올 줄이기, 자기 전 수분 제한, 시간 맞춰 배뇨(방광 훈련)", "say": "커피와 술을 줄이시고, 자기 전 두세 시간은 물을 적게 드세요. 시간을 정해 소변보는 연습도 도움이 됩니다."},
+    {"id": "pelvic_floor", "text": "요실금이 있으면 골반저근운동(케겔 운동) 교육", "say": "항문을 조이듯 아래 근육을 5초 조였다가 푸는 운동을 하루 여러 번 해 보세요.", "conditional": true},
+    {"id": "avoid_drugs", "text": "감기약·콧물약 등 요폐를 일으킬 수 있는 약 주의", "say": "감기약이나 콧물약 중에 소변을 막히게 하는 성분이 있으니, 약 드시기 전에 꼭 말씀해 주세요.", "applies": "male", "conditional": true},
+    {"id": "warning_signs", "text": "소변이 전혀 안 나오고 아랫배가 부풀어 아프거나, 열·혈뇨·다리 힘 빠짐이 생기면 바로 오도록 안내", "say": "소변이 아예 안 나오고 아랫배가 부풀어 아프거나, 열이 나거나 다리에 힘이 빠지면 바로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "기본 평가는 소변검사, 초음파로 배뇨 후 잔뇨량 측정, 배뇨일지(횟수, 양, 요실금 양상)이다.",
+    "남성 하부요로증상은 직장수지검사를 하고, 결과가 치료 방침을 바꿀 수 있으면 환자와 상의한 뒤 PSA를 검사하며, 필요하면 요속검사와 전립샘 초음파를 한다.",
+    "급성 요폐는 즉시 도뇨관으로 방광을 비우고, 전립샘비대·약물·변비·감염·신경학적 원인을 찾는다.",
+    "요폐나 요실금에 허리 통증, 안장 부위 감각 저하, 하지 근력 저하가 동반되면 마미증후군을 의심해 응급 MRI를 한다.",
+    "복압성 요실금은 골반저근운동이 1차 치료이고, 과민성방광은 생활습관 교정과 방광 훈련 뒤 항무스카린제나 베타3 작용제를 쓴다.",
+    "전립샘비대의 1차 약물은 알파차단제이며, 전립샘이 크면 5알파환원효소억제제를 함께 쓴다."
+  ],
+  "case_ids": ["urology_021", "urology_026", "urology_003", "nephro_018", "urology_013", "urology_031", "urology_043", "urology_025", "urology_030"]
+}

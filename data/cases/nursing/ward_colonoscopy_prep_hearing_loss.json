@@ -1,0 +1,124 @@
+{
+  "id": "nursing_ward_colonoscopy_prep_hearing_loss",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Patient education",
+  "nursing_pathways": ["us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_patient_education",
+  "station_minutes": 6,
+  "patient_name": "Colonoscopy bowel prep teaching — older patient who is hard of hearing",
+  "chief_complaint": "Explain tonight's bowel prep and tomorrow morning's colonoscopy plan to an older patient with hearing loss, adapting how you speak and confirming the key times with teach-back",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Bowel prep teaching: hard-of-hearing patient, colonoscopy tomorrow at 9:00",
+    "task": "Patient education",
+    "urgency": "routine",
+    "patient": "Mr. Eugene Washington, 79-year-old man admitted two days ago with anemia, scheduled for a colonoscopy tomorrow morning",
+    "location": "Med-surg unit, 14:00; you are his nurse and you have come to his room to explain the prep. The TV is on loudly and he is sitting in the chair by the window",
+    "situation": "He is hard of hearing and wears hearing aids at home, but only his right one is in and its battery is low. When the day team mentioned 'prep' this morning he nodded along, but he has just asked the nursing assistant when he can have his lunch.",
+    "background": [
+      "Admitted with iron-deficiency anemia; the GI provider wants a colonoscopy to look for a source of slow bleeding.",
+      "Hearing loss in both ears, worse on the left; he hears best face to face in a quiet room.",
+      "Lives alone, independent, and proud of it; a retired barber.",
+      "He is a little unsteady on his feet since admission and is on fall precautions."
+    ],
+    "current_status": [
+      "Alert, oriented, and comfortable; eating a regular diet until now.",
+      "The prep order has just been entered: clear liquids only from now, then a split-dose bowel prep.",
+      "His left hearing aid is in its case in the bedside drawer, with spare batteries; the right one is beeping for a low battery."
+    ],
+    "key_data": [
+      "From now: clear liquids only — water, clear broth, apple or white grape juice, plain gelatin, tea or black coffee without milk or creamer. No solid food, no milk, and nothing red or purple.",
+      "Prep (polyethylene glycol-electrolyte solution) as ordered: first half at 18:00 tonight, one 8-ounce glass every 15 minutes until that half is finished; second half at 04:00 tomorrow.",
+      "Nothing by mouth (NPO) from 06:00 tomorrow; colonoscopy at 09:00.",
+      "Expect frequent, watery stools starting within an hour or two; the goal is clear or pale yellow liquid. Because he is unsteady, he must use the call light and get help to the bathroom, especially at night.",
+      "Tell the nurse right away about vomiting, severe belly pain, feeling dizzy or faint, or if he cannot keep the prep down."
+    ],
+    "treatments": [
+      "Done: consent discussion with the GI provider this morning; clear-liquid diet order entered.",
+      "Pending: your prep teaching, prep delivery at 18:00, and a bedside commode if he wants one."
+    ],
+    "your_request": "Adapt how you communicate for his hearing, then teach him tonight's and tomorrow's prep plan so that he can tell you the key times and what he can and cannot eat or drink.",
+    "must_include": [
+      "Reduce barriers first: turn down the TV, face him at his level, check his hearing aids, and ask how he hears best.",
+      "Find out what he already understands about the prep and the colonoscopy.",
+      "Explain the clear-liquid diet, the two prep times, and the nothing-by-mouth time in short, plain sentences — rephrase rather than shout.",
+      "Write down the key times and foods for him as a back-up to speech.",
+      "Explain what to expect and the safety point: use the call light and get help to the bathroom, and tell the nurse about vomiting, severe pain, or dizziness.",
+      "Use teach-back on the times and on what he may eat or drink."
+    ]
+  },
+  "kickoff_text": "Hm? Sorry, dear, you'll have to speak up — that TV's going. Are you the one bringing my lunch?",
+  "persona_override": "You are Eugene Washington, a 79-year-old retired barber admitted with anemia and booked for a colonoscopy at 9:00 tomorrow. You are good-humored, independent, and a little proud; you do not like to admit how much you are missing. Ground truth: you are hard of hearing in both ears, worse on the left; you hear best when someone faces you, speaks slowly at a normal-to-slightly-louder volume with a lower pitch, in a quiet room; only your right hearing aid is in and its battery is low — spare batteries are in the small case in your drawer, along with your left aid; you can read well if things are written down in large print; you did not understand this morning that you cannot eat lunch; you think 'prep' means 'they'll get me ready in the morning'; you live alone and you are worried about 'having an accident' getting to the bathroom in time, but you will only say this if the nurse asks if you have any worries. Behaviour: while the TV is on, or if the nurse speaks while turned away, fast, or from behind, mishear key words — for example hear 'fifteen' as 'fifty', 'clear' as 'beer', or 'nothing after six' as 'something after six' — and answer as if you heard it, or just nod and say 'sure, sure.' If the nurse simply shouts, wince and say 'no need to holler, I'm not deaf — well, not all the way.' If the nurse turns off the TV, faces you, checks your hearing aids, or asks how you hear best, tell them honestly and your understanding improves a lot. If the nurse writes things down, say 'now that I can read.' If the nurse uses jargon like 'NPO', 'split-dose', 'bowel prep', or 'clear liquid diet' without explaining, ask 'what's that in plain English?' If asked to repeat the plan back, get most of it right but make one real error (for example, think you can have a little soup with noodles, or say you'll start the second half 'at breakfast time'), and accept the correction good-naturedly. Do not reveal your worries unless invited. Keep your turns short and natural.",
+  "learning_objectives": [
+    "reduce background noise and face the patient before teaching",
+    "check hearing aids and ask how the patient hears best",
+    "explain clear liquids only and nothing by mouth in plain words",
+    "write down the key prep times as a back-up to speech",
+    "safety-net: use the call light and get help to the bathroom",
+    "confirm the prep times and allowed drinks with teach-back"
+  ],
+  "suggested_questions": [
+    "Mr. Washington, is it okay if I turn the TV down and sit here so you can see my face? Which side do you hear better on?",
+    "Before I explain, can you tell me what the doctor said about getting ready for tomorrow's test?",
+    "From now until tomorrow, no solid food — only clear drinks you can see through, like apple juice, broth, tea without milk, or plain gelatin that isn't red or purple.",
+    "I'm going to write the times down for you: first half of the drink at six tonight, the second half at four in the morning, and nothing at all after six.",
+    "You're going to be running to the bathroom a lot, so please press this call light and let us walk with you — especially at night. Can you tell me the times back, and what you're allowed to drink?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Pre-procedure teaching for colonoscopy bowel preparation, adapted for an older adult with hearing loss",
+    "review_status": "grounded in NIDDK colonoscopy patient information, NIDCD guidance on communicating with people with hearing loss, and AHRQ teach-back guidance; the prep product, timing, diet, and medication instructions follow the GI provider's order and local endoscopy protocol",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Adequate bowel preparation determines whether a colonoscopy can be completed and whether lesions are seen; a poor prep can mean repeating the procedure.",
+      "Split-dose preparation, clear-liquid diet, and a nothing-by-mouth window before sedation are common components, but exact products and times are order-specific.",
+      "Hearing loss is common in older adults and often concealed; nodding and 'sure, sure' are not evidence of understanding.",
+      "Environment first (quiet, face to face, good light, hearing aids working), then speech (slower, lower pitch, rephrase rather than repeat louder), then written back-up."
+    ],
+    "diagnostic_clues": [
+      "Answering a different question than was asked, or agreeing to everything, suggests the patient did not hear.",
+      "Asking about lunch after being told about a clear-liquid diet shows the earlier explanation did not land.",
+      "Unsteadiness plus a strong laxative effect overnight is a recognized fall-risk combination."
+    ],
+    "common_misconceptions": [
+      "Speaking louder or shouting is the best adjustment for a patient with hearing loss.",
+      "'Clear liquid' means any liquid, including milk, cream soups, or soup with noodles.",
+      "Once the patient has signed consent, he already understands the prep.",
+      "Written instructions replace the spoken explanation for an older patient."
+    ],
+    "dangerous_errors": [
+      "Leaving an unsteady older patient to manage frequent urgent stools overnight without a clear plan to call for help.",
+      "Giving the wrong nothing-by-mouth time, risking a cancelled or unsafe sedated procedure.",
+      "Failing to tell the patient to report vomiting, severe abdominal pain, or dizziness during the prep.",
+      "Assuming understanding from nodding without teach-back."
+    ],
+    "management_principles": [
+      "Fix the communication environment and the hearing aids before teaching anything.",
+      "Chunk the plan by time of day (now, tonight, early morning, before the test) and write it down in large print.",
+      "Name the safety plan explicitly: call light, assistance to the bathroom or a bedside commode, and what symptoms to report.",
+      "Confirm times and diet with teach-back, and correct gaps without embarrassment."
+    ],
+    "boundaries_and_exceptions": [
+      "Prep product, volume, split-dose timing, diet restrictions, and the nothing-by-mouth window vary by GI provider, sedation type, and institution — always teach from the patient's own order.",
+      "Instructions for diabetes medicines, blood thinners, and iron supplements before colonoscopy are individual and must come from the prescribing or GI provider.",
+      "This scenario practises teaching and hearing-adapted communication; it is not a source of bowel-prep protocols."
+    ],
+    "source_refs": [
+      {
+        "title": "NIDDK: Colonoscopy",
+        "url": "https://www.niddk.nih.gov/health-information/diagnostic-tests/colonoscopy"
+      },
+      {
+        "title": "NIDCD: Hearing Loss and Older Adults",
+        "url": "https://www.nidcd.nih.gov/health/hearing-loss-older-adults"
+      },
+      {
+        "title": "AHRQ Health Literacy Universal Precautions Toolkit: Use the Teach-Back Method",
+        "url": "https://www.ahrq.gov/health-literacy/improve/precautions/tool5.html"
+      }
+    ]
+  }
+}

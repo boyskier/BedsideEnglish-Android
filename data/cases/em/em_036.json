@@ -9,9 +9,9 @@
   "gender": "female",
   "chief_complaint": "fever 40.5C, delirium, heart rate 145, history of Graves",
   "hpi_details": "A 50-year-old female presents to the clinic with fever 40.5c, delirium, heart rate 145, history of graves. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to thyroid storm",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "Her husband thinks she caught an aggressive strain of the flu or a kidney infection that triggered severe fever delirium.",
+  "concerns": "Her husband is terrified that the extreme body temperature is causing permanent damage to her brain.",
+  "expectations": "Her husband hopes the doctors will immediately bring her fever down with cooling packs and IV medicine so she regains consciousness.",
   "pmh": "Graves disease",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -161,6 +161,212 @@
         "domains": [
           "character"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "150/70",
+      "hr": 145,
+      "rr": 26,
+      "spo2": 98,
+      "temp_c": 40.5
+    },
+    "history": [
+      {
+        "answer": "I feel like I am burning up with a terrible fever, and my mind is completely scrambled and racing.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The fever started about two days ago and has gotten dangerously high since this morning.",
+        "topic": "Onset and duration of fever"
+      },
+      {
+        "answer": "It has been constantly high and reached 40.5 degrees at home, and I have had severe shaking chills.",
+        "topic": "Fever pattern and chills"
+      },
+      {
+        "answer": "I took acetaminophen a few hours ago, but the fever did not come down at all.",
+        "topic": "Antipyretic response"
+      },
+      {
+        "answer": "No, I do not have a cough, runny nose, or sore throat, though I feel like I cannot catch my breath.",
+        "topic": "Cough and respiratory symptoms"
+      },
+      {
+        "answer": "No pain or burning when I urinate, no need to go more often, and no flank pain.",
+        "topic": "Urinary symptoms"
+      },
+      {
+        "answer": "I have had loose watery stools three times today and feel nauseated, but I have not thrown up.",
+        "topic": "Gastrointestinal symptoms"
+      },
+      {
+        "answer": "My head is throbbing terribly, but my neck does not feel stiff.",
+        "topic": "Headache and neck stiffness"
+      },
+      {
+        "answer": "I feel so confused, restless, and scared because I cannot think straight.",
+        "topic": "Confusion and mental status"
+      },
+      {
+        "answer": "No, I have not noticed any rash, insect bites, or black scabs anywhere.",
+        "topic": "Rash and skin lesions"
+      },
+      {
+        "answer": "I have been drenching my clothes in sweat and losing weight over the past few weeks despite eating normally.",
+        "topic": "Sweats and weight loss"
+      },
+      {
+        "answer": "My thyroid in the front of my neck has been swollen for years, but I do not have any new painful lumps.",
+        "topic": "Neck swelling and lumps"
+      },
+      {
+        "answer": "No, I have not traveled abroad, done any hiking or farm work, or handled animals.",
+        "topic": "Travel and outdoor exposure"
+      },
+      {
+        "answer": "No one around me has been sick or running a fever.",
+        "topic": "Sick contacts"
+      },
+      {
+        "answer": "No, I have never received chemotherapy, steroids, or any immunosuppressive medications.",
+        "topic": "Immunosuppressant use"
+      },
+      {
+        "answer": "I do not have heart valve problems or heart disease, and I have not had any dental work recently.",
+        "topic": "Heart disease and dental procedures"
+      },
+      {
+        "answer": "No, I have not started any new medications or over-the-counter pills recently.",
+        "topic": "Recently started medications"
+      },
+      {
+        "answer": "I have been in a faithful marriage for twenty years and have never used illicit drugs or needles.",
+        "topic": "Sexual history and needle use"
+      },
+      {
+        "answer": "I was diagnosed with Graves' disease about three years ago by my endocrinologist.",
+        "topic": "Graves disease history"
+      },
+      {
+        "answer": "I ran out of my thyroid pills about a month ago and stopped taking them, and work has been overwhelmingly stressful.",
+        "topic": "Precipitating factor and medication adherence"
+      },
+      {
+        "answer": "My heart feels like it is pounding right out of my chest, beating unbelievably fast.",
+        "topic": "Heart palpitations"
+      },
+      {
+        "answer": "Other than Graves' disease, I do not have high blood pressure, diabetes, or any other chronic illnesses.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or previous hospital admissions.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I am not taking anything right now because I stopped refilling my methimazole last month.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medications, foods, or latex.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have a glass of wine socially once or twice a month, but nothing in the past few weeks.",
+        "topic": "Alcohol use"
+      },
+      {
+        "answer": "I work as an office accountant and live in an apartment with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My mother had a thyroid condition, but there is no family history of heart problems or early stroke.",
+        "topic": "Family medical history"
+      },
+      {
+        "answer": "My periods have become very irregular and scanty over the last three months, and there is no chance I am pregnant.",
+        "topic": "Menstrual history and pregnancy"
+      },
+      {
+        "answer": "I thought she just caught an awful flu or a severe kidney infection that made her fever spike out of control.",
+        "topic": "Patient ideas about illness"
+      },
+      {
+        "answer": "Her body is burning up and she is talking out of her head; I am terrified this fever is permanently damaging her brain. I just need you to get her temperature down right away and give her IV medicine so she wakes up and knows who I am.",
+        "topic": "Patient concerns and expectations"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Temperature 40.5 C, heart rate 145 bpm and regular, blood pressure 150/70 mmHg, respiratory rate 26 breaths/min, oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Markedly agitated, restless, and disoriented to time and place, though easily arousable.",
+        "maneuver": "mental_status",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral mild exophthalmos and lid lag present; pupils are equal, round, and reactive to light with normal conjunctivae.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Oral mucosa is dry; posterior pharynx is clear without erythema or tonsillar exudate.",
+        "maneuver": "nose_throat_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No cervical, supraclavicular, or submandibular lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Diffusely enlarged, non-tender thyroid gland with an audible continuous bruit over both lobes.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally without wheezes, rales, or rhonchi.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Marked tachycardia with hyperdynamic precordium; regular rhythm without murmurs, rubs, or gallops.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender throughout with hyperactive bowel sounds; no guarding or rigidity.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
+      },
+      {
+        "finding": "Skin is markedly hot, flushed, and diaphoretic without rashes, eschars, petechiae, or wounds.",
+        "maneuver": "skin_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Supple neck with negative Kernig and Brudzinski signs.",
+        "maneuver": "meningeal_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Fine, rapid postural tremor observed in both outstretched hands.",
+        "maneuver": "tremor_observation",
+        "response": "none"
       }
     ]
   }

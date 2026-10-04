@@ -8,9 +8,9 @@
   "gender": "female",
   "chief_complaint": "resistant hypertension and hypokalemia",
   "hpi_details": "62-year-old female referred for resistant hypertension despite being on 3 maximum-dose antihypertensive medications (Amlodipine, Lisinopril, HCTZ). Routine labs showed persistent unprovoked hypokalemia (K 2.9). Reports occasional muscle weakness and cramps.",
-  "ideas": "thinks it might be related to aldosteronism",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks her body has built up a tolerance to her current blood pressure pills, and that the leg cramps are just from not eating enough bananas.",
+  "concerns": "She is worried that her persistently sky-high blood pressure will cause a sudden stroke and leave her paralyzed like her older sister.",
+  "expectations": "She hopes the doctor can switch her to a more effective blood pressure medication and provide a supplement to relieve her muscle cramps.",
   "pmh": "Hypertension",
   "medications": "Amlodipine, lisinopril, hydrochlorothiazide",
   "social_hx": "Non-smoker, social drinker",
@@ -131,6 +131,195 @@
         "domains": [
           "medications"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "168/95",
+      "hr": 82,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "I came in because my blood pressure stays high even though I take three different blood pressure pills every single day.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "My doctor told me my blood pressure was still over 160, and my routine blood test showed that my potassium was unusually low.",
+        "topic": "Abnormal screening test results"
+      },
+      {
+        "answer": "My blood pressure has been creeping up over the past year despite adding more pills, but this is the first time my potassium came back low.",
+        "topic": "Previous checkup comparison"
+      },
+      {
+        "answer": "I had fasted overnight before the blood draw, sat quietly for fifteen minutes before the pressure was checked, and had no morning coffee.",
+        "topic": "Testing conditions"
+      },
+      {
+        "answer": "I check it every morning and evening at home, and it consistently runs around 165 over 95.",
+        "topic": "Home blood pressure monitoring"
+      },
+      {
+        "answer": "My blood pressure started resisting medications about six months ago, and over the past month I've felt noticeably more fatigued.",
+        "topic": "Duration and progression"
+      },
+      {
+        "answer": "I've been getting painful muscle cramps in my calves at night and occasional weak spells in my legs.",
+        "topic": "Muscle weakness and cramps"
+      },
+      {
+        "answer": "I've been feeling thirstier than usual, and I now have to wake up two or three times every night to urinate.",
+        "topic": "Urination and thirst"
+      },
+      {
+        "answer": "I get mild dull headaches in the back of my head occasionally, but no lightheadedness or spinning sensation.",
+        "topic": "Headache and dizziness"
+      },
+      {
+        "answer": "No, I haven't had any chest pressure, shortness of breath, sudden blurry vision, or weakness on one side of my body.",
+        "topic": "Cardiovascular and neurologic symptoms"
+      },
+      {
+        "answer": "No, I have never had kidney stones, severe back pain, or persistent bone aches.",
+        "topic": "Kidney stones and bone pain"
+      },
+      {
+        "answer": "I haven't had any fevers, night sweats, unexpected weight loss, or swollen glands.",
+        "topic": "Constitutional symptoms"
+      },
+      {
+        "answer": "I don't get pounding heart palpitations, drenching sweat episodes, or loud snoring at night.",
+        "topic": "Secondary hypertension clues"
+      },
+      {
+        "answer": "I don't use pain relievers like ibuprofen, steroid creams or pills, nasal decongestants, or real licorice candy.",
+        "topic": "Offending medications and substances"
+      },
+      {
+        "answer": "I cook with very little salt, avoid processed food, and take a brisk thirty-minute walk three days a week.",
+        "topic": "Diet and lifestyle"
+      },
+      {
+        "answer": "I went through menopause around age fifty-one, and I have never broken any bones or lost height.",
+        "topic": "Menopause and bone health"
+      },
+      {
+        "answer": "I have never had tuberculosis, never been around anyone with it, and do not take immune-suppressing drugs.",
+        "topic": "Tuberculosis and immune status"
+      },
+      {
+        "answer": "I assumed my body became immune to my blood pressure pills, and that the leg cramps were just because I need to eat more bananas.",
+        "topic": "Patient ideas on cause"
+      },
+      {
+        "answer": "I'm terrified that with my numbers this high despite all these pills, I'm going to have a massive stroke just like my sister did.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I hope you can switch me to a different blood pressure pill that actually works and give me a supplement for these painful muscle cramps.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I was diagnosed with high blood pressure about eight years ago, but it only became difficult to control within the last two years.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I had an uncomplicated appendectomy in my twenties, but I have never been hospitalized since then.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I take amlodipine 10 milligrams, lisinopril 40 milligrams, and hydrochlorothiazide 25 milligrams every morning without missing doses.",
+        "topic": "Current prescription medications"
+      },
+      {
+        "answer": "I only take a daily women's multivitamin and an occasional acetaminophen for mild headaches.",
+        "topic": "Over-the-counter medications"
+      },
+      {
+        "answer": "I do not have any known allergies to medicines, foods, or latex.",
+        "topic": "Medication allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I drink socially, maybe one glass of red wine every couple of weeks when I go out.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I am a retired high school administrative assistant living with my husband in a single-story home.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My mother had high blood pressure in her late sixties, but no one in my family had strokes, heart attacks, or kidney failure at a young age.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 168/95 mmHg, heart rate is 82 beats per minute, respiratory rate is 16 breaths per minute, and oxygen saturation is 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Well-nourished, alert female in no acute distress, with normal facial features and no moon facies, buffalo hump, or abdominal striae.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "No arteriolar narrowing, cotton wool spots, flame hemorrhages, or papilledema on funduscopic examination.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size, non-tender, mobile, with no palpable nodules or bruits.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No palpable anterior or posterior cervical, supraclavicular, or axillary lymphadenopathy.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rate and rhythm with normal S1 and S2, without murmurs, gallops, or friction rubs.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Normoactive bowel sounds present; no epigastric, renal artery, or femoral bruits heard.",
+        "maneuver": "abdominal_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Soft, non-tender, non-distended, with no palpable masses or hepatosplenomegaly.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Normal spinal alignment without kyphosis, scoliosis, or midline vertebral tenderness.",
+        "maneuver": "spine_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral radial, femoral, and dorsalis pedis pulses are 2+, symmetrical, and synchronous without radiofemoral delay.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "No pretibial or pedal edema bilaterally.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Motor strength is 5/5 throughout the upper and lower extremities with normal tone.",
+        "maneuver": "motor_exam",
+        "response": "none"
       }
     ]
   }

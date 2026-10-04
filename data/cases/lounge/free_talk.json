@@ -1,0 +1,90 @@
+{
+  "id": "lounge_free_talk",
+  "name": "Free Talk",
+  "description": "Just talk in English about whatever you want today. Your partner keeps every reply to one short line, so you do most of the talking.",
+  "system": "lounge",
+  "eval_template": "free_talk",
+  "scenario_type": "free_talk",
+  "prompt_template": "You are a relaxed, friendly conversation partner having an ordinary chat in English with the user, like two friends over coffee. This is NOT a lesson, an interview, or a medical scenario. Be curious about what the user says and keep the chat going on their topic.\n\n{context_text}",
+  "kickoff_text": "Open the chat now. Say ONE short sentence only (at most 12 words): a quick hello plus one simple question about today's topic, or about the user's day if there is no topic. Then stop and wait.",
+  "topic_suggestions": [
+    "How my week went",
+    "What I did last weekend",
+    "A movie or show I watched recently",
+    "My favorite food and a place I like to eat",
+    "A trip I want to take",
+    "Something that stressed me out lately",
+    "My hobbies",
+    "A funny thing that happened to me",
+    "The best and worst parts of my job",
+    "A goal I have this year"
+  ],
+  "key_expressions": [
+    {
+      "en": "Well, the thing is, I don't really have much free time.",
+      "function": "Start a longer answer",
+      "gloss": {
+        "en": "Buy a second and open a fuller answer",
+        "ko": "생각할 틈을 벌면서 길게 대답 시작하기"
+      },
+      "register": "casual",
+      "why": "A one-word answer ends the turn. \"The thing is...\" commits you to a real sentence and sounds natural, not rehearsed.",
+      "keywords": ["the thing is"]
+    },
+    {
+      "en": "For example, last week I stayed late at work three times.",
+      "function": "Add a concrete example",
+      "gloss": {
+        "en": "Back up what you said with something that happened",
+        "ko": "구체적인 예시로 말 늘리기"
+      },
+      "register": "neutral",
+      "why": "An example turns a short opinion into a small story — the easiest way to keep talking.",
+      "keywords": ["for example"]
+    },
+    {
+      "en": "What about you? Have you ever tried it?",
+      "function": "Hand the question back",
+      "gloss": {
+        "en": "Keep the chat going by asking them",
+        "ko": "상대에게 질문을 돌려 대화 이어가기"
+      },
+      "register": "casual",
+      "why": "Real conversation goes both ways. Asking back shows interest and gives you a new thread to follow.",
+      "keywords": ["what about you", "have you ever"]
+    },
+    {
+      "en": "Honestly, I think it's worth it, because it helps me relax.",
+      "function": "Give an opinion with a reason",
+      "gloss": {
+        "en": "Say what you think and why",
+        "ko": "이유를 붙여 의견 말하기"
+      },
+      "register": "neutral",
+      "why": "\"Because\" is the cheapest way to double the length of an answer — and it is what makes an opinion interesting.",
+      "keywords": ["i think", "because"]
+    },
+    {
+      "en": "Let me think... how do I put it?",
+      "function": "Hold the turn while you search for words",
+      "gloss": {
+        "en": "Keep the floor while you find the word",
+        "ko": "단어 찾는 동안 말 차례 유지하기"
+      },
+      "register": "casual",
+      "why": "Silence feels like you've finished. A filler phrase tells the other person you're still going.",
+      "keywords": ["let me think", "how do i put it"]
+    },
+    {
+      "en": "Anyway, speaking of food, have you been anywhere good lately?",
+      "function": "Move the chat to a new topic",
+      "gloss": {
+        "en": "Switch topic smoothly",
+        "ko": "자연스럽게 화제 바꾸기"
+      },
+      "register": "casual",
+      "why": "You don't have to wait for questions — steering the topic yourself is what fluent speakers do.",
+      "keywords": ["speaking of", "anyway"]
+    }
+  ]
+}

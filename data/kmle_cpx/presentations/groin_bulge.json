@@ -1,0 +1,52 @@
+{
+  "id": "groin_bulge",
+  "title": "사타구니가 불룩 튀어나와요",
+  "english_title": "Groin bulge (hernia)",
+  "category": "피부·외과",
+  "door_complaint": "사타구니가 튀어나왔다고",
+  "differential_groups": [
+    {"key": "inguinal", "label": "서혜부 탈장", "examples": ["간접 서혜부 탈장", "직접 서혜부 탈장"]},
+    {"key": "other_hernia", "label": "다른 복벽 탈장", "examples": ["대퇴 탈장", "절개 탈장", "배꼽 탈장"]},
+    {"key": "complicated", "label": "탈장 합병증", "examples": ["감돈 탈장", "교액 탈장"]},
+    {"key": "non_hernia", "label": "탈장이 아닌 사타구니 혹", "examples": ["서혜부 림프절 비대", "정삭 수종", "잠복고환", "대퇴동맥류", "지방종"]}
+  ],
+  "history": [
+    {"id": "onset", "text": "처음 알게 된 시기와 계기(힘쓰기, 기침, 무거운 물건)", "say": "언제 처음 튀어나온 걸 아셨어요? 무거운 걸 들거나 기침한 뒤에 생겼나요?", "tags": ["inguinal"]},
+    {"id": "location", "text": "정확한 위치(사타구니 주름 위/아래, 음낭까지 내려오는지, 수술 흉터, 배꼽)", "say": "정확히 어디가 튀어나와요? 사타구니 주름 위예요, 아래예요? 음낭까지 내려오나요?", "tags": ["inguinal", "other_hernia"]},
+    {"id": "aggravating", "text": "서 있거나 기침·힘줄 때 커지고 누우면 작아지는지", "say": "서 있거나 기침할 때 더 튀어나오고, 누우면 들어가나요?", "tags": ["inguinal", "non_hernia"]},
+    {"id": "reducibility", "text": "손으로 밀어 넣으면 들어가는지, 최근 들어가지 않게 되었는지", "say": "손으로 밀면 쏙 들어가요? 최근에 안 들어가게 된 적이 있으세요?", "tags": ["complicated"], "key": true},
+    {"id": "size_change", "text": "크기 변화", "say": "처음보다 점점 커지고 있나요?", "tags": ["inguinal", "non_hernia"]},
+    {"id": "pain", "text": "통증 유무와 정도, 최근 갑자기 심해졌는지", "say": "아프세요? 요즘 갑자기 더 심하게 아파졌나요?", "tags": ["complicated"], "key": true},
+    {"id": "obstruction_symptoms", "text": "복통, 구토, 배가 불러옴, 방귀나 변이 안 나옴", "say": "배가 아프거나 토하고, 배가 불러오거나 방귀가 안 나오지는 않나요?", "tags": ["complicated"], "key": true},
+    {"id": "skin_color", "text": "혹 위 피부가 붉어지거나 검푸르게 변함, 열감", "say": "튀어나온 곳 피부가 빨갛거나 시퍼렇게 변했어요? 만지면 뜨겁나요?", "tags": ["complicated"]},
+    {"id": "pulsatile", "text": "맥박처럼 뛰는지", "say": "튀어나온 곳이 맥박처럼 툭툭 뛰는 느낌이 있나요?", "tags": ["non_hernia"]},
+    {"id": "leg_infection", "text": "다리·발·성기의 상처나 감염, 발열", "say": "다리나 발, 성기 쪽에 상처나 염증이 생긴 적 있으세요? 열은 없으세요?", "tags": ["non_hernia"]},
+    {"id": "systemic", "text": "체중 감소, 야간 발한, 다른 부위 멍울", "say": "최근에 살이 빠지거나 밤에 땀이 많이 나세요? 다른 곳에도 멍울이 만져지나요?", "tags": ["non_hernia"]},
+    {"id": "straining", "text": "만성 기침, 변비로 힘주기, 소변볼 때 힘주기", "say": "기침을 오래 하시거나 변비가 있어서 힘을 많이 주세요? 소변 볼 때 힘을 줘야 나오나요?", "tags": ["inguinal"]},
+    {"id": "heavy_work", "text": "무거운 물건을 드는 직업이나 운동", "say": "평소에 무거운 걸 많이 드는 일이나 운동을 하세요?", "tags": ["inguinal"]},
+    {"id": "prior_surgery", "text": "이전 탈장 수술이나 배 수술", "say": "전에 탈장 수술이나 배 수술을 받으신 적 있으세요?", "tags": ["other_hernia"]},
+    {"id": "abdominal_wall_risk", "text": "비만, 여러 번의 임신·출산, 복수", "say": "최근에 체중이 많이 늘었거나 배에 물이 찬다는 말을 들은 적 있으세요?", "tags": ["other_hernia"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "체온, 맥박, 혈압 확인(감돈·교액 시 발열, 빈맥)", "say": "먼저 체온과 맥박을 확인하겠습니다.", "tags": ["complicated"]},
+    {"id": "inspection_standing", "text": "서서 사타구니·음낭을 양쪽 비교해 시진하고 기침하게 해 불룩해지는지 확인", "say": "일어서서 사타구니를 보겠습니다. 고개를 옆으로 돌리고 기침을 한번 해 보세요.", "tags": ["inguinal"]},
+    {"id": "palpation", "text": "혹의 크기, 경도, 압통, 박동 촉진과 누운 자세에서 환원되는지 확인", "say": "혹을 살짝 만져 보겠습니다. 아프면 말씀해 주세요. 누우시면 들어가는지도 보겠습니다.", "key": true},
+    {"id": "cough_impulse", "text": "남성에서 음낭 피부를 밀어 올려 서혜관 입구에 손가락을 대고 기침 시 충격 확인", "say": "손가락을 사타구니 안쪽에 대고 있을 테니 기침을 해 보세요.", "tags": ["inguinal"], "applies": "male"},
+    {"id": "landmark", "text": "치골결절·서혜인대 기준으로 탈장 위치(서혜부/대퇴) 확인", "say": "튀어나온 곳이 뼈 기준으로 어디에 있는지 확인하겠습니다.", "tags": ["inguinal", "other_hernia"]},
+    {"id": "abdomen", "text": "복부 시진·청진·촉진(수술 흉터, 팽만, 장음, 압통)", "say": "배도 보고 청진기로 소리를 들은 뒤 만져 보겠습니다.", "tags": ["complicated", "other_hernia"]},
+    {"id": "scrotum_nodes", "text": "음낭 진찰과 서혜부 림프절 촉진", "say": "음낭과 사타구니 림프샘도 확인하겠습니다.", "tags": ["non_hernia"]}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "혹이 들어가지 않고 아프거나 색이 변하고 구토하면 즉시 응급실로 오도록 안내", "say": "혹이 안 들어가면서 아프거나 색이 변하고 토하면 장이 끼인 것일 수 있으니 바로 응급실로 오세요.", "tags": ["complicated"], "key": true},
+    {"id": "surgery_plan", "text": "탈장은 저절로 낫지 않으며 증상이 있으면 수술로 치료한다고 설명", "say": "탈장은 저절로 없어지지 않아서, 불편하시면 수술로 막아 주는 게 원칙입니다.", "tags": ["inguinal", "other_hernia"]},
+    {"id": "avoid_strain", "text": "변비·기침 조절, 무거운 물건 들 때 주의, 체중 조절", "say": "변비나 기침이 있으면 치료하시고, 무거운 물건은 되도록 들지 마세요."}
+  ],
+  "grader_notes": [
+    "서혜부 탈장은 대부분 병력과 신체진찰로 진단하며, 진찰로 애매할 때 초음파를, 필요하면 CT나 MRI를 한다.",
+    "환원되지 않고 아프거나 피부 변화, 구토, 장폐색 소견이 있으면 감돈·교액 탈장으로 보고 금식, 수액, 혈액검사 후 응급 수술을 한다. 교액이 의심되면 억지로 밀어 넣지 않는다.",
+    "증상 있는 서혜부 탈장은 인공망을 이용한 수술(개방 또는 복강경)로 치료하고, 증상이 거의 없는 남성의 서혜부 탈장은 주의 깊은 경과관찰도 선택할 수 있다.",
+    "대퇴 탈장은 감돈 위험이 높아 발견되면 조기에 수술하며, 여성의 사타구니 탈장은 대퇴 탈장의 비율이 상대적으로 높아 감별에 유의한다.",
+    "소아의 서혜부 탈장은 저절로 좋아지지 않아 진단되면 수술을 계획한다."
+  ],
+  "case_ids": []
+}

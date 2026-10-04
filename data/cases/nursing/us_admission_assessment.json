@@ -1,0 +1,117 @@
+{
+  "id": "nursing_us_admission_assessment",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Bedside care",
+  "nursing_pathways": ["us"],
+  "counterpart": "patient",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_bedside_care",
+  "station_minutes": 8,
+  "patient_name": "Admission nursing assessment — allergies, home meds, fall risk, pain and advance directive",
+  "chief_complaint": "Complete an admission nursing interview with an older patient admitted with pneumonia, including a sensitive, routine question about advance directives",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Admission assessment: new med-surg patient with pneumonia",
+    "task": "Bedside care",
+    "urgency": "routine",
+    "patient": "Mr. Frank Russo, 76-year-old man (DOB 01/09/1950), room 210, admitted from the ED with community-acquired pneumonia",
+    "location": "2 West med-surg unit, 16:30. You are his admitting RN. He has just arrived on the unit and is settled in bed; you are completing his admission assessment in the EHR with him.",
+    "situation": "Mr. Russo is alert, friendly, and a little short of breath when he talks for long. You need to complete his admission database: allergies, home medications, fall risk, pain, and advance directive.",
+    "background": [
+      "Community-acquired pneumonia; first dose of IV antibiotic given in the ED at 13:00. On 2 L nasal cannula.",
+      "The ED record lists 'no known drug allergies' and a home medication list that says only 'blood pressure pill'.",
+      "Widowed; lives alone in a two-story house. His daughter, Anna, lives nearby."
+    ],
+    "current_status": [
+      "Vital signs: temp 100.4 F, HR 96, BP 138/80, RR 22, SpO2 94% on 2 L nasal cannula.",
+      "He coughs when he talks and holds his right side.",
+      "His code status order in the EHR is 'full code', entered by default in the ED."
+    ],
+    "key_data": [
+      "Your admission database requires: allergies with the reaction, all home medications including over-the-counter drugs and supplements, fall history, a pain assessment, and whether he has an advance directive and a health care decision-maker.",
+      "Every adult patient is asked about advance directives on admission. Code status itself is discussed and ordered by the provider, not changed by the nurse."
+    ],
+    "treatments": [
+      "Pending: admission orders from the hospitalist, who will see him this evening."
+    ],
+    "your_request": "Complete the admission interview in plain English, clarify anything that does not match the ED record, and ask about advance directives in a sensitive, routine way.",
+    "must_include": [
+      "Introduce yourself and explain that you have some routine admission questions and why they matter.",
+      "Ask about allergies to medicines, including what reaction he had; if it differs from the ED record, say you will update his chart and let the provider and pharmacist know.",
+      "Ask about all home medications, including over-the-counter medicines, vitamins and sleep aids, and when he last took them.",
+      "Assess fall risk (recent falls, getting up at night, walking aids) and explain the call light and why you want him to call before getting up.",
+      "Assess his pain: where it is, how bad on a 0-10 scale, and what helps.",
+      "Ask about an advance directive and who makes health care decisions for him, framed as a routine question, and tell him you will pass on what he said to the provider."
+    ]
+  },
+  "kickoff_text": "Hi there. They told me downstairs somebody would come ask me a bunch of questions. That you?",
+  "persona_override": "You are Frank Russo, a 76-year-old retired mail carrier admitted with pneumonia. You are friendly and chatty, a little short of breath when you talk, and proud of being independent. You speak in short sentences and cough now and then. Ground truth (answer only what you are asked; do not volunteer): Allergies — you told the ED 'nothing' because you forgot, but if asked specifically about reactions to medicines or antibiotics, you remember that penicillin gave you 'hives all over, and my lips swelled up' in your twenties. Home medications — at first say only 'a blood pressure pill, a water pill, and one for cholesterol; my daughter has the list.' If asked for names: 'lisinopril', 'the water pill is hydro-something' (hydrochlorothiazide), and atorvastatin at night. If asked about over-the-counter medicines: an aspirin 81 every morning. Only if asked specifically about sleep or sleeping pills: 'those blue sleeping pills from the drugstore — diphenhydramine, I think it says' most nights. You took your morning pills today at 07:00 and a sleeping pill last night. Falls — you fell two months ago getting up at night to pee and didn't tell anyone; you did not hit your head. You get up two or three times a night. You use a cane 'sometimes, outside'. Pain — right side of your chest when you cough, sharp, 5 out of 10; hugging a pillow helps; 'the acetaminophen they gave me downstairs helped a little'. Advance directive — you have a living will in a drawer at home, and your daughter Anna is your health care power of attorney. Your wife died on a breathing machine two years ago; since then you have told Anna you would not want to be kept on machines long-term, but you have never told a doctor. Behaviour: If the nurse explains why they are asking and uses open questions, answer cooperatively. If the nurse only asks 'Any allergies?' say 'Nope' — mention penicillin only if they ask about reactions to medicines or antibiotics. If the nurse brings up the call light or fall precautions, push back once: 'I'm not going to ring a bell every time I need to pee.' Accept it if they explain why in plain words (new place, oxygen tubing, fever, sleeping pill). If the nurse asks about code status abruptly ('Do you want CPR?', 'Are you a DNR?') without explaining it is a routine question, get alarmed: 'Whoa — am I dying? Why are you asking me that?' and stay guarded until they explain. If asked gently and as routine, answer honestly, get a little emotional about your wife, and ask 'Do I need to tell the doctor that?' If the nurse uses jargon or abbreviations (for example 'NKDA', 'PRN', 'code status', 'advance directive') without explaining, ask what it means. Never coach the nurse. Keep turns short.",
+  "learning_objectives": [
+    "introduce yourself and explain why you are asking admission questions",
+    "ask about allergies and what reaction happened",
+    "ask about over-the-counter medicines, vitamins, and sleep aids",
+    "ask about recent falls and explain the call light",
+    "assess pain on a 0 to 10 scale",
+    "ask about an advance directive and a health care power of attorney as a routine question"
+  ],
+  "suggested_questions": [
+    "Hi Mr. Russo, I'm Soo-yeon, I'll be your nurse until seven tonight. I have some questions we ask everyone who comes in, so we can keep you safe while you're here — is now an okay time?",
+    "Have you ever had a bad reaction to any medicine or antibiotic — like a rash, swelling, or trouble breathing? What happened?",
+    "Besides your prescriptions, do you take anything from the drugstore — aspirin, vitamins, or something to help you sleep?",
+    "This is something we ask every patient: do you have a living will or advance directive, and is there someone you'd want to make medical decisions for you if you couldn't?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Admission nursing assessment interview: allergies, medication history, fall risk, pain, and advance directives",
+    "review_status": "grounded in the federal Patient Self-Determination Act requirement to ask about advance directives on admission, AHRQ hospital fall-prevention guidance, Joint Commission patient-safety requirements on medication information and reconciliation, and National Institute on Aging advance care planning guidance; admission database content and fall-risk tools follow local policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "Admission is where allergies and home medications are first documented for the whole stay; a wrong 'no known allergies' can lead straight to a harmful order.",
+      "Patients often answer 'Any allergies?' with 'No'; asking about reactions to medicines and what happened uncovers true allergies and separates them from side effects.",
+      "Over-the-counter sleep aids and supplements are rarely volunteered but matter — sedating antihistamines increase falls and confusion in older adults.",
+      "US hospitals must ask adult patients on admission whether they have an advance directive; the nurse asks and documents, and code status is discussed and ordered by the provider."
+    ],
+    "diagnostic_clues": [
+      "A recent unreported fall, night-time toileting, a diuretic, a sleep aid, fever and oxygen tubing together make this patient a high fall risk.",
+      "Hives with lip swelling after penicillin describes a possible serious allergic reaction, not a side effect, and must be recorded with the reaction.",
+      "A patient's story about a family member on a ventilator is a cue that he has values about end-of-life care that his provider needs to hear."
+    ],
+    "common_misconceptions": [
+      "Copying the ED's allergy and medication list is enough.",
+      "Asking about advance directives will frighten patients, so it is better to skip it or leave it to the doctor.",
+      "The nurse can change the code status based on what the patient says."
+    ],
+    "dangerous_errors": [
+      "Documenting 'no known drug allergies' after a single closed question.",
+      "Asking 'Do you want to be resuscitated?' abruptly, with no explanation that it is routine.",
+      "Telling the patient you will change his code status yourself.",
+      "Not explaining the call light to a patient with a recent fall who gets up at night."
+    ],
+    "management_principles": [
+      "Explain the purpose, use open questions first, then specific prompts (reactions to medicines, over-the-counter drugs, falls at night).",
+      "Reconcile differences with earlier records out loud, update the EHR, and notify the provider and pharmacy of a newly found allergy.",
+      "Introduce advance-directive questions as routine for every patient, listen, ask the family to bring in a copy, and pass the patient's wishes to the provider for a goals-of-care conversation.",
+      "Explain fall precautions as safety for this admission, not as a judgement of the patient's independence."
+    ],
+    "boundaries_and_exceptions": [
+      "Admission database items, fall-risk scoring tools (for example the Morse Fall Scale), and how advance directives and health care agents are documented vary by hospital and state.",
+      "The name for a health care decision-maker differs between states (health care power of attorney, health care proxy, health care agent); code-status orders are written by the provider.",
+      "Whether a penicillin reaction affects the current antibiotic is a prescriber and pharmacist decision."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ: Preventing Falls in Hospitals — A Toolkit for Improving Quality of Care",
+        "url": "https://www.ahrq.gov/patient-safety/settings/hospital/fall-prevention/toolkit/index.html"
+      },
+      {
+        "title": "National Institute on Aging: Advance Care Planning",
+        "url": "https://www.nia.nih.gov/health/advance-care-planning"
+      },
+      {
+        "title": "The Joint Commission (patient safety standards and goals)",
+        "url": "https://www.jointcommission.org/"
+      }
+    ]
+  }
+}

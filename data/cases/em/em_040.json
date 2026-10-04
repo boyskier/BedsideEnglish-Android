@@ -9,9 +9,9 @@
   "gender": "female",
   "chief_complaint": "sudden dyspnea, hypoxia, low BP after international flight",
   "hpi_details": "A 62-year-old female presents to the clinic with sudden dyspnea, hypoxia, low bp after international flight. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to a massive pulmonary embolism",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "She thinks the recirculated air on the plane gave her sudden severe pneumonia or that the exhaustion of the flight triggered a heart attack.",
+  "concerns": "She is terrified that she is having a fatal heart attack and will pass away before seeing the grandchildren she flew across the world to visit.",
+  "expectations": "She hopes to receive oxygen and have her heart checked so she can breathe comfortably and leave to stay with her family.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -135,6 +135,181 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "84/52",
+      "hr": 118,
+      "rr": 26,
+      "spo2": 86,
+      "temp_c": 36.6
+    },
+    "history": [
+      {
+        "answer": "I suddenly became terribly short of breath right after getting off an international flight, and I feel so weak and faint.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It started suddenly about two hours ago right after our flight landed, and it has been getting worse ever since.",
+        "topic": "Onset and duration"
+      },
+      {
+        "answer": "I am struggling to breathe even while sitting completely still, and any small movement makes me gasp for air.",
+        "topic": "Severity of breathlessness"
+      },
+      {
+        "answer": "It has been persistent and steadily worsening since it began, and I have never experienced anything like this before.",
+        "topic": "Course and prior episodes"
+      },
+      {
+        "answer": "Lying flat makes me feel like I am suffocating even more, but this just started a couple of hours ago so I haven't tried to sleep.",
+        "topic": "Orthopnea and nighttime symptoms"
+      },
+      {
+        "answer": "Any slight movement or taking a deep breath makes it worse, and resting has not helped at all.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "No, I haven't noticed any whistling or wheezing noises when I breathe.",
+        "topic": "Wheezing or stridor"
+      },
+      {
+        "answer": "I have a dry, hacking cough that started with this shortness of breath, but no phlegm and no fever or chills.",
+        "topic": "Cough, sputum, and fever"
+      },
+      {
+        "answer": "I have a sharp, stabbing pain on the right side of my chest that gets much worse whenever I try to take a breath.",
+        "topic": "Chest pain"
+      },
+      {
+        "answer": "My heart is pounding very fast, and I felt intensely lightheaded and almost blacked out when I stood up at baggage claim.",
+        "topic": "Palpitations and dizziness"
+      },
+      {
+        "answer": "No, I haven't coughed up any blood or pink-tinged mucus.",
+        "topic": "Hemoptysis"
+      },
+      {
+        "answer": "No, I haven't had swelling in both legs or any sudden weight gain recently.",
+        "topic": "Bilateral leg swelling and weight gain"
+      },
+      {
+        "answer": "My right calf felt swollen, tight, and crampy yesterday during our fourteen-hour flight from Europe, where I remained seated almost the entire time.",
+        "topic": "Unilateral leg swelling and flight history"
+      },
+      {
+        "answer": "I feel completely exhausted and drained, but I have not had pale skin, black tarry stools, or any unusual bleeding.",
+        "topic": "Fatigue, pallor, and bleeding"
+      },
+      {
+        "answer": "I feel very frightened and anxious because I cannot catch my breath, but I have no tingling or numbness around my lips or hands.",
+        "topic": "Anxiety and perioral numbness"
+      },
+      {
+        "answer": "No, I have never had heart attacks, heart failure, asthma, or COPD, and I don't use any inhalers.",
+        "topic": "Prior cardiopulmonary disease"
+      },
+      {
+        "answer": "No, I worked in an office as an accountant and have never been exposed to industrial dust, asbestos, birds, or mold.",
+        "topic": "Occupational and environmental exposures"
+      },
+      {
+        "answer": "I am not taking any blood pressure pills, painkillers, chemotherapy, or heart rhythm medicines like amiodarone.",
+        "topic": "Breathlessness-inducing medications"
+      },
+      {
+        "answer": "No, I went through menopause over ten years ago and have never taken hormone replacement therapy or birth control pills.",
+        "topic": "Hormone therapy"
+      },
+      {
+        "answer": "I thought maybe I picked up a bad lung infection from the airplane air, or the long flight put too much strain on my heart. I'm terrified that my heart is giving out and I won't even get to see my grandchildren after traveling all this way.",
+        "topic": "Patient's thoughts and concerns"
+      },
+      {
+        "answer": "I have always been healthy with no high blood pressure, diabetes, or other chronic conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries, major injuries, or hospital stays.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I do not take any prescription medications, over-the-counter drugs, or vitamins.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no known allergies to any medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink an occasional glass of wine at social gatherings, once or twice a month at most.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I am a retired accountant and live at home with my husband.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of blood clots, pulmonary embolism, heart problems, or early deaths.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 84/52 mmHg, pulse 118 beats/min, respiratory rate 26 breaths/min, temperature 36.6 °C, and oxygen saturation 86% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Patient appears acutely distressed, tachypneic, diaphoretic, using accessory neck muscles to breathe, with mild peripheral cyanosis and no digital clubbing.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Jugular venous distension present at 6 cm above the sternal angle at a 45-degree angle.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Symmetric chest expansion with no chest wall tenderness or subcutaneous emphysema.",
+        "maneuver": "chest_inspection_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Resonant percussion notes throughout all lung fields bilaterally.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Clear breath sounds bilaterally in all lung zones with no wheezing, rhonchi, or crackles.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Rapid regular rhythm with an accentuated pulmonic component of the second heart sound (loud P2); no murmurs or third heart sound.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Radial and dorsalis pedis pulses are rapid, thready, and weak bilaterally, with cool distal extremities.",
+        "maneuver": "peripheral_pulses",
+        "response": "none"
+      },
+      {
+        "finding": "No bilateral dependent pitting edema; swelling is isolated to the right lower leg.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Right calf is warm, erythematous, swollen with a 3 cm larger circumference than the left, and distinctly tender to palpation.",
+        "maneuver": "calf_exam",
+        "response": "pain"
       }
     ]
   }

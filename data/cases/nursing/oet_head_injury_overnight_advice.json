@@ -1,0 +1,110 @@
+{
+  "id": "nursing_oet_head_injury_overnight_advice",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "OET role-play",
+  "nursing_pathways": ["oet"],
+  "counterpart": "relative",
+  "urgency": "routine",
+  "difficulty": "beginner",
+  "eval_template": "nursing_oet_roleplay",
+  "station_minutes": 5,
+  "patient_name": "OET role-play — father taking his child home from the emergency department after a minor head injury",
+  "chief_complaint": "Give discharge advice to a father whose four-year-old had a minor head injury, and correct his belief that the child must be kept awake all night",
+  "team_brief": {
+    "case_type": "oet_roleplay",
+    "title": "Minor head injury: discharge advice for a father planning to keep his son awake",
+    "task": "OET role-play",
+    "urgency": "routine",
+    "patient": "Kai Nguyen, 4-year-old boy, bumped his forehead on a coffee table at home this afternoon",
+    "location": "Emergency department, paediatric area; you are the nurse discharging Kai and you are talking to his father, Mr Minh Nguyen",
+    "situation": "Kai has been assessed by the emergency doctor and observed for several hours. The doctor has decided he does not need a scan and can go home tonight. His father is relieved but has just said he plans to keep Kai awake all night to be safe.",
+    "background": [
+      "Kai tripped and hit his forehead on the edge of a coffee table; he cried straight away and did not lose consciousness.",
+      "He has not vomited. He has a small bruise and swelling on his forehead.",
+      "He is otherwise healthy and takes no regular medicines."
+    ],
+    "current_status": [
+      "Kai is alert, eating a snack, walking normally and playing with toys in the waiting area.",
+      "The doctor's examination was normal."
+    ],
+    "key_data": [
+      "Kai can go to sleep as normal tonight; there is no need to keep him awake. A parent may check on him during the night — he should be breathing normally and easy to wake.",
+      "Return to the emergency department straight away or call an ambulance if he: cannot be woken or is unusually drowsy; vomits (especially more than once); has a headache that keeps getting worse; is confused, very irritable, or not his usual self; has a fit; has weakness, problems walking, talking or seeing; or has clear fluid or blood coming from his nose or ears.",
+      "A responsible adult should stay with him for the next 24 hours.",
+      "Paracetamol can be given for pain at the dose on the packet for his age. Avoid rough play and climbing for a few days; he can go back to nursery when he feels well."
+    ],
+    "treatments": [
+      "Already done: medical assessment, period of observation, cold compress to the bruise.",
+      "Pending: written head injury advice sheet to give to Mr Nguyen."
+    ],
+    "your_request": "Discharge Kai safely: find out his father's concerns, correct his plan to keep Kai awake, and make sure he knows what to watch for overnight.",
+    "must_include": [
+      "Find out what Mr Nguyen understands about Kai's injury and what is worrying him about taking him home.",
+      "Reassure him that Kai can sleep normally tonight and explain how he can check on him.",
+      "Explain the warning signs that mean he must bring Kai straight back or call an ambulance.",
+      "Advise him on pain relief and activity for the next few days.",
+      "Confirm that an adult will stay with Kai for the next 24 hours and give him the written advice sheet."
+    ]
+  },
+  "kickoff_text": "Thank you, nurse. My mother says we must not let him fall asleep tonight, so I'll just keep him up with cartoons until the morning.",
+  "persona_override": "You are Minh Nguyen, a 38-year-old father taking your son Kai home from the emergency department after he bumped his forehead on a coffee table. You are polite, tired, and relieved, but anxious underneath. Your specific belief: your mother told you on the phone that a child must never be allowed to sleep after a head injury because he might not wake up, so you plan to keep Kai awake all night. Your deeper worry, which you only say if the nurse asks what is worrying you, is 'How will I know if something is wrong inside his head if he's asleep?' Ground truth: Kai is 4, hit his forehead this afternoon, cried straight away, did not lose consciousness, has not vomited, has a small bruise, is healthy and takes no medicines. He is eating and playing normally now. Your wife works a night shift tonight, but you will be at home with Kai all night and tomorrow. You have children's paracetamol at home. Behaviour rules: Keep each turn to 1-3 short, natural sentences. If the nurse uses words such as 'neurological', 'GCS', 'concussion', 'intracranial' or 'rousable' without explaining them, ask what they mean. If the nurse simply tells you 'it's fine for him to sleep' without asking about your worry or explaining how to check on him, say more anxiously: 'But my mother was very clear — what if he doesn't wake up?' Once the nurse acknowledges your worry and explains how you can check on him and what to look for, accept it gradually: 'So I can let him sleep, and just check he's breathing normally and wakes up if I need him to?' If the nurse gives all the warning signs in one long list, say 'Sorry, that's a lot — can you tell me the most important ones again?' If asked to repeat the warning signs back, remember most of them but leave out one (for example, fluid from the nose or ears). If the nurse does not mention pain relief or activity, ask 'Can I give him something if his head hurts?' Never coach the nurse or mention scoring. Near five minutes, thank the nurse, say you will put the advice sheet on the fridge, and close.",
+  "learning_objectives": [
+    "find out what the parent understands and what is worrying him before giving advice",
+    "correct a misconception about keeping the child awake without dismissing the family's advice",
+    "explain the warning signs to come straight back in small chunks and plain words",
+    "advise on pain relief and activity for the next few days",
+    "confirm an adult will stay with the child for 24 hours and give the written advice sheet",
+    "check understanding by asking the parent to say the warning signs back"
+  ],
+  "suggested_questions": [
+    "Before Kai goes home, can I ask what's worrying you most about tonight?",
+    "It's a very common belief, and your mother is clearly trying to keep him safe — but actually Kai can go to sleep as normal tonight. You can check on him in the night; he should be breathing normally and easy to wake.",
+    "There are a few important signs that mean you should bring him straight back or call an ambulance. The main ones are if you can't wake him properly, if he vomits, or if he seems confused or not himself.",
+    "Just to make sure I've explained it clearly, can you tell me which signs would make you bring him back?"
+  ],
+  "clinical_knowledge": {
+    "topic": "Discharge advice to a parent after a minor head injury in a young child",
+    "review_status": "grounded in NICE head injury guidance (NG232) and NHS head injury and concussion advice; local emergency-department discharge leaflets and observation practices apply",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "After a minor head injury that has been assessed and judged low risk, the child can sleep normally; the safety net is a responsible adult and clear written advice, not sleep deprivation.",
+      "Discharge advice works only if the parent can recall the key warning signs, so it should be chunked and checked with teach-back.",
+      "Families' beliefs (often from relatives) should be acknowledged respectfully before being corrected."
+    ],
+    "diagnostic_clues": [
+      "A parent who plans to keep the child awake all night is signalling fear of missing deterioration; that fear is the real topic.",
+      "Unusual drowsiness, repeated vomiting, worsening headache, confusion, seizure, focal weakness, and fluid or blood from the nose or ears are red flags after head injury."
+    ],
+    "common_misconceptions": [
+      "A child must be kept awake after any head injury.",
+      "If no scan was done, the injury was not properly checked.",
+      "Once the child is home, symptoms appearing hours later cannot be related to the injury."
+    ],
+    "dangerous_errors": [
+      "Discharging without giving the parent the warning signs and clear instructions on when to return.",
+      "Saying the child cannot possibly have any complications because the examination was normal.",
+      "Not confirming that a responsible adult will be with the child for the next 24 hours."
+    ],
+    "management_principles": [
+      "Explore the parent's understanding and worry first, then correct misconceptions gently.",
+      "Give warning signs verbally in small chunks and in writing, and confirm with teach-back.",
+      "Cover supervision, pain relief, activity, and how to get help."
+    ],
+    "boundaries_and_exceptions": [
+      "Some departments advise waking a child to check on them during the first night; follow the local discharge leaflet.",
+      "Analgesic doses must follow the product label for the child's age and weight.",
+      "Emergency telephone numbers and routes back to care differ by country and service."
+    ],
+    "source_refs": [
+      {
+        "title": "NICE NG232: Head injury — assessment and early management",
+        "url": "https://www.nice.org.uk/guidance/ng232"
+      },
+      {
+        "title": "NHS: Head injury and concussion",
+        "url": "https://www.nhs.uk/conditions/head-injury-and-concussion/"
+      }
+    ]
+  }
+}

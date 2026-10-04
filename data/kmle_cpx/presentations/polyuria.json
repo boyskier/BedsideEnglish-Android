@@ -1,0 +1,54 @@
+{
+  "id": "polyuria",
+  "title": "물을 많이 마시고 소변을 자주 봐요",
+  "english_title": "Excessive thirst and frequent urination (polydipsia and polyuria)",
+  "category": "전신·내분비",
+  "kmle_item": "소변량 변화",
+  "door_complaint": "물을 많이 마시고 소변을 자주 본다고",
+  "differential_groups": [
+    {"key": "osmotic", "label": "삼투성 이뇨(고혈당)", "examples": ["1형 당뇨병", "2형 당뇨병", "당뇨병케톤산증", "고삼투압고혈당상태"]},
+    {"key": "di", "label": "요붕증", "examples": ["중추성 요붕증", "신성 요붕증(리튬 등)"]},
+    {"key": "primary", "label": "일차성 다음", "examples": ["심인성 다음증", "과도한 수분 섭취 습관"]},
+    {"key": "electrolyte", "label": "전해질·신장·약물", "examples": ["고칼슘혈증", "저칼륨혈증", "만성 콩팥병", "이뇨제·카페인·알코올"]},
+    {"key": "frequency", "label": "빈뇨(소변 총량 정상)", "examples": ["방광염", "과민성방광", "전립샘비대", "임신"]}
+  ],
+  "history": [
+    {"id": "volume_vs_frequency", "text": "한 번 볼 때 소변량이 많은지, 자주 조금씩 보는지", "say": "소변을 볼 때마다 양이 많아요, 아니면 자주 가는데 조금씩 나와요?", "tags": ["osmotic", "di", "frequency"]},
+    {"id": "onset", "text": "시작 시기와 발생 양상(갑자기/서서히)", "say": "언제부터 그러셨어요? 어느 날 갑자기 시작됐어요, 아니면 서서히 늘었어요?", "tags": ["di", "osmotic"]},
+    {"id": "daily_intake", "text": "하루 마시는 물의 양과 음료 종류", "say": "하루에 물을 얼마나 드세요? 주로 물이에요, 아니면 단 음료나 커피예요?", "tags": ["osmotic", "primary", "electrolyte"]},
+    {"id": "nocturia", "text": "야간뇨 횟수", "say": "밤에도 소변 때문에 깨세요? 몇 번 정도요?", "tags": ["di", "osmotic"]},
+    {"id": "night_thirst", "text": "밤에도 목이 말라 물을 찾는지, 찬물을 특히 찾는지", "say": "밤에 자다가도 목이 말라서 물을 드세요? 특히 찬물이 당기세요?", "tags": ["di", "primary"]},
+    {"id": "weight_appetite", "text": "체중 감소와 식욕 변화", "say": "최근에 살이 빠지셨어요? 많이 드시는데도 빠지나요?", "tags": ["osmotic"], "key": true},
+    {"id": "dka_symptoms", "text": "구역, 구토, 복통, 숨이 가빠짐, 처지고 멍한 느낌", "say": "속이 메스껍거나 토하거나 배가 아프지는 않으세요? 숨이 차거나 정신이 멍하진 않으세요?", "tags": ["osmotic"], "key": true},
+    {"id": "fatigue_vision", "text": "피로, 시야 흐림", "say": "많이 피곤하거나 눈이 침침해지지는 않았어요?", "tags": ["osmotic"]},
+    {"id": "recurrent_infection", "text": "반복되는 피부·질 감염, 잘 낫지 않는 상처", "say": "피부나 질에 염증이 자주 생기거나 상처가 잘 안 낫지는 않으세요?", "tags": ["osmotic"]},
+    {"id": "urinary_symptoms", "text": "배뇨통, 절박뇨, 배뇨 곤란", "say": "소변볼 때 아프거나 급하게 마렵거나, 시원하게 안 나오지는 않으세요?", "tags": ["frequency"]},
+    {"id": "head_injury", "text": "머리 외상, 뇌수술, 두통이나 시야 이상", "say": "최근에 머리를 다치거나 뇌 수술을 받으신 적 있으세요? 두통이나 시야가 좁아진 느낌은요?", "tags": ["di"]},
+    {"id": "calcium_symptoms", "text": "변비, 뼈 통증, 요로결석", "say": "변비가 생기거나 뼈가 아프거나 요로결석이 있었던 적 있으세요?", "tags": ["electrolyte"]},
+    {"id": "weakness_cramps", "text": "근력 저하, 근육 경련", "say": "팔다리에 힘이 빠지거나 쥐가 자주 나지는 않으세요?", "tags": ["electrolyte"]},
+    {"id": "drug_history", "text": "리튬, 이뇨제, 스테로이드, SGLT2 억제제 복용", "say": "리튬 같은 정신과 약이나 이뇨제, 스테로이드, 당뇨약을 드시나요?", "tags": ["di", "electrolyte", "osmotic"]},
+    {"id": "caffeine_alcohol", "text": "커피·에너지음료, 음주량", "say": "커피나 에너지음료, 술은 얼마나 드세요?", "tags": ["electrolyte"]},
+    {"id": "psychiatric_history", "text": "정신과 치료력, 스트레스", "say": "혹시 마음이 힘들어서 치료받으신 적 있으세요? 요즘 스트레스는 어떠세요?", "tags": ["primary"]},
+    {"id": "dm_risk", "text": "당뇨병 가족력, 비만, 임신성 당뇨 과거력", "say": "가족 중에 당뇨병이 있는 분이 계세요? 예전에 혈당이 높다는 말을 들은 적은요?", "tags": ["osmotic"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals", "text": "혈압, 맥박, 호흡수, 체온 확인(탈수, 쿠스마울 호흡)", "say": "혈압과 맥박, 호흡을 먼저 확인하겠습니다."},
+    {"id": "hydration", "text": "입안 점막 건조, 피부 긴장도로 탈수 평가", "say": "입안과 피부가 마르지 않았는지 보겠습니다."},
+    {"id": "body_measurement", "text": "키, 체중, 허리둘레 측정", "say": "키와 몸무게, 허리둘레를 재 보겠습니다."},
+    {"id": "skin_check", "text": "흑색가시세포증, 피부 감염 확인", "say": "목 뒤와 겨드랑이 피부를 보겠습니다.", "conditional": true},
+    {"id": "visual_field", "text": "뇌하수체 병변이 의심되면 대면 시야검사", "say": "제 손가락이 보이면 말씀해 주세요. 시야를 확인하겠습니다.", "conditional": true}
+  ],
+  "education": [
+    {"id": "warning_signs", "text": "구토, 복통, 숨참, 의식 저하가 생기면 즉시 응급실로 오도록 안내", "say": "토하거나 배가 아프고 숨이 차거나 정신이 흐려지면 바로 응급실로 오세요.", "key": true},
+    {"id": "no_fluid_restriction", "text": "검사 전 임의로 물을 참지 말도록 교육(탈수 위험)", "say": "검사 결과가 나오기 전까지 목이 마르면 물은 참지 말고 드세요."},
+    {"id": "lifestyle", "text": "당뇨병이면 단 음료 줄이기, 식사 조절, 운동, 체중 관리", "say": "단 음료부터 줄이시고, 식사량 조절과 규칙적인 운동을 시작해 보세요.", "conditional": true}
+  ],
+  "grader_notes": [
+    "먼저 혈당(공복 또는 무작위), 당화혈색소, 소변검사(당, 케톤)로 당뇨병을 확인한다.",
+    "전형적 고혈당 증상과 무작위 혈당 200 mg/dL 이상이면 당뇨병으로 진단할 수 있고, 젊고 마른 환자의 급격한 체중감소나 케톤뇨는 1형 당뇨병을 생각한다.",
+    "고혈당에 구토, 복통, 쿠스마울 호흡, 의식 변화가 있으면 당뇨병케톤산증이나 고삼투압고혈당상태로 보고 전해질·혈액가스를 확인하며 응급 수액과 인슐린 치료를 한다.",
+    "당뇨병이 아니면 24시간 소변량으로 다뇨(성인 하루 3 L 이상)를 확인하고 혈청 나트륨·칼륨·칼슘·크레아티닌과 혈청·소변 삼투압을 검사한다.",
+    "요붕증과 일차성 다음의 감별은 전문가 감독 아래 수분제한검사와 데스모프레신 반응(또는 코펩틴 측정)으로 한다."
+  ],
+  "case_ids": ["endo_021", "endo_026", "endo_027"]
+}

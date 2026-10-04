@@ -13,6 +13,7 @@ internal const val DEFAULT_GEMINI_ANALYSIS_MODEL = "gemini-3.5-flash"
 private const val NETWORK_CONNECT_TIMEOUT_MS = 15_000
 private const val NETWORK_READ_TIMEOUT_MS = 60_000
 private const val AUDIO_READ_TIMEOUT_MS = 120_000
+private const val LONG_FORM_AUDIO_READ_TIMEOUT_MS = 300_000
 private const val AUDIO_MIN_READ_TIMEOUT_MS = 5_000
 
 private val RETIRED_GEMINI_ANALYSIS_MODELS = setOf(
@@ -474,7 +475,12 @@ object GeminiService {
          * (pronunciation analysis) pass what they have left so one slow round-trip can't overrun
          * it by the full default.
          */
-        readTimeoutMs: Long? = null
+        readTimeoutMs: Long? = null,
+        /**
+         * A whole recorded conversation (the Korean CPX peer mode transcribes up to ~15 minutes)
+         * needs far more output than a pronunciation verdict, and longer to arrive.
+         */
+        longForm: Boolean = false,
     ): String = withContext(Dispatchers.IO) {
         if (apiKey.trim().isEmpty()) {
             throw IllegalArgumentException("Gemini API key is empty. Please configure it in Settings.")
@@ -484,7 +490,7 @@ object GeminiService {
         val normalizedModel = normalizeGeminiAnalysisModel(model)
         val conn = openJsonConnection(getBaseUrl(normalizedModel), apiKey)
         conn.connectTimeout = 30_000
-        conn.readTimeout = readTimeoutMs
+        conn.readTimeout = if (longForm) LONG_FORM_AUDIO_READ_TIMEOUT_MS else readTimeoutMs
             ?.coerceIn(AUDIO_MIN_READ_TIMEOUT_MS.toLong(), AUDIO_READ_TIMEOUT_MS.toLong())
             ?.toInt()
             ?: AUDIO_READ_TIMEOUT_MS
@@ -516,7 +522,7 @@ object GeminiService {
         payload.put("contents", JSONArray().put(contentObj))
         val generationConfig = JSONObject()
             .put("responseMimeType", "application/json")
-            .put("maxOutputTokens", 4096)
+            .put("maxOutputTokens", if (longForm) 16_384 else 4096)
             .put("temperature", 0.1)
         responseSchema?.let { generationConfig.put("responseSchema", it) }
         payload.put("generationConfig", generationConfig)

@@ -1,0 +1,119 @@
+{
+  "id": "nursing_us_speak_up_opioid_sedation",
+  "system": "nursing",
+  "session_mode": "nursing",
+  "nursing_task": "Speak up for safety",
+  "nursing_pathways": ["us"],
+  "counterpart": "physician",
+  "urgency": "urgent",
+  "difficulty": "advanced",
+  "eval_template": "nursing_speak_up",
+  "station_minutes": 6,
+  "patient_name": "Speak up with CUS — IV opioid plus benzodiazepine for a sedated post-op patient with sleep apnea",
+  "chief_complaint": "Use CUS words and the two-challenge rule to stop an order for IV hydromorphone plus IV lorazepam in an oversedated, elderly post-op patient with sleep apnea and a low respiratory rate",
+  "team_brief": {
+    "case_type": "patient_case",
+    "title": "Speak up: IV hydromorphone plus lorazepam for a drowsy post-op patient with sleep apnea",
+    "task": "Speak up for safety",
+    "urgency": "urgent",
+    "patient": "Mrs. Dolores Fischer, 82-year-old woman (DOB 08/03/1944), room 715, post-op day 0 after a right hip hemiarthroplasty for a fractured hip",
+    "location": "7 North surgical unit, 23:30. You are her night RN. You paged the on-call surgical resident, Dr. Ryan Mitchell, about her restlessness, and he has come to the nurses' station. He has not seen her yet.",
+    "situation": "Mrs. Fischer is restless and calls out when she is moved, but she drifts off in the middle of sentences when left alone. Dr. Mitchell has just said he will order IV hydromorphone and IV lorazepam 'to settle her down', and you would be the one to give them.",
+    "background": [
+      "Fell at home yesterday; surgery this afternoon; back from PACU at 17:00.",
+      "Obstructive sleep apnea — uses CPAP at home, but her machine has not been brought in. Hypertension. Mild memory problems at baseline, per her daughter.",
+      "Received IV opioid in PACU and oral oxycodone at 21:30, per her orders."
+    ],
+    "current_status": [
+      "Respiratory rate 10 and shallow, with snoring and short pauses when she dozes. SpO2 90-91% on 2 L nasal cannula (94% when she arrived from PACU).",
+      "HR 78, BP 128/70, temp 98.8 F.",
+      "Sedation: POSS 3 — frequently drowsy, drifts off to sleep during conversation.",
+      "Grimaces and guards her right hip when moved; settles at rest. Oriented to name only (her daughter says she is usually oriented)."
+    ],
+    "key_data": [
+      "The unit's opioid sedation protocol says to hold opioids and notify the provider at POSS 3 or above.",
+      "Combining an opioid with a benzodiazepine increases the risk of profound sedation and respiratory depression, and benzodiazepines raise delirium risk in older adults.",
+      "She is on spot-check vital signs only — no continuous pulse oximetry or capnography."
+    ],
+    "treatments": [
+      "Done: repositioned, pillow between the knees, ice pack to the hip per order, head of bed raised, 2 L nasal cannula.",
+      "Not given: the hydromorphone and lorazepam the resident is about to order."
+    ],
+    "your_request": "Stop the order before anything is given, state your concern clearly using CUS words, hold your position through the pushback, and agree a safer plan.",
+    "must_include": [
+      "Raise your concern now, before either medication is given.",
+      "Name the specific facts: respiratory rate 10, POSS 3, SpO2 90-91% on oxygen, sleep apnea without CPAP, and an opioid plus a benzodiazepine.",
+      "Use CUS words: 'I'm concerned', 'I'm uncomfortable', 'This is a safety issue.'",
+      "If you are dismissed, say it a second time (two-challenge rule), and say you will involve the charge nurse or the attending if it is not resolved.",
+      "Ask for a specific safer plan — for example, that he assess her at the bedside, and consider continuous monitoring, CPAP and non-opioid options.",
+      "Read back the agreed plan and any changed orders."
+    ]
+  },
+  "kickoff_text": "She's fresh post-op from a hip, she's hurting and she's agitated. I'm putting in some IV hydromorphone and IV lorazepam — that'll settle her down.",
+  "persona_override": "You are Dr. Ryan Mitchell, a second-year surgical resident covering several floors overnight. You were paged about Mrs. Fischer's restlessness and you are standing at the nurses' station with the EHR open. You are tired and a bit impatient, and you think of her mainly as a hip fracture in pain; you have not been to the bedside. You are not hostile and you do care about patients, but you do not like being slowed down. Ground truth: Mrs. Dolores Fischer, 82, post-op day 0 right hip hemiarthroplasty, back from PACU at 17:00; obstructive sleep apnea, home CPAP not here; received IV opioid in PACU and oral oxycodone at 21:30; RR 10 and shallow with snoring pauses; SpO2 90-91% on 2 L (94% on arrival); HR 78, BP 128/70; POSS 3; oriented to name only, usually oriented; guards the hip when moved, settles at rest; spot-check vitals only, no continuous monitoring. You do not know her respiratory rate, sedation score, or that her CPAP is not here until the nurse tells you. Behaviour: First challenge — if the nurse only questions softly ('Are you sure?', 'Maybe a smaller dose?') or voices worry without specific facts, brush it off: 'She's on oxygen, she's fine. Hip fractures hurt — we can't just leave her in pain.' Second challenge — if the nurse clearly says they are concerned or uncomfortable, or that this is a safety issue, AND gives specific facts (RR 10, POSS 3, sleep apnea without CPAP, opioid plus benzodiazepine), stop and engage, but push back once more: 'So what do you want me to do — leave her screaming?' If the nurse then proposes a concrete safer plan, or says they will involve the charge nurse or the attending, concede genuinely: 'Okay. You're right. Cancel the lorazepam, hold the hydromorphone for now, and I'll come look at her. Put her on continuous pulse ox, call respiratory for a hospital CPAP, and I'll order scheduled IV acetaminophen.' If the nurse reads the plan back, confirm it. If the nurse backs down at any point ('Okay, I'll give it'), accept it — 'Great, thanks, call me if anything changes' — and walk off, so the learner experiences the consequence. If the nurse is accusatory ('You're going to kill her'), get defensive and colder before engaging. Never volunteer that the combination is dangerous before the nurse names it. Never quote doses. Keep turns short.",
+  "learning_objectives": [
+    "speak up before giving the medication, not after",
+    "say I'm concerned, I'm uncomfortable, this is a safety issue",
+    "state the respiratory rate, the sedation score, and the sleep apnea without CPAP",
+    "name the risk of combining an opioid and a benzodiazepine",
+    "use the two-challenge rule and involve the charge nurse or attending if needed",
+    "read back the agreed plan and changed orders"
+  ],
+  "suggested_questions": [
+    "Dr. Mitchell, before you put those in — I'm concerned. Her respiratory rate is 10, she's a POSS 3, and she has sleep apnea without her CPAP.",
+    "I'm uncomfortable giving IV hydromorphone and lorazepam together to her right now. This is a safety issue — the combination could stop her breathing, and the lorazepam could make her confusion worse.",
+    "Could you come and see her at the bedside? I'd like to hold both for now, get her on continuous pulse ox, have respiratory bring a CPAP, and look at non-opioid options for her pain. If we can't agree, I'll need to bring in the charge nurse and the attending.",
+    "So just to confirm: lorazepam cancelled, hydromorphone on hold, continuous pulse ox, respiratory for a CPAP, scheduled IV acetaminophen, and you're coming to see her now."
+  ],
+  "clinical_knowledge": {
+    "topic": "Speaking up about opioid-induced sedation risk using CUS and the two-challenge rule",
+    "review_status": "grounded in AHRQ TeamSTEPPS CUS and two-challenge rule, the FDA boxed warning on combining opioids with benzodiazepines, the Pasero Opioid-induced Sedation Scale, and American Geriatrics Society Beers Criteria guidance on benzodiazepines in older adults; sedation protocols, monitoring requirements and escalation thresholds follow local policy",
+    "reviewed_at": "2026-09-25",
+    "core_concepts": [
+      "CUS is a graded set of phrases — 'I'm Concerned', 'I'm Uncomfortable', 'This is a Safety issue' — that the whole team agrees means 'stop and listen'.",
+      "Two-challenge rule: voice the concern at least twice; if it is still dismissed, take it up the chain of command (charge nurse, attending, house supervisor).",
+      "Sedation comes before respiratory depression: a patient who drifts off mid-sentence is at risk even while the SpO2 still looks acceptable, especially on supplemental oxygen, which can mask hypoventilation.",
+      "Opioids plus benzodiazepines, obstructive sleep apnea, older age and the first post-op night are additive risks for opioid-induced respiratory depression."
+    ],
+    "diagnostic_clues": [
+      "A respiratory rate of 10, shallow breathing with snoring pauses, a falling SpO2 and POSS 3 are signs of opioid-induced sedation.",
+      "New restlessness and disorientation in an older post-op patient may be delirium, hypoxia or CO2 retention, not only pain — and sedatives can make each of these worse."
+    ],
+    "common_misconceptions": [
+      "An SpO2 above 90% on oxygen means her breathing is adequate.",
+      "Agitation always means more pain medication is needed.",
+      "Once the provider has heard the concern once, the nurse's duty is done.",
+      "A nurse must give any medication a physician has ordered."
+    ],
+    "dangerous_errors": [
+      "Giving the opioid and the benzodiazepine and planning to 'watch her closely'.",
+      "Hinting ('Maybe a smaller dose?') without giving the respiratory rate and sedation score.",
+      "Backing down after the first pushback.",
+      "Accusing the provider personally instead of focusing on the patient."
+    ],
+    "management_principles": [
+      "Hold further opioid at the sedation level your protocol specifies, stimulate and reassess, and notify the provider with the numbers.",
+      "Use CUS with specific facts, propose a safer plan, and escalate through the chain of command if it is not resolved; call the rapid response team if she becomes hard to rouse or her breathing worsens.",
+      "Make sure naloxone is available per protocol, and ask for continuous monitoring (continuous pulse oximetry, and capnography where available — oximetry alone can miss hypoventilation in a patient on oxygen) and CPAP for the sleep apnea.",
+      "Close the loop: read back the changed orders and document the conversation."
+    ],
+    "boundaries_and_exceptions": [
+      "Sedation scales (POSS is common on med-surg units; some hospitals use RASS or another tool), the score at which opioids are held, the respiratory-rate and SpO2 thresholds for escalation or rapid response, and monitoring requirements (continuous pulse oximetry, capnography) vary by hospital; the numbers in this scenario are illustrative.",
+      "This scenario practises the communication of a safety challenge; it is not a source of analgesic or sedative dosing, and naloxone use follows the prescriber's order and local protocol."
+    ],
+    "source_refs": [
+      {
+        "title": "AHRQ TeamSTEPPS (Mutual Support: CUS and the Two-Challenge Rule)",
+        "url": "https://www.ahrq.gov/teamstepps-program/index.html"
+      },
+      {
+        "title": "FDA: Opioid Medications",
+        "url": "https://www.fda.gov/drugs/information-drug-class/opioid-medications"
+      },
+      {
+        "title": "American Geriatrics Society (Beers Criteria)",
+        "url": "https://www.americangeriatrics.org/"
+      }
+    ]
+  }
+}

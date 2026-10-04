@@ -346,12 +346,16 @@ fun PreferencesScreen(
     var tempOpenAiKey by remember { mutableStateOf(openAiKeyBaseline) }
     var tempAnalysisBackend by remember { mutableStateOf(analysisBackend) }
     // Demo/mock are internal preview/dev transports, not user-selectable voice providers.
+    // The chip therefore can't show them, so dirty-checking and Save compare against what the
+    // chip showed on open — otherwise a demo learner sees "unsaved changes" at once and any Save
+    // silently switches them out of the demo onto a provider with no key.
+    val voiceBackendBaseline = remember(voiceBackend, currentKey, openAiKeyBaseline) {
+        realBackendForSavedCredentials(voiceBackend, currentKey, openAiKeyBaseline)
+            .takeIf { it in setOf("gemini", "openai") }
+            ?: "gemini"
+    }
     var tempVoiceBackend by remember(voiceBackend, currentKey, openAiKeyBaseline) {
-        mutableStateOf(
-            realBackendForSavedCredentials(voiceBackend, currentKey, openAiKeyBaseline)
-                .takeIf { it in setOf("gemini", "openai") }
-                ?: "gemini"
-        )
+        mutableStateOf(voiceBackendBaseline)
     }
 
     // Persisted immediately rather than behind Save, but hoisted here so the collapsed section
@@ -493,7 +497,9 @@ fun PreferencesScreen(
                 }
             },
             dismissButton = {
+                // Also exports with the typed password, so it needs the confirm button's checks.
                 TextButton(
+                    enabled = valid,
                     onClick = {
                         pendingExportPassword = password
                         pendingExportIncludesAudio = includeAudio
@@ -694,7 +700,11 @@ fun PreferencesScreen(
     } else {
         t("prefs.summary_keys").replace("{providers}", connectedProviders.joinToString(" · "))
     }
-    val experienceSummary = if (tempPracticeExperience == PracticeExperience.ALL_FEATURES) "All features" else "Everyday English only"
+    val experienceSummary = when (tempPracticeExperience) {
+        PracticeExperience.ALL_FEATURES -> "All features"
+        PracticeExperience.EVERYDAY_ENGLISH -> "Everyday English only"
+        PracticeExperience.KOREAN_CPX -> "한국 의사국시 CPX (한국어)"
+    }
     val practiceSummary = t("prefs.summary_practice")
         .replace("{language}", t(languageOptions.firstOrNull { it.first == tempL1 }?.second ?: "prefs.lang_other"))
         .replace("{speed}", "${(defaultSpeed * 100).roundToInt() / 100f}×")
@@ -726,7 +736,7 @@ fun PreferencesScreen(
         tempGeminiVoiceModel != currentGeminiVoiceModel ||
         tempOpenAiVoiceModel != currentOpenAiVoiceModel ||
         tempAnalysisBackend != analysisBackend ||
-        tempVoiceBackend != voiceBackend ||
+        tempVoiceBackend != voiceBackendBaseline ||
         tempPracticeExperience != (currentPracticeExperience ?: PracticeExperience.ALL_FEATURES) ||
         tempL1 != currentL1 ||
         tempPronunciationEnabled != pronunciationAnalysisEnabled ||
@@ -777,7 +787,9 @@ fun PreferencesScreen(
                             viewModel.setApiKeyForBackend("openai", tempOpenAiKey)
                             viewModel.setApiKeyForBackend("claude", tempClaudeKey)
                             viewModel.updateAnalysisBackend(tempAnalysisBackend)
-                            viewModel.updateVoiceBackend(tempVoiceBackend)
+                            if (tempVoiceBackend != voiceBackendBaseline) {
+                                viewModel.updateVoiceBackend(tempVoiceBackend)
+                            }
                             viewModel.updatePracticeExperience(tempPracticeExperience)
                             viewModel.updateNativeLanguage(tempL1)
                             viewModel.updatePronunciationAnalysisEnabled(tempPronunciationEnabled)
@@ -862,7 +874,7 @@ fun PreferencesScreen(
                         .fillMaxWidth()
                         .bringIntoViewRequester(geminiKeyBringIntoView)
                         .focusRequester(geminiKeyFocus)
-                        .then(if (focusProvider == "gemini") Modifier.border(errorBorder, RoundedCornerShape(4.dp)) else Modifier),
+                        .then(if (focusProvider == "gemini" && tempGeminiKey == currentKey) Modifier.border(errorBorder, RoundedCornerShape(4.dp)) else Modifier),
                     singleLine = true,
                     visualTransformation = PasswordVisualTransformation(),
                     isError = tempGeminiKey.isNotEmpty() && !com.example.medvoicetrainer.analysis.UnlockSheet.looksLikeGeminiKey(tempGeminiKey),
@@ -912,7 +924,7 @@ fun PreferencesScreen(
                         .fillMaxWidth()
                         .bringIntoViewRequester(openAiKeyBringIntoView)
                         .focusRequester(openAiKeyFocus)
-                        .then(if (focusProvider == "openai") Modifier.border(errorBorder, RoundedCornerShape(4.dp)) else Modifier),
+                        .then(if (focusProvider == "openai" && tempOpenAiKey == savedOpenAiKey) Modifier.border(errorBorder, RoundedCornerShape(4.dp)) else Modifier),
                     singleLine = true,
                     visualTransformation = PasswordVisualTransformation(),
                     isError = tempOpenAiKey.isNotEmpty() && !com.example.medvoicetrainer.analysis.UnlockSheet.looksLikeOpenAiKey(tempOpenAiKey),
@@ -946,7 +958,7 @@ fun PreferencesScreen(
                         .fillMaxWidth()
                         .bringIntoViewRequester(claudeKeyBringIntoView)
                         .focusRequester(claudeKeyFocus)
-                        .then(if (focusProvider == "claude") Modifier.border(errorBorder, RoundedCornerShape(4.dp)) else Modifier),
+                        .then(if (focusProvider == "claude" && tempClaudeKey == savedClaudeKey) Modifier.border(errorBorder, RoundedCornerShape(4.dp)) else Modifier),
                     singleLine = true,
                     visualTransformation = PasswordVisualTransformation(),
                     isError = tempClaudeKey.isNotEmpty() && !com.example.medvoicetrainer.analysis.UnlockSheet.looksLikeClaudeKey(tempClaudeKey),
@@ -988,6 +1000,13 @@ fun PreferencesScreen(
                     detail = "Everyday speaking and listening",
                     supporting = "Patient-communication tools are hidden; history and reviews stay visible.",
                     onClick = { tempPracticeExperience = PracticeExperience.EVERYDAY_ENGLISH }
+                )
+                PracticeExperienceOption(
+                    selected = tempPracticeExperience == PracticeExperience.KOREAN_CPX,
+                    title = "한국 의사국시 CPX (한국어)",
+                    detail = "한국어 표준화 환자와 CPX 스테이션 연습",
+                    supporting = "병력청취·신체진찰·환자교육·PPI와 진단·계획을 한국어로 채점합니다. 영어 기록과 복습은 그대로 남습니다.",
+                    onClick = { tempPracticeExperience = PracticeExperience.KOREAN_CPX }
                 )
             }
 

@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "dental infection causing woody neck swelling under chin",
   "hpi_details": "A 77-year-old male presents to the clinic with dental infection causing woody neck swelling under chin. The patient states the symptoms started recently and have been gradually worsening, accompanied by generalized fatigue.",
-  "ideas": "thinks it might be related to ludwig_angina",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks an infection from a bad lower tooth simply traveled down into the muscle under his chin.",
+  "concerns": "He is worried that the hard swelling will continue expanding and block his windpipe, suffocating him.",
+  "expectations": "He hopes the doctor can drain the swelling today and provide strong antibiotics to bring the swelling down immediately.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -111,6 +111,174 @@
         "domains": [
           "associated_symptoms"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "135/85",
+      "hr": 104,
+      "rr": 22,
+      "spo2": 96,
+      "temp_c": 38.4
+    },
+    "history": [
+      {
+        "answer": "My lower tooth was aching for a few days, and now the area under my chin and neck has swollen up rock-hard and hurts terribly.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The toothache started about four days ago, and this neck swelling appeared two days ago and spread very rapidly.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "The swelling is right under my chin and jaw on both sides, spreading down the front of my neck.",
+        "topic": "Location and spread"
+      },
+      {
+        "answer": "It feels like a severe, tight throbbing ache that is an 8 out of 10, and my neck feels stiff and hard as wood.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "The swelling is constant and has been getting tighter and larger with every passing hour.",
+        "topic": "Course and duration"
+      },
+      {
+        "answer": "Swallowing, trying to talk, or tipping my head back makes the pain much worse, and nothing makes it feel better.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "Yes, I have been shaking with chills and running a fever since yesterday afternoon.",
+        "topic": "Fever and chills"
+      },
+      {
+        "answer": "It feels tight and uncomfortable to breathe, especially when I try to lie flat on my back.",
+        "topic": "Airway and breathing difficulty"
+      },
+      {
+        "answer": "My tongue feels swollen, pushed upward toward the roof of my mouth, and it is hard to move.",
+        "topic": "Tongue elevation and stiffness"
+      },
+      {
+        "answer": "Yes, my voice sounds muffled and thick, almost like I am talking with hot food stuck in my mouth.",
+        "topic": "Voice change"
+      },
+      {
+        "answer": "I cannot swallow any solid food or liquids, and I have to let my saliva drool into a tissue because swallowing hurts so much.",
+        "topic": "Difficulty swallowing and drooling"
+      },
+      {
+        "answer": "I had a bad cavity and severe toothache in my lower back tooth for a few weeks that I put off getting treated.",
+        "topic": "Dental history"
+      },
+      {
+        "answer": "I have been feeling completely drained, weak, and exhausted over the last two days.",
+        "topic": "General fatigue"
+      },
+      {
+        "answer": "No, I have not had any bleeding from my gums or mouth, and no numbness in my face or lips.",
+        "topic": "Bleeding or numbness"
+      },
+      {
+        "answer": "No, I have not had any unexplained weight loss or night sweats before this started.",
+        "topic": "Weight loss and night sweats"
+      },
+      {
+        "answer": "No, I have never had swelling or an infection like this before.",
+        "topic": "Prior episodes and tests"
+      },
+      {
+        "answer": "I tried taking some ibuprofen yesterday for the toothache, but it did not help the pain or swelling at all.",
+        "topic": "Treatments tried"
+      },
+      {
+        "answer": "It all started from my untreated infected molar tooth, with no recent insect bites, food reactions, or travel.",
+        "topic": "Triggers and exposures"
+      },
+      {
+        "answer": "I could not sleep at all last night because I felt like I was choking lying down, and I cannot eat or drink anything.",
+        "topic": "Impact on daily life"
+      },
+      {
+        "answer": "I thought the toothache I had last week just turned into an abscess that spread down into my jaw and chin.",
+        "topic": "Patient ideas and thoughts"
+      },
+      {
+        "answer": "I'm terrified that this hard swelling under my jaw is going to keep swelling up and choke off my breathing while I'm asleep.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping you can lance or drain this knot and give me heavy-duty antibiotics to bring the swelling down right away.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "I do not have any chronic medical illnesses like high blood pressure, diabetes, or heart disease.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I do not take any regular prescription medications or vitamins.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "I have no allergies to any medications, foods, or materials.",
+        "topic": "Allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used any tobacco products.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only have a glass of beer once or twice a month on special occasions.",
+        "topic": "Alcohol use"
+      },
+      {
+        "answer": "I am a retired postal worker and live at home with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "There is no family history of serious head and neck infections, airway problems, or cancer.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Elderly male appearing acutely ill and in moderate respiratory distress, leaning forward with drooling and a muffled voice.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Temperature is 38.4°C, pulse 104 beats per minute, respiratory rate 22 breaths per minute, blood pressure 135/85 mmHg, and oxygen saturation 96% on ambient air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Elevated and swollen tongue pushed against the roof of the mouth, brawny induration of the sublingual space, severe tenderness of the lower left molar, and no uvular deviation or peritonsillar swelling.",
+        "maneuver": "nose_throat_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Bilateral submandibular and submental swelling that is woody, exquisitely tender, non-fluctuant, and indurated without distinct lymph node boundaries.",
+        "maneuver": "neck_lymph_nodes",
+        "response": "pain"
+      },
+      {
+        "finding": "Tense, warm, and erythematous skin over the anterior neck and submandibular area without crepitus or fluctuant abscess pockets.",
+        "maneuver": "skin_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Tachypneic with mild audible inspiratory stridor over the larynx, but clear vesicular breath sounds throughout both lung fields.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Tachycardic rhythm with regular S1 and S2, and no murmurs or extra sounds heard.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
       }
     ]
   }

@@ -8,9 +8,9 @@
   "gender": "male",
   "chief_complaint": "electric pain down lateral lower leg, normal reflexes",
   "hpi_details": "61-year-old male complains of sharp, electric-like pain shooting down the back and outside of his left leg, extending to the top of his foot and big toe. Pain worsens with walking and standing. Reflexes are completely normal.",
-  "ideas": "thinks it might be related to sciatica",
-  "concerns": "worried about potential complications and long term recovery",
-  "expectations": "wants complete diagnostic evaluation and treatment plan",
+  "ideas": "He thinks he severely tore a muscle or pinched a nerve deep in his hip while working around the house.",
+  "concerns": "He is worried that he will need spinal surgery or become unable to stay on his feet long enough to keep his job.",
+  "expectations": "He hopes to get a prescription for strong pain medicine and a referral to physical therapy so he can walk normally again.",
   "pmh": "Unremarkable",
   "medications": "None",
   "social_hx": "Non-smoker, social drinker",
@@ -115,6 +115,184 @@
         "domains": [
           "severity"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "125/80",
+      "hr": 74,
+      "rr": 16,
+      "spo2": 98,
+      "temp_c": 36.7
+    },
+    "history": [
+      {
+        "answer": "Doctor, I have this sharp, electric pain shooting down the outside of my left leg.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "It starts around my lower back and hip and shoots down the back and outside of my left leg, all the way to the top of my foot and big toe.",
+        "topic": "Pain location and radiation"
+      },
+      {
+        "answer": "It started about two weeks ago, and I do not remember lifting anything heavy or falling down.",
+        "topic": "Onset and trigger"
+      },
+      {
+        "answer": "It feels like a sharp electric jolt or shooting lightning, and at its worst it gets up to a 6 or 7 out of 10.",
+        "topic": "Pain character and severity"
+      },
+      {
+        "answer": "The pain gets much worse when I walk or stand for a while, and it eases up when I lie down with my knees bent.",
+        "topic": "Aggravating and relieving factors"
+      },
+      {
+        "answer": "Whenever I cough hard, sneeze, or strain, I feel a sudden electric jolt shoot down my leg.",
+        "topic": "Coughing and straining"
+      },
+      {
+        "answer": "It does not keep me awake at night, and lying down in bed usually helps calm the pain down.",
+        "topic": "Rest and night pain"
+      },
+      {
+        "answer": "I do not have morning stiffness lasting half an hour; it just feels a bit stiff for a minute until I get moving.",
+        "topic": "Morning stiffness"
+      },
+      {
+        "answer": "The top of my left foot feels numb and tingly, and lifting my left big toe feels slightly weak compared to my right.",
+        "topic": "Numbness and weakness"
+      },
+      {
+        "answer": "No, I have no numbness around my groin or buttocks, and my bladder and bowel control are completely normal.",
+        "topic": "Bowel bladder and saddle sensation"
+      },
+      {
+        "answer": "Walking definitely brings on the pain, but bending forward does not relieve it; only sitting or lying down helps.",
+        "topic": "Walking posture and claudication"
+      },
+      {
+        "answer": "No, I have had no fever, chills, night sweats, or unexplained weight loss.",
+        "topic": "Fever and weight loss"
+      },
+      {
+        "answer": "No, I have never had any cancer or tumors.",
+        "topic": "Cancer history"
+      },
+      {
+        "answer": "No recent infections, no spinal injections or procedures, and I do not have diabetes or use needle drugs.",
+        "topic": "Infection and procedure history"
+      },
+      {
+        "answer": "I do not have osteoporosis, and I have never taken steroid pills or had any falls.",
+        "topic": "Bone health and steroid use"
+      },
+      {
+        "answer": "No abdominal pain, no pulsing feelings in my belly, and no burning or blood when I urinate.",
+        "topic": "Abdominal and urinary symptoms"
+      },
+      {
+        "answer": "No eye redness, heel pain, ongoing diarrhea, or skin conditions like psoriasis.",
+        "topic": "Joint and autoimmune symptoms"
+      },
+      {
+        "answer": "I tried taking over-the-counter pain relievers like ibuprofen a few times, but they only helped slightly.",
+        "topic": "Pain medications tried"
+      },
+      {
+        "answer": "It makes walking for long periods and doing household chores difficult because I have to sit down frequently.",
+        "topic": "Impact on daily life"
+      },
+      {
+        "answer": "I thought I must have torn a tendon or pinched something deep in my hip from heavy yard work.",
+        "topic": "Patient thoughts on cause"
+      },
+      {
+        "answer": "I'm worried I might need invasive surgery or that I won't be able to stay on my feet to do my job.",
+        "topic": "Patient concerns"
+      },
+      {
+        "answer": "I'm hoping to walk out with some stronger pain medicine and maybe a referral for physical therapy so I can move without pain.",
+        "topic": "Patient expectations"
+      },
+      {
+        "answer": "My health has always been good, with no high blood pressure, diabetes, or other chronic conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and have never been admitted to a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I do not take any prescription medications, regular over-the-counter pills, or herbal supplements.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "No, I have no known allergies to any medications or foods.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "I have never smoked cigarettes.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "I only drink socially, maybe a beer or two on occasion.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "I work an office job at a desk, and I live with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "No one in my family has serious spine disorders or nerve conditions.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 125/80 mmHg, pulse 74 beats per minute, respiratory rate 16 breaths per minute, body temperature 36.7 C, and oxygen saturation 98% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Normal lumbar spinal curvature without midline bony tenderness; straight leg raise is positive on the left at 45 degrees reproducing radiating leg pain.",
+        "maneuver": "spine_exam",
+        "response": "pain"
+      },
+      {
+        "finding": "Weakness in left extensor hallucis longus with great toe extension graded 4/5, while strength in all other bilateral lower extremity muscle groups is 5/5.",
+        "maneuver": "motor_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Diminished pinprick and light touch sensation over the left dorsal first web space and lateral lower leg, with sensation otherwise intact bilaterally.",
+        "maneuver": "sensory_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Patellar and Achilles deep tendon reflexes are 2+ and symmetric bilaterally, with down-going plantar responses.",
+        "maneuver": "reflexes",
+        "response": "none"
+      },
+      {
+        "finding": "Antalgic gait favouring the left lower extremity, but able to perform heel and toe walking without foot drop.",
+        "maneuver": "coordination_gait",
+        "response": "none"
+      },
+      {
+        "finding": "Normal resting anal sphincter tone and intact voluntary contraction, with preserved perianal sensation.",
+        "maneuver": "digital_rectal_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft and non-tender without palpable mass or abnormal aortic pulsation.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "No costovertebral angle tenderness bilaterally.",
+        "maneuver": "cva_tenderness",
+        "response": "none"
       }
     ]
   }

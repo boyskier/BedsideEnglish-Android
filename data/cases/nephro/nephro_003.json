@@ -43,7 +43,7 @@
     ],
     "management_principles": [
       "Initiate dietary sodium restriction (<2 g/day) and loop diuretics (Furosemide + Metolazone) for volume management",
-      "Start ACE inhibitor (Valsartan increase) to reduce intraglomerular pressure and proteinuria",
+      "Up-titrate renin-angiotensin blockade with the ARB Valsartan to reduce intraglomerular pressure and proteinuria",
       "Initiate anticoagulation prophylaxis if albumin < 2.0 g/dL due to high venous thromboembolism risk"
     ],
     "boundaries_and_exceptions": [
@@ -61,7 +61,7 @@
     "subjective": "52M presenting with classic nephrotic syndrome: generalized anasarca, foamy urine, and fatigue over 4 weeks.",
     "objective": "Vitals: BP 142/88, Weight up 12 kg. 3+ pitting edema to mid-thigh, scrotal edema, dullness at lung bases (pleural effusions). Urinalysis: 4+ protein, oval fat bodies/maltese crosses under polarized light. 24-hour urine protein reveals 8.4 g/day (>3.5 g/day nephrotic range). Bloods: Serum Albumin 1.8 g/dL (severe hypoalbuminemia), Total Cholesterol 385 mg/dL (hypercholesterolemia). Renal biopsy confirms Membranous Nephropathy with PLA2R antibodies positive.",
     "assessment": "Nephrotic Syndrome secondary to Primary Membranous Nephropathy (anti-PLA2R positive).",
-    "plan": "Initiate dietary sodium restriction (<2 g/day) and loop diuretics (Furosemide + Metolazone) for volume management. Start ACE inhibitor (Valsartan increase) to reduce intraglomerular pressure and proteinuria. Initiate anticoagulation prophylaxis if albumin < 2.0 g/dL due to high venous thromboembolism risk. Consider immunosuppressive therapy (Rituximab or Ponticelli regimen) after staging."
+    "plan": "Initiate dietary sodium restriction (<2 g/day) and loop diuretics (Furosemide + Metolazone) for volume management. Up-titrate renin-angiotensin blockade with the ARB Valsartan to reduce intraglomerular pressure and proteinuria. Initiate anticoagulation prophylaxis if albumin < 2.0 g/dL due to high venous thromboembolism risk. Consider immunosuppressive therapy (Rituximab or Ponticelli regimen) after staging."
   },
   "learning_objectives": [
     "Identify diagnostic tetrad of Nephrotic Syndrome (proteinuria >3.5g/day, hypoalbuminemia, edema, hyperlipidemia)",
@@ -134,6 +134,191 @@
           "one leg",
           "clot"
         ]
+      }
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "142/88",
+      "hr": 76,
+      "rr": 18,
+      "spo2": 97,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "My legs have become severely swollen over the past month, and my urine has been very foamy.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "The swelling started in both feet and ankles, but now it reaches all the way up to my thighs, my belly is bloated, and my eyelids are puffy.",
+        "topic": "Swelling location and distribution"
+      },
+      {
+        "answer": "It started gradually about four weeks ago and has been getting steadily worse every week.",
+        "topic": "Onset and progression"
+      },
+      {
+        "answer": "My face and eyelids are noticeably puffy when I wake up, whereas my legs feel heaviest and most swollen by the evening.",
+        "topic": "Diurnal variation of swelling"
+      },
+      {
+        "answer": "Yes, pressing on my shins leaves deep indentations that take time to disappear, and my socks leave very deep grooves.",
+        "topic": "Pitting and skin indentation"
+      },
+      {
+        "answer": "I weighed myself and I have gained about twelve kilograms over the last month, even though I have not been eating more.",
+        "topic": "Recent weight changes"
+      },
+      {
+        "answer": "No, both legs are swollen equally, and neither leg feels hot, red, or painful to touch.",
+        "topic": "Unilateral leg pain or warmth"
+      },
+      {
+        "answer": "I get noticeably short of breath whenever I lie flat on my back, so I need to sleep propped up on two pillows.",
+        "topic": "Shortness of breath lying flat"
+      },
+      {
+        "answer": "It is remarkably foamy and frothy like soapy water or beer, but it looks regular clear yellow without blood or dark color.",
+        "topic": "Foamy urine and discoloration"
+      },
+      {
+        "answer": "My waistbands have become very tight because of abdominal bloating, but my eyes and skin are not yellow, and I do not bruise easily.",
+        "topic": "Abdominal swelling and jaundice"
+      },
+      {
+        "answer": "No, I have not had a sore throat, runny nose, or any skin sores before this swelling began.",
+        "topic": "Recent sore throat or infections"
+      },
+      {
+        "answer": "I have been feeling completely exhausted and worn out, but I am not unusually sensitive to the cold and my bowels are normal.",
+        "topic": "Fatigue and thyroid symptoms"
+      },
+      {
+        "answer": "My appetite has been fairly normal, and I have not had chronic diarrhea, vomiting, or stomach pain.",
+        "topic": "Appetite and gastrointestinal symptoms"
+      },
+      {
+        "answer": "No, I have not had any surgeries, long-distance flights, prolonged bed rest, or cancer.",
+        "topic": "Immobility and clot risks"
+      },
+      {
+        "answer": "I do not take ibuprofen, painkillers, steroids, or any hormone medications.",
+        "topic": "Painkillers and other medications"
+      },
+      {
+        "answer": "I do not drink alcohol except for maybe one small glass of beer once a month, and I have never had hepatitis.",
+        "topic": "Alcohol consumption and liver health"
+      },
+      {
+        "answer": "I have had high blood pressure for five years, but I have never had diabetes, heart disease, or kidney problems before.",
+        "topic": "History of diabetes and hypertension"
+      },
+      {
+        "answer": "I eat ordinary meals without adding extra salt, and during the day I do a mix of desk work and walking to show properties.",
+        "topic": "Dietary salt and daily habits"
+      },
+      {
+        "answer": "I am really worried that my heart is failing because so much fluid is accumulating in my legs.",
+        "topic": "Suspected cause and ideas"
+      },
+      {
+        "answer": "I read online that severe leg swelling can trigger dangerous blood clots, and I am very concerned that might happen.",
+        "topic": "Concerns regarding blood clots"
+      },
+      {
+        "answer": "I am hoping you can prescribe me some water pills to drain this swelling away right away.",
+        "topic": "Expectations for treatment"
+      },
+      {
+        "answer": "Other than hypertension that was diagnosed about five years ago, I have had no other medical conditions.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries and I have never stayed overnight in a hospital.",
+        "topic": "Past surgeries and hospitalizations"
+      },
+      {
+        "answer": "I take Valsartan 80 milligrams once every morning for my blood pressure, and no over-the-counter supplements.",
+        "topic": "Current medications and supplements"
+      },
+      {
+        "answer": "I do not have any known allergies to medications or foods.",
+        "topic": "Allergies to medications"
+      },
+      {
+        "answer": "I have never smoked cigarettes or used tobacco products in my life.",
+        "topic": "Tobacco and smoking history"
+      },
+      {
+        "answer": "I work as a real estate agent and live in an apartment with my wife.",
+        "topic": "Occupation and living situation"
+      },
+      {
+        "answer": "My father had high blood pressure, but nobody in my family has had kidney disease, dialysis, or early heart failure.",
+        "topic": "Family medical history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure 142/88 mmHg, heart rate 76 beats per minute, respiratory rate 18 breaths per minute, oxygen saturation 97% on room air, and weight up 12 kg from baseline.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "Prominent bilateral periorbital edema with marked swelling of both upper and lower eyelids; sclerae are non-icteric.",
+        "maneuver": "eye_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Thyroid gland is normal in size and contour, without palpable nodules, diffuse goiter, or tenderness.",
+        "maneuver": "thyroid_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Jugular venous pulsation is not elevated, measuring approximately 2 cm above the sternal angle at 45 degrees.",
+        "maneuver": "jugular_venous_pressure",
+        "response": "none"
+      },
+      {
+        "finding": "Dullness to percussion noted symmetrically at bilateral lung bases.",
+        "maneuver": "lung_percussion",
+        "response": "none"
+      },
+      {
+        "finding": "Decreased breath sounds at both lung bases with no crackles or wheezes in the middle and upper zones.",
+        "maneuver": "lung_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Regular rhythm with normal first and second heart sounds, and no third heart sound, gallop, friction rub, or murmur.",
+        "maneuver": "heart_auscultation",
+        "response": "none"
+      },
+      {
+        "finding": "Symmetrically distended abdomen with shifting dullness and a detectable fluid wave, but no tenderness.",
+        "maneuver": "ascites_exam",
+        "response": "none"
+      },
+      {
+        "finding": "No hepatomegaly or splenomegaly palpable beneath the costal margins.",
+        "maneuver": "liver_spleen_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "Significant 3+ bilateral symmetric pitting edema extending from both feet up to the mid-thighs.",
+        "maneuver": "extremity_edema",
+        "response": "none"
+      },
+      {
+        "finding": "Bilateral calf swelling without focal tenderness, warmth, redness, or palpable cords.",
+        "maneuver": "calf_exam",
+        "response": "none"
+      },
+      {
+        "finding": "Marked dependent scrotal edema present without localized testicular tenderness or overlying redness.",
+        "maneuver": "genital_exam",
+        "response": "none"
       }
     ]
   }

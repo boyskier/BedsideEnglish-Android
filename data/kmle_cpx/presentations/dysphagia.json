@@ -1,0 +1,55 @@
+{
+  "id": "dysphagia",
+  "title": "음식을 삼키기 힘들어요",
+  "english_title": "Difficulty swallowing (dysphagia)",
+  "category": "소화기",
+  "door_complaint": "음식을 삼키기 힘들다고",
+  "differential_groups": [
+    {"key": "oropharyngeal", "label": "구인두(삼킴 시작 장애)", "examples": ["뇌졸중", "파킨슨병", "근위축측삭경화증", "중증근무력증", "젠커 게실", "두경부암"]},
+    {"key": "mechanical", "label": "식도 기계적 폐쇄", "examples": ["식도암", "소화성 식도 협착", "식도 고리", "호산구 식도염", "외부 압박(갑상샘종, 종격동 종양)"]},
+    {"key": "motility", "label": "식도 운동 장애", "examples": ["식도이완불능증", "미만성 식도경련", "전신경화증"]},
+    {"key": "inflammatory", "label": "염증/감염(삼킴통)", "examples": ["역류성 식도염", "감염성 식도염(칸디다, 헤르페스, 거대세포바이러스)", "알약 식도염"]}
+  ],
+  "history": [
+    {"id": "onset_course", "text": "시작 시기와 경과(점점 진행하는지, 가끔 생기는지)", "say": "언제부터 삼키기 힘드셨어요? 점점 심해지고 있어요, 가끔씩 그래요?", "tags": ["mechanical", "motility"]},
+    {"id": "level", "text": "삼킴이 시작되지 않는지, 넘어간 뒤 가슴에 걸리는지와 걸리는 위치", "say": "목에서 넘기는 것 자체가 안 돼요, 아니면 넘긴 다음에 가슴 쪽에 걸려요? 어디쯤 걸리세요?", "tags": ["oropharyngeal", "mechanical"]},
+    {"id": "solids_liquids", "text": "고형식만 힘든지, 처음부터 물도 힘든지", "say": "밥이나 고기 같은 음식만 힘드세요, 물 마실 때도 힘드세요?", "tags": ["mechanical", "motility"]},
+    {"id": "food_impaction", "text": "음식이 걸려 내려가지 않았던 적, 물을 마셔야 넘어가는지", "say": "음식이 걸려서 안 내려간 적이 있어요? 물을 마셔야 겨우 넘어가나요?", "tags": ["mechanical"]},
+    {"id": "choking_aspiration", "text": "삼킬 때 사레·기침, 코로 음식이 넘어옴, 반복되는 폐렴", "say": "삼킬 때 사레가 들거나 기침이 나고, 음식이 코로 넘어오세요? 폐렴에 걸린 적은요?", "tags": ["oropharyngeal"], "key": true},
+    {"id": "regurgitation", "text": "먹은 음식이 소화되지 않은 채 넘어옴, 입냄새, 목에서 꾸르륵 소리", "say": "먹은 음식이 그대로 다시 올라오거나 입냄새가 심해졌어요? 목에서 꾸르륵 소리가 나지는 않고요?", "tags": ["motility", "oropharyngeal"]},
+    {"id": "odynophagia", "text": "삼킬 때 통증", "say": "삼킬 때 아프세요?", "tags": ["inflammatory"]},
+    {"id": "heartburn", "text": "오래된 속쓰림, 신물", "say": "평소에 속이 쓰리거나 신물이 올라오는 일이 오래됐나요?", "tags": ["mechanical", "inflammatory"]},
+    {"id": "chest_pain", "text": "쥐어짜는 가슴 통증", "say": "삼킬 때나 평소에 가슴을 쥐어짜듯 아픈 적이 있으세요?", "tags": ["motility"]},
+    {"id": "weight_loss", "text": "체중 감소, 식욕 저하", "say": "요즘 살이 빠지셨어요? 몇 달 동안 몇 kg 정도 빠졌어요?", "tags": ["mechanical"], "key": true},
+    {"id": "gi_bleeding", "text": "피를 토함, 검은 변, 빈혈", "say": "피를 토하거나 대변이 까맣게 나온 적이 있으세요?", "tags": ["mechanical", "inflammatory"], "key": true},
+    {"id": "hoarseness", "text": "쉰 목소리", "say": "목소리가 쉬거나 변하지는 않으셨어요?", "tags": ["oropharyngeal", "mechanical"]},
+    {"id": "neuro", "text": "말 어눌함, 한쪽 힘빠짐, 눈꺼풀 처짐·겹보임, 저녁에 심한 근력 저하, 손떨림", "say": "말이 어눌해지거나 팔다리에 힘이 빠지세요? 눈꺼풀이 처지거나 저녁이면 더 기운이 빠지지는 않으세요?", "tags": ["oropharyngeal"], "key": true},
+    {"id": "atopy", "text": "천식, 알레르기 비염, 아토피, 음식 알레르기", "say": "천식이나 비염, 아토피, 음식 알레르기가 있으세요?", "tags": ["mechanical"]},
+    {"id": "pill_immune", "text": "물 없이 또는 누워서 알약 복용(항생제, 골다공증약, 철분제), 면역저하", "say": "약을 물 없이 드시거나 드시고 바로 누우세요? 면역력이 떨어지는 병이나 약이 있나요?", "tags": ["inflammatory"]},
+    {"id": "raynaud_skin", "text": "추울 때 손가락 색 변화, 피부가 굳음", "say": "추우면 손가락이 하얗거나 파랗게 변하고 피부가 딱딱해지지는 않으세요?", "tags": ["motility"], "conditional": true},
+    {"id": "neck_mass", "text": "목 혹, 갑상샘 비대", "say": "목에 혹이 만져지거나 목 앞이 부었다는 말을 들은 적이 있어요?", "tags": ["mechanical"]},
+    {"id": "smoking_alcohol", "text": "흡연량과 음주량(식도암 위험)", "say": "담배는 얼마나 피우시고 술은 얼마나 자주, 얼마나 드세요?", "tags": ["mechanical"]}
+  ],
+  "physical_exam": [
+    {"id": "vitals_weight", "text": "활력징후, 체중과 영양·탈수 상태", "say": "혈압과 체온을 재고 체중도 확인하겠습니다."},
+    {"id": "oral_cavity", "text": "구강(치아, 백태, 혀 움직임) 관찰", "say": "입을 벌리고 혀를 내밀어 보세요. 입 안을 보겠습니다.", "tags": ["oropharyngeal", "inflammatory"]},
+    {"id": "neck", "text": "목 림프절, 갑상샘, 쇄골 위 림프절 촉진", "say": "목과 쇄골 위에 멍울이 있는지 만져 보겠습니다. 침을 한번 삼켜 보세요.", "tags": ["mechanical"], "key": true},
+    {"id": "cranial_nerves", "text": "연구개 올림, 혀 움직임, 발음, 눈꺼풀 처짐 등 뇌신경 확인", "say": "'아' 해 보시고 혀를 좌우로 움직여 보세요. 위를 한참 쳐다보세요.", "tags": ["oropharyngeal"], "conditional": true},
+    {"id": "water_swallow", "text": "소량의 물을 삼키게 해 사레·목소리 변화 확인", "say": "물을 한 모금 천천히 삼켜 보세요. 사레가 들면 바로 멈추세요.", "tags": ["oropharyngeal"], "conditional": true},
+    {"id": "abdomen", "text": "상복부 종괴, 간 비대 촉진", "say": "누우세요. 배를 만져 보겠습니다.", "tags": ["mechanical"]}
+  ],
+  "education": [
+    {"id": "eating_habits", "text": "천천히, 작게 잘라 잘 씹고, 앉아서 먹고 식후 바로 눕지 않기", "say": "음식은 작게 잘라 천천히 꼭꼭 씹어 드시고, 드신 뒤 바로 눕지 마세요."},
+    {"id": "pill_taking", "text": "알약은 물 한 컵과 함께 서서 먹고 복용 후 30분 눕지 않기", "say": "약은 물 한 컵과 함께 드시고, 드신 뒤 30분은 눕지 마세요.", "conditional": true},
+    {"id": "warning_signs", "text": "음식이 걸려 침도 못 삼키거나, 피를 토하거나 검은 변을 보면 즉시 응급실로 오도록 안내", "say": "음식이 걸려서 침도 못 삼키거나 피를 토하고 변이 까맣게 나오면 바로 응급실로 오세요.", "key": true}
+  ],
+  "grader_notes": [
+    "먼저 구인두 삼킴곤란(사레, 코 역류)과 식도 삼킴곤란(가슴에 걸림)을 구분하며, 구인두형은 비디오투시 삼킴검사나 내시경 삼킴검사와 신경학적 평가를, 식도형은 상부위장관 내시경을 1차 검사로 한다.",
+    "진행하는 고형식 삼킴곤란에 체중 감소, 고령, 흡연·음주가 있으면 식도암을 의심해 조직검사를 포함한 내시경을 빨리 시행한다.",
+    "고형식과 물 모두 처음부터 어렵고 음식 역류가 있으면 식도이완불능증을 의심해 내시경으로 종양을 배제한 뒤 고해상도 식도 내압검사와 식도조영술을 한다.",
+    "음식 걸림이 반복되고 알레르기 질환이 있는 젊은 성인은 호산구 식도염을 의심해 내시경으로 여러 부위 조직검사를 하고, 양성자펌프억제제, 삼키는 국소 스테로이드, 식이 제한으로 치료한다.",
+    "음식이 걸려 침도 삼키지 못하면 흡인과 천공 위험이 있어 응급 내시경으로 제거한다.",
+    "뇌졸중 환자는 첫 식사 전에 삼킴 선별검사를 해 흡인성 폐렴을 예방한다."
+  ],
+  "case_ids": []
+}

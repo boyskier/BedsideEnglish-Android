@@ -1,0 +1,339 @@
+{
+  "id": "obgyn_047",
+  "system": "obstetrics & gynecology",
+  "difficulty": "intermediate",
+  "eval_template": "history_taking",
+  "patient_name": "Ms. Kim",
+  "age": 33,
+  "gender": "female",
+  "care_setting": "outpatient_clinic",
+  "chief_complaint": "routine first-trimester ultrasound",
+  "hpi_details": "33F G1P0 at 9 weeks gestation by LMP presenting to the outpatient clinic for her first prenatal ultrasound. She conceived after 2 years of trying and came to the appointment alone with excitement, as her husband is at work. She feels well and explicitly denies any vaginal bleeding, pelvic pain, or cramping. Transvaginal ultrasound today revealed a crown-rump length of 7 mm with absent fetal cardiac activity, confirmed by a second sonographer, consistent with a missed miscarriage.",
+  "ideas": "excited to see her baby's heartbeat for the first time",
+  "concerns": "worried if she did something wrong to cause the pregnancy loss",
+  "expectations": "wants to know the next steps for managing the miscarriage and when she can try again",
+  "pmh": "No prior pregnancies (G1P0). Primary infertility for 2 years prior to current conception. No chronic medical conditions.",
+  "medications": "Prenatal vitamins",
+  "social_hx": "Lives with her husband in South Korea. Non-smoker, abstains from alcohol.",
+  "available_results": [
+    {
+      "collected_at": "Today",
+      "flag": "abnormal",
+      "id": "us_pelvic_01",
+      "reference_range": "Fetal cardiac activity expected for CRL >= 7 mm",
+      "specimen": "Pelvic Ultrasound",
+      "test": "Transvaginal Ultrasound",
+      "unit": "",
+      "value": "Intrauterine gestational sac present. Fetal pole CRL 7 mm. No fetal cardiac activity detected. Confirmed by repeat scan."
+    }
+  ],
+  "clinical_knowledge": {
+    "boundaries_and_exceptions": [
+      "If the ultrasound findings are equivocal (e.g., CRL < 7 mm without a heartbeat), a repeat scan in 7-14 days is required to definitively diagnose pregnancy loss.",
+      "Medical management is generally preferred over expectant management if the patient desires a predictable timeline, but surgical management is indicated for heavy bleeding or infection."
+    ],
+    "common_misconceptions": [
+      "Failing to give a warning shot before disclosing the ultrasound findings, causing severe shock.",
+      "Rushing to discuss management options (medication vs. surgery) before allowing the patient time to process the news and grieve.",
+      "Forgetting to explicitly address and dispel patient guilt or self-blame regarding the miscarriage."
+    ],
+    "core_concepts": [
+      "Missed miscarriage is diagnosed when ultrasound confirms early pregnancy loss (e.g., CRL >= 7 mm with no cardiac activity) without symptoms of bleeding or cramping.",
+      "Delivering bad news requires a structured approach (like SPIKES), including a warning shot, clear empathetic disclosure, and allowing the patient time to process the grief.",
+      "Patients frequently experience guilt; it is essential to explicitly reassure them that early pregnancy loss is usually due to chromosomal abnormalities and not caused by their actions.",
+      "Management options include expectant management, medical management (misoprostol), or surgical evacuation, which should be discussed via shared decision-making once the patient is ready."
+    ],
+    "dangerous_errors": [
+      "Failing to confirm the absence of fetal heartbeat according to strict diagnostic criteria (CRL >= 7 mm) before diagnosing pregnancy loss.",
+      "Omitting the assessment of maternal Rh status, which risks isoimmunization if Rh-negative.",
+      "Neglecting to warn the patient about red flag symptoms (heavy bleeding, severe pain, fever) that require immediate emergency evaluation."
+    ],
+    "diagnostic_clues": [
+      "Chief Complaint: routine first-trimester ultrasound",
+      "Key HPI features: 9 weeks gestation by LMP, no vaginal bleeding or pelvic pain, conceived after 2 years of trying.",
+      "Objective/Exam findings: Transvaginal ultrasound showing CRL 7 mm with no fetal cardiac activity (confirmed on repeat scan)."
+    ],
+    "management_principles": [
+      "Deliver the diagnosis clearly and empathetically, pausing to allow emotional expression.",
+      "Reassure the patient that the loss is not her fault and typically results from random chromosomal errors.",
+      "Discuss management options: expectant (wait for spontaneous passage), medical (Misoprostol 800 mcg vaginally), or surgical (suction curettage), outlining pros and cons.",
+      "Check maternal blood type and administer Rho(D) immune globulin if the patient is Rh-negative.",
+      "Provide counseling on future fertility and offer psychosocial support resources."
+    ],
+    "source_refs": [
+      {
+        "title": "ACOG Practice Bulletin No. 200: Early Pregnancy Loss",
+        "url": "https://www.acog.org/clinical/clinical-guidance"
+      }
+    ],
+    "topic": "Missed miscarriage (early pregnancy loss) diagnosis and communication"
+  },
+  "reference_soap": {
+    "assessment": "Missed miscarriage (early pregnancy loss) at 9 weeks gestation.",
+    "objective": "Vitals: BP 110/70, HR 80, Temp 36.8C. General: Appears comfortable, in no acute distress. Transvaginal Ultrasound: Intrauterine gestational sac present. Crown-rump length (CRL) measures 7 mm. No fetal cardiac activity observed. Second sonographer confirmed findings.",
+    "plan": "1. Broke bad news regarding pregnancy loss; provided emotional support and explicitly reassured patient it is not her fault. 2. Discussed management options (expectant, misoprostol, surgical evacuation) and will allow patient time to discuss with husband before deciding. 3. Check blood type and Rh status; will administer RhoGAM if Rh-negative. 4. Counseled on return precautions (heavy bleeding soaking >2 pads/hour, severe abdominal pain, fever). 5. Planned follow-up visit/call to finalize management choice.",
+    "subjective": "33F G1P0 at 9 weeks gestation by LMP here for a routine first-trimester ultrasound. Conceived after 2 years of primary infertility. She has not experienced any vaginal bleeding, spotting, or pelvic cramping. Currently feels well with mild pregnancy symptoms. Attended appointment alone with excitement."
+  },
+  "learning_objectives": [
+    "Demonstrate empathetic delivery of bad news (missed miscarriage) using a structured approach such as the SPIKES protocol.",
+    "Recognize and actively address patient guilt and misconceptions surrounding early pregnancy loss.",
+    "Explain the three main management options for early pregnancy loss (expectant, medical, surgical) with their respective pros and cons.",
+    "Identify the diagnostic criteria for early pregnancy loss on transvaginal ultrasound (CRL >= 7 mm without cardiac activity)."
+  ],
+  "teaching": {
+    "diagnosis": "Missed miscarriage (early pregnancy loss)",
+    "differentials": [
+      "Viable early intrauterine pregnancy",
+      "Ectopic pregnancy",
+      "Threatened miscarriage",
+      "Gestational trophoblastic disease"
+    ],
+    "must_ask": [
+      {
+        "domains": [
+          "opening"
+        ],
+        "keywords": [
+          "difficult",
+          "news",
+          "ultrasound"
+        ],
+        "objective": "Deliver a warning shot before breaking bad news",
+        "say": "I'm afraid I have some difficult news regarding your ultrasound today. Is it okay if we discuss it now?"
+      },
+      {
+        "domains": [
+          "associated_symptoms"
+        ],
+        "keywords": [
+          "bleeding",
+          "cramping",
+          "pain"
+        ],
+        "objective": "Check for miscarriage symptoms",
+        "say": "Have you been experiencing any vaginal bleeding or lower stomach cramping?"
+      },
+      {
+        "domains": [
+          "living_work"
+        ],
+        "keywords": [
+          "husband",
+          "support",
+          "call"
+        ],
+        "objective": "Assess patient's support system",
+        "say": "Since your husband is at work, is there anyone you would like to call to be with you?"
+      },
+      {
+        "domains": [
+          "concerns"
+        ],
+        "keywords": [
+          "fault",
+          "wrong",
+          "blame"
+        ],
+        "objective": "Elicit and address patient concerns/guilt",
+        "say": "Many women wonder if they did something wrong, but please know this was absolutely not your fault."
+      },
+      {
+        "domains": [
+          "summary_closing"
+        ],
+        "keywords": [
+          "naturally",
+          "medication",
+          "surgery"
+        ],
+        "objective": "Explain management options when appropriate",
+        "say": "When you feel ready, we can talk about the options for managing this, which include letting it happen naturally, taking medication, or a small surgery."
+      },
+      {
+        "domains": [
+          "summary_closing"
+        ],
+        "keywords": [
+          "heavy",
+          "fever",
+          "emergency"
+        ],
+        "objective": "Counsel on red flag symptoms",
+        "say": "If you start to have very heavy bleeding or a high fever, you need to go to the emergency room immediately."
+      }
+    ],
+    "one_liner": "33-year-old primigravida at 9 weeks gestation with an asymptomatic early pregnancy loss diagnosed on routine transvaginal ultrasound.",
+    "red_flags": [
+      "Heavy vaginal bleeding (soaking >2 pads per hour)",
+      "Severe or worsening abdominal/pelvic pain",
+      "Fever or chills",
+      "Dizziness or syncope"
+    ]
+  },
+  "sp_script": {
+    "vitals": {
+      "bp": "110/70",
+      "hr": 80,
+      "rr": 16,
+      "spo2": 99,
+      "temp_c": 36.8
+    },
+    "history": [
+      {
+        "answer": "I'm here to find out the results of my first ultrasound scan today. I'm so excited to finally see my baby's heartbeat.",
+        "topic": "Opening statement"
+      },
+      {
+        "answer": "I came alone today because my husband had to be at work, but I'm fine to hear the results now.",
+        "topic": "Preference on companion"
+      },
+      {
+        "answer": "I've been feeling well overall, just counting down the minutes with excitement while waiting.",
+        "topic": "Feelings while waiting"
+      },
+      {
+        "answer": "We have been trying for two years to get pregnant, so I came in for my routine nine-week scan to check on the baby.",
+        "topic": "Understanding of today visit"
+      },
+      {
+        "answer": "The ultrasound technician just finished taking the images and told me the doctor would explain everything to me.",
+        "topic": "Prior discussions with staff"
+      },
+      {
+        "answer": "I'm hoping to hear that our baby is thriving, though after two years of trying I still worry deep down.",
+        "topic": "Expectations and main worries"
+      },
+      {
+        "answer": "I haven't noticed any bad changes like pain or bleeding; I just have mild morning sickness.",
+        "topic": "Recent symptom changes"
+      },
+      {
+        "answer": "Please explain everything thoroughly to me, including what the scan measurements mean.",
+        "topic": "Desired level of detail"
+      },
+      {
+        "answer": "I plan to call my husband right after this, but it would help greatly if you could speak with him later too.",
+        "topic": "Involving family in results"
+      },
+      {
+        "answer": "Yes, doctor, I am ready to hear what the ultrasound showed.",
+        "topic": "Readiness for results"
+      },
+      {
+        "answer": "No, neither I nor anyone in my family has had a serious medical illness or hospitalization.",
+        "topic": "Prior serious illness experience"
+      },
+      {
+        "answer": "I work as an office manager and my husband has steady employment, so our household is stable.",
+        "topic": "Work and social situation"
+      },
+      {
+        "answer": "My husband is my main support, and our parents live nearby and support us closely.",
+        "topic": "Support system"
+      },
+      {
+        "answer": "I usually go for walks or talk through my feelings with my husband; I have never had depression or anxiety.",
+        "topic": "Stress coping and mental health"
+      },
+      {
+        "answer": "Starting our family is the most important thing to us right now, and we've been praying for this baby.",
+        "topic": "Life values and upcoming plans"
+      },
+      {
+        "answer": "No, I have not had any vaginal bleeding, spotting, or unusual discharge.",
+        "topic": "Vaginal bleeding or spotting"
+      },
+      {
+        "answer": "No, I haven't had any lower abdominal cramps or pelvic pain at all.",
+        "topic": "Pelvic pain or cramping"
+      },
+      {
+        "answer": "No, I have not had any fever, chills, or sweats.",
+        "topic": "Fever or chills"
+      },
+      {
+        "answer": "No, I haven't experienced any dizziness, lightheadedness, or fainting.",
+        "topic": "Dizziness or syncope"
+      },
+      {
+        "answer": "I've just had mild morning nausea and tired feelings, which I thought were normal early pregnancy signs.",
+        "topic": "Pregnancy symptoms"
+      },
+      {
+        "answer": "Did I do something wrong to cause this? Could working late or lifting heavy groceries have hurt the baby?",
+        "topic": "Concerns about cause"
+      },
+      {
+        "answer": "What are our next steps for managing this, and will we be able to try for a baby again?",
+        "topic": "Next steps and future pregnancy"
+      },
+      {
+        "answer": "I do not have any chronic medical conditions like diabetes or high blood pressure.",
+        "topic": "Past medical history"
+      },
+      {
+        "answer": "I have never had any surgeries or hospital admissions.",
+        "topic": "Past surgical history"
+      },
+      {
+        "answer": "I only take a daily prenatal vitamin that contains folic acid.",
+        "topic": "Current medications"
+      },
+      {
+        "answer": "No, I do not have any allergies to medications or anything else.",
+        "topic": "Drug allergies"
+      },
+      {
+        "answer": "No, I have never smoked in my life.",
+        "topic": "Smoking history"
+      },
+      {
+        "answer": "No, I do not drink any alcohol, and I stopped completely when we began trying to conceive.",
+        "topic": "Alcohol consumption"
+      },
+      {
+        "answer": "My last menstrual period started exactly nine weeks ago, and my cycles are normally regular at twenty-eight days.",
+        "topic": "Last menstrual period"
+      },
+      {
+        "answer": "This is my very first pregnancy; I have never been pregnant before.",
+        "topic": "Obstetric history"
+      },
+      {
+        "answer": "We have not used any birth control for the past two years because we were trying to conceive.",
+        "topic": "Contraceptive history"
+      },
+      {
+        "answer": "There is no family history of recurrent miscarriages, blood clotting problems, or genetic conditions.",
+        "topic": "Family history"
+      }
+    ],
+    "exam": [
+      {
+        "finding": "Blood pressure is 110/70 mmHg, pulse is 80 beats per minute, respiratory rate is 16 breaths per minute, temperature is 36.8 degrees Celsius, and oxygen saturation is 99% on room air.",
+        "maneuver": "vital_signs",
+        "response": "none"
+      },
+      {
+        "finding": "The patient is alert, comfortable, well-appearing, and in no acute distress.",
+        "maneuver": "general_inspection",
+        "response": "none"
+      },
+      {
+        "finding": "Conjunctivae are pink and sclerae are anicteric with no evidence of pallor.",
+        "maneuver": "conjunctiva_sclera",
+        "response": "none"
+      },
+      {
+        "finding": "Abdomen is soft, non-tender, and non-distended without guarding, rigidity, or palpable masses.",
+        "maneuver": "abdominal_palpation",
+        "response": "none"
+      },
+      {
+        "finding": "External genitalia appear normal, cervical os is closed, and there is no active bleeding, abnormal discharge, or cervical motion tenderness.",
+        "maneuver": "pelvic_exam",
+        "response": "none"
+      }
+    ]
+  }
+}
